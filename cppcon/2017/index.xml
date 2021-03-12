@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cppcon 2017 on ₿itcoin Transcripts</title><link>//bitcointranscripts.github.io/cppcon/2017/</link><description>Recent content in Cppcon 2017 on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="//bitcointranscripts.github.io/cppcon/2017/index.xml" rel="self" type="application/rss+xml"/><item><title>2017 10 11 Kostya Serebryany Fuzzing</title><link>//bitcointranscripts.github.io/cppcon/2017/2017-10-11-kostya-serebryany-fuzzing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/cppcon/2017/2017-10-11-kostya-serebryany-fuzzing/</guid><description>{% if page.transcript_by %} Transcript by: {{ page.transcript_by }}{% endif %} Name: Kostya Serebryany
+Topic: Fuzz or lose! Why and how to make fuzzing a standard practice for C++
+Location: CppCon 2017
+Date: October 11th 2017
+Video: https://www.youtube.com/watch?v=k-Cv8Q3zWNQ
+Slides: https://github.com/CppCon/CppCon2017/blob/master/Demos/Fuzz%20Or%20Lose/Fuzz%20Or%20Lose%20-%20Kostya%20Serebryany%20-%20CppCon%202017.pdf
+Paper on “The Art, Science and Engineering of Fuzzing”: https://arxiv.org/pdf/1812.00140.pdf
+Intro Good afternoon and thank you for coming for the last afternoon session. I appreciate that you are tired. I hope to wake you up a little bit.</description></item></channel></rss>

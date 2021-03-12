@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blockstream Webinars on ₿itcoin Transcripts</title><link>//bitcointranscripts.github.io/blockstream-webinars/</link><description>Recent content in Blockstream Webinars on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="//bitcointranscripts.github.io/blockstream-webinars/index.xml" rel="self" type="application/rss+xml"/><item><title>2019 07 31 Rusty Russell Getting Started With C Lightning</title><link>//bitcointranscripts.github.io/blockstream-webinars/2019-07-31-rusty-russell-getting-started-with-c-lightning/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/blockstream-webinars/2019-07-31-rusty-russell-getting-started-with-c-lightning/</guid><description>{% if page.transcript_by %} Transcript by: {{ page.transcript_by }}{% endif %} Rusty Russell
+Getting started with c-lightning
+video: https://www.youtube.com/watch?v=fab4P3BIZxk
+https://twitter.com/kanzure/status/1231946205380403200
+Introduction Hi everyone. We’re actually a couple of minutes early and I think we are going to give a couple of minutes past before we actually start because I think some people will probably be running late particularly with the change in times we had to make after this was announced.</description></item><item><title>2019 09 04 Christian Decker C Lightning Questions</title><link>//bitcointranscripts.github.io/blockstream-webinars/2019-09-04-christian-decker-c-lightning-questions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/blockstream-webinars/2019-09-04-christian-decker-c-lightning-questions/</guid><description>{% if page.transcript_by %} Transcript by: {{ page.transcript_by }}{% endif %} Christian Decker
+c-lightning Q and A session
+Video: https://www.youtube.com/watch?v=r7Un8FZYlS4&amp;amp;list=PLseHpvCI1BjAfUx8zjJXadlBh_eKV9zJi&amp;amp;index=8
+https://twitter.com/kanzure/status/1230527903969841152
+Introduction Hello everyone. I’m Christian. I’m a software developer at Blockstream and I work on Lightning, both the specification and the implementation. Today we are going to have a shortish webinar on how to get started with Lightning.
+Q and A Q - Is it possible to run c-lightning and lnd on the same host in parallel?</description></item><item><title>2020 04 08 Adam Back Simplicity</title><link>//bitcointranscripts.github.io/blockstream-webinars/2020-04-08-adam-back-simplicity/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/blockstream-webinars/2020-04-08-adam-back-simplicity/</guid><description>{% if page.transcript_by %} Transcript by: {{ page.transcript_by }}{% endif %} Name: Adam Back
+Topic: Simplicity - Next-Gen Smart Contracting
+Location: Blockstream webinar
+Date: April 8th 2020
+Video: https://www.youtube.com/watch?v=RZNCk-nyx_A
+Slides: https://docsend.com/view/svs27jr
+Blockstream blog post on the Jets release: https://medium.com/blockstream/simplicity-jets-release-803db10fd589
+Simplicity GitHub repo: https://github.com/elementsproject/simplicity
+Asciinema video used in the presentation: https://asciinema.org/a/rhIsJBixoB3k8yuFQQr2UGAQN
+Join the Simplicity mailing list here: https://lists.ozlabs.org/listinfo/simplicity
+Intro I am going to describe Simplicity which we made an announcement recently. It is a next generation script language for Bitcoin and Bitcoin-like networks which include Elements and Liquid.</description></item></channel></rss>

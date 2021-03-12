@@ -1,0 +1,14 @@
+---
+layout: default
+parent: Hong Kong
+grand_parent: Scalingbitcoin
+title: Url.Txt
+nav_exclude: true
+transcript_by: Bryan Bishop
+---
+
+{% if page.transcript_by %}
+  <i>Transcript by: {{ page.transcript_by }}</i>
+{% endif %}
+https://scalingbitcoin.org/hongkong2015/
+https://www.youtube.com/watch?v=qdghS32TeZU

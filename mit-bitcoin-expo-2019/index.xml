@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mit Bitcoin Expo 2019 on ₿itcoin Transcripts</title><link>//bitcointranscripts.github.io/mit-bitcoin-expo-2019/</link><description>Recent content in Mit Bitcoin Expo 2019 on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="//bitcointranscripts.github.io/mit-bitcoin-expo-2019/index.xml" rel="self" type="application/rss+xml"/><item><title>Signature Scheme Security Properties.Md</title><link>//bitcointranscripts.github.io/mit-bitcoin-expo-2019/signature-scheme-security-properties/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/mit-bitcoin-expo-2019/signature-scheme-security-properties/</guid><description>layout: default parent: Mit Bitcoin Expo 2019 title: Signature Scheme Security Properties nav_exclude: true transcript_by: Bryan Bishop {% if page.transcript_by %} Transcript by: {{ page.transcript_by }}{% endif %} Name: Andrew Poelstra
+Topic: Secure Signatures - Harder Than You Think
+Location: MIT Bitcoin Expo 2019
+Date: March 9th 2019
+Video: https://www.youtube.com/watch?v=0gc1DSk8wlw
+Twitter announcement: https://twitter.com/kanzure/status/1104399812147916800
+Transcript completed by: Bryan Bishop
+Introduction Hi everyone. Can you hear me alright? Is my mic? Okay, cool.</description></item><item><title>Utreexo.Md</title><link>//bitcointranscripts.github.io/mit-bitcoin-expo-2019/utreexo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/mit-bitcoin-expo-2019/utreexo/</guid><description>layout: default parent: Mit Bitcoin Expo 2019 title: Utreexo nav_exclude: true transcript_by: Bryan Bishop {% if page.transcript_by %} Transcript by: {{ page.transcript_by }}{% endif %} Utreexo: Reducing bitcoin nodes to 1 kilobyte
+Tadge Dryja
+https://twitter.com/kanzure/status/1104410958716387328
+See also: https://diyhpl.us/wiki/transcripts/bitcoin-core-dev-tech/2018-10-08-utxo-accumulators-and-utreexo/
+Introduction I am going to talk about another scaling solution and another strategy I&amp;rsquo;ve been working on for about 6-9 months, called Utreexo.
+Bitcoin scalability Scalability has been a concern in bitcoin for the whole time.</description></item></channel></rss>
