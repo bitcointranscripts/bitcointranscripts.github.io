@@ -1,0 +1,23 @@
+baseURL = "//bitcointranscripts.github.io/"
+languageCode = "en-us"
+title = "₿itcoin Transcripts"
+
+theme = "ace-documentation"
+orderSectionsby = "title"
+
+[outputs]
+    home = [ "HTML", "JSON"]
+    page = [ "HTML"]
+
+[params]
+    disableReadmoreNav = true
+    menushortcutsnewtab = true
+    
+[markup]
+  [markup.tableOfContents]
+    startLevel = 1
+
+[[menu.shortcuts]]
+    name = "<i class='fab fa-github'></i>"
+    url = "https://github.com/bitcointranscripts/bitcointranscripts"
+    weight = 1

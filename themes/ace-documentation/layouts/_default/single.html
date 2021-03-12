@@ -1,0 +1,22 @@
+{{ define "main" }}
+
+<h1>{{ .Title }}</h1>
+
+{{ if .Params.TranscriptBy }}
+    <p><i>Transcript by: {{ .Params.TranscriptBy }}</i></p>
+{{ end }}
+
+{{ .Content }}
+
+    {{ if .IsTranslated }}
+        <h4>{{ i18n "translations" }}</h4>
+        <ul>
+            {{ range .Translations }}
+                <li>
+                    <a href="{{ .RelPermalink }}">{{ .Lang }}: {{ .Title }}</a>
+                </li>
+            {{ end }}
+          </ul>
+    {{ end }}
+
+{{ end }}
