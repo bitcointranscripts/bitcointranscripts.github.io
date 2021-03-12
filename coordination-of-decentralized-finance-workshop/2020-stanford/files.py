@@ -1,15 +1,10 @@
 ---
-layout: default
-parent: 2020 Stanford
-grand_parent: Coordination Of Decentralized Finance Workshop
 title: Files.Py
-nav_exclude: true
-transcript_by: Bryan Bishop
+parent: 2020 Stanford
+Hidden: true
+TranscriptBy: Bryan Bishop
 ---
 
-{% if page.transcript_by %}
-  <i>Transcript by: {{ page.transcript_by }}</i>
-{% endif %}
 
 root_url = "https://diyhpl.us/wiki/transcripts/coordination-of-decentralized-finance-workshop/2020-stanford/"
 

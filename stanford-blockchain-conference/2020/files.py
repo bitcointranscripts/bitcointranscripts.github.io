@@ -1,15 +1,10 @@
 ---
-layout: default
-parent: Stanford Blockchain Conference 2020
-grand_parent: Stanford Blockchain Conference
 title: Files.Py
-nav_exclude: true
-transcript_by: Bryan Bishop
+parent: Stanford Blockchain Conference 2020
+Hidden: true
+TranscriptBy: Bryan Bishop
 ---
 
-{% if page.transcript_by %}
-  <i>Transcript by: {{ page.transcript_by }}</i>
-{% endif %}
 
 root_url = "https://diyhpl.us/wiki/transcripts/stanford-blockchain-conference/2020/"
 

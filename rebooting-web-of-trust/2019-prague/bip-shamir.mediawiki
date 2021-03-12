@@ -1,15 +1,10 @@
 ---
-layout: default
-parent: 2019 Prague
-grand_parent: Rebooting Web Of Trust
 title: Bip Shamir.Mediawiki
-nav_exclude: true
-transcript_by: Bryan Bishop
+parent: 2019 Prague
+Hidden: true
+TranscriptBy: Bryan Bishop
 ---
 
-{% if page.transcript_by %}
-  <i>Transcript by: {{ page.transcript_by }}</i>
-{% endif %}
 <pre>
   BIP: XXXX
   Layer: Applications
