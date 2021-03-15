@@ -29,7 +29,7 @@
 {{- define "section-tree-nav" }}
 {{- $currentNode := .currentnode }}
 {{- with .sect}}
-{{- if and .IsSection (or (not .Params.hidden) $.showhidden)}}
+<!-- {{- if and .IsSection (or (not .Params.hidden) $.showhidden)}} -->
     {{- $numberOfPages := (add (len .Pages) (len .Sections)) }}
     {{- safeHTML .Params.head}}
     <li data-nav-id="{{.RelPermalink}}" class="nav-item my-1
@@ -66,15 +66,17 @@
         </ul>
       {{- end}}
     </li>
-{{- else}}
-    {{- if not .Params.Hidden }}
-        <li data-nav-id="{{.RelPermalink}}" class="nav-item my-1 {{- if eq .RelPermalink $currentNode.RelPermalink}} active{{end -}}">
+<!-- {{- else}} -->
+    <!-- {{- if not .Params.Hidden }} -->
+      <!-- remove display of articles in the side bar menu -->
+
+        <!-- <li data-nav-id="{{.RelPermalink}}" class="nav-item my-1 {{- if eq .RelPermalink $currentNode.RelPermalink}} active{{end -}}"> -->
                 <!-- I'm the params hidden -->
-                 <a href="{{.RelPermalink}}" class="nav-link p-0">
+                 <!-- <a href="{{.RelPermalink}}" class="nav-link p-0">
                     {{safeHTML .Params.Pre}}{{.LinkTitle}}{{safeHTML .Params.Post}}
                 </a>
-        </li>
-    {{- end}}
-{{- end}}
+        </li> -->
+    <!-- {{- end}} -->
+<!-- {{- end}} -->
 {{- end}}
 {{- end}}
