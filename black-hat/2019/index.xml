@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Black Hat 2019 on ₿itcoin Transcripts</title><link>//bitcointranscripts.github.io/black-hat/2019/</link><description>Recent content in Black Hat 2019 on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="//bitcointranscripts.github.io/black-hat/2019/index.xml" rel="self" type="application/rss+xml"/><item><title>Jonathan Metzman Structured Fuzzing (2019-08-07)</title><link>//bitcointranscripts.github.io/black-hat/2019/2019-08-07-jonathan-metzman-structured-fuzzing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/black-hat/2019/2019-08-07-jonathan-metzman-structured-fuzzing/</guid><description>Name: Jonathan Metzman
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Black Hat 2019 on ₿itcoin Transcripts</title>
+    <link>//bitcointranscripts.github.io/black-hat/2019/</link>
+    <description>Recent content in Black Hat 2019 on ₿itcoin Transcripts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="//bitcointranscripts.github.io/black-hat/2019/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jonathan Metzman Structured Fuzzing (2019-08-07)</title>
+      <link>//bitcointranscripts.github.io/black-hat/2019/2019-08-07-jonathan-metzman-structured-fuzzing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/black-hat/2019/2019-08-07-jonathan-metzman-structured-fuzzing/</guid>
+      <description>Name: Jonathan Metzman
 Topic: Going Beyond Coverage Guided Fuzzing with Structured Fuzzing
 Location: Black Hat USA 2019
 Date: August 7th 2019
@@ -6,4 +20,8 @@ Video: https://www.youtube.com/watch?v=TtPXYPJ5_eE
 Blackhat: https://www.blackhat.com/us-19/briefings/schedule/#going-beyond-coverage-guided-fuzzing-with-structured-fuzzing-16110
 Slides: https://i.blackhat.com/USA-19/Wednesday/us-19-Metzman-Going-Beyond-Coverage-Guided-Fuzzing-With-Structured-Fuzzing.pdf
 Transcript completed by: Michael Folkson
-Intro Hi everyone. Thanks for coming to my talk. As I was introduced I’m Jonathan Metzman. I’m here to talk about how you can get more bugs with coverage guided fuzzing by adding structure awareness to your fuzzers.</description></item></channel></rss>
+Intro Hi everyone. Thanks for coming to my talk. As I was introduced I’m Jonathan Metzman. I’m here to talk about how you can get more bugs with coverage guided fuzzing by adding structure awareness to your fuzzers.</description>
+    </item>
+    
+  </channel>
+</rss>
