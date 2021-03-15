@@ -2,7 +2,7 @@
 {{- if and (ne $page.Type "json") (ne $page.Type "html") -}}
 {{- if and $index (gt $index 0) -}},{{- end }}
 {
-	"uri": "{{ $page.Permalink }}",
+	"uri": "{{ $page.RelPermalink }}",
 	"title": {{ $page.Title | jsonify }},
 	"content": {{$page.Plain | truncate 500 | jsonify}}
 }

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Magicalcryptoconference 2019 on ₿itcoin Transcripts</title>
+    <link>//bitcointranscripts.github.io/magicalcryptoconference/2019/</link>
+    <description>Recent content in Magicalcryptoconference 2019 on ₿itcoin Transcripts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="//bitcointranscripts.github.io/magicalcryptoconference/2019/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bitcoin Protocol Development Panel</title>
+      <link>//bitcointranscripts.github.io/magicalcryptoconference/2019/bitcoin-protocol-development-panel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/magicalcryptoconference/2019/bitcoin-protocol-development-panel/</guid>
+      <description>Bitcoin protocol development panel
+Eric Lombrozo, Matt Corallo, John Newbery, Luke Dashjr, Katherine Wu
+KW: We have some wonderful panelists today. Let&amp;rsquo;s kick it off. Let&amp;rsquo;s start with Eric. Who are you and what role do you play in bitcoin development?
+EL: I got into bitcoin in 2011. I had my own network stack. I almost had a full node implementation but I stopped short because it wasn&amp;rsquo;t as well tested or reviewed as Bitcoin Core.</description>
+    </item>
+    
+    <item>
+      <title>Bitcoin Satellite Network</title>
+      <link>//bitcointranscripts.github.io/magicalcryptoconference/2019/bitcoin-satellite-network/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/magicalcryptoconference/2019/bitcoin-satellite-network/</guid>
+      <description>Bitcoin satellite network
+Adam Back
+Bitcoin in Spaaace! I am going to be talking about the bitcoin satellite service that Blockstream has been offering for a few years now. I am going to talk about what it does and why that&amp;rsquo;s interesting to users.
+Satellite infrastructure There are 4 satellites, 2 uplinks with base stations sending data up to the satellites, and then 5 transponders. It&amp;rsquo;s covering both Asia and Australia with one satellite with two transponders.</description>
+    </item>
+    
+    <item>
+      <title>Bitcoin Without Internet</title>
+      <link>//bitcointranscripts.github.io/magicalcryptoconference/2019/bitcoin-without-internet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/magicalcryptoconference/2019/bitcoin-without-internet/</guid>
+      <description>Bitcoin without internet
+Adam Back, Rodolfo Novak (Coinkite), Elaine Ou, Adam Back, Richard Myers (GoTenna)
+SM: We have a special announcement to make. Let me kick it over to Richard right now.
+RM: We completed a project that will integrate the GoTenna mesh radio system with Blockstream&amp;rsquo;s blocksat satellite system. It&amp;rsquo;s pretty exciting. It&amp;rsquo;s called txtenna. It will allow anybody to send a signed bitcoin transaction from an off-grid full node that is receiving blockchain data from the blocksat network, and then relay it over the GoTenna mesh network.</description>
+    </item>
+    
+    <item>
+      <title>Crypto In Cryptocurrency</title>
+      <link>//bitcointranscripts.github.io/magicalcryptoconference/2019/crypto-in-cryptocurrency/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/magicalcryptoconference/2019/crypto-in-cryptocurrency/</guid>
+      <description>The &amp;ldquo;crypto&amp;rdquo; in cryptocurrency: Why everything is weird and hard
+Andrew Poelstra
+I do not have any slides for you. This is my attempt to keep this non-technical, by depriving myself of any ability to write equations on screen. The topic of my talk is why everything is weird and hard in cryptocurrency. What is cryptography as a mathematics and field of science? And how does this work in practice?</description>
+    </item>
+    
+    <item>
+      <title>Cryptographic Hocus Pocus</title>
+      <link>//bitcointranscripts.github.io/magicalcryptoconference/2019/cryptographic-hocus-pocus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/magicalcryptoconference/2019/cryptographic-hocus-pocus/</guid>
+      <description>Cryptographic hocus-pocus meaning nothing: The zcash trusted setup MPC
+or: &amp;ldquo;Peter Todd&amp;rsquo;s secret love letter to Zooko&amp;rdquo;
+Peter Todd
+Background See http://web.archive.org/web/20170717025249/https://petertodd.org/2016/cypherpunk-desert-bus-zcash-trusted-setup-ceremony
+and later it was then redacted: https://petertodd.org/2016/cypherpunk-desert-bus-zcash-trusted-setup-ceremony
+Introduction Alright. Hopefully you guys are all awake ish or something. I am going to give a talk about the zcash trusted setup. As many of you know, I was involved in it. The way to start is to answer, what is it?</description>
+    </item>
+    
+    <item>
+      <title>Fork Dynamics</title>
+      <link>//bitcointranscripts.github.io/magicalcryptoconference/2019/fork-dynamics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/magicalcryptoconference/2019/fork-dynamics/</guid>
+      <description>Fork dynamics
+Eric Lombrozo
+Thank you, Samson, for that great introduction and thank you for organizing this awesome event. It&amp;rsquo;s great seeing everyone. A few years ago, the situation was extremely different. When Samson originally asked me to give a talk, I kind of thought a little bit about what I should talk about and I wasn&amp;rsquo;t sure what&amp;rsquo;s most interesting. A few years ago, it was much more clear about the set of things going on.</description>
+    </item>
+    
+    <item>
+      <title>Future Of Privacy Coins</title>
+      <link>//bitcointranscripts.github.io/magicalcryptoconference/2019/future-of-privacy-coins/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/magicalcryptoconference/2019/future-of-privacy-coins/</guid>
+      <description>Future of privacy coins
+Brandon Goodell, Andrew Poelstra, Alexandra Moxin
+AM: That&amp;rsquo;s not good. Hi everyone. Thanks for coming to the future of privacy coins panel. I want to spend a minute talking ablout backgrounds and interest in this area.
+BG: I have a PhD in something. I got into monero a couple of years ago. I needed to pay rent, so I did some work in math in exchange for money.</description>
+    </item>
+    
+    <item>
+      <title>Htc</title>
+      <link>//bitcointranscripts.github.io/magicalcryptoconference/2019/htc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/magicalcryptoconference/2019/htc/</guid>
+      <description>HTC / Exodus
+Phil Chen
+Introduction SM: This conversation started a couple months ago in Hong Kong with Phil Chen and Adam Back were sitting in a bar talking about the bitcoin industry and what would move it forward. Without further adue, please welcome Phil Chen.
+Special announcement from HTC Exodus Hi. I am Phil Chen from HTC. As you may know, we built the first Android phone in 2008. The reason why we did that was because we believe in open-source.</description>
+    </item>
+    
+    <item>
+      <title>Intro</title>
+      <link>//bitcointranscripts.github.io/magicalcryptoconference/2019/intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/magicalcryptoconference/2019/intro/</guid>
+      <description>Intro
+Whalepanda
+Hello? Ladies and gentlemen, please take your seats and we&amp;rsquo;re going to start now. Good afternoon everyone. I&amp;rsquo;m a self-proclaimed VP of operations and swag for this crypto conference. I&amp;rsquo;m also a friend of the Magical Crypto Friends. I&amp;rsquo;m very happy to see the turnout for this conference. I see people who are clearly passionate based on the way they dress. Thank you all for coming. I am going to ask a question.</description>
+    </item>
+    
+    <item>
+      <title>Lightning Payments</title>
+      <link>//bitcointranscripts.github.io/magicalcryptoconference/2019/lightning-payments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/magicalcryptoconference/2019/lightning-payments/</guid>
+      <description>Lightning payments (and more) on the web
+Will O&amp;rsquo;Beirne
+CL: Thank you Elizabeth and Stacy for that great talk. Who runs a lightning node here? So a lot of you. Are you guys excited about lightning? Great, we have like four more talks on lightning. Next we have Will O&amp;rsquo;Beirne who will be talking about lightning payments on the web. Big round of applause.
+Introduction Hey y&amp;rsquo;all. We&amp;rsquo;re doing a DIY setup here.</description>
+    </item>
+    
+    <item>
+      <title>Ln Present And Future Panel</title>
+      <link>//bitcointranscripts.github.io/magicalcryptoconference/2019/ln-present-and-future-panel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/magicalcryptoconference/2019/ln-present-and-future-panel/</guid>
+      <description>Lightning network present &amp;amp; future panel
+Will O&amp;rsquo;Beirne, Lisa Neigut, Alex Bosworth, Leigh Cuen
+LC: Can everyone hear me now? Alright, alright.
+WO: It&amp;rsquo;s getting some good usage. A lot of those are businesses. Definitely it&amp;rsquo;s in the early stage. Elizabeth talked about this. There&amp;rsquo;s a lot of things that are mostly for fun, it&amp;rsquo;s not really at ecommerce yet.
+LC: That&amp;rsquo;s for lnd?
+WO: Sure, and I think Lisa can talk about c-lightning.</description>
+    </item>
+    
+    <item>
+      <title>Mcf Episode</title>
+      <link>//bitcointranscripts.github.io/magicalcryptoconference/2019/mcf-episode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/magicalcryptoconference/2019/mcf-episode/</guid>
+      <description>WP: The short was not about Craig Wright. It was not about him being a fraud, because he is not a fraud.
+SM: We also have a store. I don&amp;rsquo;t think we&amp;rsquo;re ready to start shipping stuff yet, so inventory will remain zero. I&amp;rsquo;ll post a tweet when we&amp;rsquo;re ready to start selling stuff. We might have some t-shirts and some other stuff. But not the coins, which are limited edition.</description>
+    </item>
+    
+    <item>
+      <title>State Of Lightning Network</title>
+      <link>//bitcointranscripts.github.io/magicalcryptoconference/2019/state-of-lightning-network/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/magicalcryptoconference/2019/state-of-lightning-network/</guid>
+      <description>Fireside chat on the state of the lightning network
+Stacy Herbert, Elizabeth Stark
+Introduction WP: We have a fireside chat with Stacy Herbert from Kaiser Report and Elizabeth Stark. Some people say she is the CEO of Lightning Network, but she is the CEO of Lightning Labs. Let&amp;rsquo;s invite them on stage.
+SH: Did anyone notice the bitcoin price today? How many here are reckless? How many of you have used lightning?</description>
+    </item>
+    
+    <item>
+      <title>Submarine Swaps</title>
+      <link>//bitcointranscripts.github.io/magicalcryptoconference/2019/submarine-swaps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/magicalcryptoconference/2019/submarine-swaps/</guid>
+      <description>Bridging off-chain and on-chain with submarine swaps
+Alex Bosworth
+Introduction Hi, I work at Lightning Labs. I want to talk about the dawn of hyperloop. It&amp;rsquo;s a new concept.
+Hyperloop To zoom out on what problem we&amp;rsquo;re working on here, we had this cool lightning network. But it&amp;rsquo;s, the way the lightning network works, is that it&amp;rsquo;s complementary to the bitcoin network. Each side has its pro&amp;rsquo;s and con&amp;rsquo;s. If you want the most effective way to send capital around, you want to leverage both.</description>
+    </item>
+    
+    <item>
+      <title>Taxonomy Of Ln Nodes</title>
+      <link>//bitcointranscripts.github.io/magicalcryptoconference/2019/taxonomy-of-ln-nodes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/magicalcryptoconference/2019/taxonomy-of-ln-nodes/</guid>
+      <description>Taxonomy of lightning nodes
+Lisa Neigut
+Introduction Hello. I work at Blockstream on c-lightning. I am here today to talk to you about a taxonomy of nodes about who&amp;rsquo;s who on the lightning network. I wnat ot go through the tools that have been built, looking through the perspectives of what different nodes are trying to accomplish.
+LN map There&amp;rsquo;s a bunch of nodes on the network. Let&amp;rsquo;s look at some stats.</description>
+    </item>
+    
+    <item>
+      <title>Why Block Sizes Should Not Be Too Big</title>
+      <link>//bitcointranscripts.github.io/magicalcryptoconference/2019/why-block-sizes-should-not-be-too-big/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/magicalcryptoconference/2019/why-block-sizes-should-not-be-too-big/</guid>
+      <description>Briefly, why block sizes shouldn&amp;rsquo;t be too big
+Luke Dashjr
+slides: https://luke.dashjr.org/tmp/code/block-sizes-mcc.pdf
+I am luke-jr. I am going to go over why block size shouldn&amp;rsquo;t be too big.
+How does bitcoin work? Miners put transactrions into blocks. Users verify that the blocks are valid. If the users don&amp;rsquo;t verify this, then miners can do basically anything. Because the users do this, 51% attacks are limited to reorgs which is undoing transactions.</description>
+    </item>
+    
+  </channel>
+</rss>

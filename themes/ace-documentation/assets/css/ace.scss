@@ -127,6 +127,21 @@ table > tbody > tr > td, .bd-content > table > tbody > tr > th, .bd-content > ta
     border: 1px solid #dee2e6;
 }
 
+/* Custom Styling */
+
 .bg-primary {
     background-color: #F7931A !important;
+}
+
+.child-links a {
+    color: rgba(0,0,0,.5);
+
+    @include hover-focus() {
+        color: rgba(0,0,0,.7);
+        text-decoration: none;
+    }
+}
+
+:target {
+	scroll-margin-top: 1em;
 }

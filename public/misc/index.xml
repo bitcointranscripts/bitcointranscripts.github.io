@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Misc on ₿itcoin Transcripts</title>
+    <link>//bitcointranscripts.github.io/misc/</link>
+    <description>Recent content in Misc on ₿itcoin Transcripts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="//bitcointranscripts.github.io/misc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adam3Us Bitcoin Scaling Tradeoffs</title>
+      <link>//bitcointranscripts.github.io/misc/adam3us-bitcoin-scaling-tradeoffs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/misc/adam3us-bitcoin-scaling-tradeoffs/</guid>
+      <description>Bitcoin scaling tradeoffs with Adam Back (adam3us) at Paralelni Polis
+Institute of Cryptoanarchy http://www.paralelnipolis.cz/
+video: https://www.youtube.com/watch?v=HEZAlNBJjA0
+slides: http://www.slideshare.net/paralelnipolis/bitcoin-scaling-tradeoffs-with-adam-back
+description: &amp;ldquo;In this talk, Adam Back overviews the Bitcoin scaling and discuses his personal view about its tradeoffs and future development.&amp;rdquo;
+date: 2016-04-05
+Intro fluff And now I would like to introduce you to a great guest from the U.K. or Malta, Adam Back. Adam is long-time professional cryptologist and also he&amp;rsquo;s a Bitcoin expert.</description>
+    </item>
+    
+    <item>
+      <title>Andreas Antonopolous Canada Senate Bitcoin</title>
+      <link>//bitcointranscripts.github.io/misc/andreas-antonopolous-canada-senate-bitcoin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/misc/andreas-antonopolous-canada-senate-bitcoin/</guid>
+      <description>This is a transcript of submitted evidence to the Parliament of Canada&amp;rsquo;s Senate Committee on Banking, Trade and Commerce. Here is a video. The opening remarks can be found here.
+Another transcript may appear here but who knows.
+An additional transcript can be found here.
+final report: http://www.parl.gc.ca/Content/SEN/Committee/412/banc/rep/rep12jun15-e.pdf
+Prepared remarks. My experience is primarily in information security and network architecture. I have a Master’s degree in networks and distributed systems and have worked in this field since 1992.</description>
+    </item>
+    
+    <item>
+      <title>Andrew Poelstra Bulletproofs (2018-02-02)</title>
+      <link>//bitcointranscripts.github.io/misc/2018-02-02-andrew-poelstra-bulletproofs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/misc/2018-02-02-andrew-poelstra-bulletproofs/</guid>
+      <description>Bulletproofs
+Andrew Poelstra (andytoshi)
+2018-02-02
+49th Milan Bitcoin meetup
+video: https://www.pscp.tv/w/1mnxerNaNkLKX
+https://twitter.com/kanzure/status/962326126969442304
+https://www.reddit.com/r/Bitcoin/comments/7w72pq/bulletproofs_presentation_at_feb_2_milan_meetup/
+Introduction Alright. Thank you for that introduction, Giacamo. I am here to talk about bulletproofs. This is different from proof-of-bullets, which is what fiat currencies use. In bulletproofs, we use a zero-knowledge proof which has nothing to do with consensus at all, but it has a lot of exciting applications. The original motivation to create bulletproofs was for range proofs which are used in confidential transactions.</description>
+    </item>
+    
+    <item>
+      <title>Bitcoin Adam3Us Fungibility Privacy</title>
+      <link>//bitcointranscripts.github.io/misc/bitcoin-adam3us-fungibility-privacy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/misc/bitcoin-adam3us-fungibility-privacy/</guid>
+      <description>Adam Back (adam3us)
+Fungibility and privacy
+https://www.youtube.com/watch?v=3dAdI3Gzodo
+First of all I was going to explain what we mean by fungibility before bitcoin and ecash. It&amp;rsquo;s an old legal concept in fact, about paper currency. It&amp;rsquo;s the idea that a one ten dollar note is the same as any other ten dollar note. If you receive a note that was involved in a theft, 10 transactions ago, and the police investigate the theft, they have no right to remove the ten dollar note from your pocket.</description>
+    </item>
+    
+    <item>
+      <title>Bitcoin Sidechains Unchained Epicenter Adam3Us Gmaxwell</title>
+      <link>//bitcointranscripts.github.io/misc/bitcoin-sidechains-unchained-epicenter-adam3us-gmaxwell/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/misc/bitcoin-sidechains-unchained-epicenter-adam3us-gmaxwell/</guid>
+      <description>EB65 – Adam Back &amp;amp; Greg Maxwell: Sidechains Unchained
+2015-02-03
+https://www.youtube.com/watch?v=jE_elgnIw3M
+people:
+ Sebastien Couture Brian Fabian Crain Adam Back (adam3us) Greg Maxwell (gmaxwell)  Brian: We are here today we have Adam Back and Greg Maxwell, to anyone who is following bitcoin and bitcoin&amp;rsquo;s development, you will have probably heard of these two gentlemen. I was fortunate enough that the first time that I went to a bitcoin conference at the beginning of my involvement in this space, it was in Amsterdam 2013 and I somehow randomly ended up having dinner twice with Adam which really was super fascinating talking to him about bitcoin, and so I&amp;rsquo;m really exciting to have them on today, especially since we are going to have a chance to talk about a project we have talked about many times on this show before, with different people, which is sidechains, because sidechains I think that everyone is in agreement that it is one of the more interesting projects in the space, and a lot of people have many questions about it.</description>
+    </item>
+    
+    <item>
+      <title>Cftc Bitcoin</title>
+      <link>//bitcointranscripts.github.io/misc/cftc-bitcoin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/misc/cftc-bitcoin/</guid>
+      <description>Commodity Futures Trading Commission
+http://www.onlinevideoservice.com/clients/cftc/video.htm?eventid=cftclive
+description Panel I: CFTC Clearing for Non-Deliverable Forwards (NDF)
+The first panel will discuss whether mandatory clearing should be required of NDF swaps contracts. Each panelist will present and then there will be opportunity for broader discussion and questions. Representatives from the CFTC, the Bank of England, and the European Securities and Markets Authority will also be joined by a subcommittee of experts on the foreign exchange markets who, although not presenting at the meeting, will participate in the broader discussion following the presentations.</description>
+    </item>
+    
+    <item>
+      <title>Ctv Bip Review Workshop</title>
+      <link>//bitcointranscripts.github.io/misc/ctv-bip-review-workshop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/misc/ctv-bip-review-workshop/</guid>
+      <description>OP_CHECKTEMPLATEVERIFY workshop notes
+Reference materials transcript tweet https://twitter.com/kanzure/status/1223708325960798208
+livestream: https://www.pscp.tv/w/1PlJQmRZWnZJE and tweet https://twitter.com/JeremyRubin/status/1223664128381734912 or https://twitter.com/JeremyRubin/status/1223672458516938752 and https://twitter.com/JeremyRubin/status/1223729378946715648
+IRC logs: http://gnusha.org/ctv-bip-review/
+bip119 proposal: https://github.com/bitcoin/bips/tree/master/bip-0119.mediawiki
+proposal site: https://utxos.org/
+branch comparison: https://github.com/bitcoin/bitcoin/compare/master...JeremyRubin:checktemplateverify
+workshop scripts: https://github.com/JeremyRubin/ctv-workshop
+slides: https://docs.google.com/presentation/d/1XDiZOz52XyJc4LDSbiD9_JAaJobyF5QDGtR3O9qD7yg/edit?usp=sharing
+Introduction Howdy livestreamers. Can someone just tweet that the livestream has actually started? https://twitter.com/JeremyRubin/status/1223672458516938752 Okay thanks.
+Welcome to the OP_CHECKTEMPLATEVERIFY workshop. In the email I mentioned that we do have a code of conduct. It boils down to &amp;ldquo;don&amp;rsquo;t be a jerk&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Discreet Log Contracts</title>
+      <link>//bitcointranscripts.github.io/misc/discreet-log-contracts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/misc/discreet-log-contracts/</guid>
+      <description>Discreet log contracts
+Tadge Dryja
+video: https://www.youtube.com/watch?v=FU-rA5dkTHI
+paper: https://adiabat.github.io/dlc.pdf
+slides: http://bit.ly/2uSqkV6 or https://docs.google.com/presentation/d/1QXZBtELcVMoCq6wx-rJr31KvtsqxxcWIewMvuSTpsa4
+https://twitter.com/kanzure/status/902201044297555970
+We are going to have next month on September 13 when Ethan Heilman will be talking about something controversial but he hasn&amp;rsquo;t told me what it is yet. But it&amp;rsquo;s controversial. I am Amy. I organize the meetup with some help from other people in the MIT Bitcoin Club. I write about blockchain technologies and stuff. I have written for coindesk and bitcoin magazine and now I&amp;rsquo;m writing for Forbes.</description>
+    </item>
+    
+    <item>
+      <title>Epicenter Bitcoin Adam3Us Scalability (2015-09-07)</title>
+      <link>//bitcointranscripts.github.io/misc/2015-09-07-epicenter-bitcoin-adam3us-scalability/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/misc/2015-09-07-epicenter-bitcoin-adam3us-scalability/</guid>
+      <description>&amp;ldquo;Why bitcoin needs a measured approach to scaling&amp;rdquo;
+video: https://youtube.com/watch?v=wYHyR2E5Pic
+Adam Back (adam3us) Epicenter (EC)
+Sebastien Couture (SC) Brian Fabian Crain (BC)
+BC: Adam Back is here for the second time on this show. Some of you will be familiar that Adam Back is the inventor of proof-of-work or hashcash as it was then. He was one of the few people cited in the original Bitcoin whitepaper. More recently he has been involved in sidechains and Blockstream where he is a founder.</description>
+    </item>
+    
+    <item>
+      <title>Failures Of Secret Key Cryptography</title>
+      <link>//bitcointranscripts.github.io/misc/failures-of-secret-key-cryptography/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/misc/failures-of-secret-key-cryptography/</guid>
+      <description>Failures of secret key cryptography
+Daniel J. Bernstein (djb)
+FSE 2013
+video: https://www.youtube.com/watch?v=bT4cKwBROno&amp;amp;list=PLgO7JBj821uGZTXEXBLckChu70kl7Celh&amp;amp;index=7
+Welcome to the second invited talk, to be given by Dan Bernstein. Dan is one of the few members of our community who does not need an introduction. It&amp;rsquo;s a great honor and pleasure that he has agreed to give a talk here. Dan comes from UC Berkeley and from Chicago. Just a few things you might know Dan from&amp;ndash; he sued the U.</description>
+    </item>
+    
+    <item>
+      <title>Mcelrath On Chain Defense In Depth (2019-02-09)</title>
+      <link>//bitcointranscripts.github.io/misc/2019-02-09-mcelrath-on-chain-defense-in-depth/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/misc/2019-02-09-mcelrath-on-chain-defense-in-depth/</guid>
+      <description>2019-02-09
+On-chain defense in depth (UCL CBT seminar)
+Bob McElrath (Fidelity Digital Assets)
+video: https://vimeo.com/316301424
+https://twitter.com/kanzure/status/1159542209584218113
+Introduction It seems strange to come to a university and put PhD on my slides because in the finance world that&amp;rsquo;s weird. I put it up there.
+Okay, so. I work for Fidelity Digital Assets. Just a couple words about this. Our lawyers make us say this: &amp;ldquo;This presentation is intended to be educational in nature and is not representative of existing products and services from Fidelity Investments or Fidelity Digital Assets.</description>
+    </item>
+    
+    <item>
+      <title>Mimblewimble Podcast</title>
+      <link>//bitcointranscripts.github.io/misc/mimblewimble-podcast/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/misc/mimblewimble-podcast/</guid>
+      <description>https://soundcloud.com/heryptohow/mimblewimble-andrew-poelstra-peter-wuille-brian-deery-and-chris-odom
+ Andrew Poelstra (andytoshi) Pieter Wuille (sipa) Brian Deery Chris Odom  Starts at 26min.
+I am going to introduce our guests here in just a minute.
+Launch of zcash might be delayed in order to allow the code to be analyzed by multiple third-party auditors. Zooko stated, &amp;ldquo;I feel bad that we didn&amp;rsquo;t do a better job of making TheDAO disaster-like problems harder for people&amp;rdquo;.
+Our guests on the line are Andrew Poelstra and Pieter Wuille.</description>
+    </item>
+    
+    <item>
+      <title>Nydfs Bitlicense Lawsky Update</title>
+      <link>//bitcointranscripts.github.io/misc/nydfs-bitlicense-lawsky-update/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/misc/nydfs-bitlicense-lawsky-update/</guid>
+      <description>NY DFS BitLicense update 2014-12-18
+http://bipartisanpolicy.org/events/payment-policy-in-the-21st-century-the-promise-of-innovation-and-the-challenge-of-regulation/
+And that&amp;rsquo;s a serious problem that we all need to address with a hightened sense of urgency and focus. Let me start with the BitLicense and virtual currencies. These came on our radar screen last year at DFS because like all of the other states we regulate money transmitters like Moneygram and Western Union. We were worried that virtual currency firms were transmitting currency. Our regulatory rules were written before the internet and before virtual currencies.</description>
+    </item>
+    
+    <item>
+      <title>Rusty Russell Future Bitcoin Tech Directions (2018-01-24)</title>
+      <link>//bitcointranscripts.github.io/misc/2018-01-24-rusty-russell-future-bitcoin-tech-directions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/misc/2018-01-24-rusty-russell-future-bitcoin-tech-directions/</guid>
+      <description>Future technological directions in bitcoin: An unreliable guide
+Rusty Russell
+2018-01-24
+video: https://www.youtube.com/watch?v=VABppufTdpA
+notes: https://docs.google.com/document/d/1iNzJtJRq9-0vdILQAe9Bcj7r1a7xYVf8CSY0_oFrH9c/edit or http://diyhpl.us/~bryan/papers2/bitcoin/Future%20technological%20directions%20in%20bitcoin%20-%202018-01-24.pdf
+https://twitter.com/kanzure/status/957318453181939712
+Introduction Thank you very much for that introduction. Alright, well polished machine right there. Let&amp;rsquo;s try that again. Thank you for that introduction. My talk today is all about this. I&amp;rsquo;m not going to be talking about this. If you see me reaching for the red hat, please stop me. Before I begin, I want to apologize in advance: this talk is a summary of things coming up in bitcoin that some people are workin on, which means first I need to apologize to the people whose work I am about to compress into about 85 second segments each, because I am going to gloss over a lot of things.</description>
+    </item>
+    
+    <item>
+      <title>Safecurves Choosing Safe Curves For Elliptic Curve Cryptography 2014</title>
+      <link>//bitcointranscripts.github.io/misc/safecurves-choosing-safe-curves-for-elliptic-curve-cryptography-2014/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/misc/safecurves-choosing-safe-curves-for-elliptic-curve-cryptography-2014/</guid>
+      <description>SafeCurves: Choosing Safe Curves for Elliptic Curve Cryptography
+Daniel J. Bernstein (djb) and Tanja Lange
+SchmooCon 2014
+video 1: https://www.youtube.com/watch?v=dFUJmzcj0iw&amp;amp;list=PLgO7JBj821uGZTXEXBLckChu70kl7Celh&amp;amp;index=15
+video 2 (same?): https://www.youtube.com/watch?v=maBOorEfOOk&amp;amp;list=PLgO7JBj821uGZTXEXBLckChu70kl7Celh&amp;amp;index=91
+Video intro text There are several different standards covering selection of curves for use in elliptic-curve cryptography (ECC). Each of these standards tries to ensure that the elliptic-curve discrete-logarithm problem (ECDLP) is difficult. ECDLP is the problem of finding an ECC user&amp;rsquo;s secret key, given the user&amp;rsquo;s public key.</description>
+    </item>
+    
+    <item>
+      <title>Scalingbitcoin</title>
+      <link>//bitcointranscripts.github.io/misc/scalingbitcoin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/misc/scalingbitcoin/</guid>
+      <description>[[!map pages=&amp;ldquo;transcripts/scalingbitcoin/* and ! transcripts/scalingbitcoin/*/*&amp;quot;]]</description>
+    </item>
+    
+    <item>
+      <title>Unchained Capital Socratic Seminar (2019-01-05)</title>
+      <link>//bitcointranscripts.github.io/misc/2019-01-05-unchained-capital-socratic-seminar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/misc/2019-01-05-unchained-capital-socratic-seminar/</guid>
+      <description>Unchained Capital Bitcoin Socratic Seminar
+2019-01-05
+Socratic Seminar 87 at BitDevs NYC has all of the links on meetup.com available.
+https://www.meetup.com/BitDevsNYC/events/256924041/
+https://www.meetup.com/Austin-Bitcoin-Developers/events/257718282/
+https://twitter.com/kanzure/status/1081674259880120323
+Last time Last time Andrew Poelstra gave a talk about research at Blockstream. He also talked about scriptless scripts and using the properties of Schnorr signatures to do all of your scripting. There was also talk about taproot and graftroot.
+J: The chaincode labs guys in NYC .</description>
+    </item>
+    
+    <item>
+      <title>Whalepool (2016-12-14)</title>
+      <link>//bitcointranscripts.github.io/misc/2016-12-14-whalepool/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/misc/2016-12-14-whalepool/</guid>
+      <description>Whalepool segwit transcript
+https://soundcloud.com/elux-2/the-great-stakehodler-debate-lombroso-petrov-potter-ver
+https://twitter.com/kanzure/status/809174512105295872
+Host: Mr. Ver, can you hear this?
+RV: Yes, I can.
+Host: Welcome to Whalepool.
+Gavin: Hey Roger, it&amp;rsquo;s Gavin. I heard about this.
+RV: Hey Eric. I see lots of familiar names in here.
+RV: Who was that? I don&amp;rsquo;t know whose voice that was.
+Hodl: Mr. Hodl
+RV: Thanks for organizing this. Hello Mr. Hodl.
+Host: Okay, ready to go. Here we have Eric Lombrozo who is a developer who has committed code to Bitcoin Core.</description>
+    </item>
+    
+  </channel>
+</rss>

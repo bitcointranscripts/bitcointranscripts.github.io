@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Noded Podcast on ₿itcoin Transcripts</title>
+    <link>//bitcointranscripts.github.io/noded-podcast/</link>
+    <description>Recent content in Noded Podcast on ₿itcoin Transcripts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="//bitcointranscripts.github.io/noded-podcast/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Andrew Poelstra Miniscript (2019-05-11)</title>
+      <link>//bitcointranscripts.github.io/noded-podcast/2019-05-11-andrew-poelstra-miniscript/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/noded-podcast/2019-05-11-andrew-poelstra-miniscript/</guid>
+      <description>Noded podcast May 10th 2019
+Audio: https://soundcloud.com/noded-bitcoin-podcast/noded-0490-with-andrew-poelstra
+https://twitter.com/kanzure/status/1135217746059415552
+Intros Pierre: Welcome to the Noded Bitcoin podcast. I’m your co-host Pierre Rochard with my other co-host Michael Goldstein aka bitstein. How’s it going Michael?
+bitstein: It’s going well, I just hope they don’t ban Bitcoin
+Pierre: Any day now. We have a very special guest on today, Andrew Poelstra from Blockstream. Andrew, how are you?
+Andrew: I’m good. How are you?</description>
+    </item>
+    
+    <item>
+      <title>Jnewbery Cve 2018 17144 Bug</title>
+      <link>//bitcointranscripts.github.io/noded-podcast/jnewbery-cve-2018-17144-bug/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/noded-podcast/jnewbery-cve-2018-17144-bug/</guid>
+      <description>Noded podcast September 26th 2018
+Video: https://www.youtube.com/watch?v=286EmFqGMb8
+Intros
+Pierre: This is an issue that affects our audience directly, right. This is the Noded podcast. It is for people who run Bitcoin full nodes and we had what is called a critical vulnerability exposure - CVE drop on Monday and there was an issue with our node software - specific versions and we can get into that.
+bitstein: And in a bombshell Tweet John Newbery said that he was responsible for the CVE.</description>
+    </item>
+    
+    <item>
+      <title>Laolu Conner Lnd (2018-12-14)</title>
+      <link>//bitcointranscripts.github.io/noded-podcast/2018-12-14-laolu-conner-lnd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/noded-podcast/2018-12-14-laolu-conner-lnd/</guid>
+      <description>Noded podcast with Laolu Osuntokun and Conner Fromknecht - December 14th 2018
+https://twitter.com/kanzure/status/1089187758931890178
+Podcast: https://noded.org/podcast/noded-0360-with-olaoluwa-osuntokun-and-conner-fromknecht/
+Pierre: Welcome to the Noded Bitcoin podcast. This is episode 36. We’re joined with Laolu and Conner from Lightning Labs as well as my co-host Michael Goldstein. How’s it going guys?
+roasbeef: Not bad
+Pierre: So I listened to Laolu on Stephan Livera’s podcast and I would encourage any of our listeners to go listen to that first so that they can hear all about some of the latest developments in lightning.</description>
+    </item>
+    
+  </channel>
+</rss>

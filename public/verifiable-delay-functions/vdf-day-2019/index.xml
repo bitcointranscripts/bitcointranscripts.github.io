@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vdf Day 2019 on ₿itcoin Transcripts</title>
+    <link>//bitcointranscripts.github.io/verifiable-delay-functions/vdf-day-2019/</link>
+    <description>Recent content in Vdf Day 2019 on ₿itcoin Transcripts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="//bitcointranscripts.github.io/verifiable-delay-functions/vdf-day-2019/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Comments And Observations About Timelocks Ron Rivest</title>
+      <link>//bitcointranscripts.github.io/verifiable-delay-functions/vdf-day-2019/comments-and-observations-about-timelocks-ron-rivest/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/verifiable-delay-functions/vdf-day-2019/comments-and-observations-about-timelocks-ron-rivest/</guid>
+      <description>Comments and observations about timelocks and verifiable delay functions
+Ron Rivest
+video: https://www.youtube.com/watch?v=NadhhH_eQBQ
+Introduction Welcome everybody. It&amp;rsquo;s not only about solving the puzzles, but the immense interest in verifiable delay functions. When setting up this conference, I hadn&amp;rsquo;t expected that. It&amp;rsquo;s hard to predict where technology will go or what things will be popular decades later when you work on something.
+I am just going to review some of the basic stuff we did way back when, setting up a puzzle which was just recently solved by Simon and Bernard where&amp;rsquo;s Bernard.</description>
+    </item>
+    
+    <item>
+      <title>Dan Boneh</title>
+      <link>//bitcointranscripts.github.io/verifiable-delay-functions/vdf-day-2019/dan-boneh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/verifiable-delay-functions/vdf-day-2019/dan-boneh/</guid>
+      <description>Verifiable delay functions
+Dan Boneh
+video: https://www.youtube.com/watch?v=dN-1q8c50q0
+https://twitter.com/kanzure/status/1152586087912673280
+Introduction I&amp;rsquo;ll give an overview of VDFs and make sure that we&amp;rsquo;re on the same page. I want to make sure everyone knows what it is that we&amp;rsquo;re talking about.
+The goal of a VDF is to slow things down. The question is, how do we slow things down in a verifiable way?
+What is a VDF? I won&amp;rsquo;t give a precise definition, look at the manuscripts.</description>
+    </item>
+    
+  </channel>
+</rss>

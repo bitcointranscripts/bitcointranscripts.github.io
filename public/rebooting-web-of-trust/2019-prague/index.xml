@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2019 Prague on ₿itcoin Transcripts</title>
+    <link>//bitcointranscripts.github.io/rebooting-web-of-trust/2019-prague/</link>
+    <description>Recent content in 2019 Prague on ₿itcoin Transcripts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="//bitcointranscripts.github.io/rebooting-web-of-trust/2019-prague/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Abstract Groups</title>
+      <link>//bitcointranscripts.github.io/rebooting-web-of-trust/2019-prague/abstract-groups/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/rebooting-web-of-trust/2019-prague/abstract-groups/</guid>
+      <description>Blockcert As the standards around verifiable credentials are starting to take form, different flavours of ‘verifiable credentials’ like data structures need to make necessary changes in order to leverage on the rulesets outlined and constantly reviewed by a knowledgeable community like RWOT and W3C. The purpose of this paper is to identify all of the changes needed to comply with the Verifiable Credentials &amp;amp; Decentralized Identifiers standards.
+Cooperation beats aggregation One important economic implication of a new network scaling law for meta-platforms is that the network effect benefits of cooperation may be advantageous to centralized aggregation (non-cooperation).</description>
+    </item>
+    
+    <item>
+      <title>Group Updates.Md</title>
+      <link>//bitcointranscripts.github.io/rebooting-web-of-trust/2019-prague/group-updates/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/rebooting-web-of-trust/2019-prague/group-updates/</guid>
+      <description>Group updates
+Alice abuses verifiable credentials We restricted our scope to a manageable slice of the problem we think we can realistically handle. It&amp;rsquo;s been very productive. We made an outline together, and now everyone can work on individual parts of the paper. I think it&amp;rsquo;s been great.
+Blockcerts v3 We categorized what we wanted to write about and work on and kind of going back and looking at the history of blockcerts and specific things that were added, and an extension that were added, and looking more closely at the verifiable credentials schema.</description>
+    </item>
+    
+    <item>
+      <title>Groups</title>
+      <link>//bitcointranscripts.github.io/rebooting-web-of-trust/2019-prague/groups/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/rebooting-web-of-trust/2019-prague/groups/</guid>
+      <description>Group 1: Agents We talked about minimal requirements for &amp;hellip; a different set of protocols and other implementations, and we asked the question, what&amp;rsquo;s out there for being able to create a minimal requirement for&amp;hellip; Are we able to map this and pull it all down into a minimal requirement architecture for an agent without having to buy into the whole stack? What about building an agent for a smartphone or a feature phone, and then move on from there?</description>
+    </item>
+    
+    <item>
+      <title>Intro</title>
+      <link>//bitcointranscripts.github.io/rebooting-web-of-trust/2019-prague/intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/rebooting-web-of-trust/2019-prague/intro/</guid>
+      <description>Introduction Why are we here? We are here to write papers, code, make UI/UX mock-ups. If you want to work on something and it doesn&amp;rsquo;t fit into that category, then let us know. There might be other people that want to work on it too. We want you to find something you enjoy working on. If you feel you&amp;rsquo;re not as productive as you would like to be, then let us know and we&amp;rsquo;ll find something better for you to work on.</description>
+    </item>
+    
+    <item>
+      <title>Self Sovereign Identity Ideology And Architecture</title>
+      <link>//bitcointranscripts.github.io/rebooting-web-of-trust/2019-prague/self-sovereign-identity-ideology-and-architecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/rebooting-web-of-trust/2019-prague/self-sovereign-identity-ideology-and-architecture/</guid>
+      <description>Self-sovereign identity: Ideology &amp;amp; architecture
+Christopher Allen
+https://twitter.com/kanzure/status/1168566218040762369
+Paralelni Polis First I&amp;rsquo;d like to introduce the space we&amp;rsquo;re in right now. Welcome to Paralelni Polis. It is an education organization. It&amp;rsquo;s a first organization in the world that is running fully on crypto. It is running solely on cryptoeconomics and donations. I&amp;rsquo;d like to welcome you to the event called Rebooting the Web of Trust. This is the 9th event. This is its first time in Prague.</description>
+    </item>
+    
+    <item>
+      <title>Shamir Secret Sharing</title>
+      <link>//bitcointranscripts.github.io/rebooting-web-of-trust/2019-prague/shamir-secret-sharing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/rebooting-web-of-trust/2019-prague/shamir-secret-sharing/</guid>
+      <description>Discussion https://twitter.com/kanzure/status/1168891841745494016
+Chris Howe make a damn good start of a C version of Shamir secret sharing. We need to take it another level. This could be another project that we could engage on. We also didn&amp;rsquo;t finish the actual paper, as such. I&amp;rsquo;d like to get both of those things resolved.
+SatoshiLabs is saying that as far as they are concerned SLIP 39 is done and they are not interested in feedback or changing it or adapting it, at the words level.</description>
+    </item>
+    
+    <item>
+      <title>Swashbuckling Safety Training</title>
+      <link>//bitcointranscripts.github.io/rebooting-web-of-trust/2019-prague/swashbuckling-safety-training/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/rebooting-web-of-trust/2019-prague/swashbuckling-safety-training/</guid>
+      <description>Swashbuckling safety training with decentralized identifiers and verifiable credentials
+Kim Hamilton Duffy, kimdhamilton
+https://twitter.com/kanzure/status/1168573225065951235
+Introduction I was very excited to hear that I was speaking right after someone from the Pirate Party. We&amp;rsquo;re part of the Digital Credentials Effort led by MIT and 12 other major universities. We will have a whitepaper out at the end of September. I am a W3c credentials community group co-chair. Formerly CTO of Learning Machine, and architected and built blockcerts at MIT Media Lab.</description>
+    </item>
+    
+    <item>
+      <title>Topics</title>
+      <link>//bitcointranscripts.github.io/rebooting-web-of-trust/2019-prague/topics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/rebooting-web-of-trust/2019-prague/topics/</guid>
+      <description>Rebooting Web of Trust topic selection
+Dictionary terms: we have a glossary that I wrote 6 months ago which by definition glosses everything. A dictionary would give an opportunity to go into more depth, to look at disagreements without getting lost in the weeds, and also talk about some foundational assumptions.
+Verifiable secret sharing: this is a modification for Shamir secret sharing that also incorporates multisignatures as well. We&amp;rsquo;re interested in solidifying that into an actual proposal and talk about the pro&amp;rsquo;s of con&amp;rsquo;s of traditional secret sharing and this scheme and whether you should be using multisig as opposed to Shamir secret sharing in your application and provide some guidance there.</description>
+    </item>
+    
+    <item>
+      <title>Weak Signals</title>
+      <link>//bitcointranscripts.github.io/rebooting-web-of-trust/2019-prague/weak-signals/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/rebooting-web-of-trust/2019-prague/weak-signals/</guid>
+      <description>Weak signals exercise
+Group 1: Decentralized Decentralization is a means of preventing a single point of control existing.
+Group 3: Cloud We picked a term preventing decentralized identity. The one that resonated for us was &amp;ldquo;cloud&amp;rdquo;. We equated the &amp;ldquo;cloud&amp;rdquo; with the idea of centralized convenience and value creation that businesses and individuals look at the cloud as a great place to be because it&amp;rsquo;s cheap and convenient and all of your dreams are answered in the cloud.</description>
+    </item>
+    
+  </channel>
+</rss>

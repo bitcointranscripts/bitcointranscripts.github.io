@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Simons Institute on ₿itcoin Transcripts</title>
+    <link>//bitcointranscripts.github.io/simons-institute/</link>
+    <description>Recent content in Simons Institute on ₿itcoin Transcripts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="//bitcointranscripts.github.io/simons-institute/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Wishlist For Verifiable Computation</title>
+      <link>//bitcointranscripts.github.io/simons-institute/a-wishlist-for-verifiable-computation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/simons-institute/a-wishlist-for-verifiable-computation/</guid>
+      <description>A wishlist for verifiable computation: An applied computer science perspective
+Michael Walfish (NYU)
+ http://www.pepper-project.org/ https://www.youtube.com/watch?v=Z4jzA6ts2j4 http://simons.berkeley.edu/talks/mike-walfish-2015-06-10 slides: http://www.pepper-project.org/surveywishlist.pptx slides (again): http://simons.berkeley.edu/sites/default/files/docs/3316/surveywishlist2.pptx more: http://www.pepper-project.org/talks.htm  Okay, thanks. I want to begin by thanking the organizers, especially the tall guy for allowing me to be here. This talk will be talking about a research area where the goal is deployable systems for verifiable computation for probabilistic proofs like SNARKs etc. The goal of this talk is to motivate the next theoretical steps in this area.</description>
+    </item>
+    
+    <item>
+      <title>History Of Lattice Based Cryptography</title>
+      <link>//bitcointranscripts.github.io/simons-institute/history-of-lattice-based-cryptography/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/simons-institute/history-of-lattice-based-cryptography/</guid>
+      <description>Historical talk on lattice-based cryptography
+Daniele Micciancio, UC San Diego
+2015-07-15
+https://www.youtube.com/watch?v=4KVJbEOqB_Q&amp;amp;list=PLgO7JBj821uGZTXEXBLckChu70kl7Celh&amp;amp;index=22
+https://twitter.com/kanzure/status/772649346454040577
+Lattice cryptography - from computational complexity to fully homomorphic encryption
+Introduction 1 So this first of all thanks for coming back from lunch, it&amp;rsquo;s always an achievement. I want to say that this is a special talk within the workshop here at Simons we have a historical cryptopapers seminars series. We try to revisit historical papers and see what led to them and how they impacted things later.</description>
+    </item>
+    
+    <item>
+      <title>Pairing Cryptography</title>
+      <link>//bitcointranscripts.github.io/simons-institute/pairing-cryptography/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/simons-institute/pairing-cryptography/</guid>
+      <description>Dan Boneh (see also 1)
+Pairings in Cryptography
+2015-07-14
+https://www.youtube.com/watch?v=8WDOpzxpnTE&amp;amp;list=PLgO7JBj821uGZTXEXBLckChu70kl7Celh&amp;amp;index=21
+slides: http://crypto.biu.ac.il/sites/default/files/3rd_BIU_Winter_School/Boneh-basics-of-pairings.pdf
+https://twitter.com/kanzure/status/772287326999293952
+original video: https://video.simons.berkeley.edu/2015/other-events/historical-papers/05-Dan-Boneh.mp4
+original video sha256 hash: 1351217725741cd3161de95905da7477b9966e55a6c61686f7c88ba5a1ca0414
+Okay, so um I&amp;rsquo;m very happy to introduce another speaker in this historical papers series seminar seminar series which is organized by Daniel Wigs and Vanakutanata. Daniel is here but where&amp;rsquo;s..? Okay. All of these talks are being recorded, you can watch some online if you have missed some. It&amp;rsquo;s a pleasure to introduce Dan Boneh, a professor at Stanford.</description>
+    </item>
+    
+    <item>
+      <title>Snarks And Their Practical Applications</title>
+      <link>//bitcointranscripts.github.io/simons-institute/snarks-and-their-practical-applications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/simons-institute/snarks-and-their-practical-applications/</guid>
+      <description>SNARKs and their practical applications
+Eran Tromer
+Tel Aviv University
+Joint works with:
+ Eli Ben-Sasson Matthew Green Alessandro Chiesa Ian Miers Christina Garman Madars Virza Daniel Genkin  https://www.youtube.com/watch?v=Rm-p8rrR9c8
+Thank you very much. I would like to thank the organizers for giving this opportunity to learn so much from my peers and colleagues some of which are here. This is a wonderful survey of many of the works in this area.</description>
+    </item>
+    
+    <item>
+      <title>Todo</title>
+      <link>//bitcointranscripts.github.io/simons-institute/todo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/simons-institute/todo/</guid>
+      <description> cryptography bootcamp https://www.youtube.com/playlist?list=PLgKuh-lKre139cwM0pjuxMa_YVzMeCiTf mathematics of modern cryptography https://www.youtube.com/playlist?list=PLgKuh-lKre10kb0so1PQ3eNz4Q6EBfecT historical papers in cryptography https://www.youtube.com/playlist?list=PLgKuh-lKre13lX4C_5ZCQKMDOniAn24NP securing computation https://www.youtube.com/playlist?list=PLgKuh-lKre12ddBkIB8wNC8D1kag5dEr-  </description>
+    </item>
+    
+    <item>
+      <title>Zero Knowledge Probabilistic Proof Systems</title>
+      <link>//bitcointranscripts.github.io/simons-institute/zero-knowledge-probabilistic-proof-systems/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/simons-institute/zero-knowledge-probabilistic-proof-systems/</guid>
+      <description>Zero knowledge probabilistic proof systems
+Shafi Goldwasser
+Historical Papers in Cryptography Seminar Series, Simons Institute
+https://www.youtube.com/watch?v=J4TKHuTmHsg
+She has received several awards, she is a source of incredibly creative ideas, very effective advisor and metor, and I am always inspired when she speaks. So please welcome her.
+There is no better place to give this historical talk on zero knowledge than at Berkeley where there are pre-historical origins of zero knowledge. At the same time it&amp;rsquo;s a difficult talk to give, because this is a very distinguished group here, and therefore I changed the talk from one for a broad audience to one that might be of interest to everyone here.</description>
+    </item>
+    
+  </channel>
+</rss>

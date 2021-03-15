@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TFTC Podcast on ₿itcoin Transcripts</title>
+    <link>//bitcointranscripts.github.io/tftc-podcast/</link>
+    <description>Recent content in TFTC Podcast on ₿itcoin Transcripts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="//bitcointranscripts.github.io/tftc-podcast/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Andrew Poelstra Tftc (2019-06-18)</title>
+      <link>//bitcointranscripts.github.io/tftc-podcast/2019-06-18-andrew-poelstra-tftc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/tftc-podcast/2019-06-18-andrew-poelstra-tftc/</guid>
+      <description>TFTC podcast with Andrew Poelstra - June 18th 2019 (Abridged)
+https://twitter.com/kanzure/status/1160178010986876928
+Podcast: https://talesfromthecrypt.libsyn.com/tales-from-the-crypt-80-andrew-poelstra
+How the idea of Taproot was formed Andrew: There are some small off suit IRC channels of bitcoin-wizards where people discuss some specific topics such as Minisketch which is a set reconciliation protocol that was developed by Greg Maxwell, Pieter Wuille and Gleb Naumenko among a couple of others. It was mostly those three. They have a channel where they talk about things.</description>
+    </item>
+    
+    <item>
+      <title>Matt Corallo Taproot Activation (2021-02-11)</title>
+      <link>//bitcointranscripts.github.io/tftc-podcast/2021-02-11-matt-corallo-taproot-activation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/tftc-podcast/2021-02-11-matt-corallo-taproot-activation/</guid>
+      <description>Name: Matt Corallo
+Topic: UASFs, BIP 148, BIP 91 and Taproot Activation
+Location: Tales from the Crypt podcast
+Date: February 11th 2021
+Audio: https://anchor.fm/tales-from-the-crypt/episodes/228-UASFs--BIP-148--BIP-91--and-Taproot-Activation-with-Matt-Corallo-eq7cif
+Intro Marty Bent (MB): Sitting down with a man who needs no introduction on this podcast. I think you have been on four times already. I think this is number five Matt. You are worried about the future of Bitcoin. What the hell is going on? You reached out to me last week, you scaring the s*** out of me.</description>
+    </item>
+    
+  </channel>
+</rss>

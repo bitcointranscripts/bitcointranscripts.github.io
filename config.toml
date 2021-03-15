@@ -12,6 +12,8 @@ orderSectionsby = "title"
 [params]
     disableReadmoreNav = true
     menushortcutsnewtab = true
+    custom_js = ["js/custom.js"]
+    custom_css = ["scss/custom.scss"]
     
 [markup]
   [markup.tableOfContents]

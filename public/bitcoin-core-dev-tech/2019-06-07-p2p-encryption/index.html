@@ -1,0 +1,7296 @@
+<!DOCTYPE html>
+<html><head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="canonical" href="//bitcointranscripts.github.io/bitcoin-core-dev-tech/2019-06-07-p2p-encryption/">
+
+    <title>
+        
+        P2P Encryption (2019-06-07) | ₿itcoin Transcripts
+        
+    </title>
+
+    
+    <link href="//bitcointranscripts.github.io/css/fontawesome.min.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="//bitcointranscripts.github.io/css/ace.min.css">
+
+    
+    
+        
+    
+
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id="navbarMain">
+    <div class="container">
+        <div>
+            <a class="navbar-brand" href="//bitcointranscripts.github.io/">
+                
+                ₿itcoin Transcripts
+            </a>
+        </div>
+        
+            <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarMainCollapse" aria-controls="navbarMainCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMainCollapse">
+              <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://github.com/bitcointranscripts/bitcointranscripts" target="_blank">
+                                  <i class='fab fa-github'></i>
+                                </a>
+                            </li>
+              </ul>
+            </div>
+    </div>
+</nav>
+<div class="container-fluid">
+            <div class="row">
+
+                <div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
+    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#sidenav-left-collapse" aria-controls="sidenav-left-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+     <div class="collapse navbar-collapse align-items-start flex-column" id="sidenav-left-collapse">
+            <form class="form-inline my-2 my-lg-0 searchbox">
+                <input class="form-control mr-sm-2 w-100" data-search-input id="search-by" type="text" placeholder='Search (press "/")'>
+            </form>
+         <ul class="navbar-nav flex-column pt-3">
+
+    <li data-nav-id="/advancing-bitcoin/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/advancing-bitcoin/"><h6>Advancing Bitcoin</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/advancing-bitcoin/2019/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/advancing-bitcoin/2019/"><h6>Advancing Bitcoin 2019</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/advancing-bitcoin/2020/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/advancing-bitcoin/2020/"><h6>Advancing Bitcoin 2020</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/andreas-antonopoulos/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/andreas-antonopoulos/"><h6>Andreas Antonopoulos</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/andrew-chow/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/andrew-chow/"><h6>Andrew Chow</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/austin-bitcoin-developers/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/austin-bitcoin-developers/"><h6>Austin Bitcoin Developers</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/baltic-honeybadger/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/baltic-honeybadger/"><h6>Baltic Honeybadger</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/baltic-honeybadger/2018/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/baltic-honeybadger/2018/"><h6>Baltic Honeybadger 2018</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/baltic-honeybadger/2019/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/baltic-honeybadger/2019/"><h6>Baltic Honeybadger 2019</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/bit-block-boom/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/bit-block-boom/"><h6>Bit Block Boom</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/bit-block-boom/2019/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/bit-block-boom/2019/"><h6>Bit Block Boom 2019</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/bitcoin-core-dev-tech/" class="nav-item my-1 parent haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/bitcoin-core-dev-tech/"><h6>Bitcoin Core Dev Tech</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    <li data-nav-id="/bitcoin-core-dev-tech/bitcoin-devcore-2015/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/bitcoin-core-dev-tech/bitcoin-devcore-2015/"><h6>Bitcoin Devcore 2015</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/bitcoin-design/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/bitcoin-design/"><h6>Bitcoin Design</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/bitcoin-magazine/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/bitcoin-magazine/"><h6>Bitcoin Magazine</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/bitcoinedge/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/bitcoinedge/"><h6>Bitcoinedge</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/bitcoinedge/decentralized-financial-architecture-workshop/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/bitcoinedge/decentralized-financial-architecture-workshop/"><h6>Decentralized Financial Architecture Workshop</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/bitcoinops/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/bitcoinops/"><h6>Bitcoinops</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/bitcoinops/schnorr-taproot-workshop-2019/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/bitcoinops/schnorr-taproot-workshop-2019/"><h6>Schnorr Taproot Workshop 2019</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/black-hat/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/black-hat/"><h6>Black Hat</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/blockchain-protocol-analysis-security-engineering/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/blockchain-protocol-analysis-security-engineering/"><h6>Blockchain Protocol Analysis Security Engineering</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/blockchain-protocol-analysis-security-engineering/2017/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/blockchain-protocol-analysis-security-engineering/2017/"><h6>Blockchain Protocol Analysis Security Engineering 2017</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/blockchain-protocol-analysis-security-engineering/2018/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/blockchain-protocol-analysis-security-engineering/2018/"><h6>Blockchain Protocol Analysis Security Engineering 2018</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/blockstream-webinars/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/blockstream-webinars/"><h6>Blockstream Webinars</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/boltathon/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/boltathon/"><h6>Boltathon</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/breaking-bitcoin/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/breaking-bitcoin/"><h6>Breaking Bitcoin</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/breaking-bitcoin/2017/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/breaking-bitcoin/2017/"><h6>Breaking Bitcoin 2017</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/breaking-bitcoin/2019/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/breaking-bitcoin/2019/"><h6>Breaking Bitcoin 2019</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/building-on-bitcoin/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/building-on-bitcoin/"><h6>Building On Bitcoin</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/building-on-bitcoin/2018/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/building-on-bitcoin/2018/"><h6>Building On Bitcoin 2018</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/chaincode-labs/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/chaincode-labs/"><h6>Chaincode Labs</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/chicago-bitdevs/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/chicago-bitdevs/"><h6>Chicago Bitdevs</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/coindesk-consensus-2016/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/coindesk-consensus-2016/"><h6>Coindesk Consensus</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/coordination-of-decentralized-finance-workshop/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/coordination-of-decentralized-finance-workshop/"><h6>Coordination Of Decentralized Finance Workshop</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/coordination-of-decentralized-finance-workshop/2020-stanford/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/coordination-of-decentralized-finance-workshop/2020-stanford/"><h6>2020 Stanford</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/cppcon/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/cppcon/"><h6>CPPcon</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/cppcon/2017/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/cppcon/2017/"><h6>Cppcon 2017</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/cppcon/2020/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/cppcon/2020/"><h6>Cppcon 2020</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/cryptoeconomic-systems/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/cryptoeconomic-systems/"><h6>Cryptoeconomic Systems</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/cryptoeconomic-systems/2019/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/cryptoeconomic-systems/2019/"><h6>Cryptoeconomic Systems 2019</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/dallas-bitcoin-symposium/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/dallas-bitcoin-symposium/"><h6>Dallas Bitcoin Symposium</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/dallas-bitcoin-symposium/2019-08-16/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/dallas-bitcoin-symposium/2019-08-16/"><h6>2019 08 16</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/bitcoin-developers-miners-meeting-2016/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/bitcoin-developers-miners-meeting-2016/"><h6>Developers-Miners Meeting (2016)</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/dgncc16/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/dgncc16/"><h6>Dgncc16</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/greg-maxwell/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/greg-maxwell/"><h6>Greg Maxwell</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/grincon/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/grincon/"><h6>Grincon</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/grincon/2019/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/grincon/2019/"><h6>Grincon 2019</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/honey-badger-diaries/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/honey-badger-diaries/"><h6>Honey Badger Diaries</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/la-bitdevs/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/la-bitdevs/"><h6>LA Bitdevs</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/layer2-summit/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/layer2-summit/"><h6>Layer2 Summit</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/layer2-summit/2018/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/layer2-summit/2018/"><h6>Layer2 Summit 2018</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/lets-talk-bitcoin-podcast/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/lets-talk-bitcoin-podcast/"><h6>Lets Talk Bitcoin Podcast</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/lightning-conference/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/lightning-conference/"><h6>Lightning Conference</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/lightning-conference/2019/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/lightning-conference/2019/"><h6>Lightning Conference 2019</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/lightning-hack-day/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/lightning-hack-day/"><h6>Lightning Hack Day</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/london-bitcoin-devs/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/london-bitcoin-devs/"><h6>London Bitcoin Devs</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/magicalcryptoconference/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/magicalcryptoconference/"><h6>Magicalcryptoconference</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/magicalcryptoconference/2019/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/magicalcryptoconference/2019/"><h6>Magicalcryptoconference 2019</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/misc/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/misc/"><h6>Misc</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/mit-bitcoin-expo/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/mit-bitcoin-expo/"><h6>MIT Bitcoin Expo</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/mit-bitcoin-expo/mit-bitcoin-expo-2015/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/mit-bitcoin-expo/mit-bitcoin-expo-2015/"><h6>Mit Bitcoin Expo 2015</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/mit-bitcoin-expo/mit-bitcoin-expo-2016/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/mit-bitcoin-expo/mit-bitcoin-expo-2016/"><h6>Mit Bitcoin Expo 2016</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/mit-bitcoin-expo/mit-bitcoin-expo-2017/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/mit-bitcoin-expo/mit-bitcoin-expo-2017/"><h6>Mit Bitcoin Expo 2017</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/mit-bitcoin-expo/mit-bitcoin-expo-2018/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/mit-bitcoin-expo/mit-bitcoin-expo-2018/"><h6>Mit Bitcoin Expo 2018</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/mit-bitcoin-expo/mit-bitcoin-expo-2019/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/mit-bitcoin-expo/mit-bitcoin-expo-2019/"><h6>Mit Bitcoin Expo 2019</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/mit-bitcoin-expo/mit-bitcoin-expo-2020/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/mit-bitcoin-expo/mit-bitcoin-expo-2020/"><h6>Mit Bitcoin Expo 2020</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/noded-podcast/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/noded-podcast/"><h6>Noded Podcast</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/realworldcrypto/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/realworldcrypto/"><h6>Realworldcrypto</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/realworldcrypto/2018/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/realworldcrypto/2018/"><h6>Realworldcrypto 2018</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/rebooting-web-of-trust/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/rebooting-web-of-trust/"><h6>Rebooting Web Of Trust</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/rebooting-web-of-trust/2019-prague/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/rebooting-web-of-trust/2019-prague/"><h6>2019 Prague</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/ruben-somsen/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/ruben-somsen/"><h6>Ruben Somsen</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/satoshi-roundtable/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/satoshi-roundtable/"><h6>Satoshi Roundtable</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/satoshi-roundtable/sr-004/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/satoshi-roundtable/sr-004/"><h6>Sr 004</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/scalingbitcoin/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/scalingbitcoin/"><h6>Scaling Bitcoin Conference</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/scalingbitcoin/montreal-2015/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/scalingbitcoin/montreal-2015/"><h6>Montreal (2015)</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/scalingbitcoin/hong-kong-2015/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/scalingbitcoin/hong-kong-2015/"><h6>Hong Kong (2015)</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/scalingbitcoin/milan-2016/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/scalingbitcoin/milan-2016/"><h6>Milan (2016)</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/scalingbitcoin/stanford-2017/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/scalingbitcoin/stanford-2017/"><h6>Stanford (2017)</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    <li data-nav-id="/scalingbitcoin/stanford-2017/edgeplusplus/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/scalingbitcoin/stanford-2017/edgeplusplus/"><h6>Edgeplusplus</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/scalingbitcoin/tokyo-2018/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/scalingbitcoin/tokyo-2018/"><h6>Tokyo (2018)</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    <li data-nav-id="/scalingbitcoin/tokyo-2018/edgedevplusplus/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/scalingbitcoin/tokyo-2018/edgedevplusplus/"><h6>Edgedevplusplus</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/scalingbitcoin/tel-aviv-2019/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/scalingbitcoin/tel-aviv-2019/"><h6>Tel Aviv (2019)</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    <li data-nav-id="/scalingbitcoin/tel-aviv-2019/edgedevplusplus/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/scalingbitcoin/tel-aviv-2019/edgedevplusplus/"><h6>Edgedevplusplus</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/sf-bitcoin-meetup/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/sf-bitcoin-meetup/"><h6>SF Bitcoin Meetup</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/simons-institute/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/simons-institute/"><h6>Simons Institute</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/stanford-blockchain-conference/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/stanford-blockchain-conference/"><h6>Stanford Blockchain Conference</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/stanford-blockchain-conference/2019/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/stanford-blockchain-conference/2019/"><h6>Stanford Blockchain Conference 2019</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/stanford-blockchain-conference/2020/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/stanford-blockchain-conference/2020/"><h6>Stanford Blockchain Conference 2020</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/stephan-livera-podcast/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/stephan-livera-podcast/"><h6>Stephan Livera Podcast</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/sydney-bitcoin-meetup/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/sydney-bitcoin-meetup/"><h6>Sydney Bitcoin Meetup</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/texas-bitcoin-conference-2014/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/texas-bitcoin-conference-2014/"><h6>Texas Bitcoin Conference</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/tftc-podcast/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/tftc-podcast/"><h6>TFTC Podcast</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/verifiable-delay-functions/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/verifiable-delay-functions/"><h6>Verifiable Delay Functions</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/verifiable-delay-functions/vdf-day-2019/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/verifiable-delay-functions/vdf-day-2019/"><h6>Vdf Day 2019</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/vr-bitcoin/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/vr-bitcoin/"><h6>VR Bitcoin</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/w3-blockchain-workshop-2016/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/w3-blockchain-workshop-2016/"><h6>W3 Blockchain Workshop 2016</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/wasabi-research-club/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/wasabi-research-club/"><h6>Wasabi Research Club</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/what-bitcoin-did-podcast/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/what-bitcoin-did-podcast/"><h6>What Bitcoin Did Podcast</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </div>
+</nav>
+
+
+</div>
+                <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
+	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#goals">Goals</a></li>
+    <li><a href="#handshake">Handshake</a></li>
+    <li><a href="#custom-aead-construct">Custom AEAD construct</a></li>
+    <li><a href="#message-size">Message size</a></li>
+    <li><a href="#aead-performance">AEAD performance</a></li>
+    <li><a href="#v1-vs-v2-message-structure">v1 vs v2 message structure</a></li>
+    <li><a href="#open-questions">Open questions</a></li>
+    <li><a href="#next-steps">Next steps</a></li>
+    <li><a href="#countersign-a-secret-authentication-protocol">Countersign: a secret authentication protocol</a></li>
+    <li><a href="#post-quantum">Post-quantum</a></li>
+    <li><a href="#previous-talks">Previous talks</a></li>
+  </ul>
+</nav>
+</div>
+</div>
+                <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+                
+
+<h1>P2P Encryption (2019-06-07)</h1>
+
+
+    <p><i>Transcript by: Bryan Bishop</i></p>
+
+
+<p>p2p encryption</p>
+<p><a href="https://twitter.com/kanzure/status/1136939003666685952">https://twitter.com/kanzure/status/1136939003666685952</a></p>
+<p><a href="https://github.com/bitcoin-core/bitcoin-devwiki/wiki/P2P-Design-Philosophy">https://github.com/bitcoin-core/bitcoin-devwiki/wiki/P2P-Design-Philosophy</a></p>
+<p>&ldquo;Elligator Squared: Uniform Points on Elliptic Curves of Prime Order as Uniform Random Strings&rdquo; <a href="https://eprint.iacr.org/2014/043">https://eprint.iacr.org/2014/043</a></p>
+<h1 id="introduction">Introduction</h1>
+<p>This proposal has been in progress for years. Many ideas from sipa and gmaxwell went into bip151. Years ago I decided to try to move this forward. There is bip151 that again most of the ideas are not from myself but come from sipa and gmaxwell. The original proposal was withdrawn because we figured out ways to do it better. Since people have started to implement bip151, I decided to not alter that proposal because it would end up with confusion.</p>
+<p>So I have proposed v2 message transport protocol for the p2p network. This is a one-time chance to do things better, I think. I don&rsquo;t want to call it &ldquo;p2p encryption&rdquo; again because it has opportunity to do much more than just adding encryption.</p>
+<h1 id="goals">Goals</h1>
+<p>The goals are again to add opportunistic encryption; sometimes I regret not adding an authentication scheme into that proposal because people are still not super happy with the possibility of man-in-the-middle attacks. But it&rsquo;s a building block, and including everything into a proposal makes it too complex and there could be multiple authentication schemes and maybe picking one is not the best idea.</p>
+<p>It&rsquo;s also an opportunity to optimize the protocol. The goal isn&rsquo;t like censorship resistance.  It&rsquo;s just opportunistic encryption, not for censorship resistance. It has some nice properties of solving passive observers, but other than that it&rsquo;s more of a building block. Also, eliminate non-detectable message manipulation.</p>
+<h1 id="handshake">Handshake</h1>
+<p>Let&rsquo;s go over how it works. Here&rsquo;s the simple overview. The current proposal is that an initiator sends a 32 byte pubkey without any message header or anything else, it&rsquo;s just pure 32 bytes to the responder. The responder reads the 32 bytes and then detects whether it&rsquo;s a version 1 message magic, and does it start with the version of the magic. If yes, then it&rsquo;s a v1 protocol handshake then it continues with v1 because we still want to use v1. If it&rsquo;s not containing the magic in the version, then it treats the 32 bytes as a handshake. Then it does an ECDH, then he sends back his public key, and then on the other side we do ECDH and have a shared secret.</p>
+<p>Q: Aren&rsquo;t public keys 33 bytes?</p>
+<p>A: Yes they are 33 bytes in general. We use only odd pubkeys, though. Why? Good question. Censorship resistance is not a property. I think gmaxwell came up with the idea to say okay, if we use a 32-byte only on pubkeys then it looks random, it&rsquo;s not random but it looks random. It&rsquo;s not as easy to identify. You can&rsquo;t do naieve traffic analysis anymore. You could do more advanced traffic analysis, but it&rsquo;s not just &ldquo;match these bytes, oh it&rsquo;s probably bitcoin&rdquo;. The handshake otherwise would always be obvious to observers.</p>
+<p>Q: What&rsquo;s the more advanced traffic analysis?</p>
+<p>A: You would be able to see if there&rsquo;s many connections from a single IP, and maybe all of the 32 bytes are good ECDSA curve x-coords, and if they are all valid coordinates then it&rsquo;s more likely that it&rsquo;s using this protocol.</p>
+<p>Also, pubkeys are not allowed to start with magic, otherwise we would break backward compatibility. We do the handshake, and then it uses symmetric encryption. ECDH is also something that is already available in libsecp256k1. We do ECDH with our current secp256k1 curve. It&rsquo;s not new crypto in that sense.</p>
+<p>Q: Instead of sending an x-coordinate, just send randomness and hash it up?</p>
+<p>A: You can encode a public key in 64 bytes and then it really looks like random. I&rsquo;m not sure it&rsquo;s worth it to do that, but it could be done. Allocators, right? Yes. Let&rsquo;s talk about that later. It&rsquo;s probably not worth it because there&rsquo;s so many other traffic analysis things you can do that are trivial to identify bitcoin traffic, like all the messages being roughly the same size or predictable sizes. You would have to send a constant stream of data or something. The biggest traffic analysis is looking at the size of packets and the timing and correlation of packets between nodes. Unless we&rsquo;re going to add in garbage packets to make the bandwidth look constant, then there&rsquo;s not much you can do there. This is not something that would be in Bitcoin Core but maybe something else on top of Bitcoin Core. Well then we would be the only application with constant bandwidth&hellip;</p>
+<h1 id="custom-aead-construct">Custom AEAD construct</h1>
+<p>Once you have a shared secret after the handshake, the proposal is to use ChaCha20Poly1305 for symmetric encryption, a custom AEAD construct. ChaCha20 is the stream cipher, and Poly1305 is the MAC. Also, some devices have hardware elements that do these instructions. ChaCha20 is merged in Bitcoin Core and Poly1305 is merged.</p>
+<h1 id="message-size">Message size</h1>
+<p>Q: What about the performance between that and hashing the full message?</p>
+<p>A: That&rsquo;s a good question, let&rsquo;s skip forward to that. I gathered some traffic over a 24 hour period on a standard node, that means serving blocks. No changes to configuration parameters. There, we can see that almost more than 1/3rd of messages sent are below 64 bytes. So what I want to say with that is that most of the messages are very small, and more than one third is below 64 bytes. So it&rsquo;s worth optimizing for small messages. Prune peers it&rsquo;s a bit less. Is this because pruned nodes don&rsquo;t serve merkle proofs? INV just shoots out&hellip; for now. That&rsquo;s just btcflood.</p>
+<p>Why is blocktxn so much for Bitcoin Core send message bytes with prune during a random 9 hours? This was a long-running Bitcoin Core node. This is sent bytes. So you could be talking to a peer that doesn&rsquo;t have a good mempool. Block reconstruction fails all the time, and if it fails then it&rsquo;s going to be a lot of bytes more than compact blocks, so that ratio could make sense.</p>
+<p>Do we have these numbers in getnetworkinfo? If you disconnect from a peer, they are just gone. This is from debug log.</p>
+<p>So, it&rsquo;s clear that we have a lot of small messages.</p>
+<h1 id="aead-performance">AEAD performance</h1>
+<p>There&rsquo;s an IETF proposal of ChaCha20Poly1305 which is good, but then OpenSSH took that proposal and improved it by encrypting the length field. The IETF proposal has the length unencrypted and it&rsquo;s very easy to identify packets. You can&rsquo;t pad with random data, it&rsquo;s a bit more straightforward. So OpenSSH changed it a bit and made encrypting the length be a part of the AD field. We took that and optimized it further for small messages, which is only a slight change. The change is visible here&hellip;.  This is the openssh version, there&rsquo;s a handshake, there&rsquo;s two keys from the handshake, there&rsquo;s one ChaCha20 round, and then we derive the Poly1305 key, and then we do n ChaCha20 rounds for encrypting the payload. A ChaCha20 round is always 64 bytes so you need to do it anyway. So you would throw away 32 bytes of the Poly1305 key&hellip; but for each message, we do a ChaCha20 round for just encrypting 4 bytes length. So we don&rsquo;t use 60 bytes of a computational part, it&rsquo;s 4 bytes AD. In Bitcoin Core, we reuse that stream, so we can reduce one ChaCha20 round for a 64-byte message, or we only have to do it once every 21 times. The weird thing in ChaCha20 output is that it has a variable number of variable length blobs that come out. There&rsquo;s an IV that counts which message you want, and then there&rsquo;s a counter for the bytes within that. It seems that in ChaCha20Poly1305 OpenSSH one, they basically don&rsquo;t use the fact that all of these messages are variable length, they just generate the new message and use the first bytes. That seems simpler to treat ChaCha20 as a stream cipher and use the bytes that come out. The strema cipher is nice, it just stores the plaintext actual string position and you could calculate it upfront when you&rsquo;re not using the CPU and then store when you want to encrypt. You can use unused CPU time. This is the optimized version.</p>
+<p>So what are the numbers? Again, I haven&rsquo;t done thousands of queries. It&rsquo;s just one. I used an x86 i7-8700, and another on AARCH64. I compared hash (the existing double hash), bitcoin, and OpenSSH. The current version is 4 bytes checksum in every message, and the checksum is calculated by double hashing over the whole message and then truncate the whole thing to 4 bytes which is not super fast. That&rsquo;s why we can make the protocol faster by adding encryption, which is hard to understand. But it&rsquo;s not always faster.</p>
+<p>Hashing a one megabyte message takes more than double the time. So it&rsquo;s 3.8 milliseconds. What is bench reporting, seconds? Hashing a megabyte should be in a millisecond range yeah. Focus on the relative difference instead of the actual numbers. Encrypting a one megabyte message takes less time than using the hash method. On a large message, we don&rsquo;t benefit against OpenSSH. But on a 256 byte message there&rsquo;s a difference, and a 64 byte message has an even larger difference with OpenSSH and both are faster than the double hash method.</p>
+<p>The alternative proposal would be, not encrypting and dropping sha256. I don&rsquo;t think that&rsquo;s a good idea. It has been floating around on the mailing list though.</p>
+<p>For the performance, you can cache 2 MB of stream, for block propagation. I think in general using ChaCha20 has a lot of potential for optimizing in the future.</p>
+<h1 id="v1-vs-v2-message-structure">v1 vs v2 message structure</h1>
+<p>v1 message: 4 bytes net magic, 12 bytes message command, 4 bytes length, 4 bytes double-sha256 checksum, variable bytes payload, and it&rsquo;s at least 24 bytes total.</p>
+<p>v2 message: 3 bytes encrypted length, 1-13 bytes message command, variable length bytes payload, 16 bytes MAC (message authentication code), and it&rsquo;s at least 20 bytes total.</p>
+<p>If you want to send with v2 something that is larger than 8 MB, then you need to split it up into packets, which would be a good idea anyway. You have to do it anyway. So gigameg blocks, we chunk those out. We also move away from the 12 bytes message command and use a single byte zero-12 identifying the length, so if the first byte is between 0 and 12 then it means a length then the rest is a standard-variable length encoded value. If it&rsquo;s above 12, then we identify it as a short id, so 13 could be INV etc but that table still needs to be made. We can use a single byte for sending a command rather than a string. This is a general optimization that has nothing to do with encryption.</p>
+<p>It&rsquo;s either 1 byte or 12 bytes. We don&rsquo;t want to eliminate string-based commands. If you&rsquo;re already going to have the optimization for most messages are going to be one byte, why not have a byte that says the next 12 bytes are command.  It&rsquo;s a bit different. That would mean you always have to send 12 bytes&hellip; No, you wouldn&rsquo;t ever actually do that unless you&rsquo;re sending a custom message. Can we not add more variable length stuff? What&rsquo;s wrong with variable length? This reserves 212 short IDs. Adding variable length stuff sucks, in general, in any protocol. This is an optimization you&rsquo;re not ever going to use, thus adding complexity to the protocol. So you could say 255 means the next 12 bytes are message command&hellip; This is not worth discussing. I don&rsquo;t want a parser that includes variable length command strings. I don&rsquo;t want to implement that. I really don&rsquo;t. I see the point, it&rsquo;s reasonable. We can discuss that further.</p>
+<p>Using the v2 message protocol, it means messages are not larger, they could even be larger due to the short command ID.</p>
+<p>Q: Do we really need a 16 byte MAC? Can we reduce that?</p>
+<p>A: We shouldn&rsquo;t. I would prefer 32 byte MAC. Poly1305 is a well-studied MAC and it has 16 byte outputs.</p>
+<p>Q: Well, I don&rsquo;t know anything about cryptography.</p>
+<p>A: Me either. Let&rsquo;s send it twice! ((laughter))</p>
+<p>We could say version 2 only supports INVs or something. But this brings special planning into this. The great thing with strings is that collisions are less likely to happen. Someone has to maintain the table of all the p2p messages. We already have a handshake and version negotiation. It doesn&rsquo;t matter if someone else is doing other p2p messages. We&rsquo;re not going to connect to those weird nodes anyway, right? If we use bytes only, then everyone has to update the BIP.</p>
+<p>Does the length include the checksum and the type and all of that? Or just the name of the command? The length is only containing the payload, just the payload. So you will have to understand how to parse the type because I can&rsquo;t just skip it. Right? You need to read the first byte, and then you can skip the rest. I also need to support the variable length type. You need to read the first 4 bytes so that you know how many bytes to skip. The encrypted length may need to be the size of the entire packet, but there&rsquo;s concerns about having a padding oracle&hellip;.. That&rsquo;s the reason why the length is encrypted by a different cipher, to avoid people being able to infer information from it by observing how you respond to invalid messages. We need to think about that. In the openssh version, the MAC is not included in the length&ndash; sure, that&rsquo;s easy, but for the variable things&hellip; That&rsquo;s a good question. It should include the size of the message command as well. The MAC doesn&rsquo;t matter, it&rsquo;s constant-sized. But I think the length needs to include everything of variable size. So you can packetize your stream by decrypting your length fields and not looking at anything else. It must cover the variable length. You could encrypt the first four bytes with a special cipher but this is not ideal.</p>
+<p>In v1, INV is a 61 byte message, and in v2 INV is 57 bytes.</p>
+<p>3 bytes for the length, giving 24 bits. The most significant bit is used for triggering a rekey. So we can only use 23 bits. The one bit reserved triggers a rekey which means we need to use the next key for the symmetric cipher.</p>
+<p>Longer messages could use multi-part messages, like gigablocks or whatever.</p>
+<p>Q: Have you done any benchmarking on constructing the MAC?</p>
+<p>A: It&rsquo;s in the code, if you run bench, it gives you Poly1305 benchmarks.</p>
+<p>Q: So those graphs you showed included Poly1305?</p>
+<p>A: They included two rounds of ChaCha20. It&rsquo;s not only ChaCha20, it&rsquo;s the whole thing, the whole stream cipher. It compares double sha against the AEAD construction.</p>
+<p>Q: The MAC covers the rest of the packet?</p>
+<p>A: The AD is just the encrypted length, and the MAC goes over everything including the id. It&rsquo;s the payload and the command, but yeah.</p>
+<h1 id="open-questions">Open questions</h1>
+<p>This is an opportunity to change the protocol. If there&rsquo;s other ideas then we should eventually work them into that proposal. I think we should call this &ldquo;v2 transport protocol&rdquo; rather than calling it encrypting. The question Tim raised yesterday is, what do we need to consider now so that we don&rsquo;t break future improvements in terms of when cryptography gets broken? Or downgrade attacks? Here, we start with sending a public key, but if it&rsquo;s a symmetric string then we fallback to v1, but now the first thing we send is basically random, so what if at some point in the future we want v3. How do we do that upgrade? At the moment it&rsquo;s not possible; send even keys? If we want to add another handshake, we could do that handshake first and then do a second handshake. We also have the service flag. We could add another port. We already support binding multiple listening sockets. The way to do it as an upgrade is if you want to do this v3 thing, then you first do the v2 handshake, then you negotiate using v2 messages to handshake v3.</p>
+<p>At the moment, the proposal seems like a between wanting encryption and it should look like random data but not too much because we don&rsquo;t want to invest too much bandwidth. Usually protocols start with what we have at the moment, like a magic string, some version number, and now we have optimized that away to look like random, and we encrypt the length to make it look like random. IETF doesn&rsquo;t encrypt the length because they assume message length should be visible or doesn&rsquo;t need to be confidential. At the beginning we send an x coordinate, which could still be distinguished. I think we should either go for 64 byte public keys to make them really&ndash; then the entire protocol looks like random data, except you can do traffic analysis like timing and length. Or we pad stuff. Or we say this is not a goal, and we can have another magic string, and we don&rsquo;t have to encrypt length, and have a version number. We should pick what the goals are.</p>
+<p>There&rsquo;s definitely something in between&ndash; there&rsquo;s a difference between being able to do trivial traffic analysis where you match on the first five bytes and knowing what it is, versus having to put in some quantity of CPU to figure out whether this is bitcoin traffic. This is a massive difference for many practical applications.</p>
+<p>There&rsquo;s a few cohices. Maybe we don&rsquo;t care about traffic analysis, maybe it&rsquo;s all random, and maybe it looks random to a CPU-constrained observer. I think the CPU-constrained observer is the most important threat model. As soon as the key exchange is done, everything really looks random, so why not take this low-hanging fruit of adding more bytes in the handshake? Well, they could just see your traffic spiked after receiving a bitcoin block and therefore you&rsquo;re running bitcoin.</p>
+<p>In terms of upgrade, don&rsquo;t underestimate making a new port and having that be the new protocol. Otherwise you&rsquo;re doing TLS and start TLS. In bitcoin, there&rsquo;s no reason to not keep binding new ports for every single protocol we want. We could say 8336 we assume that&rsquo;s v2&hellip; What if people want to use a different port? There&rsquo;s no reason to not use a different port. If you can&rsquo;t bind 8336, you can&rsquo;t bind something else. If a country blocks 8333, you cannot start a new node. You do a DNS seed, everything is 833x, you can&rsquo;t connect.</p>
+<p>You can do a DDoS by advertising a bunch of services, then all the nodes try to connect and make random connections to that service. I run a bitcoin node that uses a non-standard port, and it has literally never received a legitimate connection from a Bitcoin Core node. If you use the same port, then all this anti traffic analysis stuff is sort of worthless. You need to allow unique port numbers.</p>
+<p>Would it be useful to reuse the upper 32 bytes of that Poly1305 round? For encrypting the payload? Only for creating the poly1305 key. We always throw away that 32 bytes. As long as you don&rsquo;t mix it with the other key; you need to keep the two things separate. ChaCha20 just gives you as many random numbers as you want. The openssh proposal is stupid throwing away those things&hellip; I think it was an implementation choice that reduced a couple bytes of state they would have had to keep track of, it&rsquo;s a counter for a message and that&rsquo;s all you need. It made it a little faster, but not substantially. I might try to implement something there.</p>
+<h1 id="next-steps">Next steps</h1>
+<p>ChaCha20 has been merged. Poly1305 has been merged. The AEAD construct has been pull requested. It has test vectors, it has bench, it is stable. It needs total review by cryptography people. It&rsquo;s not new crypto but it is a new construct. It&rsquo;s not like walking on a frozen lake, but it&rsquo;s still similar to walking on ice. Needs more review and to build up momentum. It has a full implementation. It works, although it&rsquo;s not good.</p>
+<p>After the version handshake, you send the version message. After the crypto message, yes.</p>
+<p>As an alternative to using the elegator square 64 byte construction, you could be permitted to send a number of non-valid x-coordinates before the actual x-coordinate and then you use a poisson distribution for this. You read 32 bytes, is it a valid x-coordinate, yay go, and if not skip it and continue. I think this actually looks random. The sad point of this is that you end up with things on 32 byte boundaries that are also identifiable. Why not elegator squared?</p>
+<p>One of the properties should be that we have a dependency in terms of having external libraries or something&hellip;.. I don&rsquo;t think that&rsquo;s necessary, and it also complicates.. not every project that wants to implement p2p protocols has the same resources to develop. We&rsquo;d add it to libsecp256k1 if we do that.. Yeah, that&rsquo;s true. There&rsquo;s more concerns than just &ldquo;can we implement it&rdquo;.</p>
+<p>Making it look random is not that much of a goal, especially if we go to this effort and leave the port the same. It seems clearly a boneheaded move. This is what gets detected now. If you run on that port, you get emails. This is what gets detected for &ldquo;I want to identify people running Bitcoin but I&rsquo;m not trying to block people running Bitcoin&rdquo;. This is just a really easy step, you just block port 8333 incoming. If someone is trying to mess with bitcoin, that&rsquo;s what you do on day one, not on day five. Well, we need to have something else, then blocking it just works. If we care about traffic analysis at all, then the first thing to do is randomize the ports.</p>
+<p>Well, then let&rsquo;s talk about randomizing the ports.</p>
+<p>Tor is a good example. It solves censorship resistance for a bunch of applications. I don&rsquo;t think we want to include censorship resistance techniques. It&rsquo;s a layering violation. But we are, to some extent. If there&rsquo;s low hanging fruit, then we can do it. But changing the port is low hanging fruit. Well, then we should have a real version field or magic byte string, this makes it much easier to upgrade to future versions. I see, that&rsquo;s a good point. This was the entire story of TLS upgrade sadness and you have to convince the person that you are talking in the new protocol and go to enormous lengths to make messages look compatible or incompatible to certain versions. Having a version field can result in a downgrade attack if you don&rsquo;t do it in the right way.</p>
+<p>Someone asked, if we do see an attack, would we randomize the port? Well, maybe you don&rsquo;t take the last step, but make it easily available, like making it an option. If I am internet gateway and I want to block internet traffic. I just block all the ipv4 listening ports. Port randmization doesn&rsquo;t help you when you have a small network. You need to name the attacker. What are you trying to mitigate? Comcast sending people emails because hey you have port 8333 open.. I&rsquo;ve gotten emails from MIT about me running something on port 8333.</p>
+<p>We don&rsquo;t want to have a new port number for this specific thing because people have to update their router to allow port forwarding. We should keep the port they are currently using, because it&rsquo;s hard to get people to open it. But we should have a feature for randomization to be used in the future.</p>
+<p>How many nodes are behind NAT? What percentage of nodes are behind NAT? Most people when they run Bitcoin Core they don&rsquo;t open up the port and we turned off UPNP a long time ago. Luke-jr has some analysis of listening and non-listening nodes. Can&rsquo;t you use ipv6 for this? Europol said they would really like to use ipv6 so they can attribute copyright infringement to specific devices instead of just &ldquo;somewhere in this home&rdquo;. Yeah it was my refrigerator.</p>
+<p>When do you do the rekeying bit step? The AEAD with ChaCha20 in general you&rsquo;re never supposed to reuse the same key with the same nonce. You need to rekey when the nonce hits the limit and starts to overflow. That&rsquo;s the max. To be safe and to follow other protocol practices, you usually rekey after 1 gigabyte of data. It&rsquo;s also up to the client in our case. The client can trigger or initiate a rekey by sending that bit. That means both sides re-hash or just hash the current symmetric key so it&rsquo;s perfect forward secrecy. When an attacker attempst to grab the key for various reasons, then&hellip;.</p>
+<p>If the client doesn&rsquo;t do rekeying, what does the receiver do? If you flip the bit, then it means it must rekey. So if they don&rsquo;t do it, then you need to disconnect immediately. If the rekey comes on every message because of a CPU attack then you also need to disconnect.</p>
+<p>Q: Why strip authentication out of this?</p>
+<p>A: There is a form of authentication in the proposal. The proposal states that the clients or the implementations following the proposal must show the session id. The session id is currently an ECDH secret hashed into a specialized form into a string. That&rsquo;s after the handshake has been done. Each side can compare the session id. This is authentication although it&rsquo;s not practical, and you need to do that after every handshake with every peer is not practical.</p>
+<p>Q: Would it be practical to HD-derive these pubkeys you present, like given this pubkey you know you&rsquo;re talking to this guy?</p>
+<p>A: That&rsquo;s authentication. There&rsquo;s still bip150, which is an authentication scheme which is still valid with this proposal. The problem is, you need to understand how the current authentication happens. One way we do authentication on the internet is certificate authorities like TLS stuff. This doesn&rsquo;t work for bitcoin. The second one is the SSH form which is pinning down on first-use. I think it&rsquo;s also not something we should do. In ethereum, nodes have a public identifier. SSH does the trust on first use model. You connect, you get the fingerprint, you pin the fingerprint. If you have an attacker during that first connection then you&rsquo;re fucked I guess. Lightning publishes its own public key. In lightning, nodes have an identity, but in bitcoin they don&rsquo;t. You have to prove ownership of a travel. Electrum is trust on first use, too.</p>
+<p>We could have multiple uathentication schemes. One is comparing session ids which is sort of stupid. Another is bip150 where you do out-of-band share of the keys. Then there&rsquo;s the scheme that Pieter came up with once that I sadly can&rsquo;t find the link for anymore. It&rsquo;s awesome. Anyway, there are many potential authentication schemes.</p>
+<p>It would be interesting to use the lightning gossip system to connect bitcoin nodes. It&rsquo;s mixing abstraction. You can supply your own authoritative like, &ndash; it could be external.</p>
+<p>People complain that it&rsquo;s not man-in-the-middle safe, which is true. But we can&rsquo;t build everything at once. But this is more complicated than that; in bitcoin, we&rsquo;re generally talking about not just authenticated connections but also an identityless system. If you assume your attacker can spin up their own nodes that have as much identity as the thing you are trying to connect to, then they can spy on you. There&rsquo;s a weak argument for encryption: it rules out certain kinds of attacks, but we should be careful about stating what its advantages are on its own. I like how you talk about how it is a building block, not something that immediately solves the other problems. I also like that it&rsquo;s a performance improvement, although that&rsquo;s a low bar.</p>
+<p>The blockchain data is public, but traffic is not meant to be public. This proposal doesn&rsquo;t make it private, but it&rsquo;s on the way. One simple attack is your ISP listening to your transactions. The ISP can do man-in-the-middle but that&rsquo;s extra work and maybe detectable or something.</p>
+<p>The opportunistic encryption, if you&rsquo;re an ISP doing man-in-the-middle listening to a connection, I can listen without the user having a chance to detect it. But after that, there are session identifiers. The ISP must take the risk that its tampering could be identified. Just the risk on identifyability will convince them not to do that. But to make that argument, you must talk about authentication. If you only do encryption and nothing else, then the argument doesn&rsquo;t hold. You need to bring authentication or at least the option of authentication into scope as &ldquo;why encryption itself is useful&rdquo;. The absolute minimum for that is a session id, and that&rsquo;s enough for a security researcher to catch a big ISP doing it. Also, ISPs must calculate that there might be a covert authentication form not published because we obviously want to detect ISPs doing the wrong things.</p>
+<p>The biggest threat on the internet today is pervasive monitoring, and encryption makes it reasonably difficult for CPU-bound attackers. If you&rsquo;re running a service that is using an encrypted socket, I can just connect to you and now I&rsquo;m your peer anyway&hellip;. This makes traffic analysis take actual effort.</p>
+<p>For encryption, you have to be in the middle. Perasive monitoring generally means you&rsquo;re not man-in-the-middle you&rsquo;re just monitoring packets. You can only decrypt if you&rsquo;re the peer or in the middle. If you&rsquo;re an ISP, you can install something on the router to listen to the traffic, manipulate packets, observe packets, no cost, no handshake nothing. But if you want to man-in-the-middle this protocol, you need to actively intercept the handshake and fix up the keys, track each peer, it&rsquo;s way more complex to do. Imagine you&rsquo;re a surveillance entity where what you get is a live dump of packets across the internet.</p>
+<h1 id="countersign-a-secret-authentication-protocol">Countersign: a secret authentication protocol</h1>
+<p><a href="https://gist.github.com/sipa/d7dcaae0419f10e5be0270fada84c20b">https://gist.github.com/sipa/d7dcaae0419f10e5be0270fada84c20b</a></p>
+<p>The bitcoin network is mostly consisting of identityless peers. But there is identity in the form of &ldquo;I have a trusted peer with this IP address&rdquo;. That is a form of identity. It&rsquo;s a horrible easily fakeable one but it is used. Like I have a VPS on my phone and I&rsquo;m going to configure it to connect to that IP address because it&rsquo;s a node that I trust. The nice thing you could do if you had an authentication mechanism that is where you could query someone hey are you identity x without telling them what x is, and so, they don&rsquo;t know what they are being queried for and they don&rsquo;t know whether they are successful at authenticating. It is possible. It sounds impossible, but it is in fact possible. What you do is you always run this authentication protocol over every connection. If you don&rsquo;t care who the other peer is, then in 99% of the cases, you say you run the protocol with a random key and he won&rsquo;t know what is being asked for and he responds in a way and you learn that of course he is not because you did a random public key and you ignore it. But when you do want authentication, you query for the right key, they still don&rsquo;t know whether they are, but you learn yep I&rsquo;m connected to the node I want. A nice thing is that a man-in-the-middle cannot distinguish between these two scenarios. They can&rsquo;t tell if the other party is&mdash; well, they can tell after disconnect because they had the wrong key. Maybe you shouldn&rsquo;t disconnect. It depends. Generally you want to keep a connection open and treat it as a random connection. The man-in-the-middle always has the ability to see well, if authentication is optional at all, we&rsquo;re only going to run the authentication protocol some of the time, the MITM can just say I&rsquo;m going to intercept every connection and hwen I see an authentication attempt I am going to disconnect and blacklist these two IP addresses and not interfere anymore and this probably won&rsquo;t be detected. But if you always run the protocol, they only have either the option of dropping every connection or being detected. You know the identity key of your server, so you can configure it on your phone to connect to that one. But there is no observable identity for that server. You&rsquo;re just not publishing the public key. The other peer knows it. It&rsquo;s unobservable. It&rsquo;s not possible to leak it unless you give the key to someone. Also, you should not reuse identity keys&ndash; well, it shouldn&rsquo;t matter because you are only using this protocol for yourself not to connect to peers. It&rsquo;s a zero-knowledge protocol, an observer learns nothing. This is not bip150. In bip150, if you have a failed connection and later learn the public key that you could have connected to, you can correlate those failed connections with that public key. But here in this proposal you learn nothing. It&rsquo;s a query, are you key x but it&rsquo;s a randomized&ndash; it&rsquo;s two points that go over the wire and they look random, and there&rsquo;s a response which is you take those two points and your private key and you get two points back which look random to everyone except someone who has the corresponding public key.</p>
+<h1 id="post-quantum">Post-quantum</h1>
+<p>I think PQ is too much for this proposal. I think adding post-quantum makes no sense. It makes sense for tor because if I communicate something today it might still be secret in 20 years. There&rsquo;s probably people collecting lots of tor data now in the hopes of decrypting it in 20 years. If there&rsquo;s an easy and obvious way of adding post-quantum then you should do it. If you&rsquo;re CPU bound you do timing and bandwidth analysis anyway, so you don&rsquo;t gain much from adding post-quantum.</p>
+<p>One thing that would be useful is a version field or some way to upgrade for post-quantum in the future even if a solution is not included in the proposal. If we add post-quantum now, there is no way we can make that look totally random as far as I know. There might be a way you can. Maybe you can, I don&rsquo;t know.</p>
+<h1 id="previous-talks">Previous talks</h1>
+<p><a href="https://diyhpl.us/wiki/transcripts/sf-bitcoin-meetup/2017-09-04-jonas-schenlli-bip150-bip151/">https://diyhpl.us/wiki/transcripts/sf-bitcoin-meetup/2017-09-04-jonas-schenlli-bip150-bip151/</a></p>
+<p><a href="https://diyhpl.us/wiki/transcripts/scalingbitcoin/milan/bip151-peer-encryption/">https://diyhpl.us/wiki/transcripts/scalingbitcoin/milan/bip151-peer-encryption/</a></p>
+
+
+    
+
+
+                    
+                    <div class="row"></div> 
+
+                </div>
+
+            </div> 
+
+        </div> 
+<script src="//bitcointranscripts.github.io/lib/jquery.min.js"></script> 
+<script src="//bitcointranscripts.github.io/lib/popper.min.js"></script> 
+
+<script src="//bitcointranscripts.github.io/js/bootstrap.min.js"></script> 
+
+
+<script type="text/javascript" src="/plugins/lunr.min.js"></script>
+<script type="text/javascript" src="/plugins/auto-complete.js"></script>
+<link href="/plugins/auto-complete.css" rel="stylesheet">
+<script type="text/javascript">
+  
+      var baseurl = "\/\/bitcointranscripts.github.io\/";
+  
+</script>
+<script type="text/javascript" src="/plugins/search.js"></script>
+
+
+<script type="text/javascript" src="//bitcointranscripts.github.io/js/custom.js"></script>
+
+
+<script type="text/javascript" src="/plugins/clipboard.js"></script>
+<script>
+  new ClipboardJS('.btn');
+</script>
+</body>
+</html>

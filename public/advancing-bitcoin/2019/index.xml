@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Advancing Bitcoin 2019 on ₿itcoin Transcripts</title>
+    <link>//bitcointranscripts.github.io/advancing-bitcoin/2019/</link>
+    <description>Recent content in Advancing Bitcoin 2019 on ₿itcoin Transcripts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="//bitcointranscripts.github.io/advancing-bitcoin/2019/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Matt Corallo Rust Lightning (2019-02-07)</title>
+      <link>//bitcointranscripts.github.io/advancing-bitcoin/2019/2019-02-07-matt-corallo-rust-lightning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/advancing-bitcoin/2019/2019-02-07-matt-corallo-rust-lightning/</guid>
+      <description>Matt Corallo
+Flexible Lightning in Rust
+Video: https://vimeo.com/316624439
+Slides: https://docs.google.com/presentation/d/154bMWdcMCFUco4ZXQ3lWfF51U5dad8pQ23rKVkncnns/edit#slide=id.p
+https://twitter.com/kanzure/status/1144256392490029057
+Introduction Thanks for having me. I want to talk a little bit about a project I’ve been working on for about a year called rust-lightning. I started it in December so a year and a few months ago. This is my first presentation on it so I’m excited to finally get to talk about it a little bit.
+Goals It is yet another Lightning implementation because somehow we needed another one I guess or really not.</description>
+    </item>
+    
+  </channel>
+</rss>

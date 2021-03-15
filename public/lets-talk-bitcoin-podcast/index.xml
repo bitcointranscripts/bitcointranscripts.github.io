@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lets Talk Bitcoin Podcast on ₿itcoin Transcripts</title>
+    <link>//bitcointranscripts.github.io/lets-talk-bitcoin-podcast/</link>
+    <description>Recent content in Lets Talk Bitcoin Podcast on ₿itcoin Transcripts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="//bitcointranscripts.github.io/lets-talk-bitcoin-podcast/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Christopher Jeffrey Consensus Barnacles (2016-12-25)</title>
+      <link>//bitcointranscripts.github.io/lets-talk-bitcoin-podcast/2016-12-25-christopher-jeffrey-consensus-barnacles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/lets-talk-bitcoin-podcast/2016-12-25-christopher-jeffrey-consensus-barnacles/</guid>
+      <description>Name: Christopher Jeffrey (JJ)
+Topic: Barnacles of Consensus
+Location: Let’s Talk Bitcoin podcast (Episode 319)
+Date: December 25th 2016
+Audio: https://letstalkbitcoin.com/blog/post/lets-talk-bitcoin-319-barnacles-of-consensus
+SF Bitcoin Devs presentation on Bcoin: https://diyhpl.us/wiki/transcripts/sf-bitcoin-meetup/2016-09-28-christopher-jeffrey-bcoin/
+Breaking Bitcoin presentation on consensus pitfalls: https://diyhpl.us/wiki/transcripts/breaking-bitcoin/2017/2017-09-10-christopher-jeffrey-consensus-pitfalls/
+History of Bcoin Adam Levine (AL): JJ thanks for being here today.
+Christopher Jeffrey (JJ): Thanks man. Glad to be here.
+AL: We are going to jump right into it with the elephant in the room on all this stuff.</description>
+    </item>
+    
+    <item>
+      <title>Consensus Uasf And Forks (2017-06-04)</title>
+      <link>//bitcointranscripts.github.io/lets-talk-bitcoin-podcast/2017-06-04-consensus-uasf-and-forks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/lets-talk-bitcoin-podcast/2017-06-04-consensus-uasf-and-forks/</guid>
+      <description>Name: Andreas Antonopoulos
+Topic: On Consensus and All Kinds of Forks
+Location: Let’s Talk Bitcoin podcast (Episode 333)
+Date: June 4th 2017
+Audio: https://letstalkbitcoin.com/blog/post/lets-talk-bitcoin-333-on-consensus-and-all-kinds-of-forks
+User activated soft forks vs hard forks Adam Levine (AL): I’m trying to look at the user activated soft fork thing and not see hypocrisy just steaming out of its ears. I’m really in need of you to help me understand why this is not the case Andreas.</description>
+    </item>
+    
+    <item>
+      <title>Ltb Pieter Wuille Jonas Nick (2019-06-09)</title>
+      <link>//bitcointranscripts.github.io/lets-talk-bitcoin-podcast/2019-06-09-ltb-pieter-wuille-jonas-nick/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/lets-talk-bitcoin-podcast/2019-06-09-ltb-pieter-wuille-jonas-nick/</guid>
+      <description>Let&amp;rsquo;s Talk Bitcoin with Pieter Wuille and Jonas Nick - June 9th 2019
+https://twitter.com/kanzure/status/1155851797568917504
+Part 1: https://letstalkbitcoin.com/blog/post/lets-talk-bitcoin-400-the-tools-and-the-work
+Part 2: https://letstalkbitcoin.com/blog/post/lets-talk-bitcoin-401-the-tools-and-the-work-part-2
+Draft of BIP-Schnorr: https://github.com/sipa/bips/blob/bip-schnorr/bip-schnorr.mediawiki
+Draft of BIP-Taproot: https://github.com/sipa/bips/blob/bip-schnorr/bip-taproot.mediawiki
+Draft of BIP-Tapscript: https://github.com/sipa/bips/blob/bip-schnorr/bip-tapscript.mediawiki
+Part 1 Adam: On this episode we&amp;rsquo;ll be digging deeply into some of the most important changes coming soon to the Bitcoin protocol in the form of BIPs or Bitcoin Improvement Proposals focused on Taproot, Tapscript and Schnorr signatures.</description>
+    </item>
+    
+  </channel>
+</rss>

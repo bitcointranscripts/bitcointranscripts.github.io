@@ -1,0 +1,7274 @@
+<!DOCTYPE html>
+<html><head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="canonical" href="//bitcointranscripts.github.io/scalingbitcoin/tokyo-2018/edgedevplusplus/abstract-thinking-about-consensus-systems/">
+
+    <title>
+        
+        Abstract Thinking About Consensus Systems | ₿itcoin Transcripts
+        
+    </title>
+
+    
+    <link href="//bitcointranscripts.github.io/css/fontawesome.min.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="//bitcointranscripts.github.io/css/ace.min.css">
+
+    
+    
+        
+    
+
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id="navbarMain">
+    <div class="container">
+        <div>
+            <a class="navbar-brand" href="//bitcointranscripts.github.io/">
+                
+                ₿itcoin Transcripts
+            </a>
+        </div>
+        
+            <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarMainCollapse" aria-controls="navbarMainCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMainCollapse">
+              <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://github.com/bitcointranscripts/bitcointranscripts" target="_blank">
+                                  <i class='fab fa-github'></i>
+                                </a>
+                            </li>
+              </ul>
+            </div>
+    </div>
+</nav>
+<div class="container-fluid">
+            <div class="row">
+
+                <div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
+    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#sidenav-left-collapse" aria-controls="sidenav-left-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+     <div class="collapse navbar-collapse align-items-start flex-column" id="sidenav-left-collapse">
+            <form class="form-inline my-2 my-lg-0 searchbox">
+                <input class="form-control mr-sm-2 w-100" data-search-input id="search-by" type="text" placeholder='Search (press "/")'>
+            </form>
+         <ul class="navbar-nav flex-column pt-3">
+
+    <li data-nav-id="/advancing-bitcoin/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/advancing-bitcoin/"><h6>Advancing Bitcoin</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/advancing-bitcoin/2019/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/advancing-bitcoin/2019/"><h6>Advancing Bitcoin 2019</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/advancing-bitcoin/2020/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/advancing-bitcoin/2020/"><h6>Advancing Bitcoin 2020</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/andreas-antonopoulos/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/andreas-antonopoulos/"><h6>Andreas Antonopoulos</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/andrew-chow/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/andrew-chow/"><h6>Andrew Chow</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/austin-bitcoin-developers/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/austin-bitcoin-developers/"><h6>Austin Bitcoin Developers</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/baltic-honeybadger/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/baltic-honeybadger/"><h6>Baltic Honeybadger</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/baltic-honeybadger/2018/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/baltic-honeybadger/2018/"><h6>Baltic Honeybadger 2018</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/baltic-honeybadger/2019/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/baltic-honeybadger/2019/"><h6>Baltic Honeybadger 2019</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/bit-block-boom/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/bit-block-boom/"><h6>Bit Block Boom</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/bit-block-boom/2019/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/bit-block-boom/2019/"><h6>Bit Block Boom 2019</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/bitcoin-core-dev-tech/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/bitcoin-core-dev-tech/"><h6>Bitcoin Core Dev Tech</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    <li data-nav-id="/bitcoin-core-dev-tech/bitcoin-devcore-2015/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/bitcoin-core-dev-tech/bitcoin-devcore-2015/"><h6>Bitcoin Devcore 2015</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/bitcoin-design/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/bitcoin-design/"><h6>Bitcoin Design</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/bitcoin-magazine/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/bitcoin-magazine/"><h6>Bitcoin Magazine</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/bitcoinedge/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/bitcoinedge/"><h6>Bitcoinedge</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/bitcoinedge/decentralized-financial-architecture-workshop/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/bitcoinedge/decentralized-financial-architecture-workshop/"><h6>Decentralized Financial Architecture Workshop</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/bitcoinops/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/bitcoinops/"><h6>Bitcoinops</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/bitcoinops/schnorr-taproot-workshop-2019/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/bitcoinops/schnorr-taproot-workshop-2019/"><h6>Schnorr Taproot Workshop 2019</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/black-hat/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/black-hat/"><h6>Black Hat</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/blockchain-protocol-analysis-security-engineering/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/blockchain-protocol-analysis-security-engineering/"><h6>Blockchain Protocol Analysis Security Engineering</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/blockchain-protocol-analysis-security-engineering/2017/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/blockchain-protocol-analysis-security-engineering/2017/"><h6>Blockchain Protocol Analysis Security Engineering 2017</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/blockchain-protocol-analysis-security-engineering/2018/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/blockchain-protocol-analysis-security-engineering/2018/"><h6>Blockchain Protocol Analysis Security Engineering 2018</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/blockstream-webinars/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/blockstream-webinars/"><h6>Blockstream Webinars</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/boltathon/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/boltathon/"><h6>Boltathon</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/breaking-bitcoin/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/breaking-bitcoin/"><h6>Breaking Bitcoin</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/breaking-bitcoin/2017/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/breaking-bitcoin/2017/"><h6>Breaking Bitcoin 2017</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/breaking-bitcoin/2019/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/breaking-bitcoin/2019/"><h6>Breaking Bitcoin 2019</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/building-on-bitcoin/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/building-on-bitcoin/"><h6>Building On Bitcoin</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/building-on-bitcoin/2018/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/building-on-bitcoin/2018/"><h6>Building On Bitcoin 2018</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/chaincode-labs/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/chaincode-labs/"><h6>Chaincode Labs</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/chicago-bitdevs/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/chicago-bitdevs/"><h6>Chicago Bitdevs</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/coindesk-consensus-2016/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/coindesk-consensus-2016/"><h6>Coindesk Consensus</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/coordination-of-decentralized-finance-workshop/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/coordination-of-decentralized-finance-workshop/"><h6>Coordination Of Decentralized Finance Workshop</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/coordination-of-decentralized-finance-workshop/2020-stanford/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/coordination-of-decentralized-finance-workshop/2020-stanford/"><h6>2020 Stanford</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/cppcon/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/cppcon/"><h6>CPPcon</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/cppcon/2017/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/cppcon/2017/"><h6>Cppcon 2017</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/cppcon/2020/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/cppcon/2020/"><h6>Cppcon 2020</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/cryptoeconomic-systems/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/cryptoeconomic-systems/"><h6>Cryptoeconomic Systems</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/cryptoeconomic-systems/2019/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/cryptoeconomic-systems/2019/"><h6>Cryptoeconomic Systems 2019</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/dallas-bitcoin-symposium/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/dallas-bitcoin-symposium/"><h6>Dallas Bitcoin Symposium</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/dallas-bitcoin-symposium/2019-08-16/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/dallas-bitcoin-symposium/2019-08-16/"><h6>2019 08 16</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/bitcoin-developers-miners-meeting-2016/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/bitcoin-developers-miners-meeting-2016/"><h6>Developers-Miners Meeting (2016)</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/dgncc16/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/dgncc16/"><h6>Dgncc16</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/greg-maxwell/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/greg-maxwell/"><h6>Greg Maxwell</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/grincon/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/grincon/"><h6>Grincon</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/grincon/2019/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/grincon/2019/"><h6>Grincon 2019</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/honey-badger-diaries/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/honey-badger-diaries/"><h6>Honey Badger Diaries</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/la-bitdevs/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/la-bitdevs/"><h6>LA Bitdevs</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/layer2-summit/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/layer2-summit/"><h6>Layer2 Summit</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/layer2-summit/2018/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/layer2-summit/2018/"><h6>Layer2 Summit 2018</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/lets-talk-bitcoin-podcast/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/lets-talk-bitcoin-podcast/"><h6>Lets Talk Bitcoin Podcast</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/lightning-conference/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/lightning-conference/"><h6>Lightning Conference</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/lightning-conference/2019/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/lightning-conference/2019/"><h6>Lightning Conference 2019</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/lightning-hack-day/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/lightning-hack-day/"><h6>Lightning Hack Day</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/london-bitcoin-devs/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/london-bitcoin-devs/"><h6>London Bitcoin Devs</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/magicalcryptoconference/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/magicalcryptoconference/"><h6>Magicalcryptoconference</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/magicalcryptoconference/2019/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/magicalcryptoconference/2019/"><h6>Magicalcryptoconference 2019</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/misc/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/misc/"><h6>Misc</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/mit-bitcoin-expo/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/mit-bitcoin-expo/"><h6>MIT Bitcoin Expo</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/mit-bitcoin-expo/mit-bitcoin-expo-2015/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/mit-bitcoin-expo/mit-bitcoin-expo-2015/"><h6>Mit Bitcoin Expo 2015</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/mit-bitcoin-expo/mit-bitcoin-expo-2016/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/mit-bitcoin-expo/mit-bitcoin-expo-2016/"><h6>Mit Bitcoin Expo 2016</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/mit-bitcoin-expo/mit-bitcoin-expo-2017/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/mit-bitcoin-expo/mit-bitcoin-expo-2017/"><h6>Mit Bitcoin Expo 2017</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/mit-bitcoin-expo/mit-bitcoin-expo-2018/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/mit-bitcoin-expo/mit-bitcoin-expo-2018/"><h6>Mit Bitcoin Expo 2018</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/mit-bitcoin-expo/mit-bitcoin-expo-2019/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/mit-bitcoin-expo/mit-bitcoin-expo-2019/"><h6>Mit Bitcoin Expo 2019</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/mit-bitcoin-expo/mit-bitcoin-expo-2020/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/mit-bitcoin-expo/mit-bitcoin-expo-2020/"><h6>Mit Bitcoin Expo 2020</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/noded-podcast/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/noded-podcast/"><h6>Noded Podcast</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/realworldcrypto/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/realworldcrypto/"><h6>Realworldcrypto</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/realworldcrypto/2018/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/realworldcrypto/2018/"><h6>Realworldcrypto 2018</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/rebooting-web-of-trust/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/rebooting-web-of-trust/"><h6>Rebooting Web Of Trust</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/rebooting-web-of-trust/2019-prague/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/rebooting-web-of-trust/2019-prague/"><h6>2019 Prague</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/ruben-somsen/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/ruben-somsen/"><h6>Ruben Somsen</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/satoshi-roundtable/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/satoshi-roundtable/"><h6>Satoshi Roundtable</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/satoshi-roundtable/sr-004/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/satoshi-roundtable/sr-004/"><h6>Sr 004</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/scalingbitcoin/" class="nav-item my-1 parent haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/scalingbitcoin/"><h6>Scaling Bitcoin Conference</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/scalingbitcoin/montreal-2015/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/scalingbitcoin/montreal-2015/"><h6>Montreal (2015)</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/scalingbitcoin/hong-kong-2015/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/scalingbitcoin/hong-kong-2015/"><h6>Hong Kong (2015)</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/scalingbitcoin/milan-2016/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/scalingbitcoin/milan-2016/"><h6>Milan (2016)</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/scalingbitcoin/stanford-2017/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/scalingbitcoin/stanford-2017/"><h6>Stanford (2017)</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    <li data-nav-id="/scalingbitcoin/stanford-2017/edgeplusplus/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/scalingbitcoin/stanford-2017/edgeplusplus/"><h6>Edgeplusplus</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/scalingbitcoin/tokyo-2018/" class="nav-item my-1 parent haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/scalingbitcoin/tokyo-2018/"><h6>Tokyo (2018)</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    <li data-nav-id="/scalingbitcoin/tokyo-2018/edgedevplusplus/" class="nav-item my-1 parent haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/scalingbitcoin/tokyo-2018/edgedevplusplus/"><h6>Edgedevplusplus</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/scalingbitcoin/tel-aviv-2019/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/scalingbitcoin/tel-aviv-2019/"><h6>Tel Aviv (2019)</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    <li data-nav-id="/scalingbitcoin/tel-aviv-2019/edgedevplusplus/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/scalingbitcoin/tel-aviv-2019/edgedevplusplus/"><h6>Edgedevplusplus</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/sf-bitcoin-meetup/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/sf-bitcoin-meetup/"><h6>SF Bitcoin Meetup</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/simons-institute/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/simons-institute/"><h6>Simons Institute</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/stanford-blockchain-conference/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/stanford-blockchain-conference/"><h6>Stanford Blockchain Conference</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/stanford-blockchain-conference/2019/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/stanford-blockchain-conference/2019/"><h6>Stanford Blockchain Conference 2019</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/stanford-blockchain-conference/2020/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/stanford-blockchain-conference/2020/"><h6>Stanford Blockchain Conference 2020</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/stephan-livera-podcast/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/stephan-livera-podcast/"><h6>Stephan Livera Podcast</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/sydney-bitcoin-meetup/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/sydney-bitcoin-meetup/"><h6>Sydney Bitcoin Meetup</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/texas-bitcoin-conference-2014/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/texas-bitcoin-conference-2014/"><h6>Texas Bitcoin Conference</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/tftc-podcast/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/tftc-podcast/"><h6>TFTC Podcast</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/verifiable-delay-functions/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/verifiable-delay-functions/"><h6>Verifiable Delay Functions</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/verifiable-delay-functions/vdf-day-2019/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/verifiable-delay-functions/vdf-day-2019/"><h6>Vdf Day 2019</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/vr-bitcoin/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/vr-bitcoin/"><h6>VR Bitcoin</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/w3-blockchain-workshop-2016/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/w3-blockchain-workshop-2016/"><h6>W3 Blockchain Workshop 2016</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/wasabi-research-club/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/wasabi-research-club/"><h6>Wasabi Research Club</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/what-bitcoin-did-podcast/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/what-bitcoin-did-podcast/"><h6>What Bitcoin Did Podcast</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </div>
+</nav>
+
+
+</div>
+                <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
+	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#serialization">Serialization</a></li>
+    <li><a href="#objects-vs-serialisation-thereof">Objects vs serialisation thereof</a></li>
+    <li><a href="#commitment-algorithm">Commitment algorithm</a></li>
+    <li><a href="#abstract-transactions-and-extending-them">Abstract transactions, and extending them</a></li>
+    <li><a href="#adding-consensus-critical-fields-to-transactions">Adding consensus-critical fields to transactions</a></li>
+    <li><a href="#extending-the-block-commitment">Extending the block commitment</a></li>
+    <li><a href="#block-size-vs-weight">Block size vs weight</a></li>
+  </ul>
+</nav>
+</div>
+</div>
+                <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+                
+
+<h1>Abstract Thinking About Consensus Systems</h1>
+
+
+    <p><i>Transcript by: Bryan Bishop</i></p>
+
+
+<p>Abstract thinking about consensus systems</p>
+<p>Luke Dashjr (luke-jr)</p>
+<p><a href="https://twitter.com/kanzure/status/1048039485550690304">https://twitter.com/kanzure/status/1048039485550690304</a></p>
+<p>slides: <a href="https://drive.google.com/file/d/1LiGzgFXMI2zq8o9skErLcO3ET2YeQbyx/view?usp=sharing">https://drive.google.com/file/d/1LiGzgFXMI2zq8o9skErLcO3ET2YeQbyx/view?usp=sharing</a></p>
+<h1 id="serialization">Serialization</h1>
+<p>Blocks are usually thought of as a serialized data stream. But really these are only true on the network serialization or over the network. A different implementation of bitcoin could in theory use a different format. The format is only used on the network and the disk, not the consensus protocol. The format could actually be completely different.</p>
+<p>Each block is identified by a single cryptographic hash and it commits to various abstract information. To verify the block, one must compute the correct hash. The block data allows you to compute the correct hash independent of what format that data is stored in. It&rsquo;s all the same as long as the commitments are calculated correctly.</p>
+<p>There&rsquo;s some information required to compute the blockhash. There&rsquo;s a block version, a timestamp, difficulty, arbitrary data called the nonce. Note that there&rsquo;s no previous blockhash or merkle root. Those are mid-states that don&rsquo;t need to be stored.</p>
+<p>Format-independence extends to transactions as well. They are a format of sequenced bytes indicating a transfer, but really this could be formatted in any way, as long as the commitment is correctly calculated. Suppose there was a new memo field, but you wanted to make it part of the consensus rules. In segwit, the signature was moved to a new witness field. The old field must be treated as empty for validation. By requiring it to be empty, it was effectively deleted. In segwit, the commitment algorithm was modified with the new witness field and some other changes. With a soft-fork, we can add a consensus rule that the transaction is only valid if the witness field validates correctly. Also, the commitment algorithm is modified where it commits to the generation transaction&rsquo;s output.</p>
+<h1 id="objects-vs-serialisation-thereof">Objects vs serialisation thereof</h1>
+<p>Often when developers think of blocks, they think of a header followed by a bunch of data representing transactions.
+Usually that works fine, but it&rsquo;s not quite accurate, and can occasionally result in some subtle, unconscious assumptions that might make things more difficult than they need to be.</p>
+<p>In reality, blocks in this format are only ever used two places: over the network, when a node is doing the initial blockchain synchronisation, and storing the block on the disk.
+But neither of these are part of the consensus itself, and an implementation of Bitcoin could very well use a completely different format if desired without necessarily breaking compatibility with the rest of the community.</p>
+<p>So what actually constitutes a block? Each block is identified by a single cryptographic hash.
+That hash commits to various abstract information.
+No matter how the block is stored or transmitted over the network, to verify the block, one must compute the correct hash.
+Therefore, the block itself is comprised of the information required for computing the correct hash, independently of what format that information is stored in.</p>
+<h1 id="commitment-algorithm">Commitment algorithm</h1>
+<p>What information is needed to compute the block hash?
+First, we have the block version (which is actually a can of worms, but let&rsquo;s not get into that now).
+We also have the timestamp, difficulty, and an arbitrary 32 bits called the &ldquo;nonce&rdquo;.
+These simple fields are called the block header, and are committed to simply by adding them into a SHA256 hash in a well-defined manner.
+But the block hash also commits to more information using two more complicated algorithms, call a block chain and a merkle tree, which provide extra functionality not relevant to this topic.
+Despite the additional complexity and mid-calculation hashes, at the end of the day, these are both still just committing to information.</p>
+<h1 id="abstract-transactions-and-extending-them">Abstract transactions, and extending them</h1>
+<p>This extends to the transactions as well.
+One is tempted to just see a transaction as a sequence of formatted bytes indicating a transfer, but in reality, the transaction can be represented any way an implementer likes, so long as the commitment is correctly calculated when it is mined into a block.
+There are also two additional commitments needed for transactions: the transaction id, which must be calculated when spending an output created by such a transaction, and the signatures, which are calculated using an asymmetric digital signature to prove this transaction has permission to consume its inputs. But these similarly are commitments to the abstract information making up a transaction.</p>
+<p>Since the serialisation of transactions and blocks is not relevant to the consensus system itself, let&rsquo;s disregard it, and use JSON instead to look at them.
+<!-- raw HTML omitted --></p>
+<p>A nice property of looking at this in JSON, is that it becomes obvious that we can add new keys without disrupting anything.
+For example, we could add a &ldquo;memo&rdquo; field.
+<!-- raw HTML omitted -->
+Since the block does not commit to this memo field, however, it does not need to be processed by other nodes to validate the block.
+That makes sense, since other nodes really don&rsquo;t care about the memo.
+But if your counterparty does, you can send it to them using any common network protocol.</p>
+<h1 id="adding-consensus-critical-fields-to-transactions">Adding consensus-critical fields to transactions</h1>
+<p>However, what if you want to use this field in new rules?
+For example, let&rsquo;s look at Segwit.
+The infamous problem with unintended malleability was a result of the transaction id committing to more information than the digital signature.
+Specifically, the transaction id committed to the &ldquo;signature&rdquo; field, while the signature obviously could not commit to itself.
+The solution was to add a new field, called the &ldquo;witness&rdquo;, and move the signature there, while requiring the old &ldquo;signature&rdquo; field to be empty.
+By requiring the old field to be empty, it is effectively deleted, as its commitment becomes a constant.
+<!-- raw HTML omitted -->
+So now we have replaced the &ldquo;signature&rdquo; field with a new &ldquo;witness&rdquo; field.
+None of the block, the transaction id, nor the signature commit to this new field, so like the &ldquo;memo&rdquo; field, it can be ignored by other nodes.
+But with a softfork, we can add a consensus rule that a block is only valid if the &ldquo;witness&rdquo; fields all verify correctly.
+Now, nodes must receive and validate the &ldquo;witness&rdquo; field even without any commitment to it.</p>
+<h1 id="extending-the-block-commitment">Extending the block commitment</h1>
+<p>Unfortunately, without a commitment to the new information, an attacker can use a valid block hash to trigger the more CPU-time consuming signature validations for a block that is invalid because the final witness fails due to corruption.
+So, to avoid denial of service attacks, we need to have the block hash commit to any field used for validation.</p>
+<p>Since existing nodes already calculate the block&rsquo;s commitment in a specific way that does not include this new &ldquo;witness&rdquo; field, we need to extend the current commitment algorithm somehow.
+How can we do this? By reusing an arbitrary 256-bit piece of information already committed to, to commit to a new commitment hash instead.</p>
+<p>Transaction outputs, including as part of the block reward, each have scripts determining the conditions under which they can be spent.
+These outputs also are allowed to have a value of zero bitcoins.
+For Segwit, we chose to increment the output count, and commit to the new information in a merkle tree as if it were 256 bits of output script data.
+Now, old nodes can be told of this fake &ldquo;output&rdquo; so they still calculate the correct block hash, whereas new nodes can implement the revised commitment algorithm.</p>
+<p>As a result, we have cleanly replaced the &ldquo;signature&rdquo; field with a new &ldquo;witness&rdquo; field, without breaking backward compatibility, or even with any ugly hacks.</p>
+<h1 id="block-size-vs-weight">Block size vs weight</h1>
+<p>Now, going back to the distinction between the abstract information and serialisation thereof&hellip;
+Years ago, the infamous block size limit was introduced.
+This was in fact the first and only consensus rule that dealt directly with the disk serialisation of the block headers and new transactions.
+A lot of discussion can be found about what this block size limit should or shouldn&rsquo;t be, but the real question that should have been asked is why such a concept existed in the first place.
+Disk space has never been a particularly limiting factor for nodes.
+Bandwidth has, but it is only one of many factors.
+Arguably the most expensive factor is the unspent transaction output (also known as &ldquo;UTXO&rdquo;) database, which must be kept in quickly-accessible memory, but isn&rsquo;t related to block sizes at all.
+Therefore, while clearly there must be some resource limit, it doesn&rsquo;t really make sense to have it be based on network serialisation bytes.</p>
+<p>One particularly harmful shortcoming of this limit, is the difference in byte sizes between signatures and public keys.
+For Bitcoin, the typical size of a public key script, included when creating a new UTXO entry, is approximately one fourth the size of the typical signature needed to remove the entry.
+That means that it effectively costed four times more to reduce the burden of the UTXO set, than it did to increase the burden:
+a huge conflict between the burden of the system and usage incentives.</p>
+<p>Due to the way Segwit moved the signatures out of the existing block commitment, into a new commitment, old nodes would no longer see the signatures nor count their size toward the block size limit.
+This created an opportunity to rebalance the limit to match the actual burdens on the network.
+It therefore replaced with a byte limit with an abstract &ldquo;weight limit&rdquo;.
+The weight limit was four times larger, and data serialised for old nodes would count toward the new limit as four weight units per byte, thus avoiding violating their enforced size limit.
+But instead of counting signatures at the same weight, since the “witness” field is new, we can count it at a lower weight.
+Existing fields, on the other hand, can only be counted at a greater relative weight in a softfork.</p>
+
+
+    
+
+
+                    
+                    <div class="row"></div> 
+
+                </div>
+
+            </div> 
+
+        </div> 
+<script src="//bitcointranscripts.github.io/lib/jquery.min.js"></script> 
+<script src="//bitcointranscripts.github.io/lib/popper.min.js"></script> 
+
+<script src="//bitcointranscripts.github.io/js/bootstrap.min.js"></script> 
+
+
+<script type="text/javascript" src="/plugins/lunr.min.js"></script>
+<script type="text/javascript" src="/plugins/auto-complete.js"></script>
+<link href="/plugins/auto-complete.css" rel="stylesheet">
+<script type="text/javascript">
+  
+      var baseurl = "\/\/bitcointranscripts.github.io\/";
+  
+</script>
+<script type="text/javascript" src="/plugins/search.js"></script>
+
+
+<script type="text/javascript" src="//bitcointranscripts.github.io/js/custom.js"></script>
+
+
+<script type="text/javascript" src="/plugins/clipboard.js"></script>
+<script>
+  new ClipboardJS('.btn');
+</script>
+</body>
+</html>

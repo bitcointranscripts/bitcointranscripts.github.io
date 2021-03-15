@@ -17,6 +17,11 @@
 </script>
 <script type="text/javascript" src="{{"plugins/search.js" | relURL}}"></script>
 
+<!-- custom javascript -->
+{{ range .Site.Params.custom_js -}}
+    <script type="text/javascript" src="{{ . | absURL }}"></script>
+{{- end }}
+
 <!-- Plugin: clipboard -->
 <script type="text/javascript" src="{{"plugins/clipboard.js" | relURL}}"></script>
 <script>

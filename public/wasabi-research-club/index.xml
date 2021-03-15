@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wasabi Research Club on ₿itcoin Transcripts</title>
+    <link>//bitcointranscripts.github.io/wasabi-research-club/</link>
+    <description>Recent content in Wasabi Research Club on ₿itcoin Transcripts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="//bitcointranscripts.github.io/wasabi-research-club/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Coinswap (2020-06-15)</title>
+      <link>//bitcointranscripts.github.io/wasabi-research-club/2020-06-15-coinswap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//bitcointranscripts.github.io/wasabi-research-club/2020-06-15-coinswap/</guid>
+      <description>Name: Wasabi Research Club
+Topic: CoinSwaps
+Location: Wasabi Research Club (online)
+Date: June 15th 2020
+Video: https://www.youtube.com/watch?v=Pqz7_Eqw9jM
+Wasabi Research Club: https://github.com/zkSNACKs/WasabiResearchClub
+Intro (Aviv Milner) Today we are talking about CoinSwaps, massively improving Bitcoin privacy and fungibility. A lot of excitement about CoinSwaps so hopefully we can touch on some interesting things.
+CoinSwaps (Belcher 2020) https://gist.github.com/chris-belcher/9144bd57a91c194e332fb5ca371d0964
+This is a 2020 ongoing GitHub research paper that Chris Belcher has been working on. You can view the original file here.</description>
+    </item>
+    
+  </channel>
+</rss>
