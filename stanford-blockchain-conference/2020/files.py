@@ -1,7 +1,5 @@
 ---
 title: Files.Py
-parent: Stanford Blockchain Conference 2020
-Hidden: true
 TranscriptBy: Bryan Bishop
 ---
 

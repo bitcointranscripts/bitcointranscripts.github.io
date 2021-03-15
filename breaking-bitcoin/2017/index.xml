@@ -1,11 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Breaking Bitcoin 2017 on ₿itcoin Transcripts</title><link>//bitcointranscripts.github.io/breaking-bitcoin/2017/</link><description>Recent content in Breaking Bitcoin 2017 on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="//bitcointranscripts.github.io/breaking-bitcoin/2017/index.xml" rel="self" type="application/rss+xml"/><item><title>2017 09 10 Christopher Jeffrey Consensus Pitfalls</title><link>//bitcointranscripts.github.io/breaking-bitcoin/2017/2017-09-10-christopher-jeffrey-consensus-pitfalls/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/breaking-bitcoin/2017/2017-09-10-christopher-jeffrey-consensus-pitfalls/</guid><description>Name: Christopher Jeffrey (JJ)
-Topic: Pitfalls of Consensus Implementation
-Location: Breaking Bitcoin
-Date: September 10th 2017
-Video: https://youtu.be/0WCaoGiAOHE?t=9000
-Transcript by: Michael Folkson
-Intro I’d like to talk about breaking Bitcoin today. Before I do that I’d like to give a short demonstration.
-Demo Right now I am SSH’d into a server with a couple of nodes on it. I am going to start up a bitcoind node and I am going to connect to one of these nodes and have it serve me a chain.</description></item><item><title>Banks As Bitcoin Custodians</title><link>//bitcointranscripts.github.io/breaking-bitcoin/2017/banks-as-bitcoin-custodians/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/breaking-bitcoin/2017/banks-as-bitcoin-custodians/</guid><description>Traditional banks as bitcoin custodians: Security challenges and implications
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Breaking Bitcoin 2017 on ₿itcoin Transcripts</title><link>//bitcointranscripts.github.io/breaking-bitcoin/2017/</link><description>Recent content in Breaking Bitcoin 2017 on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="//bitcointranscripts.github.io/breaking-bitcoin/2017/index.xml" rel="self" type="application/rss+xml"/><item><title>Banks As Bitcoin Custodians</title><link>//bitcointranscripts.github.io/breaking-bitcoin/2017/banks-as-bitcoin-custodians/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/breaking-bitcoin/2017/banks-as-bitcoin-custodians/</guid><description>Traditional banks as bitcoin custodians: Security challenges and implications
 Giacomo Zucco
 video: https://www.youtube.com/watch?v=eCE2OzKIab8&amp;amp;t=4h8m
 https://twitter.com/kanzure/status/1005545022559866880
@@ -22,7 +15,13 @@ video: https://www.youtube.com/watch?v=0WCaoGiAOHE&amp;amp;t=32min9s
 https://twitter.com/kanzure/status/1005822360321216512
 Introduction I&amp;rsquo;d like to talk about &amp;hellip; we actually discovered we can replace the script completely with soft-forks.
 It&amp;rsquo;s important to note this quote from satoshi, from summer 2010: &amp;ldquo;I don&amp;rsquo;t believe a second compatible implementation will ever&amp;rdquo; &amp;hellip;&amp;hellip;
-Comparing open-source development to bitcoin&amp;rsquo;s blockchain &amp;hellip; a lot of the inspiration came from the development of open-source. All source code is public, analogous to all blockchain being public.</description></item><item><title>Interview Adam Back Elizabeth Stark</title><link>//bitcointranscripts.github.io/breaking-bitcoin/2017/interview-adam-back-elizabeth-stark/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/breaking-bitcoin/2017/interview-adam-back-elizabeth-stark/</guid><description>Interview with Adam Back and Elizabeth Stark
+Comparing open-source development to bitcoin&amp;rsquo;s blockchain &amp;hellip; a lot of the inspiration came from the development of open-source. All source code is public, analogous to all blockchain being public.</description></item><item><title>Christopher Jeffrey Consensus Pitfalls (2017-09-10)</title><link>//bitcointranscripts.github.io/breaking-bitcoin/2017/2017-09-10-christopher-jeffrey-consensus-pitfalls/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/breaking-bitcoin/2017/2017-09-10-christopher-jeffrey-consensus-pitfalls/</guid><description>Name: Christopher Jeffrey (JJ)
+Topic: Pitfalls of Consensus Implementation
+Location: Breaking Bitcoin
+Date: September 10th 2017
+Video: https://youtu.be/0WCaoGiAOHE?t=9000
+Intro I’d like to talk about breaking Bitcoin today. Before I do that I’d like to give a short demonstration.
+Demo Right now I am SSH’d into a server with a couple of nodes on it. I am going to start up a bitcoind node and I am going to connect to one of these nodes and have it serve me a chain.</description></item><item><title>Interview Adam Back Elizabeth Stark</title><link>//bitcointranscripts.github.io/breaking-bitcoin/2017/interview-adam-back-elizabeth-stark/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/breaking-bitcoin/2017/interview-adam-back-elizabeth-stark/</guid><description>Interview with Adam Back and Elizabeth Stark
 Adam Back
 Elizabeth Stark
 video: https://www.youtube.com/watch?v=0WCaoGiAOHE&amp;amp;t=1h58m3s

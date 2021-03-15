@@ -1,7 +1,5 @@
 ---
 title: Files.Py
-parent: 2020 Stanford
-Hidden: true
 TranscriptBy: Bryan Bishop
 ---
 

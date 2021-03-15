@@ -1,7 +1,5 @@
 ---
 title: Bip Shamir.Mediawiki
-parent: 2019 Prague
-Hidden: true
 TranscriptBy: Bryan Bishop
 ---
 

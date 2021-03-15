@@ -1,44 +1,77 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sf Bitcoin Meetup on ₿itcoin Transcripts</title><link>//bitcointranscripts.github.io/sf-bitcoin-meetup/</link><description>Recent content in Sf Bitcoin Meetup on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="//bitcointranscripts.github.io/sf-bitcoin-meetup/index.xml" rel="self" type="application/rss+xml"/><item><title>2015 02 23 Scaling Bitcoin To Billions Of Transactions Per Day</title><link>//bitcointranscripts.github.io/sf-bitcoin-meetup/2015-02-23-scaling-bitcoin-to-billions-of-transactions-per-day/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/sf-bitcoin-meetup/2015-02-23-scaling-bitcoin-to-billions-of-transactions-per-day/</guid><description>2015-02-23
-http://lightning.network/
-video: https://www.youtube.com/watch?v=8zVzw912wPo
-Joseph Poon joseph@lightning.network Thaddeus Dryja rx@awsomnet.org We&amp;rsquo;re doing a presentation on the lightning network and micropayments. Right now bitcoin faces some interesting problems, like transactions aren&amp;rsquo;t instant, and micropayments don&amp;rsquo;t work. The transaction fees are 1/10th of a cent or higher depending on the exchange rate. And, &amp;ldquo;bitcoin doesn&amp;rsquo;t scale&amp;rdquo; especially if you have a lot of micropayments. One megabyte blocks? Well, let&amp;rsquo;s increase them.</description></item><item><title>2015 05 26 Lightning Network</title><link>//bitcointranscripts.github.io/sf-bitcoin-meetup/2015-05-26-lightning-network/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/sf-bitcoin-meetup/2015-05-26-lightning-network/</guid><description>2015-05-26
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sf Bitcoin Meetup on ₿itcoin Transcripts</title><link>//bitcointranscripts.github.io/sf-bitcoin-meetup/</link><description>Recent content in Sf Bitcoin Meetup on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="//bitcointranscripts.github.io/sf-bitcoin-meetup/index.xml" rel="self" type="application/rss+xml"/><item><title>Andreas Antonopoulos Bitcoin Scripting (2017-04-03)</title><link>//bitcointranscripts.github.io/sf-bitcoin-meetup/2017-04-03-andreas-antonopoulos-bitcoin-scripting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/sf-bitcoin-meetup/2017-04-03-andreas-antonopoulos-bitcoin-scripting/</guid><description>Name: Andreas Antonopoulos
+Topic: Advanced Bitcoin Scripting
+Location: SF Bitcoin Devs
+Date: April 3rd 2017
+Video: https://www.youtube.com/watch?v=yU3Sr07Qnxg
+Mastering Bitcoin on GitHub: https://github.com/bitcoinbook/bitcoinbook
+Intro Today’s talk is different from some of the other talks I’ve done so bear with me. We are going to do this slowly in a very casual manner. This is not one of my usual talks where I am going to tell you about big picture vision and stuff like that.</description></item><item><title>Bip Taproot Bip Tapscript (2019-12-16)</title><link>//bitcointranscripts.github.io/sf-bitcoin-meetup/2019-12-16-bip-taproot-bip-tapscript/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/sf-bitcoin-meetup/2019-12-16-bip-taproot-bip-tapscript/</guid><description>2019-12-16
+bip-taproot
+Pieter Wuille (sipa)
+slides: https://prezi.com/view/AlXd19INd3isgt3SvW8g/
+https://twitter.com/kanzure/status/1208438837845929987
+https://twitter.com/SFBitcoinDevs/status/1206678306721894400
+bip-taproot: https://github.com/sipa/bips/blob/bip-schnorr/bip-taproot.mediawiki
+bip-tapscript: https://github.com/sipa/bips/blob/bip-schnorr/bip-tapscript.mediawiki
+bip-schnorr: https://github.com/sipa/bips/blob/bip-schnorr/bip-schnorr.mediawiki
+Please try to find seats. Today we have a special treat. We have Pieter here, who is well known as a contributor to Bitcoin Core, stackexchange, the mailing list, and he has been around forever. He&amp;rsquo;s the author of multiple BIPs. Today he is going to talk about taproot and tapscript which is basically what the whole Schnorr movement thing became.</description></item><item><title>Bram Cohen Merkle Sets (2017-07-08)</title><link>//bitcointranscripts.github.io/sf-bitcoin-meetup/2017-07-08-bram-cohen-merkle-sets/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/sf-bitcoin-meetup/2017-07-08-bram-cohen-merkle-sets/</guid><description>2017-07-08
+Merkle set data structures for scaling bitcoin
+Bram Cohen
+video: https://www.youtube.com/watch?v=52FVkHlCh7Y
+code: https://github.com/bramcohen/MerkleSet
+https://twitter.com/kanzure/status/888836850529558531
+Introduction There&amp;rsquo;s been a fair amount of talk about putting UTXO commitmentsin bitcoin blocks. Whether this is a good idea or not, but on the off-chance that it might be a good idea, I spent a fair amount of time thinking and actually good merkle set implementation whic his what you you need to put utxo set commitments in bitcoin blocks.</description></item><item><title>Christopher Jeffrey Bcoin (2016-09-28)</title><link>//bitcointranscripts.github.io/sf-bitcoin-meetup/2016-09-28-christopher-jeffrey-bcoin/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/sf-bitcoin-meetup/2016-09-28-christopher-jeffrey-bcoin/</guid><description>Name: Christopher Jeffrey (JJ)
+Topic: Bcoin
+Location: SF Bitcoin Devs
+Date: September 28th 2016
+Video: https://www.youtube.com/watch?v=MGm54LZ1T50
+Bcoin repo: https://github.com/bcoin-org/bcoin
+Intro Hey everyone. I’m JJ with Purse. Tonight I want to talk to you about full nodes and full node implementations in general. In particular my project and the project we’ve been working on at Purse which is bcoin. A little history about me. I’ve actually given a presentation here before two years ago at the dev meetup.</description></item><item><title>Conner Fromknecht Lnd 0.6 Beta (2019-05-02)</title><link>//bitcointranscripts.github.io/sf-bitcoin-meetup/2019-05-02-conner-fromknecht-lnd-0.6-beta/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/sf-bitcoin-meetup/2019-05-02-conner-fromknecht-lnd-0.6-beta/</guid><description>Conner Fromknecht
+SF Lightning Devs
+LND 0.6 Beta Deep Dive
+Video: https://www.youtube.com/watch?v=XkyPw2_l6YE
+Intro lnd 0.6 was about seven months in the making. There’s more things that we could fit into this talk alone but I cherrypicked some of the highlights and things that will have some real world impact on users of the network or people who are using the API or just generally users of lnd. The high level impact on the network going forward and how we plan to scale up for the next 100K channels that come onto the network.</description></item><item><title>Jeremy Rubin Bitcoin Core (2018-04-23)</title><link>//bitcointranscripts.github.io/sf-bitcoin-meetup/2018-04-23-jeremy-rubin-bitcoin-core/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/sf-bitcoin-meetup/2018-04-23-jeremy-rubin-bitcoin-core/</guid><description>Jeremy Rubin
+A hardCORE workout
+Video: https://www.youtube.com/watch?v=PKzJktErUdk
+Slides: https://drive.google.com/file/d/149Ta1WRXL5WEvnBdlL-HxmsFDXUbvFDy/view
+https://twitter.com/kanzure/status/1152926849879760896
+Intro Thank you very much for the warm welcome. So welcome to the hard core workout. It is not going to be that difficult but you can stretch if you need to. It is going to be a lot of material so I’m going to go a little bit fast. If you have any questions feel free to stop me in the middle.</description></item><item><title>Jonas Schenlli Bip150 Bip151 (2017-09-04)</title><link>//bitcointranscripts.github.io/sf-bitcoin-meetup/2017-09-04-jonas-schenlli-bip150-bip151/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/sf-bitcoin-meetup/2017-09-04-jonas-schenlli-bip150-bip151/</guid><description>Jonas Schnelli
+bip150 and bip151: Bitcoin p2p network encryption and authentication
+https://github.com/bitcoin/bips/blob/master/bip-0150.mediawiki
+https://github.com/bitcoin/bips/blob/master/bip-0151.mediawiki
+http://diyhpl.us/wiki/transcripts/scalingbitcoin/milan/bip151-peer-encryption/
+Introduction Alright guys.. take a seat. ((various mumblings)) Want to thank our sponsors, Digital Garage (applause). Second order of business, if you guys could&amp;hellip; trash away.. that would be awesome. There are trash cans in the back and right there and right next to the drinks. So at the end of the night, that would be great.</description></item><item><title>Laolu Osuntokun Exploring Lnd0.4 (2018-04-20)</title><link>//bitcointranscripts.github.io/sf-bitcoin-meetup/2018-04-20-laolu-osuntokun-exploring-lnd0.4/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/sf-bitcoin-meetup/2018-04-20-laolu-osuntokun-exploring-lnd0.4/</guid><description>Laolu Osuntokun and Conner Fromknecht
+Exploring lnd 0.4-beta
+Video: https://www.youtube.com/watch?v=LXY0L8eeG3k
+Slides: https://docs.google.com/presentation/d/1pyQgGDUcB29r8DnTaS0GQS6usjw4CpgciQx_-XBVOwU/
+The Genesis of lnd First, the genesis of lnd. Here is the first commit of lnd. It was October 27 2015. This is when I was in school still. This was done when I went on break and it was the first major…. we had in terms of code. We talked about the language we’re using, the licensing, the architecture of the daemon.</description></item><item><title>Laolu Osuntokun Lightning Network (2016-07-18)</title><link>//bitcointranscripts.github.io/sf-bitcoin-meetup/2016-07-18-laolu-osuntokun-lightning-network/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/sf-bitcoin-meetup/2016-07-18-laolu-osuntokun-lightning-network/</guid><description>Laolu Osuntokun
+Lightning Network Deep Dive
+Video: https://www.youtube.com/watch?v=tLZc-NLmV20
+Slides: https://docs.google.com/presentation/d/1OPijcjzadKkbxvGU6VcVnAeSD_DKb7gjnevBcqhPCW0/
+https://twitter.com/kanzure/status/1052238088913788928
+Introduction My name is Laolu Osuntokun and I work with Lightning guys and you know me as maybe Roasbeef from the internet, on GitHub, Twitter, everything else. I’ve been Roasbeef for the past 8 years and I’m still Roasbeef that’s how it works. I’m going to give you a deep dive into the lightning network. I remember like 2 years ago when I was learning about Bitcoin initially and I went to these Bitcoin dev meetups in Mission and there was a deep dive and Taariq was the MC there, super friendly guy.</description></item><item><title>Laolu Osuntokun Neutrino (2017-06-06)</title><link>//bitcointranscripts.github.io/sf-bitcoin-meetup/2017-06-06-laolu-osuntokun-neutrino/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/sf-bitcoin-meetup/2017-06-06-laolu-osuntokun-neutrino/</guid><description>Laolu Osuntokun
+Neutrino: The Privacy Preserving Bitcoin Light Client
+Video: https://www.youtube.com/watch?v=7FWKc8lM4Ek
+Slides: https://docs.google.com/presentation/d/1vjJUWOZIaPshjx1svfE6rFZ2lC07n47ifOdzpKWqpb4/
+https://twitter.com/kanzure/status/1054031024085258240
+Introduction My name is Laolu or Roasbeef on the internet. I’m going to talk about light clients in general and then also what we’re working on in terms of light clients and then also how that factors into the lightning network itself. The talk is called Neutrino because that is the name of our new light client that has been released.</description></item><item><title>Lightning Network (2015-05-26)</title><link>//bitcointranscripts.github.io/sf-bitcoin-meetup/2015-05-26-lightning-network/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/sf-bitcoin-meetup/2015-05-26-lightning-network/</guid><description>2015-05-26
 Tadge Dryja Joseph Poon How Lightning Network can offer a solution for bitcoin&amp;rsquo;s scalability problems
 http://lightning.network/
 video: https://www.youtube.com/watch?v=2QH5EV_Io0E
 slides: https://lightning.network/lightning-network-presentation-sfbitcoinsocial-2015-05-26.pdf
 Great to have you guys. They are going to talk about bitcoin&amp;rsquo;s scalability problems. There they are.
-Okay, hi. So yeah, I titled it solutions because that sounds more positive than talking about problems. Joseph will go after that and talk about what needs to change and the economics and things like that.</description></item><item><title>2015 08 24 Pieter Wuille Key Tree Signatures</title><link>//bitcointranscripts.github.io/sf-bitcoin-meetup/2015-08-24-pieter-wuille-key-tree-signatures/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/sf-bitcoin-meetup/2015-08-24-pieter-wuille-key-tree-signatures/</guid><description>Name: Pieter Wuille
-Topic: Key Tree Signatures
-Location: SF Bitcoin Devs
-Date: August 24th 2015
-Video: https://www.youtube.com/watch?v=gcQLWeFmpYg
-Slides: https://prezi.com/vsj95ns4ucu3/key-tree-signatures/
-Blog post: https://blockstream.com/2015/08/24/en-treesignatures/
-Intro For those who don’t know me I’m Pieter Wuille. I have been working on Bitcoin Core for a while but this is work I have been doing at Blockstream. Today I will be talking about Key Tree Signatures which is what I have been working on these past few weeks.</description></item><item><title>2016 04 11 Lightning Network As A Directed Graph Single Funded Channel Network Topology</title><link>//bitcointranscripts.github.io/sf-bitcoin-meetup/2016-04-11-lightning-network-as-a-directed-graph-single-funded-channel-network-topology/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/sf-bitcoin-meetup/2016-04-11-lightning-network-as-a-directed-graph-single-funded-channel-network-topology/</guid><description>2016-04-11
+Okay, hi. So yeah, I titled it solutions because that sounds more positive than talking about problems. Joseph will go after that and talk about what needs to change and the economics and things like that.</description></item><item><title>Lightning Network As A Directed Graph Single Funded Channel Network Topology (2016-04-11)</title><link>//bitcointranscripts.github.io/sf-bitcoin-meetup/2016-04-11-lightning-network-as-a-directed-graph-single-funded-channel-network-topology/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/sf-bitcoin-meetup/2016-04-11-lightning-network-as-a-directed-graph-single-funded-channel-network-topology/</guid><description>2016-04-11
 Lightning Network as a Directed Graph: Single-Funded Channel Network Topology
 Tadge Dryja rx@awsomnet.org
 http://lightning.network/
 video: https://www.youtube.com/watch?v=-lgYYz3y_hY
 slides: http://diyhpl.us/~bryan/papers2/bitcoin/Lightning%20Network%20as%20Directed%20Graph%20Single-Funded%20Channel%20Topology%20-%20Tadge%20Dryja%20-%202016-04-11.pdf
 Okay. Hello everyone. Yes, okay, great. Yes. Yeah, I&amp;rsquo;m working on Lightning Network. Bitcoin is great and fun to work on.
-Basic super quick summary of Lightning I am going to re-cap lightning network real quick. The basic idea is to have channels between two nodes. A channel, from the perspective of the rest of the world, is just a 2-of-2 multisig output.</description></item><item><title>2016 07 18 Laolu Osuntokun Lightning Network</title><link>//bitcointranscripts.github.io/sf-bitcoin-meetup/2016-07-18-laolu-osuntokun-lightning-network/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/sf-bitcoin-meetup/2016-07-18-laolu-osuntokun-lightning-network/</guid><description>Laolu Osuntokun
-Lightning Network Deep Dive
-Video: https://www.youtube.com/watch?v=tLZc-NLmV20
-Slides: https://docs.google.com/presentation/d/1OPijcjzadKkbxvGU6VcVnAeSD_DKb7gjnevBcqhPCW0/
-https://twitter.com/kanzure/status/1052238088913788928
-Introduction My name is Laolu Osuntokun and I work with Lightning guys and you know me as maybe Roasbeef from the internet, on GitHub, Twitter, everything else. I’ve been Roasbeef for the past 8 years and I’m still Roasbeef that’s how it works. I’m going to give you a deep dive into the lightning network. I remember like 2 years ago when I was learning about Bitcoin initially and I went to these Bitcoin dev meetups in Mission and there was a deep dive and Taariq was the MC there, super friendly guy.</description></item><item><title>2016 09 28 Christopher Jeffrey Bcoin</title><link>//bitcointranscripts.github.io/sf-bitcoin-meetup/2016-09-28-christopher-jeffrey-bcoin/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/sf-bitcoin-meetup/2016-09-28-christopher-jeffrey-bcoin/</guid><description>Name: Christopher Jeffrey (JJ)
-Topic: Bcoin
-Location: SF Bitcoin Devs
-Date: September 28th 2016
-Video: https://www.youtube.com/watch?v=MGm54LZ1T50
-Bcoin repo: https://github.com/bcoin-org/bcoin
-Transcript by: Michael Folkson
-Intro Hey everyone. I’m JJ with Purse. Tonight I want to talk to you about full nodes and full node implementations in general. In particular my project and the project we’ve been working on at Purse which is bcoin. A little history about me. I’ve actually given a presentation here before two years ago at the dev meetup.</description></item><item><title>2016 11 21 Mimblewimble</title><link>//bitcointranscripts.github.io/sf-bitcoin-meetup/2016-11-21-mimblewimble/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/sf-bitcoin-meetup/2016-11-21-mimblewimble/</guid><description>Mimblewimble
+Basic super quick summary of Lightning I am going to re-cap lightning network real quick. The basic idea is to have channels between two nodes. A channel, from the perspective of the rest of the world, is just a 2-of-2 multisig output.</description></item><item><title>Mimblewimble (2016-11-21)</title><link>//bitcointranscripts.github.io/sf-bitcoin-meetup/2016-11-21-mimblewimble/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/sf-bitcoin-meetup/2016-11-21-mimblewimble/</guid><description>Mimblewimble
 Andrew Poelstra (andytoshi)
 https://www.youtube.com/watch?v=aHTRlbCaUyM
 https://twitter.com/kanzure/status/801990263543648256
 History As Denise said, I gave a talk in Milan about mimblewimble about a month ago(slides). This is more or less the same talk, but rebalanced a bit to try to emphasize what I think is important and add some history that has happened in the intervening time. I&amp;rsquo;ll get started.
-Many of you have heard of mimblewimble. It&amp;rsquo;s been in the news. It has a catchy name.</description></item><item><title>2017 03 29 New Address Type For Segwit Addresses</title><link>//bitcointranscripts.github.io/sf-bitcoin-meetup/2017-03-29-new-address-type-for-segwit-addresses/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/sf-bitcoin-meetup/2017-03-29-new-address-type-for-segwit-addresses/</guid><description>Name: Pieter Wuille
+Many of you have heard of mimblewimble. It&amp;rsquo;s been in the news. It has a catchy name.</description></item><item><title>New Address Type For Segwit Addresses (2017-03-29)</title><link>//bitcointranscripts.github.io/sf-bitcoin-meetup/2017-03-29-new-address-type-for-segwit-addresses/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/sf-bitcoin-meetup/2017-03-29-new-address-type-for-segwit-addresses/</guid><description>Name: Pieter Wuille
 Topic: Bech32 addresses for Bitcoin
 Location: SF Bitcoin Devs
 Date: March 27th 2017
@@ -48,64 +81,30 @@ Proposal: https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki
 Demo website: http://bitcoin.sipa.be/bech32/demo/demo.html
 Twitter announcement: https://twitter.com/kanzure/status/847569047902273536
 Transcript completed by: Bryan Bishop Edited by: Michael Folkson
-Intro Can everyone hear me fine through this microphone? Anyone who can&amp;rsquo;t hear me please raise your hand. Oh wait. All good now? Tonight I will be speaking on a project I&amp;rsquo;ve been working on on and off for the past year or so, which is the question of what kind of addresses we will be using in Bitcoin in the future.</description></item><item><title>2017 04 03 Andreas Antonopoulos Bitcoin Scripting</title><link>//bitcointranscripts.github.io/sf-bitcoin-meetup/2017-04-03-andreas-antonopoulos-bitcoin-scripting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/sf-bitcoin-meetup/2017-04-03-andreas-antonopoulos-bitcoin-scripting/</guid><description>Name: Andreas Antonopoulos
-Topic: Advanced Bitcoin Scripting
+Intro Can everyone hear me fine through this microphone? Anyone who can&amp;rsquo;t hear me please raise your hand. Oh wait. All good now? Tonight I will be speaking on a project I&amp;rsquo;ve been working on on and off for the past year or so, which is the question of what kind of addresses we will be using in Bitcoin in the future.</description></item><item><title>Pieter Wuille Key Tree Signatures (2015-08-24)</title><link>//bitcointranscripts.github.io/sf-bitcoin-meetup/2015-08-24-pieter-wuille-key-tree-signatures/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/sf-bitcoin-meetup/2015-08-24-pieter-wuille-key-tree-signatures/</guid><description>Name: Pieter Wuille
+Topic: Key Tree Signatures
 Location: SF Bitcoin Devs
-Date: April 3rd 2017
-Video: https://www.youtube.com/watch?v=yU3Sr07Qnxg
-Mastering Bitcoin on GitHub: https://github.com/bitcoinbook/bitcoinbook
-Intro Today’s talk is different from some of the other talks I’ve done so bear with me. We are going to do this slowly in a very casual manner. This is not one of my usual talks where I am going to tell you about big picture vision and stuff like that.</description></item><item><title>2017 06 06 Laolu Osuntokun Neutrino</title><link>//bitcointranscripts.github.io/sf-bitcoin-meetup/2017-06-06-laolu-osuntokun-neutrino/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/sf-bitcoin-meetup/2017-06-06-laolu-osuntokun-neutrino/</guid><description>Laolu Osuntokun
-Neutrino: The Privacy Preserving Bitcoin Light Client
-Video: https://www.youtube.com/watch?v=7FWKc8lM4Ek
-Slides: https://docs.google.com/presentation/d/1vjJUWOZIaPshjx1svfE6rFZ2lC07n47ifOdzpKWqpb4/
-https://twitter.com/kanzure/status/1054031024085258240
-Introduction My name is Laolu or Roasbeef on the internet. I’m going to talk about light clients in general and then also what we’re working on in terms of light clients and then also how that factors into the lightning network itself. The talk is called Neutrino because that is the name of our new light client that has been released.</description></item><item><title>2017 07 08 Bram Cohen Merkle Sets</title><link>//bitcointranscripts.github.io/sf-bitcoin-meetup/2017-07-08-bram-cohen-merkle-sets/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/sf-bitcoin-meetup/2017-07-08-bram-cohen-merkle-sets/</guid><description>2017-07-08
-Merkle set data structures for scaling bitcoin
-Bram Cohen
-video: https://www.youtube.com/watch?v=52FVkHlCh7Y
-code: https://github.com/bramcohen/MerkleSet
-https://twitter.com/kanzure/status/888836850529558531
-Introduction There&amp;rsquo;s been a fair amount of talk about putting UTXO commitmentsin bitcoin blocks. Whether this is a good idea or not, but on the off-chance that it might be a good idea, I spent a fair amount of time thinking and actually good merkle set implementation whic his what you you need to put utxo set commitments in bitcoin blocks.</description></item><item><title>2017 09 04 Jonas Schenlli Bip150 Bip151</title><link>//bitcointranscripts.github.io/sf-bitcoin-meetup/2017-09-04-jonas-schenlli-bip150-bip151/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/sf-bitcoin-meetup/2017-09-04-jonas-schenlli-bip150-bip151/</guid><description>Jonas Schnelli
-bip150 and bip151: Bitcoin p2p network encryption and authentication
-https://github.com/bitcoin/bips/blob/master/bip-0150.mediawiki
-https://github.com/bitcoin/bips/blob/master/bip-0151.mediawiki
-http://diyhpl.us/wiki/transcripts/scalingbitcoin/milan/bip151-peer-encryption/
-Introduction Alright guys.. take a seat. ((various mumblings)) Want to thank our sponsors, Digital Garage (applause). Second order of business, if you guys could&amp;hellip; trash away.. that would be awesome. There are trash cans in the back and right there and right next to the drinks. So at the end of the night, that would be great.</description></item><item><title>2018 04 20 Laolu Osuntokun Exploring Lnd0.4</title><link>//bitcointranscripts.github.io/sf-bitcoin-meetup/2018-04-20-laolu-osuntokun-exploring-lnd0.4/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/sf-bitcoin-meetup/2018-04-20-laolu-osuntokun-exploring-lnd0.4/</guid><description>Laolu Osuntokun and Conner Fromknecht
-Exploring lnd 0.4-beta
-Video: https://www.youtube.com/watch?v=LXY0L8eeG3k
-Slides: https://docs.google.com/presentation/d/1pyQgGDUcB29r8DnTaS0GQS6usjw4CpgciQx_-XBVOwU/
-The Genesis of lnd First, the genesis of lnd. Here is the first commit of lnd. It was October 27 2015. This is when I was in school still. This was done when I went on break and it was the first major…. we had in terms of code. We talked about the language we’re using, the licensing, the architecture of the daemon.</description></item><item><title>2018 04 23 Jeremy Rubin Bitcoin Core</title><link>//bitcointranscripts.github.io/sf-bitcoin-meetup/2018-04-23-jeremy-rubin-bitcoin-core/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/sf-bitcoin-meetup/2018-04-23-jeremy-rubin-bitcoin-core/</guid><description>Jeremy Rubin
-A hardCORE workout
-Video: https://www.youtube.com/watch?v=PKzJktErUdk
-Slides: https://drive.google.com/file/d/149Ta1WRXL5WEvnBdlL-HxmsFDXUbvFDy/view
-https://twitter.com/kanzure/status/1152926849879760896
-Intro Thank you very much for the warm welcome. So welcome to the hard core workout. It is not going to be that difficult but you can stretch if you need to. It is going to be a lot of material so I’m going to go a little bit fast. If you have any questions feel free to stop me in the middle.</description></item><item><title>2018 07 09 Taproot Schnorr Signatures And Sighash Noinput Oh My</title><link>//bitcointranscripts.github.io/sf-bitcoin-meetup/2018-07-09-taproot-schnorr-signatures-and-sighash-noinput-oh-my/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/sf-bitcoin-meetup/2018-07-09-taproot-schnorr-signatures-and-sighash-noinput-oh-my/</guid><description>Taproot, Schnorr signatures, and SIGHASH_NOINPUT, oh my!
-Pieter Wuille (sipa)
-https://twitter.com/kanzure/status/1021880538020368385
-video: https://www.youtube.com/watch?v=YSUVRj8iznU
-slides: https://prezi.com/view/YkJwE7LYJzAzJw9g1bWV/
-Introduction I am Pieter Wuille. I will just dive in. Today I want to talk about improvements to the bitcoin scripting language. There is feedback in the microphone. Okay.
-I will mostly be talking about improvements to the bitcoin scripting language. This is by no means an exhaustive list of all the things that are going on.</description></item><item><title>2019 02 04 Threshold Signatures And Accountability</title><link>//bitcointranscripts.github.io/sf-bitcoin-meetup/2019-02-04-threshold-signatures-and-accountability/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/sf-bitcoin-meetup/2019-02-04-threshold-signatures-and-accountability/</guid><description>Threshold signatures and accountability
-Andrew Poelstra
-https://twitter.com/kanzure/status/1092665108960968704
-Sorry for the delays. We&amp;rsquo;re finally ready to talk. Welcome to our talk. We&amp;rsquo;d like to thank our sponsors including Blockstream and Digital Garage. Today we have Andrew Poelstra to talk about threshold signatures and accountability. He is known for working on mimblewimble, Bitcoin Core, libsecp256k1, and at Blockstream. Thank you.
-Introduction Cool, thank you Mark for that introduction. Sorry about the delays. Let&amp;rsquo;s get started.</description></item><item><title>2019 05 02 Conner Fromknecht Lnd 0.6 Beta</title><link>//bitcointranscripts.github.io/sf-bitcoin-meetup/2019-05-02-conner-fromknecht-lnd-0.6-beta/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/sf-bitcoin-meetup/2019-05-02-conner-fromknecht-lnd-0.6-beta/</guid><description>Conner Fromknecht
-SF Lightning Devs
-LND 0.6 Beta Deep Dive
-Video: https://www.youtube.com/watch?v=XkyPw2_l6YE
-Intro lnd 0.6 was about seven months in the making. There’s more things that we could fit into this talk alone but I cherrypicked some of the highlights and things that will have some real world impact on users of the network or people who are using the API or just generally users of lnd. The high level impact on the network going forward and how we plan to scale up for the next 100K channels that come onto the network.</description></item><item><title>2019 12 16 Bip Taproot Bip Tapscript</title><link>//bitcointranscripts.github.io/sf-bitcoin-meetup/2019-12-16-bip-taproot-bip-tapscript/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/sf-bitcoin-meetup/2019-12-16-bip-taproot-bip-tapscript/</guid><description>2019-12-16
-bip-taproot
-Pieter Wuille (sipa)
-slides: https://prezi.com/view/AlXd19INd3isgt3SvW8g/
-https://twitter.com/kanzure/status/1208438837845929987
-https://twitter.com/SFBitcoinDevs/status/1206678306721894400
-bip-taproot: https://github.com/sipa/bips/blob/bip-schnorr/bip-taproot.mediawiki
-bip-tapscript: https://github.com/sipa/bips/blob/bip-schnorr/bip-tapscript.mediawiki
-bip-schnorr: https://github.com/sipa/bips/blob/bip-schnorr/bip-schnorr.mediawiki
-Please try to find seats. Today we have a special treat. We have Pieter here, who is well known as a contributor to Bitcoin Core, stackexchange, the mailing list, and he has been around forever. He&amp;rsquo;s the author of multiple BIPs. Today he is going to talk about taproot and tapscript which is basically what the whole Schnorr movement thing became.</description></item><item><title>2020 11 30 Socratic Seminar 20</title><link>//bitcointranscripts.github.io/sf-bitcoin-meetup/2020-11-30-socratic-seminar-20/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/sf-bitcoin-meetup/2020-11-30-socratic-seminar-20/</guid><description>2020-11-30
+Date: August 24th 2015
+Video: https://www.youtube.com/watch?v=gcQLWeFmpYg
+Slides: https://prezi.com/vsj95ns4ucu3/key-tree-signatures/
+Blog post: https://blockstream.com/2015/08/24/en-treesignatures/
+Intro For those who don’t know me I’m Pieter Wuille. I have been working on Bitcoin Core for a while but this is work I have been doing at Blockstream. Today I will be talking about Key Tree Signatures which is what I have been working on these past few weeks.</description></item><item><title>Scaling Bitcoin To Billions Of Transactions Per Day (2015-02-23)</title><link>//bitcointranscripts.github.io/sf-bitcoin-meetup/2015-02-23-scaling-bitcoin-to-billions-of-transactions-per-day/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/sf-bitcoin-meetup/2015-02-23-scaling-bitcoin-to-billions-of-transactions-per-day/</guid><description>2015-02-23
+http://lightning.network/
+video: https://www.youtube.com/watch?v=8zVzw912wPo
+Joseph Poon joseph@lightning.network Thaddeus Dryja rx@awsomnet.org We&amp;rsquo;re doing a presentation on the lightning network and micropayments. Right now bitcoin faces some interesting problems, like transactions aren&amp;rsquo;t instant, and micropayments don&amp;rsquo;t work. The transaction fees are 1/10th of a cent or higher depending on the exchange rate. And, &amp;ldquo;bitcoin doesn&amp;rsquo;t scale&amp;rdquo; especially if you have a lot of micropayments. One megabyte blocks? Well, let&amp;rsquo;s increase them.</description></item><item><title>Socratic Seminar 20 (2020-11-30)</title><link>//bitcointranscripts.github.io/sf-bitcoin-meetup/2020-11-30-socratic-seminar-20/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/sf-bitcoin-meetup/2020-11-30-socratic-seminar-20/</guid><description>2020-11-30
 SF Bitcoin Devs socratic seminar #20
 ((Names anonymized.))
 XX01: For everyone new who has joined- this is an experiment for us. We&amp;rsquo;ll see how this first online event goes. So far no major issues. Nice background, Uyluvolokutat. Should we let Harkenpost in?
 XX06: People around America are showing up since they don&amp;rsquo;t have to show up in person.
 XX01: How do we block NY IPs?
-XX06: We already have people from Western Africa joining.</description></item></channel></rss>
+XX06: We already have people from Western Africa joining.</description></item><item><title>Taproot Schnorr Signatures And Sighash Noinput Oh My (2018-07-09)</title><link>//bitcointranscripts.github.io/sf-bitcoin-meetup/2018-07-09-taproot-schnorr-signatures-and-sighash-noinput-oh-my/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/sf-bitcoin-meetup/2018-07-09-taproot-schnorr-signatures-and-sighash-noinput-oh-my/</guid><description>Taproot, Schnorr signatures, and SIGHASH_NOINPUT, oh my!
+Pieter Wuille (sipa)
+https://twitter.com/kanzure/status/1021880538020368385
+video: https://www.youtube.com/watch?v=YSUVRj8iznU
+slides: https://prezi.com/view/YkJwE7LYJzAzJw9g1bWV/
+Introduction I am Pieter Wuille. I will just dive in. Today I want to talk about improvements to the bitcoin scripting language. There is feedback in the microphone. Okay.
+I will mostly be talking about improvements to the bitcoin scripting language. This is by no means an exhaustive list of all the things that are going on.</description></item><item><title>Threshold Signatures And Accountability (2019-02-04)</title><link>//bitcointranscripts.github.io/sf-bitcoin-meetup/2019-02-04-threshold-signatures-and-accountability/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//bitcointranscripts.github.io/sf-bitcoin-meetup/2019-02-04-threshold-signatures-and-accountability/</guid><description>Threshold signatures and accountability
+Andrew Poelstra
+https://twitter.com/kanzure/status/1092665108960968704
+Sorry for the delays. We&amp;rsquo;re finally ready to talk. Welcome to our talk. We&amp;rsquo;d like to thank our sponsors including Blockstream and Digital Garage. Today we have Andrew Poelstra to talk about threshold signatures and accountability. He is known for working on mimblewimble, Bitcoin Core, libsecp256k1, and at Blockstream. Thank you.
+Introduction Cool, thank you Mark for that introduction. Sorry about the delays. Let&amp;rsquo;s get started.</description></item></channel></rss>

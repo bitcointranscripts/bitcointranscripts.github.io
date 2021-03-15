@@ -1,7 +1,0 @@
----
-title: Url.Txt
-parent: Mit Bitcoin Expo 2015
-TranscriptBy: Bryan Bishop
----
-
-https://www.youtube.com/watch?v=lIgjogLipvk

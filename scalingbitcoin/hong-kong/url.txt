@@ -1,9 +1,0 @@
----
-title: Url.Txt
-parent: Hong Kong
-Hidden: true
-TranscriptBy: Bryan Bishop
----
-
-https://scalingbitcoin.org/hongkong2015/
-https://www.youtube.com/watch?v=qdghS32TeZU
