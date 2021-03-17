@@ -1,0 +1,26 @@
+baseURL = "//btctranscripts.com/"
+languageCode = "en-us"
+title = "₿itcoin Transcripts"
+
+theme = "ace-documentation"
+orderSectionsby = "title"
+ignoreFiles = [ "README.md", "LICENSE.md" ]
+
+[outputs]
+    home = [ "HTML", "JSON"]
+    page = [ "HTML"]
+
+[params]
+    disableReadmoreNav = true
+    menushortcutsnewtab = true
+    custom_js = ["js/custom.js"]
+    custom_css = ["scss/custom.scss"]
+    
+[markup]
+  [markup.tableOfContents]
+    startLevel = 1
+
+[[menu.shortcuts]]
+    name = "<i class='fab fa-github'></i>"
+    url = "https://github.com/bitcointranscripts/bitcointranscripts"
+    weight = 1
