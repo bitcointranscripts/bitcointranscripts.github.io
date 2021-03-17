@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>W3 Blockchain Workshop 2016 on ₿itcoin Transcripts</title>
+    <link>//btctranscripts.com/w3-blockchain-workshop-2016/</link>
+    <description>Recent content in W3 Blockchain Workshop 2016 on ₿itcoin Transcripts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="//btctranscripts.com/w3-blockchain-workshop-2016/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Archival Science</title>
+      <link>//btctranscripts.com/w3-blockchain-workshop-2016/archival-science/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/w3-blockchain-workshop-2016/archival-science/</guid>
+      <description>Blockchain is a memory transfer sytsem. These memories are moving through space and time. This is something that I recognized. As a type of record, a ledger is a type of record traditionally. There are a number of international standards. One of them is ISO 15489, international records amangemetn. You will see this idea of memory of transactions as evidence. You will see something like &amp;ldquo;proofs on the blockchain&amp;rdquo;. This is information received and created and maintained.</description>
+    </item>
+    
+    <item>
+      <title>Arvind Narayanan</title>
+      <link>//btctranscripts.com/w3-blockchain-workshop-2016/arvind-narayanan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/w3-blockchain-workshop-2016/arvind-narayanan/</guid>
+      <description>I would like to introduce Arvind. He is a professor at Princeton. He has talked about this in a number of different forums.
+Hi everyone. My name is Arvind. This is turning out to be one of the more unusual and interesting events that I have been to. Someone at my table called the first session a quasi-religious experience. Not sure whether that was a good thing or not. Joking aside, my favorite thing about this is that the position statements were available on the website.</description>
+    </item>
+    
+    <item>
+      <title>Blockchain Hub</title>
+      <link>//btctranscripts.com/w3-blockchain-workshop-2016/blockchain-hub/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/w3-blockchain-workshop-2016/blockchain-hub/</guid>
+      <description>Kenji Saito
+BlockchainHub
+My understanding is that there is application logic, consensus mechanism, distributed timestamp and ledger structure. With these layers, the blockchain can give total control of assets to the end. This materializes the attitude and philosophy of the internet. The intention is I think great. There is a missing link, though. It would be nice if these blockchain could manage the digital representational of physical assets.
+I have been working with real estate escrow company in Japan to work on the proof-of-concept service of the real estate trading based on blockchain.</description>
+    </item>
+    
+    <item>
+      <title>Christopher Allen</title>
+      <link>//btctranscripts.com/w3-blockchain-workshop-2016/christopher-allen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/w3-blockchain-workshop-2016/christopher-allen/</guid>
+      <description>Christopher Allen
+Whta makes for a great wonderful magical calliberation? Collaboration? Grab one card randomly. Keep it with you. What is this particular pattern of greatness? See if you can&amp;rsquo;t embody it or can&amp;rsquo;t recommend it ofr find it in the next two days. I would like each of you to tell a story about a collaboration that was really meaningful to you. It could be a business effort, it could be another team in your company, or it could be a personal collaboration that you found really powerful.</description>
+    </item>
+    
+    <item>
+      <title>Day 2 Groups</title>
+      <link>//btctranscripts.com/w3-blockchain-workshop-2016/day-2-groups/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/w3-blockchain-workshop-2016/day-2-groups/</guid>
+      <description>Browsers One was creating a new API or updating an existing API for Web Auth or an expansion to the web auth spec, where the browser would understand blockchain-based identity. We want to resolve and display blockchain identity in the browser, anything identified as an identity in a blockchain in a browser. Request payload signature. Apps receiving payloads could check from the user. Those are the four areas we are interested in pursuing for standards.</description>
+    </item>
+    
+    <item>
+      <title>Deterministic Signatures Group</title>
+      <link>//btctranscripts.com/w3-blockchain-workshop-2016/deterministic-signatures-group/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/w3-blockchain-workshop-2016/deterministic-signatures-group/</guid>
+      <description>Deterministic expressions (group)
+So please give your name and organization and what would you like to hear in the next twenty or thirty minutes.
+ECDSA threshold signatures. Signature systems. Multisig predicate expressions.
+ new crypto systems build pipeline things, gitian things git signatures interop smart signatures &amp;ldquo;crypto conditions&amp;rdquo; ECDSA threshold signatures  https://github.com/WebOfTrustInfo/ID2020DesignWorkshop/blob/master/topics-and-advance-readings/DexPredicatesForSmarterSigs.md
+http://diyhpl.us/wiki/transcripts/w3-blockchain-workshop-2016/christopher-allen/
+http://diyhpl.us/wiki/transcripts/w3-blockchain-workshop-2016/petertodd-dex/
+https://petertodd.org/2016/talks-dex-arnhem-dev-workshop
+http://www.weboftrust.info/downloads/smart-signatures.pdf
+Probably what people are least familiar with is crypto conditions. I am going to say a tiny bit about it.</description>
+    </item>
+    
+    <item>
+      <title>Ethcore</title>
+      <link>//btctranscripts.com/w3-blockchain-workshop-2016/ethcore/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/w3-blockchain-workshop-2016/ethcore/</guid>
+      <description>ethcore
+At ethcore, we are building the infrastructure for the future of the decentralized web. Unless we get distracted by TheDAO and soft-forks and hard-forks. Maybe decentralization is not the most important thing. We want to build a p2p secure serverless web. Why is decentralization such an important notion? There&amp;rsquo;s no intrinsic value in being decentralized. There&amp;rsquo;s intrinsic value in being utilized and secure by people.
+This is a bit of how we see the architecture.</description>
+    </item>
+    
+    <item>
+      <title>Groups Identity</title>
+      <link>//btctranscripts.com/w3-blockchain-workshop-2016/groups-identity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/w3-blockchain-workshop-2016/groups-identity/</guid>
+      <description>The topic that we have been working on is identity for everyone. In terms of trusted set of parties if you will, that can potentially provide some level of attestation to the identity and that can be provided in a digitized manner as to what levels of service an be provided to that level of identity as well.
+ What belongs in a blockchain? What works in a blockchain? What doesn&amp;rsquo;t work in a blockchain?</description>
+    </item>
+    
+    <item>
+      <title>Intro</title>
+      <link>//btctranscripts.com/w3-blockchain-workshop-2016/intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/w3-blockchain-workshop-2016/intro/</guid>
+      <description>Blockhains and standards
+W3C Workshop
+29-30 June 2016
+Cambridge, Massachusetts
+Doug Schepers schepers@w3.org
+@shepazu
+https://www.w3.org/2016/04/blockchain-workshop/
+irc.w3.org #blockchain
+https://etherpad.w3ctag.org/p/blockchain
+My name is Doug. I am ostensibly the organizer. Along with my chairs, Neha, where are you? Please stand up so that everyone can embarras you. She is with DCI here at MIT, the Digital Currency Initiative. Daza, also with MIT, he is the guy who grbabed the space for us, and he is going to do video stuff later.</description>
+    </item>
+    
+    <item>
+      <title>Ipfs</title>
+      <link>//btctranscripts.com/w3-blockchain-workshop-2016/ipfs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/w3-blockchain-workshop-2016/ipfs/</guid>
+      <description>I will not have time to describe IPFS. We have multiformats that allow protocol agility, interop and avoid lock-in. Multihash, multiaddr, multibase, multicodec, multistream, multikey. What do you do with cryptographic hashes? When you have four different hashes all the same length that happen to be coming from different functions, what are those functions? sha256? sha512? sha3? blake2b? How do you know which hash type it is?
+The problem is that the values aren&amp;rsquo;t self-describing.</description>
+    </item>
+    
+    <item>
+      <title>Lightning Network</title>
+      <link>//btctranscripts.com/w3-blockchain-workshop-2016/lightning-network/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/w3-blockchain-workshop-2016/lightning-network/</guid>
+      <description>Lightning network
+Tadge Dryja
+I am going to talk about blockchain scalability using payment channel networks. I am working on Lightning Network. It&amp;rsquo;s currently being built in bitcoin but it can support other things. One of the fundamental problems with blockchain is scalability. How can you have millions of users and rapid transactions?
+Fundamentally, the blockchain is shared. You can call it a DLT but it&amp;rsquo;s really a copied ledger. Every user has a copy.</description>
+    </item>
+    
+    <item>
+      <title>Matsuo</title>
+      <link>//btctranscripts.com/w3-blockchain-workshop-2016/matsuo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/w3-blockchain-workshop-2016/matsuo/</guid>
+      <description>Shinichiro Matsuo
+bsafe.network
+Giving trust by security evaluation and bsafe.network
+This is a severe problem. How can we trust the output of blockchain technology? We have several security issues. There was the huge DAO attack from two weeks ago. We also have other problems, such as protocol specification, key management, implementation, operation, and vulnerability handling. Also key renewal and key revocation issues.
+ ISO/IEC 27000 ISO/IEC 15408 ISO/IEC 29128 ISO/IEC 29128 ISO/IEC, NIST IETF  We already have several international standards on each layer.</description>
+    </item>
+    
+    <item>
+      <title>Petertodd Dex</title>
+      <link>//btctranscripts.com/w3-blockchain-workshop-2016/petertodd-dex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/w3-blockchain-workshop-2016/petertodd-dex/</guid>
+      <description>petertodd
+I have been working on deterministic expressions language called DEX. It looks like lambda calculus. But really we&amp;rsquo;re trying to create a way to specify expressions that would return true if a signature is valid. Something like this, which is really just check a signature against a pubkey for a message, is essentially something that would be baked into your software anyway. We&amp;rsquo;re trying to move into a layer of abstraction where you can specify the conditions you need for your particular use case.</description>
+    </item>
+    
+    <item>
+      <title>Physical Assets</title>
+      <link>//btctranscripts.com/w3-blockchain-workshop-2016/physical-assets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/w3-blockchain-workshop-2016/physical-assets/</guid>
+      <description>Physical assets, archival science
+We are going to spend 20 minutes talkign about the topics. Then we will spend 10 minutes getting summaries. Then we will spend 20 minutes summarizing everything.
+Why is archival science important? I have a background in finance too. Blockchain securitizes things as well. It combines value and memory in one. Also, people have studied archives and how to get records and how to store records.</description>
+    </item>
+    
+    <item>
+      <title>Privacy Anonymity And Identity Group</title>
+      <link>//btctranscripts.com/w3-blockchain-workshop-2016/privacy-anonymity-and-identity-group/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/w3-blockchain-workshop-2016/privacy-anonymity-and-identity-group/</guid>
+      <description>Anonymous identity
+Another part of it is that all of those IoT things have firmware that can update. The moment that someone gets a key to update this, you can hack the grid by making rapid changes on power usage which actually destroys the &amp;hellip;. do the standards make things less secure? It should be illegal to design broken cryptosystems. Engineers should go to jail. It&amp;rsquo;s too dangerous. Do you think there should be smart grids at all?</description>
+    </item>
+    
+    <item>
+      <title>Provenance Groups</title>
+      <link>//btctranscripts.com/w3-blockchain-workshop-2016/provenance-groups/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/w3-blockchain-workshop-2016/provenance-groups/</guid>
+      <description>Give the name of your tech topic table. You have three minutes to summarize. When you have one minute to summarize, I will give you the one minute warning. When you have zero minutes left, you will be thrown out the window.
+Media rights We talked about media rights and payments. The ability to figure out the incentive structure for whether we can compensate people who create page views with people who have view rights and how that all works.</description>
+    </item>
+    
+    <item>
+      <title>Royalties</title>
+      <link>//btctranscripts.com/w3-blockchain-workshop-2016/royalties/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/w3-blockchain-workshop-2016/royalties/</guid>
+      <description>Chris Tse
+Monegraph person
+I am going to talk about rights systems. A system that lets us trade rights, like to make movie off of a character, off of the things that Disney makes whenever I buy toys for my two year-old son. This is used in intellectual property. Monegraph is known as the media rights blockchain-ish company. What we discovered about how to model rights, but why is it important, kind of extending and maybe contradicting the point further that the rights are not just the identity mapped to it in the blockchain, it&amp;rsquo;s just, in a lot of cases you are trading, selling or lending rights.</description>
+    </item>
+    
+    <item>
+      <title>Smart Signatures</title>
+      <link>//btctranscripts.com/w3-blockchain-workshop-2016/smart-signatures/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/w3-blockchain-workshop-2016/smart-signatures/</guid>
+      <description>Christopher Allen
+Smart signatures and smarter signatures
+Signatures are a 50+ year old technology. I am talking about the digital signature. It&amp;rsquo;s a hash of an object that has been encrypted by private key and verified by a public key against the hash of the object. All of our systems are using this in a varity of complex ways at high level to either do identity, sign a block, or do a variety of different things.</description>
+    </item>
+    
+    <item>
+      <title>Wendy</title>
+      <link>//btctranscripts.com/w3-blockchain-workshop-2016/wendy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/w3-blockchain-workshop-2016/wendy/</guid>
+      <description>08:45–09:00 - Keynote: “Intro to W3C standards” Wendy Seltzer, W3C.
+https://goo.gl/3ZqAuo
+We are working to make a web that is global and nteroperable and usable by everyone. If you have tech that you want to work on a global working basis, and distributed manner, then the web is the platform on which to do that. W3C is the consortium and standards body that works to help keep the web open and available.</description>
+    </item>
+    
+  </channel>
+</rss>

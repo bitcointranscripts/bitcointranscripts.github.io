@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LA Bitdevs on ₿itcoin Transcripts</title>
+    <link>//btctranscripts.com/la-bitdevs/</link>
+    <description>Recent content in LA Bitdevs on ₿itcoin Transcripts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="//btctranscripts.com/la-bitdevs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Alekos Filini Magical Bitcoin (2020-05-21)</title>
+      <link>//btctranscripts.com/la-bitdevs/2020-05-21-alekos-filini-magical-bitcoin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/la-bitdevs/2020-05-21-alekos-filini-magical-bitcoin/</guid>
+      <description>Name: Alekos Filini
+Topic: Magical Bitcoin
+Location: LA BitDevs (online)
+Date: May 21st 2020
+Magical Bitcoin site: https://magicalbitcoin.org/
+Magical Bitcoin wallet GitHub: https://github.com/MagicalBitcoin/magical-bitcoin-wallet
+sipa’s Miniscript site: http://bitcoin.sipa.be/miniscript/
+Andrew Poelstra Miniscript presentation at London Bitcoin Devs: https://diyhpl.us/wiki/transcripts/london-bitcoin-devs/2020-02-04-andrew-poelstra-miniscript/
+Andrew Poelstra Miniscript workshop at Advancing Bitcoin: https://diyhpl.us/wiki/transcripts/advancing-bitcoin/2020/2020-02-07-andrew-poelstra-miniscript/
+Intro I am a developer, I work on Bitcoin. I came to Bitcoin pretty late compared to the people I work with. I started a couple of years ago working with Giacomo Zucco at BHB Network.</description>
+    </item>
+    
+    <item>
+      <title>Amiti Uttarwar Attacking Bitcoin Core (2020-04-16)</title>
+      <link>//btctranscripts.com/la-bitdevs/2020-04-16-amiti-uttarwar-attacking-bitcoin-core/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/la-bitdevs/2020-04-16-amiti-uttarwar-attacking-bitcoin-core/</guid>
+      <description>Name: Amiti Uttarwar
+Topic: Attacking Bitcoin Core
+Location: BitDevs LA
+Date: April 16th 2020
+Video: https://www.youtube.com/watch?v=8TaY730YlMg
+Intro I’m going to talk to you today about attacking Bitcoin Core.
+Bitcoin To start with the fundamentals. As we all know Bitcoin is a money and it is different to our existing centralized solution of money because instead we have nodes that are running all around the world.
+Consensus Fundamentally what is required for this to work is the idea of consensus where all the nodes must agree on the same fundamental values.</description>
+    </item>
+    
+    <item>
+      <title>Luke Dashjr Segwit Psbt Vulnerability (2020-06-18)</title>
+      <link>//btctranscripts.com/la-bitdevs/2020-06-18-luke-dashjr-segwit-psbt-vulnerability/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/la-bitdevs/2020-06-18-luke-dashjr-segwit-psbt-vulnerability/</guid>
+      <description>Name: Luke Dashjr
+Topic: SegWit/PSBT vulnerability (CVE-2020-14199)
+Location: LA BitDevs (online)
+Date: June 18th 2020
+Video: https://www.youtube.com/watch?v=CojixIMgg3c
+CVE: https://nvd.nist.gov/vuln/detail/CVE-2020-14199
+Trezor blog post on the vulnerability: https://blog.trezor.io/latest-firmware-updates-correct-possible-segwit-transaction-vulnerability-266df0d2860
+Greg Sanders Bitcoin dev mailing list post in April 2017: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-August/014843.html
+The vulnerability The way Bitcoin transactions are encoded in the software is there is a list of coins essentially and then there is a list of destinations and the amount being sent to each destination.</description>
+    </item>
+    
+  </channel>
+</rss>

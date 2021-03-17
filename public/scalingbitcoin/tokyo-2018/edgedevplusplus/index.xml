@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Edgedevplusplus on ₿itcoin Transcripts</title>
+    <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/</link>
+    <description>Recent content in Edgedevplusplus on ₿itcoin Transcripts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Abstract Thinking About Consensus Systems</title>
+      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/abstract-thinking-about-consensus-systems/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/abstract-thinking-about-consensus-systems/</guid>
+      <description>Abstract thinking about consensus systems
+Luke Dashjr (luke-jr)
+https://twitter.com/kanzure/status/1048039485550690304
+slides: https://drive.google.com/file/d/1LiGzgFXMI2zq8o9skErLcO3ET2YeQbyx/view?usp=sharing
+Serialization Blocks are usually thought of as a serialized data stream. But really these are only true on the network serialization or over the network. A different implementation of bitcoin could in theory use a different format. The format is only used on the network and the disk, not the consensus protocol. The format could actually be completely different.</description>
+    </item>
+    
+    <item>
+      <title>Bitcoin Toolchain Unit Testing And Deterministic Builds</title>
+      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/bitcoin-toolchain-unit-testing-and-deterministic-builds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/bitcoin-toolchain-unit-testing-and-deterministic-builds/</guid>
+      <description>Bitcoin toolchain, unit testing &amp;amp; deterministic builds
+Marco Falke
+Video: https://www.youtube.com/watch?v=ZJ2t84trKVo
+https://twitter.com/kanzure/status/1048103693885759489
+Introduction Just to continue on what James said about the build system on Bitcoin Core&amp;hellip; I am going to talk about deterministic builds. I am MarcoFalke and I also work at Chaincode Labs in NYC.
+Bitcoin Core Build System The build system is based on autotools, so it should just work anywhere where autotools runs. Just run ./autogen.sh .</description>
+    </item>
+    
+    <item>
+      <title>Blind Signatures</title>
+      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/blind-signatures/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/blind-signatures/</guid>
+      <description>Blind signatures
+Ethan Heilman (ethan_heilman) (Commonwealth Crypto)
+https://twitter.com/kanzure/status/1047648050234060800
+See also http://diyhpl.us/wiki/transcripts/building-on-bitcoin/2018/blind-signatures-and-scriptless-scripts/
+Introduction Hi everyone. I work at Commonwealth Crypto. Today I am going to be talking to you about blind signatures. I&amp;rsquo;d like to encourage people to ask questions. Please think of questions. I&amp;rsquo;ll give time and pause for people to ask questions.
+What are blind signatures? A very informal definition of blind signatures is that they are a signature scheme that allows one party to sign a message without learning the message they signed.</description>
+    </item>
+    
+    <item>
+      <title>Block Structure And Headers Utxos Merkle Trees Segwit Bip141</title>
+      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/block-structure-and-headers-utxos-merkle-trees-segwit-bip141/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/block-structure-and-headers-utxos-merkle-trees-segwit-bip141/</guid>
+      <description>Block structure &amp;amp; headers, UTXO, Merkle Trees, Address, Proof-of-Work &amp;amp; Difficulty, SegWit (BIP141)
+Akio Nakamura
+This presentation was spoken in Japanese. I don&amp;rsquo;t speak Japanese, but I made a live translation as I listened anyway: https://docs.google.com/document/d/1ngqP9_Ep4x7iwTqF6Vvqm1Ob97A_a1irXMUc2ZHsEt4/edit</description>
+    </item>
+    
+    <item>
+      <title>Bulletproofs</title>
+      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/bulletproofs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/bulletproofs/</guid>
+      <description>Bulletproofs
+Karl-Johan Alm (kallewoof)
+https://twitter.com/kanzure/status/1047740138824945664
+Introduction Is there anyone here who doesn&amp;rsquo;t know what bulletproofs are? I will not get to all of my slides today. I&amp;rsquo;ll take a top-down approach about bulletproofs. I&amp;rsquo;ll talk about what they are, how they work, and then go into the rabbit hole and go from there. It will start dark and then get brighter as we go. As you leave here, you may not know what bulletproofs are.</description>
+    </item>
+    
+    <item>
+      <title>Coin Selection</title>
+      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/coin-selection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/coin-selection/</guid>
+      <description>Coin selection
+Karl-Johan Alm (kallewoof)
+https://twitter.com/kanzure/status/1047708247333859328
+Introduction I am going to do a short talk on coin selection. Everyone calls me kalle. In Japanese, my name is kalle. Coin selection, what it is, how it works, and interestingly enough- in the latest version of Bitcoin Core released yesterday, they have changed the coin selection algorithm for the first time since a long time. They are now using something with more scientific rigor behind it (branch-and-bound coin selection), which is good news.</description>
+    </item>
+    
+    <item>
+      <title>Cross Chain Swaps</title>
+      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/cross-chain-swaps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/cross-chain-swaps/</guid>
+      <description>Cross-chain swaps: Atomically swapping coins for privacy or cross-blockchain trades
+Ethan Heilman, Nicolas Dorier
+https://twitter.com/kanzure/status/1048017311431413760
+Introduction We are Ethan Heilman and Nicolas Dorier. Ethan is from Boston University. Nicolas is from DG Lab and working on NBitcoin. Today we&amp;rsquo;re going to be talking with you about atomic swaps for privacy and for cross-blockchain swaps. When we say atomic swaps, what do we mean? At a very high level, the idea is that it enables Alice and Bob to trade some cryptocurrency.</description>
+    </item>
+    
+    <item>
+      <title>Digital Signatures</title>
+      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/digital-signatures/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/digital-signatures/</guid>
+      <description>Finite fields, elliptic curves, ECDSA and Schnorr signatures
+John Newbery (jnewbery)
+Digital signatures
+https://twitter.com/kanzure/status/1047634593619181568
+Introduction Thank you to Anton and to everyone at Keio University and Digital Garage. I have an hour to talk about digital signatures, finite fields, ECDSA, Schnorr signatures, there&amp;rsquo;s a lot of ground to cover. I&amp;rsquo;m going to move quickly and start from a high level.
+My name is John. I live in New York. I work at a company called Chaincode Labs.</description>
+    </item>
+    
+    <item>
+      <title>Hierarchical Deterministic Wallets</title>
+      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/hierarchical-deterministic-wallets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/hierarchical-deterministic-wallets/</guid>
+      <description>Hierarchical deterministic Wallets (bip32)
+James Chiang
+https://twitter.com/kanzure/status/1047714436889235456
+video: https://www.youtube.com/watch?v=OVvue2dXkJo
+https://teachbitcoin.io/presentations/wallets.html
+Introduction My name is James Chiang. Quick introduction about myself. My contributions to bitcoin have been on the project libbitcoin where I do documentation. I&amp;rsquo;ve been working through the APIs and libraries. I think it&amp;rsquo;s a great toolkit. Eric Voskuil is speaking later today and he also works on libbitcoin. I also volunteered to talk about hierarchical deterministic wallets.
+When we talk about bitcoin wallets, you always have some kind of secret or entropy you want to keep safe.</description>
+    </item>
+    
+    <item>
+      <title>Introduction</title>
+      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/introduction/</guid>
+      <description>Introduction to Bitcoin Edge Dev++ and Bc2
+Anton Yemelyanov
+We will be using two screens. The english will be on the front screen and the japanese will be on the other screen to the side here. We will also be sharing a google docs file for each one in slack. We should help each other and teach better and learn these things. Without further adue, here&amp;rsquo;s Anton from Bitcoin Edge.</description>
+    </item>
+    
+    <item>
+      <title>Lightning Network</title>
+      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/lightning-network/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/lightning-network/</guid>
+      <description>Lightning network overview, lightning channel factories, discreet log contracts
+Thaddeus Dryja (Tadge Dryja) (tdryja)
+https://twitter.com/kanzure/status/1048039589837852672
+Introduction I have quite a while to speak. I hope it&amp;rsquo;s not too boring. I&amp;rsquo;ll have an intermission half way through. It&amp;rsquo;s not going to be two hours. It will be more like 80 minutes or something. We are going to talk about payment channels, unidirectional payment channels, lightning channels, homomorphic keys, hash trees, watchtowers, discreet log contracts, oracles, anticipated signatures, DLCS within channels, etc.</description>
+    </item>
+    
+    <item>
+      <title>Overview Bitcoin Core Architecture</title>
+      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/overview-bitcoin-core-architecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/overview-bitcoin-core-architecture/</guid>
+      <description>Bitcoin Core architecture overview
+James O&amp;rsquo;Beirne (jamesob)
+https://twitter.com/kanzure/status/1048098034234445824
+slides: http://jameso.be/dev++2018/
+video: https://www.youtube.com/watch?v=L_sI_tXmy2U
+Introduction Alright guys, how are you guys doing? You guys look tired. Given your brains are probably fried, I am delighted to tell you that this talk will be pretty high level. I am James O&amp;rsquo;Beirne, I work at Chaincode Labs. I&amp;rsquo;ve been working on Bitcoin Core since 2015. I am in New York most of the time.</description>
+    </item>
+    
+    <item>
+      <title>P2Pkh P2Wpkh P2H P2Wsh</title>
+      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/p2pkh-p2wpkh-p2h-p2wsh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/p2pkh-p2wpkh-p2h-p2wsh/</guid>
+      <description>P2PKH/P2WPKH/P2H/P2WSH
+Greg Sanders (instagibbs)
+https://twitter.com/kanzure/status/1047697572444270592
+Introduction This is going to be a bit of a re-tread I think. I am going to be talking about common bitcoin script templates used in bitcoin today.
+Addresses do not exist on the blockchain. But scripts do. You&amp;rsquo;ve heard about p2pk, p2pkh, p2sh, and others. I&amp;rsquo;m going to go over these anyway.
+Pay-to-pubkey (p2pk) This was the first type. It had no address format actually.</description>
+    </item>
+    
+    <item>
+      <title>Partially Signed Bitcoin Transactions Bip174</title>
+      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/partially-signed-bitcoin-transactions-bip174/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/partially-signed-bitcoin-transactions-bip174/</guid>
+      <description>Partially-signed bitcoin transactions (bip174)
+Greg Sanders (instagibbs)
+https://twitter.com/kanzure/status/1047730297242935296
+Introduction Bryan briefly mentioned partially-signed bitcoin transactions (PSBT). I can give more depth on this. There&amp;rsquo;s history and motivation, a background of why this is important, what these things are doing. What is the software doing?
+History and motivation Historically, there was no standard for this. Armory had its own format. Bitcoin Core had network-serialized transactions. This ensures fragmentation and it&amp;rsquo;s incomplete and bad that there was no standard.</description>
+    </item>
+    
+    <item>
+      <title>Protecting Yourself And Your Business</title>
+      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/protecting-yourself-and-your-business/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/protecting-yourself-and-your-business/</guid>
+      <description>Exchange security: Protecting yourself and your business
+Warren Togami
+https://twitter.com/kanzure/status/1048087226742071296
+Introduction Hello. My name is Warren Togami and I will be talking about exchange security. Not only protecting the people but also the business. This has been a topic of interest recently.
+Warren&amp;rsquo;s security background I have some credibility when it comes to security due to my previous career in open-source software. I have been working on the Linux operating system first with Fedora then with Red Hat for many years.</description>
+    </item>
+    
+    <item>
+      <title>Python Bitcoinlib</title>
+      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/python-bitcoinlib/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/python-bitcoinlib/</guid>
+      <description>Name: Bryan Bishop
+Topic: Overview of python-bitcoinlib
+Location: Bitcoin Edge Dev++, Keto University, Tokyo, Japan
+Date: October 5th 2018
+Video: https://www.youtube.com/watch?v=JnBOO1zjm4I
+python-bitcoinlib repo: https://github.com/petertodd/python-bitcoinlib
+Bitcoin Edge schedule: https://keio-devplusplus-2018.bitcoinedge.org/#schedule
+Twitter announcement: https://twitter.com/kanzure/status/1052927707888189442
+Transcript completed by: Bryan Bishop Edited by: Michael Folkson
+Intro I will be talking about python-bitcoinlib.
+whoami First I am going to start with an introduction slide. This is because I keep forgetting who I am so I have to write it down in all of my presentations.</description>
+    </item>
+    
+    <item>
+      <title>Reorgs</title>
+      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/reorgs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/reorgs/</guid>
+      <description>Bryan Bishop
+Handling Reorgs &amp;amp; Forks
+https://twitter.com/kanzure/status/1052344700554960896
+Dev++ / BC2 - October 4th-5th 2018 - Keio University, Tokyo, Japan https://bitcoinedge.org/event/keio-devplusplus-2018
+schedule: https://keio-devplusplus-2018.bitcoinedge.org/#schedule
+video: https://youtu.be/EUUQbveGF5E?t=7
+Introduction Good morning, my name is Bryan. I&amp;rsquo;m going to be talking about reorganizations and forks in the bitcoin blockchain. First, I want to define what a reorganization is and what a fork is.
+Definitions You might have heard that the bitcoin blockchain is a permanent data structure that records everything from all time and that is actually somewhat false.</description>
+    </item>
+    
+    <item>
+      <title>Scripts General And Simple</title>
+      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/scripts-general-and-simple/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/scripts-general-and-simple/</guid>
+      <description>Scripts (general &amp;amp; simple)
+John Newbery (jnewbery)
+https://twitter.com/kanzure/status/1047679223115083777
+Video: https://www.youtube.com/watch?v=np-SCwkqVy4
+Introduction I am going to talk about why we have scripts in bitcoin. I&amp;rsquo;ll give some examples and the design philosophy. I am not going to talk about the semantics of bitcoin script, though. Why do we have bitcoin script? I&amp;rsquo;ll show how to lock and unlock coins. I&amp;rsquo;ll talk about pay-to-pubkey, multisig, and computing vs verification in the blockchain.</description>
+    </item>
+    
+    <item>
+      <title>Sidechains And Federation Models</title>
+      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/sidechains-and-federation-models/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/sidechains-and-federation-models/</guid>
+      <description>Sidechains and federation models
+Greg Sanders (instagibbs)
+https://twitter.com/kanzure/status/1048008467871666178
+Introduction The name &amp;ldquo;sidechain&amp;rdquo; is overloaded. My favorite private sidechain is my coach. That&amp;rsquo;s my private sidechain. Hopefully I can explain the high-level concepts of a sidechain, at a 10,000 foot view. What are these? What do they give you?
+Sidechain components First you need a blockchain. It has to be something that builds a consensus history. The state of the ledger has to be recorded, or the account model, or whatever you&amp;rsquo;re doing.</description>
+    </item>
+    
+    <item>
+      <title>Sighash Noinput</title>
+      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/sighash-noinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/sighash-noinput/</guid>
+      <description>Bryan Bishop
+https://twitter.com/kanzure/status/1049510702384173057
+SIGHASH_NOINPUT (BIP118)
+Dev++ / BC2 - October 4th-5th 2018 - Keio University, Tokyo, Japan
+https://bitcoinedge.org/event/keio-devplusplus-2018
+https://keio-devplusplus-2018.bitcoinedge.org/#schedule
+video: https://www.youtube.com/watch?v=HlMZWvAHYno&amp;amp;t=2250s
+Hi, my name is Bryan, I&amp;rsquo;m going to be talking about SIGHASH NOINPUT. It was something that I was asked to speak about. It is currently not deployed, but it is an active proposal.
+So, just really brief about who I am. I have a software development background. I just left LedgerX last week, so that is an exciting change in my life.</description>
+    </item>
+    
+    <item>
+      <title>Taproot And Graftroot</title>
+      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/taproot-and-graftroot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/taproot-and-graftroot/</guid>
+      <description>Taproot and graftroot
+Greg Sanders (instagibbs)
+https://twitter.com/kanzure/status/1047764770265284608
+Introduction Taproot and graftroot are recent proposals in the bitcoin world. Every script type looks different and they are distinct. From a privacy perspective, that&amp;rsquo;s pretty bad. You watermark or fingerprint yourself all the time by showing unique scripts on the blockchain or in your transactions. This causes censorship risks and other problems for fungibility. Often you are paying for contigencies that are never used, like the whoopsies branches in your scripts.</description>
+    </item>
+    
+    <item>
+      <title>Wallet Security</title>
+      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/wallet-security/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/wallet-security/</guid>
+      <description>Bryan Bishop
+Wallet Security, Key Management &amp;amp; Hardware Security Modules (HSMs)
+https://twitter.com/kanzure/status/1049813559750746112
+Dev++ / BC2 - October 4th-5th 2018 - Keio University, Tokyo, Japan https://bitcoinedge.org/event/keio-devplusplus-2018
+schedule: https://keio-devplusplus-2018.bitcoinedge.org/#schedule
+video: https://youtu.be/WcOIXsOLJ3w?t=3550
+Alright, I’m now going to talk about bitcoin wallet security. And I was asked to talk about key management and hardware security modules and a bunch of other topics all in one talk. This will be a bit broader than some of the other talks because this is an important subject about how do you actually store bitcoin and then some of the developments around the actual storage of bitcoin in a secure way.</description>
+    </item>
+    
+  </channel>
+</rss>

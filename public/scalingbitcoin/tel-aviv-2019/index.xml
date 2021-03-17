@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tel Aviv (2019) on ₿itcoin Transcripts</title>
+    <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/</link>
+    <description>Recent content in Tel Aviv (2019) on ₿itcoin Transcripts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="//btctranscripts.com/scalingbitcoin/tel-aviv-2019/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Anonymous Atomic Locks</title>
+      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/anonymous-atomic-locks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/anonymous-atomic-locks/</guid>
+      <description>A2L: Anonymous atomic locks for scalability and interoperability in payment-channel hubs
+Pedro Moreno-Sanchez
+paper: https://eprint.iacr.org/2019/589.pdf
+https://github.com/etairi/A2L
+https://twitter.com/kanzure/status/1172116189742546945
+Introduction I am going ot talk about anonymous atomic locks for scalability and interoperability in payment-channel hubs. This is joint work with my colleagues.
+Scalability I will try to keep this section as short as possible. This talk is also about scalability in bitcoin. You&amp;rsquo;re probably aware of the scalability issues. There is decentralized data structure recording each transaction in order to provide public verifiability.</description>
+    </item>
+    
+    <item>
+      <title>Atomic Multi Channel Updates</title>
+      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/atomic-multi-channel-updates/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/atomic-multi-channel-updates/</guid>
+      <description>Atomic multi-channel updates with constant collateral in bitcoin-compatible payment-channel networks
+Pedro Moreno-Sanchez
+paper: https://eprint.iacr.org/2019/583
+https://twitter.com/kanzure/status/1172102203995283456
+Introduction Thank you for coming to my talk after lunch. This talk today is about atomic multi-channel updates with constant collateral in bitcoin-compatible payment-channel networks. It&amp;rsquo;s a long title, but I hope you will understand. This is collaborative work with my colleagues.
+Scalability We&amp;rsquo;re at Scaling Bitcoin so you&amp;rsquo;re probably not suprised that I think bitcoin has scaling issues.</description>
+    </item>
+    
+    <item>
+      <title>Backpackers</title>
+      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/backpackers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/backpackers/</guid>
+      <description>Backpackers: A new paradigm for secure and high-performance blockchain
+Thang N. Dinh</description>
+    </item>
+    
+    <item>
+      <title>Bip Securethebag</title>
+      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/bip-securethebag/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/bip-securethebag/</guid>
+      <description>BIP: OP_SECURETHEBAG
+Jeremy Rubin
+https://twitter.com/kanzure/status/1171750965478854656
+Introduction Thank you for the introduction. Today I am going to talk to you about OP_SECURETHEBAG. It&amp;rsquo;s research that I have been working on for the last couple years. I think it&amp;rsquo;s very exciting and hopefully it will have a big compact. I have a lot of slides.
+Why are we here? We are here for scaling bitcoin. The goal we have is to scale bitcoin.</description>
+    </item>
+    
+    <item>
+      <title>Bitml</title>
+      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/bitml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/bitml/</guid>
+      <description>Developing secure bitcoin contracts using BitML
+Stefano Lande
+paper: https://arxiv.org/abs/1905.07639
+https://twitter.com/kanzure/status/1171695588116746240
+This is shared work with my collaborators and coauthors.
+Smart contracts I am sure everyone here knows what a smart contract is. It&amp;rsquo;s a program that can move cryptoassets. It&amp;rsquo;s executed in a decentralized environment. Generally speaking, we can say there&amp;rsquo;s two classes of smart contracts. A smart contract is a program. While in blockchain like bitcoin, smart contracts are cryptographic protocols.</description>
+    </item>
+    
+    <item>
+      <title>Elastic Block Caps</title>
+      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/elastic-block-caps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/elastic-block-caps/</guid>
+      <description>Elastic block caps
+Meni Rosenfeld
+Introduction Thank you everyone. I am from the Israeli Bitcoin Association. I will start by describing the problem.
+The problem The problem is variable transaction fees. The transaction fees shot up. There&amp;rsquo;s a lot of fluctuation. To understand why this is a problem, let&amp;rsquo;s go back to the basics.
+Block size limit We can have big blocks or small blocks. Each one has advantages and disadvantages.</description>
+    </item>
+    
+    <item>
+      <title>Erlay</title>
+      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/erlay/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/erlay/</guid>
+      <description>Erlay: Bandwidth-efficient transaction relay for bitcoin
+Gleb Naumenko (tomatodread)
+https://twitter.com/kanzure/status/1171744449396953090
+paper: https://arxiv.org/abs/1905.10518
+Introduction Hi, my name is Gleb. I work at Chaincode Labs. I am working on making nodes better and stronger and make the network more robust. I&amp;rsquo;ve been working on erlay with Pieter and Greg and some other guys.
+Bitcoin p2p network There are private nodes that are behind firewalls like ones run at home. If your node is connected to a router, your router tries to protect you from the internet accessing your endpoint.</description>
+    </item>
+    
+    <item>
+      <title>Intro</title>
+      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/intro/</guid>
+      <description>Introduction to Scaling Bitcoin Tel Aviv 2019
+Anton Yemelyanov
+https://telaviv2019.scalingbitcoin.org/
+https://telaviv2019.scalingbitcoin.org/#schedule
+Freenode IRC: #bitcoin-workshops
+https://telaviv2019.scalingbitcoin.org/live/
+livestream: https://www.youtube.com/watch?v=-gdfxNalDIc
+Everybody please take your seats. Just to let you know, there&amp;rsquo;s electrical plugs in the center of row 1 and row 6. Otherwise, there are extension cords connected on the sides.
+Good morning. Welcome to Israel. My name is Anton Yemelyanov. I am the chair of the Scaling Bitcoin program committee and one of the organizers of these events.</description>
+    </item>
+    
+    <item>
+      <title>Payment Channel Recovery With Seeds</title>
+      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/payment-channel-recovery-with-seeds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/payment-channel-recovery-with-seeds/</guid>
+      <description>Seed-based payment channel recovery
+David Vorick
+https://twitter.com/kanzure/status/1172129077765050368
+Introduction Cool. This addresses the lightning network which is a scaling technique for the bitcoin network. A big challenge with the lightning network is that you have these midstates that you need to keep. If you lose them, you&amp;rsquo;re out of luck with your counterparty. We had a lot of talks this morning about how to recover midstates but a lot of them used watchtowers.</description>
+    </item>
+    
+    <item>
+      <title>Plasma Cash</title>
+      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/plasma-cash/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/plasma-cash/</guid>
+      <description>Plasma Cash: Towards more efficient plasma constructions
+Non-custodial sidechains for bitcoin utilizing plasma cash and covenants
+Georgios Konstantopoulos
+https://twitter.com/kanzure/status/1172108023705284609
+paper: https://github.com/loomnetwork/plasma-paper/blob/master/plasma_cash.pdf
+slides: https://gakonst.com/scalingbitcoin2019.pdf
+Introduction We have known how to do these things for at least a year, but the question is how can we find the minimum changes that we can figure out to do in bitcoin if any on how to explore the layer 2 space in a better sense rather than just accepting that lightning network is the dominant solution?</description>
+    </item>
+    
+    <item>
+      <title>Prism</title>
+      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/prism/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/prism/</guid>
+      <description>Prism: Scaling bitcoin to physical limits
+Vivek Bagaria
+Introduction Prism is a consensus protocol which is a one-stop solution to all of bitcoin&amp;rsquo;s scaling problems. The title is 7 to 70000 transactions per second. We have a full stack implementation of prism running and we were able to obtain 70,000 transactions/second. Before we get started, here are my collaborators.
+This workshop is on scaling bitcoin so I won&amp;rsquo;t spend any time justifying why we would want to scale bitcoin.</description>
+    </item>
+    
+    <item>
+      <title>Private Information Retrieval</title>
+      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/private-information-retrieval/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/private-information-retrieval/</guid>
+      <description>Applying private information retrieval (PIR) to lightweight bitcoin clients
+SPV overview I have to thank the prior speaker. This is basically the same, except this time we&amp;rsquo;re not using SGX. We&amp;rsquo;re looking at bitcoin lightweight clients. You have a lite client with not much space not much computing power, can&amp;rsquo;t store the bitcoin blockchain. All it knows about is the header information. We assume it has the blockheader history. In the header, we can find the merkle tree, and given the merkle tree we can make a merkle proof that a given transaction is included in a block.</description>
+    </item>
+    
+    <item>
+      <title>Proof Of Necessary Work</title>
+      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/proof-of-necessary-work/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/proof-of-necessary-work/</guid>
+      <description>Proof of necessary work: Succinct state verification with fairness guarantees
+Assimakis Kattis
+Introduction I am going to show you proof of necessary work today. We use proof of work in a prototype. This is joint work with my collaborators.
+Problems We wanted to tackle the problem of bitcoin blockchain size increases. Every 10 minutes, a block is added to the blockchain and the blockchain grows linearly in size over time. Initial block download increases over time.</description>
+    </item>
+    
+    <item>
+      <title>Proof Of Verification For Proof Of Work</title>
+      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/proof-of-verification-for-proof-of-work/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/proof-of-verification-for-proof-of-work/</guid>
+      <description>Proof of verification for proof of work: Miners must verify the signatures on bitcoin transactions
+Kanta Matsuura
+https://twitter.com/kanzure/status/1172142603007143936
+extended abstract: http://kmlab.iis.u-tokyo.ac.jp/papers/scaling19-matsuura-final.pdf
+History lesson In the 90s, we had some timestamping schemes where things are aggregated into one hash and then it would be publicized later in the newspaper. This scheme was commercialized, in fact. However, the resolution of the trust anchor is very limited. It&amp;rsquo;s one day or half-day at best.</description>
+    </item>
+    
+    <item>
+      <title>Scaling Oblivious Read Write</title>
+      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/scaling-oblivious-read-write/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/scaling-oblivious-read-write/</guid>
+      <description>A tale of two trees: One writes, and other reads, scaling oblivious accesses to large-scale blockchains
+Duc V. Le
+Introduction We are trying to get optimized oblivious accesses to large-scale blockchains. This is collaborative work with our colleagues.
+Motivation As we all know, bitfcoin data has become too large to store in resource-constrained devices. It&amp;rsquo;s like 240 GB. The current solution today is bip37 + Nakamoto&amp;rsquo;s idea for simplified payment verification (SPV) clients which don&amp;rsquo;t run the bitcoin network rules.</description>
+    </item>
+    
+    <item>
+      <title>Scriptless Lotteries</title>
+      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/scriptless-lotteries/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/scriptless-lotteries/</guid>
+      <description>Scriptless lotteries on bitcoin from oblivious transfer
+Lloyd Fournier (lloyd.fourn@gmail.com)
+https://twitter.com/kanzure/status/1171717583629934593
+Introduction I have no affiliations. I&amp;rsquo;m just some guy. You&amp;rsquo;re trusting a guy to talk about cryptography who got the date wrong. We&amp;rsquo;re doing scriptless bitcoin lotteries from oblivious transfer.
+Lotteries Imagine a trusted party who conducts lotteries between Alice and Bob. The goal of the lottery protocol is to use a cryptographic protocol without having a lottery trusted party.</description>
+    </item>
+    
+    <item>
+      <title>Secure Fountain Architecture</title>
+      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/secure-fountain-architecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/secure-fountain-architecture/</guid>
+      <description>A secure fountain architecture for slashing storage costs in blockchains
+Swanand Kadhe (UC Berkeley)
+https://twitter.com/kanzure/status/1172158545577594880
+paper: https://arxiv.org/abs/1906.12140
+Introduction I know this is the last formal talk of the day so thank you so much for being here. This is joint work with my collaborators.
+Is storage really an issue for bitcoin? Bitcoin&amp;rsquo;s blockchain size is only 238 GB. So why is storage important? But blockchain size is a growing problem. It&amp;rsquo;s always going to go up.</description>
+    </item>
+    
+    <item>
+      <title>Survey Of Progress In Zero Knowledge Proofs Towards Trustless Snarks</title>
+      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/survey-of-progress-in-zero-knowledge-proofs-towards-trustless-snarks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/survey-of-progress-in-zero-knowledge-proofs-towards-trustless-snarks/</guid>
+      <description>Survey of progress in succinct zero-knowledge proofs: towards trustless SNARKs
+Ben Fisch (Stanford University) (benafisch)
+https://twitter.com/kanzure/status/1171683484382957568
+Introduction I am going to be giving a survey of recent progress into succinct zero-knowledge proofs. I&amp;rsquo;ll survey recent developments, but I&amp;rsquo;m going to start with what zero-knowledge proofs are. This is towards SNARKs without trusted setup. I want to help you get up to date on what&amp;rsquo;s happening on with SNARKs. There&amp;rsquo;s an explosion of manuscripts and it&amp;rsquo;s hard to keep track.</description>
+    </item>
+    
+    <item>
+      <title>Threshold Scriptless Scripts</title>
+      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/threshold-scriptless-scripts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/threshold-scriptless-scripts/</guid>
+      <description>Threshold scriptless scripts
+Omer Shlomovits (KZen Research) (omershlomovits, zengo)
+https://twitter.com/kanzure/status/1171690582445580288
+Scriptless scripts We can write smart contracts in bitcoin today, but there&amp;rsquo;s some limitations. We can do a lot of great things. We can do atomic swaps, multisig, payment channels, etc. There&amp;rsquo;s a cost, though. Transactions become bigger with bigger scripts. Also, it&amp;rsquo;s kind of heavy on the verifiers. The verifiers now need to verify more things. There&amp;rsquo;s also privacy issues because you put your contract publicly on chain.</description>
+    </item>
+    
+    <item>
+      <title>Txprobe</title>
+      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/txprobe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/txprobe/</guid>
+      <description>TxProbe: Discovering bitcoin&amp;rsquo;s network topology using orphan transactions
+Sergi Delgado-Segura (sr_gi)
+https://twitter.com/kanzure/status/1171723329453142016
+paper: https://arxiv.org/abs/1812.00942
+https://diyhpl.us/wiki/transcripts/scalingbitcoin/coinscope-andrew-miller/
+Introduction I am Sergi. I will be presenting txprobe. This is baout discovering the topology of the bitcoin network using orphan transactions. There are a bunch of coauthors and collaborators.
+What we know about the topology I want to start by talking a little bit about what we know about the network topology without using txprobe.</description>
+    </item>
+    
+    <item>
+      <title>Work In Progress</title>
+      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/work-in-progress/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/work-in-progress/</guid>
+      <description>Work in progress sessions
+Scaling Bitcoin 2019 Tel Aviv &amp;ldquo;yesod&amp;rdquo;
+https://twitter.com/kanzure/status/1172173183329476609
+Optical proof of work Mikael Dubrovsky
+I am working on optical proof-of-work. I&amp;rsquo;ll try to pack a lot into the 10 minutes. I spent a year and a half at Techion.
+Physical scaling limits Probably the three big ones are, there&amp;rsquo;s first the demand for blockchain or wanting to use bitcoin more. I think more people want to use bitcoin.</description>
+    </item>
+    
+    <item>
+      <title>Zerolink Sudoku</title>
+      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/zerolink-sudoku/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/zerolink-sudoku/</guid>
+      <description>ZeroLink sudoku: real vs perceived anonymity
+Yuval Kogman
+https://twitter.com/kanzure/status/1171788514326908928
+Introduction I used to work in software. I transitioned to something else, but bitcoin changed my mind. This talk is a little bit of a work in progress. This was started by a guy named Aviv Milner who is involved with Wasabi. He roped me into this and then subsequently became unavailable. So this is basically me presenting his work. It&amp;rsquo;s been severely &amp;hellip;&amp;hellip;.</description>
+    </item>
+    
+    <item>
+      <title>Zkvm</title>
+      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/zkvm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/zkvm/</guid>
+      <description>ZkVM: zero-knowledge virtual machine for fast confidential smart contracts
+Fats, private, flexible blockchain contracts
+Oleg Andreev (Stellar) (oleganza)
+https://medium.com/stellar-developers-blog/zkvm-a-new-design-for-fast-confidential-smart-contracts-d1122890d9ae and https://twitter.com/oleganza/status/1126612382728372224
+https://twitter.com/kanzure/status/1171711553512583169
+Introduction Okay, welcome. What is zkvm? It&amp;rsquo;s a multi-asset blockchain architecture that combines smart contracts and confidentiality features. It&amp;rsquo;s written in pure rust from top to bottom.
+https://github.com/stellar/slingshot
+Agenda I&amp;rsquo;ll explain the good parts, and then I&amp;rsquo;ll explain away the bad parts. Sounds like a good time.
+What does this have to do with bitcoin?</description>
+    </item>
+    
+  </channel>
+</rss>

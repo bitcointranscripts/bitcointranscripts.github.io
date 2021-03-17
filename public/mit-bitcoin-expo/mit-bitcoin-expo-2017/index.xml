@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mit Bitcoin Expo 2017 on ₿itcoin Transcripts</title>
+    <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2017/</link>
+    <description>Recent content in Mit Bitcoin Expo 2017 on ₿itcoin Transcripts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2017/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bitcoin Mining And Trustlessness</title>
+      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2017/bitcoin-mining-and-trustlessness/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2017/bitcoin-mining-and-trustlessness/</guid>
+      <description>Bitcoin mining and security models
+Matt Corallo
+2017-03-04
+https://www.youtube.com/watch?v=0mVOq1jaR1U&amp;amp;t=2h22m11s
+https://twitter.com/kanzure/status/838500313212518404
+Yes, something like that. As mentioned, I&amp;rsquo;ve been contributing to Bitcoin Core since 2011 and I&amp;rsquo;ve worked on various parts of bitcoin, such as the early payment channel work, some wallet stuff, and now I work for Chaincode Lab one of the sponsors&amp;ndash; we&amp;rsquo;re a bitcoin research lab. We all kind of hang out and work on various bitcoin projects we find interesting.</description>
+    </item>
+    
+    <item>
+      <title>Exchange Security</title>
+      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2017/exchange-security/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2017/exchange-security/</guid>
+      <description>Exchange security
+Mitchell Dong
+2017-03-04
+https://www.youtube.com/watch?v=0mVOq1jaR1U&amp;amp;t=3h15m
+https://twitter.com/kanzure/status/838517545783148545
+How often do you check your wallets? Have you ever looked in your wallet and found all your bitcoin gone or missing? Last summer, somebody, a friend of mine checked his wallet and found that 100,000 bitcoin was gone. What the hell, right? But that&amp;rsquo;s what happened at Bitfinex last summer. Some hacker got into their hot wallet and stole 100,000 bitcoin. This was $70 million bucks.</description>
+    </item>
+    
+    <item>
+      <title>Ideal Number Of Full Bitcoin Nodes</title>
+      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2017/ideal-number-of-full-bitcoin-nodes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2017/ideal-number-of-full-bitcoin-nodes/</guid>
+      <description>Ideal number of full bitcoin nodes
+David Vorick
+2017-03-04
+https://www.youtube.com/watch?v=0mVOq1jaR1U&amp;amp;t=56m20s
+https://twitter.com/kanzure/status/838481130944876544
+Today I am going to be talking about bitcoin full nodes. Can everyone hear me? Okay, great. I don&amp;rsquo;t actually think there&amp;rsquo;s a specific number. I think a lot of people do. They look for a number. 5000 is about how many we have today, 6000. Some people ask whether it&amp;rsquo;s a good number. I think that&amp;rsquo;s the wrong way to look at the role of full nodes in the ecosystem.</description>
+    </item>
+    
+    <item>
+      <title>Mimblewimble And Scriptless Scripts</title>
+      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2017/mimblewimble-and-scriptless-scripts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2017/mimblewimble-and-scriptless-scripts/</guid>
+      <description>Mimblewimble and scriptless scripts
+Andrew Poelstra (andytoshi)
+2017-03-04
+https://www.youtube.com/watch?v=0mVOq1jaR1U&amp;amp;t=39m8s
+https://twitter.com/kanzure/status/838480912396533760
+Up next we have Andrew Poelstra and he is going to be talking about a really interesting new concept for a cryptocurrency. It&amp;rsquo;s called mimblewimble, after a spell from Harry Potter, because it prevents characters from speaking. Try speaking? Hello, test. We also have a&amp;hellip; hello? hello? Can you guys hear me?
+I am going to talk about the concept of scriptless scripts.</description>
+    </item>
+    
+    <item>
+      <title>Scaling And Utxos</title>
+      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2017/scaling-and-utxos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2017/scaling-and-utxos/</guid>
+      <description>Scaling and TXO commitments
+Peter Todd
+2017-03-04
+https://www.youtube.com/watch?v=0mVOq1jaR1U&amp;amp;feature=youtu.be&amp;amp;t=1h20m
+https://twitter.com/kanzure/status/838481311992012800
+Thank you. I&amp;rsquo;ll admit the last one was probably the most fun other than. On the schedule, it said scaling and UTXO and I threw something together. TXO commitmentswere a bold idea but recently there were some observations that make it more interesting. I thought I would start by going through what problem they are actually solving.
+Like David was saying in the last presentation, running a full node is kind of a pain.</description>
+    </item>
+    
+  </channel>
+</rss>

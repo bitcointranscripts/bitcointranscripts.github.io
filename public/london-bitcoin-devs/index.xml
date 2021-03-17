@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>London Bitcoin Devs on ₿itcoin Transcripts</title>
+    <link>//btctranscripts.com/london-bitcoin-devs/</link>
+    <description>Recent content in London Bitcoin Devs on ₿itcoin Transcripts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="//btctranscripts.com/london-bitcoin-devs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adam Gibson Unfairly Linear Signatures (2018-06-12)</title>
+      <link>//btctranscripts.com/london-bitcoin-devs/2018-06-12-adam-gibson-unfairly-linear-signatures/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/london-bitcoin-devs/2018-06-12-adam-gibson-unfairly-linear-signatures/</guid>
+      <description>Name: Adam Gibson
+Topic: Unfairly Linear Signatures
+Location: London Bitcoin Devs
+Date: June 12th 2018
+Video: https://www.youtube.com/watch?v=mLZ7qVwKalE
+Slides: https://joinmarket.me/static/schnorrplus.pdf
+Intro This is supposed to be a developer meetup but this talk is going to be a little more on the theoretical side. The title is “Unfairly Linear Signatures” that is just a joke. It is talking about Schnorr signatures. They are something that could in the near future have a big practical significance in Bitcoin.</description>
+    </item>
+    
+    <item>
+      <title>Alex Bosworth Submarine Swaps (2019-07-03)</title>
+      <link>//btctranscripts.com/london-bitcoin-devs/2019-07-03-alex-bosworth-submarine-swaps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/london-bitcoin-devs/2019-07-03-alex-bosworth-submarine-swaps/</guid>
+      <description>Alex Bosworth
+London Bitcoin Devs
+Submarine Swaps and Loop
+Video: https://www.youtube.com/watch?v=eB_HkYb7Y2M
+Slides: https://www.dropbox.com/s/cyh97jv81hrz8tf/alex-bosworth-submarine-swaps-loop.pdf?dl=0
+https://twitter.com/kanzure/status/1151158631527849985
+Intro Thanks for inviting me. I’m going to talk about submarine swaps and Lightning Loop which is something that I work on at Lightning Labs.
+Bitcoin - One Currency, Multiple Settlement Networks Something that is pretty important to understand about Lightning is that it is a flow network so once you set up your channels and you’re in a network of channels with other people, the balances can only shift along flow properties of the network.</description>
+    </item>
+    
+    <item>
+      <title>Andrew Chow Hardware Wallets (2020-02-05)</title>
+      <link>//btctranscripts.com/london-bitcoin-devs/2020-02-05-andrew-chow-hardware-wallets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/london-bitcoin-devs/2020-02-05-andrew-chow-hardware-wallets/</guid>
+      <description>Andrew Chow
+London Bitcoin Devs
+February 5th 2020
+Hardware Wallets in Bitcoin Core
+Video: https://www.youtube.com/watch?v=8mdfygEzQjE
+Slides: https://www.dropbox.com/s/k02o32d0pagac4r/Andrew%20Chow%20slides.pdf
+BIP174 (PSBT): https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki
+PSBT Howto for Bitcoin Core: https://github.com/bitcoin/bitcoin/blob/master/doc/psbt.md
+Introduction Hey everyone. As you may have guessed I’m Andrew Chow. I’m Engineer at Blockstream and I also work on Bitcoin Core a lot, mostly in the wallet. I am going to be talking about hardware wallets and a bit history with them in Core and also how to integrate them in Core and how we are integrating them into Core.</description>
+    </item>
+    
+    <item>
+      <title>Andrew Poelstra Miniscript (2020-02-04)</title>
+      <link>//btctranscripts.com/london-bitcoin-devs/2020-02-04-andrew-poelstra-miniscript/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/london-bitcoin-devs/2020-02-04-andrew-poelstra-miniscript/</guid>
+      <description>Andrew Poelstra
+London Bitcoin Devs
+Bitcoin Script to Miniscript
+https://twitter.com/kanzure/status/1237071807699718146
+Video: https://www.youtube.com/watch?v=_v1lECxNDiM
+Slides: https://www.dropbox.com/s/au6u6rczljdc86y/Andrew%20Poelstra%20-%20Miniscript.pdf?dl=0
+Introduction As Michael mentioned I’ve got like two hours. Hopefully I won’t get close to that but you guys are welcome to interrupt and ask questions. I’ve given a couple of talks about Miniscript usually in like 20 or 30 minute time slots where I try to give a high level overview of what this project is, why should you use it and why it makes Bitcoin script accessible in ways that it hasn’t been.</description>
+    </item>
+    
+    <item>
+      <title>Gleb Naumenko P2P Erlay (2019-11-13)</title>
+      <link>//btctranscripts.com/london-bitcoin-devs/2019-11-13-gleb-naumenko-p2p-erlay/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/london-bitcoin-devs/2019-11-13-gleb-naumenko-p2p-erlay/</guid>
+      <description>Gleb Naumenko
+London Bitcoin Devs
+Current state of P2P research in Bitcoin
+Video: https://www.youtube.com/watch?v=ZUWs00Anpaw
+https://twitter.com/kanzure/status/1201861687097352198
+Introduction My name is Gleb. I’ve worked on Bitcoin stuff since 2015, building wallets and exchanges in Ukraine. Then I realized that I can do more fun stuff. I want to do more protocol research, improving Bitcoin itself, not just using it. I decided I will go to Canada to do a Masters. I started working on this topic on research stuff more precisely and I realized that not many people do work on peer-to-peer (P2P) of Bitcoin.</description>
+    </item>
+    
+    <item>
+      <title>James Chiang Trace Net (2020-02-04)</title>
+      <link>//btctranscripts.com/london-bitcoin-devs/2020-02-04-james-chiang-trace-net/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/london-bitcoin-devs/2020-02-04-james-chiang-trace-net/</guid>
+      <description>Name: James Chiang
+Topic: Bitcoin Trace-Net
+Location: London Bitcoin Devs
+Date: February 4th 2020
+Video: https://www.youtube.com/watch?v=SMvoGkxMyYs
+Slides: https://www.dropbox.com/s/99md18bnnl8jnnw/James%20Chiang%20-%20Bitcoin%20Trace%20Net.pdf
+Intro Good evening. My name is James and it is a real privilege to give this talk right after Andrew (Poelstra) has primed the entire audience on Miniscript. That’s pretty awesome. I learned a lot of things even though I coded the stuff that they have on Pieter’s website the actual justification and reasoning behind a lot of the decisions they made in the language were very insightful.</description>
+    </item>
+    
+    <item>
+      <title>Jnewbery Bitcoin Core V0.17</title>
+      <link>//btctranscripts.com/london-bitcoin-devs/jnewbery-bitcoin-core-v0.17/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/london-bitcoin-devs/jnewbery-bitcoin-core-v0.17/</guid>
+      <description>Bitcoin Core v0.17
+John Newbery (jnewbery)
+video: https://www.youtube.com/watch?v=f33HlAvJUFw
+slides: https://www.dropbox.com/s/9kt32069hoxmgnt/john-newbery-bitcoincore0.17.pptx
+https://twitter.com/kanzure/status/1031960170027536384
+Introduction I am John Newbery. I work on Bitcoin Core. This talk is going to be mostly about Bitcoin Core 0.17 which was branched on Monday. Hopefully the final release will be in the next couple of weeks.
+whoami I live in New York and work at Chaincode Labs. I&amp;rsquo;m not actually a native born New Yorker. It&amp;rsquo;s nice to be back in London and talking with you guys about bitcoin.</description>
+    </item>
+    
+    <item>
+      <title>John Light Bitcoin Full Nodes (2018-07-23)</title>
+      <link>//btctranscripts.com/london-bitcoin-devs/2018-07-23-john-light-bitcoin-full-nodes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/london-bitcoin-devs/2018-07-23-john-light-bitcoin-full-nodes/</guid>
+      <description>Name: John Light
+Topic: Bitcoin Full Nodes
+Location: London Bitcoin Devs
+Date: July 23rd 2018
+Video: https://www.youtube.com/watch?v=qzbdNefsA-0
+John Light blog post on soft forks and hard forks: https://medium.com/@lightcoin/the-differences-between-a-hard-fork-a-soft-fork-and-a-chain-split-and-what-they-mean-for-the-769273f358c9
+Intro My presentation today is going to be about Bitcoin full nodes. Everything you wanted to know and more. There should perhaps be an asterisk because I’m not going to say literally everything but if anyone in the audience has any questions that want to go really deep down the rabbit hole then we’ll see just how far down we can go.</description>
+    </item>
+    
+    <item>
+      <title>Kalle Rosenbaum Grokking Bitcoin (2020-04-29)</title>
+      <link>//btctranscripts.com/london-bitcoin-devs/2020-04-29-kalle-rosenbaum-grokking-bitcoin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/london-bitcoin-devs/2020-04-29-kalle-rosenbaum-grokking-bitcoin/</guid>
+      <description>Name: Kalle Rosenbaum
+Topic: Grokking Bitcoin
+Location: London Bitcoin Devs (online)
+Date: April 29th 2020
+Video: https://www.youtube.com/watch?v=6tHnYyaw0qw
+Slides: http://rosenbaum.se/ldnbitcoindev/drawing.sozi.html
+Book: http://rosenbaum.se/book/
+Intro (Michael Folkson) Welcome to this London Bitcoin Devs online. We will be joined by Kalle Rosenbaum, the author of Grokking Bitcoin. In terms of London Bitcoin Devs you can follow us on Twitter at ldnbitcoindevs. We have a YouTube channel where we have a bunch of presentations from the last two years from people like John Newbery, Matt Corallo and Andrew Poelstra.</description>
+    </item>
+    
+    <item>
+      <title>Kevin Loaec Antoine Poinsot Revault (2020-05-26)</title>
+      <link>//btctranscripts.com/london-bitcoin-devs/2020-05-26-kevin-loaec-antoine-poinsot-revault/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/london-bitcoin-devs/2020-05-26-kevin-loaec-antoine-poinsot-revault/</guid>
+      <description>Name: Kevin Loaec and Antoine Poinsot
+Topic: Revault - A Multiparty Vault Architecture
+Location: London Bitcoin Devs (online)
+Date: May 26th 2020
+Video: https://www.youtube.com/watch?v=7CE4aiFxh10
+Kevin slides: https://www.dropbox.com/s/rj45ebnic2m0q2m/kevin%20loaec%20revault%20slides.pdf?dl=0
+Antoine slides: https://www.dropbox.com/s/xaoior0goo37247/Antoine%20Poinsot%20Revault%20slides.odp?dl=0
+Intro (Michael Folkson) This is London Bitcoin Devs. This is on Zoom and live-streaming on YouTube. Last week we had a Socratic Seminar on vaults, covenants and CHECKTEMPLATEVERIFY. There is a video up for that. There is also a transcript, @btctranscripts on Twitter.</description>
+    </item>
+    
+    <item>
+      <title>Matt Corallo Betterhash (2019-02-05)</title>
+      <link>//btctranscripts.com/london-bitcoin-devs/2019-02-05-matt-corallo-betterhash/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/london-bitcoin-devs/2019-02-05-matt-corallo-betterhash/</guid>
+      <description>Name: Matt Corallo
+Topic: Better Hashing through BetterHash
+Location: London Bitcoin Devs
+Date: February 5th 2019
+Video: https://www.youtube.com/watch?v=0lGO5I74qJM
+Announcement of BetterHash on the mailing list: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2018-June/016077.html
+Draft BIP: https://github.com/TheBlueMatt/bips/blob/betterhash/bip-XXXX.mediawiki
+Intro I am going to talk about BetterHash this evening. If you are coming to Advancing Bitcoin don’t worry I am talking about something completely different. You are not going to get duplicated content. That talk should be interesting as well though admittedly I haven’t written it yet.</description>
+    </item>
+    
+    <item>
+      <title>Socratic Seminar (2020-04-22)</title>
+      <link>//btctranscripts.com/london-bitcoin-devs/2020-04-22-socratic-seminar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/london-bitcoin-devs/2020-04-22-socratic-seminar/</guid>
+      <description>Name: Socratic Seminar
+Topic: Grokking Bitcoin by Kalle Rosenbaum
+Location: London BitDevs (online)
+Date: April 22nd 2020
+The conversation has been anonymized to protect the identity of the participants.
+Discussion of Hopin video conferencing software We tested this a few weeks back for a German meetup and it was pretty nice. It was reliable and it worked. Of course it is not open source and Jitsi could be much better. We were quite happy with the experience.</description>
+    </item>
+    
+    <item>
+      <title>Socratic Seminar Bip Schnorr (2020-06-16)</title>
+      <link>//btctranscripts.com/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/</guid>
+      <description>Name: Socratic Seminar
+Topic: BIP Schnorr (BIP 340)
+Location: London BitDevs (online)
+Date: June 16th 2020
+Video: https://www.youtube.com/watch?v=uE3lLsf38O4
+Pastebin of the resources discussed: https://pastebin.com/uyktht33
+August 2020 update: Since this Socratic on BIP Schnorr there has been a proposed change to the BIP revisting the squaredness tiebreaker for the R point.
+The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed.</description>
+    </item>
+    
+    <item>
+      <title>Socratic Seminar Bip Taproot (2020-07-21)</title>
+      <link>//btctranscripts.com/london-bitcoin-devs/2020-07-21-socratic-seminar-bip-taproot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/london-bitcoin-devs/2020-07-21-socratic-seminar-bip-taproot/</guid>
+      <description>Name: Socratic Seminar
+Topic: BIP Taproot (BIP 341)
+Location: London BitDevs (online)
+Date: July 21st 2020
+Video: https://www.youtube.com/watch?v=bPcguc108QM
+Pastebin of the resources discussed: https://pastebin.com/vsT3DNqW
+Transcript of Socratic Seminar on BIP-Schnorr: https://diyhpl.us/wiki/transcripts/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/
+The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.</description>
+    </item>
+    
+    <item>
+      <title>Socratic Seminar Coinswap (2020-06-23)</title>
+      <link>//btctranscripts.com/london-bitcoin-devs/2020-06-23-socratic-seminar-coinswap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/london-bitcoin-devs/2020-06-23-socratic-seminar-coinswap/</guid>
+      <description>Name: Socratic Seminar
+Topic: CoinSwap
+Location: London BitDevs (online)
+Date: June 23rd 2020
+Video: https://www.youtube.com/watch?v=u7l6rP49hIA
+Pastebin of the resources discussed: https://pastebin.com/zbegGmb8
+The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
+Introductions Michael Folkson (MF): This is London BitDevs, this is a Socratic Seminar.</description>
+    </item>
+    
+    <item>
+      <title>Socratic Seminar Payjoins (2020-05-05)</title>
+      <link>//btctranscripts.com/london-bitcoin-devs/2020-05-05-socratic-seminar-payjoins/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/london-bitcoin-devs/2020-05-05-socratic-seminar-payjoins/</guid>
+      <description>Name: Socratic Seminar with Adam Gibson
+Topic: Bitcoin privacy (Payjoin/P2EP)
+Location: London BitDevs (online)
+Date: May 5th 2020
+Video: https://www.youtube.com/watch?v=hX86rKyNB8I
+Adam Gibson Pastebin on Payjoin resources: https://pastebin.com/rgWVuNrC
+6102bitcoin resources on Payjoin/P2EP: https://github.com/6102bitcoin/CoinJoin-Research/blob/master/CoinJoin_Research/CoinJoin_Theory/P2EP/summary.md
+Transaction fingerprinting discussion: https://github.com/zkSNACKs/WalletWasabi/issues/3625
+BitDevs resources on Coinjoin: https://bitdevs.org/2020-02-19-whitepaper-series-11-coinjoin
+The conversation has been anonymized to protect the identities of the participants.
+Intro (Michael Folkson) We are live, London BitDevs Socratic Seminar on Bitcoin privacy with Adam Gibson. This is a live call on Jitsi.</description>
+    </item>
+    
+    <item>
+      <title>Socratic Seminar Signet (2020-08-19)</title>
+      <link>//btctranscripts.com/london-bitcoin-devs/2020-08-19-socratic-seminar-signet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/london-bitcoin-devs/2020-08-19-socratic-seminar-signet/</guid>
+      <description>Name: Socratic Seminar
+Topic: Signet
+Location: London BitDevs (online)
+Date: August 19th 2020
+Video: https://www.youtube.com/watch?v=b0AiucAuX3E
+Pastebin of the resources discussed: https://pastebin.com/rAcXX9Tn
+The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
+Intro Michael Folkson (MF): This is a Socratic Seminar organized by London BitDevs.</description>
+    </item>
+    
+    <item>
+      <title>Socratic Seminar Vaults (2020-05-19)</title>
+      <link>//btctranscripts.com/london-bitcoin-devs/2020-05-19-socratic-seminar-vaults/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/london-bitcoin-devs/2020-05-19-socratic-seminar-vaults/</guid>
+      <description>Name: Socratic Seminar
+Topic: Vaults and OP_CHECKTEMPLATEVERIFY
+Location: London BitDevs (online)
+Date: May 19th 2020
+Video: https://www.youtube.com/watch?v=34jMGiCAmQM
+Pastebin of the resources discussed: https://pastebin.com/3Q8MSwky
+Twitter announcement: https://twitter.com/kanzure/status/1262821838654255104?s=20
+The conversation has been anonymized by default to protect the identities of the participants. Those who would prefer their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
+Introductions Michael Folkson (MF): This is a London BitDevs Socratic Seminar.</description>
+    </item>
+    
+    <item>
+      <title>Tim Ruffing Schnorr Multisig (2020-06-17)</title>
+      <link>//btctranscripts.com/london-bitcoin-devs/2020-06-17-tim-ruffing-schnorr-multisig/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/london-bitcoin-devs/2020-06-17-tim-ruffing-schnorr-multisig/</guid>
+      <description>Name: Tim Ruffing
+Topic: Taproot and Schnorr Multisignatures
+Location: London Bitcoin Devs (online)
+Date: June 17th 2020
+Video: https://www.youtube.com/watch?v=8Op0Glp9Eoo
+Slides: https://slides.com/real-or-random/taproot-and-schnorr-multisig
+Transcript of the previous day’s Socratic Seminar on BIP-Schnorr: https://diyhpl.us/wiki/transcripts/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/
+Intro (Michael Folkson) We are now live. This is London Bitcoin Devs with Tim Ruffing. We had the Socratic Seminar yesterday, I think we have some people on the call that were at the Socratic Seminar. That was brilliant. Thanks to Tim, Pieter, Greg, waxwing and everyone for showing up and taking 2 and a half hours out of their day.</description>
+    </item>
+    
+  </channel>
+</rss>

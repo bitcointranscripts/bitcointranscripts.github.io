@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Advancing Bitcoin 2020 on ₿itcoin Transcripts</title>
+    <link>//btctranscripts.com/advancing-bitcoin/2020/</link>
+    <description>Recent content in Advancing Bitcoin 2020 on ₿itcoin Transcripts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="//btctranscripts.com/advancing-bitcoin/2020/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Andrew Chow Descriptor Wallets (2020-02-06)</title>
+      <link>//btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-chow-descriptor-wallets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-chow-descriptor-wallets/</guid>
+      <description>Name: Andrew Chow
+Topic: Rethinking Wallet Architecture: Native Descriptor Wallets
+Location: Advancing Bitcoin
+Date: February 6th 2020
+Video: https://www.youtube.com/watch?v=xC25NzIjzog
+Slides: https://www.dropbox.com/s/142b4o4lrbkvqnh/Rethinking%20Wallet%20Architecture_%20Native%20Descriptor%20Wallets.pptx
+Support for Output Descriptors in Bitcoin Core: https://github.com/bitcoin/bitcoin/blob/master/doc/descriptors.md
+Bitcoin Optech on Output script descriptors: https://bitcoinops.org/en/topics/output-script-descriptors/
+Bitcoin Core dev wiki on Wallet Class Structure Changes: https://github.com/bitcoin-core/bitcoin-devwiki/wiki/Wallet-Class-Structure-Changes
+Intro Hi everyone. I am Andrew Chow, I am an engineer at Blockstream and also a Bitcoin Core contributor working mostly on the Bitcoin Core wallet.</description>
+    </item>
+    
+    <item>
+      <title>Andrew Poelstra Miniscript (2020-02-07)</title>
+      <link>//btctranscripts.com/advancing-bitcoin/2020/2020-02-07-andrew-poelstra-miniscript/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/advancing-bitcoin/2020/2020-02-07-andrew-poelstra-miniscript/</guid>
+      <description>Andrew Poelstra
+Advancing Bitcoin workshop
+Miniscript
+Website: https://bitcoin.sipa.be/miniscript/
+Workshop repo: https://github.com/apoelstra/miniscript-workshop
+Transcript of London Bitcoin Devs Miniscript presentation: https://diyhpl.us/wiki/transcripts/london-bitcoin-devs/2020-02-04-andrew-poelstra-miniscript/
+Part 1 So what we’re going to do, there is a couple of things. We are going to go through the Miniscript website and learn about how Miniscript is constructed, how the type system works, some of the anti-malleability rules. Then we’re going to go to a repo that I created last night, a Git repo with some example programs.</description>
+    </item>
+    
+    <item>
+      <title>Andrew Poelstra Miniscript Intro (2020-02-06)</title>
+      <link>//btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-poelstra-miniscript-intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-poelstra-miniscript-intro/</guid>
+      <description>Name: Andrew Poelstra
+Topic: Introduction to Miniscript
+Location: Advancing Bitcoin
+Date: February 6th 2020
+Video: https://www.youtube.com/watch?v=eTUuwASdUBE
+Slides: https://www.dropbox.com/s/vgh5vaooqqbgg1v/andrew-poelstra.pdf
+Intro Hi everyone. Some of you were at my Bitcoin dev presentation about Miniscript a couple of days where I managed to spend over 2 hours giving a presentation about this. I think I got this one down to 20 minutes but no promises. I will keep an eye on the clock.</description>
+    </item>
+    
+    <item>
+      <title>Antoine Riard Taproot Lightning (2020-02-06)</title>
+      <link>//btctranscripts.com/advancing-bitcoin/2020/2020-02-06-antoine-riard-taproot-lightning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/advancing-bitcoin/2020/2020-02-06-antoine-riard-taproot-lightning/</guid>
+      <description>Name: Antoine Riard
+Topic: A Schnorr-Taproot’ed Lightning
+Location: Advancing Bitcoin
+Date: February 6th 2020
+Video (paid access): https://www.advancingbitcoin.com/video/a-schnorr-taprooted-lightning,11/
+Slides: https://www.dropbox.com/s/9vs54e9bqf317u0/Schnorr-Taproot%27ed-LN.pdf
+Intro Today Schnorr and Taproot for Lightning, it is a really exciting topic.
+Lightning architecture The Lightning architecture for those who are not familiar with it. You have the blockchain as the underlying layer. On top of it you are going to build a channel, you have a HTLC and people are going to spend onions to you.</description>
+    </item>
+    
+    <item>
+      <title>Fabian Jahr Debugging Workshop (2020-02-07)</title>
+      <link>//btctranscripts.com/advancing-bitcoin/2020/2020-02-07-fabian-jahr-debugging-workshop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/advancing-bitcoin/2020/2020-02-07-fabian-jahr-debugging-workshop/</guid>
+      <description>Name: Fabian Jahr
+Topic: Debugging Bitcoin Core Workshop
+Location: Advancing Bitcoin
+Date: February 7th 2020
+Video: No video was posted online
+Fabian presentation at Bitcoin Edge Dev++ 2019: https://diyhpl.us/wiki/transcripts/scalingbitcoin/tel-aviv-2019/edgedevplusplus/debugging-bitcoin/
+Debugging Bitcoin Core doc: https://github.com/fjahr/debugging_bitcoin
+Debugging Bitcoin Core Workshop: https://gist.github.com/fjahr/5bf65daaf9ff189a0993196195005386
+Transcript completed by: Michael Folkson
+Introduction First of all welcome to the debugging Bitcoin Core workshop. Everything I know more or less about using a debugger to learn from Bitcoin Core and to fix problems in Bitcoin Core.</description>
+    </item>
+    
+    <item>
+      <title>Kalle Alm Signet Integration (2020-02-06)</title>
+      <link>//btctranscripts.com/advancing-bitcoin/2020/2020-02-06-kalle-alm-signet-integration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/advancing-bitcoin/2020/2020-02-06-kalle-alm-signet-integration/</guid>
+      <description>Name: Karl-Johan Alm
+Topic: Signet Integration
+Location: Advancing Bitcoin
+Date: February 6th 2020
+Video (paid access): https://www.advancingbitcoin.com/video/signet-in-practice-integrating-signet-into-your-software,5/
+Slides: https://www.dropbox.com/s/6fqwhx7ugr3ppsg/Signet%20Integration%20V2.pdf
+BIP 325: https://github.com/bitcoin/bips/blob/master/bip-0325.mediawiki
+Signet on Bitcoin Wiki: https://en.bitcoin.it/wiki/Signet
+Bitcoin dev mailing list: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2019-March/016734.html
+Bitcoin Core PR 16411 (closed): https://github.com/bitcoin/bitcoin/pull/16411
+Bitcoin Core PR 18267 (open): https://github.com/bitcoin/bitcoin/pull/18267
+Intro I am going to talk about Signet. Do you guys know what Signet is? A few people know. I will explain it briefly. I have an elevator pitch, I have three actually depending on the height of the elevator.</description>
+    </item>
+    
+    <item>
+      <title>Kalle Alm Signet Workshop (2020-02-07)</title>
+      <link>//btctranscripts.com/advancing-bitcoin/2020/2020-02-07-kalle-alm-signet-workshop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/advancing-bitcoin/2020/2020-02-07-kalle-alm-signet-workshop/</guid>
+      <description>Name: Kalle Alm
+Topic: Signet Workshop
+Location: Advancing Bitcoin
+Date: February 7th 2020
+Video: No video posted online
+Let’s prepare mkdir workspace cd workspace git clone https://github.com/bitcoin/bitcoin.git cd bitcoin git remote add kallewoof https://github.com/kallewoof/bitcoin.git git fetch kallewoof git checkout signet ./autogen.sh ./configure -C --disable-bench --disable-test --without-gui make -j5 When you try to run the configure part you are going to have some problems if you don’t have the dependencies. If you don’t have the dependencies Google your OS and “Bitcoin build”.</description>
+    </item>
+    
+  </channel>
+</rss>
