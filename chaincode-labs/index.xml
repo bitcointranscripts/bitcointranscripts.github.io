@@ -29,15 +29,15 @@ Carl Dong’s presentation at Breaking Bitcoin 2019 on “Bitcoin Build System S
 Intro Adam Jonas (AJ): Welcome to the Chaincode podcast Carl.
 Carl Dong (CD): Hello.
 AJ: You know we’ve been doing this podcast for a while now. How come you haven’t been on the show yet?
-CD: We’ve been at home.</description></item><item><title>Christian Decker C Lightning Api (2018-10-22)</title><link>//btctranscripts.com/chaincode-labs/2018-10-22-christian-decker-c-lightning-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/chaincode-labs/2018-10-22-christian-decker-c-lightning-api/</guid><description>Christian Decker
+CD: We’ve been at home.</description></item><item><title>Christian Decker C Lightning Api (2018-10-24)</title><link>//btctranscripts.com/chaincode-labs/2018-10-24-christian-decker-c-lightning-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/chaincode-labs/2018-10-24-christian-decker-c-lightning-api/</guid><description>Christian Decker
 Developing on c-lightning
+Location: Chaincode Labs Lightning Residency 2018
 Video: https://www.youtube.com/watch?v=l8OLD7or0DA
 https://twitter.com/kanzure/status/1232313790311436290
-Intro Good morning from the last day of presentations. I’m Chris still. Today I will be talking to you about c-lightning, how to develop on it, how to extend it, adapt it to your needs and how to customize it so it fits into whatever you are trying to do. Not whatever we thought you might want to do.
-Goals First of all the goals of c-lightning are basically to be fast and lightweight.</description></item><item><title>Christian Decker Eltoo (2019-09-18)</title><link>//btctranscripts.com/chaincode-labs/2019-09-18-christian-decker-eltoo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/chaincode-labs/2019-09-18-christian-decker-eltoo/</guid><description>Name: Christian Decker
+Intro Good morning from the last day of presentations. I’m Chris still. Today I will be talking to you about c-lightning, how to develop on it, how to extend it, adapt it to your needs and how to customize it so it fits into whatever you are trying to do. Not whatever we thought you might want to do.</description></item><item><title>Christian Decker Eltoo (2019-06-25)</title><link>//btctranscripts.com/chaincode-labs/2019-06-25-christian-decker-eltoo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/chaincode-labs/2019-06-25-christian-decker-eltoo/</guid><description>Name: Christian Decker
 Topic: Eltoo: The (Far) Future of Lightning
 Location: Chaincode Labs
-Date: September 18th 2019
+Date: June 25th 2019
 Video: https://www.youtube.com/watch?v=3ZjymCOmn_A
 Slides: https://residency.chaincode.com/presentations/lightning/Eltoo.pdf
 Eltoo white paper: https://blockstream.com/eltoo.pdf
@@ -67,7 +67,10 @@ Video: https://www.youtube.com/watch?v=6aPSCDAiqVI
 Slides: https://residency.chaincode.com/presentations/Debugging_Bitcoin.pdf
 Repo: https://gist.github.com/fjahr/2cd23ad743a2ddfd4eed957274beca0f
 https://twitter.com/kanzure/status/1165266077615632390
-Introduction I’m talking about debugging Bitcoin and that means to me using loggers and debugging tools to work with Bitcoin and this is especially useful for somebody who is a beginner with Bitcoin development. Or even a beginner for C++ which I considered myself a couple of weeks ago actually. I’m going to tell the story of a fictional beginner to Bitcoin development.</description></item><item><title>James Chiang Taproot Policy (2019-08-22)</title><link>//btctranscripts.com/chaincode-labs/2019-08-22-james-chiang-taproot-policy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/chaincode-labs/2019-08-22-james-chiang-taproot-policy/</guid><description>James Chiang
+Introduction I’m talking about debugging Bitcoin and that means to me using loggers and debugging tools to work with Bitcoin and this is especially useful for somebody who is a beginner with Bitcoin development. Or even a beginner for C++ which I considered myself a couple of weeks ago actually. I’m going to tell the story of a fictional beginner to Bitcoin development.</description></item><item><title>History of the Lightning Network</title><link>//btctranscripts.com/chaincode-labs/2018-10-22-christian-decker-history-of-lightning/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/chaincode-labs/2018-10-22-christian-decker-history-of-lightning/</guid><description>Name: Dr. Christian Decker
+Location: Chaincode Labs Lightning Residency 2018
+Video: https://youtu.be/HauP9F16mUM
+Introduction Hi I&amp;rsquo;m Chris, as I said like three times before, and I&amp;rsquo;ll be talking about the history of lightning and history of off-chain protocols or layer two, or you name it, whatever name you want. I like to call them off chain because it doesn&amp;rsquo;t imply a hierarchy of layers but I&amp;rsquo;ll use all three terms interchangeably anyway.</description></item><item><title>James Chiang Taproot Policy (2019-08-22)</title><link>//btctranscripts.com/chaincode-labs/2019-08-22-james-chiang-taproot-policy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/chaincode-labs/2019-08-22-james-chiang-taproot-policy/</guid><description>James Chiang
 Taproot and Policy
 Video: https://www.youtube.com/watch?v=EdRm_mnoCWc
 Slides: https://residency.chaincode.com/presentations/Taproot_Policy.pdf
@@ -103,7 +106,13 @@ Location: Chaincode Labs 2019 Residency
 Date: June 19th 2019
 Video: https://www.youtube.com/watch?v=j0V8elTzYAA
 Slides: https://residency.chaincode.com/presentations/bitcoin/Wallet_Development.pdf
-Intro I am going to talk to you about wallets. As for the previous presentation I have all of the links in this document which I will share with you. First of all why should we care about wallets? Kind of boring right? You’ve had all this fun stuff about peer-to-peer and consensus.</description></item><item><title>Matt Corallo Compact Blocks Fibre (2020-03-12)</title><link>//btctranscripts.com/chaincode-labs/2020-03-12-matt-corallo-compact-blocks-fibre/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/chaincode-labs/2020-03-12-matt-corallo-compact-blocks-fibre/</guid><description>Name: Matt Corallo
+Intro I am going to talk to you about wallets. As for the previous presentation I have all of the links in this document which I will share with you. First of all why should we care about wallets? Kind of boring right? You’ve had all this fun stuff about peer-to-peer and consensus.</description></item><item><title>Lightning - The Transfer Layer</title><link>//btctranscripts.com/chaincode-labs/2019-06-24-fabrice-drouin-the-transfer-layer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/chaincode-labs/2019-06-24-fabrice-drouin-the-transfer-layer/</guid><description>Name: Fabrice Drouin
+Location: Chaincode Labs Lightning Residency 2019
+Video: https://www.youtube.com/watch?v=CGE8I8L7BAc
+Context Fabrice: Alright so, I&amp;rsquo;m going to talk about the payments model we use in lightning, which is mainly the HTLC, and how it works. So what we&amp;rsquo;ve explained so far is that a channel is basically a funding transaction that&amp;rsquo;s been published. And a commitment transaction that spends from the funding transaction but is not published. So the funding transaction is confirmed and it&amp;rsquo;s on-chain and it sends money to A and B.</description></item><item><title>Lightning ≈ Bitcoin</title><link>//btctranscripts.com/chaincode-labs/2018-10-22-christian-decker-lightning-bitcoin/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/chaincode-labs/2018-10-22-christian-decker-lightning-bitcoin/</guid><description>Name: Dr. Christian Decker
+Location: Chaincode Labs Lightning Residency 2018
+Video: https://youtu.be/8lMLo-7yF5k
+Introduction Good morning everyone my name is Chris and I&amp;rsquo;m a bitcoiners anonymous. So my job today is basically to tell you why lightning is Bitcoin and why it&amp;rsquo;s not exactly Bitcoin. So there&amp;rsquo;s a few fundamental differences between bitcoin onchain payment and lightning. I will always call Bitcoin onchain payments just because it&amp;rsquo;s sort of the classical way of doing it.</description></item><item><title>Matt Corallo Compact Blocks Fibre (2020-03-12)</title><link>//btctranscripts.com/chaincode-labs/2020-03-12-matt-corallo-compact-blocks-fibre/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/chaincode-labs/2020-03-12-matt-corallo-compact-blocks-fibre/</guid><description>Name: Matt Corallo
 Topic: Compact Blocks and FIBRE
 Location: Chaincode Labs Podcast (Episode 6)
 Date: March 12th 2020
