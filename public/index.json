@@ -1287,7 +1287,7 @@
 {
 	"uri": "/scalingbitcoin/tel-aviv-2019/edgedevplusplus/",
 	"title": "Edgedevplusplus",
-	"content": " Accumulators   Bitcoin Core Functional Test Framework   Bitcoin Data Structures   Blockchain Design Patterns   Bosminer   Debugging Bitcoin   Hardware Wallet Design Best Practices   Libbitcoin   Lightning Network Layer By Layer   Lightning Network Routing   Lightning Network Sphinx And Onion Routing   Lightning Network Topology   Metadata   Mining Firmware Security   Privacy Concepts   Rebroadcasting   Signet   Statechains   Taproot   Wallet Architecture    "
+	"content": " Accumulators   Bitcoin Core Functional Test Framework   Bitcoin Data Structures   Blockchain Design Patterns   Bosminer   Debugging Bitcoin   Hardware Wallet Design Best Practices   Libbitcoin   Lightning Network Layer By Layer   Lightning Network Routing   Lightning Network Sphinx And Onion Routing   Lightning network topology, its creation and maintenance   Metadata   Mining Firmware Security   Privacy Concepts   Rebroadcasting   Signet   Statechains   Taproot   Wallet Architecture    "
 },
 {
 	"uri": "/scalingbitcoin/tokyo-2018/edgedevplusplus/",
@@ -2211,8 +2211,8 @@
 },
 {
 	"uri": "/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-topology/",
-	"title": "Lightning Network Topology",
-	"content": "Lightning network topology, its creation and maintenance\nCarla Kirk-Cohen\nIntroduction Alright. Give me a second to test this. Alright. Antoine has taken you through the routing layer. I\u0026amp;rsquo;m going to take you through what the lightning network looks like today. This is the current topology of the network and how this came about, and some approaches for maintaining hte network and making the graph look like we want it to look.\nLightning brief overview There\u0026amp;rsquo;s ideally only two …"
+	"title": "Lightning network topology, its creation and maintenance",
+	"content": "Carla Kirk-Cohen\nvideo: https://www.youtube.com/watch?v=j2l_Ut4k1qI\nIntroduction Alright. Give me a second to test this. Alright. Antoine has taken you through the routing layer. I\u0026amp;rsquo;m going to take you through what the lightning network looks like today. This is the current topology of the network and how this came about, and some approaches for maintaining hte network and making the graph look like we want it to look.\nLightning brief overview There\u0026amp;rsquo;s ideally only two transactions …"
 },
 {
 	"uri": "/layer2-summit/2018/lightning-overview/",
