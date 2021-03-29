@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PSBT on ₿itcoin Transcripts</title><link>//btctranscripts.com/tags/psbt/</link><description>Recent content in PSBT on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="//btctranscripts.com/tags/psbt/index.xml" rel="self" type="application/rss+xml"/><item><title>Andrew Chow Hardware Wallets (2020-02-05)</title><link>//btctranscripts.com/london-bitcoin-devs/2020-02-05-andrew-chow-hardware-wallets/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/london-bitcoin-devs/2020-02-05-andrew-chow-hardware-wallets/</guid><description>Andrew Chow
+London Bitcoin Devs
+February 5th 2020
+Hardware Wallets in Bitcoin Core
+Video: https://www.youtube.com/watch?v=8mdfygEzQjE
+Slides: https://www.dropbox.com/s/k02o32d0pagac4r/Andrew%20Chow%20slides.pdf
+BIP174 (PSBT): https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki
+PSBT Howto for Bitcoin Core: https://github.com/bitcoin/bitcoin/blob/master/doc/psbt.md
+Introduction Hey everyone. As you may have guessed I’m Andrew Chow. I’m Engineer at Blockstream and I also work on Bitcoin Core a lot, mostly in the wallet. I am going to be talking about hardware wallets and a bit history with them in Core and also how to integrate them in Core and how we are integrating them into Core.</description></item></channel></rss>

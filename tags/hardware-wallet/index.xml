@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>hardware wallet on ₿itcoin Transcripts</title><link>//btctranscripts.com/tags/hardware-wallet/</link><description>Recent content in hardware wallet on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="//btctranscripts.com/tags/hardware-wallet/index.xml" rel="self" type="application/rss+xml"/><item><title>Andreas Antonopoulos Hardware Wallet Security (2019-02-01)</title><link>//btctranscripts.com/andreas-antonopoulos/2019-02-01-andreas-antonopoulos-hardware-wallet-security/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/andreas-antonopoulos/2019-02-01-andreas-antonopoulos-hardware-wallet-security/</guid><description>Name: Andreas Antonpoulos
+Topic: Are Hardware Wallets Secure Enough?
+Location: Andreas Antonopoulos YouTube channel
+Date: February 1st 2019
+Video: https://www.youtube.com/watch?v=3zNVDIz6Snw
+Are Hardware Wallets Secure Enough? Q - Hi Andreas. I store my crypto on a Ledger. Listening to Trace Mayer this week has me concerned that this is not safe enough. Trace says you need Bitcoin Core for network validation, Armory for managing the private keys and a Glacier protocol for standard operating procedures and a Purism laptop for hardware.</description></item><item><title>Andrew Chow Hardware Wallets (2020-02-05)</title><link>//btctranscripts.com/london-bitcoin-devs/2020-02-05-andrew-chow-hardware-wallets/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/london-bitcoin-devs/2020-02-05-andrew-chow-hardware-wallets/</guid><description>Andrew Chow
+London Bitcoin Devs
+February 5th 2020
+Hardware Wallets in Bitcoin Core
+Video: https://www.youtube.com/watch?v=8mdfygEzQjE
+Slides: https://www.dropbox.com/s/k02o32d0pagac4r/Andrew%20Chow%20slides.pdf
+BIP174 (PSBT): https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki
+PSBT Howto for Bitcoin Core: https://github.com/bitcoin/bitcoin/blob/master/doc/psbt.md
+Introduction Hey everyone. As you may have guessed I’m Andrew Chow. I’m Engineer at Blockstream and I also work on Bitcoin Core a lot, mostly in the wallet. I am going to be talking about hardware wallets and a bit history with them in Core and also how to integrate them in Core and how we are integrating them into Core.</description></item><item><title>Breaking Hardware Wallets</title><link>//btctranscripts.com/breaking-bitcoin/2017/breaking-hardware-wallets/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/breaking-bitcoin/2017/breaking-hardware-wallets/</guid><description>Breaking hardware wallets: Tales from the trenches and glimpses into the future
+Nicolas Bacca
+video: https://www.youtube.com/watch?v=eCE2OzKIab8&amp;amp;t=6h42m30s
+https://twitter.com/kanzure/status/1005627960160849920
+Hello. Nobody cares? Ah. So next up is Nicolas. And he will talk about hardware attacks. Thank you.
+Introduction Hi everybody. Thanks for making a great conference so far. I am Nicolas from Ledger hardware wallet. Today I am going to be talking about breaking hardware wallets. I don&amp;rsquo;t mean physically breaking them. If you expected to come steal a hardware wallet and be able to break it, then you will be disappointed.</description></item><item><title>Extracting Seeds From Hardware Wallets</title><link>//btctranscripts.com/breaking-bitcoin/2019/extracting-seeds-from-hardware-wallets/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/breaking-bitcoin/2019/extracting-seeds-from-hardware-wallets/</guid><description>Extracting seeds from hardware wallets
+Charles Guillemet (P3b7_)
+7DC5A359D0D5B5AB6728&amp;hellip;
+https://twitter.com/kanzure/status/1137672946435198976
+Introduction My talk is about extracting seeds from hardware wallets. I am chief security officer at Ledger. I joined Ledger a bit more than one year ago. I built the Ledger Donjon which is an independent red team. Our mission is to help secure Ledger&amp;rsquo;s products. So what we do day to do is try to break all the hardware wallets.</description></item><item><title>Future Of Hardware Wallets</title><link>//btctranscripts.com/breaking-bitcoin/2019/future-of-hardware-wallets/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/breaking-bitcoin/2019/future-of-hardware-wallets/</guid><description>The future of hardware wallets
+Stepan Snigirev
+D419 C410 1E24 5B09 0D2C 46BF 8C3D 2C48 560E 81AC
+https://twitter.com/kanzure/status/1137663515957837826
+Introduction We are making a secure hardware platform for developers so that they can build their own hardware wallets. Today I want to talk about certain challenges for hardware wallets, what we&amp;rsquo;re missing, and how we can get better.
+Current capabilities of hardware wallets Normally, hardware wallets keep keys reasonably secret and are able to spend coins or sign transactions.</description></item><item><title>Greg Maxwell Hardware Wallets Altcoins</title><link>//btctranscripts.com/greg-maxwell/greg-maxwell-hardware-wallets-altcoins/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/greg-maxwell/greg-maxwell-hardware-wallets-altcoins/</guid><description>Name: Greg Maxwell
+Topic: Hardware wallets and altcoins
+Location: Reddit
+Date: November 1st 2020
+https://www.reddit.com/r/Bitcoin/comments/jlwxpq/why_do_you_think_coldcard_doesnt_support_altcoins/gasoyuj?utm_source=share&amp;amp;utm_medium=web2x&amp;amp;context=3
+Why do hardware wallets not support altcoins? They&amp;rsquo;re an enormous distraction and hazard to software development. It&amp;rsquo;s hard enough to correctly and safely write software to support one system. Every minute spent creating and testing the software for some alternative is a minute taken away from supporting Bitcoin.
+I can say first hand that my efforts to review hardware wallet code against possible vulnerabilities have been actively thwarted by hardware wallet codebases being crapped up with support for altcoins.</description></item><item><title>Greg Maxwell Yubikey Security</title><link>//btctranscripts.com/greg-maxwell/greg-maxwell-yubikey-security/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/greg-maxwell/greg-maxwell-yubikey-security/</guid><description>Name: Greg Maxwell
+Topic: Yubikey security
+Location: Reddit
+Date: November 7th 2020
+https://www.reddit.com/r/Bitcoin/comments/jp2fp3/opinion_regarding_security/gbhojor?utm_source=share&amp;amp;utm_medium=web2x&amp;amp;context=3
+Yubikey Security By this logic, a yubikey would also be a great targeting vector.
+They would be, and if US intelligence services have not compromised yubis or at least have a perfect targeted substitution solutions for them then they should all be fired for gross incompetence and mismanagement of their funding.
+Likewise, if parties which things of significant value to secure who might be targeted by state level attackers are securing those things with just yubs instead of using yubis as a second factor in an otherwise secure setup then those parties ought to be fired too.</description></item><item><title>Hardware Wallet Design Best Practices</title><link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/hardware-wallet-design-best-practices/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/hardware-wallet-design-best-practices/</guid><description>Hardware wallet design: issues and best practices
+Stepan Snigirev
+https://twitter.com/kanzure/status/1171322716303036417
+Introduction We have 30 minutes. This was a talk by me and Jimmy but Jimmy talked for like 5 hours yesterday so I&amp;rsquo;ll be talking today.
+Imagine you want to start working in bitcoin development. There&amp;rsquo;s a chance you will end up using a hardware wallet. In principle, it&amp;rsquo;s not any different from other software development. There&amp;rsquo;s still programming involved, like for firmware.</description></item><item><title>Hardware Wallets (2019-06-07)</title><link>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-07-hardware-wallets/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-07-hardware-wallets/</guid><description>Hardware wallets
+https://twitter.com/kanzure/status/1136924010955104257
+How much should Bitcoin Core do, and how much should other libraries do? Andrew Chow wrote the wonderful HWI tool. Right now we have a pull request to support external signers. The HWI script can talk to most major hardware wallets because it has all the drivers built in now, and it can get keys from it, and sign arbitrary transactions. That&amp;rsquo;s roughly what it does. It&amp;rsquo;s kind of manual, though.</description></item><item><title>Hardware Wallets (2019-06-29)</title><link>//btctranscripts.com/austin-bitcoin-developers/2019-06-29-hardware-wallets/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/austin-bitcoin-developers/2019-06-29-hardware-wallets/</guid><description>2019-06-29
+Stepan Snigirev
+livestream: https://www.youtube.com/watch?v=rK0jUeHeDf0
+https://twitter.com/kanzure/status/1145019634547978240
+see also:
+Extracting seeds from hardware wallets The future of hardware wallets coredev.tech 2019 hardware wallets discussion Background A bit more than a year ago, I went through Jimmy Song&amp;rsquo;s Programming Blockchain class. That&amp;rsquo;s where I met M where he was the teaching assistant. Basically, you write a python bitcoin library from scratch. The API for this library and the classes and fnuctions that Jimmy uses is very easy to read and understand.</description></item><item><title>Rodolfo Novak Coldcard Mk3 (2019-09-14)</title><link>//btctranscripts.com/baltic-honeybadger/2019/2019-09-14-rodolfo-novak-coldcard-mk3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/baltic-honeybadger/2019/2019-09-14-rodolfo-novak-coldcard-mk3/</guid><description>Name: Rodolfo Novak
+Topic: Coldcard Mk3 - Security in Depth
+Location: Baltic Honeybadger 2019
+Date: September 14th 2019
+Audio: https://youtu.be/2IpZWSWUIVE?t=23739
+Intro My name is Rodolfo, I have been around Bitcoin for a little while. We make hardware. Today I wanted to get a little bit into how do you make a hardware wallet secure in a little bit more layman’s terms. Go through the process of getting that done.
+What were the options When I closed my last company and decided to find a place to store my coins I couldn’t really find a wallet that satisfied two things that I needed.</description></item><item><title>Socratic Seminar 2 (2019-08-22)</title><link>//btctranscripts.com/austin-bitcoin-developers/2019-08-22-socratic-seminar-2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/austin-bitcoin-developers/2019-08-22-socratic-seminar-2/</guid><description>2019-08-22
+Austin Bitcoin Developers Socratic Seminar 2
+https://twitter.com/kanzure/status/1164710800910692353
+Introduction Hello. The idea was to do a more socratic style meetup. This was popularized by Bitdevs NYC and spread to SF. We tried this a few months ago with Jay. The idea is we run through research news, newsletters, podcasters, talk about what happened in the technical bitcoin community. We&amp;rsquo;re going to have different presenters.
+Mike Schmidt is going to talk about some optech newsletters that he has been contributing to.</description></item><item><title>The Future Of Bitcoin Wallets</title><link>//btctranscripts.com/baltic-honeybadger/2018/the-future-of-bitcoin-wallets/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/baltic-honeybadger/2018/the-future-of-bitcoin-wallets/</guid><description>1 on 1: The future of bitcoin wallets
+Pavol Rusnak (pavolrusnak)
+Lawrence Nahum (larrybitcoin)
+Giacomo Zucco (giacomozucco)
+https://twitter.com/kanzure/status/1043445104827084800
+GZ: Thank you very much. We&amp;rsquo;re going to talk about the future of bitcoin wallets. As you know, it&amp;rsquo;s a very central topic. We always compare bitcoin to the internet. Wallets are basically like browsers like back at the beginning of the web. They are the first gateway to a user experience for users on bitcoin.</description></item></channel></rss>

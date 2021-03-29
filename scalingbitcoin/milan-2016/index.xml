@@ -32,7 +32,7 @@ EPFL
 Eleftherios Kokoris Kogias
 https://twitter.com/kanzure/status/785102844839985153
 We are starting the session called &amp;ldquo;breaking the chain&amp;rdquo;. We will first have collective signing presentation. Thank you.
-This is joint work with some collaborators.
+categories: [&amp;lsquo;conference&amp;rsquo;] tags: [&amp;lsquo;security&amp;rsquo;] This is joint work with some collaborators.
 What we have now is that real-time verification is not safe. What we managed to get is that we get transaction commitment in about 20-90 seconds at close to 1,000 transactions/second.</description></item><item><title>Covenants</title><link>//btctranscripts.com/scalingbitcoin/milan-2016/covenants/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/scalingbitcoin/milan-2016/covenants/</guid><description>Bitcoin covenants: Opportunities and challenges
 Emin Gun Sirer
 https://twitter.com/kanzure/status/785071789705728000
@@ -98,12 +98,12 @@ Intro Today I will be talking about Schnorr signatures for Bitcoin. I want to sa
 Greg Sanders (instagibbs)
 https://twitter.com/kanzure/status/785034301272420353
 https://www.youtube.com/watch?v=_Z0ID-0DOnc
-Hi. My name is Greg Sanders. I will be giving a talk about segwit in bitcoin lessons learned. I will also give some takeaways that I think are important. A little bit about myself. I work on Elements Project at Blockstream. I was a reviewer on segwit for Bitcoin Core. How do we scale protocol development? How do we scale review and keep things safe?</description></item><item><title>Sidechains</title><link>//btctranscripts.com/scalingbitcoin/milan-2016/sidechains/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/scalingbitcoin/milan-2016/sidechains/</guid><description>Sidechains
+categories: [&amp;lsquo;conference&amp;rsquo;] tags: [&amp;lsquo;segwit&amp;rsquo;, &amp;lsquo;consensus&amp;rsquo;, &amp;lsquo;forks&amp;rsquo;, &amp;lsquo;security&amp;rsquo;, &amp;lsquo;lightning&amp;rsquo;] Hi. My name is Greg Sanders. I will be giving a talk about segwit in bitcoin lessons learned. I will also give some takeaways that I think are important. A little bit about myself. I work on Elements Project at Blockstream. I was a reviewer on segwit for Bitcoin Core. How do we scale protocol development?</description></item><item><title>Sidechains</title><link>//btctranscripts.com/scalingbitcoin/milan-2016/sidechains/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/scalingbitcoin/milan-2016/sidechains/</guid><description>Sidechains
 Paul Sztorc
 https://twitter.com/kanzure/status/784767020290150400
 slides https://scalingbitcoin.org/milan2016/presentations/D1%20-%209%20-%20Paul.pdf
 Before we begin, we will explain how the workshops will work upstairs. There will be some topics and room numbers. Now we will start the next presentation on sidechain scaling with Paul Sztorc. Thank you everyone.
-Thanks a lot. So this talk will be a little different. Scaling via strategy, not physics. This will not change the kilobytes sent over&amp;ndash; it will, just not in the literal sense.</description></item><item><title>Timestamping</title><link>//btctranscripts.com/scalingbitcoin/milan-2016/timestamping/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/scalingbitcoin/milan-2016/timestamping/</guid><description>Timestamping
+categories: [&amp;lsquo;conference&amp;rsquo;] Thanks a lot. So this talk will be a little different. Scaling via strategy, not physics. This will not change the kilobytes sent over&amp;ndash; it will, just not in the literal sense.</description></item><item><title>Timestamping</title><link>//btctranscripts.com/scalingbitcoin/milan-2016/timestamping/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/scalingbitcoin/milan-2016/timestamping/</guid><description>Timestamping
 Riccardo Casatta
 slides https://scalingbitcoin.org/milan2016/presentations/D1%20-%20A%20-%20Riccardo.pdf
 https://twitter.com/kanzure/status/784773221610586112

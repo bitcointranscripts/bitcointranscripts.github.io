@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>segregated witness on ₿itcoin Transcripts</title><link>//btctranscripts.com/tags/segregated-witness/</link><description>Recent content in segregated witness on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="//btctranscripts.com/tags/segregated-witness/index.xml" rel="self" type="application/rss+xml"/><item><title>Segregated Witness And Its Impact On Scalability</title><link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/segregated-witness-and-its-impact-on-scalability/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/scalingbitcoin/hong-kong-2015/segregated-witness-and-its-impact-on-scalability/</guid><description>Pieter Wuille (sipa)
+video: https://www.youtube.com/watch?v=fst1IK_mrng&amp;amp;t=36m
+slides: https://prezi.com/lyghixkrguao/segregated-witness-and-deploying-it-for-bitcoin/
+code: https://github.com/sipa/bitcoin/commits/segwit
+SPV = simplified payment verification
+CSV = checksequenceverify
+CLTV = checklocktimeverify
+Segregated witness (segwit) and deploying it for Bitcoin
+Okay. So I am Pieter Wuille. I&amp;rsquo;ll be talking about segregated witness for Bitcoin. Before I can explain this, I want to give some context. We all know how bitcoin transactions work. Every bitcoin transaction gets inputs, which refer to previous outputs being spent.</description></item></channel></rss>

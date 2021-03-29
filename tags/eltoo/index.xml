@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>eltoo on ₿itcoin Transcripts</title><link>//btctranscripts.com/tags/eltoo/</link><description>Recent content in eltoo on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="//btctranscripts.com/tags/eltoo/index.xml" rel="self" type="application/rss+xml"/><item><title>Christian Decker Eltoo (2019-06-25)</title><link>//btctranscripts.com/chaincode-labs/2019-06-25-christian-decker-eltoo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/chaincode-labs/2019-06-25-christian-decker-eltoo/</guid><description>Name: Christian Decker
+Topic: Eltoo: The (Far) Future of Lightning
+Location: Chaincode Labs
+Date: June 25th 2019
+Video: https://www.youtube.com/watch?v=3ZjymCOmn_A
+Slides: https://residency.chaincode.com/presentations/lightning/Eltoo.pdf
+Eltoo white paper: https://blockstream.com/eltoo.pdf
+Bitcoin Magazine article: https://bitcoinmagazine.com/articles/noinput-class-bitcoin-soft-fork-simplify-lightning
+Intro Who has never heard about eltoo? It is my pet project and I am pretty proud of it. I will try to keep this short. I was told that you all have seen my presentation about the evolution of update protocols.</description></item><item><title>Incentivizing Payment Channel Watchtowers</title><link>//btctranscripts.com/scalingbitcoin/tokyo-2018/incentivizing-payment-channel-watchtowers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/incentivizing-payment-channel-watchtowers/</guid><description>Incentivizing payment channel watchtowers
+Georgia Avarikioti, Felix Laufenberg, Jakub Sliwinski, Yuyi Wang and Roger Wattenhofer (ETH Zurich)
+Zeta Avarikioti
+https://twitter.com/kanzure/status/1048767166823071746
+Introduction Hi. Good morning. I am Zeta. I am going to talk about how to incentivize payment channel watchtowers. This is joint work with my collaborators.
+Micropayment channels There are many ways to construct channels such as lightning channels and duplex channels. There&amp;rsquo;s hops, you can route payments, and other proposals more recent ones for doing channels in payment networks like sprites, eltoo, all of them although they are different they all share the fundamental nature of channels.</description></item></channel></rss>

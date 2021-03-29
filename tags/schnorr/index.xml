@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>schnorr on ₿itcoin Transcripts</title><link>//btctranscripts.com/tags/schnorr/</link><description>Recent content in schnorr on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="//btctranscripts.com/tags/schnorr/index.xml" rel="self" type="application/rss+xml"/><item><title>Adam Gibson Unfairly Linear Signatures (2018-06-12)</title><link>//btctranscripts.com/london-bitcoin-devs/2018-06-12-adam-gibson-unfairly-linear-signatures/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/london-bitcoin-devs/2018-06-12-adam-gibson-unfairly-linear-signatures/</guid><description>Name: Adam Gibson
+Topic: Unfairly Linear Signatures
+Location: London Bitcoin Devs
+Date: June 12th 2018
+Video: https://www.youtube.com/watch?v=mLZ7qVwKalE
+Slides: https://joinmarket.me/static/schnorrplus.pdf
+Intro This is supposed to be a developer meetup but this talk is going to be a little more on the theoretical side. The title is “Unfairly Linear Signatures” that is just a joke. It is talking about Schnorr signatures. They are something that could in the near future have a big practical significance in Bitcoin.</description></item><item><title>Antoine Riard Taproot Lightning (2020-02-06)</title><link>//btctranscripts.com/advancing-bitcoin/2020/2020-02-06-antoine-riard-taproot-lightning/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/advancing-bitcoin/2020/2020-02-06-antoine-riard-taproot-lightning/</guid><description>Name: Antoine Riard
+Topic: A Schnorr-Taproot’ed Lightning
+Location: Advancing Bitcoin
+Date: February 6th 2020
+Video (paid access): https://www.advancingbitcoin.com/video/a-schnorr-taprooted-lightning,11/
+Slides: https://www.dropbox.com/s/9vs54e9bqf317u0/Schnorr-Taproot%27ed-LN.pdf
+Intro Today Schnorr and Taproot for Lightning, it is a really exciting topic.
+Lightning architecture The Lightning architecture for those who are not familiar with it. You have the blockchain as the underlying layer. On top of it you are going to build a channel, you have a HTLC and people are going to spend onions to you.</description></item><item><title>Bip Taproot Bip Tapscript (2019-12-16)</title><link>//btctranscripts.com/sf-bitcoin-meetup/2019-12-16-bip-taproot-bip-tapscript/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/sf-bitcoin-meetup/2019-12-16-bip-taproot-bip-tapscript/</guid><description>2019-12-16
+bip-taproot
+Pieter Wuille (sipa)
+slides: https://prezi.com/view/AlXd19INd3isgt3SvW8g/
+https://twitter.com/kanzure/status/1208438837845929987
+https://twitter.com/SFBitcoinDevs/status/1206678306721894400
+bip-taproot: https://github.com/sipa/bips/blob/bip-schnorr/bip-taproot.mediawiki
+bip-tapscript: https://github.com/sipa/bips/blob/bip-schnorr/bip-tapscript.mediawiki
+bip-schnorr: https://github.com/sipa/bips/blob/bip-schnorr/bip-schnorr.mediawiki
+Please try to find seats. Today we have a special treat. We have Pieter here, who is well known as a contributor to Bitcoin Core, stackexchange, the mailing list, and he has been around forever. He&amp;rsquo;s the author of multiple BIPs. Today he is going to talk about taproot and tapscript which is basically what the whole Schnorr movement thing became.</description></item><item><title>Blind Signatures And Scriptless Scripts</title><link>//btctranscripts.com/building-on-bitcoin/2018/blind-signatures-and-scriptless-scripts/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/building-on-bitcoin/2018/blind-signatures-and-scriptless-scripts/</guid><description>Blind signatures in scriptless scripts
+Jonas Nick
+Building on Bitcoin 2018
+https://twitter.com/kanzure/status/1014197255593603072
+My name is Jonas. I work at Blockstream as an engineer. I am going to talk about some primitives about blind signatures, scriptless scripts, and blind coin swap, and I will explain how to trustlessly exchange ecash tokens using bitcoin.
+I want to introduce the blind Schnorr signature in a few moments.
+Schnorr signature My assumption is not that you will completely understand Schnorr signatures, but maybe you will at least agree that if you can understand Schnorr signatures then the step to blind Schnorr signatures is not a big step.</description></item><item><title>Cross Curve Atomic Swaps (2018-03-05)</title><link>//btctranscripts.com/bitcoin-core-dev-tech/2018-03-05-cross-curve-atomic-swaps/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/bitcoin-core-dev-tech/2018-03-05-cross-curve-atomic-swaps/</guid><description>https://twitter.com/kanzure/status/971827042223345664
+Draft of an upcoming scriptless scripts paper. This was at the beginning of 2017. But now an entire year has gone by.
+post-schnorr lightning transactions https://lists.linuxfoundation.org/pipermail/lightning-dev/2018-February/001031.html
+An adaptor signature.. if you have different generators, then the two secrets to reveal, you just give someone both of them, plus a proof of a discrete log, and then you say learn the secret to one that gets the reveal to be the same.</description></item><item><title>Discreet Log Contracts</title><link>//btctranscripts.com/scalingbitcoin/stanford-2017/discreet-log-contracts/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/scalingbitcoin/stanford-2017/discreet-log-contracts/</guid><description>Discreet log contracts
+http://diyhpl.us/wiki/transcripts/discreet-log-contracts/
+https://www.youtube.com/watch?v=FU-rA5dkTHI
+paper: https://adiabat.github.io/dlc.pdf
+Hello everyone. I am going to give a talk about discreet log contracts. I am from MIT DCI. I work on lightning network software and discreet log contracts. A quick intro: these are pretty new. I am not sure if they work. This presentation is part of the peer review process. Maybe the math doesn&amp;rsquo;t work. Please let me know. It might also work, though.</description></item><item><title>Future Of Privacy Coins</title><link>//btctranscripts.com/magicalcryptoconference/2019/future-of-privacy-coins/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/magicalcryptoconference/2019/future-of-privacy-coins/</guid><description>Future of privacy coins
+Brandon Goodell, Andrew Poelstra, Alexandra Moxin
+AM: That&amp;rsquo;s not good. Hi everyone. Thanks for coming to the future of privacy coins panel. I want to spend a minute talking ablout backgrounds and interest in this area.
+BG: I have a PhD in something. I got into monero a couple of years ago. I needed to pay rent, so I did some work in math in exchange for money.</description></item><item><title>Jonas Nick Tim Ruffing Musig2 (2020-10-27)</title><link>//btctranscripts.com/stephan-livera-podcast/2020-10-27-jonas-nick-tim-ruffing-musig2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/stephan-livera-podcast/2020-10-27-jonas-nick-tim-ruffing-musig2/</guid><description>Name: Jonas Nick and Tim Ruffing
+Topic: MuSig, MuSig-DN and MuSig2
+Location: Stephan Livera Podcast
+Date: October 27th 2020
+Audio: https://stephanlivera.com/episode/222/
+Tim Ruffing on Schnorr multisig at London Bitcoin Devs: https://diyhpl.us/wiki/transcripts/london-bitcoin-devs/2020-06-17-tim-ruffing-schnorr-multisig/
+MuSig paper: https://eprint.iacr.org/2018/068.pdf
+MuSig blog post: https://blockstream.com/2019/02/18/en-musig-a-new-multisignature-standard/
+Insecure shortcuts in MuSig: https://medium.com/blockstream/insecure-shortcuts-in-musig-2ad0d38a97da
+MuSig-DN paper: https://eprint.iacr.org/2020/1057.pdf
+MuSig-DN blog post: https://medium.com/blockstream/musig-dn-schnorr-multisignatures-with-verifiably-deterministic-nonces-27424b5df9d6
+MuSig2 paper: https://eprint.iacr.org/2020/1261.pdf
+MuSig2 blog post: https://medium.com/blockstream/musig2-simple-two-round-schnorr-multisignatures-bf9582e99295
+Transcript completed by: Stephan Livera Edited by: Michael Folkson
+Intro Stephan Livera (SL): Jonas and Tim, welcome to the show.</description></item><item><title>Ltb Pieter Wuille Jonas Nick (2019-06-09)</title><link>//btctranscripts.com/lets-talk-bitcoin-podcast/2019-06-09-ltb-pieter-wuille-jonas-nick/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/lets-talk-bitcoin-podcast/2019-06-09-ltb-pieter-wuille-jonas-nick/</guid><description>Let&amp;rsquo;s Talk Bitcoin with Pieter Wuille and Jonas Nick - June 9th 2019
+https://twitter.com/kanzure/status/1155851797568917504
+Part 1: https://letstalkbitcoin.com/blog/post/lets-talk-bitcoin-400-the-tools-and-the-work
+Part 2: https://letstalkbitcoin.com/blog/post/lets-talk-bitcoin-401-the-tools-and-the-work-part-2
+Draft of BIP-Schnorr: https://github.com/sipa/bips/blob/bip-schnorr/bip-schnorr.mediawiki
+Draft of BIP-Taproot: https://github.com/sipa/bips/blob/bip-schnorr/bip-taproot.mediawiki
+Draft of BIP-Tapscript: https://github.com/sipa/bips/blob/bip-schnorr/bip-tapscript.mediawiki
+Part 1 Adam: On this episode we&amp;rsquo;ll be digging deeply into some of the most important changes coming soon to the Bitcoin protocol in the form of BIPs or Bitcoin Improvement Proposals focused on Taproot, Tapscript and Schnorr signatures.</description></item><item><title>Notes</title><link>//btctranscripts.com/bitcoinops/schnorr-taproot-workshop-2019/notes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/bitcoinops/schnorr-taproot-workshop-2019/notes/</guid><description>Schnorr and taproot workshop 2019 NYC
+https://bitcoinops.org/en/schnorr-taproot-workshop/
+https://github.com/bitcoinops/taproot-workshop
+https://bitcoinops.slack.com
+https://twitter.com/kanzure/status/1177697093462482949
+Run: jupyter notebook
+See also Schnorr signatures and taproot: https://diyhpl.us/wiki/transcripts/sf-bitcoin-meetup/2018-07-09-taproot-schnorr-signatures-and-sighash-noinput-oh-my/
+https://github.com/sipa/bips/blob/bip-schnorr/bip-schnorr.mediawiki
+https://github.com/sipa/bips/blob/bip-schnorr/bip-taproot.mediawiki
+https://github.com/sipa/bips/blob/bip-schnorr/bip-tapscript.mediawiki
+Why Schnorr and why taproot? Who here already feels comfortbale with Schnorr/Taproot? This is a proposed consensus change to bitcoin. When we talk about consensus changes, we often talk about tradeoffs and compromises. It would be irresponsible to say taproot has no downsides, but I think it&amp;rsquo;s important to mention it&amp;rsquo;s a clear win for bitcoin.</description></item><item><title>Schnorr Signatures</title><link>//btctranscripts.com/scalingbitcoin/milan-2016/schnorr-signatures/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/scalingbitcoin/milan-2016/schnorr-signatures/</guid><description>Name: Pieter Wuille
+Topic: Schnorr signatures for Bitcoin
+Location: Scaling Bitcoin (Milan)
+Date: October 10th 2016
+Video: https://www.youtube.com/watch?v=_Z0ID-0DOnc&amp;amp;feature=youtu.be&amp;amp;t=2297
+Slides: URL expired
+Pieter Wuille presentation on Schnorr at BPASE 2018: https://diyhpl.us/wiki/transcripts/blockchain-protocol-analysis-security-engineering/2018/schnorr-signatures-for-bitcoin-challenges-opportunities/
+Transcript completed by: Bryan Bishop Edited by: Michael Folkson
+Intro Today I will be talking about Schnorr signatures for Bitcoin. I want to say a few things in advance. One is even though this is a talk about cryptography and in particular new cryptography I don&amp;rsquo;t consider myself to be a cryptographer.</description></item><item><title>Schnorr Signatures For Bitcoin Challenges Opportunities</title><link>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/schnorr-signatures-for-bitcoin-challenges-opportunities/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/schnorr-signatures-for-bitcoin-challenges-opportunities/</guid><description>Schnorr signatures for Bitcoin: Opportunities and challenges
+Pieter Wuille (sipa)
+2018-01-31
+video: https://www.youtube.com/watch?v=oTsjMz3DaLs
+slides: https://prezi.com/bihvorormznd/schnorr-signatures-for-bitcoin/
+https://twitter.com/kanzure/status/958776403977220098
+https://blockstream.com/2018/02/15/schnorr-signatures-bpase.html
+Introduction My name is Pieter Wuille. I work at Blockstream. I contribute to Bitcoin Core and bitcoin research in general. I work on various proposals for the bitcoin system for some time now. Today I will be talking about Schnorr signatures for bitcoin, which is a project we&amp;rsquo;ve been working on, on-and-off, for a couple of years now.</description></item><item><title>Signature Scheme Security Properties</title><link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2019/signature-scheme-security-properties/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2019/signature-scheme-security-properties/</guid><description>Name: Andrew Poelstra
+Topic: Secure Signatures - Harder Than You Think
+Location: MIT Bitcoin Expo 2019
+Date: March 9th 2019
+Video: https://www.youtube.com/watch?v=0gc1DSk8wlw
+Twitter announcement: https://twitter.com/kanzure/status/1104399812147916800
+Transcript completed by: Bryan Bishop
+Introduction Hi everyone. Can you hear me alright? Is my mic? Okay, cool. I was scheduled to talk about the history of schnorr signatures in bitcoin. I want to do that, but I only have 20-30 minutes to talk here.</description></item><item><title>Socratic Seminar Bip Taproot (2020-07-21)</title><link>//btctranscripts.com/london-bitcoin-devs/2020-07-21-socratic-seminar-bip-taproot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/london-bitcoin-devs/2020-07-21-socratic-seminar-bip-taproot/</guid><description>Name: Socratic Seminar
+Topic: BIP Taproot (BIP 341)
+Location: London BitDevs (online)
+Date: July 21st 2020
+Video: https://www.youtube.com/watch?v=bPcguc108QM
+Pastebin of the resources discussed: https://pastebin.com/vsT3DNqW
+Transcript of Socratic Seminar on BIP-Schnorr: https://diyhpl.us/wiki/transcripts/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/
+The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.</description></item><item><title>Socratic Seminar Signet (2020-08-19)</title><link>//btctranscripts.com/london-bitcoin-devs/2020-08-19-socratic-seminar-signet/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/london-bitcoin-devs/2020-08-19-socratic-seminar-signet/</guid><description>Name: Socratic Seminar
+Topic: Signet
+Location: London BitDevs (online)
+Date: August 19th 2020
+Video: https://www.youtube.com/watch?v=b0AiucAuX3E
+Pastebin of the resources discussed: https://pastebin.com/rAcXX9Tn
+The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
+Intro Michael Folkson (MF): This is a Socratic Seminar organized by London BitDevs.</description></item><item><title>Taproot (2019-06-06)</title><link>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-06-taproot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-06-taproot/</guid><description>Taproot
+https://github.com/sipa/bips/blob/bip-schnorr/bip-taproot.mediawiki
+https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2019-May/016914.html
+https://bitcoinmagazine.com/articles/taproot-coming-what-it-and-how-it-will-benefit-bitcoin/
+previously: http://diyhpl.us/wiki/transcripts/bitcoin-core-dev-tech/2018-03-06-taproot-graftroot-etc/
+https://twitter.com/kanzure/status/1136616356827283456
+Introduction Okay, so, first question- who put my name on that list and what do they want? It wasn&amp;rsquo;t me. I&amp;rsquo;ll ask questions. I can give a summary, but there&amp;rsquo;s been a lot of talk already and I don&amp;rsquo;t know what to focus on. What would sipa like us to review in particular about it? What design decisions do you feel least confident about?</description></item><item><title>Threshold Schnorr Signatures</title><link>//btctranscripts.com/cryptoeconomic-systems/2019/threshold-schnorr-signatures/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/cryptoeconomic-systems/2019/threshold-schnorr-signatures/</guid><description>Name: Tim Ruffing
+Topic: The Quest for Practical Threshold Schnorr Signatures
+Location: Cryptoeconomic Systems Summit 2019
+Date: October 6th 2019
+Video: https://www.youtube.com/watch?v=Wy5jpgmmqAg
+Slides: https://slides.com/real-or-random/schnorr-threshold-sigs-ces-summit-2019
+Transcript completed by: Bryan Bishop Edited by: Michael Folkson
+Introduction It&amp;rsquo;s great to be here. My name is Tim Ruffing and I work for the research team at Blockstream. This is a talk about practical threshold Schnorr signatures and our quest for constructing them.
+Disclaimer First of all, this is work in progress.</description></item><item><title>Tim Ruffing Schnorr Multisig (2020-06-17)</title><link>//btctranscripts.com/london-bitcoin-devs/2020-06-17-tim-ruffing-schnorr-multisig/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/london-bitcoin-devs/2020-06-17-tim-ruffing-schnorr-multisig/</guid><description>Name: Tim Ruffing
+Topic: Taproot and Schnorr Multisignatures
+Location: London Bitcoin Devs (online)
+Date: June 17th 2020
+Video: https://www.youtube.com/watch?v=8Op0Glp9Eoo
+Slides: https://slides.com/real-or-random/taproot-and-schnorr-multisig
+Transcript of the previous day’s Socratic Seminar on BIP-Schnorr: https://diyhpl.us/wiki/transcripts/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/
+Intro (Michael Folkson) We are now live. This is London Bitcoin Devs with Tim Ruffing. We had the Socratic Seminar yesterday, I think we have some people on the call that were at the Socratic Seminar. That was brilliant. Thanks to Tim, Pieter, Greg, waxwing and everyone for showing up and taking 2 and a half hours out of their day.</description></item></channel></rss>
