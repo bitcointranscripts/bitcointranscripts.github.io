@@ -1,0 +1,12 @@
+{{ define "main" }}
+
+<h1>{{ .Title | humanize | title }}</h1>
+
+<ul>
+    {{ range .Data.Pages }}
+    <li>
+      <a href="{{.RelPermalink}}">{{ .Title | title }}</a>
+    </li>
+    {{ end }}
+</ul>
+{{ end }}

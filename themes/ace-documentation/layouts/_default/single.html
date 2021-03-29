@@ -1,9 +1,28 @@
 {{ define "main" }}
+{{ partial "breadcrumbs.html" . }}
 
 <h1>{{ .Title }}</h1>
 
-{{ if .Params.TranscriptBy }}
-    <p><i>Transcript by: {{ .Params.TranscriptBy }}</i></p>
+{{ if .Params.transcript_by }}
+    <p><i>Transcript by: {{ .Params.transcript_by }}</i></p>
+{{ end }}
+
+{{ if (.GetTerms "tags") }}
+    <p>Tags:
+    {{ range $i, $e := .Params.tags -}}
+        {{- if $i -}}, {{ end -}}
+        <a href='{{ "/tags/" | relLangURL }}{{ . | urlize }}'>{{ $e | humanize }}</a>
+    {{- end -}}
+    </p>
+{{ end }}
+
+{{ if (.GetTerms "categories") }}
+    <p>Category:
+    {{ range $i, $e := .Params.categories -}}
+        {{- if $i -}}, {{ end -}}
+        <a href='{{ "/categories/" | relLangURL }}{{ . | urlize }}'>{{ $e | humanize }}</a>
+    {{- end -}}
+    </p>
 {{ end }}
 
 {{ .Content }}
@@ -19,4 +38,5 @@
           </ul>
     {{ end }}
 
+    
 {{ end }}
