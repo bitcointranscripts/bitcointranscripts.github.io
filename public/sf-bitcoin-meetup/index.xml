@@ -216,6 +216,19 @@ Intro Can everyone hear me fine through this microphone? Anyone who can&amp;rsqu
     </item>
     
     <item>
+      <title>Partially Signed Bitcoin Transactions (2019-03-15)</title>
+      <link>//btctranscripts.com/sf-bitcoin-meetup/2019-03-15-partially-signed-bitcoin-transactions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/sf-bitcoin-meetup/2019-03-15-partially-signed-bitcoin-transactions/</guid>
+      <description>Name: Andrew Chow
+Topic: PSBT
+Location: SF Bitcoin Devs
+Video: https://www.youtube.com/watch?v=H6xZSRDXUiU&amp;amp;feature=youtu.be
+Introduction Andrew: So as Mark said I&amp;rsquo;m Andrew Chow and today I&amp;rsquo;m going to be talking about BIP 174, partially signed Bitcoin transactions, also known as PSBT. Today I&amp;rsquo;m going to be talking a bit about why we need PSBTs, or Partially Signed Bitcoin Transactions, what they are, and the actual format of the transaction itself and how to use a PSBT and the workflows around that.</description>
+    </item>
+    
+    <item>
       <title>Pieter Wuille Key Tree Signatures (2015-08-24)</title>
       <link>//btctranscripts.com/sf-bitcoin-meetup/2015-08-24-pieter-wuille-key-tree-signatures/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

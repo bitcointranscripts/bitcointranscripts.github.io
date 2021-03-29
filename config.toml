@@ -6,6 +6,22 @@ theme = "ace-documentation"
 orderSectionsby = "title"
 ignoreFiles = [ "README.md", "LICENSE.md" ]
 
+DefaultContentLanguage = "en"
+
+[languages]
+  [languages.en]
+    title = "₿itcoin Transcripts"
+    languageName = "English"
+    weight = 1
+  [languages.es]
+    title = "Transcripciones de ₿itcoin"
+    languageName = "Español"
+    weight = 2
+  [languages.fr]
+    title = "Transcriptions ₿itcoin"
+    languageName = "Française"
+    weight = 2
+
 [outputs]
     home = [ "HTML", "JSON"]
     page = [ "HTML"]

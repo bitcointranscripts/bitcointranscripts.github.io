@@ -7,41 +7,11 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="//btctranscripts.com/greg-maxwell/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Gmaxwell 2015 11 09 Mining And Block Size Etc</title>
-      <link>//btctranscripts.com/greg-maxwell/gmaxwell-2015-11-09-mining-and-block-size-etc/</link>
+      <title>Gmaxwell - Advances In Block Propagation (2017-11-27)</title>
+      <link>//btctranscripts.com/greg-maxwell/2017-11-27-gmaxwell-advances-in-block-propagation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/greg-maxwell/gmaxwell-2015-11-09-mining-and-block-size-etc/</guid>
-      <description>Mining, block size, etc.
-gmaxwell
-2015-11-09
-https://www.youtube.com/watch?v=RguZ0_nmSPw
-So uh I am really excited to announce or introduce our next speaker, Greg Maxwell. Greg, well, there are people who talk and there&amp;rsquo;s people who do, and Greg is definitely a doer. He is definitely one of the most accomplished if not most helpful, one of the most active people, not just in terms of commits that we see, but also things we don&amp;rsquo;t see, like input regarding bugs and to other developers and being a great voice in this industry.</description>
-    </item>
-    
-    <item>
-      <title>Gmaxwell 2017 08 28 Deep Dive Bitcoin Core V0.15</title>
-      <link>//btctranscripts.com/greg-maxwell/gmaxwell-2017-08-28-deep-dive-bitcoin-core-v0.15/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>//btctranscripts.com/greg-maxwell/gmaxwell-2017-08-28-deep-dive-bitcoin-core-v0.15/</guid>
-      <description>A deep dive into Bitcoin Core v0.15
-Greg Maxwell
-2017-08-28
-video: https://www.youtube.com/watch?v=nSRoEeqYtJA
-slides: https://people.xiph.org/~greg/gmaxwell-sf-015-2017.pdf
-https://twitter.com/kanzure/status/903872678683082752
-git repo: https://github.com/bitcoin/bitcoin
-preliminary v0.15 release notes (not finished yet): http://dg0.dtrt.org/en/2017/09/01/release-0.15.0/
-Introduction Alright let&amp;rsquo;s get started. There are a lot of new faces in the room. I feel like there&amp;rsquo;s an increase in excitement around bitcoin right now. That&amp;rsquo;s great. For those of you who are new to this space, I am going to be talking about some technical details here, so you&amp;rsquo;ll get to drink from the firehose.</description>
-    </item>
-    
-    <item>
-      <title>Gmaxwell 2017 11 27 Advances In Block Propagation</title>
-      <link>//btctranscripts.com/greg-maxwell/gmaxwell-2017-11-27-advances-in-block-propagation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>//btctranscripts.com/greg-maxwell/gmaxwell-2017-11-27-advances-in-block-propagation/</guid>
+      <guid>//btctranscripts.com/greg-maxwell/2017-11-27-gmaxwell-advances-in-block-propagation/</guid>
       <description>Advances in block propagation
 Greg Maxwell
 2017-11-27
@@ -60,22 +30,22 @@ https://twitter.com/kanzure/status/944656354307919873
     </item>
     
     <item>
-      <title>Gmaxwell Bitcoin Selection Cryptography</title>
-      <link>//btctranscripts.com/greg-maxwell/gmaxwell-bitcoin-selection-cryptography/</link>
+      <title>Gmaxwell - Bitcoin Selection Cryptography (2015-04-29)</title>
+      <link>//btctranscripts.com/greg-maxwell/2015-04-29-gmaxwell-bitcoin-selection-cryptography/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/greg-maxwell/gmaxwell-bitcoin-selection-cryptography/</guid>
+      <guid>//btctranscripts.com/greg-maxwell/2015-04-29-gmaxwell-bitcoin-selection-cryptography/</guid>
       <description>Greg Maxwell (gmaxwell)
  slides: https://people.xiph.org/~greg/gmaxwell_sfbitcoin_2015_04_20.pdf video: https://www.youtube.com/watch?v=Gs9lJTRZCDc (1h 23min 12sec)  A deep dive with Bitcoin Core developer Greg Maxwell
 The blueberry muffins are a lie. But instead I got some other things to present about. My name is Greg Maxwell. I am one of the committers to Bitcoin Core. I am one of the five people with commit access. I have been working on Bitcoin since 2011. Came into Bitcoin through assorted paths as has everyone else.</description>
     </item>
     
     <item>
-      <title>Gmaxwell Confidential Transactions</title>
-      <link>//btctranscripts.com/greg-maxwell/gmaxwell-confidential-transactions/</link>
+      <title>Gmaxwell - Confidential Transactions (2017-04-28)</title>
+      <link>//btctranscripts.com/greg-maxwell/2017-04-28-gmaxwell-confidential-transactions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/greg-maxwell/gmaxwell-confidential-transactions/</guid>
+      <guid>//btctranscripts.com/greg-maxwell/2017-04-28-gmaxwell-confidential-transactions/</guid>
       <description>Confidential transactions
 gmaxwell
 2017-04-28
@@ -87,11 +57,41 @@ My interest in this technology is primarily driven by bitcoin, but the technolog
     </item>
     
     <item>
-      <title>Gmaxwell Sidechains Elements</title>
-      <link>//btctranscripts.com/greg-maxwell/gmaxwell-sidechains-elements/</link>
+      <title>Gmaxwell - Deep Dive Bitcoin Core V0.15 (2017-08-28)</title>
+      <link>//btctranscripts.com/greg-maxwell/2017-08-28-gmaxwell-deep-dive-bitcoin-core-v0.15/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/greg-maxwell/gmaxwell-sidechains-elements/</guid>
+      <guid>//btctranscripts.com/greg-maxwell/2017-08-28-gmaxwell-deep-dive-bitcoin-core-v0.15/</guid>
+      <description>A deep dive into Bitcoin Core v0.15
+Greg Maxwell
+2017-08-28
+video: https://www.youtube.com/watch?v=nSRoEeqYtJA
+slides: https://people.xiph.org/~greg/gmaxwell-sf-015-2017.pdf
+https://twitter.com/kanzure/status/903872678683082752
+git repo: https://github.com/bitcoin/bitcoin
+preliminary v0.15 release notes (not finished yet): http://dg0.dtrt.org/en/2017/09/01/release-0.15.0/
+Introduction Alright let&amp;rsquo;s get started. There are a lot of new faces in the room. I feel like there&amp;rsquo;s an increase in excitement around bitcoin right now. That&amp;rsquo;s great. For those of you who are new to this space, I am going to be talking about some technical details here, so you&amp;rsquo;ll get to drink from the firehose.</description>
+    </item>
+    
+    <item>
+      <title>Gmaxwell - Mining And Block Size Etc (2015-11-09)</title>
+      <link>//btctranscripts.com/greg-maxwell/2015-11-09-gmaxwell-mining-and-block-size-etc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/greg-maxwell/2015-11-09-gmaxwell-mining-and-block-size-etc/</guid>
+      <description>Mining, block size, etc.
+gmaxwell
+2015-11-09
+https://www.youtube.com/watch?v=RguZ0_nmSPw
+So uh I am really excited to announce or introduce our next speaker, Greg Maxwell. Greg, well, there are people who talk and there&amp;rsquo;s people who do, and Greg is definitely a doer. He is definitely one of the most accomplished if not most helpful, one of the most active people, not just in terms of commits that we see, but also things we don&amp;rsquo;t see, like input regarding bugs and to other developers and being a great voice in this industry.</description>
+    </item>
+    
+    <item>
+      <title>Gmaxwell - Sidechains Elements (2015-06-08)</title>
+      <link>//btctranscripts.com/greg-maxwell/2015-06-08-gmaxwell-sidechains-elements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/greg-maxwell/2015-06-08-gmaxwell-sidechains-elements/</guid>
       <description>Bringing New Elements to Bitcoin with Sidechains
 SF Bitcoin Devs Meetup 2015-06-08
 Gregory Maxwell DE47 BC9E 6D2D A6B0 2DC6 10B1 AC85 9362 B041 3BFA
@@ -102,11 +102,11 @@ Hello, I am Greg Maxwell, one of the developers of the Bitcoin system and its re
     </item>
     
     <item>
-      <title>Greg Maxwell Bitcoin Core Github</title>
-      <link>//btctranscripts.com/greg-maxwell/greg-maxwell-bitcoin-core-github/</link>
+      <title>Greg Maxwell - Bitcoin Core Github (2020-10-26)</title>
+      <link>//btctranscripts.com/greg-maxwell/2020-10-26-greg-maxwell-bitcoin-core-github/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/greg-maxwell/greg-maxwell-bitcoin-core-github/</guid>
+      <guid>//btctranscripts.com/greg-maxwell/2020-10-26-greg-maxwell-bitcoin-core-github/</guid>
       <description>Name: Greg Maxwell
 Topic: Bitcoin Core and GitHub
 Location: Reddit
@@ -118,11 +118,11 @@ Can GitHub censor Bitcoin Core? The event isn&amp;rsquo;t news to Bitcoin develo
     </item>
     
     <item>
-      <title>Greg Maxwell Bitcoin Core Testing</title>
-      <link>//btctranscripts.com/greg-maxwell/greg-maxwell-bitcoin-core-testing/</link>
+      <title>Greg Maxwell - Bitcoin Core Testing (2018-09-23)</title>
+      <link>//btctranscripts.com/greg-maxwell/2018-09-23-greg-maxwell-bitcoin-core-testing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/greg-maxwell/greg-maxwell-bitcoin-core-testing/</guid>
+      <guid>//btctranscripts.com/greg-maxwell/2018-09-23-greg-maxwell-bitcoin-core-testing/</guid>
       <description>Name: Greg Maxwell
 Topic: Bitcoin Core testing
 Location: Bitcointalk
@@ -133,11 +133,11 @@ If we had an issue that newly introduced features were turning out to frequently
     </item>
     
     <item>
-      <title>Greg Maxwell Checkmultisig Bug</title>
-      <link>//btctranscripts.com/greg-maxwell/greg-maxwell-checkmultisig-bug/</link>
+      <title>Greg Maxwell - Checkmultisig Bug (2020-08-27)</title>
+      <link>//btctranscripts.com/greg-maxwell/2020-08-27-greg-maxwell-checkmultisig-bug/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/greg-maxwell/greg-maxwell-checkmultisig-bug/</guid>
+      <guid>//btctranscripts.com/greg-maxwell/2020-08-27-greg-maxwell-checkmultisig-bug/</guid>
       <description>Name: Greg Maxwell
 Topic: What is stopping the OP_CHECKMULTISIG extra pop bug from being fixed?
 Location: Bitcointalk
@@ -148,41 +148,26 @@ Regardless, there is no real point to fixing it: Any &amp;lsquo;fix&amp;rsquo; w
     </item>
     
     <item>
-      <title>Greg Maxwell Hardware Wallets Altcoins</title>
-      <link>//btctranscripts.com/greg-maxwell/greg-maxwell-hardware-wallets-altcoins/</link>
+      <title>Greg Maxwell - Liquid Censorship Resistance (2020-06-08)</title>
+      <link>//btctranscripts.com/greg-maxwell/2020-06-08-greg-maxwell-liquid-censorship-resistance/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/greg-maxwell/greg-maxwell-hardware-wallets-altcoins/</guid>
-      <description>Name: Greg Maxwell
-Topic: Hardware wallets and altcoins
-Location: Reddit
-Date: November 1st 2020
-https://www.reddit.com/r/Bitcoin/comments/jlwxpq/why_do_you_think_coldcard_doesnt_support_altcoins/gasoyuj?utm_source=share&amp;amp;utm_medium=web2x&amp;amp;context=3
-Why do hardware wallets not support altcoins? They&amp;rsquo;re an enormous distraction and hazard to software development. It&amp;rsquo;s hard enough to correctly and safely write software to support one system. Every minute spent creating and testing the software for some alternative is a minute taken away from supporting Bitcoin.
-I can say first hand that my efforts to review hardware wallet code against possible vulnerabilities have been actively thwarted by hardware wallet codebases being crapped up with support for altcoins.</description>
-    </item>
-    
-    <item>
-      <title>Greg Maxwell Liquid Censorship Resistance</title>
-      <link>//btctranscripts.com/greg-maxwell/greg-maxwell-liquid-censorship-resistance/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>//btctranscripts.com/greg-maxwell/greg-maxwell-liquid-censorship-resistance/</guid>
+      <guid>//btctranscripts.com/greg-maxwell/2020-06-08-greg-maxwell-liquid-censorship-resistance/</guid>
       <description>Name: Greg Maxwell
 Topic: Is Liquid censorship resistant?
 Location: Reddit
-Date: June 2020
+Date: June 8, 2020
 https://www.reddit.com/r/Bitcoin/comments/gye0yv/liquid_censorship_resistance/ftcllcm?utm_source=share&amp;amp;utm_medium=web2x&amp;amp;context=3
 Is Liquid censorship resistant? Liquid isn&amp;rsquo;t particularly censorship resistant. If someone tells you it is they&amp;rsquo;re confused.
 Back when I worked at Blockstream there was thought in the design to mitigate some of the risks: make transactions difficult to identify, even the peg outs use a ring signature to authorize them, and Blockstream should have no ability to change the software in use (instead, they&amp;rsquo;d have to convince each of the functionaries to run replacement software if they wanted it deployed&amp;ndash; and the software is open source).</description>
     </item>
     
     <item>
-      <title>Greg Maxwell Multiple Implementations</title>
-      <link>//btctranscripts.com/greg-maxwell/greg-maxwell-multiple-implementations/</link>
+      <title>Greg Maxwell - Multiple Implementations (2018-09-23)</title>
+      <link>//btctranscripts.com/greg-maxwell/2018-09-23-greg-maxwell-multiple-implementations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/greg-maxwell/greg-maxwell-multiple-implementations/</guid>
+      <guid>//btctranscripts.com/greg-maxwell/2018-09-23-greg-maxwell-multiple-implementations/</guid>
       <description>Name: Greg Maxwell
 Topic: Risks of multiple implementations
 Location: Bitcointalk
@@ -193,11 +178,11 @@ First, failures in software are not independent. For example, when BU nodes were
     </item>
     
     <item>
-      <title>Greg Maxwell Replacing Pgp</title>
-      <link>//btctranscripts.com/greg-maxwell/greg-maxwell-replacing-pgp/</link>
+      <title>Greg Maxwell - Replacing PGP (2020-11-25)</title>
+      <link>//btctranscripts.com/greg-maxwell/2020-11-25-greg-maxwell-replacing-pgp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/greg-maxwell/greg-maxwell-replacing-pgp/</guid>
+      <guid>//btctranscripts.com/greg-maxwell/2020-11-25-greg-maxwell-replacing-pgp/</guid>
       <description>Name: Greg Maxwell
 Topic: Replacing PGP with Bitcoin public key infrastructure
 Location: Reddit
@@ -209,41 +194,41 @@ If all you really want is some file signing thing without any key certification 
     </item>
     
     <item>
-      <title>Greg Maxwell Taproot Pace</title>
-      <link>//btctranscripts.com/greg-maxwell/greg-maxwell-taproot-pace/</link>
+      <title>Greg Maxwell - Taproot Pace (2020-07-20)</title>
+      <link>//btctranscripts.com/greg-maxwell/2020-07-20-greg-maxwell-taproot-pace/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/greg-maxwell/greg-maxwell-taproot-pace/</guid>
+      <guid>//btctranscripts.com/greg-maxwell/2020-07-20-greg-maxwell-taproot-pace/</guid>
       <description>Name: Greg Maxwell
 Topic: Is Taproot development moving too fast or too slow?
 Location: Reddit
-Date: August 2020
+Date: July 20, 2020
 https://www.reddit.com/r/Bitcoin/comments/hrlpnc/technical_taproot_why_activate/fyqbn8s?utm_source=share&amp;amp;utm_medium=web2x&amp;amp;context=3
 Is Taproot development moving too fast or too slow? Taproot has been discussed for 2.5 years already and by the time it would activate it will certainly at this point be over three years.
 The bulk of the Taproot proposal, other than Taproot itself and specific encoding details, is significantly older too.</description>
     </item>
     
     <item>
-      <title>Greg Maxwell Useful Proof Of Work</title>
-      <link>//btctranscripts.com/greg-maxwell/greg-maxwell-useful-proof-of-work/</link>
+      <title>Greg Maxwell - Useful Proof Of Work (2020-07-05)</title>
+      <link>//btctranscripts.com/greg-maxwell/2020-07-05-greg-maxwell-useful-proof-of-work/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/greg-maxwell/greg-maxwell-useful-proof-of-work/</guid>
+      <guid>//btctranscripts.com/greg-maxwell/2020-07-05-greg-maxwell-useful-proof-of-work/</guid>
       <description>Name: Greg Maxwell
 Topic: Why can’t hash power be used for something useful?
 Location: Reddit
-Date: June 2020
+Date: July 5, 2020
 https://www.reddit.com/r/Bitcoin/comments/hlu2ah/why_cant_hash_power_be_used_for_something_useful/fx1axlt?utm_source=share&amp;amp;utm_medium=web2x&amp;amp;context=3
 Why can’t hash power be used for something useful? There is a general game theory reason why this doesn&amp;rsquo;t work out:
 Imagine that you are considering attempting to reorder the chain to undo a transaction. You could decide to not attempt the attack in which case your cost is just the payment you made, or you could attempt the attack in which case the cost is the energy you put into the plus the cost of the payment times your odds of failure.</description>
     </item>
     
     <item>
-      <title>Greg Maxwell Yubikey Security</title>
-      <link>//btctranscripts.com/greg-maxwell/greg-maxwell-yubikey-security/</link>
+      <title>Greg Maxwell - Yubikey Security (2020-11-05)</title>
+      <link>//btctranscripts.com/greg-maxwell/2020-11-05-greg-maxwell-yubikey-security/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/greg-maxwell/greg-maxwell-yubikey-security/</guid>
+      <guid>//btctranscripts.com/greg-maxwell/2020-11-05-greg-maxwell-yubikey-security/</guid>
       <description>Name: Greg Maxwell
 Topic: Yubikey security
 Location: Reddit
@@ -252,6 +237,21 @@ https://www.reddit.com/r/Bitcoin/comments/jp2fp3/opinion_regarding_security/gbho
 Yubikey Security  By this logic, a yubikey would also be a great targeting vector.
  They would be, and if US intelligence services have not compromised yubis or at least have a perfect targeted substitution solutions for them then they should all be fired for gross incompetence and mismanagement of their funding.
 Likewise, if parties which things of significant value to secure who might be targeted by state level attackers are securing those things with just yubs instead of using yubis as a second factor in an otherwise secure setup then those parties ought to be fired too.</description>
+    </item>
+    
+    <item>
+      <title>Greg Maxwell Hardware Wallets Altcoins (2020-11-01)</title>
+      <link>//btctranscripts.com/greg-maxwell/2020-11-01-greg-maxwell-hardware-wallets-altcoins/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/greg-maxwell/2020-11-01-greg-maxwell-hardware-wallets-altcoins/</guid>
+      <description>Name: Greg Maxwell
+Topic: Hardware wallets and altcoins
+Location: Reddit
+Date: November 1st 2020
+https://www.reddit.com/r/Bitcoin/comments/jlwxpq/why_do_you_think_coldcard_doesnt_support_altcoins/gasoyuj?utm_source=share&amp;amp;utm_medium=web2x&amp;amp;context=3
+Why do hardware wallets not support altcoins? They&amp;rsquo;re an enormous distraction and hazard to software development. It&amp;rsquo;s hard enough to correctly and safely write software to support one system. Every minute spent creating and testing the software for some alternative is a minute taken away from supporting Bitcoin.
+I can say first hand that my efforts to review hardware wallet code against possible vulnerabilities have been actively thwarted by hardware wallet codebases being crapped up with support for altcoins.</description>
     </item>
     
   </channel>

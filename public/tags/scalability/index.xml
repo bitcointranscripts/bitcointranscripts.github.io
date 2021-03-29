@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>scalability on ₿itcoin Transcripts</title>
+    <link>//btctranscripts.com/tags/scalability/</link>
+    <description>Recent content in scalability on ₿itcoin Transcripts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="//btctranscripts.com/tags/scalability/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Anonymous Atomic Locks</title>
+      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/anonymous-atomic-locks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/anonymous-atomic-locks/</guid>
+      <description>A2L: Anonymous atomic locks for scalability and interoperability in payment-channel hubs
+Pedro Moreno-Sanchez
+paper: https://eprint.iacr.org/2019/589.pdf
+https://github.com/etairi/A2L
+https://twitter.com/kanzure/status/1172116189742546945
+Introduction I am going ot talk about anonymous atomic locks for scalability and interoperability in payment-channel hubs. This is joint work with my colleagues.
+Scalability I will try to keep this section as short as possible. This talk is also about scalability in bitcoin. You&amp;rsquo;re probably aware of the scalability issues. There is decentralized data structure recording each transaction in order to provide public verifiability.</description>
+    </item>
+    
+    <item>
+      <title>Atomic Multi Channel Updates</title>
+      <link>//btctranscripts.com/stanford-blockchain-conference/2020/atomic-multi-channel-updates/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/atomic-multi-channel-updates/</guid>
+      <description>Atomic Multi-Channel Updates with Constant Collateral in Bitcoin-Compatible Payment-Channel Networks
+Matteo Maffei
+https://diyhpl.us/wiki/transcripts/scalingbitcoin/tel-aviv-2019/atomic-multi-channel-updates/
+https://twitter.com/kanzure/status/1230929981011660800
+Introduction Matteo got sick and couldn&amp;rsquo;t come. His coauthors couldn&amp;rsquo;t come either. So a talk was pre-recorded and will be played now. Our work is about realizing atomic multi-channel updates with constant collateral in bitcoin.
+Scalability issues We all know that blockchains have scalability issues. Public verifiability means we have to store each transaction on the blockchain.</description>
+    </item>
+    
+    <item>
+      <title>Aurora Transparent Succinct Arguments R1Cs</title>
+      <link>//btctranscripts.com/stanford-blockchain-conference/2019/aurora-transparent-succinct-arguments-r1cs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/aurora-transparent-succinct-arguments-r1cs/</guid>
+      <description>Aurora: Transparent succinct arguments for R1CS
+Alessandro Chiesa
+https://twitter.com/kanzure/status/1090741190100545536
+Introduction Hi. I am Alessandro Chiesa, a faculty member at UC Berkeley. I work on cryptography. I&amp;rsquo;m also a chief scientist at Starkware. I was a founder of zcash. Today I will like to tell you about recent work in cryptographic proof systems. This is joint work with people at Starkware, UC Berkeley, MIT Media Lab, and others. In the prior talk, we talked about scalability.</description>
+    </item>
+    
+    <item>
+      <title>Building Mimblewimble And Grin</title>
+      <link>//btctranscripts.com/stanford-blockchain-conference/2019/building-mimblewimble-and-grin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/building-mimblewimble-and-grin/</guid>
+      <description>Building mimblewimble and green
+Quentin Le Sceller (Grin Dev Team), Ignotus Peverell (Grin Dev Team), Yeastplume (Grin Dev Team), Antioch Peverell (Grin Dev Team), HashMap (Grin Dev Team), John Tromp (Grin Dev Team), Daniel Lehnberg (Grin Dev Team)
+Quentin Le Sceller
+https://twitter.com/kanzure/status/1090662484275384320
+Our first talk is from the Grin project. It was just launched a few weeks ago. Okay, let&amp;rsquo;s get started.
+Introduction Hi everyone. My name is Quentin Le Sceller.</description>
+    </item>
+    
+    <item>
+      <title>Concurrency And Privacy With Payment Channel Networks</title>
+      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/concurrency-and-privacy-with-payment-channel-networks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/concurrency-and-privacy-with-payment-channel-networks/</guid>
+      <description>Concurrency and Privacy with Payment-Channel Networks
+Pedro Moreno-Sanchez
+paper: https://eprint.iacr.org/2017/820.pdf
+Introduction I am going to talk about concurrency and privacy. This was joint work with my collaborators.
+Bitcoin has scalability issues. That&amp;rsquo;s the main reason why we are here today. Currently the bitcoin network allows for less than 10 transactions/second. Today we have more than 135 gigabytes of memory requirement. And there are some high fees and micropayments are not really possible.</description>
+    </item>
+    
+    <item>
+      <title>Elastic Block Caps</title>
+      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/elastic-block-caps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/elastic-block-caps/</guid>
+      <description>Elastic block caps
+Meni Rosenfeld
+Introduction Thank you everyone. I am from the Israeli Bitcoin Association. I will start by describing the problem.
+The problem The problem is variable transaction fees. The transaction fees shot up. There&amp;rsquo;s a lot of fluctuation. To understand why this is a problem, let&amp;rsquo;s go back to the basics.
+Block size limit We can have big blocks or small blocks. Each one has advantages and disadvantages.</description>
+    </item>
+    
+    <item>
+      <title>Hardware Accelerated Rsa</title>
+      <link>//btctranscripts.com/stanford-blockchain-conference/2020/hardware-accelerated-rsa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/hardware-accelerated-rsa/</guid>
+      <description>Hardware Accelerated RSA - VDFs, SNARKs, and Accumulators
+Simon Peffers
+https://twitter.com/kanzure/status/1230551345700069377
+Introduction I am going to talk about accelerating RSA operations in hardware. So let&amp;rsquo;s just get into it.
+Outline I&amp;rsquo;ll talk about what acceleration is and why we&amp;rsquo;re interested in it, then we&amp;rsquo;ll get into RSA primitives, then we&amp;rsquo;ll get into algorithms, and then various platforms for hardware. Hardware is anything you&amp;rsquo;re going to run software on. We&amp;rsquo;ll look at what the tradeoffs are, and then some performance numbers and measurements we&amp;rsquo;ve taken.</description>
+    </item>
+    
+    <item>
+      <title>How Much Privacy Is Enough</title>
+      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/how-much-privacy-is-enough/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/how-much-privacy-is-enough/</guid>
+      <description>How much privacy is enough? Threats, scaling, and trade-offs in blockchain privacy protocols
+Ian Miers (secparam)
+unrelated, https://arxiv.org/pdf/1706.00916.pdf
+Introductions Hi everybody. This is a talk on how much privacy is enough, evaluating trade-offs in privacy and scalability. This is going to be unusual for this conference because I will not be presenting new technical content. I am going to be talking about evaluating the tradeoffs between these scalability and privacy. As context, my name is Ian Miers.</description>
+    </item>
+    
+    <item>
+      <title>How To Mine Bitcoin Profitably</title>
+      <link>//btctranscripts.com/scalingbitcoin/montreal-2015/how-to-mine-bitcoin-profitably/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/montreal-2015/how-to-mine-bitcoin-profitably/</guid>
+      <description>How to mine bitcoin profitability
+Minting money with megawatts
+Thank you for the introduction. We thought bitcoin was really a good idea for an unstable and inefficient financial world. I am going to dive and talk about this presentation which is how to mine bitcoin profitably. This is a short talk, it&amp;rsquo;s supposed to be a short talk, so let&amp;rsquo;s get straight to the crux of the matter.
+Bitcoin mining is the lowest part of the transaction stack.</description>
+    </item>
+    
+    <item>
+      <title>Introduction (2019)</title>
+      <link>//btctranscripts.com/decentralized-financial-architecture-workshop/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/decentralized-financial-architecture-workshop/introduction/</guid>
+      <description>Introduction to DFA Workshop We are an international conference that focuses on the latest development in software and its scalability in the bitcoin ecosystem. We have come here to Israel. We are running 5 days of events, including this current workshop. Over the next 4 days following today, we&amp;rsquo;re running Bitcoin Edge Dev++ workshop at Tel Aviv University for 2 days, and then Scaling Bitcoin for 2 days which is compromised of over 44 high tech sessions on complex scalability and security related topics in the bitcoin ecosystem, mainly for developers.</description>
+    </item>
+    
+    <item>
+      <title>Lightning</title>
+      <link>//btctranscripts.com/scalingbitcoin/milan-2016/lightning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/milan-2016/lightning/</guid>
+      <description>Lightning work group session
+https://twitter.com/kanzure/status/784783992478466049
+You have a network. Anyone can join the network. You have two points and you want to do route finding between those two points. To be clear, this is a network of channels. It is similar to the internet, but it is not the internet. How do you find such a route? It&amp;rsquo;s easy when you find all the implements of the network. Some of the information changes frequently.</description>
+    </item>
+    
+    <item>
+      <title>Lightning Network</title>
+      <link>//btctranscripts.com/w3-blockchain-workshop-2016/lightning-network/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/w3-blockchain-workshop-2016/lightning-network/</guid>
+      <description>Lightning network
+Tadge Dryja
+I am going to talk about blockchain scalability using payment channel networks. I am working on Lightning Network. It&amp;rsquo;s currently being built in bitcoin but it can support other things. One of the fundamental problems with blockchain is scalability. How can you have millions of users and rapid transactions?
+Fundamentally, the blockchain is shared. You can call it a DLT but it&amp;rsquo;s really a copied ledger. Every user has a copy.</description>
+    </item>
+    
+    <item>
+      <title>Lightning Network (2015-05-26)</title>
+      <link>//btctranscripts.com/sf-bitcoin-meetup/2015-05-26-lightning-network/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/sf-bitcoin-meetup/2015-05-26-lightning-network/</guid>
+      <description>2015-05-26
+ Tadge Dryja Joseph Poon  How Lightning Network can offer a solution for bitcoin&amp;rsquo;s scalability problems
+http://lightning.network/
+video: https://www.youtube.com/watch?v=2QH5EV_Io0E
+slides: https://lightning.network/lightning-network-presentation-sfbitcoinsocial-2015-05-26.pdf
+Great to have you guys. They are going to talk about bitcoin&amp;rsquo;s scalability problems. There they are.
+Okay, hi. So yeah, I titled it solutions because that sounds more positive than talking about problems. Joseph will go after that and talk about what needs to change and the economics and things like that.</description>
+    </item>
+    
+    <item>
+      <title>Lightning Overview</title>
+      <link>//btctranscripts.com/layer2-summit/2018/lightning-overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/layer2-summit/2018/lightning-overview/</guid>
+      <description>Lightning overview
+Conner Fromknecht
+video: https://www.youtube.com/watch?v=jzoS0tPUAiQ&amp;amp;t=15m10s
+https://twitter.com/kanzure/status/1005913055333675009
+https://lightning.network/
+Introduction First I am going to give a brief overview of how lightning works for those of who you may not be so familiar. Then I am going to discuss three technologies we&amp;rsquo;ll be working on in the next year at Lightning Labs and pushing forward.
+Philosophical perspective and scalability Before I do that though, following up on what Neha was saying, I want to give a philosophical perspective on how I think about layer 2 as a scalability solution.</description>
+    </item>
+    
+    <item>
+      <title>Microchains</title>
+      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/microchains/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/microchains/</guid>
+      <description>Microchains
+David Vorick
+https://twitter.com/kanzure/status/927257690685939712
+I would like to see a blockchain ecosystem with 1000s of transactions/second at layer 1 with full security. And so, we have to look at blockchain differently if we are going to achieve this.
+A brief introduction&amp;hellip; my name is David Vorick. I have been studying bitcoin since 2011. My primary gig is Sia. I have been spending a lot of time on consensus algorithms and proof-of-work.</description>
+    </item>
+    
+    <item>
+      <title>Mimblewimble (2016-11-21)</title>
+      <link>//btctranscripts.com/sf-bitcoin-meetup/2016-11-21-mimblewimble/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/sf-bitcoin-meetup/2016-11-21-mimblewimble/</guid>
+      <description>Mimblewimble
+Andrew Poelstra (andytoshi)
+https://www.youtube.com/watch?v=aHTRlbCaUyM
+https://twitter.com/kanzure/status/801990263543648256
+History As Denise said, I gave a talk in Milan about mimblewimble about a month ago(slides). This is more or less the same talk, but rebalanced a bit to try to emphasize what I think is important and add some history that has happened in the intervening time. I&amp;rsquo;ll get started.
+Many of you have heard of mimblewimble. It&amp;rsquo;s been in the news. It has a catchy name.</description>
+    </item>
+    
+    <item>
+      <title>Non Currency Applications</title>
+      <link>//btctranscripts.com/scalingbitcoin/montreal-2015/non-currency-applications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/montreal-2015/non-currency-applications/</guid>
+      <description>Scalability of non-currency applications
+Harry Kalodner
+I am from Princeton University. I am here to talk about the scalability issues that non-currency applications of bitcoin have that might be a little different than regular payments that go through the bitcoin network. I put this together with my advisor, Arvind. The reason why I want to talk about this is because when people talk about how bitcoin will have to scale is that people throw out a thing about Visa processing 20,000 transactions per second or something.</description>
+    </item>
+    
+    <item>
+      <title>Overview Of Bips Necessary For Lightning</title>
+      <link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/overview-of-bips-necessary-for-lightning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/hong-kong-2015/overview-of-bips-necessary-for-lightning/</guid>
+      <description>Tadge Dryja
+Scalability of Lightning with different BIPs and some back-of-the-envelope calculations.
+slides: https://scalingbitcoin.org/hongkong2015/presentations/DAY2/1_layer2_2_dryja.pdf
+video: https://www.youtube.com/watch?v=fst1IK_mrng&amp;amp;t=1h5m50s
+I don&amp;rsquo;t have time to introduce the idea of zero-confirmation transactions and lightning. We have given talks about this. There&amp;rsquo;s some documentation available. There&amp;rsquo;s an implementation being worked on. I think it helps a lot with scalability by keeping some transactions off the blockchain. Ideally, many or most transactions. Instead, you would open and close channels.</description>
+    </item>
+    
+    <item>
+      <title>Overview Of Security Concerns</title>
+      <link>//btctranscripts.com/scalingbitcoin/montreal-2015/overview-of-security-concerns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/montreal-2015/overview-of-security-concerns/</guid>
+      <description>petertodd
+Overview of Security Concerns
+I am going to talk about scale-related security issues. Scale-related security issues. I said scale, not scalability. We are not talking about scalability. We&amp;rsquo;re talking about changing numbers, and what are the implications, what attacks are easier or harder by changing the block size number. What are we trying to accomplish? What is the system meant to be? Nobody really agrees of course. What&amp;rsquo;s interesting is that as much as we disagree about what was meant to be, there are a lot of key things about what bitcoin could be, these visions share some details.</description>
+    </item>
+    
+    <item>
+      <title>Peter Todd Scalability</title>
+      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2015/peter-todd-scalability/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2015/peter-todd-scalability/</guid>
+      <description>Peter Todd
+Scalability
+There we go. Yeah. Looks good. Thank you.
+So I wanted to talk about scalability and I wanted to give two opposing views of it. The first is really, scaling Bitcoin up is really really easy. The underlying architecture of Bitcoin is designed in a way that makes it easy to scale. You have your blockchain, and you have your blocks at the top which are 80 bytes data structures.</description>
+    </item>
+    
+    <item>
+      <title>Privacy And Fungibility</title>
+      <link>//btctranscripts.com/scalingbitcoin/montreal-2015/privacy-and-fungibility/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/montreal-2015/privacy-and-fungibility/</guid>
+      <description>Privacy and scalability
+Even though Bitcoin is the worst privacy system ever, everyone in the community very strongly values privacy.
+There are at least three things: privacy censorship resistance fungibility
+The easiest way to censor things is to punish communication, not prevent communication. Privacy is the weakest link in censorship resistance. Fungibility is an absolute necessity for any medium of exchange. The properties of money include fungibility. Without privacy you may not be able to have fungibility.</description>
+    </item>
+    
+    <item>
+      <title>Privacy Preserving Multi Hop Locks</title>
+      <link>//btctranscripts.com/stanford-blockchain-conference/2019/privacy-preserving-multi-hop-locks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/privacy-preserving-multi-hop-locks/</guid>
+      <description>Privacy preserving multi-hop locks for blockchain scalability and interoperability
+Pedro Moreno-Sanchez
+https://twitter.com/kanzure/status/1091026195032924160
+paper: https://eprint.iacr.org/2018/472.pdf
+http://diyhpl.us/wiki/transcripts/scalingbitcoin/tokyo-2018/multi-hop-locks/
+Introduction This is joint work with my collaborators. Permissionless blockchains have some issues. The permissionless nature leads to the transaction rate that they have. This limits widespread adoption of blockchain technology like bitcoin or ethereum. Scalability approaches can be roughly grouped into two groups, one is on-chain layer 1 solutions. The other group is off-chain layer 2, which is the focus of this talk today.</description>
+    </item>
+    
+    <item>
+      <title>Self Reproducing Coins As Universal Turing Machine</title>
+      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/self-reproducing-coins-as-universal-turing-machine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/self-reproducing-coins-as-universal-turing-machine/</guid>
+      <description>Self-reproducing coins as universal turing machine
+Dmitry Meshkov, Alexander Chepurnoy and Vasily Kharin (Ergo Platform)
+paper: https://arxiv.org/abs/1806.10116
+Introduction This is joint work with my colleagues. I am Alexander Chepurnoy. We work for Ergo Platform. Vasily is an external member. This talk is about turing completeness in the blockchain. This talk will be pretty high-level. This talk is based on already-published paper, which was presented at the CBT conference. Because of copyright agreements with Springer, you will not find the latest version on arxiv.</description>
+    </item>
+    
+    <item>
+      <title>Sergei Tikhomirov Lightning Privacy (2020-05-09)</title>
+      <link>//btctranscripts.com/lightning-hack-day/2020-05-09-sergei-tikhomirov-lightning-privacy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/lightning-hack-day/2020-05-09-sergei-tikhomirov-lightning-privacy/</guid>
+      <description>Name: Sergei Tikhomirov
+Topic: Quantitative Analysis of Lightning Network Privacy
+Location: Lightning Hacksprint (Fulmo)
+Date: May 9th 2020
+Video: https://www.youtube.com/watch?v=8lUTbfO94mM
+Slides: https://docs.google.com/presentation/d/1H9EdrhjQ9x3q0qfsei7iFYINVf2lwPyjUKHd3CScy4k/edit#slide=id.g7774542944_0_0
+Paper: https://eprint.iacr.org/2020/303
+Intro Hello everyone. I am Sergei, I am a PhD student at the University of Luxembourg. I am going to present our joint work with Pedro Moreno-Sanchez and Matteo Maffei from TU Wien on certain aspects of the privacy and scalability of the Lightning Network. The full paper can be found here.</description>
+    </item>
+    
+    <item>
+      <title>Stark Dex</title>
+      <link>//btctranscripts.com/stanford-blockchain-conference/2019/stark-dex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/stark-dex/</guid>
+      <description>The STARK truth about DEXes
+Eli Ben-Sasson (Starkware)
+https://twitter.com/kanzure/status/1090731793395798016
+Welcome to the first session after lunch. We call this the post-lunch session. The first part is on STARKs by Eli Ben-Sasson.
+Introduction Thank you very much. Today I will be talking about STARK proofs of DEXes. I am chief scientist at Starkware. We&amp;rsquo;re a one-year startup in Israel that has raised $40m and we have a grant from the Ethereum Foundation.</description>
+    </item>
+    
+    <item>
+      <title>Systematizing Knowledge</title>
+      <link>//btctranscripts.com/scalingbitcoin/montreal-2015/systematizing-knowledge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/montreal-2015/systematizing-knowledge/</guid>
+      <description>There should be a SNARK wiki. Any website that is better than someone saying &amp;ldquo;you know, check the June July 2014 bitcoin-wizard logs&amp;rdquo;. We need to research gmaxwell scalability. We should probably fix that.
+Let&amp;rsquo;s talk about what some of the goals are that we might get out of this. We have some different ideas for approaches to systematizing knowledge. There are at least three camps here. I think Bryan&amp;rsquo;s paper repositories.</description>
+    </item>
+    
+    <item>
+      <title>Trustlessness Scalability And Directions In Security Models</title>
+      <link>//btctranscripts.com/baltic-honeybadger/2018/trustlessness-scalability-and-directions-in-security-models/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/baltic-honeybadger/2018/trustlessness-scalability-and-directions-in-security-models/</guid>
+      <description>Trustlessness, scalability and directions in security models
+Matt Corallo (bluematt)
+https://twitter.com/kanzure/status/1043397023846883329
+&amp;hellip; Is everyone awake? Sure. Jumping jacks. Wow, that&amp;rsquo;s bright. I am more idealistic than Eric. I am going to talk about utility and why people use bitcoin and let&amp;rsquo;s see how that goes.
+Trustlessness is much better than decentralization. I want to talk about trustlessness. People use the word decentralization a lot and I find that to be kind of useless because decentralization is a means to an end.</description>
+    </item>
+    
+    <item>
+      <title>Unlinkable Outsourced Channel Monitoring</title>
+      <link>//btctranscripts.com/scalingbitcoin/milan-2016/unlinkable-outsourced-channel-monitoring/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/milan-2016/unlinkable-outsourced-channel-monitoring/</guid>
+      <description>Unlinkable outsourced channel monitoring
+Tadge Dryja
+http://lightning.network/
+https://twitter.com/kanzure/status/784752625074012160
+Okay. Hi everyone. Check. Wow. Check one two. Okay it&amp;rsquo;s working. And I have 25 minutes. Great. So I am going to talk about unlinkable outsourced channel modeling. Everyone likes channels. You can update states. You can link them together to make a network. This is really great. There are risks. These are additional risks. The price of scalability is eternal vigilance. You have to keep watching your channels.</description>
+    </item>
+    
+    <item>
+      <title>Utreexo</title>
+      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2019/utreexo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2019/utreexo/</guid>
+      <description>Utreexo: Reducing bitcoin nodes to 1 kilobyte
+Tadge Dryja
+https://twitter.com/kanzure/status/1104410958716387328
+See also: https://diyhpl.us/wiki/transcripts/bitcoin-core-dev-tech/2018-10-08-utxo-accumulators-and-utreexo/
+Introduction I am going to talk about another scaling solution and another strategy I&amp;rsquo;ve been working on for about 6-9 months, called Utreexo.
+Bitcoin scalability Scalability has been a concern in bitcoin for the whole time. In fact, it&amp;rsquo;s the first thing that anyone said about bitcoin. In 2008, Satoshi Nakamoto said hey I made this thing called bitcoin.</description>
+    </item>
+    
+    <item>
+      <title>Validation Cost Metric</title>
+      <link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/validation-cost-metric/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/hong-kong-2015/validation-cost-metric/</guid>
+      <description>Jonas Nick
+slides: https://scalingbitcoin.org/hongkong2015/presentations/DAY2/3_tweaking_the_chain_3_nick.pdf
+video: https://www.youtube.com/watch?v=fst1IK_mrng&amp;amp;t=4h52m35s
+Motivation As we&amp;rsquo;ve seen over the last two days scalability is a multidimensional problem. One of the main topics of research is increasing the blocksize to increase transaction throughput. The assumption is that as technological progress is continuing and transaction throughput is increased accordingly, the cost for runnning a fully validating node stays constant.
+However, blocksize proposals usually only directly change one aspect of full node costs - the blocksize.</description>
+    </item>
+    
+    <item>
+      <title>Zero Knowledge Proofs For Bitcoin Scalability And Beyond</title>
+      <link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/zero-knowledge-proofs-for-bitcoin-scalability-and-beyond/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/hong-kong-2015/zero-knowledge-proofs-for-bitcoin-scalability-and-beyond/</guid>
+      <description>Madars Virza
+video: https://youtube.com/watch?v=aQ1--w4uEMM&amp;amp;t=4133
+I am going to tell you about zero-knowledge proofs for Bitcoin scalability. Even though this is an overview talk, many of the results I will be telling you about are based on work done by people in the slides and also here at the conference.
+First I will give a brief introduction to zero knowledge proofs. Then I will try to convince you that if you care about Bitcoin scalability, then you should care about zero-knowledge proofs and you should keep them on your radar.</description>
+    </item>
+    
+  </channel>
+</rss>

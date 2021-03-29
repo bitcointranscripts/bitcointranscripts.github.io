@@ -6,5 +6,59 @@
     <description>Recent content in Categories on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="//btctranscripts.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>conference</title>
+      <link>//btctranscripts.com/categories/conference/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/categories/conference/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>core-dev-tech</title>
+      <link>//btctranscripts.com/categories/core-dev-tech/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/categories/core-dev-tech/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hackathon</title>
+      <link>//btctranscripts.com/categories/hackathon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/categories/hackathon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>meetup</title>
+      <link>//btctranscripts.com/categories/meetup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/categories/meetup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>podcast</title>
+      <link>//btctranscripts.com/categories/podcast/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/categories/podcast/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>workshop</title>
+      <link>//btctranscripts.com/categories/workshop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/categories/workshop/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>miners on ₿itcoin Transcripts</title>
+    <link>//btctranscripts.com/tags/miners/</link>
+    <description>Recent content in miners on ₿itcoin Transcripts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="//btctranscripts.com/tags/miners/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Flexible Limit Trading Subsidy For Larger Blocks</title>
+      <link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/a-flexible-limit-trading-subsidy-for-larger-blocks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/hong-kong-2015/a-flexible-limit-trading-subsidy-for-larger-blocks/</guid>
+      <description>maaku
+slides: https://scalingbitcoin.org/hongkong2015/presentations/DAY2/3_tweaking_the_chain_2_friedenbach.pdf
+video: https://www.youtube.com/watch?v=fst1IK_mrng&amp;amp;t=4h27m53s
+I really want to thank jgarzik for that interesting talk. Who picks what block size? My talk is going to be about a category of dynamic block size proposals that attach the block size limit to the fee in such a way that as there is more demand for block size, through users that want to pay fees, the block size will increase or decrease as necessary.</description>
+    </item>
+    
+    <item>
+      <title>Blockchain Testbed</title>
+      <link>//btctranscripts.com/scalingbitcoin/montreal-2015/blockchain-testbed/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/montreal-2015/blockchain-testbed/</guid>
+      <description>Ittay Eyal
+Emin Gun Sirer
+A testbed for bitcoin scaling
+I want to talk today about how to scale bitcoin. We want lower latency, we want higher throughput, more bandwidth and more transactions per second, and we want security. We can try to tune the parameters. In all of the plots, I have time going from left to right and these are blocks in rectangles. We have larger blocks which might give us more throughput.</description>
+    </item>
+    
+    <item>
+      <title>Braiding The Blockchain</title>
+      <link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/braiding-the-blockchain/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/hong-kong-2015/braiding-the-blockchain/</guid>
+      <description>Braiding the blockchain
+Bob McElrath (bsm117532)
+slides: https://scalingbitcoin.org/hongkong2015/presentations/DAY2/2_breaking_the_chain_1_mcelrath.pdf
+video: https://www.youtube.com/watch?v=fst1IK_mrng&amp;amp;feature=youtu.be&amp;amp;t=2h17m20s
+I work for SolidX in New York. I am here to tell you about some modifications to the blockchain. All the things we heard yesterday about the block size, come down to the existence of orphans. The reason why we have these problems are orphans. These are consequences of physics and resources. This is not a fundamental property in Bitcoin. ((Transcripter&amp;rsquo;s note: basically, only sharding can make local bandwidth less of an issue.</description>
+    </item>
+    
+    <item>
+      <title>Cali 2016</title>
+      <link>//btctranscripts.com/bitcoin-developers-miners-meeting-2016/cali2016/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/bitcoin-developers-miners-meeting-2016/cali2016/</guid>
+      <description>California Gathering 2016
+Transcription introduction Some Bitcoin developers and miners gathered together during the end of the July to socialize and become better acquainted with each other. The following discussions were live transcribed by an untrained volunteer with attribution removed as per Chatham House rules. In bitcoin, discussions can move very quickly, which can cause an increase in errors, including semantic errors, when typing in real time. This text was not produced from an audio recording.</description>
+    </item>
+    
+    <item>
+      <title>Changes Without Unanimous Consent</title>
+      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/changes-without-unanimous-consent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/changes-without-unanimous-consent/</guid>
+      <description>Changes without unanimous consent
+Anthony Towns
+I want to talk about dealing with consensus changes without so-called consensus. I am using consensus in terms of the social aspect, not in terms of the software algorithm consensus for databases. &amp;ldquo;Consensus changes without consensus&amp;rdquo;. If you don&amp;rsquo;t consensus on consensus, then some people are going to follow one chain and another another chain.
+If you have unanimous consensus, then new upgrades work just fine.</description>
+    </item>
+    
+    <item>
+      <title>Dan Boneh</title>
+      <link>//btctranscripts.com/grincon/2019/dan-boneh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/grincon/2019/dan-boneh/</guid>
+      <description>Dan Boneh fireside chat
+Taariq Lewis
+TL: I was one of the founders of SF Bitcoin Devs with aantonop. I am also the co-founder of a company called Promise. We sponsor protocols in privacy as well as mimblewimble. If you are mining or actively looking to mine in grin, please say hello to me because we&amp;rsquo;re connected with a lot of mining companies and hosting companies that are looking to host miners very cheaply.</description>
+    </item>
+    
+    <item>
+      <title>Dandelion</title>
+      <link>//btctranscripts.com/building-on-bitcoin/2018/dandelion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/building-on-bitcoin/2018/dandelion/</guid>
+      <description>Dandelion: Privacy-preserving transaction propagation in bitcoin&amp;rsquo;s p2p network
+Giulia Fanti
+https://twitter.com/kanzure/status/1014196927062249472
+Today I will be talking to you about privacy in bitcoin&amp;rsquo;s p2p layer. This was joint work with some talented colleagues.
+Bitcoin p2p layer I want to give a brief overview of the p2p layer. Users in bitcoin are connected over a p2p network with tcp links. Users are identified by ip address and port number. Users have a second identity, which is their address or public key or however you want to think about it.</description>
+    </item>
+    
+    <item>
+      <title>Flyclient Super Light Clients For Cryptocurrencies</title>
+      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/flyclient-super-light-clients-for-cryptocurrencies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/flyclient-super-light-clients-for-cryptocurrencies/</guid>
+      <description>Flyclient Super light client for cryptocurrencies
+Benedikt Buenz, Mahdi Zamani
+buenz@cs.stanford.edu
+Thank you.
+As you know, the blockchain is a chain because each block connects to the previous block through these hashes. In the header of each block is a commitment to all the transactions. It&amp;rsquo;s using this merkle hash tree where at each level the parent node hashes to the children and this gives you some nice properties which I will talk about later.</description>
+    </item>
+    
+    <item>
+      <title>Fraud Proofs</title>
+      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/fraud-proofs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/fraud-proofs/</guid>
+      <description>Improving SPV client validation and security with fraud proofs
+Mustafa Al-Bassam (University College London)
+paper: https://arxiv.org/pdf/1809.09044.pdf
+https://twitter.com/kanzure/status/1048446183004233731
+Introduction I am going to be talking about fraud proofs. It allows lite clients to have a leve lof security of almost the level of a full node. Before I describe fraud proofs, how about we talk about motivations.
+Motivations There&amp;rsquo;s a large tradeoff between blockchain decentralization and how much on-chain throughput you can get.</description>
+    </item>
+    
+    <item>
+      <title>Fraud Proofs Petertodd</title>
+      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/fraud-proofs-petertodd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/fraud-proofs-petertodd/</guid>
+      <description>Fraud proofs
+petertodd
+https://www.youtube.com/watch?v=UVuUZm4l-ss&amp;amp;t=4h29m10s
+In Bitcoin we have made this tradeoff where we don&amp;rsquo;t have everyone running full nodes. Not everyone is participating equally. If you have a full node, you have lots of gigs of hard drive space, but if you do that, you only get a few transactions per second. Modularizing validation an argument for this is how to improve on this situation.
+What&amp;rsquo;s the problem we are trying to solve?</description>
+    </item>
+    
+    <item>
+      <title>Ghostdag</title>
+      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/ghostdag/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/ghostdag/</guid>
+      <description>The GHOSTDAG protocol
+Yonatan Sompolinsky and Aviv Zohar (The Hebrew University of Jerusalem)
+paper: https://eprint.iacr.org/2018/104.pdf
+Introduction This is joint work with Yonatan. I am going to talk about a DAG-based protocol to scale on-chain. The reason why I like this protocol is because it&amp;rsquo;s a very simple generalization of the longest-chain protocol that we all know and love. It gives some insight into what the role of proof-of-work is in these protocols.</description>
+    </item>
+    
+    <item>
+      <title>Jihan Wu Google Tech Talk (2016)</title>
+      <link>//btctranscripts.com/bitcoin-developers-miners-meeting-2016/jihan-wu-google-tech-talk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/bitcoin-developers-miners-meeting-2016/jihan-wu-google-tech-talk/</guid>
+      <description>Jihan Wu
+Bitcoin
+Google Tech Talk
+Okay so maybe we will start. Thank you for coming. We have about 25 folks here from the Bitcoin community, both miners and Core developers. Don&amp;rsquo;t know exactly what the definition of a Core developer is, but I guess I know one when I see one. So anyway, we&amp;rsquo;re lucky here to have Jihan Wu. He&amp;rsquo;s the co-founder of Bitmain, a leading Chinese bitcoin technology company and mining pool.</description>
+    </item>
+    
+    <item>
+      <title>Light Clients During 2017 Interfork Period</title>
+      <link>//btctranscripts.com/breaking-bitcoin/2017/light-clients-during-2017-interfork-period/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/breaking-bitcoin/2017/light-clients-during-2017-interfork-period/</guid>
+      <description>Light clients during the 2017 interfork period
+Thomas Voegtlin
+video: https://www.youtube.com/watch?v=eCE2OzKIab8&amp;amp;t=5h9m
+https://twitter.com/kanzure/status/1005617123287289857
+Next up is Thomas.
+Introduction Alright. Hello everyone. Thank you for having me. I&amp;rsquo;m the developer of the Electrum wallet. I started this project in 2011. I&amp;rsquo;m going to talk about lite clients and the implication of the 2017 hard-fork. We might be in the middle of two forks at the moment.
+So we have segwit and we are very happy about that.</description>
+    </item>
+    
+    <item>
+      <title>Matt Corallo Sidechains</title>
+      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2015/matt-corallo-sidechains/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2015/matt-corallo-sidechains/</guid>
+      <description>Matt Corallo (BlueMatt)
+Sidechains, Blockstream
+One second. Technical difficulties. Okay, sorry about that. Okay. Hi. I am Matt or BlueMatt for those of you know me. I swear it&amp;rsquo;s not related to my hair. Nobody believes me.
+I got into Bitcoin three or four years ago because I was interested in the programming and computer science aspects and as well as my interest in large-scale economic incentive structures and macroeconomics and how we create incentive structures that create actions on a low level by rational actors.</description>
+    </item>
+    
+    <item>
+      <title>Measuring Network Maximum Sustained Transaction Throughput</title>
+      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/measuring-network-maximum-sustained-transaction-throughput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/measuring-network-maximum-sustained-transaction-throughput/</guid>
+      <description>Measuring maximum sustained transaction throughput on a global network of Bitcoin nodes
+Andrew Stone, Bitcoin Unlimited
+We are 25 minutes behind schedule.
+We have the rest of the team wathcing remotely. I think the motivation for this project is clear. Transaction volume on the bitcoin network could be growing exponentially except that there is a limit on the number of confirmed transactions. Transaction fees have increased and confirmation times are not reliable, and bitcoin is unusable for some applications.</description>
+    </item>
+    
+    <item>
+      <title>Pindar Wong</title>
+      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/pindar-wong/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/pindar-wong/</guid>
+      <description>Pindar Wong
+Forked to Death: What Internet governance can learn from Bitcoin
+So, the last talk today is going to be from Pindar Wong. He&amp;rsquo;s been involved with Internet in Hong Kong. He also helped organize the Scaling Bitcoin workshops. It&amp;rsquo;s my pleasure to have him speaking today.
+Okay. Thank you very much for staying until the bitter end. My topic today is forked to death, what Internet governance can learn from Bitcoin.</description>
+    </item>
+    
+    <item>
+      <title>Playing With Fire Adjusting Bitcoin Block Subsidy</title>
+      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/playing-with-fire-adjusting-bitcoin-block-subsidy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/playing-with-fire-adjusting-bitcoin-block-subsidy/</guid>
+      <description>Playing with fire: Adjusting bitcoin&amp;rsquo;s block subsidy
+Anthony Towns (ajtowns)
+slides: https://github.com/ajtowns/sc-btc-2018
+https://twitter.com/kanzure/status/1048401029148991488
+Introduction First an apology about the title. I saw some comments on twitter after the talk was announced and they were speculating that I was going to break the 21 million coin limit. But that&amp;rsquo;s not the case. Rusty has a civil war thesis: the third era will start with the civil war, the mathematics of this situation seem einevitable.</description>
+    </item>
+    
+    <item>
+      <title>Privacy Preserving Smart Contracts</title>
+      <link>//btctranscripts.com/scalingbitcoin/montreal-2015/privacy-preserving-smart-contracts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/montreal-2015/privacy-preserving-smart-contracts/</guid>
+      <description>Ranjit Kumaresan
+ranjit@csail.mit.edu
+http://people.csail.mit.edu/ranjit/
+We have been looking at how much we can support or what limitations we might encounter. There are also efficiency issues and privacy guarantees. And then there are some potential relaxations that will help with removing the fundamental limitations and express the power and make smart contracts more useful.
+The point of this talk is off-chain transactions and secure computation. I will also highlight the relationship of secure computation and bitcoin.</description>
+    </item>
+    
+    <item>
+      <title>Security Of Diminishing Block Subsidy</title>
+      <link>//btctranscripts.com/scalingbitcoin/montreal-2015/security-of-diminishing-block-subsidy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/montreal-2015/security-of-diminishing-block-subsidy/</guid>
+      <description>Miles Carlsten
+Harry Kalodner
+Arvind Narayanan
+Miners no longer incentivized to mine all the time. The future of mining hardware. Impact on the bitcoin ecosystem. Implications and assumptions of the model.
+Are minting rewards and transaction fees the same? Transaction fees are time-dependent. A miner can only claim transaction fees as transactions are added to their block. As transaction fees start to dominate the block reward, they become time-dependent. We are modeling this block reward as a linear function of time, we have this factor B which might be initial minting reward, and we have some scaling factor, the block reward is like &amp;ldquo;b + at&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Why Block Sizes Should Not Be Too Big</title>
+      <link>//btctranscripts.com/magicalcryptoconference/2019/why-block-sizes-should-not-be-too-big/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/magicalcryptoconference/2019/why-block-sizes-should-not-be-too-big/</guid>
+      <description>Briefly, why block sizes shouldn&amp;rsquo;t be too big
+Luke Dashjr
+slides: https://luke.dashjr.org/tmp/code/block-sizes-mcc.pdf
+I am luke-jr. I am going to go over why block size shouldn&amp;rsquo;t be too big.
+How does bitcoin work? Miners put transactrions into blocks. Users verify that the blocks are valid. If the users don&amp;rsquo;t verify this, then miners can do basically anything. Because the users do this, 51% attacks are limited to reorgs which is undoing transactions.</description>
+    </item>
+    
+  </channel>
+</rss>

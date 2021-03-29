@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>privacy on ₿itcoin Transcripts</title>
+    <link>//btctranscripts.com/tags/privacy/</link>
+    <description>Recent content in privacy on ₿itcoin Transcripts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="//btctranscripts.com/tags/privacy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adam Back - Fungibility Privacy</title>
+      <link>//btctranscripts.com/misc/bitcoin-adam3us-fungibility-privacy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/misc/bitcoin-adam3us-fungibility-privacy/</guid>
+      <description>Adam Back (adam3us)
+Fungibility and privacy
+https://www.youtube.com/watch?v=3dAdI3Gzodo
+First of all I was going to explain what we mean by fungibility before bitcoin and ecash. It&amp;rsquo;s an old legal concept in fact, about paper currency. It&amp;rsquo;s the idea that a one ten dollar note is the same as any other ten dollar note. If you receive a note that was involved in a theft, 10 transactions ago, and the police investigate the theft, they have no right to remove the ten dollar note from your pocket.</description>
+    </item>
+    
+    <item>
+      <title>Aurora Transparent Succinct Arguments R1Cs</title>
+      <link>//btctranscripts.com/stanford-blockchain-conference/2019/aurora-transparent-succinct-arguments-r1cs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/aurora-transparent-succinct-arguments-r1cs/</guid>
+      <description>Aurora: Transparent succinct arguments for R1CS
+Alessandro Chiesa
+https://twitter.com/kanzure/status/1090741190100545536
+Introduction Hi. I am Alessandro Chiesa, a faculty member at UC Berkeley. I work on cryptography. I&amp;rsquo;m also a chief scientist at Starkware. I was a founder of zcash. Today I will like to tell you about recent work in cryptographic proof systems. This is joint work with people at Starkware, UC Berkeley, MIT Media Lab, and others. In the prior talk, we talked about scalability.</description>
+    </item>
+    
+    <item>
+      <title>Bip Securethebag</title>
+      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/bip-securethebag/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/bip-securethebag/</guid>
+      <description>BIP: OP_SECURETHEBAG
+Jeremy Rubin
+https://twitter.com/kanzure/status/1171750965478854656
+Introduction Thank you for the introduction. Today I am going to talk to you about OP_SECURETHEBAG. It&amp;rsquo;s research that I have been working on for the last couple years. I think it&amp;rsquo;s very exciting and hopefully it will have a big compact. I have a lot of slides.
+Why are we here? We are here for scaling bitcoin. The goal we have is to scale bitcoin.</description>
+    </item>
+    
+    <item>
+      <title>Blocksci Platform</title>
+      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/blocksci-platform/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/blocksci-platform/</guid>
+      <description>BlockSci: a Platform for Blockchain Science and Exploration
+Harry Kalodner, Princeton University (Arvind Narayanan etc.)
+Alright well, my name is Harry Kalodner, I am a student at Princeton University and I am here to tell you about a tool I built alon with some colleagues at Princeton which could be used for analyzing the blockchain in different ways. So far most of the talks today have been constructive about new ways to use the blockchain and protocols to slightly modify bitcoin in roder to improve privacy or scaling.</description>
+    </item>
+    
+    <item>
+      <title>Bolt Anonymous Payment Channels For Decentralized Currencies</title>
+      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/bolt-anonymous-payment-channels-for-decentralized-currencies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/bolt-anonymous-payment-channels-for-decentralized-currencies/</guid>
+      <description>Bolt: Anonymous Payment Channels for Decentralized Currencies
+paper: https://eprint.iacr.org/2016/701.pdf
+To make questions easier, we are going to have a mic on the isle. Please line up so that we can have questions quickly. Okay, now we have Ian Miers.
+categories: [&amp;lsquo;conference&amp;rsquo;] tags: [&amp;lsquo;privacy&amp;rsquo;] My name is Ian Miers. Just got my PhD at Hpkins&amp;hellip; authors of zcash, zerocash, &amp;hellip; My interest in bitcoin was, first getting involved, was dealing wit hthe privacy aspect.</description>
+    </item>
+    
+    <item>
+      <title>Breaking Bitcoin Privacy</title>
+      <link>//btctranscripts.com/breaking-bitcoin/2019/breaking-bitcoin-privacy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/breaking-bitcoin/2019/breaking-bitcoin-privacy/</guid>
+      <description>Breaking bitcoin privacy
+Chris Belcher
+0A8B 038F 5E10 CC27 89BF CFFF EF73 4EA6 77F3 1129
+https://twitter.com/kanzure/status/1137304437024862208
+Introduction Hello everybody. I invented and created joinmarket, the first really popular coinjoin implementation. A couple months ago I wrote a big literature review on privacy. It has everything about anything in privacy in bitcoin, published on the bitcoin wiki. This talk is about privacy and what we can do to improve it.
+Why privacy?</description>
+    </item>
+    
+    <item>
+      <title>Breaking Wasabi</title>
+      <link>//btctranscripts.com/breaking-bitcoin/2019/breaking-wasabi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/breaking-bitcoin/2019/breaking-wasabi/</guid>
+      <description>Breaking wasabi and automated wallets
+Udi Wertheimer
+1127 96A8 DFCA 1A96 C8B8 0094 9211 687A D298 9B12
+https://twitter.com/kanzure/status/1137652130611978240
+Trigger warnings Before I begin, some have told me that sometimes I tend to be toxic or provocative. So let&amp;rsquo;s start with some trigger warnings. This presentation might include bad jokes about bitcoin personalitites. It might have some multiplication. I might say &amp;ldquo;ethereum&amp;rdquo;. There&amp;rsquo;s also a coinjoin warning. If this is triggering to you, then it&amp;rsquo;s okay to leave.</description>
+    </item>
+    
+    <item>
+      <title>Btcpay</title>
+      <link>//btctranscripts.com/building-on-bitcoin/2018/btcpay/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/building-on-bitcoin/2018/btcpay/</guid>
+      <description>How to make everyone run their own full node
+Nicolas Dorier
+Building on Bitcoin, 2018
+https://twitter.com/kanzure/status/1014166857958461440
+I am the maintainer of Nbitcoin and btcpay. I am a dot net fanboy. I am happy that the number of people working on bitcoin in C# has spread from one about four years ago to about ten in this room toay. That&amp;rsquo;s great. I work at DG Lab in Japan.
+The goal of my talk is to continue what Jonas Schnelli was talking about.</description>
+    </item>
+    
+    <item>
+      <title>Building Mimblewimble And Grin</title>
+      <link>//btctranscripts.com/stanford-blockchain-conference/2019/building-mimblewimble-and-grin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/building-mimblewimble-and-grin/</guid>
+      <description>Building mimblewimble and green
+Quentin Le Sceller (Grin Dev Team), Ignotus Peverell (Grin Dev Team), Yeastplume (Grin Dev Team), Antioch Peverell (Grin Dev Team), HashMap (Grin Dev Team), John Tromp (Grin Dev Team), Daniel Lehnberg (Grin Dev Team)
+Quentin Le Sceller
+https://twitter.com/kanzure/status/1090662484275384320
+Our first talk is from the Grin project. It was just launched a few weeks ago. Okay, let&amp;rsquo;s get started.
+Introduction Hi everyone. My name is Quentin Le Sceller.</description>
+    </item>
+    
+    <item>
+      <title>Coinjoinxt</title>
+      <link>//btctranscripts.com/building-on-bitcoin/2018/coinjoinxt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/building-on-bitcoin/2018/coinjoinxt/</guid>
+      <description>CoinjoinXT and other techniques for deniable transfers.
+Adam Gibson (waxwing)
+Building on Bitcoin 2018
+https://twitter.com/kanzure/status/1014197088979226625
+https://joinmarket.me/blog/blog/coinjoinxt/
+Introduction My talk today is about what I&amp;rsquo;m calling CoinjoinXT which is kind of a new proposal. I wouldn&amp;rsquo;t say it&amp;rsquo;s a new technology, but perhaps a new combination of technologies. My name is Adam Gibson. Yes, another Adam, sorry about that. I have been working on privacy tech for the last number of years, mostly on joinmarket.</description>
+    </item>
+    
+    <item>
+      <title>Concurrency And Privacy With Payment Channel Networks</title>
+      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/concurrency-and-privacy-with-payment-channel-networks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/concurrency-and-privacy-with-payment-channel-networks/</guid>
+      <description>Concurrency and Privacy with Payment-Channel Networks
+Pedro Moreno-Sanchez
+paper: https://eprint.iacr.org/2017/820.pdf
+Introduction I am going to talk about concurrency and privacy. This was joint work with my collaborators.
+Bitcoin has scalability issues. That&amp;rsquo;s the main reason why we are here today. Currently the bitcoin network allows for less than 10 transactions/second. Today we have more than 135 gigabytes of memory requirement. And there are some high fees and micropayments are not really possible.</description>
+    </item>
+    
+    <item>
+      <title>Cross Chain Swaps</title>
+      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/cross-chain-swaps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/cross-chain-swaps/</guid>
+      <description>Cross-chain swaps: Atomically swapping coins for privacy or cross-blockchain trades
+Ethan Heilman, Nicolas Dorier
+https://twitter.com/kanzure/status/1048017311431413760
+Introduction We are Ethan Heilman and Nicolas Dorier. Ethan is from Boston University. Nicolas is from DG Lab and working on NBitcoin. Today we&amp;rsquo;re going to be talking with you about atomic swaps for privacy and for cross-blockchain swaps. When we say atomic swaps, what do we mean? At a very high level, the idea is that it enables Alice and Bob to trade some cryptocurrency.</description>
+    </item>
+    
+    <item>
+      <title>Cryptographic Hocus Pocus</title>
+      <link>//btctranscripts.com/magicalcryptoconference/2019/cryptographic-hocus-pocus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/magicalcryptoconference/2019/cryptographic-hocus-pocus/</guid>
+      <description>Cryptographic hocus-pocus meaning nothing: The zcash trusted setup MPC
+or: &amp;ldquo;Peter Todd&amp;rsquo;s secret love letter to Zooko&amp;rdquo;
+Peter Todd
+Background See http://web.archive.org/web/20170717025249/https://petertodd.org/2016/cypherpunk-desert-bus-zcash-trusted-setup-ceremony
+and later it was then redacted: https://petertodd.org/2016/cypherpunk-desert-bus-zcash-trusted-setup-ceremony
+Introduction Alright. Hopefully you guys are all awake ish or something. I am going to give a talk about the zcash trusted setup. As many of you know, I was involved in it. The way to start is to answer, what is it?</description>
+    </item>
+    
+    <item>
+      <title>Cryptography Audit</title>
+      <link>//btctranscripts.com/grincon/2019/cryptography-audit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/grincon/2019/cryptography-audit/</guid>
+      <description>libsecp256k1-zkp audit
+John Woeltz
+It&amp;rsquo;s a real treat to be able to be a part of this.
+Why bother? Just a high-level, why are we taking community resources to spend time on audits? There are some perspectives&amp;ndash; it&amp;rsquo;s good for the community and it&amp;rsquo;s what you do.
+Bitcoin had on professional security audits and did just fine. But it launched in a very different environment, and it did get audits eventually.</description>
+    </item>
+    
+    <item>
+      <title>Current And Future State Of Wallets</title>
+      <link>//btctranscripts.com/building-on-bitcoin/2018/current-and-future-state-of-wallets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/building-on-bitcoin/2018/current-and-future-state-of-wallets/</guid>
+      <description>Current and future state of wallets
+jonasschnelli
+https://twitter.com/kanzure/status/1014127893495021568
+Introduction I started to contribute to Bitcoin Core about 5 years ago. Since then, I have managed to get 450 commits merged. I am also the co-founder of a wallet hardware company based in Switzerland called Shift+ Cryptocurrency.
+Wallets is not rocket science. It&amp;rsquo;s mostly about pointing the figure to things that we can do better. I prepared a lot of content.</description>
+    </item>
+    
+    <item>
+      <title>Dan Boneh</title>
+      <link>//btctranscripts.com/grincon/2019/dan-boneh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/grincon/2019/dan-boneh/</guid>
+      <description>Dan Boneh fireside chat
+Taariq Lewis
+TL: I was one of the founders of SF Bitcoin Devs with aantonop. I am also the co-founder of a company called Promise. We sponsor protocols in privacy as well as mimblewimble. If you are mining or actively looking to mine in grin, please say hello to me because we&amp;rsquo;re connected with a lot of mining companies and hosting companies that are looking to host miners very cheaply.</description>
+    </item>
+    
+    <item>
+      <title>Dandelion</title>
+      <link>//btctranscripts.com/building-on-bitcoin/2018/dandelion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/building-on-bitcoin/2018/dandelion/</guid>
+      <description>Dandelion: Privacy-preserving transaction propagation in bitcoin&amp;rsquo;s p2p network
+Giulia Fanti
+https://twitter.com/kanzure/status/1014196927062249472
+Today I will be talking to you about privacy in bitcoin&amp;rsquo;s p2p layer. This was joint work with some talented colleagues.
+Bitcoin p2p layer I want to give a brief overview of the p2p layer. Users in bitcoin are connected over a p2p network with tcp links. Users are identified by ip address and port number. Users have a second identity, which is their address or public key or however you want to think about it.</description>
+    </item>
+    
+    <item>
+      <title>Day 1 Group Summaries</title>
+      <link>//btctranscripts.com/scalingbitcoin/milan-2016/day-1-group-summaries/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/milan-2016/day-1-group-summaries/</guid>
+      <description>Day 1 group summaries
+We need two to three minute report backs from each session. Also, note takers. Please email your notes to contact@scalingbitcoin.org so that we can add notes to the wiki. Come join us. Okay, so.
+Lightning We discussed routing and several aspects of routing algorithms in the lightning network. We talked about the tradeoff between privacy aspects and reliability in routing. We quickly discovered that after some of the things were already resolved by the papers&amp;ndash; the way how we deal with a general separation and channel transaction fees, is actually quite an interesting discussion topic.</description>
+    </item>
+    
+    <item>
+      <title>Decentralized Oracles Tls</title>
+      <link>//btctranscripts.com/stanford-blockchain-conference/2020/decentralized-oracles-tls/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/decentralized-oracles-tls/</guid>
+      <description>DECO: Liberating Web Data Using Decentralized Oracles for TLS
+Fan Zhang
+https://twitter.com/kanzure/status/1230657639740108806
+Introduction I am Fan from Cornell. I am going to be talking about DECO, a privacy-preserving oracle for TLS. This is joint work with some other people.
+Decentralized identity What is identity? To use any system, the first thing that the user needs to do is to prove her identity and that she is a user to the system.</description>
+    </item>
+    
+    <item>
+      <title>Discreet Log Contracts</title>
+      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/discreet-log-contracts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/discreet-log-contracts/</guid>
+      <description>Discreet log contracts
+http://diyhpl.us/wiki/transcripts/discreet-log-contracts/
+https://www.youtube.com/watch?v=FU-rA5dkTHI
+paper: https://adiabat.github.io/dlc.pdf
+Hello everyone. I am going to give a talk about discreet log contracts. I am from MIT DCI. I work on lightning network software and discreet log contracts. A quick intro: these are pretty new. I am not sure if they work. This presentation is part of the peer review process. Maybe the math doesn&amp;rsquo;t work. Please let me know. It might also work, though.</description>
+    </item>
+    
+    <item>
+      <title>Ethan Heilman Network Partitioning Attacks (2019-06-12)</title>
+      <link>//btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-12-ethan-heilman-network-partitioning-attacks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-12-ethan-heilman-network-partitioning-attacks/</guid>
+      <description>Name: Ethan Heilman
+Topic: Bitcoin network partitioning &amp;amp; network-level privacy attacks
+Location: Chaincode Labs 2019 Residency
+Video: https://www.youtube.com/watch?v=StnOVBbIpD8
+Slides: https://residency.chaincode.com/presentations/bitcoin/ethan_heilman_p2p.pdf
+Eclipse attack paper: https://eprint.iacr.org/2015/263.pdf
+Transcript completed by: Adam Jonas
+Bitcoin’s P2P Network Please interrupt me. I&amp;rsquo;m going to go through this stuff a little bit quickly because I hear that you&amp;rsquo;ve already read Eclipse attack paper and you&amp;rsquo;ve already looked at some of the peer to peer stuff.
+Bitcoin uses a peer-to-peer network to announce transactions and blocks.</description>
+    </item>
+    
+    <item>
+      <title>Extreme Opsec For The Modern Cypherpunk</title>
+      <link>//btctranscripts.com/baltic-honeybadger/2018/extreme-opsec-for-the-modern-cypherpunk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/baltic-honeybadger/2018/extreme-opsec-for-the-modern-cypherpunk/</guid>
+      <description>Extreme opsec for the modern cypherpunk
+Jameson Lopp (lopp) jameson@team.casa
+Jameson is the infrastructure engineer at Casa. Please welcome Jameson Lopp.
+Introduction Hi fellow cypherpunks. We&amp;rsquo;re under attack. Corporations and nation states in their quest for omniscience have slowly stripped away our privacy. We are the frog being boiled in the pot called progress. We can&amp;rsquo;t trust that corporations will grant us privacy out of their beneficience. Our failures here are our own.</description>
+    </item>
+    
+    <item>
+      <title>Flare Routing In Lightning</title>
+      <link>//btctranscripts.com/scalingbitcoin/milan-2016/flare-routing-in-lightning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/milan-2016/flare-routing-in-lightning/</guid>
+      <description>Flare: An approach to routing in lightning network
+https://twitter.com/kanzure/status/784745976170999810
+Pavel Prihodko
+Kolya Sakhno
+Alexei Ostrovskiy
+Slava Zhigulin
+Olaoluwa Osuntokun
+I will not be as technical as Olaoluwa was. You have nodes that open up payment channels. This scheme is actually developed at the moment in great detail. So how do you find the channels through which to send payments? So we wanted to propose some initial solution to this.
+Routing requirements It should be source routing because we need the privacy.</description>
+    </item>
+    
+    <item>
+      <title>Fungibility And Scalability</title>
+      <link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/fungibility-and-scalability/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/hong-kong-2015/fungibility-and-scalability/</guid>
+      <description>adam3us (Adam Back)
+slides: https://scalingbitcoin.org/hongkong2015/presentations/DAY1/1_overviews_2_back.pdf
+video: https://youtube.com/watch?v=aQ1--w4uEMM&amp;amp;t=2443
+I think everyone knows what fungibility is, it&amp;rsquo;s when coins are equal and interchangeable. It&amp;rsquo;s an important property for an electronic cash system. All bitcoin users would have a problem if fungability goes away.
+Bitcoin has fungibility without privacy. Previous electronic cash systems had fungibility and cryptographic blinding. In Bitcoin, there&amp;rsquo;s decentralized mining that somebody will process your transaction even if a given miner may not.</description>
+    </item>
+    
+    <item>
+      <title>Future Of Privacy Coins</title>
+      <link>//btctranscripts.com/magicalcryptoconference/2019/future-of-privacy-coins/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/magicalcryptoconference/2019/future-of-privacy-coins/</guid>
+      <description>Future of privacy coins
+Brandon Goodell, Andrew Poelstra, Alexandra Moxin
+AM: That&amp;rsquo;s not good. Hi everyone. Thanks for coming to the future of privacy coins panel. I want to spend a minute talking ablout backgrounds and interest in this area.
+BG: I have a PhD in something. I got into monero a couple of years ago. I needed to pay rent, so I did some work in math in exchange for money.</description>
+    </item>
+    
+    <item>
+      <title>Future Of Spv Tech</title>
+      <link>//btctranscripts.com/scalingbitcoin/montreal-2015/future-of-spv-tech/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/montreal-2015/future-of-spv-tech/</guid>
+      <description>Future of SPV tech
+https://docs.google.com/document/d/1t0bSZj5b66xBdW7xrjHlcvfqYAbTaQDB4-_T0Jvs3T4/edit#heading=h.5lm45oa6kuri
+issues with current SPV wallets
+Existing clients and their status
+ bitcoinj electrum ** they are doing SPV proofs ** bloom filters  utxo commitments need to get in need to pick which type of utxo commitments
+Number of nodes to connect to for more SPV clients
+1 header from each peer to verify that we are all getting the same thing what block does each peer think is the best?</description>
+    </item>
+    
+    <item>
+      <title>Gmaxwell - Confidential Transactions (2017-04-28)</title>
+      <link>//btctranscripts.com/greg-maxwell/2017-04-28-gmaxwell-confidential-transactions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/greg-maxwell/2017-04-28-gmaxwell-confidential-transactions/</guid>
+      <description>Confidential transactions
+gmaxwell
+2017-04-28
+https://twitter.com/kanzure/status/859604355917414400
+https://www.youtube.com/watch?v=LHPYNZ8i1cU
+Introduction Thank you.
+So as mentioned, I am going to be talking about confidential transactionstoday. And I look at confidential transactions as a building block fundamental piece of technology, it&amp;rsquo;s not like altcoin or something like that. It&amp;rsquo;s not a turnkey system, it&amp;rsquo;s some fundamental tech, and there are many different ways to use it and deploy it.
+My interest in this technology is primarily driven by bitcoin, but the technology here could be applied to many other things, including things outside of the cryptocurrency space.</description>
+    </item>
+    
+    <item>
+      <title>How Much Privacy Is Enough</title>
+      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/how-much-privacy-is-enough/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/how-much-privacy-is-enough/</guid>
+      <description>How much privacy is enough? Threats, scaling, and trade-offs in blockchain privacy protocols
+Ian Miers (secparam)
+unrelated, https://arxiv.org/pdf/1706.00916.pdf
+Introductions Hi everybody. This is a talk on how much privacy is enough, evaluating trade-offs in privacy and scalability. This is going to be unusual for this conference because I will not be presenting new technical content. I am going to be talking about evaluating the tradeoffs between these scalability and privacy. As context, my name is Ian Miers.</description>
+    </item>
+    
+    <item>
+      <title>Invertible Bloom Lookup Tables And Weak Block Propagation Performance</title>
+      <link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/invertible-bloom-lookup-tables-and-weak-block-propagation-performance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/hong-kong-2015/invertible-bloom-lookup-tables-and-weak-block-propagation-performance/</guid>
+      <description>IBLT and weak block propagation performance
+Kalle Rosenbaum and Rusty Russell
+slides: https://scalingbitcoin.org/hongkong2015/presentations/DAY1/3_block_propagation_1_rosenbaum.pdf
+video: https://www.youtube.com/watch?v=ivgxcEOyWNs&amp;amp;t=1h40m20s
+IBLT - invertible bloom lookup tables
+Before we get started, for privacy reasons, and for reasons of zero attribution, please do not take pictures of attendees. Do not have pictures of attendees in the photographs. Taking pictures of the stage and slides are OK, since they are being broadcasted. No photographs of any attendees, please let them remain anonymous and private.</description>
+    </item>
+    
+    <item>
+      <title>Lightning</title>
+      <link>//btctranscripts.com/scalingbitcoin/milan-2016/lightning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/milan-2016/lightning/</guid>
+      <description>Lightning work group session
+https://twitter.com/kanzure/status/784783992478466049
+You have a network. Anyone can join the network. You have two points and you want to do route finding between those two points. To be clear, this is a network of channels. It is similar to the internet, but it is not the internet. How do you find such a route? It&amp;rsquo;s easy when you find all the implements of the network. Some of the information changes frequently.</description>
+    </item>
+    
+    <item>
+      <title>Lightning Network Security Analysis</title>
+      <link>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/lightning-network-security-analysis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/lightning-network-security-analysis/</guid>
+      <description>Security analysis of the lightning network (2017)
+Olaoluwa Osuntokun (roasbeef), Lightning Labs
+https://twitter.com/kanzure/status/957978915515092992
+video: https://www.youtube.com/watch?v=Eq_eY8iWrKI
+slides: https://cyber.stanford.edu/sites/default/files/olaoluwaosuntokun.pdf
+Introduction My name is Laolu Osuntokun and I work on lightning stuff. I go by roasbeef on the internet. I work at Lightning Labs. I am going to be giving an overview of some security properties and privacy properties of lightning.
+State of the hash-lock Before I start, I want to go over the state of the hash-lock which is the current progress to completion and design of lightning.</description>
+    </item>
+    
+    <item>
+      <title>Lightning Network Sphinx And Onion Routing</title>
+      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-sphinx-and-onion-routing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-sphinx-and-onion-routing/</guid>
+      <description>Lightning network: Sphinx and onion routing
+Antoine Riard
+Introduction Hi everyone. I am a developer of rust-lightning, it started in 2018 by BlueMatt. I started contributing about a year ago now. It&amp;rsquo;s a full featured, flexible, spec-compliant lightning library. It targets exchanges, wallet vendors, hardware, meshnet devices, and you can join us on Freenode IRC in the #rust-bitcoin channel which is a really nice one.
+Privacy matters Privacy matters on the blockchain.</description>
+    </item>
+    
+    <item>
+      <title>Meeting Notes (2017-09-05)</title>
+      <link>//btctranscripts.com/bitcoin-core-dev-tech/2017-09-05-meeting-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2017-09-05-meeting-notes/</guid>
+      <description>﻿2017-09-05 - 2017-09-07
+coredev.tech september 2017
+https://twitter.com/kanzure/status/907233490919464960
+((As always, any errors are most likely my own. etc.))
+There is significant concern regarding whether BlueMatt has become a misnomer.
+Monday night presentation: http://diyhpl.us/wiki/transcripts/sf-bitcoin-meetup/2017-09-04-jonas-schenlli-bip150-bip151/
+I think we should continue to use #bitcoin-core-dev for anything about changing Bitcoin Core and try to keep things open even though we&amp;rsquo;re together here today and tomorrow and the next.
+Nobody produces P2SH change when they have a native output.</description>
+    </item>
+    
+    <item>
+      <title>Mimblewimble (2016-11-21)</title>
+      <link>//btctranscripts.com/sf-bitcoin-meetup/2016-11-21-mimblewimble/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/sf-bitcoin-meetup/2016-11-21-mimblewimble/</guid>
+      <description>Mimblewimble
+Andrew Poelstra (andytoshi)
+https://www.youtube.com/watch?v=aHTRlbCaUyM
+https://twitter.com/kanzure/status/801990263543648256
+History As Denise said, I gave a talk in Milan about mimblewimble about a month ago(slides). This is more or less the same talk, but rebalanced a bit to try to emphasize what I think is important and add some history that has happened in the intervening time. I&amp;rsquo;ll get started.
+Many of you have heard of mimblewimble. It&amp;rsquo;s been in the news. It has a catchy name.</description>
+    </item>
+    
+    <item>
+      <title>Mixicles</title>
+      <link>//btctranscripts.com/stanford-blockchain-conference/2020/mixicles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/mixicles/</guid>
+      <description>Mixicles: Simple Private Decentralized Finance
+Ari Juels
+https://twitter.com/kanzure/status/1230666545803563008
+https://chain.link/mixicles.pdf
+Introduction This work was done in my capacity as technical advisor to Chainlink, and not my Cornell or IC3 affiliation. Mixicle is a combination of the words mixers and oracles. You will see why in a moment.
+DeFi and privacy As of a couple of weeks ago, DeFi passed the $1 billion mark which is to say there&amp;rsquo;s over $1 billion of cryptocurrency in DeFi smart contracts today.</description>
+    </item>
+    
+    <item>
+      <title>Multi Hop Locks</title>
+      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/multi-hop-locks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/multi-hop-locks/</guid>
+      <description>Multi-hop locks for secure, privacy-preserving and interoperable payment-channel networks
+Giulio Malavolta (Friedrich-Alexander-University Erlangen-Nuernberg), Pedro Moreno-Sanchez (Purdue University), Clara Schneidewind (Vienna University of Technology), Aniket Kate (Purdue University) and Matteo Maffei (Vienna University of Technology)
+https://eprint.iacr.org/2018/472.pdf
+https://twitter.com/kanzure/status/1048476273259900928
+This is joint work with my colleagues. I promise I will talk slower than the last talk. In a multi-hop network, the security tool is a hash-time lock contract (HTLC) where the payment is conditioned on revealing the pre-image of a hash function.</description>
+    </item>
+    
+    <item>
+      <title>Nix Bitcoin (2020-07-26)</title>
+      <link>//btctranscripts.com/stephan-livera-podcast/2020-07-26-nix-bitcoin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/stephan-livera-podcast/2020-07-26-nix-bitcoin/</guid>
+      <description>Name: nixbitcoindev
+Topic: nix-bitcoin
+Location: Stephan Livera Podcast
+Date: July 26th 2020
+Audio: https://stephanlivera.com/episode/195/
+nix-bitcoin on GitHub: https://github.com/fort-nix/nix-bitcoin
+Transcript completed by: Stephan Livera Edited by: Michael Folkson
+Intro Stephan Livera (SL): nixbitcoindev welcome to the show.
+nixbitcoindev (NBD): Hello. Thank you for having me.
+SL: Obviously as you’re under a pseudonym don’t dox anything about yourself but can you just tell us what you’re interested in about Bitcoin and is it the computer science aspects or what aspects of it interest you?</description>
+    </item>
+    
+    <item>
+      <title>Onion Routing In Lightning</title>
+      <link>//btctranscripts.com/scalingbitcoin/milan-2016/onion-routing-in-lightning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/milan-2016/onion-routing-in-lightning/</guid>
+      <description>Onion routing in lightning network
+Olaoluwa Osuntokun (roasbeef)
+http://lightning.network/
+https://twitter.com/kanzure/status/784742298089299969
+video: https://www.youtube.com/watch?v=Gzg_u9gHc5Q#t=2m44s
+Privacy-preserving decentralized micropayments
+We&amp;rsquo;re excited about lightning because the second layer could be an important opportunity to improve privacy and fungibility. Also, there might be timing information in the payments themselves.
+Distributed set of onion routers (OR, cite OG onionrouting paper). Users create circuits with sub-set of nodes. Difficult for oion routers to gain more info than predecessor+successor in path.</description>
+    </item>
+    
+    <item>
+      <title>Perspective</title>
+      <link>//btctranscripts.com/decentralized-financial-architecture-workshop/perspective/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/decentralized-financial-architecture-workshop/perspective/</guid>
+      <description>Regulators should focus on consumer protection
+  Regulators should focus on operating (or overseeing) rating agencies, and formal review of proposed standards
+  Fungibility is important, and many regulatory goals are contrary to fungibility, indicating that their forms of money will be inferior and their economy will be left behind.
+  Anonymity should be a core value&amp;ndash; the society with the most privacy will have the most advantages.</description>
+    </item>
+    
+    <item>
+      <title>Privacy And Fungibility</title>
+      <link>//btctranscripts.com/scalingbitcoin/montreal-2015/privacy-and-fungibility/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/montreal-2015/privacy-and-fungibility/</guid>
+      <description>Privacy and scalability
+Even though Bitcoin is the worst privacy system ever, everyone in the community very strongly values privacy.
+There are at least three things: privacy censorship resistance fungibility
+The easiest way to censor things is to punish communication, not prevent communication. Privacy is the weakest link in censorship resistance. Fungibility is an absolute necessity for any medium of exchange. The properties of money include fungibility. Without privacy you may not be able to have fungibility.</description>
+    </item>
+    
+    <item>
+      <title>Privacy Concepts</title>
+      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/privacy-concepts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/privacy-concepts/</guid>
+      <description>Privacy concepts for bitcoin application developers
+Udi Wertheimer
+https://twitter.com/kanzure/status/1171036497044267008
+Introduction You&amp;rsquo;re not going to walk out of here as a privacy protocol developer. I am going to mention and talk about some ideas in some protocols that exist. What I find myself is that of really smart people working on a lot of pretty cool stuff that can make privacy easier and better to use. A lot of times, application developers or exchanges aren&amp;rsquo;t even aware of those things and as a result the end result is that people just sometimes use bitcoin in very non-private ways because they&amp;rsquo;re not aware of how to do privacy.</description>
+    </item>
+    
+    <item>
+      <title>Privacy Preserving Smart Contracts</title>
+      <link>//btctranscripts.com/scalingbitcoin/montreal-2015/privacy-preserving-smart-contracts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/montreal-2015/privacy-preserving-smart-contracts/</guid>
+      <description>Ranjit Kumaresan
+ranjit@csail.mit.edu
+http://people.csail.mit.edu/ranjit/
+We have been looking at how much we can support or what limitations we might encounter. There are also efficiency issues and privacy guarantees. And then there are some potential relaxations that will help with removing the fundamental limitations and express the power and make smart contracts more useful.
+The point of this talk is off-chain transactions and secure computation. I will also highlight the relationship of secure computation and bitcoin.</description>
+    </item>
+    
+    <item>
+      <title>Private Information Retrieval</title>
+      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/private-information-retrieval/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/private-information-retrieval/</guid>
+      <description>Applying private information retrieval (PIR) to lightweight bitcoin clients
+SPV overview I have to thank the prior speaker. This is basically the same, except this time we&amp;rsquo;re not using SGX. We&amp;rsquo;re looking at bitcoin lightweight clients. You have a lite client with not much space not much computing power, can&amp;rsquo;t store the bitcoin blockchain. All it knows about is the header information. We assume it has the blockheader history. In the header, we can find the merkle tree, and given the merkle tree we can make a merkle proof that a given transaction is included in a block.</description>
+    </item>
+    
+    <item>
+      <title>Scalable Smart Contracts Via Proofs And Single Use Seals</title>
+      <link>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/scalable-smart-contracts-via-proofs-and-single-use-seals/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/scalable-smart-contracts-via-proofs-and-single-use-seals/</guid>
+      <description>Scalable smart contracts via proofs and single-use seals
+petertodd
+https://twitter.com/kanzure/status/957660108137418752
+video: https://youtu.be/7BA7f5vk3jQ
+slides: https://cyber.stanford.edu/sites/default/files/petertodd.pdf
+https://petertodd.org/2016/commitments-and-single-use-seals
+https://petertodd.org/2016/closed-seal-sets-and-truth-lists-for-privacy
+Introduction I am petertodd and I am here to break your blockchain. It&amp;rsquo;s kind of interesting following a talk like that, in some ways I&amp;rsquo;m going in a more extreme direcion for consensus. Do we actually need consensus at all? Can we make a more robust system by eliminating it to the maximum extent possible?</description>
+    </item>
+    
+    <item>
+      <title>Scaling Oblivious Read Write</title>
+      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/scaling-oblivious-read-write/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/scaling-oblivious-read-write/</guid>
+      <description>A tale of two trees: One writes, and other reads, scaling oblivious accesses to large-scale blockchains
+Duc V. Le
+Introduction We are trying to get optimized oblivious accesses to large-scale blockchains. This is collaborative work with our colleagues.
+Motivation As we all know, bitfcoin data has become too large to store in resource-constrained devices. It&amp;rsquo;s like 240 GB. The current solution today is bip37 + Nakamoto&amp;rsquo;s idea for simplified payment verification (SPV) clients which don&amp;rsquo;t run the bitcoin network rules.</description>
+    </item>
+    
+    <item>
+      <title>Sergei Tikhomirov Lightning Privacy (2020-05-09)</title>
+      <link>//btctranscripts.com/lightning-hack-day/2020-05-09-sergei-tikhomirov-lightning-privacy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/lightning-hack-day/2020-05-09-sergei-tikhomirov-lightning-privacy/</guid>
+      <description>Name: Sergei Tikhomirov
+Topic: Quantitative Analysis of Lightning Network Privacy
+Location: Lightning Hacksprint (Fulmo)
+Date: May 9th 2020
+Video: https://www.youtube.com/watch?v=8lUTbfO94mM
+Slides: https://docs.google.com/presentation/d/1H9EdrhjQ9x3q0qfsei7iFYINVf2lwPyjUKHd3CScy4k/edit#slide=id.g7774542944_0_0
+Paper: https://eprint.iacr.org/2020/303
+Intro Hello everyone. I am Sergei, I am a PhD student at the University of Luxembourg. I am going to present our joint work with Pedro Moreno-Sanchez and Matteo Maffei from TU Wien on certain aspects of the privacy and scalability of the Lightning Network. The full paper can be found here.</description>
+    </item>
+    
+    <item>
+      <title>Socratic Seminar Payjoins (2020-05-05)</title>
+      <link>//btctranscripts.com/london-bitcoin-devs/2020-05-05-socratic-seminar-payjoins/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/london-bitcoin-devs/2020-05-05-socratic-seminar-payjoins/</guid>
+      <description>Name: Socratic Seminar with Adam Gibson
+Topic: Bitcoin privacy (Payjoin/P2EP)
+Location: London BitDevs (online)
+Date: May 5th 2020
+Video: https://www.youtube.com/watch?v=hX86rKyNB8I
+Adam Gibson Pastebin on Payjoin resources: https://pastebin.com/rgWVuNrC
+6102bitcoin resources on Payjoin/P2EP: https://github.com/6102bitcoin/CoinJoin-Research/blob/master/CoinJoin_Research/CoinJoin_Theory/P2EP/summary.md
+Transaction fingerprinting discussion: https://github.com/zkSNACKs/WalletWasabi/issues/3625
+BitDevs resources on Coinjoin: https://bitdevs.org/2020-02-19-whitepaper-series-11-coinjoin
+The conversation has been anonymized to protect the identities of the participants.
+Intro (Michael Folkson) We are live, London BitDevs Socratic Seminar on Bitcoin privacy with Adam Gibson. This is a live call on Jitsi.</description>
+    </item>
+    
+    <item>
+      <title>Spork Probabilistic Bitcoin Soft Forks</title>
+      <link>//btctranscripts.com/stanford-blockchain-conference/2019/spork-probabilistic-bitcoin-soft-forks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/spork-probabilistic-bitcoin-soft-forks/</guid>
+      <description>Spork: Probabilistic bitcoin soft-forks
+Jeremy Rubin
+Introduction Thank you for the introduction. I have a secret. I am not an economist, so you&amp;rsquo;ll have to forgive me if I don&amp;rsquo;t have your favorite annotations today. I have my own annotations. I originally gave a predecessor to this talk in Japan. You might notice my title here is a haiku: these are protocols used for changing the bitcoin netwokr protocols. People do highly value staying together for a chain, we&amp;rsquo;re doing coordinated activation of a new upgrade.</description>
+    </item>
+    
+    <item>
+      <title>Stark For Developers</title>
+      <link>//btctranscripts.com/stanford-blockchain-conference/2020/stark-for-developers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/stark-for-developers/</guid>
+      <description>STARK for developers
+Eli Ben-Sasson
+https://twitter.com/kanzure/status/1230279740570783744
+Introduction It always seems like there&amp;rsquo;s a lot of different proof systems, but it turns out they really work well together and there&amp;rsquo;s great abstractions that are happening where we can take different tools and plug them together. We will see some of those in this session. I think STARKs were first announced 3 years ago back when this conference was BPASE, and now they are ready to use for developers and they are deployed in the wild and it&amp;rsquo;s exciting to see how far we&amp;rsquo;ve come in the past few years.</description>
+    </item>
+    
+    <item>
+      <title>Taproot and Graftroot</title>
+      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/taproot-and-graftroot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/taproot-and-graftroot/</guid>
+      <description>Taproot and graftroot
+Greg Sanders (instagibbs)
+https://twitter.com/kanzure/status/1047764770265284608
+Introduction Taproot and graftroot are recent proposals in the bitcoin world. Every script type looks different and they are distinct. From a privacy perspective, that&amp;rsquo;s pretty bad. You watermark or fingerprint yourself all the time by showing unique scripts on the blockchain or in your transactions. This causes censorship risks and other problems for fungibility. Often you are paying for contigencies that are never used, like the whoopsies branches in your scripts.</description>
+    </item>
+    
+    <item>
+      <title>Technological Stability</title>
+      <link>//btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/technological-stability/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/technological-stability/</guid>
+      <description>Technological stability
+https://twitter.com/kanzure/status/1229891596688052226
+Controversial thesis: the primary source of economic instability is unreasonable demands (from regulators, but really from the general public) for violating certain cryptocurrency tech design principles, like on sound money- privacy and confidentiality (like confidential transactions and confidential assets), monetary policy (like scarcity economics), identity vs anonymity, AML/KYC requirements, censorship, sanctions requirements and discrimination (e.g. denying money to certain parties), and issues of fungibility (like mixing and history-indistinguishability).</description>
+    </item>
+    
+    <item>
+      <title>Threshold Scriptless Scripts</title>
+      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/threshold-scriptless-scripts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/threshold-scriptless-scripts/</guid>
+      <description>Threshold scriptless scripts
+Omer Shlomovits (KZen Research) (omershlomovits, zengo)
+https://twitter.com/kanzure/status/1171690582445580288
+Scriptless scripts We can write smart contracts in bitcoin today, but there&amp;rsquo;s some limitations. We can do a lot of great things. We can do atomic swaps, multisig, payment channels, etc. There&amp;rsquo;s a cost, though. Transactions become bigger with bigger scripts. Also, it&amp;rsquo;s kind of heavy on the verifiers. The verifiers now need to verify more things. There&amp;rsquo;s also privacy issues because you put your contract publicly on chain.</description>
+    </item>
+    
+    <item>
+      <title>Tumblebit</title>
+      <link>//btctranscripts.com/scalingbitcoin/milan-2016/tumblebit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/milan-2016/tumblebit/</guid>
+      <description>TumbleBit
+Ethan Heilman
+Leen AlShenibr
+https://twitter.com/kanzure/status/784686167052709888
+Hi. So I&amp;rsquo;m going to be talking about tumblebit. It&amp;rsquo;s our untrusted private bitcoin payment system. Tumblebit provides payments which are private. They provide set anonymity when used as a classic tumbler. They are untrusted. The tumbler can&amp;rsquo;t violate your privacy, and can&amp;rsquo;t steal your coins. It&amp;rsquo;s also scalable. It&amp;rsquo;s compatible and works with today&amp;rsquo;s bitcoin. There are no malleability concerns. We&amp;rsquo;re going to rely on the constrained opcodes that currently exist in bitcoin.</description>
+    </item>
+    
+    <item>
+      <title>Valueshuffle Mixing Confidential Transactions</title>
+      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/valueshuffle-mixing-confidential-transactions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/valueshuffle-mixing-confidential-transactions/</guid>
+      <description>valueshuffle: Mixing confidential transactions
+paper: https://eprint.iacr.org/2017/238.pdf
+Tim Ruffing
+Thank you.
+We have seen two talks now about putting privacy in layer two. But let&amp;rsquo;s talk about layer one. We still don&amp;rsquo;t have great privacy there. So the title of this talk is valueshuffle - mixing confidential transactions. I don&amp;rsquo;t have to convince you that bitcoin at the moment is not really private. There are a lot of possibilities to link&amp;hellip; to deal them as, to link addresses together.</description>
+    </item>
+    
+    <item>
+      <title>Wasabi Research Club - Coinswap (2020-06-15)</title>
+      <link>//btctranscripts.com/wasabi-research-club/2020-06-15-coinswap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/wasabi-research-club/2020-06-15-coinswap/</guid>
+      <description>Name: Wasabi Research Club
+Topic: CoinSwaps
+Location: Wasabi Research Club (online)
+Date: June 15th 2020
+Video: https://www.youtube.com/watch?v=Pqz7_Eqw9jM
+Wasabi Research Club: https://github.com/zkSNACKs/WasabiResearchClub
+Intro (Aviv Milner) Today we are talking about CoinSwaps, massively improving Bitcoin privacy and fungibility. A lot of excitement about CoinSwaps so hopefully we can touch on some interesting things.
+CoinSwaps (Belcher 2020) https://gist.github.com/chris-belcher/9144bd57a91c194e332fb5ca371d0964
+This is a 2020 ongoing GitHub research paper that Chris Belcher has been working on. You can view the original file here.</description>
+    </item>
+    
+    <item>
+      <title>Zerocash And Zero Knowledge Succint Arguments Of Knowledge Libsnark</title>
+      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2015/zerocash-and-zero-knowledge-succint-arguments-of-knowledge-libsnark/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2015/zerocash-and-zero-knowledge-succint-arguments-of-knowledge-libsnark/</guid>
+      <description>Zero knowledge proofs and SNARKs and libsnark
+Madars Virza
+I am going to tell you about zerocash and our approach of addressing Bitcoin&amp;rsquo;s privacy problem. All of this is joint work with Techion, ETCH Zurich, and MIT, and Matt Green, .. and .. and..
+So first to get us going, I want to talk a little bit about two of my ideas around Bitcoin. There are two questions that every decentralized cryptocurrency must answer.</description>
+    </item>
+    
+  </channel>
+</rss>

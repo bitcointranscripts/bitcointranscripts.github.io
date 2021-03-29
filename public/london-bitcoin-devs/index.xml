@@ -114,7 +114,7 @@ whoami I live in New York and work at Chaincode Labs. I&amp;rsquo;m not actually
     </item>
     
     <item>
-      <title>John Light Bitcoin Full Nodes (2018-07-23)</title>
+      <title>John Light - Bitcoin Full Nodes (2018-07-23)</title>
       <link>//btctranscripts.com/london-bitcoin-devs/2018-07-23-john-light-bitcoin-full-nodes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -191,6 +191,22 @@ Discussion of Hopin video conferencing software We tested this a few weeks back 
     </item>
     
     <item>
+      <title>Socratic Seminar - BIP Taproot (2020-07-21)</title>
+      <link>//btctranscripts.com/london-bitcoin-devs/2020-07-21-socratic-seminar-bip-taproot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/london-bitcoin-devs/2020-07-21-socratic-seminar-bip-taproot/</guid>
+      <description>Name: Socratic Seminar
+Topic: BIP Taproot (BIP 341)
+Location: London BitDevs (online)
+Date: July 21st 2020
+Video: https://www.youtube.com/watch?v=bPcguc108QM
+Pastebin of the resources discussed: https://pastebin.com/vsT3DNqW
+Transcript of Socratic Seminar on BIP-Schnorr: https://diyhpl.us/wiki/transcripts/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/
+The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.</description>
+    </item>
+    
+    <item>
       <title>Socratic Seminar Bip Schnorr (2020-06-16)</title>
       <link>//btctranscripts.com/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -204,22 +220,6 @@ Video: https://www.youtube.com/watch?v=uE3lLsf38O4
 Pastebin of the resources discussed: https://pastebin.com/uyktht33
 August 2020 update: Since this Socratic on BIP Schnorr there has been a proposed change to the BIP revisting the squaredness tiebreaker for the R point.
 The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed.</description>
-    </item>
-    
-    <item>
-      <title>Socratic Seminar Bip Taproot (2020-07-21)</title>
-      <link>//btctranscripts.com/london-bitcoin-devs/2020-07-21-socratic-seminar-bip-taproot/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>//btctranscripts.com/london-bitcoin-devs/2020-07-21-socratic-seminar-bip-taproot/</guid>
-      <description>Name: Socratic Seminar
-Topic: BIP Taproot (BIP 341)
-Location: London BitDevs (online)
-Date: July 21st 2020
-Video: https://www.youtube.com/watch?v=bPcguc108QM
-Pastebin of the resources discussed: https://pastebin.com/vsT3DNqW
-Transcript of Socratic Seminar on BIP-Schnorr: https://diyhpl.us/wiki/transcripts/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/
-The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.</description>
     </item>
     
     <item>

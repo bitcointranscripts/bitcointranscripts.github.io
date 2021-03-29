@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>custody on ₿itcoin Transcripts</title>
+    <link>//btctranscripts.com/tags/custody/</link>
+    <description>Recent content in custody on ₿itcoin Transcripts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="//btctranscripts.com/tags/custody/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bitcoin Custody</title>
+      <link>//btctranscripts.com/baltic-honeybadger/2018/bitcoin-custody/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/baltic-honeybadger/2018/bitcoin-custody/</guid>
+      <description>Bryan Bishop
+https://twitter.com/kanzure/status/1048014038179823617
+Bitcoin Custody
+Baltic Honey Badger 2018 Bitcoin conference, Riga, Latvia, Day 2
+Schedule: https://bh2018.hodlhodl.com/
+Transcript
+Start time: 6:09:50
+Youtube: https://www.youtube.com/watch?v=D2WXxgZ8h-0&amp;amp;t=22160s
+My name is Bryan Bishop, I’m going to be talking about bitcoin custody. Here is my PGP fingerprint, we should be doing that. So who am I, I have a software development background, I don’t just type transcripts. I’m actually no longer at LedgerX as of Friday (Sept 21 2018) when I came here.</description>
+    </item>
+    
+    <item>
+      <title>Mcelrath On Chain Defense In Depth (2019-02-09)</title>
+      <link>//btctranscripts.com/misc/2019-02-09-mcelrath-on-chain-defense-in-depth/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/misc/2019-02-09-mcelrath-on-chain-defense-in-depth/</guid>
+      <description>2019-02-09
+On-chain defense in depth (UCL CBT seminar)
+Bob McElrath (Fidelity Digital Assets)
+video: https://vimeo.com/316301424
+https://twitter.com/kanzure/status/1159542209584218113
+Introduction It seems strange to come to a university and put PhD on my slides because in the finance world that&amp;rsquo;s weird. I put it up there.
+Okay, so. I work for Fidelity Digital Assets. Just a couple words about this. Our lawyers make us say this: &amp;ldquo;This presentation is intended to be educational in nature and is not representative of existing products and services from Fidelity Investments or Fidelity Digital Assets.</description>
+    </item>
+    
+    <item>
+      <title>Network Topologies And Their Scalability Implications On Decentralized Off Chain Networks</title>
+      <link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/network-topologies-and-their-scalability-implications-on-decentralized-off-chain-networks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/hong-kong-2015/network-topologies-and-their-scalability-implications-on-decentralized-off-chain-networks/</guid>
+      <description>Joseph Poon
+slides: https://scalingbitcoin.org/hongkong2015/presentations/DAY2/1_layer2_3_poon.pdf
+video: https://www.youtube.com/watch?v=fst1IK_mrng&amp;amp;t=1h29m38s
+LN transactions are real Bitcoin transactions. These are real zero-confirmation transactions. What&amp;rsquo;s interesting is that the original idea behind Bitcoin was solving the double-spending problem. When you move off-chain and off-block, you sort of have this opposite situation where you use double-spends to your advantage, spending from the same output, except you have this global consensus of block but you have this local ordering that you use through this lightning system of penalties through which you can update the balances between two people.</description>
+    </item>
+    
+  </channel>
+</rss>

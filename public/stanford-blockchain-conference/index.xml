@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Stanford Blockchain Conference on ₿itcoin Transcripts</title>
+    <title>Stanford Blockchain on ₿itcoin Transcripts</title>
     <link>//btctranscripts.com/stanford-blockchain-conference/</link>
-    <description>Recent content in Stanford Blockchain Conference on ₿itcoin Transcripts</description>
+    <description>Recent content in Stanford Blockchain on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="//btctranscripts.com/stanford-blockchain-conference/index.xml" rel="self" type="application/rss+xml" />
   </channel>

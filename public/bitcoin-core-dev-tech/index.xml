@@ -137,7 +137,7 @@ This is tail-call evaluation. Can we generalize P2SHto give us more general capa
     </item>
     
     <item>
-      <title>Merkleized Abstract Syntax Trees Mast (2018-03-06)</title>
+      <title>Merkleized Abstract Syntax Trees - MAST (2018-03-06)</title>
       <link>//btctranscripts.com/bitcoin-core-dev-tech/2018-03-06-merkleized-abstract-syntax-trees-mast/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -147,19 +147,6 @@ See also http://diyhpl.us/wiki/transcripts/bitcoin-core-dev-tech/2017-09-07-merk
 MAST stuff You could directly merkleize scripts if you switch from IF, IFNOT, ELSE with IFJUMP that has the number of bytes.
 With graftroot and taproot, you never to do any scripts (which were a hack to get things started). But we&amp;rsquo;re doing validation and computation.
 You take every single path it has; so instead, it becomes &amp;hellip; certain condition, or certain not conditions&amp;hellip; You take every possible ifs, you use this, you say it&amp;rsquo;s one of these, then you specify which one, and you show it and everyone else can validate this.</description>
-    </item>
-    
-    <item>
-      <title>Noinput Etc (2019-06-06)</title>
-      <link>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-06-noinput-etc/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-06-noinput-etc/</guid>
-      <description>2019-06-06
-SIGHASH_NOINPUT, ANYPREVOUT, OP_CHECKSIGFROMSTACK, OP_CHECKOUTPUTSHASHVERIFY, and OP_SECURETHEBAG
-https://twitter.com/kanzure/status/1136636856093876225
-There&amp;rsquo;s apparently some political messaging around OP_SECURETHEBAG and &amp;ldquo;secure the bag&amp;rdquo; might be an Andrew Yang thing.
-SIGHASH_NOINPUT A bunch of us are familiar with NOINPUT. Does anyone need an explainer? What&amp;rsquo;s the difference from the original NOINPUT and the new one? NOINPUT is kind of scary to at least some people. If we just do NOINPUT, does that start causing problems in bitcoin?</description>
     </item>
     
     <item>
@@ -198,6 +185,19 @@ https://github.com/bitcoin/bitcoin/blob/master/doc/descriptors.md
 I would like to talk about script descriptors. There&amp;rsquo;s a number of projects we&amp;rsquo;re working on and they are all kind of related. I&amp;rsquo;d like to clarify how things fit together.
 Note: there is an earlier transcript that has not been published (needs review) about script descriptors.
 Agenda  History of script descriptors and how we came to this. What&amp;rsquo;s currently in Bitcoin Core v0.</description>
+    </item>
+    
+    <item>
+      <title>SIGHASH_NOINPUT, ANYPREVOUT (2019-06-06)</title>
+      <link>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-06-noinput-etc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-06-noinput-etc/</guid>
+      <description>2019-06-06
+SIGHASH_NOINPUT, ANYPREVOUT, OP_CHECKSIGFROMSTACK, OP_CHECKOUTPUTSHASHVERIFY, and OP_SECURETHEBAG
+https://twitter.com/kanzure/status/1136636856093876225
+There&amp;rsquo;s apparently some political messaging around OP_SECURETHEBAG and &amp;ldquo;secure the bag&amp;rdquo; might be an Andrew Yang thing.
+SIGHASH_NOINPUT A bunch of us are familiar with NOINPUT. Does anyone need an explainer? What&amp;rsquo;s the difference from the original NOINPUT and the new one? NOINPUT is kind of scary to at least some people. If we just do NOINPUT, does that start causing problems in bitcoin?</description>
     </item>
     
     <item>
@@ -267,7 +267,7 @@ Introduction Okay, so, first question- who put my name on that list and what do 
     </item>
     
     <item>
-      <title>Taproot Graftroot Etc (2018-03-06)</title>
+      <title>Taproot, Graftroot, Etc (2018-03-06)</title>
       <link>//btctranscripts.com/bitcoin-core-dev-tech/2018-03-06-taproot-graftroot-etc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

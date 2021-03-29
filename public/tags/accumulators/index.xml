@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>accumulators on ₿itcoin Transcripts</title>
+    <link>//btctranscripts.com/tags/accumulators/</link>
+    <description>Recent content in accumulators on ₿itcoin Transcripts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="//btctranscripts.com/tags/accumulators/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Accumulators</title>
+      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/accumulators/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/accumulators/</guid>
+      <description>Accumulators
+Tadge Dryja
+https://diyhpl.us/wiki/transcripts/bitcoin-core-dev-tech/2018-10-08-utxo-accumulators-and-utreexo/
+https://diyhpl.us/wiki/transcripts/mit-bitcoin-expo-2019/utreexo/
+https://diyhpl.us/wiki/transcripts/stanford-blockchain-conference/2019/accumulators/
+https://diyhpl.us/wiki/transcripts/scalingbitcoin/tokyo-2018/accumulators/
+https://diyhpl.us/wiki/transcripts/bitcoin-core-dev-tech/2019-06-06-utreexo/
+Note: the present presentation had more in depth information about RSA which might be interesting to the audience.
+slides:
+https://docs.google.com/presentation/d/1OWhdB5P680FMHkoutd_YLP4hGFWI_aVaXRkkYdfoix8/edit?usp=sharing
+https://docs.google.com/presentation/d/1z_vAwA6hN-C1WEg89EFfZCwqfMRWDcYuW61aA7P84zM/edit?usp=sharing</description>
+    </item>
+    
+    <item>
+      <title>Accumulators</title>
+      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/accumulators/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/accumulators/</guid>
+      <description>A scalable drop-in replacement for merkle trees
+Benedikt Bünz, Benjamin Fisch and Dan Boneh (Stanford University)
+https://twitter.com/kanzure/status/1048454406755168257
+Introduction Hello. Test. Okay. I am going to talk about accumulators for UTXOs. The previous two talks were a great setup for this. This is joint work with Ben Fisch who is also here today and Dan Boneh. I first want to advertise the Stanford Blockchain Conference (formerly known as BPASE) happening at the end of January 2019 at Stanford.</description>
+    </item>
+    
+    <item>
+      <title>Accumulators</title>
+      <link>//btctranscripts.com/stanford-blockchain-conference/2019/accumulators/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/accumulators/</guid>
+      <description>Accumulators for blockchains
+Benedikt Bunz
+https://twitter.com/kanzure/status/1090748293234094082
+https://twitter.com/kanzure/status/1090741715059695617
+https://diyhpl.us/wiki/transcripts/scalingbitcoin/tokyo-2018/accumulators/
+paper: https://eprint.iacr.org/2018/1188
+Introduction I am going to be talking about batching techniques for accumulators with applications to interactive oracle proofs and blockchains. I&amp;rsquo;ll maybe also talk about how to make these proofs even smaller. The main thing that we are going to focus on today is the bitcoin state and this application of accumulators to bitcoin and blockchain.
+Bitcoin UTXO states The bitcoin state is the UTXO set.</description>
+    </item>
+    
+    <item>
+      <title>Scalable Rsa Modulus Generation</title>
+      <link>//btctranscripts.com/stanford-blockchain-conference/2020/scalable-rsa-modulus-generation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/scalable-rsa-modulus-generation/</guid>
+      <description>Scalable RSA Modulus Generation with Dishonest Majority
+Megan Chen
+https://twitter.com/kanzure/status/1230545603605585920
+Introduction Groups of unknown order are interesting cryptographic primitives. You can commit to integers. If you commit to a very large integer, you have to do a lot of work to do the commitment so you have a sequentiality assumption useful for VDFs. But then you have this compression property where if you take a large integer with a lot of information in it, you can compress it down to something small.</description>
+    </item>
+    
+    <item>
+      <title>Transparent Snarks From Dark Compilers</title>
+      <link>//btctranscripts.com/stanford-blockchain-conference/2020/transparent-snarks-from-dark-compilers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/transparent-snarks-from-dark-compilers/</guid>
+      <description>Transparent SNARKs from DARK compilers
+Ben Fisch
+https://twitter.com/kanzure/status/1230561492254089224
+paper: https://eprint.iacr.org/2019/1229.pdf
+Introduction Our next speaker is Ben Fisch, part of the Stanford Applied Crypto team and he has done a lot of work that is relevant to the blockchain space. Proofs of replication, proofs of space, he is also one of the coauthors of a paper that defined the notion of verifiable delay functions. He has also worked on accumulators, batching techniques, vector commitments, and one of his latest works is exciting which is DARKs which he is going to talk about today.</description>
+    </item>
+    
+    <item>
+      <title>Utreexo</title>
+      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2019/utreexo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2019/utreexo/</guid>
+      <description>Utreexo: Reducing bitcoin nodes to 1 kilobyte
+Tadge Dryja
+https://twitter.com/kanzure/status/1104410958716387328
+See also: https://diyhpl.us/wiki/transcripts/bitcoin-core-dev-tech/2018-10-08-utxo-accumulators-and-utreexo/
+Introduction I am going to talk about another scaling solution and another strategy I&amp;rsquo;ve been working on for about 6-9 months, called Utreexo.
+Bitcoin scalability Scalability has been a concern in bitcoin for the whole time. In fact, it&amp;rsquo;s the first thing that anyone said about bitcoin. In 2008, Satoshi Nakamoto said hey I made this thing called bitcoin.</description>
+    </item>
+    
+    <item>
+      <title>Utreexo (2019-06-06)</title>
+      <link>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-06-utreexo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-06-utreexo/</guid>
+      <description>Utreexo: hash-based accumulator for bitcoin UTXOs
+http://diyhpl.us/wiki/transcripts/bitcoin-core-dev-tech/2018-10-08-utxo-accumulators-and-utreexo/
+http://diyhpl.us/wiki/transcripts/mit-bitcoin-expo-2019/utreexo/
+Utreexo paper https://eprint.iacr.org/2019/611.pdf
+https://github.com/mit-dci/utreexo
+https://twitter.com/kanzure/status/1136560700187447297
+Introduction You still download everything; instead of writing to your UTXO database, you modify your accumulator. You accept a proof that it&amp;rsquo;s in the UTXO accumulator, you put it in there yourself, you just don&amp;rsquo;t remember it anymore. The end result is that you store less than a kilobyte instead of 4 GB or so. But the downside is that you need all these proofs.</description>
+    </item>
+    
+    <item>
+      <title>Utxo Accumulators And Utreexo (2018-10-08)</title>
+      <link>//btctranscripts.com/bitcoin-core-dev-tech/2018-10-08-utxo-accumulators-and-utreexo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2018-10-08-utxo-accumulators-and-utreexo/</guid>
+      <description>UTXO accumulators, UTXO commitments, and utreexo 2018-10-08
+Tadge Dryja
+https://twitter.com/kanzure/status/1049112390413897728
+If people saw Benedikt&amp;rsquo;s talk, two days ago, it&amp;rsquo;s related. It&amp;rsquo;s a different construction but same goal. The basic idea is, and I think Cory kind of started to talk about this a few months ago on the mailing list&amp;hellip; instead of storing all UTXOs in leveldb, store the hash of each UTXO, and then it&amp;rsquo;s half the size, and then you could almost create it from the hash of the input, it&amp;rsquo;s like 10 bytes more.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>timelocks on ₿itcoin Transcripts</title>
+    <link>//btctranscripts.com/tags/timelocks/</link>
+    <description>Recent content in timelocks on ₿itcoin Transcripts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="//btctranscripts.com/tags/timelocks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Comments And Observations About Timelocks Ron Rivest</title>
+      <link>//btctranscripts.com/verifiable-delay-functions/vdf-day-2019/comments-and-observations-about-timelocks-ron-rivest/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/verifiable-delay-functions/vdf-day-2019/comments-and-observations-about-timelocks-ron-rivest/</guid>
+      <description>Comments and observations about timelocks and verifiable delay functions
+Ron Rivest
+video: https://www.youtube.com/watch?v=NadhhH_eQBQ
+Introduction Welcome everybody. It&amp;rsquo;s not only about solving the puzzles, but the immense interest in verifiable delay functions. When setting up this conference, I hadn&amp;rsquo;t expected that. It&amp;rsquo;s hard to predict where technology will go or what things will be popular decades later when you work on something.
+I am just going to review some of the basic stuff we did way back when, setting up a puzzle which was just recently solved by Simon and Bernard where&amp;rsquo;s Bernard.</description>
+    </item>
+    
+    <item>
+      <title>Scriptless Scripts With Mimblewimble</title>
+      <link>//btctranscripts.com/grincon/2019/scriptless-scripts-with-mimblewimble/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/grincon/2019/scriptless-scripts-with-mimblewimble/</guid>
+      <description>Scriptless scripts with mimblewimble
+Andrew Poelstra (andytoshi)
+Introduction Hi everyone. I am Andrew Poelstra. I am the research director at Blockstream. I want to talk about deploying scriptless scripts, wihch is something I haven&amp;rsquo;t talked much about over the past year or two.
+History Let me give a bit of history about mimblewimble. As many of you know, this was dead-dropped anonymously in the middle of 2016 by someone named Tom Elvis Jedusor which is the French name for Voldemort.</description>
+    </item>
+    
+    <item>
+      <title>Taproot, Graftroot, Etc (2018-03-06)</title>
+      <link>//btctranscripts.com/bitcoin-core-dev-tech/2018-03-06-taproot-graftroot-etc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2018-03-06-taproot-graftroot-etc/</guid>
+      <description>https://twitter.com/kanzure/status/972468121046061056
+graftroot The idea of graftroot is that in every contract there is a superset of people that can spend the money. This assumption is not always true but it&amp;rsquo;s almost always true. Say you want to lock up these coins for a year, without any conditionals to it, then it doesn&amp;rsquo;t work. But assume you have&amp;ndash; pubkey recovery? No&amp;hellip; pubkey recovery is inherently incompatible with any form of aggregation, and aggregation is far superior.</description>
+    </item>
+    
+  </channel>
+</rss>

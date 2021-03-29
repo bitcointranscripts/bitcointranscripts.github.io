@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>routing on ₿itcoin Transcripts</title>
+    <link>//btctranscripts.com/tags/routing/</link>
+    <description>Recent content in routing on ₿itcoin Transcripts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="//btctranscripts.com/tags/routing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Alex Bosworth Channel Management (2018-10-22)</title>
+      <link>//btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-channel-management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-channel-management/</guid>
+      <description>Alex Bosworth
+Channel Management
+Video: https://www.youtube.com/watch?v=HlPIB6jt6ww
+Slides: https://lightningresidency.com/assets/presentations/Bosworth_Channel_Management.pdf
+Intro Today I’m going to talk about something a little bit different to building apps. I’m going to talk about becoming a great router. Managing your node so that your node can be routing payments and be a good citizen if you choose to have public channels.
+Uptime So basically the big message overall is and I think I’ve said this before, if you have public channels you’re kind of like waving to everybody “please use these channels to do routing”.</description>
+    </item>
+    
+    <item>
+      <title>Amiko Pay</title>
+      <link>//btctranscripts.com/scalingbitcoin/montreal-2015/amiko-pay/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/montreal-2015/amiko-pay/</guid>
+      <description>Amiko Pay
+Come Plooy
+Amiko Pay aims to become an implementation of the lightning network. So that previous presentation was a great setup. There&amp;rsquo;s a little bit more to Amiko Pay. If you look through the basic design of the lightning network, there&amp;rsquo;s a network of payment channels. There have been several variations of this idea. Lightning Network happens to be the best so far. What Amiko Pay aims to do is to focus on the nodes, and do the routing between nodes.</description>
+    </item>
+    
+    <item>
+      <title>Bastien Teinturier Trampoline Routing (2019-10-20)</title>
+      <link>//btctranscripts.com/lightning-conference/2019/2019-10-20-bastien-teinturier-trampoline-routing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/lightning-conference/2019/2019-10-20-bastien-teinturier-trampoline-routing/</guid>
+      <description>Bastien Teinturier
+Trampoline Routing
+The Lightning Conference Day 2 (Stage 2)
+Video: https://www.youtube.com/watch?v=1E-KhLA6Gck
+Slides: https://docs.google.com/presentation/d/1bFu33_YFsRVUSEN-Vff5-wrxMabOFl2ck7ZTiVsp5ds/
+https://twitter.com/kanzure/status/1221100865328685057
+Intro We will start with gory technical details about routing and pathfinding. I hope I will be able to keep you awake for the next twenty minutes. I’m working for ACINQ on the Lightning Network. If you don’t know ACINQ we are contributors to the specification. We run the biggest node on the network and we are also one of the leading mobile wallets, eclair-mobile.</description>
+    </item>
+    
+    <item>
+      <title>Boomerang</title>
+      <link>//btctranscripts.com/stanford-blockchain-conference/2020/boomerang/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/boomerang/</guid>
+      <description>Boomerang: Redundancy Improves Latency and Throughput in Payment-Channel Network
+Joachim Neu
+https://twitter.com/kanzure/status/1230936389300080640
+Introduction Redundancy can be a useful tool for speeding up payment channel networks and improving throughput. We presented last week at Financial Crypto. You just received a nice introduction to payment channels and payment channel networks.
+Payment channels Alice and Bob are connected through a payment channel. This is a channel and in that channel there are some coins that are escrowed.</description>
+    </item>
+    
+    <item>
+      <title>Day 1 Group Summaries</title>
+      <link>//btctranscripts.com/scalingbitcoin/milan-2016/day-1-group-summaries/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/milan-2016/day-1-group-summaries/</guid>
+      <description>Day 1 group summaries
+We need two to three minute report backs from each session. Also, note takers. Please email your notes to contact@scalingbitcoin.org so that we can add notes to the wiki. Come join us. Okay, so.
+Lightning We discussed routing and several aspects of routing algorithms in the lightning network. We talked about the tradeoff between privacy aspects and reliability in routing. We quickly discovered that after some of the things were already resolved by the papers&amp;ndash; the way how we deal with a general separation and channel transaction fees, is actually quite an interesting discussion topic.</description>
+    </item>
+    
+    <item>
+      <title>Elaine Ou Bootstrapping Lightning Node (2018-10-22)</title>
+      <link>//btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-elaine-ou-bootstrapping-lightning-node/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-elaine-ou-bootstrapping-lightning-node/</guid>
+      <description>Elaine Ou
+Bootstrapping and maintaining a Lightning Node
+Video: https://www.youtube.com/watch?v=qX4Z3JY1094
+Slides: https://lightningresidency.com/assets/presentations/Ou_Bootstrapping_and_Maintaining_a_Lightning_Node.pdf
+Intro My name ie Elaine. I’ll talk about bootstrapping and maintaining a lightning node. Pretty much all of you have probably already set up a node so this should all be review. You guys will probably know more about this than I do.
+Bootstrapping and Maintaining a Lightning Node We’ll start with an overview of how routing works just to understand what the nodes are trying to do and from there we’ll step back and look at ways of finding peers and getting incoming channels and maintaining capacity.</description>
+    </item>
+    
+    <item>
+      <title>Flare Routing In Lightning</title>
+      <link>//btctranscripts.com/scalingbitcoin/milan-2016/flare-routing-in-lightning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/milan-2016/flare-routing-in-lightning/</guid>
+      <description>Flare: An approach to routing in lightning network
+https://twitter.com/kanzure/status/784745976170999810
+Pavel Prihodko
+Kolya Sakhno
+Alexei Ostrovskiy
+Slava Zhigulin
+Olaoluwa Osuntokun
+I will not be as technical as Olaoluwa was. You have nodes that open up payment channels. This scheme is actually developed at the moment in great detail. So how do you find the channels through which to send payments? So we wanted to propose some initial solution to this.
+Routing requirements It should be source routing because we need the privacy.</description>
+    </item>
+    
+    <item>
+      <title>Lightning Network Routing</title>
+      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-routing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-routing/</guid>
+      <description>Lightning network routing: Operation, issues and expansions
+Carla Kirk-Cohen
+Introduction Good afternoon everyone. My name is Carla. I am one of the chaincode residents this summer. This talk is going to walk through the protocol layer by layer and look at the different components that make up the network. Lightning is an off-chain scaling solution which consists of a p2p network of payment channels. It allows payments to be forwarded by nodes in exchange for fees.</description>
+    </item>
+    
+    <item>
+      <title>Lightning Network Routing Security</title>
+      <link>//btctranscripts.com/breaking-bitcoin/2019/lightning-network-routing-security/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/breaking-bitcoin/2019/lightning-network-routing-security/</guid>
+      <description>Security aspects of LN routing
+Joost Jager, Lightning Labs
+D146 D0F6 8939 4362 68FA 9A13 0E26 BB61 B76C 4D3A
+https://twitter.com/kanzure/status/1137740282139676672
+Introduction Together with my colleagues I am building lnd. It&amp;rsquo;s one of the implementations of lightning. In routing, there&amp;rsquo;s the sender of the payment, the intermediate routing nodes that forward payments, and a receiver. I would like to scope this down to looking at security just from the perspective of the sender.</description>
+    </item>
+    
+    <item>
+      <title>Lightning Network Sphinx And Onion Routing</title>
+      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-sphinx-and-onion-routing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-sphinx-and-onion-routing/</guid>
+      <description>Lightning network: Sphinx and onion routing
+Antoine Riard
+Introduction Hi everyone. I am a developer of rust-lightning, it started in 2018 by BlueMatt. I started contributing about a year ago now. It&amp;rsquo;s a full featured, flexible, spec-compliant lightning library. It targets exchanges, wallet vendors, hardware, meshnet devices, and you can join us on Freenode IRC in the #rust-bitcoin channel which is a really nice one.
+Privacy matters Privacy matters on the blockchain.</description>
+    </item>
+    
+    <item>
+      <title>Lightning network topology, its creation and maintenance</title>
+      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-topology/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-topology/</guid>
+      <description>Carla Kirk-Cohen
+video: https://www.youtube.com/watch?v=j2l_Ut4k1qI
+Introduction Alright. Give me a second to test this. Alright. Antoine has taken you through the routing layer. I&amp;rsquo;m going to take you through what the lightning network looks like today. This is the current topology of the network and how this came about, and some approaches for maintaining hte network and making the graph look like we want it to look.
+Lightning brief overview There&amp;rsquo;s ideally only two transactions involved in any lightning channel, the commitment transaction and the closure transaction.</description>
+    </item>
+    
+    <item>
+      <title>Lightning Routing Ants Pheromones</title>
+      <link>//btctranscripts.com/building-on-bitcoin/2018/lightning-routing-ants-pheromones/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/building-on-bitcoin/2018/lightning-routing-ants-pheromones/</guid>
+      <description>Ant routing for lightning network
+Ricardo Perez-Marco
+Building on Bitcoin 2018
+https://twitter.com/kanzure/status/1014530761398145025
+https://twitter.com/rperezmarco/status/1013938984718884866
+Introduction I wanted to present some ideas for alternative ideas for routing on LN. This was published on arxiv: 1807.00151 (July 2018).
+http://webusers.imj-prg.fr/~ricardo.perez-marco
+Overview I am going to talk about what I understand to be decentralized network. Fabrice has already explained most of what is LN about and some history about it. I will just recall a few properties that I need in order to address the mathematical problem of routing.</description>
+    </item>
+    
+    <item>
+      <title>Onion Routing In Lightning</title>
+      <link>//btctranscripts.com/scalingbitcoin/milan-2016/onion-routing-in-lightning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/milan-2016/onion-routing-in-lightning/</guid>
+      <description>Onion routing in lightning network
+Olaoluwa Osuntokun (roasbeef)
+http://lightning.network/
+https://twitter.com/kanzure/status/784742298089299969
+video: https://www.youtube.com/watch?v=Gzg_u9gHc5Q#t=2m44s
+Privacy-preserving decentralized micropayments
+We&amp;rsquo;re excited about lightning because the second layer could be an important opportunity to improve privacy and fungibility. Also, there might be timing information in the payments themselves.
+Distributed set of onion routers (OR, cite OG onionrouting paper). Users create circuits with sub-set of nodes. Difficult for oion routers to gain more info than predecessor+successor in path.</description>
+    </item>
+    
+    <item>
+      <title>Rebalancing Lightning</title>
+      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/rebalancing-lightning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/rebalancing-lightning/</guid>
+      <description>Rebalancing in the lightning network: Analysis and implications
+Sebastián Reca (Muun)
+https://twitter.com/kanzure/status/1048753406628655105
+Introduction This talk is going to be about rebalancing in the lightning network. I&amp;rsquo;ll talk about the implications and about running a lightning node.
+Financial costs In the lightning network, routing nodes will incur in financial costs by having their money locked inside channels. They can&amp;rsquo;t use that money elsewhere. They incur a financial cost to doing this activity, at least an opportunity cost.</description>
+    </item>
+    
+  </channel>
+</rss>

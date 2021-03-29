@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>W3 Blockchain Workshop 2016 on ₿itcoin Transcripts</title>
+    <title>W3 Blockchain Workshop on ₿itcoin Transcripts</title>
     <link>//btctranscripts.com/w3-blockchain-workshop-2016/</link>
-    <description>Recent content in W3 Blockchain Workshop 2016 on ₿itcoin Transcripts</description>
+    <description>Recent content in W3 Blockchain Workshop on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="//btctranscripts.com/w3-blockchain-workshop-2016/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -91,16 +91,17 @@ This is a bit of how we see the architecture.</description>
       
       <guid>//btctranscripts.com/w3-blockchain-workshop-2016/groups-identity/</guid>
       <description>The topic that we have been working on is identity for everyone. In terms of trusted set of parties if you will, that can potentially provide some level of attestation to the identity and that can be provided in a digitized manner as to what levels of service an be provided to that level of identity as well.
- What belongs in a blockchain? What works in a blockchain? What doesn&amp;rsquo;t work in a blockchain?</description>
+&amp;hellip;
+What belongs in a blockchain? What works in a blockchain? What doesn&amp;rsquo;t work in a blockchain?</description>
     </item>
     
     <item>
-      <title>Intro</title>
+      <title>Intro to W3 Blockchain Workshop (2016-06-29)</title>
       <link>//btctranscripts.com/w3-blockchain-workshop-2016/intro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>//btctranscripts.com/w3-blockchain-workshop-2016/intro/</guid>
-      <description>Blockhains and standards
+      <description>Blockchains and standards
 W3C Workshop
 29-30 June 2016
 Cambridge, Massachusetts

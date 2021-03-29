@@ -1,0 +1,12 @@
+{{ $path := split .RelPermalink "/" }}
+
+    <a href="/">Home</a>
+  	{{ partial "breadcrumbs_recursive.html" (dict "sections" .Site.Home.Sections "level" 1 "path" $path "dir" .RelPermalink) }}
+    
+	{{ if and (eq .Kind "section") (eq (len $path) 2)}}
+		{{ .Title }}
+	{{ end }}
+
+	{{ if eq .Kind "page" }}
+		< {{ .Title }}
+	{{ end }}

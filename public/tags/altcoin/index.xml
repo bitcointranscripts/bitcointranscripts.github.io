@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>altcoin on ₿itcoin Transcripts</title>
+    <link>//btctranscripts.com/tags/altcoin/</link>
+    <description>Recent content in altcoin on ₿itcoin Transcripts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="//btctranscripts.com/tags/altcoin/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Greg Maxwell Hardware Wallets Altcoins (2020-11-01)</title>
+      <link>//btctranscripts.com/greg-maxwell/2020-11-01-greg-maxwell-hardware-wallets-altcoins/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/greg-maxwell/2020-11-01-greg-maxwell-hardware-wallets-altcoins/</guid>
+      <description>Name: Greg Maxwell
+Topic: Hardware wallets and altcoins
+Location: Reddit
+Date: November 1st 2020
+https://www.reddit.com/r/Bitcoin/comments/jlwxpq/why_do_you_think_coldcard_doesnt_support_altcoins/gasoyuj?utm_source=share&amp;amp;utm_medium=web2x&amp;amp;context=3
+Why do hardware wallets not support altcoins? They&amp;rsquo;re an enormous distraction and hazard to software development. It&amp;rsquo;s hard enough to correctly and safely write software to support one system. Every minute spent creating and testing the software for some alternative is a minute taken away from supporting Bitcoin.
+I can say first hand that my efforts to review hardware wallet code against possible vulnerabilities have been actively thwarted by hardware wallet codebases being crapped up with support for altcoins.</description>
+    </item>
+    
+    <item>
+      <title>Jute Braiding</title>
+      <link>//btctranscripts.com/scalingbitcoin/milan-2016/jute-braiding/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/scalingbitcoin/milan-2016/jute-braiding/</guid>
+      <description>Jute: New braiding techniques to achieve significant scaling gains
+David Vorick (taek)
+https://twitter.com/kanzure/status/785116246257856512
+http://diyhpl.us/wiki/transcripts/scalingbitcoin/hong-kong/braiding-the-blockchain/
+Introduction Okay, hello. My name is David Vorick. I have been with bitcoin since 2011. I have been a full-time blockchain engineer since about 2014. I run an altcoin for decentralized cloud storage called Sia. Today I am going to be talking about braiding which basically means we take the straight line blockchain of bitcoin and we allow blocks to have multiple parents.</description>
+    </item>
+    
+    <item>
+      <title>Libra Blockchain Intro</title>
+      <link>//btctranscripts.com/stanford-blockchain-conference/2020/libra-blockchain-intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/libra-blockchain-intro/</guid>
+      <description>The Libra Blockchain &amp;amp; Move: A technical introduction
+Ben Maurer
+https://twitter.com/kanzure/status/1230248685319024641
+Introduction We&amp;rsquo;re building a new wallet for the system, Calibre, which we are launching. A bit about myself before we get started. I have been at Facebook for about 10 years now. Before Facebook, I was one of the co-founders of reCaptcha- the squiggly letters you type in before you login and register. I have been working at Facebook on performance, reliability, and working with web standards to make the web faster.</description>
+    </item>
+    
+    <item>
+      <title>Sound Money</title>
+      <link>//btctranscripts.com/dallas-bitcoin-symposium/sound-money/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/dallas-bitcoin-symposium/sound-money/</guid>
+      <description>Michael Goldstein
+Bitcoin is sound money
+Introduction In 2014, Michael appeared on MSNBC and gave this quote: &amp;ldquo;I&amp;rsquo;d only recommend using altcoins for speculation purposes if you really love risk, you&amp;rsquo;re absolutely in love with risk, and you&amp;rsquo;re interested in watching money disappear.&amp;rdquo; Today my talk is on sound money for the digital age. The concept of monetary economics is the reason why I got interested in bitcoin back in 2012.</description>
+    </item>
+    
+    <item>
+      <title>There Can Only Be One</title>
+      <link>//btctranscripts.com/bit-block-boom/2019/there-can-only-be-one/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//btctranscripts.com/bit-block-boom/2019/there-can-only-be-one/</guid>
+      <description>Bitcoin: There can only be one
+Tone Vays
+https://twitter.com/kanzure/status/1162742007460192256
+Introduction I am basically going to talk about why bitcoin will basically eat all the shitcoins and why all of them are going away and I am going to point to some of the details. The big graphic right there is my attempt to categorize all of the altcoins, the ICO space, and so on. Everyone is slowly starting to merge mine with bitcoin, since they can&amp;rsquo;t keep up with the charadde.</description>
+    </item>
+    
+  </channel>
+</rss>
