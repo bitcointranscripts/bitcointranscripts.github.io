@@ -1,4 +1,4 @@
-baseURL = "//btctranscripts.com/"
+baseURL = "https://btctranscripts.com/"
 languageCode = "en-us"
 title = "₿itcoin Transcripts"
 
@@ -31,6 +31,8 @@ DefaultContentLanguage = "en"
     menushortcutsnewtab = true
     custom_js = ["js/custom.js"]
     custom_css = ["scss/custom.scss"]
+    images = ["images/btctranscripts.png"]
+    description = "A treasure trove of ₿itcoin transcripts (mostly recorded by @kanzure)"
     
 [markup]
   [markup.tableOfContents]
