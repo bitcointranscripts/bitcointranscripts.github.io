@@ -30,7 +30,6 @@ Location: Chaincode Labs 2019 Residency
 Video: https://www.youtube.com/watch?v=StnOVBbIpD8
 Slides: https://residency.chaincode.com/presentations/bitcoin/ethan_heilman_p2p.pdf
 Eclipse attack paper: https://eprint.iacr.org/2015/263.pdf
-Transcript completed by: Adam Jonas
 Bitcoin’s P2P Network Please interrupt me. I&rsquo;m going to go through this stuff a little bit quickly because I hear that you&rsquo;ve already read Eclipse attack paper and you&rsquo;ve already looked at some of the peer to peer stuff.
 Bitcoin uses a peer-to-peer network to announce transactions and blocks."/>
 
@@ -906,6 +905,15 @@ Bitcoin uses a peer-to-peer network to announce transactions and blocks."/>
         
         <a class="nav-link p-0" href="/bitcoin-magazine/"><h6>Bitcoin Magazine</h6></a>
         <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
 
     
       
@@ -3860,6 +3868,24 @@ Bitcoin uses a peer-to-peer network to announce transactions and blocks."/>
     </li>
 
 
+    <li data-nav-id="/munich-meetup/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/munich-meetup/"><h6>Munich Meetup</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
     <li data-nav-id="/noded-podcast/" class="nav-item my-1 haschildren
         ">
         
@@ -6754,6 +6780,15 @@ Bitcoin uses a peer-to-peer network to announce transactions and blocks."/>
                  
     
 
+
+    
+      
+
+        
+                
+                 
+    
+
         </ul>
     </li>
 
@@ -7426,6 +7461,10 @@ Bitcoin uses a peer-to-peer network to announce transactions and blocks."/>
 	
 	
 
+	
+	
+	
+
 
     
 	
@@ -7438,7 +7477,7 @@ Bitcoin uses a peer-to-peer network to announce transactions and blocks."/>
 <h1>Ethan Heilman Network Partitioning Attacks (2019-06-12)</h1>
 
 
-    <p><i>Transcript by: Bryan Bishop</i></p>
+    <p><i>Transcript by: Adam Jonas</i></p>
 
 
 
@@ -7454,7 +7493,6 @@ Bitcoin uses a peer-to-peer network to announce transactions and blocks."/>
 <p>Video: <a href="https://www.youtube.com/watch?v=StnOVBbIpD8">https://www.youtube.com/watch?v=StnOVBbIpD8</a></p>
 <p>Slides: <a href="https://residency.chaincode.com/presentations/bitcoin/ethan_heilman_p2p.pdf">https://residency.chaincode.com/presentations/bitcoin/ethan_heilman_p2p.pdf</a></p>
 <p>Eclipse attack paper: <a href="https://eprint.iacr.org/2015/263.pdf">https://eprint.iacr.org/2015/263.pdf</a></p>
-<p>Transcript completed by: Adam Jonas</p>
 <h1 id="bitcoins-p2p-network">Bitcoin’s P2P Network</h1>
 <p>Please interrupt me. I&rsquo;m going to go through this stuff a little bit quickly because I hear that you&rsquo;ve already read <a href="https://eprint.iacr.org/2015/263.pdf">Eclipse attack paper</a> and you&rsquo;ve already looked at some of the peer to peer stuff.</p>
 <p>Bitcoin uses a peer-to-peer network to announce transactions and blocks. It makes 8 outgoing connections. These are TCP connections initiated by the node. It makes up to 116 connections that are incoming, so they&rsquo;re initiated by someone else. And it makes one feeler connection under some circumstances, and I&rsquo;ll talk more about this feeler connection later. You can actually treat the feeler connection as an outgoing connection. It is an outgoing connection, but it has some different rules, so I just broke it out separately, but if you want to say that there are nine outgoing connections counting the one failure connection, you can say that as well. I want to point out that when we talk about outgoing connections, we&rsquo;re always talking from the perspective of a node. If you look at this purple node, it has an outgoing connection to this yellowish node. But from the yellowish node&rsquo;s perspective, this is an incoming connection. Whenever we talk about outgoing and incoming, it&rsquo;s really which node is an outgoing one. Everyone&rsquo;s outgoing connection is another&rsquo;s nodes incoming connection.</p>

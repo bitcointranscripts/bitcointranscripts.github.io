@@ -129,7 +129,7 @@ Bitcoin UTXO states The bitcoin state is the UTXO set.</description>
     </item>
     
     <item>
-      <title>Alex Bosworth Major Limitations (2019-04-06)</title>
+      <title>Alex Bosworth -  Major Limitations of Lightning (2019-04-06)</title>
       <link>https://btctranscripts.com/boltathon/2019-04-06-alex-bosworth-major-limitations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -201,7 +201,37 @@ Okay. I am an assistant professor at the University of Maryland. We all believe 
     </item>
     
     <item>
-      <title>Andrew Poelstra Taproot (2020-03-07)</title>
+      <title>Andrew Poelstra - Miniscript (2020-02-07)</title>
+      <link>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-07-andrew-poelstra-miniscript/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-07-andrew-poelstra-miniscript/</guid>
+      <description>Andrew Poelstra
+Advancing Bitcoin workshop
+Miniscript
+Website: https://bitcoin.sipa.be/miniscript/
+Workshop repo: https://github.com/apoelstra/miniscript-workshop
+Transcript of London Bitcoin Devs Miniscript presentation: https://diyhpl.us/wiki/transcripts/london-bitcoin-devs/2020-02-04-andrew-poelstra-miniscript/
+Part 1 So what we’re going to do, there is a couple of things. We are going to go through the Miniscript website and learn about how Miniscript is constructed, how the type system works, some of the anti-malleability rules. Then we’re going to go to a repo that I created last night, a Git repo with some example programs.</description>
+    </item>
+    
+    <item>
+      <title>Andrew Poelstra - Miniscript Intro (2020-02-06)</title>
+      <link>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-poelstra-miniscript-intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-poelstra-miniscript-intro/</guid>
+      <description>Name: Andrew Poelstra
+Topic: Introduction to Miniscript
+Location: Advancing Bitcoin
+Date: February 6th 2020
+Video: https://www.youtube.com/watch?v=eTUuwASdUBE
+Slides: https://www.dropbox.com/s/vgh5vaooqqbgg1v/andrew-poelstra.pdf
+Intro Hi everyone. Some of you were at my Bitcoin dev presentation about Miniscript a couple of days where I managed to spend over 2 hours giving a presentation about this. I think I got this one down to 20 minutes but no promises. I will keep an eye on the clock.</description>
+    </item>
+    
+    <item>
+      <title>Andrew Poelstra - Taproot (2020-03-07)</title>
       <link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2020/2020-03-07-andrew-poelstra-taproot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -247,7 +277,7 @@ Today I want to present how I build on bitcoin. I have two goals with this prese
     </item>
     
     <item>
-      <title>Antoine Riard Rust Lightning (2019-10-20)</title>
+      <title>Antoine Riard - Rust Lightning (2019-10-20)</title>
       <link>https://btctranscripts.com/lightning-conference/2019/2019-10-20-antoine-riard-rust-lightning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -259,6 +289,22 @@ Video: https://www.youtube.com/watch?v=q6a1On5pirk
 Slides: https://github.com/ariard/talk-slides/blob/master/deploying-rust-lightning-in-the-wild.pdf
 https://twitter.com/kanzure/status/1220722130897252352
 Intro Hi everyone, super happy to be here at the Lightning Conference. I’ve had an awesome weekend. Today I will talk on rust-lightning a project I’ve been contributing to for a year and a half. To get started, please take photos of the slides, not of me. So the story of rust-lightning.</description>
+    </item>
+    
+    <item>
+      <title>Antoine Riard - Taproot Lightning (2020-02-06)</title>
+      <link>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-antoine-riard-taproot-lightning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-antoine-riard-taproot-lightning/</guid>
+      <description>Name: Antoine Riard
+Topic: A Schnorr-Taproot’ed Lightning
+Location: Advancing Bitcoin
+Date: February 6th 2020
+Video (paid access): https://www.advancingbitcoin.com/video/a-schnorr-taprooted-lightning,11/
+Slides: https://www.dropbox.com/s/9vs54e9bqf317u0/Schnorr-Taproot%27ed-LN.pdf
+Intro Today Schnorr and Taproot for Lightning, it is a really exciting topic.
+Lightning architecture The Lightning architecture for those who are not familiar with it. You have the blockchain as the underlying layer. On top of it you are going to build a channel, you have a HTLC and people are going to spend onions to you.</description>
     </item>
     
     <item>
@@ -413,7 +459,7 @@ I am a theoretical physicist. I worked at Accenture as a technology consultant a
     </item>
     
     <item>
-      <title>Barnabas Bagyi Fuzzing Class Interfaces (2020-10-09)</title>
+      <title>Barnabas Bagyi - Fuzzing Class Interfaces (2020-10-09)</title>
       <link>https://btctranscripts.com/cppcon/2020/2020-10-09-barnabas-bagyi-fuzzing-class-interfaces/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -430,7 +476,7 @@ Intro Hello everyone. My name is Barnabas Bagyi. I am a C++ developer currently 
     </item>
     
     <item>
-      <title>Bastien Teinturier Trampoline Routing (2019-10-20)</title>
+      <title>Bastien Teinturier - Trampoline Routing (2019-10-20)</title>
       <link>https://btctranscripts.com/lightning-conference/2019/2019-10-20-bastien-teinturier-trampoline-routing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -509,7 +555,7 @@ My perspective on this is that scaling bitcoin is an engineer problem. My favori
     </item>
     
     <item>
-      <title>Bip151 Peer Encryption</title>
+      <title>BIP151 Peer Encryption</title>
       <link>https://btctranscripts.com/scalingbitcoin/milan-2016/bip151-peer-encryption/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1272,7 +1318,7 @@ Comparing open-source development to bitcoin&amp;rsquo;s blockchain &amp;hellip;
     </item>
     
     <item>
-      <title>Chris Stewart Private Key Management (2019-10-19)</title>
+      <title>Chris Stewart - Private Key Management (2019-10-19)</title>
       <link>https://btctranscripts.com/lightning-conference/2019/2019-10-19-chris-stewart-private-key-management/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1287,7 +1333,7 @@ Intro Hi everybody. My name is Chris Stewart. I’m the Founder of a company cal
     </item>
     
     <item>
-      <title>Christopher Allen Smart Signatures (2018-01-24)</title>
+      <title>Christopher Allen - Smart Signatures (2018-01-24)</title>
       <link>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/2018-01-24-christopher-allen-smart-signatures/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1494,7 +1540,7 @@ Bitcoin has scalability issues. That&amp;rsquo;s the main reason why we are here
     </item>
     
     <item>
-      <title>Conner Fromknecht Watchtowers (2019-04-06)</title>
+      <title>Conner Fromknecht - Watchtowers (2019-04-06)</title>
       <link>https://btctranscripts.com/boltathon/2019-04-06-conner-fromknecht-watchtowers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1673,7 +1719,7 @@ What is a VDF? I won&amp;rsquo;t give a precise definition, look at the manuscri
     </item>
     
     <item>
-      <title>Dan Robinson Ivy (2017-01-26)</title>
+      <title>Dan Robinson - Ivy (2017-01-26)</title>
       <link>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/2017-01-26-dan-robinson-ivy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2764,7 +2810,7 @@ Moving on to some observations. The process of finding distributed ocnsensus tak
     </item>
     
     <item>
-      <title>Jeremy Rubin Covenants (2017-01-26)</title>
+      <title>Jeremy Rubin - Covenants (2017-01-26)</title>
       <link>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/2017-01-26-jeremy-rubin-covenants/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2776,22 +2822,6 @@ Date: January 26th 2017
 Video: https://www.youtube.com/watch?v=r7xN7K0OqaA
 Slides: https://cyber.stanford.edu/sites/g/files/sbiybj9936/f/jeremyrubin.pdf
 Intro Hey everyone. How is it going? Happy to be going last right now given that I had all these wonderful speakers before me to explain so much of what I am about to tell you. I’m going to talk to you today about structuring multi-transaction contracts in Bitcoin. I think there is a lot of great work that happens in Bitcoin at the script level, at the individual input and output.</description>
-    </item>
-    
-    <item>
-      <title>Jeremy Rubin Sapio 101 (2020-07-11)</title>
-      <link>https://btctranscripts.com/vr-bitcoin/2020-07-11-jeremy-rubin-sapio-101/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://btctranscripts.com/vr-bitcoin/2020-07-11-jeremy-rubin-sapio-101/</guid>
-      <description>Name: Jeremy Rubin
-Topic: Sapio Programming 101: Stateful Smart Contracts for Bitcoin with OP_CTV
-Location: Reckless VR
-Date: July 11th 2020
-Video: https://www.youtube.com/watch?v=4vDuttlImPc
-Slides: https://docs.google.com/presentation/d/1X4AGNXJ5yCeHRrf5sa9DarWfDyEkm6fFUlrcIRQtUw4/
-utxos.org website: https://utxos.org/
-Intro (Udi Wertheimer) Today we are joined by Jeremy Rubin who is a Bitcoin Core contributor and the co-founder of the MIT Bitcoin Project. He is involved in a tonne of other cool stuff. He is also championing BIP 119 which is OP_CHECKTEMPLATEVERIFY.</description>
     </item>
     
     <item>
@@ -2819,7 +2849,7 @@ Joinmarket, just to clear up a misconception&amp;hellip; Joinmarket, like bitcoi
     </item>
     
     <item>
-      <title>Jonathan Metzman Structured Fuzzing (2019-08-07)</title>
+      <title>Jonathan Metzman - Structured Fuzzing (2019-08-07)</title>
       <link>https://btctranscripts.com/misc/2019-08-07-jonathan-metzman-structured-fuzzing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2836,7 +2866,7 @@ Intro Hi everyone. Thanks for coming to my talk. As I was introduced I’m Jonat
     </item>
     
     <item>
-      <title>Joost Jager Hodl Invoices (2019-06-13)</title>
+      <title>Joost Jager - HODL Invoices (2019-06-13)</title>
       <link>https://btctranscripts.com/breaking-bitcoin/2019/2019-06-13-joost-jager-hodl-invoices/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2884,6 +2914,26 @@ Introduction Okay, hello. My name is David Vorick. I have been with bitcoin sinc
     </item>
     
     <item>
+      <title>Kalle Alm - Signet Integration (2020-02-06)</title>
+      <link>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-kalle-alm-signet-integration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-kalle-alm-signet-integration/</guid>
+      <description>Name: Karl-Johan Alm
+Topic: Signet Integration
+Location: Advancing Bitcoin
+Date: February 6th 2020
+Video (paid access): https://www.advancingbitcoin.com/video/signet-in-practice-integrating-signet-into-your-software,5/
+Slides: https://www.dropbox.com/s/6fqwhx7ugr3ppsg/Signet%20Integration%20V2.pdf
+BIP 325: https://github.com/bitcoin/bips/blob/master/bip-0325.mediawiki
+Signet on Bitcoin Wiki: https://en.bitcoin.it/wiki/Signet
+Bitcoin dev mailing list: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2019-March/016734.html
+Bitcoin Core PR 16411 (closed): https://github.com/bitcoin/bitcoin/pull/16411
+Bitcoin Core PR 18267 (open): https://github.com/bitcoin/bitcoin/pull/18267
+Intro I am going to talk about Signet. Do you guys know what Signet is? A few people know. I will explain it briefly. I have an elevator pitch, I have three actually depending on the height of the elevator.</description>
+    </item>
+    
+    <item>
       <title>Keynote</title>
       <link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2015/keynote/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2920,7 +2970,7 @@ I&amp;rsquo;m a bitcoin core developer. Also worked at LedgerX (4 years). I also
     </item>
     
     <item>
-      <title>Kostya Serebryany Fuzzing (2017-10-11)</title>
+      <title>Kostya Serebryany - Fuzzing (2017-10-11)</title>
       <link>https://btctranscripts.com/cppcon/2017/2017-10-11-kostya-serebryany-fuzzing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2933,20 +2983,6 @@ Video: https://www.youtube.com/watch?v=k-Cv8Q3zWNQ
 Slides: https://github.com/CppCon/CppCon2017/blob/master/Demos/Fuzz%20Or%20Lose/Fuzz%20Or%20Lose%20-%20Kostya%20Serebryany%20-%20CppCon%202017.pdf
 Paper on “The Art, Science and Engineering of Fuzzing”: https://arxiv.org/pdf/1812.00140.pdf
 Intro Good afternoon and thank you for coming for the last afternoon session. I appreciate that you are tired. I hope to wake you up a little bit. My name is Kostya, I work at Google.</description>
-    </item>
-    
-    <item>
-      <title>Laolu Joost Oliver Lnd0.10 (2020-04-18)</title>
-      <link>https://btctranscripts.com/vr-bitcoin/2020-04-18-laolu-joost-oliver-lnd0.10/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://btctranscripts.com/vr-bitcoin/2020-04-18-laolu-joost-oliver-lnd0.10/</guid>
-      <description>Name: Laolu Osuntokun, Joost Jager and Oliver Gugger
-Topic: lnd v0.10
-Location: Virtual Reality (VR Bitcoin)
-Date: April 18th 2020
-Video: https://www.youtube.com/watch?v=h34fUGuDjMg
-Intro (Laolu Osuntokun) Thanks everyone for coming. This is my first time doing a VR presentation, really cool. I am going to be talking about lnd 0.10. Right now we are on rc2, the next major lnd release, it has a bunch of cool features, bug fixes, optimizations. I am going to talk about some big ticket features in 0.</description>
     </item>
     
     <item>
@@ -3322,6 +3358,21 @@ It&amp;rsquo;s good to see so many friendly audiences in the audience. I am at P
     </item>
     
     <item>
+      <title>Matt Corallo - Rust Lightning (2019-02-07)</title>
+      <link>https://btctranscripts.com/advancing-bitcoin/2019/2019-02-07-matt-corallo-rust-lightning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/advancing-bitcoin/2019/2019-02-07-matt-corallo-rust-lightning/</guid>
+      <description>Matt Corallo
+Flexible Lightning in Rust
+Video: https://vimeo.com/316624439
+Slides: https://docs.google.com/presentation/d/154bMWdcMCFUco4ZXQ3lWfF51U5dad8pQ23rKVkncnns/edit#slide=id.p
+https://twitter.com/kanzure/status/1144256392490029057
+Introduction Thanks for having me. I want to talk a little bit about a project I’ve been working on for about a year called rust-lightning. I started it in December so a year and a few months ago. This is my first presentation on it so I’m excited to finally get to talk about it a little bit.
+Goals It is yet another Lightning implementation because somehow we needed another one I guess or really not.</description>
+    </item>
+    
+    <item>
       <title>Matt Corallo Sidechains</title>
       <link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2015/matt-corallo-sidechains/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3531,7 +3582,7 @@ Introductions Hi. So my name is Laolu. I am also known as roasbeef and I am co-f
     </item>
     
     <item>
-      <title>Nadav Kohen Payment Points (2019-10-20)</title>
+      <title>Nadav Kohen - Payment Points (2019-10-20)</title>
       <link>https://btctranscripts.com/lightning-conference/2019/2019-10-20-nadav-kohen-payment-points/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -3605,20 +3656,6 @@ I am David Schwartz as you just heard I am one of the co-creators of Ripple.</de
       <description>Scalability of non-currency applications
 Harry Kalodner
 I am from Princeton University. I am here to talk about the scalability issues that non-currency applications of bitcoin have that might be a little different than regular payments that go through the bitcoin network. I put this together with my advisor, Arvind. The reason why I want to talk about this is because when people talk about how bitcoin will have to scale is that people throw out a thing about Visa processing 20,000 transactions per second or something.</description>
-    </item>
-    
-    <item>
-      <title>Oliver Gugger Lsat (2020-05-16)</title>
-      <link>https://btctranscripts.com/vr-bitcoin/2020-05-16-oliver-gugger-lsat/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://btctranscripts.com/vr-bitcoin/2020-05-16-oliver-gugger-lsat/</guid>
-      <description>Name: Oliver Gugger
-Topic: LSAT - Your Ticket Aboard The Lightning Native Web
-Location: Reckless VR
-Date: May 16th 2020
-Video: https://www.youtube.com/watch?v=IW08RJUpzw0
-Intro Happy to be here to talk about LSAT, let’s jump right in. We are going to have a look at LSAT. What the motivation was to come up with this? What the use cases for and we are going to jump into the technical detail. This is going to be a technical talk.</description>
     </item>
     
     <item>
@@ -4388,7 +4425,7 @@ Communicating without official structures Hi guys, okay I am going to try to fin
     </item>
     
     <item>
-      <title>Russell Oconnor Posts Theorem (2017-01-26)</title>
+      <title>Russell Oconnor - Posts Theorem (2017-01-26)</title>
       <link>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/2017-01-26-russell-oconnor-posts-theorem/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -4402,7 +4439,7 @@ Intro Hi. My name is Russell O’Connor. I am here to talk to you about Post’s
     </item>
     
     <item>
-      <title>Russell Oconnor Simplicity (2018-01-25)</title>
+      <title>Russell Oconnor - Simplicity (2018-01-25)</title>
       <link>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/2018-01-25-russell-oconnor-simplicity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -4435,7 +4472,7 @@ Intro So Simplicity is a programming language that I have been working on at Blo
     </item>
     
     <item>
-      <title>Rusty Russell Json Interface (2019-04-06)</title>
+      <title>Rusty Russell - JSON Interface (2019-04-06)</title>
       <link>https://btctranscripts.com/boltathon/2019-04-06-rusty-russell-json-interface/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

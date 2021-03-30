@@ -412,6 +412,15 @@
     </item>
     
     <item>
+      <title>script</title>
+      <link>https://btctranscripts.com/tags/script/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/tags/script/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>security</title>
       <link>https://btctranscripts.com/tags/security/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -462,6 +471,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://btctranscripts.com/tags/soft-fork/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>spv</title>
+      <link>https://btctranscripts.com/tags/spv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/tags/spv/</guid>
       <description></description>
     </item>
     

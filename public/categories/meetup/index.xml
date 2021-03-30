@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://btctranscripts.com/categories/meetup/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Adam Gibson Unfairly Linear Signatures (2018-06-12)</title>
+      <title>Adam Gibson - Unfairly Linear Signatures (2018-06-12)</title>
       <link>https://btctranscripts.com/london-bitcoin-devs/2018-06-12-adam-gibson-unfairly-linear-signatures/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -40,7 +40,7 @@ Intro I am a developer, I work on Bitcoin. I came to Bitcoin pretty late compare
     </item>
     
     <item>
-      <title>Alex Bosworth Submarine Swaps (2019-07-03)</title>
+      <title>Alex Bosworth - Submarine Swaps (2019-07-03)</title>
       <link>https://btctranscripts.com/london-bitcoin-devs/2019-07-03-alex-bosworth-submarine-swaps/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -56,7 +56,7 @@ Bitcoin - One Currency, Multiple Settlement Networks Something that is pretty im
     </item>
     
     <item>
-      <title>Amiti Uttarwar Attacking Bitcoin Core (2020-04-16)</title>
+      <title>Amiti Uttarwar - Attacking Bitcoin Core (2020-04-16)</title>
       <link>https://btctranscripts.com/la-bitdevs/2020-04-16-amiti-uttarwar-attacking-bitcoin-core/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -72,7 +72,7 @@ Consensus Fundamentally what is required for this to work is the idea of consens
     </item>
     
     <item>
-      <title>Andreas Antonopoulos Bitcoin Scripting (2017-04-03)</title>
+      <title>Andreas Antonopoulos - Bitcoin Scripting (2017-04-03)</title>
       <link>https://btctranscripts.com/sf-bitcoin-meetup/2017-04-03-andreas-antonopoulos-bitcoin-scripting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -104,7 +104,7 @@ Introduction Hey everyone. As you may have guessed I’m Andrew Chow. I’m Engi
     </item>
     
     <item>
-      <title>Andrew Poelstra Miniscript (2020-02-04)</title>
+      <title>Andrew Poelstra - Miniscript (2020-02-04)</title>
       <link>https://btctranscripts.com/london-bitcoin-devs/2020-02-04-andrew-poelstra-miniscript/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -177,7 +177,7 @@ Intro Hey everyone. I’m JJ with Purse. Tonight I want to talk to you about ful
     </item>
     
     <item>
-      <title>Conner Fromknecht Lnd 0.6 Beta (2019-05-02)</title>
+      <title>Conner Fromknecht - Lnd 0.6 Beta (2019-05-02)</title>
       <link>https://btctranscripts.com/sf-bitcoin-meetup/2019-05-02-conner-fromknecht-lnd-0.6-beta/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -215,7 +215,7 @@ About me Okay. So here&amp;rsquo;s some things about myself. I&amp;rsquo;ve been
     </item>
     
     <item>
-      <title>Gleb Naumenko P2P Erlay (2019-11-13)</title>
+      <title>Gleb Naumenko - Erlay (2019-11-13)</title>
       <link>https://btctranscripts.com/london-bitcoin-devs/2019-11-13-gleb-naumenko-p2p-erlay/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -267,7 +267,7 @@ Intro Good evening. My name is James and it is a real privilege to give this tal
     </item>
     
     <item>
-      <title>Jeremy Rubin Bitcoin Core (2018-04-23)</title>
+      <title>Jeremy Rubin - Bitcoin Core (2018-04-23)</title>
       <link>https://btctranscripts.com/sf-bitcoin-meetup/2018-04-23-jeremy-rubin-bitcoin-core/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -278,6 +278,22 @@ Video: https://www.youtube.com/watch?v=PKzJktErUdk
 Slides: https://drive.google.com/file/d/149Ta1WRXL5WEvnBdlL-HxmsFDXUbvFDy/view
 https://twitter.com/kanzure/status/1152926849879760896
 Intro Thank you very much for the warm welcome. So welcome to the hard core workout. It is not going to be that difficult but you can stretch if you need to. It is going to be a lot of material so I’m going to go a little bit fast. If you have any questions feel free to stop me in the middle.</description>
+    </item>
+    
+    <item>
+      <title>Jeremy Rubin - Sapio 101 (2020-07-11)</title>
+      <link>https://btctranscripts.com/vr-bitcoin/2020-07-11-jeremy-rubin-sapio-101/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/vr-bitcoin/2020-07-11-jeremy-rubin-sapio-101/</guid>
+      <description>Name: Jeremy Rubin
+Topic: Sapio Programming 101: Stateful Smart Contracts for Bitcoin with OP_CTV
+Location: Reckless VR
+Date: July 11th 2020
+Video: https://www.youtube.com/watch?v=4vDuttlImPc
+Slides: https://docs.google.com/presentation/d/1X4AGNXJ5yCeHRrf5sa9DarWfDyEkm6fFUlrcIRQtUw4/
+utxos.org website: https://utxos.org/
+Intro (Udi Wertheimer) Today we are joined by Jeremy Rubin who is a Bitcoin Core contributor and the co-founder of the MIT Bitcoin Project. He is involved in a tonne of other cool stuff. He is also championing BIP 119 which is OP_CHECKTEMPLATEVERIFY.</description>
     </item>
     
     <item>
@@ -337,7 +353,7 @@ Introduction Alright guys.. take a seat. ((various mumblings)) Want to thank our
     </item>
     
     <item>
-      <title>Kalle Rosenbaum Grokking Bitcoin (2020-04-29)</title>
+      <title>Kalle Rosenbaum - Grokking Bitcoin (2020-04-29)</title>
       <link>https://btctranscripts.com/london-bitcoin-devs/2020-04-29-kalle-rosenbaum-grokking-bitcoin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -353,7 +369,7 @@ Intro (Michael Folkson) Welcome to this London Bitcoin Devs online. We will be j
     </item>
     
     <item>
-      <title>Kevin Loaec Antoine Poinsot Revault (2020-05-26)</title>
+      <title>Kevin Loaec, Antoine Poinsot - Revault (2020-05-26)</title>
       <link>https://btctranscripts.com/london-bitcoin-devs/2020-05-26-kevin-loaec-antoine-poinsot-revault/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -369,7 +385,7 @@ Intro (Michael Folkson) This is London Bitcoin Devs. This is on Zoom and live-st
     </item>
     
     <item>
-      <title>Laolu Osuntokun Exploring Lnd0.4 (2018-04-20)</title>
+      <title>Laolu Osuntokun - Exploring Lnd0.4 (2018-04-20)</title>
       <link>https://btctranscripts.com/sf-bitcoin-meetup/2018-04-20-laolu-osuntokun-exploring-lnd0.4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -382,7 +398,7 @@ The Genesis of lnd First, the genesis of lnd. Here is the first commit of lnd. I
     </item>
     
     <item>
-      <title>Laolu Osuntokun Lightning Network (2016-07-18)</title>
+      <title>Laolu Osuntokun - Lightning Network (2016-07-18)</title>
       <link>https://btctranscripts.com/sf-bitcoin-meetup/2016-07-18-laolu-osuntokun-lightning-network/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -396,7 +412,7 @@ Introduction My name is Laolu Osuntokun and I work with Lightning guys and you k
     </item>
     
     <item>
-      <title>Laolu Osuntokun Neutrino (2017-06-06)</title>
+      <title>Laolu Osuntokun - Neutrino (2017-06-06)</title>
       <link>https://btctranscripts.com/sf-bitcoin-meetup/2017-06-06-laolu-osuntokun-neutrino/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -407,6 +423,20 @@ Video: https://www.youtube.com/watch?v=7FWKc8lM4Ek
 Slides: https://docs.google.com/presentation/d/1vjJUWOZIaPshjx1svfE6rFZ2lC07n47ifOdzpKWqpb4/
 https://twitter.com/kanzure/status/1054031024085258240
 Introduction My name is Laolu or Roasbeef on the internet. I’m going to talk about light clients in general and then also what we’re working on in terms of light clients and then also how that factors into the lightning network itself. The talk is called Neutrino because that is the name of our new light client that has been released.</description>
+    </item>
+    
+    <item>
+      <title>Laolu, Joost, Oliver - Lnd0.10 (2020-04-18)</title>
+      <link>https://btctranscripts.com/vr-bitcoin/2020-04-18-laolu-joost-oliver-lnd0.10/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/vr-bitcoin/2020-04-18-laolu-joost-oliver-lnd0.10/</guid>
+      <description>Name: Laolu Osuntokun, Joost Jager and Oliver Gugger
+Topic: lnd v0.10
+Location: Virtual Reality (VR Bitcoin)
+Date: April 18th 2020
+Video: https://www.youtube.com/watch?v=h34fUGuDjMg
+Intro (Laolu Osuntokun) Thanks everyone for coming. This is my first time doing a VR presentation, really cool. I am going to be talking about lnd 0.10. Right now we are on rc2, the next major lnd release, it has a bunch of cool features, bug fixes, optimizations. I am going to talk about some big ticket features in 0.</description>
     </item>
     
     <item>
@@ -507,6 +537,20 @@ Intro Can everyone hear me fine through this microphone? Anyone who can&amp;rsqu
     </item>
     
     <item>
+      <title>Oliver Gugger, LSAT (2020-05-16)</title>
+      <link>https://btctranscripts.com/vr-bitcoin/2020-05-16-oliver-gugger-lsat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/vr-bitcoin/2020-05-16-oliver-gugger-lsat/</guid>
+      <description>Name: Oliver Gugger
+Topic: LSAT - Your Ticket Aboard The Lightning Native Web
+Location: Reckless VR
+Date: May 16th 2020
+Video: https://www.youtube.com/watch?v=IW08RJUpzw0
+Intro Happy to be here to talk about LSAT, let’s jump right in. We are going to have a look at LSAT. What the motivation was to come up with this? What the use cases for and we are going to jump into the technical detail. This is going to be a technical talk.</description>
+    </item>
+    
+    <item>
       <title>Partially Signed Bitcoin Transactions (2019-03-15)</title>
       <link>https://btctranscripts.com/sf-bitcoin-meetup/2019-03-15-partially-signed-bitcoin-transactions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -520,7 +564,7 @@ Introduction Andrew: So as Mark said I&amp;rsquo;m Andrew Chow and today I&amp;r
     </item>
     
     <item>
-      <title>Pieter Wuille Key Tree Signatures (2015-08-24)</title>
+      <title>Pieter Wuille - Key Tree Signatures (2015-08-24)</title>
       <link>https://btctranscripts.com/sf-bitcoin-meetup/2015-08-24-pieter-wuille-key-tree-signatures/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -670,6 +714,22 @@ The conversation has been anonymized by default to protect the identities of the
     </item>
     
     <item>
+      <title>Socratic Seminar - BIP Schnorr (2020-06-16)</title>
+      <link>https://btctranscripts.com/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/</guid>
+      <description>Name: Socratic Seminar
+Topic: BIP Schnorr (BIP 340)
+Location: London BitDevs (online)
+Date: June 16th 2020
+Video: https://www.youtube.com/watch?v=uE3lLsf38O4
+Pastebin of the resources discussed: https://pastebin.com/uyktht33
+August 2020 update: Since this Socratic on BIP Schnorr there has been a proposed change to the BIP revisting the squaredness tiebreaker for the R point.
+The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed.</description>
+    </item>
+    
+    <item>
       <title>Socratic Seminar - BIP Taproot (2020-07-21)</title>
       <link>https://btctranscripts.com/london-bitcoin-devs/2020-07-21-socratic-seminar-bip-taproot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -683,6 +743,38 @@ Video: https://www.youtube.com/watch?v=bPcguc108QM
 Pastebin of the resources discussed: https://pastebin.com/vsT3DNqW
 Transcript of Socratic Seminar on BIP-Schnorr: https://diyhpl.us/wiki/transcripts/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/
 The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.</description>
+    </item>
+    
+    <item>
+      <title>Socratic Seminar - Coinswap (2020-06-23)</title>
+      <link>https://btctranscripts.com/london-bitcoin-devs/2020-06-23-socratic-seminar-coinswap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/london-bitcoin-devs/2020-06-23-socratic-seminar-coinswap/</guid>
+      <description>Name: Socratic Seminar
+Topic: CoinSwap
+Location: London BitDevs (online)
+Date: June 23rd 2020
+Video: https://www.youtube.com/watch?v=u7l6rP49hIA
+Pastebin of the resources discussed: https://pastebin.com/zbegGmb8
+The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
+Introductions Michael Folkson (MF): This is London BitDevs, this is a Socratic Seminar.</description>
+    </item>
+    
+    <item>
+      <title>Socratic Seminar - Signet (2020-08-19)</title>
+      <link>https://btctranscripts.com/london-bitcoin-devs/2020-08-19-socratic-seminar-signet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/london-bitcoin-devs/2020-08-19-socratic-seminar-signet/</guid>
+      <description>Name: Socratic Seminar
+Topic: Signet
+Location: London BitDevs (online)
+Date: August 19th 2020
+Video: https://www.youtube.com/watch?v=b0AiucAuX3E
+Pastebin of the resources discussed: https://pastebin.com/rAcXX9Tn
+The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
+Intro Michael Folkson (MF): This is a Socratic Seminar organized by London BitDevs.</description>
     </item>
     
     <item>
@@ -765,38 +857,6 @@ Introduction Alrighty, let&amp;rsquo;s get started. Gather around. Phil could us
     </item>
     
     <item>
-      <title>Socratic Seminar Bip Schnorr (2020-06-16)</title>
-      <link>https://btctranscripts.com/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://btctranscripts.com/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/</guid>
-      <description>Name: Socratic Seminar
-Topic: BIP Schnorr (BIP 340)
-Location: London BitDevs (online)
-Date: June 16th 2020
-Video: https://www.youtube.com/watch?v=uE3lLsf38O4
-Pastebin of the resources discussed: https://pastebin.com/uyktht33
-August 2020 update: Since this Socratic on BIP Schnorr there has been a proposed change to the BIP revisting the squaredness tiebreaker for the R point.
-The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed.</description>
-    </item>
-    
-    <item>
-      <title>Socratic Seminar Coinswap (2020-06-23)</title>
-      <link>https://btctranscripts.com/london-bitcoin-devs/2020-06-23-socratic-seminar-coinswap/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://btctranscripts.com/london-bitcoin-devs/2020-06-23-socratic-seminar-coinswap/</guid>
-      <description>Name: Socratic Seminar
-Topic: CoinSwap
-Location: London BitDevs (online)
-Date: June 23rd 2020
-Video: https://www.youtube.com/watch?v=u7l6rP49hIA
-Pastebin of the resources discussed: https://pastebin.com/zbegGmb8
-The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
-Introductions Michael Folkson (MF): This is London BitDevs, this is a Socratic Seminar.</description>
-    </item>
-    
-    <item>
       <title>Socratic Seminar Payjoins (2020-05-05)</title>
       <link>https://btctranscripts.com/london-bitcoin-devs/2020-05-05-socratic-seminar-payjoins/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -813,22 +873,6 @@ Transaction fingerprinting discussion: https://github.com/zkSNACKs/WalletWasabi/
 BitDevs resources on Coinjoin: https://bitdevs.org/2020-02-19-whitepaper-series-11-coinjoin
 The conversation has been anonymized to protect the identities of the participants.
 Intro (Michael Folkson) We are live, London BitDevs Socratic Seminar on Bitcoin privacy with Adam Gibson. This is a live call on Jitsi.</description>
-    </item>
-    
-    <item>
-      <title>Socratic Seminar Signet (2020-08-19)</title>
-      <link>https://btctranscripts.com/london-bitcoin-devs/2020-08-19-socratic-seminar-signet/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://btctranscripts.com/london-bitcoin-devs/2020-08-19-socratic-seminar-signet/</guid>
-      <description>Name: Socratic Seminar
-Topic: Signet
-Location: London BitDevs (online)
-Date: August 19th 2020
-Video: https://www.youtube.com/watch?v=b0AiucAuX3E
-Pastebin of the resources discussed: https://pastebin.com/rAcXX9Tn
-The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
-Intro Michael Folkson (MF): This is a Socratic Seminar organized by London BitDevs.</description>
     </item>
     
     <item>
@@ -892,7 +936,7 @@ Introduction Cool, thank you Mark for that introduction. Sorry about the delays.
     </item>
     
     <item>
-      <title>Tim Ruffing Schnorr Multisig (2020-06-17)</title>
+      <title>Tim Ruffing - Schnorr, Multisig (2020-06-17)</title>
       <link>https://btctranscripts.com/london-bitcoin-devs/2020-06-17-tim-ruffing-schnorr-multisig/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://btctranscripts.com/tags/schnorr/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Adam Gibson Unfairly Linear Signatures (2018-06-12)</title>
+      <title>Adam Gibson - Unfairly Linear Signatures (2018-06-12)</title>
       <link>https://btctranscripts.com/london-bitcoin-devs/2018-06-12-adam-gibson-unfairly-linear-signatures/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -38,7 +38,7 @@ Stephan Livera: Thanks for joining me AJ. I know you’re doing a lot of really 
     </item>
     
     <item>
-      <title>Antoine Riard Taproot Lightning (2020-02-06)</title>
+      <title>Antoine Riard - Taproot Lightning (2020-02-06)</title>
       <link>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-antoine-riard-taproot-lightning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -166,7 +166,7 @@ Intro Stephan Livera (SL): Jonas and Tim, welcome to the show.</description>
     </item>
     
     <item>
-      <title>Ltb Pieter Wuille Jonas Nick (2019-06-09)</title>
+      <title>LTB - Pieter Wuille, Jonas Nick (2019-06-09)</title>
       <link>https://btctranscripts.com/lets-talk-bitcoin-podcast/2019-06-09-ltb-pieter-wuille-jonas-nick/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -179,6 +179,22 @@ Draft of BIP-Schnorr: https://github.com/sipa/bips/blob/bip-schnorr/bip-schnorr.
 Draft of BIP-Taproot: https://github.com/sipa/bips/blob/bip-schnorr/bip-taproot.mediawiki
 Draft of BIP-Tapscript: https://github.com/sipa/bips/blob/bip-schnorr/bip-tapscript.mediawiki
 Part 1 Adam: On this episode we&amp;rsquo;ll be digging deeply into some of the most important changes coming soon to the Bitcoin protocol in the form of BIPs or Bitcoin Improvement Proposals focused on Taproot, Tapscript and Schnorr signatures.</description>
+    </item>
+    
+    <item>
+      <title>Nadav Kohen - Payment Points (2019-10-20)</title>
+      <link>https://btctranscripts.com/lightning-conference/2019/2019-10-20-nadav-kohen-payment-points/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/lightning-conference/2019/2019-10-20-nadav-kohen-payment-points/</guid>
+      <description>Nadav Kohen
+Replacing Payment Hashes with Payment Points
+The Lightning Conference Day 2 (Stage 2)
+Video: https://www.youtube.com/watch?v=TE65I9E8Q5k
+Slides: https://docs.google.com/presentation/d/15l4h2_zEY4zXC6n1NqsImcjgA0fovl_lkgkKu1O3QT0/
+https://twitter.com/kanzure/status/1220453531683115020
+Intro My name is Nadav Kohen. I’m a software engineer at Suredbits. I’m going to talk about payment points which have been alluded to throughout the conference by various talks.
+Hash Timelocked Contract (HTLC) Routing First of all, some preliminaries, HTLCs. I don’t think I’m going to spend much time on this slide.</description>
     </item>
     
     <item>
@@ -231,6 +247,22 @@ Introduction Hi everyone. Can you hear me alright? Is my mic? Okay, cool. I was 
     </item>
     
     <item>
+      <title>Socratic Seminar - BIP Schnorr (2020-06-16)</title>
+      <link>https://btctranscripts.com/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/</guid>
+      <description>Name: Socratic Seminar
+Topic: BIP Schnorr (BIP 340)
+Location: London BitDevs (online)
+Date: June 16th 2020
+Video: https://www.youtube.com/watch?v=uE3lLsf38O4
+Pastebin of the resources discussed: https://pastebin.com/uyktht33
+August 2020 update: Since this Socratic on BIP Schnorr there has been a proposed change to the BIP revisting the squaredness tiebreaker for the R point.
+The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed.</description>
+    </item>
+    
+    <item>
       <title>Socratic Seminar - BIP Taproot (2020-07-21)</title>
       <link>https://btctranscripts.com/london-bitcoin-devs/2020-07-21-socratic-seminar-bip-taproot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -247,7 +279,7 @@ The conversation has been anonymized by default to protect the identities of the
     </item>
     
     <item>
-      <title>Socratic Seminar Signet (2020-08-19)</title>
+      <title>Socratic Seminar - Signet (2020-08-19)</title>
       <link>https://btctranscripts.com/london-bitcoin-devs/2020-08-19-socratic-seminar-signet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -295,7 +327,7 @@ Disclaimer First of all, this is work in progress.</description>
     </item>
     
     <item>
-      <title>Tim Ruffing Schnorr Multisig (2020-06-17)</title>
+      <title>Tim Ruffing - Schnorr, Multisig (2020-06-17)</title>
       <link>https://btctranscripts.com/london-bitcoin-devs/2020-06-17-tim-ruffing-schnorr-multisig/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

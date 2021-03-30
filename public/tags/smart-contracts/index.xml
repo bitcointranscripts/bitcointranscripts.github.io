@@ -44,6 +44,20 @@ Smart contracts I am sure everyone here knows what a smart contract is. It&amp;r
     </item>
     
     <item>
+      <title>Dan Robinson - Ivy (2017-01-26)</title>
+      <link>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/2017-01-26-dan-robinson-ivy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/2017-01-26-dan-robinson-ivy/</guid>
+      <description>Name: Dan Robinson
+Topic: Ivy: A Declarative Predicate Language for Smart Contracts
+Location: BPASE 2017, Stanford University
+Date: January 26th 2017
+Video: https://www.youtube.com/watch?feature=youtu.be&amp;amp;v=xdxs7VJTqns
+Intro Hi I’m Dan Robinson, I’m one of the Product Architects at Chain which is an enterprise blockchain infrastructure company for financial institutions. We have a full stack blockchain protocol and what I am going to talk about is part of that that also can be used for other applications including as I am going to demo here, make it easier to write scripts for Bitcoin Script.</description>
+    </item>
+    
+    <item>
       <title>Discreet Log Contracts</title>
       <link>https://btctranscripts.com/scalingbitcoin/stanford-2017/discreet-log-contracts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -85,7 +99,7 @@ Quick intro: I&amp;rsquo;m Tadge Dryja. I work here at MIT down the street at Di
     </item>
     
     <item>
-      <title>Jeremy Rubin Sapio 101 (2020-07-11)</title>
+      <title>Jeremy Rubin - Sapio 101 (2020-07-11)</title>
       <link>https://btctranscripts.com/vr-bitcoin/2020-07-11-jeremy-rubin-sapio-101/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -170,7 +184,7 @@ Thanks everyone for staying here and not going to the next room. Thanks for the 
     </item>
     
     <item>
-      <title>Russell Oconnor Simplicity (2018-01-25)</title>
+      <title>Russell Oconnor - Simplicity (2018-01-25)</title>
       <link>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/2018-01-25-russell-oconnor-simplicity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

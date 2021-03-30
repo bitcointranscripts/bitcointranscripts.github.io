@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://btctranscripts.com/lightning-conference/2019/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Antoine Riard Rust Lightning (2019-10-20)</title>
+      <title>Antoine Riard - Rust Lightning (2019-10-20)</title>
       <link>https://btctranscripts.com/lightning-conference/2019/2019-10-20-antoine-riard-rust-lightning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -22,7 +22,7 @@ Intro Hi everyone, super happy to be here at the Lightning Conference. I’ve ha
     </item>
     
     <item>
-      <title>Bastien Teinturier Trampoline Routing (2019-10-20)</title>
+      <title>Bastien Teinturier - Trampoline Routing (2019-10-20)</title>
       <link>https://btctranscripts.com/lightning-conference/2019/2019-10-20-bastien-teinturier-trampoline-routing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -37,7 +37,7 @@ Intro We will start with gory technical details about routing and pathfinding. I
     </item>
     
     <item>
-      <title>Chris Stewart Private Key Management (2019-10-19)</title>
+      <title>Chris Stewart - Private Key Management (2019-10-19)</title>
       <link>https://btctranscripts.com/lightning-conference/2019/2019-10-19-chris-stewart-private-key-management/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -52,7 +52,7 @@ Intro Hi everybody. My name is Chris Stewart. I’m the Founder of a company cal
     </item>
     
     <item>
-      <title>Nadav Kohen Payment Points (2019-10-20)</title>
+      <title>Nadav Kohen - Payment Points (2019-10-20)</title>
       <link>https://btctranscripts.com/lightning-conference/2019/2019-10-20-nadav-kohen-payment-points/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

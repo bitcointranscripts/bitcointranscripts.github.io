@@ -25,7 +25,7 @@ Intro I am a developer, I work on Bitcoin. I came to Bitcoin pretty late compare
     </item>
     
     <item>
-      <title>Alex Bosworth Building Lightning Applications (2018-10-22)</title>
+      <title>Alex Bosworth - Building Lightning Applications (2018-10-22)</title>
       <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-building-lightning-applications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -68,21 +68,7 @@ Why is seed splitting a bad idea? This is something that is being discussed all 
     </item>
     
     <item>
-      <title>Andrew Chow - What Am I Working On (2020-07-10)</title>
-      <link>https://btctranscripts.com/misc/2020-07-10-what-am-i-working-on/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://btctranscripts.com/misc/2020-07-10-what-am-i-working-on/</guid>
-      <description>Name: Andrew Chow
-Topic: What am I working on?
-Location: Reddit (r/bitcoin)
-Date: July 10th 2020
-Reddit link: https://www.reddit.com/r/Bitcoin/comments/ho0t1a/what_are_bitcoin_developers_currently_working_on/fxhwqli/?context=3
-What am I working on? I&amp;rsquo;ve been working on essentially rewriting the Bitcoin Core wallet, one piece at a time. Now when I say &amp;ldquo;the wallet&amp;rdquo;, a lot of people think of the GUI. That&amp;rsquo;s not what I&amp;rsquo;ve been working on. Rather I&amp;rsquo;ve been changing the internals; how keys are managed, how transactions are tracked, how inputs are selected for spending.</description>
-    </item>
-    
-    <item>
-      <title>Andrew Chow Descriptor Wallets (2020-02-06)</title>
+      <title>Andrew Chow - Descriptor Wallets (2020-02-06)</title>
       <link>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-chow-descriptor-wallets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -97,6 +83,20 @@ Support for Output Descriptors in Bitcoin Core: https://github.com/bitcoin/bitco
 Bitcoin Optech on Output script descriptors: https://bitcoinops.org/en/topics/output-script-descriptors/
 Bitcoin Core dev wiki on Wallet Class Structure Changes: https://github.com/bitcoin-core/bitcoin-devwiki/wiki/Wallet-Class-Structure-Changes
 Intro Hi everyone. I am Andrew Chow, I am an engineer at Blockstream and also a Bitcoin Core contributor working mostly on the Bitcoin Core wallet.</description>
+    </item>
+    
+    <item>
+      <title>Andrew Chow - What Am I Working On (2020-07-10)</title>
+      <link>https://btctranscripts.com/misc/2020-07-10-what-am-i-working-on/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/misc/2020-07-10-what-am-i-working-on/</guid>
+      <description>Name: Andrew Chow
+Topic: What am I working on?
+Location: Reddit (r/bitcoin)
+Date: July 10th 2020
+Reddit link: https://www.reddit.com/r/Bitcoin/comments/ho0t1a/what_are_bitcoin_developers_currently_working_on/fxhwqli/?context=3
+What am I working on? I&amp;rsquo;ve been working on essentially rewriting the Bitcoin Core wallet, one piece at a time. Now when I say &amp;ldquo;the wallet&amp;rdquo;, a lot of people think of the GUI. That&amp;rsquo;s not what I&amp;rsquo;ve been working on. Rather I&amp;rsquo;ve been changing the internals; how keys are managed, how transactions are tracked, how inputs are selected for spending.</description>
     </item>
     
     <item>
@@ -117,7 +117,7 @@ Introduction Hey everyone. As you may have guessed I’m Andrew Chow. I’m Engi
     </item>
     
     <item>
-      <title>Andrew Poelstra Miniscript Intro (2020-02-06)</title>
+      <title>Andrew Poelstra - Miniscript Intro (2020-02-06)</title>
       <link>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-poelstra-miniscript-intro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -144,7 +144,7 @@ There are three things I want to tell you today. The first is that the banking s
     </item>
     
     <item>
-      <title>Bastien Teinturier Trampoline Routing (2019-10-20)</title>
+      <title>Bastien Teinturier - Trampoline Routing (2019-10-20)</title>
       <link>https://btctranscripts.com/lightning-conference/2019/2019-10-20-bastien-teinturier-trampoline-routing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -159,7 +159,7 @@ Intro We will start with gory technical details about routing and pathfinding. I
     </item>
     
     <item>
-      <title>Bip151 Peer Encryption</title>
+      <title>BIP151 Peer Encryption</title>
       <link>https://btctranscripts.com/scalingbitcoin/milan-2016/bip151-peer-encryption/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -329,17 +329,18 @@ The instant transaction time.. you know I walk up to a cash register, I put my p
     </item>
     
     <item>
-      <title>Gleb Naumenko P2P Erlay (2019-11-13)</title>
-      <link>https://btctranscripts.com/london-bitcoin-devs/2019-11-13-gleb-naumenko-p2p-erlay/</link>
+      <title>Greg Maxwell - Hardware Wallets Altcoins (2020-11-01)</title>
+      <link>https://btctranscripts.com/greg-maxwell/2020-11-01-greg-maxwell-hardware-wallets-altcoins/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://btctranscripts.com/london-bitcoin-devs/2019-11-13-gleb-naumenko-p2p-erlay/</guid>
-      <description>Gleb Naumenko
-London Bitcoin Devs
-Current state of P2P research in Bitcoin
-Video: https://www.youtube.com/watch?v=ZUWs00Anpaw
-https://twitter.com/kanzure/status/1201861687097352198
-Introduction My name is Gleb. I’ve worked on Bitcoin stuff since 2015, building wallets and exchanges in Ukraine. Then I realized that I can do more fun stuff. I want to do more protocol research, improving Bitcoin itself, not just using it. I decided I will go to Canada to do a Masters. I started working on this topic on research stuff more precisely and I realized that not many people do work on peer-to-peer (P2P) of Bitcoin.</description>
+      <guid>https://btctranscripts.com/greg-maxwell/2020-11-01-greg-maxwell-hardware-wallets-altcoins/</guid>
+      <description>Name: Greg Maxwell
+Topic: Hardware wallets and altcoins
+Location: Reddit
+Date: November 1st 2020
+https://www.reddit.com/r/Bitcoin/comments/jlwxpq/why_do_you_think_coldcard_doesnt_support_altcoins/gasoyuj?utm_source=share&amp;amp;utm_medium=web2x&amp;amp;context=3
+Why do hardware wallets not support altcoins? They&amp;rsquo;re an enormous distraction and hazard to software development. It&amp;rsquo;s hard enough to correctly and safely write software to support one system. Every minute spent creating and testing the software for some alternative is a minute taken away from supporting Bitcoin.
+I can say first hand that my efforts to review hardware wallet code against possible vulnerabilities have been actively thwarted by hardware wallet codebases being crapped up with support for altcoins.</description>
     </item>
     
     <item>
@@ -356,21 +357,6 @@ https://www.reddit.com/r/Bitcoin/comments/jp2fp3/opinion_regarding_security/gbho
 Yubikey Security  By this logic, a yubikey would also be a great targeting vector.
  They would be, and if US intelligence services have not compromised yubis or at least have a perfect targeted substitution solutions for them then they should all be fired for gross incompetence and mismanagement of their funding.
 Likewise, if parties which things of significant value to secure who might be targeted by state level attackers are securing those things with just yubs instead of using yubis as a second factor in an otherwise secure setup then those parties ought to be fired too.</description>
-    </item>
-    
-    <item>
-      <title>Greg Maxwell Hardware Wallets Altcoins (2020-11-01)</title>
-      <link>https://btctranscripts.com/greg-maxwell/2020-11-01-greg-maxwell-hardware-wallets-altcoins/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://btctranscripts.com/greg-maxwell/2020-11-01-greg-maxwell-hardware-wallets-altcoins/</guid>
-      <description>Name: Greg Maxwell
-Topic: Hardware wallets and altcoins
-Location: Reddit
-Date: November 1st 2020
-https://www.reddit.com/r/Bitcoin/comments/jlwxpq/why_do_you_think_coldcard_doesnt_support_altcoins/gasoyuj?utm_source=share&amp;amp;utm_medium=web2x&amp;amp;context=3
-Why do hardware wallets not support altcoins? They&amp;rsquo;re an enormous distraction and hazard to software development. It&amp;rsquo;s hard enough to correctly and safely write software to support one system. Every minute spent creating and testing the software for some alternative is a minute taken away from supporting Bitcoin.
-I can say first hand that my efforts to review hardware wallet code against possible vulnerabilities have been actively thwarted by hardware wallet codebases being crapped up with support for altcoins.</description>
     </item>
     
     <item>
@@ -689,7 +675,7 @@ GZ: Thank you very much. We&amp;rsquo;re going to talk about the future of bitco
     </item>
     
     <item>
-      <title>Tom Kirkpatrick Zap Wallet (2018-12-01)</title>
+      <title>Tom Kirkpatrick - Zap Wallet (2018-12-01)</title>
       <link>https://btctranscripts.com/lightning-hack-day/2018-12-01-tom-kirkpatrick-zap-wallet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

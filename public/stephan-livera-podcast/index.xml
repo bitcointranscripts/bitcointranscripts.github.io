@@ -37,7 +37,7 @@ Stephan Livera: Yeah, so look, we’re doing Bitcoin Custody. I know you’re on
     </item>
     
     <item>
-      <title>Christian Decker Channel Factories (2019-03-14)</title>
+      <title>Christian Decker - Channel Factories (2019-03-14)</title>
       <link>https://btctranscripts.com/stephan-livera-podcast/2019-03-14-christian-decker-channel-factories/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -53,7 +53,7 @@ Stephan: There has been a lot of chatter in the Bitcoin community on what might 
     </item>
     
     <item>
-      <title>Christian Decker Lightning Topics (2020-08-13)</title>
+      <title>Christian Decker - Lightning Topics (2020-08-13)</title>
       <link>https://btctranscripts.com/stephan-livera-podcast/2020-08-13-christian-decker-lightning-topics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -71,7 +71,7 @@ SL: I wanted to chat with you about a bunch of stuff that you’ve been doing. W
     </item>
     
     <item>
-      <title>Conner Fromknecht Stephan Livera (2019-06-24)</title>
+      <title>Conner Fromknecht - Stephan Livera (2019-06-24)</title>
       <link>https://btctranscripts.com/stephan-livera-podcast/2019-06-24-conner-fromknecht-stephan-livera/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -84,7 +84,7 @@ Conner: Awesome, thank you Stephan. It has been a while since we first met in Au
     </item>
     
     <item>
-      <title>James Obeirne (2019-04-11)</title>
+      <title>James O&#39;Beirne (2019-04-11)</title>
       <link>https://btctranscripts.com/stephan-livera-podcast/2019-04-11-james-obeirne/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -135,7 +135,7 @@ Intro Stephan Livera (SL): Jonas and Tim, welcome to the show.</description>
     </item>
     
     <item>
-      <title>Laolu Osuntokun Stephan Livera (2018-12-11)</title>
+      <title>Laolu Osuntokun - Stephan Livera (2018-12-11)</title>
       <link>https://btctranscripts.com/stephan-livera-podcast/2018-12-11-laolu-osuntokun-stephan-livera/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -147,6 +147,26 @@ Stephan: Hi Laolu. Thank you very much for coming on the show.
 roasbeef: It’s good to be here.
 Stephan: It’s been a while since the Lighting Summit was on and now you’re back home. How’s things back home?
 roasbeef: Not bad, just the usual back to work, just the regular stuff. Australia was great. I had never been.</description>
+    </item>
+    
+    <item>
+      <title>Luke Dashjr - Taproot Activation (2021-03-17)</title>
+      <link>https://btctranscripts.com/stephan-livera-podcast/2021-03-17-luke-dashjr-taproot-activation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/stephan-livera-podcast/2021-03-17-luke-dashjr-taproot-activation/</guid>
+      <description>Name: Luke Dashjr
+Topic: How Bitcoin UASF went down, Taproot LOT=true, Speedy Trial, Small Blocks
+Location: Stephan Livera Podcast
+Date: March 17th 2021
+Audio: https://stephanlivera.com/episode/260/
+Luke Dashjr arguments against LOT=false: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-February/018498.html
+T1-T6 and F1-F6 arguments for LOT=true and LOT=false: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-February/018380.html
+F7 argument for LOT=false: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-February/018415.html
+Transcript by: Stephan Livera Edited by: Michael Folkson
+Intro Stephan Livera (SL): Luke, welcome to the show.
+Luke Dashjr (LD): Thanks.
+SL: So, Luke for listeners who are unfamiliar, maybe you could take a minute and tell us a little bit about your background and how long you’ve been developing and contributing with Bitcoin Core.</description>
     </item>
     
     <item>
@@ -167,7 +187,7 @@ SL: Michael, I think you are one of these really underrated or under followed gu
     </item>
     
     <item>
-      <title>Michael Flaxman Security Guide (2020-09-28)</title>
+      <title>Michael Flaxman - Security Guide (2020-09-28)</title>
       <link>https://btctranscripts.com/stephan-livera-podcast/2020-09-28-michael-flaxman-security-guide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -203,7 +223,7 @@ SL: Obviously as you’re under a pseudonym don’t dox anything about yourself 
     </item>
     
     <item>
-      <title>Roy Sheinfeld Stephan Livera (2019-07-31)</title>
+      <title>Roy Sheinfeld - Stephan Livera (2019-07-31)</title>
       <link>https://btctranscripts.com/stephan-livera-podcast/2019-07-31-roy-sheinfeld-stephan-livera/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -216,7 +236,7 @@ Stephan Livera:	So Roy, I’ve seen you’ve been writing some interesting posts
     </item>
     
     <item>
-      <title>Rusty Russell Joe Netti (2019-08-12)</title>
+      <title>Rusty Russell, Joe Netti (2019-08-12)</title>
       <link>https://btctranscripts.com/stephan-livera-podcast/2019-08-12-rusty-russell-joe-netti/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -231,7 +251,7 @@ Joe Netti:	Yeah, sure. So, I got into Bitcoin in around 2013, and took me a whil
     </item>
     
     <item>
-      <title>Thomas Voegtlin Ghost43 Electrum (2020-08-09)</title>
+      <title>Thomas Voegtlin, Ghost43 - Electrum (2020-08-09)</title>
       <link>https://btctranscripts.com/stephan-livera-podcast/2020-08-09-thomas-voegtlin-ghost43-electrum/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

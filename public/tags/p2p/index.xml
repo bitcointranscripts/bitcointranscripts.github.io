@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://btctranscripts.com/tags/p2p/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Bip151 Peer Encryption</title>
+      <title>BIP151 Peer Encryption</title>
       <link>https://btctranscripts.com/scalingbitcoin/milan-2016/bip151-peer-encryption/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -80,7 +80,6 @@ Location: Chaincode Labs 2019 Residency
 Video: https://www.youtube.com/watch?v=StnOVBbIpD8
 Slides: https://residency.chaincode.com/presentations/bitcoin/ethan_heilman_p2p.pdf
 Eclipse attack paper: https://eprint.iacr.org/2015/263.pdf
-Transcript completed by: Adam Jonas
 Bitcoin’s P2P Network Please interrupt me. I&amp;rsquo;m going to go through this stuff a little bit quickly because I hear that you&amp;rsquo;ve already read Eclipse attack paper and you&amp;rsquo;ve already looked at some of the peer to peer stuff.
 Bitcoin uses a peer-to-peer network to announce transactions and blocks.</description>
     </item>
@@ -94,6 +93,20 @@ Bitcoin uses a peer-to-peer network to announce transactions and blocks.</descri
       <description>ethcore
 At ethcore, we are building the infrastructure for the future of the decentralized web. Unless we get distracted by TheDAO and soft-forks and hard-forks. Maybe decentralization is not the most important thing. We want to build a p2p secure serverless web. Why is decentralization such an important notion? There&amp;rsquo;s no intrinsic value in being decentralized. There&amp;rsquo;s intrinsic value in being utilized and secure by people.
 This is a bit of how we see the architecture.</description>
+    </item>
+    
+    <item>
+      <title>Gleb Naumenko - Erlay (2019-11-13)</title>
+      <link>https://btctranscripts.com/london-bitcoin-devs/2019-11-13-gleb-naumenko-p2p-erlay/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/london-bitcoin-devs/2019-11-13-gleb-naumenko-p2p-erlay/</guid>
+      <description>Gleb Naumenko
+London Bitcoin Devs
+Current state of P2P research in Bitcoin
+Video: https://www.youtube.com/watch?v=ZUWs00Anpaw
+https://twitter.com/kanzure/status/1201861687097352198
+Introduction My name is Gleb. I’ve worked on Bitcoin stuff since 2015, building wallets and exchanges in Ukraine. Then I realized that I can do more fun stuff. I want to do more protocol research, improving Bitcoin itself, not just using it. I decided I will go to Canada to do a Masters. I started working on this topic on research stuff more precisely and I realized that not many people do work on peer-to-peer (P2P) of Bitcoin.</description>
     </item>
     
     <item>

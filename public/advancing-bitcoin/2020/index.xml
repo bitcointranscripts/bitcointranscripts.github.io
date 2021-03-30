@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://btctranscripts.com/advancing-bitcoin/2020/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Andrew Chow Descriptor Wallets (2020-02-06)</title>
+      <title>Andrew Chow - Descriptor Wallets (2020-02-06)</title>
       <link>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-chow-descriptor-wallets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -25,7 +25,7 @@ Intro Hi everyone. I am Andrew Chow, I am an engineer at Blockstream and also a 
     </item>
     
     <item>
-      <title>Andrew Poelstra Miniscript (2020-02-07)</title>
+      <title>Andrew Poelstra - Miniscript (2020-02-07)</title>
       <link>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-07-andrew-poelstra-miniscript/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -40,7 +40,7 @@ Part 1 So what we’re going to do, there is a couple of things. We are going to
     </item>
     
     <item>
-      <title>Andrew Poelstra Miniscript Intro (2020-02-06)</title>
+      <title>Andrew Poelstra - Miniscript Intro (2020-02-06)</title>
       <link>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-poelstra-miniscript-intro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -55,7 +55,7 @@ Intro Hi everyone. Some of you were at my Bitcoin dev presentation about Miniscr
     </item>
     
     <item>
-      <title>Antoine Riard Taproot Lightning (2020-02-06)</title>
+      <title>Antoine Riard - Taproot Lightning (2020-02-06)</title>
       <link>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-antoine-riard-taproot-lightning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -71,7 +71,7 @@ Lightning architecture The Lightning architecture for those who are not familiar
     </item>
     
     <item>
-      <title>Fabian Jahr Debugging Workshop (2020-02-07)</title>
+      <title>Fabian Jahr - Debugging Workshop (2020-02-07)</title>
       <link>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-07-fabian-jahr-debugging-workshop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -88,7 +88,7 @@ Introduction First of all welcome to the debugging Bitcoin Core workshop. Everyt
     </item>
     
     <item>
-      <title>Kalle Alm Signet Integration (2020-02-06)</title>
+      <title>Kalle Alm - Signet Integration (2020-02-06)</title>
       <link>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-kalle-alm-signet-integration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

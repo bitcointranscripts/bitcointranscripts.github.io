@@ -7,6 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://btctranscripts.com/categories/workshop/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Andrew Chow - Descriptor Wallets (2020-02-06)</title>
+      <link>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-chow-descriptor-wallets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-chow-descriptor-wallets/</guid>
+      <description>Name: Andrew Chow
+Topic: Rethinking Wallet Architecture: Native Descriptor Wallets
+Location: Advancing Bitcoin
+Date: February 6th 2020
+Video: https://www.youtube.com/watch?v=xC25NzIjzog
+Slides: https://www.dropbox.com/s/142b4o4lrbkvqnh/Rethinking%20Wallet%20Architecture_%20Native%20Descriptor%20Wallets.pptx
+Support for Output Descriptors in Bitcoin Core: https://github.com/bitcoin/bitcoin/blob/master/doc/descriptors.md
+Bitcoin Optech on Output script descriptors: https://bitcoinops.org/en/topics/output-script-descriptors/
+Bitcoin Core dev wiki on Wallet Class Structure Changes: https://github.com/bitcoin-core/bitcoin-devwiki/wiki/Wallet-Class-Structure-Changes
+Intro Hi everyone. I am Andrew Chow, I am an engineer at Blockstream and also a Bitcoin Core contributor working mostly on the Bitcoin Core wallet.</description>
+    </item>
+    
+    <item>
       <title>Archival Science</title>
       <link>https://btctranscripts.com/w3-blockchain-workshop-2016/archival-science/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -160,6 +178,23 @@ This is a bit of how we see the architecture.</description>
     </item>
     
     <item>
+      <title>Fabian Jahr - Debugging Workshop (2020-02-07)</title>
+      <link>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-07-fabian-jahr-debugging-workshop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-07-fabian-jahr-debugging-workshop/</guid>
+      <description>Name: Fabian Jahr
+Topic: Debugging Bitcoin Core Workshop
+Location: Advancing Bitcoin
+Date: February 7th 2020
+Video: No video was posted online
+Fabian presentation at Bitcoin Edge Dev++ 2019: https://diyhpl.us/wiki/transcripts/scalingbitcoin/tel-aviv-2019/edgedevplusplus/debugging-bitcoin/
+Debugging Bitcoin Core doc: https://github.com/fjahr/debugging_bitcoin
+Debugging Bitcoin Core Workshop: https://gist.github.com/fjahr/5bf65daaf9ff189a0993196195005386
+Introduction First of all welcome to the debugging Bitcoin Core workshop. Everything I know more or less about using a debugger to learn from Bitcoin Core and to fix problems in Bitcoin Core.</description>
+    </item>
+    
+    <item>
       <title>G20 Discussion</title>
       <link>https://btctranscripts.com/decentralized-financial-architecture-workshop/g20-discussion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -230,6 +265,20 @@ My name is Doug. I am ostensibly the organizer. Along with my chairs, Neha, wher
       <guid>https://btctranscripts.com/w3-blockchain-workshop-2016/ipfs/</guid>
       <description>I will not have time to describe IPFS. We have multiformats that allow protocol agility, interop and avoid lock-in. Multihash, multiaddr, multibase, multicodec, multistream, multikey. What do you do with cryptographic hashes? When you have four different hashes all the same length that happen to be coming from different functions, what are those functions? sha256? sha512? sha3? blake2b? How do you know which hash type it is?
 The problem is that the values aren&amp;rsquo;t self-describing.</description>
+    </item>
+    
+    <item>
+      <title>Kalle Alm Signet Workshop (2020-02-07)</title>
+      <link>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-07-kalle-alm-signet-workshop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-07-kalle-alm-signet-workshop/</guid>
+      <description>Name: Kalle Alm
+Topic: Signet Workshop
+Location: Advancing Bitcoin
+Date: February 7th 2020
+Video: No video posted online
+Let’s prepare mkdir workspace cd workspace git clone https://github.com/bitcoin/bitcoin.git cd bitcoin git remote add kallewoof https://github.com/kallewoof/bitcoin.git git fetch kallewoof git checkout signet ./autogen.sh ./configure -C --disable-bench --disable-test --without-gui make -j5 When you try to run the configure part you are going to have some problems if you don’t have the dependencies. If you don’t have the dependencies Google your OS and “Bitcoin build”.</description>
     </item>
     
     <item>

@@ -21,6 +21,23 @@ User activated soft forks vs hard forks Adam Levine (AL): I’m trying to look a
     </item>
     
     <item>
+      <title>Eric Lombrozo, Luke Dashjr - Taproot Activation (2020-08-03)</title>
+      <link>https://btctranscripts.com/bitcoin-magazine/2020-08-03-eric-lombrozo-luke-dashjr-taproot-activation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/bitcoin-magazine/2020-08-03-eric-lombrozo-luke-dashjr-taproot-activation/</guid>
+      <description>Name: Eric Lombrozo and Luke Dashjr
+Topic: How to Activate a New Soft Fork
+Location: Bitcoin Magazine (online)
+Date: August 3rd 2020
+Video: https://www.youtube.com/watch?v=yQZb0RDyFCQ
+Aaron van Wirdum in Bitcoin Magazine on BIP 8, BIP 9 or Modern Soft Fork Activation: https://bitcoinmagazine.com/articles/bip-8-bip-9-or-modern-soft-fork-activation-how-bitcoin-could-upgrade-next
+David Harding on Taproot activation proposals: https://gist.github.com/harding/dda66f5fd00611c0890bdfa70e28152d
+Intro Aaron van Wirdum (AvW): Eric, Luke welcome. Happy Bitcoin Independence Day. How are you doing?
+Eric Lombrozo (EL): We are doing great.</description>
+    </item>
+    
+    <item>
       <title>Great Consensus Cleanup (2019-06-06)</title>
       <link>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-06-great-consensus-cleanup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -46,6 +63,26 @@ Date: July 23rd 2018
 Video: https://www.youtube.com/watch?v=qzbdNefsA-0
 John Light blog post on soft forks and hard forks: https://medium.com/@lightcoin/the-differences-between-a-hard-fork-a-soft-fork-and-a-chain-split-and-what-they-mean-for-the-769273f358c9
 Intro My presentation today is going to be about Bitcoin full nodes. Everything you wanted to know and more. There should perhaps be an asterisk because I’m not going to say literally everything but if anyone in the audience has any questions that want to go really deep down the rabbit hole then we’ll see just how far down we can go.</description>
+    </item>
+    
+    <item>
+      <title>Luke Dashjr - Taproot Activation (2021-03-17)</title>
+      <link>https://btctranscripts.com/stephan-livera-podcast/2021-03-17-luke-dashjr-taproot-activation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/stephan-livera-podcast/2021-03-17-luke-dashjr-taproot-activation/</guid>
+      <description>Name: Luke Dashjr
+Topic: How Bitcoin UASF went down, Taproot LOT=true, Speedy Trial, Small Blocks
+Location: Stephan Livera Podcast
+Date: March 17th 2021
+Audio: https://stephanlivera.com/episode/260/
+Luke Dashjr arguments against LOT=false: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-February/018498.html
+T1-T6 and F1-F6 arguments for LOT=true and LOT=false: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-February/018380.html
+F7 argument for LOT=false: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-February/018415.html
+Transcript by: Stephan Livera Edited by: Michael Folkson
+Intro Stephan Livera (SL): Luke, welcome to the show.
+Luke Dashjr (LD): Thanks.
+SL: So, Luke for listeners who are unfamiliar, maybe you could take a minute and tell us a little bit about your background and how long you’ve been developing and contributing with Bitcoin Core.</description>
     </item>
     
     <item>

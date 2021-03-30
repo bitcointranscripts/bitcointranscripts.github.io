@@ -7,24 +7,6 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://btctranscripts.com/tags/ux/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Christian Decker Lightning Topics (2020-08-13)</title>
-      <link>https://btctranscripts.com/stephan-livera-podcast/2020-08-13-christian-decker-lightning-topics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://btctranscripts.com/stephan-livera-podcast/2020-08-13-christian-decker-lightning-topics/</guid>
-      <description>Name: Christian Decker
-Topic: ANYPREVOUT, MPP, Mitigating Lightning Attacks
-Location: Stephan Livera Podcast
-Date: August 13th 2020
-Audio: https://stephanlivera.com/episode/200/
-Transcript completed by: Stephan Livera Edited by: Michael Folkson
-Latest ANYPREVOUT update ANYPREVOUT BIP (BIP 118): https://github.com/ajtowns/bips/blob/bip-anyprevout/bip-0118.mediawiki
-Stephan Livera (SL): Christian welcome back to the show.
-Christian Decker (CD): Hey Stephan, thanks for having me.
-SL: I wanted to chat with you about a bunch of stuff that you’ve been doing. We’ve got a couple of things that I was really interested to chat with you about: ANYPREVOUT, MPP, Lightning attacks, the latest with Lightning Network.</description>
-    </item>
-    
-    <item>
       <title>Cross Curve Atomic Swaps (2018-03-05)</title>
       <link>https://btctranscripts.com/bitcoin-core-dev-tech/2018-03-05-cross-curve-atomic-swaps/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -61,7 +43,7 @@ Bitcoin mining is the lowest part of the transaction stack.</description>
     </item>
     
     <item>
-      <title>Kevin Loaec Antoine Poinsot Revault (2020-04-24)</title>
+      <title>Kevin Loaec, Antoine Poinsot - Revault (2020-04-24)</title>
       <link>https://btctranscripts.com/honey-badger-diaries/2020-04-24-kevin-loaec-antoine-poinsot-revault/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -147,7 +129,7 @@ Intro Can everyone hear me fine through this microphone? Anyone who can&amp;rsqu
     </item>
     
     <item>
-      <title>Pierre Rochard Lightning Excel Plugin (2018-10-26)</title>
+      <title>Pierre Rochard - Lightning Excel Plugin (2018-10-26)</title>
       <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-26-pierre-rochard-lightning-excel-plugin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -189,22 +171,6 @@ History For what it&amp;rsquo;s worth, these dates are rough.</description>
     </item>
     
     <item>
-      <title>Sergei Tikhomirov Lightning Privacy (2020-05-09)</title>
-      <link>https://btctranscripts.com/lightning-hack-day/2020-05-09-sergei-tikhomirov-lightning-privacy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://btctranscripts.com/lightning-hack-day/2020-05-09-sergei-tikhomirov-lightning-privacy/</guid>
-      <description>Name: Sergei Tikhomirov
-Topic: Quantitative Analysis of Lightning Network Privacy
-Location: Lightning Hacksprint (Fulmo)
-Date: May 9th 2020
-Video: https://www.youtube.com/watch?v=8lUTbfO94mM
-Slides: https://docs.google.com/presentation/d/1H9EdrhjQ9x3q0qfsei7iFYINVf2lwPyjUKHd3CScy4k/edit#slide=id.g7774542944_0_0
-Paper: https://eprint.iacr.org/2020/303
-Intro Hello everyone. I am Sergei, I am a PhD student at the University of Luxembourg. I am going to present our joint work with Pedro Moreno-Sanchez and Matteo Maffei from TU Wien on certain aspects of the privacy and scalability of the Lightning Network. The full paper can be found here.</description>
-    </item>
-    
-    <item>
       <title>Signet (2019-06-07)</title>
       <link>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-07-signet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -229,22 +195,6 @@ Date: July 8th 2020
 Video: No video posted online
 Reddit link of the resources discussed: https://old.reddit.com/r/chibitdevs/
 The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.</description>
-    </item>
-    
-    <item>
-      <title>Socratic Seminar Bip Schnorr (2020-06-16)</title>
-      <link>https://btctranscripts.com/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://btctranscripts.com/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/</guid>
-      <description>Name: Socratic Seminar
-Topic: BIP Schnorr (BIP 340)
-Location: London BitDevs (online)
-Date: June 16th 2020
-Video: https://www.youtube.com/watch?v=uE3lLsf38O4
-Pastebin of the resources discussed: https://pastebin.com/uyktht33
-August 2020 update: Since this Socratic on BIP Schnorr there has been a proposed change to the BIP revisting the squaredness tiebreaker for the R point.
-The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed.</description>
     </item>
     
     <item>

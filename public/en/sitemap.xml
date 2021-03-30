@@ -123,6 +123,10 @@
   </url>
   
   <url>
+    <loc>https://btctranscripts.com/boltathon/2019-04-06-alex-bosworth-major-limitations/</loc>
+  </url>
+  
+  <url>
     <loc>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-building-lightning-applications/</loc>
   </url>
   
@@ -132,10 +136,6 @@
   
   <url>
     <loc>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-lightning-protocol/</loc>
-  </url>
-  
-  <url>
-    <loc>https://btctranscripts.com/boltathon/2019-04-06-alex-bosworth-major-limitations/</loc>
   </url>
   
   <url>
@@ -179,6 +179,10 @@
   </url>
   
   <url>
+    <loc>https://btctranscripts.com/sf-bitcoin-meetup/2017-04-03-andreas-antonopoulos-bitcoin-scripting/</loc>
+  </url>
+  
+  <url>
     <loc>https://btctranscripts.com/andreas-antonopoulos/2019-02-01-andreas-antonopoulos-hardware-wallet-security/</loc>
   </url>
   
@@ -195,15 +199,11 @@
   </url>
   
   <url>
-    <loc>https://btctranscripts.com/sf-bitcoin-meetup/2017-04-03-andreas-antonopoulos-bitcoin-scripting/</loc>
+    <loc>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-chow-descriptor-wallets/</loc>
   </url>
   
   <url>
     <loc>https://btctranscripts.com/misc/2020-07-10-what-am-i-working-on/</loc>
-  </url>
-  
-  <url>
-    <loc>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-chow-descriptor-wallets/</loc>
   </url>
   
   <url>
@@ -774,15 +774,11 @@
   </url>
   
   <url>
-    <loc>https://btctranscripts.com/blockstream-webinars/2019-09-04-christian-decker-c-lightning-questions/</loc>
-  </url>
-  
-  <url>
-    <loc>https://btctranscripts.com/lightning-hack-day/2020-05-03-christian-decker-lightning-backups/</loc>
-  </url>
-  
-  <url>
     <loc>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-24-christian-decker-c-lightning-api/</loc>
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/blockstream-webinars/2019-09-04-christian-decker-c-lightning-questions/</loc>
   </url>
   
   <url>
@@ -791,6 +787,10 @@
   
   <url>
     <loc>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-25-christian-decker-eltoo/</loc>
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/lightning-hack-day/2020-05-03-christian-decker-lightning-backups/</loc>
   </url>
   
   <url>
@@ -1031,6 +1031,10 @@
   
   <url>
     <loc>https://btctranscripts.com/building-on-bitcoin/2018/dandelion/</loc>
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/munich-meetup/2021-02-21-daniela-brozzoni-stratumv2/</loc>
   </url>
   
   <url>
@@ -1366,6 +1370,10 @@
   </url>
   
   <url>
+    <loc>https://btctranscripts.com/greg-maxwell/2020-11-01-greg-maxwell-hardware-wallets-altcoins/</loc>
+  </url>
+  
+  <url>
     <loc>https://btctranscripts.com/greg-maxwell/2020-06-08-greg-maxwell-liquid-censorship-resistance/</loc>
   </url>
   
@@ -1387,10 +1395,6 @@
   
   <url>
     <loc>https://btctranscripts.com/greg-maxwell/2020-11-05-greg-maxwell-yubikey-security/</loc>
-  </url>
-  
-  <url>
-    <loc>https://btctranscripts.com/greg-maxwell/2020-11-01-greg-maxwell-hardware-wallets-altcoins/</loc>
   </url>
   
   <url>
@@ -1634,11 +1638,11 @@
   </url>
   
   <url>
-    <loc>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-18-james-obeirne-advanced-segwit/</loc>
+    <loc>https://btctranscripts.com/stephan-livera-podcast/2019-04-11-james-obeirne/</loc>
   </url>
   
   <url>
-    <loc>https://btctranscripts.com/stephan-livera-podcast/2019-04-11-james-obeirne/</loc>
+    <loc>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-18-james-obeirne-advanced-segwit/</loc>
   </url>
   
   <url>
@@ -1770,14 +1774,6 @@
   </url>
   
   <url>
-    <loc>https://btctranscripts.com/noded-podcast/2018-12-14-laolu-conner-lnd/</loc>
-  </url>
-  
-  <url>
-    <loc>https://btctranscripts.com/vr-bitcoin/2020-04-18-laolu-joost-oliver-lnd0.10/</loc>
-  </url>
-  
-  <url>
     <loc>https://btctranscripts.com/sf-bitcoin-meetup/2018-04-20-laolu-osuntokun-exploring-lnd0.4/</loc>
   </url>
   
@@ -1791,6 +1787,14 @@
   
   <url>
     <loc>https://btctranscripts.com/stephan-livera-podcast/2018-12-11-laolu-osuntokun-stephan-livera/</loc>
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/noded-podcast/2018-12-14-laolu-conner-lnd/</loc>
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/vr-bitcoin/2020-04-18-laolu-joost-oliver-lnd0.10/</loc>
   </url>
   
   <url>
@@ -1970,6 +1974,10 @@
   </url>
   
   <url>
+    <loc>https://btctranscripts.com/stephan-livera-podcast/2021-03-17-luke-dashjr-taproot-activation/</loc>
+  </url>
+  
+  <url>
     <loc>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/maaku-panel/</loc>
   </url>
   
@@ -1994,6 +2002,10 @@
   </url>
   
   <url>
+    <loc>https://btctranscripts.com/advancing-bitcoin/2019/2019-02-07-matt-corallo-rust-lightning/</loc>
+  </url>
+  
+  <url>
     <loc>https://btctranscripts.com/tftc-podcast/2021-02-11-matt-corallo-taproot-activation/</loc>
   </url>
   
@@ -2003,10 +2015,6 @@
   
   <url>
     <loc>https://btctranscripts.com/chaincode-labs/chaincode-podcast/2020-03-12-matt-corallo-compact-blocks-fibre/</loc>
-  </url>
-  
-  <url>
-    <loc>https://btctranscripts.com/advancing-bitcoin/2019/2019-02-07-matt-corallo-rust-lightning/</loc>
   </url>
   
   <url>
@@ -2171,6 +2179,10 @@
   
   <url>
     <loc>https://btctranscripts.com/tags/multisig/</loc>
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/munich-meetup/</loc>
   </url>
   
   <url>
@@ -2614,15 +2626,15 @@
   </url>
   
   <url>
+    <loc>https://btctranscripts.com/boltathon/2019-04-06-rusty-russell-json-interface/</loc>
+  </url>
+  
+  <url>
     <loc>https://btctranscripts.com/misc/2018-01-24-rusty-russell-future-bitcoin-tech-directions/</loc>
   </url>
   
   <url>
     <loc>https://btctranscripts.com/stephan-livera-podcast/2019-08-12-rusty-russell-joe-netti/</loc>
-  </url>
-  
-  <url>
-    <loc>https://btctranscripts.com/boltathon/2019-04-06-rusty-russell-json-interface/</loc>
   </url>
   
   <url>
@@ -2679,6 +2691,10 @@
   
   <url>
     <loc>https://btctranscripts.com/bitcoinops/schnorr-taproot-workshop-2019/</loc>
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/tags/script/</loc>
   </url>
   
   <url>
@@ -2886,7 +2902,19 @@
   </url>
   
   <url>
+    <loc>https://btctranscripts.com/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/</loc>
+  </url>
+  
+  <url>
     <loc>https://btctranscripts.com/london-bitcoin-devs/2020-07-21-socratic-seminar-bip-taproot/</loc>
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/london-bitcoin-devs/2020-06-23-socratic-seminar-coinswap/</loc>
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/london-bitcoin-devs/2020-08-19-socratic-seminar-signet/</loc>
   </url>
   
   <url>
@@ -2914,19 +2942,7 @@
   </url>
   
   <url>
-    <loc>https://btctranscripts.com/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/</loc>
-  </url>
-  
-  <url>
-    <loc>https://btctranscripts.com/london-bitcoin-devs/2020-06-23-socratic-seminar-coinswap/</loc>
-  </url>
-  
-  <url>
     <loc>https://btctranscripts.com/london-bitcoin-devs/2020-05-05-socratic-seminar-payjoins/</loc>
-  </url>
-  
-  <url>
-    <loc>https://btctranscripts.com/london-bitcoin-devs/2020-08-19-socratic-seminar-signet/</loc>
   </url>
   
   <url>
@@ -2963,6 +2979,10 @@
   
   <url>
     <loc>https://btctranscripts.com/stanford-blockchain-conference/2019/spork-probabilistic-bitcoin-soft-forks/</loc>
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/tags/spv/</loc>
   </url>
   
   <url>
@@ -3102,6 +3122,10 @@
   
   <url>
     <loc>https://btctranscripts.com/bitcoin-magazine/2021-02-26-taproot-activation-lockinontimeout/</loc>
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/bitcoin-magazine/2021-03-12-taproot-activation-speedy-trial/</loc>
   </url>
   
   <url>

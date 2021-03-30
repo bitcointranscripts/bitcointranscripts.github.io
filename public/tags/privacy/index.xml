@@ -273,7 +273,6 @@ Location: Chaincode Labs 2019 Residency
 Video: https://www.youtube.com/watch?v=StnOVBbIpD8
 Slides: https://residency.chaincode.com/presentations/bitcoin/ethan_heilman_p2p.pdf
 Eclipse attack paper: https://eprint.iacr.org/2015/263.pdf
-Transcript completed by: Adam Jonas
 Bitcoin’s P2P Network Please interrupt me. I&amp;rsquo;m going to go through this stuff a little bit quickly because I hear that you&amp;rsquo;ve already read Eclipse attack paper and you&amp;rsquo;ve already looked at some of the peer to peer stuff.
 Bitcoin uses a peer-to-peer network to announce transactions and blocks.</description>
     </item>
@@ -606,7 +605,7 @@ Motivation As we all know, bitfcoin data has become too large to store in resour
     </item>
     
     <item>
-      <title>Sergei Tikhomirov Lightning Privacy (2020-05-09)</title>
+      <title>Sergei Tikhomirov - Lightning Privacy (2020-05-09)</title>
       <link>https://btctranscripts.com/lightning-hack-day/2020-05-09-sergei-tikhomirov-lightning-privacy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -619,6 +618,22 @@ Video: https://www.youtube.com/watch?v=8lUTbfO94mM
 Slides: https://docs.google.com/presentation/d/1H9EdrhjQ9x3q0qfsei7iFYINVf2lwPyjUKHd3CScy4k/edit#slide=id.g7774542944_0_0
 Paper: https://eprint.iacr.org/2020/303
 Intro Hello everyone. I am Sergei, I am a PhD student at the University of Luxembourg. I am going to present our joint work with Pedro Moreno-Sanchez and Matteo Maffei from TU Wien on certain aspects of the privacy and scalability of the Lightning Network. The full paper can be found here.</description>
+    </item>
+    
+    <item>
+      <title>Socratic Seminar - Coinswap (2020-06-23)</title>
+      <link>https://btctranscripts.com/london-bitcoin-devs/2020-06-23-socratic-seminar-coinswap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/london-bitcoin-devs/2020-06-23-socratic-seminar-coinswap/</guid>
+      <description>Name: Socratic Seminar
+Topic: CoinSwap
+Location: London BitDevs (online)
+Date: June 23rd 2020
+Video: https://www.youtube.com/watch?v=u7l6rP49hIA
+Pastebin of the resources discussed: https://pastebin.com/zbegGmb8
+The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
+Introductions Michael Folkson (MF): This is London BitDevs, this is a Socratic Seminar.</description>
     </item>
     
     <item>

@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://btctranscripts.com/chaincode-labs/chaincode-residency/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Alex Bosworth Building Lightning Applications (2018-10-22)</title>
+      <title>Alex Bosworth - Building Lightning Applications (2018-10-22)</title>
       <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-building-lightning-applications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -22,7 +22,7 @@ Design Philosophy So what is the big idea behind lnd? What are we thinking about
     </item>
     
     <item>
-      <title>Alex Bosworth Channel Management (2018-10-22)</title>
+      <title>Alex Bosworth - Channel Management (2018-10-22)</title>
       <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-channel-management/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -36,7 +36,7 @@ Uptime So basically the big message overall is and I think I’ve said this befo
     </item>
     
     <item>
-      <title>Alex Bosworth Lightning Protocol (2018-10-22)</title>
+      <title>Alex Bosworth - Lightning Protocol (2018-10-22)</title>
       <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-lightning-protocol/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -50,7 +50,7 @@ BOLT 00: Build Apps What I try to do is go through the BOLTs and look at only th
     </item>
     
     <item>
-      <title>Amiti Uttarwar Transaction Rebroadcast (2019-09-09)</title>
+      <title>Amiti Uttarwar - Transaction Rebroadcast (2019-09-09)</title>
       <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-09-09-amiti-uttarwar-transaction-rebroadcast/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -65,7 +65,7 @@ Professional Background I graduated from Carnegie Mellon five years ago and ever
     </item>
     
     <item>
-      <title>Christian Decker C-Lightning API (2018-10-24)</title>
+      <title>Christian Decker - C-Lightning API (2018-10-24)</title>
       <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-24-christian-decker-c-lightning-api/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -79,7 +79,7 @@ Intro Good morning from the last day of presentations. I’m Chris still. Today 
     </item>
     
     <item>
-      <title>Christian Decker Eltoo (2019-06-25)</title>
+      <title>Christian Decker - Eltoo (2019-06-25)</title>
       <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-25-christian-decker-eltoo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -96,7 +96,7 @@ Intro Who has never heard about eltoo? It is my pet project and I am pretty prou
     </item>
     
     <item>
-      <title>Elaine Ou Bootstrapping Lightning Node (2018-10-22)</title>
+      <title>Elaine Ou - Bootstrapping Lightning Node (2018-10-22)</title>
       <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-elaine-ou-bootstrapping-lightning-node/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -110,7 +110,7 @@ Bootstrapping and Maintaining a Lightning Node We’ll start with an overview of
     </item>
     
     <item>
-      <title>Elichai Turkel Schnorr Signatures (2019-08-16)</title>
+      <title>Elichai Turkel - Schnorr Signatures (2019-08-16)</title>
       <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-08-16-elichai-turkel-schnorr-signatures/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -136,13 +136,12 @@ Location: Chaincode Labs 2019 Residency
 Video: https://www.youtube.com/watch?v=StnOVBbIpD8
 Slides: https://residency.chaincode.com/presentations/bitcoin/ethan_heilman_p2p.pdf
 Eclipse attack paper: https://eprint.iacr.org/2015/263.pdf
-Transcript completed by: Adam Jonas
 Bitcoin’s P2P Network Please interrupt me. I&amp;rsquo;m going to go through this stuff a little bit quickly because I hear that you&amp;rsquo;ve already read Eclipse attack paper and you&amp;rsquo;ve already looked at some of the peer to peer stuff.
 Bitcoin uses a peer-to-peer network to announce transactions and blocks.</description>
     </item>
     
     <item>
-      <title>Fabian Jahr Debugging Bitcoin Core (2019-08-22)</title>
+      <title>Fabian Jahr - Debugging Bitcoin Core (2019-08-22)</title>
       <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-08-22-fabian-jahr-debugging/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -250,7 +249,7 @@ Introduction Good morning everyone my name is Chris and I&amp;rsquo;m a bitcoine
     </item>
     
     <item>
-      <title>Pierre Rochard Lightning Excel Plugin (2018-10-26)</title>
+      <title>Pierre Rochard - Lightning Excel Plugin (2018-10-26)</title>
       <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-26-pierre-rochard-lightning-excel-plugin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

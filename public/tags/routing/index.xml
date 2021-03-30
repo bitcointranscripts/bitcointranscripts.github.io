@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://btctranscripts.com/tags/routing/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Alex Bosworth Channel Management (2018-10-22)</title>
+      <title>Alex Bosworth - Channel Management (2018-10-22)</title>
       <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-channel-management/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -32,7 +32,7 @@ Amiko Pay aims to become an implementation of the lightning network. So that pre
     </item>
     
     <item>
-      <title>Bastien Teinturier Trampoline Routing (2019-10-20)</title>
+      <title>Bastien Teinturier - Trampoline Routing (2019-10-20)</title>
       <link>https://btctranscripts.com/lightning-conference/2019/2019-10-20-bastien-teinturier-trampoline-routing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -71,7 +71,7 @@ Lightning We discussed routing and several aspects of routing algorithms in the 
     </item>
     
     <item>
-      <title>Elaine Ou Bootstrapping Lightning Node (2018-10-22)</title>
+      <title>Elaine Ou - Bootstrapping Lightning Node (2018-10-22)</title>
       <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-elaine-ou-bootstrapping-lightning-node/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

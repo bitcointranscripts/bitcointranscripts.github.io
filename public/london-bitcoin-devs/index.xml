@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://btctranscripts.com/london-bitcoin-devs/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Adam Gibson Unfairly Linear Signatures (2018-06-12)</title>
+      <title>Adam Gibson - Unfairly Linear Signatures (2018-06-12)</title>
       <link>https://btctranscripts.com/london-bitcoin-devs/2018-06-12-adam-gibson-unfairly-linear-signatures/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -22,7 +22,7 @@ Intro This is supposed to be a developer meetup but this talk is going to be a l
     </item>
     
     <item>
-      <title>Alex Bosworth Submarine Swaps (2019-07-03)</title>
+      <title>Alex Bosworth - Submarine Swaps (2019-07-03)</title>
       <link>https://btctranscripts.com/london-bitcoin-devs/2019-07-03-alex-bosworth-submarine-swaps/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -55,7 +55,7 @@ Introduction Hey everyone. As you may have guessed I’m Andrew Chow. I’m Engi
     </item>
     
     <item>
-      <title>Andrew Poelstra Miniscript (2020-02-04)</title>
+      <title>Andrew Poelstra - Miniscript (2020-02-04)</title>
       <link>https://btctranscripts.com/london-bitcoin-devs/2020-02-04-andrew-poelstra-miniscript/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -70,7 +70,7 @@ Introduction As Michael mentioned I’ve got like two hours. Hopefully I won’t
     </item>
     
     <item>
-      <title>Gleb Naumenko P2P Erlay (2019-11-13)</title>
+      <title>Gleb Naumenko - Erlay (2019-11-13)</title>
       <link>https://btctranscripts.com/london-bitcoin-devs/2019-11-13-gleb-naumenko-p2p-erlay/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -129,7 +129,7 @@ Intro My presentation today is going to be about Bitcoin full nodes. Everything 
     </item>
     
     <item>
-      <title>Kalle Rosenbaum Grokking Bitcoin (2020-04-29)</title>
+      <title>Kalle Rosenbaum - Grokking Bitcoin (2020-04-29)</title>
       <link>https://btctranscripts.com/london-bitcoin-devs/2020-04-29-kalle-rosenbaum-grokking-bitcoin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -145,7 +145,7 @@ Intro (Michael Folkson) Welcome to this London Bitcoin Devs online. We will be j
     </item>
     
     <item>
-      <title>Kevin Loaec Antoine Poinsot Revault (2020-05-26)</title>
+      <title>Kevin Loaec, Antoine Poinsot - Revault (2020-05-26)</title>
       <link>https://btctranscripts.com/london-bitcoin-devs/2020-05-26-kevin-loaec-antoine-poinsot-revault/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -191,6 +191,22 @@ Discussion of Hopin video conferencing software We tested this a few weeks back 
     </item>
     
     <item>
+      <title>Socratic Seminar - BIP Schnorr (2020-06-16)</title>
+      <link>https://btctranscripts.com/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/</guid>
+      <description>Name: Socratic Seminar
+Topic: BIP Schnorr (BIP 340)
+Location: London BitDevs (online)
+Date: June 16th 2020
+Video: https://www.youtube.com/watch?v=uE3lLsf38O4
+Pastebin of the resources discussed: https://pastebin.com/uyktht33
+August 2020 update: Since this Socratic on BIP Schnorr there has been a proposed change to the BIP revisting the squaredness tiebreaker for the R point.
+The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed.</description>
+    </item>
+    
+    <item>
       <title>Socratic Seminar - BIP Taproot (2020-07-21)</title>
       <link>https://btctranscripts.com/london-bitcoin-devs/2020-07-21-socratic-seminar-bip-taproot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -207,23 +223,7 @@ The conversation has been anonymized by default to protect the identities of the
     </item>
     
     <item>
-      <title>Socratic Seminar Bip Schnorr (2020-06-16)</title>
-      <link>https://btctranscripts.com/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://btctranscripts.com/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/</guid>
-      <description>Name: Socratic Seminar
-Topic: BIP Schnorr (BIP 340)
-Location: London BitDevs (online)
-Date: June 16th 2020
-Video: https://www.youtube.com/watch?v=uE3lLsf38O4
-Pastebin of the resources discussed: https://pastebin.com/uyktht33
-August 2020 update: Since this Socratic on BIP Schnorr there has been a proposed change to the BIP revisting the squaredness tiebreaker for the R point.
-The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed.</description>
-    </item>
-    
-    <item>
-      <title>Socratic Seminar Coinswap (2020-06-23)</title>
+      <title>Socratic Seminar - Coinswap (2020-06-23)</title>
       <link>https://btctranscripts.com/london-bitcoin-devs/2020-06-23-socratic-seminar-coinswap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -236,6 +236,22 @@ Video: https://www.youtube.com/watch?v=u7l6rP49hIA
 Pastebin of the resources discussed: https://pastebin.com/zbegGmb8
 The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
 Introductions Michael Folkson (MF): This is London BitDevs, this is a Socratic Seminar.</description>
+    </item>
+    
+    <item>
+      <title>Socratic Seminar - Signet (2020-08-19)</title>
+      <link>https://btctranscripts.com/london-bitcoin-devs/2020-08-19-socratic-seminar-signet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/london-bitcoin-devs/2020-08-19-socratic-seminar-signet/</guid>
+      <description>Name: Socratic Seminar
+Topic: Signet
+Location: London BitDevs (online)
+Date: August 19th 2020
+Video: https://www.youtube.com/watch?v=b0AiucAuX3E
+Pastebin of the resources discussed: https://pastebin.com/rAcXX9Tn
+The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
+Intro Michael Folkson (MF): This is a Socratic Seminar organized by London BitDevs.</description>
     </item>
     
     <item>
@@ -258,22 +274,6 @@ Intro (Michael Folkson) We are live, London BitDevs Socratic Seminar on Bitcoin 
     </item>
     
     <item>
-      <title>Socratic Seminar Signet (2020-08-19)</title>
-      <link>https://btctranscripts.com/london-bitcoin-devs/2020-08-19-socratic-seminar-signet/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://btctranscripts.com/london-bitcoin-devs/2020-08-19-socratic-seminar-signet/</guid>
-      <description>Name: Socratic Seminar
-Topic: Signet
-Location: London BitDevs (online)
-Date: August 19th 2020
-Video: https://www.youtube.com/watch?v=b0AiucAuX3E
-Pastebin of the resources discussed: https://pastebin.com/rAcXX9Tn
-The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
-Intro Michael Folkson (MF): This is a Socratic Seminar organized by London BitDevs.</description>
-    </item>
-    
-    <item>
       <title>Socratic Seminar Vaults (2020-05-19)</title>
       <link>https://btctranscripts.com/london-bitcoin-devs/2020-05-19-socratic-seminar-vaults/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -291,7 +291,7 @@ Introductions Michael Folkson (MF): This is a London BitDevs Socratic Seminar.</
     </item>
     
     <item>
-      <title>Tim Ruffing Schnorr Multisig (2020-06-17)</title>
+      <title>Tim Ruffing - Schnorr, Multisig (2020-06-17)</title>
       <link>https://btctranscripts.com/london-bitcoin-devs/2020-06-17-tim-ruffing-schnorr-multisig/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

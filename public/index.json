@@ -12,7 +12,7 @@
 {
 	"uri": "/scalingbitcoin/milan-2016/",
 	"title": "Milan (2016)",
-	"content": " Bip151 Peer Encryption   Breaking The Chain   Build Scale Operate   Chainbreak   Client Side Validation   Coin Selection   Collective Signing   Covenants   Day 1 Group Summaries   Day 2 Group Summaries   Fast Difficulty Adjustment   Flare Routing In Lightning   Fungibility Overview   Intro   Joinmarket   Jute Braiding   Lightning   Mimblewimble   On The Security And Performance Of Proof Of Work Blockchains   Onion Routing In Lightning   Schnorr Signatures   Segwit Lessons Learned   Sidechains …"
+	"content": " BIP151 Peer Encryption   Breaking The Chain   Build Scale Operate   Chainbreak   Client Side Validation   Coin Selection   Collective Signing   Covenants   Day 1 Group Summaries   Day 2 Group Summaries   Fast Difficulty Adjustment   Flare Routing In Lightning   Fungibility Overview   Intro   Joinmarket   Jute Braiding   Lightning   Mimblewimble   On The Security And Performance Of Proof Of Work Blockchains   Onion Routing In Lightning   Schnorr Signatures   Segwit Lessons Learned   Sidechains …"
 },
 {
 	"uri": "/scalingbitcoin/stanford-2017/",
@@ -111,12 +111,12 @@
 },
 {
 	"uri": "/what-bitcoin-did-podcast/2019-05-14-adam-back-bryan-bishop-block-reorgs/",
-	"title": "Adam Back Bryan Bishop Block Reorgs (2019-05-14)",
+	"title": "Adam Back, Bryan Bishop - Block Reorgs (2019-05-14)",
 	"content": "Name: Adam Back and Bryan Bishop\nTopic: Bitcoin Block Re-orgs\nLocation: What Bitcoin Did Podcast\nDate: May 14th 2019\nAudio: https://www.whatbitcoindid.com/podcast/bitcoin-block-reorgs-explained-with-adam-back-and-bryan-bishop\nBitcoin Stack Exchange on blockchain rollbacks: https://bitcoin.stackexchange.com/questions/87652/51-attack-apparently-very-easy-refering-to-czs-rollback-btc-chain-how-t\nTranscript completed by: Peter McCormack Edited by: Michael Folkson\nBitcoin Block Re-orgs Peter …"
 },
 {
 	"uri": "/london-bitcoin-devs/2018-06-12-adam-gibson-unfairly-linear-signatures/",
-	"title": "Adam Gibson Unfairly Linear Signatures (2018-06-12)",
+	"title": "Adam Gibson - Unfairly Linear Signatures (2018-06-12)",
 	"content": "Name: Adam Gibson\nTopic: Unfairly Linear Signatures\nLocation: London Bitcoin Devs\nDate: June 12th 2018\nVideo: https://www.youtube.com/watch?v=mLZ7qVwKalE\nSlides: https://joinmarket.me/static/schnorrplus.pdf\nIntro This is supposed to be a developer meetup but this talk is going to be a little more on the theoretical side. The title is “Unfairly Linear Signatures” that is just a joke. It is talking about Schnorr signatures. They are something that could in the near future have a big practical …"
 },
 {
@@ -132,12 +132,12 @@
 {
 	"uri": "/advancing-bitcoin/2019/",
 	"title": "Advancing Bitcoin 2019",
-	"content": " Matt Corallo Rust Lightning (2019-02-07)    "
+	"content": " Matt Corallo - Rust Lightning (2019-02-07)    "
 },
 {
 	"uri": "/advancing-bitcoin/2020/",
 	"title": "Advancing Bitcoin 2020",
-	"content": " Andrew Chow Descriptor Wallets (2020-02-06)   Andrew Poelstra Miniscript (2020-02-07)   Andrew Poelstra Miniscript Intro (2020-02-06)   Antoine Riard Taproot Lightning (2020-02-06)   Fabian Jahr Debugging Workshop (2020-02-07)   Kalle Alm Signet Integration (2020-02-06)   Kalle Alm Signet Workshop (2020-02-07)    "
+	"content": " Andrew Chow - Descriptor Wallets (2020-02-06)   Andrew Poelstra - Miniscript (2020-02-07)   Andrew Poelstra - Miniscript Intro (2020-02-06)   Antoine Riard - Taproot Lightning (2020-02-06)   Fabian Jahr - Debugging Workshop (2020-02-07)   Kalle Alm - Signet Integration (2020-02-06)   Kalle Alm Signet Workshop (2020-02-07)    "
 },
 {
 	"uri": "/stephan-livera-podcast/2019-12-27-aj-towns-schnorr-taproot/",
@@ -150,28 +150,28 @@
 	"content": "Name: Alekos Filini\nTopic: Magical Bitcoin\nLocation: LA BitDevs (online)\nDate: May 21st 2020\nMagical Bitcoin site: https://magicalbitcoin.org/\nMagical Bitcoin wallet GitHub: https://github.com/MagicalBitcoin/magical-bitcoin-wallet\nsipa’s Miniscript site: http://bitcoin.sipa.be/miniscript/\nAndrew Poelstra Miniscript presentation at London Bitcoin Devs: https://diyhpl.us/wiki/transcripts/london-bitcoin-devs/2020-02-04-andrew-poelstra-miniscript/\nAndrew Poelstra Miniscript workshop at Advancing …"
 },
 {
+	"uri": "/boltathon/2019-04-06-alex-bosworth-major-limitations/",
+	"title": "Alex Bosworth -  Major Limitations of Lightning (2019-04-06)",
+	"content": "Alex Bosworth\nMajor Limitations of the Lightning Network\nVideo: https://www.youtube.com/watch?v=ctx-oAIhhSY\u0026amp;amp;list=PLC_AgDAr0m6QhwqPDrqMfjX64oHGmwDMk\u0026amp;amp;index=4\nSlides: https://drive.google.com/open?id=1UIHfYdnAWGMvsLhljTgcneCxQAHcWjxg\nhttps://twitter.com/kanzure/status/1116824776952229890\nIntro So I had a Twitter poll to decide what to talk about. People seem pretty interested in the limitations. Where is the line of what Lightning can do and what Lightning can’t do. That’s what I want to …"
+},
+{
 	"uri": "/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-building-lightning-applications/",
-	"title": "Alex Bosworth Building Lightning Applications (2018-10-22)",
+	"title": "Alex Bosworth - Building Lightning Applications (2018-10-22)",
 	"content": "Alex Bosworth\nBuilding Lightning Applications\nVideo: https://www.youtube.com/watch?v=JhRIWc9zPjA\nSlides: https://lightningresidency.com/assets/presentations/Bosworth_Building_Applications.pdf\nhttps://twitter.com/kanzure/status/1116327230135836673\nIntro Today I’m going to talk about building on lnd from the perspective of we want to have developers building on lnd. Developers, developers, developers. I just have so many slides today that let’s leave questions to the end if I have any time because …"
 },
 {
 	"uri": "/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-channel-management/",
-	"title": "Alex Bosworth Channel Management (2018-10-22)",
+	"title": "Alex Bosworth - Channel Management (2018-10-22)",
 	"content": "Alex Bosworth\nChannel Management\nVideo: https://www.youtube.com/watch?v=HlPIB6jt6ww\nSlides: https://lightningresidency.com/assets/presentations/Bosworth_Channel_Management.pdf\nIntro Today I’m going to talk about something a little bit different to building apps. I’m going to talk about becoming a great router. Managing your node so that your node can be routing payments and be a good citizen if you choose to have public channels.\nUptime So basically the big message overall is and I think I’ve …"
 },
 {
 	"uri": "/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-lightning-protocol/",
-	"title": "Alex Bosworth Lightning Protocol (2018-10-22)",
+	"title": "Alex Bosworth - Lightning Protocol (2018-10-22)",
 	"content": "Alex Bosworth\nThe Lightning Protocol, an Application Design Perspective\nVideo: https://www.youtube.com/watch?v=1R5DNUcCYRg\nSlides: https://lightningresidency.com/assets/presentations/Bosworth_The_Lightning_Protocol.pdf\nIntro I’m talking about the protocol design and also going through the BOLTs. What I’m going to talk about is also about the BOLTs. The BOLTs are like the spec for Lightning and there’s a bunch of them.\nBOLT 00: Build Apps What I try to do is go through the BOLTs and look at only …"
 },
 {
-	"uri": "/boltathon/2019-04-06-alex-bosworth-major-limitations/",
-	"title": "Alex Bosworth Major Limitations (2019-04-06)",
-	"content": "Alex Bosworth\nMajor Limitations of the Lightning Network\nVideo: https://www.youtube.com/watch?v=ctx-oAIhhSY\u0026amp;amp;list=PLC_AgDAr0m6QhwqPDrqMfjX64oHGmwDMk\u0026amp;amp;index=4\nSlides: https://drive.google.com/open?id=1UIHfYdnAWGMvsLhljTgcneCxQAHcWjxg\nhttps://twitter.com/kanzure/status/1116824776952229890\nIntro So I had a Twitter poll to decide what to talk about. People seem pretty interested in the limitations. Where is the line of what Lightning can do and what Lightning can’t do. That’s what I want to …"
-},
-{
 	"uri": "/london-bitcoin-devs/2019-07-03-alex-bosworth-submarine-swaps/",
-	"title": "Alex Bosworth Submarine Swaps (2019-07-03)",
+	"title": "Alex Bosworth - Submarine Swaps (2019-07-03)",
 	"content": "Alex Bosworth\nLondon Bitcoin Devs\nSubmarine Swaps and Loop\nVideo: https://www.youtube.com/watch?v=eB_HkYb7Y2M\nSlides: https://www.dropbox.com/s/cyh97jv81hrz8tf/alex-bosworth-submarine-swaps-loop.pdf?dl=0\nhttps://twitter.com/kanzure/status/1151158631527849985\nIntro Thanks for inviting me. I’m going to talk about submarine swaps and Lightning Loop which is something that I work on at Lightning Labs.\nBitcoin - One Currency, Multiple Settlement Networks Something that is pretty important to …"
 },
 {
@@ -196,12 +196,12 @@
 },
 {
 	"uri": "/la-bitdevs/2020-04-16-amiti-uttarwar-attacking-bitcoin-core/",
-	"title": "Amiti Uttarwar Attacking Bitcoin Core (2020-04-16)",
+	"title": "Amiti Uttarwar - Attacking Bitcoin Core (2020-04-16)",
 	"content": "Name: Amiti Uttarwar\nTopic: Attacking Bitcoin Core\nLocation: BitDevs LA\nDate: April 16th 2020\nVideo: https://www.youtube.com/watch?v=8TaY730YlMg\nIntro I’m going to talk to you today about attacking Bitcoin Core.\nBitcoin To start with the fundamentals. As we all know Bitcoin is a money and it is different to our existing centralized solution of money because instead we have nodes that are running all around the world.\nConsensus Fundamentally what is required for this to work is the idea of …"
 },
 {
 	"uri": "/chaincode-labs/chaincode-residency/2019-09-09-amiti-uttarwar-transaction-rebroadcast/",
-	"title": "Amiti Uttarwar Transaction Rebroadcast (2019-09-09)",
+	"title": "Amiti Uttarwar - Transaction Rebroadcast (2019-09-09)",
 	"content": "Amiti Uttarwar\nTransaction Rebroadcast\nVideo: https://www.youtube.com/watch?v=v4TXfwwz_VI\nhttps://twitter.com/kanzure/status/1199710296199385088\nhttp://diyhpl.us/wiki/transcripts/scalingbitcoin/tel-aviv-2019/edgedevplusplus/rebroadcasting/\nIntroduction Hello. Thank you for joining me today. My name is Amiti and I’d like to tell you a bit about my Bitcoin journey.\nProfessional Background I graduated from Carnegie Mellon five years ago and ever since I’ve worked at a few different startups in San …"
 },
 {
@@ -218,6 +218,11 @@
 	"uri": "/andreas-antonopoulos/",
 	"title": "Andreas Antonopoulos",
 	"content": " Andreas Antonopolous Canada Senate Bitcoin (2014-10-08)   Andreas Antonopoulos - Hardware Wallet Security (2019-02-01)   Andreas Antonopoulos - Initial Blockchain Download (2018-10-23)   Andreas Antonopoulos - Schnorr Signatures (2018-10-07)   Andreas Antonopoulos - Seed Splitting (2020-04-08)    "
+},
+{
+	"uri": "/sf-bitcoin-meetup/2017-04-03-andreas-antonopoulos-bitcoin-scripting/",
+	"title": "Andreas Antonopoulos - Bitcoin Scripting (2017-04-03)",
+	"content": "Name: Andreas Antonopoulos\nTopic: Advanced Bitcoin Scripting\nLocation: SF Bitcoin Devs\nDate: April 3rd 2017\nVideo: https://www.youtube.com/watch?v=yU3Sr07Qnxg\nMastering Bitcoin on GitHub: https://github.com/bitcoinbook/bitcoinbook\nIntro Today’s talk is different from some of the other talks I’ve done so bear with me. We are going to do this slowly in a very casual manner. This is not one of my usual talks where I am going to tell you about big picture vision and stuff like that. What I want to …"
 },
 {
 	"uri": "/andreas-antonopoulos/2019-02-01-andreas-antonopoulos-hardware-wallet-security/",
@@ -240,19 +245,14 @@
 	"content": "Name: Andreas Antonopoulos\nTopic: Why is seed splitting a bad idea?\nLocation: Andreas Antonopoulos YouTube channel\nDate: April 8th 2020\nVideo: https://www.youtube.com/watch?v=p5nSibpfHYE\nWhy is seed splitting a bad idea? This is something that is being discussed all the time especially on newbie forums. It really needs to be careful very carefully. A friend had the idea to achieve 2 out of 3 protection from my wallet seed by storing the seed in the following way:\nLocation 1: seed words 1-8 and …"
 },
 {
-	"uri": "/sf-bitcoin-meetup/2017-04-03-andreas-antonopoulos-bitcoin-scripting/",
-	"title": "Andreas Antonopoulos Bitcoin Scripting (2017-04-03)",
-	"content": "Name: Andreas Antonopoulos\nTopic: Advanced Bitcoin Scripting\nLocation: SF Bitcoin Devs\nDate: April 3rd 2017\nVideo: https://www.youtube.com/watch?v=yU3Sr07Qnxg\nMastering Bitcoin on GitHub: https://github.com/bitcoinbook/bitcoinbook\nIntro Today’s talk is different from some of the other talks I’ve done so bear with me. We are going to do this slowly in a very casual manner. This is not one of my usual talks where I am going to tell you about big picture vision and stuff like that. What I want to …"
+	"uri": "/advancing-bitcoin/2020/2020-02-06-andrew-chow-descriptor-wallets/",
+	"title": "Andrew Chow - Descriptor Wallets (2020-02-06)",
+	"content": "Name: Andrew Chow\nTopic: Rethinking Wallet Architecture: Native Descriptor Wallets\nLocation: Advancing Bitcoin\nDate: February 6th 2020\nVideo: https://www.youtube.com/watch?v=xC25NzIjzog\nSlides: https://www.dropbox.com/s/142b4o4lrbkvqnh/Rethinking%20Wallet%20Architecture_%20Native%20Descriptor%20Wallets.pptx\nSupport for Output Descriptors in Bitcoin Core: https://github.com/bitcoin/bitcoin/blob/master/doc/descriptors.md\nBitcoin Optech on Output script descriptors: …"
 },
 {
 	"uri": "/misc/2020-07-10-what-am-i-working-on/",
 	"title": "Andrew Chow - What Am I Working On (2020-07-10)",
 	"content": "Name: Andrew Chow\nTopic: What am I working on?\nLocation: Reddit (r/bitcoin)\nDate: July 10th 2020\nReddit link: https://www.reddit.com/r/Bitcoin/comments/ho0t1a/what_are_bitcoin_developers_currently_working_on/fxhwqli/?context=3\nWhat am I working on? I\u0026amp;rsquo;ve been working on essentially rewriting the Bitcoin Core wallet, one piece at a time. Now when I say \u0026amp;ldquo;the wallet\u0026amp;rdquo;, a lot of people think of the GUI. That\u0026amp;rsquo;s not what I\u0026amp;rsquo;ve been working on. Rather I\u0026amp;rsquo;ve been changing …"
-},
-{
-	"uri": "/advancing-bitcoin/2020/2020-02-06-andrew-chow-descriptor-wallets/",
-	"title": "Andrew Chow Descriptor Wallets (2020-02-06)",
-	"content": "Name: Andrew Chow\nTopic: Rethinking Wallet Architecture: Native Descriptor Wallets\nLocation: Advancing Bitcoin\nDate: February 6th 2020\nVideo: https://www.youtube.com/watch?v=xC25NzIjzog\nSlides: https://www.dropbox.com/s/142b4o4lrbkvqnh/Rethinking%20Wallet%20Architecture_%20Native%20Descriptor%20Wallets.pptx\nSupport for Output Descriptors in Bitcoin Core: https://github.com/bitcoin/bitcoin/blob/master/doc/descriptors.md\nBitcoin Optech on Output script descriptors: …"
 },
 {
 	"uri": "/london-bitcoin-devs/2020-02-05-andrew-chow-hardware-wallets/",
@@ -271,27 +271,27 @@
 },
 {
 	"uri": "/noded-podcast/2019-05-11-andrew-poelstra-miniscript/",
-	"title": "Andrew Poelstra Miniscript (2019-05-11)",
+	"title": "Andrew Poelstra - Miniscript (2019-05-11)",
 	"content": "Noded podcast May 10th 2019\nAudio: https://soundcloud.com/noded-bitcoin-podcast/noded-0490-with-andrew-poelstra\nhttps://twitter.com/kanzure/status/1135217746059415552\nIntros Pierre: Welcome to the Noded Bitcoin podcast. I’m your co-host Pierre Rochard with my other co-host Michael Goldstein aka bitstein. How’s it going Michael?\nbitstein: It’s going well, I just hope they don’t ban Bitcoin\nPierre: Any day now. We have a very special guest on today, Andrew Poelstra from Blockstream. Andrew, how …"
 },
 {
 	"uri": "/london-bitcoin-devs/2020-02-04-andrew-poelstra-miniscript/",
-	"title": "Andrew Poelstra Miniscript (2020-02-04)",
+	"title": "Andrew Poelstra - Miniscript (2020-02-04)",
 	"content": "Andrew Poelstra\nLondon Bitcoin Devs\nBitcoin Script to Miniscript\nhttps://twitter.com/kanzure/status/1237071807699718146\nVideo: https://www.youtube.com/watch?v=_v1lECxNDiM\nSlides: https://www.dropbox.com/s/au6u6rczljdc86y/Andrew%20Poelstra%20-%20Miniscript.pdf?dl=0\nIntroduction As Michael mentioned I’ve got like two hours. Hopefully I won’t get close to that but you guys are welcome to interrupt and ask questions. I’ve given a couple of talks about Miniscript usually in like 20 or 30 minute time …"
 },
 {
 	"uri": "/advancing-bitcoin/2020/2020-02-07-andrew-poelstra-miniscript/",
-	"title": "Andrew Poelstra Miniscript (2020-02-07)",
+	"title": "Andrew Poelstra - Miniscript (2020-02-07)",
 	"content": "Andrew Poelstra\nAdvancing Bitcoin workshop\nMiniscript\nWebsite: https://bitcoin.sipa.be/miniscript/\nWorkshop repo: https://github.com/apoelstra/miniscript-workshop\nTranscript of London Bitcoin Devs Miniscript presentation: https://diyhpl.us/wiki/transcripts/london-bitcoin-devs/2020-02-04-andrew-poelstra-miniscript/\nPart 1 So what we’re going to do, there is a couple of things. We are going to go through the Miniscript website and learn about how Miniscript is constructed, how the type system …"
 },
 {
 	"uri": "/advancing-bitcoin/2020/2020-02-06-andrew-poelstra-miniscript-intro/",
-	"title": "Andrew Poelstra Miniscript Intro (2020-02-06)",
+	"title": "Andrew Poelstra - Miniscript Intro (2020-02-06)",
 	"content": "Name: Andrew Poelstra\nTopic: Introduction to Miniscript\nLocation: Advancing Bitcoin\nDate: February 6th 2020\nVideo: https://www.youtube.com/watch?v=eTUuwASdUBE\nSlides: https://www.dropbox.com/s/vgh5vaooqqbgg1v/andrew-poelstra.pdf\nIntro Hi everyone. Some of you were at my Bitcoin dev presentation about Miniscript a couple of days where I managed to spend over 2 hours giving a presentation about this. I think I got this one down to 20 minutes but no promises. I will keep an eye on the clock. …"
 },
 {
 	"uri": "/mit-bitcoin-expo/mit-bitcoin-expo-2020/2020-03-07-andrew-poelstra-taproot/",
-	"title": "Andrew Poelstra Taproot (2020-03-07)",
+	"title": "Andrew Poelstra - Taproot (2020-03-07)",
 	"content": "Name: Andrew Poelstra\nTopic: Taproot - Who, How, Why\nLocation: MIT Bitcoin Expo 2020\nDate: March 7th 2020\nVideo: https://www.youtube.com/watch?v=1VtQBVauvhw\nBIP 341: https://github.com/bitcoin/bips/blob/master/bip-0341.mediawiki\nIntro (Hugo Uvegi) I am excited to introduce our first speaker, Andrew Poelstra. He is coming to us from Blockstream where he is Director of Research. He is going to be talking about Taproot which I think is on everybody’s mind these days.\nIntro (Andrew Poelstra) Thanks …"
 },
 {
@@ -311,12 +311,12 @@
 },
 {
 	"uri": "/lightning-conference/2019/2019-10-20-antoine-riard-rust-lightning/",
-	"title": "Antoine Riard Rust Lightning (2019-10-20)",
+	"title": "Antoine Riard - Rust Lightning (2019-10-20)",
 	"content": "Antoine Riard\nDeploying rust-lightning in the wild\nThe Lightning Conference Day 2 (Stage 2)\nVideo: https://www.youtube.com/watch?v=q6a1On5pirk\nSlides: https://github.com/ariard/talk-slides/blob/master/deploying-rust-lightning-in-the-wild.pdf\nhttps://twitter.com/kanzure/status/1220722130897252352\nIntro Hi everyone, super happy to be here at the Lightning Conference. I’ve had an awesome weekend. Today I will talk on rust-lightning a project I’ve been contributing to for a year and a half. To get …"
 },
 {
 	"uri": "/advancing-bitcoin/2020/2020-02-06-antoine-riard-taproot-lightning/",
-	"title": "Antoine Riard Taproot Lightning (2020-02-06)",
+	"title": "Antoine Riard - Taproot Lightning (2020-02-06)",
 	"content": "Name: Antoine Riard\nTopic: A Schnorr-Taproot’ed Lightning\nLocation: Advancing Bitcoin\nDate: February 6th 2020\nVideo (paid access): https://www.advancingbitcoin.com/video/a-schnorr-taprooted-lightning,11/\nSlides: https://www.dropbox.com/s/9vs54e9bqf317u0/Schnorr-Taproot%27ed-LN.pdf\nIntro Today Schnorr and Taproot for Lightning, it is a really exciting topic.\nLightning architecture The Lightning architecture for those who are not familiar with it. You have the blockchain as the underlying layer. …"
 },
 {
@@ -421,12 +421,12 @@
 },
 {
 	"uri": "/cppcon/2020/2020-10-09-barnabas-bagyi-fuzzing-class-interfaces/",
-	"title": "Barnabas Bagyi Fuzzing Class Interfaces (2020-10-09)",
+	"title": "Barnabas Bagyi - Fuzzing Class Interfaces (2020-10-09)",
 	"content": "Name: Barnabás Bágyi\nTopic: Fuzzing Class Interfaces for Generating and Running Tests with libFuzzer\nLocation: CppCon 2020\nDate: October 9th 2020\nVideo: https://www.youtube.com/watch?v=TtPXYPJ5_eE\nSlides: https://github.com/CppCon/CppCon2020/blob/main/Presentations/fuzzing_class_interfaces_for_generating_and_running_tests_with_libfuzzer/fuzzing_class_interfaces_for_generating_and_running_tests_with_libfuzzer__barnab%C3%A1s_b%C3%A1gyi__cppcon_2020.pdf\nLibFuzzer: …"
 },
 {
 	"uri": "/lightning-conference/2019/2019-10-20-bastien-teinturier-trampoline-routing/",
-	"title": "Bastien Teinturier Trampoline Routing (2019-10-20)",
+	"title": "Bastien Teinturier - Trampoline Routing (2019-10-20)",
 	"content": "Bastien Teinturier\nTrampoline Routing\nThe Lightning Conference Day 2 (Stage 2)\nVideo: https://www.youtube.com/watch?v=1E-KhLA6Gck\nSlides: https://docs.google.com/presentation/d/1bFu33_YFsRVUSEN-Vff5-wrxMabOFl2ck7ZTiVsp5ds/\nhttps://twitter.com/kanzure/status/1221100865328685057\nIntro We will start with gory technical details about routing and pathfinding. I hope I will be able to keep you awake for the next twenty minutes. I’m working for ACINQ on the Lightning Network. If you don’t know ACINQ we …"
 },
 {
@@ -471,7 +471,7 @@
 },
 {
 	"uri": "/scalingbitcoin/milan-2016/bip151-peer-encryption/",
-	"title": "Bip151 Peer Encryption",
+	"title": "BIP151 Peer Encryption",
 	"content": "BIP151: Peer-to-peer encryption and authentication from the perspective of end-users\nJonas Schnelli\nhttps://twitter.com/kanzure/status/785046960705339392\nGood morning. Thanks for having me here. I would like to talk about the end-user perspective of p2p authentication. I would like to start with a little example of how difficult it is to be aware of end-user issues that they are facing at the front. Who is using a thin client? An \u0026amp;ldquo;SPV\u0026amp;rdquo; wallet on your smartphone? Yeah. Who of you are …"
 },
 {
@@ -572,7 +572,7 @@
 {
 	"uri": "/bitcoin-magazine/",
 	"title": "Bitcoin Magazine",
-	"content": " Eric Lombrozo Luke Dashjr Taproot Activation (2020-08-03)   Taproot activation and LOT=true vs LOT=false    "
+	"content": " Eric Lombrozo, Luke Dashjr - Taproot Activation (2020-08-03)   Taproot activation and LOT=true vs LOT=false (2021-02-26)   Taproot Activation with Speedy Trial (2021-03-12)    "
 },
 {
 	"uri": "/baltic-honeybadger/2018/bitcoin-maximalism-dissected/",
@@ -707,12 +707,12 @@
 {
 	"uri": "/blockchain-protocol-analysis-security-engineering/2017/",
 	"title": "Blockchain Protocol Analysis Security Engineering 2017",
-	"content": " Dan Robinson Ivy (2017-01-26)   Jeremy Rubin Covenants (2017-01-26)   Lightning Network Security Analysis   Russell Oconnor Posts Theorem (2017-01-26)   Scalable Smart Contracts Via Proofs And Single Use Seals    "
+	"content": " Dan Robinson - Ivy (2017-01-26)   Jeremy Rubin - Covenants (2017-01-26)   Lightning Network Security Analysis   Russell Oconnor - Posts Theorem (2017-01-26)   Scalable Smart Contracts Via Proofs And Single Use Seals    "
 },
 {
 	"uri": "/blockchain-protocol-analysis-security-engineering/2018/",
 	"title": "Blockchain Protocol Analysis Security Engineering 2018",
-	"content": " Bulletproofs   Christopher Allen Smart Signatures (2018-01-24)   Hardening Lightning   Proofs Of Space   Russell Oconnor Simplicity (2018-01-25)   Schnorr Signatures For Bitcoin - Challenges and Opportunities    "
+	"content": " Bulletproofs   Christopher Allen - Smart Signatures (2018-01-24)   Hardening Lightning   Proofs Of Space   Russell Oconnor - Simplicity (2018-01-25)   Schnorr Signatures For Bitcoin - Challenges and Opportunities    "
 },
 {
 	"uri": "/scalingbitcoin/montreal-2015/blockchain-testbed/",
@@ -747,7 +747,7 @@
 {
 	"uri": "/boltathon/",
 	"title": "Boltathon",
-	"content": " Alex Bosworth Major Limitations (2019-04-06)   Conner Fromknecht Watchtowers (2019-04-06)   Rusty Russell Json Interface (2019-04-06)    "
+	"content": " Alex Bosworth - Major Limitations of Lightning (2019-04-06)   Conner Fromknecht - Watchtowers (2019-04-06)   Rusty Russell - JSON Interface (2019-04-06)    "
 },
 {
 	"uri": "/stanford-blockchain-conference/2020/boomerang/",
@@ -787,7 +787,7 @@
 {
 	"uri": "/breaking-bitcoin/2019/",
 	"title": "Breaking Bitcoin 2019",
-	"content": " Bitcoin Build System   Breaking Bitcoin Privacy   Breaking Wasabi   Defense Of Bitcoin   Extracting Seeds From Hardware Wallets   Fud Perceived Vs Real Bitcoin Risks   Future Of Hardware Wallets   Joost Jager Hodl Invoices (2019-06-13)   Lightning Network Routing Security   Lightning Network Security Panel   Lightning Network Topological Analysis   Mempool Analysis Simulation   Neutrino   Opening Remarks   P2P Encryption   Secure Protocols Bip Taproot   Security Attacks Decentralized Mining …"
+	"content": " Bitcoin Build System   Breaking Bitcoin Privacy   Breaking Wasabi   Defense Of Bitcoin   Extracting Seeds From Hardware Wallets   Fud Perceived Vs Real Bitcoin Risks   Future Of Hardware Wallets   Joost Jager - HODL Invoices (2019-06-13)   Lightning Network Routing Security   Lightning Network Security Panel   Lightning Network Topological Analysis   Mempool Analysis Simulation   Neutrino   Opening Remarks   P2P Encryption   Secure Protocols Bip Taproot   Security Attacks Decentralized Mining …"
 },
 {
 	"uri": "/breaking-bitcoin/2019/breaking-bitcoin-privacy/",
@@ -917,12 +917,12 @@
 {
 	"uri": "/chaincode-labs/chaincode-podcast/",
 	"title": "Chaincode Podcast",
-	"content": " Carl Dong - Reproducible Builds (2020-11-30)   Jeremy Rubin CTV (2020-02-11)   Matt Corallo Compact Blocks Fibre (2020-03-12)   Pieter Wuille (2020-01-28)    "
+	"content": " Carl Dong - Reproducible Builds (2020-11-30)   Jeremy Rubin - CTV (2020-02-11)   Matt Corallo Compact Blocks Fibre (2020-03-12)   Pieter Wuille (2020-01-28)    "
 },
 {
 	"uri": "/chaincode-labs/chaincode-residency/",
 	"title": "Chaincode Residency",
-	"content": " Alex Bosworth Building Lightning Applications (2018-10-22)   Alex Bosworth Channel Management (2018-10-22)   Alex Bosworth Lightning Protocol (2018-10-22)   Amiti Uttarwar Transaction Rebroadcast (2019-09-09)   Christian Decker C-Lightning API (2018-10-24)   Christian Decker Eltoo (2019-06-25)   Elaine Ou Bootstrapping Lightning Node (2018-10-22)   Elichai Turkel Schnorr Signatures (2019-08-16)   Ethan Heilman Network Partitioning Attacks (2019-06-12)   Fabian Jahr Debugging Bitcoin Core …"
+	"content": " Alex Bosworth - Building Lightning Applications (2018-10-22)   Alex Bosworth - Channel Management (2018-10-22)   Alex Bosworth - Lightning Protocol (2018-10-22)   Amiti Uttarwar - Transaction Rebroadcast (2019-09-09)   Christian Decker - C-Lightning API (2018-10-24)   Christian Decker - Eltoo (2019-06-25)   Elaine Ou - Bootstrapping Lightning Node (2018-10-22)   Elichai Turkel - Schnorr Signatures (2019-08-16)   Ethan Heilman Network Partitioning Attacks (2019-06-12)   Fabian Jahr - Debugging …"
 },
 {
 	"uri": "/scalingbitcoin/stanford-2017/changes-without-unanimous-consent/",
@@ -941,8 +941,13 @@
 },
 {
 	"uri": "/lightning-conference/2019/2019-10-19-chris-stewart-private-key-management/",
-	"title": "Chris Stewart Private Key Management (2019-10-19)",
+	"title": "Chris Stewart - Private Key Management (2019-10-19)",
 	"content": "Chris Stewart\nLightning 101 for Exchanges: Private Key Management\nThe Lightning Conference Day 1 (Stage 2)\nhttps://twitter.com/kanzure/status/1212894908375322625\nVideo: https://www.youtube.com/watch?v=14GKUfxfPMU\u0026amp;amp;feature=youtu.be\u0026amp;amp;t=1201\nSlides: https://docs.google.com/presentation/d/1_-FF0U2AXuhBxEzW9J_IrYxvRi1SS2MYwJl0QeIcqbI/edit#slide=id.p\nIntro Hi everybody. My name is Chris Stewart. I’m the Founder of a company called Suredbits. We monetize APIs with Lightning but we strongly …"
+},
+{
+	"uri": "/chaincode-labs/chaincode-residency/2018-10-24-christian-decker-c-lightning-api/",
+	"title": "Christian Decker - C-Lightning API (2018-10-24)",
+	"content": "Christian Decker\nDeveloping on c-lightning\nLocation: Chaincode Labs Lightning Residency 2018\nVideo: https://www.youtube.com/watch?v=l8OLD7or0DA\nhttps://twitter.com/kanzure/status/1232313790311436290\nIntro Good morning from the last day of presentations. I’m Chris still. Today I will be talking to you about c-lightning, how to develop on it, how to extend it, adapt it to your needs and how to customize it so it fits into whatever you are trying to do. Not whatever we thought you might want to do. …"
 },
 {
 	"uri": "/blockstream-webinars/2019-09-04-christian-decker-c-lightning-questions/",
@@ -950,28 +955,23 @@
 	"content": "Christian Decker\nc-lightning Q and A session\nVideo: https://www.youtube.com/watch?v=r7Un8FZYlS4\u0026amp;amp;list=PLseHpvCI1BjAfUx8zjJXadlBh_eKV9zJi\u0026amp;amp;index=8\nhttps://twitter.com/kanzure/status/1230527903969841152\nIntroduction Hello everyone. I’m Christian. I’m a software developer at Blockstream and I work on Lightning, both the specification and the implementation. Today we are going to have a shortish webinar on how to get started with Lightning.\nQ and A Q - Is it possible to run c-lightning and lnd …"
 },
 {
+	"uri": "/stephan-livera-podcast/2019-03-14-christian-decker-channel-factories/",
+	"title": "Christian Decker - Channel Factories (2019-03-14)",
+	"content": "Name: Christian Decker\nTopic: Lightning Channel Factories\nLocation: Stephan Livera Podcast\nDate: March 14th 2019\nAudio: https://stephanlivera.com/episode/59/\nLightning topology limitation Stephan: Christian, welcome to the show. I’m a big fan of your work.\nChristian: Thank you so much for having me Stephan. I am a long time listener and I am happy to be joining you today.\nStephan: There has been a lot of chatter in the Bitcoin community on what might happen in the future. One of the ideas you …"
+},
+{
+	"uri": "/chaincode-labs/chaincode-residency/2019-06-25-christian-decker-eltoo/",
+	"title": "Christian Decker - Eltoo (2019-06-25)",
+	"content": "Name: Christian Decker\nTopic: Eltoo: The (Far) Future of Lightning\nLocation: Chaincode Labs\nDate: June 25th 2019\nVideo: https://www.youtube.com/watch?v=3ZjymCOmn_A\nSlides: https://residency.chaincode.com/presentations/lightning/Eltoo.pdf\nEltoo white paper: https://blockstream.com/eltoo.pdf\nBitcoin Magazine article: https://bitcoinmagazine.com/articles/noinput-class-bitcoin-soft-fork-simplify-lightning\nIntro Who has never heard about eltoo? It is my pet project and I am pretty proud of it. I will …"
+},
+{
 	"uri": "/lightning-hack-day/2020-05-03-christian-decker-lightning-backups/",
 	"title": "Christian Decker - Lightning Backups (2020-05-03)",
 	"content": "Name: Christian Decker\nTopic: Back the f*** up\nLocation: Potzblitz (online)\nDate: May 3rd 2020\nVideo: https://www.youtube.com/watch?v=kGQF3wtzr04\nIntro (Jeff Gallas) We’re live. Welcome to the fourth episode of Potzblitz, the weekly Lightning talk. Today we have a very special guest, Christian Decker of Blockstream. They also call him Dr Bitcoin. Our co-host today is Michael Folkson from the London BitDevs meetup. He is doing a bunch of Socratic Seminars and has a deep technical knowledge. He …"
 },
 {
-	"uri": "/chaincode-labs/chaincode-residency/2018-10-24-christian-decker-c-lightning-api/",
-	"title": "Christian Decker C-Lightning API (2018-10-24)",
-	"content": "Christian Decker\nDeveloping on c-lightning\nLocation: Chaincode Labs Lightning Residency 2018\nVideo: https://www.youtube.com/watch?v=l8OLD7or0DA\nhttps://twitter.com/kanzure/status/1232313790311436290\nIntro Good morning from the last day of presentations. I’m Chris still. Today I will be talking to you about c-lightning, how to develop on it, how to extend it, adapt it to your needs and how to customize it so it fits into whatever you are trying to do. Not whatever we thought you might want to do. …"
-},
-{
-	"uri": "/stephan-livera-podcast/2019-03-14-christian-decker-channel-factories/",
-	"title": "Christian Decker Channel Factories (2019-03-14)",
-	"content": "Name: Christian Decker\nTopic: Lightning Channel Factories\nLocation: Stephan Livera Podcast\nDate: March 14th 2019\nAudio: https://stephanlivera.com/episode/59/\nLightning topology limitation Stephan: Christian, welcome to the show. I’m a big fan of your work.\nChristian: Thank you so much for having me Stephan. I am a long time listener and I am happy to be joining you today.\nStephan: There has been a lot of chatter in the Bitcoin community on what might happen in the future. One of the ideas you …"
-},
-{
-	"uri": "/chaincode-labs/chaincode-residency/2019-06-25-christian-decker-eltoo/",
-	"title": "Christian Decker Eltoo (2019-06-25)",
-	"content": "Name: Christian Decker\nTopic: Eltoo: The (Far) Future of Lightning\nLocation: Chaincode Labs\nDate: June 25th 2019\nVideo: https://www.youtube.com/watch?v=3ZjymCOmn_A\nSlides: https://residency.chaincode.com/presentations/lightning/Eltoo.pdf\nEltoo white paper: https://blockstream.com/eltoo.pdf\nBitcoin Magazine article: https://bitcoinmagazine.com/articles/noinput-class-bitcoin-soft-fork-simplify-lightning\nIntro Who has never heard about eltoo? It is my pet project and I am pretty proud of it. I will …"
-},
-{
 	"uri": "/stephan-livera-podcast/2020-08-13-christian-decker-lightning-topics/",
-	"title": "Christian Decker Lightning Topics (2020-08-13)",
+	"title": "Christian Decker - Lightning Topics (2020-08-13)",
 	"content": "Name: Christian Decker\nTopic: ANYPREVOUT, MPP, Mitigating Lightning Attacks\nLocation: Stephan Livera Podcast\nDate: August 13th 2020\nAudio: https://stephanlivera.com/episode/200/\nTranscript completed by: Stephan Livera Edited by: Michael Folkson\nLatest ANYPREVOUT update ANYPREVOUT BIP (BIP 118): https://github.com/ajtowns/bips/blob/bip-anyprevout/bip-0118.mediawiki\nStephan Livera (SL): Christian welcome back to the show.\nChristian Decker (CD): Hey Stephan, thanks for having me.\nSL: I wanted to …"
 },
 {
@@ -981,7 +981,7 @@
 },
 {
 	"uri": "/blockchain-protocol-analysis-security-engineering/2018/2018-01-24-christopher-allen-smart-signatures/",
-	"title": "Christopher Allen Smart Signatures (2018-01-24)",
+	"title": "Christopher Allen - Smart Signatures (2018-01-24)",
 	"content": "Name: Christopher Allen\nTopic: Smart Signatures: Experiments in Authorization\nLocation: BPASE 2018, Stanford University\nDate: January 24th 2018\nVideo: https://www.youtube.com/watch?v=E9sbWKbfyJU\nSlides: https://www.slideshare.net/ChristopherA/smart-signaturesexperiments-in-authentication-stanford-bpase-2018-final\nIntro Good afternoon. My name is Christopher Allen, I am with Blockstream and today I wanted to give you an introduction to something that isn’t about consensus, isn’t about proof of …"
 },
 {
@@ -1091,17 +1091,17 @@
 },
 {
 	"uri": "/sf-bitcoin-meetup/2019-05-02-conner-fromknecht-lnd-0.6-beta/",
-	"title": "Conner Fromknecht Lnd 0.6 Beta (2019-05-02)",
+	"title": "Conner Fromknecht - Lnd 0.6 Beta (2019-05-02)",
 	"content": "Conner Fromknecht\nSF Lightning Devs\nLND 0.6 Beta Deep Dive\nVideo: https://www.youtube.com/watch?v=XkyPw2_l6YE\nIntro lnd 0.6 was about seven months in the making. There’s more things that we could fit into this talk alone but I cherrypicked some of the highlights and things that will have some real world impact on users of the network or people who are using the API or just generally users of lnd. The high level impact on the network going forward and how we plan to scale up for the next 100K …"
 },
 {
 	"uri": "/stephan-livera-podcast/2019-06-24-conner-fromknecht-stephan-livera/",
-	"title": "Conner Fromknecht Stephan Livera (2019-06-24)",
+	"title": "Conner Fromknecht - Stephan Livera (2019-06-24)",
 	"content": "Stephan Livera podcast with Conner Fromknecht - June 24th 2019\nhttps://twitter.com/kanzure/status/1143553150152060928\nPodcast: https://stephanlivera.com/episode/83\nStephan: Conner I am a big fan of what you guys are doing at Lightning Labs and I’ve been trying to get you on for a while. I’m glad that we were finally able to make it happen. Welcome to the show.\nConner: Awesome, thank you Stephan. It has been a while since we first met in Australia. We’ve been busy putting stuff together for 0.7 …"
 },
 {
 	"uri": "/boltathon/2019-04-06-conner-fromknecht-watchtowers/",
-	"title": "Conner Fromknecht Watchtowers (2019-04-06)",
+	"title": "Conner Fromknecht - Watchtowers (2019-04-06)",
 	"content": "Conner Fromknecht\nArchitecture of LND Watchtowers\nVideo: https://www.youtube.com/watch?v=2tyr05tLF4g\u0026amp;amp;list=PLC_AgDAr0m6QhwqPDrqMfjX64oHGmwDMk\u0026amp;amp;index=4\nhttps://twitter.com/kanzure/status/1117427512081100800\ndiscussion: https://www.reddit.com/r/lightningdevs/comments/bd33cp/architecture_of_lnd_watchtowers_presentation_from/\nIntro Pretty excited today to speak on the topic of watchtowers. It is something that we at Lightning Labs have been working on for almost a year now. Conceptual proof of …"
 },
 {
@@ -1157,12 +1157,12 @@
 {
 	"uri": "/cppcon/2017/",
 	"title": "CPPcon 2017",
-	"content": " Kostya Serebryany Fuzzing (2017-10-11)    "
+	"content": " Kostya Serebryany - Fuzzing (2017-10-11)    "
 },
 {
 	"uri": "/cppcon/2020/",
 	"title": "CPPcon 2020",
-	"content": " Barnabas Bagyi Fuzzing Class Interfaces (2020-10-09)    "
+	"content": " Barnabas Bagyi - Fuzzing Class Interfaces (2020-10-09)    "
 },
 {
 	"uri": "/cryptoeconomic-systems/2019/cross-chain-deals-and-adversarial-commerce/",
@@ -1261,13 +1261,18 @@
 },
 {
 	"uri": "/blockchain-protocol-analysis-security-engineering/2017/2017-01-26-dan-robinson-ivy/",
-	"title": "Dan Robinson Ivy (2017-01-26)",
+	"title": "Dan Robinson - Ivy (2017-01-26)",
 	"content": "Name: Dan Robinson\nTopic: Ivy: A Declarative Predicate Language for Smart Contracts\nLocation: BPASE 2017, Stanford University\nDate: January 26th 2017\nVideo: https://www.youtube.com/watch?feature=youtu.be\u0026amp;amp;v=xdxs7VJTqns\nIntro Hi I’m Dan Robinson, I’m one of the Product Architects at Chain which is an enterprise blockchain infrastructure company for financial institutions. We have a full stack blockchain protocol and what I am going to talk about is part of that that also can be used for other …"
 },
 {
 	"uri": "/building-on-bitcoin/2018/dandelion/",
 	"title": "Dandelion",
 	"content": "Dandelion: Privacy-preserving transaction propagation in bitcoin\u0026amp;rsquo;s p2p network\nGiulia Fanti\nhttps://twitter.com/kanzure/status/1014196927062249472\nToday I will be talking to you about privacy in bitcoin\u0026amp;rsquo;s p2p layer. This was joint work with some talented colleagues.\nBitcoin p2p layer I want to give a brief overview of the p2p layer. Users in bitcoin are connected over a p2p network with tcp links. Users are identified by ip address and port number. Users have a second identity, which …"
+},
+{
+	"uri": "/munich-meetup/2021-02-21-daniela-brozzoni-stratumv2/",
+	"title": "Daniela Brozzoni - Stratum v2 (2021-02-21)",
+	"content": "Name: Daniela Brozzoni\nTopic: Mining Basics and Stratum v2\nLocation: Bitcoin Munich\nDate: February 21st 2021\nVideo: https://www.youtube.com/watch?v=58LrQ0Q89x0\nMatt Corallo presentation on BetterHash: https://diyhpl.us/wiki/transcripts/london-bitcoin-devs/2019-02-05-matt-corallo-betterhash/\nStratum v1 (BIP 310): https://github.com/bitcoin/bips/blob/master/bip-0310.mediawiki\nStratum v2: https://braiins.com/stratum-v2\nTranscript by: Michael Folkson\nIntro (Michael Ep) Hello and welcome to tonight’s …"
 },
 {
 	"uri": "/baltic-honeybadger/2018/day-1-closing-panel/",
@@ -1386,7 +1391,7 @@
 },
 {
 	"uri": "/chaincode-labs/chaincode-residency/2018-10-22-elaine-ou-bootstrapping-lightning-node/",
-	"title": "Elaine Ou Bootstrapping Lightning Node (2018-10-22)",
+	"title": "Elaine Ou - Bootstrapping Lightning Node (2018-10-22)",
 	"content": "Elaine Ou\nBootstrapping and maintaining a Lightning Node\nVideo: https://www.youtube.com/watch?v=qX4Z3JY1094\nSlides: https://lightningresidency.com/assets/presentations/Ou_Bootstrapping_and_Maintaining_a_Lightning_Node.pdf\nIntro My name ie Elaine. I’ll talk about bootstrapping and maintaining a lightning node. Pretty much all of you have probably already set up a node so this should all be review. You guys will probably know more about this than I do.\nBootstrapping and Maintaining a Lightning …"
 },
 {
@@ -1396,7 +1401,7 @@
 },
 {
 	"uri": "/chaincode-labs/chaincode-residency/2019-08-16-elichai-turkel-schnorr-signatures/",
-	"title": "Elichai Turkel Schnorr Signatures (2019-08-16)",
+	"title": "Elichai Turkel - Schnorr Signatures (2019-08-16)",
 	"content": "Elichai Turkel\nSchnorr Signatures\nVideo: https://www.youtube.com/watch?v=XKatSGCZ-gE\nSlides: https://residency.chaincode.com/presentations/Schnorr_Signatures.pdf\nhttps://twitter.com/kanzure/status/1165618718677917698\nIntroduction I’m Elichai, I’m a resident here at Chaincode. Thanks to Chaincode for having us and having me. Most of you have probably heard about Taproot and Schnorr which are new technologies that we want to integrate into Bitcoin. Today I am going to explain what is Schnorr and …"
 },
 {
@@ -1411,7 +1416,7 @@
 },
 {
 	"uri": "/bitcoin-magazine/2020-08-03-eric-lombrozo-luke-dashjr-taproot-activation/",
-	"title": "Eric Lombrozo Luke Dashjr Taproot Activation (2020-08-03)",
+	"title": "Eric Lombrozo, Luke Dashjr - Taproot Activation (2020-08-03)",
 	"content": "Name: Eric Lombrozo and Luke Dashjr\nTopic: How to Activate a New Soft Fork\nLocation: Bitcoin Magazine (online)\nDate: August 3rd 2020\nVideo: https://www.youtube.com/watch?v=yQZb0RDyFCQ\nAaron van Wirdum in Bitcoin Magazine on BIP 8, BIP 9 or Modern Soft Fork Activation: https://bitcoinmagazine.com/articles/bip-8-bip-9-or-modern-soft-fork-activation-how-bitcoin-could-upgrade-next\nDavid Harding on Taproot activation proposals: https://gist.github.com/harding/dda66f5fd00611c0890bdfa70e28152d\nIntro …"
 },
 {
@@ -1427,7 +1432,7 @@
 {
 	"uri": "/chaincode-labs/chaincode-residency/2019-06-12-ethan-heilman-network-partitioning-attacks/",
 	"title": "Ethan Heilman Network Partitioning Attacks (2019-06-12)",
-	"content": "Name: Ethan Heilman\nTopic: Bitcoin network partitioning \u0026amp;amp; network-level privacy attacks\nLocation: Chaincode Labs 2019 Residency\nVideo: https://www.youtube.com/watch?v=StnOVBbIpD8\nSlides: https://residency.chaincode.com/presentations/bitcoin/ethan_heilman_p2p.pdf\nEclipse attack paper: https://eprint.iacr.org/2015/263.pdf\nTranscript completed by: Adam Jonas\nBitcoin’s P2P Network Please interrupt me. I\u0026amp;rsquo;m going to go through this stuff a little bit quickly because I hear that you\u0026amp;rsquo;ve …"
+	"content": "Name: Ethan Heilman\nTopic: Bitcoin network partitioning \u0026amp;amp; network-level privacy attacks\nLocation: Chaincode Labs 2019 Residency\nVideo: https://www.youtube.com/watch?v=StnOVBbIpD8\nSlides: https://residency.chaincode.com/presentations/bitcoin/ethan_heilman_p2p.pdf\nEclipse attack paper: https://eprint.iacr.org/2015/263.pdf\nBitcoin’s P2P Network Please interrupt me. I\u0026amp;rsquo;m going to go through this stuff a little bit quickly because I hear that you\u0026amp;rsquo;ve already read Eclipse attack paper …"
 },
 {
 	"uri": "/w3-blockchain-workshop-2016/ethcore/",
@@ -1471,12 +1476,12 @@
 },
 {
 	"uri": "/chaincode-labs/chaincode-residency/2019-08-22-fabian-jahr-debugging/",
-	"title": "Fabian Jahr Debugging Bitcoin Core (2019-08-22)",
+	"title": "Fabian Jahr - Debugging Bitcoin Core (2019-08-22)",
 	"content": "Fabian Jahr\nDebugging Bitcoin Core\nVideo: https://www.youtube.com/watch?v=6aPSCDAiqVI\nSlides: https://residency.chaincode.com/presentations/Debugging_Bitcoin.pdf\nRepo: https://gist.github.com/fjahr/2cd23ad743a2ddfd4eed957274beca0f\nhttps://twitter.com/kanzure/status/1165266077615632390\nIntroduction I’m talking about debugging Bitcoin and that means to me using loggers and debugging tools to work with Bitcoin and this is especially useful for somebody who is a beginner with Bitcoin development. Or …"
 },
 {
 	"uri": "/advancing-bitcoin/2020/2020-02-07-fabian-jahr-debugging-workshop/",
-	"title": "Fabian Jahr Debugging Workshop (2020-02-07)",
+	"title": "Fabian Jahr - Debugging Workshop (2020-02-07)",
 	"content": "Name: Fabian Jahr\nTopic: Debugging Bitcoin Core Workshop\nLocation: Advancing Bitcoin\nDate: February 7th 2020\nVideo: No video was posted online\nFabian presentation at Bitcoin Edge Dev++ 2019: https://diyhpl.us/wiki/transcripts/scalingbitcoin/tel-aviv-2019/edgedevplusplus/debugging-bitcoin/\nDebugging Bitcoin Core doc: https://github.com/fjahr/debugging_bitcoin\nDebugging Bitcoin Core Workshop: https://gist.github.com/fjahr/5bf65daaf9ff189a0993196195005386\nIntroduction First of all welcome to the …"
 },
 {
@@ -1616,7 +1621,7 @@
 },
 {
 	"uri": "/london-bitcoin-devs/2019-11-13-gleb-naumenko-p2p-erlay/",
-	"title": "Gleb Naumenko P2P Erlay (2019-11-13)",
+	"title": "Gleb Naumenko - Erlay (2019-11-13)",
 	"content": "Gleb Naumenko\nLondon Bitcoin Devs\nCurrent state of P2P research in Bitcoin\nVideo: https://www.youtube.com/watch?v=ZUWs00Anpaw\nhttps://twitter.com/kanzure/status/1201861687097352198\nIntroduction My name is Gleb. I’ve worked on Bitcoin stuff since 2015, building wallets and exchanges in Ukraine. Then I realized that I can do more fun stuff. I want to do more protocol research, improving Bitcoin itself, not just using it. I decided I will go to Canada to do a Masters. I started working on this …"
 },
 {
@@ -1667,7 +1672,7 @@
 {
 	"uri": "/greg-maxwell/",
 	"title": "Greg Maxwell",
-	"content": " Gmaxwell - Advances In Block Propagation (2017-11-27)   Gmaxwell - Bitcoin Selection Cryptography (2015-04-29)   Gmaxwell - Confidential Transactions (2017-04-28)   Gmaxwell - Deep Dive Bitcoin Core V0.15 (2017-08-28)   Gmaxwell - Mining And Block Size Etc (2015-11-09)   Gmaxwell - Sidechains Elements (2015-06-08)   Greg Maxwell - Bitcoin Core Github (2020-10-26)   Greg Maxwell - Bitcoin Core Testing (2018-09-23)   Greg Maxwell - Checkmultisig Bug (2020-08-27)   Greg Maxwell - Liquid Censorship …"
+	"content": " Gmaxwell - Advances In Block Propagation (2017-11-27)   Gmaxwell - Bitcoin Selection Cryptography (2015-04-29)   Gmaxwell - Confidential Transactions (2017-04-28)   Gmaxwell - Deep Dive Bitcoin Core V0.15 (2017-08-28)   Gmaxwell - Mining And Block Size Etc (2015-11-09)   Gmaxwell - Sidechains Elements (2015-06-08)   Greg Maxwell - Bitcoin Core Github (2020-10-26)   Greg Maxwell - Bitcoin Core Testing (2018-09-23)   Greg Maxwell - Checkmultisig Bug (2020-08-27)   Greg Maxwell - Hardware Wallets …"
 },
 {
 	"uri": "/greg-maxwell/2020-10-26-greg-maxwell-bitcoin-core-github/",
@@ -1683,6 +1688,11 @@
 	"uri": "/greg-maxwell/2020-08-27-greg-maxwell-checkmultisig-bug/",
 	"title": "Greg Maxwell - Checkmultisig Bug (2020-08-27)",
 	"content": "Name: Greg Maxwell\nTopic: What is stopping the OP_CHECKMULTISIG extra pop bug from being fixed?\nLocation: Bitcointalk\nDate: August 27th 2020\nhttps://bitcointalk.org/index.php?topic=5271566.msg55079521#msg55079521\nWhat is stopping the OP_CHECKMULTISIG extra pop bug from being fixed? I think it is probably wrong to describe it as a bug. I think it was intended to indicate which signatures were present to fix the otherwise terrible performance of CHECKMULTISIG.\nRegardless, there is no real point to …"
+},
+{
+	"uri": "/greg-maxwell/2020-11-01-greg-maxwell-hardware-wallets-altcoins/",
+	"title": "Greg Maxwell - Hardware Wallets Altcoins (2020-11-01)",
+	"content": "Name: Greg Maxwell\nTopic: Hardware wallets and altcoins\nLocation: Reddit\nDate: November 1st 2020\nhttps://www.reddit.com/r/Bitcoin/comments/jlwxpq/why_do_you_think_coldcard_doesnt_support_altcoins/gasoyuj?utm_source=share\u0026amp;amp;utm_medium=web2x\u0026amp;amp;context=3\nWhy do hardware wallets not support altcoins? They\u0026amp;rsquo;re an enormous distraction and hazard to software development. It\u0026amp;rsquo;s hard enough to correctly and safely write software to support one system. Every minute spent creating and testing …"
 },
 {
 	"uri": "/greg-maxwell/2020-06-08-greg-maxwell-liquid-censorship-resistance/",
@@ -1713,11 +1723,6 @@
 	"uri": "/greg-maxwell/2020-11-05-greg-maxwell-yubikey-security/",
 	"title": "Greg Maxwell - Yubikey Security (2020-11-05)",
 	"content": "Name: Greg Maxwell\nTopic: Yubikey security\nLocation: Reddit\nDate: November 7th 2020\nhttps://www.reddit.com/r/Bitcoin/comments/jp2fp3/opinion_regarding_security/gbhojor?utm_source=share\u0026amp;amp;utm_medium=web2x\u0026amp;amp;context=3\nYubikey Security  By this logic, a yubikey would also be a great targeting vector.\n They would be, and if US intelligence services have not compromised yubis or at least have a perfect targeted substitution solutions for them then they should all be fired for gross incompetence …"
-},
-{
-	"uri": "/greg-maxwell/2020-11-01-greg-maxwell-hardware-wallets-altcoins/",
-	"title": "Greg Maxwell Hardware Wallets Altcoins (2020-11-01)",
-	"content": "Name: Greg Maxwell\nTopic: Hardware wallets and altcoins\nLocation: Reddit\nDate: November 1st 2020\nhttps://www.reddit.com/r/Bitcoin/comments/jlwxpq/why_do_you_think_coldcard_doesnt_support_altcoins/gasoyuj?utm_source=share\u0026amp;amp;utm_medium=web2x\u0026amp;amp;context=3\nWhy do hardware wallets not support altcoins? They\u0026amp;rsquo;re an enormous distraction and hazard to software development. It\u0026amp;rsquo;s hard enough to correctly and safely write software to support one system. Every minute spent creating and testing …"
 },
 {
 	"uri": "/grincon/",
@@ -1827,7 +1832,7 @@
 {
 	"uri": "/honey-badger-diaries/",
 	"title": "Honey Badger Diaries",
-	"content": " Kevin Loaec Antoine Poinsot Revault (2020-04-24)    "
+	"content": " Kevin Loaec, Antoine Poinsot - Revault (2020-04-24)    "
 },
 {
 	"uri": "/scalingbitcoin/tokyo-2018/how-much-privacy-is-enough/",
@@ -2020,14 +2025,14 @@
 	"content": "Bitcoin law for developers\nJames Gatto Marco Santori\nWe are going to be taking a 15 minute coffee break after our next two speakers. I want to introduce you to James Gatto and Marco Santori with Pilsbury. They will be spending some time talking about Bitcoin law. They have a room this afternoon and they are offering to talk with you one on one. So Marco and James.\nYou missed the introduction. Was it any good? (laughter)\nWe are here to talk about legal issues. We are going to try to keep it light …"
 },
 {
+	"uri": "/stephan-livera-podcast/2019-04-11-james-obeirne/",
+	"title": "James O'Beirne (2019-04-11)",
+	"content": "Stephan Livera Podcast with James O’Beirne - April 11th 2019\nThe Truth About ‘Power’ in Bitcoin\nPodcast: https://stephanlivera.com/episode/66/\nhttps://twitter.com/kanzure/status/1198289594069983237\nStephan Livera: Hello and welcome to the Stephan Livera podcast focused on Bitcoin and Austrian economics. Today my guest is James O’Beirne, Bitcoin Core engineer working at Chaincode Labs. Here’s the interview. James, I’m a fan of what you are working on over at Chaincode Labs and welcome to the …"
+},
+{
 	"uri": "/chaincode-labs/chaincode-residency/2019-06-18-james-obeirne-advanced-segwit/",
 	"title": "James O'Beirne Advanced Segwit (2019-06-18)",
 	"content": "Name: James O\u0026amp;rsquo;Beirne\nTopic: Advanced SegWit\nLocation: Chaincode Labs 2019 Residency\nVideo: https://youtu.be/JgNgnwF9hfY\nSlides: https://residency.chaincode.com/presentations/bitcoin/Advanced_segwit.pdf\nJames O\u0026amp;rsquo;Beirne: To sort of vamp off of Jonas\u0026amp;rsquo;s preamble, I\u0026amp;rsquo;m not that smart. I\u0026amp;rsquo;m a decent programmer, but compared to a lot of people who work on Bitcoin, I barely know what I\u0026amp;rsquo;m doing. I kind of consider myself like a carpenter, a digital carpenter equivalent. …"
-},
-{
-	"uri": "/stephan-livera-podcast/2019-04-11-james-obeirne/",
-	"title": "James Obeirne (2019-04-11)",
-	"content": "Stephan Livera Podcast with James O’Beirne - April 11th 2019\nThe Truth About ‘Power’ in Bitcoin\nPodcast: https://stephanlivera.com/episode/66/\nhttps://twitter.com/kanzure/status/1198289594069983237\nStephan Livera: Hello and welcome to the Stephan Livera podcast focused on Bitcoin and Austrian economics. Today my guest is James O’Beirne, Bitcoin Core engineer working at Chaincode Labs. Here’s the interview. James, I’m a fan of what you are working on over at Chaincode Labs and welcome to the …"
 },
 {
 	"uri": "/bitcoin-core-dev-tech/bitcoin-devcore-2015/jeremy-allaire-circle/",
@@ -2036,22 +2041,22 @@
 },
 {
 	"uri": "/sf-bitcoin-meetup/2018-04-23-jeremy-rubin-bitcoin-core/",
-	"title": "Jeremy Rubin Bitcoin Core (2018-04-23)",
+	"title": "Jeremy Rubin - Bitcoin Core (2018-04-23)",
 	"content": "Jeremy Rubin\nA hardCORE workout\nVideo: https://www.youtube.com/watch?v=PKzJktErUdk\nSlides: https://drive.google.com/file/d/149Ta1WRXL5WEvnBdlL-HxmsFDXUbvFDy/view\nhttps://twitter.com/kanzure/status/1152926849879760896\nIntro Thank you very much for the warm welcome. So welcome to the hard core workout. It is not going to be that difficult but you can stretch if you need to. It is going to be a lot of material so I’m going to go a little bit fast. If you have any questions feel free to stop me in …"
 },
 {
 	"uri": "/blockchain-protocol-analysis-security-engineering/2017/2017-01-26-jeremy-rubin-covenants/",
-	"title": "Jeremy Rubin Covenants (2017-01-26)",
+	"title": "Jeremy Rubin - Covenants (2017-01-26)",
 	"content": "Name: Jeremy Rubin\nTopic: Contracts with Merklized Covenants\nLocation: BPASE 2017, Stanford University\nDate: January 26th 2017\nVideo: https://www.youtube.com/watch?v=r7xN7K0OqaA\nSlides: https://cyber.stanford.edu/sites/g/files/sbiybj9936/f/jeremyrubin.pdf\nIntro Hey everyone. How is it going? Happy to be going last right now given that I had all these wonderful speakers before me to explain so much of what I am about to tell you. I’m going to talk to you today about structuring multi-transaction …"
 },
 {
 	"uri": "/chaincode-labs/chaincode-podcast/2020-02-11-jeremy-rubin-ctv/",
-	"title": "Jeremy Rubin CTV (2020-02-11)",
+	"title": "Jeremy Rubin - CTV (2020-02-11)",
 	"content": "Name: Jeremy Rubin\nTopic: CHECKTEMPLATEVERIFY\nLocation: Chaincode Labs Podcast\nDate: February 11th 2020\nVideo: https://www.youtube.com/watch?v=Lqcpk5o1Y2E\nCTV BIP review workshop transcript: https://diyhpl.us/wiki/transcripts/ctv-bip-review-workshop/\nIntro Jonas: Welcome to the podcast Jeremy.\nJeremy: Thanks for having me on.\nJonas: I think to start us off tell us a bit about your background, how you got into Bitcoin and we\u0026amp;rsquo;ll take it from there.\nJeremy: I first heard about Bitcoin in …"
 },
 {
 	"uri": "/vr-bitcoin/2020-07-11-jeremy-rubin-sapio-101/",
-	"title": "Jeremy Rubin Sapio 101 (2020-07-11)",
+	"title": "Jeremy Rubin - Sapio 101 (2020-07-11)",
 	"content": "Name: Jeremy Rubin\nTopic: Sapio Programming 101: Stateful Smart Contracts for Bitcoin with OP_CTV\nLocation: Reckless VR\nDate: July 11th 2020\nVideo: https://www.youtube.com/watch?v=4vDuttlImPc\nSlides: https://docs.google.com/presentation/d/1X4AGNXJ5yCeHRrf5sa9DarWfDyEkm6fFUlrcIRQtUw4/\nutxos.org website: https://utxos.org/\nIntro (Udi Wertheimer) Today we are joined by Jeremy Rubin who is a Bitcoin Core contributor and the co-founder of the MIT Bitcoin Project. He is involved in a tonne of other …"
 },
 {
@@ -2066,7 +2071,7 @@
 },
 {
 	"uri": "/noded-podcast/jnewbery-cve-2018-17144-bug/",
-	"title": "Jnewbery Cve 2018 17144 Bug",
+	"title": "Jnewbery CVE-2018-17144 Bug",
 	"content": "Noded podcast September 26th 2018\nVideo: https://www.youtube.com/watch?v=286EmFqGMb8\nIntros\nPierre: This is an issue that affects our audience directly, right. This is the Noded podcast. It is for people who run Bitcoin full nodes and we had what is called a critical vulnerability exposure - CVE drop on Monday and there was an issue with our node software - specific versions and we can get into that.\nbitstein: And in a bombshell Tweet John Newbery said that he was responsible for the CVE. …"
 },
 {
@@ -2116,12 +2121,12 @@
 },
 {
 	"uri": "/misc/2019-08-07-jonathan-metzman-structured-fuzzing/",
-	"title": "Jonathan Metzman Structured Fuzzing (2019-08-07)",
+	"title": "Jonathan Metzman - Structured Fuzzing (2019-08-07)",
 	"content": "Name: Jonathan Metzman\nTopic: Going Beyond Coverage Guided Fuzzing with Structured Fuzzing\nLocation: Black Hat USA 2019\nDate: August 7th 2019\nVideo: https://www.youtube.com/watch?v=TtPXYPJ5_eE\nBlackhat: https://www.blackhat.com/us-19/briefings/schedule/#going-beyond-coverage-guided-fuzzing-with-structured-fuzzing-16110\nSlides: https://i.blackhat.com/USA-19/Wednesday/us-19-Metzman-Going-Beyond-Coverage-Guided-Fuzzing-With-Structured-Fuzzing.pdf\nTranscript completed by: Michael Folkson\nIntro Hi …"
 },
 {
 	"uri": "/breaking-bitcoin/2019/2019-06-13-joost-jager-hodl-invoices/",
-	"title": "Joost Jager Hodl Invoices (2019-06-13)",
+	"title": "Joost Jager - HODL Invoices (2019-06-13)",
 	"content": "Joost Jager\nHodl Invoices (Breaking Bitcoin training session)\nVideo: https://www.youtube.com/watch?v=jOEq9PvN-7A\nhttps://twitter.com/kanzure/status/1146124260324384768\nIntro My name is Joost, Michael introduced me already. I’ve been working with Lightning Labs since the middle of last year and during that time I’ve worked on several subprojects within lnd. lnd is the Lightning implementation developed by Lightning Labs. I’m not sure really what the background knowledge is at this point in this …"
 },
 {
@@ -2141,7 +2146,7 @@
 },
 {
 	"uri": "/advancing-bitcoin/2020/2020-02-06-kalle-alm-signet-integration/",
-	"title": "Kalle Alm Signet Integration (2020-02-06)",
+	"title": "Kalle Alm - Signet Integration (2020-02-06)",
 	"content": "Name: Karl-Johan Alm\nTopic: Signet Integration\nLocation: Advancing Bitcoin\nDate: February 6th 2020\nVideo (paid access): https://www.advancingbitcoin.com/video/signet-in-practice-integrating-signet-into-your-software,5/\nSlides: https://www.dropbox.com/s/6fqwhx7ugr3ppsg/Signet%20Integration%20V2.pdf\nBIP 325: https://github.com/bitcoin/bips/blob/master/bip-0325.mediawiki\nSignet on Bitcoin Wiki: https://en.bitcoin.it/wiki/Signet\nBitcoin dev mailing list: …"
 },
 {
@@ -2151,17 +2156,17 @@
 },
 {
 	"uri": "/london-bitcoin-devs/2020-04-29-kalle-rosenbaum-grokking-bitcoin/",
-	"title": "Kalle Rosenbaum Grokking Bitcoin (2020-04-29)",
+	"title": "Kalle Rosenbaum - Grokking Bitcoin (2020-04-29)",
 	"content": "Name: Kalle Rosenbaum\nTopic: Grokking Bitcoin\nLocation: London Bitcoin Devs (online)\nDate: April 29th 2020\nVideo: https://www.youtube.com/watch?v=6tHnYyaw0qw\nSlides: http://rosenbaum.se/ldnbitcoindev/drawing.sozi.html\nBook: http://rosenbaum.se/book/\nIntro (Michael Folkson) Welcome to this London Bitcoin Devs online. We will be joined by Kalle Rosenbaum, the author of Grokking Bitcoin. In terms of London Bitcoin Devs you can follow us on Twitter at ldnbitcoindevs. We have a YouTube channel where …"
 },
 {
 	"uri": "/honey-badger-diaries/2020-04-24-kevin-loaec-antoine-poinsot-revault/",
-	"title": "Kevin Loaec Antoine Poinsot Revault (2020-04-24)",
+	"title": "Kevin Loaec, Antoine Poinsot - Revault (2020-04-24)",
 	"content": "Name: Kevin Loaec and Antoine Poinsot\nTopic: Revault Bitcoin vaults\nLocation: Honey Badger Diaries (podcast)\nDate: April 24th 2020\nVideo: https://www.youtube.com/watch?v=xDTCT75VwvU\nTranscript (abridged) Aaron: So you guys built something. First tell me are you a company? Is this a startup? What is the story here?\nKevin: My personal interest in vaults started last year when Bryan Bishop published his email on the mailing list. I was like “That is an interesting concept.” After that I started …"
 },
 {
 	"uri": "/london-bitcoin-devs/2020-05-26-kevin-loaec-antoine-poinsot-revault/",
-	"title": "Kevin Loaec Antoine Poinsot Revault (2020-05-26)",
+	"title": "Kevin Loaec, Antoine Poinsot - Revault (2020-05-26)",
 	"content": "Name: Kevin Loaec and Antoine Poinsot\nTopic: Revault - A Multiparty Vault Architecture\nLocation: London Bitcoin Devs (online)\nDate: May 26th 2020\nVideo: https://www.youtube.com/watch?v=7CE4aiFxh10\nKevin slides: https://www.dropbox.com/s/rj45ebnic2m0q2m/kevin%20loaec%20revault%20slides.pdf?dl=0\nAntoine slides: https://www.dropbox.com/s/xaoior0goo37247/Antoine%20Poinsot%20Revault%20slides.odp?dl=0\nIntro (Michael Folkson) This is London Bitcoin Devs. This is on Zoom and live-streaming on YouTube. …"
 },
 {
@@ -2181,43 +2186,43 @@
 },
 {
 	"uri": "/cppcon/2017/2017-10-11-kostya-serebryany-fuzzing/",
-	"title": "Kostya Serebryany Fuzzing (2017-10-11)",
+	"title": "Kostya Serebryany - Fuzzing (2017-10-11)",
 	"content": "Name: Kostya Serebryany\nTopic: Fuzz or lose! Why and how to make fuzzing a standard practice for C++\nLocation: CppCon 2017\nDate: October 11th 2017\nVideo: https://www.youtube.com/watch?v=k-Cv8Q3zWNQ\nSlides: https://github.com/CppCon/CppCon2017/blob/master/Demos/Fuzz%20Or%20Lose/Fuzz%20Or%20Lose%20-%20Kostya%20Serebryany%20-%20CppCon%202017.pdf\nPaper on “The Art, Science and Engineering of Fuzzing”: https://arxiv.org/pdf/1812.00140.pdf\nIntro Good afternoon and thank you for coming for the last …"
 },
 {
 	"uri": "/la-bitdevs/",
 	"title": "LA Bitdevs",
-	"content": " Alekos Filini Magical Bitcoin (2020-05-21)   Amiti Uttarwar Attacking Bitcoin Core (2020-04-16)   Luke Dashjr - Segwit, PSBT Vulnerability (2020-06-18)    "
-},
-{
-	"uri": "/noded-podcast/2018-12-14-laolu-conner-lnd/",
-	"title": "Laolu Conner Lnd (2018-12-14)",
-	"content": "Noded podcast with Laolu Osuntokun and Conner Fromknecht - December 14th 2018\nhttps://twitter.com/kanzure/status/1089187758931890178\nPodcast: https://noded.org/podcast/noded-0360-with-olaoluwa-osuntokun-and-conner-fromknecht/\nPierre: Welcome to the Noded Bitcoin podcast. This is episode 36. We’re joined with Laolu and Conner from Lightning Labs as well as my co-host Michael Goldstein. How’s it going guys?\nroasbeef: Not bad\nPierre: So I listened to Laolu on Stephan Livera’s podcast and I would …"
-},
-{
-	"uri": "/vr-bitcoin/2020-04-18-laolu-joost-oliver-lnd0.10/",
-	"title": "Laolu Joost Oliver Lnd0.10 (2020-04-18)",
-	"content": "Name: Laolu Osuntokun, Joost Jager and Oliver Gugger\nTopic: lnd v0.10\nLocation: Virtual Reality (VR Bitcoin)\nDate: April 18th 2020\nVideo: https://www.youtube.com/watch?v=h34fUGuDjMg\nIntro (Laolu Osuntokun) Thanks everyone for coming. This is my first time doing a VR presentation, really cool. I am going to be talking about lnd 0.10. Right now we are on rc2, the next major lnd release, it has a bunch of cool features, bug fixes, optimizations. I am going to talk about some big ticket features in …"
+	"content": " Alekos Filini Magical Bitcoin (2020-05-21)   Amiti Uttarwar - Attacking Bitcoin Core (2020-04-16)   Luke Dashjr - Segwit, PSBT Vulnerability (2020-06-18)    "
 },
 {
 	"uri": "/sf-bitcoin-meetup/2018-04-20-laolu-osuntokun-exploring-lnd0.4/",
-	"title": "Laolu Osuntokun Exploring Lnd0.4 (2018-04-20)",
+	"title": "Laolu Osuntokun - Exploring Lnd0.4 (2018-04-20)",
 	"content": "Laolu Osuntokun and Conner Fromknecht\nExploring lnd 0.4-beta\nVideo: https://www.youtube.com/watch?v=LXY0L8eeG3k\nSlides: https://docs.google.com/presentation/d/1pyQgGDUcB29r8DnTaS0GQS6usjw4CpgciQx_-XBVOwU/\nThe Genesis of lnd First, the genesis of lnd. Here is the first commit of lnd. It was October 27 2015. This is when I was in school still. This was done when I went on break and it was the first major…. we had in terms of code. We talked about the language we’re using, the licensing, the …"
 },
 {
 	"uri": "/sf-bitcoin-meetup/2016-07-18-laolu-osuntokun-lightning-network/",
-	"title": "Laolu Osuntokun Lightning Network (2016-07-18)",
+	"title": "Laolu Osuntokun - Lightning Network (2016-07-18)",
 	"content": "Laolu Osuntokun\nLightning Network Deep Dive\nVideo: https://www.youtube.com/watch?v=tLZc-NLmV20\nSlides: https://docs.google.com/presentation/d/1OPijcjzadKkbxvGU6VcVnAeSD_DKb7gjnevBcqhPCW0/\nhttps://twitter.com/kanzure/status/1052238088913788928\nIntroduction My name is Laolu Osuntokun and I work with Lightning guys and you know me as maybe Roasbeef from the internet, on GitHub, Twitter, everything else. I’ve been Roasbeef for the past 8 years and I’m still Roasbeef that’s how it works. I’m going to …"
 },
 {
 	"uri": "/sf-bitcoin-meetup/2017-06-06-laolu-osuntokun-neutrino/",
-	"title": "Laolu Osuntokun Neutrino (2017-06-06)",
+	"title": "Laolu Osuntokun - Neutrino (2017-06-06)",
 	"content": "Laolu Osuntokun\nNeutrino: The Privacy Preserving Bitcoin Light Client\nVideo: https://www.youtube.com/watch?v=7FWKc8lM4Ek\nSlides: https://docs.google.com/presentation/d/1vjJUWOZIaPshjx1svfE6rFZ2lC07n47ifOdzpKWqpb4/\nhttps://twitter.com/kanzure/status/1054031024085258240\nIntroduction My name is Laolu or Roasbeef on the internet. I’m going to talk about light clients in general and then also what we’re working on in terms of light clients and then also how that factors into the lightning network …"
 },
 {
 	"uri": "/stephan-livera-podcast/2018-12-11-laolu-osuntokun-stephan-livera/",
-	"title": "Laolu Osuntokun Stephan Livera (2018-12-11)",
+	"title": "Laolu Osuntokun - Stephan Livera (2018-12-11)",
 	"content": "Stephan Livera podcast with Laolu Osuntokun - December 11th 2018\nhttps://twitter.com/kanzure/status/1090640881873387525\nPodcast: https://stephanlivera.com/episode/39\nStephan: Hi Laolu. Thank you very much for coming on the show.\nroasbeef: It’s good to be here.\nStephan: It’s been a while since the Lighting Summit was on and now you’re back home. How’s things back home?\nroasbeef: Not bad, just the usual back to work, just the regular stuff. Australia was great. I had never been. It’s spring here, …"
+},
+{
+	"uri": "/noded-podcast/2018-12-14-laolu-conner-lnd/",
+	"title": "Laolu, Conner - Lnd (2018-12-14)",
+	"content": "Noded podcast with Laolu Osuntokun and Conner Fromknecht - December 14th 2018\nhttps://twitter.com/kanzure/status/1089187758931890178\nPodcast: https://noded.org/podcast/noded-0360-with-olaoluwa-osuntokun-and-conner-fromknecht/\nPierre: Welcome to the Noded Bitcoin podcast. This is episode 36. We’re joined with Laolu and Conner from Lightning Labs as well as my co-host Michael Goldstein. How’s it going guys?\nroasbeef: Not bad\nPierre: So I listened to Laolu on Stephan Livera’s podcast and I would …"
+},
+{
+	"uri": "/vr-bitcoin/2020-04-18-laolu-joost-oliver-lnd0.10/",
+	"title": "Laolu, Joost, Oliver - Lnd0.10 (2020-04-18)",
+	"content": "Name: Laolu Osuntokun, Joost Jager and Oliver Gugger\nTopic: lnd v0.10\nLocation: Virtual Reality (VR Bitcoin)\nDate: April 18th 2020\nVideo: https://www.youtube.com/watch?v=h34fUGuDjMg\nIntro (Laolu Osuntokun) Thanks everyone for coming. This is my first time doing a VR presentation, really cool. I am going to be talking about lnd 0.10. Right now we are on rc2, the next major lnd release, it has a bunch of cool features, bug fixes, optimizations. I am going to talk about some big ticket features in …"
 },
 {
 	"uri": "/coindesk-consensus-2016/law-enforcement-and-anonymous-transactions/",
@@ -2252,7 +2257,7 @@
 {
 	"uri": "/lets-talk-bitcoin-podcast/",
 	"title": "Lets Talk Bitcoin Podcast",
-	"content": " Christopher Jeffrey Consensus Barnacles (2016-12-25)   Consensus Uasf And Forks (2017-06-04)   Ltb Pieter Wuille Jonas Nick (2019-06-09)    "
+	"content": " Christopher Jeffrey Consensus Barnacles (2016-12-25)   Consensus Uasf And Forks (2017-06-04)   LTB - Pieter Wuille, Jonas Nick (2019-06-09)    "
 },
 {
 	"uri": "/building-on-bitcoin/2018/libbitcoin/",
@@ -2302,12 +2307,12 @@
 {
 	"uri": "/lightning-conference/2019/",
 	"title": "Lightning Conference 2019",
-	"content": " Antoine Riard Rust Lightning (2019-10-20)   Bastien Teinturier Trampoline Routing (2019-10-20)   Chris Stewart Private Key Management (2019-10-19)   Nadav Kohen Payment Points (2019-10-20)    "
+	"content": " Antoine Riard - Rust Lightning (2019-10-20)   Bastien Teinturier - Trampoline Routing (2019-10-20)   Chris Stewart - Private Key Management (2019-10-19)   Nadav Kohen - Payment Points (2019-10-20)    "
 },
 {
 	"uri": "/lightning-hack-day/",
 	"title": "Lightning Hack Day",
-	"content": " Christian Decker - Lightning Backups (2020-05-03)   Pierre Rochard Excel In Lightning (2018-10-27)   Rootzoll Openoms Raspiblitz (2020-06-21)   Sergei Tikhomirov Lightning Privacy (2020-05-09)   Sergi Delgado Watchtowers (2020-05-24)   Tom Kirkpatrick Zap Wallet (2018-12-01)    "
+	"content": " Christian Decker - Lightning Backups (2020-05-03)   Pierre Rochard - Excel In Lightning (2018-10-27)   Rootzoll, Openoms, Raspiblitz (2020-06-21)   Sergei Tikhomirov - Lightning Privacy (2020-05-09)   Sergi Delgado - Watchtowers (2020-05-24)   Tom Kirkpatrick - Zap Wallet (2018-12-01)    "
 },
 {
 	"uri": "/scalingbitcoin/tokyo-2018/edgedevplusplus/lightning-network/",
@@ -2422,7 +2427,7 @@
 {
 	"uri": "/london-bitcoin-devs/",
 	"title": "London Bitcoin Devs",
-	"content": " Adam Gibson Unfairly Linear Signatures (2018-06-12)   Alex Bosworth Submarine Swaps (2019-07-03)   Andrew Chow Hardware Wallets (2020-02-05)   Andrew Poelstra Miniscript (2020-02-04)   Gleb Naumenko P2P Erlay (2019-11-13)   James Chiang Trace Net (2020-02-04)   Jnewbery Bitcoin Core V0.17   John Light - Bitcoin Full Nodes (2018-07-23)   Kalle Rosenbaum Grokking Bitcoin (2020-04-29)   Kevin Loaec Antoine Poinsot Revault (2020-05-26)   Matt Corallo Betterhash (2019-02-05)   Socratic Seminar …"
+	"content": " Adam Gibson - Unfairly Linear Signatures (2018-06-12)   Alex Bosworth - Submarine Swaps (2019-07-03)   Andrew Chow Hardware Wallets (2020-02-05)   Andrew Poelstra - Miniscript (2020-02-04)   Gleb Naumenko - Erlay (2019-11-13)   James Chiang Trace Net (2020-02-04)   Jnewbery Bitcoin Core V0.17   John Light - Bitcoin Full Nodes (2018-07-23)   Kalle Rosenbaum - Grokking Bitcoin (2020-04-29)   Kevin Loaec, Antoine Poinsot - Revault (2020-05-26)   Matt Corallo Betterhash (2019-02-05)   Socratic …"
 },
 {
 	"uri": "/stanford-blockchain-conference/2020/lower-bounds-limits-plasma/",
@@ -2431,13 +2436,18 @@
 },
 {
 	"uri": "/lets-talk-bitcoin-podcast/2019-06-09-ltb-pieter-wuille-jonas-nick/",
-	"title": "Ltb Pieter Wuille Jonas Nick (2019-06-09)",
+	"title": "LTB - Pieter Wuille, Jonas Nick (2019-06-09)",
 	"content": "Let\u0026amp;rsquo;s Talk Bitcoin with Pieter Wuille and Jonas Nick - June 9th 2019\nhttps://twitter.com/kanzure/status/1155851797568917504\nPart 1: https://letstalkbitcoin.com/blog/post/lets-talk-bitcoin-400-the-tools-and-the-work\nPart 2: https://letstalkbitcoin.com/blog/post/lets-talk-bitcoin-401-the-tools-and-the-work-part-2\nDraft of BIP-Schnorr: https://github.com/sipa/bips/blob/bip-schnorr/bip-schnorr.mediawiki\nDraft of BIP-Taproot: https://github.com/sipa/bips/blob/bip-schnorr/bip-taproot.mediawiki …"
 },
 {
 	"uri": "/la-bitdevs/2020-06-18-luke-dashjr-segwit-psbt-vulnerability/",
 	"title": "Luke Dashjr - Segwit, PSBT Vulnerability (2020-06-18)",
 	"content": "Name: Luke Dashjr\nTopic: SegWit/PSBT vulnerability (CVE-2020-14199)\nLocation: LA BitDevs (online)\nDate: June 18th 2020\nVideo: https://www.youtube.com/watch?v=CojixIMgg3c\nCVE: https://nvd.nist.gov/vuln/detail/CVE-2020-14199\nTrezor blog post on the vulnerability: https://blog.trezor.io/latest-firmware-updates-correct-possible-segwit-transaction-vulnerability-266df0d2860\nGreg Sanders Bitcoin dev mailing list post in April 2017: …"
+},
+{
+	"uri": "/stephan-livera-podcast/2021-03-17-luke-dashjr-taproot-activation/",
+	"title": "Luke Dashjr - Taproot Activation (2021-03-17)",
+	"content": "Name: Luke Dashjr\nTopic: How Bitcoin UASF went down, Taproot LOT=true, Speedy Trial, Small Blocks\nLocation: Stephan Livera Podcast\nDate: March 17th 2021\nAudio: https://stephanlivera.com/episode/260/\nLuke Dashjr arguments against LOT=false: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-February/018498.html\nT1-T6 and F1-F6 arguments for LOT=true and LOT=false: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-February/018380.html\nF7 argument for LOT=false: …"
 },
 {
 	"uri": "/mit-bitcoin-expo/mit-bitcoin-expo-2016/maaku-panel/",
@@ -2470,6 +2480,11 @@
 	"content": "Shinichiro Matsuo\nbsafe.network\nGiving trust by security evaluation and bsafe.network\nThis is a severe problem. How can we trust the output of blockchain technology? We have several security issues. There was the huge DAO attack from two weeks ago. We also have other problems, such as protocol specification, key management, implementation, operation, and vulnerability handling. Also key renewal and key revocation issues.\n ISO/IEC 27000 ISO/IEC 15408 ISO/IEC 29128 ISO/IEC 29128 ISO/IEC, NIST IETF …"
 },
 {
+	"uri": "/advancing-bitcoin/2019/2019-02-07-matt-corallo-rust-lightning/",
+	"title": "Matt Corallo - Rust Lightning (2019-02-07)",
+	"content": "Matt Corallo\nFlexible Lightning in Rust\nVideo: https://vimeo.com/316624439\nSlides: https://docs.google.com/presentation/d/154bMWdcMCFUco4ZXQ3lWfF51U5dad8pQ23rKVkncnns/edit#slide=id.p\nhttps://twitter.com/kanzure/status/1144256392490029057\nIntroduction Thanks for having me. I want to talk a little bit about a project I’ve been working on for about a year called rust-lightning. I started it in December so a year and a few months ago. This is my first presentation on it so I’m excited to finally get …"
+},
+{
 	"uri": "/tftc-podcast/2021-02-11-matt-corallo-taproot-activation/",
 	"title": "Matt Corallo - UASFs, BIP 148, BIP 91 and Taproot Activation (2021-02-11)",
 	"content": "Name: Matt Corallo\nTopic: UASFs, BIP 148, BIP 91 and Taproot Activation\nLocation: Tales from the Crypt podcast\nDate: February 11th 2021\nAudio: https://anchor.fm/tales-from-the-crypt/episodes/228-UASFs--BIP-148--BIP-91--and-Taproot-Activation-with-Matt-Corallo-eq7cif\nIntro Marty Bent (MB): Sitting down with a man who needs no introduction on this podcast. I think you have been on four times already. I think this is number five Matt. You are worried about the future of Bitcoin. What the hell is …"
@@ -2483,11 +2498,6 @@
 	"uri": "/chaincode-labs/chaincode-podcast/2020-03-12-matt-corallo-compact-blocks-fibre/",
 	"title": "Matt Corallo Compact Blocks Fibre (2020-03-12)",
 	"content": "Name: Matt Corallo\nTopic: Compact Blocks and FIBRE\nLocation: Chaincode Labs Podcast (Episode 6)\nDate: March 12th 2020\nVideo: https://www.youtube.com/watch?v=0uPDDELGjdo\nIntro Adam Jonas (AJ): Welcome Matt\nMatt Corallo (MC): Hi\nJohn Newbery (JN): Hi Matt\nAJ: Today we are going to do a little bit of a “This is your life Bitcoin”.\nMC: I am not dead yet.\nAJ: You have a lot of contributions over the years so there is lots to talk about but we’ll start with three. Let’s start with compact blocks. Tell …"
-},
-{
-	"uri": "/advancing-bitcoin/2019/2019-02-07-matt-corallo-rust-lightning/",
-	"title": "Matt Corallo Rust Lightning (2019-02-07)",
-	"content": "Matt Corallo\nFlexible Lightning in Rust\nVideo: https://vimeo.com/316624439\nSlides: https://docs.google.com/presentation/d/154bMWdcMCFUco4ZXQ3lWfF51U5dad8pQ23rKVkncnns/edit#slide=id.p\nhttps://twitter.com/kanzure/status/1144256392490029057\nIntroduction Thanks for having me. I want to talk a little bit about a project I’ve been working on for about a year called rust-lightning. I started it in December so a year and a few months ago. This is my first presentation on it so I’m excited to finally get …"
 },
 {
 	"uri": "/mit-bitcoin-expo/mit-bitcoin-expo-2015/matt-corallo-sidechains/",
@@ -2566,7 +2576,7 @@
 },
 {
 	"uri": "/stephan-livera-podcast/2020-09-28-michael-flaxman-security-guide/",
-	"title": "Michael Flaxman Security Guide (2020-09-28)",
+	"title": "Michael Flaxman - Security Guide (2020-09-28)",
 	"content": "Name: Michael Flaxman\nTopic: 10x your Bitcoin security with Multisig\nLocation: Stephan Livera Podcast\nDate: September 28th 2020\nAudio: https://stephanlivera.com/episode/215/\nPrevious SLP episode with Michael Flaxman: https://diyhpl.us/wiki/transcripts/stephan-livera-podcast/2019-08-08-michael-flaxman/\n10x Security Bitcoin Guide: https://btcguide.github.io/\nTranscript completed by: Stephan Livera Edited by: Michael Folkson\n10x Security Bitcoin Guide Stephan Livera (SL): Michael, welcome back to …"
 },
 {
@@ -2662,7 +2672,7 @@
 {
 	"uri": "/mit-bitcoin-expo/mit-bitcoin-expo-2020/",
 	"title": "Mit Bitcoin Expo 2020",
-	"content": " Andrew Poelstra Taproot (2020-03-07)    "
+	"content": " Andrew Poelstra - Taproot (2020-03-07)    "
 },
 {
 	"uri": "/stanford-blockchain-conference/2020/mixicles/",
@@ -2695,8 +2705,13 @@
 	"content": ""
 },
 {
+	"uri": "/munich-meetup/",
+	"title": "Munich Meetup",
+	"content": " Daniela Brozzoni - Stratum v2 (2021-02-21)    "
+},
+{
 	"uri": "/lightning-conference/2019/2019-10-20-nadav-kohen-payment-points/",
-	"title": "Nadav Kohen Payment Points (2019-10-20)",
+	"title": "Nadav Kohen - Payment Points (2019-10-20)",
 	"content": "Nadav Kohen\nReplacing Payment Hashes with Payment Points\nThe Lightning Conference Day 2 (Stage 2)\nVideo: https://www.youtube.com/watch?v=TE65I9E8Q5k\nSlides: https://docs.google.com/presentation/d/15l4h2_zEY4zXC6n1NqsImcjgA0fovl_lkgkKu1O3QT0/\nhttps://twitter.com/kanzure/status/1220453531683115020\nIntro My name is Nadav Kohen. I’m a software engineer at Suredbits. I’m going to talk about payment points which have been alluded to throughout the conference by various talks.\nHash Timelocked Contract …"
 },
 {
@@ -2732,7 +2747,7 @@
 {
 	"uri": "/noded-podcast/",
 	"title": "Noded Podcast",
-	"content": " Andrew Poelstra Miniscript (2019-05-11)   Jnewbery Cve 2018 17144 Bug   Laolu Conner Lnd (2018-12-14)    "
+	"content": " Andrew Poelstra - Miniscript (2019-05-11)   Jnewbery CVE-2018-17144 Bug   Laolu, Conner - Lnd (2018-12-14)    "
 },
 {
 	"uri": "/scalingbitcoin/montreal-2015/non-currency-applications/",
@@ -2746,7 +2761,7 @@
 },
 {
 	"uri": "/vr-bitcoin/2020-05-16-oliver-gugger-lsat/",
-	"title": "Oliver Gugger Lsat (2020-05-16)",
+	"title": "Oliver Gugger, LSAT (2020-05-16)",
 	"content": "Name: Oliver Gugger\nTopic: LSAT - Your Ticket Aboard The Lightning Native Web\nLocation: Reckless VR\nDate: May 16th 2020\nVideo: https://www.youtube.com/watch?v=IW08RJUpzw0\nIntro Happy to be here to talk about LSAT, let’s jump right in. We are going to have a look at LSAT. What the motivation was to come up with this? What the use cases for and we are going to jump into the technical detail. This is going to be a technical talk. There will be some low level details.\nOutline First who am I? Why am …"
 },
 {
@@ -2896,12 +2911,12 @@
 },
 {
 	"uri": "/lightning-hack-day/2018-10-27-pierre-rochard-excel-in-lightning/",
-	"title": "Pierre Rochard Excel In Lightning (2018-10-27)",
+	"title": "Pierre Rochard - Excel In Lightning (2018-10-27)",
 	"content": "Pierre Rochard\nExcel in Lightning - Lightning Hack Day NYC\nVideo: https://www.youtube.com/watch?v=CWIskx9KmAg\u0026amp;amp;t=0s\u0026amp;amp;list=PLYLOctWdUBtYBle_aU4WWJJaTekm8bhct\u0026amp;amp;index=5\nDemo I want to present a project I’ve been hacking on for the past month which is getting lnd inside of Excel. I’ll explain why someone would ever do that. I want to bring Lightning to the most popular business platform in existence today which is Microsoft Office Excel. It’s installed on hundreds of millions of computers …"
 },
 {
 	"uri": "/chaincode-labs/chaincode-residency/2018-10-26-pierre-rochard-lightning-excel-plugin/",
-	"title": "Pierre Rochard Lightning Excel Plugin (2018-10-26)",
+	"title": "Pierre Rochard - Lightning Excel Plugin (2018-10-26)",
 	"content": "Pierre Rochard\nLightning Excel Plugin\nVideo: https://www.youtube.com/watch?v=AXeUZrS-8mE\u0026amp;amp;t=0s\u0026amp;amp;list=PLpLH33TRghT2jmuP9YQRo-e8gk969Q2F_\u0026amp;amp;index=10\nDemo My project is to create a user interface for lightning that might appeal to a different crowd than ours. We’re kind of used to Linux, open source, free software so being in a proprietary environment like Excel is unfamiliar territory for us. And yet I think that there is a large demographic of people who are interested in Bitcoin who work …"
 },
 {
@@ -2911,7 +2926,7 @@
 },
 {
 	"uri": "/sf-bitcoin-meetup/2015-08-24-pieter-wuille-key-tree-signatures/",
-	"title": "Pieter Wuille Key Tree Signatures (2015-08-24)",
+	"title": "Pieter Wuille - Key Tree Signatures (2015-08-24)",
 	"content": "Name: Pieter Wuille\nTopic: Key Tree Signatures\nLocation: SF Bitcoin Devs\nDate: August 24th 2015\nVideo: https://www.youtube.com/watch?v=gcQLWeFmpYg\nSlides: https://prezi.com/vsj95ns4ucu3/key-tree-signatures/\nBlog post: https://blockstream.com/2015/08/24/en-treesignatures/\nIntro For those who don’t know me I’m Pieter Wuille. I have been working on Bitcoin Core for a while but this is work I have been doing at Blockstream. Today I will be talking about Key Tree Signatures which is what I have been …"
 },
 {
@@ -3186,7 +3201,7 @@
 },
 {
 	"uri": "/lightning-hack-day/2020-06-21-rootzoll-openoms-raspiblitz/",
-	"title": "Rootzoll Openoms Raspiblitz (2020-06-21)",
+	"title": "Rootzoll, Openoms, Raspiblitz (2020-06-21)",
 	"content": "Name: Rootzoll and Openoms\nTopic: RaspiBlitz full node\nLocation: Potzblitz (online)\nDate: June 21st 2020\nVideo: https://www.youtube.com/watch?v=1EqUi4xRbr0\nSlides: https://keybase.pub/oms/Potzblitz9-RaspiBlitz-slides.pdf\nRaspiBlitz GitHub: https://github.com/rootzoll/raspiblitz\nRootzoll presenting at London Bitcoin Devs in July 2019: https://www.youtube.com/watch?v=R_ggGj7Hk1w\nIntro (Jeff Gallas) Welcome to a new episode of Potzblitz. It is episode number 9. Today we are going to talk about the …"
 },
 {
@@ -3206,7 +3221,7 @@
 },
 {
 	"uri": "/stephan-livera-podcast/2019-07-31-roy-sheinfeld-stephan-livera/",
-	"title": "Roy Sheinfeld Stephan Livera (2019-07-31)",
+	"title": "Roy Sheinfeld - Stephan Livera (2019-07-31)",
 	"content": "Stephan Livera podcast with Roy Sheinfeld - July 31st 2019\nPodcast: https://stephanlivera.com/episode/94/\nStephan Livera:\tRoy, welcome to the show.\nRoy Sheinfeld:\tHey Stephan, great to be here.\nStephan Livera:\tSo Roy, I’ve seen you’ve been writing some interesting posts on Medium, and obviously you’re the CEO and founder of Breez Technology, so can you just give us a little bit of a background on yourself, on you and also a little bit of your story on Bitcoin.\nRoy Sheinfeld:\tSure, sure, I’d be …"
 },
 {
@@ -3226,12 +3241,12 @@
 },
 {
 	"uri": "/blockchain-protocol-analysis-security-engineering/2017/2017-01-26-russell-oconnor-posts-theorem/",
-	"title": "Russell Oconnor Posts Theorem (2017-01-26)",
+	"title": "Russell Oconnor - Posts Theorem (2017-01-26)",
 	"content": "Name: Russell O’Connor\nTopic: Post’s Theorem and Blockchain Languages: A Short Course in the Theory of Computation\nLocation: BPASE 2017, Stanford University\nDate: January 26th 2017\nVideo: https://www.youtube.com/watch?v=TGE6jrVmt_I\nIntro Hi. My name is Russell O’Connor. I am here to talk to you about Post’s theorem, the theory of computation and its applications to blockchain languages. There is a bit of a debate about whether Turing complete languages are appropriate or not for doing …"
 },
 {
 	"uri": "/blockchain-protocol-analysis-security-engineering/2018/2018-01-25-russell-oconnor-simplicity/",
-	"title": "Russell Oconnor Simplicity (2018-01-25)",
+	"title": "Russell Oconnor - Simplicity (2018-01-25)",
 	"content": "Name: Russell O’Connor\nTopic: Simplicity: A New Language for Blockchains\nLocation: BPASE 2018, Stanford University\nDate: January 25th 2018\nVideo: https://www.youtube.com/watch?v=VOeUq3oR2fk\nSlides: https://cyber.stanford.edu/sites/g/files/sbiybj9936/f/slides-bpase-2018.pdf\nSimplicity white paper: https://blockstream.com/simplicity.pdf\nIntro Good morning everyone. I have been working on a new language for the consensus layer of blockchains and I am here to present that to you today.\nBlockchains …"
 },
 {
@@ -3245,19 +3260,19 @@
 	"content": "Rusty Russell\nGetting started with c-lightning\nvideo: https://www.youtube.com/watch?v=fab4P3BIZxk\nhttps://twitter.com/kanzure/status/1231946205380403200\nIntroduction Hi everyone. We’re actually a couple of minutes early and I think we are going to give a couple of minutes past before we actually start because I think some people will probably be running late particularly with the change in times we had to make after this was announced. While we are waiting it would be interesting to find out a …"
 },
 {
+	"uri": "/boltathon/2019-04-06-rusty-russell-json-interface/",
+	"title": "Rusty Russell - JSON Interface (2019-04-06)",
+	"content": "Rusty Russell\nBoltathon\nJSON Interface with c-lightning and Writing Extensions\nvideo: https://www.youtube.com/watch?v=sNB1N7FyMHA\nhttps://twitter.com/kanzure/status/1230892247345852416\nIntro Ok I have top running. We have a plan and we’re going to start from zero. We’re going to clone c-lightning, we’re going to compile it, we’re going to set up a test node. I’m assuming Bitcoin is already installed. We’re going to talk a little about configuring it and stuff like that. All this stuff is useful …"
+},
+{
 	"uri": "/misc/2018-01-24-rusty-russell-future-bitcoin-tech-directions/",
 	"title": "Rusty Russell Future Bitcoin Tech Directions (2018-01-24)",
 	"content": "Future technological directions in bitcoin: An unreliable guide\nRusty Russell\n2018-01-24\nvideo: https://www.youtube.com/watch?v=VABppufTdpA\nnotes: https://docs.google.com/document/d/1iNzJtJRq9-0vdILQAe9Bcj7r1a7xYVf8CSY0_oFrH9c/edit or http://diyhpl.us/~bryan/papers2/bitcoin/Future%20technological%20directions%20in%20bitcoin%20-%202018-01-24.pdf\nhttps://twitter.com/kanzure/status/957318453181939712\nIntroduction Thank you very much for that introduction. Alright, well polished machine right there. …"
 },
 {
 	"uri": "/stephan-livera-podcast/2019-08-12-rusty-russell-joe-netti/",
-	"title": "Rusty Russell Joe Netti (2019-08-12)",
+	"title": "Rusty Russell, Joe Netti (2019-08-12)",
 	"content": "Stephan Livera podcast with Rusty Russell and Joe Netti - August 12th 2019\nPodcast: https://stephanlivera.com/episode/98/\nStephan Livera:\tRusty and Joe, welcome to the show.\nJoe Netti:\tHi. How’s it going?\nRusty Russell:\tHey, Stephan. Good to be back.\nStephan Livera:\tThanks for rejoining me, Rusty, and thanks for joining me, Joe. So, just a quick intro just for the listeners. Joe, do you want to start?\nJoe Netti:\tYeah, sure. So, I got into Bitcoin in around 2013, and took me a while to learn what …"
-},
-{
-	"uri": "/boltathon/2019-04-06-rusty-russell-json-interface/",
-	"title": "Rusty Russell Json Interface (2019-04-06)",
-	"content": "Rusty Russell\nBoltathon\nJSON Interface with c-lightning and Writing Extensions\nvideo: https://www.youtube.com/watch?v=sNB1N7FyMHA\nhttps://twitter.com/kanzure/status/1230892247345852416\nIntro Ok I have top running. We have a plan and we’re going to start from zero. We’re going to clone c-lightning, we’re going to compile it, we’re going to set up a test node. I’m assuming Bitcoin is already installed. We’re going to talk a little about configuring it and stuff like that. All this stuff is useful …"
 },
 {
 	"uri": "/misc/safecurves-choosing-safe-curves-for-elliptic-curve-cryptography-2014/",
@@ -3328,6 +3343,11 @@
 	"uri": "/bitcoinops/schnorr-taproot-workshop-2019/",
 	"title": "Schnorr Taproot Workshop 2019",
 	"content": "  "
+},
+{
+	"uri": "/tags/script/",
+	"title": "script",
+	"content": ""
 },
 {
 	"uri": "/bitcoin-core-dev-tech/2018-10-08-script-descriptors/",
@@ -3431,18 +3451,18 @@
 },
 {
 	"uri": "/lightning-hack-day/2020-05-09-sergei-tikhomirov-lightning-privacy/",
-	"title": "Sergei Tikhomirov Lightning Privacy (2020-05-09)",
+	"title": "Sergei Tikhomirov - Lightning Privacy (2020-05-09)",
 	"content": "Name: Sergei Tikhomirov\nTopic: Quantitative Analysis of Lightning Network Privacy\nLocation: Lightning Hacksprint (Fulmo)\nDate: May 9th 2020\nVideo: https://www.youtube.com/watch?v=8lUTbfO94mM\nSlides: https://docs.google.com/presentation/d/1H9EdrhjQ9x3q0qfsei7iFYINVf2lwPyjUKHd3CScy4k/edit#slide=id.g7774542944_0_0\nPaper: https://eprint.iacr.org/2020/303\nIntro Hello everyone. I am Sergei, I am a PhD student at the University of Luxembourg. I am going to present our joint work with Pedro …"
 },
 {
 	"uri": "/lightning-hack-day/2020-05-24-sergi-delgado-watchtowers/",
-	"title": "Sergi Delgado Watchtowers (2020-05-24)",
+	"title": "Sergi Delgado - Watchtowers (2020-05-24)",
 	"content": "Name: Sergi Delgado\nTopic: Watchtowers and BOLT 13\nLocation: Potzblitz (online)\nDate: May 24th 2020\nVideo: https://www.youtube.com/watch?v=Vkq9CVxMclE\nSlides: https://srgi.me/resources/slides/Potzblitz!2020-Watchtowers.pdf\nThe Eye of Satoshi code: https://github.com/talaia-labs/python-teos\nDraft BOLT 13: https://github.com/sr-gi/bolt13/blob/master/13-watchtowers.md\nc-lightning watchtower plugin: https://github.com/talaia-labs/python-teos/tree/master/watchtower-plugin\nc-lightning watchtower hook …"
 },
 {
 	"uri": "/sf-bitcoin-meetup/",
 	"title": "SF Bitcoin Meetup",
-	"content": " Andreas Antonopoulos Bitcoin Scripting (2017-04-03)   Bip Taproot Bip Tapscript (2019-12-16)   Bram Cohen Merkle Sets (2017-07-08)   Christopher Jeffrey Bcoin (2016-09-28)   Conner Fromknecht Lnd 0.6 Beta (2019-05-02)   Jeremy Rubin Bitcoin Core (2018-04-23)   Jonas Schenlli Bip150 Bip151 (2017-09-04)   Laolu Osuntokun Exploring Lnd0.4 (2018-04-20)   Laolu Osuntokun Lightning Network (2016-07-18)   Laolu Osuntokun Neutrino (2017-06-06)   Lightning Network (2015-05-26)   Lightning Network As A …"
+	"content": " Andreas Antonopoulos - Bitcoin Scripting (2017-04-03)   Bip Taproot Bip Tapscript (2019-12-16)   Bram Cohen Merkle Sets (2017-07-08)   Christopher Jeffrey Bcoin (2016-09-28)   Conner Fromknecht - Lnd 0.6 Beta (2019-05-02)   Jeremy Rubin - Bitcoin Core (2018-04-23)   Jonas Schenlli Bip150 Bip151 (2017-09-04)   Laolu Osuntokun - Exploring Lnd0.4 (2018-04-20)   Laolu Osuntokun - Lightning Network (2016-07-18)   Laolu Osuntokun - Neutrino (2017-06-06)   Lightning Network (2015-05-26)   Lightning …"
 },
 {
 	"uri": "/rebooting-web-of-trust/2019-prague/shamir-secret-sharing/",
@@ -3585,9 +3605,24 @@
 	"content": "Name: Socratic Seminar\nTopic: Agenda in Google Doc below\nLocation: Bitcoin Sydney (online)\nDate: August 25th 2020\nVideo: No video posted online\nLast month’s Sydney Socratic: https://diyhpl.us/wiki/transcripts/sydney-bitcoin-meetup/2020-07-21-socratic-seminar/\nGoogle Doc of the resources discussed: https://docs.google.com/document/d/1rJxVznWaFHKe88s5GyrxOW-RFGTeD_GKdFzHNvhrq-c/\nThe conversation has been anonymized by default to protect the identities of the participants. Those who have expressed …"
 },
 {
+	"uri": "/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/",
+	"title": "Socratic Seminar - BIP Schnorr (2020-06-16)",
+	"content": "Name: Socratic Seminar\nTopic: BIP Schnorr (BIP 340)\nLocation: London BitDevs (online)\nDate: June 16th 2020\nVideo: https://www.youtube.com/watch?v=uE3lLsf38O4\nPastebin of the resources discussed: https://pastebin.com/uyktht33\nAugust 2020 update: Since this Socratic on BIP Schnorr there has been a proposed change to the BIP revisting the squaredness tiebreaker for the R point.\nThe conversation has been anonymized by default to protect the identities of the participants. Those who have given …"
+},
+{
 	"uri": "/london-bitcoin-devs/2020-07-21-socratic-seminar-bip-taproot/",
 	"title": "Socratic Seminar - BIP Taproot (2020-07-21)",
 	"content": "Name: Socratic Seminar\nTopic: BIP Taproot (BIP 341)\nLocation: London BitDevs (online)\nDate: July 21st 2020\nVideo: https://www.youtube.com/watch?v=bPcguc108QM\nPastebin of the resources discussed: https://pastebin.com/vsT3DNqW\nTranscript of Socratic Seminar on BIP-Schnorr: https://diyhpl.us/wiki/transcripts/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/\nThe conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for …"
+},
+{
+	"uri": "/london-bitcoin-devs/2020-06-23-socratic-seminar-coinswap/",
+	"title": "Socratic Seminar - Coinswap (2020-06-23)",
+	"content": "Name: Socratic Seminar\nTopic: CoinSwap\nLocation: London BitDevs (online)\nDate: June 23rd 2020\nVideo: https://www.youtube.com/watch?v=u7l6rP49hIA\nPastebin of the resources discussed: https://pastebin.com/zbegGmb8\nThe conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.\nIntroductions …"
+},
+{
+	"uri": "/london-bitcoin-devs/2020-08-19-socratic-seminar-signet/",
+	"title": "Socratic Seminar - Signet (2020-08-19)",
+	"content": "Name: Socratic Seminar\nTopic: Signet\nLocation: London BitDevs (online)\nDate: August 19th 2020\nVideo: https://www.youtube.com/watch?v=b0AiucAuX3E\nPastebin of the resources discussed: https://pastebin.com/rAcXX9Tn\nThe conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.\nIntro Michael …"
 },
 {
 	"uri": "/austin-bitcoin-developers/2019-08-22-socratic-seminar-2/",
@@ -3620,24 +3655,9 @@
 	"content": "Austin Bitcoin Developers socratic seminar 6\nhttps://www.meetup.com/Austin-Bitcoin-Developers/events/268812642/\nhttps://bitdevs.org/2020-02-12-socratic-seminar-101\nhttps://twitter.com/kanzure/status/1232132693179207682\nIntroduction Alrighty, let\u0026amp;rsquo;s get started. Gather around. Phil could use some company here. Nobody likes the front row. Maybe the benches. So I have a little different format for how I want to do it this week. Usually I cover a broad series of topics that I steal from the New …"
 },
 {
-	"uri": "/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/",
-	"title": "Socratic Seminar Bip Schnorr (2020-06-16)",
-	"content": "Name: Socratic Seminar\nTopic: BIP Schnorr (BIP 340)\nLocation: London BitDevs (online)\nDate: June 16th 2020\nVideo: https://www.youtube.com/watch?v=uE3lLsf38O4\nPastebin of the resources discussed: https://pastebin.com/uyktht33\nAugust 2020 update: Since this Socratic on BIP Schnorr there has been a proposed change to the BIP revisting the squaredness tiebreaker for the R point.\nThe conversation has been anonymized by default to protect the identities of the participants. Those who have given …"
-},
-{
-	"uri": "/london-bitcoin-devs/2020-06-23-socratic-seminar-coinswap/",
-	"title": "Socratic Seminar Coinswap (2020-06-23)",
-	"content": "Name: Socratic Seminar\nTopic: CoinSwap\nLocation: London BitDevs (online)\nDate: June 23rd 2020\nVideo: https://www.youtube.com/watch?v=u7l6rP49hIA\nPastebin of the resources discussed: https://pastebin.com/zbegGmb8\nThe conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.\nIntroductions …"
-},
-{
 	"uri": "/london-bitcoin-devs/2020-05-05-socratic-seminar-payjoins/",
 	"title": "Socratic Seminar Payjoins (2020-05-05)",
 	"content": "Name: Socratic Seminar with Adam Gibson\nTopic: Bitcoin privacy (Payjoin/P2EP)\nLocation: London BitDevs (online)\nDate: May 5th 2020\nVideo: https://www.youtube.com/watch?v=hX86rKyNB8I\nAdam Gibson Pastebin on Payjoin resources: https://pastebin.com/rgWVuNrC\n6102bitcoin resources on Payjoin/P2EP: https://github.com/6102bitcoin/CoinJoin-Research/blob/master/CoinJoin_Research/CoinJoin_Theory/P2EP/summary.md\nTransaction fingerprinting discussion: https://github.com/zkSNACKs/WalletWasabi/issues/3625 …"
-},
-{
-	"uri": "/london-bitcoin-devs/2020-08-19-socratic-seminar-signet/",
-	"title": "Socratic Seminar Signet (2020-08-19)",
-	"content": "Name: Socratic Seminar\nTopic: Signet\nLocation: London BitDevs (online)\nDate: August 19th 2020\nVideo: https://www.youtube.com/watch?v=b0AiucAuX3E\nPastebin of the resources discussed: https://pastebin.com/rAcXX9Tn\nThe conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.\nIntro Michael …"
 },
 {
 	"uri": "/london-bitcoin-devs/2020-05-19-socratic-seminar-vaults/",
@@ -3683,6 +3703,11 @@
 	"uri": "/stanford-blockchain-conference/2019/spork-probabilistic-bitcoin-soft-forks/",
 	"title": "Spork Probabilistic Bitcoin Soft Forks",
 	"content": "Spork: Probabilistic bitcoin soft-forks\nJeremy Rubin\nIntroduction Thank you for the introduction. I have a secret. I am not an economist, so you\u0026amp;rsquo;ll have to forgive me if I don\u0026amp;rsquo;t have your favorite annotations today. I have my own annotations. I originally gave a predecessor to this talk in Japan. You might notice my title here is a haiku: these are protocols used for changing the bitcoin netwokr protocols. People do highly value staying together for a chain, we\u0026amp;rsquo;re doing …"
+},
+{
+	"uri": "/tags/spv/",
+	"title": "spv",
+	"content": ""
 },
 {
 	"uri": "/satoshi-roundtable/sr-004/",
@@ -3757,7 +3782,7 @@
 {
 	"uri": "/stephan-livera-podcast/",
 	"title": "Stephan Livera Podcast",
-	"content": " AJ Towns - Schnorr Taproot (2019-12-27)   Bryan Bishop (2019-09-22)   Christian Decker Channel Factories (2019-03-14)   Christian Decker Lightning Topics (2020-08-13)   Conner Fromknecht Stephan Livera (2019-06-24)   James Obeirne (2019-04-11)   Jon Atack (2019-11-13)   Jonas Nick, Tim Ruffing - MuSig, MuSig-DN and MuSig2 (2020-10-27)   Laolu Osuntokun Stephan Livera (2018-12-11)   Michael Flaxman (2019-08-08)   Michael Flaxman Security Guide (2020-09-28)   Nix Bitcoin (2020-07-26)   Roy …"
+	"content": " AJ Towns - Schnorr Taproot (2019-12-27)   Bryan Bishop (2019-09-22)   Christian Decker - Channel Factories (2019-03-14)   Christian Decker - Lightning Topics (2020-08-13)   Conner Fromknecht - Stephan Livera (2019-06-24)   James O\u0026amp;#39;Beirne (2019-04-11)   Jon Atack (2019-11-13)   Jonas Nick, Tim Ruffing - MuSig, MuSig-DN and MuSig2 (2020-10-27)   Laolu Osuntokun - Stephan Livera (2018-12-11)   Luke Dashjr - Taproot Activation (2021-03-17)   Michael Flaxman (2019-08-08)   Michael Flaxman - …"
 },
 {
 	"uri": "/stanford-blockchain-conference/2020/streamlet/",
@@ -3836,8 +3861,13 @@
 },
 {
 	"uri": "/bitcoin-magazine/2021-02-26-taproot-activation-lockinontimeout/",
-	"title": "Taproot activation and LOT=true vs LOT=false",
+	"title": "Taproot activation and LOT=true vs LOT=false (2021-02-26)",
 	"content": "Name: Sjors Provoost and Aaron van Wirdum\nLocation: Bitcoin Magazine (online)\nDate: February 26th 2021\nVideo: https://www.youtube.com/watch?v=7ouVGgE75zg\nBIP 8: https://github.com/bitcoin/bips/blob/master/bip-0008.mediawiki\nArguments for LOT=true and LOT=false (T1-T6 and F1-F6): https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-February/018380.html\nAdditional argument for LOT=false (F7): https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-February/018415.html\nAaron van Wirdum …"
+},
+{
+	"uri": "/bitcoin-magazine/2021-03-12-taproot-activation-speedy-trial/",
+	"title": "Taproot Activation with Speedy Trial (2021-03-12)",
+	"content": "Name: Sjors Provoost and Aaron van Wirdum\nTopic: Taproot Activation with Speedy Trial\nLocation: Bitcoin Magazine (online)\nDate: March 12th 2021\nVideo: https://www.youtube.com/watch?v=oCPrjaw3YVI\nSpeedy Trial proposal: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-March/018583.html\nTranscript by: Michael Folkson\nIntro Aaron van Wirdum (AvW): Live from Utrecht this is the van Wirdum Sjorsnado. Sjors, what is your pun of the week?\nSjors Provoost (SP): I actually asked you for a pun …"
 },
 {
 	"uri": "/scalingbitcoin/tokyo-2018/edgedevplusplus/taproot-and-graftroot/",
@@ -3926,7 +3956,7 @@
 },
 {
 	"uri": "/stephan-livera-podcast/2020-08-09-thomas-voegtlin-ghost43-electrum/",
-	"title": "Thomas Voegtlin Ghost43 Electrum (2020-08-09)",
+	"title": "Thomas Voegtlin, Ghost43 - Electrum (2020-08-09)",
 	"content": "Name: Thomas Voegtlin and Ghost43\nTopic: Electrum Wallet 4\nLocation: Stephan Livera Podcast\nDate: August 9th 2020\nAudio: https://stephanlivera.com/episode/199/\nElectrum GitHub: https://github.com/spesmilo/electrum\nTranscript completed by: Stephan Livera Edited by: Michael Folkson\nIntro Stephan Livera (SL): Thomas and Ghost43. Welcome back to the show.\nThomas Voegtlin (TV): Hi, thank you.\nGhost43 (G43): Hey Stephan, Thanks for having me.\nSL: Thomas, my listeners have already heard you on a prior …"
 },
 {
@@ -3961,7 +3991,7 @@
 },
 {
 	"uri": "/london-bitcoin-devs/2020-06-17-tim-ruffing-schnorr-multisig/",
-	"title": "Tim Ruffing Schnorr Multisig (2020-06-17)",
+	"title": "Tim Ruffing - Schnorr, Multisig (2020-06-17)",
 	"content": "Name: Tim Ruffing\nTopic: Taproot and Schnorr Multisignatures\nLocation: London Bitcoin Devs (online)\nDate: June 17th 2020\nVideo: https://www.youtube.com/watch?v=8Op0Glp9Eoo\nSlides: https://slides.com/real-or-random/taproot-and-schnorr-multisig\nTranscript of the previous day’s Socratic Seminar on BIP-Schnorr: https://diyhpl.us/wiki/transcripts/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/\nIntro (Michael Folkson) We are now live. This is London Bitcoin Devs with Tim Ruffing. We had …"
 },
 {
@@ -3986,7 +4016,7 @@
 },
 {
 	"uri": "/lightning-hack-day/2018-12-01-tom-kirkpatrick-zap-wallet/",
-	"title": "Tom Kirkpatrick Zap Wallet (2018-12-01)",
+	"title": "Tom Kirkpatrick - Zap Wallet (2018-12-01)",
 	"content": "Tom Kirkpatrick\nZap Desktop - A look under the hood\nVideo: https://www.youtube.com/watch?v=OhRPZs0cWwQ\nIntroduction I’m Tom. I’ve been working on the Zap desktop wallet for the last six months or so. If you’re not familiar, we’re trying to build consumer facing Lightning applications. We’ve currently got an iOS app and a desktop wallet. They’re pretty similar, the interface is pretty similar between them but they’ve got a slightly different focus. I’ve been working on the desktop wallet. Can I …"
 },
 {
@@ -4127,7 +4157,7 @@
 {
 	"uri": "/vr-bitcoin/",
 	"title": "VR Bitcoin",
-	"content": " Jeremy Rubin Sapio 101 (2020-07-11)   Laolu Joost Oliver Lnd0.10 (2020-04-18)   Oliver Gugger Lsat (2020-05-16)    "
+	"content": " Jeremy Rubin - Sapio 101 (2020-07-11)   Laolu, Joost, Oliver - Lnd0.10 (2020-04-18)   Oliver Gugger, LSAT (2020-05-16)    "
 },
 {
 	"uri": "/stanford-blockchain-conference/2019/vulnerability-detection/",
@@ -4207,7 +4237,7 @@
 {
 	"uri": "/what-bitcoin-did-podcast/",
 	"title": "What Bitcoin Did Podcast",
-	"content": " Adam Back Bryan Bishop Block Reorgs (2019-05-14)    "
+	"content": " Adam Back, Bryan Bishop - Block Reorgs (2019-05-14)    "
 },
 {
 	"uri": "/coindesk-consensus-2016/why-bitcoin-still-matters/",

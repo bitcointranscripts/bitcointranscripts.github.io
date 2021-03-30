@@ -7,6 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://btctranscripts.com/tags/bitcoin-core/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Fabian Jahr - Debugging Workshop (2020-02-07)</title>
+      <link>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-07-fabian-jahr-debugging-workshop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-07-fabian-jahr-debugging-workshop/</guid>
+      <description>Name: Fabian Jahr
+Topic: Debugging Bitcoin Core Workshop
+Location: Advancing Bitcoin
+Date: February 7th 2020
+Video: No video was posted online
+Fabian presentation at Bitcoin Edge Dev++ 2019: https://diyhpl.us/wiki/transcripts/scalingbitcoin/tel-aviv-2019/edgedevplusplus/debugging-bitcoin/
+Debugging Bitcoin Core doc: https://github.com/fjahr/debugging_bitcoin
+Debugging Bitcoin Core Workshop: https://gist.github.com/fjahr/5bf65daaf9ff189a0993196195005386
+Introduction First of all welcome to the debugging Bitcoin Core workshop. Everything I know more or less about using a debugger to learn from Bitcoin Core and to fix problems in Bitcoin Core.</description>
+    </item>
+    
+    <item>
+      <title>Jeremy Rubin - Bitcoin Core (2018-04-23)</title>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2018-04-23-jeremy-rubin-bitcoin-core/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2018-04-23-jeremy-rubin-bitcoin-core/</guid>
+      <description>Jeremy Rubin
+A hardCORE workout
+Video: https://www.youtube.com/watch?v=PKzJktErUdk
+Slides: https://drive.google.com/file/d/149Ta1WRXL5WEvnBdlL-HxmsFDXUbvFDy/view
+https://twitter.com/kanzure/status/1152926849879760896
+Intro Thank you very much for the warm welcome. So welcome to the hard core workout. It is not going to be that difficult but you can stretch if you need to. It is going to be a lot of material so I’m going to go a little bit fast. If you have any questions feel free to stop me in the middle.</description>
+    </item>
+    
+    <item>
       <title>Jonas Schenlli Bip150 Bip151 (2017-09-04)</title>
       <link>https://btctranscripts.com/sf-bitcoin-meetup/2017-09-04-jonas-schenlli-bip150-bip151/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

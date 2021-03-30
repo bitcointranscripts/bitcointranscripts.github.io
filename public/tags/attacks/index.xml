@@ -58,7 +58,7 @@ Introduction Hi everybody. Thanks for making a great conference so far. I am Nic
     </item>
     
     <item>
-      <title>Christian Decker Lightning Topics (2020-08-13)</title>
+      <title>Christian Decker - Lightning Topics (2020-08-13)</title>
       <link>https://btctranscripts.com/stephan-livera-podcast/2020-08-13-christian-decker-lightning-topics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -127,7 +127,6 @@ Location: Chaincode Labs 2019 Residency
 Video: https://www.youtube.com/watch?v=StnOVBbIpD8
 Slides: https://residency.chaincode.com/presentations/bitcoin/ethan_heilman_p2p.pdf
 Eclipse attack paper: https://eprint.iacr.org/2015/263.pdf
-Transcript completed by: Adam Jonas
 Bitcoin’s P2P Network Please interrupt me. I&amp;rsquo;m going to go through this stuff a little bit quickly because I hear that you&amp;rsquo;ve already read Eclipse attack paper and you&amp;rsquo;ve already looked at some of the peer to peer stuff.
 Bitcoin uses a peer-to-peer network to announce transactions and blocks.</description>
     </item>
@@ -159,7 +158,7 @@ Welcome to the second invited talk, to be given by Dan Bernstein. Dan is one of 
     </item>
     
     <item>
-      <title>Kevin Loaec Antoine Poinsot Revault (2020-04-24)</title>
+      <title>Kevin Loaec, Antoine Poinsot - Revault (2020-04-24)</title>
       <link>https://btctranscripts.com/honey-badger-diaries/2020-04-24-kevin-loaec-antoine-poinsot-revault/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

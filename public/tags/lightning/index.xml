@@ -7,7 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://btctranscripts.com/tags/lightning/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Alex Bosworth Building Lightning Applications (2018-10-22)</title>
+      <title>Alex Bosworth -  Major Limitations of Lightning (2019-04-06)</title>
+      <link>https://btctranscripts.com/boltathon/2019-04-06-alex-bosworth-major-limitations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/boltathon/2019-04-06-alex-bosworth-major-limitations/</guid>
+      <description>Alex Bosworth
+Major Limitations of the Lightning Network
+Video: https://www.youtube.com/watch?v=ctx-oAIhhSY&amp;amp;list=PLC_AgDAr0m6QhwqPDrqMfjX64oHGmwDMk&amp;amp;index=4
+Slides: https://drive.google.com/open?id=1UIHfYdnAWGMvsLhljTgcneCxQAHcWjxg
+https://twitter.com/kanzure/status/1116824776952229890
+Intro So I had a Twitter poll to decide what to talk about. People seem pretty interested in the limitations. Where is the line of what Lightning can do and what Lightning can’t do. That’s what I want to talk about. To make it more clear what can be done and what can’t be done.
+Every Transaction A Lightning Transaction When I first started really focusing on Lightning I thought what is the goal of Lightning, what is the goal of the Lightning Network?</description>
+    </item>
+    
+    <item>
+      <title>Alex Bosworth - Building Lightning Applications (2018-10-22)</title>
       <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-building-lightning-applications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -22,7 +37,7 @@ Design Philosophy So what is the big idea behind lnd? What are we thinking about
     </item>
     
     <item>
-      <title>Alex Bosworth Channel Management (2018-10-22)</title>
+      <title>Alex Bosworth - Channel Management (2018-10-22)</title>
       <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-channel-management/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -36,7 +51,7 @@ Uptime So basically the big message overall is and I think I’ve said this befo
     </item>
     
     <item>
-      <title>Alex Bosworth Lightning Protocol (2018-10-22)</title>
+      <title>Alex Bosworth - Lightning Protocol (2018-10-22)</title>
       <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-lightning-protocol/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -61,7 +76,7 @@ Amiko Pay aims to become an implementation of the lightning network. So that pre
     </item>
     
     <item>
-      <title>Antoine Riard Rust Lightning (2019-10-20)</title>
+      <title>Antoine Riard - Rust Lightning (2019-10-20)</title>
       <link>https://btctranscripts.com/lightning-conference/2019/2019-10-20-antoine-riard-rust-lightning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -76,7 +91,7 @@ Intro Hi everyone, super happy to be here at the Lightning Conference. I’ve ha
     </item>
     
     <item>
-      <title>Antoine Riard Taproot Lightning (2020-02-06)</title>
+      <title>Antoine Riard - Taproot Lightning (2020-02-06)</title>
       <link>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-antoine-riard-taproot-lightning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -141,6 +156,20 @@ Timeline Who doesn&amp;rsquo;t know what lightning is? And who has used lightnin
     </item>
     
     <item>
+      <title>Christian Decker - C-Lightning API (2018-10-24)</title>
+      <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-24-christian-decker-c-lightning-api/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-24-christian-decker-c-lightning-api/</guid>
+      <description>Christian Decker
+Developing on c-lightning
+Location: Chaincode Labs Lightning Residency 2018
+Video: https://www.youtube.com/watch?v=l8OLD7or0DA
+https://twitter.com/kanzure/status/1232313790311436290
+Intro Good morning from the last day of presentations. I’m Chris still. Today I will be talking to you about c-lightning, how to develop on it, how to extend it, adapt it to your needs and how to customize it so it fits into whatever you are trying to do. Not whatever we thought you might want to do.</description>
+    </item>
+    
+    <item>
       <title>Christian Decker - C-Lightning Questions (2019-09-04)</title>
       <link>https://btctranscripts.com/blockstream-webinars/2019-09-04-christian-decker-c-lightning-questions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -156,21 +185,7 @@ A - It absolutely is.</description>
     </item>
     
     <item>
-      <title>Christian Decker C-Lightning API (2018-10-24)</title>
-      <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-24-christian-decker-c-lightning-api/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-24-christian-decker-c-lightning-api/</guid>
-      <description>Christian Decker
-Developing on c-lightning
-Location: Chaincode Labs Lightning Residency 2018
-Video: https://www.youtube.com/watch?v=l8OLD7or0DA
-https://twitter.com/kanzure/status/1232313790311436290
-Intro Good morning from the last day of presentations. I’m Chris still. Today I will be talking to you about c-lightning, how to develop on it, how to extend it, adapt it to your needs and how to customize it so it fits into whatever you are trying to do. Not whatever we thought you might want to do.</description>
-    </item>
-    
-    <item>
-      <title>Christian Decker Eltoo (2019-06-25)</title>
+      <title>Christian Decker - Eltoo (2019-06-25)</title>
       <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-25-christian-decker-eltoo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -187,7 +202,52 @@ Intro Who has never heard about eltoo? It is my pet project and I am pretty prou
     </item>
     
     <item>
-      <title>Conner Fromknecht Watchtowers (2019-04-06)</title>
+      <title>Christian Decker - Lightning Backups (2020-05-03)</title>
+      <link>https://btctranscripts.com/lightning-hack-day/2020-05-03-christian-decker-lightning-backups/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/lightning-hack-day/2020-05-03-christian-decker-lightning-backups/</guid>
+      <description>Name: Christian Decker
+Topic: Back the f*** up
+Location: Potzblitz (online)
+Date: May 3rd 2020
+Video: https://www.youtube.com/watch?v=kGQF3wtzr04
+Intro (Jeff Gallas) We’re live. Welcome to the fourth episode of Potzblitz, the weekly Lightning talk. Today we have a very special guest, Christian Decker of Blockstream. They also call him Dr Bitcoin. Our co-host today is Michael Folkson from the London BitDevs meetup. He is doing a bunch of Socratic Seminars and has a deep technical knowledge.</description>
+    </item>
+    
+    <item>
+      <title>Christian Decker - Lightning Topics (2020-08-13)</title>
+      <link>https://btctranscripts.com/stephan-livera-podcast/2020-08-13-christian-decker-lightning-topics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/stephan-livera-podcast/2020-08-13-christian-decker-lightning-topics/</guid>
+      <description>Name: Christian Decker
+Topic: ANYPREVOUT, MPP, Mitigating Lightning Attacks
+Location: Stephan Livera Podcast
+Date: August 13th 2020
+Audio: https://stephanlivera.com/episode/200/
+Transcript completed by: Stephan Livera Edited by: Michael Folkson
+Latest ANYPREVOUT update ANYPREVOUT BIP (BIP 118): https://github.com/ajtowns/bips/blob/bip-anyprevout/bip-0118.mediawiki
+Stephan Livera (SL): Christian welcome back to the show.
+Christian Decker (CD): Hey Stephan, thanks for having me.
+SL: I wanted to chat with you about a bunch of stuff that you’ve been doing. We’ve got a couple of things that I was really interested to chat with you about: ANYPREVOUT, MPP, Lightning attacks, the latest with Lightning Network.</description>
+    </item>
+    
+    <item>
+      <title>Conner Fromknecht - Lnd 0.6 Beta (2019-05-02)</title>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2019-05-02-conner-fromknecht-lnd-0.6-beta/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2019-05-02-conner-fromknecht-lnd-0.6-beta/</guid>
+      <description>Conner Fromknecht
+SF Lightning Devs
+LND 0.6 Beta Deep Dive
+Video: https://www.youtube.com/watch?v=XkyPw2_l6YE
+Intro lnd 0.6 was about seven months in the making. There’s more things that we could fit into this talk alone but I cherrypicked some of the highlights and things that will have some real world impact on users of the network or people who are using the API or just generally users of lnd. The high level impact on the network going forward and how we plan to scale up for the next 100K channels that come onto the network.</description>
+    </item>
+    
+    <item>
+      <title>Conner Fromknecht - Watchtowers (2019-04-06)</title>
       <link>https://btctranscripts.com/boltathon/2019-04-06-conner-fromknecht-watchtowers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -268,7 +328,7 @@ About me Okay. So here&amp;rsquo;s some things about myself. I&amp;rsquo;ve been
     </item>
     
     <item>
-      <title>Elaine Ou Bootstrapping Lightning Node (2018-10-22)</title>
+      <title>Elaine Ou - Bootstrapping Lightning Node (2018-10-22)</title>
       <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-elaine-ou-bootstrapping-lightning-node/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -393,21 +453,33 @@ stark: Thank you Giacomo. Who here had too much fun at the party last night? My 
     </item>
     
     <item>
-      <title>Laolu Conner Lnd (2018-12-14)</title>
-      <link>https://btctranscripts.com/noded-podcast/2018-12-14-laolu-conner-lnd/</link>
+      <title>Joost Jager - HODL Invoices (2019-06-13)</title>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/2019-06-13-joost-jager-hodl-invoices/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://btctranscripts.com/noded-podcast/2018-12-14-laolu-conner-lnd/</guid>
-      <description>Noded podcast with Laolu Osuntokun and Conner Fromknecht - December 14th 2018
-https://twitter.com/kanzure/status/1089187758931890178
-Podcast: https://noded.org/podcast/noded-0360-with-olaoluwa-osuntokun-and-conner-fromknecht/
-Pierre: Welcome to the Noded Bitcoin podcast. This is episode 36. We’re joined with Laolu and Conner from Lightning Labs as well as my co-host Michael Goldstein. How’s it going guys?
-roasbeef: Not bad
-Pierre: So I listened to Laolu on Stephan Livera’s podcast and I would encourage any of our listeners to go listen to that first so that they can hear all about some of the latest developments in lightning.</description>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/2019-06-13-joost-jager-hodl-invoices/</guid>
+      <description>Joost Jager
+Hodl Invoices (Breaking Bitcoin training session)
+Video: https://www.youtube.com/watch?v=jOEq9PvN-7A
+https://twitter.com/kanzure/status/1146124260324384768
+Intro My name is Joost, Michael introduced me already. I’ve been working with Lightning Labs since the middle of last year and during that time I’ve worked on several subprojects within lnd. lnd is the Lightning implementation developed by Lightning Labs. I’m not sure really what the background knowledge is at this point in this three day course. One of those subprojects within lnd is called hodl invoices and this is the topic that I would like to talk about today.</description>
     </item>
     
     <item>
-      <title>Laolu Osuntokun Lightning Network (2016-07-18)</title>
+      <title>Laolu Osuntokun - Exploring Lnd0.4 (2018-04-20)</title>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2018-04-20-laolu-osuntokun-exploring-lnd0.4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2018-04-20-laolu-osuntokun-exploring-lnd0.4/</guid>
+      <description>Laolu Osuntokun and Conner Fromknecht
+Exploring lnd 0.4-beta
+Video: https://www.youtube.com/watch?v=LXY0L8eeG3k
+Slides: https://docs.google.com/presentation/d/1pyQgGDUcB29r8DnTaS0GQS6usjw4CpgciQx_-XBVOwU/
+The Genesis of lnd First, the genesis of lnd. Here is the first commit of lnd. It was October 27 2015. This is when I was in school still. This was done when I went on break and it was the first major…. we had in terms of code. We talked about the language we’re using, the licensing, the architecture of the daemon.</description>
+    </item>
+    
+    <item>
+      <title>Laolu Osuntokun - Lightning Network (2016-07-18)</title>
       <link>https://btctranscripts.com/sf-bitcoin-meetup/2016-07-18-laolu-osuntokun-lightning-network/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -421,7 +493,7 @@ Introduction My name is Laolu Osuntokun and I work with Lightning guys and you k
     </item>
     
     <item>
-      <title>Laolu Osuntokun Neutrino (2017-06-06)</title>
+      <title>Laolu Osuntokun - Neutrino (2017-06-06)</title>
       <link>https://btctranscripts.com/sf-bitcoin-meetup/2017-06-06-laolu-osuntokun-neutrino/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -432,6 +504,35 @@ Video: https://www.youtube.com/watch?v=7FWKc8lM4Ek
 Slides: https://docs.google.com/presentation/d/1vjJUWOZIaPshjx1svfE6rFZ2lC07n47ifOdzpKWqpb4/
 https://twitter.com/kanzure/status/1054031024085258240
 Introduction My name is Laolu or Roasbeef on the internet. I’m going to talk about light clients in general and then also what we’re working on in terms of light clients and then also how that factors into the lightning network itself. The talk is called Neutrino because that is the name of our new light client that has been released.</description>
+    </item>
+    
+    <item>
+      <title>Laolu Osuntokun - Stephan Livera (2018-12-11)</title>
+      <link>https://btctranscripts.com/stephan-livera-podcast/2018-12-11-laolu-osuntokun-stephan-livera/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/stephan-livera-podcast/2018-12-11-laolu-osuntokun-stephan-livera/</guid>
+      <description>Stephan Livera podcast with Laolu Osuntokun - December 11th 2018
+https://twitter.com/kanzure/status/1090640881873387525
+Podcast: https://stephanlivera.com/episode/39
+Stephan: Hi Laolu. Thank you very much for coming on the show.
+roasbeef: It’s good to be here.
+Stephan: It’s been a while since the Lighting Summit was on and now you’re back home. How’s things back home?
+roasbeef: Not bad, just the usual back to work, just the regular stuff. Australia was great. I had never been.</description>
+    </item>
+    
+    <item>
+      <title>Laolu, Conner - Lnd (2018-12-14)</title>
+      <link>https://btctranscripts.com/noded-podcast/2018-12-14-laolu-conner-lnd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/noded-podcast/2018-12-14-laolu-conner-lnd/</guid>
+      <description>Noded podcast with Laolu Osuntokun and Conner Fromknecht - December 14th 2018
+https://twitter.com/kanzure/status/1089187758931890178
+Podcast: https://noded.org/podcast/noded-0360-with-olaoluwa-osuntokun-and-conner-fromknecht/
+Pierre: Welcome to the Noded Bitcoin podcast. This is episode 36. We’re joined with Laolu and Conner from Lightning Labs as well as my co-host Michael Goldstein. How’s it going guys?
+roasbeef: Not bad
+Pierre: So I listened to Laolu on Stephan Livera’s podcast and I would encourage any of our listeners to go listen to that first so that they can hear all about some of the latest developments in lightning.</description>
     </item>
     
     <item>
@@ -635,7 +736,7 @@ WO: Sure, and I think Lisa can talk about c-lightning.</description>
     </item>
     
     <item>
-      <title>Matt Corallo Rust Lightning (2019-02-07)</title>
+      <title>Matt Corallo - Rust Lightning (2019-02-07)</title>
       <link>https://btctranscripts.com/advancing-bitcoin/2019/2019-02-07-matt-corallo-rust-lightning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -660,6 +761,22 @@ Giulio Malavolta (Friedrich-Alexander-University Erlangen-Nuernberg), Pedro More
 https://eprint.iacr.org/2018/472.pdf
 https://twitter.com/kanzure/status/1048476273259900928
 This is joint work with my colleagues. I promise I will talk slower than the last talk. In a multi-hop network, the security tool is a hash-time lock contract (HTLC) where the payment is conditioned on revealing the pre-image of a hash function.</description>
+    </item>
+    
+    <item>
+      <title>Nadav Kohen - Payment Points (2019-10-20)</title>
+      <link>https://btctranscripts.com/lightning-conference/2019/2019-10-20-nadav-kohen-payment-points/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/lightning-conference/2019/2019-10-20-nadav-kohen-payment-points/</guid>
+      <description>Nadav Kohen
+Replacing Payment Hashes with Payment Points
+The Lightning Conference Day 2 (Stage 2)
+Video: https://www.youtube.com/watch?v=TE65I9E8Q5k
+Slides: https://docs.google.com/presentation/d/15l4h2_zEY4zXC6n1NqsImcjgA0fovl_lkgkKu1O3QT0/
+https://twitter.com/kanzure/status/1220453531683115020
+Intro My name is Nadav Kohen. I’m a software engineer at Suredbits. I’m going to talk about payment points which have been alluded to throughout the conference by various talks.
+Hash Timelocked Contract (HTLC) Routing First of all, some preliminaries, HTLCs. I don’t think I’m going to spend much time on this slide.</description>
     </item>
     
     <item>
@@ -716,7 +833,7 @@ Introduction Cool. This addresses the lightning network which is a scaling techn
     </item>
     
     <item>
-      <title>Pierre Rochard Lightning Excel Plugin (2018-10-26)</title>
+      <title>Pierre Rochard - Lightning Excel Plugin (2018-10-26)</title>
       <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-26-pierre-rochard-lightning-excel-plugin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -794,7 +911,7 @@ Introduction Hi everyone. We’re actually a couple of minutes early and I think
     </item>
     
     <item>
-      <title>Rusty Russell Json Interface (2019-04-06)</title>
+      <title>Rusty Russell - JSON Interface (2019-04-06)</title>
       <link>https://btctranscripts.com/boltathon/2019-04-06-rusty-russell-json-interface/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -875,7 +992,23 @@ Hi. My name is Greg Sanders. I will be giving a talk about segwit in bitcoin les
     </item>
     
     <item>
-      <title>Sergi Delgado Watchtowers (2020-05-24)</title>
+      <title>Sergei Tikhomirov - Lightning Privacy (2020-05-09)</title>
+      <link>https://btctranscripts.com/lightning-hack-day/2020-05-09-sergei-tikhomirov-lightning-privacy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/lightning-hack-day/2020-05-09-sergei-tikhomirov-lightning-privacy/</guid>
+      <description>Name: Sergei Tikhomirov
+Topic: Quantitative Analysis of Lightning Network Privacy
+Location: Lightning Hacksprint (Fulmo)
+Date: May 9th 2020
+Video: https://www.youtube.com/watch?v=8lUTbfO94mM
+Slides: https://docs.google.com/presentation/d/1H9EdrhjQ9x3q0qfsei7iFYINVf2lwPyjUKHd3CScy4k/edit#slide=id.g7774542944_0_0
+Paper: https://eprint.iacr.org/2020/303
+Intro Hello everyone. I am Sergei, I am a PhD student at the University of Luxembourg. I am going to present our joint work with Pedro Moreno-Sanchez and Matteo Maffei from TU Wien on certain aspects of the privacy and scalability of the Lightning Network. The full paper can be found here.</description>
+    </item>
+    
+    <item>
+      <title>Sergi Delgado - Watchtowers (2020-05-24)</title>
       <link>https://btctranscripts.com/lightning-hack-day/2020-05-24-sergi-delgado-watchtowers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

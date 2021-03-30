@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://btctranscripts.com/tags/lnd/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Alex Bosworth Building Lightning Applications (2018-10-22)</title>
+      <title>Alex Bosworth - Building Lightning Applications (2018-10-22)</title>
       <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-building-lightning-applications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -37,7 +37,7 @@ A - It absolutely is.</description>
     </item>
     
     <item>
-      <title>Conner Fromknecht Lnd 0.6 Beta (2019-05-02)</title>
+      <title>Conner Fromknecht - Lnd 0.6 Beta (2019-05-02)</title>
       <link>https://btctranscripts.com/sf-bitcoin-meetup/2019-05-02-conner-fromknecht-lnd-0.6-beta/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -50,7 +50,7 @@ Intro lnd 0.6 was about seven months in the making. There’s more things that w
     </item>
     
     <item>
-      <title>Conner Fromknecht Watchtowers (2019-04-06)</title>
+      <title>Conner Fromknecht - Watchtowers (2019-04-06)</title>
       <link>https://btctranscripts.com/boltathon/2019-04-06-conner-fromknecht-watchtowers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -64,7 +64,7 @@ Intro Pretty excited today to speak on the topic of watchtowers. It is something
     </item>
     
     <item>
-      <title>Joost Jager Hodl Invoices (2019-06-13)</title>
+      <title>Joost Jager - HODL Invoices (2019-06-13)</title>
       <link>https://btctranscripts.com/breaking-bitcoin/2019/2019-06-13-joost-jager-hodl-invoices/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -77,7 +77,20 @@ Intro My name is Joost, Michael introduced me already. I’ve been working with 
     </item>
     
     <item>
-      <title>Laolu Joost Oliver Lnd0.10 (2020-04-18)</title>
+      <title>Laolu Osuntokun - Exploring Lnd0.4 (2018-04-20)</title>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2018-04-20-laolu-osuntokun-exploring-lnd0.4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2018-04-20-laolu-osuntokun-exploring-lnd0.4/</guid>
+      <description>Laolu Osuntokun and Conner Fromknecht
+Exploring lnd 0.4-beta
+Video: https://www.youtube.com/watch?v=LXY0L8eeG3k
+Slides: https://docs.google.com/presentation/d/1pyQgGDUcB29r8DnTaS0GQS6usjw4CpgciQx_-XBVOwU/
+The Genesis of lnd First, the genesis of lnd. Here is the first commit of lnd. It was October 27 2015. This is when I was in school still. This was done when I went on break and it was the first major…. we had in terms of code. We talked about the language we’re using, the licensing, the architecture of the daemon.</description>
+    </item>
+    
+    <item>
+      <title>Laolu, Joost, Oliver - Lnd0.10 (2020-04-18)</title>
       <link>https://btctranscripts.com/vr-bitcoin/2020-04-18-laolu-joost-oliver-lnd0.10/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -88,19 +101,6 @@ Location: Virtual Reality (VR Bitcoin)
 Date: April 18th 2020
 Video: https://www.youtube.com/watch?v=h34fUGuDjMg
 Intro (Laolu Osuntokun) Thanks everyone for coming. This is my first time doing a VR presentation, really cool. I am going to be talking about lnd 0.10. Right now we are on rc2, the next major lnd release, it has a bunch of cool features, bug fixes, optimizations. I am going to talk about some big ticket features in 0.</description>
-    </item>
-    
-    <item>
-      <title>Laolu Osuntokun Exploring Lnd0.4 (2018-04-20)</title>
-      <link>https://btctranscripts.com/sf-bitcoin-meetup/2018-04-20-laolu-osuntokun-exploring-lnd0.4/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2018-04-20-laolu-osuntokun-exploring-lnd0.4/</guid>
-      <description>Laolu Osuntokun and Conner Fromknecht
-Exploring lnd 0.4-beta
-Video: https://www.youtube.com/watch?v=LXY0L8eeG3k
-Slides: https://docs.google.com/presentation/d/1pyQgGDUcB29r8DnTaS0GQS6usjw4CpgciQx_-XBVOwU/
-The Genesis of lnd First, the genesis of lnd. Here is the first commit of lnd. It was October 27 2015. This is when I was in school still. This was done when I went on break and it was the first major…. we had in terms of code. We talked about the language we’re using, the licensing, the architecture of the daemon.</description>
     </item>
     
     <item>
@@ -131,7 +131,7 @@ WO: Sure, and I think Lisa can talk about c-lightning.</description>
     </item>
     
     <item>
-      <title>Pierre Rochard Excel In Lightning (2018-10-27)</title>
+      <title>Pierre Rochard - Excel In Lightning (2018-10-27)</title>
       <link>https://btctranscripts.com/lightning-hack-day/2018-10-27-pierre-rochard-excel-in-lightning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -143,7 +143,7 @@ Demo I want to present a project I’ve been hacking on for the past month which
     </item>
     
     <item>
-      <title>Pierre Rochard Lightning Excel Plugin (2018-10-26)</title>
+      <title>Pierre Rochard - Lightning Excel Plugin (2018-10-26)</title>
       <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-26-pierre-rochard-lightning-excel-plugin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
