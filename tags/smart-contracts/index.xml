@@ -8,7 +8,12 @@ Stefano Lande
 paper: https://arxiv.org/abs/1905.07639
 https://twitter.com/kanzure/status/1171695588116746240
 This is shared work with my collaborators and coauthors.
-Smart contracts I am sure everyone here knows what a smart contract is. It&amp;rsquo;s a program that can move cryptoassets. It&amp;rsquo;s executed in a decentralized environment. Generally speaking, we can say there&amp;rsquo;s two classes of smart contracts. A smart contract is a program. While in blockchain like bitcoin, smart contracts are cryptographic protocols.</description></item><item><title>Discreet Log Contracts</title><link>https://btctranscripts.com/scalingbitcoin/stanford-2017/discreet-log-contracts/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/scalingbitcoin/stanford-2017/discreet-log-contracts/</guid><description>Discreet log contracts
+Smart contracts I am sure everyone here knows what a smart contract is. It&amp;rsquo;s a program that can move cryptoassets. It&amp;rsquo;s executed in a decentralized environment. Generally speaking, we can say there&amp;rsquo;s two classes of smart contracts. A smart contract is a program. While in blockchain like bitcoin, smart contracts are cryptographic protocols.</description></item><item><title>Dan Robinson - Ivy (2017-01-26)</title><link>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/2017-01-26-dan-robinson-ivy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/2017-01-26-dan-robinson-ivy/</guid><description>Name: Dan Robinson
+Topic: Ivy: A Declarative Predicate Language for Smart Contracts
+Location: BPASE 2017, Stanford University
+Date: January 26th 2017
+Video: https://www.youtube.com/watch?feature=youtu.be&amp;amp;v=xdxs7VJTqns
+Intro Hi I’m Dan Robinson, I’m one of the Product Architects at Chain which is an enterprise blockchain infrastructure company for financial institutions. We have a full stack blockchain protocol and what I am going to talk about is part of that that also can be used for other applications including as I am going to demo here, make it easier to write scripts for Bitcoin Script.</description></item><item><title>Discreet Log Contracts</title><link>https://btctranscripts.com/scalingbitcoin/stanford-2017/discreet-log-contracts/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/scalingbitcoin/stanford-2017/discreet-log-contracts/</guid><description>Discreet log contracts
 http://diyhpl.us/wiki/transcripts/discreet-log-contracts/
 https://www.youtube.com/watch?v=FU-rA5dkTHI
 paper: https://adiabat.github.io/dlc.pdf
@@ -22,7 +27,7 @@ Tadge Dryja
 video: https://www.youtube.com/watch?v=i-0NUqIVVV4&amp;amp;t=53m14s
 https://twitter.com/kanzure/status/980545280973201410
 Introduction I will be talking about discreet log contracts, taproot, and graftroot. Not in that order, the order will actually be taproot, graftroot, and then discreet log contracts.
-Quick intro: I&amp;rsquo;m Tadge Dryja. I work here at MIT down the street at Digital Currency Initiative. I was coauthor on the lightning network paper, and I worked on lightning.</description></item><item><title>Jeremy Rubin Sapio 101 (2020-07-11)</title><link>https://btctranscripts.com/vr-bitcoin/2020-07-11-jeremy-rubin-sapio-101/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/vr-bitcoin/2020-07-11-jeremy-rubin-sapio-101/</guid><description>Name: Jeremy Rubin
+Quick intro: I&amp;rsquo;m Tadge Dryja. I work here at MIT down the street at Digital Currency Initiative. I was coauthor on the lightning network paper, and I worked on lightning.</description></item><item><title>Jeremy Rubin - Sapio 101 (2020-07-11)</title><link>https://btctranscripts.com/vr-bitcoin/2020-07-11-jeremy-rubin-sapio-101/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/vr-bitcoin/2020-07-11-jeremy-rubin-sapio-101/</guid><description>Name: Jeremy Rubin
 Topic: Sapio Programming 101: Stateful Smart Contracts for Bitcoin with OP_CTV
 Location: Reckless VR
 Date: July 11th 2020
@@ -53,7 +58,7 @@ Sergio Lerner
 Sergio is co-founder and chief scientist at RSK Labs. The whitepaper was pretty good. I am happy that he is here. Thank you. Just give me a minute.
 Alicia Bendhan Lous Parker BitDevsNYC
 Yes, I use powerpoint. Please don&amp;rsquo;t read my emails.
-Thanks everyone for staying here and not going to the next room. Thanks for the organizers for inviting me. Today I am going to talk about Rootstock.</description></item><item><title>Russell Oconnor Simplicity (2018-01-25)</title><link>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/2018-01-25-russell-oconnor-simplicity/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/2018-01-25-russell-oconnor-simplicity/</guid><description>Name: Russell O’Connor
+Thanks everyone for staying here and not going to the next room. Thanks for the organizers for inviting me. Today I am going to talk about Rootstock.</description></item><item><title>Russell Oconnor - Simplicity (2018-01-25)</title><link>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/2018-01-25-russell-oconnor-simplicity/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/2018-01-25-russell-oconnor-simplicity/</guid><description>Name: Russell O’Connor
 Topic: Simplicity: A New Language for Blockchains
 Location: BPASE 2018, Stanford University
 Date: January 25th 2018

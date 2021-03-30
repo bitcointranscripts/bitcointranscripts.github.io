@@ -13,7 +13,7 @@ Nicolas Bacca
 video: https://www.youtube.com/watch?v=eCE2OzKIab8&amp;amp;t=6h42m30s
 https://twitter.com/kanzure/status/1005627960160849920
 Hello. Nobody cares? Ah. So next up is Nicolas. And he will talk about hardware attacks. Thank you.
-Introduction Hi everybody. Thanks for making a great conference so far. I am Nicolas from Ledger hardware wallet. Today I am going to be talking about breaking hardware wallets. I don&amp;rsquo;t mean physically breaking them. If you expected to come steal a hardware wallet and be able to break it, then you will be disappointed.</description></item><item><title>Christian Decker Lightning Topics (2020-08-13)</title><link>https://btctranscripts.com/stephan-livera-podcast/2020-08-13-christian-decker-lightning-topics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2020-08-13-christian-decker-lightning-topics/</guid><description>Name: Christian Decker
+Introduction Hi everybody. Thanks for making a great conference so far. I am Nicolas from Ledger hardware wallet. Today I am going to be talking about breaking hardware wallets. I don&amp;rsquo;t mean physically breaking them. If you expected to come steal a hardware wallet and be able to break it, then you will be disappointed.</description></item><item><title>Christian Decker - Lightning Topics (2020-08-13)</title><link>https://btctranscripts.com/stephan-livera-podcast/2020-08-13-christian-decker-lightning-topics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2020-08-13-christian-decker-lightning-topics/</guid><description>Name: Christian Decker
 Topic: ANYPREVOUT, MPP, Mitigating Lightning Attacks
 Location: Stephan Livera Podcast
 Date: August 13th 2020
@@ -41,7 +41,6 @@ Location: Chaincode Labs 2019 Residency
 Video: https://www.youtube.com/watch?v=StnOVBbIpD8
 Slides: https://residency.chaincode.com/presentations/bitcoin/ethan_heilman_p2p.pdf
 Eclipse attack paper: https://eprint.iacr.org/2015/263.pdf
-Transcript completed by: Adam Jonas
 Bitcoin’s P2P Network Please interrupt me. I&amp;rsquo;m going to go through this stuff a little bit quickly because I hear that you&amp;rsquo;ve already read Eclipse attack paper and you&amp;rsquo;ve already looked at some of the peer to peer stuff.
 Bitcoin uses a peer-to-peer network to announce transactions and blocks.</description></item><item><title>Extracting Seeds From Hardware Wallets</title><link>https://btctranscripts.com/breaking-bitcoin/2019/extracting-seeds-from-hardware-wallets/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/breaking-bitcoin/2019/extracting-seeds-from-hardware-wallets/</guid><description>Extracting seeds from hardware wallets
 Charles Guillemet (P3b7_)
@@ -51,7 +50,7 @@ Introduction My talk is about extracting seeds from hardware wallets. I am chief
 Daniel J. Bernstein (djb)
 FSE 2013
 video: https://www.youtube.com/watch?v=bT4cKwBROno&amp;amp;list=PLgO7JBj821uGZTXEXBLckChu70kl7Celh&amp;amp;index=7
-Welcome to the second invited talk, to be given by Dan Bernstein. Dan is one of the few members of our community who does not need an introduction. It&amp;rsquo;s a great honor and pleasure that he has agreed to give a talk here. Dan comes from UC Berkeley and from Chicago. Just a few things you might know Dan from&amp;ndash; he sued the U.</description></item><item><title>Kevin Loaec Antoine Poinsot Revault (2020-04-24)</title><link>https://btctranscripts.com/honey-badger-diaries/2020-04-24-kevin-loaec-antoine-poinsot-revault/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/honey-badger-diaries/2020-04-24-kevin-loaec-antoine-poinsot-revault/</guid><description>Name: Kevin Loaec and Antoine Poinsot
+Welcome to the second invited talk, to be given by Dan Bernstein. Dan is one of the few members of our community who does not need an introduction. It&amp;rsquo;s a great honor and pleasure that he has agreed to give a talk here. Dan comes from UC Berkeley and from Chicago. Just a few things you might know Dan from&amp;ndash; he sued the U.</description></item><item><title>Kevin Loaec, Antoine Poinsot - Revault (2020-04-24)</title><link>https://btctranscripts.com/honey-badger-diaries/2020-04-24-kevin-loaec-antoine-poinsot-revault/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/honey-badger-diaries/2020-04-24-kevin-loaec-antoine-poinsot-revault/</guid><description>Name: Kevin Loaec and Antoine Poinsot
 Topic: Revault Bitcoin vaults
 Location: Honey Badger Diaries (podcast)
 Date: April 24th 2020

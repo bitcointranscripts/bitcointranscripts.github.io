@@ -10,14 +10,14 @@ Bitcoin Vaults and Custody
 Podcast: https://stephanlivera.com/episode/108/
 Stephan Livera: Bryan, welcome to the show, man. I’m a big fan of your work.
 Bryan Bishop: Thank you. I’m a big fan of yours as well.
-Stephan Livera: Yeah, so look, we’re doing Bitcoin Custody. I know you’re one of the guys to talk to on this exact topic. And so, maybe we’ll just start with a little bit of a background.</description></item><item><title>Christian Decker Channel Factories (2019-03-14)</title><link>https://btctranscripts.com/stephan-livera-podcast/2019-03-14-christian-decker-channel-factories/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2019-03-14-christian-decker-channel-factories/</guid><description>Name: Christian Decker
+Stephan Livera: Yeah, so look, we’re doing Bitcoin Custody. I know you’re one of the guys to talk to on this exact topic. And so, maybe we’ll just start with a little bit of a background.</description></item><item><title>Christian Decker - Channel Factories (2019-03-14)</title><link>https://btctranscripts.com/stephan-livera-podcast/2019-03-14-christian-decker-channel-factories/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2019-03-14-christian-decker-channel-factories/</guid><description>Name: Christian Decker
 Topic: Lightning Channel Factories
 Location: Stephan Livera Podcast
 Date: March 14th 2019
 Audio: https://stephanlivera.com/episode/59/
 Lightning topology limitation Stephan: Christian, welcome to the show. I’m a big fan of your work.
 Christian: Thank you so much for having me Stephan. I am a long time listener and I am happy to be joining you today.
-Stephan: There has been a lot of chatter in the Bitcoin community on what might happen in the future.</description></item><item><title>Christian Decker Lightning Topics (2020-08-13)</title><link>https://btctranscripts.com/stephan-livera-podcast/2020-08-13-christian-decker-lightning-topics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2020-08-13-christian-decker-lightning-topics/</guid><description>Name: Christian Decker
+Stephan: There has been a lot of chatter in the Bitcoin community on what might happen in the future.</description></item><item><title>Christian Decker - Lightning Topics (2020-08-13)</title><link>https://btctranscripts.com/stephan-livera-podcast/2020-08-13-christian-decker-lightning-topics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2020-08-13-christian-decker-lightning-topics/</guid><description>Name: Christian Decker
 Topic: ANYPREVOUT, MPP, Mitigating Lightning Attacks
 Location: Stephan Livera Podcast
 Date: August 13th 2020
@@ -26,11 +26,11 @@ Transcript completed by: Stephan Livera Edited by: Michael Folkson
 Latest ANYPREVOUT update ANYPREVOUT BIP (BIP 118): https://github.com/ajtowns/bips/blob/bip-anyprevout/bip-0118.mediawiki
 Stephan Livera (SL): Christian welcome back to the show.
 Christian Decker (CD): Hey Stephan, thanks for having me.
-SL: I wanted to chat with you about a bunch of stuff that you’ve been doing. We’ve got a couple of things that I was really interested to chat with you about: ANYPREVOUT, MPP, Lightning attacks, the latest with Lightning Network.</description></item><item><title>Conner Fromknecht Stephan Livera (2019-06-24)</title><link>https://btctranscripts.com/stephan-livera-podcast/2019-06-24-conner-fromknecht-stephan-livera/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2019-06-24-conner-fromknecht-stephan-livera/</guid><description>Stephan Livera podcast with Conner Fromknecht - June 24th 2019
+SL: I wanted to chat with you about a bunch of stuff that you’ve been doing. We’ve got a couple of things that I was really interested to chat with you about: ANYPREVOUT, MPP, Lightning attacks, the latest with Lightning Network.</description></item><item><title>Conner Fromknecht - Stephan Livera (2019-06-24)</title><link>https://btctranscripts.com/stephan-livera-podcast/2019-06-24-conner-fromknecht-stephan-livera/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2019-06-24-conner-fromknecht-stephan-livera/</guid><description>Stephan Livera podcast with Conner Fromknecht - June 24th 2019
 https://twitter.com/kanzure/status/1143553150152060928
 Podcast: https://stephanlivera.com/episode/83
 Stephan: Conner I am a big fan of what you guys are doing at Lightning Labs and I’ve been trying to get you on for a while. I’m glad that we were finally able to make it happen. Welcome to the show.
-Conner: Awesome, thank you Stephan. It has been a while since we first met in Australia.</description></item><item><title>James Obeirne (2019-04-11)</title><link>https://btctranscripts.com/stephan-livera-podcast/2019-04-11-james-obeirne/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2019-04-11-james-obeirne/</guid><description>Stephan Livera Podcast with James O’Beirne - April 11th 2019
+Conner: Awesome, thank you Stephan. It has been a while since we first met in Australia.</description></item><item><title>James O'Beirne (2019-04-11)</title><link>https://btctranscripts.com/stephan-livera-podcast/2019-04-11-james-obeirne/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2019-04-11-james-obeirne/</guid><description>Stephan Livera Podcast with James O’Beirne - April 11th 2019
 The Truth About ‘Power’ in Bitcoin
 Podcast: https://stephanlivera.com/episode/66/
 https://twitter.com/kanzure/status/1198289594069983237
@@ -54,13 +54,24 @@ MuSig-DN blog post: https://medium.com/blockstream/musig-dn-schnorr-multisignatu
 MuSig2 paper: https://eprint.iacr.org/2020/1261.pdf
 MuSig2 blog post: https://medium.com/blockstream/musig2-simple-two-round-schnorr-multisignatures-bf9582e99295
 Transcript completed by: Stephan Livera Edited by: Michael Folkson
-Intro Stephan Livera (SL): Jonas and Tim, welcome to the show.</description></item><item><title>Laolu Osuntokun Stephan Livera (2018-12-11)</title><link>https://btctranscripts.com/stephan-livera-podcast/2018-12-11-laolu-osuntokun-stephan-livera/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2018-12-11-laolu-osuntokun-stephan-livera/</guid><description>Stephan Livera podcast with Laolu Osuntokun - December 11th 2018
+Intro Stephan Livera (SL): Jonas and Tim, welcome to the show.</description></item><item><title>Laolu Osuntokun - Stephan Livera (2018-12-11)</title><link>https://btctranscripts.com/stephan-livera-podcast/2018-12-11-laolu-osuntokun-stephan-livera/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2018-12-11-laolu-osuntokun-stephan-livera/</guid><description>Stephan Livera podcast with Laolu Osuntokun - December 11th 2018
 https://twitter.com/kanzure/status/1090640881873387525
 Podcast: https://stephanlivera.com/episode/39
 Stephan: Hi Laolu. Thank you very much for coming on the show.
 roasbeef: It’s good to be here.
 Stephan: It’s been a while since the Lighting Summit was on and now you’re back home. How’s things back home?
-roasbeef: Not bad, just the usual back to work, just the regular stuff. Australia was great. I had never been.</description></item><item><title>Michael Flaxman (2019-08-08)</title><link>https://btctranscripts.com/stephan-livera-podcast/2019-08-08-michael-flaxman/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2019-08-08-michael-flaxman/</guid><description>Name: Michael Flaxman
+roasbeef: Not bad, just the usual back to work, just the regular stuff. Australia was great. I had never been.</description></item><item><title>Luke Dashjr - Taproot Activation (2021-03-17)</title><link>https://btctranscripts.com/stephan-livera-podcast/2021-03-17-luke-dashjr-taproot-activation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2021-03-17-luke-dashjr-taproot-activation/</guid><description>Name: Luke Dashjr
+Topic: How Bitcoin UASF went down, Taproot LOT=true, Speedy Trial, Small Blocks
+Location: Stephan Livera Podcast
+Date: March 17th 2021
+Audio: https://stephanlivera.com/episode/260/
+Luke Dashjr arguments against LOT=false: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-February/018498.html
+T1-T6 and F1-F6 arguments for LOT=true and LOT=false: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-February/018380.html
+F7 argument for LOT=false: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-February/018415.html
+Transcript by: Stephan Livera Edited by: Michael Folkson
+Intro Stephan Livera (SL): Luke, welcome to the show.
+Luke Dashjr (LD): Thanks.
+SL: So, Luke for listeners who are unfamiliar, maybe you could take a minute and tell us a little bit about your background and how long you’ve been developing and contributing with Bitcoin Core.</description></item><item><title>Michael Flaxman (2019-08-08)</title><link>https://btctranscripts.com/stephan-livera-podcast/2019-08-08-michael-flaxman/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2019-08-08-michael-flaxman/</guid><description>Name: Michael Flaxman
 Topic: Every Bitcoin Hardware Wallet Sucks
 Location: Stephan Livera Podcast
 Date: August 8th 2019
@@ -68,7 +79,7 @@ Audio: https://stephanlivera.com/episode/97/
 Transcript completed by: Stephan Livera Edited by: Michael Folkson
 Intro Stephan Livera (SL): Michael, welcome to the show.
 Michael Flaxman (MF): Hi. It’s good to be here. Thank you for having me.
-SL: Michael, I think you are one of these really underrated or under followed guys. I think a lot of the hardcore Bitcoiners know you but there’s a lot of people who don’t know you.</description></item><item><title>Michael Flaxman Security Guide (2020-09-28)</title><link>https://btctranscripts.com/stephan-livera-podcast/2020-09-28-michael-flaxman-security-guide/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2020-09-28-michael-flaxman-security-guide/</guid><description>Name: Michael Flaxman
+SL: Michael, I think you are one of these really underrated or under followed guys. I think a lot of the hardcore Bitcoiners know you but there’s a lot of people who don’t know you.</description></item><item><title>Michael Flaxman - Security Guide (2020-09-28)</title><link>https://btctranscripts.com/stephan-livera-podcast/2020-09-28-michael-flaxman-security-guide/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2020-09-28-michael-flaxman-security-guide/</guid><description>Name: Michael Flaxman
 Topic: 10x your Bitcoin security with Multisig
 Location: Stephan Livera Podcast
 Date: September 28th 2020
@@ -86,17 +97,17 @@ nix-bitcoin on GitHub: https://github.com/fort-nix/nix-bitcoin
 Transcript completed by: Stephan Livera Edited by: Michael Folkson
 Intro Stephan Livera (SL): nixbitcoindev welcome to the show.
 nixbitcoindev (NBD): Hello. Thank you for having me.
-SL: Obviously as you’re under a pseudonym don’t dox anything about yourself but can you just tell us what you’re interested in about Bitcoin and is it the computer science aspects or what aspects of it interest you?</description></item><item><title>Roy Sheinfeld Stephan Livera (2019-07-31)</title><link>https://btctranscripts.com/stephan-livera-podcast/2019-07-31-roy-sheinfeld-stephan-livera/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2019-07-31-roy-sheinfeld-stephan-livera/</guid><description>Stephan Livera podcast with Roy Sheinfeld - July 31st 2019
+SL: Obviously as you’re under a pseudonym don’t dox anything about yourself but can you just tell us what you’re interested in about Bitcoin and is it the computer science aspects or what aspects of it interest you?</description></item><item><title>Roy Sheinfeld - Stephan Livera (2019-07-31)</title><link>https://btctranscripts.com/stephan-livera-podcast/2019-07-31-roy-sheinfeld-stephan-livera/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2019-07-31-roy-sheinfeld-stephan-livera/</guid><description>Stephan Livera podcast with Roy Sheinfeld - July 31st 2019
 Podcast: https://stephanlivera.com/episode/94/
 Stephan Livera: Roy, welcome to the show.
 Roy Sheinfeld: Hey Stephan, great to be here.
-Stephan Livera: So Roy, I’ve seen you’ve been writing some interesting posts on Medium, and obviously you’re the CEO and founder of Breez Technology, so can you just give us a little bit of a background on yourself, on you and also a little bit of your story on Bitcoin.</description></item><item><title>Rusty Russell Joe Netti (2019-08-12)</title><link>https://btctranscripts.com/stephan-livera-podcast/2019-08-12-rusty-russell-joe-netti/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2019-08-12-rusty-russell-joe-netti/</guid><description>Stephan Livera podcast with Rusty Russell and Joe Netti - August 12th 2019
+Stephan Livera: So Roy, I’ve seen you’ve been writing some interesting posts on Medium, and obviously you’re the CEO and founder of Breez Technology, so can you just give us a little bit of a background on yourself, on you and also a little bit of your story on Bitcoin.</description></item><item><title>Rusty Russell, Joe Netti (2019-08-12)</title><link>https://btctranscripts.com/stephan-livera-podcast/2019-08-12-rusty-russell-joe-netti/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2019-08-12-rusty-russell-joe-netti/</guid><description>Stephan Livera podcast with Rusty Russell and Joe Netti - August 12th 2019
 Podcast: https://stephanlivera.com/episode/98/
 Stephan Livera: Rusty and Joe, welcome to the show.
 Joe Netti: Hi. How’s it going?
 Rusty Russell: Hey, Stephan. Good to be back.
 Stephan Livera: Thanks for rejoining me, Rusty, and thanks for joining me, Joe. So, just a quick intro just for the listeners. Joe, do you want to start?
-Joe Netti: Yeah, sure. So, I got into Bitcoin in around 2013, and took me a while to learn what it was about, and then I just kept diving deeper.</description></item><item><title>Thomas Voegtlin Ghost43 Electrum (2020-08-09)</title><link>https://btctranscripts.com/stephan-livera-podcast/2020-08-09-thomas-voegtlin-ghost43-electrum/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2020-08-09-thomas-voegtlin-ghost43-electrum/</guid><description>Name: Thomas Voegtlin and Ghost43
+Joe Netti: Yeah, sure. So, I got into Bitcoin in around 2013, and took me a while to learn what it was about, and then I just kept diving deeper.</description></item><item><title>Thomas Voegtlin, Ghost43 - Electrum (2020-08-09)</title><link>https://btctranscripts.com/stephan-livera-podcast/2020-08-09-thomas-voegtlin-ghost43-electrum/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2020-08-09-thomas-voegtlin-ghost43-electrum/</guid><description>Name: Thomas Voegtlin and Ghost43
 Topic: Electrum Wallet 4
 Location: Stephan Livera Podcast
 Date: August 9th 2020
