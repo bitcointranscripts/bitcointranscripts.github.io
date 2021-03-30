@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>hackathon on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/categories/hackathon/</link>
+    <link>https://btctranscripts.com/categories/hackathon/</link>
     <description>Recent content in hackathon on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/categories/hackathon/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/categories/hackathon/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Christian Decker - Lightning Backups (2020-05-03)</title>
-      <link>//btctranscripts.com/lightning-hack-day/2020-05-03-christian-decker-lightning-backups/</link>
+      <link>https://btctranscripts.com/lightning-hack-day/2020-05-03-christian-decker-lightning-backups/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/lightning-hack-day/2020-05-03-christian-decker-lightning-backups/</guid>
+      <guid>https://btctranscripts.com/lightning-hack-day/2020-05-03-christian-decker-lightning-backups/</guid>
       <description>Name: Christian Decker
 Topic: Back the f*** up
 Location: Potzblitz (online)
@@ -22,10 +22,10 @@ Intro (Jeff Gallas) We’re live. Welcome to the fourth episode of Potzblitz, th
     
     <item>
       <title>Pierre Rochard Excel In Lightning (2018-10-27)</title>
-      <link>//btctranscripts.com/lightning-hack-day/2018-10-27-pierre-rochard-excel-in-lightning/</link>
+      <link>https://btctranscripts.com/lightning-hack-day/2018-10-27-pierre-rochard-excel-in-lightning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/lightning-hack-day/2018-10-27-pierre-rochard-excel-in-lightning/</guid>
+      <guid>https://btctranscripts.com/lightning-hack-day/2018-10-27-pierre-rochard-excel-in-lightning/</guid>
       <description>Pierre Rochard
 Excel in Lightning - Lightning Hack Day NYC
 Video: https://www.youtube.com/watch?v=CWIskx9KmAg&amp;amp;t=0s&amp;amp;list=PLYLOctWdUBtYBle_aU4WWJJaTekm8bhct&amp;amp;index=5
@@ -34,10 +34,10 @@ Demo I want to present a project I’ve been hacking on for the past month which
     
     <item>
       <title>Rootzoll Openoms Raspiblitz (2020-06-21)</title>
-      <link>//btctranscripts.com/lightning-hack-day/2020-06-21-rootzoll-openoms-raspiblitz/</link>
+      <link>https://btctranscripts.com/lightning-hack-day/2020-06-21-rootzoll-openoms-raspiblitz/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/lightning-hack-day/2020-06-21-rootzoll-openoms-raspiblitz/</guid>
+      <guid>https://btctranscripts.com/lightning-hack-day/2020-06-21-rootzoll-openoms-raspiblitz/</guid>
       <description>Name: Rootzoll and Openoms
 Topic: RaspiBlitz full node
 Location: Potzblitz (online)
@@ -51,10 +51,10 @@ Intro (Jeff Gallas) Welcome to a new episode of Potzblitz. It is episode number 
     
     <item>
       <title>Sergei Tikhomirov Lightning Privacy (2020-05-09)</title>
-      <link>//btctranscripts.com/lightning-hack-day/2020-05-09-sergei-tikhomirov-lightning-privacy/</link>
+      <link>https://btctranscripts.com/lightning-hack-day/2020-05-09-sergei-tikhomirov-lightning-privacy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/lightning-hack-day/2020-05-09-sergei-tikhomirov-lightning-privacy/</guid>
+      <guid>https://btctranscripts.com/lightning-hack-day/2020-05-09-sergei-tikhomirov-lightning-privacy/</guid>
       <description>Name: Sergei Tikhomirov
 Topic: Quantitative Analysis of Lightning Network Privacy
 Location: Lightning Hacksprint (Fulmo)
@@ -67,10 +67,10 @@ Intro Hello everyone. I am Sergei, I am a PhD student at the University of Luxem
     
     <item>
       <title>Sergi Delgado Watchtowers (2020-05-24)</title>
-      <link>//btctranscripts.com/lightning-hack-day/2020-05-24-sergi-delgado-watchtowers/</link>
+      <link>https://btctranscripts.com/lightning-hack-day/2020-05-24-sergi-delgado-watchtowers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/lightning-hack-day/2020-05-24-sergi-delgado-watchtowers/</guid>
+      <guid>https://btctranscripts.com/lightning-hack-day/2020-05-24-sergi-delgado-watchtowers/</guid>
       <description>Name: Sergi Delgado
 Topic: Watchtowers and BOLT 13
 Location: Potzblitz (online)
@@ -91,10 +91,10 @@ Intro I am going to be talking about towers and a bit about BOLT 13 too. Before 
     
     <item>
       <title>Tom Kirkpatrick Zap Wallet (2018-12-01)</title>
-      <link>//btctranscripts.com/lightning-hack-day/2018-12-01-tom-kirkpatrick-zap-wallet/</link>
+      <link>https://btctranscripts.com/lightning-hack-day/2018-12-01-tom-kirkpatrick-zap-wallet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/lightning-hack-day/2018-12-01-tom-kirkpatrick-zap-wallet/</guid>
+      <guid>https://btctranscripts.com/lightning-hack-day/2018-12-01-tom-kirkpatrick-zap-wallet/</guid>
       <description>Tom Kirkpatrick
 Zap Desktop - A look under the hood
 Video: https://www.youtube.com/watch?v=OhRPZs0cWwQ

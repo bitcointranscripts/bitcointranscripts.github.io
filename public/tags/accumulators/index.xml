@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>accumulators on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/tags/accumulators/</link>
+    <link>https://btctranscripts.com/tags/accumulators/</link>
     <description>Recent content in accumulators on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/tags/accumulators/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/tags/accumulators/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Accumulators</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/accumulators/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/accumulators/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/accumulators/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/accumulators/</guid>
       <description>Accumulators
 Tadge Dryja
 https://diyhpl.us/wiki/transcripts/bitcoin-core-dev-tech/2018-10-08-utxo-accumulators-and-utreexo/
@@ -27,10 +27,10 @@ https://docs.google.com/presentation/d/1z_vAwA6hN-C1WEg89EFfZCwqfMRWDcYuW61aA7P8
     
     <item>
       <title>Accumulators</title>
-      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/accumulators/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tokyo-2018/accumulators/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/accumulators/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tokyo-2018/accumulators/</guid>
       <description>A scalable drop-in replacement for merkle trees
 Benedikt Bünz, Benjamin Fisch and Dan Boneh (Stanford University)
 https://twitter.com/kanzure/status/1048454406755168257
@@ -39,10 +39,10 @@ Introduction Hello. Test. Okay. I am going to talk about accumulators for UTXOs.
     
     <item>
       <title>Accumulators</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2019/accumulators/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2019/accumulators/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/accumulators/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2019/accumulators/</guid>
       <description>Accumulators for blockchains
 Benedikt Bunz
 https://twitter.com/kanzure/status/1090748293234094082
@@ -55,10 +55,10 @@ Bitcoin UTXO states The bitcoin state is the UTXO set.</description>
     
     <item>
       <title>Scalable Rsa Modulus Generation</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/scalable-rsa-modulus-generation/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/scalable-rsa-modulus-generation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/scalable-rsa-modulus-generation/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/scalable-rsa-modulus-generation/</guid>
       <description>Scalable RSA Modulus Generation with Dishonest Majority
 Megan Chen
 https://twitter.com/kanzure/status/1230545603605585920
@@ -67,10 +67,10 @@ Introduction Groups of unknown order are interesting cryptographic primitives. Y
     
     <item>
       <title>Transparent Snarks From Dark Compilers</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/transparent-snarks-from-dark-compilers/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/transparent-snarks-from-dark-compilers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/transparent-snarks-from-dark-compilers/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/transparent-snarks-from-dark-compilers/</guid>
       <description>Transparent SNARKs from DARK compilers
 Ben Fisch
 https://twitter.com/kanzure/status/1230561492254089224
@@ -80,10 +80,10 @@ Introduction Our next speaker is Ben Fisch, part of the Stanford Applied Crypto 
     
     <item>
       <title>Utreexo</title>
-      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2019/utreexo/</link>
+      <link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2019/utreexo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2019/utreexo/</guid>
+      <guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2019/utreexo/</guid>
       <description>Utreexo: Reducing bitcoin nodes to 1 kilobyte
 Tadge Dryja
 https://twitter.com/kanzure/status/1104410958716387328
@@ -94,10 +94,10 @@ Bitcoin scalability Scalability has been a concern in bitcoin for the whole time
     
     <item>
       <title>Utreexo (2019-06-06)</title>
-      <link>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-06-utreexo/</link>
+      <link>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-06-utreexo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-06-utreexo/</guid>
+      <guid>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-06-utreexo/</guid>
       <description>Utreexo: hash-based accumulator for bitcoin UTXOs
 http://diyhpl.us/wiki/transcripts/bitcoin-core-dev-tech/2018-10-08-utxo-accumulators-and-utreexo/
 http://diyhpl.us/wiki/transcripts/mit-bitcoin-expo-2019/utreexo/
@@ -109,10 +109,10 @@ Introduction You still download everything; instead of writing to your UTXO data
     
     <item>
       <title>Utxo Accumulators And Utreexo (2018-10-08)</title>
-      <link>//btctranscripts.com/bitcoin-core-dev-tech/2018-10-08-utxo-accumulators-and-utreexo/</link>
+      <link>https://btctranscripts.com/bitcoin-core-dev-tech/2018-10-08-utxo-accumulators-and-utreexo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2018-10-08-utxo-accumulators-and-utreexo/</guid>
+      <guid>https://btctranscripts.com/bitcoin-core-dev-tech/2018-10-08-utxo-accumulators-and-utreexo/</guid>
       <description>UTXO accumulators, UTXO commitments, and utreexo 2018-10-08
 Tadge Dryja
 https://twitter.com/kanzure/status/1049112390413897728

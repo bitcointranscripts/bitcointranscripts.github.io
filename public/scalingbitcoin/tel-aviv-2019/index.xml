@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tel Aviv (2019) on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/</link>
+    <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/</link>
     <description>Recent content in Tel Aviv (2019) on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/scalingbitcoin/tel-aviv-2019/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Anonymous Atomic Locks</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/anonymous-atomic-locks/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/anonymous-atomic-locks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/anonymous-atomic-locks/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/anonymous-atomic-locks/</guid>
       <description>A2L: Anonymous atomic locks for scalability and interoperability in payment-channel hubs
 Pedro Moreno-Sanchez
 paper: https://eprint.iacr.org/2019/589.pdf
@@ -23,10 +23,10 @@ Scalability I will try to keep this section as short as possible. This talk is a
     
     <item>
       <title>Atomic Multi Channel Updates</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/atomic-multi-channel-updates/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/atomic-multi-channel-updates/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/atomic-multi-channel-updates/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/atomic-multi-channel-updates/</guid>
       <description>Atomic multi-channel updates with constant collateral in bitcoin-compatible payment-channel networks
 Pedro Moreno-Sanchez
 paper: https://eprint.iacr.org/2019/583
@@ -37,20 +37,20 @@ Scalability We&amp;rsquo;re at Scaling Bitcoin so you&amp;rsquo;re probably not 
     
     <item>
       <title>Backpackers</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/backpackers/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/backpackers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/backpackers/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/backpackers/</guid>
       <description>Backpackers: A new paradigm for secure and high-performance blockchain
 Thang N. Dinh</description>
     </item>
     
     <item>
       <title>Bip Securethebag</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/bip-securethebag/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/bip-securethebag/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/bip-securethebag/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/bip-securethebag/</guid>
       <description>BIP: OP_SECURETHEBAG
 Jeremy Rubin
 https://twitter.com/kanzure/status/1171750965478854656
@@ -60,10 +60,10 @@ Why are we here? We are here for scaling bitcoin. The goal we have is to scale b
     
     <item>
       <title>Bitml</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/bitml/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/bitml/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/bitml/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/bitml/</guid>
       <description>Developing secure bitcoin contracts using BitML
 Stefano Lande
 paper: https://arxiv.org/abs/1905.07639
@@ -74,10 +74,10 @@ Smart contracts I am sure everyone here knows what a smart contract is. It&amp;r
     
     <item>
       <title>Elastic Block Caps</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/elastic-block-caps/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/elastic-block-caps/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/elastic-block-caps/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/elastic-block-caps/</guid>
       <description>Elastic block caps
 Meni Rosenfeld
 Introduction Thank you everyone. I am from the Israeli Bitcoin Association. I will start by describing the problem.
@@ -87,10 +87,10 @@ Block size limit We can have big blocks or small blocks. Each one has advantages
     
     <item>
       <title>Erlay</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/erlay/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/erlay/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/erlay/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/erlay/</guid>
       <description>Erlay: Bandwidth-efficient transaction relay for bitcoin
 Gleb Naumenko (tomatodread)
 https://twitter.com/kanzure/status/1171744449396953090
@@ -101,10 +101,10 @@ Bitcoin p2p network There are private nodes that are behind firewalls like ones 
     
     <item>
       <title>Intro</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/intro/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/intro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/intro/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/intro/</guid>
       <description>Introduction to Scaling Bitcoin Tel Aviv 2019
 Anton Yemelyanov
 https://telaviv2019.scalingbitcoin.org/
@@ -118,10 +118,10 @@ Good morning. Welcome to Israel. My name is Anton Yemelyanov. I am the chair of 
     
     <item>
       <title>Payment Channel Recovery With Seeds</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/payment-channel-recovery-with-seeds/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/payment-channel-recovery-with-seeds/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/payment-channel-recovery-with-seeds/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/payment-channel-recovery-with-seeds/</guid>
       <description>Seed-based payment channel recovery
 David Vorick
 https://twitter.com/kanzure/status/1172129077765050368
@@ -130,10 +130,10 @@ Introduction Cool. This addresses the lightning network which is a scaling techn
     
     <item>
       <title>Plasma Cash</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/plasma-cash/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/plasma-cash/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/plasma-cash/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/plasma-cash/</guid>
       <description>Plasma Cash: Towards more efficient plasma constructions
 Non-custodial sidechains for bitcoin utilizing plasma cash and covenants
 Georgios Konstantopoulos
@@ -145,10 +145,10 @@ Introduction We have known how to do these things for at least a year, but the q
     
     <item>
       <title>Prism</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/prism/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/prism/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/prism/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/prism/</guid>
       <description>Prism: Scaling bitcoin to physical limits
 Vivek Bagaria
 Introduction Prism is a consensus protocol which is a one-stop solution to all of bitcoin&amp;rsquo;s scaling problems. The title is 7 to 70000 transactions per second. We have a full stack implementation of prism running and we were able to obtain 70,000 transactions/second. Before we get started, here are my collaborators.
@@ -157,20 +157,20 @@ This workshop is on scaling bitcoin so I won&amp;rsquo;t spend any time justifyi
     
     <item>
       <title>Private Information Retrieval</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/private-information-retrieval/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/private-information-retrieval/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/private-information-retrieval/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/private-information-retrieval/</guid>
       <description>Applying private information retrieval (PIR) to lightweight bitcoin clients
 SPV overview I have to thank the prior speaker. This is basically the same, except this time we&amp;rsquo;re not using SGX. We&amp;rsquo;re looking at bitcoin lightweight clients. You have a lite client with not much space not much computing power, can&amp;rsquo;t store the bitcoin blockchain. All it knows about is the header information. We assume it has the blockheader history. In the header, we can find the merkle tree, and given the merkle tree we can make a merkle proof that a given transaction is included in a block.</description>
     </item>
     
     <item>
       <title>Proof Of Necessary Work</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/proof-of-necessary-work/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/proof-of-necessary-work/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/proof-of-necessary-work/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/proof-of-necessary-work/</guid>
       <description>Proof of necessary work: Succinct state verification with fairness guarantees
 Assimakis Kattis
 Introduction I am going to show you proof of necessary work today. We use proof of work in a prototype. This is joint work with my collaborators.
@@ -179,10 +179,10 @@ Problems We wanted to tackle the problem of bitcoin blockchain size increases. E
     
     <item>
       <title>Proof Of Verification For Proof Of Work</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/proof-of-verification-for-proof-of-work/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/proof-of-verification-for-proof-of-work/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/proof-of-verification-for-proof-of-work/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/proof-of-verification-for-proof-of-work/</guid>
       <description>Proof of verification for proof of work: Miners must verify the signatures on bitcoin transactions
 Kanta Matsuura
 https://twitter.com/kanzure/status/1172142603007143936
@@ -192,10 +192,10 @@ History lesson In the 90s, we had some timestamping schemes where things are agg
     
     <item>
       <title>Scaling Oblivious Read Write</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/scaling-oblivious-read-write/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/scaling-oblivious-read-write/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/scaling-oblivious-read-write/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/scaling-oblivious-read-write/</guid>
       <description>A tale of two trees: One writes, and other reads, scaling oblivious accesses to large-scale blockchains
 Duc V. Le
 Introduction We are trying to get optimized oblivious accesses to large-scale blockchains. This is collaborative work with our colleagues.
@@ -204,10 +204,10 @@ Motivation As we all know, bitfcoin data has become too large to store in resour
     
     <item>
       <title>Scriptless Lotteries</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/scriptless-lotteries/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/scriptless-lotteries/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/scriptless-lotteries/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/scriptless-lotteries/</guid>
       <description>Scriptless lotteries on bitcoin from oblivious transfer
 Lloyd Fournier (lloyd.fourn@gmail.com)
 https://twitter.com/kanzure/status/1171717583629934593
@@ -217,10 +217,10 @@ Lotteries Imagine a trusted party who conducts lotteries between Alice and Bob. 
     
     <item>
       <title>Secure Fountain Architecture</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/secure-fountain-architecture/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/secure-fountain-architecture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/secure-fountain-architecture/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/secure-fountain-architecture/</guid>
       <description>A secure fountain architecture for slashing storage costs in blockchains
 Swanand Kadhe (UC Berkeley)
 https://twitter.com/kanzure/status/1172158545577594880
@@ -231,10 +231,10 @@ Is storage really an issue for bitcoin? Bitcoin&amp;rsquo;s blockchain size is o
     
     <item>
       <title>Survey Of Progress In Zero Knowledge Proofs Towards Trustless Snarks</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/survey-of-progress-in-zero-knowledge-proofs-towards-trustless-snarks/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/survey-of-progress-in-zero-knowledge-proofs-towards-trustless-snarks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/survey-of-progress-in-zero-knowledge-proofs-towards-trustless-snarks/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/survey-of-progress-in-zero-knowledge-proofs-towards-trustless-snarks/</guid>
       <description>Survey of progress in succinct zero-knowledge proofs: towards trustless SNARKs
 Ben Fisch (Stanford University) (benafisch)
 https://twitter.com/kanzure/status/1171683484382957568
@@ -243,10 +243,10 @@ Introduction I am going to be giving a survey of recent progress into succinct z
     
     <item>
       <title>Threshold Scriptless Scripts</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/threshold-scriptless-scripts/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/threshold-scriptless-scripts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/threshold-scriptless-scripts/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/threshold-scriptless-scripts/</guid>
       <description>Threshold scriptless scripts
 Omer Shlomovits (KZen Research) (omershlomovits, zengo)
 https://twitter.com/kanzure/status/1171690582445580288
@@ -255,10 +255,10 @@ Scriptless scripts We can write smart contracts in bitcoin today, but there&amp;
     
     <item>
       <title>Txprobe</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/txprobe/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/txprobe/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/txprobe/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/txprobe/</guid>
       <description>TxProbe: Discovering bitcoin&amp;rsquo;s network topology using orphan transactions
 Sergi Delgado-Segura (sr_gi)
 https://twitter.com/kanzure/status/1171723329453142016
@@ -270,10 +270,10 @@ What we know about the topology I want to start by talking a little bit about wh
     
     <item>
       <title>Work In Progress</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/work-in-progress/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/work-in-progress/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/work-in-progress/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/work-in-progress/</guid>
       <description>Work in progress sessions
 Scaling Bitcoin 2019 Tel Aviv &amp;ldquo;yesod&amp;rdquo;
 https://twitter.com/kanzure/status/1172173183329476609
@@ -284,10 +284,10 @@ Physical scaling limits Probably the three big ones are, there&amp;rsquo;s first
     
     <item>
       <title>Zerolink Sudoku</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/zerolink-sudoku/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/zerolink-sudoku/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/zerolink-sudoku/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/zerolink-sudoku/</guid>
       <description>ZeroLink sudoku: real vs perceived anonymity
 Yuval Kogman
 https://twitter.com/kanzure/status/1171788514326908928
@@ -296,10 +296,10 @@ Introduction I used to work in software. I transitioned to something else, but b
     
     <item>
       <title>Zkvm</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/zkvm/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/zkvm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/zkvm/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/zkvm/</guid>
       <description>ZkVM: zero-knowledge virtual machine for fast confidential smart contracts
 Fats, private, flexible blockchain contracts
 Oleg Andreev (Stellar) (oleganza)

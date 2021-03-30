@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="canonical" href="//btctranscripts.com/misc/2019-09-27-schnorr-taproot-workshop/">
+    <link rel="canonical" href="https://btctranscripts.com/misc/2019-09-27-schnorr-taproot-workshop/">
 
     <title>
         
@@ -13,21 +13,36 @@
     </title>
 
     
-    <link href="//btctranscripts.com/css/fontawesome.min.css" rel="stylesheet">
+    <link href="https://btctranscripts.com/css/fontawesome.min.css" rel="stylesheet">
 
     
-    <link rel="stylesheet" href="//btctranscripts.com/css/ace.min.css">
+    <link rel="stylesheet" href="https://btctranscripts.com/css/ace.min.css">
 
     
     
-        
+        <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://btctranscripts.com/images/btctranscripts.png"/>
+
+<meta name="twitter:title" content="Bitcoin Optech - Schnorr and Taproot workshop (2019-09-27)"/>
+<meta name="twitter:description" content="Location: Chaincode Labs, NYC
+https://bitcoinops.org/en/schnorr-taproot-workshop/
+https://github.com/bitcoinops/taproot-workshop
+https://bitcoinops.slack.com
+https://twitter.com/kanzure/status/1177697093462482949
+Run: jupyter notebook
+See also Schnorr signatures and taproot: https://diyhpl.us/wiki/transcripts/sf-bitcoin-meetup/2018-07-09-taproot-schnorr-signatures-and-sighash-noinput-oh-my/
+https://github.com/sipa/bips/blob/bip-schnorr/bip-schnorr.mediawiki
+https://github.com/sipa/bips/blob/bip-schnorr/bip-taproot.mediawiki
+https://github.com/sipa/bips/blob/bip-schnorr/bip-tapscript.mediawiki
+Why Schnorr and why taproot? Who here already feels comfortbale with Schnorr/Taproot? This is a proposed consensus change to bitcoin. When we talk about consensus changes, we often talk about tradeoffs and compromises. It would be irresponsible to say taproot has no downsides, but I think it&rsquo;s important to mention it&rsquo;s a clear win for bitcoin."/>
+
     
 
 </head>
 <body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id="navbarMain">
     <div class="container">
         <div>
-            <a class="navbar-brand" href="//btctranscripts.com/">
+            <a class="navbar-brand" href="/">
                 
                 ₿itcoin Transcripts
             </a>
@@ -7704,10 +7719,10 @@
             </div> 
 
         </div> 
-<script src="//btctranscripts.com/lib/jquery.min.js"></script> 
-<script src="//btctranscripts.com/lib/popper.min.js"></script> 
+<script src="https://btctranscripts.com/lib/jquery.min.js"></script> 
+<script src="https://btctranscripts.com/lib/popper.min.js"></script> 
 
-<script src="//btctranscripts.com/js/bootstrap.min.js"></script> 
+<script src="https://btctranscripts.com/js/bootstrap.min.js"></script> 
 
 
 <script type="text/javascript" src="/plugins/lunr.min.js"></script>
@@ -7715,13 +7730,13 @@
 <link href="/plugins/auto-complete.css" rel="stylesheet">
 <script type="text/javascript">
   
-      var baseurl = "\/\/btctranscripts.com\/";
+      var baseurl = "https:\/\/btctranscripts.com\/";
   
 </script>
 <script type="text/javascript" src="/plugins/search.js"></script>
 
 
-<script type="text/javascript" src="//btctranscripts.com/js/custom.js"></script>
+<script type="text/javascript" src="https://btctranscripts.com/js/custom.js"></script>
 
 
 <script type="text/javascript" src="/plugins/clipboard.js"></script>

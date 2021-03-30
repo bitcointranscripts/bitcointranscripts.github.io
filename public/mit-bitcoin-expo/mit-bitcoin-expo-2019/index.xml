@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mit Bitcoin Expo 2019 on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2019/</link>
+    <link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2019/</link>
     <description>Recent content in Mit Bitcoin Expo 2019 on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2019/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2019/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Signature Scheme Security Properties</title>
-      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2019/signature-scheme-security-properties/</link>
+      <link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2019/signature-scheme-security-properties/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2019/signature-scheme-security-properties/</guid>
+      <guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2019/signature-scheme-security-properties/</guid>
       <description>Name: Andrew Poelstra
 Topic: Secure Signatures - Harder Than You Think
 Location: MIT Bitcoin Expo 2019
@@ -24,10 +24,10 @@ Introduction Hi everyone. Can you hear me alright? Is my mic? Okay, cool. I was 
     
     <item>
       <title>Utreexo</title>
-      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2019/utreexo/</link>
+      <link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2019/utreexo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2019/utreexo/</guid>
+      <guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2019/utreexo/</guid>
       <description>Utreexo: Reducing bitcoin nodes to 1 kilobyte
 Tadge Dryja
 https://twitter.com/kanzure/status/1104410958716387328

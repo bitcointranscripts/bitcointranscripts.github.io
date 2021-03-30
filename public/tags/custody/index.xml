@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>custody on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/tags/custody/</link>
+    <link>https://btctranscripts.com/tags/custody/</link>
     <description>Recent content in custody on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/tags/custody/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/tags/custody/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bitcoin Custody</title>
-      <link>//btctranscripts.com/baltic-honeybadger/2018/bitcoin-custody/</link>
+      <link>https://btctranscripts.com/baltic-honeybadger/2018/bitcoin-custody/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/baltic-honeybadger/2018/bitcoin-custody/</guid>
+      <guid>https://btctranscripts.com/baltic-honeybadger/2018/bitcoin-custody/</guid>
       <description>Bryan Bishop
 https://twitter.com/kanzure/status/1048014038179823617
 Bitcoin Custody
@@ -25,10 +25,10 @@ My name is Bryan Bishop, I’m going to be talking about bitcoin custody. Here i
     
     <item>
       <title>Mcelrath On Chain Defense In Depth (2019-02-09)</title>
-      <link>//btctranscripts.com/misc/2019-02-09-mcelrath-on-chain-defense-in-depth/</link>
+      <link>https://btctranscripts.com/misc/2019-02-09-mcelrath-on-chain-defense-in-depth/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/misc/2019-02-09-mcelrath-on-chain-defense-in-depth/</guid>
+      <guid>https://btctranscripts.com/misc/2019-02-09-mcelrath-on-chain-defense-in-depth/</guid>
       <description>2019-02-09
 On-chain defense in depth (UCL CBT seminar)
 Bob McElrath (Fidelity Digital Assets)
@@ -40,10 +40,10 @@ Okay, so. I work for Fidelity Digital Assets. Just a couple words about this. Ou
     
     <item>
       <title>Network Topologies And Their Scalability Implications On Decentralized Off Chain Networks</title>
-      <link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/network-topologies-and-their-scalability-implications-on-decentralized-off-chain-networks/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/network-topologies-and-their-scalability-implications-on-decentralized-off-chain-networks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/hong-kong-2015/network-topologies-and-their-scalability-implications-on-decentralized-off-chain-networks/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/network-topologies-and-their-scalability-implications-on-decentralized-off-chain-networks/</guid>
       <description>Joseph Poon
 slides: https://scalingbitcoin.org/hongkong2015/presentations/DAY2/1_layer2_3_poon.pdf
 video: https://www.youtube.com/watch?v=fst1IK_mrng&amp;amp;t=1h29m38s

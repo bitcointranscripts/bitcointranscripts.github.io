@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>bitcoin core on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/tags/bitcoin-core/</link>
+    <link>https://btctranscripts.com/tags/bitcoin-core/</link>
     <description>Recent content in bitcoin core on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/tags/bitcoin-core/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/tags/bitcoin-core/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Jonas Schenlli Bip150 Bip151 (2017-09-04)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2017-09-04-jonas-schenlli-bip150-bip151/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2017-09-04-jonas-schenlli-bip150-bip151/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2017-09-04-jonas-schenlli-bip150-bip151/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2017-09-04-jonas-schenlli-bip150-bip151/</guid>
       <description>Jonas Schnelli
 bip150 and bip151: Bitcoin p2p network encryption and authentication
 https://github.com/bitcoin/bips/blob/master/bip-0150.mediawiki
@@ -22,10 +22,10 @@ Introduction Alright guys.. take a seat. ((various mumblings)) Want to thank our
     
     <item>
       <title>Knowledge Aggregation And Propagation</title>
-      <link>//btctranscripts.com/cryptoeconomic-systems/2019/knowledge-aggregation-and-propagation/</link>
+      <link>https://btctranscripts.com/cryptoeconomic-systems/2019/knowledge-aggregation-and-propagation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/cryptoeconomic-systems/2019/knowledge-aggregation-and-propagation/</guid>
+      <guid>https://btctranscripts.com/cryptoeconomic-systems/2019/knowledge-aggregation-and-propagation/</guid>
       <description>Intro https://docs.google.com/document/d/1a1uRy10dBBcxrnzjdUaO2y03f5H34yFlxktOcanvVYE/edit
 https://cess.pubpub.org/pub/knowledge-aggregation/branch/2/
 I&amp;rsquo;ll be the contrarian - I think academia is awful and should be destroyed.
@@ -36,10 +36,10 @@ I&amp;rsquo;m a bitcoin core developer. Also worked at LedgerX (4 years). I also
     
     <item>
       <title>Sighash Noinput</title>
-      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/sighash-noinput/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/sighash-noinput/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/sighash-noinput/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/sighash-noinput/</guid>
       <description>Bryan Bishop
 https://twitter.com/kanzure/status/1049510702384173057
 SIGHASH_NOINPUT (BIP118)
@@ -53,10 +53,10 @@ So, just really brief about who I am. I have a software development background. 
     
     <item>
       <title>Wallet Security</title>
-      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/wallet-security/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/wallet-security/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/wallet-security/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/wallet-security/</guid>
       <description>Bryan Bishop
 Wallet Security, Key Management &amp;amp; Hardware Security Modules (HSMs)
 https://twitter.com/kanzure/status/1049813559750746112

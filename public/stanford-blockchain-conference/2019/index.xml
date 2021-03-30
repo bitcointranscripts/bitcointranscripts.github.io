@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Stanford Blockchain Conference 2019 on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/stanford-blockchain-conference/2019/</link>
+    <link>https://btctranscripts.com/stanford-blockchain-conference/2019/</link>
     <description>Recent content in Stanford Blockchain Conference 2019 on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/stanford-blockchain-conference/2019/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/stanford-blockchain-conference/2019/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Accumulators</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2019/accumulators/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2019/accumulators/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/accumulators/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2019/accumulators/</guid>
       <description>Accumulators for blockchains
 Benedikt Bunz
 https://twitter.com/kanzure/status/1090748293234094082
@@ -24,10 +24,10 @@ Bitcoin UTXO states The bitcoin state is the UTXO set.</description>
     
     <item>
       <title>Asics</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2019/asics/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2019/asics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/asics/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2019/asics/</guid>
       <description>ASIC design for mining
 David Vorick
 https://twitter.com/kanzure/status/1091056727464697856
@@ -36,10 +36,10 @@ Introduction My name is David Vorick. I am lead developer of Sia, a decentralize
     
     <item>
       <title>Aurora Transparent Succinct Arguments R1Cs</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2019/aurora-transparent-succinct-arguments-r1cs/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2019/aurora-transparent-succinct-arguments-r1cs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/aurora-transparent-succinct-arguments-r1cs/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2019/aurora-transparent-succinct-arguments-r1cs/</guid>
       <description>Aurora: Transparent succinct arguments for R1CS
 Alessandro Chiesa
 https://twitter.com/kanzure/status/1090741190100545536
@@ -48,10 +48,10 @@ Introduction Hi. I am Alessandro Chiesa, a faculty member at UC Berkeley. I work
     
     <item>
       <title>Bitcoin Payment Economic Analysis</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2019/bitcoin-payment-economic-analysis/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2019/bitcoin-payment-economic-analysis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/bitcoin-payment-economic-analysis/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2019/bitcoin-payment-economic-analysis/</guid>
       <description>Economic analysis of the bitcoin payment system
 Jacob Leshno
 https://twitter.com/kanzure/status/1091133843518582787
@@ -60,10 +60,10 @@ Introduction I am an economist. I am going to stop apologizing about this now th
     
     <item>
       <title>Bloxroute</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2019/bloxroute/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2019/bloxroute/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/bloxroute/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2019/bloxroute/</guid>
       <description>bloXroute: A network for tomorrow&amp;rsquo;s blockchain
 Soumya Basu
 Introduction Hi. I am Souyma and I am here to talk with you about Bloxroute. The elephant in the room is that blockchains have been claimed to solve everything like credit cards, social media, and global micropayments. To handle credit card payment volumes, blockchains need like 5000 transactions per second, for microtransactions you need 70000 transactions per second, and for social media even more.</description>
@@ -71,10 +71,10 @@ Introduction Hi. I am Souyma and I am here to talk with you about Bloxroute. The
     
     <item>
       <title>Building Bulletproofs</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2019/building-bulletproofs/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2019/building-bulletproofs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/building-bulletproofs/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2019/building-bulletproofs/</guid>
       <description>Building bulletproofs
 Henry de Valence, Cathie Yun
 Cathie Yun
@@ -84,10 +84,10 @@ Introduction There are two parts to this talk. The first part of the talk will b
     
     <item>
       <title>Building Mimblewimble And Grin</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2019/building-mimblewimble-and-grin/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2019/building-mimblewimble-and-grin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/building-mimblewimble-and-grin/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2019/building-mimblewimble-and-grin/</guid>
       <description>Building mimblewimble and green
 Quentin Le Sceller (Grin Dev Team), Ignotus Peverell (Grin Dev Team), Yeastplume (Grin Dev Team), Antioch Peverell (Grin Dev Team), HashMap (Grin Dev Team), John Tromp (Grin Dev Team), Daniel Lehnberg (Grin Dev Team)
 Quentin Le Sceller
@@ -98,10 +98,10 @@ Introduction Hi everyone. My name is Quentin Le Sceller.</description>
     
     <item>
       <title>Casper</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2019/casper/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2019/casper/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/casper/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2019/casper/</guid>
       <description>Casper the friendly ghost: A &amp;ldquo;correct-by-construction&amp;rdquo; blockchain consensus protocol
 Vlad Zamfir (Ethereum Foundation)
 https://twitter.com/kanzure/status/1091460316288868352
@@ -110,10 +110,10 @@ I have one announcement to make before we start the session. If you feel like af
     
     <item>
       <title>Coordinated Upgrades</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2019/coordinated-upgrades/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2019/coordinated-upgrades/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/coordinated-upgrades/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2019/coordinated-upgrades/</guid>
       <description>Blockchain upgrades as a coordination game
 Stephanie Hurder
 https://twitter.com/kanzure/status/1091139621000339456
@@ -122,10 +122,10 @@ Introduction My name is Stephanie Hurder. Today I am going to talk about my pape
     
     <item>
       <title>Ethereum2</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2019/ethereum2/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2019/ethereum2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/ethereum2/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2019/ethereum2/</guid>
       <description>Ethereum 2.0 and beyond
 Vitalik Buterin
 Please welcome Vitalik who needs no introduction.
@@ -134,10 +134,10 @@ Introduction Okay. I have 20 minutes. I will get right to it. Vlad gave a presen
     
     <item>
       <title>Formal Verification</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2019/formal-verification/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2019/formal-verification/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/formal-verification/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2019/formal-verification/</guid>
       <description>Formal verification: The road to complete security of smart contracts
 Martin Lundfall (MakerDAO)
 slides: https://twitter.com/MartinLundfall/status/1091119463276064769
@@ -148,10 +148,10 @@ Disclaimer This can only be interpreted as a very long road or a very narrow sen
     
     <item>
       <title>Handel Practical Multisig Aggregation</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2019/handel-practical-multisig-aggregation/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2019/handel-practical-multisig-aggregation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/handel-practical-multisig-aggregation/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2019/handel-practical-multisig-aggregation/</guid>
       <description>Handel: Practical multi-signature aggregation for large byzantine committees
 Nicolas Gailly
 Introduction Handle is a aggregation protocol for large scale byzantine committees. This is work with my colleagues in addition to myself.
@@ -161,10 +161,10 @@ Why byzantine? A byzantine node is a node that can be arbitrary.</description>
     
     <item>
       <title>Htlcs Considered Harmful</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2019/htlcs-considered-harmful/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2019/htlcs-considered-harmful/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/htlcs-considered-harmful/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2019/htlcs-considered-harmful/</guid>
       <description>HTLCs considered harmful
 Daniel Robinson (Paradigm)
 https://twitter.com/kanzure/status/1091033955824881664
@@ -173,20 +173,20 @@ Introduction I am here to talk about a design pattern that I don&amp;rsquo;t lik
     
     <item>
       <title>Links</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2019/links/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2019/links/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/links/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2019/links/</guid>
       <description>info: https://cyber.stanford.edu/sbc19
 streaming: https://livestream.com/accounts/1973198/Blockchain2019</description>
     </item>
     
     <item>
       <title>Miniscript</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2019/miniscript/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2019/miniscript/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/miniscript/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2019/miniscript/</guid>
       <description>Miniscript
 Pieter Wuille (sipa) (Blockstream)
 https://twitter.com/kanzure/status/1091116834219151360
@@ -197,10 +197,10 @@ Introduction Thanks, Jeremy. I am Pieter Wuille. I work at Blockstream. I do var
     
     <item>
       <title>Opening Remarks</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2019/opening-remarks/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2019/opening-remarks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/opening-remarks/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2019/opening-remarks/</guid>
       <description>Opening remarks
 Dan Boneh
 We will be starting in 10 minutes. I would like to ask the first speaker in the first session for grin to walk to the back of the room to get your microphone ready for the talk.
@@ -209,10 +209,10 @@ It&amp;rsquo;s 9 o&amp;rsquo;clock and time to get started. Could everyone pleas
     
     <item>
       <title>Plasma Cash (2019-01-20)</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2019/plasma-cash/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2019/plasma-cash/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/plasma-cash/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2019/plasma-cash/</guid>
       <description>Plasma Cash: Towards more efficient Plasma constructions
 Georgios Konstantopolous (gakonst)
 https://twitter.com/kanzure/status/1090691501561020416
@@ -221,10 +221,10 @@ Shi: Okay, we&amp;rsquo;re going to start the next session. Please return to you
     
     <item>
       <title>Privacy Preserving Multi Hop Locks</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2019/privacy-preserving-multi-hop-locks/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2019/privacy-preserving-multi-hop-locks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/privacy-preserving-multi-hop-locks/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2019/privacy-preserving-multi-hop-locks/</guid>
       <description>Privacy preserving multi-hop locks for blockchain scalability and interoperability
 Pedro Moreno-Sanchez
 https://twitter.com/kanzure/status/1091026195032924160
@@ -235,10 +235,10 @@ Introduction This is joint work with my collaborators. Permissionless blockchain
     
     <item>
       <title>Proofs Of Space And Replication</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2019/proofs-of-space-and-replication/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2019/proofs-of-space-and-replication/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/proofs-of-space-and-replication/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2019/proofs-of-space-and-replication/</guid>
       <description>Tight proofs of space and and replication
 Ben Fisch (Stanford University)
 https://twitter.com/kanzure/status/1091064672831234048
@@ -249,10 +249,10 @@ Proof of Space A proof-of-space is an alternative to proof-of-work. Applications
     
     <item>
       <title>Quisquis</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2019/quisquis/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2019/quisquis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/quisquis/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2019/quisquis/</guid>
       <description>Quisquis: A new design for anonymous cryptocurrencies
 Prastudy Fauzi
 https://twitter.com/kanzure/status/1090677466216128512
@@ -263,10 +263,10 @@ Outline I am going to talk about bitcoin and anonymity. I&amp;rsquo;ll talk abou
     
     <item>
       <title>Spork Probabilistic Bitcoin Soft Forks</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2019/spork-probabilistic-bitcoin-soft-forks/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2019/spork-probabilistic-bitcoin-soft-forks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/spork-probabilistic-bitcoin-soft-forks/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2019/spork-probabilistic-bitcoin-soft-forks/</guid>
       <description>Spork: Probabilistic bitcoin soft-forks
 Jeremy Rubin
 Introduction Thank you for the introduction. I have a secret. I am not an economist, so you&amp;rsquo;ll have to forgive me if I don&amp;rsquo;t have your favorite annotations today. I have my own annotations. I originally gave a predecessor to this talk in Japan. You might notice my title here is a haiku: these are protocols used for changing the bitcoin netwokr protocols. People do highly value staying together for a chain, we&amp;rsquo;re doing coordinated activation of a new upgrade.</description>
@@ -274,10 +274,10 @@ Introduction Thank you for the introduction. I have a secret. I am not an econom
     
     <item>
       <title>Stark Dex</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2019/stark-dex/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2019/stark-dex/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/stark-dex/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2019/stark-dex/</guid>
       <description>The STARK truth about DEXes
 Eli Ben-Sasson (Starkware)
 https://twitter.com/kanzure/status/1090731793395798016
@@ -287,10 +287,10 @@ Introduction Thank you very much. Today I will be talking about STARK proofs of 
     
     <item>
       <title>State Channels</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2019/state-channels/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2019/state-channels/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/state-channels/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2019/state-channels/</guid>
       <description>State channels as a scaling solution for cryptocurrencies
 Patrick McCorry
 https://twitter.com/kanzure/status/1091042382072532992
@@ -300,10 +300,10 @@ Scalability problems in bitcoin Why are state channels necessary for cryptocurre
     
     <item>
       <title>Sybilquorum</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2019/sybilquorum/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2019/sybilquorum/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/sybilquorum/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2019/sybilquorum/</guid>
       <description>SybilQuorum: Open distributed ledgers through trust networks
 Alberto Sonnino from UCL and chainspace.io
 https://twitter.com/kanzure/status/1090777875253407745
@@ -313,10 +313,10 @@ Sybil attacks I am sure everyone knows about sybil attacks.</description>
     
     <item>
       <title>Threshold Signatures</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2019/threshold-signatures/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2019/threshold-signatures/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/threshold-signatures/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2019/threshold-signatures/</guid>
       <description>Efficient distributed key generation for threshold signatures
 Mahnush Movahedi
 Threshold signatures Threshold signature schemes are schemes where n parties and at least t are necessary and sufficient for signing. They want to make sure that t parties are necessary. Any threshold signature scheme typically has 3 protocols: key generation, signing, and verifying.
@@ -325,10 +325,10 @@ In key generation, one party creates a group public key as an output. Also, for 
     
     <item>
       <title>Thundercore</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2019/thundercore/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2019/thundercore/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/thundercore/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2019/thundercore/</guid>
       <description>Thundercore consensus
 Elaine Shi
 https://twitter.com/kanzure/status/1090773938479624192
@@ -338,10 +338,10 @@ State-machine replication We care about consistency and liveness.</description>
     
     <item>
       <title>Urkel Trees</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2019/urkel-trees/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2019/urkel-trees/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/urkel-trees/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2019/urkel-trees/</guid>
       <description>Urkel trees: An optimized and cryptographically provable key-value store for decentralized naming
 Boyma Fahnbulleh (Handshake) (boymanjor)
 https://twitter.com/kanzure/status/1090765616590381057
@@ -350,10 +350,10 @@ Introduction Hello my name is Boy Fahnbulleh. I have been contributing to Handsh
     
     <item>
       <title>Vulnerability Detection</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2019/vulnerability-detection/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2019/vulnerability-detection/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/vulnerability-detection/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2019/vulnerability-detection/</guid>
       <description>Automatic detection of vulnerabilities in smart contracts
 Mooly Sagiv
 Introduction If you find a bug in a smart contract, it&amp;rsquo;s really hard to mitigate that bug. In formal verification, we really look for bugs. We can identify subtle bugs, like reentrancy attacks, ownership violation, incorrect transactions, bugs due to updated code. We also want to assure the absence of bugs.

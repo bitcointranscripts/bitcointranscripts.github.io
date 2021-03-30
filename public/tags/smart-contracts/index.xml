@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>smart contracts on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/tags/smart-contracts/</link>
+    <link>https://btctranscripts.com/tags/smart-contracts/</link>
     <description>Recent content in smart contracts on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/tags/smart-contracts/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/tags/smart-contracts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Andrew Miller</title>
-      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2015/andrew-miller/</link>
+      <link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2015/andrew-miller/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2015/andrew-miller/</guid>
+      <guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2015/andrew-miller/</guid>
       <description>Step by Step Towards Writing a Safe Contract: Insights from an Undergraduate Ethereum Lab
  Andrew Miller Elaine Shi  Next up I want to introduce Elaine Shi and Andrew Miller from University of Maryland. Andrew is also on the zerocash team.
 Okay. I am an assistant professor at the University of Maryland. We all believe that cryptocurrency is the way of the future and smart contracts. So students in the future have to program smart contracts.</description>
@@ -19,10 +19,10 @@ Okay. I am an assistant professor at the University of Maryland. We all believe 
     
     <item>
       <title>Arbitrum V2</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/arbitrum-v2/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/arbitrum-v2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/arbitrum-v2/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/arbitrum-v2/</guid>
       <description>Arbitrum 2.0: Faster Off-Chain Contracts with On-Chain Security
 Ed Felten, Off-chain Labs
 https://twitter.com/kanzure/status/1230191734375628802
@@ -31,10 +31,10 @@ Introduction Thank you, good morning everybody. I&amp;rsquo;m going to talk abou
     
     <item>
       <title>Bitml</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/bitml/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/bitml/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/bitml/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/bitml/</guid>
       <description>Developing secure bitcoin contracts using BitML
 Stefano Lande
 paper: https://arxiv.org/abs/1905.07639
@@ -45,10 +45,10 @@ Smart contracts I am sure everyone here knows what a smart contract is. It&amp;r
     
     <item>
       <title>Discreet Log Contracts</title>
-      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/discreet-log-contracts/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/stanford-2017/discreet-log-contracts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/discreet-log-contracts/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/stanford-2017/discreet-log-contracts/</guid>
       <description>Discreet log contracts
 http://diyhpl.us/wiki/transcripts/discreet-log-contracts/
 https://www.youtube.com/watch?v=FU-rA5dkTHI
@@ -58,10 +58,10 @@ Hello everyone. I am going to give a talk about discreet log contracts. I am fro
     
     <item>
       <title>Formal Verification</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2019/formal-verification/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2019/formal-verification/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/formal-verification/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2019/formal-verification/</guid>
       <description>Formal verification: The road to complete security of smart contracts
 Martin Lundfall (MakerDAO)
 slides: https://twitter.com/MartinLundfall/status/1091119463276064769
@@ -72,10 +72,10 @@ Disclaimer This can only be interpreted as a very long road or a very narrow sen
     
     <item>
       <title>Improving Bitcoin Smart Contract Efficiency</title>
-      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2018/improving-bitcoin-smart-contract-efficiency/</link>
+      <link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2018/improving-bitcoin-smart-contract-efficiency/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2018/improving-bitcoin-smart-contract-efficiency/</guid>
+      <guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2018/improving-bitcoin-smart-contract-efficiency/</guid>
       <description>Improving efficiency of smart contracts on the bitcoin network
 Tadge Dryja
 video: https://www.youtube.com/watch?v=i-0NUqIVVV4&amp;amp;t=53m14s
@@ -86,10 +86,10 @@ Quick intro: I&amp;rsquo;m Tadge Dryja. I work here at MIT down the street at Di
     
     <item>
       <title>Jeremy Rubin Sapio 101 (2020-07-11)</title>
-      <link>//btctranscripts.com/vr-bitcoin/2020-07-11-jeremy-rubin-sapio-101/</link>
+      <link>https://btctranscripts.com/vr-bitcoin/2020-07-11-jeremy-rubin-sapio-101/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/vr-bitcoin/2020-07-11-jeremy-rubin-sapio-101/</guid>
+      <guid>https://btctranscripts.com/vr-bitcoin/2020-07-11-jeremy-rubin-sapio-101/</guid>
       <description>Name: Jeremy Rubin
 Topic: Sapio Programming 101: Stateful Smart Contracts for Bitcoin with OP_CTV
 Location: Reckless VR
@@ -102,10 +102,10 @@ Intro (Udi Wertheimer) Today we are joined by Jeremy Rubin who is a Bitcoin Core
     
     <item>
       <title>Mixicles</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/mixicles/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/mixicles/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/mixicles/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/mixicles/</guid>
       <description>Mixicles: Simple Private Decentralized Finance
 Ari Juels
 https://twitter.com/kanzure/status/1230666545803563008
@@ -116,10 +116,10 @@ DeFi and privacy As of a couple of weeks ago, DeFi passed the $1 billion mark wh
     
     <item>
       <title>Present And Future Tech Challenges In Bitcoin</title>
-      <link>//btctranscripts.com/baltic-honeybadger/2018/present-and-future-tech-challenges-in-bitcoin/</link>
+      <link>https://btctranscripts.com/baltic-honeybadger/2018/present-and-future-tech-challenges-in-bitcoin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/baltic-honeybadger/2018/present-and-future-tech-challenges-in-bitcoin/</guid>
+      <guid>https://btctranscripts.com/baltic-honeybadger/2018/present-and-future-tech-challenges-in-bitcoin/</guid>
       <description>1 on 1: Present and future tech challenges in bitcoin
 Peter Todd (peterktodd)
 Adam Back (adam3us)
@@ -130,10 +130,10 @@ PR: Hi everybody. I think I have the great fortune to moderate this panel in the
     
     <item>
       <title>Privacy Preserving Smart Contracts</title>
-      <link>//btctranscripts.com/scalingbitcoin/montreal-2015/privacy-preserving-smart-contracts/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/montreal-2015/privacy-preserving-smart-contracts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/montreal-2015/privacy-preserving-smart-contracts/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/montreal-2015/privacy-preserving-smart-contracts/</guid>
       <description>Ranjit Kumaresan
 ranjit@csail.mit.edu
 http://people.csail.mit.edu/ranjit/
@@ -143,10 +143,10 @@ The point of this talk is off-chain transactions and secure computation. I will 
     
     <item>
       <title>Quisquis</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2019/quisquis/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2019/quisquis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/quisquis/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2019/quisquis/</guid>
       <description>Quisquis: A new design for anonymous cryptocurrencies
 Prastudy Fauzi
 https://twitter.com/kanzure/status/1090677466216128512
@@ -157,10 +157,10 @@ Outline I am going to talk about bitcoin and anonymity. I&amp;rsquo;ll talk abou
     
     <item>
       <title>Rootstock</title>
-      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/rootstock/</link>
+      <link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/rootstock/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/rootstock/</guid>
+      <guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/rootstock/</guid>
       <description>Rootstock
 Sergio Lerner
 Sergio is co-founder and chief scientist at RSK Labs. The whitepaper was pretty good. I am happy that he is here. Thank you. Just give me a minute.
@@ -171,10 +171,10 @@ Thanks everyone for staying here and not going to the next room. Thanks for the 
     
     <item>
       <title>Russell Oconnor Simplicity (2018-01-25)</title>
-      <link>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/2018-01-25-russell-oconnor-simplicity/</link>
+      <link>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/2018-01-25-russell-oconnor-simplicity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/2018-01-25-russell-oconnor-simplicity/</guid>
+      <guid>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/2018-01-25-russell-oconnor-simplicity/</guid>
       <description>Name: Russell O’Connor
 Topic: Simplicity: A New Language for Blockchains
 Location: BPASE 2018, Stanford University
@@ -188,10 +188,10 @@ Blockchains and Smart Contracts I know everyone is familiar with this in the aud
     
     <item>
       <title>Scalable Smart Contracts Via Proofs And Single Use Seals</title>
-      <link>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/scalable-smart-contracts-via-proofs-and-single-use-seals/</link>
+      <link>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/scalable-smart-contracts-via-proofs-and-single-use-seals/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/scalable-smart-contracts-via-proofs-and-single-use-seals/</guid>
+      <guid>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/scalable-smart-contracts-via-proofs-and-single-use-seals/</guid>
       <description>Scalable smart contracts via proofs and single-use seals
 petertodd
 https://twitter.com/kanzure/status/957660108137418752
@@ -204,10 +204,10 @@ Introduction I am petertodd and I am here to break your blockchain. It&amp;rsquo
     
     <item>
       <title>Self Reproducing Coins As Universal Turing Machine</title>
-      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/self-reproducing-coins-as-universal-turing-machine/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tokyo-2018/self-reproducing-coins-as-universal-turing-machine/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/self-reproducing-coins-as-universal-turing-machine/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tokyo-2018/self-reproducing-coins-as-universal-turing-machine/</guid>
       <description>Self-reproducing coins as universal turing machine
 Dmitry Meshkov, Alexander Chepurnoy and Vasily Kharin (Ergo Platform)
 paper: https://arxiv.org/abs/1806.10116
@@ -216,10 +216,10 @@ Introduction This is joint work with my colleagues. I am Alexander Chepurnoy. We
     
     <item>
       <title>The Future Of Bitcoin Smart Contracts</title>
-      <link>//btctranscripts.com/baltic-honeybadger/2018/the-future-of-bitcoin-smart-contracts/</link>
+      <link>https://btctranscripts.com/baltic-honeybadger/2018/the-future-of-bitcoin-smart-contracts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/baltic-honeybadger/2018/the-future-of-bitcoin-smart-contracts/</guid>
+      <guid>https://btctranscripts.com/baltic-honeybadger/2018/the-future-of-bitcoin-smart-contracts/</guid>
       <description>The future of bitcoin smart contracts
 Max Keidun (keidunm)
 https://twitter.com/kanzure/status/1043419056492228608
@@ -229,10 +229,10 @@ Introduction Hello everyone. If you&amp;rsquo;re walking, please do it in silenc
     
     <item>
       <title>Threshold Scriptless Scripts</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/threshold-scriptless-scripts/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/threshold-scriptless-scripts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/threshold-scriptless-scripts/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/threshold-scriptless-scripts/</guid>
       <description>Threshold scriptless scripts
 Omer Shlomovits (KZen Research) (omershlomovits, zengo)
 https://twitter.com/kanzure/status/1171690582445580288
@@ -241,10 +241,10 @@ Scriptless scripts We can write smart contracts in bitcoin today, but there&amp;
     
     <item>
       <title>Using The Chain For What Chains Are Good For</title>
-      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/using-the-chain-for-what-chains-are-good-for/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/stanford-2017/using-the-chain-for-what-chains-are-good-for/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/using-the-chain-for-what-chains-are-good-for/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/stanford-2017/using-the-chain-for-what-chains-are-good-for/</guid>
       <description>Using the Chain for what Chains are Good For
 Andrew Poelstra (andytoshi)
 Video: https://www.youtube.com/watch?t=5757&amp;amp;v=3pd6xHjLbhs
@@ -253,10 +253,10 @@ I am Andrew Poelstra, a cryptographer at Blockstream. I am going to talk about s
     
     <item>
       <title>Vulnerability Detection</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2019/vulnerability-detection/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2019/vulnerability-detection/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/vulnerability-detection/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2019/vulnerability-detection/</guid>
       <description>Automatic detection of vulnerabilities in smart contracts
 Mooly Sagiv
 Introduction If you find a bug in a smart contract, it&amp;rsquo;s really hard to mitigate that bug. In formal verification, we really look for bugs. We can identify subtle bugs, like reentrancy attacks, ownership violation, incorrect transactions, bugs due to updated code. We also want to assure the absence of bugs.
@@ -265,10 +265,10 @@ Device drivers I come from the domain of Windows device drivers.</description>
     
     <item>
       <title>Zkvm</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/zkvm/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/zkvm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/zkvm/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/zkvm/</guid>
       <description>ZkVM: zero-knowledge virtual machine for fast confidential smart contracts
 Fats, private, flexible blockchain contracts
 Oleg Andreev (Stellar) (oleganza)

@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bitcoin Design on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/bitcoin-design/</link>
+    <link>https://btctranscripts.com/bitcoin-design/</link>
     <description>Recent content in Bitcoin Design on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/bitcoin-design/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/bitcoin-design/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bitcoin Core Gui (2020-08-20)</title>
-      <link>//btctranscripts.com/bitcoin-design/2020-08-20-bitcoin-core-gui/</link>
+      <link>https://btctranscripts.com/bitcoin-design/2020-08-20-bitcoin-core-gui/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-design/2020-08-20-bitcoin-core-gui/</guid>
+      <guid>https://btctranscripts.com/bitcoin-design/2020-08-20-bitcoin-core-gui/</guid>
       <description>Name: Bitcoin Core GUI introductory meeting
 Topic: Agenda link posted below
 Location: Bitcoin Design (online)

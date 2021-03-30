@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blockstream Webinars on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/blockstream-webinars/</link>
+    <link>https://btctranscripts.com/blockstream-webinars/</link>
     <description>Recent content in Blockstream Webinars on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/blockstream-webinars/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/blockstream-webinars/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Adam Back - Simplicity (2020-04-08)</title>
-      <link>//btctranscripts.com/blockstream-webinars/2020-04-08-adam-back-simplicity/</link>
+      <link>https://btctranscripts.com/blockstream-webinars/2020-04-08-adam-back-simplicity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/blockstream-webinars/2020-04-08-adam-back-simplicity/</guid>
+      <guid>https://btctranscripts.com/blockstream-webinars/2020-04-08-adam-back-simplicity/</guid>
       <description>Name: Adam Back
 Topic: Simplicity - Next-Gen Smart Contracting
 Location: Blockstream webinar
@@ -27,10 +27,10 @@ Intro I am going to describe Simplicity which we made an announcement recently. 
     
     <item>
       <title>Christian Decker - C-Lightning Questions (2019-09-04)</title>
-      <link>//btctranscripts.com/blockstream-webinars/2019-09-04-christian-decker-c-lightning-questions/</link>
+      <link>https://btctranscripts.com/blockstream-webinars/2019-09-04-christian-decker-c-lightning-questions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/blockstream-webinars/2019-09-04-christian-decker-c-lightning-questions/</guid>
+      <guid>https://btctranscripts.com/blockstream-webinars/2019-09-04-christian-decker-c-lightning-questions/</guid>
       <description>Christian Decker
 c-lightning Q and A session
 Video: https://www.youtube.com/watch?v=r7Un8FZYlS4&amp;amp;list=PLseHpvCI1BjAfUx8zjJXadlBh_eKV9zJi&amp;amp;index=8
@@ -42,10 +42,10 @@ A - It absolutely is.</description>
     
     <item>
       <title>Rusty Russell - Getting Started With C-Lightning (2019-07-31)</title>
-      <link>//btctranscripts.com/blockstream-webinars/2019-07-31-rusty-russell-getting-started-with-c-lightning/</link>
+      <link>https://btctranscripts.com/blockstream-webinars/2019-07-31-rusty-russell-getting-started-with-c-lightning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/blockstream-webinars/2019-07-31-rusty-russell-getting-started-with-c-lightning/</guid>
+      <guid>https://btctranscripts.com/blockstream-webinars/2019-07-31-rusty-russell-getting-started-with-c-lightning/</guid>
       <description>Rusty Russell
 Getting started with c-lightning
 video: https://www.youtube.com/watch?v=fab4P3BIZxk

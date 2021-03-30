@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lets Talk Bitcoin Podcast on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/lets-talk-bitcoin-podcast/</link>
+    <link>https://btctranscripts.com/lets-talk-bitcoin-podcast/</link>
     <description>Recent content in Lets Talk Bitcoin Podcast on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/lets-talk-bitcoin-podcast/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/lets-talk-bitcoin-podcast/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Christopher Jeffrey Consensus Barnacles (2016-12-25)</title>
-      <link>//btctranscripts.com/lets-talk-bitcoin-podcast/2016-12-25-christopher-jeffrey-consensus-barnacles/</link>
+      <link>https://btctranscripts.com/lets-talk-bitcoin-podcast/2016-12-25-christopher-jeffrey-consensus-barnacles/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/lets-talk-bitcoin-podcast/2016-12-25-christopher-jeffrey-consensus-barnacles/</guid>
+      <guid>https://btctranscripts.com/lets-talk-bitcoin-podcast/2016-12-25-christopher-jeffrey-consensus-barnacles/</guid>
       <description>Name: Christopher Jeffrey (JJ)
 Topic: Barnacles of Consensus
 Location: Let’s Talk Bitcoin podcast (Episode 319)
@@ -26,10 +26,10 @@ AL: We are going to jump right into it with the elephant in the room on all this
     
     <item>
       <title>Consensus Uasf And Forks (2017-06-04)</title>
-      <link>//btctranscripts.com/lets-talk-bitcoin-podcast/2017-06-04-consensus-uasf-and-forks/</link>
+      <link>https://btctranscripts.com/lets-talk-bitcoin-podcast/2017-06-04-consensus-uasf-and-forks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/lets-talk-bitcoin-podcast/2017-06-04-consensus-uasf-and-forks/</guid>
+      <guid>https://btctranscripts.com/lets-talk-bitcoin-podcast/2017-06-04-consensus-uasf-and-forks/</guid>
       <description>Name: Andreas Antonopoulos
 Topic: On Consensus and All Kinds of Forks
 Location: Let’s Talk Bitcoin podcast (Episode 333)
@@ -40,10 +40,10 @@ User activated soft forks vs hard forks Adam Levine (AL): I’m trying to look a
     
     <item>
       <title>Ltb Pieter Wuille Jonas Nick (2019-06-09)</title>
-      <link>//btctranscripts.com/lets-talk-bitcoin-podcast/2019-06-09-ltb-pieter-wuille-jonas-nick/</link>
+      <link>https://btctranscripts.com/lets-talk-bitcoin-podcast/2019-06-09-ltb-pieter-wuille-jonas-nick/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/lets-talk-bitcoin-podcast/2019-06-09-ltb-pieter-wuille-jonas-nick/</guid>
+      <guid>https://btctranscripts.com/lets-talk-bitcoin-podcast/2019-06-09-ltb-pieter-wuille-jonas-nick/</guid>
       <description>Let&amp;rsquo;s Talk Bitcoin with Pieter Wuille and Jonas Nick - June 9th 2019
 https://twitter.com/kanzure/status/1155851797568917504
 Part 1: https://letstalkbitcoin.com/blog/post/lets-talk-bitcoin-400-the-tools-and-the-work

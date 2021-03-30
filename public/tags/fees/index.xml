@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>fees on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/tags/fees/</link>
+    <link>https://btctranscripts.com/tags/fees/</link>
     <description>Recent content in fees on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/tags/fees/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/tags/fees/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Flexible Limit Trading Subsidy For Larger Blocks</title>
-      <link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/a-flexible-limit-trading-subsidy-for-larger-blocks/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/a-flexible-limit-trading-subsidy-for-larger-blocks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/hong-kong-2015/a-flexible-limit-trading-subsidy-for-larger-blocks/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/a-flexible-limit-trading-subsidy-for-larger-blocks/</guid>
       <description>maaku
 slides: https://scalingbitcoin.org/hongkong2015/presentations/DAY2/3_tweaking_the_chain_2_friedenbach.pdf
 video: https://www.youtube.com/watch?v=fst1IK_mrng&amp;amp;t=4h27m53s
@@ -20,10 +20,10 @@ I really want to thank jgarzik for that interesting talk. Who picks what block s
     
     <item>
       <title>Bitcoin Load Spike Simulation</title>
-      <link>//btctranscripts.com/scalingbitcoin/montreal-2015/bitcoin-load-spike-simulation/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/montreal-2015/bitcoin-load-spike-simulation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/montreal-2015/bitcoin-load-spike-simulation/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/montreal-2015/bitcoin-load-spike-simulation/</guid>
       <description>Conner Fromknecht
 Nathan Wilcox
 Bitcoin load spike simulation
@@ -32,10 +32,10 @@ Our goal for this project, our rationale of what we&amp;rsquo;re interesting is 
     
     <item>
       <title>Christian Decker Channel Factories (2019-03-14)</title>
-      <link>//btctranscripts.com/stephan-livera-podcast/2019-03-14-christian-decker-channel-factories/</link>
+      <link>https://btctranscripts.com/stephan-livera-podcast/2019-03-14-christian-decker-channel-factories/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stephan-livera-podcast/2019-03-14-christian-decker-channel-factories/</guid>
+      <guid>https://btctranscripts.com/stephan-livera-podcast/2019-03-14-christian-decker-channel-factories/</guid>
       <description>Name: Christian Decker
 Topic: Lightning Channel Factories
 Location: Stephan Livera Podcast
@@ -48,10 +48,10 @@ Stephan: There has been a lot of chatter in the Bitcoin community on what might 
     
     <item>
       <title>Competitive Fee Market Urgency</title>
-      <link>//btctranscripts.com/scalingbitcoin/montreal-2015/competitive-fee-market-urgency/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/montreal-2015/competitive-fee-market-urgency/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/montreal-2015/competitive-fee-market-urgency/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/montreal-2015/competitive-fee-market-urgency/</guid>
       <description>Marshall Long
 The urgency of a competitive fee market to ensure a scalable future
 I am Marshall. I run Firehash. CTO Cryptsy also. Some people have higher cost, some people have lower cost. I think those were some good estimates for true costs. I am going to be talking about why fees are going to be very important very soon. We&amp;rsquo;ll talk about what happens without fees, talk about why bitcoin really isn&amp;rsquo;t free but how we can do things like microtransactions, real microtransactions, talk about the cost and talk about solutions.</description>
@@ -59,10 +59,10 @@ I am Marshall. I run Firehash. CTO Cryptsy also. Some people have higher cost, s
     
     <item>
       <title>Concurrency And Privacy With Payment Channel Networks</title>
-      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/concurrency-and-privacy-with-payment-channel-networks/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/stanford-2017/concurrency-and-privacy-with-payment-channel-networks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/concurrency-and-privacy-with-payment-channel-networks/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/stanford-2017/concurrency-and-privacy-with-payment-channel-networks/</guid>
       <description>Concurrency and Privacy with Payment-Channel Networks
 Pedro Moreno-Sanchez
 paper: https://eprint.iacr.org/2017/820.pdf
@@ -72,10 +72,10 @@ Bitcoin has scalability issues. That&amp;rsquo;s the main reason why we are here
     
     <item>
       <title>Day 1 Group Summaries</title>
-      <link>//btctranscripts.com/scalingbitcoin/milan-2016/day-1-group-summaries/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/milan-2016/day-1-group-summaries/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/milan-2016/day-1-group-summaries/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/milan-2016/day-1-group-summaries/</guid>
       <description>Day 1 group summaries
 We need two to three minute report backs from each session. Also, note takers. Please email your notes to contact@scalingbitcoin.org so that we can add notes to the wiki. Come join us. Okay, so.
 Lightning We discussed routing and several aspects of routing algorithms in the lightning network. We talked about the tradeoff between privacy aspects and reliability in routing. We quickly discovered that after some of the things were already resolved by the papers&amp;ndash; the way how we deal with a general separation and channel transaction fees, is actually quite an interesting discussion topic.</description>
@@ -83,10 +83,10 @@ Lightning We discussed routing and several aspects of routing algorithms in the 
     
     <item>
       <title>Elastic Block Caps</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/elastic-block-caps/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/elastic-block-caps/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/elastic-block-caps/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/elastic-block-caps/</guid>
       <description>Elastic block caps
 Meni Rosenfeld
 Introduction Thank you everyone. I am from the Israeli Bitcoin Association. I will start by describing the problem.
@@ -96,10 +96,10 @@ Block size limit We can have big blocks or small blocks. Each one has advantages
     
     <item>
       <title>Hardening Lightning</title>
-      <link>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/hardening-lightning/</link>
+      <link>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/hardening-lightning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/hardening-lightning/</guid>
+      <guid>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/hardening-lightning/</guid>
       <description>Hardening lightning network
 Olaoluwa Osuntokun (roasbeef), Lightning Labs
 https://twitter.com/kanzure/status/959155562134102016
@@ -112,20 +112,20 @@ Introduction I am basically going to go over some ways that I&amp;rsquo;ve been 
     
     <item>
       <title>Joi Ito</title>
-      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/joi-ito/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/stanford-2017/joi-ito/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/joi-ito/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/stanford-2017/joi-ito/</guid>
       <description>Joi Ito
 Welcome back to Scaling Bitcoin day 2. I am sure everyone went home and tried Ethan&amp;rsquo;s wagering setup yesterday. Today we are going to be covering topics like layer 2, fees, and consensus. To get us started today, we have a very special guest, Joi Ito, director of the MIT Media Lab, and he will be talking about parallels to the internet and ICOs and he will cover a lot of ground.</description>
     </item>
     
     <item>
       <title>Lightning Network Layer By Layer</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-layer-by-layer/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-layer-by-layer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-layer-by-layer/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-layer-by-layer/</guid>
       <description>Name: Carla Kirk-Cohen
 Topic: The Lightning Network Layer by Layer
 Location: Dev++ O3-19 Tel Aviv
@@ -135,10 +135,10 @@ Introduction Good afternoon everyone. My name is Carla. I&amp;rsquo;m one of the
     
     <item>
       <title>Lightning Network Routing</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-routing/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-routing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-routing/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-routing/</guid>
       <description>Lightning network routing: Operation, issues and expansions
 Carla Kirk-Cohen
 Introduction Good afternoon everyone. My name is Carla. I am one of the chaincode residents this summer. This talk is going to walk through the protocol layer by layer and look at the different components that make up the network. Lightning is an off-chain scaling solution which consists of a p2p network of payment channels. It allows payments to be forwarded by nodes in exchange for fees.</description>
@@ -146,10 +146,10 @@ Introduction Good afternoon everyone. My name is Carla. I am one of the chaincod
     
     <item>
       <title>Measuring Network Maximum Sustained Transaction Throughput</title>
-      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/measuring-network-maximum-sustained-transaction-throughput/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/stanford-2017/measuring-network-maximum-sustained-transaction-throughput/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/measuring-network-maximum-sustained-transaction-throughput/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/stanford-2017/measuring-network-maximum-sustained-transaction-throughput/</guid>
       <description>Measuring maximum sustained transaction throughput on a global network of Bitcoin nodes
 Andrew Stone, Bitcoin Unlimited
 We are 25 minutes behind schedule.
@@ -158,10 +158,10 @@ We have the rest of the team wathcing remotely. I think the motivation for this 
     
     <item>
       <title>Optimizing Fee Estimation Via Mempool State</title>
-      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/optimizing-fee-estimation-via-mempool-state/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/stanford-2017/optimizing-fee-estimation-via-mempool-state/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/optimizing-fee-estimation-via-mempool-state/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/stanford-2017/optimizing-fee-estimation-via-mempool-state/</guid>
       <description>Optimizing fee estimation via the mempool state
 Karl-Johan Alm (DG Lab)
 I am a Bitcoin Core developer and I work at DG Lab. Today I would like to talk about fees. There&amp;rsquo;s this weird gap between&amp;ndash; there are two things going on. People complain about high fees. But people are confused about why Bitcoin Core is giving high fees but if you set fees manually you can get a much lower fee and get a transaction mined pretty fast.</description>
@@ -169,10 +169,10 @@ I am a Bitcoin Core developer and I work at DG Lab. Today I would like to talk a
     
     <item>
       <title>Playing With Fire Adjusting Bitcoin Block Subsidy</title>
-      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/playing-with-fire-adjusting-bitcoin-block-subsidy/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tokyo-2018/playing-with-fire-adjusting-bitcoin-block-subsidy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/playing-with-fire-adjusting-bitcoin-block-subsidy/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tokyo-2018/playing-with-fire-adjusting-bitcoin-block-subsidy/</guid>
       <description>Playing with fire: Adjusting bitcoin&amp;rsquo;s block subsidy
 Anthony Towns (ajtowns)
 slides: https://github.com/ajtowns/sc-btc-2018
@@ -182,10 +182,10 @@ Introduction First an apology about the title. I saw some comments on twitter af
     
     <item>
       <title>Rebalancing Lightning</title>
-      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/rebalancing-lightning/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tokyo-2018/rebalancing-lightning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/rebalancing-lightning/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tokyo-2018/rebalancing-lightning/</guid>
       <description>Rebalancing in the lightning network: Analysis and implications
 Sebastián Reca (Muun)
 https://twitter.com/kanzure/status/1048753406628655105
@@ -195,10 +195,10 @@ Financial costs In the lightning network, routing nodes will incur in financial 
     
     <item>
       <title>Redesigning Bitcoin Fee Market</title>
-      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/redesigning-bitcoin-fee-market/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/stanford-2017/redesigning-bitcoin-fee-market/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/redesigning-bitcoin-fee-market/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/stanford-2017/redesigning-bitcoin-fee-market/</guid>
       <description>Redesigning bitcoin&amp;rsquo;s fee market
 Or Sattath (The Hebrew University)
 https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-September/015093.html
@@ -211,10 +211,10 @@ Just a fast recap of how the current mechanism works. Each block has a size.</de
     
     <item>
       <title>Scaling Bitcoin To Billions Of Transactions Per Day (2015-02-23)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2015-02-23-scaling-bitcoin-to-billions-of-transactions-per-day/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2015-02-23-scaling-bitcoin-to-billions-of-transactions-per-day/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2015-02-23-scaling-bitcoin-to-billions-of-transactions-per-day/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2015-02-23-scaling-bitcoin-to-billions-of-transactions-per-day/</guid>
       <description>2015-02-23
 http://lightning.network/
 video: https://www.youtube.com/watch?v=8zVzw912wPo
@@ -223,10 +223,10 @@ video: https://www.youtube.com/watch?v=8zVzw912wPo
     
     <item>
       <title>Security Of Diminishing Block Subsidy</title>
-      <link>//btctranscripts.com/scalingbitcoin/montreal-2015/security-of-diminishing-block-subsidy/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/montreal-2015/security-of-diminishing-block-subsidy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/montreal-2015/security-of-diminishing-block-subsidy/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/montreal-2015/security-of-diminishing-block-subsidy/</guid>
       <description>Miles Carlsten
 Harry Kalodner
 Arvind Narayanan
@@ -236,10 +236,10 @@ Are minting rewards and transaction fees the same? Transaction fees are time-dep
     
     <item>
       <title>Transaction Fee Estimation</title>
-      <link>//btctranscripts.com/scalingbitcoin/montreal-2015/transaction-fee-estimation/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/montreal-2015/transaction-fee-estimation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/montreal-2015/transaction-fee-estimation/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/montreal-2015/transaction-fee-estimation/</guid>
       <description>Bram Cohen
 Transaction fee estimation
 How wallets can handle real transaction fees
@@ -248,10 +248,10 @@ You should have a market at this point, where some number of transactions never 
     
     <item>
       <title>Why Miners Will Not Voluntarily Individually Produce Smaller Blocks</title>
-      <link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/why-miners-will-not-voluntarily-individually-produce-smaller-blocks/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/why-miners-will-not-voluntarily-individually-produce-smaller-blocks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/hong-kong-2015/why-miners-will-not-voluntarily-individually-produce-smaller-blocks/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/why-miners-will-not-voluntarily-individually-produce-smaller-blocks/</guid>
       <description>Jonathan Bier
 slides: https://scalingbitcoin.org/hongkong2015/presentations/DAY1/2_security_and_incentives_3_bier.pdf
 video: https://www.youtube.com/watch?v=ivgxcEOyWNs&amp;amp;t=1h30s

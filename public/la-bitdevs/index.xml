@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>LA Bitdevs on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/la-bitdevs/</link>
+    <link>https://btctranscripts.com/la-bitdevs/</link>
     <description>Recent content in LA Bitdevs on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/la-bitdevs/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/la-bitdevs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Alekos Filini Magical Bitcoin (2020-05-21)</title>
-      <link>//btctranscripts.com/la-bitdevs/2020-05-21-alekos-filini-magical-bitcoin/</link>
+      <link>https://btctranscripts.com/la-bitdevs/2020-05-21-alekos-filini-magical-bitcoin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/la-bitdevs/2020-05-21-alekos-filini-magical-bitcoin/</guid>
+      <guid>https://btctranscripts.com/la-bitdevs/2020-05-21-alekos-filini-magical-bitcoin/</guid>
       <description>Name: Alekos Filini
 Topic: Magical Bitcoin
 Location: LA BitDevs (online)
@@ -26,10 +26,10 @@ Intro I am a developer, I work on Bitcoin. I came to Bitcoin pretty late compare
     
     <item>
       <title>Amiti Uttarwar Attacking Bitcoin Core (2020-04-16)</title>
-      <link>//btctranscripts.com/la-bitdevs/2020-04-16-amiti-uttarwar-attacking-bitcoin-core/</link>
+      <link>https://btctranscripts.com/la-bitdevs/2020-04-16-amiti-uttarwar-attacking-bitcoin-core/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/la-bitdevs/2020-04-16-amiti-uttarwar-attacking-bitcoin-core/</guid>
+      <guid>https://btctranscripts.com/la-bitdevs/2020-04-16-amiti-uttarwar-attacking-bitcoin-core/</guid>
       <description>Name: Amiti Uttarwar
 Topic: Attacking Bitcoin Core
 Location: BitDevs LA
@@ -42,10 +42,10 @@ Consensus Fundamentally what is required for this to work is the idea of consens
     
     <item>
       <title>Luke Dashjr - Segwit, PSBT Vulnerability (2020-06-18)</title>
-      <link>//btctranscripts.com/la-bitdevs/2020-06-18-luke-dashjr-segwit-psbt-vulnerability/</link>
+      <link>https://btctranscripts.com/la-bitdevs/2020-06-18-luke-dashjr-segwit-psbt-vulnerability/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/la-bitdevs/2020-06-18-luke-dashjr-segwit-psbt-vulnerability/</guid>
+      <guid>https://btctranscripts.com/la-bitdevs/2020-06-18-luke-dashjr-segwit-psbt-vulnerability/</guid>
       <description>Name: Luke Dashjr
 Topic: SegWit/PSBT vulnerability (CVE-2020-14199)
 Location: LA BitDevs (online)

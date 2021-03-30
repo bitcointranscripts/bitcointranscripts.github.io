@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>mempool on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/tags/mempool/</link>
+    <link>https://btctranscripts.com/tags/mempool/</link>
     <description>Recent content in mempool on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/tags/mempool/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/tags/mempool/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Bevy Of Block Size Proposals Bip100 Bip102 And More</title>
-      <link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/a-bevy-of-block-size-proposals-bip100-bip102-and-more/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/a-bevy-of-block-size-proposals-bip100-bip102-and-more/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/hong-kong-2015/a-bevy-of-block-size-proposals-bip100-bip102-and-more/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/a-bevy-of-block-size-proposals-bip100-bip102-and-more/</guid>
       <description>jgarzik
 slides: https://scalingbitcoin.org/hongkong2015/presentations/DAY2/3_tweaking_the_chain_1_garzik.pdf
 slides: http://www.slideshare.net/jgarzik/a-bevy-of-block-size-proposals-scaling-bitcoin-hk-2015
@@ -22,10 +22,10 @@ What are some of the high level concerns with block size?</description>
     
     <item>
       <title>Bitcoin Load Spike Simulation</title>
-      <link>//btctranscripts.com/scalingbitcoin/montreal-2015/bitcoin-load-spike-simulation/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/montreal-2015/bitcoin-load-spike-simulation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/montreal-2015/bitcoin-load-spike-simulation/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/montreal-2015/bitcoin-load-spike-simulation/</guid>
       <description>Conner Fromknecht
 Nathan Wilcox
 Bitcoin load spike simulation
@@ -34,10 +34,10 @@ Our goal for this project, our rationale of what we&amp;rsquo;re interesting is 
     
     <item>
       <title>Blockchain Design Patterns</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/blockchain-design-patterns/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/blockchain-design-patterns/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/blockchain-design-patterns/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/blockchain-design-patterns/</guid>
       <description>Blockchain design patterns: Layers and scaling approaches
 Andrew Poelstra, David Vorick
 https://twitter.com/kanzure/status/1171400374336536576
@@ -46,10 +46,10 @@ Introduction Alright. Are we ready to get going? Thumbs up? Alright. Cool. I am 
     
     <item>
       <title>Gmaxwell - Advances In Block Propagation (2017-11-27)</title>
-      <link>//btctranscripts.com/greg-maxwell/2017-11-27-gmaxwell-advances-in-block-propagation/</link>
+      <link>https://btctranscripts.com/greg-maxwell/2017-11-27-gmaxwell-advances-in-block-propagation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/greg-maxwell/2017-11-27-gmaxwell-advances-in-block-propagation/</guid>
+      <guid>https://btctranscripts.com/greg-maxwell/2017-11-27-gmaxwell-advances-in-block-propagation/</guid>
       <description>Advances in block propagation
 Greg Maxwell
 2017-11-27
@@ -69,10 +69,10 @@ https://twitter.com/kanzure/status/944656354307919873
     
     <item>
       <title>Mempool Analysis Simulation</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2019/mempool-analysis-simulation/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/mempool-analysis-simulation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2019/mempool-analysis-simulation/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/mempool-analysis-simulation/</guid>
       <description>Mempool analysis and simulation
 kallewoof
 https://twitter.com/kanzure/status/1137342023063744512
@@ -81,10 +81,10 @@ Introduction Fun fact: I don&amp;rsquo;t think anyone knows this fact, but antpo
     
     <item>
       <title>Optimizing Fee Estimation Via Mempool State</title>
-      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/optimizing-fee-estimation-via-mempool-state/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/stanford-2017/optimizing-fee-estimation-via-mempool-state/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/optimizing-fee-estimation-via-mempool-state/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/stanford-2017/optimizing-fee-estimation-via-mempool-state/</guid>
       <description>Optimizing fee estimation via the mempool state
 Karl-Johan Alm (DG Lab)
 I am a Bitcoin Core developer and I work at DG Lab. Today I would like to talk about fees. There&amp;rsquo;s this weird gap between&amp;ndash; there are two things going on. People complain about high fees. But people are confused about why Bitcoin Core is giving high fees but if you set fees manually you can get a much lower fee and get a transaction mined pretty fast.</description>
@@ -92,10 +92,10 @@ I am a Bitcoin Core developer and I work at DG Lab. Today I would like to talk a
     
     <item>
       <title>P2P with John Newbery</title>
-      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/edgeplusplus/p2p-john-newbery/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/stanford-2017/edgeplusplus/p2p-john-newbery/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/edgeplusplus/p2p-john-newbery/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/stanford-2017/edgeplusplus/p2p-john-newbery/</guid>
       <description>Name: John Newbery
 Topic: Bitcoin Peer-to-Peer Network and Mempool
 Location: Bitcoin Edge Dev++ 2017 - Stanford University
@@ -106,10 +106,10 @@ Bitcoin Peer-to-Peer Network John: So far today, we&amp;rsquo;ve talked about tr
     
     <item>
       <title>Rebroadcasting</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/rebroadcasting/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/rebroadcasting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/rebroadcasting/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/rebroadcasting/</guid>
       <description>Rebroadcasting
 Amiti Uttarwar (amizi)
 https://twitter.com/kanzure/status/1171042478088232960
@@ -119,10 +119,10 @@ What is rebroadcasting? We all know what a broadcast is. It&amp;rsquo;s hwen we 
     
     <item>
       <title>Socratic Seminar (2020-05-19)</title>
-      <link>//btctranscripts.com/sydney-bitcoin-meetup/2020-05-19-socratic-seminar/</link>
+      <link>https://btctranscripts.com/sydney-bitcoin-meetup/2020-05-19-socratic-seminar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sydney-bitcoin-meetup/2020-05-19-socratic-seminar/</guid>
+      <guid>https://btctranscripts.com/sydney-bitcoin-meetup/2020-05-19-socratic-seminar/</guid>
       <description>Name: Socratic Seminar
 Topic: Agenda in Google Doc below
 Location: Bitcoin Sydney (online)

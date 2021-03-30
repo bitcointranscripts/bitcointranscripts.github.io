@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>topology on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/tags/topology/</link>
+    <link>https://btctranscripts.com/tags/topology/</link>
     <description>Recent content in topology on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/tags/topology/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/tags/topology/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Christian Decker Channel Factories (2019-03-14)</title>
-      <link>//btctranscripts.com/stephan-livera-podcast/2019-03-14-christian-decker-channel-factories/</link>
+      <link>https://btctranscripts.com/stephan-livera-podcast/2019-03-14-christian-decker-channel-factories/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stephan-livera-podcast/2019-03-14-christian-decker-channel-factories/</guid>
+      <guid>https://btctranscripts.com/stephan-livera-podcast/2019-03-14-christian-decker-channel-factories/</guid>
       <description>Name: Christian Decker
 Topic: Lightning Channel Factories
 Location: Stephan Livera Podcast
@@ -24,10 +24,10 @@ Stephan: There has been a lot of chatter in the Bitcoin community on what might 
     
     <item>
       <title>Lightning Network Topological Analysis</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2019/lightning-network-topological-analysis/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/lightning-network-topological-analysis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2019/lightning-network-topological-analysis/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/lightning-network-topological-analysis/</guid>
       <description>Topological analysis of the lightning network
 Istvan Andras Seres
 paper: https://arxiv.org/abs/1901.04972
@@ -37,10 +37,10 @@ Introduction Knowing the topology is not necessarily a vulnerability, but it giv
     
     <item>
       <title>Lightning network topology, its creation and maintenance</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-topology/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-topology/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-topology/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-topology/</guid>
       <description>Carla Kirk-Cohen
 video: https://www.youtube.com/watch?v=j2l_Ut4k1qI
 Introduction Alright. Give me a second to test this. Alright. Antoine has taken you through the routing layer. I&amp;rsquo;m going to take you through what the lightning network looks like today. This is the current topology of the network and how this came about, and some approaches for maintaining hte network and making the graph look like we want it to look.
@@ -49,10 +49,10 @@ Lightning brief overview There&amp;rsquo;s ideally only two transactions involve
     
     <item>
       <title>Txprobe</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/txprobe/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/txprobe/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/txprobe/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/txprobe/</guid>
       <description>TxProbe: Discovering bitcoin&amp;rsquo;s network topology using orphan transactions
 Sergi Delgado-Segura (sr_gi)
 https://twitter.com/kanzure/status/1171723329453142016

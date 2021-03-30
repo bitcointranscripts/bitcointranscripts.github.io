@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Stanford Blockchain Conference 2020 on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/stanford-blockchain-conference/2020/</link>
+    <link>https://btctranscripts.com/stanford-blockchain-conference/2020/</link>
     <description>Recent content in Stanford Blockchain Conference 2020 on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/stanford-blockchain-conference/2020/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/stanford-blockchain-conference/2020/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Arbitrum V2</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/arbitrum-v2/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/arbitrum-v2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/arbitrum-v2/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/arbitrum-v2/</guid>
       <description>Arbitrum 2.0: Faster Off-Chain Contracts with On-Chain Security
 Ed Felten, Off-chain Labs
 https://twitter.com/kanzure/status/1230191734375628802
@@ -20,10 +20,10 @@ Introduction Thank you, good morning everybody. I&amp;rsquo;m going to talk abou
     
     <item>
       <title>Atomic Multi Channel Updates</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/atomic-multi-channel-updates/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/atomic-multi-channel-updates/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/atomic-multi-channel-updates/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/atomic-multi-channel-updates/</guid>
       <description>Atomic Multi-Channel Updates with Constant Collateral in Bitcoin-Compatible Payment-Channel Networks
 Matteo Maffei
 https://diyhpl.us/wiki/transcripts/scalingbitcoin/tel-aviv-2019/atomic-multi-channel-updates/
@@ -34,10 +34,10 @@ Scalability issues We all know that blockchains have scalability issues. Public 
     
     <item>
       <title>Attacking EVM Resource Metering (2019-02-19)</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/attacking-evm-resource-metering/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/attacking-evm-resource-metering/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/attacking-evm-resource-metering/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/attacking-evm-resource-metering/</guid>
       <description>Broken Metre: Attacking resource metering in EVM
 Daniel Perez, Benjamin Livshits
 https://twitter.com/kanzure/status/1230222221110468609
@@ -47,10 +47,10 @@ Abstract Metering is an approach developed to assign cost to smart contract exec
     
     <item>
       <title>Beyond Hashrate Majority Attacks</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/beyond-hashrate-majority-attacks/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/beyond-hashrate-majority-attacks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/beyond-hashrate-majority-attacks/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/beyond-hashrate-majority-attacks/</guid>
       <description>Beyond 51% attacks
 Vitalik Buterin
 https://twitter.com/kanzure/status/1230624835996250112
@@ -60,10 +60,10 @@ Okay, so hello everyone. Hi. Okay. I will start by reminding everyone that 51% a
     
     <item>
       <title>Block Rewards</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/block-rewards/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/block-rewards/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/block-rewards/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/block-rewards/</guid>
       <description>An Axiomatic Approach to Block Rewards
 Tim Roughgarden
 https://twitter.com/kanzure/status/1230574963813257216
@@ -73,10 +73,10 @@ Introduction Thank you, Bram. Can you hear me in the back? I want to talk about 
     
     <item>
       <title>Blockchains For Multiplayer Games</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/blockchains-for-multiplayer-games/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/blockchains-for-multiplayer-games/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/blockchains-for-multiplayer-games/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/blockchains-for-multiplayer-games/</guid>
       <description>Blockchains for multiplayer games
 Brett Seyler
 https://twitter.com/kanzure/status/1230256436527034368
@@ -85,10 +85,10 @@ Introduction Alright, thanks everyone for being here. Let&amp;rsquo;s get starte
     
     <item>
       <title>Boomerang</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/boomerang/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/boomerang/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/boomerang/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/boomerang/</guid>
       <description>Boomerang: Redundancy Improves Latency and Throughput in Payment-Channel Network
 Joachim Neu
 https://twitter.com/kanzure/status/1230936389300080640
@@ -98,10 +98,10 @@ Payment channels Alice and Bob are connected through a payment channel. This is 
     
     <item>
       <title>Brick Async State Channels</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/brick-async-state-channels/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/brick-async-state-channels/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/brick-async-state-channels/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/brick-async-state-channels/</guid>
       <description>Brick: Asynchronous State Channels
 Georgia Avarikioti
 https://twitter.com/kanzure/status/1230943445398614016
@@ -111,10 +111,10 @@ Introduction I am going to be presenting on Brick for asynchronous state channel
     
     <item>
       <title>Celo Ultralight Client</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/celo-ultralight-client/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/celo-ultralight-client/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/celo-ultralight-client/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/celo-ultralight-client/</guid>
       <description>The Celo ultralight client
 Marek Olszewski and Michael Straka
 https://twitter.com/kanzure/status/1230261714039398402
@@ -124,10 +124,10 @@ Plumo Plumo sands for &amp;ldquo;feather&amp;rdquo; in esperanto. I hope most pe
     
     <item>
       <title>Clockwork Nonfrontrunning</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/clockwork-nonfrontrunning/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/clockwork-nonfrontrunning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/clockwork-nonfrontrunning/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/clockwork-nonfrontrunning/</guid>
       <description>ClockWork: An exchange protocol for proofs of non-front-running
 Daniel Cline
 https://twitter.com/kanzure/status/1231012112517844993
@@ -137,10 +137,10 @@ Exchange systems Exchange systems let you trade one asset for another asset at a
     
     <item>
       <title>Competitive Equilibria Staking Lending</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/competitive-equilibria-staking-lending/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/competitive-equilibria-staking-lending/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/competitive-equilibria-staking-lending/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/competitive-equilibria-staking-lending/</guid>
       <description>Competitive equilibria between staking and on-chain lending
 Tarun Chitra
 https://twitter.com/kanzure/status/1230581977289379840
@@ -152,10 +152,10 @@ Agenda I&amp;rsquo;ll go over some high level overview of intuitive market dynam
     
     <item>
       <title>Decentralized Oracles Tls</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/decentralized-oracles-tls/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/decentralized-oracles-tls/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/decentralized-oracles-tls/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/decentralized-oracles-tls/</guid>
       <description>DECO: Liberating Web Data Using Decentralized Oracles for TLS
 Fan Zhang
 https://twitter.com/kanzure/status/1230657639740108806
@@ -165,10 +165,10 @@ Decentralized identity What is identity? To use any system, the first thing that
     
     <item>
       <title>Fractal</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/fractal/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/fractal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/fractal/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/fractal/</guid>
       <description>Fractal: Post-Quantum and Transparent Recursive Proofs from Holography
 Nick Spooner
 https://twitter.com/kanzure/status/1230295372909514752
@@ -178,10 +178,10 @@ Introduction One of the most powerful things that you can do with SNARKs is some
     
     <item>
       <title>Hardware Accelerated Rsa</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/hardware-accelerated-rsa/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/hardware-accelerated-rsa/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/hardware-accelerated-rsa/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/hardware-accelerated-rsa/</guid>
       <description>Hardware Accelerated RSA - VDFs, SNARKs, and Accumulators
 Simon Peffers
 https://twitter.com/kanzure/status/1230551345700069377
@@ -191,10 +191,10 @@ Outline I&amp;rsquo;ll talk about what acceleration is and why we&amp;rsquo;re i
     
     <item>
       <title>Libra Blockchain Intro</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/libra-blockchain-intro/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/libra-blockchain-intro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/libra-blockchain-intro/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/libra-blockchain-intro/</guid>
       <description>The Libra Blockchain &amp;amp; Move: A technical introduction
 Ben Maurer
 https://twitter.com/kanzure/status/1230248685319024641
@@ -203,10 +203,10 @@ Introduction We&amp;rsquo;re building a new wallet for the system, Calibre, whic
     
     <item>
       <title>Linking Anonymous Transactions</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/linking-anonymous-transactions/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/linking-anonymous-transactions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/linking-anonymous-transactions/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/linking-anonymous-transactions/</guid>
       <description>Linking anonymous transactions via remote side-channel attacks
 Florian Tramer
 https://twitter.com/kanzure/status/1230214874908655617
@@ -216,10 +216,10 @@ Introduction This is going to be talking about linking anonymous transactions in
     
     <item>
       <title>Lower Bounds Limits Plasma</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/lower-bounds-limits-plasma/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/lower-bounds-limits-plasma/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/lower-bounds-limits-plasma/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/lower-bounds-limits-plasma/</guid>
       <description>Lower Bounds for Off-Chain Protocols: Exploring the Limits of Plasma
 Stefan Dziembowski
 https://twitter.com/kanzure/status/1230183338746335233
@@ -229,10 +229,10 @@ Plasma Let me start by telling you about Plasma. It&amp;rsquo;s a family of laye
     
     <item>
       <title>Mixicles</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/mixicles/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/mixicles/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/mixicles/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/mixicles/</guid>
       <description>Mixicles: Simple Private Decentralized Finance
 Ari Juels
 https://twitter.com/kanzure/status/1230666545803563008
@@ -243,10 +243,10 @@ DeFi and privacy As of a couple of weeks ago, DeFi passed the $1 billion mark wh
     
     <item>
       <title>Motoko Language</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/motoko-language/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/motoko-language/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/motoko-language/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/motoko-language/</guid>
       <description>Motoko, the language for the Internet Computer
 Joachim Breitner
 Introduction Thanks, Byron. Glad to be here. My name is Dominic Williams. I am founder of the internet computer project at Dfinity Foundation. Last year we talked about consensus protocols. Today we are talking about tools for building on top of the internet computer which is great news and shows the progress we have made. I&amp;rsquo;m going to give some introductory context, and then our senior researcher from our languages division will talk about Motoko.</description>
@@ -254,10 +254,10 @@ Introduction Thanks, Byron. Glad to be here. My name is Dominic Williams. I am f
     
     <item>
       <title>No Incentive</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/no-incentive/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/no-incentive/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/no-incentive/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/no-incentive/</guid>
       <description>The best incentive is no incentive
 David Schwartz
 https://twitter.com/kanzure/status/1230997662339436544
@@ -267,10 +267,10 @@ I am David Schwartz as you just heard I am one of the co-creators of Ripple.</de
     
     <item>
       <title>Optimistic Vm</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/optimistic-vm/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/optimistic-vm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/optimistic-vm/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/optimistic-vm/</guid>
       <description>The optimistic VM
 Karl Floersch
 https://twitter.com/kanzure/status/1230974707249233921
@@ -280,10 +280,10 @@ Why hello everyone. I am building on ethereum and in particular we&amp;rsquo;re 
     
     <item>
       <title>Plonk</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/plonk/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/plonk/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/plonk/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/plonk/</guid>
       <description>PLONK: Permutations over Lagrange-bases for Oecumenical Noninteractive arguments of Knowledge
 Ariel Gabizon
 https://twitter.com/kanzure/status/1230287617972768769
@@ -293,10 +293,10 @@ Introduction One of the things you need when you design a zk proof system is tha
     
     <item>
       <title>Prism</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/prism/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/prism/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/prism/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/prism/</guid>
       <description>Prism: Scaling bitcoin by 10,000x
 Lei Yang
 https://twitter.com/kanzure/status/1230634530110730241
@@ -307,10 +307,10 @@ Bitcoin performance We all know that bitcoin has good security, but in terms of 
     
     <item>
       <title>Proof Of Necessary Work</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/proof-of-necessary-work/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/proof-of-necessary-work/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/proof-of-necessary-work/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/proof-of-necessary-work/</guid>
       <description>Proof of Necessary Work: Succinct State Verification with Fairness Guarantees
 Assimakis Kattis
 https://twitter.com/kanzure/status/1230199429849743360
@@ -322,10 +322,10 @@ Introduction Let&amp;rsquo;s start with something familiar. When you have a new 
     
     <item>
       <title>Proof Of Stake</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/proof-of-stake/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/proof-of-stake/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/proof-of-stake/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/proof-of-stake/</guid>
       <description>Proof-of-stake longest chain protocols revisited
 David Tse
 https://twitter.com/kanzure/status/1230646529230163968
@@ -335,10 +335,10 @@ Proof-of-stake prism The starting point of this project was to come up with a pr
     
     <item>
       <title>Scalable Rsa Modulus Generation</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/scalable-rsa-modulus-generation/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/scalable-rsa-modulus-generation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/scalable-rsa-modulus-generation/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/scalable-rsa-modulus-generation/</guid>
       <description>Scalable RSA Modulus Generation with Dishonest Majority
 Megan Chen
 https://twitter.com/kanzure/status/1230545603605585920
@@ -347,10 +347,10 @@ Introduction Groups of unknown order are interesting cryptographic primitives. Y
     
     <item>
       <title>Smart Contract Bug Hunting</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/smart-contract-bug-hunting/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/smart-contract-bug-hunting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/smart-contract-bug-hunting/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/smart-contract-bug-hunting/</guid>
       <description>Finding Bugs Automatically in Smart Contracts with Parameterized Specifications
 Mooly Sagiv
 https://www.certora.com/pubs/sbc2020.pdf
@@ -360,10 +360,10 @@ Introduction I am from Tel Aviv University and now we have a 1-year old company 
     
     <item>
       <title>Solving Data Availability Attacks Using Coded Merkle Trees</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/solving-data-availability-attacks-using-coded-merkle-trees/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/solving-data-availability-attacks-using-coded-merkle-trees/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/solving-data-availability-attacks-using-coded-merkle-trees/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/solving-data-availability-attacks-using-coded-merkle-trees/</guid>
       <description>Coded Merkle Tree: Solving Data Availability Attacks in Blockchains
 Sreeram Kannan
 https://eprint.iacr.org/2019/1139.pdf
@@ -373,10 +373,10 @@ Introduction I am going to talk about blockchain sharding via data availability.
     
     <item>
       <title>Stark For Developers</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/stark-for-developers/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/stark-for-developers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/stark-for-developers/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/stark-for-developers/</guid>
       <description>STARK for developers
 Eli Ben-Sasson
 https://twitter.com/kanzure/status/1230279740570783744
@@ -385,10 +385,10 @@ Introduction It always seems like there&amp;rsquo;s a lot of different proof sys
     
     <item>
       <title>Streamlet</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/streamlet/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/streamlet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/streamlet/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/streamlet/</guid>
       <description>Streamlet: Textbook Streamlined Blockchain Protocols
 Benjamin Chan
 Introduction ((&amp;hellip;. stream went offline in the other room, had to catch up.))
@@ -399,10 +399,10 @@ Jump right in. First model the consensus problem.</description>
     
     <item>
       <title>Transparent Dishonesty</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/transparent-dishonesty/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/transparent-dishonesty/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/transparent-dishonesty/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/transparent-dishonesty/</guid>
       <description>Transparent dishonesty: frontrunning attacks on blockchain
 Shayan Eskandari
 https://twitter.com/kanzure/status/1231005309310627841
@@ -412,10 +412,10 @@ My talk will not be as intense as the previous talk, but I&amp;rsquo;m going to 
     
     <item>
       <title>Transparent Snarks From Dark Compilers</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/transparent-snarks-from-dark-compilers/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/transparent-snarks-from-dark-compilers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/transparent-snarks-from-dark-compilers/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/transparent-snarks-from-dark-compilers/</guid>
       <description>Transparent SNARKs from DARK compilers
 Ben Fisch
 https://twitter.com/kanzure/status/1230561492254089224
@@ -425,10 +425,10 @@ Introduction Our next speaker is Ben Fisch, part of the Stanford Applied Crypto 
     
     <item>
       <title>Welcome Remarks</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/welcome-remarks/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/welcome-remarks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/welcome-remarks/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/welcome-remarks/</guid>
       <description>Welcome remarks
 Dan Boneh
 https://twitter.com/kanzure/status/1230178753805836288

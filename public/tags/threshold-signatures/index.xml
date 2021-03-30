@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>threshold signatures on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/tags/threshold-signatures/</link>
+    <link>https://btctranscripts.com/tags/threshold-signatures/</link>
     <description>Recent content in threshold signatures on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/tags/threshold-signatures/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/tags/threshold-signatures/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Arvind Narayanan</title>
-      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2015/arvind-narayanan/</link>
+      <link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2015/arvind-narayanan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2015/arvind-narayanan/</guid>
+      <guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2015/arvind-narayanan/</guid>
       <description>Arvind Narayanan
 Threshold signatures
 I want to tell you what threshold signatures are and I want to convince you that threshold signatures are a technology you need. This is collaborative work.
@@ -20,10 +20,10 @@ There are three things I want to tell you today. The first is that the banking s
     
     <item>
       <title>Deterministic Signatures Group</title>
-      <link>//btctranscripts.com/w3-blockchain-workshop-2016/deterministic-signatures-group/</link>
+      <link>https://btctranscripts.com/w3-blockchain-workshop-2016/deterministic-signatures-group/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/w3-blockchain-workshop-2016/deterministic-signatures-group/</guid>
+      <guid>https://btctranscripts.com/w3-blockchain-workshop-2016/deterministic-signatures-group/</guid>
       <description>Deterministic expressions (group)
 So please give your name and organization and what would you like to hear in the next twenty or thirty minutes.
 ECDSA threshold signatures. Signature systems. Multisig predicate expressions.
@@ -37,10 +37,10 @@ Probably what people are least familiar with is crypto conditions. I am going to
     
     <item>
       <title>Threshold Signatures</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2019/threshold-signatures/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2019/threshold-signatures/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/threshold-signatures/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2019/threshold-signatures/</guid>
       <description>Efficient distributed key generation for threshold signatures
 Mahnush Movahedi
 Threshold signatures Threshold signature schemes are schemes where n parties and at least t are necessary and sufficient for signing. They want to make sure that t parties are necessary. Any threshold signature scheme typically has 3 protocols: key generation, signing, and verifying.
@@ -49,10 +49,10 @@ In key generation, one party creates a group public key as an output. Also, for 
     
     <item>
       <title>Threshold Signatures And Accountability (2019-02-04)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2019-02-04-threshold-signatures-and-accountability/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2019-02-04-threshold-signatures-and-accountability/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2019-02-04-threshold-signatures-and-accountability/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2019-02-04-threshold-signatures-and-accountability/</guid>
       <description>Threshold signatures and accountability
 Andrew Poelstra
 https://twitter.com/kanzure/status/1092665108960968704

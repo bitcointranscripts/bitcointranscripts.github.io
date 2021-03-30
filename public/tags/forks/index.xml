@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>forks on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/tags/forks/</link>
+    <link>https://btctranscripts.com/tags/forks/</link>
     <description>Recent content in forks on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/tags/forks/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/tags/forks/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bip101 Block Propagation Data From Testnet</title>
-      <link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/bip101-block-propagation-data-from-testnet/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/bip101-block-propagation-data-from-testnet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/hong-kong-2015/bip101-block-propagation-data-from-testnet/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/bip101-block-propagation-data-from-testnet/</guid>
       <description>bip101 block propagation data from testnet
 jtoomim
 video: https://www.youtube.com/watch?v=ivgxcEOyWNs&amp;amp;t=2h25m20s
@@ -21,10 +21,10 @@ My perspective on this is that scaling bitcoin is an engineer problem. My favori
     
     <item>
       <title>Bip99 And Uncontroversial Hard Forks</title>
-      <link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/bip99-and-uncontroversial-hard-forks/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/bip99-and-uncontroversial-hard-forks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/hong-kong-2015/bip99-and-uncontroversial-hard-forks/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/bip99-and-uncontroversial-hard-forks/</guid>
       <description>jtimon
 slides: https://scalingbitcoin.org/hongkong2015/presentations/DAY1/1_overview_1_timon.pdf
 video: https://youtube.com/watch?v=aQ1--w4uEMM&amp;amp;t=1121
@@ -35,20 +35,20 @@ Why do we want to classify consensus changes in the first place? Well, for one, 
     
     <item>
       <title>Bitcoin Script</title>
-      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/bitcoin-script/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tokyo-2018/bitcoin-script/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/bitcoin-script/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tokyo-2018/bitcoin-script/</guid>
       <description>Featuring roasbeef
 Agenda  opcodes OP_CHECKSIGFROMSTACK sighash flags keytree sigs MAST graftroot, taproot covenants, reverse covenants (input restrictions: this input has to be spent with tihs other input, or can only be spent if this other one doesn&amp;rsquo;t exist) stack manipulation script languages (simplicity) tx formats, serialization? what would we change with hard-fork changes to the transaction format? Segwit transaction encoding format sucks; the witnesses are at the end and inline with all the scriptsigs and that should be changed.</description>
     </item>
     
     <item>
       <title>Blockchain Testbed</title>
-      <link>//btctranscripts.com/scalingbitcoin/montreal-2015/blockchain-testbed/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/montreal-2015/blockchain-testbed/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/montreal-2015/blockchain-testbed/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/montreal-2015/blockchain-testbed/</guid>
       <description>Ittay Eyal
 Emin Gun Sirer
 A testbed for bitcoin scaling
@@ -57,10 +57,10 @@ I want to talk today about how to scale bitcoin. We want lower latency, we want 
     
     <item>
       <title>Changing Consensus Rules Without Breaking Bitcoin</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2017/changing-consensus-rules-without-breaking-bitcoin/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2017/changing-consensus-rules-without-breaking-bitcoin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2017/changing-consensus-rules-without-breaking-bitcoin/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2017/changing-consensus-rules-without-breaking-bitcoin/</guid>
       <description>Changing consensus rules without breaking bitcoin
 Eric Lombrozo (CodeShark)
 video: https://www.youtube.com/watch?v=0WCaoGiAOHE&amp;amp;t=32min9s
@@ -72,10 +72,10 @@ Comparing open-source development to bitcoin&amp;rsquo;s blockchain &amp;hellip;
     
     <item>
       <title>Consensus Uasf And Forks (2017-06-04)</title>
-      <link>//btctranscripts.com/lets-talk-bitcoin-podcast/2017-06-04-consensus-uasf-and-forks/</link>
+      <link>https://btctranscripts.com/lets-talk-bitcoin-podcast/2017-06-04-consensus-uasf-and-forks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/lets-talk-bitcoin-podcast/2017-06-04-consensus-uasf-and-forks/</guid>
+      <guid>https://btctranscripts.com/lets-talk-bitcoin-podcast/2017-06-04-consensus-uasf-and-forks/</guid>
       <description>Name: Andreas Antonopoulos
 Topic: On Consensus and All Kinds of Forks
 Location: Let’s Talk Bitcoin podcast (Episode 333)
@@ -86,10 +86,10 @@ User activated soft forks vs hard forks Adam Levine (AL): I’m trying to look a
     
     <item>
       <title>Ethcore</title>
-      <link>//btctranscripts.com/w3-blockchain-workshop-2016/ethcore/</link>
+      <link>https://btctranscripts.com/w3-blockchain-workshop-2016/ethcore/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/w3-blockchain-workshop-2016/ethcore/</guid>
+      <guid>https://btctranscripts.com/w3-blockchain-workshop-2016/ethcore/</guid>
       <description>ethcore
 At ethcore, we are building the infrastructure for the future of the decentralized web. Unless we get distracted by TheDAO and soft-forks and hard-forks. Maybe decentralization is not the most important thing. We want to build a p2p secure serverless web. Why is decentralization such an important notion? There&amp;rsquo;s no intrinsic value in being decentralized. There&amp;rsquo;s intrinsic value in being utilized and secure by people.
 This is a bit of how we see the architecture.</description>
@@ -97,10 +97,10 @@ This is a bit of how we see the architecture.</description>
     
     <item>
       <title>Great Consensus Cleanup (2019-06-06)</title>
-      <link>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-06-great-consensus-cleanup/</link>
+      <link>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-06-great-consensus-cleanup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-06-great-consensus-cleanup/</guid>
+      <guid>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-06-great-consensus-cleanup/</guid>
       <description>2019-06-06
 Great consensus cleanup https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2019-March/016714.html
 https://twitter.com/kanzure/status/1136591286012698626
@@ -110,10 +110,10 @@ Validation time for any block&amp;ndash; we were lazy about fixing this. Segwit 
     
     <item>
       <title>John Light - Bitcoin Full Nodes (2018-07-23)</title>
-      <link>//btctranscripts.com/london-bitcoin-devs/2018-07-23-john-light-bitcoin-full-nodes/</link>
+      <link>https://btctranscripts.com/london-bitcoin-devs/2018-07-23-john-light-bitcoin-full-nodes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/london-bitcoin-devs/2018-07-23-john-light-bitcoin-full-nodes/</guid>
+      <guid>https://btctranscripts.com/london-bitcoin-devs/2018-07-23-john-light-bitcoin-full-nodes/</guid>
       <description>Name: John Light
 Topic: Bitcoin Full Nodes
 Location: London Bitcoin Devs
@@ -125,10 +125,10 @@ Intro My presentation today is going to be about Bitcoin full nodes. Everything 
     
     <item>
       <title>Light Clients During 2017 Interfork Period</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2017/light-clients-during-2017-interfork-period/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2017/light-clients-during-2017-interfork-period/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2017/light-clients-during-2017-interfork-period/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2017/light-clients-during-2017-interfork-period/</guid>
       <description>Light clients during the 2017 interfork period
 Thomas Voegtlin
 video: https://www.youtube.com/watch?v=eCE2OzKIab8&amp;amp;t=5h9m
@@ -140,10 +140,10 @@ So we have segwit and we are very happy about that.</description>
     
     <item>
       <title>Pindar Wong</title>
-      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/pindar-wong/</link>
+      <link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/pindar-wong/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/pindar-wong/</guid>
+      <guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/pindar-wong/</guid>
       <description>Pindar Wong
 Forked to Death: What Internet governance can learn from Bitcoin
 So, the last talk today is going to be from Pindar Wong. He&amp;rsquo;s been involved with Internet in Hong Kong. He also helped organize the Scaling Bitcoin workshops. It&amp;rsquo;s my pleasure to have him speaking today.
@@ -152,10 +152,10 @@ Okay. Thank you very much for staying until the bitter end. My topic today is fo
     
     <item>
       <title>Reorgs</title>
-      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/reorgs/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/reorgs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/reorgs/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/reorgs/</guid>
       <description>Bryan Bishop
 Handling Reorgs &amp;amp; Forks
 https://twitter.com/kanzure/status/1052344700554960896
@@ -168,10 +168,10 @@ Definitions You might have heard that the bitcoin blockchain is a permanent data
     
     <item>
       <title>Segwit Lessons Learned</title>
-      <link>//btctranscripts.com/scalingbitcoin/milan-2016/segwit-lessons-learned/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/milan-2016/segwit-lessons-learned/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/milan-2016/segwit-lessons-learned/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/milan-2016/segwit-lessons-learned/</guid>
       <description>Lessons learned with segwit in Bitcoin
 Greg Sanders (instagibbs)
 https://twitter.com/kanzure/status/785034301272420353
@@ -181,10 +181,10 @@ Hi. My name is Greg Sanders. I will be giving a talk about segwit in bitcoin les
     
     <item>
       <title>Socialized Costs Of Hard Forks</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2017/socialized-costs-of-hard-forks/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2017/socialized-costs-of-hard-forks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2017/socialized-costs-of-hard-forks/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2017/socialized-costs-of-hard-forks/</guid>
       <description>Socialized costs of hard-forks
 Jimmy Song
 https://twitter.com/kanzure/status/1005518746260262912
@@ -194,10 +194,10 @@ KL: Can you hear me? Is it good? Okay. I hope you have practiced your French bec
     
     <item>
       <title>Spork Probabilistic Bitcoin Soft Forks</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2019/spork-probabilistic-bitcoin-soft-forks/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2019/spork-probabilistic-bitcoin-soft-forks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/spork-probabilistic-bitcoin-soft-forks/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2019/spork-probabilistic-bitcoin-soft-forks/</guid>
       <description>Spork: Probabilistic bitcoin soft-forks
 Jeremy Rubin
 Introduction Thank you for the introduction. I have a secret. I am not an economist, so you&amp;rsquo;ll have to forgive me if I don&amp;rsquo;t have your favorite annotations today. I have my own annotations. I originally gave a predecessor to this talk in Japan. You might notice my title here is a haiku: these are protocols used for changing the bitcoin netwokr protocols. People do highly value staying together for a chain, we&amp;rsquo;re doing coordinated activation of a new upgrade.</description>

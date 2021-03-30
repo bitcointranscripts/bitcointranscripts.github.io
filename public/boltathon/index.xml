@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Boltathon on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/boltathon/</link>
+    <link>https://btctranscripts.com/boltathon/</link>
     <description>Recent content in Boltathon on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/boltathon/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/boltathon/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Alex Bosworth Major Limitations (2019-04-06)</title>
-      <link>//btctranscripts.com/boltathon/2019-04-06-alex-bosworth-major-limitations/</link>
+      <link>https://btctranscripts.com/boltathon/2019-04-06-alex-bosworth-major-limitations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/boltathon/2019-04-06-alex-bosworth-major-limitations/</guid>
+      <guid>https://btctranscripts.com/boltathon/2019-04-06-alex-bosworth-major-limitations/</guid>
       <description>Alex Bosworth
 Major Limitations of the Lightning Network
 Video: https://www.youtube.com/watch?v=ctx-oAIhhSY&amp;amp;list=PLC_AgDAr0m6QhwqPDrqMfjX64oHGmwDMk&amp;amp;index=4
@@ -23,10 +23,10 @@ Every Transaction A Lightning Transaction When I first started really focusing o
     
     <item>
       <title>Conner Fromknecht Watchtowers (2019-04-06)</title>
-      <link>//btctranscripts.com/boltathon/2019-04-06-conner-fromknecht-watchtowers/</link>
+      <link>https://btctranscripts.com/boltathon/2019-04-06-conner-fromknecht-watchtowers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/boltathon/2019-04-06-conner-fromknecht-watchtowers/</guid>
+      <guid>https://btctranscripts.com/boltathon/2019-04-06-conner-fromknecht-watchtowers/</guid>
       <description>Conner Fromknecht
 Architecture of LND Watchtowers
 Video: https://www.youtube.com/watch?v=2tyr05tLF4g&amp;amp;list=PLC_AgDAr0m6QhwqPDrqMfjX64oHGmwDMk&amp;amp;index=4
@@ -37,10 +37,10 @@ Intro Pretty excited today to speak on the topic of watchtowers. It is something
     
     <item>
       <title>Rusty Russell Json Interface (2019-04-06)</title>
-      <link>//btctranscripts.com/boltathon/2019-04-06-rusty-russell-json-interface/</link>
+      <link>https://btctranscripts.com/boltathon/2019-04-06-rusty-russell-json-interface/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/boltathon/2019-04-06-rusty-russell-json-interface/</guid>
+      <guid>https://btctranscripts.com/boltathon/2019-04-06-rusty-russell-json-interface/</guid>
       <description>Rusty Russell
 Boltathon
 JSON Interface with c-lightning and Writing Extensions

@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hong Kong (2015) on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/</link>
+    <link>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/</link>
     <description>Recent content in Hong Kong (2015) on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/scalingbitcoin/hong-kong-2015/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/scalingbitcoin/hong-kong-2015/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Bevy Of Block Size Proposals Bip100 Bip102 And More</title>
-      <link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/a-bevy-of-block-size-proposals-bip100-bip102-and-more/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/a-bevy-of-block-size-proposals-bip100-bip102-and-more/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/hong-kong-2015/a-bevy-of-block-size-proposals-bip100-bip102-and-more/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/a-bevy-of-block-size-proposals-bip100-bip102-and-more/</guid>
       <description>jgarzik
 slides: https://scalingbitcoin.org/hongkong2015/presentations/DAY2/3_tweaking_the_chain_1_garzik.pdf
 slides: http://www.slideshare.net/jgarzik/a-bevy-of-block-size-proposals-scaling-bitcoin-hk-2015
@@ -22,10 +22,10 @@ What are some of the high level concerns with block size?</description>
     
     <item>
       <title>A Flexible Limit Trading Subsidy For Larger Blocks</title>
-      <link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/a-flexible-limit-trading-subsidy-for-larger-blocks/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/a-flexible-limit-trading-subsidy-for-larger-blocks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/hong-kong-2015/a-flexible-limit-trading-subsidy-for-larger-blocks/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/a-flexible-limit-trading-subsidy-for-larger-blocks/</guid>
       <description>maaku
 slides: https://scalingbitcoin.org/hongkong2015/presentations/DAY2/3_tweaking_the_chain_2_friedenbach.pdf
 video: https://www.youtube.com/watch?v=fst1IK_mrng&amp;amp;t=4h27m53s
@@ -34,10 +34,10 @@ I really want to thank jgarzik for that interesting talk. Who picks what block s
     
     <item>
       <title>Bip101 Block Propagation Data From Testnet</title>
-      <link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/bip101-block-propagation-data-from-testnet/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/bip101-block-propagation-data-from-testnet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/hong-kong-2015/bip101-block-propagation-data-from-testnet/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/bip101-block-propagation-data-from-testnet/</guid>
       <description>bip101 block propagation data from testnet
 jtoomim
 video: https://www.youtube.com/watch?v=ivgxcEOyWNs&amp;amp;t=2h25m20s
@@ -47,10 +47,10 @@ My perspective on this is that scaling bitcoin is an engineer problem. My favori
     
     <item>
       <title>Bip99 And Uncontroversial Hard Forks</title>
-      <link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/bip99-and-uncontroversial-hard-forks/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/bip99-and-uncontroversial-hard-forks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/hong-kong-2015/bip99-and-uncontroversial-hard-forks/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/bip99-and-uncontroversial-hard-forks/</guid>
       <description>jtimon
 slides: https://scalingbitcoin.org/hongkong2015/presentations/DAY1/1_overview_1_timon.pdf
 video: https://youtube.com/watch?v=aQ1--w4uEMM&amp;amp;t=1121
@@ -61,10 +61,10 @@ Why do we want to classify consensus changes in the first place? Well, for one, 
     
     <item>
       <title>Braiding The Blockchain</title>
-      <link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/braiding-the-blockchain/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/braiding-the-blockchain/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/hong-kong-2015/braiding-the-blockchain/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/braiding-the-blockchain/</guid>
       <description>Braiding the blockchain
 Bob McElrath (bsm117532)
 slides: https://scalingbitcoin.org/hongkong2015/presentations/DAY2/2_breaking_the_chain_1_mcelrath.pdf
@@ -74,10 +74,10 @@ I work for SolidX in New York. I am here to tell you about some modifications to
     
     <item>
       <title>Day 2 Opening</title>
-      <link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/day-2-opening/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/day-2-opening/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/hong-kong-2015/day-2-opening/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/day-2-opening/</guid>
       <description>Pindar Wong
 You know exactly what I am going to be saying. Code of Conduct. Code of Conduct. Code of Conduct. I am going to introduce the program chair, Neha. Hi everyone. I hope everyone enjoyed day 1. I thought it was quite fascinating.
 We are going to have a few talks happen later. Look out for those. I&amp;rsquo;d like to go ahead and introduce our first speaker, Pieter.</description>
@@ -85,10 +85,10 @@ We are going to have a few talks happen later. Look out for those. I&amp;rsquo;d
     
     <item>
       <title>Extensibility</title>
-      <link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/extensibility/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/extensibility/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/hong-kong-2015/extensibility/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/extensibility/</guid>
       <description>Eric Lombrozo (CodeShark)
 Extensibility, fraud proofs, and security models
 slides: https://scalingbitcoin.org/hongkong2015/presentations/DAY2/4_extensibility_lombrozo.pdf
@@ -97,10 +97,10 @@ Transcript pending, please email link to video to kanzure@gmail.com for transcri
     
     <item>
       <title>Fungibility And Scalability</title>
-      <link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/fungibility-and-scalability/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/fungibility-and-scalability/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/hong-kong-2015/fungibility-and-scalability/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/fungibility-and-scalability/</guid>
       <description>adam3us (Adam Back)
 slides: https://scalingbitcoin.org/hongkong2015/presentations/DAY1/1_overviews_2_back.pdf
 video: https://youtube.com/watch?v=aQ1--w4uEMM&amp;amp;t=2443
@@ -110,10 +110,10 @@ Bitcoin has fungibility without privacy. Previous electronic cash systems had fu
     
     <item>
       <title>In Adversarial Environments Blockchains Dont Scale</title>
-      <link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/in-adversarial-environments-blockchains-dont-scale/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/in-adversarial-environments-blockchains-dont-scale/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/hong-kong-2015/in-adversarial-environments-blockchains-dont-scale/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/in-adversarial-environments-blockchains-dont-scale/</guid>
       <description>petertodd
 slides: https://scalingbitcoin.org/hongkong2015/presentations/DAY1/2_security_and_incentives_2_todd.pdf
 video: https://www.youtube.com/watch?v=ivgxcEOyWNs&amp;amp;t=30m35s
@@ -123,10 +123,10 @@ I am going to start by talking about nitty-gritty applications where adversarial
     
     <item>
       <title>Intro</title>
-      <link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/intro/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/intro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/hong-kong-2015/intro/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/intro/</guid>
       <description>Introduction to event
 schedule: https://scalingbitcoin.org/hongkong2015/#schedule
 livestream: https://youtube.com/watch?v=qdghS32TeZU
@@ -142,10 +142,10 @@ Thank you so much.</description>
     
     <item>
       <title>Invertible Bloom Lookup Tables And Weak Block Propagation Performance</title>
-      <link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/invertible-bloom-lookup-tables-and-weak-block-propagation-performance/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/invertible-bloom-lookup-tables-and-weak-block-propagation-performance/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/hong-kong-2015/invertible-bloom-lookup-tables-and-weak-block-propagation-performance/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/invertible-bloom-lookup-tables-and-weak-block-propagation-performance/</guid>
       <description>IBLT and weak block propagation performance
 Kalle Rosenbaum and Rusty Russell
 slides: https://scalingbitcoin.org/hongkong2015/presentations/DAY1/3_block_propagation_1_rosenbaum.pdf
@@ -156,10 +156,10 @@ Before we get started, for privacy reasons, and for reasons of zero attribution,
     
     <item>
       <title>Network Topologies And Their Scalability Implications On Decentralized Off Chain Networks</title>
-      <link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/network-topologies-and-their-scalability-implications-on-decentralized-off-chain-networks/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/network-topologies-and-their-scalability-implications-on-decentralized-off-chain-networks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/hong-kong-2015/network-topologies-and-their-scalability-implications-on-decentralized-off-chain-networks/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/network-topologies-and-their-scalability-implications-on-decentralized-off-chain-networks/</guid>
       <description>Joseph Poon
 slides: https://scalingbitcoin.org/hongkong2015/presentations/DAY2/1_layer2_3_poon.pdf
 video: https://www.youtube.com/watch?v=fst1IK_mrng&amp;amp;t=1h29m38s
@@ -168,10 +168,10 @@ LN transactions are real Bitcoin transactions. These are real zero-confirmation 
     
     <item>
       <title>Overview Of Bips Necessary For Lightning</title>
-      <link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/overview-of-bips-necessary-for-lightning/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/overview-of-bips-necessary-for-lightning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/hong-kong-2015/overview-of-bips-necessary-for-lightning/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/overview-of-bips-necessary-for-lightning/</guid>
       <description>Tadge Dryja
 Scalability of Lightning with different BIPs and some back-of-the-envelope calculations.
 slides: https://scalingbitcoin.org/hongkong2015/presentations/DAY2/1_layer2_2_dryja.pdf
@@ -181,10 +181,10 @@ I don&amp;rsquo;t have time to introduce the idea of zero-confirmation transacti
     
     <item>
       <title>Security Assumptions</title>
-      <link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/security-assumptions/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/security-assumptions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/hong-kong-2015/security-assumptions/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/security-assumptions/</guid>
       <description>Andrew Poelstra (andytoshi)
 Security Assumptions
 video: https://www.youtube.com/watch?v=ivgxcEOyWNs&amp;amp;t=9m20s
@@ -194,10 +194,10 @@ I am a developer for libsecp256k1. It&amp;rsquo;s a library that does the underl
     
     <item>
       <title>Segregated Witness And Its Impact On Scalability</title>
-      <link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/segregated-witness-and-its-impact-on-scalability/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/segregated-witness-and-its-impact-on-scalability/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/hong-kong-2015/segregated-witness-and-its-impact-on-scalability/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/segregated-witness-and-its-impact-on-scalability/</guid>
       <description>Pieter Wuille (sipa)
 video: https://www.youtube.com/watch?v=fst1IK_mrng&amp;amp;t=36m
 slides: https://prezi.com/lyghixkrguao/segregated-witness-and-deploying-it-for-bitcoin/
@@ -211,10 +211,10 @@ Okay. So I am Pieter Wuille. I&amp;rsquo;ll be talking about segregated witness 
     
     <item>
       <title>Validation Cost Metric</title>
-      <link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/validation-cost-metric/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/validation-cost-metric/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/hong-kong-2015/validation-cost-metric/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/validation-cost-metric/</guid>
       <description>Jonas Nick
 slides: https://scalingbitcoin.org/hongkong2015/presentations/DAY2/3_tweaking_the_chain_3_nick.pdf
 video: https://www.youtube.com/watch?v=fst1IK_mrng&amp;amp;t=4h52m35s
@@ -224,10 +224,10 @@ However, blocksize proposals usually only directly change one aspect of full nod
     
     <item>
       <title>Why Miners Will Not Voluntarily Individually Produce Smaller Blocks</title>
-      <link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/why-miners-will-not-voluntarily-individually-produce-smaller-blocks/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/why-miners-will-not-voluntarily-individually-produce-smaller-blocks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/hong-kong-2015/why-miners-will-not-voluntarily-individually-produce-smaller-blocks/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/why-miners-will-not-voluntarily-individually-produce-smaller-blocks/</guid>
       <description>Jonathan Bier
 slides: https://scalingbitcoin.org/hongkong2015/presentations/DAY1/2_security_and_incentives_3_bier.pdf
 video: https://www.youtube.com/watch?v=ivgxcEOyWNs&amp;amp;t=1h30s
@@ -238,10 +238,10 @@ Now I&amp;rsquo;ve got some issues why orphan risk may not be so great. As techn
     
     <item>
       <title>Zero Knowledge Proofs For Bitcoin Scalability And Beyond</title>
-      <link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/zero-knowledge-proofs-for-bitcoin-scalability-and-beyond/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/zero-knowledge-proofs-for-bitcoin-scalability-and-beyond/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/hong-kong-2015/zero-knowledge-proofs-for-bitcoin-scalability-and-beyond/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/zero-knowledge-proofs-for-bitcoin-scalability-and-beyond/</guid>
       <description>Madars Virza
 video: https://youtube.com/watch?v=aQ1--w4uEMM&amp;amp;t=4133
 I am going to tell you about zero-knowledge proofs for Bitcoin scalability. Even though this is an overview talk, many of the results I will be telling you about are based on work done by people in the slides and also here at the conference.

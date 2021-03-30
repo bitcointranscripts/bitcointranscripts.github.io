@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>2020 Stanford on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/</link>
+    <link>https://btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/</link>
     <description>Recent content in 2020 Stanford on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Communication With Regulators</title>
-      <link>//btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/communication-with-regulators/</link>
+      <link>https://btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/communication-with-regulators/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/communication-with-regulators/</guid>
+      <guid>https://btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/communication-with-regulators/</guid>
       <description>Communication with regulators
 https://twitter.com/kanzure/status/1229856579324760064
 Backgrounds  NTT JFSA SEC (enforcement division) celo compliance gold reserves, central bank digital currencies (monetary policy controls) soc1/soc2 audits engineer  Developers and regulators: lawfulness questions Are software developers liable from a regulatory perspective for software that they write? There was a case against EtherDelta. He was receiving income from it. In any crime, for enforcement agencies&amp;hellip; there&amp;rsquo;s a line between regulators and criminal enforcement. Regulators create rules.</description>
@@ -19,10 +19,10 @@ Backgrounds  NTT JFSA SEC (enforcement division) celo compliance gold reserves, 
     
     <item>
       <title>Consensus Protocol Risks And Vulnerabilities</title>
-      <link>//btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/consensus-protocol-risks-and-vulnerabilities/</link>
+      <link>https://btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/consensus-protocol-risks-and-vulnerabilities/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/consensus-protocol-risks-and-vulnerabilities/</guid>
+      <guid>https://btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/consensus-protocol-risks-and-vulnerabilities/</guid>
       <description>Consensus protocol risks and vulnerabilities
 Bram Cohen
 https://twitter.com/kanzure/status/1229906447808360450
@@ -32,19 +32,19 @@ Where are the engineers coming from? An engineer will look at something like Vis
     
     <item>
       <title>Economic Risks</title>
-      <link>//btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/economic-risks/</link>
+      <link>https://btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/economic-risks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/economic-risks/</guid>
+      <guid>https://btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/economic-risks/</guid>
       <description>We looked at economic risks, and how to build a social safety net while allowing innovations. We talked about a bunch of different projects and looked at different systemic risk views from different countries. So the idea was to understand it from an economic perspective. I don&amp;rsquo;t think we came to any great conclusions. There&amp;rsquo;s a lot of economic risk, and people don&amp;rsquo;t really understand it yet. One idea is to have more forums for central banks and regulators to understand what the technology can do, so that they can give insights for what the ramifications might be.</description>
     </item>
     
     <item>
       <title>Opening Remarks</title>
-      <link>//btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/opening-remarks/</link>
+      <link>https://btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/opening-remarks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/opening-remarks/</guid>
+      <guid>https://btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/opening-remarks/</guid>
       <description>Opening remarks
 Shin&amp;rsquo;ichiro Matsuo
 http://bsafe.network/events/codefi_stanford_2020/
@@ -55,10 +55,10 @@ Good morning. Let us start this workshop. I am a researcher at Georgetown Univer
     
     <item>
       <title>Regulatory Pain Points</title>
-      <link>//btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/regulatory-pain-points/</link>
+      <link>https://btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/regulatory-pain-points/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/regulatory-pain-points/</guid>
+      <guid>https://btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/regulatory-pain-points/</guid>
       <description>Regulatory pain points
 Ryosuke Ushida
 https://twitter.com/kanzure/status/1229838162827993088
@@ -67,10 +67,10 @@ Introduction Hi, good morning everyone. I am a Japanese financial regulator at J
     
     <item>
       <title>Risk Overview</title>
-      <link>//btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/risk-overview/</link>
+      <link>https://btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/risk-overview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/risk-overview/</guid>
+      <guid>https://btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/risk-overview/</guid>
       <description>Overview of risk in decentralized financial systems
 Byron Gibson
 https://twitter.com/kanzure/status/1229878346709782528
@@ -80,10 +80,10 @@ From a regulator&amp;rsquo;s perspective, there&amp;rsquo;s a couple of primary 
     
     <item>
       <title>Stress Testing Decentralized Finance</title>
-      <link>//btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/stress-testing-decentralized-finance/</link>
+      <link>https://btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/stress-testing-decentralized-finance/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/stress-testing-decentralized-finance/</guid>
+      <guid>https://btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/stress-testing-decentralized-finance/</guid>
       <description>Stress testing decentralized finance
 Tarun Chitra
 https://twitter.com/kanzure/status/1229844754990370816
@@ -93,10 +93,10 @@ I&amp;rsquo;m going to go through three examples of where an actuarial analysis 
     
     <item>
       <title>Technological Stability</title>
-      <link>//btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/technological-stability/</link>
+      <link>https://btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/technological-stability/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/technological-stability/</guid>
+      <guid>https://btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/technological-stability/</guid>
       <description>Technological stability
 https://twitter.com/kanzure/status/1229891596688052226
 Controversial thesis: the primary source of economic instability is unreasonable demands (from regulators, but really from the general public) for violating certain cryptocurrency tech design principles, like on sound money- privacy and confidentiality (like confidential transactions and confidential assets), monetary policy (like scarcity economics), identity vs anonymity, AML/KYC requirements, censorship, sanctions requirements and discrimination (e.g. denying money to certain parties), and issues of fungibility (like mixing and history-indistinguishability).</description>

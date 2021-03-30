@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>meetup on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/categories/meetup/</link>
+    <link>https://btctranscripts.com/categories/meetup/</link>
     <description>Recent content in meetup on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/categories/meetup/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/categories/meetup/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Adam Gibson Unfairly Linear Signatures (2018-06-12)</title>
-      <link>//btctranscripts.com/london-bitcoin-devs/2018-06-12-adam-gibson-unfairly-linear-signatures/</link>
+      <link>https://btctranscripts.com/london-bitcoin-devs/2018-06-12-adam-gibson-unfairly-linear-signatures/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/london-bitcoin-devs/2018-06-12-adam-gibson-unfairly-linear-signatures/</guid>
+      <guid>https://btctranscripts.com/london-bitcoin-devs/2018-06-12-adam-gibson-unfairly-linear-signatures/</guid>
       <description>Name: Adam Gibson
 Topic: Unfairly Linear Signatures
 Location: London Bitcoin Devs
@@ -23,10 +23,10 @@ Intro This is supposed to be a developer meetup but this talk is going to be a l
     
     <item>
       <title>Alekos Filini Magical Bitcoin (2020-05-21)</title>
-      <link>//btctranscripts.com/la-bitdevs/2020-05-21-alekos-filini-magical-bitcoin/</link>
+      <link>https://btctranscripts.com/la-bitdevs/2020-05-21-alekos-filini-magical-bitcoin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/la-bitdevs/2020-05-21-alekos-filini-magical-bitcoin/</guid>
+      <guid>https://btctranscripts.com/la-bitdevs/2020-05-21-alekos-filini-magical-bitcoin/</guid>
       <description>Name: Alekos Filini
 Topic: Magical Bitcoin
 Location: LA BitDevs (online)
@@ -41,10 +41,10 @@ Intro I am a developer, I work on Bitcoin. I came to Bitcoin pretty late compare
     
     <item>
       <title>Alex Bosworth Submarine Swaps (2019-07-03)</title>
-      <link>//btctranscripts.com/london-bitcoin-devs/2019-07-03-alex-bosworth-submarine-swaps/</link>
+      <link>https://btctranscripts.com/london-bitcoin-devs/2019-07-03-alex-bosworth-submarine-swaps/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/london-bitcoin-devs/2019-07-03-alex-bosworth-submarine-swaps/</guid>
+      <guid>https://btctranscripts.com/london-bitcoin-devs/2019-07-03-alex-bosworth-submarine-swaps/</guid>
       <description>Alex Bosworth
 London Bitcoin Devs
 Submarine Swaps and Loop
@@ -57,10 +57,10 @@ Bitcoin - One Currency, Multiple Settlement Networks Something that is pretty im
     
     <item>
       <title>Amiti Uttarwar Attacking Bitcoin Core (2020-04-16)</title>
-      <link>//btctranscripts.com/la-bitdevs/2020-04-16-amiti-uttarwar-attacking-bitcoin-core/</link>
+      <link>https://btctranscripts.com/la-bitdevs/2020-04-16-amiti-uttarwar-attacking-bitcoin-core/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/la-bitdevs/2020-04-16-amiti-uttarwar-attacking-bitcoin-core/</guid>
+      <guid>https://btctranscripts.com/la-bitdevs/2020-04-16-amiti-uttarwar-attacking-bitcoin-core/</guid>
       <description>Name: Amiti Uttarwar
 Topic: Attacking Bitcoin Core
 Location: BitDevs LA
@@ -73,10 +73,10 @@ Consensus Fundamentally what is required for this to work is the idea of consens
     
     <item>
       <title>Andreas Antonopoulos Bitcoin Scripting (2017-04-03)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2017-04-03-andreas-antonopoulos-bitcoin-scripting/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2017-04-03-andreas-antonopoulos-bitcoin-scripting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2017-04-03-andreas-antonopoulos-bitcoin-scripting/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2017-04-03-andreas-antonopoulos-bitcoin-scripting/</guid>
       <description>Name: Andreas Antonopoulos
 Topic: Advanced Bitcoin Scripting
 Location: SF Bitcoin Devs
@@ -88,10 +88,10 @@ Intro Today’s talk is different from some of the other talks I’ve done so be
     
     <item>
       <title>Andrew Chow Hardware Wallets (2020-02-05)</title>
-      <link>//btctranscripts.com/london-bitcoin-devs/2020-02-05-andrew-chow-hardware-wallets/</link>
+      <link>https://btctranscripts.com/london-bitcoin-devs/2020-02-05-andrew-chow-hardware-wallets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/london-bitcoin-devs/2020-02-05-andrew-chow-hardware-wallets/</guid>
+      <guid>https://btctranscripts.com/london-bitcoin-devs/2020-02-05-andrew-chow-hardware-wallets/</guid>
       <description>Andrew Chow
 London Bitcoin Devs
 February 5th 2020
@@ -105,10 +105,10 @@ Introduction Hey everyone. As you may have guessed I’m Andrew Chow. I’m Engi
     
     <item>
       <title>Andrew Poelstra Miniscript (2020-02-04)</title>
-      <link>//btctranscripts.com/london-bitcoin-devs/2020-02-04-andrew-poelstra-miniscript/</link>
+      <link>https://btctranscripts.com/london-bitcoin-devs/2020-02-04-andrew-poelstra-miniscript/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/london-bitcoin-devs/2020-02-04-andrew-poelstra-miniscript/</guid>
+      <guid>https://btctranscripts.com/london-bitcoin-devs/2020-02-04-andrew-poelstra-miniscript/</guid>
       <description>Andrew Poelstra
 London Bitcoin Devs
 Bitcoin Script to Miniscript
@@ -120,10 +120,10 @@ Introduction As Michael mentioned I’ve got like two hours. Hopefully I won’t
     
     <item>
       <title>Bip Taproot Bip Tapscript (2019-12-16)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2019-12-16-bip-taproot-bip-tapscript/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2019-12-16-bip-taproot-bip-tapscript/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2019-12-16-bip-taproot-bip-tapscript/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2019-12-16-bip-taproot-bip-tapscript/</guid>
       <description>2019-12-16
 bip-taproot
 Pieter Wuille (sipa)
@@ -138,10 +138,10 @@ Please try to find seats. Today we have a special treat. We have Pieter here, wh
     
     <item>
       <title>Bram Cohen Merkle Sets (2017-07-08)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2017-07-08-bram-cohen-merkle-sets/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2017-07-08-bram-cohen-merkle-sets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2017-07-08-bram-cohen-merkle-sets/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2017-07-08-bram-cohen-merkle-sets/</guid>
       <description>2017-07-08
 Merkle set data structures for scaling bitcoin
 Bram Cohen
@@ -153,20 +153,20 @@ Introduction There&amp;rsquo;s been a fair amount of talk about putting UTXO com
     
     <item>
       <title>Cali 2016</title>
-      <link>//btctranscripts.com/bitcoin-developers-miners-meeting-2016/cali2016/</link>
+      <link>https://btctranscripts.com/bitcoin-developers-miners-meeting-2016/cali2016/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-developers-miners-meeting-2016/cali2016/</guid>
+      <guid>https://btctranscripts.com/bitcoin-developers-miners-meeting-2016/cali2016/</guid>
       <description>California Gathering 2016
 Transcription introduction Some Bitcoin developers and miners gathered together during the end of the July to socialize and become better acquainted with each other. The following discussions were live transcribed by an untrained volunteer with attribution removed as per Chatham House rules. In bitcoin, discussions can move very quickly, which can cause an increase in errors, including semantic errors, when typing in real time. This text was not produced from an audio recording.</description>
     </item>
     
     <item>
       <title>Christopher Jeffrey Bcoin (2016-09-28)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2016-09-28-christopher-jeffrey-bcoin/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2016-09-28-christopher-jeffrey-bcoin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2016-09-28-christopher-jeffrey-bcoin/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2016-09-28-christopher-jeffrey-bcoin/</guid>
       <description>Name: Christopher Jeffrey (JJ)
 Topic: Bcoin
 Location: SF Bitcoin Devs
@@ -178,10 +178,10 @@ Intro Hey everyone. I’m JJ with Purse. Tonight I want to talk to you about ful
     
     <item>
       <title>Conner Fromknecht Lnd 0.6 Beta (2019-05-02)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2019-05-02-conner-fromknecht-lnd-0.6-beta/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2019-05-02-conner-fromknecht-lnd-0.6-beta/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2019-05-02-conner-fromknecht-lnd-0.6-beta/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2019-05-02-conner-fromknecht-lnd-0.6-beta/</guid>
       <description>Conner Fromknecht
 SF Lightning Devs
 LND 0.6 Beta Deep Dive
@@ -191,10 +191,10 @@ Intro lnd 0.6 was about seven months in the making. There’s more things that w
     
     <item>
       <title>Dan Boneh</title>
-      <link>//btctranscripts.com/bitcoin-developers-miners-meeting-2016/dan-boneh/</link>
+      <link>https://btctranscripts.com/bitcoin-developers-miners-meeting-2016/dan-boneh/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-developers-miners-meeting-2016/dan-boneh/</guid>
+      <guid>https://btctranscripts.com/bitcoin-developers-miners-meeting-2016/dan-boneh/</guid>
       <description>A conversation with Dan Boneh
 2016-08-01
 Part of the challenge was that the Google Maps directions in the email were going down some roads that had construction&amp;hellip;. been here 10 minutes, and some arriving in another 10 minutes. They are building a new biology building. Large campus here. In whatever direction you walk, there are buildings and more buildings. In two years there will be a new biology building, and two years later there will be a new computer science building.</description>
@@ -202,10 +202,10 @@ Part of the challenge was that the Google Maps directions in the email were goin
     
     <item>
       <title>Drivechain Paul Sztorc (2019-05-27)</title>
-      <link>//btctranscripts.com/austin-bitcoin-developers/2019-05-27-drivechain-paul-sztorc/</link>
+      <link>https://btctranscripts.com/austin-bitcoin-developers/2019-05-27-drivechain-paul-sztorc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/austin-bitcoin-developers/2019-05-27-drivechain-paul-sztorc/</guid>
+      <guid>https://btctranscripts.com/austin-bitcoin-developers/2019-05-27-drivechain-paul-sztorc/</guid>
       <description>2019-05-27
 Paul Sztorc (Tierion)
 Drivechain: An interoperability layer-2, Described in terms of the lightning network- something you already understand
@@ -216,10 +216,10 @@ About me Okay. So here&amp;rsquo;s some things about myself. I&amp;rsquo;ve been
     
     <item>
       <title>Gleb Naumenko P2P Erlay (2019-11-13)</title>
-      <link>//btctranscripts.com/london-bitcoin-devs/2019-11-13-gleb-naumenko-p2p-erlay/</link>
+      <link>https://btctranscripts.com/london-bitcoin-devs/2019-11-13-gleb-naumenko-p2p-erlay/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/london-bitcoin-devs/2019-11-13-gleb-naumenko-p2p-erlay/</guid>
+      <guid>https://btctranscripts.com/london-bitcoin-devs/2019-11-13-gleb-naumenko-p2p-erlay/</guid>
       <description>Gleb Naumenko
 London Bitcoin Devs
 Current state of P2P research in Bitcoin
@@ -230,19 +230,19 @@ Introduction My name is Gleb. I’ve worked on Bitcoin stuff since 2015, buildin
     
     <item>
       <title>Gox (2014)</title>
-      <link>//btctranscripts.com/texas-bitcoin-conference-2014/gox/</link>
+      <link>https://btctranscripts.com/texas-bitcoin-conference-2014/gox/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/texas-bitcoin-conference-2014/gox/</guid>
+      <guid>https://btctranscripts.com/texas-bitcoin-conference-2014/gox/</guid>
       <description>Ryan is a founder of BitBits. They donate to any charity in the US. BitBits was a 2013 Harvard Business School new venture finalist. Coming from Mass. As many of our speakers they have traveled a long way. Andreas from &amp;hellip; lawyer. Anti-money laundering specialist. He represents many companies for the transfer of money. He is a criminal defense attorney. He is a frequent speaker. On freedom too. All about freedom and frequent speakers at many money transmitting issues.</description>
     </item>
     
     <item>
       <title>Hardware Wallets (2019-06-29)</title>
-      <link>//btctranscripts.com/austin-bitcoin-developers/2019-06-29-hardware-wallets/</link>
+      <link>https://btctranscripts.com/austin-bitcoin-developers/2019-06-29-hardware-wallets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/austin-bitcoin-developers/2019-06-29-hardware-wallets/</guid>
+      <guid>https://btctranscripts.com/austin-bitcoin-developers/2019-06-29-hardware-wallets/</guid>
       <description>2019-06-29
 Stepan Snigirev
 livestream: https://www.youtube.com/watch?v=rK0jUeHeDf0
@@ -253,10 +253,10 @@ see also:
     
     <item>
       <title>James Chiang Trace Net (2020-02-04)</title>
-      <link>//btctranscripts.com/london-bitcoin-devs/2020-02-04-james-chiang-trace-net/</link>
+      <link>https://btctranscripts.com/london-bitcoin-devs/2020-02-04-james-chiang-trace-net/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/london-bitcoin-devs/2020-02-04-james-chiang-trace-net/</guid>
+      <guid>https://btctranscripts.com/london-bitcoin-devs/2020-02-04-james-chiang-trace-net/</guid>
       <description>Name: James Chiang
 Topic: Bitcoin Trace-Net
 Location: London Bitcoin Devs
@@ -268,10 +268,10 @@ Intro Good evening. My name is James and it is a real privilege to give this tal
     
     <item>
       <title>Jeremy Rubin Bitcoin Core (2018-04-23)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2018-04-23-jeremy-rubin-bitcoin-core/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2018-04-23-jeremy-rubin-bitcoin-core/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2018-04-23-jeremy-rubin-bitcoin-core/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2018-04-23-jeremy-rubin-bitcoin-core/</guid>
       <description>Jeremy Rubin
 A hardCORE workout
 Video: https://www.youtube.com/watch?v=PKzJktErUdk
@@ -282,10 +282,10 @@ Intro Thank you very much for the warm welcome. So welcome to the hard core work
     
     <item>
       <title>Jihan Wu Google Tech Talk (2016)</title>
-      <link>//btctranscripts.com/bitcoin-developers-miners-meeting-2016/jihan-wu-google-tech-talk/</link>
+      <link>https://btctranscripts.com/bitcoin-developers-miners-meeting-2016/jihan-wu-google-tech-talk/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-developers-miners-meeting-2016/jihan-wu-google-tech-talk/</guid>
+      <guid>https://btctranscripts.com/bitcoin-developers-miners-meeting-2016/jihan-wu-google-tech-talk/</guid>
       <description>Jihan Wu
 Bitcoin
 Google Tech Talk
@@ -294,10 +294,10 @@ Okay so maybe we will start. Thank you for coming. We have about 25 folks here f
     
     <item>
       <title>Jnewbery Bitcoin Core V0.17</title>
-      <link>//btctranscripts.com/london-bitcoin-devs/jnewbery-bitcoin-core-v0.17/</link>
+      <link>https://btctranscripts.com/london-bitcoin-devs/jnewbery-bitcoin-core-v0.17/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/london-bitcoin-devs/jnewbery-bitcoin-core-v0.17/</guid>
+      <guid>https://btctranscripts.com/london-bitcoin-devs/jnewbery-bitcoin-core-v0.17/</guid>
       <description>Bitcoin Core v0.17
 John Newbery (jnewbery)
 video: https://www.youtube.com/watch?v=f33HlAvJUFw
@@ -309,10 +309,10 @@ whoami I live in New York and work at Chaincode Labs. I&amp;rsquo;m not actually
     
     <item>
       <title>John Light - Bitcoin Full Nodes (2018-07-23)</title>
-      <link>//btctranscripts.com/london-bitcoin-devs/2018-07-23-john-light-bitcoin-full-nodes/</link>
+      <link>https://btctranscripts.com/london-bitcoin-devs/2018-07-23-john-light-bitcoin-full-nodes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/london-bitcoin-devs/2018-07-23-john-light-bitcoin-full-nodes/</guid>
+      <guid>https://btctranscripts.com/london-bitcoin-devs/2018-07-23-john-light-bitcoin-full-nodes/</guid>
       <description>Name: John Light
 Topic: Bitcoin Full Nodes
 Location: London Bitcoin Devs
@@ -324,10 +324,10 @@ Intro My presentation today is going to be about Bitcoin full nodes. Everything 
     
     <item>
       <title>Jonas Schenlli Bip150 Bip151 (2017-09-04)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2017-09-04-jonas-schenlli-bip150-bip151/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2017-09-04-jonas-schenlli-bip150-bip151/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2017-09-04-jonas-schenlli-bip150-bip151/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2017-09-04-jonas-schenlli-bip150-bip151/</guid>
       <description>Jonas Schnelli
 bip150 and bip151: Bitcoin p2p network encryption and authentication
 https://github.com/bitcoin/bips/blob/master/bip-0150.mediawiki
@@ -338,10 +338,10 @@ Introduction Alright guys.. take a seat. ((various mumblings)) Want to thank our
     
     <item>
       <title>Kalle Rosenbaum Grokking Bitcoin (2020-04-29)</title>
-      <link>//btctranscripts.com/london-bitcoin-devs/2020-04-29-kalle-rosenbaum-grokking-bitcoin/</link>
+      <link>https://btctranscripts.com/london-bitcoin-devs/2020-04-29-kalle-rosenbaum-grokking-bitcoin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/london-bitcoin-devs/2020-04-29-kalle-rosenbaum-grokking-bitcoin/</guid>
+      <guid>https://btctranscripts.com/london-bitcoin-devs/2020-04-29-kalle-rosenbaum-grokking-bitcoin/</guid>
       <description>Name: Kalle Rosenbaum
 Topic: Grokking Bitcoin
 Location: London Bitcoin Devs (online)
@@ -354,10 +354,10 @@ Intro (Michael Folkson) Welcome to this London Bitcoin Devs online. We will be j
     
     <item>
       <title>Kevin Loaec Antoine Poinsot Revault (2020-05-26)</title>
-      <link>//btctranscripts.com/london-bitcoin-devs/2020-05-26-kevin-loaec-antoine-poinsot-revault/</link>
+      <link>https://btctranscripts.com/london-bitcoin-devs/2020-05-26-kevin-loaec-antoine-poinsot-revault/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/london-bitcoin-devs/2020-05-26-kevin-loaec-antoine-poinsot-revault/</guid>
+      <guid>https://btctranscripts.com/london-bitcoin-devs/2020-05-26-kevin-loaec-antoine-poinsot-revault/</guid>
       <description>Name: Kevin Loaec and Antoine Poinsot
 Topic: Revault - A Multiparty Vault Architecture
 Location: London Bitcoin Devs (online)
@@ -370,10 +370,10 @@ Intro (Michael Folkson) This is London Bitcoin Devs. This is on Zoom and live-st
     
     <item>
       <title>Laolu Osuntokun Exploring Lnd0.4 (2018-04-20)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2018-04-20-laolu-osuntokun-exploring-lnd0.4/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2018-04-20-laolu-osuntokun-exploring-lnd0.4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2018-04-20-laolu-osuntokun-exploring-lnd0.4/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2018-04-20-laolu-osuntokun-exploring-lnd0.4/</guid>
       <description>Laolu Osuntokun and Conner Fromknecht
 Exploring lnd 0.4-beta
 Video: https://www.youtube.com/watch?v=LXY0L8eeG3k
@@ -383,10 +383,10 @@ The Genesis of lnd First, the genesis of lnd. Here is the first commit of lnd. I
     
     <item>
       <title>Laolu Osuntokun Lightning Network (2016-07-18)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2016-07-18-laolu-osuntokun-lightning-network/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2016-07-18-laolu-osuntokun-lightning-network/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2016-07-18-laolu-osuntokun-lightning-network/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2016-07-18-laolu-osuntokun-lightning-network/</guid>
       <description>Laolu Osuntokun
 Lightning Network Deep Dive
 Video: https://www.youtube.com/watch?v=tLZc-NLmV20
@@ -397,10 +397,10 @@ Introduction My name is Laolu Osuntokun and I work with Lightning guys and you k
     
     <item>
       <title>Laolu Osuntokun Neutrino (2017-06-06)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2017-06-06-laolu-osuntokun-neutrino/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2017-06-06-laolu-osuntokun-neutrino/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2017-06-06-laolu-osuntokun-neutrino/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2017-06-06-laolu-osuntokun-neutrino/</guid>
       <description>Laolu Osuntokun
 Neutrino: The Privacy Preserving Bitcoin Light Client
 Video: https://www.youtube.com/watch?v=7FWKc8lM4Ek
@@ -411,10 +411,10 @@ Introduction My name is Laolu or Roasbeef on the internet. I’m going to talk a
     
     <item>
       <title>Lightning Network (2015-05-26)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2015-05-26-lightning-network/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2015-05-26-lightning-network/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2015-05-26-lightning-network/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2015-05-26-lightning-network/</guid>
       <description>2015-05-26
  Tadge Dryja Joseph Poon  How Lightning Network can offer a solution for bitcoin&amp;rsquo;s scalability problems
 http://lightning.network/
@@ -426,10 +426,10 @@ Okay, hi. So yeah, I titled it solutions because that sounds more positive than 
     
     <item>
       <title>Lightning Network As A Directed Graph Single Funded Channel Network Topology (2016-04-11)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2016-04-11-lightning-network-as-a-directed-graph-single-funded-channel-network-topology/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2016-04-11-lightning-network-as-a-directed-graph-single-funded-channel-network-topology/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2016-04-11-lightning-network-as-a-directed-graph-single-funded-channel-network-topology/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2016-04-11-lightning-network-as-a-directed-graph-single-funded-channel-network-topology/</guid>
       <description>2016-04-11
 Lightning Network as a Directed Graph: Single-Funded Channel Network Topology
 Tadge Dryja rx@awsomnet.org
@@ -442,10 +442,10 @@ Basic super quick summary of Lightning I am going to re-cap lightning network re
     
     <item>
       <title>Luke Dashjr - Segwit, PSBT Vulnerability (2020-06-18)</title>
-      <link>//btctranscripts.com/la-bitdevs/2020-06-18-luke-dashjr-segwit-psbt-vulnerability/</link>
+      <link>https://btctranscripts.com/la-bitdevs/2020-06-18-luke-dashjr-segwit-psbt-vulnerability/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/la-bitdevs/2020-06-18-luke-dashjr-segwit-psbt-vulnerability/</guid>
+      <guid>https://btctranscripts.com/la-bitdevs/2020-06-18-luke-dashjr-segwit-psbt-vulnerability/</guid>
       <description>Name: Luke Dashjr
 Topic: SegWit/PSBT vulnerability (CVE-2020-14199)
 Location: LA BitDevs (online)
@@ -459,10 +459,10 @@ The vulnerability The way Bitcoin transactions are encoded in the software is th
     
     <item>
       <title>Matt Corallo Betterhash (2019-02-05)</title>
-      <link>//btctranscripts.com/london-bitcoin-devs/2019-02-05-matt-corallo-betterhash/</link>
+      <link>https://btctranscripts.com/london-bitcoin-devs/2019-02-05-matt-corallo-betterhash/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/london-bitcoin-devs/2019-02-05-matt-corallo-betterhash/</guid>
+      <guid>https://btctranscripts.com/london-bitcoin-devs/2019-02-05-matt-corallo-betterhash/</guid>
       <description>Name: Matt Corallo
 Topic: Better Hashing through BetterHash
 Location: London Bitcoin Devs
@@ -475,10 +475,10 @@ Intro I am going to talk about BetterHash this evening. If you are coming to Adv
     
     <item>
       <title>Mimblewimble (2016-11-21)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2016-11-21-mimblewimble/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2016-11-21-mimblewimble/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2016-11-21-mimblewimble/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2016-11-21-mimblewimble/</guid>
       <description>Mimblewimble
 Andrew Poelstra (andytoshi)
 https://www.youtube.com/watch?v=aHTRlbCaUyM
@@ -489,10 +489,10 @@ Many of you have heard of mimblewimble. It&amp;rsquo;s been in the news. It has 
     
     <item>
       <title>New Address Type For Segwit Addresses (2017-03-29)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2017-03-29-new-address-type-for-segwit-addresses/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2017-03-29-new-address-type-for-segwit-addresses/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2017-03-29-new-address-type-for-segwit-addresses/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2017-03-29-new-address-type-for-segwit-addresses/</guid>
       <description>Name: Pieter Wuille
 Topic: Bech32 addresses for Bitcoin
 Location: SF Bitcoin Devs
@@ -508,10 +508,10 @@ Intro Can everyone hear me fine through this microphone? Anyone who can&amp;rsqu
     
     <item>
       <title>Partially Signed Bitcoin Transactions (2019-03-15)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2019-03-15-partially-signed-bitcoin-transactions/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2019-03-15-partially-signed-bitcoin-transactions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2019-03-15-partially-signed-bitcoin-transactions/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2019-03-15-partially-signed-bitcoin-transactions/</guid>
       <description>Name: Andrew Chow
 Topic: PSBT
 Location: SF Bitcoin Devs
@@ -521,10 +521,10 @@ Introduction Andrew: So as Mark said I&amp;rsquo;m Andrew Chow and today I&amp;r
     
     <item>
       <title>Pieter Wuille Key Tree Signatures (2015-08-24)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2015-08-24-pieter-wuille-key-tree-signatures/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2015-08-24-pieter-wuille-key-tree-signatures/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2015-08-24-pieter-wuille-key-tree-signatures/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2015-08-24-pieter-wuille-key-tree-signatures/</guid>
       <description>Name: Pieter Wuille
 Topic: Key Tree Signatures
 Location: SF Bitcoin Devs
@@ -537,10 +537,10 @@ Intro For those who don’t know me I’m Pieter Wuille. I have been working on 
     
     <item>
       <title>Richard Bondi Bitcoin Cli Regtest (2018-08-17)</title>
-      <link>//btctranscripts.com/austin-bitcoin-developers/2018-08-17-richard-bondi-bitcoin-cli-regtest/</link>
+      <link>https://btctranscripts.com/austin-bitcoin-developers/2018-08-17-richard-bondi-bitcoin-cli-regtest/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/austin-bitcoin-developers/2018-08-17-richard-bondi-bitcoin-cli-regtest/</guid>
+      <guid>https://btctranscripts.com/austin-bitcoin-developers/2018-08-17-richard-bondi-bitcoin-cli-regtest/</guid>
       <description>Richard Bondi
 Bitcoin CLI and Regtest
 Video: https://www.youtube.com/watch?v=sbupEpL6-J4
@@ -551,10 +551,10 @@ Intro So the goal here as Justin said is to get the regtest environment set up. 
     
     <item>
       <title>Scaling Bitcoin To Billions Of Transactions Per Day (2015-02-23)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2015-02-23-scaling-bitcoin-to-billions-of-transactions-per-day/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2015-02-23-scaling-bitcoin-to-billions-of-transactions-per-day/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2015-02-23-scaling-bitcoin-to-billions-of-transactions-per-day/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2015-02-23-scaling-bitcoin-to-billions-of-transactions-per-day/</guid>
       <description>2015-02-23
 http://lightning.network/
 video: https://www.youtube.com/watch?v=8zVzw912wPo
@@ -563,10 +563,10 @@ video: https://www.youtube.com/watch?v=8zVzw912wPo
     
     <item>
       <title>Socratic Seminar (2020-04-22)</title>
-      <link>//btctranscripts.com/london-bitcoin-devs/2020-04-22-socratic-seminar/</link>
+      <link>https://btctranscripts.com/london-bitcoin-devs/2020-04-22-socratic-seminar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/london-bitcoin-devs/2020-04-22-socratic-seminar/</guid>
+      <guid>https://btctranscripts.com/london-bitcoin-devs/2020-04-22-socratic-seminar/</guid>
       <description>Name: Socratic Seminar
 Topic: Grokking Bitcoin by Kalle Rosenbaum
 Location: London BitDevs (online)
@@ -577,10 +577,10 @@ Discussion of Hopin video conferencing software We tested this a few weeks back 
     
     <item>
       <title>Socratic Seminar (2020-05-19)</title>
-      <link>//btctranscripts.com/sydney-bitcoin-meetup/2020-05-19-socratic-seminar/</link>
+      <link>https://btctranscripts.com/sydney-bitcoin-meetup/2020-05-19-socratic-seminar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sydney-bitcoin-meetup/2020-05-19-socratic-seminar/</guid>
+      <guid>https://btctranscripts.com/sydney-bitcoin-meetup/2020-05-19-socratic-seminar/</guid>
       <description>Name: Socratic Seminar
 Topic: Agenda in Google Doc below
 Location: Bitcoin Sydney (online)
@@ -592,10 +592,10 @@ The conversation has been anonymized by default to protect the identities of the
     
     <item>
       <title>Socratic Seminar (2020-06-23)</title>
-      <link>//btctranscripts.com/sydney-bitcoin-meetup/2020-06-23-socratic-seminar/</link>
+      <link>https://btctranscripts.com/sydney-bitcoin-meetup/2020-06-23-socratic-seminar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sydney-bitcoin-meetup/2020-06-23-socratic-seminar/</guid>
+      <guid>https://btctranscripts.com/sydney-bitcoin-meetup/2020-06-23-socratic-seminar/</guid>
       <description>Name: Socratic Seminar
 Topic: Agenda in Google Doc below
 Location: Bitcoin Sydney (online)
@@ -608,10 +608,10 @@ The conversation has been anonymized by default to protect the identities of the
     
     <item>
       <title>Socratic Seminar (2020-07-08)</title>
-      <link>//btctranscripts.com/chicago-bitdevs/2020-07-08-socratic-seminar/</link>
+      <link>https://btctranscripts.com/chicago-bitdevs/2020-07-08-socratic-seminar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/chicago-bitdevs/2020-07-08-socratic-seminar/</guid>
+      <guid>https://btctranscripts.com/chicago-bitdevs/2020-07-08-socratic-seminar/</guid>
       <description>Name: Socratic Seminar
 Topic: Agenda in Reddit link below
 Location: Chicago BitDevs (online)
@@ -623,10 +623,10 @@ The conversation has been anonymized by default to protect the identities of the
     
     <item>
       <title>Socratic Seminar (2020-07-21)</title>
-      <link>//btctranscripts.com/sydney-bitcoin-meetup/2020-07-21-socratic-seminar/</link>
+      <link>https://btctranscripts.com/sydney-bitcoin-meetup/2020-07-21-socratic-seminar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sydney-bitcoin-meetup/2020-07-21-socratic-seminar/</guid>
+      <guid>https://btctranscripts.com/sydney-bitcoin-meetup/2020-07-21-socratic-seminar/</guid>
       <description>Name: Socratic Seminar
 Topic: Agenda in Google Doc below
 Location: Bitcoin Sydney (online)
@@ -639,10 +639,10 @@ The conversation has been anonymized by default to protect the identities of the
     
     <item>
       <title>Socratic Seminar (2020-08-12)</title>
-      <link>//btctranscripts.com/chicago-bitdevs/2020-08-12-socratic-seminar/</link>
+      <link>https://btctranscripts.com/chicago-bitdevs/2020-08-12-socratic-seminar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/chicago-bitdevs/2020-08-12-socratic-seminar/</guid>
+      <guid>https://btctranscripts.com/chicago-bitdevs/2020-08-12-socratic-seminar/</guid>
       <description>Name: Socratic Seminar
 Topic: Agenda below
 Location: Chicago BitDevs (online)
@@ -655,10 +655,10 @@ Bitcoin Core P2P IRC Meetings https://github.</description>
     
     <item>
       <title>Socratic Seminar (2020-08-25)</title>
-      <link>//btctranscripts.com/sydney-bitcoin-meetup/2020-08-25-socratic-seminar/</link>
+      <link>https://btctranscripts.com/sydney-bitcoin-meetup/2020-08-25-socratic-seminar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sydney-bitcoin-meetup/2020-08-25-socratic-seminar/</guid>
+      <guid>https://btctranscripts.com/sydney-bitcoin-meetup/2020-08-25-socratic-seminar/</guid>
       <description>Name: Socratic Seminar
 Topic: Agenda in Google Doc below
 Location: Bitcoin Sydney (online)
@@ -671,10 +671,10 @@ The conversation has been anonymized by default to protect the identities of the
     
     <item>
       <title>Socratic Seminar - BIP Taproot (2020-07-21)</title>
-      <link>//btctranscripts.com/london-bitcoin-devs/2020-07-21-socratic-seminar-bip-taproot/</link>
+      <link>https://btctranscripts.com/london-bitcoin-devs/2020-07-21-socratic-seminar-bip-taproot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/london-bitcoin-devs/2020-07-21-socratic-seminar-bip-taproot/</guid>
+      <guid>https://btctranscripts.com/london-bitcoin-devs/2020-07-21-socratic-seminar-bip-taproot/</guid>
       <description>Name: Socratic Seminar
 Topic: BIP Taproot (BIP 341)
 Location: London BitDevs (online)
@@ -687,10 +687,10 @@ The conversation has been anonymized by default to protect the identities of the
     
     <item>
       <title>Socratic Seminar 2 (2019-08-22)</title>
-      <link>//btctranscripts.com/austin-bitcoin-developers/2019-08-22-socratic-seminar-2/</link>
+      <link>https://btctranscripts.com/austin-bitcoin-developers/2019-08-22-socratic-seminar-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/austin-bitcoin-developers/2019-08-22-socratic-seminar-2/</guid>
+      <guid>https://btctranscripts.com/austin-bitcoin-developers/2019-08-22-socratic-seminar-2/</guid>
       <description>2019-08-22
 Austin Bitcoin Developers Socratic Seminar 2
 https://twitter.com/kanzure/status/1164710800910692353
@@ -700,10 +700,10 @@ Mike Schmidt is going to talk about some optech newsletters that he has been con
     
     <item>
       <title>Socratic Seminar 20 (2020-11-30)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2020-11-30-socratic-seminar-20/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2020-11-30-socratic-seminar-20/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2020-11-30-socratic-seminar-20/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2020-11-30-socratic-seminar-20/</guid>
       <description>2020-11-30
 SF Bitcoin Devs socratic seminar #20
 ((Names anonymized.))
@@ -715,10 +715,10 @@ XX06: We already have people from Western Africa joining.</description>
     
     <item>
       <title>Socratic Seminar 3 (2019-10-14)</title>
-      <link>//btctranscripts.com/austin-bitcoin-developers/2019-10-14-socratic-seminar-3/</link>
+      <link>https://btctranscripts.com/austin-bitcoin-developers/2019-10-14-socratic-seminar-3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/austin-bitcoin-developers/2019-10-14-socratic-seminar-3/</guid>
+      <guid>https://btctranscripts.com/austin-bitcoin-developers/2019-10-14-socratic-seminar-3/</guid>
       <description>Austin Bitcoin Developers socratic seminar 3
 https://www.meetup.com/Austin-Bitcoin-Developers/events/265295570/
 https://bitdevs.org/2019-09-16-socratic-seminar-96
@@ -727,10 +727,10 @@ We have sort of done two meetups in this format. The idea here is that in NY the
     
     <item>
       <title>Socratic Seminar 4 (2019-11-19)</title>
-      <link>//btctranscripts.com/austin-bitcoin-developers/2019-11-19-socratic-seminar-4/</link>
+      <link>https://btctranscripts.com/austin-bitcoin-developers/2019-11-19-socratic-seminar-4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/austin-bitcoin-developers/2019-11-19-socratic-seminar-4/</guid>
+      <guid>https://btctranscripts.com/austin-bitcoin-developers/2019-11-19-socratic-seminar-4/</guid>
       <description>Socratic seminar #4
 https://twitter.com/kanzure/status/1196947713658626048
 Wallet standards organization (WSO) Make an economic argument for vendors to join an organization and put in some money or effort to build the organization. The economic argument is that the committed members have some level of funds committed, representing some X number of users, and X billion dollars of custodied funds. This can then be used as a compelling argument to get each organization to join and bootstrap the standards body.</description>
@@ -738,10 +738,10 @@ Wallet standards organization (WSO) Make an economic argument for vendors to joi
     
     <item>
       <title>Socratic Seminar 5 (2020-01-21)</title>
-      <link>//btctranscripts.com/austin-bitcoin-developers/2020-01-21-socratic-seminar-5/</link>
+      <link>https://btctranscripts.com/austin-bitcoin-developers/2020-01-21-socratic-seminar-5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/austin-bitcoin-developers/2020-01-21-socratic-seminar-5/</guid>
+      <guid>https://btctranscripts.com/austin-bitcoin-developers/2020-01-21-socratic-seminar-5/</guid>
       <description>Austin Bitcoin Developers Socratic Seminar 5
 https://www.meetup.com/Austin-Bitcoin-Developers/events/267941700/
 https://bitdevs.org/2019-12-03-socratic-seminar-99
@@ -753,10 +753,10 @@ This is not an original idea to me. This was presented by roasbeef, co-founder o
     
     <item>
       <title>Socratic Seminar 6 (2020-02-24)</title>
-      <link>//btctranscripts.com/austin-bitcoin-developers/2020-02-24-socratic-seminar-6/</link>
+      <link>https://btctranscripts.com/austin-bitcoin-developers/2020-02-24-socratic-seminar-6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/austin-bitcoin-developers/2020-02-24-socratic-seminar-6/</guid>
+      <guid>https://btctranscripts.com/austin-bitcoin-developers/2020-02-24-socratic-seminar-6/</guid>
       <description>Austin Bitcoin Developers socratic seminar 6
 https://www.meetup.com/Austin-Bitcoin-Developers/events/268812642/
 https://bitdevs.org/2020-02-12-socratic-seminar-101
@@ -766,10 +766,10 @@ Introduction Alrighty, let&amp;rsquo;s get started. Gather around. Phil could us
     
     <item>
       <title>Socratic Seminar Bip Schnorr (2020-06-16)</title>
-      <link>//btctranscripts.com/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/</link>
+      <link>https://btctranscripts.com/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/</guid>
+      <guid>https://btctranscripts.com/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/</guid>
       <description>Name: Socratic Seminar
 Topic: BIP Schnorr (BIP 340)
 Location: London BitDevs (online)
@@ -782,10 +782,10 @@ The conversation has been anonymized by default to protect the identities of the
     
     <item>
       <title>Socratic Seminar Coinswap (2020-06-23)</title>
-      <link>//btctranscripts.com/london-bitcoin-devs/2020-06-23-socratic-seminar-coinswap/</link>
+      <link>https://btctranscripts.com/london-bitcoin-devs/2020-06-23-socratic-seminar-coinswap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/london-bitcoin-devs/2020-06-23-socratic-seminar-coinswap/</guid>
+      <guid>https://btctranscripts.com/london-bitcoin-devs/2020-06-23-socratic-seminar-coinswap/</guid>
       <description>Name: Socratic Seminar
 Topic: CoinSwap
 Location: London BitDevs (online)
@@ -798,10 +798,10 @@ Introductions Michael Folkson (MF): This is London BitDevs, this is a Socratic S
     
     <item>
       <title>Socratic Seminar Payjoins (2020-05-05)</title>
-      <link>//btctranscripts.com/london-bitcoin-devs/2020-05-05-socratic-seminar-payjoins/</link>
+      <link>https://btctranscripts.com/london-bitcoin-devs/2020-05-05-socratic-seminar-payjoins/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/london-bitcoin-devs/2020-05-05-socratic-seminar-payjoins/</guid>
+      <guid>https://btctranscripts.com/london-bitcoin-devs/2020-05-05-socratic-seminar-payjoins/</guid>
       <description>Name: Socratic Seminar with Adam Gibson
 Topic: Bitcoin privacy (Payjoin/P2EP)
 Location: London BitDevs (online)
@@ -817,10 +817,10 @@ Intro (Michael Folkson) We are live, London BitDevs Socratic Seminar on Bitcoin 
     
     <item>
       <title>Socratic Seminar Signet (2020-08-19)</title>
-      <link>//btctranscripts.com/london-bitcoin-devs/2020-08-19-socratic-seminar-signet/</link>
+      <link>https://btctranscripts.com/london-bitcoin-devs/2020-08-19-socratic-seminar-signet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/london-bitcoin-devs/2020-08-19-socratic-seminar-signet/</guid>
+      <guid>https://btctranscripts.com/london-bitcoin-devs/2020-08-19-socratic-seminar-signet/</guid>
       <description>Name: Socratic Seminar
 Topic: Signet
 Location: London BitDevs (online)
@@ -833,10 +833,10 @@ Intro Michael Folkson (MF): This is a Socratic Seminar organized by London BitDe
     
     <item>
       <title>Socratic Seminar Vaults (2020-05-19)</title>
-      <link>//btctranscripts.com/london-bitcoin-devs/2020-05-19-socratic-seminar-vaults/</link>
+      <link>https://btctranscripts.com/london-bitcoin-devs/2020-05-19-socratic-seminar-vaults/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/london-bitcoin-devs/2020-05-19-socratic-seminar-vaults/</guid>
+      <guid>https://btctranscripts.com/london-bitcoin-devs/2020-05-19-socratic-seminar-vaults/</guid>
       <description>Name: Socratic Seminar
 Topic: Vaults and OP_CHECKTEMPLATEVERIFY
 Location: London BitDevs (online)
@@ -850,10 +850,10 @@ Introductions Michael Folkson (MF): This is a London BitDevs Socratic Seminar.</
     
     <item>
       <title>Sydney Socratic Seminar (2021-02-23)</title>
-      <link>//btctranscripts.com/sydney-bitcoin-meetup/2021-02-23-socratic-seminar/</link>
+      <link>https://btctranscripts.com/sydney-bitcoin-meetup/2021-02-23-socratic-seminar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sydney-bitcoin-meetup/2021-02-23-socratic-seminar/</guid>
+      <guid>https://btctranscripts.com/sydney-bitcoin-meetup/2021-02-23-socratic-seminar/</guid>
       <description>Name: Socratic Seminar
 Topic: Agenda in Google Doc below
 Location: Bitcoin Sydney (online)
@@ -865,10 +865,10 @@ The conversation has been anonymized by default to protect the identities of the
     
     <item>
       <title>Taproot Schnorr Signatures And Sighash Noinput Oh My (2018-07-09)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2018-07-09-taproot-schnorr-signatures-and-sighash-noinput-oh-my/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2018-07-09-taproot-schnorr-signatures-and-sighash-noinput-oh-my/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2018-07-09-taproot-schnorr-signatures-and-sighash-noinput-oh-my/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2018-07-09-taproot-schnorr-signatures-and-sighash-noinput-oh-my/</guid>
       <description>Taproot, Schnorr signatures, and SIGHASH_NOINPUT, oh my!
 Pieter Wuille (sipa)
 https://twitter.com/kanzure/status/1021880538020368385
@@ -880,10 +880,10 @@ I will mostly be talking about improvements to the bitcoin scripting language. T
     
     <item>
       <title>Threshold Signatures And Accountability (2019-02-04)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2019-02-04-threshold-signatures-and-accountability/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2019-02-04-threshold-signatures-and-accountability/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2019-02-04-threshold-signatures-and-accountability/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2019-02-04-threshold-signatures-and-accountability/</guid>
       <description>Threshold signatures and accountability
 Andrew Poelstra
 https://twitter.com/kanzure/status/1092665108960968704
@@ -893,10 +893,10 @@ Introduction Cool, thank you Mark for that introduction. Sorry about the delays.
     
     <item>
       <title>Tim Ruffing Schnorr Multisig (2020-06-17)</title>
-      <link>//btctranscripts.com/london-bitcoin-devs/2020-06-17-tim-ruffing-schnorr-multisig/</link>
+      <link>https://btctranscripts.com/london-bitcoin-devs/2020-06-17-tim-ruffing-schnorr-multisig/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/london-bitcoin-devs/2020-06-17-tim-ruffing-schnorr-multisig/</guid>
+      <guid>https://btctranscripts.com/london-bitcoin-devs/2020-06-17-tim-ruffing-schnorr-multisig/</guid>
       <description>Name: Tim Ruffing
 Topic: Taproot and Schnorr Multisignatures
 Location: London Bitcoin Devs (online)
@@ -909,10 +909,10 @@ Intro (Michael Folkson) We are now live. This is London Bitcoin Devs with Tim Ru
     
     <item>
       <title>Wasabi Research Club - Coinswap (2020-06-15)</title>
-      <link>//btctranscripts.com/wasabi-research-club/2020-06-15-coinswap/</link>
+      <link>https://btctranscripts.com/wasabi-research-club/2020-06-15-coinswap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/wasabi-research-club/2020-06-15-coinswap/</guid>
+      <guid>https://btctranscripts.com/wasabi-research-club/2020-06-15-coinswap/</guid>
       <description>Name: Wasabi Research Club
 Topic: CoinSwaps
 Location: Wasabi Research Club (online)

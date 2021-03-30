@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>zero-knowledge on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/tags/zero-knowledge/</link>
+    <link>https://btctranscripts.com/tags/zero-knowledge/</link>
     <description>Recent content in zero-knowledge on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/tags/zero-knowledge/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/tags/zero-knowledge/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Andrew Poelstra - Bulletproofs (2018-02-02)</title>
-      <link>//btctranscripts.com/misc/2018-02-02-andrew-poelstra-bulletproofs/</link>
+      <link>https://btctranscripts.com/misc/2018-02-02-andrew-poelstra-bulletproofs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/misc/2018-02-02-andrew-poelstra-bulletproofs/</guid>
+      <guid>https://btctranscripts.com/misc/2018-02-02-andrew-poelstra-bulletproofs/</guid>
       <description>Bulletproofs
 Andrew Poelstra (andytoshi)
 2018-02-02
@@ -24,10 +24,10 @@ Introduction Alright. Thank you for that introduction, Giacamo. I am here to tal
     
     <item>
       <title>Building Bulletproofs</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2019/building-bulletproofs/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2019/building-bulletproofs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/building-bulletproofs/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2019/building-bulletproofs/</guid>
       <description>Building bulletproofs
 Henry de Valence, Cathie Yun
 Cathie Yun
@@ -37,10 +37,10 @@ Introduction There are two parts to this talk. The first part of the talk will b
     
     <item>
       <title>Bulletproofs</title>
-      <link>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/bulletproofs/</link>
+      <link>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/bulletproofs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/bulletproofs/</guid>
+      <guid>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/bulletproofs/</guid>
       <description>Bulletproofs
 Benedikt Bünz
 video: https://www.youtube.com/watch?v=gZjDKgR4dw8
@@ -53,10 +53,10 @@ Introduction Good morning everyone. I am Benedikt Bünz and I am going to talk a
     
     <item>
       <title>Crypto In Cryptocurrency</title>
-      <link>//btctranscripts.com/magicalcryptoconference/2019/crypto-in-cryptocurrency/</link>
+      <link>https://btctranscripts.com/magicalcryptoconference/2019/crypto-in-cryptocurrency/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/magicalcryptoconference/2019/crypto-in-cryptocurrency/</guid>
+      <guid>https://btctranscripts.com/magicalcryptoconference/2019/crypto-in-cryptocurrency/</guid>
       <description>The &amp;ldquo;crypto&amp;rdquo; in cryptocurrency: Why everything is weird and hard
 Andrew Poelstra
 I do not have any slides for you. This is my attempt to keep this non-technical, by depriving myself of any ability to write equations on screen. The topic of my talk is why everything is weird and hard in cryptocurrency. What is cryptography as a mathematics and field of science? And how does this work in practice?</description>
@@ -64,10 +64,10 @@ I do not have any slides for you. This is my attempt to keep this non-technical,
     
     <item>
       <title>Hardware Accelerated Rsa</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/hardware-accelerated-rsa/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/hardware-accelerated-rsa/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/hardware-accelerated-rsa/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/hardware-accelerated-rsa/</guid>
       <description>Hardware Accelerated RSA - VDFs, SNARKs, and Accumulators
 Simon Peffers
 https://twitter.com/kanzure/status/1230551345700069377
@@ -77,10 +77,10 @@ Outline I&amp;rsquo;ll talk about what acceleration is and why we&amp;rsquo;re i
     
     <item>
       <title>Stark For Developers</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/stark-for-developers/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/stark-for-developers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/stark-for-developers/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/stark-for-developers/</guid>
       <description>STARK for developers
 Eli Ben-Sasson
 https://twitter.com/kanzure/status/1230279740570783744
@@ -89,10 +89,10 @@ Introduction It always seems like there&amp;rsquo;s a lot of different proof sys
     
     <item>
       <title>State Of Cryptography</title>
-      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/state-of-cryptography/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/stanford-2017/state-of-cryptography/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/state-of-cryptography/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/stanford-2017/state-of-cryptography/</guid>
       <description>State of cryptography for blockchains beyond ECDSA and sha256
 Signatures and zero-knowledge proofs
 Benedikt Bunz, Stanford University
@@ -101,10 +101,10 @@ Am going to talk about cryptography relevant to blockchains. I&amp;rsquo;ll talk
     
     <item>
       <title>Survey Of Progress In Zero Knowledge Proofs Towards Trustless Snarks</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/survey-of-progress-in-zero-knowledge-proofs-towards-trustless-snarks/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/survey-of-progress-in-zero-knowledge-proofs-towards-trustless-snarks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/survey-of-progress-in-zero-knowledge-proofs-towards-trustless-snarks/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/survey-of-progress-in-zero-knowledge-proofs-towards-trustless-snarks/</guid>
       <description>Survey of progress in succinct zero-knowledge proofs: towards trustless SNARKs
 Ben Fisch (Stanford University) (benafisch)
 https://twitter.com/kanzure/status/1171683484382957568
@@ -113,10 +113,10 @@ Introduction I am going to be giving a survey of recent progress into succinct z
     
     <item>
       <title>Zero Knowledge Proofs For Bitcoin Scalability And Beyond</title>
-      <link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/zero-knowledge-proofs-for-bitcoin-scalability-and-beyond/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/zero-knowledge-proofs-for-bitcoin-scalability-and-beyond/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/hong-kong-2015/zero-knowledge-proofs-for-bitcoin-scalability-and-beyond/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/zero-knowledge-proofs-for-bitcoin-scalability-and-beyond/</guid>
       <description>Madars Virza
 video: https://youtube.com/watch?v=aQ1--w4uEMM&amp;amp;t=4133
 I am going to tell you about zero-knowledge proofs for Bitcoin scalability. Even though this is an overview talk, many of the results I will be telling you about are based on work done by people in the slides and also here at the conference.
@@ -125,10 +125,10 @@ First I will give a brief introduction to zero knowledge proofs. Then I will try
     
     <item>
       <title>Zksharks</title>
-      <link>//btctranscripts.com/cryptoeconomic-systems/2019/zksharks/</link>
+      <link>https://btctranscripts.com/cryptoeconomic-systems/2019/zksharks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/cryptoeconomic-systems/2019/zksharks/</guid>
+      <guid>https://btctranscripts.com/cryptoeconomic-systems/2019/zksharks/</guid>
       <description>zkSHARKs
 Madars Virza
 Introduction Indeed I am Madars Virza. I am going to talk about SHARKs. I am going to be talking about zero-knowledge SHARKs. It&amp;rsquo;s actually something serious and it&amp;rsquo;s related to non-interactive zero-knowledge proofs.
@@ -137,10 +137,10 @@ Non-interactive zero knowledge proofs zkproofs are protocols between two parties
     
     <item>
       <title>Zkvm</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/zkvm/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/zkvm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/zkvm/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/zkvm/</guid>
       <description>ZkVM: zero-knowledge virtual machine for fast confidential smart contracts
 Fats, private, flexible blockchain contracts
 Oleg Andreev (Stellar) (oleganza)

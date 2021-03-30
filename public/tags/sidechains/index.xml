@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>sidechains on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/tags/sidechains/</link>
+    <link>https://btctranscripts.com/tags/sidechains/</link>
     <description>Recent content in sidechains on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/tags/sidechains/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/tags/sidechains/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bitcoin Sidechains - Unchained Epicenter Adam3Us, Gmaxwell (2015-02-03)</title>
-      <link>//btctranscripts.com/misc/bitcoin-sidechains-unchained-epicenter-adam3us-gmaxwell/</link>
+      <link>https://btctranscripts.com/misc/bitcoin-sidechains-unchained-epicenter-adam3us-gmaxwell/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/misc/bitcoin-sidechains-unchained-epicenter-adam3us-gmaxwell/</guid>
+      <guid>https://btctranscripts.com/misc/bitcoin-sidechains-unchained-epicenter-adam3us-gmaxwell/</guid>
       <description>EB65 – Adam Back &amp;amp; Greg Maxwell: Sidechains Unchained
 2015-02-03
 https://www.youtube.com/watch?v=jE_elgnIw3M
@@ -21,10 +21,10 @@ people:
     
     <item>
       <title>Epicenter Bitcoin Adam3Us Scalability (2015-09-07)</title>
-      <link>//btctranscripts.com/misc/2015-09-07-epicenter-bitcoin-adam3us-scalability/</link>
+      <link>https://btctranscripts.com/misc/2015-09-07-epicenter-bitcoin-adam3us-scalability/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/misc/2015-09-07-epicenter-bitcoin-adam3us-scalability/</guid>
+      <guid>https://btctranscripts.com/misc/2015-09-07-epicenter-bitcoin-adam3us-scalability/</guid>
       <description>&amp;ldquo;Why bitcoin needs a measured approach to scaling&amp;rdquo;
 video: https://youtube.com/watch?v=wYHyR2E5Pic
 Adam Back (adam3us) Epicenter (EC)
@@ -34,10 +34,10 @@ BC: Adam Back is here for the second time on this show. Some of you will be fami
     
     <item>
       <title>Plasma Cash</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/plasma-cash/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/plasma-cash/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/plasma-cash/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/plasma-cash/</guid>
       <description>Plasma Cash: Towards more efficient plasma constructions
 Non-custodial sidechains for bitcoin utilizing plasma cash and covenants
 Georgios Konstantopoulos
@@ -49,20 +49,20 @@ Introduction We have known how to do these things for at least a year, but the q
     
     <item>
       <title>Provenance Groups</title>
-      <link>//btctranscripts.com/w3-blockchain-workshop-2016/provenance-groups/</link>
+      <link>https://btctranscripts.com/w3-blockchain-workshop-2016/provenance-groups/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/w3-blockchain-workshop-2016/provenance-groups/</guid>
+      <guid>https://btctranscripts.com/w3-blockchain-workshop-2016/provenance-groups/</guid>
       <description>Give the name of your tech topic table. You have three minutes to summarize. When you have one minute to summarize, I will give you the one minute warning. When you have zero minutes left, you will be thrown out the window.
 Media rights We talked about media rights and payments. The ability to figure out the incentive structure for whether we can compensate people who create page views with people who have view rights and how that all works.</description>
     </item>
     
     <item>
       <title>Russell Oconnor Simplicity (2019-10-15)</title>
-      <link>//btctranscripts.com/cryptoeconomic-systems/2019/2019-10-15-russell-oconnor-simplicity/</link>
+      <link>https://btctranscripts.com/cryptoeconomic-systems/2019/2019-10-15-russell-oconnor-simplicity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/cryptoeconomic-systems/2019/2019-10-15-russell-oconnor-simplicity/</guid>
+      <guid>https://btctranscripts.com/cryptoeconomic-systems/2019/2019-10-15-russell-oconnor-simplicity/</guid>
       <description>Name: Russell O’Connor
 Topic: Simplicity
 Location: CES Summit 2019
@@ -75,10 +75,10 @@ Intro So Simplicity is a programming language that I have been working on at Blo
     
     <item>
       <title>Secure Protocols Bip Taproot</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2019/secure-protocols-bip-taproot/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/secure-protocols-bip-taproot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2019/secure-protocols-bip-taproot/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/secure-protocols-bip-taproot/</guid>
       <description>Secure protocols on BIP-taproot
 Jonas Nick
 36C7 1A37 C9D9 88BD E825 08D9 B1A7 0E4F 8DCD 0366
@@ -91,10 +91,10 @@ Disclaimer It&amp;rsquo;s not at all certain that a bip-taproot soft-fork will a
     
     <item>
       <title>Statechains</title>
-      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/statechains/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tokyo-2018/statechains/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/statechains/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tokyo-2018/statechains/</guid>
       <description>Statechains: Off-chain transfer of UTXOs
 Ruben Somsen
 I am the education director of readingbitcoin.org, and I am going to be talking about statechains for off-chain transfer of UTXOs.

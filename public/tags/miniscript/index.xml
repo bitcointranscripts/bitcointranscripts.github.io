@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>miniscript on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/tags/miniscript/</link>
+    <link>https://btctranscripts.com/tags/miniscript/</link>
     <description>Recent content in miniscript on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/tags/miniscript/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/tags/miniscript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Alekos Filini Magical Bitcoin (2020-05-21)</title>
-      <link>//btctranscripts.com/la-bitdevs/2020-05-21-alekos-filini-magical-bitcoin/</link>
+      <link>https://btctranscripts.com/la-bitdevs/2020-05-21-alekos-filini-magical-bitcoin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/la-bitdevs/2020-05-21-alekos-filini-magical-bitcoin/</guid>
+      <guid>https://btctranscripts.com/la-bitdevs/2020-05-21-alekos-filini-magical-bitcoin/</guid>
       <description>Name: Alekos Filini
 Topic: Magical Bitcoin
 Location: LA BitDevs (online)
@@ -26,10 +26,10 @@ Intro I am a developer, I work on Bitcoin. I came to Bitcoin pretty late compare
     
     <item>
       <title>Andrew Poelstra Miniscript (2020-02-07)</title>
-      <link>//btctranscripts.com/advancing-bitcoin/2020/2020-02-07-andrew-poelstra-miniscript/</link>
+      <link>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-07-andrew-poelstra-miniscript/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/advancing-bitcoin/2020/2020-02-07-andrew-poelstra-miniscript/</guid>
+      <guid>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-07-andrew-poelstra-miniscript/</guid>
       <description>Andrew Poelstra
 Advancing Bitcoin workshop
 Miniscript
@@ -41,10 +41,10 @@ Part 1 So what we’re going to do, there is a couple of things. We are going to
     
     <item>
       <title>Andrew Poelstra Miniscript Intro (2020-02-06)</title>
-      <link>//btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-poelstra-miniscript-intro/</link>
+      <link>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-poelstra-miniscript-intro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-poelstra-miniscript-intro/</guid>
+      <guid>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-poelstra-miniscript-intro/</guid>
       <description>Name: Andrew Poelstra
 Topic: Introduction to Miniscript
 Location: Advancing Bitcoin
@@ -56,10 +56,10 @@ Intro Hi everyone. Some of you were at my Bitcoin dev presentation about Miniscr
     
     <item>
       <title>Miniscript</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2019/miniscript/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2019/miniscript/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/miniscript/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2019/miniscript/</guid>
       <description>Miniscript
 Pieter Wuille (sipa) (Blockstream)
 https://twitter.com/kanzure/status/1091116834219151360
@@ -70,10 +70,10 @@ Introduction Thanks, Jeremy. I am Pieter Wuille. I work at Blockstream. I do var
     
     <item>
       <title>Socratic Seminar 3 (2019-10-14)</title>
-      <link>//btctranscripts.com/austin-bitcoin-developers/2019-10-14-socratic-seminar-3/</link>
+      <link>https://btctranscripts.com/austin-bitcoin-developers/2019-10-14-socratic-seminar-3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/austin-bitcoin-developers/2019-10-14-socratic-seminar-3/</guid>
+      <guid>https://btctranscripts.com/austin-bitcoin-developers/2019-10-14-socratic-seminar-3/</guid>
       <description>Austin Bitcoin Developers socratic seminar 3
 https://www.meetup.com/Austin-Bitcoin-Developers/events/265295570/
 https://bitdevs.org/2019-09-16-socratic-seminar-96

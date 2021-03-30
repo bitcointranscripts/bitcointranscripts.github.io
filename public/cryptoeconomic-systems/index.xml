@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cryptoeconomic Systems on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/cryptoeconomic-systems/</link>
+    <link>https://btctranscripts.com/cryptoeconomic-systems/</link>
     <description>Recent content in Cryptoeconomic Systems on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/cryptoeconomic-systems/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/cryptoeconomic-systems/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

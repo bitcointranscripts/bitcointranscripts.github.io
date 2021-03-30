@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bitcoin Core Dev Tech on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/bitcoin-core-dev-tech/</link>
+    <link>https://btctranscripts.com/bitcoin-core-dev-tech/</link>
     <description>Recent content in Bitcoin Core Dev Tech on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/bitcoin-core-dev-tech/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/bitcoin-core-dev-tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Assumeutxo (2019-06-07)</title>
-      <link>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-07-assumeutxo/</link>
+      <link>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-07-assumeutxo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-07-assumeutxo/</guid>
+      <guid>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-07-assumeutxo/</guid>
       <description>assumeutxo
 https://twitter.com/kanzure/status/1137008648620838912
 Why assumeutxo assumeutxo is a spiritual continuation of assumevalid. Why do we want to do this in the first place? At the moment, it takes hours and days to do initial block download. Various projects in the community have been implementing meassures to speed this up. Casa I think bundles datadir with their nodes. Other projects like btcpay have various ways of bundling this up and signing things with gpg keys and these solutions are not quite half-baked but they are probably not desirable either.</description>
@@ -19,20 +19,20 @@ Why assumeutxo assumeutxo is a spiritual continuation of assumevalid. Why do we 
     
     <item>
       <title>Bellare Neven (2018-03-05)</title>
-      <link>//btctranscripts.com/bitcoin-core-dev-tech/2018-03-05-bellare-neven/</link>
+      <link>https://btctranscripts.com/bitcoin-core-dev-tech/2018-03-05-bellare-neven/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2018-03-05-bellare-neven/</guid>
+      <guid>https://btctranscripts.com/bitcoin-core-dev-tech/2018-03-05-bellare-neven/</guid>
       <description>See also http://diyhpl.us/wiki/transcripts/bitcoin-core-dev-tech/2017-09-06-signature-aggregation/
 Bellare-Neven It&amp;rsquo;s been published, it&amp;rsquo;s been around for a decade, and it&amp;rsquo;s widely cited. In Bellare-Neven, it&amp;rsquo;s itself, it&amp;rsquo;s a multi-signature scheme which means multiple pubkeys and one message. You should treat the individual authorizations to spend inputs, as individual messages. What we need is an interactive aggregate signature scheme. Bellare-Neven&amp;rsquo;s paper suggests a trivial way of building an aggregate signature scheme out of a multisig scheme where interactively everyone signs everyone&amp;rsquo;s message.</description>
     </item>
     
     <item>
       <title>Bitcoin Optech (2018-10-09)</title>
-      <link>//btctranscripts.com/bitcoin-core-dev-tech/2018-10-09-bitcoin-optech/</link>
+      <link>https://btctranscripts.com/bitcoin-core-dev-tech/2018-10-09-bitcoin-optech/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2018-10-09-bitcoin-optech/</guid>
+      <guid>https://btctranscripts.com/bitcoin-core-dev-tech/2018-10-09-bitcoin-optech/</guid>
       <description>https://twitter.com/kanzure/status/1049527415767101440
 Bitcoin Optech https://bitcoinops.org/
 Bitcoin Optech is trying to encourage bitcoin businesses to adopt better scaling techniques and technologies, things like batching, segwit, down the line maybe Schnorr signatures, aggregatable signatures, maybe lightning. Right now we&amp;rsquo;re focusing on things that businesses could be doing right now. Exchanges could be batching, and some aren&amp;rsquo;t. We&amp;rsquo;re talking to those companies and listening to their concerns and what they&amp;rsquo;re doing, and just trying to nudge them in the right direction.</description>
@@ -40,10 +40,10 @@ Bitcoin Optech is trying to encourage bitcoin businesses to adopt better scaling
     
     <item>
       <title>Code Review (2019-06-05)</title>
-      <link>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-05-code-review/</link>
+      <link>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-05-code-review/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-05-code-review/</guid>
+      <guid>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-05-code-review/</guid>
       <description>Code review survey and complaints
 2019-06-05
 https://twitter.com/kanzure/status/1136261311359324162
@@ -52,10 +52,10 @@ Introduction I wanted to talk about the code review process for Bitcoin Core. I 
     
     <item>
       <title>Cross Curve Atomic Swaps (2018-03-05)</title>
-      <link>//btctranscripts.com/bitcoin-core-dev-tech/2018-03-05-cross-curve-atomic-swaps/</link>
+      <link>https://btctranscripts.com/bitcoin-core-dev-tech/2018-03-05-cross-curve-atomic-swaps/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2018-03-05-cross-curve-atomic-swaps/</guid>
+      <guid>https://btctranscripts.com/bitcoin-core-dev-tech/2018-03-05-cross-curve-atomic-swaps/</guid>
       <description>https://twitter.com/kanzure/status/971827042223345664
 Draft of an upcoming scriptless scripts paper. This was at the beginning of 2017. But now an entire year has gone by.
 post-schnorr lightning transactions https://lists.linuxfoundation.org/pipermail/lightning-dev/2018-February/001031.html
@@ -64,20 +64,20 @@ An adaptor signature.. if you have different generators, then the two secrets to
     
     <item>
       <title>Efficient P2P Transaction Relay (2018-10-08)</title>
-      <link>//btctranscripts.com/bitcoin-core-dev-tech/2018-10-08-efficient-p2p-transaction-relay/</link>
+      <link>https://btctranscripts.com/bitcoin-core-dev-tech/2018-10-08-efficient-p2p-transaction-relay/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2018-10-08-efficient-p2p-transaction-relay/</guid>
+      <guid>https://btctranscripts.com/bitcoin-core-dev-tech/2018-10-08-efficient-p2p-transaction-relay/</guid>
       <description>p2p transaction relay protocol improvements with set reconciliation gleb
 I don&amp;rsquo;t know if I need to motivate this problem. I presented a work in progress session at Scaling. The cost of relaying transactions or announcing a transaction in a network&amp;ndash; how many announcements do you have? Every link has an announcement in either direction right now, and then there&amp;rsquo;s the number of nodes multiplied by the number of connections per node.</description>
     </item>
     
     <item>
       <title>Great Consensus Cleanup (2019-06-06)</title>
-      <link>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-06-great-consensus-cleanup/</link>
+      <link>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-06-great-consensus-cleanup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-06-great-consensus-cleanup/</guid>
+      <guid>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-06-great-consensus-cleanup/</guid>
       <description>2019-06-06
 Great consensus cleanup https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2019-March/016714.html
 https://twitter.com/kanzure/status/1136591286012698626
@@ -87,10 +87,10 @@ Validation time for any block&amp;ndash; we were lazy about fixing this. Segwit 
     
     <item>
       <title>Hardware Wallets (2019-06-07)</title>
-      <link>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-07-hardware-wallets/</link>
+      <link>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-07-hardware-wallets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-07-hardware-wallets/</guid>
+      <guid>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-07-hardware-wallets/</guid>
       <description>Hardware wallets
 https://twitter.com/kanzure/status/1136924010955104257
 How much should Bitcoin Core do, and how much should other libraries do? Andrew Chow wrote the wonderful HWI tool. Right now we have a pull request to support external signers. The HWI script can talk to most major hardware wallets because it has all the drivers built in now, and it can get keys from it, and sign arbitrary transactions. That&amp;rsquo;s roughly what it does. It&amp;rsquo;s kind of manual, though.</description>
@@ -98,10 +98,10 @@ How much should Bitcoin Core do, and how much should other libraries do? Andrew 
     
     <item>
       <title>Maintainers (2019-06-06)</title>
-      <link>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-06-maintainers/</link>
+      <link>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-06-maintainers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-06-maintainers/</guid>
+      <guid>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-06-maintainers/</guid>
       <description>Maintainers view of the Bitcoin Core project
 https://twitter.com/kanzure/status/1136568307992158208
 How do the maintainers think or feel everything is going? Are there any frustrations? Could contributors help eliminate these frustrations? That&amp;rsquo;s all I have.
@@ -110,10 +110,10 @@ It would be good to have better oversight or overview about who is working in wh
     
     <item>
       <title>Meeting Notes (2017-09-05)</title>
-      <link>//btctranscripts.com/bitcoin-core-dev-tech/2017-09-05-meeting-notes/</link>
+      <link>https://btctranscripts.com/bitcoin-core-dev-tech/2017-09-05-meeting-notes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2017-09-05-meeting-notes/</guid>
+      <guid>https://btctranscripts.com/bitcoin-core-dev-tech/2017-09-05-meeting-notes/</guid>
       <description>﻿2017-09-05 - 2017-09-07
 coredev.tech september 2017
 https://twitter.com/kanzure/status/907233490919464960
@@ -126,10 +126,10 @@ Nobody produces P2SH change when they have a native output.</description>
     
     <item>
       <title>Merkleized Abstract Syntax Trees (2017-09-07)</title>
-      <link>//btctranscripts.com/bitcoin-core-dev-tech/2017-09-07-merkleized-abstract-syntax-trees/</link>
+      <link>https://btctranscripts.com/bitcoin-core-dev-tech/2017-09-07-merkleized-abstract-syntax-trees/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2017-09-07-merkleized-abstract-syntax-trees/</guid>
+      <guid>https://btctranscripts.com/bitcoin-core-dev-tech/2017-09-07-merkleized-abstract-syntax-trees/</guid>
       <description>﻿https://twitter.com/kanzure/status/907075529534328832
 Merkleized abstract syntax trees (MAST) https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-September/014932.html
 I am going to talk about the scheme I posted to the mailing list yesterday which is to implement MAST (merkleized abstract syntax trees) in bitcoin in a minimally invasive way as possible. It&amp;rsquo;s broken into two major consensus features that together gives us MAST. I&amp;rsquo;ll start with the last BIP.
@@ -138,10 +138,10 @@ This is tail-call evaluation. Can we generalize P2SHto give us more general capa
     
     <item>
       <title>Merkleized Abstract Syntax Trees - MAST (2018-03-06)</title>
-      <link>//btctranscripts.com/bitcoin-core-dev-tech/2018-03-06-merkleized-abstract-syntax-trees-mast/</link>
+      <link>https://btctranscripts.com/bitcoin-core-dev-tech/2018-03-06-merkleized-abstract-syntax-trees-mast/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2018-03-06-merkleized-abstract-syntax-trees-mast/</guid>
+      <guid>https://btctranscripts.com/bitcoin-core-dev-tech/2018-03-06-merkleized-abstract-syntax-trees-mast/</guid>
       <description>https://twitter.com/kanzure/status/972120890279432192
 See also http://diyhpl.us/wiki/transcripts/bitcoin-core-dev-tech/2017-09-07-merkleized-abstract-syntax-trees/
 MAST stuff You could directly merkleize scripts if you switch from IF, IFNOT, ELSE with IFJUMP that has the number of bytes.
@@ -151,10 +151,10 @@ You take every single path it has; so instead, it becomes &amp;hellip; certain c
     
     <item>
       <title>P2P Encryption (2019-06-07)</title>
-      <link>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-07-p2p-encryption/</link>
+      <link>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-07-p2p-encryption/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-07-p2p-encryption/</guid>
+      <guid>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-07-p2p-encryption/</guid>
       <description>p2p encryption
 https://twitter.com/kanzure/status/1136939003666685952
 https://github.com/bitcoin-core/bitcoin-devwiki/wiki/P2P-Design-Philosophy
@@ -164,10 +164,10 @@ Introduction This proposal has been in progress for years. Many ideas from sipa 
     
     <item>
       <title>Priorities (2018-03-07)</title>
-      <link>//btctranscripts.com/bitcoin-core-dev-tech/2018-03-07-priorities/</link>
+      <link>https://btctranscripts.com/bitcoin-core-dev-tech/2018-03-07-priorities/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2018-03-07-priorities/</guid>
+      <guid>https://btctranscripts.com/bitcoin-core-dev-tech/2018-03-07-priorities/</guid>
       <description>https://twitter.com/kanzure/status/972863994489901056
 Priorities We&amp;rsquo;re going to wait until BlueMatt is here. Nobody knows what his priorities are. He says he might be in around noon.
 There&amp;rsquo;s an ex-Google product director interested in helping with Bitcoin Core. He was asking about how to get involved. I told him to get involved by just diving in. He will be spending some time at Chaincode at the end of March. We&amp;rsquo;ll get a sense for what his skills are.</description>
@@ -175,10 +175,10 @@ There&amp;rsquo;s an ex-Google product director interested in helping with Bitco
     
     <item>
       <title>Script Descriptors (2018-10-08)</title>
-      <link>//btctranscripts.com/bitcoin-core-dev-tech/2018-10-08-script-descriptors/</link>
+      <link>https://btctranscripts.com/bitcoin-core-dev-tech/2018-10-08-script-descriptors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2018-10-08-script-descriptors/</guid>
+      <guid>https://btctranscripts.com/bitcoin-core-dev-tech/2018-10-08-script-descriptors/</guid>
       <description>2018-10-08
 Script descriptors Pieter Wuille (sipa)
 https://github.com/bitcoin/bitcoin/blob/master/doc/descriptors.md
@@ -189,10 +189,10 @@ Agenda  History of script descriptors and how we came to this. What&amp;rsquo;s 
     
     <item>
       <title>SIGHASH_NOINPUT, ANYPREVOUT (2019-06-06)</title>
-      <link>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-06-noinput-etc/</link>
+      <link>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-06-noinput-etc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-06-noinput-etc/</guid>
+      <guid>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-06-noinput-etc/</guid>
       <description>2019-06-06
 SIGHASH_NOINPUT, ANYPREVOUT, OP_CHECKSIGFROMSTACK, OP_CHECKOUTPUTSHASHVERIFY, and OP_SECURETHEBAG
 https://twitter.com/kanzure/status/1136636856093876225
@@ -202,10 +202,10 @@ SIGHASH_NOINPUT A bunch of us are familiar with NOINPUT. Does anyone need an exp
     
     <item>
       <title>Signature Aggregation (2017-09-06)</title>
-      <link>//btctranscripts.com/bitcoin-core-dev-tech/2017-09-06-signature-aggregation/</link>
+      <link>https://btctranscripts.com/bitcoin-core-dev-tech/2017-09-06-signature-aggregation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2017-09-06-signature-aggregation/</guid>
+      <guid>https://btctranscripts.com/bitcoin-core-dev-tech/2017-09-06-signature-aggregation/</guid>
       <description>﻿https://twitter.com/kanzure/status/907065194463072258
 Signature aggregation Sipa, can you sign and verify ECDSA signatures by hand? No. Over GF(43), maybe. Inverses could take a little bit to compute. Over GF(2).
 I think the first thing we should talk about is some definitions. I&amp;rsquo;d like to start by distinguishing between three things: Key aggregation, signature aggregation, and batch validation. Multi-signature later.
@@ -214,10 +214,10 @@ There are three different problems. Key aggregation is where there are a number 
     
     <item>
       <title>Signet (2019-06-07)</title>
-      <link>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-07-signet/</link>
+      <link>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-07-signet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-07-signet/</guid>
+      <guid>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-07-signet/</guid>
       <description>Signet
 https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2019-March/016734.html
 https://twitter.com/kanzure/status/1136980462524608512
@@ -226,10 +226,10 @@ Introduction I am going to talk a little bit about signet. Does anyone not know 
     
     <item>
       <title>Signmessage (2018-10-10)</title>
-      <link>//btctranscripts.com/bitcoin-core-dev-tech/2018-10-10-signmessage/</link>
+      <link>https://btctranscripts.com/bitcoin-core-dev-tech/2018-10-10-signmessage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2018-10-10-signmessage/</guid>
+      <guid>https://btctranscripts.com/bitcoin-core-dev-tech/2018-10-10-signmessage/</guid>
       <description>https://twitter.com/kanzure/status/1049834659306061829
 signmessage kallewoof and others
 I am trying to make a new signmessage to do other things. Just use the signature system inside bitcoin to sign a message. Sign a message that someone wants. You can use proof-of-funds or whatever.
@@ -238,10 +238,10 @@ You could just have a signature and it&amp;rsquo;s a signature inside of a packa
     
     <item>
       <title>Statechains (2019-06-07)</title>
-      <link>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-07-statechains/</link>
+      <link>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-07-statechains/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-07-statechains/</guid>
+      <guid>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-07-statechains/</guid>
       <description>Blind statechains: UTXO transfer with a blind signing server
 https://twitter.com/kanzure/status/1136992734953299970
 &amp;ldquo;Formalizing Blind Statechains as a minimalistic blind signing server&amp;rdquo; https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2019-June/017005.html
@@ -253,10 +253,10 @@ Introduction I am going to talk casually through the whole statechains thing. If
     
     <item>
       <title>Taproot (2019-06-06)</title>
-      <link>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-06-taproot/</link>
+      <link>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-06-taproot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-06-taproot/</guid>
+      <guid>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-06-taproot/</guid>
       <description>Taproot
 https://github.com/sipa/bips/blob/bip-schnorr/bip-taproot.mediawiki
 https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2019-May/016914.html
@@ -268,20 +268,20 @@ Introduction Okay, so, first question- who put my name on that list and what do 
     
     <item>
       <title>Taproot, Graftroot, Etc (2018-03-06)</title>
-      <link>//btctranscripts.com/bitcoin-core-dev-tech/2018-03-06-taproot-graftroot-etc/</link>
+      <link>https://btctranscripts.com/bitcoin-core-dev-tech/2018-03-06-taproot-graftroot-etc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2018-03-06-taproot-graftroot-etc/</guid>
+      <guid>https://btctranscripts.com/bitcoin-core-dev-tech/2018-03-06-taproot-graftroot-etc/</guid>
       <description>https://twitter.com/kanzure/status/972468121046061056
 graftroot The idea of graftroot is that in every contract there is a superset of people that can spend the money. This assumption is not always true but it&amp;rsquo;s almost always true. Say you want to lock up these coins for a year, without any conditionals to it, then it doesn&amp;rsquo;t work. But assume you have&amp;ndash; pubkey recovery? No&amp;hellip; pubkey recovery is inherently incompatible with any form of aggregation, and aggregation is far superior.</description>
     </item>
     
     <item>
       <title>Utreexo (2019-06-06)</title>
-      <link>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-06-utreexo/</link>
+      <link>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-06-utreexo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-06-utreexo/</guid>
+      <guid>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-06-utreexo/</guid>
       <description>Utreexo: hash-based accumulator for bitcoin UTXOs
 http://diyhpl.us/wiki/transcripts/bitcoin-core-dev-tech/2018-10-08-utxo-accumulators-and-utreexo/
 http://diyhpl.us/wiki/transcripts/mit-bitcoin-expo-2019/utreexo/
@@ -293,10 +293,10 @@ Introduction You still download everything; instead of writing to your UTXO data
     
     <item>
       <title>Utxo Accumulators And Utreexo (2018-10-08)</title>
-      <link>//btctranscripts.com/bitcoin-core-dev-tech/2018-10-08-utxo-accumulators-and-utreexo/</link>
+      <link>https://btctranscripts.com/bitcoin-core-dev-tech/2018-10-08-utxo-accumulators-and-utreexo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2018-10-08-utxo-accumulators-and-utreexo/</guid>
+      <guid>https://btctranscripts.com/bitcoin-core-dev-tech/2018-10-08-utxo-accumulators-and-utreexo/</guid>
       <description>UTXO accumulators, UTXO commitments, and utreexo 2018-10-08
 Tadge Dryja
 https://twitter.com/kanzure/status/1049112390413897728
@@ -305,10 +305,10 @@ If people saw Benedikt&amp;rsquo;s talk, two days ago, it&amp;rsquo;s related. I
     
     <item>
       <title>Wallet Architecture (2019-06-05)</title>
-      <link>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-05-wallet-architecture/</link>
+      <link>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-05-wallet-architecture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-05-wallet-architecture/</guid>
+      <guid>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-05-wallet-architecture/</guid>
       <description>2019-06-05
 Bitcoin Core wallet architecture + descriptors
 https://twitter.com/kanzure/status/1136282460675878915
@@ -318,10 +318,10 @@ Wallet architecture discussion There are three main areas here. One is IsMine: h
     
     <item>
       <title>Wallet Stuff (2018-10-09)</title>
-      <link>//btctranscripts.com/bitcoin-core-dev-tech/2018-10-09-wallet-stuff/</link>
+      <link>https://btctranscripts.com/bitcoin-core-dev-tech/2018-10-09-wallet-stuff/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2018-10-09-wallet-stuff/</guid>
+      <guid>https://btctranscripts.com/bitcoin-core-dev-tech/2018-10-09-wallet-stuff/</guid>
       <description>https://twitter.com/kanzure/status/1049526667079643136
 Wallet stuff Maybe we can have the wallet PRs have a different review process so that there can be some specialization, even if the wallet is not ready to be split out. In the future, if the wallet was a separate project or repository, then that would be better. We need to be able to subdivide the work better than we already do, and the wallet is a good place to start doing it.</description>
     </item>

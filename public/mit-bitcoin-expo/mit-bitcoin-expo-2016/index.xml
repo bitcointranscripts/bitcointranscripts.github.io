@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mit Bitcoin Expo 2016 on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/</link>
+    <link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/</link>
     <description>Recent content in Mit Bitcoin Expo 2016 on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cory Fields</title>
-      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/cory-fields/</link>
+      <link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/cory-fields/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/cory-fields/</guid>
+      <guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/cory-fields/</guid>
       <description>MIT Bitcoin Expo 2016 transcript
 last year- http://diyhpl.us/wiki/transcripts/mit-bitcoin-expo-2015/ this year- http://diyhpl.us/wiki/transcripts/mit-bitcoin-expo-2016/
 Welcome everyone to MIT Bitcoin Expo 2016. If you haven&amp;rsquo;t heard of Bitcoin by now, then I am not sure how you got here. My name is nchinda. I am the reigning Bitcoin club president. I am going to have some fun. The club is hijacking the #mit-dci IRC channel. You can twitter with #mitbitcoinexpo. There&amp;rsquo;s a link up on our website for livestreaming.</description>
@@ -19,10 +19,10 @@ Welcome everyone to MIT Bitcoin Expo 2016. If you haven&amp;rsquo;t heard of Bit
     
     <item>
       <title>Fraud Proofs Petertodd</title>
-      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/fraud-proofs-petertodd/</link>
+      <link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/fraud-proofs-petertodd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/fraud-proofs-petertodd/</guid>
+      <guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/fraud-proofs-petertodd/</guid>
       <description>Fraud proofs
 petertodd
 https://www.youtube.com/watch?v=UVuUZm4l-ss&amp;amp;t=4h29m10s
@@ -32,10 +32,10 @@ What&amp;rsquo;s the problem we are trying to solve?</description>
     
     <item>
       <title>Lessons For Bitcoin From 150 Years Of Decentralization</title>
-      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/lessons-for-bitcoin-from-150-years-of-decentralization/</link>
+      <link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/lessons-for-bitcoin-from-150-years-of-decentralization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/lessons-for-bitcoin-from-150-years-of-decentralization/</guid>
+      <guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/lessons-for-bitcoin-from-150-years-of-decentralization/</guid>
       <description>Lessons for Bitcoin from the 150-year History of Decentralization
 Arvind Narayanan
 Lessons for Bitcoin from the 150-year History of Decentralization
@@ -46,10 +46,10 @@ Thank you. Can you hear me? I think you can. What I want to do today is to look 
     
     <item>
       <title>Linq</title>
-      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/linq/</link>
+      <link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/linq/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/linq/</guid>
+      <guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/linq/</guid>
       <description>NASDAQ Linq
 Alex Zinder
 I have heard that Alex Zinder has a grasp of what makes NASDAQ Linq good and bad, and the advantages of a public versus permissioned blockchain. Alex is director of global software development at NASDAQ, but he is here to talk about Linq, which is a platform for managing securities. Alex?
@@ -59,19 +59,19 @@ We have been looking at this for a while at NASDAQ.</description>
     
     <item>
       <title>Maaku Panel</title>
-      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/maaku-panel/</link>
+      <link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/maaku-panel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/maaku-panel/</guid>
+      <guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/maaku-panel/</guid>
       <description>This can be a broad range of topics for improvements. I am Mark Friedenbach, I have worked on Bitcoin protocol research, but I also do Core tech engineering at Blockstream. We also have Jonas, an independent Bitcoin Core developer. We also have Andrew Poelstra, who has been core to the crypto work which has been incoporated into Bitcoin, such as libsecp256k1 which we recently integrated in the 0.12 release. It speeds up Bitcoin validation by 7-8x.</description>
     </item>
     
     <item>
       <title>Pindar Wong</title>
-      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/pindar-wong/</link>
+      <link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/pindar-wong/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/pindar-wong/</guid>
+      <guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/pindar-wong/</guid>
       <description>Pindar Wong
 Forked to Death: What Internet governance can learn from Bitcoin
 So, the last talk today is going to be from Pindar Wong. He&amp;rsquo;s been involved with Internet in Hong Kong. He also helped organize the Scaling Bitcoin workshops. It&amp;rsquo;s my pleasure to have him speaking today.
@@ -80,10 +80,10 @@ Okay. Thank you very much for staying until the bitter end. My topic today is fo
     
     <item>
       <title>R3</title>
-      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/r3/</link>
+      <link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/r3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/r3/</guid>
+      <guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/r3/</guid>
       <description>Distributed Ledger Group
 R3
 Kathleen Breitman
@@ -93,10 +93,10 @@ Ledgers can track transactions. Typically in a capital market context, this resp
     
     <item>
       <title>Rootstock</title>
-      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/rootstock/</link>
+      <link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/rootstock/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/rootstock/</guid>
+      <guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/rootstock/</guid>
       <description>Rootstock
 Sergio Lerner
 Sergio is co-founder and chief scientist at RSK Labs. The whitepaper was pretty good. I am happy that he is here. Thank you. Just give me a minute.
@@ -107,10 +107,10 @@ Thanks everyone for staying here and not going to the next room. Thanks for the 
     
     <item>
       <title>Scaling Debate Is A Proxy Battle Over Centralization</title>
-      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/scaling-debate-is-a-proxy-battle-over-centralization/</link>
+      <link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/scaling-debate-is-a-proxy-battle-over-centralization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/scaling-debate-is-a-proxy-battle-over-centralization/</guid>
+      <guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/scaling-debate-is-a-proxy-battle-over-centralization/</guid>
       <description>James D&amp;rsquo;Angelo
 The Scaling Debate is a Proxy Battle Over Centralization
 I really appreciated the fact that&amp;hellip;. I really appreciated Cory&amp;rsquo;s talk. I quoted someone in my talk. It was a fairly recent quote. His whole talk was speaking about governance. There&amp;rsquo;s a lot of governing issues coming into Bitcoin. We like the solving the whole world with technical.
@@ -119,10 +119,10 @@ The word that I am fascinated with is the one highlighted here, the word &amp;ld
     
     <item>
       <title>Siacoin</title>
-      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/siacoin/</link>
+      <link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/siacoin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/siacoin/</guid>
+      <guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/siacoin/</guid>
       <description>Sia
 David Vorick
 I have been working on a decentralized cloud storage platform. Before I go into that, I wanted to mention that I have been working on Bitcoin since 2011. Since 2013 I have been in the wizards channel. In 2014 a friend and myself founded a company to build Siacoin. The team has grown to 3 people. Sia is the name of our decentralized storage protocol. We are trying to emulate Amazon S3.</description>

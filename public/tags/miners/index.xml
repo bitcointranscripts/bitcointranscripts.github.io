@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>miners on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/tags/miners/</link>
+    <link>https://btctranscripts.com/tags/miners/</link>
     <description>Recent content in miners on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/tags/miners/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/tags/miners/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Flexible Limit Trading Subsidy For Larger Blocks</title>
-      <link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/a-flexible-limit-trading-subsidy-for-larger-blocks/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/a-flexible-limit-trading-subsidy-for-larger-blocks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/hong-kong-2015/a-flexible-limit-trading-subsidy-for-larger-blocks/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/a-flexible-limit-trading-subsidy-for-larger-blocks/</guid>
       <description>maaku
 slides: https://scalingbitcoin.org/hongkong2015/presentations/DAY2/3_tweaking_the_chain_2_friedenbach.pdf
 video: https://www.youtube.com/watch?v=fst1IK_mrng&amp;amp;t=4h27m53s
@@ -20,10 +20,10 @@ I really want to thank jgarzik for that interesting talk. Who picks what block s
     
     <item>
       <title>Blockchain Testbed</title>
-      <link>//btctranscripts.com/scalingbitcoin/montreal-2015/blockchain-testbed/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/montreal-2015/blockchain-testbed/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/montreal-2015/blockchain-testbed/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/montreal-2015/blockchain-testbed/</guid>
       <description>Ittay Eyal
 Emin Gun Sirer
 A testbed for bitcoin scaling
@@ -32,10 +32,10 @@ I want to talk today about how to scale bitcoin. We want lower latency, we want 
     
     <item>
       <title>Braiding The Blockchain</title>
-      <link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/braiding-the-blockchain/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/braiding-the-blockchain/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/hong-kong-2015/braiding-the-blockchain/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/braiding-the-blockchain/</guid>
       <description>Braiding the blockchain
 Bob McElrath (bsm117532)
 slides: https://scalingbitcoin.org/hongkong2015/presentations/DAY2/2_breaking_the_chain_1_mcelrath.pdf
@@ -45,20 +45,20 @@ I work for SolidX in New York. I am here to tell you about some modifications to
     
     <item>
       <title>Cali 2016</title>
-      <link>//btctranscripts.com/bitcoin-developers-miners-meeting-2016/cali2016/</link>
+      <link>https://btctranscripts.com/bitcoin-developers-miners-meeting-2016/cali2016/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-developers-miners-meeting-2016/cali2016/</guid>
+      <guid>https://btctranscripts.com/bitcoin-developers-miners-meeting-2016/cali2016/</guid>
       <description>California Gathering 2016
 Transcription introduction Some Bitcoin developers and miners gathered together during the end of the July to socialize and become better acquainted with each other. The following discussions were live transcribed by an untrained volunteer with attribution removed as per Chatham House rules. In bitcoin, discussions can move very quickly, which can cause an increase in errors, including semantic errors, when typing in real time. This text was not produced from an audio recording.</description>
     </item>
     
     <item>
       <title>Changes Without Unanimous Consent</title>
-      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/changes-without-unanimous-consent/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/stanford-2017/changes-without-unanimous-consent/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/changes-without-unanimous-consent/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/stanford-2017/changes-without-unanimous-consent/</guid>
       <description>Changes without unanimous consent
 Anthony Towns
 I want to talk about dealing with consensus changes without so-called consensus. I am using consensus in terms of the social aspect, not in terms of the software algorithm consensus for databases. &amp;ldquo;Consensus changes without consensus&amp;rdquo;. If you don&amp;rsquo;t consensus on consensus, then some people are going to follow one chain and another another chain.
@@ -67,10 +67,10 @@ If you have unanimous consensus, then new upgrades work just fine.</description>
     
     <item>
       <title>Dan Boneh</title>
-      <link>//btctranscripts.com/grincon/2019/dan-boneh/</link>
+      <link>https://btctranscripts.com/grincon/2019/dan-boneh/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/grincon/2019/dan-boneh/</guid>
+      <guid>https://btctranscripts.com/grincon/2019/dan-boneh/</guid>
       <description>Dan Boneh fireside chat
 Taariq Lewis
 TL: I was one of the founders of SF Bitcoin Devs with aantonop. I am also the co-founder of a company called Promise. We sponsor protocols in privacy as well as mimblewimble. If you are mining or actively looking to mine in grin, please say hello to me because we&amp;rsquo;re connected with a lot of mining companies and hosting companies that are looking to host miners very cheaply.</description>
@@ -78,10 +78,10 @@ TL: I was one of the founders of SF Bitcoin Devs with aantonop. I am also the co
     
     <item>
       <title>Dandelion</title>
-      <link>//btctranscripts.com/building-on-bitcoin/2018/dandelion/</link>
+      <link>https://btctranscripts.com/building-on-bitcoin/2018/dandelion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/building-on-bitcoin/2018/dandelion/</guid>
+      <guid>https://btctranscripts.com/building-on-bitcoin/2018/dandelion/</guid>
       <description>Dandelion: Privacy-preserving transaction propagation in bitcoin&amp;rsquo;s p2p network
 Giulia Fanti
 https://twitter.com/kanzure/status/1014196927062249472
@@ -91,10 +91,10 @@ Bitcoin p2p layer I want to give a brief overview of the p2p layer. Users in bit
     
     <item>
       <title>Flyclient Super Light Clients For Cryptocurrencies</title>
-      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/flyclient-super-light-clients-for-cryptocurrencies/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/stanford-2017/flyclient-super-light-clients-for-cryptocurrencies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/flyclient-super-light-clients-for-cryptocurrencies/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/stanford-2017/flyclient-super-light-clients-for-cryptocurrencies/</guid>
       <description>Flyclient Super light client for cryptocurrencies
 Benedikt Buenz, Mahdi Zamani
 buenz@cs.stanford.edu
@@ -104,10 +104,10 @@ As you know, the blockchain is a chain because each block connects to the previo
     
     <item>
       <title>Fraud Proofs</title>
-      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/fraud-proofs/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tokyo-2018/fraud-proofs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/fraud-proofs/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tokyo-2018/fraud-proofs/</guid>
       <description>Improving SPV client validation and security with fraud proofs
 Mustafa Al-Bassam (University College London)
 paper: https://arxiv.org/pdf/1809.09044.pdf
@@ -118,10 +118,10 @@ Motivations There&amp;rsquo;s a large tradeoff between blockchain decentralizati
     
     <item>
       <title>Fraud Proofs Petertodd</title>
-      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/fraud-proofs-petertodd/</link>
+      <link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/fraud-proofs-petertodd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/fraud-proofs-petertodd/</guid>
+      <guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/fraud-proofs-petertodd/</guid>
       <description>Fraud proofs
 petertodd
 https://www.youtube.com/watch?v=UVuUZm4l-ss&amp;amp;t=4h29m10s
@@ -131,10 +131,10 @@ What&amp;rsquo;s the problem we are trying to solve?</description>
     
     <item>
       <title>Ghostdag</title>
-      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/ghostdag/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tokyo-2018/ghostdag/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/ghostdag/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tokyo-2018/ghostdag/</guid>
       <description>The GHOSTDAG protocol
 Yonatan Sompolinsky and Aviv Zohar (The Hebrew University of Jerusalem)
 paper: https://eprint.iacr.org/2018/104.pdf
@@ -143,10 +143,10 @@ Introduction This is joint work with Yonatan. I am going to talk about a DAG-bas
     
     <item>
       <title>Jihan Wu Google Tech Talk (2016)</title>
-      <link>//btctranscripts.com/bitcoin-developers-miners-meeting-2016/jihan-wu-google-tech-talk/</link>
+      <link>https://btctranscripts.com/bitcoin-developers-miners-meeting-2016/jihan-wu-google-tech-talk/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-developers-miners-meeting-2016/jihan-wu-google-tech-talk/</guid>
+      <guid>https://btctranscripts.com/bitcoin-developers-miners-meeting-2016/jihan-wu-google-tech-talk/</guid>
       <description>Jihan Wu
 Bitcoin
 Google Tech Talk
@@ -155,10 +155,10 @@ Okay so maybe we will start. Thank you for coming. We have about 25 folks here f
     
     <item>
       <title>Light Clients During 2017 Interfork Period</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2017/light-clients-during-2017-interfork-period/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2017/light-clients-during-2017-interfork-period/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2017/light-clients-during-2017-interfork-period/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2017/light-clients-during-2017-interfork-period/</guid>
       <description>Light clients during the 2017 interfork period
 Thomas Voegtlin
 video: https://www.youtube.com/watch?v=eCE2OzKIab8&amp;amp;t=5h9m
@@ -170,10 +170,10 @@ So we have segwit and we are very happy about that.</description>
     
     <item>
       <title>Matt Corallo Sidechains</title>
-      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2015/matt-corallo-sidechains/</link>
+      <link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2015/matt-corallo-sidechains/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2015/matt-corallo-sidechains/</guid>
+      <guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2015/matt-corallo-sidechains/</guid>
       <description>Matt Corallo (BlueMatt)
 Sidechains, Blockstream
 One second. Technical difficulties. Okay, sorry about that. Okay. Hi. I am Matt or BlueMatt for those of you know me. I swear it&amp;rsquo;s not related to my hair. Nobody believes me.
@@ -182,10 +182,10 @@ I got into Bitcoin three or four years ago because I was interested in the progr
     
     <item>
       <title>Measuring Network Maximum Sustained Transaction Throughput</title>
-      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/measuring-network-maximum-sustained-transaction-throughput/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/stanford-2017/measuring-network-maximum-sustained-transaction-throughput/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/measuring-network-maximum-sustained-transaction-throughput/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/stanford-2017/measuring-network-maximum-sustained-transaction-throughput/</guid>
       <description>Measuring maximum sustained transaction throughput on a global network of Bitcoin nodes
 Andrew Stone, Bitcoin Unlimited
 We are 25 minutes behind schedule.
@@ -194,10 +194,10 @@ We have the rest of the team wathcing remotely. I think the motivation for this 
     
     <item>
       <title>Pindar Wong</title>
-      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/pindar-wong/</link>
+      <link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/pindar-wong/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/pindar-wong/</guid>
+      <guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/pindar-wong/</guid>
       <description>Pindar Wong
 Forked to Death: What Internet governance can learn from Bitcoin
 So, the last talk today is going to be from Pindar Wong. He&amp;rsquo;s been involved with Internet in Hong Kong. He also helped organize the Scaling Bitcoin workshops. It&amp;rsquo;s my pleasure to have him speaking today.
@@ -206,10 +206,10 @@ Okay. Thank you very much for staying until the bitter end. My topic today is fo
     
     <item>
       <title>Playing With Fire Adjusting Bitcoin Block Subsidy</title>
-      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/playing-with-fire-adjusting-bitcoin-block-subsidy/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tokyo-2018/playing-with-fire-adjusting-bitcoin-block-subsidy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/playing-with-fire-adjusting-bitcoin-block-subsidy/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tokyo-2018/playing-with-fire-adjusting-bitcoin-block-subsidy/</guid>
       <description>Playing with fire: Adjusting bitcoin&amp;rsquo;s block subsidy
 Anthony Towns (ajtowns)
 slides: https://github.com/ajtowns/sc-btc-2018
@@ -219,10 +219,10 @@ Introduction First an apology about the title. I saw some comments on twitter af
     
     <item>
       <title>Privacy Preserving Smart Contracts</title>
-      <link>//btctranscripts.com/scalingbitcoin/montreal-2015/privacy-preserving-smart-contracts/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/montreal-2015/privacy-preserving-smart-contracts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/montreal-2015/privacy-preserving-smart-contracts/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/montreal-2015/privacy-preserving-smart-contracts/</guid>
       <description>Ranjit Kumaresan
 ranjit@csail.mit.edu
 http://people.csail.mit.edu/ranjit/
@@ -232,10 +232,10 @@ The point of this talk is off-chain transactions and secure computation. I will 
     
     <item>
       <title>Security Of Diminishing Block Subsidy</title>
-      <link>//btctranscripts.com/scalingbitcoin/montreal-2015/security-of-diminishing-block-subsidy/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/montreal-2015/security-of-diminishing-block-subsidy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/montreal-2015/security-of-diminishing-block-subsidy/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/montreal-2015/security-of-diminishing-block-subsidy/</guid>
       <description>Miles Carlsten
 Harry Kalodner
 Arvind Narayanan
@@ -245,10 +245,10 @@ Are minting rewards and transaction fees the same? Transaction fees are time-dep
     
     <item>
       <title>Why Block Sizes Should Not Be Too Big</title>
-      <link>//btctranscripts.com/magicalcryptoconference/2019/why-block-sizes-should-not-be-too-big/</link>
+      <link>https://btctranscripts.com/magicalcryptoconference/2019/why-block-sizes-should-not-be-too-big/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/magicalcryptoconference/2019/why-block-sizes-should-not-be-too-big/</guid>
+      <guid>https://btctranscripts.com/magicalcryptoconference/2019/why-block-sizes-should-not-be-too-big/</guid>
       <description>Briefly, why block sizes shouldn&amp;rsquo;t be too big
 Luke Dashjr
 slides: https://luke.dashjr.org/tmp/code/block-sizes-mcc.pdf

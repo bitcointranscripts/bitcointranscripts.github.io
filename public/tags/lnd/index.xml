@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>lnd on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/tags/lnd/</link>
+    <link>https://btctranscripts.com/tags/lnd/</link>
     <description>Recent content in lnd on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/tags/lnd/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/tags/lnd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Alex Bosworth Building Lightning Applications (2018-10-22)</title>
-      <link>//btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-building-lightning-applications/</link>
+      <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-building-lightning-applications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-building-lightning-applications/</guid>
+      <guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-building-lightning-applications/</guid>
       <description>Alex Bosworth
 Building Lightning Applications
 Video: https://www.youtube.com/watch?v=JhRIWc9zPjA
@@ -23,10 +23,10 @@ Design Philosophy So what is the big idea behind lnd? What are we thinking about
     
     <item>
       <title>Christian Decker - C-Lightning Questions (2019-09-04)</title>
-      <link>//btctranscripts.com/blockstream-webinars/2019-09-04-christian-decker-c-lightning-questions/</link>
+      <link>https://btctranscripts.com/blockstream-webinars/2019-09-04-christian-decker-c-lightning-questions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/blockstream-webinars/2019-09-04-christian-decker-c-lightning-questions/</guid>
+      <guid>https://btctranscripts.com/blockstream-webinars/2019-09-04-christian-decker-c-lightning-questions/</guid>
       <description>Christian Decker
 c-lightning Q and A session
 Video: https://www.youtube.com/watch?v=r7Un8FZYlS4&amp;amp;list=PLseHpvCI1BjAfUx8zjJXadlBh_eKV9zJi&amp;amp;index=8
@@ -38,10 +38,10 @@ A - It absolutely is.</description>
     
     <item>
       <title>Conner Fromknecht Lnd 0.6 Beta (2019-05-02)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2019-05-02-conner-fromknecht-lnd-0.6-beta/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2019-05-02-conner-fromknecht-lnd-0.6-beta/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2019-05-02-conner-fromknecht-lnd-0.6-beta/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2019-05-02-conner-fromknecht-lnd-0.6-beta/</guid>
       <description>Conner Fromknecht
 SF Lightning Devs
 LND 0.6 Beta Deep Dive
@@ -51,10 +51,10 @@ Intro lnd 0.6 was about seven months in the making. There’s more things that w
     
     <item>
       <title>Conner Fromknecht Watchtowers (2019-04-06)</title>
-      <link>//btctranscripts.com/boltathon/2019-04-06-conner-fromknecht-watchtowers/</link>
+      <link>https://btctranscripts.com/boltathon/2019-04-06-conner-fromknecht-watchtowers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/boltathon/2019-04-06-conner-fromknecht-watchtowers/</guid>
+      <guid>https://btctranscripts.com/boltathon/2019-04-06-conner-fromknecht-watchtowers/</guid>
       <description>Conner Fromknecht
 Architecture of LND Watchtowers
 Video: https://www.youtube.com/watch?v=2tyr05tLF4g&amp;amp;list=PLC_AgDAr0m6QhwqPDrqMfjX64oHGmwDMk&amp;amp;index=4
@@ -65,10 +65,10 @@ Intro Pretty excited today to speak on the topic of watchtowers. It is something
     
     <item>
       <title>Joost Jager Hodl Invoices (2019-06-13)</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2019/2019-06-13-joost-jager-hodl-invoices/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/2019-06-13-joost-jager-hodl-invoices/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2019/2019-06-13-joost-jager-hodl-invoices/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/2019-06-13-joost-jager-hodl-invoices/</guid>
       <description>Joost Jager
 Hodl Invoices (Breaking Bitcoin training session)
 Video: https://www.youtube.com/watch?v=jOEq9PvN-7A
@@ -78,10 +78,10 @@ Intro My name is Joost, Michael introduced me already. I’ve been working with 
     
     <item>
       <title>Laolu Joost Oliver Lnd0.10 (2020-04-18)</title>
-      <link>//btctranscripts.com/vr-bitcoin/2020-04-18-laolu-joost-oliver-lnd0.10/</link>
+      <link>https://btctranscripts.com/vr-bitcoin/2020-04-18-laolu-joost-oliver-lnd0.10/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/vr-bitcoin/2020-04-18-laolu-joost-oliver-lnd0.10/</guid>
+      <guid>https://btctranscripts.com/vr-bitcoin/2020-04-18-laolu-joost-oliver-lnd0.10/</guid>
       <description>Name: Laolu Osuntokun, Joost Jager and Oliver Gugger
 Topic: lnd v0.10
 Location: Virtual Reality (VR Bitcoin)
@@ -92,10 +92,10 @@ Intro (Laolu Osuntokun) Thanks everyone for coming. This is my first time doing 
     
     <item>
       <title>Laolu Osuntokun Exploring Lnd0.4 (2018-04-20)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2018-04-20-laolu-osuntokun-exploring-lnd0.4/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2018-04-20-laolu-osuntokun-exploring-lnd0.4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2018-04-20-laolu-osuntokun-exploring-lnd0.4/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2018-04-20-laolu-osuntokun-exploring-lnd0.4/</guid>
       <description>Laolu Osuntokun and Conner Fromknecht
 Exploring lnd 0.4-beta
 Video: https://www.youtube.com/watch?v=LXY0L8eeG3k
@@ -105,10 +105,10 @@ The Genesis of lnd First, the genesis of lnd. Here is the first commit of lnd. I
     
     <item>
       <title>Lightning Network Routing Security</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2019/lightning-network-routing-security/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/lightning-network-routing-security/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2019/lightning-network-routing-security/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/lightning-network-routing-security/</guid>
       <description>Security aspects of LN routing
 Joost Jager, Lightning Labs
 D146 D0F6 8939 4362 68FA 9A13 0E26 BB61 B76C 4D3A
@@ -118,10 +118,10 @@ Introduction Together with my colleagues I am building lnd. It&amp;rsquo;s one o
     
     <item>
       <title>Ln Present And Future Panel</title>
-      <link>//btctranscripts.com/magicalcryptoconference/2019/ln-present-and-future-panel/</link>
+      <link>https://btctranscripts.com/magicalcryptoconference/2019/ln-present-and-future-panel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/magicalcryptoconference/2019/ln-present-and-future-panel/</guid>
+      <guid>https://btctranscripts.com/magicalcryptoconference/2019/ln-present-and-future-panel/</guid>
       <description>Lightning network present &amp;amp; future panel
 Will O&amp;rsquo;Beirne, Lisa Neigut, Alex Bosworth, Leigh Cuen
 LC: Can everyone hear me now? Alright, alright.
@@ -132,10 +132,10 @@ WO: Sure, and I think Lisa can talk about c-lightning.</description>
     
     <item>
       <title>Pierre Rochard Excel In Lightning (2018-10-27)</title>
-      <link>//btctranscripts.com/lightning-hack-day/2018-10-27-pierre-rochard-excel-in-lightning/</link>
+      <link>https://btctranscripts.com/lightning-hack-day/2018-10-27-pierre-rochard-excel-in-lightning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/lightning-hack-day/2018-10-27-pierre-rochard-excel-in-lightning/</guid>
+      <guid>https://btctranscripts.com/lightning-hack-day/2018-10-27-pierre-rochard-excel-in-lightning/</guid>
       <description>Pierre Rochard
 Excel in Lightning - Lightning Hack Day NYC
 Video: https://www.youtube.com/watch?v=CWIskx9KmAg&amp;amp;t=0s&amp;amp;list=PLYLOctWdUBtYBle_aU4WWJJaTekm8bhct&amp;amp;index=5
@@ -144,10 +144,10 @@ Demo I want to present a project I’ve been hacking on for the past month which
     
     <item>
       <title>Pierre Rochard Lightning Excel Plugin (2018-10-26)</title>
-      <link>//btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-26-pierre-rochard-lightning-excel-plugin/</link>
+      <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-26-pierre-rochard-lightning-excel-plugin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-26-pierre-rochard-lightning-excel-plugin/</guid>
+      <guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-26-pierre-rochard-lightning-excel-plugin/</guid>
       <description>Pierre Rochard
 Lightning Excel Plugin
 Video: https://www.youtube.com/watch?v=AXeUZrS-8mE&amp;amp;t=0s&amp;amp;list=PLpLH33TRghT2jmuP9YQRo-e8gk969Q2F_&amp;amp;index=10

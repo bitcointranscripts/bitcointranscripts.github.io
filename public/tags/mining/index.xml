@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>mining on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/tags/mining/</link>
+    <link>https://btctranscripts.com/tags/mining/</link>
     <description>Recent content in mining on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/tags/mining/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/tags/mining/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Asics</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2019/asics/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2019/asics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/asics/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2019/asics/</guid>
       <description>ASIC design for mining
 David Vorick
 https://twitter.com/kanzure/status/1091056727464697856
@@ -20,10 +20,10 @@ Introduction My name is David Vorick. I am lead developer of Sia, a decentralize
     
     <item>
       <title>Bitcoin Mining And Trustlessness</title>
-      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2017/bitcoin-mining-and-trustlessness/</link>
+      <link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2017/bitcoin-mining-and-trustlessness/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2017/bitcoin-mining-and-trustlessness/</guid>
+      <guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2017/bitcoin-mining-and-trustlessness/</guid>
       <description>Bitcoin mining and security models
 Matt Corallo
 2017-03-04
@@ -34,10 +34,10 @@ Yes, something like that. As mentioned, I&amp;rsquo;ve been contributing to Bitc
     
     <item>
       <title>Bitcoin Protocol Development Panel</title>
-      <link>//btctranscripts.com/magicalcryptoconference/2019/bitcoin-protocol-development-panel/</link>
+      <link>https://btctranscripts.com/magicalcryptoconference/2019/bitcoin-protocol-development-panel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/magicalcryptoconference/2019/bitcoin-protocol-development-panel/</guid>
+      <guid>https://btctranscripts.com/magicalcryptoconference/2019/bitcoin-protocol-development-panel/</guid>
       <description>Bitcoin protocol development panel
 Eric Lombrozo, Matt Corallo, John Newbery, Luke Dashjr, Katherine Wu
 KW: We have some wonderful panelists today. Let&amp;rsquo;s kick it off. Let&amp;rsquo;s start with Eric. Who are you and what role do you play in bitcoin development?
@@ -46,10 +46,10 @@ EL: I got into bitcoin in 2011. I had my own network stack. I almost had a full 
     
     <item>
       <title>Bosminer</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/bosminer/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/bosminer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/bosminer/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/bosminer/</guid>
       <description>Challenges of developing Bosminer from scratch in Rust
 Jan Capek (janbraiins)
 https://braiins-os.org/
@@ -61,10 +61,10 @@ cgminer cgminer used to be a CPU miner that has been functionally removed a long
     
     <item>
       <title>Breaking The Chain</title>
-      <link>//btctranscripts.com/scalingbitcoin/milan-2016/breaking-the-chain/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/milan-2016/breaking-the-chain/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/milan-2016/breaking-the-chain/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/milan-2016/breaking-the-chain/</guid>
       <description>Breaking the chain
 https://twitter.com/kanzure/status/785144266683195392
 http://dpaste.com/1ZYW028
@@ -76,10 +76,10 @@ Inclusivitiy So it seems like we have two big topics here, one is braiding and o
     
     <item>
       <title>Coinscope Andrew Miller</title>
-      <link>//btctranscripts.com/scalingbitcoin/montreal-2015/coinscope-andrew-miller/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/montreal-2015/coinscope-andrew-miller/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/montreal-2015/coinscope-andrew-miller/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/montreal-2015/coinscope-andrew-miller/</guid>
       <description>Andrew Miller
 Dave Levin
 coinscope
@@ -89,10 +89,10 @@ I am going to talk about a pair of tools, one is a simulator and another one is 
     
     <item>
       <title>Dan Boneh</title>
-      <link>//btctranscripts.com/grincon/2019/dan-boneh/</link>
+      <link>https://btctranscripts.com/grincon/2019/dan-boneh/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/grincon/2019/dan-boneh/</guid>
+      <guid>https://btctranscripts.com/grincon/2019/dan-boneh/</guid>
       <description>Dan Boneh fireside chat
 Taariq Lewis
 TL: I was one of the founders of SF Bitcoin Devs with aantonop. I am also the co-founder of a company called Promise. We sponsor protocols in privacy as well as mimblewimble. If you are mining or actively looking to mine in grin, please say hello to me because we&amp;rsquo;re connected with a lot of mining companies and hosting companies that are looking to host miners very cheaply.</description>
@@ -100,10 +100,10 @@ TL: I was one of the founders of SF Bitcoin Devs with aantonop. I am also the co
     
     <item>
       <title>Decentralization Through Game Theory</title>
-      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2015/decentralization-through-game-theory/</link>
+      <link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2015/decentralization-through-game-theory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2015/decentralization-through-game-theory/</guid>
+      <guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2015/decentralization-through-game-theory/</guid>
       <description>Andreas Antonopoulos
 Thank you Charlie, let&amp;rsquo;s have another round of applause. Up next, we have Andreas Antonopoulos.
 So I may make this a bit difficult for the camera because I hate standing behind the podium. Welcome everyone. How are you, thank you for coming. How many people in this audience own Bitcoin?
@@ -112,10 +112,10 @@ So I usually start my question with that. And most audiences that gives me an ac
     
     <item>
       <title>Fungibility And Scalability</title>
-      <link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/fungibility-and-scalability/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/fungibility-and-scalability/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/hong-kong-2015/fungibility-and-scalability/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/fungibility-and-scalability/</guid>
       <description>adam3us (Adam Back)
 slides: https://scalingbitcoin.org/hongkong2015/presentations/DAY1/1_overviews_2_back.pdf
 video: https://youtube.com/watch?v=aQ1--w4uEMM&amp;amp;t=2443
@@ -125,10 +125,10 @@ Bitcoin has fungibility without privacy. Previous electronic cash systems had fu
     
     <item>
       <title>How To Mine Bitcoin Profitably</title>
-      <link>//btctranscripts.com/scalingbitcoin/montreal-2015/how-to-mine-bitcoin-profitably/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/montreal-2015/how-to-mine-bitcoin-profitably/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/montreal-2015/how-to-mine-bitcoin-profitably/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/montreal-2015/how-to-mine-bitcoin-profitably/</guid>
       <description>How to mine bitcoin profitability
 Minting money with megawatts
 Thank you for the introduction. We thought bitcoin was really a good idea for an unstable and inefficient financial world. I am going to dive and talk about this presentation which is how to mine bitcoin profitably. This is a short talk, it&amp;rsquo;s supposed to be a short talk, so let&amp;rsquo;s get straight to the crux of the matter.
@@ -137,10 +137,10 @@ Bitcoin mining is the lowest part of the transaction stack.</description>
     
     <item>
       <title>Jihan Wu Google Tech Talk (2016)</title>
-      <link>//btctranscripts.com/bitcoin-developers-miners-meeting-2016/jihan-wu-google-tech-talk/</link>
+      <link>https://btctranscripts.com/bitcoin-developers-miners-meeting-2016/jihan-wu-google-tech-talk/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-developers-miners-meeting-2016/jihan-wu-google-tech-talk/</guid>
+      <guid>https://btctranscripts.com/bitcoin-developers-miners-meeting-2016/jihan-wu-google-tech-talk/</guid>
       <description>Jihan Wu
 Bitcoin
 Google Tech Talk
@@ -149,10 +149,10 @@ Okay so maybe we will start. Thank you for coming. We have about 25 folks here f
     
     <item>
       <title>Jute Braiding</title>
-      <link>//btctranscripts.com/scalingbitcoin/milan-2016/jute-braiding/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/milan-2016/jute-braiding/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/milan-2016/jute-braiding/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/milan-2016/jute-braiding/</guid>
       <description>Jute: New braiding techniques to achieve significant scaling gains
 David Vorick (taek)
 https://twitter.com/kanzure/status/785116246257856512
@@ -162,20 +162,20 @@ Introduction Okay, hello. My name is David Vorick. I have been with bitcoin sinc
     
     <item>
       <title>Lehnberg</title>
-      <link>//btctranscripts.com/grincon/2019/lehnberg/</link>
+      <link>https://btctranscripts.com/grincon/2019/lehnberg/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/grincon/2019/lehnberg/</guid>
+      <guid>https://btctranscripts.com/grincon/2019/lehnberg/</guid>
       <description>daniel/lehberg
 Mimblewimble pros and cons There are no amounts, no addresses, and improved scaling. But one of hte problems is that it requires interactive transactions. But this is a pro because of this you have to participate in mining. You can send money to addresses without having to accept the money. Just as you saw here, you can identify the blue box as an output or an input. You could build up a transaction graph.</description>
     </item>
     
     <item>
       <title>Marco Santori Delaware Initiative</title>
-      <link>//btctranscripts.com/coindesk-consensus-2016/marco-santori-delaware-initiative/</link>
+      <link>https://btctranscripts.com/coindesk-consensus-2016/marco-santori-delaware-initiative/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/coindesk-consensus-2016/marco-santori-delaware-initiative/</guid>
+      <guid>https://btctranscripts.com/coindesk-consensus-2016/marco-santori-delaware-initiative/</guid>
       <description>Preliminary notes:
 Contact me- https://twitter.com/kanzure
 Marco Santori
@@ -185,10 +185,10 @@ It&amp;rsquo;s good to see so many friendly audiences in the audience. I am at P
     
     <item>
       <title>Matt Corallo Betterhash (2019-02-05)</title>
-      <link>//btctranscripts.com/london-bitcoin-devs/2019-02-05-matt-corallo-betterhash/</link>
+      <link>https://btctranscripts.com/london-bitcoin-devs/2019-02-05-matt-corallo-betterhash/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/london-bitcoin-devs/2019-02-05-matt-corallo-betterhash/</guid>
+      <guid>https://btctranscripts.com/london-bitcoin-devs/2019-02-05-matt-corallo-betterhash/</guid>
       <description>Name: Matt Corallo
 Topic: Better Hashing through BetterHash
 Location: London Bitcoin Devs
@@ -201,10 +201,10 @@ Intro I am going to talk about BetterHash this evening. If you are coming to Adv
     
     <item>
       <title>Matt Corallo Compact Blocks Fibre (2020-03-12)</title>
-      <link>//btctranscripts.com/chaincode-labs/chaincode-podcast/2020-03-12-matt-corallo-compact-blocks-fibre/</link>
+      <link>https://btctranscripts.com/chaincode-labs/chaincode-podcast/2020-03-12-matt-corallo-compact-blocks-fibre/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/chaincode-labs/chaincode-podcast/2020-03-12-matt-corallo-compact-blocks-fibre/</guid>
+      <guid>https://btctranscripts.com/chaincode-labs/chaincode-podcast/2020-03-12-matt-corallo-compact-blocks-fibre/</guid>
       <description>Name: Matt Corallo
 Topic: Compact Blocks and FIBRE
 Location: Chaincode Labs Podcast (Episode 6)
@@ -220,10 +220,10 @@ AJ: You have a lot of contributions over the years so there is lots to talk abou
     
     <item>
       <title>Mechanism Design</title>
-      <link>//btctranscripts.com/cryptoeconomic-systems/2019/mechanism-design/</link>
+      <link>https://btctranscripts.com/cryptoeconomic-systems/2019/mechanism-design/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/cryptoeconomic-systems/2019/mechanism-design/</guid>
+      <guid>https://btctranscripts.com/cryptoeconomic-systems/2019/mechanism-design/</guid>
       <description>&amp;ndash; Disclaimer &amp;ndash;
   These are unpaid transcriptions, performed in real-time and in-person during the actual source presentation. Due to personal time constraints they are usually not reviewed against the source material once published. Errors are possible. If the original author/speaker or anyone else finds errors of substance, please email me at kanzure@gmail.com for corrections.
   I sometimes add annotations to the transcription text. These will always be denoted by a standard editor&amp;rsquo;s note in parenthesis brackets ((like this)), or in a numbered footnote.</description>
@@ -231,10 +231,10 @@ AJ: You have a lot of contributions over the years so there is lots to talk abou
     
     <item>
       <title>Mempool Analysis Simulation</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2019/mempool-analysis-simulation/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/mempool-analysis-simulation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2019/mempool-analysis-simulation/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/mempool-analysis-simulation/</guid>
       <description>Mempool analysis and simulation
 kallewoof
 https://twitter.com/kanzure/status/1137342023063744512
@@ -243,10 +243,10 @@ Introduction Fun fact: I don&amp;rsquo;t think anyone knows this fact, but antpo
     
     <item>
       <title>On The Security And Performance Of Proof Of Work Blockchains</title>
-      <link>//btctranscripts.com/scalingbitcoin/milan-2016/on-the-security-and-performance-of-proof-of-work-blockchains/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/milan-2016/on-the-security-and-performance-of-proof-of-work-blockchains/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/milan-2016/on-the-security-and-performance-of-proof-of-work-blockchains/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/milan-2016/on-the-security-and-performance-of-proof-of-work-blockchains/</guid>
       <description>On the security and performance of proof-of-work blockchains
 Arthur Gervais
 https://twitter.com/kanzure/status/785066988532068352
@@ -255,10 +255,10 @@ As most of you might know, in bitcoin and blockchains, the information is very i
     
     <item>
       <title>Prism</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/prism/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/prism/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/prism/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/prism/</guid>
       <description>Prism: Scaling bitcoin by 10,000x
 Lei Yang
 https://twitter.com/kanzure/status/1230634530110730241
@@ -269,29 +269,29 @@ Bitcoin performance We all know that bitcoin has good security, but in terms of 
     
     <item>
       <title>Relay Network</title>
-      <link>//btctranscripts.com/scalingbitcoin/montreal-2015/relay-network/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/montreal-2015/relay-network/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/montreal-2015/relay-network/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/montreal-2015/relay-network/</guid>
       <description>It was indicative of two issues. A lot of people were reducing their security model by not validating their bitcoin. It was potentially less secure. That&amp;rsquo;s not something that relay networks try to address. The big issue with the decreasing number of nodes, which the relay network doesn&amp;rsquo;t address, is that it reduces the resilience against attack. If there&amp;rsquo;s only 100 nodes, there&amp;rsquo;s really only some 100 VPses that you have to knock offline before the bitcoin network stops working.</description>
     </item>
     
     <item>
       <title>Security And Usability</title>
-      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2015/security-and-usability/</link>
+      <link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2015/security-and-usability/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2015/security-and-usability/</guid>
+      <guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2015/security-and-usability/</guid>
       <description>Melanie Shapiro Alan Reiner Kristov Atlas Elizabeth Stark (moderator) and maybe Melanie Shapiro? malani?  Security and usability.
 Elizabeth: I think this is a highly relevant discussion. I talked a bit about regulation. Regulation might be the number threat, but security might be the number two threat. I am excited to have a panel of leaders in this space who are actively building in this ecosystem. I am going to ask each to do a quick intro.</description>
     </item>
     
     <item>
       <title>Security Attacks Decentralized Mining Pools</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2019/security-attacks-decentralized-mining-pools/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/security-attacks-decentralized-mining-pools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2019/security-attacks-decentralized-mining-pools/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/security-attacks-decentralized-mining-pools/</guid>
       <description>Security and attacks on decentralized mining pools
 Alexei Zamyatin
 https://twitter.com/kanzure/status/1137373752038240262
@@ -301,10 +301,10 @@ Motivation The motivation behind this talk is straightforward. I think we can al
     
     <item>
       <title>Security Of Diminishing Block Subsidy</title>
-      <link>//btctranscripts.com/scalingbitcoin/montreal-2015/security-of-diminishing-block-subsidy/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/montreal-2015/security-of-diminishing-block-subsidy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/montreal-2015/security-of-diminishing-block-subsidy/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/montreal-2015/security-of-diminishing-block-subsidy/</guid>
       <description>Miles Carlsten
 Harry Kalodner
 Arvind Narayanan
@@ -314,10 +314,10 @@ Are minting rewards and transaction fees the same? Transaction fees are time-dep
     
     <item>
       <title>Selfish Mining</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2019/selfish-mining/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/selfish-mining/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2019/selfish-mining/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/selfish-mining/</guid>
       <description>Selfish mining and Dyck words
 Ricardo Perez-Marco
 Introduction I am going to talk about our recent work on selfish mining. I am going to explain the profitability model, the different mathematical models that are used to analyze selfish mining with their properties.
@@ -326,10 +326,10 @@ Bibliography  On profitability of selfish mining On profitability of stubborn mi
     
     <item>
       <title>Texas Energy Market</title>
-      <link>//btctranscripts.com/dallas-bitcoin-symposium/texas-energy-market/</link>
+      <link>https://btctranscripts.com/dallas-bitcoin-symposium/texas-energy-market/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/dallas-bitcoin-symposium/texas-energy-market/</guid>
+      <guid>https://btctranscripts.com/dallas-bitcoin-symposium/texas-energy-market/</guid>
       <description>Gideon Powell
 Bitcoin mining
 Bitcoin has been one of the most interesting rides of my life. I come from an oil/gas family. I lived in Midland after college. I became very interested in monetary policy, inflation and its effects on the world. Through that, really discovered bitcoin and what it is capable of doing. I come from the energy perspective and Austrian school of economics.
@@ -338,10 +338,10 @@ Mining This is our first large scale project&amp;ndash; that&amp;rsquo;s a 100 M
     
     <item>
       <title>There Can Only Be One</title>
-      <link>//btctranscripts.com/bit-block-boom/2019/there-can-only-be-one/</link>
+      <link>https://btctranscripts.com/bit-block-boom/2019/there-can-only-be-one/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bit-block-boom/2019/there-can-only-be-one/</guid>
+      <guid>https://btctranscripts.com/bit-block-boom/2019/there-can-only-be-one/</guid>
       <description>Bitcoin: There can only be one
 Tone Vays
 https://twitter.com/kanzure/status/1162742007460192256
@@ -350,10 +350,10 @@ Introduction I am basically going to talk about why bitcoin will basically eat a
     
     <item>
       <title>Trust And Blockchain Marketplaces</title>
-      <link>//btctranscripts.com/cryptoeconomic-systems/2019/trust-and-blockchain-marketplaces/</link>
+      <link>https://btctranscripts.com/cryptoeconomic-systems/2019/trust-and-blockchain-marketplaces/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/cryptoeconomic-systems/2019/trust-and-blockchain-marketplaces/</guid>
+      <guid>https://btctranscripts.com/cryptoeconomic-systems/2019/trust-and-blockchain-marketplaces/</guid>
       <description>David Vorick
 Introduction I founded Sia, a decentralized storage platform started in 2014. Today, Sia is the only decentralized storage platform out there. I also founded Obelisk which is a mining equipment manufacturing company.
 Mining supply chains are centralized Basically all the mining chips are coming out of TSMC or Samsung. For the longest time it was TSMC but for some reason Samsung is at the forefront for this cycle but I would expect them to fade out in the next cycle.</description>
@@ -361,10 +361,10 @@ Mining supply chains are centralized Basically all the mining chips are coming o
     
     <item>
       <title>Validation Costs</title>
-      <link>//btctranscripts.com/scalingbitcoin/montreal-2015/validation-costs/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/montreal-2015/validation-costs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/montreal-2015/validation-costs/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/montreal-2015/validation-costs/</guid>
       <description>Validation costs and incentives
 Eric Lombrozo (CodeShark)
 How many of you have read the Satoshi whitepaper? It&amp;rsquo;s a good paper. As we have discovered, it has some serious limitations that we think can be fixed but they are serious challenges for scaling. Amongst these are, it was really built as a single code base which was meant to be run in its entirety. All machines were going to participate equally in this p2p network.</description>
@@ -372,10 +372,10 @@ How many of you have read the Satoshi whitepaper? It&amp;rsquo;s a good paper. A
     
     <item>
       <title>Why Miners Will Not Voluntarily Individually Produce Smaller Blocks</title>
-      <link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/why-miners-will-not-voluntarily-individually-produce-smaller-blocks/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/why-miners-will-not-voluntarily-individually-produce-smaller-blocks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/hong-kong-2015/why-miners-will-not-voluntarily-individually-produce-smaller-blocks/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/why-miners-will-not-voluntarily-individually-produce-smaller-blocks/</guid>
       <description>Jonathan Bier
 slides: https://scalingbitcoin.org/hongkong2015/presentations/DAY1/2_security_and_incentives_3_bier.pdf
 video: https://www.youtube.com/watch?v=ivgxcEOyWNs&amp;amp;t=1h30s

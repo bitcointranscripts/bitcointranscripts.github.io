@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Stanford (2017) on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/scalingbitcoin/stanford-2017/</link>
+    <link>https://btctranscripts.com/scalingbitcoin/stanford-2017/</link>
     <description>Recent content in Stanford (2017) on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/scalingbitcoin/stanford-2017/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/scalingbitcoin/stanford-2017/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Atomically Trading With Roger Gambling On The Success Of A Hard Fork</title>
-      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/atomically-trading-with-roger-gambling-on-the-success-of-a-hard-fork/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/stanford-2017/atomically-trading-with-roger-gambling-on-the-success-of-a-hard-fork/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/atomically-trading-with-roger-gambling-on-the-success-of-a-hard-fork/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/stanford-2017/atomically-trading-with-roger-gambling-on-the-success-of-a-hard-fork/</guid>
       <description>Atomically Trading with Roger: Gambling on the success of a hard-fork
 paper: http://homepages.cs.ncl.ac.uk/patrick.mc-corry/atomically-trading-roger.pdf
 Ethan Heilman
@@ -21,10 +21,10 @@ I will only be talking about some of the information in the paper.</description>
     
     <item>
       <title>Bitcoin Script V2.0 And Strengthened Payment Channels</title>
-      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/bitcoin-script-v2.0-and-strengthened-payment-channels/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/stanford-2017/bitcoin-script-v2.0-and-strengthened-payment-channels/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/bitcoin-script-v2.0-and-strengthened-payment-channels/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/stanford-2017/bitcoin-script-v2.0-and-strengthened-payment-channels/</guid>
       <description>Bitcoin script v2.0
 roasbeef
 jl2012
@@ -33,10 +33,10 @@ This is a brief history of bitcoin script evolution. Since bitcoin was active in
     
     <item>
       <title>Blocksci Platform</title>
-      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/blocksci-platform/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/stanford-2017/blocksci-platform/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/blocksci-platform/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/stanford-2017/blocksci-platform/</guid>
       <description>BlockSci: a Platform for Blockchain Science and Exploration
 Harry Kalodner, Princeton University (Arvind Narayanan etc.)
 Alright well, my name is Harry Kalodner, I am a student at Princeton University and I am here to tell you about a tool I built alon with some colleagues at Princeton which could be used for analyzing the blockchain in different ways. So far most of the talks today have been constructive about new ways to use the blockchain and protocols to slightly modify bitcoin in roder to improve privacy or scaling.</description>
@@ -44,10 +44,10 @@ Alright well, my name is Harry Kalodner, I am a student at Princeton University 
     
     <item>
       <title>Bolt Anonymous Payment Channels For Decentralized Currencies</title>
-      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/bolt-anonymous-payment-channels-for-decentralized-currencies/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/stanford-2017/bolt-anonymous-payment-channels-for-decentralized-currencies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/bolt-anonymous-payment-channels-for-decentralized-currencies/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/stanford-2017/bolt-anonymous-payment-channels-for-decentralized-currencies/</guid>
       <description>Bolt: Anonymous Payment Channels for Decentralized Currencies
 paper: https://eprint.iacr.org/2016/701.pdf
 To make questions easier, we are going to have a mic on the isle. Please line up so that we can have questions quickly. Okay, now we have Ian Miers.
@@ -56,10 +56,10 @@ categories: [&amp;lsquo;conference&amp;rsquo;] tags: [&amp;lsquo;privacy&amp;rsq
     
     <item>
       <title>Changes Without Unanimous Consent</title>
-      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/changes-without-unanimous-consent/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/stanford-2017/changes-without-unanimous-consent/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/changes-without-unanimous-consent/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/stanford-2017/changes-without-unanimous-consent/</guid>
       <description>Changes without unanimous consent
 Anthony Towns
 I want to talk about dealing with consensus changes without so-called consensus. I am using consensus in terms of the social aspect, not in terms of the software algorithm consensus for databases. &amp;ldquo;Consensus changes without consensus&amp;rdquo;. If you don&amp;rsquo;t consensus on consensus, then some people are going to follow one chain and another another chain.
@@ -68,10 +68,10 @@ If you have unanimous consensus, then new upgrades work just fine.</description>
     
     <item>
       <title>Concurrency And Privacy With Payment Channel Networks</title>
-      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/concurrency-and-privacy-with-payment-channel-networks/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/stanford-2017/concurrency-and-privacy-with-payment-channel-networks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/concurrency-and-privacy-with-payment-channel-networks/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/stanford-2017/concurrency-and-privacy-with-payment-channel-networks/</guid>
       <description>Concurrency and Privacy with Payment-Channel Networks
 Pedro Moreno-Sanchez
 paper: https://eprint.iacr.org/2017/820.pdf
@@ -81,10 +81,10 @@ Bitcoin has scalability issues. That&amp;rsquo;s the main reason why we are here
     
     <item>
       <title>Discreet Log Contracts</title>
-      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/discreet-log-contracts/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/stanford-2017/discreet-log-contracts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/discreet-log-contracts/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/stanford-2017/discreet-log-contracts/</guid>
       <description>Discreet log contracts
 http://diyhpl.us/wiki/transcripts/discreet-log-contracts/
 https://www.youtube.com/watch?v=FU-rA5dkTHI
@@ -94,10 +94,10 @@ Hello everyone. I am going to give a talk about discreet log contracts. I am fro
     
     <item>
       <title>Flyclient Super Light Clients For Cryptocurrencies</title>
-      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/flyclient-super-light-clients-for-cryptocurrencies/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/stanford-2017/flyclient-super-light-clients-for-cryptocurrencies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/flyclient-super-light-clients-for-cryptocurrencies/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/stanford-2017/flyclient-super-light-clients-for-cryptocurrencies/</guid>
       <description>Flyclient Super light client for cryptocurrencies
 Benedikt Buenz, Mahdi Zamani
 buenz@cs.stanford.edu
@@ -107,10 +107,10 @@ As you know, the blockchain is a chain because each block connects to the previo
     
     <item>
       <title>Graphene Set Reconciliation</title>
-      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/graphene-set-reconciliation/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/stanford-2017/graphene-set-reconciliation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/graphene-set-reconciliation/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/stanford-2017/graphene-set-reconciliation/</guid>
       <description>Graphene and set reconciliation
 Brian N. Levine, College of Information and Computer Sciences, UMass Amherst
 This is joint work with some people I work with at UMass, including Gavin Andresen.
@@ -119,10 +119,10 @@ The problem I am going to focus on in this presentation is how to relay informat
     
     <item>
       <title>How To Charge Lightning</title>
-      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/how-to-charge-lightning/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/stanford-2017/how-to-charge-lightning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/how-to-charge-lightning/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/stanford-2017/how-to-charge-lightning/</guid>
       <description>How to charge Lightning
 Aviv Zohar
 Our next talk is getting into layer 2. Leaving hwat needs to done at th&amp;hellip;
@@ -131,10 +131,10 @@ I am going to start with maybe a simple beginning talking about a single channel
     
     <item>
       <title>Incentives Tradeoffs Transaction Selection In Dag Based Protocols</title>
-      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/incentives-tradeoffs-transaction-selection-in-dag-based-protocols/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/stanford-2017/incentives-tradeoffs-transaction-selection-in-dag-based-protocols/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/incentives-tradeoffs-transaction-selection-in-dag-based-protocols/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/stanford-2017/incentives-tradeoffs-transaction-selection-in-dag-based-protocols/</guid>
       <description>Incentives and Trade-offs in Transaction Selection in DAG-based Protocols
 Yonatan Sompolinsky (The Hebrew University)
 Commercial effort to implement DAG-based protocols. No ICO, it&amp;rsquo;s a regular company.
@@ -143,10 +143,10 @@ A little bit background of DAG-based protocols. The background to this work is s
     
     <item>
       <title>Intro</title>
-      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/intro/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/stanford-2017/intro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/intro/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/stanford-2017/intro/</guid>
       <description>Introduction Stanford 2017
 https://scalingbitcoin.org/
 https://scalingbitcoin.org/event/stanford2017
@@ -155,20 +155,20 @@ Sorry that we&amp;rsquo;re running a little bit late. My name is Anton Yemelyano
     
     <item>
       <title>Joi Ito</title>
-      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/joi-ito/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/stanford-2017/joi-ito/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/joi-ito/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/stanford-2017/joi-ito/</guid>
       <description>Joi Ito
 Welcome back to Scaling Bitcoin day 2. I am sure everyone went home and tried Ethan&amp;rsquo;s wagering setup yesterday. Today we are going to be covering topics like layer 2, fees, and consensus. To get us started today, we have a very special guest, Joi Ito, director of the MIT Media Lab, and he will be talking about parallels to the internet and ICOs and he will cover a lot of ground.</description>
     </item>
     
     <item>
       <title>Measuring Network Maximum Sustained Transaction Throughput</title>
-      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/measuring-network-maximum-sustained-transaction-throughput/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/stanford-2017/measuring-network-maximum-sustained-transaction-throughput/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/measuring-network-maximum-sustained-transaction-throughput/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/stanford-2017/measuring-network-maximum-sustained-transaction-throughput/</guid>
       <description>Measuring maximum sustained transaction throughput on a global network of Bitcoin nodes
 Andrew Stone, Bitcoin Unlimited
 We are 25 minutes behind schedule.
@@ -177,10 +177,10 @@ We have the rest of the team wathcing remotely. I think the motivation for this 
     
     <item>
       <title>Microchains</title>
-      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/microchains/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/stanford-2017/microchains/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/microchains/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/stanford-2017/microchains/</guid>
       <description>Microchains
 David Vorick
 https://twitter.com/kanzure/status/927257690685939712
@@ -190,10 +190,10 @@ A brief introduction&amp;hellip; my name is David Vorick. I have been studying b
     
     <item>
       <title>Optimizing Fee Estimation Via Mempool State</title>
-      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/optimizing-fee-estimation-via-mempool-state/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/stanford-2017/optimizing-fee-estimation-via-mempool-state/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/optimizing-fee-estimation-via-mempool-state/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/stanford-2017/optimizing-fee-estimation-via-mempool-state/</guid>
       <description>Optimizing fee estimation via the mempool state
 Karl-Johan Alm (DG Lab)
 I am a Bitcoin Core developer and I work at DG Lab. Today I would like to talk about fees. There&amp;rsquo;s this weird gap between&amp;ndash; there are two things going on. People complain about high fees. But people are confused about why Bitcoin Core is giving high fees but if you set fees manually you can get a much lower fee and get a transaction mined pretty fast.</description>
@@ -201,10 +201,10 @@ I am a Bitcoin Core developer and I work at DG Lab. Today I would like to talk a
     
     <item>
       <title>Redesigning Bitcoin Fee Market</title>
-      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/redesigning-bitcoin-fee-market/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/stanford-2017/redesigning-bitcoin-fee-market/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/redesigning-bitcoin-fee-market/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/stanford-2017/redesigning-bitcoin-fee-market/</guid>
       <description>Redesigning bitcoin&amp;rsquo;s fee market
 Or Sattath (The Hebrew University)
 https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-September/015093.html
@@ -217,10 +217,10 @@ Just a fast recap of how the current mechanism works. Each block has a size.</de
     
     <item>
       <title>State Of Cryptography</title>
-      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/state-of-cryptography/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/stanford-2017/state-of-cryptography/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/state-of-cryptography/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/stanford-2017/state-of-cryptography/</guid>
       <description>State of cryptography for blockchains beyond ECDSA and sha256
 Signatures and zero-knowledge proofs
 Benedikt Bunz, Stanford University
@@ -229,10 +229,10 @@ Am going to talk about cryptography relevant to blockchains. I&amp;rsquo;ll talk
     
     <item>
       <title>Using The Chain For What Chains Are Good For</title>
-      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/using-the-chain-for-what-chains-are-good-for/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/stanford-2017/using-the-chain-for-what-chains-are-good-for/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/using-the-chain-for-what-chains-are-good-for/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/stanford-2017/using-the-chain-for-what-chains-are-good-for/</guid>
       <description>Using the Chain for what Chains are Good For
 Andrew Poelstra (andytoshi)
 Video: https://www.youtube.com/watch?t=5757&amp;amp;v=3pd6xHjLbhs
@@ -241,10 +241,10 @@ I am Andrew Poelstra, a cryptographer at Blockstream. I am going to talk about s
     
     <item>
       <title>Valueshuffle Mixing Confidential Transactions</title>
-      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/valueshuffle-mixing-confidential-transactions/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/stanford-2017/valueshuffle-mixing-confidential-transactions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/valueshuffle-mixing-confidential-transactions/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/stanford-2017/valueshuffle-mixing-confidential-transactions/</guid>
       <description>valueshuffle: Mixing confidential transactions
 paper: https://eprint.iacr.org/2017/238.pdf
 Tim Ruffing
@@ -254,10 +254,10 @@ We have seen two talks now about putting privacy in layer two. But let&amp;rsquo
     
     <item>
       <title>Weak Signal Radio Communications For Bitcoin Network Resilience</title>
-      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/weak-signal-radio-communications-for-bitcoin-network-resilience/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/stanford-2017/weak-signal-radio-communications-for-bitcoin-network-resilience/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/weak-signal-radio-communications-for-bitcoin-network-resilience/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/stanford-2017/weak-signal-radio-communications-for-bitcoin-network-resilience/</guid>
       <description>Weak signal radio communications for bitcoin network resilience
 Nick Szabo
 What is weak-signal HF radio? These are called high frequency. That&amp;rsquo;s the official name for these frequencies. Short wave is for historical reasons is longer waves and much higher frequency compared to our wireless internet frequencies. The terminology is backwards. I&amp;rsquo;ll talk about the ionosphere and how we&amp;rsquo;re bouncing signals off of it. This is really long-range stuff. This is an old Voice of America broadcast station that broadcasted radio programs across the pacific.</description>

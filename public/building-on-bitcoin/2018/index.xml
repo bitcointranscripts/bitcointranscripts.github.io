@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Building On Bitcoin 2018 on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/building-on-bitcoin/2018/</link>
+    <link>https://btctranscripts.com/building-on-bitcoin/2018/</link>
     <description>Recent content in Building On Bitcoin 2018 on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/building-on-bitcoin/2018/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/building-on-bitcoin/2018/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Anonymous Bitcoin</title>
-      <link>//btctranscripts.com/building-on-bitcoin/2018/anonymous-bitcoin/</link>
+      <link>https://btctranscripts.com/building-on-bitcoin/2018/anonymous-bitcoin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/building-on-bitcoin/2018/anonymous-bitcoin/</guid>
+      <guid>https://btctranscripts.com/building-on-bitcoin/2018/anonymous-bitcoin/</guid>
       <description>Adam Ficzor (nopara73)
 Building on Bitcoin 2018
 Anonymous bitcoin
@@ -23,10 +23,10 @@ Today I want to present how I build on bitcoin. I have two goals with this prese
     
     <item>
       <title>Binary Transparency</title>
-      <link>//btctranscripts.com/building-on-bitcoin/2018/binary-transparency/</link>
+      <link>https://btctranscripts.com/building-on-bitcoin/2018/binary-transparency/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/building-on-bitcoin/2018/binary-transparency/</guid>
+      <guid>https://btctranscripts.com/building-on-bitcoin/2018/binary-transparency/</guid>
       <description>Contours for binary transparency
 Mustafa
 https://twitter.com/kanzure/status/1014167797205815297
@@ -35,10 +35,10 @@ I am going to talk about binary transparency. What is it? Let&amp;rsquo;s suppos
     
     <item>
       <title>Bitcoin Assets</title>
-      <link>//btctranscripts.com/building-on-bitcoin/2018/bitcoin-assets/</link>
+      <link>https://btctranscripts.com/building-on-bitcoin/2018/bitcoin-assets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/building-on-bitcoin/2018/bitcoin-assets/</guid>
+      <guid>https://btctranscripts.com/building-on-bitcoin/2018/bitcoin-assets/</guid>
       <description>Assets on bitcoin
 Giacomo Zucco
 Building on Bitcoin 2018
@@ -49,10 +49,10 @@ My talk today is about assets on bitcoin. The subtitlte is &amp;ldquo;Yes, ok, f
     
     <item>
       <title>Blind Signatures And Scriptless Scripts</title>
-      <link>//btctranscripts.com/building-on-bitcoin/2018/blind-signatures-and-scriptless-scripts/</link>
+      <link>https://btctranscripts.com/building-on-bitcoin/2018/blind-signatures-and-scriptless-scripts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/building-on-bitcoin/2018/blind-signatures-and-scriptless-scripts/</guid>
+      <guid>https://btctranscripts.com/building-on-bitcoin/2018/blind-signatures-and-scriptless-scripts/</guid>
       <description>Blind signatures in scriptless scripts
 Jonas Nick
 Building on Bitcoin 2018
@@ -64,10 +64,10 @@ Schnorr signature My assumption is not that you will completely understand Schno
     
     <item>
       <title>Bootstrapping Lightning Network</title>
-      <link>//btctranscripts.com/building-on-bitcoin/2018/bootstrapping-lightning-network/</link>
+      <link>https://btctranscripts.com/building-on-bitcoin/2018/bootstrapping-lightning-network/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/building-on-bitcoin/2018/bootstrapping-lightning-network/</guid>
+      <guid>https://btctranscripts.com/building-on-bitcoin/2018/bootstrapping-lightning-network/</guid>
       <description>Bootstrapping LN: What have we learned?
 Fabrice Drouin
 Building on Bitcoin 2018
@@ -79,10 +79,10 @@ Timeline Who doesn&amp;rsquo;t know what lightning is? And who has used lightnin
     
     <item>
       <title>Btcpay</title>
-      <link>//btctranscripts.com/building-on-bitcoin/2018/btcpay/</link>
+      <link>https://btctranscripts.com/building-on-bitcoin/2018/btcpay/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/building-on-bitcoin/2018/btcpay/</guid>
+      <guid>https://btctranscripts.com/building-on-bitcoin/2018/btcpay/</guid>
       <description>How to make everyone run their own full node
 Nicolas Dorier
 Building on Bitcoin, 2018
@@ -93,10 +93,10 @@ The goal of my talk is to continue what Jonas Schnelli was talking about.</descr
     
     <item>
       <title>Coinjoinxt</title>
-      <link>//btctranscripts.com/building-on-bitcoin/2018/coinjoinxt/</link>
+      <link>https://btctranscripts.com/building-on-bitcoin/2018/coinjoinxt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/building-on-bitcoin/2018/coinjoinxt/</guid>
+      <guid>https://btctranscripts.com/building-on-bitcoin/2018/coinjoinxt/</guid>
       <description>CoinjoinXT and other techniques for deniable transfers.
 Adam Gibson (waxwing)
 Building on Bitcoin 2018
@@ -107,10 +107,10 @@ Introduction My talk today is about what I&amp;rsquo;m calling CoinjoinXT which 
     
     <item>
       <title>Crypto Castles</title>
-      <link>//btctranscripts.com/building-on-bitcoin/2018/crypto-castles/</link>
+      <link>https://btctranscripts.com/building-on-bitcoin/2018/crypto-castles/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/building-on-bitcoin/2018/crypto-castles/</guid>
+      <guid>https://btctranscripts.com/building-on-bitcoin/2018/crypto-castles/</guid>
       <description>Building your own bank and constructing crypto castles
 Jameson Lopp
 Building on Bitcoin 2018
@@ -121,10 +121,10 @@ If you have been in this space for long at all, you should be well aware that th
     
     <item>
       <title>Current And Future State Of Wallets</title>
-      <link>//btctranscripts.com/building-on-bitcoin/2018/current-and-future-state-of-wallets/</link>
+      <link>https://btctranscripts.com/building-on-bitcoin/2018/current-and-future-state-of-wallets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/building-on-bitcoin/2018/current-and-future-state-of-wallets/</guid>
+      <guid>https://btctranscripts.com/building-on-bitcoin/2018/current-and-future-state-of-wallets/</guid>
       <description>Current and future state of wallets
 jonasschnelli
 https://twitter.com/kanzure/status/1014127893495021568
@@ -134,10 +134,10 @@ Wallets is not rocket science. It&amp;rsquo;s mostly about pointing the figure t
     
     <item>
       <title>Dandelion</title>
-      <link>//btctranscripts.com/building-on-bitcoin/2018/dandelion/</link>
+      <link>https://btctranscripts.com/building-on-bitcoin/2018/dandelion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/building-on-bitcoin/2018/dandelion/</guid>
+      <guid>https://btctranscripts.com/building-on-bitcoin/2018/dandelion/</guid>
       <description>Dandelion: Privacy-preserving transaction propagation in bitcoin&amp;rsquo;s p2p network
 Giulia Fanti
 https://twitter.com/kanzure/status/1014196927062249472
@@ -147,10 +147,10 @@ Bitcoin p2p layer I want to give a brief overview of the p2p layer. Users in bit
     
     <item>
       <title>Libbitcoin</title>
-      <link>//btctranscripts.com/building-on-bitcoin/2018/libbitcoin/</link>
+      <link>https://btctranscripts.com/building-on-bitcoin/2018/libbitcoin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/building-on-bitcoin/2018/libbitcoin/</guid>
+      <guid>https://btctranscripts.com/building-on-bitcoin/2018/libbitcoin/</guid>
       <description>libbitcoin
 Eric Voskuil
 Building on Bitcoin 2018
@@ -161,10 +161,10 @@ Most of the talks I give are around cryptoeconomics.</description>
     
     <item>
       <title>Lightning Routing Ants Pheromones</title>
-      <link>//btctranscripts.com/building-on-bitcoin/2018/lightning-routing-ants-pheromones/</link>
+      <link>https://btctranscripts.com/building-on-bitcoin/2018/lightning-routing-ants-pheromones/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/building-on-bitcoin/2018/lightning-routing-ants-pheromones/</guid>
+      <guid>https://btctranscripts.com/building-on-bitcoin/2018/lightning-routing-ants-pheromones/</guid>
       <description>Ant routing for lightning network
 Ricardo Perez-Marco
 Building on Bitcoin 2018
@@ -177,10 +177,10 @@ Overview I am going to talk about what I understand to be decentralized network.
     
     <item>
       <title>Lightning Wallet Design</title>
-      <link>//btctranscripts.com/building-on-bitcoin/2018/lightning-wallet-design/</link>
+      <link>https://btctranscripts.com/building-on-bitcoin/2018/lightning-wallet-design/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/building-on-bitcoin/2018/lightning-wallet-design/</guid>
+      <guid>https://btctranscripts.com/building-on-bitcoin/2018/lightning-wallet-design/</guid>
       <description>Designing lightning wallets for the bitcoin user
 Building on Bitcoin 2018
 Good morning everyone. Thank you for being here. Thank you to the organizers for this event. My talk is about designing lightning wallets for bitcoin users. I am talking about UX. But really, UX is a lot more than what wallets look like. It&amp;rsquo;s from bip39 and making backups much easier, to anything you cna imagine, to make it easier for bitcoin to use bitcoin.</description>
@@ -188,10 +188,10 @@ Good morning everyone. Thank you for being here. Thank you to the organizers for
     
     <item>
       <title>Single Use Seals</title>
-      <link>//btctranscripts.com/building-on-bitcoin/2018/single-use-seals/</link>
+      <link>https://btctranscripts.com/building-on-bitcoin/2018/single-use-seals/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/building-on-bitcoin/2018/single-use-seals/</guid>
+      <guid>https://btctranscripts.com/building-on-bitcoin/2018/single-use-seals/</guid>
       <description>Single use seals
 petertodd
 Building on Bitcoin 2018
@@ -201,10 +201,10 @@ I am going to talk about single use seals and ways to use them. They are a conce
     
     <item>
       <title>Tooling</title>
-      <link>//btctranscripts.com/building-on-bitcoin/2018/tooling/</link>
+      <link>https://btctranscripts.com/building-on-bitcoin/2018/tooling/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/building-on-bitcoin/2018/tooling/</guid>
+      <guid>https://btctranscripts.com/building-on-bitcoin/2018/tooling/</guid>
       <description>Tooling
 Building on Bitcoin 2018
 https://twitter.com/kanzure/status/1014167542422822913
@@ -215,10 +215,10 @@ LN: I work at Blockstream. I work on low-level wallets and tooling for wallets.<
     
     <item>
       <title>Working On Scripts</title>
-      <link>//btctranscripts.com/building-on-bitcoin/2018/working-on-scripts/</link>
+      <link>https://btctranscripts.com/building-on-bitcoin/2018/working-on-scripts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/building-on-bitcoin/2018/working-on-scripts/</guid>
+      <guid>https://btctranscripts.com/building-on-bitcoin/2018/working-on-scripts/</guid>
       <description>Working on scripts with logical opcodes
 Thomas Kerin
 Building on Bitcoin 2018

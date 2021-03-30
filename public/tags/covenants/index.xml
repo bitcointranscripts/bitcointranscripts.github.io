@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>covenants on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/tags/covenants/</link>
+    <link>https://btctranscripts.com/tags/covenants/</link>
     <description>Recent content in covenants on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/tags/covenants/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/tags/covenants/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bitcoin Script</title>
-      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/bitcoin-script/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tokyo-2018/bitcoin-script/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/bitcoin-script/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tokyo-2018/bitcoin-script/</guid>
       <description>Featuring roasbeef
 Agenda  opcodes OP_CHECKSIGFROMSTACK sighash flags keytree sigs MAST graftroot, taproot covenants, reverse covenants (input restrictions: this input has to be spent with tihs other input, or can only be spent if this other one doesn&amp;rsquo;t exist) stack manipulation script languages (simplicity) tx formats, serialization? what would we change with hard-fork changes to the transaction format? Segwit transaction encoding format sucks; the witnesses are at the end and inline with all the scriptsigs and that should be changed.</description>
     </item>
     
     <item>
       <title>Covenants</title>
-      <link>//btctranscripts.com/scalingbitcoin/milan-2016/covenants/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/milan-2016/covenants/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/milan-2016/covenants/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/milan-2016/covenants/</guid>
       <description>Bitcoin covenants: Opportunities and challenges
 Emin Gun Sirer
 https://twitter.com/kanzure/status/785071789705728000
@@ -32,10 +32,10 @@ This all started from a very basic and simple observation about the current stat
     
     <item>
       <title>Kevin Loaec Antoine Poinsot Revault (2020-05-26)</title>
-      <link>//btctranscripts.com/london-bitcoin-devs/2020-05-26-kevin-loaec-antoine-poinsot-revault/</link>
+      <link>https://btctranscripts.com/london-bitcoin-devs/2020-05-26-kevin-loaec-antoine-poinsot-revault/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/london-bitcoin-devs/2020-05-26-kevin-loaec-antoine-poinsot-revault/</guid>
+      <guid>https://btctranscripts.com/london-bitcoin-devs/2020-05-26-kevin-loaec-antoine-poinsot-revault/</guid>
       <description>Name: Kevin Loaec and Antoine Poinsot
 Topic: Revault - A Multiparty Vault Architecture
 Location: London Bitcoin Devs (online)
@@ -48,10 +48,10 @@ Intro (Michael Folkson) This is London Bitcoin Devs. This is on Zoom and live-st
     
     <item>
       <title>Merkleized Abstract Syntax Trees - MAST (2018-03-06)</title>
-      <link>//btctranscripts.com/bitcoin-core-dev-tech/2018-03-06-merkleized-abstract-syntax-trees-mast/</link>
+      <link>https://btctranscripts.com/bitcoin-core-dev-tech/2018-03-06-merkleized-abstract-syntax-trees-mast/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2018-03-06-merkleized-abstract-syntax-trees-mast/</guid>
+      <guid>https://btctranscripts.com/bitcoin-core-dev-tech/2018-03-06-merkleized-abstract-syntax-trees-mast/</guid>
       <description>https://twitter.com/kanzure/status/972120890279432192
 See also http://diyhpl.us/wiki/transcripts/bitcoin-core-dev-tech/2017-09-07-merkleized-abstract-syntax-trees/
 MAST stuff You could directly merkleize scripts if you switch from IF, IFNOT, ELSE with IFJUMP that has the number of bytes.
@@ -61,10 +61,10 @@ You take every single path it has; so instead, it becomes &amp;hellip; certain c
     
     <item>
       <title>Plasma Cash</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/plasma-cash/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/plasma-cash/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/plasma-cash/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/plasma-cash/</guid>
       <description>Plasma Cash: Towards more efficient plasma constructions
 Non-custodial sidechains for bitcoin utilizing plasma cash and covenants
 Georgios Konstantopoulos

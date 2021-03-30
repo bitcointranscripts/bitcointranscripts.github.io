@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>hardware wallet on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/tags/hardware-wallet/</link>
+    <link>https://btctranscripts.com/tags/hardware-wallet/</link>
     <description>Recent content in hardware wallet on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/tags/hardware-wallet/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/tags/hardware-wallet/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Andreas Antonopoulos - Hardware Wallet Security (2019-02-01)</title>
-      <link>//btctranscripts.com/andreas-antonopoulos/2019-02-01-andreas-antonopoulos-hardware-wallet-security/</link>
+      <link>https://btctranscripts.com/andreas-antonopoulos/2019-02-01-andreas-antonopoulos-hardware-wallet-security/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/andreas-antonopoulos/2019-02-01-andreas-antonopoulos-hardware-wallet-security/</guid>
+      <guid>https://btctranscripts.com/andreas-antonopoulos/2019-02-01-andreas-antonopoulos-hardware-wallet-security/</guid>
       <description>Name: Andreas Antonpoulos
 Topic: Are Hardware Wallets Secure Enough?
 Location: Andreas Antonopoulos YouTube channel
@@ -22,10 +22,10 @@ Are Hardware Wallets Secure Enough? Q - Hi Andreas. I store my crypto on a Ledge
     
     <item>
       <title>Andrew Chow Hardware Wallets (2020-02-05)</title>
-      <link>//btctranscripts.com/london-bitcoin-devs/2020-02-05-andrew-chow-hardware-wallets/</link>
+      <link>https://btctranscripts.com/london-bitcoin-devs/2020-02-05-andrew-chow-hardware-wallets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/london-bitcoin-devs/2020-02-05-andrew-chow-hardware-wallets/</guid>
+      <guid>https://btctranscripts.com/london-bitcoin-devs/2020-02-05-andrew-chow-hardware-wallets/</guid>
       <description>Andrew Chow
 London Bitcoin Devs
 February 5th 2020
@@ -39,10 +39,10 @@ Introduction Hey everyone. As you may have guessed I’m Andrew Chow. I’m Engi
     
     <item>
       <title>Breaking Hardware Wallets</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2017/breaking-hardware-wallets/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2017/breaking-hardware-wallets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2017/breaking-hardware-wallets/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2017/breaking-hardware-wallets/</guid>
       <description>Breaking hardware wallets: Tales from the trenches and glimpses into the future
 Nicolas Bacca
 video: https://www.youtube.com/watch?v=eCE2OzKIab8&amp;amp;t=6h42m30s
@@ -53,10 +53,10 @@ Introduction Hi everybody. Thanks for making a great conference so far. I am Nic
     
     <item>
       <title>Extracting Seeds From Hardware Wallets</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2019/extracting-seeds-from-hardware-wallets/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/extracting-seeds-from-hardware-wallets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2019/extracting-seeds-from-hardware-wallets/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/extracting-seeds-from-hardware-wallets/</guid>
       <description>Extracting seeds from hardware wallets
 Charles Guillemet (P3b7_)
 7DC5A359D0D5B5AB6728&amp;hellip;
@@ -66,10 +66,10 @@ Introduction My talk is about extracting seeds from hardware wallets. I am chief
     
     <item>
       <title>Future Of Hardware Wallets</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2019/future-of-hardware-wallets/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/future-of-hardware-wallets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2019/future-of-hardware-wallets/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/future-of-hardware-wallets/</guid>
       <description>The future of hardware wallets
 Stepan Snigirev
 D419 C410 1E24 5B09 0D2C 46BF 8C3D 2C48 560E 81AC
@@ -80,10 +80,10 @@ Current capabilities of hardware wallets Normally, hardware wallets keep keys re
     
     <item>
       <title>Greg Maxwell - Yubikey Security (2020-11-05)</title>
-      <link>//btctranscripts.com/greg-maxwell/2020-11-05-greg-maxwell-yubikey-security/</link>
+      <link>https://btctranscripts.com/greg-maxwell/2020-11-05-greg-maxwell-yubikey-security/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/greg-maxwell/2020-11-05-greg-maxwell-yubikey-security/</guid>
+      <guid>https://btctranscripts.com/greg-maxwell/2020-11-05-greg-maxwell-yubikey-security/</guid>
       <description>Name: Greg Maxwell
 Topic: Yubikey security
 Location: Reddit
@@ -96,10 +96,10 @@ Likewise, if parties which things of significant value to secure who might be ta
     
     <item>
       <title>Greg Maxwell Hardware Wallets Altcoins (2020-11-01)</title>
-      <link>//btctranscripts.com/greg-maxwell/2020-11-01-greg-maxwell-hardware-wallets-altcoins/</link>
+      <link>https://btctranscripts.com/greg-maxwell/2020-11-01-greg-maxwell-hardware-wallets-altcoins/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/greg-maxwell/2020-11-01-greg-maxwell-hardware-wallets-altcoins/</guid>
+      <guid>https://btctranscripts.com/greg-maxwell/2020-11-01-greg-maxwell-hardware-wallets-altcoins/</guid>
       <description>Name: Greg Maxwell
 Topic: Hardware wallets and altcoins
 Location: Reddit
@@ -111,10 +111,10 @@ I can say first hand that my efforts to review hardware wallet code against poss
     
     <item>
       <title>Hardware Wallet Design Best Practices</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/hardware-wallet-design-best-practices/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/hardware-wallet-design-best-practices/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/hardware-wallet-design-best-practices/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/hardware-wallet-design-best-practices/</guid>
       <description>Hardware wallet design: issues and best practices
 Stepan Snigirev
 https://twitter.com/kanzure/status/1171322716303036417
@@ -124,10 +124,10 @@ Imagine you want to start working in bitcoin development. There&amp;rsquo;s a ch
     
     <item>
       <title>Hardware Wallets (2019-06-07)</title>
-      <link>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-07-hardware-wallets/</link>
+      <link>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-07-hardware-wallets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-07-hardware-wallets/</guid>
+      <guid>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-07-hardware-wallets/</guid>
       <description>Hardware wallets
 https://twitter.com/kanzure/status/1136924010955104257
 How much should Bitcoin Core do, and how much should other libraries do? Andrew Chow wrote the wonderful HWI tool. Right now we have a pull request to support external signers. The HWI script can talk to most major hardware wallets because it has all the drivers built in now, and it can get keys from it, and sign arbitrary transactions. That&amp;rsquo;s roughly what it does. It&amp;rsquo;s kind of manual, though.</description>
@@ -135,10 +135,10 @@ How much should Bitcoin Core do, and how much should other libraries do? Andrew 
     
     <item>
       <title>Hardware Wallets (2019-06-29)</title>
-      <link>//btctranscripts.com/austin-bitcoin-developers/2019-06-29-hardware-wallets/</link>
+      <link>https://btctranscripts.com/austin-bitcoin-developers/2019-06-29-hardware-wallets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/austin-bitcoin-developers/2019-06-29-hardware-wallets/</guid>
+      <guid>https://btctranscripts.com/austin-bitcoin-developers/2019-06-29-hardware-wallets/</guid>
       <description>2019-06-29
 Stepan Snigirev
 livestream: https://www.youtube.com/watch?v=rK0jUeHeDf0
@@ -149,10 +149,10 @@ see also:
     
     <item>
       <title>Rodolfo Novak Coldcard Mk3 (2019-09-14)</title>
-      <link>//btctranscripts.com/baltic-honeybadger/2019/2019-09-14-rodolfo-novak-coldcard-mk3/</link>
+      <link>https://btctranscripts.com/baltic-honeybadger/2019/2019-09-14-rodolfo-novak-coldcard-mk3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/baltic-honeybadger/2019/2019-09-14-rodolfo-novak-coldcard-mk3/</guid>
+      <guid>https://btctranscripts.com/baltic-honeybadger/2019/2019-09-14-rodolfo-novak-coldcard-mk3/</guid>
       <description>Name: Rodolfo Novak
 Topic: Coldcard Mk3 - Security in Depth
 Location: Baltic Honeybadger 2019
@@ -164,10 +164,10 @@ What were the options When I closed my last company and decided to find a place 
     
     <item>
       <title>Socratic Seminar 2 (2019-08-22)</title>
-      <link>//btctranscripts.com/austin-bitcoin-developers/2019-08-22-socratic-seminar-2/</link>
+      <link>https://btctranscripts.com/austin-bitcoin-developers/2019-08-22-socratic-seminar-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/austin-bitcoin-developers/2019-08-22-socratic-seminar-2/</guid>
+      <guid>https://btctranscripts.com/austin-bitcoin-developers/2019-08-22-socratic-seminar-2/</guid>
       <description>2019-08-22
 Austin Bitcoin Developers Socratic Seminar 2
 https://twitter.com/kanzure/status/1164710800910692353
@@ -177,10 +177,10 @@ Mike Schmidt is going to talk about some optech newsletters that he has been con
     
     <item>
       <title>The Future Of Bitcoin Wallets</title>
-      <link>//btctranscripts.com/baltic-honeybadger/2018/the-future-of-bitcoin-wallets/</link>
+      <link>https://btctranscripts.com/baltic-honeybadger/2018/the-future-of-bitcoin-wallets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/baltic-honeybadger/2018/the-future-of-bitcoin-wallets/</guid>
+      <guid>https://btctranscripts.com/baltic-honeybadger/2018/the-future-of-bitcoin-wallets/</guid>
       <description>1 on 1: The future of bitcoin wallets
 Pavol Rusnak (pavolrusnak)
 Lawrence Nahum (larrybitcoin)

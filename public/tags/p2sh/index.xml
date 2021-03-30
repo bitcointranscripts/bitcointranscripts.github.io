@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>p2sh on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/tags/p2sh/</link>
+    <link>https://btctranscripts.com/tags/p2sh/</link>
     <description>Recent content in p2sh on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/tags/p2sh/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/tags/p2sh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bitcoin Script V2.0 And Strengthened Payment Channels</title>
-      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/bitcoin-script-v2.0-and-strengthened-payment-channels/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/stanford-2017/bitcoin-script-v2.0-and-strengthened-payment-channels/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/bitcoin-script-v2.0-and-strengthened-payment-channels/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/stanford-2017/bitcoin-script-v2.0-and-strengthened-payment-channels/</guid>
       <description>Bitcoin script v2.0
 roasbeef
 jl2012
@@ -20,10 +20,10 @@ This is a brief history of bitcoin script evolution. Since bitcoin was active in
     
     <item>
       <title>P2Pkh P2Wpkh P2H P2Wsh</title>
-      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/p2pkh-p2wpkh-p2h-p2wsh/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/p2pkh-p2wpkh-p2h-p2wsh/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/p2pkh-p2wpkh-p2h-p2wsh/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/p2pkh-p2wpkh-p2h-p2wsh/</guid>
       <description>P2PKH/P2WPKH/P2H/P2WSH
 Greg Sanders (instagibbs)
 https://twitter.com/kanzure/status/1047697572444270592
@@ -34,10 +34,10 @@ Pay-to-pubkey (p2pk) This was the first type. It had no address format actually.
     
     <item>
       <title>Spam Attacks Analysis</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2017/spam-attacks-analysis/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2017/spam-attacks-analysis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2017/spam-attacks-analysis/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2017/spam-attacks-analysis/</guid>
       <description>Hunting moby dick, an analysis of 2015-2016 spam attacks
 Antoine Le Calvez (khannib)
 video: https://www.youtube.com/watch?v=eCE2OzKIab8&amp;amp;t=1h12m10s

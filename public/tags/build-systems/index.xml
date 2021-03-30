@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>build systems on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/tags/build-systems/</link>
+    <link>https://btctranscripts.com/tags/build-systems/</link>
     <description>Recent content in build systems on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/tags/build-systems/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/tags/build-systems/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bitcoin Build System</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2019/bitcoin-build-system/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/bitcoin-build-system/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2019/bitcoin-build-system/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/bitcoin-build-system/</guid>
       <description>Bitcoin build systems and bitcoin build system security
 Carl Dong, Chaincode Labs
 https://twitter.com/kanzure/status/1137347937426661376
@@ -21,10 +21,10 @@ I couldn&amp;rsquo;t make it to Amsterdam this year, but I hope the graphics I h
     
     <item>
       <title>Bitcoin Toolchain Unit Testing And Deterministic Builds</title>
-      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/bitcoin-toolchain-unit-testing-and-deterministic-builds/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/bitcoin-toolchain-unit-testing-and-deterministic-builds/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/bitcoin-toolchain-unit-testing-and-deterministic-builds/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/bitcoin-toolchain-unit-testing-and-deterministic-builds/</guid>
       <description>Bitcoin toolchain, unit testing &amp;amp; deterministic builds
 Marco Falke
 Video: https://www.youtube.com/watch?v=ZJ2t84trKVo
@@ -35,10 +35,10 @@ Bitcoin Core Build System The build system is based on autotools, so it should j
     
     <item>
       <title>Protecting Yourself And Your Business</title>
-      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/protecting-yourself-and-your-business/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/protecting-yourself-and-your-business/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/protecting-yourself-and-your-business/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/protecting-yourself-and-your-business/</guid>
       <description>Exchange security: Protecting yourself and your business
 Warren Togami
 https://twitter.com/kanzure/status/1048087226742071296

@@ -3,59 +3,59 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>//btctranscripts.com/es/categories/</loc>
+    <loc>https://btctranscripts.com/es/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//btctranscripts.com/categories/"
+                href="https://btctranscripts.com/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="//btctranscripts.com/fr/categories/"
+                href="https://btctranscripts.com/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="//btctranscripts.com/es/categories/"
+                href="https://btctranscripts.com/es/categories/"
                 />
   </url>
   
   <url>
-    <loc>//btctranscripts.com/es/tags/</loc>
+    <loc>https://btctranscripts.com/es/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//btctranscripts.com/tags/"
+                href="https://btctranscripts.com/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="//btctranscripts.com/fr/tags/"
+                href="https://btctranscripts.com/fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="//btctranscripts.com/es/tags/"
+                href="https://btctranscripts.com/es/tags/"
                 />
   </url>
   
   <url>
-    <loc>//btctranscripts.com/es/</loc>
+    <loc>https://btctranscripts.com/es/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//btctranscripts.com/"
+                href="https://btctranscripts.com/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="//btctranscripts.com/fr/"
+                href="https://btctranscripts.com/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="//btctranscripts.com/es/"
+                href="https://btctranscripts.com/es/"
                 />
   </url>
   

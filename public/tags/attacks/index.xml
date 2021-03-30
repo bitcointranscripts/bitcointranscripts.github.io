@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>attacks on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/tags/attacks/</link>
+    <link>https://btctranscripts.com/tags/attacks/</link>
     <description>Recent content in attacks on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/tags/attacks/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/tags/attacks/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Beyond Hashrate Majority Attacks</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/beyond-hashrate-majority-attacks/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/beyond-hashrate-majority-attacks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/beyond-hashrate-majority-attacks/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/beyond-hashrate-majority-attacks/</guid>
       <description>Beyond 51% attacks
 Vitalik Buterin
 https://twitter.com/kanzure/status/1230624835996250112
@@ -21,10 +21,10 @@ Okay, so hello everyone. Hi. Okay. I will start by reminding everyone that 51% a
     
     <item>
       <title>Bitcoin Load Spike Simulation</title>
-      <link>//btctranscripts.com/scalingbitcoin/montreal-2015/bitcoin-load-spike-simulation/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/montreal-2015/bitcoin-load-spike-simulation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/montreal-2015/bitcoin-load-spike-simulation/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/montreal-2015/bitcoin-load-spike-simulation/</guid>
       <description>Conner Fromknecht
 Nathan Wilcox
 Bitcoin load spike simulation
@@ -33,10 +33,10 @@ Our goal for this project, our rationale of what we&amp;rsquo;re interesting is 
     
     <item>
       <title>Bitcoin Script V2.0 And Strengthened Payment Channels</title>
-      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/bitcoin-script-v2.0-and-strengthened-payment-channels/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/stanford-2017/bitcoin-script-v2.0-and-strengthened-payment-channels/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/bitcoin-script-v2.0-and-strengthened-payment-channels/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/stanford-2017/bitcoin-script-v2.0-and-strengthened-payment-channels/</guid>
       <description>Bitcoin script v2.0
 roasbeef
 jl2012
@@ -45,10 +45,10 @@ This is a brief history of bitcoin script evolution. Since bitcoin was active in
     
     <item>
       <title>Breaking Hardware Wallets</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2017/breaking-hardware-wallets/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2017/breaking-hardware-wallets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2017/breaking-hardware-wallets/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2017/breaking-hardware-wallets/</guid>
       <description>Breaking hardware wallets: Tales from the trenches and glimpses into the future
 Nicolas Bacca
 video: https://www.youtube.com/watch?v=eCE2OzKIab8&amp;amp;t=6h42m30s
@@ -59,10 +59,10 @@ Introduction Hi everybody. Thanks for making a great conference so far. I am Nic
     
     <item>
       <title>Christian Decker Lightning Topics (2020-08-13)</title>
-      <link>//btctranscripts.com/stephan-livera-podcast/2020-08-13-christian-decker-lightning-topics/</link>
+      <link>https://btctranscripts.com/stephan-livera-podcast/2020-08-13-christian-decker-lightning-topics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stephan-livera-podcast/2020-08-13-christian-decker-lightning-topics/</guid>
+      <guid>https://btctranscripts.com/stephan-livera-podcast/2020-08-13-christian-decker-lightning-topics/</guid>
       <description>Name: Christian Decker
 Topic: ANYPREVOUT, MPP, Mitigating Lightning Attacks
 Location: Stephan Livera Podcast
@@ -77,10 +77,10 @@ SL: I wanted to chat with you about a bunch of stuff that you’ve been doing. W
     
     <item>
       <title>Competitive Equilibria Staking Lending</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/competitive-equilibria-staking-lending/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/competitive-equilibria-staking-lending/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/competitive-equilibria-staking-lending/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/competitive-equilibria-staking-lending/</guid>
       <description>Competitive equilibria between staking and on-chain lending
 Tarun Chitra
 https://twitter.com/kanzure/status/1230581977289379840
@@ -92,10 +92,10 @@ Agenda I&amp;rsquo;ll go over some high level overview of intuitive market dynam
     
     <item>
       <title>Covenants</title>
-      <link>//btctranscripts.com/scalingbitcoin/milan-2016/covenants/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/milan-2016/covenants/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/milan-2016/covenants/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/milan-2016/covenants/</guid>
       <description>Bitcoin covenants: Opportunities and challenges
 Emin Gun Sirer
 https://twitter.com/kanzure/status/785071789705728000
@@ -106,10 +106,10 @@ This all started from a very basic and simple observation about the current stat
     
     <item>
       <title>Day 1 Group Summaries</title>
-      <link>//btctranscripts.com/scalingbitcoin/milan-2016/day-1-group-summaries/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/milan-2016/day-1-group-summaries/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/milan-2016/day-1-group-summaries/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/milan-2016/day-1-group-summaries/</guid>
       <description>Day 1 group summaries
 We need two to three minute report backs from each session. Also, note takers. Please email your notes to contact@scalingbitcoin.org so that we can add notes to the wiki. Come join us. Okay, so.
 Lightning We discussed routing and several aspects of routing algorithms in the lightning network. We talked about the tradeoff between privacy aspects and reliability in routing. We quickly discovered that after some of the things were already resolved by the papers&amp;ndash; the way how we deal with a general separation and channel transaction fees, is actually quite an interesting discussion topic.</description>
@@ -117,10 +117,10 @@ Lightning We discussed routing and several aspects of routing algorithms in the 
     
     <item>
       <title>Ethan Heilman Network Partitioning Attacks (2019-06-12)</title>
-      <link>//btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-12-ethan-heilman-network-partitioning-attacks/</link>
+      <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-12-ethan-heilman-network-partitioning-attacks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-12-ethan-heilman-network-partitioning-attacks/</guid>
+      <guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-12-ethan-heilman-network-partitioning-attacks/</guid>
       <description>Name: Ethan Heilman
 Topic: Bitcoin network partitioning &amp;amp; network-level privacy attacks
 Location: Chaincode Labs 2019 Residency
@@ -134,10 +134,10 @@ Bitcoin uses a peer-to-peer network to announce transactions and blocks.</descri
     
     <item>
       <title>Extracting Seeds From Hardware Wallets</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2019/extracting-seeds-from-hardware-wallets/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/extracting-seeds-from-hardware-wallets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2019/extracting-seeds-from-hardware-wallets/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/extracting-seeds-from-hardware-wallets/</guid>
       <description>Extracting seeds from hardware wallets
 Charles Guillemet (P3b7_)
 7DC5A359D0D5B5AB6728&amp;hellip;
@@ -147,10 +147,10 @@ Introduction My talk is about extracting seeds from hardware wallets. I am chief
     
     <item>
       <title>Failures Of Secret Key Cryptography (2013)</title>
-      <link>//btctranscripts.com/misc/failures-of-secret-key-cryptography/</link>
+      <link>https://btctranscripts.com/misc/failures-of-secret-key-cryptography/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/misc/failures-of-secret-key-cryptography/</guid>
+      <guid>https://btctranscripts.com/misc/failures-of-secret-key-cryptography/</guid>
       <description>Failures of secret key cryptography
 Daniel J. Bernstein (djb)
 FSE 2013
@@ -160,10 +160,10 @@ Welcome to the second invited talk, to be given by Dan Bernstein. Dan is one of 
     
     <item>
       <title>Kevin Loaec Antoine Poinsot Revault (2020-04-24)</title>
-      <link>//btctranscripts.com/honey-badger-diaries/2020-04-24-kevin-loaec-antoine-poinsot-revault/</link>
+      <link>https://btctranscripts.com/honey-badger-diaries/2020-04-24-kevin-loaec-antoine-poinsot-revault/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/honey-badger-diaries/2020-04-24-kevin-loaec-antoine-poinsot-revault/</guid>
+      <guid>https://btctranscripts.com/honey-badger-diaries/2020-04-24-kevin-loaec-antoine-poinsot-revault/</guid>
       <description>Name: Kevin Loaec and Antoine Poinsot
 Topic: Revault Bitcoin vaults
 Location: Honey Badger Diaries (podcast)
@@ -175,20 +175,20 @@ Kevin: My personal interest in vaults started last year when Bryan Bishop publis
     
     <item>
       <title>Lehnberg</title>
-      <link>//btctranscripts.com/grincon/2019/lehnberg/</link>
+      <link>https://btctranscripts.com/grincon/2019/lehnberg/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/grincon/2019/lehnberg/</guid>
+      <guid>https://btctranscripts.com/grincon/2019/lehnberg/</guid>
       <description>daniel/lehberg
 Mimblewimble pros and cons There are no amounts, no addresses, and improved scaling. But one of hte problems is that it requires interactive transactions. But this is a pro because of this you have to participate in mining. You can send money to addresses without having to accept the money. Just as you saw here, you can identify the blue box as an output or an input. You could build up a transaction graph.</description>
     </item>
     
     <item>
       <title>Lightning Network Topological Analysis</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2019/lightning-network-topological-analysis/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/lightning-network-topological-analysis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2019/lightning-network-topological-analysis/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/lightning-network-topological-analysis/</guid>
       <description>Topological analysis of the lightning network
 Istvan Andras Seres
 paper: https://arxiv.org/abs/1901.04972
@@ -198,10 +198,10 @@ Introduction Knowing the topology is not necessarily a vulnerability, but it giv
     
     <item>
       <title>Linking Anonymous Transactions</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/linking-anonymous-transactions/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/linking-anonymous-transactions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/linking-anonymous-transactions/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/linking-anonymous-transactions/</guid>
       <description>Linking anonymous transactions via remote side-channel attacks
 Florian Tramer
 https://twitter.com/kanzure/status/1230214874908655617
@@ -211,10 +211,10 @@ Introduction This is going to be talking about linking anonymous transactions in
     
     <item>
       <title>Overview Of Security Concerns</title>
-      <link>//btctranscripts.com/scalingbitcoin/montreal-2015/overview-of-security-concerns/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/montreal-2015/overview-of-security-concerns/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/montreal-2015/overview-of-security-concerns/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/montreal-2015/overview-of-security-concerns/</guid>
       <description>petertodd
 Overview of Security Concerns
 I am going to talk about scale-related security issues. Scale-related security issues. I said scale, not scalability. We are not talking about scalability. We&amp;rsquo;re talking about changing numbers, and what are the implications, what attacks are easier or harder by changing the block size number. What are we trying to accomplish? What is the system meant to be? Nobody really agrees of course. What&amp;rsquo;s interesting is that as much as we disagree about what was meant to be, there are a lot of key things about what bitcoin could be, these visions share some details.</description>
@@ -222,10 +222,10 @@ I am going to talk about scale-related security issues. Scale-related security i
     
     <item>
       <title>Security Attacks Decentralized Mining Pools</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2019/security-attacks-decentralized-mining-pools/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/security-attacks-decentralized-mining-pools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2019/security-attacks-decentralized-mining-pools/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/security-attacks-decentralized-mining-pools/</guid>
       <description>Security and attacks on decentralized mining pools
 Alexei Zamyatin
 https://twitter.com/kanzure/status/1137373752038240262
@@ -235,10 +235,10 @@ Motivation The motivation behind this talk is straightforward. I think we can al
     
     <item>
       <title>Spam Attacks Analysis</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2017/spam-attacks-analysis/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2017/spam-attacks-analysis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2017/spam-attacks-analysis/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2017/spam-attacks-analysis/</guid>
       <description>Hunting moby dick, an analysis of 2015-2016 spam attacks
 Antoine Le Calvez (khannib)
 video: https://www.youtube.com/watch?v=eCE2OzKIab8&amp;amp;t=1h12m10s
@@ -249,10 +249,10 @@ Moby Dick and spam attacks&amp;ndash; let me explain, Moby Dick is an entity tha
     
     <item>
       <title>Stress Testing Decentralized Finance</title>
-      <link>//btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/stress-testing-decentralized-finance/</link>
+      <link>https://btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/stress-testing-decentralized-finance/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/stress-testing-decentralized-finance/</guid>
+      <guid>https://btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/stress-testing-decentralized-finance/</guid>
       <description>Stress testing decentralized finance
 Tarun Chitra
 https://twitter.com/kanzure/status/1229844754990370816
@@ -262,10 +262,10 @@ I&amp;rsquo;m going to go through three examples of where an actuarial analysis 
     
     <item>
       <title>Sybilquorum</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2019/sybilquorum/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2019/sybilquorum/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/sybilquorum/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2019/sybilquorum/</guid>
       <description>SybilQuorum: Open distributed ledgers through trust networks
 Alberto Sonnino from UCL and chainspace.io
 https://twitter.com/kanzure/status/1090777875253407745
@@ -275,10 +275,10 @@ Sybil attacks I am sure everyone knows about sybil attacks.</description>
     
     <item>
       <title>Sydney Socratic Seminar (2021-02-23)</title>
-      <link>//btctranscripts.com/sydney-bitcoin-meetup/2021-02-23-socratic-seminar/</link>
+      <link>https://btctranscripts.com/sydney-bitcoin-meetup/2021-02-23-socratic-seminar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sydney-bitcoin-meetup/2021-02-23-socratic-seminar/</guid>
+      <guid>https://btctranscripts.com/sydney-bitcoin-meetup/2021-02-23-socratic-seminar/</guid>
       <description>Name: Socratic Seminar
 Topic: Agenda in Google Doc below
 Location: Bitcoin Sydney (online)
@@ -290,10 +290,10 @@ The conversation has been anonymized by default to protect the identities of the
     
     <item>
       <title>Transparent Dishonesty</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/transparent-dishonesty/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/transparent-dishonesty/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/transparent-dishonesty/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/transparent-dishonesty/</guid>
       <description>Transparent dishonesty: frontrunning attacks on blockchain
 Shayan Eskandari
 https://twitter.com/kanzure/status/1231005309310627841
@@ -303,10 +303,10 @@ My talk will not be as intense as the previous talk, but I&amp;rsquo;m going to 
     
     <item>
       <title>Vulnerability Detection</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2019/vulnerability-detection/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2019/vulnerability-detection/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/vulnerability-detection/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2019/vulnerability-detection/</guid>
       <description>Automatic detection of vulnerabilities in smart contracts
 Mooly Sagiv
 Introduction If you find a bug in a smart contract, it&amp;rsquo;s really hard to mitigate that bug. In formal verification, we really look for bugs. We can identify subtle bugs, like reentrancy attacks, ownership violation, incorrect transactions, bugs due to updated code. We also want to assure the absence of bugs.
@@ -315,10 +315,10 @@ Device drivers I come from the domain of Windows device drivers.</description>
     
     <item>
       <title>Why Block Sizes Should Not Be Too Big</title>
-      <link>//btctranscripts.com/magicalcryptoconference/2019/why-block-sizes-should-not-be-too-big/</link>
+      <link>https://btctranscripts.com/magicalcryptoconference/2019/why-block-sizes-should-not-be-too-big/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/magicalcryptoconference/2019/why-block-sizes-should-not-be-too-big/</guid>
+      <guid>https://btctranscripts.com/magicalcryptoconference/2019/why-block-sizes-should-not-be-too-big/</guid>
       <description>Briefly, why block sizes shouldn&amp;rsquo;t be too big
 Luke Dashjr
 slides: https://luke.dashjr.org/tmp/code/block-sizes-mcc.pdf

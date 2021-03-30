@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SF Bitcoin Meetup on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/sf-bitcoin-meetup/</link>
+    <link>https://btctranscripts.com/sf-bitcoin-meetup/</link>
     <description>Recent content in SF Bitcoin Meetup on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/sf-bitcoin-meetup/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/sf-bitcoin-meetup/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Andreas Antonopoulos Bitcoin Scripting (2017-04-03)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2017-04-03-andreas-antonopoulos-bitcoin-scripting/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2017-04-03-andreas-antonopoulos-bitcoin-scripting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2017-04-03-andreas-antonopoulos-bitcoin-scripting/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2017-04-03-andreas-antonopoulos-bitcoin-scripting/</guid>
       <description>Name: Andreas Antonopoulos
 Topic: Advanced Bitcoin Scripting
 Location: SF Bitcoin Devs
@@ -23,10 +23,10 @@ Intro Today’s talk is different from some of the other talks I’ve done so be
     
     <item>
       <title>Bip Taproot Bip Tapscript (2019-12-16)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2019-12-16-bip-taproot-bip-tapscript/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2019-12-16-bip-taproot-bip-tapscript/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2019-12-16-bip-taproot-bip-tapscript/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2019-12-16-bip-taproot-bip-tapscript/</guid>
       <description>2019-12-16
 bip-taproot
 Pieter Wuille (sipa)
@@ -41,10 +41,10 @@ Please try to find seats. Today we have a special treat. We have Pieter here, wh
     
     <item>
       <title>Bram Cohen Merkle Sets (2017-07-08)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2017-07-08-bram-cohen-merkle-sets/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2017-07-08-bram-cohen-merkle-sets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2017-07-08-bram-cohen-merkle-sets/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2017-07-08-bram-cohen-merkle-sets/</guid>
       <description>2017-07-08
 Merkle set data structures for scaling bitcoin
 Bram Cohen
@@ -56,10 +56,10 @@ Introduction There&amp;rsquo;s been a fair amount of talk about putting UTXO com
     
     <item>
       <title>Christopher Jeffrey Bcoin (2016-09-28)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2016-09-28-christopher-jeffrey-bcoin/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2016-09-28-christopher-jeffrey-bcoin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2016-09-28-christopher-jeffrey-bcoin/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2016-09-28-christopher-jeffrey-bcoin/</guid>
       <description>Name: Christopher Jeffrey (JJ)
 Topic: Bcoin
 Location: SF Bitcoin Devs
@@ -71,10 +71,10 @@ Intro Hey everyone. I’m JJ with Purse. Tonight I want to talk to you about ful
     
     <item>
       <title>Conner Fromknecht Lnd 0.6 Beta (2019-05-02)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2019-05-02-conner-fromknecht-lnd-0.6-beta/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2019-05-02-conner-fromknecht-lnd-0.6-beta/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2019-05-02-conner-fromknecht-lnd-0.6-beta/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2019-05-02-conner-fromknecht-lnd-0.6-beta/</guid>
       <description>Conner Fromknecht
 SF Lightning Devs
 LND 0.6 Beta Deep Dive
@@ -84,10 +84,10 @@ Intro lnd 0.6 was about seven months in the making. There’s more things that w
     
     <item>
       <title>Jeremy Rubin Bitcoin Core (2018-04-23)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2018-04-23-jeremy-rubin-bitcoin-core/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2018-04-23-jeremy-rubin-bitcoin-core/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2018-04-23-jeremy-rubin-bitcoin-core/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2018-04-23-jeremy-rubin-bitcoin-core/</guid>
       <description>Jeremy Rubin
 A hardCORE workout
 Video: https://www.youtube.com/watch?v=PKzJktErUdk
@@ -98,10 +98,10 @@ Intro Thank you very much for the warm welcome. So welcome to the hard core work
     
     <item>
       <title>Jonas Schenlli Bip150 Bip151 (2017-09-04)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2017-09-04-jonas-schenlli-bip150-bip151/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2017-09-04-jonas-schenlli-bip150-bip151/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2017-09-04-jonas-schenlli-bip150-bip151/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2017-09-04-jonas-schenlli-bip150-bip151/</guid>
       <description>Jonas Schnelli
 bip150 and bip151: Bitcoin p2p network encryption and authentication
 https://github.com/bitcoin/bips/blob/master/bip-0150.mediawiki
@@ -112,10 +112,10 @@ Introduction Alright guys.. take a seat. ((various mumblings)) Want to thank our
     
     <item>
       <title>Laolu Osuntokun Exploring Lnd0.4 (2018-04-20)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2018-04-20-laolu-osuntokun-exploring-lnd0.4/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2018-04-20-laolu-osuntokun-exploring-lnd0.4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2018-04-20-laolu-osuntokun-exploring-lnd0.4/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2018-04-20-laolu-osuntokun-exploring-lnd0.4/</guid>
       <description>Laolu Osuntokun and Conner Fromknecht
 Exploring lnd 0.4-beta
 Video: https://www.youtube.com/watch?v=LXY0L8eeG3k
@@ -125,10 +125,10 @@ The Genesis of lnd First, the genesis of lnd. Here is the first commit of lnd. I
     
     <item>
       <title>Laolu Osuntokun Lightning Network (2016-07-18)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2016-07-18-laolu-osuntokun-lightning-network/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2016-07-18-laolu-osuntokun-lightning-network/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2016-07-18-laolu-osuntokun-lightning-network/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2016-07-18-laolu-osuntokun-lightning-network/</guid>
       <description>Laolu Osuntokun
 Lightning Network Deep Dive
 Video: https://www.youtube.com/watch?v=tLZc-NLmV20
@@ -139,10 +139,10 @@ Introduction My name is Laolu Osuntokun and I work with Lightning guys and you k
     
     <item>
       <title>Laolu Osuntokun Neutrino (2017-06-06)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2017-06-06-laolu-osuntokun-neutrino/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2017-06-06-laolu-osuntokun-neutrino/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2017-06-06-laolu-osuntokun-neutrino/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2017-06-06-laolu-osuntokun-neutrino/</guid>
       <description>Laolu Osuntokun
 Neutrino: The Privacy Preserving Bitcoin Light Client
 Video: https://www.youtube.com/watch?v=7FWKc8lM4Ek
@@ -153,10 +153,10 @@ Introduction My name is Laolu or Roasbeef on the internet. I’m going to talk a
     
     <item>
       <title>Lightning Network (2015-05-26)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2015-05-26-lightning-network/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2015-05-26-lightning-network/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2015-05-26-lightning-network/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2015-05-26-lightning-network/</guid>
       <description>2015-05-26
  Tadge Dryja Joseph Poon  How Lightning Network can offer a solution for bitcoin&amp;rsquo;s scalability problems
 http://lightning.network/
@@ -168,10 +168,10 @@ Okay, hi. So yeah, I titled it solutions because that sounds more positive than 
     
     <item>
       <title>Lightning Network As A Directed Graph Single Funded Channel Network Topology (2016-04-11)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2016-04-11-lightning-network-as-a-directed-graph-single-funded-channel-network-topology/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2016-04-11-lightning-network-as-a-directed-graph-single-funded-channel-network-topology/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2016-04-11-lightning-network-as-a-directed-graph-single-funded-channel-network-topology/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2016-04-11-lightning-network-as-a-directed-graph-single-funded-channel-network-topology/</guid>
       <description>2016-04-11
 Lightning Network as a Directed Graph: Single-Funded Channel Network Topology
 Tadge Dryja rx@awsomnet.org
@@ -184,10 +184,10 @@ Basic super quick summary of Lightning I am going to re-cap lightning network re
     
     <item>
       <title>Mimblewimble (2016-11-21)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2016-11-21-mimblewimble/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2016-11-21-mimblewimble/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2016-11-21-mimblewimble/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2016-11-21-mimblewimble/</guid>
       <description>Mimblewimble
 Andrew Poelstra (andytoshi)
 https://www.youtube.com/watch?v=aHTRlbCaUyM
@@ -198,10 +198,10 @@ Many of you have heard of mimblewimble. It&amp;rsquo;s been in the news. It has 
     
     <item>
       <title>New Address Type For Segwit Addresses (2017-03-29)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2017-03-29-new-address-type-for-segwit-addresses/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2017-03-29-new-address-type-for-segwit-addresses/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2017-03-29-new-address-type-for-segwit-addresses/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2017-03-29-new-address-type-for-segwit-addresses/</guid>
       <description>Name: Pieter Wuille
 Topic: Bech32 addresses for Bitcoin
 Location: SF Bitcoin Devs
@@ -217,10 +217,10 @@ Intro Can everyone hear me fine through this microphone? Anyone who can&amp;rsqu
     
     <item>
       <title>Partially Signed Bitcoin Transactions (2019-03-15)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2019-03-15-partially-signed-bitcoin-transactions/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2019-03-15-partially-signed-bitcoin-transactions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2019-03-15-partially-signed-bitcoin-transactions/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2019-03-15-partially-signed-bitcoin-transactions/</guid>
       <description>Name: Andrew Chow
 Topic: PSBT
 Location: SF Bitcoin Devs
@@ -230,10 +230,10 @@ Introduction Andrew: So as Mark said I&amp;rsquo;m Andrew Chow and today I&amp;r
     
     <item>
       <title>Pieter Wuille Key Tree Signatures (2015-08-24)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2015-08-24-pieter-wuille-key-tree-signatures/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2015-08-24-pieter-wuille-key-tree-signatures/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2015-08-24-pieter-wuille-key-tree-signatures/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2015-08-24-pieter-wuille-key-tree-signatures/</guid>
       <description>Name: Pieter Wuille
 Topic: Key Tree Signatures
 Location: SF Bitcoin Devs
@@ -246,10 +246,10 @@ Intro For those who don’t know me I’m Pieter Wuille. I have been working on 
     
     <item>
       <title>Scaling Bitcoin To Billions Of Transactions Per Day (2015-02-23)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2015-02-23-scaling-bitcoin-to-billions-of-transactions-per-day/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2015-02-23-scaling-bitcoin-to-billions-of-transactions-per-day/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2015-02-23-scaling-bitcoin-to-billions-of-transactions-per-day/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2015-02-23-scaling-bitcoin-to-billions-of-transactions-per-day/</guid>
       <description>2015-02-23
 http://lightning.network/
 video: https://www.youtube.com/watch?v=8zVzw912wPo
@@ -258,10 +258,10 @@ video: https://www.youtube.com/watch?v=8zVzw912wPo
     
     <item>
       <title>Socratic Seminar 20 (2020-11-30)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2020-11-30-socratic-seminar-20/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2020-11-30-socratic-seminar-20/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2020-11-30-socratic-seminar-20/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2020-11-30-socratic-seminar-20/</guid>
       <description>2020-11-30
 SF Bitcoin Devs socratic seminar #20
 ((Names anonymized.))
@@ -273,10 +273,10 @@ XX06: We already have people from Western Africa joining.</description>
     
     <item>
       <title>Taproot Schnorr Signatures And Sighash Noinput Oh My (2018-07-09)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2018-07-09-taproot-schnorr-signatures-and-sighash-noinput-oh-my/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2018-07-09-taproot-schnorr-signatures-and-sighash-noinput-oh-my/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2018-07-09-taproot-schnorr-signatures-and-sighash-noinput-oh-my/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2018-07-09-taproot-schnorr-signatures-and-sighash-noinput-oh-my/</guid>
       <description>Taproot, Schnorr signatures, and SIGHASH_NOINPUT, oh my!
 Pieter Wuille (sipa)
 https://twitter.com/kanzure/status/1021880538020368385
@@ -288,10 +288,10 @@ I will mostly be talking about improvements to the bitcoin scripting language. T
     
     <item>
       <title>Threshold Signatures And Accountability (2019-02-04)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2019-02-04-threshold-signatures-and-accountability/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2019-02-04-threshold-signatures-and-accountability/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2019-02-04-threshold-signatures-and-accountability/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2019-02-04-threshold-signatures-and-accountability/</guid>
       <description>Threshold signatures and accountability
 Andrew Poelstra
 https://twitter.com/kanzure/status/1092665108960968704

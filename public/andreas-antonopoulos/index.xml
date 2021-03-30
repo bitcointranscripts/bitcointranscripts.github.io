@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Andreas Antonopoulos on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/andreas-antonopoulos/</link>
+    <link>https://btctranscripts.com/andreas-antonopoulos/</link>
     <description>Recent content in Andreas Antonopoulos on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/andreas-antonopoulos/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/andreas-antonopoulos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Andreas Antonopolous Canada Senate Bitcoin (2014-10-08)</title>
-      <link>//btctranscripts.com/andreas-antonopoulos/2014-10-08-andreas-antonopolous-canada-senate-bitcoin/</link>
+      <link>https://btctranscripts.com/andreas-antonopoulos/2014-10-08-andreas-antonopolous-canada-senate-bitcoin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/andreas-antonopoulos/2014-10-08-andreas-antonopolous-canada-senate-bitcoin/</guid>
+      <guid>https://btctranscripts.com/andreas-antonopoulos/2014-10-08-andreas-antonopolous-canada-senate-bitcoin/</guid>
       <description>This is a transcript of submitted evidence to the Parliament of Canada&amp;rsquo;s Senate Committee on Banking, Trade and Commerce. Here is a video. The opening remarks can be found here.
 Another transcript may appear here but who knows.
 An additional transcript can be found here.
@@ -21,10 +21,10 @@ Prepared remarks. My experience is primarily in information security and network
     
     <item>
       <title>Andreas Antonopoulos - Hardware Wallet Security (2019-02-01)</title>
-      <link>//btctranscripts.com/andreas-antonopoulos/2019-02-01-andreas-antonopoulos-hardware-wallet-security/</link>
+      <link>https://btctranscripts.com/andreas-antonopoulos/2019-02-01-andreas-antonopoulos-hardware-wallet-security/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/andreas-antonopoulos/2019-02-01-andreas-antonopoulos-hardware-wallet-security/</guid>
+      <guid>https://btctranscripts.com/andreas-antonopoulos/2019-02-01-andreas-antonopoulos-hardware-wallet-security/</guid>
       <description>Name: Andreas Antonpoulos
 Topic: Are Hardware Wallets Secure Enough?
 Location: Andreas Antonopoulos YouTube channel
@@ -35,10 +35,10 @@ Are Hardware Wallets Secure Enough? Q - Hi Andreas. I store my crypto on a Ledge
     
     <item>
       <title>Andreas Antonopoulos - Initial Blockchain Download (2018-10-23)</title>
-      <link>//btctranscripts.com/andreas-antonopoulos/2018-10-23-andreas-antonopoulos-initial-blockchain-download/</link>
+      <link>https://btctranscripts.com/andreas-antonopoulos/2018-10-23-andreas-antonopoulos-initial-blockchain-download/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/andreas-antonopoulos/2018-10-23-andreas-antonopoulos-initial-blockchain-download/</guid>
+      <guid>https://btctranscripts.com/andreas-antonopoulos/2018-10-23-andreas-antonopoulos-initial-blockchain-download/</guid>
       <description>Andreas Antonopoulos
 Bitcoin Q&amp;amp;A: Initial blockchain download
 Video: https://www.youtube.com/watch?v=OrYDehC-8TU
@@ -47,10 +47,10 @@ Initial blockchain download Becca asks why does it take it so long to download t
     
     <item>
       <title>Andreas Antonopoulos - Schnorr Signatures (2018-10-07)</title>
-      <link>//btctranscripts.com/andreas-antonopoulos/2018-10-07-andreas-antonopoulos-schnorr-signatures/</link>
+      <link>https://btctranscripts.com/andreas-antonopoulos/2018-10-07-andreas-antonopoulos-schnorr-signatures/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/andreas-antonopoulos/2018-10-07-andreas-antonopoulos-schnorr-signatures/</guid>
+      <guid>https://btctranscripts.com/andreas-antonopoulos/2018-10-07-andreas-antonopoulos-schnorr-signatures/</guid>
       <description>Andreas Antonopoulos
 LTB Episode 378 - The Petro inside Venezuela &amp;amp; Schnorr Signatures
 Schnorr signatures We’re currently using the elliptic curve digital signature algorithm (ECDSA) which is a specific way of doing digital signatures with elliptic curves but not the only way. Schnorr signatures have some unique characteristics that make them better in many ways than the ECDSA algorithm we use today in Bitcoin.
@@ -59,10 +59,10 @@ Schnorr signatures are better because they have certain quirks in the way the ma
     
     <item>
       <title>Andreas Antonopoulos - Seed Splitting (2020-04-08)</title>
-      <link>//btctranscripts.com/andreas-antonopoulos/2020-04-08-andreas-antonopoulos-seed-splitting/</link>
+      <link>https://btctranscripts.com/andreas-antonopoulos/2020-04-08-andreas-antonopoulos-seed-splitting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/andreas-antonopoulos/2020-04-08-andreas-antonopoulos-seed-splitting/</guid>
+      <guid>https://btctranscripts.com/andreas-antonopoulos/2020-04-08-andreas-antonopoulos-seed-splitting/</guid>
       <description>Name: Andreas Antonopoulos
 Topic: Why is seed splitting a bad idea?
 Location: Andreas Antonopoulos YouTube channel

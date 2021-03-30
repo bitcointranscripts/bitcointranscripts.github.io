@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cryptoeconomic Systems 2019 on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/cryptoeconomic-systems/2019/</link>
+    <link>https://btctranscripts.com/cryptoeconomic-systems/2019/</link>
     <description>Recent content in Cryptoeconomic Systems 2019 on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/cryptoeconomic-systems/2019/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/cryptoeconomic-systems/2019/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>All About Decentralized Trust</title>
-      <link>//btctranscripts.com/cryptoeconomic-systems/2019/all-about-decentralized-trust/</link>
+      <link>https://btctranscripts.com/cryptoeconomic-systems/2019/all-about-decentralized-trust/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/cryptoeconomic-systems/2019/all-about-decentralized-trust/</guid>
+      <guid>https://btctranscripts.com/cryptoeconomic-systems/2019/all-about-decentralized-trust/</guid>
       <description>&amp;ndash; Disclaimer &amp;ndash;
   These are unpaid transcriptions, performed in real-time and in-person during the actual source presentation. Due to personal time constraints they are usually not reviewed against the source material once published. Errors are possible. If the original author/speaker or anyone else finds errors of substance, please email me at kanzure@gmail.com for corrections.
   I sometimes add annotations to the transcription text. These will always be denoted by a standard editor&amp;rsquo;s note in parenthesis brackets ((like this)), or in a numbered footnote.</description>
@@ -19,10 +19,10 @@
     
     <item>
       <title>Cross Chain Deals And Adversarial Commerce</title>
-      <link>//btctranscripts.com/cryptoeconomic-systems/2019/cross-chain-deals-and-adversarial-commerce/</link>
+      <link>https://btctranscripts.com/cryptoeconomic-systems/2019/cross-chain-deals-and-adversarial-commerce/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/cryptoeconomic-systems/2019/cross-chain-deals-and-adversarial-commerce/</guid>
+      <guid>https://btctranscripts.com/cryptoeconomic-systems/2019/cross-chain-deals-and-adversarial-commerce/</guid>
       <description>&amp;ndash; Disclaimer &amp;ndash;
   These are unpaid transcriptions, performed in real-time and in-person during the actual source presentation. Due to personal time constraints they are usually not reviewed against the source material once published. Errors are possible. If the original author/speaker or anyone else finds errors of substance, please email me at kanzure@gmail.com for corrections.
   I sometimes add annotations to the transcription text. These will always be denoted by a standard editor&amp;rsquo;s note in parenthesis brackets ((like this)), or in a numbered footnote.</description>
@@ -30,10 +30,10 @@
     
     <item>
       <title>Everything Is Broken</title>
-      <link>//btctranscripts.com/cryptoeconomic-systems/2019/everything-is-broken/</link>
+      <link>https://btctranscripts.com/cryptoeconomic-systems/2019/everything-is-broken/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/cryptoeconomic-systems/2019/everything-is-broken/</guid>
+      <guid>https://btctranscripts.com/cryptoeconomic-systems/2019/everything-is-broken/</guid>
       <description>Everything is broken
 Cory Fields
 This is a clickbaity title, I realize. But the reason I say it is because it&amp;rsquo;s become a mantra for at least myself but for the people who hear me banging my hands on the desk all the time. I am Cory Fields and I work here at the MIT DCI. I am also a Bitcoin Core developer. I am less active these days there because I have been spending some time looking at some higher layer stuff.</description>
@@ -41,10 +41,10 @@ This is a clickbaity title, I realize. But the reason I say it is because it&amp
     
     <item>
       <title>Flash Boys V2</title>
-      <link>//btctranscripts.com/cryptoeconomic-systems/2019/flash-boys-v2/</link>
+      <link>https://btctranscripts.com/cryptoeconomic-systems/2019/flash-boys-v2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/cryptoeconomic-systems/2019/flash-boys-v2/</guid>
+      <guid>https://btctranscripts.com/cryptoeconomic-systems/2019/flash-boys-v2/</guid>
       <description>&amp;ndash; Disclaimer &amp;ndash;
   These are unpaid transcriptions, performed in real-time and in-person during the actual source presentation. Due to personal time constraints they are usually not reviewed against the source material once published. Errors are possible. If the original author/speaker or anyone else finds errors of substance, please email me at kanzure@gmail.com for corrections.
   I sometimes add annotations to the transcription text. These will always be denoted by a standard editor&amp;rsquo;s note in parenthesis brackets ((like this)), or in a numbered footnote.</description>
@@ -52,10 +52,10 @@ This is a clickbaity title, I realize. But the reason I say it is because it&amp
     
     <item>
       <title>Funding</title>
-      <link>//btctranscripts.com/cryptoeconomic-systems/2019/funding/</link>
+      <link>https://btctranscripts.com/cryptoeconomic-systems/2019/funding/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/cryptoeconomic-systems/2019/funding/</guid>
+      <guid>https://btctranscripts.com/cryptoeconomic-systems/2019/funding/</guid>
       <description>Tadge Dryja
 Funding bitcoin development
 It&amp;rsquo;s basically open-source funding. It&amp;rsquo;s a subset of open-source funding. But these are similar problems with many open-source projects. As far as I can tell, all these digital currency cryptocurrency projects are licensed with open-source licenses. There may be some that are not, and some things are patented. I generally steer clear of the patented work. If it&amp;rsquo;s decentralized and open-source, then why are you just delivering a binary to me?</description>
@@ -63,10 +63,10 @@ It&amp;rsquo;s basically open-source funding. It&amp;rsquo;s a subset of open-so
     
     <item>
       <title>Introduction</title>
-      <link>//btctranscripts.com/cryptoeconomic-systems/2019/introduction/</link>
+      <link>https://btctranscripts.com/cryptoeconomic-systems/2019/introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/cryptoeconomic-systems/2019/introduction/</guid>
+      <guid>https://btctranscripts.com/cryptoeconomic-systems/2019/introduction/</guid>
       <description>&amp;ndash; Disclaimer &amp;ndash;
   These are unpaid transcriptions, performed in real-time and in-person during the actual source presentation. Due to personal time constraints they are usually not reviewed against the source material once published. Errors are possible. If the original author/speaker or anyone else finds errors of substance, please email me at kanzure@gmail.com for corrections.
   I sometimes add annotations to the transcription text. These will always be denoted by a standard editor&amp;rsquo;s note in parenthesis brackets ((like this)), or in a numbered footnote.</description>
@@ -74,10 +74,10 @@ It&amp;rsquo;s basically open-source funding. It&amp;rsquo;s a subset of open-so
     
     <item>
       <title>Journal Review</title>
-      <link>//btctranscripts.com/cryptoeconomic-systems/2019/journal-review/</link>
+      <link>https://btctranscripts.com/cryptoeconomic-systems/2019/journal-review/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/cryptoeconomic-systems/2019/journal-review/</guid>
+      <guid>https://btctranscripts.com/cryptoeconomic-systems/2019/journal-review/</guid>
       <description>&amp;ndash; Disclaimer &amp;ndash;
   These are unpaid transcriptions, performed in real-time and in-person during the actual source presentation. Due to personal time constraints they are usually not reviewed against the source material once published. Errors are possible. If the original author/speaker or anyone else finds errors of substance, please email me at kanzure@gmail.com for corrections.
   I sometimes add annotations to the transcription text. These will always be denoted by a standard editor&amp;rsquo;s note in parenthesis brackets ((like this)), or in a numbered footnote.</description>
@@ -85,10 +85,10 @@ It&amp;rsquo;s basically open-source funding. It&amp;rsquo;s a subset of open-so
     
     <item>
       <title>Journals As Clubs</title>
-      <link>//btctranscripts.com/cryptoeconomic-systems/2019/journals-as-clubs/</link>
+      <link>https://btctranscripts.com/cryptoeconomic-systems/2019/journals-as-clubs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/cryptoeconomic-systems/2019/journals-as-clubs/</guid>
+      <guid>https://btctranscripts.com/cryptoeconomic-systems/2019/journals-as-clubs/</guid>
       <description>&amp;ndash; Disclaimer &amp;ndash;
   These are unpaid transcriptions, performed in real-time and in-person during the actual source presentation. Due to personal time constraints they are usually not reviewed against the source material once published. Errors are possible. If the original author/speaker or anyone else finds errors of substance, please email me at kanzure@gmail.com for corrections.
   I sometimes add annotations to the transcription text. These will always be denoted by a standard editor&amp;rsquo;s note in parenthesis brackets ((like this)), or in a numbered footnote.</description>
@@ -96,10 +96,10 @@ It&amp;rsquo;s basically open-source funding. It&amp;rsquo;s a subset of open-so
     
     <item>
       <title>Knowledge Aggregation And Propagation</title>
-      <link>//btctranscripts.com/cryptoeconomic-systems/2019/knowledge-aggregation-and-propagation/</link>
+      <link>https://btctranscripts.com/cryptoeconomic-systems/2019/knowledge-aggregation-and-propagation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/cryptoeconomic-systems/2019/knowledge-aggregation-and-propagation/</guid>
+      <guid>https://btctranscripts.com/cryptoeconomic-systems/2019/knowledge-aggregation-and-propagation/</guid>
       <description>Intro https://docs.google.com/document/d/1a1uRy10dBBcxrnzjdUaO2y03f5H34yFlxktOcanvVYE/edit
 https://cess.pubpub.org/pub/knowledge-aggregation/branch/2/
 I&amp;rsquo;ll be the contrarian - I think academia is awful and should be destroyed.
@@ -110,10 +110,10 @@ I&amp;rsquo;m a bitcoin core developer. Also worked at LedgerX (4 years). I also
     
     <item>
       <title>Libra</title>
-      <link>//btctranscripts.com/cryptoeconomic-systems/2019/libra/</link>
+      <link>https://btctranscripts.com/cryptoeconomic-systems/2019/libra/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/cryptoeconomic-systems/2019/libra/</guid>
+      <guid>https://btctranscripts.com/cryptoeconomic-systems/2019/libra/</guid>
       <description>&amp;ndash; Disclaimer &amp;ndash;
   These are unpaid transcriptions, performed in real-time and in-person during the actual source presentation. Due to personal time constraints they are usually not reviewed against the source material once published. Errors are possible. If the original author/speaker or anyone else finds errors of substance, please email me at kanzure@gmail.com for corrections.
   I sometimes add annotations to the transcription text. These will always be denoted by a standard editor&amp;rsquo;s note in parenthesis brackets ((like this)), or in a numbered footnote.</description>
@@ -121,10 +121,10 @@ I&amp;rsquo;m a bitcoin core developer. Also worked at LedgerX (4 years). I also
     
     <item>
       <title>Mechanism Design</title>
-      <link>//btctranscripts.com/cryptoeconomic-systems/2019/mechanism-design/</link>
+      <link>https://btctranscripts.com/cryptoeconomic-systems/2019/mechanism-design/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/cryptoeconomic-systems/2019/mechanism-design/</guid>
+      <guid>https://btctranscripts.com/cryptoeconomic-systems/2019/mechanism-design/</guid>
       <description>&amp;ndash; Disclaimer &amp;ndash;
   These are unpaid transcriptions, performed in real-time and in-person during the actual source presentation. Due to personal time constraints they are usually not reviewed against the source material once published. Errors are possible. If the original author/speaker or anyone else finds errors of substance, please email me at kanzure@gmail.com for corrections.
   I sometimes add annotations to the transcription text. These will always be denoted by a standard editor&amp;rsquo;s note in parenthesis brackets ((like this)), or in a numbered footnote.</description>
@@ -132,10 +132,10 @@ I&amp;rsquo;m a bitcoin core developer. Also worked at LedgerX (4 years). I also
     
     <item>
       <title>Near Misses</title>
-      <link>//btctranscripts.com/cryptoeconomic-systems/2019/near-misses/</link>
+      <link>https://btctranscripts.com/cryptoeconomic-systems/2019/near-misses/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/cryptoeconomic-systems/2019/near-misses/</guid>
+      <guid>https://btctranscripts.com/cryptoeconomic-systems/2019/near-misses/</guid>
       <description>Near misses: What could have gone wrong
 Ethan Heilman
 Introduction Thank you. I am Ethan Heilman. I am a research whose has done a bunch of work in security of cryptocurrencies. I am also CTO of Arwen which does secure atomic swaps. I am a little sick today so please excuse my coughing, wheezing and drinking lots of water.
@@ -144,10 +144,10 @@ Bitcoin scary stories The general outline of this talk is going to be &amp;ldquo
     
     <item>
       <title>Reproducible Builds</title>
-      <link>//btctranscripts.com/cryptoeconomic-systems/2019/reproducible-builds/</link>
+      <link>https://btctranscripts.com/cryptoeconomic-systems/2019/reproducible-builds/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/cryptoeconomic-systems/2019/reproducible-builds/</guid>
+      <guid>https://btctranscripts.com/cryptoeconomic-systems/2019/reproducible-builds/</guid>
       <description>Reproducible builds, binaries and trust
 Carl Dong (Chaincode Labs)
 Introduction I am Carl and I work at Chaincode Labs and I will be talking about software, binaries and trust. I am happy that Ethan talked about his subject because it ties into my talk. For the purposes of this talk, assume that everything is perfect and there&amp;rsquo;s no bugs and no CVEs and all the things that Ethan talked about don&amp;rsquo;t exist.</description>
@@ -155,10 +155,10 @@ Introduction I am Carl and I work at Chaincode Labs and I will be talking about 
     
     <item>
       <title>Russell Oconnor Simplicity (2019-10-15)</title>
-      <link>//btctranscripts.com/cryptoeconomic-systems/2019/2019-10-15-russell-oconnor-simplicity/</link>
+      <link>https://btctranscripts.com/cryptoeconomic-systems/2019/2019-10-15-russell-oconnor-simplicity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/cryptoeconomic-systems/2019/2019-10-15-russell-oconnor-simplicity/</guid>
+      <guid>https://btctranscripts.com/cryptoeconomic-systems/2019/2019-10-15-russell-oconnor-simplicity/</guid>
       <description>Name: Russell O’Connor
 Topic: Simplicity
 Location: CES Summit 2019
@@ -171,10 +171,10 @@ Intro So Simplicity is a programming language that I have been working on at Blo
     
     <item>
       <title>Solving The Blockchain Trilemma</title>
-      <link>//btctranscripts.com/cryptoeconomic-systems/2019/solving-the-blockchain-trilemma/</link>
+      <link>https://btctranscripts.com/cryptoeconomic-systems/2019/solving-the-blockchain-trilemma/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/cryptoeconomic-systems/2019/solving-the-blockchain-trilemma/</guid>
+      <guid>https://btctranscripts.com/cryptoeconomic-systems/2019/solving-the-blockchain-trilemma/</guid>
       <description>&amp;ndash; Disclaimer &amp;ndash;
   These are unpaid transcriptions, performed in real-time and in-person during the actual source presentation. Due to personal time constraints they are usually not reviewed against the source material once published. Errors are possible. If the original author/speaker or anyone else finds errors of substance, please email me at kanzure@gmail.com for corrections.
   I sometimes add annotations to the transcription text. These will always be denoted by a standard editor&amp;rsquo;s note in parenthesis brackets ((like this)), or in a numbered footnote.</description>
@@ -182,10 +182,10 @@ Intro So Simplicity is a programming language that I have been working on at Blo
     
     <item>
       <title>Threshold Schnorr Signatures</title>
-      <link>//btctranscripts.com/cryptoeconomic-systems/2019/threshold-schnorr-signatures/</link>
+      <link>https://btctranscripts.com/cryptoeconomic-systems/2019/threshold-schnorr-signatures/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/cryptoeconomic-systems/2019/threshold-schnorr-signatures/</guid>
+      <guid>https://btctranscripts.com/cryptoeconomic-systems/2019/threshold-schnorr-signatures/</guid>
       <description>Name: Tim Ruffing
 Topic: The Quest for Practical Threshold Schnorr Signatures
 Location: Cryptoeconomic Systems Summit 2019
@@ -199,10 +199,10 @@ Disclaimer First of all, this is work in progress.</description>
     
     <item>
       <title>Token Journal</title>
-      <link>//btctranscripts.com/cryptoeconomic-systems/2019/token-journal/</link>
+      <link>https://btctranscripts.com/cryptoeconomic-systems/2019/token-journal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/cryptoeconomic-systems/2019/token-journal/</guid>
+      <guid>https://btctranscripts.com/cryptoeconomic-systems/2019/token-journal/</guid>
       <description>&amp;ndash; Disclaimer &amp;ndash;
   These are unpaid transcriptions, performed in real-time and in-person during the actual source presentation. Due to personal time constraints they are usually not reviewed against the source material once published. Errors are possible. If the original author/speaker or anyone else finds errors of substance, please email me at kanzure@gmail.com for corrections.
   I sometimes add annotations to the transcription text. These will always be denoted by a standard editor&amp;rsquo;s note in parenthesis brackets ((like this)), or in a numbered footnote.</description>
@@ -210,10 +210,10 @@ Disclaimer First of all, this is work in progress.</description>
     
     <item>
       <title>Trust And Blockchain Marketplaces</title>
-      <link>//btctranscripts.com/cryptoeconomic-systems/2019/trust-and-blockchain-marketplaces/</link>
+      <link>https://btctranscripts.com/cryptoeconomic-systems/2019/trust-and-blockchain-marketplaces/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/cryptoeconomic-systems/2019/trust-and-blockchain-marketplaces/</guid>
+      <guid>https://btctranscripts.com/cryptoeconomic-systems/2019/trust-and-blockchain-marketplaces/</guid>
       <description>David Vorick
 Introduction I founded Sia, a decentralized storage platform started in 2014. Today, Sia is the only decentralized storage platform out there. I also founded Obelisk which is a mining equipment manufacturing company.
 Mining supply chains are centralized Basically all the mining chips are coming out of TSMC or Samsung. For the longest time it was TSMC but for some reason Samsung is at the forefront for this cycle but I would expect them to fade out in the next cycle.</description>
@@ -221,10 +221,10 @@ Mining supply chains are centralized Basically all the mining chips are coming o
     
     <item>
       <title>Zksharks</title>
-      <link>//btctranscripts.com/cryptoeconomic-systems/2019/zksharks/</link>
+      <link>https://btctranscripts.com/cryptoeconomic-systems/2019/zksharks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/cryptoeconomic-systems/2019/zksharks/</guid>
+      <guid>https://btctranscripts.com/cryptoeconomic-systems/2019/zksharks/</guid>
       <description>zkSHARKs
 Madars Virza
 Introduction Indeed I am Madars Virza. I am going to talk about SHARKs. I am going to be talking about zero-knowledge SHARKs. It&amp;rsquo;s actually something serious and it&amp;rsquo;s related to non-interactive zero-knowledge proofs.

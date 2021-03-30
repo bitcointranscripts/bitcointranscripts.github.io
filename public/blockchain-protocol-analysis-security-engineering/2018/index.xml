@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blockchain Protocol Analysis Security Engineering 2018 on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/</link>
+    <link>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/</link>
     <description>Recent content in Blockchain Protocol Analysis Security Engineering 2018 on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bulletproofs</title>
-      <link>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/bulletproofs/</link>
+      <link>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/bulletproofs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/bulletproofs/</guid>
+      <guid>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/bulletproofs/</guid>
       <description>Bulletproofs
 Benedikt Bünz
 video: https://www.youtube.com/watch?v=gZjDKgR4dw8
@@ -24,10 +24,10 @@ Introduction Good morning everyone. I am Benedikt Bünz and I am going to talk a
     
     <item>
       <title>Christopher Allen Smart Signatures (2018-01-24)</title>
-      <link>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/2018-01-24-christopher-allen-smart-signatures/</link>
+      <link>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/2018-01-24-christopher-allen-smart-signatures/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/2018-01-24-christopher-allen-smart-signatures/</guid>
+      <guid>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/2018-01-24-christopher-allen-smart-signatures/</guid>
       <description>Name: Christopher Allen
 Topic: Smart Signatures: Experiments in Authorization
 Location: BPASE 2018, Stanford University
@@ -39,10 +39,10 @@ Intro Good afternoon. My name is Christopher Allen, I am with Blockstream and to
     
     <item>
       <title>Hardening Lightning</title>
-      <link>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/hardening-lightning/</link>
+      <link>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/hardening-lightning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/hardening-lightning/</guid>
+      <guid>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/hardening-lightning/</guid>
       <description>Hardening lightning network
 Olaoluwa Osuntokun (roasbeef), Lightning Labs
 https://twitter.com/kanzure/status/959155562134102016
@@ -55,10 +55,10 @@ Introduction I am basically going to go over some ways that I&amp;rsquo;ve been 
     
     <item>
       <title>Proofs Of Space</title>
-      <link>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/proofs-of-space/</link>
+      <link>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/proofs-of-space/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/proofs-of-space/</guid>
+      <guid>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/proofs-of-space/</guid>
       <description>Beyond Hellman&amp;rsquo;s time-memory trade-offs with applications to proofs of space
 Bram Cohen
 video: https://www.youtube.com/watch?v=iqxkO7C-cyk
@@ -69,10 +69,10 @@ Outline I am going to describe what proofs of space are. I&amp;rsquo;ll give som
     
     <item>
       <title>Russell Oconnor Simplicity (2018-01-25)</title>
-      <link>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/2018-01-25-russell-oconnor-simplicity/</link>
+      <link>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/2018-01-25-russell-oconnor-simplicity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/2018-01-25-russell-oconnor-simplicity/</guid>
+      <guid>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/2018-01-25-russell-oconnor-simplicity/</guid>
       <description>Name: Russell O’Connor
 Topic: Simplicity: A New Language for Blockchains
 Location: BPASE 2018, Stanford University
@@ -86,10 +86,10 @@ Blockchains and Smart Contracts I know everyone is familiar with this in the aud
     
     <item>
       <title>Schnorr Signatures For Bitcoin - Challenges and Opportunities</title>
-      <link>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/schnorr-signatures-for-bitcoin-challenges-opportunities/</link>
+      <link>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/schnorr-signatures-for-bitcoin-challenges-opportunities/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/schnorr-signatures-for-bitcoin-challenges-opportunities/</guid>
+      <guid>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/schnorr-signatures-for-bitcoin-challenges-opportunities/</guid>
       <description>Schnorr signatures for Bitcoin: Opportunities and challenges
 Pieter Wuille (sipa)
 2018-01-31

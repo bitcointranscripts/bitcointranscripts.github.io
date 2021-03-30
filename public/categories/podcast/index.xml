@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>podcast on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/categories/podcast/</link>
+    <link>https://btctranscripts.com/categories/podcast/</link>
     <description>Recent content in podcast on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/categories/podcast/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/categories/podcast/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Adam Back Bryan Bishop Block Reorgs (2019-05-14)</title>
-      <link>//btctranscripts.com/what-bitcoin-did-podcast/2019-05-14-adam-back-bryan-bishop-block-reorgs/</link>
+      <link>https://btctranscripts.com/what-bitcoin-did-podcast/2019-05-14-adam-back-bryan-bishop-block-reorgs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/what-bitcoin-did-podcast/2019-05-14-adam-back-bryan-bishop-block-reorgs/</guid>
+      <guid>https://btctranscripts.com/what-bitcoin-did-podcast/2019-05-14-adam-back-bryan-bishop-block-reorgs/</guid>
       <description>Name: Adam Back and Bryan Bishop
 Topic: Bitcoin Block Re-orgs
 Location: What Bitcoin Did Podcast
@@ -28,10 +28,10 @@ PM: So we&amp;rsquo;re here to talk about re-orgs. Something I&amp;rsquo;d heard
     
     <item>
       <title>AJ Towns - Schnorr Taproot (2019-12-27)</title>
-      <link>//btctranscripts.com/stephan-livera-podcast/2019-12-27-aj-towns-schnorr-taproot/</link>
+      <link>https://btctranscripts.com/stephan-livera-podcast/2019-12-27-aj-towns-schnorr-taproot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stephan-livera-podcast/2019-12-27-aj-towns-schnorr-taproot/</guid>
+      <guid>https://btctranscripts.com/stephan-livera-podcast/2019-12-27-aj-towns-schnorr-taproot/</guid>
       <description>Name: AJ Towns
 Topic: Schnorr Taproot Tapscript BIPs
 Location: Stephan Livera Podcast
@@ -44,10 +44,10 @@ Stephan Livera: Thanks for joining me AJ. I know you’re doing a lot of really 
     
     <item>
       <title>Andreas Antonopoulos - Schnorr Signatures (2018-10-07)</title>
-      <link>//btctranscripts.com/andreas-antonopoulos/2018-10-07-andreas-antonopoulos-schnorr-signatures/</link>
+      <link>https://btctranscripts.com/andreas-antonopoulos/2018-10-07-andreas-antonopoulos-schnorr-signatures/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/andreas-antonopoulos/2018-10-07-andreas-antonopoulos-schnorr-signatures/</guid>
+      <guid>https://btctranscripts.com/andreas-antonopoulos/2018-10-07-andreas-antonopoulos-schnorr-signatures/</guid>
       <description>Andreas Antonopoulos
 LTB Episode 378 - The Petro inside Venezuela &amp;amp; Schnorr Signatures
 Schnorr signatures We’re currently using the elliptic curve digital signature algorithm (ECDSA) which is a specific way of doing digital signatures with elliptic curves but not the only way. Schnorr signatures have some unique characteristics that make them better in many ways than the ECDSA algorithm we use today in Bitcoin.
@@ -56,10 +56,10 @@ Schnorr signatures are better because they have certain quirks in the way the ma
     
     <item>
       <title>Andrew Poelstra Miniscript (2019-05-11)</title>
-      <link>//btctranscripts.com/noded-podcast/2019-05-11-andrew-poelstra-miniscript/</link>
+      <link>https://btctranscripts.com/noded-podcast/2019-05-11-andrew-poelstra-miniscript/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/noded-podcast/2019-05-11-andrew-poelstra-miniscript/</guid>
+      <guid>https://btctranscripts.com/noded-podcast/2019-05-11-andrew-poelstra-miniscript/</guid>
       <description>Noded podcast May 10th 2019
 Audio: https://soundcloud.com/noded-bitcoin-podcast/noded-0490-with-andrew-poelstra
 https://twitter.com/kanzure/status/1135217746059415552
@@ -71,10 +71,10 @@ Andrew: I’m good. How are you?</description>
     
     <item>
       <title>Andrew Poelstra TFTC (2019-06-18)</title>
-      <link>//btctranscripts.com/tftc-podcast/2019-06-18-andrew-poelstra-tftc/</link>
+      <link>https://btctranscripts.com/tftc-podcast/2019-06-18-andrew-poelstra-tftc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/tftc-podcast/2019-06-18-andrew-poelstra-tftc/</guid>
+      <guid>https://btctranscripts.com/tftc-podcast/2019-06-18-andrew-poelstra-tftc/</guid>
       <description>TFTC podcast with Andrew Poelstra - June 18th 2019 (Abridged)
 https://twitter.com/kanzure/status/1160178010986876928
 Podcast: https://talesfromthecrypt.libsyn.com/tales-from-the-crypt-80-andrew-poelstra
@@ -83,10 +83,10 @@ How the idea of Taproot was formed Andrew: There are some small off suit IRC cha
     
     <item>
       <title>Bryan Bishop (2019-09-22)</title>
-      <link>//btctranscripts.com/stephan-livera-podcast/2019-09-22-bryan-bishop/</link>
+      <link>https://btctranscripts.com/stephan-livera-podcast/2019-09-22-bryan-bishop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stephan-livera-podcast/2019-09-22-bryan-bishop/</guid>
+      <guid>https://btctranscripts.com/stephan-livera-podcast/2019-09-22-bryan-bishop/</guid>
       <description>Stephan Livera Podcast with Bryan Bishop - September 22nd 2019
 Bitcoin Vaults and Custody
 Podcast: https://stephanlivera.com/episode/108/
@@ -97,10 +97,10 @@ Stephan Livera: Yeah, so look, we’re doing Bitcoin Custody. I know you’re on
     
     <item>
       <title>Carl Dong - Reproducible Builds (2020-11-30)</title>
-      <link>//btctranscripts.com/chaincode-labs/chaincode-podcast/2020-11-30-carl-dong-reproducible-builds/</link>
+      <link>https://btctranscripts.com/chaincode-labs/chaincode-podcast/2020-11-30-carl-dong-reproducible-builds/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/chaincode-labs/chaincode-podcast/2020-11-30-carl-dong-reproducible-builds/</guid>
+      <guid>https://btctranscripts.com/chaincode-labs/chaincode-podcast/2020-11-30-carl-dong-reproducible-builds/</guid>
       <description>Name: Carl Dong
 Topic: Reproducible Build Systems
 Location: Chaincode Labs Podcast (Episode 9 and 10)
@@ -115,10 +115,10 @@ CD: We’ve been at home.</description>
     
     <item>
       <title>Christian Decker Channel Factories (2019-03-14)</title>
-      <link>//btctranscripts.com/stephan-livera-podcast/2019-03-14-christian-decker-channel-factories/</link>
+      <link>https://btctranscripts.com/stephan-livera-podcast/2019-03-14-christian-decker-channel-factories/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stephan-livera-podcast/2019-03-14-christian-decker-channel-factories/</guid>
+      <guid>https://btctranscripts.com/stephan-livera-podcast/2019-03-14-christian-decker-channel-factories/</guid>
       <description>Name: Christian Decker
 Topic: Lightning Channel Factories
 Location: Stephan Livera Podcast
@@ -131,10 +131,10 @@ Stephan: There has been a lot of chatter in the Bitcoin community on what might 
     
     <item>
       <title>Christian Decker Lightning Topics (2020-08-13)</title>
-      <link>//btctranscripts.com/stephan-livera-podcast/2020-08-13-christian-decker-lightning-topics/</link>
+      <link>https://btctranscripts.com/stephan-livera-podcast/2020-08-13-christian-decker-lightning-topics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stephan-livera-podcast/2020-08-13-christian-decker-lightning-topics/</guid>
+      <guid>https://btctranscripts.com/stephan-livera-podcast/2020-08-13-christian-decker-lightning-topics/</guid>
       <description>Name: Christian Decker
 Topic: ANYPREVOUT, MPP, Mitigating Lightning Attacks
 Location: Stephan Livera Podcast
@@ -149,10 +149,10 @@ SL: I wanted to chat with you about a bunch of stuff that you’ve been doing. W
     
     <item>
       <title>Christopher Jeffrey Consensus Barnacles (2016-12-25)</title>
-      <link>//btctranscripts.com/lets-talk-bitcoin-podcast/2016-12-25-christopher-jeffrey-consensus-barnacles/</link>
+      <link>https://btctranscripts.com/lets-talk-bitcoin-podcast/2016-12-25-christopher-jeffrey-consensus-barnacles/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/lets-talk-bitcoin-podcast/2016-12-25-christopher-jeffrey-consensus-barnacles/</guid>
+      <guid>https://btctranscripts.com/lets-talk-bitcoin-podcast/2016-12-25-christopher-jeffrey-consensus-barnacles/</guid>
       <description>Name: Christopher Jeffrey (JJ)
 Topic: Barnacles of Consensus
 Location: Let’s Talk Bitcoin podcast (Episode 319)
@@ -167,10 +167,10 @@ AL: We are going to jump right into it with the elephant in the room on all this
     
     <item>
       <title>Conner Fromknecht Stephan Livera (2019-06-24)</title>
-      <link>//btctranscripts.com/stephan-livera-podcast/2019-06-24-conner-fromknecht-stephan-livera/</link>
+      <link>https://btctranscripts.com/stephan-livera-podcast/2019-06-24-conner-fromknecht-stephan-livera/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stephan-livera-podcast/2019-06-24-conner-fromknecht-stephan-livera/</guid>
+      <guid>https://btctranscripts.com/stephan-livera-podcast/2019-06-24-conner-fromknecht-stephan-livera/</guid>
       <description>Stephan Livera podcast with Conner Fromknecht - June 24th 2019
 https://twitter.com/kanzure/status/1143553150152060928
 Podcast: https://stephanlivera.com/episode/83
@@ -180,10 +180,10 @@ Conner: Awesome, thank you Stephan. It has been a while since we first met in Au
     
     <item>
       <title>Consensus Uasf And Forks (2017-06-04)</title>
-      <link>//btctranscripts.com/lets-talk-bitcoin-podcast/2017-06-04-consensus-uasf-and-forks/</link>
+      <link>https://btctranscripts.com/lets-talk-bitcoin-podcast/2017-06-04-consensus-uasf-and-forks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/lets-talk-bitcoin-podcast/2017-06-04-consensus-uasf-and-forks/</guid>
+      <guid>https://btctranscripts.com/lets-talk-bitcoin-podcast/2017-06-04-consensus-uasf-and-forks/</guid>
       <description>Name: Andreas Antonopoulos
 Topic: On Consensus and All Kinds of Forks
 Location: Let’s Talk Bitcoin podcast (Episode 333)
@@ -194,10 +194,10 @@ User activated soft forks vs hard forks Adam Levine (AL): I’m trying to look a
     
     <item>
       <title>Eric Lombrozo Luke Dashjr Taproot Activation (2020-08-03)</title>
-      <link>//btctranscripts.com/bitcoin-magazine/2020-08-03-eric-lombrozo-luke-dashjr-taproot-activation/</link>
+      <link>https://btctranscripts.com/bitcoin-magazine/2020-08-03-eric-lombrozo-luke-dashjr-taproot-activation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-magazine/2020-08-03-eric-lombrozo-luke-dashjr-taproot-activation/</guid>
+      <guid>https://btctranscripts.com/bitcoin-magazine/2020-08-03-eric-lombrozo-luke-dashjr-taproot-activation/</guid>
       <description>Name: Eric Lombrozo and Luke Dashjr
 Topic: How to Activate a New Soft Fork
 Location: Bitcoin Magazine (online)
@@ -211,10 +211,10 @@ Eric Lombrozo (EL): We are doing great.</description>
     
     <item>
       <title>James Obeirne (2019-04-11)</title>
-      <link>//btctranscripts.com/stephan-livera-podcast/2019-04-11-james-obeirne/</link>
+      <link>https://btctranscripts.com/stephan-livera-podcast/2019-04-11-james-obeirne/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stephan-livera-podcast/2019-04-11-james-obeirne/</guid>
+      <guid>https://btctranscripts.com/stephan-livera-podcast/2019-04-11-james-obeirne/</guid>
       <description>Stephan Livera Podcast with James O’Beirne - April 11th 2019
 The Truth About ‘Power’ in Bitcoin
 Podcast: https://stephanlivera.com/episode/66/
@@ -224,10 +224,10 @@ Stephan Livera: Hello and welcome to the Stephan Livera podcast focused on Bitco
     
     <item>
       <title>Jeremy Rubin CTV (2020-02-11)</title>
-      <link>//btctranscripts.com/chaincode-labs/chaincode-podcast/2020-02-11-jeremy-rubin-ctv/</link>
+      <link>https://btctranscripts.com/chaincode-labs/chaincode-podcast/2020-02-11-jeremy-rubin-ctv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/chaincode-labs/chaincode-podcast/2020-02-11-jeremy-rubin-ctv/</guid>
+      <guid>https://btctranscripts.com/chaincode-labs/chaincode-podcast/2020-02-11-jeremy-rubin-ctv/</guid>
       <description>Name: Jeremy Rubin
 Topic: CHECKTEMPLATEVERIFY
 Location: Chaincode Labs Podcast
@@ -242,10 +242,10 @@ Jeremy: I first heard about Bitcoin in 2011. I was interning at MIT during high 
     
     <item>
       <title>Jnewbery Cve 2018 17144 Bug</title>
-      <link>//btctranscripts.com/noded-podcast/jnewbery-cve-2018-17144-bug/</link>
+      <link>https://btctranscripts.com/noded-podcast/jnewbery-cve-2018-17144-bug/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/noded-podcast/jnewbery-cve-2018-17144-bug/</guid>
+      <guid>https://btctranscripts.com/noded-podcast/jnewbery-cve-2018-17144-bug/</guid>
       <description>Noded podcast September 26th 2018
 Video: https://www.youtube.com/watch?v=286EmFqGMb8
 Intros
@@ -255,10 +255,10 @@ bitstein: And in a bombshell Tweet John Newbery said that he was responsible for
     
     <item>
       <title>Jon Atack (2019-11-13)</title>
-      <link>//btctranscripts.com/stephan-livera-podcast/2019-11-13-jon-atack/</link>
+      <link>https://btctranscripts.com/stephan-livera-podcast/2019-11-13-jon-atack/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stephan-livera-podcast/2019-11-13-jon-atack/</guid>
+      <guid>https://btctranscripts.com/stephan-livera-podcast/2019-11-13-jon-atack/</guid>
       <description>Stephan Livera Podcast with Jon Atack - November 13th 2019
 Bitcoin Core contribution
 Podcast: https://stephanlivera.com/episode/124/
@@ -270,10 +270,10 @@ Stephan Livera: So, Jon, I had the pleasure of meeting you at The Lightning Conf
     
     <item>
       <title>Jonas Nick, Tim Ruffing - MuSig, MuSig-DN and MuSig2 (2020-10-27)</title>
-      <link>//btctranscripts.com/stephan-livera-podcast/2020-10-27-jonas-nick-tim-ruffing-musig2/</link>
+      <link>https://btctranscripts.com/stephan-livera-podcast/2020-10-27-jonas-nick-tim-ruffing-musig2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stephan-livera-podcast/2020-10-27-jonas-nick-tim-ruffing-musig2/</guid>
+      <guid>https://btctranscripts.com/stephan-livera-podcast/2020-10-27-jonas-nick-tim-ruffing-musig2/</guid>
       <description>Name: Jonas Nick and Tim Ruffing
 Topic: MuSig, MuSig-DN and MuSig2
 Location: Stephan Livera Podcast
@@ -293,10 +293,10 @@ Intro Stephan Livera (SL): Jonas and Tim, welcome to the show.</description>
     
     <item>
       <title>Kevin Loaec Antoine Poinsot Revault (2020-04-24)</title>
-      <link>//btctranscripts.com/honey-badger-diaries/2020-04-24-kevin-loaec-antoine-poinsot-revault/</link>
+      <link>https://btctranscripts.com/honey-badger-diaries/2020-04-24-kevin-loaec-antoine-poinsot-revault/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/honey-badger-diaries/2020-04-24-kevin-loaec-antoine-poinsot-revault/</guid>
+      <guid>https://btctranscripts.com/honey-badger-diaries/2020-04-24-kevin-loaec-antoine-poinsot-revault/</guid>
       <description>Name: Kevin Loaec and Antoine Poinsot
 Topic: Revault Bitcoin vaults
 Location: Honey Badger Diaries (podcast)
@@ -308,10 +308,10 @@ Kevin: My personal interest in vaults started last year when Bryan Bishop publis
     
     <item>
       <title>Laolu Conner Lnd (2018-12-14)</title>
-      <link>//btctranscripts.com/noded-podcast/2018-12-14-laolu-conner-lnd/</link>
+      <link>https://btctranscripts.com/noded-podcast/2018-12-14-laolu-conner-lnd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/noded-podcast/2018-12-14-laolu-conner-lnd/</guid>
+      <guid>https://btctranscripts.com/noded-podcast/2018-12-14-laolu-conner-lnd/</guid>
       <description>Noded podcast with Laolu Osuntokun and Conner Fromknecht - December 14th 2018
 https://twitter.com/kanzure/status/1089187758931890178
 Podcast: https://noded.org/podcast/noded-0360-with-olaoluwa-osuntokun-and-conner-fromknecht/
@@ -322,10 +322,10 @@ Pierre: So I listened to Laolu on Stephan Livera’s podcast and I would encoura
     
     <item>
       <title>Laolu Osuntokun Stephan Livera (2018-12-11)</title>
-      <link>//btctranscripts.com/stephan-livera-podcast/2018-12-11-laolu-osuntokun-stephan-livera/</link>
+      <link>https://btctranscripts.com/stephan-livera-podcast/2018-12-11-laolu-osuntokun-stephan-livera/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stephan-livera-podcast/2018-12-11-laolu-osuntokun-stephan-livera/</guid>
+      <guid>https://btctranscripts.com/stephan-livera-podcast/2018-12-11-laolu-osuntokun-stephan-livera/</guid>
       <description>Stephan Livera podcast with Laolu Osuntokun - December 11th 2018
 https://twitter.com/kanzure/status/1090640881873387525
 Podcast: https://stephanlivera.com/episode/39
@@ -337,10 +337,10 @@ roasbeef: Not bad, just the usual back to work, just the regular stuff. Australi
     
     <item>
       <title>Ltb Pieter Wuille Jonas Nick (2019-06-09)</title>
-      <link>//btctranscripts.com/lets-talk-bitcoin-podcast/2019-06-09-ltb-pieter-wuille-jonas-nick/</link>
+      <link>https://btctranscripts.com/lets-talk-bitcoin-podcast/2019-06-09-ltb-pieter-wuille-jonas-nick/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/lets-talk-bitcoin-podcast/2019-06-09-ltb-pieter-wuille-jonas-nick/</guid>
+      <guid>https://btctranscripts.com/lets-talk-bitcoin-podcast/2019-06-09-ltb-pieter-wuille-jonas-nick/</guid>
       <description>Let&amp;rsquo;s Talk Bitcoin with Pieter Wuille and Jonas Nick - June 9th 2019
 https://twitter.com/kanzure/status/1155851797568917504
 Part 1: https://letstalkbitcoin.com/blog/post/lets-talk-bitcoin-400-the-tools-and-the-work
@@ -353,10 +353,10 @@ Part 1 Adam: On this episode we&amp;rsquo;ll be digging deeply into some of the 
     
     <item>
       <title>Matt Corallo - UASFs, BIP 148, BIP 91 and Taproot Activation (2021-02-11)</title>
-      <link>//btctranscripts.com/tftc-podcast/2021-02-11-matt-corallo-taproot-activation/</link>
+      <link>https://btctranscripts.com/tftc-podcast/2021-02-11-matt-corallo-taproot-activation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/tftc-podcast/2021-02-11-matt-corallo-taproot-activation/</guid>
+      <guid>https://btctranscripts.com/tftc-podcast/2021-02-11-matt-corallo-taproot-activation/</guid>
       <description>Name: Matt Corallo
 Topic: UASFs, BIP 148, BIP 91 and Taproot Activation
 Location: Tales from the Crypt podcast
@@ -367,10 +367,10 @@ Intro Marty Bent (MB): Sitting down with a man who needs no introduction on this
     
     <item>
       <title>Matt Corallo Compact Blocks Fibre (2020-03-12)</title>
-      <link>//btctranscripts.com/chaincode-labs/chaincode-podcast/2020-03-12-matt-corallo-compact-blocks-fibre/</link>
+      <link>https://btctranscripts.com/chaincode-labs/chaincode-podcast/2020-03-12-matt-corallo-compact-blocks-fibre/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/chaincode-labs/chaincode-podcast/2020-03-12-matt-corallo-compact-blocks-fibre/</guid>
+      <guid>https://btctranscripts.com/chaincode-labs/chaincode-podcast/2020-03-12-matt-corallo-compact-blocks-fibre/</guid>
       <description>Name: Matt Corallo
 Topic: Compact Blocks and FIBRE
 Location: Chaincode Labs Podcast (Episode 6)
@@ -386,10 +386,10 @@ AJ: You have a lot of contributions over the years so there is lots to talk abou
     
     <item>
       <title>Michael Flaxman (2019-08-08)</title>
-      <link>//btctranscripts.com/stephan-livera-podcast/2019-08-08-michael-flaxman/</link>
+      <link>https://btctranscripts.com/stephan-livera-podcast/2019-08-08-michael-flaxman/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stephan-livera-podcast/2019-08-08-michael-flaxman/</guid>
+      <guid>https://btctranscripts.com/stephan-livera-podcast/2019-08-08-michael-flaxman/</guid>
       <description>Name: Michael Flaxman
 Topic: Every Bitcoin Hardware Wallet Sucks
 Location: Stephan Livera Podcast
@@ -403,10 +403,10 @@ SL: Michael, I think you are one of these really underrated or under followed gu
     
     <item>
       <title>Michael Flaxman Security Guide (2020-09-28)</title>
-      <link>//btctranscripts.com/stephan-livera-podcast/2020-09-28-michael-flaxman-security-guide/</link>
+      <link>https://btctranscripts.com/stephan-livera-podcast/2020-09-28-michael-flaxman-security-guide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stephan-livera-podcast/2020-09-28-michael-flaxman-security-guide/</guid>
+      <guid>https://btctranscripts.com/stephan-livera-podcast/2020-09-28-michael-flaxman-security-guide/</guid>
       <description>Name: Michael Flaxman
 Topic: 10x your Bitcoin security with Multisig
 Location: Stephan Livera Podcast
@@ -421,10 +421,10 @@ Michael Flaxman (MF): It’s great to be here. I’m a big fan of the podcast so
     
     <item>
       <title>Nix Bitcoin (2020-07-26)</title>
-      <link>//btctranscripts.com/stephan-livera-podcast/2020-07-26-nix-bitcoin/</link>
+      <link>https://btctranscripts.com/stephan-livera-podcast/2020-07-26-nix-bitcoin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stephan-livera-podcast/2020-07-26-nix-bitcoin/</guid>
+      <guid>https://btctranscripts.com/stephan-livera-podcast/2020-07-26-nix-bitcoin/</guid>
       <description>Name: nixbitcoindev
 Topic: nix-bitcoin
 Location: Stephan Livera Podcast
@@ -439,10 +439,10 @@ SL: Obviously as you’re under a pseudonym don’t dox anything about yourself 
     
     <item>
       <title>Pieter Wuille (2020-01-28)</title>
-      <link>//btctranscripts.com/chaincode-labs/chaincode-podcast/2020-01-28-pieter-wuille/</link>
+      <link>https://btctranscripts.com/chaincode-labs/chaincode-podcast/2020-01-28-pieter-wuille/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/chaincode-labs/chaincode-podcast/2020-01-28-pieter-wuille/</guid>
+      <guid>https://btctranscripts.com/chaincode-labs/chaincode-podcast/2020-01-28-pieter-wuille/</guid>
       <description>Chaincode Labs podcast with Pieter Wuille
 Part 1: https://www.youtube.com/watch?v=s0XopkGcN9U
 Part 2: https://www.youtube.com/watch?v=Q2lXSRcacAo
@@ -457,10 +457,10 @@ John: We’re here to talk about Bitcoin and Bitcoin Core development. We have P
     
     <item>
       <title>Roy Sheinfeld Stephan Livera (2019-07-31)</title>
-      <link>//btctranscripts.com/stephan-livera-podcast/2019-07-31-roy-sheinfeld-stephan-livera/</link>
+      <link>https://btctranscripts.com/stephan-livera-podcast/2019-07-31-roy-sheinfeld-stephan-livera/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stephan-livera-podcast/2019-07-31-roy-sheinfeld-stephan-livera/</guid>
+      <guid>https://btctranscripts.com/stephan-livera-podcast/2019-07-31-roy-sheinfeld-stephan-livera/</guid>
       <description>Stephan Livera podcast with Roy Sheinfeld - July 31st 2019
 Podcast: https://stephanlivera.com/episode/94/
 Stephan Livera:	Roy, welcome to the show.
@@ -470,10 +470,10 @@ Stephan Livera:	So Roy, I’ve seen you’ve been writing some interesting posts
     
     <item>
       <title>Rusty Russell Joe Netti (2019-08-12)</title>
-      <link>//btctranscripts.com/stephan-livera-podcast/2019-08-12-rusty-russell-joe-netti/</link>
+      <link>https://btctranscripts.com/stephan-livera-podcast/2019-08-12-rusty-russell-joe-netti/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stephan-livera-podcast/2019-08-12-rusty-russell-joe-netti/</guid>
+      <guid>https://btctranscripts.com/stephan-livera-podcast/2019-08-12-rusty-russell-joe-netti/</guid>
       <description>Stephan Livera podcast with Rusty Russell and Joe Netti - August 12th 2019
 Podcast: https://stephanlivera.com/episode/98/
 Stephan Livera:	Rusty and Joe, welcome to the show.
@@ -485,10 +485,10 @@ Joe Netti:	Yeah, sure. So, I got into Bitcoin in around 2013, and took me a whil
     
     <item>
       <title>Taproot activation and LOT=true vs LOT=false</title>
-      <link>//btctranscripts.com/bitcoin-magazine/2021-02-26-taproot-activation-lockinontimeout/</link>
+      <link>https://btctranscripts.com/bitcoin-magazine/2021-02-26-taproot-activation-lockinontimeout/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-magazine/2021-02-26-taproot-activation-lockinontimeout/</guid>
+      <guid>https://btctranscripts.com/bitcoin-magazine/2021-02-26-taproot-activation-lockinontimeout/</guid>
       <description>Name: Sjors Provoost and Aaron van Wirdum
 Location: Bitcoin Magazine (online)
 Date: February 26th 2021
@@ -503,10 +503,10 @@ Sjors Provoost (SP): We have a “lot” to talk about.</description>
     
     <item>
       <title>Thomas Voegtlin Ghost43 Electrum (2020-08-09)</title>
-      <link>//btctranscripts.com/stephan-livera-podcast/2020-08-09-thomas-voegtlin-ghost43-electrum/</link>
+      <link>https://btctranscripts.com/stephan-livera-podcast/2020-08-09-thomas-voegtlin-ghost43-electrum/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stephan-livera-podcast/2020-08-09-thomas-voegtlin-ghost43-electrum/</guid>
+      <guid>https://btctranscripts.com/stephan-livera-podcast/2020-08-09-thomas-voegtlin-ghost43-electrum/</guid>
       <description>Name: Thomas Voegtlin and Ghost43
 Topic: Electrum Wallet 4
 Location: Stephan Livera Podcast

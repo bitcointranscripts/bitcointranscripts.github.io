@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bitcoin Magazine on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/bitcoin-magazine/</link>
+    <link>https://btctranscripts.com/bitcoin-magazine/</link>
     <description>Recent content in Bitcoin Magazine on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/bitcoin-magazine/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/bitcoin-magazine/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Eric Lombrozo Luke Dashjr Taproot Activation (2020-08-03)</title>
-      <link>//btctranscripts.com/bitcoin-magazine/2020-08-03-eric-lombrozo-luke-dashjr-taproot-activation/</link>
+      <link>https://btctranscripts.com/bitcoin-magazine/2020-08-03-eric-lombrozo-luke-dashjr-taproot-activation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-magazine/2020-08-03-eric-lombrozo-luke-dashjr-taproot-activation/</guid>
+      <guid>https://btctranscripts.com/bitcoin-magazine/2020-08-03-eric-lombrozo-luke-dashjr-taproot-activation/</guid>
       <description>Name: Eric Lombrozo and Luke Dashjr
 Topic: How to Activate a New Soft Fork
 Location: Bitcoin Magazine (online)
@@ -25,10 +25,10 @@ Eric Lombrozo (EL): We are doing great.</description>
     
     <item>
       <title>Taproot activation and LOT=true vs LOT=false</title>
-      <link>//btctranscripts.com/bitcoin-magazine/2021-02-26-taproot-activation-lockinontimeout/</link>
+      <link>https://btctranscripts.com/bitcoin-magazine/2021-02-26-taproot-activation-lockinontimeout/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-magazine/2021-02-26-taproot-activation-lockinontimeout/</guid>
+      <guid>https://btctranscripts.com/bitcoin-magazine/2021-02-26-taproot-activation-lockinontimeout/</guid>
       <description>Name: Sjors Provoost and Aaron van Wirdum
 Location: Bitcoin Magazine (online)
 Date: February 26th 2021

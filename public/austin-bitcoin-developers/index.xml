@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Austin Bitcoin Developers on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/austin-bitcoin-developers/</link>
+    <link>https://btctranscripts.com/austin-bitcoin-developers/</link>
     <description>Recent content in Austin Bitcoin Developers on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/austin-bitcoin-developers/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/austin-bitcoin-developers/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Drivechain Paul Sztorc (2019-05-27)</title>
-      <link>//btctranscripts.com/austin-bitcoin-developers/2019-05-27-drivechain-paul-sztorc/</link>
+      <link>https://btctranscripts.com/austin-bitcoin-developers/2019-05-27-drivechain-paul-sztorc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/austin-bitcoin-developers/2019-05-27-drivechain-paul-sztorc/</guid>
+      <guid>https://btctranscripts.com/austin-bitcoin-developers/2019-05-27-drivechain-paul-sztorc/</guid>
       <description>2019-05-27
 Paul Sztorc (Tierion)
 Drivechain: An interoperability layer-2, Described in terms of the lightning network- something you already understand
@@ -22,10 +22,10 @@ About me Okay. So here&amp;rsquo;s some things about myself. I&amp;rsquo;ve been
     
     <item>
       <title>Hardware Wallets (2019-06-29)</title>
-      <link>//btctranscripts.com/austin-bitcoin-developers/2019-06-29-hardware-wallets/</link>
+      <link>https://btctranscripts.com/austin-bitcoin-developers/2019-06-29-hardware-wallets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/austin-bitcoin-developers/2019-06-29-hardware-wallets/</guid>
+      <guid>https://btctranscripts.com/austin-bitcoin-developers/2019-06-29-hardware-wallets/</guid>
       <description>2019-06-29
 Stepan Snigirev
 livestream: https://www.youtube.com/watch?v=rK0jUeHeDf0
@@ -36,10 +36,10 @@ see also:
     
     <item>
       <title>Richard Bondi Bitcoin Cli Regtest (2018-08-17)</title>
-      <link>//btctranscripts.com/austin-bitcoin-developers/2018-08-17-richard-bondi-bitcoin-cli-regtest/</link>
+      <link>https://btctranscripts.com/austin-bitcoin-developers/2018-08-17-richard-bondi-bitcoin-cli-regtest/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/austin-bitcoin-developers/2018-08-17-richard-bondi-bitcoin-cli-regtest/</guid>
+      <guid>https://btctranscripts.com/austin-bitcoin-developers/2018-08-17-richard-bondi-bitcoin-cli-regtest/</guid>
       <description>Richard Bondi
 Bitcoin CLI and Regtest
 Video: https://www.youtube.com/watch?v=sbupEpL6-J4
@@ -50,10 +50,10 @@ Intro So the goal here as Justin said is to get the regtest environment set up. 
     
     <item>
       <title>Socratic Seminar 2 (2019-08-22)</title>
-      <link>//btctranscripts.com/austin-bitcoin-developers/2019-08-22-socratic-seminar-2/</link>
+      <link>https://btctranscripts.com/austin-bitcoin-developers/2019-08-22-socratic-seminar-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/austin-bitcoin-developers/2019-08-22-socratic-seminar-2/</guid>
+      <guid>https://btctranscripts.com/austin-bitcoin-developers/2019-08-22-socratic-seminar-2/</guid>
       <description>2019-08-22
 Austin Bitcoin Developers Socratic Seminar 2
 https://twitter.com/kanzure/status/1164710800910692353
@@ -63,10 +63,10 @@ Mike Schmidt is going to talk about some optech newsletters that he has been con
     
     <item>
       <title>Socratic Seminar 3 (2019-10-14)</title>
-      <link>//btctranscripts.com/austin-bitcoin-developers/2019-10-14-socratic-seminar-3/</link>
+      <link>https://btctranscripts.com/austin-bitcoin-developers/2019-10-14-socratic-seminar-3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/austin-bitcoin-developers/2019-10-14-socratic-seminar-3/</guid>
+      <guid>https://btctranscripts.com/austin-bitcoin-developers/2019-10-14-socratic-seminar-3/</guid>
       <description>Austin Bitcoin Developers socratic seminar 3
 https://www.meetup.com/Austin-Bitcoin-Developers/events/265295570/
 https://bitdevs.org/2019-09-16-socratic-seminar-96
@@ -75,10 +75,10 @@ We have sort of done two meetups in this format. The idea here is that in NY the
     
     <item>
       <title>Socratic Seminar 4 (2019-11-19)</title>
-      <link>//btctranscripts.com/austin-bitcoin-developers/2019-11-19-socratic-seminar-4/</link>
+      <link>https://btctranscripts.com/austin-bitcoin-developers/2019-11-19-socratic-seminar-4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/austin-bitcoin-developers/2019-11-19-socratic-seminar-4/</guid>
+      <guid>https://btctranscripts.com/austin-bitcoin-developers/2019-11-19-socratic-seminar-4/</guid>
       <description>Socratic seminar #4
 https://twitter.com/kanzure/status/1196947713658626048
 Wallet standards organization (WSO) Make an economic argument for vendors to join an organization and put in some money or effort to build the organization. The economic argument is that the committed members have some level of funds committed, representing some X number of users, and X billion dollars of custodied funds. This can then be used as a compelling argument to get each organization to join and bootstrap the standards body.</description>
@@ -86,10 +86,10 @@ Wallet standards organization (WSO) Make an economic argument for vendors to joi
     
     <item>
       <title>Socratic Seminar 5 (2020-01-21)</title>
-      <link>//btctranscripts.com/austin-bitcoin-developers/2020-01-21-socratic-seminar-5/</link>
+      <link>https://btctranscripts.com/austin-bitcoin-developers/2020-01-21-socratic-seminar-5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/austin-bitcoin-developers/2020-01-21-socratic-seminar-5/</guid>
+      <guid>https://btctranscripts.com/austin-bitcoin-developers/2020-01-21-socratic-seminar-5/</guid>
       <description>Austin Bitcoin Developers Socratic Seminar 5
 https://www.meetup.com/Austin-Bitcoin-Developers/events/267941700/
 https://bitdevs.org/2019-12-03-socratic-seminar-99
@@ -101,10 +101,10 @@ This is not an original idea to me. This was presented by roasbeef, co-founder o
     
     <item>
       <title>Socratic Seminar 6 (2020-02-24)</title>
-      <link>//btctranscripts.com/austin-bitcoin-developers/2020-02-24-socratic-seminar-6/</link>
+      <link>https://btctranscripts.com/austin-bitcoin-developers/2020-02-24-socratic-seminar-6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/austin-bitcoin-developers/2020-02-24-socratic-seminar-6/</guid>
+      <guid>https://btctranscripts.com/austin-bitcoin-developers/2020-02-24-socratic-seminar-6/</guid>
       <description>Austin Bitcoin Developers socratic seminar 6
 https://www.meetup.com/Austin-Bitcoin-Developers/events/268812642/
 https://bitdevs.org/2020-02-12-socratic-seminar-101

@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>lightning on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/tags/lightning/</link>
+    <link>https://btctranscripts.com/tags/lightning/</link>
     <description>Recent content in lightning on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/tags/lightning/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/tags/lightning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Alex Bosworth Building Lightning Applications (2018-10-22)</title>
-      <link>//btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-building-lightning-applications/</link>
+      <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-building-lightning-applications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-building-lightning-applications/</guid>
+      <guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-building-lightning-applications/</guid>
       <description>Alex Bosworth
 Building Lightning Applications
 Video: https://www.youtube.com/watch?v=JhRIWc9zPjA
@@ -23,10 +23,10 @@ Design Philosophy So what is the big idea behind lnd? What are we thinking about
     
     <item>
       <title>Alex Bosworth Channel Management (2018-10-22)</title>
-      <link>//btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-channel-management/</link>
+      <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-channel-management/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-channel-management/</guid>
+      <guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-channel-management/</guid>
       <description>Alex Bosworth
 Channel Management
 Video: https://www.youtube.com/watch?v=HlPIB6jt6ww
@@ -37,10 +37,10 @@ Uptime So basically the big message overall is and I think I’ve said this befo
     
     <item>
       <title>Alex Bosworth Lightning Protocol (2018-10-22)</title>
-      <link>//btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-lightning-protocol/</link>
+      <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-lightning-protocol/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-lightning-protocol/</guid>
+      <guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-lightning-protocol/</guid>
       <description>Alex Bosworth
 The Lightning Protocol, an Application Design Perspective
 Video: https://www.youtube.com/watch?v=1R5DNUcCYRg
@@ -51,10 +51,10 @@ BOLT 00: Build Apps What I try to do is go through the BOLTs and look at only th
     
     <item>
       <title>Amiko Pay</title>
-      <link>//btctranscripts.com/scalingbitcoin/montreal-2015/amiko-pay/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/montreal-2015/amiko-pay/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/montreal-2015/amiko-pay/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/montreal-2015/amiko-pay/</guid>
       <description>Amiko Pay
 Come Plooy
 Amiko Pay aims to become an implementation of the lightning network. So that previous presentation was a great setup. There&amp;rsquo;s a little bit more to Amiko Pay. If you look through the basic design of the lightning network, there&amp;rsquo;s a network of payment channels. There have been several variations of this idea. Lightning Network happens to be the best so far. What Amiko Pay aims to do is to focus on the nodes, and do the routing between nodes.</description>
@@ -62,10 +62,10 @@ Amiko Pay aims to become an implementation of the lightning network. So that pre
     
     <item>
       <title>Antoine Riard Rust Lightning (2019-10-20)</title>
-      <link>//btctranscripts.com/lightning-conference/2019/2019-10-20-antoine-riard-rust-lightning/</link>
+      <link>https://btctranscripts.com/lightning-conference/2019/2019-10-20-antoine-riard-rust-lightning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/lightning-conference/2019/2019-10-20-antoine-riard-rust-lightning/</guid>
+      <guid>https://btctranscripts.com/lightning-conference/2019/2019-10-20-antoine-riard-rust-lightning/</guid>
       <description>Antoine Riard
 Deploying rust-lightning in the wild
 The Lightning Conference Day 2 (Stage 2)
@@ -77,10 +77,10 @@ Intro Hi everyone, super happy to be here at the Lightning Conference. I’ve ha
     
     <item>
       <title>Antoine Riard Taproot Lightning (2020-02-06)</title>
-      <link>//btctranscripts.com/advancing-bitcoin/2020/2020-02-06-antoine-riard-taproot-lightning/</link>
+      <link>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-antoine-riard-taproot-lightning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/advancing-bitcoin/2020/2020-02-06-antoine-riard-taproot-lightning/</guid>
+      <guid>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-antoine-riard-taproot-lightning/</guid>
       <description>Name: Antoine Riard
 Topic: A Schnorr-Taproot’ed Lightning
 Location: Advancing Bitcoin
@@ -93,10 +93,10 @@ Lightning architecture The Lightning architecture for those who are not familiar
     
     <item>
       <title>Bitcoin Failure Modes And The Role Of The Lightning Network</title>
-      <link>//btctranscripts.com/scalingbitcoin/montreal-2015/bitcoin-failure-modes-and-the-role-of-the-lightning-network/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/montreal-2015/bitcoin-failure-modes-and-the-role-of-the-lightning-network/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/montreal-2015/bitcoin-failure-modes-and-the-role-of-the-lightning-network/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/montreal-2015/bitcoin-failure-modes-and-the-role-of-the-lightning-network/</guid>
       <description>Thaddeus Dryja
 Joseph Poon
 I am going to be talking about bitcoin failure modes, and Joseph will talk about how the lightning network can help. I&amp;rsquo;ll start. We&amp;rsquo;ll start off by saying that bitcoin is working, which is really cool. Blocks starts with lots of zeroes, coins stay put, they move when you tell them to. That&amp;rsquo;s really cool and it works. That&amp;rsquo;s great. This is a good starting place. We should acknowledge that bitcoin can fail.</description>
@@ -104,10 +104,10 @@ I am going to be talking about bitcoin failure modes, and Joseph will talk about
     
     <item>
       <title>Bitcoin Optech (2018-10-09)</title>
-      <link>//btctranscripts.com/bitcoin-core-dev-tech/2018-10-09-bitcoin-optech/</link>
+      <link>https://btctranscripts.com/bitcoin-core-dev-tech/2018-10-09-bitcoin-optech/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2018-10-09-bitcoin-optech/</guid>
+      <guid>https://btctranscripts.com/bitcoin-core-dev-tech/2018-10-09-bitcoin-optech/</guid>
       <description>https://twitter.com/kanzure/status/1049527415767101440
 Bitcoin Optech https://bitcoinops.org/
 Bitcoin Optech is trying to encourage bitcoin businesses to adopt better scaling techniques and technologies, things like batching, segwit, down the line maybe Schnorr signatures, aggregatable signatures, maybe lightning. Right now we&amp;rsquo;re focusing on things that businesses could be doing right now. Exchanges could be batching, and some aren&amp;rsquo;t. We&amp;rsquo;re talking to those companies and listening to their concerns and what they&amp;rsquo;re doing, and just trying to nudge them in the right direction.</description>
@@ -115,10 +115,10 @@ Bitcoin Optech is trying to encourage bitcoin businesses to adopt better scaling
     
     <item>
       <title>Bitcoin Protocol Development Panel</title>
-      <link>//btctranscripts.com/magicalcryptoconference/2019/bitcoin-protocol-development-panel/</link>
+      <link>https://btctranscripts.com/magicalcryptoconference/2019/bitcoin-protocol-development-panel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/magicalcryptoconference/2019/bitcoin-protocol-development-panel/</guid>
+      <guid>https://btctranscripts.com/magicalcryptoconference/2019/bitcoin-protocol-development-panel/</guid>
       <description>Bitcoin protocol development panel
 Eric Lombrozo, Matt Corallo, John Newbery, Luke Dashjr, Katherine Wu
 KW: We have some wonderful panelists today. Let&amp;rsquo;s kick it off. Let&amp;rsquo;s start with Eric. Who are you and what role do you play in bitcoin development?
@@ -127,10 +127,10 @@ EL: I got into bitcoin in 2011. I had my own network stack. I almost had a full 
     
     <item>
       <title>Bootstrapping Lightning Network</title>
-      <link>//btctranscripts.com/building-on-bitcoin/2018/bootstrapping-lightning-network/</link>
+      <link>https://btctranscripts.com/building-on-bitcoin/2018/bootstrapping-lightning-network/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/building-on-bitcoin/2018/bootstrapping-lightning-network/</guid>
+      <guid>https://btctranscripts.com/building-on-bitcoin/2018/bootstrapping-lightning-network/</guid>
       <description>Bootstrapping LN: What have we learned?
 Fabrice Drouin
 Building on Bitcoin 2018
@@ -142,10 +142,10 @@ Timeline Who doesn&amp;rsquo;t know what lightning is? And who has used lightnin
     
     <item>
       <title>Christian Decker - C-Lightning Questions (2019-09-04)</title>
-      <link>//btctranscripts.com/blockstream-webinars/2019-09-04-christian-decker-c-lightning-questions/</link>
+      <link>https://btctranscripts.com/blockstream-webinars/2019-09-04-christian-decker-c-lightning-questions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/blockstream-webinars/2019-09-04-christian-decker-c-lightning-questions/</guid>
+      <guid>https://btctranscripts.com/blockstream-webinars/2019-09-04-christian-decker-c-lightning-questions/</guid>
       <description>Christian Decker
 c-lightning Q and A session
 Video: https://www.youtube.com/watch?v=r7Un8FZYlS4&amp;amp;list=PLseHpvCI1BjAfUx8zjJXadlBh_eKV9zJi&amp;amp;index=8
@@ -157,10 +157,10 @@ A - It absolutely is.</description>
     
     <item>
       <title>Christian Decker C-Lightning API (2018-10-24)</title>
-      <link>//btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-24-christian-decker-c-lightning-api/</link>
+      <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-24-christian-decker-c-lightning-api/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-24-christian-decker-c-lightning-api/</guid>
+      <guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-24-christian-decker-c-lightning-api/</guid>
       <description>Christian Decker
 Developing on c-lightning
 Location: Chaincode Labs Lightning Residency 2018
@@ -171,10 +171,10 @@ Intro Good morning from the last day of presentations. I’m Chris still. Today 
     
     <item>
       <title>Christian Decker Eltoo (2019-06-25)</title>
-      <link>//btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-25-christian-decker-eltoo/</link>
+      <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-25-christian-decker-eltoo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-25-christian-decker-eltoo/</guid>
+      <guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-25-christian-decker-eltoo/</guid>
       <description>Name: Christian Decker
 Topic: Eltoo: The (Far) Future of Lightning
 Location: Chaincode Labs
@@ -188,10 +188,10 @@ Intro Who has never heard about eltoo? It is my pet project and I am pretty prou
     
     <item>
       <title>Conner Fromknecht Watchtowers (2019-04-06)</title>
-      <link>//btctranscripts.com/boltathon/2019-04-06-conner-fromknecht-watchtowers/</link>
+      <link>https://btctranscripts.com/boltathon/2019-04-06-conner-fromknecht-watchtowers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/boltathon/2019-04-06-conner-fromknecht-watchtowers/</guid>
+      <guid>https://btctranscripts.com/boltathon/2019-04-06-conner-fromknecht-watchtowers/</guid>
       <description>Conner Fromknecht
 Architecture of LND Watchtowers
 Video: https://www.youtube.com/watch?v=2tyr05tLF4g&amp;amp;list=PLC_AgDAr0m6QhwqPDrqMfjX64oHGmwDMk&amp;amp;index=4
@@ -202,10 +202,10 @@ Intro Pretty excited today to speak on the topic of watchtowers. It is something
     
     <item>
       <title>Cross Curve Atomic Swaps (2018-03-05)</title>
-      <link>//btctranscripts.com/bitcoin-core-dev-tech/2018-03-05-cross-curve-atomic-swaps/</link>
+      <link>https://btctranscripts.com/bitcoin-core-dev-tech/2018-03-05-cross-curve-atomic-swaps/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2018-03-05-cross-curve-atomic-swaps/</guid>
+      <guid>https://btctranscripts.com/bitcoin-core-dev-tech/2018-03-05-cross-curve-atomic-swaps/</guid>
       <description>https://twitter.com/kanzure/status/971827042223345664
 Draft of an upcoming scriptless scripts paper. This was at the beginning of 2017. But now an entire year has gone by.
 post-schnorr lightning transactions https://lists.linuxfoundation.org/pipermail/lightning-dev/2018-February/001031.html
@@ -214,10 +214,10 @@ An adaptor signature.. if you have different generators, then the two secrets to
     
     <item>
       <title>Day 1 Closing Panel</title>
-      <link>//btctranscripts.com/baltic-honeybadger/2018/day-1-closing-panel/</link>
+      <link>https://btctranscripts.com/baltic-honeybadger/2018/day-1-closing-panel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/baltic-honeybadger/2018/day-1-closing-panel/</guid>
+      <guid>https://btctranscripts.com/baltic-honeybadger/2018/day-1-closing-panel/</guid>
       <description>Closing panel
 Elizabeth Stark (starkness)
 Peter Todd (peterktodd)
@@ -231,10 +231,10 @@ RS: Thanks guys for joining the panel. We just need to get one more chair. I am 
     
     <item>
       <title>Day 1 Group Summaries</title>
-      <link>//btctranscripts.com/scalingbitcoin/milan-2016/day-1-group-summaries/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/milan-2016/day-1-group-summaries/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/milan-2016/day-1-group-summaries/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/milan-2016/day-1-group-summaries/</guid>
       <description>Day 1 group summaries
 We need two to three minute report backs from each session. Also, note takers. Please email your notes to contact@scalingbitcoin.org so that we can add notes to the wiki. Come join us. Okay, so.
 Lightning We discussed routing and several aspects of routing algorithms in the lightning network. We talked about the tradeoff between privacy aspects and reliability in routing. We quickly discovered that after some of the things were already resolved by the papers&amp;ndash; the way how we deal with a general separation and channel transaction fees, is actually quite an interesting discussion topic.</description>
@@ -242,10 +242,10 @@ Lightning We discussed routing and several aspects of routing algorithms in the 
     
     <item>
       <title>Discreet Log Contracts</title>
-      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/discreet-log-contracts/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/stanford-2017/discreet-log-contracts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/discreet-log-contracts/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/stanford-2017/discreet-log-contracts/</guid>
       <description>Discreet log contracts
 http://diyhpl.us/wiki/transcripts/discreet-log-contracts/
 https://www.youtube.com/watch?v=FU-rA5dkTHI
@@ -255,10 +255,10 @@ Hello everyone. I am going to give a talk about discreet log contracts. I am fro
     
     <item>
       <title>Drivechain Paul Sztorc (2019-05-27)</title>
-      <link>//btctranscripts.com/austin-bitcoin-developers/2019-05-27-drivechain-paul-sztorc/</link>
+      <link>https://btctranscripts.com/austin-bitcoin-developers/2019-05-27-drivechain-paul-sztorc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/austin-bitcoin-developers/2019-05-27-drivechain-paul-sztorc/</guid>
+      <guid>https://btctranscripts.com/austin-bitcoin-developers/2019-05-27-drivechain-paul-sztorc/</guid>
       <description>2019-05-27
 Paul Sztorc (Tierion)
 Drivechain: An interoperability layer-2, Described in terms of the lightning network- something you already understand
@@ -269,10 +269,10 @@ About me Okay. So here&amp;rsquo;s some things about myself. I&amp;rsquo;ve been
     
     <item>
       <title>Elaine Ou Bootstrapping Lightning Node (2018-10-22)</title>
-      <link>//btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-elaine-ou-bootstrapping-lightning-node/</link>
+      <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-elaine-ou-bootstrapping-lightning-node/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-elaine-ou-bootstrapping-lightning-node/</guid>
+      <guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-elaine-ou-bootstrapping-lightning-node/</guid>
       <description>Elaine Ou
 Bootstrapping and maintaining a Lightning Node
 Video: https://www.youtube.com/watch?v=qX4Z3JY1094
@@ -283,10 +283,10 @@ Bootstrapping and Maintaining a Lightning Node We’ll start with an overview of
     
     <item>
       <title>Flare Routing In Lightning</title>
-      <link>//btctranscripts.com/scalingbitcoin/milan-2016/flare-routing-in-lightning/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/milan-2016/flare-routing-in-lightning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/milan-2016/flare-routing-in-lightning/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/milan-2016/flare-routing-in-lightning/</guid>
       <description>Flare: An approach to routing in lightning network
 https://twitter.com/kanzure/status/784745976170999810
 Pavel Prihodko
@@ -300,10 +300,10 @@ Routing requirements It should be source routing because we need the privacy.</d
     
     <item>
       <title>Hardening Lightning</title>
-      <link>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/hardening-lightning/</link>
+      <link>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/hardening-lightning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/hardening-lightning/</guid>
+      <guid>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/hardening-lightning/</guid>
       <description>Hardening lightning network
 Olaoluwa Osuntokun (roasbeef), Lightning Labs
 https://twitter.com/kanzure/status/959155562134102016
@@ -316,10 +316,10 @@ Introduction I am basically going to go over some ways that I&amp;rsquo;ve been 
     
     <item>
       <title>History of the Lightning Network</title>
-      <link>//btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-christian-decker-history-of-lightning/</link>
+      <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-christian-decker-history-of-lightning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-christian-decker-history-of-lightning/</guid>
+      <guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-christian-decker-history-of-lightning/</guid>
       <description>Name: Dr. Christian Decker
 Location: Chaincode Labs Lightning Residency 2018
 Video: https://youtu.be/HauP9F16mUM
@@ -328,10 +328,10 @@ Introduction Hi I&amp;rsquo;m Chris, as I said like three times before, and I&am
     
     <item>
       <title>Htlcs Considered Harmful</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2019/htlcs-considered-harmful/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2019/htlcs-considered-harmful/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/htlcs-considered-harmful/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2019/htlcs-considered-harmful/</guid>
       <description>HTLCs considered harmful
 Daniel Robinson (Paradigm)
 https://twitter.com/kanzure/status/1091033955824881664
@@ -340,10 +340,10 @@ Introduction I am here to talk about a design pattern that I don&amp;rsquo;t lik
     
     <item>
       <title>Improving Bitcoin Smart Contract Efficiency</title>
-      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2018/improving-bitcoin-smart-contract-efficiency/</link>
+      <link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2018/improving-bitcoin-smart-contract-efficiency/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2018/improving-bitcoin-smart-contract-efficiency/</guid>
+      <guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2018/improving-bitcoin-smart-contract-efficiency/</guid>
       <description>Improving efficiency of smart contracts on the bitcoin network
 Tadge Dryja
 video: https://www.youtube.com/watch?v=i-0NUqIVVV4&amp;amp;t=53m14s
@@ -354,10 +354,10 @@ Quick intro: I&amp;rsquo;m Tadge Dryja. I work here at MIT down the street at Di
     
     <item>
       <title>Incentives Tradeoffs Transaction Selection In Dag Based Protocols</title>
-      <link>//btctranscripts.com/scalingbitcoin/stanford-2017/incentives-tradeoffs-transaction-selection-in-dag-based-protocols/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/stanford-2017/incentives-tradeoffs-transaction-selection-in-dag-based-protocols/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/stanford-2017/incentives-tradeoffs-transaction-selection-in-dag-based-protocols/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/stanford-2017/incentives-tradeoffs-transaction-selection-in-dag-based-protocols/</guid>
       <description>Incentives and Trade-offs in Transaction Selection in DAG-based Protocols
 Yonatan Sompolinsky (The Hebrew University)
 Commercial effort to implement DAG-based protocols. No ICO, it&amp;rsquo;s a regular company.
@@ -366,10 +366,10 @@ A little bit background of DAG-based protocols. The background to this work is s
     
     <item>
       <title>Incentivizing Payment Channel Watchtowers</title>
-      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/incentivizing-payment-channel-watchtowers/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tokyo-2018/incentivizing-payment-channel-watchtowers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/incentivizing-payment-channel-watchtowers/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tokyo-2018/incentivizing-payment-channel-watchtowers/</guid>
       <description>Incentivizing payment channel watchtowers
 Georgia Avarikioti, Felix Laufenberg, Jakub Sliwinski, Yuyi Wang and Roger Wattenhofer (ETH Zurich)
 Zeta Avarikioti
@@ -380,10 +380,10 @@ Micropayment channels There are many ways to construct channels such as lightnin
     
     <item>
       <title>Interview Adam Back Elizabeth Stark</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2017/interview-adam-back-elizabeth-stark/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2017/interview-adam-back-elizabeth-stark/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2017/interview-adam-back-elizabeth-stark/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2017/interview-adam-back-elizabeth-stark/</guid>
       <description>Interview with Adam Back and Elizabeth Stark
 Adam Back
 Elizabeth Stark
@@ -394,10 +394,10 @@ stark: Thank you Giacomo. Who here had too much fun at the party last night? My 
     
     <item>
       <title>Laolu Conner Lnd (2018-12-14)</title>
-      <link>//btctranscripts.com/noded-podcast/2018-12-14-laolu-conner-lnd/</link>
+      <link>https://btctranscripts.com/noded-podcast/2018-12-14-laolu-conner-lnd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/noded-podcast/2018-12-14-laolu-conner-lnd/</guid>
+      <guid>https://btctranscripts.com/noded-podcast/2018-12-14-laolu-conner-lnd/</guid>
       <description>Noded podcast with Laolu Osuntokun and Conner Fromknecht - December 14th 2018
 https://twitter.com/kanzure/status/1089187758931890178
 Podcast: https://noded.org/podcast/noded-0360-with-olaoluwa-osuntokun-and-conner-fromknecht/
@@ -408,10 +408,10 @@ Pierre: So I listened to Laolu on Stephan Livera’s podcast and I would encoura
     
     <item>
       <title>Laolu Osuntokun Lightning Network (2016-07-18)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2016-07-18-laolu-osuntokun-lightning-network/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2016-07-18-laolu-osuntokun-lightning-network/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2016-07-18-laolu-osuntokun-lightning-network/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2016-07-18-laolu-osuntokun-lightning-network/</guid>
       <description>Laolu Osuntokun
 Lightning Network Deep Dive
 Video: https://www.youtube.com/watch?v=tLZc-NLmV20
@@ -422,10 +422,10 @@ Introduction My name is Laolu Osuntokun and I work with Lightning guys and you k
     
     <item>
       <title>Laolu Osuntokun Neutrino (2017-06-06)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2017-06-06-laolu-osuntokun-neutrino/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2017-06-06-laolu-osuntokun-neutrino/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2017-06-06-laolu-osuntokun-neutrino/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2017-06-06-laolu-osuntokun-neutrino/</guid>
       <description>Laolu Osuntokun
 Neutrino: The Privacy Preserving Bitcoin Light Client
 Video: https://www.youtube.com/watch?v=7FWKc8lM4Ek
@@ -436,10 +436,10 @@ Introduction My name is Laolu or Roasbeef on the internet. I’m going to talk a
     
     <item>
       <title>Lightning - The Transfer Layer</title>
-      <link>//btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-24-fabrice-drouin-the-transfer-layer/</link>
+      <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-24-fabrice-drouin-the-transfer-layer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-24-fabrice-drouin-the-transfer-layer/</guid>
+      <guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-24-fabrice-drouin-the-transfer-layer/</guid>
       <description>Name: Fabrice Drouin
 Location: Chaincode Labs Lightning Residency 2019
 Video: https://www.youtube.com/watch?v=CGE8I8L7BAc
@@ -448,10 +448,10 @@ Context Fabrice: Alright so, I&amp;rsquo;m going to talk about the payments mode
     
     <item>
       <title>Lightning Network</title>
-      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/lightning-network/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/lightning-network/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/lightning-network/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/lightning-network/</guid>
       <description>Lightning network overview, lightning channel factories, discreet log contracts
 Thaddeus Dryja (Tadge Dryja) (tdryja)
 https://twitter.com/kanzure/status/1048039589837852672
@@ -460,10 +460,10 @@ Introduction I have quite a while to speak. I hope it&amp;rsquo;s not too boring
     
     <item>
       <title>Lightning Network (2015-05-26)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2015-05-26-lightning-network/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2015-05-26-lightning-network/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2015-05-26-lightning-network/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2015-05-26-lightning-network/</guid>
       <description>2015-05-26
  Tadge Dryja Joseph Poon  How Lightning Network can offer a solution for bitcoin&amp;rsquo;s scalability problems
 http://lightning.network/
@@ -475,10 +475,10 @@ Okay, hi. So yeah, I titled it solutions because that sounds more positive than 
     
     <item>
       <title>Lightning Network As A Directed Graph Single Funded Channel Network Topology (2016-04-11)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2016-04-11-lightning-network-as-a-directed-graph-single-funded-channel-network-topology/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2016-04-11-lightning-network-as-a-directed-graph-single-funded-channel-network-topology/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2016-04-11-lightning-network-as-a-directed-graph-single-funded-channel-network-topology/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2016-04-11-lightning-network-as-a-directed-graph-single-funded-channel-network-topology/</guid>
       <description>2016-04-11
 Lightning Network as a Directed Graph: Single-Funded Channel Network Topology
 Tadge Dryja rx@awsomnet.org
@@ -491,10 +491,10 @@ Basic super quick summary of Lightning I am going to re-cap lightning network re
     
     <item>
       <title>Lightning Network Routing Security</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2019/lightning-network-routing-security/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/lightning-network-routing-security/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2019/lightning-network-routing-security/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/lightning-network-routing-security/</guid>
       <description>Security aspects of LN routing
 Joost Jager, Lightning Labs
 D146 D0F6 8939 4362 68FA 9A13 0E26 BB61 B76C 4D3A
@@ -504,10 +504,10 @@ Introduction Together with my colleagues I am building lnd. It&amp;rsquo;s one o
     
     <item>
       <title>Lightning Network Security Analysis</title>
-      <link>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/lightning-network-security-analysis/</link>
+      <link>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/lightning-network-security-analysis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/lightning-network-security-analysis/</guid>
+      <guid>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/lightning-network-security-analysis/</guid>
       <description>Security analysis of the lightning network (2017)
 Olaoluwa Osuntokun (roasbeef), Lightning Labs
 https://twitter.com/kanzure/status/957978915515092992
@@ -519,10 +519,10 @@ State of the hash-lock Before I start, I want to go over the state of the hash-l
     
     <item>
       <title>Lightning Network Sphinx And Onion Routing</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-sphinx-and-onion-routing/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-sphinx-and-onion-routing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-sphinx-and-onion-routing/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-sphinx-and-onion-routing/</guid>
       <description>Lightning network: Sphinx and onion routing
 Antoine Riard
 Introduction Hi everyone. I am a developer of rust-lightning, it started in 2018 by BlueMatt. I started contributing about a year ago now. It&amp;rsquo;s a full featured, flexible, spec-compliant lightning library. It targets exchanges, wallet vendors, hardware, meshnet devices, and you can join us on Freenode IRC in the #rust-bitcoin channel which is a really nice one.
@@ -531,10 +531,10 @@ Privacy matters Privacy matters on the blockchain.</description>
     
     <item>
       <title>Lightning Network Topological Analysis</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2019/lightning-network-topological-analysis/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/lightning-network-topological-analysis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2019/lightning-network-topological-analysis/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/lightning-network-topological-analysis/</guid>
       <description>Topological analysis of the lightning network
 Istvan Andras Seres
 paper: https://arxiv.org/abs/1901.04972
@@ -544,10 +544,10 @@ Introduction Knowing the topology is not necessarily a vulnerability, but it giv
     
     <item>
       <title>Lightning network topology, its creation and maintenance</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-topology/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-topology/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-topology/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-topology/</guid>
       <description>Carla Kirk-Cohen
 video: https://www.youtube.com/watch?v=j2l_Ut4k1qI
 Introduction Alright. Give me a second to test this. Alright. Antoine has taken you through the routing layer. I&amp;rsquo;m going to take you through what the lightning network looks like today. This is the current topology of the network and how this came about, and some approaches for maintaining hte network and making the graph look like we want it to look.
@@ -556,10 +556,10 @@ Lightning brief overview There&amp;rsquo;s ideally only two transactions involve
     
     <item>
       <title>Lightning Overview</title>
-      <link>//btctranscripts.com/layer2-summit/2018/lightning-overview/</link>
+      <link>https://btctranscripts.com/layer2-summit/2018/lightning-overview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/layer2-summit/2018/lightning-overview/</guid>
+      <guid>https://btctranscripts.com/layer2-summit/2018/lightning-overview/</guid>
       <description>Lightning overview
 Conner Fromknecht
 video: https://www.youtube.com/watch?v=jzoS0tPUAiQ&amp;amp;t=15m10s
@@ -571,10 +571,10 @@ Philosophical perspective and scalability Before I do that though, following up 
     
     <item>
       <title>Lightning Payments</title>
-      <link>//btctranscripts.com/magicalcryptoconference/2019/lightning-payments/</link>
+      <link>https://btctranscripts.com/magicalcryptoconference/2019/lightning-payments/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/magicalcryptoconference/2019/lightning-payments/</guid>
+      <guid>https://btctranscripts.com/magicalcryptoconference/2019/lightning-payments/</guid>
       <description>Lightning payments (and more) on the web
 Will O&amp;rsquo;Beirne
 CL: Thank you Elizabeth and Stacy for that great talk. Who runs a lightning node here? So a lot of you. Are you guys excited about lightning? Great, we have like four more talks on lightning. Next we have Will O&amp;rsquo;Beirne who will be talking about lightning payments on the web. Big round of applause.
@@ -583,10 +583,10 @@ Introduction Hey y&amp;rsquo;all. We&amp;rsquo;re doing a DIY setup here.</descr
     
     <item>
       <title>Lightning Routing Ants Pheromones</title>
-      <link>//btctranscripts.com/building-on-bitcoin/2018/lightning-routing-ants-pheromones/</link>
+      <link>https://btctranscripts.com/building-on-bitcoin/2018/lightning-routing-ants-pheromones/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/building-on-bitcoin/2018/lightning-routing-ants-pheromones/</guid>
+      <guid>https://btctranscripts.com/building-on-bitcoin/2018/lightning-routing-ants-pheromones/</guid>
       <description>Ant routing for lightning network
 Ricardo Perez-Marco
 Building on Bitcoin 2018
@@ -599,10 +599,10 @@ Overview I am going to talk about what I understand to be decentralized network.
     
     <item>
       <title>Lightning Wallet Design</title>
-      <link>//btctranscripts.com/building-on-bitcoin/2018/lightning-wallet-design/</link>
+      <link>https://btctranscripts.com/building-on-bitcoin/2018/lightning-wallet-design/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/building-on-bitcoin/2018/lightning-wallet-design/</guid>
+      <guid>https://btctranscripts.com/building-on-bitcoin/2018/lightning-wallet-design/</guid>
       <description>Designing lightning wallets for the bitcoin user
 Building on Bitcoin 2018
 Good morning everyone. Thank you for being here. Thank you to the organizers for this event. My talk is about designing lightning wallets for bitcoin users. I am talking about UX. But really, UX is a lot more than what wallets look like. It&amp;rsquo;s from bip39 and making backups much easier, to anything you cna imagine, to make it easier for bitcoin to use bitcoin.</description>
@@ -610,10 +610,10 @@ Good morning everyone. Thank you for being here. Thank you to the organizers for
     
     <item>
       <title>Lightning ≈ Bitcoin</title>
-      <link>//btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-christian-decker-lightning-bitcoin/</link>
+      <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-christian-decker-lightning-bitcoin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-christian-decker-lightning-bitcoin/</guid>
+      <guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-christian-decker-lightning-bitcoin/</guid>
       <description>Name: Dr. Christian Decker
 Location: Chaincode Labs Lightning Residency 2018
 Video: https://youtu.be/8lMLo-7yF5k
@@ -622,10 +622,10 @@ Introduction Good morning everyone my name is Chris and I&amp;rsquo;m a bitcoine
     
     <item>
       <title>Ln Present And Future Panel</title>
-      <link>//btctranscripts.com/magicalcryptoconference/2019/ln-present-and-future-panel/</link>
+      <link>https://btctranscripts.com/magicalcryptoconference/2019/ln-present-and-future-panel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/magicalcryptoconference/2019/ln-present-and-future-panel/</guid>
+      <guid>https://btctranscripts.com/magicalcryptoconference/2019/ln-present-and-future-panel/</guid>
       <description>Lightning network present &amp;amp; future panel
 Will O&amp;rsquo;Beirne, Lisa Neigut, Alex Bosworth, Leigh Cuen
 LC: Can everyone hear me now? Alright, alright.
@@ -636,10 +636,10 @@ WO: Sure, and I think Lisa can talk about c-lightning.</description>
     
     <item>
       <title>Matt Corallo Rust Lightning (2019-02-07)</title>
-      <link>//btctranscripts.com/advancing-bitcoin/2019/2019-02-07-matt-corallo-rust-lightning/</link>
+      <link>https://btctranscripts.com/advancing-bitcoin/2019/2019-02-07-matt-corallo-rust-lightning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/advancing-bitcoin/2019/2019-02-07-matt-corallo-rust-lightning/</guid>
+      <guid>https://btctranscripts.com/advancing-bitcoin/2019/2019-02-07-matt-corallo-rust-lightning/</guid>
       <description>Matt Corallo
 Flexible Lightning in Rust
 Video: https://vimeo.com/316624439
@@ -651,10 +651,10 @@ Goals It is yet another Lightning implementation because somehow we needed anoth
     
     <item>
       <title>Multi Hop Locks</title>
-      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/multi-hop-locks/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tokyo-2018/multi-hop-locks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/multi-hop-locks/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tokyo-2018/multi-hop-locks/</guid>
       <description>Multi-hop locks for secure, privacy-preserving and interoperable payment-channel networks
 Giulio Malavolta (Friedrich-Alexander-University Erlangen-Nuernberg), Pedro Moreno-Sanchez (Purdue University), Clara Schneidewind (Vienna University of Technology), Aniket Kate (Purdue University) and Matteo Maffei (Vienna University of Technology)
 https://eprint.iacr.org/2018/472.pdf
@@ -664,10 +664,10 @@ This is joint work with my colleagues. I promise I will talk slower than the las
     
     <item>
       <title>Network Topologies And Their Scalability Implications On Decentralized Off Chain Networks</title>
-      <link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/network-topologies-and-their-scalability-implications-on-decentralized-off-chain-networks/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/network-topologies-and-their-scalability-implications-on-decentralized-off-chain-networks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/hong-kong-2015/network-topologies-and-their-scalability-implications-on-decentralized-off-chain-networks/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/network-topologies-and-their-scalability-implications-on-decentralized-off-chain-networks/</guid>
       <description>Joseph Poon
 slides: https://scalingbitcoin.org/hongkong2015/presentations/DAY2/1_layer2_3_poon.pdf
 video: https://www.youtube.com/watch?v=fst1IK_mrng&amp;amp;t=1h29m38s
@@ -676,10 +676,10 @@ LN transactions are real Bitcoin transactions. These are real zero-confirmation 
     
     <item>
       <title>Onion Routing In Lightning</title>
-      <link>//btctranscripts.com/scalingbitcoin/milan-2016/onion-routing-in-lightning/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/milan-2016/onion-routing-in-lightning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/milan-2016/onion-routing-in-lightning/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/milan-2016/onion-routing-in-lightning/</guid>
       <description>Onion routing in lightning network
 Olaoluwa Osuntokun (roasbeef)
 http://lightning.network/
@@ -692,10 +692,10 @@ Distributed set of onion routers (OR, cite OG onionrouting paper). Users create 
     
     <item>
       <title>Overview Of Bips Necessary For Lightning</title>
-      <link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/overview-of-bips-necessary-for-lightning/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/overview-of-bips-necessary-for-lightning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/hong-kong-2015/overview-of-bips-necessary-for-lightning/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/overview-of-bips-necessary-for-lightning/</guid>
       <description>Tadge Dryja
 Scalability of Lightning with different BIPs and some back-of-the-envelope calculations.
 slides: https://scalingbitcoin.org/hongkong2015/presentations/DAY2/1_layer2_2_dryja.pdf
@@ -705,10 +705,10 @@ I don&amp;rsquo;t have time to introduce the idea of zero-confirmation transacti
     
     <item>
       <title>Payment Channel Recovery With Seeds</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/payment-channel-recovery-with-seeds/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/payment-channel-recovery-with-seeds/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/payment-channel-recovery-with-seeds/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/payment-channel-recovery-with-seeds/</guid>
       <description>Seed-based payment channel recovery
 David Vorick
 https://twitter.com/kanzure/status/1172129077765050368
@@ -717,10 +717,10 @@ Introduction Cool. This addresses the lightning network which is a scaling techn
     
     <item>
       <title>Pierre Rochard Lightning Excel Plugin (2018-10-26)</title>
-      <link>//btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-26-pierre-rochard-lightning-excel-plugin/</link>
+      <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-26-pierre-rochard-lightning-excel-plugin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-26-pierre-rochard-lightning-excel-plugin/</guid>
+      <guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-26-pierre-rochard-lightning-excel-plugin/</guid>
       <description>Pierre Rochard
 Lightning Excel Plugin
 Video: https://www.youtube.com/watch?v=AXeUZrS-8mE&amp;amp;t=0s&amp;amp;list=PLpLH33TRghT2jmuP9YQRo-e8gk969Q2F_&amp;amp;index=10
@@ -729,10 +729,10 @@ Demo My project is to create a user interface for lightning that might appeal to
     
     <item>
       <title>Plasma Cash</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/plasma-cash/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/plasma-cash/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/plasma-cash/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/plasma-cash/</guid>
       <description>Plasma Cash: Towards more efficient plasma constructions
 Non-custodial sidechains for bitcoin utilizing plasma cash and covenants
 Georgios Konstantopoulos
@@ -744,10 +744,10 @@ Introduction We have known how to do these things for at least a year, but the q
     
     <item>
       <title>Privacy And Fungibility</title>
-      <link>//btctranscripts.com/scalingbitcoin/montreal-2015/privacy-and-fungibility/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/montreal-2015/privacy-and-fungibility/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/montreal-2015/privacy-and-fungibility/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/montreal-2015/privacy-and-fungibility/</guid>
       <description>Privacy and scalability
 Even though Bitcoin is the worst privacy system ever, everyone in the community very strongly values privacy.
 There are at least three things: privacy censorship resistance fungibility
@@ -756,10 +756,10 @@ The easiest way to censor things is to punish communication, not prevent communi
     
     <item>
       <title>Rebalancing Lightning</title>
-      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/rebalancing-lightning/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tokyo-2018/rebalancing-lightning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/rebalancing-lightning/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tokyo-2018/rebalancing-lightning/</guid>
       <description>Rebalancing in the lightning network: Analysis and implications
 Sebastián Reca (Muun)
 https://twitter.com/kanzure/status/1048753406628655105
@@ -769,10 +769,10 @@ Financial costs In the lightning network, routing nodes will incur in financial 
     
     <item>
       <title>Reproducible Lightning Benchmark</title>
-      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/reproducible-lightning-benchmark/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tokyo-2018/reproducible-lightning-benchmark/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/reproducible-lightning-benchmark/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tokyo-2018/reproducible-lightning-benchmark/</guid>
       <description>Reproducible lightning benchmark
 Nicolas Dorier (DG Lab)
 https://github.com/dgarage/LightningBenchmarks
@@ -782,10 +782,10 @@ Introduction Thanks for the introduction, Jameson. I feel like a rock star now. 
     
     <item>
       <title>Rusty Russell - Getting Started With C-Lightning (2019-07-31)</title>
-      <link>//btctranscripts.com/blockstream-webinars/2019-07-31-rusty-russell-getting-started-with-c-lightning/</link>
+      <link>https://btctranscripts.com/blockstream-webinars/2019-07-31-rusty-russell-getting-started-with-c-lightning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/blockstream-webinars/2019-07-31-rusty-russell-getting-started-with-c-lightning/</guid>
+      <guid>https://btctranscripts.com/blockstream-webinars/2019-07-31-rusty-russell-getting-started-with-c-lightning/</guid>
       <description>Rusty Russell
 Getting started with c-lightning
 video: https://www.youtube.com/watch?v=fab4P3BIZxk
@@ -795,10 +795,10 @@ Introduction Hi everyone. We’re actually a couple of minutes early and I think
     
     <item>
       <title>Rusty Russell Json Interface (2019-04-06)</title>
-      <link>//btctranscripts.com/boltathon/2019-04-06-rusty-russell-json-interface/</link>
+      <link>https://btctranscripts.com/boltathon/2019-04-06-rusty-russell-json-interface/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/boltathon/2019-04-06-rusty-russell-json-interface/</guid>
+      <guid>https://btctranscripts.com/boltathon/2019-04-06-rusty-russell-json-interface/</guid>
       <description>Rusty Russell
 Boltathon
 JSON Interface with c-lightning and Writing Extensions
@@ -809,10 +809,10 @@ Intro Ok I have top running. We have a plan and we’re going to start from zero
     
     <item>
       <title>Scaling Bitcoin To Billions Of Transactions Per Day (2015-02-23)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2015-02-23-scaling-bitcoin-to-billions-of-transactions-per-day/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2015-02-23-scaling-bitcoin-to-billions-of-transactions-per-day/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2015-02-23-scaling-bitcoin-to-billions-of-transactions-per-day/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2015-02-23-scaling-bitcoin-to-billions-of-transactions-per-day/</guid>
       <description>2015-02-23
 http://lightning.network/
 video: https://www.youtube.com/watch?v=8zVzw912wPo
@@ -821,10 +821,10 @@ video: https://www.youtube.com/watch?v=8zVzw912wPo
     
     <item>
       <title>Scriptless Ecdsa</title>
-      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/scriptless-ecdsa/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tokyo-2018/scriptless-ecdsa/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/scriptless-ecdsa/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tokyo-2018/scriptless-ecdsa/</guid>
       <description>Instantiating scriptless 2p-ECDSA: fungible 2-of-2 multisigs for bitcoin today
 Conner Fromknecht (Lightning Labs)
 https://twitter.com/kanzure/status/1048483254087573504
@@ -835,10 +835,10 @@ History For what it&amp;rsquo;s worth, these dates are rough.</description>
     
     <item>
       <title>Scriptless Scripts With Mimblewimble</title>
-      <link>//btctranscripts.com/grincon/2019/scriptless-scripts-with-mimblewimble/</link>
+      <link>https://btctranscripts.com/grincon/2019/scriptless-scripts-with-mimblewimble/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/grincon/2019/scriptless-scripts-with-mimblewimble/</guid>
+      <guid>https://btctranscripts.com/grincon/2019/scriptless-scripts-with-mimblewimble/</guid>
       <description>Scriptless scripts with mimblewimble
 Andrew Poelstra (andytoshi)
 Introduction Hi everyone. I am Andrew Poelstra. I am the research director at Blockstream. I want to talk about deploying scriptless scripts, wihch is something I haven&amp;rsquo;t talked much about over the past year or two.
@@ -847,10 +847,10 @@ History Let me give a bit of history about mimblewimble. As many of you know, th
     
     <item>
       <title>Secure Protocols Bip Taproot</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2019/secure-protocols-bip-taproot/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/secure-protocols-bip-taproot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2019/secure-protocols-bip-taproot/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/secure-protocols-bip-taproot/</guid>
       <description>Secure protocols on BIP-taproot
 Jonas Nick
 36C7 1A37 C9D9 88BD E825 08D9 B1A7 0E4F 8DCD 0366
@@ -863,10 +863,10 @@ Disclaimer It&amp;rsquo;s not at all certain that a bip-taproot soft-fork will a
     
     <item>
       <title>Segwit Lessons Learned</title>
-      <link>//btctranscripts.com/scalingbitcoin/milan-2016/segwit-lessons-learned/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/milan-2016/segwit-lessons-learned/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/milan-2016/segwit-lessons-learned/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/milan-2016/segwit-lessons-learned/</guid>
       <description>Lessons learned with segwit in Bitcoin
 Greg Sanders (instagibbs)
 https://twitter.com/kanzure/status/785034301272420353
@@ -876,10 +876,10 @@ Hi. My name is Greg Sanders. I will be giving a talk about segwit in bitcoin les
     
     <item>
       <title>Sergi Delgado Watchtowers (2020-05-24)</title>
-      <link>//btctranscripts.com/lightning-hack-day/2020-05-24-sergi-delgado-watchtowers/</link>
+      <link>https://btctranscripts.com/lightning-hack-day/2020-05-24-sergi-delgado-watchtowers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/lightning-hack-day/2020-05-24-sergi-delgado-watchtowers/</guid>
+      <guid>https://btctranscripts.com/lightning-hack-day/2020-05-24-sergi-delgado-watchtowers/</guid>
       <description>Name: Sergi Delgado
 Topic: Watchtowers and BOLT 13
 Location: Potzblitz (online)
@@ -900,10 +900,10 @@ Intro I am going to be talking about towers and a bit about BOLT 13 too. Before 
     
     <item>
       <title>Single Use Seals</title>
-      <link>//btctranscripts.com/building-on-bitcoin/2018/single-use-seals/</link>
+      <link>https://btctranscripts.com/building-on-bitcoin/2018/single-use-seals/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/building-on-bitcoin/2018/single-use-seals/</guid>
+      <guid>https://btctranscripts.com/building-on-bitcoin/2018/single-use-seals/</guid>
       <description>Single use seals
 petertodd
 Building on Bitcoin 2018
@@ -913,10 +913,10 @@ I am going to talk about single use seals and ways to use them. They are a conce
     
     <item>
       <title>Socratic Seminar 5 (2020-01-21)</title>
-      <link>//btctranscripts.com/austin-bitcoin-developers/2020-01-21-socratic-seminar-5/</link>
+      <link>https://btctranscripts.com/austin-bitcoin-developers/2020-01-21-socratic-seminar-5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/austin-bitcoin-developers/2020-01-21-socratic-seminar-5/</guid>
+      <guid>https://btctranscripts.com/austin-bitcoin-developers/2020-01-21-socratic-seminar-5/</guid>
       <description>Austin Bitcoin Developers Socratic Seminar 5
 https://www.meetup.com/Austin-Bitcoin-Developers/events/267941700/
 https://bitdevs.org/2019-12-03-socratic-seminar-99
@@ -928,10 +928,10 @@ This is not an original idea to me. This was presented by roasbeef, co-founder o
     
     <item>
       <title>State Of Lightning Network</title>
-      <link>//btctranscripts.com/magicalcryptoconference/2019/state-of-lightning-network/</link>
+      <link>https://btctranscripts.com/magicalcryptoconference/2019/state-of-lightning-network/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/magicalcryptoconference/2019/state-of-lightning-network/</guid>
+      <guid>https://btctranscripts.com/magicalcryptoconference/2019/state-of-lightning-network/</guid>
       <description>Fireside chat on the state of the lightning network
 Stacy Herbert, Elizabeth Stark
 Introduction WP: We have a fireside chat with Stacy Herbert from Kaiser Report and Elizabeth Stark. Some people say she is the CEO of Lightning Network, but she is the CEO of Lightning Labs. Let&amp;rsquo;s invite them on stage.
@@ -940,10 +940,10 @@ SH: Did anyone notice the bitcoin price today? How many here are reckless? How m
     
     <item>
       <title>Statechains</title>
-      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/statechains/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tokyo-2018/statechains/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/statechains/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tokyo-2018/statechains/</guid>
       <description>Statechains: Off-chain transfer of UTXOs
 Ruben Somsen
 I am the education director of readingbitcoin.org, and I am going to be talking about statechains for off-chain transfer of UTXOs.
@@ -953,10 +953,10 @@ Statechains This is another layer 2 scaling solution, by avoiding on-chain trans
     
     <item>
       <title>Submarine Swaps</title>
-      <link>//btctranscripts.com/magicalcryptoconference/2019/submarine-swaps/</link>
+      <link>https://btctranscripts.com/magicalcryptoconference/2019/submarine-swaps/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/magicalcryptoconference/2019/submarine-swaps/</guid>
+      <guid>https://btctranscripts.com/magicalcryptoconference/2019/submarine-swaps/</guid>
       <description>Bridging off-chain and on-chain with submarine swaps
 Alex Bosworth
 Introduction Hi, I work at Lightning Labs. I want to talk about the dawn of hyperloop. It&amp;rsquo;s a new concept.
@@ -965,10 +965,10 @@ Hyperloop To zoom out on what problem we&amp;rsquo;re working on here, we had th
     
     <item>
       <title>Sydney Socratic Seminar (2021-02-23)</title>
-      <link>//btctranscripts.com/sydney-bitcoin-meetup/2021-02-23-socratic-seminar/</link>
+      <link>https://btctranscripts.com/sydney-bitcoin-meetup/2021-02-23-socratic-seminar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sydney-bitcoin-meetup/2021-02-23-socratic-seminar/</guid>
+      <guid>https://btctranscripts.com/sydney-bitcoin-meetup/2021-02-23-socratic-seminar/</guid>
       <description>Name: Socratic Seminar
 Topic: Agenda in Google Doc below
 Location: Bitcoin Sydney (online)
@@ -980,10 +980,10 @@ The conversation has been anonymized by default to protect the identities of the
     
     <item>
       <title>Taxonomy Of Ln Nodes</title>
-      <link>//btctranscripts.com/magicalcryptoconference/2019/taxonomy-of-ln-nodes/</link>
+      <link>https://btctranscripts.com/magicalcryptoconference/2019/taxonomy-of-ln-nodes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/magicalcryptoconference/2019/taxonomy-of-ln-nodes/</guid>
+      <guid>https://btctranscripts.com/magicalcryptoconference/2019/taxonomy-of-ln-nodes/</guid>
       <description>Taxonomy of lightning nodes
 Lisa Neigut
 Introduction Hello. I work at Blockstream on c-lightning. I am here today to talk to you about a taxonomy of nodes about who&amp;rsquo;s who on the lightning network. I wnat ot go through the tools that have been built, looking through the perspectives of what different nodes are trying to accomplish.
@@ -992,10 +992,10 @@ LN map There&amp;rsquo;s a bunch of nodes on the network. Let&amp;rsquo;s look a
     
     <item>
       <title>The Future Of Lightning</title>
-      <link>//btctranscripts.com/baltic-honeybadger/2018/the-future-of-lightning/</link>
+      <link>https://btctranscripts.com/baltic-honeybadger/2018/the-future-of-lightning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/baltic-honeybadger/2018/the-future-of-lightning/</guid>
+      <guid>https://btctranscripts.com/baltic-honeybadger/2018/the-future-of-lightning/</guid>
       <description>The future of lightning
 Elizabeth Stark (starkness)
 The year of #craeful and the future of lightning
@@ -1006,10 +1006,10 @@ Introduction I am here to talk about what has happened in the past year and the 
     
     <item>
       <title>Unlinkable Outsourced Channel Monitoring</title>
-      <link>//btctranscripts.com/scalingbitcoin/milan-2016/unlinkable-outsourced-channel-monitoring/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/milan-2016/unlinkable-outsourced-channel-monitoring/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/milan-2016/unlinkable-outsourced-channel-monitoring/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/milan-2016/unlinkable-outsourced-channel-monitoring/</guid>
       <description>Unlinkable outsourced channel monitoring
 Tadge Dryja
 http://lightning.network/
@@ -1019,10 +1019,10 @@ Okay. Hi everyone. Check. Wow. Check one two. Okay it&amp;rsquo;s working. And I
     
     <item>
       <title>Working On Scripts</title>
-      <link>//btctranscripts.com/building-on-bitcoin/2018/working-on-scripts/</link>
+      <link>https://btctranscripts.com/building-on-bitcoin/2018/working-on-scripts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/building-on-bitcoin/2018/working-on-scripts/</guid>
+      <guid>https://btctranscripts.com/building-on-bitcoin/2018/working-on-scripts/</guid>
       <description>Working on scripts with logical opcodes
 Thomas Kerin
 Building on Bitcoin 2018

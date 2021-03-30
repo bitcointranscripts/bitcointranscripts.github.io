@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>submarine swaps on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/tags/submarine-swaps/</link>
+    <link>https://btctranscripts.com/tags/submarine-swaps/</link>
     <description>Recent content in submarine swaps on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/tags/submarine-swaps/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/tags/submarine-swaps/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Alex Bosworth Submarine Swaps (2019-07-03)</title>
-      <link>//btctranscripts.com/london-bitcoin-devs/2019-07-03-alex-bosworth-submarine-swaps/</link>
+      <link>https://btctranscripts.com/london-bitcoin-devs/2019-07-03-alex-bosworth-submarine-swaps/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/london-bitcoin-devs/2019-07-03-alex-bosworth-submarine-swaps/</guid>
+      <guid>https://btctranscripts.com/london-bitcoin-devs/2019-07-03-alex-bosworth-submarine-swaps/</guid>
       <description>Alex Bosworth
 London Bitcoin Devs
 Submarine Swaps and Loop
@@ -24,10 +24,10 @@ Bitcoin - One Currency, Multiple Settlement Networks Something that is pretty im
     
     <item>
       <title>Submarine Swaps</title>
-      <link>//btctranscripts.com/magicalcryptoconference/2019/submarine-swaps/</link>
+      <link>https://btctranscripts.com/magicalcryptoconference/2019/submarine-swaps/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/magicalcryptoconference/2019/submarine-swaps/</guid>
+      <guid>https://btctranscripts.com/magicalcryptoconference/2019/submarine-swaps/</guid>
       <description>Bridging off-chain and on-chain with submarine swaps
 Alex Bosworth
 Introduction Hi, I work at Lightning Labs. I want to talk about the dawn of hyperloop. It&amp;rsquo;s a new concept.

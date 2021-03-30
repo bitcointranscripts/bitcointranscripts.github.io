@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Breaking Bitcoin 2019 on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/breaking-bitcoin/2019/</link>
+    <link>https://btctranscripts.com/breaking-bitcoin/2019/</link>
     <description>Recent content in Breaking Bitcoin 2019 on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/breaking-bitcoin/2019/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/breaking-bitcoin/2019/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bitcoin Build System</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2019/bitcoin-build-system/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/bitcoin-build-system/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2019/bitcoin-build-system/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/bitcoin-build-system/</guid>
       <description>Bitcoin build systems and bitcoin build system security
 Carl Dong, Chaincode Labs
 https://twitter.com/kanzure/status/1137347937426661376
@@ -21,10 +21,10 @@ I couldn&amp;rsquo;t make it to Amsterdam this year, but I hope the graphics I h
     
     <item>
       <title>Breaking Bitcoin Privacy</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2019/breaking-bitcoin-privacy/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/breaking-bitcoin-privacy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2019/breaking-bitcoin-privacy/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/breaking-bitcoin-privacy/</guid>
       <description>Breaking bitcoin privacy
 Chris Belcher
 0A8B 038F 5E10 CC27 89BF CFFF EF73 4EA6 77F3 1129
@@ -35,10 +35,10 @@ Why privacy?</description>
     
     <item>
       <title>Breaking Wasabi</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2019/breaking-wasabi/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/breaking-wasabi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2019/breaking-wasabi/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/breaking-wasabi/</guid>
       <description>Breaking wasabi and automated wallets
 Udi Wertheimer
 1127 96A8 DFCA 1A96 C8B8 0094 9211 687A D298 9B12
@@ -48,10 +48,10 @@ Trigger warnings Before I begin, some have told me that sometimes I tend to be t
     
     <item>
       <title>Defense Of Bitcoin</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2019/defense-of-bitcoin/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/defense-of-bitcoin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2019/defense-of-bitcoin/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/defense-of-bitcoin/</guid>
       <description>Five insights into the defense of bitcoin
 Warren Togami
 https://twitter.com/kanzure/status/1137389045355614208
@@ -60,10 +60,10 @@ Introduction Today I work at Blockstream but I have a long long history working 
     
     <item>
       <title>Extracting Seeds From Hardware Wallets</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2019/extracting-seeds-from-hardware-wallets/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/extracting-seeds-from-hardware-wallets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2019/extracting-seeds-from-hardware-wallets/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/extracting-seeds-from-hardware-wallets/</guid>
       <description>Extracting seeds from hardware wallets
 Charles Guillemet (P3b7_)
 7DC5A359D0D5B5AB6728&amp;hellip;
@@ -73,10 +73,10 @@ Introduction My talk is about extracting seeds from hardware wallets. I am chief
     
     <item>
       <title>Fud Perceived Vs Real Bitcoin Risks</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2019/fud-perceived-vs-real-bitcoin-risks/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/fud-perceived-vs-real-bitcoin-risks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2019/fud-perceived-vs-real-bitcoin-risks/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/fud-perceived-vs-real-bitcoin-risks/</guid>
       <description>FUD: real vs perceived risks in bitcoin
 Aaron van Wirdum, Eric Voskuil, Jimmy Song, Rodolfo Novak
 https://twitter.com/kanzure/status/1137285873534492672
@@ -90,10 +90,10 @@ FUD: bitcoin too volatile to be used as money AW: What about, bitcoin is too vol
     
     <item>
       <title>Future Of Hardware Wallets</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2019/future-of-hardware-wallets/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/future-of-hardware-wallets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2019/future-of-hardware-wallets/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/future-of-hardware-wallets/</guid>
       <description>The future of hardware wallets
 Stepan Snigirev
 D419 C410 1E24 5B09 0D2C 46BF 8C3D 2C48 560E 81AC
@@ -104,10 +104,10 @@ Current capabilities of hardware wallets Normally, hardware wallets keep keys re
     
     <item>
       <title>Joost Jager Hodl Invoices (2019-06-13)</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2019/2019-06-13-joost-jager-hodl-invoices/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/2019-06-13-joost-jager-hodl-invoices/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2019/2019-06-13-joost-jager-hodl-invoices/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/2019-06-13-joost-jager-hodl-invoices/</guid>
       <description>Joost Jager
 Hodl Invoices (Breaking Bitcoin training session)
 Video: https://www.youtube.com/watch?v=jOEq9PvN-7A
@@ -117,10 +117,10 @@ Intro My name is Joost, Michael introduced me already. I’ve been working with 
     
     <item>
       <title>Lightning Network Routing Security</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2019/lightning-network-routing-security/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/lightning-network-routing-security/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2019/lightning-network-routing-security/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/lightning-network-routing-security/</guid>
       <description>Security aspects of LN routing
 Joost Jager, Lightning Labs
 D146 D0F6 8939 4362 68FA 9A13 0E26 BB61 B76C 4D3A
@@ -130,10 +130,10 @@ Introduction Together with my colleagues I am building lnd. It&amp;rsquo;s one o
     
     <item>
       <title>Lightning Network Security Panel</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2019/lightning-network-security-panel/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/lightning-network-security-panel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2019/lightning-network-security-panel/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/lightning-network-security-panel/</guid>
       <description>Lightning network security panel
 Olaoluwa Osuntokun, Justin Camarena, Matt Corallo, Michael Folkson
 https://twitter.com/kanzure/status/1137758233865703424
@@ -142,10 +142,10 @@ Introduction MF: I will start by thanking Kevin and Lea and the organizers. It&a
     
     <item>
       <title>Lightning Network Topological Analysis</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2019/lightning-network-topological-analysis/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/lightning-network-topological-analysis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2019/lightning-network-topological-analysis/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/lightning-network-topological-analysis/</guid>
       <description>Topological analysis of the lightning network
 Istvan Andras Seres
 paper: https://arxiv.org/abs/1901.04972
@@ -155,10 +155,10 @@ Introduction Knowing the topology is not necessarily a vulnerability, but it giv
     
     <item>
       <title>Mempool Analysis Simulation</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2019/mempool-analysis-simulation/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/mempool-analysis-simulation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2019/mempool-analysis-simulation/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/mempool-analysis-simulation/</guid>
       <description>Mempool analysis and simulation
 kallewoof
 https://twitter.com/kanzure/status/1137342023063744512
@@ -167,10 +167,10 @@ Introduction Fun fact: I don&amp;rsquo;t think anyone knows this fact, but antpo
     
     <item>
       <title>Neutrino</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2019/neutrino/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/neutrino/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2019/neutrino/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/neutrino/</guid>
       <description>Neutrino bip158
 Jimmy Song
 &amp;hellip; 228C D70C FAA6 17E3 2679 E455
@@ -180,10 +180,10 @@ Introduction I want to start this talk with a question for the audience. How man
     
     <item>
       <title>Opening Remarks</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2019/opening-remarks/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/opening-remarks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2019/opening-remarks/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/opening-remarks/</guid>
       <description>Opening remarks
 https://twitter.com/kanzure/status/1137273436332576768
 We have a nice six second intro video. There we go. Woo. Alright. I think I can display my notes here. Yay. Good morning. First thing I need to tell you is the wifi password if you want to use the venue wifi. So, outside of that, thank you all for coming. This year we have a little fewer people than usual, but that&amp;rsquo;s bear market and all.</description>
@@ -191,10 +191,10 @@ We have a nice six second intro video. There we go. Woo. Alright. I think I can 
     
     <item>
       <title>P2P Encryption</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2019/p2p-encryption/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/p2p-encryption/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2019/p2p-encryption/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/p2p-encryption/</guid>
       <description>bip324: v2 message transport protocol
 Jonas Schnelli
 https://twitter.com/kanzure/status/1137312478373851136
@@ -207,10 +207,10 @@ Introduction This will be a technical talk. I hope you&amp;rsquo;re prepared for
     
     <item>
       <title>Secure Protocols Bip Taproot</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2019/secure-protocols-bip-taproot/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/secure-protocols-bip-taproot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2019/secure-protocols-bip-taproot/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/secure-protocols-bip-taproot/</guid>
       <description>Secure protocols on BIP-taproot
 Jonas Nick
 36C7 1A37 C9D9 88BD E825 08D9 B1A7 0E4F 8DCD 0366
@@ -223,10 +223,10 @@ Disclaimer It&amp;rsquo;s not at all certain that a bip-taproot soft-fork will a
     
     <item>
       <title>Security Attacks Decentralized Mining Pools</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2019/security-attacks-decentralized-mining-pools/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/security-attacks-decentralized-mining-pools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2019/security-attacks-decentralized-mining-pools/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/security-attacks-decentralized-mining-pools/</guid>
       <description>Security and attacks on decentralized mining pools
 Alexei Zamyatin
 https://twitter.com/kanzure/status/1137373752038240262
@@ -236,10 +236,10 @@ Motivation The motivation behind this talk is straightforward. I think we can al
     
     <item>
       <title>Selfish Mining</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2019/selfish-mining/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/selfish-mining/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2019/selfish-mining/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/selfish-mining/</guid>
       <description>Selfish mining and Dyck words
 Ricardo Perez-Marco
 Introduction I am going to talk about our recent work on selfish mining. I am going to explain the profitability model, the different mathematical models that are used to analyze selfish mining with their properties.

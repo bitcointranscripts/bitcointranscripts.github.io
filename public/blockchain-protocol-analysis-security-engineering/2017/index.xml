@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blockchain Protocol Analysis Security Engineering 2017 on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/</link>
+    <link>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/</link>
     <description>Recent content in Blockchain Protocol Analysis Security Engineering 2017 on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Dan Robinson Ivy (2017-01-26)</title>
-      <link>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/2017-01-26-dan-robinson-ivy/</link>
+      <link>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/2017-01-26-dan-robinson-ivy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/2017-01-26-dan-robinson-ivy/</guid>
+      <guid>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/2017-01-26-dan-robinson-ivy/</guid>
       <description>Name: Dan Robinson
 Topic: Ivy: A Declarative Predicate Language for Smart Contracts
 Location: BPASE 2017, Stanford University
@@ -22,10 +22,10 @@ Intro Hi I’m Dan Robinson, I’m one of the Product Architects at Chain which 
     
     <item>
       <title>Jeremy Rubin Covenants (2017-01-26)</title>
-      <link>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/2017-01-26-jeremy-rubin-covenants/</link>
+      <link>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/2017-01-26-jeremy-rubin-covenants/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/2017-01-26-jeremy-rubin-covenants/</guid>
+      <guid>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/2017-01-26-jeremy-rubin-covenants/</guid>
       <description>Name: Jeremy Rubin
 Topic: Contracts with Merklized Covenants
 Location: BPASE 2017, Stanford University
@@ -37,10 +37,10 @@ Intro Hey everyone. How is it going? Happy to be going last right now given that
     
     <item>
       <title>Lightning Network Security Analysis</title>
-      <link>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/lightning-network-security-analysis/</link>
+      <link>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/lightning-network-security-analysis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/lightning-network-security-analysis/</guid>
+      <guid>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/lightning-network-security-analysis/</guid>
       <description>Security analysis of the lightning network (2017)
 Olaoluwa Osuntokun (roasbeef), Lightning Labs
 https://twitter.com/kanzure/status/957978915515092992
@@ -52,10 +52,10 @@ State of the hash-lock Before I start, I want to go over the state of the hash-l
     
     <item>
       <title>Russell Oconnor Posts Theorem (2017-01-26)</title>
-      <link>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/2017-01-26-russell-oconnor-posts-theorem/</link>
+      <link>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/2017-01-26-russell-oconnor-posts-theorem/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/2017-01-26-russell-oconnor-posts-theorem/</guid>
+      <guid>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/2017-01-26-russell-oconnor-posts-theorem/</guid>
       <description>Name: Russell O’Connor
 Topic: Post’s Theorem and Blockchain Languages: A Short Course in the Theory of Computation
 Location: BPASE 2017, Stanford University
@@ -66,10 +66,10 @@ Intro Hi. My name is Russell O’Connor. I am here to talk to you about Post’s
     
     <item>
       <title>Scalable Smart Contracts Via Proofs And Single Use Seals</title>
-      <link>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/scalable-smart-contracts-via-proofs-and-single-use-seals/</link>
+      <link>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/scalable-smart-contracts-via-proofs-and-single-use-seals/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/scalable-smart-contracts-via-proofs-and-single-use-seals/</guid>
+      <guid>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/scalable-smart-contracts-via-proofs-and-single-use-seals/</guid>
       <description>Scalable smart contracts via proofs and single-use seals
 petertodd
 https://twitter.com/kanzure/status/957660108137418752

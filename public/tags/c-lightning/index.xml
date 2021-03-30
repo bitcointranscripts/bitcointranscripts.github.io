@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>c-lightning on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/tags/c-lightning/</link>
+    <link>https://btctranscripts.com/tags/c-lightning/</link>
     <description>Recent content in c-lightning on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/tags/c-lightning/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/tags/c-lightning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Christian Decker - C-Lightning Questions (2019-09-04)</title>
-      <link>//btctranscripts.com/blockstream-webinars/2019-09-04-christian-decker-c-lightning-questions/</link>
+      <link>https://btctranscripts.com/blockstream-webinars/2019-09-04-christian-decker-c-lightning-questions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/blockstream-webinars/2019-09-04-christian-decker-c-lightning-questions/</guid>
+      <guid>https://btctranscripts.com/blockstream-webinars/2019-09-04-christian-decker-c-lightning-questions/</guid>
       <description>Christian Decker
 c-lightning Q and A session
 Video: https://www.youtube.com/watch?v=r7Un8FZYlS4&amp;amp;list=PLseHpvCI1BjAfUx8zjJXadlBh_eKV9zJi&amp;amp;index=8
@@ -23,10 +23,10 @@ A - It absolutely is.</description>
     
     <item>
       <title>Christian Decker C-Lightning API (2018-10-24)</title>
-      <link>//btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-24-christian-decker-c-lightning-api/</link>
+      <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-24-christian-decker-c-lightning-api/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-24-christian-decker-c-lightning-api/</guid>
+      <guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-24-christian-decker-c-lightning-api/</guid>
       <description>Christian Decker
 Developing on c-lightning
 Location: Chaincode Labs Lightning Residency 2018
@@ -37,10 +37,10 @@ Intro Good morning from the last day of presentations. I’m Chris still. Today 
     
     <item>
       <title>Ln Present And Future Panel</title>
-      <link>//btctranscripts.com/magicalcryptoconference/2019/ln-present-and-future-panel/</link>
+      <link>https://btctranscripts.com/magicalcryptoconference/2019/ln-present-and-future-panel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/magicalcryptoconference/2019/ln-present-and-future-panel/</guid>
+      <guid>https://btctranscripts.com/magicalcryptoconference/2019/ln-present-and-future-panel/</guid>
       <description>Lightning network present &amp;amp; future panel
 Will O&amp;rsquo;Beirne, Lisa Neigut, Alex Bosworth, Leigh Cuen
 LC: Can everyone hear me now? Alright, alright.
@@ -51,10 +51,10 @@ WO: Sure, and I think Lisa can talk about c-lightning.</description>
     
     <item>
       <title>Rusty Russell - Getting Started With C-Lightning (2019-07-31)</title>
-      <link>//btctranscripts.com/blockstream-webinars/2019-07-31-rusty-russell-getting-started-with-c-lightning/</link>
+      <link>https://btctranscripts.com/blockstream-webinars/2019-07-31-rusty-russell-getting-started-with-c-lightning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/blockstream-webinars/2019-07-31-rusty-russell-getting-started-with-c-lightning/</guid>
+      <guid>https://btctranscripts.com/blockstream-webinars/2019-07-31-rusty-russell-getting-started-with-c-lightning/</guid>
       <description>Rusty Russell
 Getting started with c-lightning
 video: https://www.youtube.com/watch?v=fab4P3BIZxk
@@ -64,10 +64,10 @@ Introduction Hi everyone. We’re actually a couple of minutes early and I think
     
     <item>
       <title>Rusty Russell Json Interface (2019-04-06)</title>
-      <link>//btctranscripts.com/boltathon/2019-04-06-rusty-russell-json-interface/</link>
+      <link>https://btctranscripts.com/boltathon/2019-04-06-rusty-russell-json-interface/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/boltathon/2019-04-06-rusty-russell-json-interface/</guid>
+      <guid>https://btctranscripts.com/boltathon/2019-04-06-rusty-russell-json-interface/</guid>
       <description>Rusty Russell
 Boltathon
 JSON Interface with c-lightning and Writing Extensions
@@ -78,10 +78,10 @@ Intro Ok I have top running. We have a plan and we’re going to start from zero
     
     <item>
       <title>Sergi Delgado Watchtowers (2020-05-24)</title>
-      <link>//btctranscripts.com/lightning-hack-day/2020-05-24-sergi-delgado-watchtowers/</link>
+      <link>https://btctranscripts.com/lightning-hack-day/2020-05-24-sergi-delgado-watchtowers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/lightning-hack-day/2020-05-24-sergi-delgado-watchtowers/</guid>
+      <guid>https://btctranscripts.com/lightning-hack-day/2020-05-24-sergi-delgado-watchtowers/</guid>
       <description>Name: Sergi Delgado
 Topic: Watchtowers and BOLT 13
 Location: Potzblitz (online)
@@ -102,10 +102,10 @@ Intro I am going to be talking about towers and a bit about BOLT 13 too. Before 
     
     <item>
       <title>Taxonomy Of Ln Nodes</title>
-      <link>//btctranscripts.com/magicalcryptoconference/2019/taxonomy-of-ln-nodes/</link>
+      <link>https://btctranscripts.com/magicalcryptoconference/2019/taxonomy-of-ln-nodes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/magicalcryptoconference/2019/taxonomy-of-ln-nodes/</guid>
+      <guid>https://btctranscripts.com/magicalcryptoconference/2019/taxonomy-of-ln-nodes/</guid>
       <description>Taxonomy of lightning nodes
 Lisa Neigut
 Introduction Hello. I work at Blockstream on c-lightning. I am here today to talk to you about a taxonomy of nodes about who&amp;rsquo;s who on the lightning network. I wnat ot go through the tools that have been built, looking through the perspectives of what different nodes are trying to accomplish.

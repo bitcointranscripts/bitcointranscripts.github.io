@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>segwit on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/tags/segwit/</link>
+    <link>https://btctranscripts.com/tags/segwit/</link>
     <description>Recent content in segwit on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/tags/segwit/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/tags/segwit/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bitcoin Optech (2018-10-09)</title>
-      <link>//btctranscripts.com/bitcoin-core-dev-tech/2018-10-09-bitcoin-optech/</link>
+      <link>https://btctranscripts.com/bitcoin-core-dev-tech/2018-10-09-bitcoin-optech/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2018-10-09-bitcoin-optech/</guid>
+      <guid>https://btctranscripts.com/bitcoin-core-dev-tech/2018-10-09-bitcoin-optech/</guid>
       <description>https://twitter.com/kanzure/status/1049527415767101440
 Bitcoin Optech https://bitcoinops.org/
 Bitcoin Optech is trying to encourage bitcoin businesses to adopt better scaling techniques and technologies, things like batching, segwit, down the line maybe Schnorr signatures, aggregatable signatures, maybe lightning. Right now we&amp;rsquo;re focusing on things that businesses could be doing right now. Exchanges could be batching, and some aren&amp;rsquo;t. We&amp;rsquo;re talking to those companies and listening to their concerns and what they&amp;rsquo;re doing, and just trying to nudge them in the right direction.</description>
@@ -19,20 +19,20 @@ Bitcoin Optech is trying to encourage bitcoin businesses to adopt better scaling
     
     <item>
       <title>Bitcoin Script</title>
-      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/bitcoin-script/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tokyo-2018/bitcoin-script/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/bitcoin-script/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tokyo-2018/bitcoin-script/</guid>
       <description>Featuring roasbeef
 Agenda  opcodes OP_CHECKSIGFROMSTACK sighash flags keytree sigs MAST graftroot, taproot covenants, reverse covenants (input restrictions: this input has to be spent with tihs other input, or can only be spent if this other one doesn&amp;rsquo;t exist) stack manipulation script languages (simplicity) tx formats, serialization? what would we change with hard-fork changes to the transaction format? Segwit transaction encoding format sucks; the witnesses are at the end and inline with all the scriptsigs and that should be changed.</description>
     </item>
     
     <item>
       <title>Bloxroute</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2019/bloxroute/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2019/bloxroute/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/bloxroute/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2019/bloxroute/</guid>
       <description>bloXroute: A network for tomorrow&amp;rsquo;s blockchain
 Soumya Basu
 Introduction Hi. I am Souyma and I am here to talk with you about Bloxroute. The elephant in the room is that blockchains have been claimed to solve everything like credit cards, social media, and global micropayments. To handle credit card payment volumes, blockchains need like 5000 transactions per second, for microtransactions you need 70000 transactions per second, and for social media even more.</description>
@@ -40,10 +40,10 @@ Introduction Hi. I am Souyma and I am here to talk with you about Bloxroute. The
     
     <item>
       <title>Gmaxwell - Advances In Block Propagation (2017-11-27)</title>
-      <link>//btctranscripts.com/greg-maxwell/2017-11-27-gmaxwell-advances-in-block-propagation/</link>
+      <link>https://btctranscripts.com/greg-maxwell/2017-11-27-gmaxwell-advances-in-block-propagation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/greg-maxwell/2017-11-27-gmaxwell-advances-in-block-propagation/</guid>
+      <guid>https://btctranscripts.com/greg-maxwell/2017-11-27-gmaxwell-advances-in-block-propagation/</guid>
       <description>Advances in block propagation
 Greg Maxwell
 2017-11-27
@@ -63,10 +63,10 @@ https://twitter.com/kanzure/status/944656354307919873
     
     <item>
       <title>James O&#39;Beirne Advanced Segwit (2019-06-18)</title>
-      <link>//btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-18-james-obeirne-advanced-segwit/</link>
+      <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-18-james-obeirne-advanced-segwit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-18-james-obeirne-advanced-segwit/</guid>
+      <guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-18-james-obeirne-advanced-segwit/</guid>
       <description>Name: James O&amp;rsquo;Beirne
 Topic: Advanced SegWit
 Location: Chaincode Labs 2019 Residency
@@ -77,10 +77,10 @@ James O&amp;rsquo;Beirne: To sort of vamp off of Jonas&amp;rsquo;s preamble, I&a
     
     <item>
       <title>Light Clients During 2017 Interfork Period</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2017/light-clients-during-2017-interfork-period/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2017/light-clients-during-2017-interfork-period/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2017/light-clients-during-2017-interfork-period/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2017/light-clients-during-2017-interfork-period/</guid>
       <description>Light clients during the 2017 interfork period
 Thomas Voegtlin
 video: https://www.youtube.com/watch?v=eCE2OzKIab8&amp;amp;t=5h9m
@@ -92,10 +92,10 @@ So we have segwit and we are very happy about that.</description>
     
     <item>
       <title>Lightning Network As A Directed Graph Single Funded Channel Network Topology (2016-04-11)</title>
-      <link>//btctranscripts.com/sf-bitcoin-meetup/2016-04-11-lightning-network-as-a-directed-graph-single-funded-channel-network-topology/</link>
+      <link>https://btctranscripts.com/sf-bitcoin-meetup/2016-04-11-lightning-network-as-a-directed-graph-single-funded-channel-network-topology/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sf-bitcoin-meetup/2016-04-11-lightning-network-as-a-directed-graph-single-funded-channel-network-topology/</guid>
+      <guid>https://btctranscripts.com/sf-bitcoin-meetup/2016-04-11-lightning-network-as-a-directed-graph-single-funded-channel-network-topology/</guid>
       <description>2016-04-11
 Lightning Network as a Directed Graph: Single-Funded Channel Network Topology
 Tadge Dryja rx@awsomnet.org
@@ -108,10 +108,10 @@ Basic super quick summary of Lightning I am going to re-cap lightning network re
     
     <item>
       <title>Luke Dashjr - Segwit, PSBT Vulnerability (2020-06-18)</title>
-      <link>//btctranscripts.com/la-bitdevs/2020-06-18-luke-dashjr-segwit-psbt-vulnerability/</link>
+      <link>https://btctranscripts.com/la-bitdevs/2020-06-18-luke-dashjr-segwit-psbt-vulnerability/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/la-bitdevs/2020-06-18-luke-dashjr-segwit-psbt-vulnerability/</guid>
+      <guid>https://btctranscripts.com/la-bitdevs/2020-06-18-luke-dashjr-segwit-psbt-vulnerability/</guid>
       <description>Name: Luke Dashjr
 Topic: SegWit/PSBT vulnerability (CVE-2020-14199)
 Location: LA BitDevs (online)
@@ -125,10 +125,10 @@ The vulnerability The way Bitcoin transactions are encoded in the software is th
     
     <item>
       <title>Partially Signed Bitcoin Transactions Bip174</title>
-      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/partially-signed-bitcoin-transactions-bip174/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/partially-signed-bitcoin-transactions-bip174/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/partially-signed-bitcoin-transactions-bip174/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/partially-signed-bitcoin-transactions-bip174/</guid>
       <description>Partially-signed bitcoin transactions (bip174)
 Greg Sanders (instagibbs)
 https://twitter.com/kanzure/status/1047730297242935296
@@ -138,10 +138,10 @@ History and motivation Historically, there was no standard for this. Armory had 
     
     <item>
       <title>Segregated Witness And Its Impact On Scalability</title>
-      <link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/segregated-witness-and-its-impact-on-scalability/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/segregated-witness-and-its-impact-on-scalability/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/hong-kong-2015/segregated-witness-and-its-impact-on-scalability/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/segregated-witness-and-its-impact-on-scalability/</guid>
       <description>Pieter Wuille (sipa)
 video: https://www.youtube.com/watch?v=fst1IK_mrng&amp;amp;t=36m
 slides: https://prezi.com/lyghixkrguao/segregated-witness-and-deploying-it-for-bitcoin/
@@ -155,10 +155,10 @@ Okay. So I am Pieter Wuille. I&amp;rsquo;ll be talking about segregated witness 
     
     <item>
       <title>Segwit Lessons Learned</title>
-      <link>//btctranscripts.com/scalingbitcoin/milan-2016/segwit-lessons-learned/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/milan-2016/segwit-lessons-learned/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/milan-2016/segwit-lessons-learned/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/milan-2016/segwit-lessons-learned/</guid>
       <description>Lessons learned with segwit in Bitcoin
 Greg Sanders (instagibbs)
 https://twitter.com/kanzure/status/785034301272420353
@@ -168,10 +168,10 @@ Hi. My name is Greg Sanders. I will be giving a talk about segwit in bitcoin les
     
     <item>
       <title>Whalepool (2016-12-14)</title>
-      <link>//btctranscripts.com/misc/2016-12-14-whalepool/</link>
+      <link>https://btctranscripts.com/misc/2016-12-14-whalepool/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/misc/2016-12-14-whalepool/</guid>
+      <guid>https://btctranscripts.com/misc/2016-12-14-whalepool/</guid>
       <description>Whalepool segwit transcript
 https://soundcloud.com/elux-2/the-great-stakehodler-debate-lombroso-petrov-potter-ver
 https://twitter.com/kanzure/status/809174512105295872

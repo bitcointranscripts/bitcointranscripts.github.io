@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Advancing Bitcoin 2020 on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/advancing-bitcoin/2020/</link>
+    <link>https://btctranscripts.com/advancing-bitcoin/2020/</link>
     <description>Recent content in Advancing Bitcoin 2020 on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/advancing-bitcoin/2020/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/advancing-bitcoin/2020/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Andrew Chow Descriptor Wallets (2020-02-06)</title>
-      <link>//btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-chow-descriptor-wallets/</link>
+      <link>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-chow-descriptor-wallets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-chow-descriptor-wallets/</guid>
+      <guid>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-chow-descriptor-wallets/</guid>
       <description>Name: Andrew Chow
 Topic: Rethinking Wallet Architecture: Native Descriptor Wallets
 Location: Advancing Bitcoin
@@ -26,10 +26,10 @@ Intro Hi everyone. I am Andrew Chow, I am an engineer at Blockstream and also a 
     
     <item>
       <title>Andrew Poelstra Miniscript (2020-02-07)</title>
-      <link>//btctranscripts.com/advancing-bitcoin/2020/2020-02-07-andrew-poelstra-miniscript/</link>
+      <link>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-07-andrew-poelstra-miniscript/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/advancing-bitcoin/2020/2020-02-07-andrew-poelstra-miniscript/</guid>
+      <guid>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-07-andrew-poelstra-miniscript/</guid>
       <description>Andrew Poelstra
 Advancing Bitcoin workshop
 Miniscript
@@ -41,10 +41,10 @@ Part 1 So what we’re going to do, there is a couple of things. We are going to
     
     <item>
       <title>Andrew Poelstra Miniscript Intro (2020-02-06)</title>
-      <link>//btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-poelstra-miniscript-intro/</link>
+      <link>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-poelstra-miniscript-intro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-poelstra-miniscript-intro/</guid>
+      <guid>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-poelstra-miniscript-intro/</guid>
       <description>Name: Andrew Poelstra
 Topic: Introduction to Miniscript
 Location: Advancing Bitcoin
@@ -56,10 +56,10 @@ Intro Hi everyone. Some of you were at my Bitcoin dev presentation about Miniscr
     
     <item>
       <title>Antoine Riard Taproot Lightning (2020-02-06)</title>
-      <link>//btctranscripts.com/advancing-bitcoin/2020/2020-02-06-antoine-riard-taproot-lightning/</link>
+      <link>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-antoine-riard-taproot-lightning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/advancing-bitcoin/2020/2020-02-06-antoine-riard-taproot-lightning/</guid>
+      <guid>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-antoine-riard-taproot-lightning/</guid>
       <description>Name: Antoine Riard
 Topic: A Schnorr-Taproot’ed Lightning
 Location: Advancing Bitcoin
@@ -72,10 +72,10 @@ Lightning architecture The Lightning architecture for those who are not familiar
     
     <item>
       <title>Fabian Jahr Debugging Workshop (2020-02-07)</title>
-      <link>//btctranscripts.com/advancing-bitcoin/2020/2020-02-07-fabian-jahr-debugging-workshop/</link>
+      <link>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-07-fabian-jahr-debugging-workshop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/advancing-bitcoin/2020/2020-02-07-fabian-jahr-debugging-workshop/</guid>
+      <guid>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-07-fabian-jahr-debugging-workshop/</guid>
       <description>Name: Fabian Jahr
 Topic: Debugging Bitcoin Core Workshop
 Location: Advancing Bitcoin
@@ -89,10 +89,10 @@ Introduction First of all welcome to the debugging Bitcoin Core workshop. Everyt
     
     <item>
       <title>Kalle Alm Signet Integration (2020-02-06)</title>
-      <link>//btctranscripts.com/advancing-bitcoin/2020/2020-02-06-kalle-alm-signet-integration/</link>
+      <link>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-kalle-alm-signet-integration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/advancing-bitcoin/2020/2020-02-06-kalle-alm-signet-integration/</guid>
+      <guid>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-kalle-alm-signet-integration/</guid>
       <description>Name: Karl-Johan Alm
 Topic: Signet Integration
 Location: Advancing Bitcoin
@@ -109,10 +109,10 @@ Intro I am going to talk about Signet. Do you guys know what Signet is? A few pe
     
     <item>
       <title>Kalle Alm Signet Workshop (2020-02-07)</title>
-      <link>//btctranscripts.com/advancing-bitcoin/2020/2020-02-07-kalle-alm-signet-workshop/</link>
+      <link>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-07-kalle-alm-signet-workshop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/advancing-bitcoin/2020/2020-02-07-kalle-alm-signet-workshop/</guid>
+      <guid>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-07-kalle-alm-signet-workshop/</guid>
       <description>Name: Kalle Alm
 Topic: Signet Workshop
 Location: Advancing Bitcoin

@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ruben Somsen on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/ruben-somsen/</link>
+    <link>https://btctranscripts.com/ruben-somsen/</link>
     <description>Recent content in Ruben Somsen on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/ruben-somsen/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/ruben-somsen/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ruben Somsen Succinct Atomic Swap (2020-05-11)</title>
-      <link>//btctranscripts.com/ruben-somsen/2020-05-11-ruben-somsen-succinct-atomic-swap/</link>
+      <link>https://btctranscripts.com/ruben-somsen/2020-05-11-ruben-somsen-succinct-atomic-swap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/ruben-somsen/2020-05-11-ruben-somsen-succinct-atomic-swap/</guid>
+      <guid>https://btctranscripts.com/ruben-somsen/2020-05-11-ruben-somsen-succinct-atomic-swap/</guid>
       <description>Name: Ruben Somsen
 Topic: Succinct Atomic Swap (SAS)
 Location: Ruben Somsen YouTube channel

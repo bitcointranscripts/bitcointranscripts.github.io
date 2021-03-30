@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Edgedevplusplus on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/</link>
+    <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/</link>
     <description>Recent content in Edgedevplusplus on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Accumulators</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/accumulators/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/accumulators/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/accumulators/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/accumulators/</guid>
       <description>Accumulators
 Tadge Dryja
 https://diyhpl.us/wiki/transcripts/bitcoin-core-dev-tech/2018-10-08-utxo-accumulators-and-utreexo/
@@ -27,10 +27,10 @@ https://docs.google.com/presentation/d/1z_vAwA6hN-C1WEg89EFfZCwqfMRWDcYuW61aA7P8
     
     <item>
       <title>Bitcoin Core Functional Test Framework</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/bitcoin-core-functional-test-framework/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/bitcoin-core-functional-test-framework/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/bitcoin-core-functional-test-framework/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/bitcoin-core-functional-test-framework/</guid>
       <description>Name: Fabian Jahr
 Topic: Bitcoin Core functional test framework
 Location: Bitcoin Edge Dev++
@@ -44,10 +44,10 @@ Introduction I am pretty sure you can tell but I am not James (Chiang). I am tak
     
     <item>
       <title>Bitcoin Data Structures</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/bitcoin-data-structures/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/bitcoin-data-structures/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/bitcoin-data-structures/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/bitcoin-data-structures/</guid>
       <description>Bitcoin data structures
 Jimmy Song
 Bitcoin Edge Dev++ @ Tel Aviv University, September 9th 2019
@@ -57,10 +57,10 @@ Introduction Alright guys. Come on in. There&amp;rsquo;s plenty of seats, guys. 
     
     <item>
       <title>Blockchain Design Patterns</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/blockchain-design-patterns/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/blockchain-design-patterns/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/blockchain-design-patterns/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/blockchain-design-patterns/</guid>
       <description>Blockchain design patterns: Layers and scaling approaches
 Andrew Poelstra, David Vorick
 https://twitter.com/kanzure/status/1171400374336536576
@@ -69,10 +69,10 @@ Introduction Alright. Are we ready to get going? Thumbs up? Alright. Cool. I am 
     
     <item>
       <title>Bosminer</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/bosminer/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/bosminer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/bosminer/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/bosminer/</guid>
       <description>Challenges of developing Bosminer from scratch in Rust
 Jan Capek (janbraiins)
 https://braiins-os.org/
@@ -84,10 +84,10 @@ cgminer cgminer used to be a CPU miner that has been functionally removed a long
     
     <item>
       <title>Debugging Bitcoin</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/debugging-bitcoin/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/debugging-bitcoin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/debugging-bitcoin/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/debugging-bitcoin/</guid>
       <description>Name: Fabian Jahr
 Topic: Debugging Bitcoin
 Location: Bitcoin Edge Dev++
@@ -102,10 +102,10 @@ Introduction I am going to talk about debugging Bitcoin. Of course if you want t
     
     <item>
       <title>Hardware Wallet Design Best Practices</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/hardware-wallet-design-best-practices/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/hardware-wallet-design-best-practices/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/hardware-wallet-design-best-practices/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/hardware-wallet-design-best-practices/</guid>
       <description>Hardware wallet design: issues and best practices
 Stepan Snigirev
 https://twitter.com/kanzure/status/1171322716303036417
@@ -115,10 +115,10 @@ Imagine you want to start working in bitcoin development. There&amp;rsquo;s a ch
     
     <item>
       <title>Libbitcoin</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/libbitcoin/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/libbitcoin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/libbitcoin/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/libbitcoin/</guid>
       <description>Libbitcoin: A practical introduction
 or: libbitcoin&amp;rsquo;s bx tool: Constructing a raw transaction
 James Chiang
@@ -129,10 +129,10 @@ Introduction I am going to talk about libbitcoin. It&amp;rsquo;s an alternative 
     
     <item>
       <title>Lightning Network Layer By Layer</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-layer-by-layer/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-layer-by-layer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-layer-by-layer/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-layer-by-layer/</guid>
       <description>Name: Carla Kirk-Cohen
 Topic: The Lightning Network Layer by Layer
 Location: Dev++ O3-19 Tel Aviv
@@ -142,10 +142,10 @@ Introduction Good afternoon everyone. My name is Carla. I&amp;rsquo;m one of the
     
     <item>
       <title>Lightning Network Routing</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-routing/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-routing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-routing/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-routing/</guid>
       <description>Lightning network routing: Operation, issues and expansions
 Carla Kirk-Cohen
 Introduction Good afternoon everyone. My name is Carla. I am one of the chaincode residents this summer. This talk is going to walk through the protocol layer by layer and look at the different components that make up the network. Lightning is an off-chain scaling solution which consists of a p2p network of payment channels. It allows payments to be forwarded by nodes in exchange for fees.</description>
@@ -153,10 +153,10 @@ Introduction Good afternoon everyone. My name is Carla. I am one of the chaincod
     
     <item>
       <title>Lightning Network Sphinx And Onion Routing</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-sphinx-and-onion-routing/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-sphinx-and-onion-routing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-sphinx-and-onion-routing/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-sphinx-and-onion-routing/</guid>
       <description>Lightning network: Sphinx and onion routing
 Antoine Riard
 Introduction Hi everyone. I am a developer of rust-lightning, it started in 2018 by BlueMatt. I started contributing about a year ago now. It&amp;rsquo;s a full featured, flexible, spec-compliant lightning library. It targets exchanges, wallet vendors, hardware, meshnet devices, and you can join us on Freenode IRC in the #rust-bitcoin channel which is a really nice one.
@@ -165,10 +165,10 @@ Privacy matters Privacy matters on the blockchain.</description>
     
     <item>
       <title>Lightning network topology, its creation and maintenance</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-topology/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-topology/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-topology/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-topology/</guid>
       <description>Carla Kirk-Cohen
 video: https://www.youtube.com/watch?v=j2l_Ut4k1qI
 Introduction Alright. Give me a second to test this. Alright. Antoine has taken you through the routing layer. I&amp;rsquo;m going to take you through what the lightning network looks like today. This is the current topology of the network and how this came about, and some approaches for maintaining hte network and making the graph look like we want it to look.
@@ -177,19 +177,19 @@ Lightning brief overview There&amp;rsquo;s ideally only two transactions involve
     
     <item>
       <title>Metadata</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/metadata/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/metadata/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/metadata/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/metadata/</guid>
       <description>https://bitcoinedge.org/slack</description>
     </item>
     
     <item>
       <title>Mining Firmware Security</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/mining-firmware-security/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/mining-firmware-security/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/mining-firmware-security/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/mining-firmware-security/</guid>
       <description>Mining firmware security
 James Hilliard
 slides: https://docs.google.com/presentation/d/1apJRD1BwskElWP0Yb1C_tXmGYA_vkx9rjS8VTDW_Z3A/edit?usp=sharing</description>
@@ -197,10 +197,10 @@ slides: https://docs.google.com/presentation/d/1apJRD1BwskElWP0Yb1C_tXmGYA_vkx9r
     
     <item>
       <title>Privacy Concepts</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/privacy-concepts/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/privacy-concepts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/privacy-concepts/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/privacy-concepts/</guid>
       <description>Privacy concepts for bitcoin application developers
 Udi Wertheimer
 https://twitter.com/kanzure/status/1171036497044267008
@@ -209,10 +209,10 @@ Introduction You&amp;rsquo;re not going to walk out of here as a privacy protoco
     
     <item>
       <title>Rebroadcasting</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/rebroadcasting/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/rebroadcasting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/rebroadcasting/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/rebroadcasting/</guid>
       <description>Rebroadcasting
 Amiti Uttarwar (amizi)
 https://twitter.com/kanzure/status/1171042478088232960
@@ -222,10 +222,10 @@ What is rebroadcasting? We all know what a broadcast is. It&amp;rsquo;s hwen we 
     
     <item>
       <title>Signet</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/signet/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/signet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/signet/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/signet/</guid>
       <description>Signet
 kallewoof
 https://twitter.com/kanzure/status/1171310731100381184
@@ -235,10 +235,10 @@ Introduction I was going to talk about signet yesterday but people had some dela
     
     <item>
       <title>Statechains</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/statechains/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/statechains/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/statechains/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/statechains/</guid>
       <description>Schnorr signatures, adaptor signatures and statechains
 Ruben Somsen
 https://twitter.com/kanzure/status/1171345418237685760
@@ -247,10 +247,10 @@ Introduction If you want to know the details of statechains, I recommend checkin
     
     <item>
       <title>Taproot</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/taproot/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/taproot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/taproot/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/taproot/</guid>
       <description>Building Taproot
 Elichai Turkel
 https://docs.google.com/presentation/d/1YVOYJGmQ_mY-5_Rs0Cu84AYSI6wCvpfIgoapfgsYP2U/edit
@@ -260,10 +260,10 @@ https://github.com/bitcoinops/bitcoin/releases/tag/v0.1</description>
     
     <item>
       <title>Wallet Architecture</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/wallet-architecture/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/wallet-architecture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/wallet-architecture/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/wallet-architecture/</guid>
       <description>Bitcoin Core wallet architecture
 John Newbery
 https://twitter.com/kanzure/status/1171018684816605185

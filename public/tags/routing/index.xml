@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>routing on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/tags/routing/</link>
+    <link>https://btctranscripts.com/tags/routing/</link>
     <description>Recent content in routing on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/tags/routing/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/tags/routing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Alex Bosworth Channel Management (2018-10-22)</title>
-      <link>//btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-channel-management/</link>
+      <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-channel-management/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-channel-management/</guid>
+      <guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-channel-management/</guid>
       <description>Alex Bosworth
 Channel Management
 Video: https://www.youtube.com/watch?v=HlPIB6jt6ww
@@ -22,10 +22,10 @@ Uptime So basically the big message overall is and I think I’ve said this befo
     
     <item>
       <title>Amiko Pay</title>
-      <link>//btctranscripts.com/scalingbitcoin/montreal-2015/amiko-pay/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/montreal-2015/amiko-pay/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/montreal-2015/amiko-pay/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/montreal-2015/amiko-pay/</guid>
       <description>Amiko Pay
 Come Plooy
 Amiko Pay aims to become an implementation of the lightning network. So that previous presentation was a great setup. There&amp;rsquo;s a little bit more to Amiko Pay. If you look through the basic design of the lightning network, there&amp;rsquo;s a network of payment channels. There have been several variations of this idea. Lightning Network happens to be the best so far. What Amiko Pay aims to do is to focus on the nodes, and do the routing between nodes.</description>
@@ -33,10 +33,10 @@ Amiko Pay aims to become an implementation of the lightning network. So that pre
     
     <item>
       <title>Bastien Teinturier Trampoline Routing (2019-10-20)</title>
-      <link>//btctranscripts.com/lightning-conference/2019/2019-10-20-bastien-teinturier-trampoline-routing/</link>
+      <link>https://btctranscripts.com/lightning-conference/2019/2019-10-20-bastien-teinturier-trampoline-routing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/lightning-conference/2019/2019-10-20-bastien-teinturier-trampoline-routing/</guid>
+      <guid>https://btctranscripts.com/lightning-conference/2019/2019-10-20-bastien-teinturier-trampoline-routing/</guid>
       <description>Bastien Teinturier
 Trampoline Routing
 The Lightning Conference Day 2 (Stage 2)
@@ -48,10 +48,10 @@ Intro We will start with gory technical details about routing and pathfinding. I
     
     <item>
       <title>Boomerang</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/boomerang/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/boomerang/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/boomerang/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/boomerang/</guid>
       <description>Boomerang: Redundancy Improves Latency and Throughput in Payment-Channel Network
 Joachim Neu
 https://twitter.com/kanzure/status/1230936389300080640
@@ -61,10 +61,10 @@ Payment channels Alice and Bob are connected through a payment channel. This is 
     
     <item>
       <title>Day 1 Group Summaries</title>
-      <link>//btctranscripts.com/scalingbitcoin/milan-2016/day-1-group-summaries/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/milan-2016/day-1-group-summaries/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/milan-2016/day-1-group-summaries/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/milan-2016/day-1-group-summaries/</guid>
       <description>Day 1 group summaries
 We need two to three minute report backs from each session. Also, note takers. Please email your notes to contact@scalingbitcoin.org so that we can add notes to the wiki. Come join us. Okay, so.
 Lightning We discussed routing and several aspects of routing algorithms in the lightning network. We talked about the tradeoff between privacy aspects and reliability in routing. We quickly discovered that after some of the things were already resolved by the papers&amp;ndash; the way how we deal with a general separation and channel transaction fees, is actually quite an interesting discussion topic.</description>
@@ -72,10 +72,10 @@ Lightning We discussed routing and several aspects of routing algorithms in the 
     
     <item>
       <title>Elaine Ou Bootstrapping Lightning Node (2018-10-22)</title>
-      <link>//btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-elaine-ou-bootstrapping-lightning-node/</link>
+      <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-elaine-ou-bootstrapping-lightning-node/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-elaine-ou-bootstrapping-lightning-node/</guid>
+      <guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-elaine-ou-bootstrapping-lightning-node/</guid>
       <description>Elaine Ou
 Bootstrapping and maintaining a Lightning Node
 Video: https://www.youtube.com/watch?v=qX4Z3JY1094
@@ -86,10 +86,10 @@ Bootstrapping and Maintaining a Lightning Node We’ll start with an overview of
     
     <item>
       <title>Flare Routing In Lightning</title>
-      <link>//btctranscripts.com/scalingbitcoin/milan-2016/flare-routing-in-lightning/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/milan-2016/flare-routing-in-lightning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/milan-2016/flare-routing-in-lightning/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/milan-2016/flare-routing-in-lightning/</guid>
       <description>Flare: An approach to routing in lightning network
 https://twitter.com/kanzure/status/784745976170999810
 Pavel Prihodko
@@ -103,10 +103,10 @@ Routing requirements It should be source routing because we need the privacy.</d
     
     <item>
       <title>Lightning Network Routing</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-routing/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-routing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-routing/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-routing/</guid>
       <description>Lightning network routing: Operation, issues and expansions
 Carla Kirk-Cohen
 Introduction Good afternoon everyone. My name is Carla. I am one of the chaincode residents this summer. This talk is going to walk through the protocol layer by layer and look at the different components that make up the network. Lightning is an off-chain scaling solution which consists of a p2p network of payment channels. It allows payments to be forwarded by nodes in exchange for fees.</description>
@@ -114,10 +114,10 @@ Introduction Good afternoon everyone. My name is Carla. I am one of the chaincod
     
     <item>
       <title>Lightning Network Routing Security</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2019/lightning-network-routing-security/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/lightning-network-routing-security/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2019/lightning-network-routing-security/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/lightning-network-routing-security/</guid>
       <description>Security aspects of LN routing
 Joost Jager, Lightning Labs
 D146 D0F6 8939 4362 68FA 9A13 0E26 BB61 B76C 4D3A
@@ -127,10 +127,10 @@ Introduction Together with my colleagues I am building lnd. It&amp;rsquo;s one o
     
     <item>
       <title>Lightning Network Sphinx And Onion Routing</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-sphinx-and-onion-routing/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-sphinx-and-onion-routing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-sphinx-and-onion-routing/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-sphinx-and-onion-routing/</guid>
       <description>Lightning network: Sphinx and onion routing
 Antoine Riard
 Introduction Hi everyone. I am a developer of rust-lightning, it started in 2018 by BlueMatt. I started contributing about a year ago now. It&amp;rsquo;s a full featured, flexible, spec-compliant lightning library. It targets exchanges, wallet vendors, hardware, meshnet devices, and you can join us on Freenode IRC in the #rust-bitcoin channel which is a really nice one.
@@ -139,10 +139,10 @@ Privacy matters Privacy matters on the blockchain.</description>
     
     <item>
       <title>Lightning network topology, its creation and maintenance</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-topology/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-topology/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-topology/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-topology/</guid>
       <description>Carla Kirk-Cohen
 video: https://www.youtube.com/watch?v=j2l_Ut4k1qI
 Introduction Alright. Give me a second to test this. Alright. Antoine has taken you through the routing layer. I&amp;rsquo;m going to take you through what the lightning network looks like today. This is the current topology of the network and how this came about, and some approaches for maintaining hte network and making the graph look like we want it to look.
@@ -151,10 +151,10 @@ Lightning brief overview There&amp;rsquo;s ideally only two transactions involve
     
     <item>
       <title>Lightning Routing Ants Pheromones</title>
-      <link>//btctranscripts.com/building-on-bitcoin/2018/lightning-routing-ants-pheromones/</link>
+      <link>https://btctranscripts.com/building-on-bitcoin/2018/lightning-routing-ants-pheromones/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/building-on-bitcoin/2018/lightning-routing-ants-pheromones/</guid>
+      <guid>https://btctranscripts.com/building-on-bitcoin/2018/lightning-routing-ants-pheromones/</guid>
       <description>Ant routing for lightning network
 Ricardo Perez-Marco
 Building on Bitcoin 2018
@@ -167,10 +167,10 @@ Overview I am going to talk about what I understand to be decentralized network.
     
     <item>
       <title>Onion Routing In Lightning</title>
-      <link>//btctranscripts.com/scalingbitcoin/milan-2016/onion-routing-in-lightning/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/milan-2016/onion-routing-in-lightning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/milan-2016/onion-routing-in-lightning/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/milan-2016/onion-routing-in-lightning/</guid>
       <description>Onion routing in lightning network
 Olaoluwa Osuntokun (roasbeef)
 http://lightning.network/
@@ -183,10 +183,10 @@ Distributed set of onion routers (OR, cite OG onionrouting paper). Users create 
     
     <item>
       <title>Rebalancing Lightning</title>
-      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/rebalancing-lightning/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tokyo-2018/rebalancing-lightning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/rebalancing-lightning/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tokyo-2018/rebalancing-lightning/</guid>
       <description>Rebalancing in the lightning network: Analysis and implications
 Sebastián Reca (Muun)
 https://twitter.com/kanzure/status/1048753406628655105

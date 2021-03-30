@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PSBT on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/tags/psbt/</link>
+    <link>https://btctranscripts.com/tags/psbt/</link>
     <description>Recent content in PSBT on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/tags/psbt/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/tags/psbt/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Andrew Chow Hardware Wallets (2020-02-05)</title>
-      <link>//btctranscripts.com/london-bitcoin-devs/2020-02-05-andrew-chow-hardware-wallets/</link>
+      <link>https://btctranscripts.com/london-bitcoin-devs/2020-02-05-andrew-chow-hardware-wallets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/london-bitcoin-devs/2020-02-05-andrew-chow-hardware-wallets/</guid>
+      <guid>https://btctranscripts.com/london-bitcoin-devs/2020-02-05-andrew-chow-hardware-wallets/</guid>
       <description>Andrew Chow
 London Bitcoin Devs
 February 5th 2020
@@ -25,10 +25,10 @@ Introduction Hey everyone. As you may have guessed I’m Andrew Chow. I’m Engi
     
     <item>
       <title>Luke Dashjr - Segwit, PSBT Vulnerability (2020-06-18)</title>
-      <link>//btctranscripts.com/la-bitdevs/2020-06-18-luke-dashjr-segwit-psbt-vulnerability/</link>
+      <link>https://btctranscripts.com/la-bitdevs/2020-06-18-luke-dashjr-segwit-psbt-vulnerability/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/la-bitdevs/2020-06-18-luke-dashjr-segwit-psbt-vulnerability/</guid>
+      <guid>https://btctranscripts.com/la-bitdevs/2020-06-18-luke-dashjr-segwit-psbt-vulnerability/</guid>
       <description>Name: Luke Dashjr
 Topic: SegWit/PSBT vulnerability (CVE-2020-14199)
 Location: LA BitDevs (online)

@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>wallet on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/tags/wallet/</link>
+    <link>https://btctranscripts.com/tags/wallet/</link>
     <description>Recent content in wallet on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/tags/wallet/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/tags/wallet/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Alekos Filini Magical Bitcoin (2020-05-21)</title>
-      <link>//btctranscripts.com/la-bitdevs/2020-05-21-alekos-filini-magical-bitcoin/</link>
+      <link>https://btctranscripts.com/la-bitdevs/2020-05-21-alekos-filini-magical-bitcoin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/la-bitdevs/2020-05-21-alekos-filini-magical-bitcoin/</guid>
+      <guid>https://btctranscripts.com/la-bitdevs/2020-05-21-alekos-filini-magical-bitcoin/</guid>
       <description>Name: Alekos Filini
 Topic: Magical Bitcoin
 Location: LA BitDevs (online)
@@ -26,10 +26,10 @@ Intro I am a developer, I work on Bitcoin. I came to Bitcoin pretty late compare
     
     <item>
       <title>Alex Bosworth Building Lightning Applications (2018-10-22)</title>
-      <link>//btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-building-lightning-applications/</link>
+      <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-building-lightning-applications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-building-lightning-applications/</guid>
+      <guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-building-lightning-applications/</guid>
       <description>Alex Bosworth
 Building Lightning Applications
 Video: https://www.youtube.com/watch?v=JhRIWc9zPjA
@@ -41,10 +41,10 @@ Design Philosophy So what is the big idea behind lnd? What are we thinking about
     
     <item>
       <title>Andreas Antonopoulos - Hardware Wallet Security (2019-02-01)</title>
-      <link>//btctranscripts.com/andreas-antonopoulos/2019-02-01-andreas-antonopoulos-hardware-wallet-security/</link>
+      <link>https://btctranscripts.com/andreas-antonopoulos/2019-02-01-andreas-antonopoulos-hardware-wallet-security/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/andreas-antonopoulos/2019-02-01-andreas-antonopoulos-hardware-wallet-security/</guid>
+      <guid>https://btctranscripts.com/andreas-antonopoulos/2019-02-01-andreas-antonopoulos-hardware-wallet-security/</guid>
       <description>Name: Andreas Antonpoulos
 Topic: Are Hardware Wallets Secure Enough?
 Location: Andreas Antonopoulos YouTube channel
@@ -55,10 +55,10 @@ Are Hardware Wallets Secure Enough? Q - Hi Andreas. I store my crypto on a Ledge
     
     <item>
       <title>Andreas Antonopoulos - Seed Splitting (2020-04-08)</title>
-      <link>//btctranscripts.com/andreas-antonopoulos/2020-04-08-andreas-antonopoulos-seed-splitting/</link>
+      <link>https://btctranscripts.com/andreas-antonopoulos/2020-04-08-andreas-antonopoulos-seed-splitting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/andreas-antonopoulos/2020-04-08-andreas-antonopoulos-seed-splitting/</guid>
+      <guid>https://btctranscripts.com/andreas-antonopoulos/2020-04-08-andreas-antonopoulos-seed-splitting/</guid>
       <description>Name: Andreas Antonopoulos
 Topic: Why is seed splitting a bad idea?
 Location: Andreas Antonopoulos YouTube channel
@@ -69,10 +69,10 @@ Why is seed splitting a bad idea? This is something that is being discussed all 
     
     <item>
       <title>Andrew Chow - What Am I Working On (2020-07-10)</title>
-      <link>//btctranscripts.com/misc/2020-07-10-what-am-i-working-on/</link>
+      <link>https://btctranscripts.com/misc/2020-07-10-what-am-i-working-on/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/misc/2020-07-10-what-am-i-working-on/</guid>
+      <guid>https://btctranscripts.com/misc/2020-07-10-what-am-i-working-on/</guid>
       <description>Name: Andrew Chow
 Topic: What am I working on?
 Location: Reddit (r/bitcoin)
@@ -83,10 +83,10 @@ What am I working on? I&amp;rsquo;ve been working on essentially rewriting the B
     
     <item>
       <title>Andrew Chow Descriptor Wallets (2020-02-06)</title>
-      <link>//btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-chow-descriptor-wallets/</link>
+      <link>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-chow-descriptor-wallets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-chow-descriptor-wallets/</guid>
+      <guid>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-chow-descriptor-wallets/</guid>
       <description>Name: Andrew Chow
 Topic: Rethinking Wallet Architecture: Native Descriptor Wallets
 Location: Advancing Bitcoin
@@ -101,10 +101,10 @@ Intro Hi everyone. I am Andrew Chow, I am an engineer at Blockstream and also a 
     
     <item>
       <title>Andrew Chow Hardware Wallets (2020-02-05)</title>
-      <link>//btctranscripts.com/london-bitcoin-devs/2020-02-05-andrew-chow-hardware-wallets/</link>
+      <link>https://btctranscripts.com/london-bitcoin-devs/2020-02-05-andrew-chow-hardware-wallets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/london-bitcoin-devs/2020-02-05-andrew-chow-hardware-wallets/</guid>
+      <guid>https://btctranscripts.com/london-bitcoin-devs/2020-02-05-andrew-chow-hardware-wallets/</guid>
       <description>Andrew Chow
 London Bitcoin Devs
 February 5th 2020
@@ -118,10 +118,10 @@ Introduction Hey everyone. As you may have guessed I’m Andrew Chow. I’m Engi
     
     <item>
       <title>Andrew Poelstra Miniscript Intro (2020-02-06)</title>
-      <link>//btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-poelstra-miniscript-intro/</link>
+      <link>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-poelstra-miniscript-intro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-poelstra-miniscript-intro/</guid>
+      <guid>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-poelstra-miniscript-intro/</guid>
       <description>Name: Andrew Poelstra
 Topic: Introduction to Miniscript
 Location: Advancing Bitcoin
@@ -133,10 +133,10 @@ Intro Hi everyone. Some of you were at my Bitcoin dev presentation about Miniscr
     
     <item>
       <title>Arvind Narayanan</title>
-      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2015/arvind-narayanan/</link>
+      <link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2015/arvind-narayanan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2015/arvind-narayanan/</guid>
+      <guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2015/arvind-narayanan/</guid>
       <description>Arvind Narayanan
 Threshold signatures
 I want to tell you what threshold signatures are and I want to convince you that threshold signatures are a technology you need. This is collaborative work.
@@ -145,10 +145,10 @@ There are three things I want to tell you today. The first is that the banking s
     
     <item>
       <title>Bastien Teinturier Trampoline Routing (2019-10-20)</title>
-      <link>//btctranscripts.com/lightning-conference/2019/2019-10-20-bastien-teinturier-trampoline-routing/</link>
+      <link>https://btctranscripts.com/lightning-conference/2019/2019-10-20-bastien-teinturier-trampoline-routing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/lightning-conference/2019/2019-10-20-bastien-teinturier-trampoline-routing/</guid>
+      <guid>https://btctranscripts.com/lightning-conference/2019/2019-10-20-bastien-teinturier-trampoline-routing/</guid>
       <description>Bastien Teinturier
 Trampoline Routing
 The Lightning Conference Day 2 (Stage 2)
@@ -160,10 +160,10 @@ Intro We will start with gory technical details about routing and pathfinding. I
     
     <item>
       <title>Bip151 Peer Encryption</title>
-      <link>//btctranscripts.com/scalingbitcoin/milan-2016/bip151-peer-encryption/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/milan-2016/bip151-peer-encryption/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/milan-2016/bip151-peer-encryption/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/milan-2016/bip151-peer-encryption/</guid>
       <description>BIP151: Peer-to-peer encryption and authentication from the perspective of end-users
 Jonas Schnelli
 https://twitter.com/kanzure/status/785046960705339392
@@ -172,10 +172,10 @@ Good morning. Thanks for having me here. I would like to talk about the end-user
     
     <item>
       <title>Bitcoin Mining And Trustlessness</title>
-      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2017/bitcoin-mining-and-trustlessness/</link>
+      <link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2017/bitcoin-mining-and-trustlessness/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2017/bitcoin-mining-and-trustlessness/</guid>
+      <guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2017/bitcoin-mining-and-trustlessness/</guid>
       <description>Bitcoin mining and security models
 Matt Corallo
 2017-03-04
@@ -186,10 +186,10 @@ Yes, something like that. As mentioned, I&amp;rsquo;ve been contributing to Bitc
     
     <item>
       <title>Breaking Hardware Wallets</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2017/breaking-hardware-wallets/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2017/breaking-hardware-wallets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2017/breaking-hardware-wallets/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2017/breaking-hardware-wallets/</guid>
       <description>Breaking hardware wallets: Tales from the trenches and glimpses into the future
 Nicolas Bacca
 video: https://www.youtube.com/watch?v=eCE2OzKIab8&amp;amp;t=6h42m30s
@@ -200,10 +200,10 @@ Introduction Hi everybody. Thanks for making a great conference so far. I am Nic
     
     <item>
       <title>Breaking Wasabi</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2019/breaking-wasabi/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/breaking-wasabi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2019/breaking-wasabi/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/breaking-wasabi/</guid>
       <description>Breaking wasabi and automated wallets
 Udi Wertheimer
 1127 96A8 DFCA 1A96 C8B8 0094 9211 687A D298 9B12
@@ -213,10 +213,10 @@ Trigger warnings Before I begin, some have told me that sometimes I tend to be t
     
     <item>
       <title>Btcpay</title>
-      <link>//btctranscripts.com/building-on-bitcoin/2018/btcpay/</link>
+      <link>https://btctranscripts.com/building-on-bitcoin/2018/btcpay/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/building-on-bitcoin/2018/btcpay/</guid>
+      <guid>https://btctranscripts.com/building-on-bitcoin/2018/btcpay/</guid>
       <description>How to make everyone run their own full node
 Nicolas Dorier
 Building on Bitcoin, 2018
@@ -227,10 +227,10 @@ The goal of my talk is to continue what Jonas Schnelli was talking about.</descr
     
     <item>
       <title>Current And Future State Of Wallets</title>
-      <link>//btctranscripts.com/building-on-bitcoin/2018/current-and-future-state-of-wallets/</link>
+      <link>https://btctranscripts.com/building-on-bitcoin/2018/current-and-future-state-of-wallets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/building-on-bitcoin/2018/current-and-future-state-of-wallets/</guid>
+      <guid>https://btctranscripts.com/building-on-bitcoin/2018/current-and-future-state-of-wallets/</guid>
       <description>Current and future state of wallets
 jonasschnelli
 https://twitter.com/kanzure/status/1014127893495021568
@@ -240,10 +240,10 @@ Wallets is not rocket science. It&amp;rsquo;s mostly about pointing the figure t
     
     <item>
       <title>Custody Group</title>
-      <link>//btctranscripts.com/decentralized-financial-architecture-workshop/custody-group/</link>
+      <link>https://btctranscripts.com/decentralized-financial-architecture-workshop/custody-group/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/decentralized-financial-architecture-workshop/custody-group/</guid>
+      <guid>https://btctranscripts.com/decentralized-financial-architecture-workshop/custody-group/</guid>
       <description>2109-09-08
 Custody working group
 One of the problems in the ecosystem was nomenclature. We started working on a report about what features a nomenclature would have. Airgaps, constant-time software, sidechannel resistance, Faraday cage, deterministic software, entropy, blind signatures, proof-of-reserve, multi-vendor hardware to minimize compromise. Multi-location and multi-sig. Insurance guarantee scheme. Canaries, dead man switches, tripwires, heartbeat mechanisms. Shamir&amp;rsquo;s secret sharing vs multisig. The second part of this report was going to be market analysis.</description>
@@ -251,10 +251,10 @@ One of the problems in the ecosystem was nomenclature. We started working on a r
     
     <item>
       <title>Exchange Security</title>
-      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2017/exchange-security/</link>
+      <link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2017/exchange-security/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2017/exchange-security/</guid>
+      <guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2017/exchange-security/</guid>
       <description>Exchange security
 Mitchell Dong
 2017-03-04
@@ -265,10 +265,10 @@ How often do you check your wallets? Have you ever looked in your wallet and fou
     
     <item>
       <title>Extracting Seeds From Hardware Wallets</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2019/extracting-seeds-from-hardware-wallets/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/extracting-seeds-from-hardware-wallets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2019/extracting-seeds-from-hardware-wallets/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/extracting-seeds-from-hardware-wallets/</guid>
       <description>Extracting seeds from hardware wallets
 Charles Guillemet (P3b7_)
 7DC5A359D0D5B5AB6728&amp;hellip;
@@ -278,10 +278,10 @@ Introduction My talk is about extracting seeds from hardware wallets. I am chief
     
     <item>
       <title>Fraud Proofs Petertodd</title>
-      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/fraud-proofs-petertodd/</link>
+      <link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/fraud-proofs-petertodd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/fraud-proofs-petertodd/</guid>
+      <guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/fraud-proofs-petertodd/</guid>
       <description>Fraud proofs
 petertodd
 https://www.youtube.com/watch?v=UVuUZm4l-ss&amp;amp;t=4h29m10s
@@ -291,10 +291,10 @@ What&amp;rsquo;s the problem we are trying to solve?</description>
     
     <item>
       <title>Future Of Hardware Wallets</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2019/future-of-hardware-wallets/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/future-of-hardware-wallets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2019/future-of-hardware-wallets/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/future-of-hardware-wallets/</guid>
       <description>The future of hardware wallets
 Stepan Snigirev
 D419 C410 1E24 5B09 0D2C 46BF 8C3D 2C48 560E 81AC
@@ -305,10 +305,10 @@ Current capabilities of hardware wallets Normally, hardware wallets keep keys re
     
     <item>
       <title>Future Of Spv Tech</title>
-      <link>//btctranscripts.com/scalingbitcoin/montreal-2015/future-of-spv-tech/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/montreal-2015/future-of-spv-tech/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/montreal-2015/future-of-spv-tech/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/montreal-2015/future-of-spv-tech/</guid>
       <description>Future of SPV tech
 https://docs.google.com/document/d/1t0bSZj5b66xBdW7xrjHlcvfqYAbTaQDB4-_T0Jvs3T4/edit#heading=h.5lm45oa6kuri
 issues with current SPV wallets
@@ -320,20 +320,20 @@ Number of nodes to connect to for more SPV clients
     
     <item>
       <title>Gavinandresen</title>
-      <link>//btctranscripts.com/bitcoin-core-dev-tech/bitcoin-devcore-2015/gavinandresen/</link>
+      <link>https://btctranscripts.com/bitcoin-core-dev-tech/bitcoin-devcore-2015/gavinandresen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-core-dev-tech/bitcoin-devcore-2015/gavinandresen/</guid>
+      <guid>https://btctranscripts.com/bitcoin-core-dev-tech/bitcoin-devcore-2015/gavinandresen/</guid>
       <description>http://blog.circle.com/2015/02/10/devcore-livestream/
 The instant transaction time.. you know I walk up to a cash register, I put my phone there, and in a second or two the transaction is confirmed and I walk away with my coffee. Anything beyond that, 10 minutes versus 1 minute doesn&amp;rsquo;t matter. So the problem you want to solve is how do we get instant confirmation.. there&amp;rsquo;s a bunch of ideas about this, like a trusted third party that promises to not double spend, have some coins locked up in a multisig wallet like Green Address.</description>
     </item>
     
     <item>
       <title>Gleb Naumenko P2P Erlay (2019-11-13)</title>
-      <link>//btctranscripts.com/london-bitcoin-devs/2019-11-13-gleb-naumenko-p2p-erlay/</link>
+      <link>https://btctranscripts.com/london-bitcoin-devs/2019-11-13-gleb-naumenko-p2p-erlay/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/london-bitcoin-devs/2019-11-13-gleb-naumenko-p2p-erlay/</guid>
+      <guid>https://btctranscripts.com/london-bitcoin-devs/2019-11-13-gleb-naumenko-p2p-erlay/</guid>
       <description>Gleb Naumenko
 London Bitcoin Devs
 Current state of P2P research in Bitcoin
@@ -344,10 +344,10 @@ Introduction My name is Gleb. I’ve worked on Bitcoin stuff since 2015, buildin
     
     <item>
       <title>Greg Maxwell - Yubikey Security (2020-11-05)</title>
-      <link>//btctranscripts.com/greg-maxwell/2020-11-05-greg-maxwell-yubikey-security/</link>
+      <link>https://btctranscripts.com/greg-maxwell/2020-11-05-greg-maxwell-yubikey-security/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/greg-maxwell/2020-11-05-greg-maxwell-yubikey-security/</guid>
+      <guid>https://btctranscripts.com/greg-maxwell/2020-11-05-greg-maxwell-yubikey-security/</guid>
       <description>Name: Greg Maxwell
 Topic: Yubikey security
 Location: Reddit
@@ -360,10 +360,10 @@ Likewise, if parties which things of significant value to secure who might be ta
     
     <item>
       <title>Greg Maxwell Hardware Wallets Altcoins (2020-11-01)</title>
-      <link>//btctranscripts.com/greg-maxwell/2020-11-01-greg-maxwell-hardware-wallets-altcoins/</link>
+      <link>https://btctranscripts.com/greg-maxwell/2020-11-01-greg-maxwell-hardware-wallets-altcoins/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/greg-maxwell/2020-11-01-greg-maxwell-hardware-wallets-altcoins/</guid>
+      <guid>https://btctranscripts.com/greg-maxwell/2020-11-01-greg-maxwell-hardware-wallets-altcoins/</guid>
       <description>Name: Greg Maxwell
 Topic: Hardware wallets and altcoins
 Location: Reddit
@@ -375,10 +375,10 @@ I can say first hand that my efforts to review hardware wallet code against poss
     
     <item>
       <title>Hardware Wallet Design Best Practices</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/hardware-wallet-design-best-practices/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/hardware-wallet-design-best-practices/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/hardware-wallet-design-best-practices/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/hardware-wallet-design-best-practices/</guid>
       <description>Hardware wallet design: issues and best practices
 Stepan Snigirev
 https://twitter.com/kanzure/status/1171322716303036417
@@ -388,10 +388,10 @@ Imagine you want to start working in bitcoin development. There&amp;rsquo;s a ch
     
     <item>
       <title>Hardware Wallets (2019-06-07)</title>
-      <link>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-07-hardware-wallets/</link>
+      <link>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-07-hardware-wallets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-07-hardware-wallets/</guid>
+      <guid>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-07-hardware-wallets/</guid>
       <description>Hardware wallets
 https://twitter.com/kanzure/status/1136924010955104257
 How much should Bitcoin Core do, and how much should other libraries do? Andrew Chow wrote the wonderful HWI tool. Right now we have a pull request to support external signers. The HWI script can talk to most major hardware wallets because it has all the drivers built in now, and it can get keys from it, and sign arbitrary transactions. That&amp;rsquo;s roughly what it does. It&amp;rsquo;s kind of manual, though.</description>
@@ -399,10 +399,10 @@ How much should Bitcoin Core do, and how much should other libraries do? Andrew 
     
     <item>
       <title>Hardware Wallets (2019-06-29)</title>
-      <link>//btctranscripts.com/austin-bitcoin-developers/2019-06-29-hardware-wallets/</link>
+      <link>https://btctranscripts.com/austin-bitcoin-developers/2019-06-29-hardware-wallets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/austin-bitcoin-developers/2019-06-29-hardware-wallets/</guid>
+      <guid>https://btctranscripts.com/austin-bitcoin-developers/2019-06-29-hardware-wallets/</guid>
       <description>2019-06-29
 Stepan Snigirev
 livestream: https://www.youtube.com/watch?v=rK0jUeHeDf0
@@ -413,10 +413,10 @@ see also:
     
     <item>
       <title>Hierarchical Deterministic Wallets</title>
-      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/hierarchical-deterministic-wallets/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/hierarchical-deterministic-wallets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/hierarchical-deterministic-wallets/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/hierarchical-deterministic-wallets/</guid>
       <description>Hierarchical deterministic Wallets (bip32)
 James Chiang
 https://twitter.com/kanzure/status/1047714436889235456
@@ -428,10 +428,10 @@ When we talk about bitcoin wallets, you always have some kind of secret or entro
     
     <item>
       <title>John Newbery Wallet Development (2019-06-19)</title>
-      <link>//btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-19-john-newbery-wallet-development/</link>
+      <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-19-john-newbery-wallet-development/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-19-john-newbery-wallet-development/</guid>
+      <guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-19-john-newbery-wallet-development/</guid>
       <description>Name: John Newbery
 Topic: Wallet Development in Bitcoin Core
 Location: Chaincode Labs 2019 Residency
@@ -443,10 +443,10 @@ Intro I am going to talk to you about wallets. As for the previous presentation 
     
     <item>
       <title>Light Clients During 2017 Interfork Period</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2017/light-clients-during-2017-interfork-period/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2017/light-clients-during-2017-interfork-period/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2017/light-clients-during-2017-interfork-period/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2017/light-clients-during-2017-interfork-period/</guid>
       <description>Light clients during the 2017 interfork period
 Thomas Voegtlin
 video: https://www.youtube.com/watch?v=eCE2OzKIab8&amp;amp;t=5h9m
@@ -458,10 +458,10 @@ So we have segwit and we are very happy about that.</description>
     
     <item>
       <title>Lightning Network Sphinx And Onion Routing</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-sphinx-and-onion-routing/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-sphinx-and-onion-routing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-sphinx-and-onion-routing/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-sphinx-and-onion-routing/</guid>
       <description>Lightning network: Sphinx and onion routing
 Antoine Riard
 Introduction Hi everyone. I am a developer of rust-lightning, it started in 2018 by BlueMatt. I started contributing about a year ago now. It&amp;rsquo;s a full featured, flexible, spec-compliant lightning library. It targets exchanges, wallet vendors, hardware, meshnet devices, and you can join us on Freenode IRC in the #rust-bitcoin channel which is a really nice one.
@@ -470,10 +470,10 @@ Privacy matters Privacy matters on the blockchain.</description>
     
     <item>
       <title>Lightning Wallet Design</title>
-      <link>//btctranscripts.com/building-on-bitcoin/2018/lightning-wallet-design/</link>
+      <link>https://btctranscripts.com/building-on-bitcoin/2018/lightning-wallet-design/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/building-on-bitcoin/2018/lightning-wallet-design/</guid>
+      <guid>https://btctranscripts.com/building-on-bitcoin/2018/lightning-wallet-design/</guid>
       <description>Designing lightning wallets for the bitcoin user
 Building on Bitcoin 2018
 Good morning everyone. Thank you for being here. Thank you to the organizers for this event. My talk is about designing lightning wallets for bitcoin users. I am talking about UX. But really, UX is a lot more than what wallets look like. It&amp;rsquo;s from bip39 and making backups much easier, to anything you cna imagine, to make it easier for bitcoin to use bitcoin.</description>
@@ -481,19 +481,19 @@ Good morning everyone. Thank you for being here. Thank you to the organizers for
     
     <item>
       <title>Maaku Panel</title>
-      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/maaku-panel/</link>
+      <link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/maaku-panel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/maaku-panel/</guid>
+      <guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/maaku-panel/</guid>
       <description>This can be a broad range of topics for improvements. I am Mark Friedenbach, I have worked on Bitcoin protocol research, but I also do Core tech engineering at Blockstream. We also have Jonas, an independent Bitcoin Core developer. We also have Andrew Poelstra, who has been core to the crypto work which has been incoporated into Bitcoin, such as libsecp256k1 which we recently integrated in the 0.12 release. It speeds up Bitcoin validation by 7-8x.</description>
     </item>
     
     <item>
       <title>Mcelrath On Chain Defense In Depth (2019-02-09)</title>
-      <link>//btctranscripts.com/misc/2019-02-09-mcelrath-on-chain-defense-in-depth/</link>
+      <link>https://btctranscripts.com/misc/2019-02-09-mcelrath-on-chain-defense-in-depth/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/misc/2019-02-09-mcelrath-on-chain-defense-in-depth/</guid>
+      <guid>https://btctranscripts.com/misc/2019-02-09-mcelrath-on-chain-defense-in-depth/</guid>
       <description>2019-02-09
 On-chain defense in depth (UCL CBT seminar)
 Bob McElrath (Fidelity Digital Assets)
@@ -505,10 +505,10 @@ Okay, so. I work for Fidelity Digital Assets. Just a couple words about this. Ou
     
     <item>
       <title>Neutrino</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2019/neutrino/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/neutrino/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2019/neutrino/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/neutrino/</guid>
       <description>Neutrino bip158
 Jimmy Song
 &amp;hellip; 228C D70C FAA6 17E3 2679 E455
@@ -518,10 +518,10 @@ Introduction I want to start this talk with a question for the audience. How man
     
     <item>
       <title>Partially Signed Bitcoin Transactions Bip174</title>
-      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/partially-signed-bitcoin-transactions-bip174/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/partially-signed-bitcoin-transactions-bip174/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/partially-signed-bitcoin-transactions-bip174/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/partially-signed-bitcoin-transactions-bip174/</guid>
       <description>Partially-signed bitcoin transactions (bip174)
 Greg Sanders (instagibbs)
 https://twitter.com/kanzure/status/1047730297242935296
@@ -531,10 +531,10 @@ History and motivation Historically, there was no standard for this. Armory had 
     
     <item>
       <title>Payment Channel Recovery With Seeds</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/payment-channel-recovery-with-seeds/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/payment-channel-recovery-with-seeds/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/payment-channel-recovery-with-seeds/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/payment-channel-recovery-with-seeds/</guid>
       <description>Seed-based payment channel recovery
 David Vorick
 https://twitter.com/kanzure/status/1172129077765050368
@@ -543,10 +543,10 @@ Introduction Cool. This addresses the lightning network which is a scaling techn
     
     <item>
       <title>Rodolfo Novak Coldcard Mk3 (2019-09-14)</title>
-      <link>//btctranscripts.com/baltic-honeybadger/2019/2019-09-14-rodolfo-novak-coldcard-mk3/</link>
+      <link>https://btctranscripts.com/baltic-honeybadger/2019/2019-09-14-rodolfo-novak-coldcard-mk3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/baltic-honeybadger/2019/2019-09-14-rodolfo-novak-coldcard-mk3/</guid>
+      <guid>https://btctranscripts.com/baltic-honeybadger/2019/2019-09-14-rodolfo-novak-coldcard-mk3/</guid>
       <description>Name: Rodolfo Novak
 Topic: Coldcard Mk3 - Security in Depth
 Location: Baltic Honeybadger 2019
@@ -558,10 +558,10 @@ What were the options When I closed my last company and decided to find a place 
     
     <item>
       <title>Script Descriptors (2018-10-08)</title>
-      <link>//btctranscripts.com/bitcoin-core-dev-tech/2018-10-08-script-descriptors/</link>
+      <link>https://btctranscripts.com/bitcoin-core-dev-tech/2018-10-08-script-descriptors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2018-10-08-script-descriptors/</guid>
+      <guid>https://btctranscripts.com/bitcoin-core-dev-tech/2018-10-08-script-descriptors/</guid>
       <description>2018-10-08
 Script descriptors Pieter Wuille (sipa)
 https://github.com/bitcoin/bitcoin/blob/master/doc/descriptors.md
@@ -572,10 +572,10 @@ Agenda  History of script descriptors and how we came to this. What&amp;rsquo;s 
     
     <item>
       <title>Scripts General And Simple</title>
-      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/scripts-general-and-simple/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/scripts-general-and-simple/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/scripts-general-and-simple/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/scripts-general-and-simple/</guid>
       <description>Scripts (general &amp;amp; simple)
 John Newbery (jnewbery)
 https://twitter.com/kanzure/status/1047679223115083777
@@ -585,10 +585,10 @@ Introduction I am going to talk about why we have scripts in bitcoin. I&amp;rsqu
     
     <item>
       <title>Secure Protocols Bip Taproot</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2019/secure-protocols-bip-taproot/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/secure-protocols-bip-taproot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2019/secure-protocols-bip-taproot/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/secure-protocols-bip-taproot/</guid>
       <description>Secure protocols on BIP-taproot
 Jonas Nick
 36C7 1A37 C9D9 88BD E825 08D9 B1A7 0E4F 8DCD 0366
@@ -601,20 +601,20 @@ Disclaimer It&amp;rsquo;s not at all certain that a bip-taproot soft-fork will a
     
     <item>
       <title>Security And Usability</title>
-      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2015/security-and-usability/</link>
+      <link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2015/security-and-usability/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2015/security-and-usability/</guid>
+      <guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2015/security-and-usability/</guid>
       <description>Melanie Shapiro Alan Reiner Kristov Atlas Elizabeth Stark (moderator) and maybe Melanie Shapiro? malani?  Security and usability.
 Elizabeth: I think this is a highly relevant discussion. I talked a bit about regulation. Regulation might be the number threat, but security might be the number two threat. I am excited to have a panel of leaders in this space who are actively building in this ecosystem. I am going to ask each to do a quick intro.</description>
     </item>
     
     <item>
       <title>Siacoin</title>
-      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/siacoin/</link>
+      <link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/siacoin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/siacoin/</guid>
+      <guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/siacoin/</guid>
       <description>Sia
 David Vorick
 I have been working on a decentralized cloud storage platform. Before I go into that, I wanted to mention that I have been working on Bitcoin since 2011. Since 2013 I have been in the wizards channel. In 2014 a friend and myself founded a company to build Siacoin. The team has grown to 3 people. Sia is the name of our decentralized storage protocol. We are trying to emulate Amazon S3.</description>
@@ -622,10 +622,10 @@ I have been working on a decentralized cloud storage platform. Before I go into 
     
     <item>
       <title>Signmessage (2018-10-10)</title>
-      <link>//btctranscripts.com/bitcoin-core-dev-tech/2018-10-10-signmessage/</link>
+      <link>https://btctranscripts.com/bitcoin-core-dev-tech/2018-10-10-signmessage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2018-10-10-signmessage/</guid>
+      <guid>https://btctranscripts.com/bitcoin-core-dev-tech/2018-10-10-signmessage/</guid>
       <description>https://twitter.com/kanzure/status/1049834659306061829
 signmessage kallewoof and others
 I am trying to make a new signmessage to do other things. Just use the signature system inside bitcoin to sign a message. Sign a message that someone wants. You can use proof-of-funds or whatever.
@@ -634,10 +634,10 @@ You could just have a signature and it&amp;rsquo;s a signature inside of a packa
     
     <item>
       <title>Socratic Seminar (2020-08-12)</title>
-      <link>//btctranscripts.com/chicago-bitdevs/2020-08-12-socratic-seminar/</link>
+      <link>https://btctranscripts.com/chicago-bitdevs/2020-08-12-socratic-seminar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/chicago-bitdevs/2020-08-12-socratic-seminar/</guid>
+      <guid>https://btctranscripts.com/chicago-bitdevs/2020-08-12-socratic-seminar/</guid>
       <description>Name: Socratic Seminar
 Topic: Agenda below
 Location: Chicago BitDevs (online)
@@ -650,10 +650,10 @@ Bitcoin Core P2P IRC Meetings https://github.</description>
     
     <item>
       <title>Socratic Seminar 2 (2019-08-22)</title>
-      <link>//btctranscripts.com/austin-bitcoin-developers/2019-08-22-socratic-seminar-2/</link>
+      <link>https://btctranscripts.com/austin-bitcoin-developers/2019-08-22-socratic-seminar-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/austin-bitcoin-developers/2019-08-22-socratic-seminar-2/</guid>
+      <guid>https://btctranscripts.com/austin-bitcoin-developers/2019-08-22-socratic-seminar-2/</guid>
       <description>2019-08-22
 Austin Bitcoin Developers Socratic Seminar 2
 https://twitter.com/kanzure/status/1164710800910692353
@@ -663,10 +663,10 @@ Mike Schmidt is going to talk about some optech newsletters that he has been con
     
     <item>
       <title>State Of Multisig</title>
-      <link>//btctranscripts.com/bit-block-boom/2019/state-of-multisig/</link>
+      <link>https://btctranscripts.com/bit-block-boom/2019/state-of-multisig/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bit-block-boom/2019/state-of-multisig/</guid>
+      <guid>https://btctranscripts.com/bit-block-boom/2019/state-of-multisig/</guid>
       <description>State of multisig for bitcoin hodlers: Better wallets with PSBT
 Justin Moon
 https://twitter.com/kanzure/status/1162769521993834496
@@ -676,10 +676,10 @@ Perspective Multisig is an emphasis on saving and not spending a lot.</descripti
     
     <item>
       <title>The Future Of Bitcoin Wallets</title>
-      <link>//btctranscripts.com/baltic-honeybadger/2018/the-future-of-bitcoin-wallets/</link>
+      <link>https://btctranscripts.com/baltic-honeybadger/2018/the-future-of-bitcoin-wallets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/baltic-honeybadger/2018/the-future-of-bitcoin-wallets/</guid>
+      <guid>https://btctranscripts.com/baltic-honeybadger/2018/the-future-of-bitcoin-wallets/</guid>
       <description>1 on 1: The future of bitcoin wallets
 Pavol Rusnak (pavolrusnak)
 Lawrence Nahum (larrybitcoin)
@@ -690,10 +690,10 @@ GZ: Thank you very much. We&amp;rsquo;re going to talk about the future of bitco
     
     <item>
       <title>Tom Kirkpatrick Zap Wallet (2018-12-01)</title>
-      <link>//btctranscripts.com/lightning-hack-day/2018-12-01-tom-kirkpatrick-zap-wallet/</link>
+      <link>https://btctranscripts.com/lightning-hack-day/2018-12-01-tom-kirkpatrick-zap-wallet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/lightning-hack-day/2018-12-01-tom-kirkpatrick-zap-wallet/</guid>
+      <guid>https://btctranscripts.com/lightning-hack-day/2018-12-01-tom-kirkpatrick-zap-wallet/</guid>
       <description>Tom Kirkpatrick
 Zap Desktop - A look under the hood
 Video: https://www.youtube.com/watch?v=OhRPZs0cWwQ
@@ -702,10 +702,10 @@ Introduction I’m Tom. I’ve been working on the Zap desktop wallet for the la
     
     <item>
       <title>Tooling</title>
-      <link>//btctranscripts.com/building-on-bitcoin/2018/tooling/</link>
+      <link>https://btctranscripts.com/building-on-bitcoin/2018/tooling/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/building-on-bitcoin/2018/tooling/</guid>
+      <guid>https://btctranscripts.com/building-on-bitcoin/2018/tooling/</guid>
       <description>Tooling
 Building on Bitcoin 2018
 https://twitter.com/kanzure/status/1014167542422822913
@@ -716,10 +716,10 @@ LN: I work at Blockstream. I work on low-level wallets and tooling for wallets.<
     
     <item>
       <title>Transaction Fee Estimation</title>
-      <link>//btctranscripts.com/scalingbitcoin/montreal-2015/transaction-fee-estimation/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/montreal-2015/transaction-fee-estimation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/montreal-2015/transaction-fee-estimation/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/montreal-2015/transaction-fee-estimation/</guid>
       <description>Bram Cohen
 Transaction fee estimation
 How wallets can handle real transaction fees
@@ -728,10 +728,10 @@ You should have a market at this point, where some number of transactions never 
     
     <item>
       <title>Unlinkable Outsourced Channel Monitoring</title>
-      <link>//btctranscripts.com/scalingbitcoin/milan-2016/unlinkable-outsourced-channel-monitoring/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/milan-2016/unlinkable-outsourced-channel-monitoring/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/milan-2016/unlinkable-outsourced-channel-monitoring/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/milan-2016/unlinkable-outsourced-channel-monitoring/</guid>
       <description>Unlinkable outsourced channel monitoring
 Tadge Dryja
 http://lightning.network/
@@ -741,10 +741,10 @@ Okay. Hi everyone. Check. Wow. Check one two. Okay it&amp;rsquo;s working. And I
     
     <item>
       <title>Wallet Architecture</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/wallet-architecture/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/wallet-architecture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/wallet-architecture/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/wallet-architecture/</guid>
       <description>Bitcoin Core wallet architecture
 John Newbery
 https://twitter.com/kanzure/status/1171018684816605185
@@ -753,10 +753,10 @@ Introduction Thanks Bryan for talking about HD wallets. I am going to be talking
     
     <item>
       <title>Wallet Architecture (2019-06-05)</title>
-      <link>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-05-wallet-architecture/</link>
+      <link>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-05-wallet-architecture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-05-wallet-architecture/</guid>
+      <guid>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-05-wallet-architecture/</guid>
       <description>2019-06-05
 Bitcoin Core wallet architecture + descriptors
 https://twitter.com/kanzure/status/1136282460675878915
@@ -766,10 +766,10 @@ Wallet architecture discussion There are three main areas here. One is IsMine: h
     
     <item>
       <title>Wallet Security</title>
-      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/wallet-security/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/wallet-security/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/wallet-security/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/wallet-security/</guid>
       <description>Bryan Bishop
 Wallet Security, Key Management &amp;amp; Hardware Security Modules (HSMs)
 https://twitter.com/kanzure/status/1049813559750746112
@@ -781,10 +781,10 @@ Alright, I’m now going to talk about bitcoin wallet security. And I was asked 
     
     <item>
       <title>Wallet Stuff (2018-10-09)</title>
-      <link>//btctranscripts.com/bitcoin-core-dev-tech/2018-10-09-wallet-stuff/</link>
+      <link>https://btctranscripts.com/bitcoin-core-dev-tech/2018-10-09-wallet-stuff/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-core-dev-tech/2018-10-09-wallet-stuff/</guid>
+      <guid>https://btctranscripts.com/bitcoin-core-dev-tech/2018-10-09-wallet-stuff/</guid>
       <description>https://twitter.com/kanzure/status/1049526667079643136
 Wallet stuff Maybe we can have the wallet PRs have a different review process so that there can be some specialization, even if the wallet is not ready to be split out. In the future, if the wallet was a separate project or repository, then that would be better. We need to be able to subdivide the work better than we already do, and the wallet is a good place to start doing it.</description>
     </item>

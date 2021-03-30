@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>research on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/tags/research/</link>
+    <link>https://btctranscripts.com/tags/research/</link>
     <description>Recent content in research on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/tags/research/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/tags/research/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Wishlist For Verifiable Computation</title>
-      <link>//btctranscripts.com/simons-institute/a-wishlist-for-verifiable-computation/</link>
+      <link>https://btctranscripts.com/simons-institute/a-wishlist-for-verifiable-computation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/simons-institute/a-wishlist-for-verifiable-computation/</guid>
+      <guid>https://btctranscripts.com/simons-institute/a-wishlist-for-verifiable-computation/</guid>
       <description>A wishlist for verifiable computation: An applied computer science perspective
 Michael Walfish (NYU)
  http://www.pepper-project.org/ https://www.youtube.com/watch?v=Z4jzA6ts2j4 http://simons.berkeley.edu/talks/mike-walfish-2015-06-10 slides: http://www.pepper-project.org/surveywishlist.pptx slides (again): http://simons.berkeley.edu/sites/default/files/docs/3316/surveywishlist2.pptx more: http://www.pepper-project.org/talks.htm  Okay, thanks. I want to begin by thanking the organizers, especially the tall guy for allowing me to be here. This talk will be talking about a research area where the goal is deployable systems for verifiable computation for probabilistic proofs like SNARKs etc. The goal of this talk is to motivate the next theoretical steps in this area.</description>
@@ -19,10 +19,10 @@ Michael Walfish (NYU)
     
     <item>
       <title>Banks As Bitcoin Custodians</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2017/banks-as-bitcoin-custodians/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2017/banks-as-bitcoin-custodians/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2017/banks-as-bitcoin-custodians/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2017/banks-as-bitcoin-custodians/</guid>
       <description>Traditional banks as bitcoin custodians: Security challenges and implications
 Giacomo Zucco
 video: https://www.youtube.com/watch?v=eCE2OzKIab8&amp;amp;t=4h8m
@@ -34,10 +34,10 @@ I am a theoretical physicist. I worked at Accenture as a technology consultant a
     
     <item>
       <title>Bip Securethebag</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/bip-securethebag/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/bip-securethebag/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/bip-securethebag/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/bip-securethebag/</guid>
       <description>BIP: OP_SECURETHEBAG
 Jeremy Rubin
 https://twitter.com/kanzure/status/1171750965478854656
@@ -47,10 +47,10 @@ Why are we here? We are here for scaling bitcoin. The goal we have is to scale b
     
     <item>
       <title>Bitcoin Mining And Trustlessness</title>
-      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2017/bitcoin-mining-and-trustlessness/</link>
+      <link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2017/bitcoin-mining-and-trustlessness/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2017/bitcoin-mining-and-trustlessness/</guid>
+      <guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2017/bitcoin-mining-and-trustlessness/</guid>
       <description>Bitcoin mining and security models
 Matt Corallo
 2017-03-04
@@ -61,10 +61,10 @@ Yes, something like that. As mentioned, I&amp;rsquo;ve been contributing to Bitc
     
     <item>
       <title>Conner Fromknecht Watchtowers (2019-04-06)</title>
-      <link>//btctranscripts.com/boltathon/2019-04-06-conner-fromknecht-watchtowers/</link>
+      <link>https://btctranscripts.com/boltathon/2019-04-06-conner-fromknecht-watchtowers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/boltathon/2019-04-06-conner-fromknecht-watchtowers/</guid>
+      <guid>https://btctranscripts.com/boltathon/2019-04-06-conner-fromknecht-watchtowers/</guid>
       <description>Conner Fromknecht
 Architecture of LND Watchtowers
 Video: https://www.youtube.com/watch?v=2tyr05tLF4g&amp;amp;list=PLC_AgDAr0m6QhwqPDrqMfjX64oHGmwDMk&amp;amp;index=4
@@ -75,10 +75,10 @@ Intro Pretty excited today to speak on the topic of watchtowers. It is something
     
     <item>
       <title>Dan Boneh</title>
-      <link>//btctranscripts.com/bitcoin-developers-miners-meeting-2016/dan-boneh/</link>
+      <link>https://btctranscripts.com/bitcoin-developers-miners-meeting-2016/dan-boneh/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/bitcoin-developers-miners-meeting-2016/dan-boneh/</guid>
+      <guid>https://btctranscripts.com/bitcoin-developers-miners-meeting-2016/dan-boneh/</guid>
       <description>A conversation with Dan Boneh
 2016-08-01
 Part of the challenge was that the Google Maps directions in the email were going down some roads that had construction&amp;hellip;. been here 10 minutes, and some arriving in another 10 minutes. They are building a new biology building. Large campus here. In whatever direction you walk, there are buildings and more buildings. In two years there will be a new biology building, and two years later there will be a new computer science building.</description>
@@ -86,10 +86,10 @@ Part of the challenge was that the Google Maps directions in the email were goin
     
     <item>
       <title>Day 2 Group Summaries</title>
-      <link>//btctranscripts.com/scalingbitcoin/milan-2016/day-2-group-summaries/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/milan-2016/day-2-group-summaries/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/milan-2016/day-2-group-summaries/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/milan-2016/day-2-group-summaries/</guid>
       <description>Day 2 group summaries
 https://twitter.com/kanzure/status/785151245883412480
 Our epic journey in Milan is coming to an end. Let&amp;rsquo;s get seated. Each group is going to have a maximum of 3 minutes to report back. First let&amp;rsquo;s have collaboration between bitcoin community and academia.
@@ -98,10 +98,10 @@ Collaboration between bitcoin community and academia In the first half the works
     
     <item>
       <title>Drivechain Paul Sztorc (2019-05-27)</title>
-      <link>//btctranscripts.com/austin-bitcoin-developers/2019-05-27-drivechain-paul-sztorc/</link>
+      <link>https://btctranscripts.com/austin-bitcoin-developers/2019-05-27-drivechain-paul-sztorc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/austin-bitcoin-developers/2019-05-27-drivechain-paul-sztorc/</guid>
+      <guid>https://btctranscripts.com/austin-bitcoin-developers/2019-05-27-drivechain-paul-sztorc/</guid>
       <description>2019-05-27
 Paul Sztorc (Tierion)
 Drivechain: An interoperability layer-2, Described in terms of the lightning network- something you already understand
@@ -112,10 +112,10 @@ About me Okay. So here&amp;rsquo;s some things about myself. I&amp;rsquo;ve been
     
     <item>
       <title>Ethereum2</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2019/ethereum2/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2019/ethereum2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2019/ethereum2/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2019/ethereum2/</guid>
       <description>Ethereum 2.0 and beyond
 Vitalik Buterin
 Please welcome Vitalik who needs no introduction.
@@ -124,10 +124,10 @@ Introduction Okay. I have 20 minutes. I will get right to it. Vlad gave a presen
     
     <item>
       <title>Flash Boys V2</title>
-      <link>//btctranscripts.com/cryptoeconomic-systems/2019/flash-boys-v2/</link>
+      <link>https://btctranscripts.com/cryptoeconomic-systems/2019/flash-boys-v2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/cryptoeconomic-systems/2019/flash-boys-v2/</guid>
+      <guid>https://btctranscripts.com/cryptoeconomic-systems/2019/flash-boys-v2/</guid>
       <description>&amp;ndash; Disclaimer &amp;ndash;
   These are unpaid transcriptions, performed in real-time and in-person during the actual source presentation. Due to personal time constraints they are usually not reviewed against the source material once published. Errors are possible. If the original author/speaker or anyone else finds errors of substance, please email me at kanzure@gmail.com for corrections.
   I sometimes add annotations to the transcription text. These will always be denoted by a standard editor&amp;rsquo;s note in parenthesis brackets ((like this)), or in a numbered footnote.</description>
@@ -135,10 +135,10 @@ Introduction Okay. I have 20 minutes. I will get right to it. Vlad gave a presen
     
     <item>
       <title>G20 Discussion</title>
-      <link>//btctranscripts.com/decentralized-financial-architecture-workshop/g20-discussion/</link>
+      <link>https://btctranscripts.com/decentralized-financial-architecture-workshop/g20-discussion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/decentralized-financial-architecture-workshop/g20-discussion/</guid>
+      <guid>https://btctranscripts.com/decentralized-financial-architecture-workshop/g20-discussion/</guid>
       <description>Why do we need a multi-stakeholder discussion in a blockchain world? A report from G20 discussions.
 Shinichiro Matsuo
 https://bsafe.network
@@ -148,10 +148,10 @@ Several huge incidents From a regulatory point of view, there are many big event
     
     <item>
       <title>Gleb Naumenko P2P Erlay (2019-11-13)</title>
-      <link>//btctranscripts.com/london-bitcoin-devs/2019-11-13-gleb-naumenko-p2p-erlay/</link>
+      <link>https://btctranscripts.com/london-bitcoin-devs/2019-11-13-gleb-naumenko-p2p-erlay/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/london-bitcoin-devs/2019-11-13-gleb-naumenko-p2p-erlay/</guid>
+      <guid>https://btctranscripts.com/london-bitcoin-devs/2019-11-13-gleb-naumenko-p2p-erlay/</guid>
       <description>Gleb Naumenko
 London Bitcoin Devs
 Current state of P2P research in Bitcoin
@@ -162,10 +162,10 @@ Introduction My name is Gleb. I’ve worked on Bitcoin stuff since 2015, buildin
     
     <item>
       <title>Group Updates.Md</title>
-      <link>//btctranscripts.com/rebooting-web-of-trust/2019-prague/group-updates/</link>
+      <link>https://btctranscripts.com/rebooting-web-of-trust/2019-prague/group-updates/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/rebooting-web-of-trust/2019-prague/group-updates/</guid>
+      <guid>https://btctranscripts.com/rebooting-web-of-trust/2019-prague/group-updates/</guid>
       <description>Group updates
 Alice abuses verifiable credentials We restricted our scope to a manageable slice of the problem we think we can realistically handle. It&amp;rsquo;s been very productive. We made an outline together, and now everyone can work on individual parts of the paper. I think it&amp;rsquo;s been great.
 Blockcerts v3 We categorized what we wanted to write about and work on and kind of going back and looking at the history of blockcerts and specific things that were added, and an extension that were added, and looking more closely at the verifiable credentials schema.</description>
@@ -173,10 +173,10 @@ Blockcerts v3 We categorized what we wanted to write about and work on and kind 
     
     <item>
       <title>Jnewbery Bitcoin Core V0.17</title>
-      <link>//btctranscripts.com/london-bitcoin-devs/jnewbery-bitcoin-core-v0.17/</link>
+      <link>https://btctranscripts.com/london-bitcoin-devs/jnewbery-bitcoin-core-v0.17/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/london-bitcoin-devs/jnewbery-bitcoin-core-v0.17/</guid>
+      <guid>https://btctranscripts.com/london-bitcoin-devs/jnewbery-bitcoin-core-v0.17/</guid>
       <description>Bitcoin Core v0.17
 John Newbery (jnewbery)
 video: https://www.youtube.com/watch?v=f33HlAvJUFw
@@ -188,10 +188,10 @@ whoami I live in New York and work at Chaincode Labs. I&amp;rsquo;m not actually
     
     <item>
       <title>Knowledge Aggregation And Propagation</title>
-      <link>//btctranscripts.com/cryptoeconomic-systems/2019/knowledge-aggregation-and-propagation/</link>
+      <link>https://btctranscripts.com/cryptoeconomic-systems/2019/knowledge-aggregation-and-propagation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/cryptoeconomic-systems/2019/knowledge-aggregation-and-propagation/</guid>
+      <guid>https://btctranscripts.com/cryptoeconomic-systems/2019/knowledge-aggregation-and-propagation/</guid>
       <description>Intro https://docs.google.com/document/d/1a1uRy10dBBcxrnzjdUaO2y03f5H34yFlxktOcanvVYE/edit
 https://cess.pubpub.org/pub/knowledge-aggregation/branch/2/
 I&amp;rsquo;ll be the contrarian - I think academia is awful and should be destroyed.
@@ -202,10 +202,10 @@ I&amp;rsquo;m a bitcoin core developer. Also worked at LedgerX (4 years). I also
     
     <item>
       <title>Lessons For Bitcoin From 150 Years Of Decentralization</title>
-      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/lessons-for-bitcoin-from-150-years-of-decentralization/</link>
+      <link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/lessons-for-bitcoin-from-150-years-of-decentralization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/lessons-for-bitcoin-from-150-years-of-decentralization/</guid>
+      <guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/lessons-for-bitcoin-from-150-years-of-decentralization/</guid>
       <description>Lessons for Bitcoin from the 150-year History of Decentralization
 Arvind Narayanan
 Lessons for Bitcoin from the 150-year History of Decentralization
@@ -216,10 +216,10 @@ Thank you. Can you hear me? I think you can. What I want to do today is to look 
     
     <item>
       <title>Lightning Network Topological Analysis</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2019/lightning-network-topological-analysis/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/lightning-network-topological-analysis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2019/lightning-network-topological-analysis/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/lightning-network-topological-analysis/</guid>
       <description>Topological analysis of the lightning network
 Istvan Andras Seres
 paper: https://arxiv.org/abs/1901.04972
@@ -229,10 +229,10 @@ Introduction Knowing the topology is not necessarily a vulnerability, but it giv
     
     <item>
       <title>Lightning Wallet Design</title>
-      <link>//btctranscripts.com/building-on-bitcoin/2018/lightning-wallet-design/</link>
+      <link>https://btctranscripts.com/building-on-bitcoin/2018/lightning-wallet-design/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/building-on-bitcoin/2018/lightning-wallet-design/</guid>
+      <guid>https://btctranscripts.com/building-on-bitcoin/2018/lightning-wallet-design/</guid>
       <description>Designing lightning wallets for the bitcoin user
 Building on Bitcoin 2018
 Good morning everyone. Thank you for being here. Thank you to the organizers for this event. My talk is about designing lightning wallets for bitcoin users. I am talking about UX. But really, UX is a lot more than what wallets look like. It&amp;rsquo;s from bip39 and making backups much easier, to anything you cna imagine, to make it easier for bitcoin to use bitcoin.</description>
@@ -240,19 +240,19 @@ Good morning everyone. Thank you for being here. Thank you to the organizers for
     
     <item>
       <title>Maaku Panel</title>
-      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/maaku-panel/</link>
+      <link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/maaku-panel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/maaku-panel/</guid>
+      <guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/maaku-panel/</guid>
       <description>This can be a broad range of topics for improvements. I am Mark Friedenbach, I have worked on Bitcoin protocol research, but I also do Core tech engineering at Blockstream. We also have Jonas, an independent Bitcoin Core developer. We also have Andrew Poelstra, who has been core to the crypto work which has been incoporated into Bitcoin, such as libsecp256k1 which we recently integrated in the 0.12 release. It speeds up Bitcoin validation by 7-8x.</description>
     </item>
     
     <item>
       <title>Matsuo</title>
-      <link>//btctranscripts.com/w3-blockchain-workshop-2016/matsuo/</link>
+      <link>https://btctranscripts.com/w3-blockchain-workshop-2016/matsuo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/w3-blockchain-workshop-2016/matsuo/</guid>
+      <guid>https://btctranscripts.com/w3-blockchain-workshop-2016/matsuo/</guid>
       <description>Shinichiro Matsuo
 bsafe.network
 Giving trust by security evaluation and bsafe.network
@@ -262,10 +262,10 @@ This is a severe problem. How can we trust the output of blockchain technology? 
     
     <item>
       <title>Mimblewimble And Scriptless Scripts</title>
-      <link>//btctranscripts.com/realworldcrypto/2018/mimblewimble-and-scriptless-scripts/</link>
+      <link>https://btctranscripts.com/realworldcrypto/2018/mimblewimble-and-scriptless-scripts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/realworldcrypto/2018/mimblewimble-and-scriptless-scripts/</guid>
+      <guid>https://btctranscripts.com/realworldcrypto/2018/mimblewimble-and-scriptless-scripts/</guid>
       <description>Mimblewimble and scriptless scripts
 Andrew Poelstra (Blockstream)
 https://www.youtube.com/watch?v=ovCBT1gyk9c
@@ -276,10 +276,10 @@ Introduction Thank you. Cool. Hello. My name is Andrew Poelstra. I am the resear
     
     <item>
       <title>Mimblewimble Podcast</title>
-      <link>//btctranscripts.com/misc/mimblewimble-podcast/</link>
+      <link>https://btctranscripts.com/misc/mimblewimble-podcast/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/misc/mimblewimble-podcast/</guid>
+      <guid>https://btctranscripts.com/misc/mimblewimble-podcast/</guid>
       <description>https://soundcloud.com/heryptohow/mimblewimble-andrew-poelstra-peter-wuille-brian-deery-and-chris-odom
  Andrew Poelstra (andytoshi) Pieter Wuille (sipa) Brian Deery Chris Odom  Starts at 26min.
 I am going to introduce our guests here in just a minute.
@@ -289,10 +289,10 @@ Our guests on the line are Andrew Poelstra and Pieter Wuille.</description>
     
     <item>
       <title>Motoko Language</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/motoko-language/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/motoko-language/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/motoko-language/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/motoko-language/</guid>
       <description>Motoko, the language for the Internet Computer
 Joachim Breitner
 Introduction Thanks, Byron. Glad to be here. My name is Dominic Williams. I am founder of the internet computer project at Dfinity Foundation. Last year we talked about consensus protocols. Today we are talking about tools for building on top of the internet computer which is great news and shows the progress we have made. I&amp;rsquo;m going to give some introductory context, and then our senior researcher from our languages division will talk about Motoko.</description>
@@ -300,10 +300,10 @@ Introduction Thanks, Byron. Glad to be here. My name is Dominic Williams. I am f
     
     <item>
       <title>Multi Party Channels In The Utxo Model Challenges And Opportunities</title>
-      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/multi-party-channels-in-the-utxo-model-challenges-and-opportunities/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tokyo-2018/multi-party-channels-in-the-utxo-model-challenges-and-opportunities/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/multi-party-channels-in-the-utxo-model-challenges-and-opportunities/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tokyo-2018/multi-party-channels-in-the-utxo-model-challenges-and-opportunities/</guid>
       <description>Multi-party channels in the UTXO model: Challenges and opportunities
 Olaoluwa Osuntokun (Lightning Labs) (roasbeef)
 https://twitter.com/kanzure/status/1048468663089618944
@@ -312,10 +312,10 @@ Introductions Hi. So my name is Laolu. I am also known as roasbeef and I am co-f
     
     <item>
       <title>Near Misses</title>
-      <link>//btctranscripts.com/cryptoeconomic-systems/2019/near-misses/</link>
+      <link>https://btctranscripts.com/cryptoeconomic-systems/2019/near-misses/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/cryptoeconomic-systems/2019/near-misses/</guid>
+      <guid>https://btctranscripts.com/cryptoeconomic-systems/2019/near-misses/</guid>
       <description>Near misses: What could have gone wrong
 Ethan Heilman
 Introduction Thank you. I am Ethan Heilman. I am a research whose has done a bunch of work in security of cryptocurrencies. I am also CTO of Arwen which does secure atomic swaps. I am a little sick today so please excuse my coughing, wheezing and drinking lots of water.
@@ -324,10 +324,10 @@ Bitcoin scary stories The general outline of this talk is going to be &amp;ldquo
     
     <item>
       <title>Opening Remarks</title>
-      <link>//btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/opening-remarks/</link>
+      <link>https://btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/opening-remarks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/opening-remarks/</guid>
+      <guid>https://btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/opening-remarks/</guid>
       <description>Opening remarks
 Shin&amp;rsquo;ichiro Matsuo
 http://bsafe.network/events/codefi_stanford_2020/
@@ -338,10 +338,10 @@ Good morning. Let us start this workshop. I am a researcher at Georgetown Univer
     
     <item>
       <title>Regulatory Pain Points</title>
-      <link>//btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/regulatory-pain-points/</link>
+      <link>https://btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/regulatory-pain-points/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/regulatory-pain-points/</guid>
+      <guid>https://btctranscripts.com/coordination-of-decentralized-finance-workshop/2020-stanford/regulatory-pain-points/</guid>
       <description>Regulatory pain points
 Ryosuke Ushida
 https://twitter.com/kanzure/status/1229838162827993088
@@ -350,10 +350,10 @@ Introduction Hi, good morning everyone. I am a Japanese financial regulator at J
     
     <item>
       <title>Rootstock</title>
-      <link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/rootstock/</link>
+      <link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/rootstock/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/rootstock/</guid>
+      <guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/rootstock/</guid>
       <description>Rootstock
 Sergio Lerner
 Sergio is co-founder and chief scientist at RSK Labs. The whitepaper was pretty good. I am happy that he is here. Thank you. Just give me a minute.
@@ -364,10 +364,10 @@ Thanks everyone for staying here and not going to the next room. Thanks for the 
     
     <item>
       <title>Scalable Rsa Modulus Generation</title>
-      <link>//btctranscripts.com/stanford-blockchain-conference/2020/scalable-rsa-modulus-generation/</link>
+      <link>https://btctranscripts.com/stanford-blockchain-conference/2020/scalable-rsa-modulus-generation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/stanford-blockchain-conference/2020/scalable-rsa-modulus-generation/</guid>
+      <guid>https://btctranscripts.com/stanford-blockchain-conference/2020/scalable-rsa-modulus-generation/</guid>
       <description>Scalable RSA Modulus Generation with Dishonest Majority
 Megan Chen
 https://twitter.com/kanzure/status/1230545603605585920
@@ -376,10 +376,10 @@ Introduction Groups of unknown order are interesting cryptographic primitives. Y
     
     <item>
       <title>Schnorr Signatures For Bitcoin - Challenges and Opportunities</title>
-      <link>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/schnorr-signatures-for-bitcoin-challenges-opportunities/</link>
+      <link>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/schnorr-signatures-for-bitcoin-challenges-opportunities/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/schnorr-signatures-for-bitcoin-challenges-opportunities/</guid>
+      <guid>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/schnorr-signatures-for-bitcoin-challenges-opportunities/</guid>
       <description>Schnorr signatures for Bitcoin: Opportunities and challenges
 Pieter Wuille (sipa)
 2018-01-31
@@ -392,10 +392,10 @@ Introduction My name is Pieter Wuille. I work at Blockstream. I contribute to Bi
     
     <item>
       <title>Scriptless Scripts With Mimblewimble</title>
-      <link>//btctranscripts.com/grincon/2019/scriptless-scripts-with-mimblewimble/</link>
+      <link>https://btctranscripts.com/grincon/2019/scriptless-scripts-with-mimblewimble/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/grincon/2019/scriptless-scripts-with-mimblewimble/</guid>
+      <guid>https://btctranscripts.com/grincon/2019/scriptless-scripts-with-mimblewimble/</guid>
       <description>Scriptless scripts with mimblewimble
 Andrew Poelstra (andytoshi)
 Introduction Hi everyone. I am Andrew Poelstra. I am the research director at Blockstream. I want to talk about deploying scriptless scripts, wihch is something I haven&amp;rsquo;t talked much about over the past year or two.
@@ -404,10 +404,10 @@ History Let me give a bit of history about mimblewimble. As many of you know, th
     
     <item>
       <title>Security Assumptions</title>
-      <link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/security-assumptions/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/security-assumptions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/hong-kong-2015/security-assumptions/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/security-assumptions/</guid>
       <description>Andrew Poelstra (andytoshi)
 Security Assumptions
 video: https://www.youtube.com/watch?v=ivgxcEOyWNs&amp;amp;t=9m20s
@@ -417,10 +417,10 @@ I am a developer for libsecp256k1. It&amp;rsquo;s a library that does the underl
     
     <item>
       <title>Security Attacks Decentralized Mining Pools</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2019/security-attacks-decentralized-mining-pools/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/security-attacks-decentralized-mining-pools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2019/security-attacks-decentralized-mining-pools/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/security-attacks-decentralized-mining-pools/</guid>
       <description>Security and attacks on decentralized mining pools
 Alexei Zamyatin
 https://twitter.com/kanzure/status/1137373752038240262
@@ -430,10 +430,10 @@ Motivation The motivation behind this talk is straightforward. I think we can al
     
     <item>
       <title>Self Reproducing Coins As Universal Turing Machine</title>
-      <link>//btctranscripts.com/scalingbitcoin/tokyo-2018/self-reproducing-coins-as-universal-turing-machine/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tokyo-2018/self-reproducing-coins-as-universal-turing-machine/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/self-reproducing-coins-as-universal-turing-machine/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tokyo-2018/self-reproducing-coins-as-universal-turing-machine/</guid>
       <description>Self-reproducing coins as universal turing machine
 Dmitry Meshkov, Alexander Chepurnoy and Vasily Kharin (Ergo Platform)
 paper: https://arxiv.org/abs/1806.10116
@@ -442,10 +442,10 @@ Introduction This is joint work with my colleagues. I am Alexander Chepurnoy. We
     
     <item>
       <title>Sharding The Blockchain</title>
-      <link>//btctranscripts.com/scalingbitcoin/montreal-2015/sharding-the-blockchain/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/montreal-2015/sharding-the-blockchain/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/montreal-2015/sharding-the-blockchain/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/montreal-2015/sharding-the-blockchain/</guid>
       <description>Sharding the blockchain
 Vlad Zamfir
 I am going to talk about blockchain sharding. This is one of the scaling solutions that I like the most. I have done the most work on it. In case you don&amp;rsquo;t know who I am, I am a researcher mostly with the ethereum project. Basically the basics of sharding is that in non-sharding, every node does every validation. In a sharding solution, nodes hold a subset of the state, and a subset of the blockchain.</description>
@@ -453,10 +453,10 @@ I am going to talk about blockchain sharding. This is one of the scaling solutio
     
     <item>
       <title>Snarks And Their Practical Applications</title>
-      <link>//btctranscripts.com/simons-institute/snarks-and-their-practical-applications/</link>
+      <link>https://btctranscripts.com/simons-institute/snarks-and-their-practical-applications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/simons-institute/snarks-and-their-practical-applications/</guid>
+      <guid>https://btctranscripts.com/simons-institute/snarks-and-their-practical-applications/</guid>
       <description>SNARKs and their practical applications
 Eran Tromer
 Tel Aviv University
@@ -467,10 +467,10 @@ Thank you very much. I would like to thank the organizers for giving this opport
     
     <item>
       <title>Socratic Seminar 2 (2019-08-22)</title>
-      <link>//btctranscripts.com/austin-bitcoin-developers/2019-08-22-socratic-seminar-2/</link>
+      <link>https://btctranscripts.com/austin-bitcoin-developers/2019-08-22-socratic-seminar-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/austin-bitcoin-developers/2019-08-22-socratic-seminar-2/</guid>
+      <guid>https://btctranscripts.com/austin-bitcoin-developers/2019-08-22-socratic-seminar-2/</guid>
       <description>2019-08-22
 Austin Bitcoin Developers Socratic Seminar 2
 https://twitter.com/kanzure/status/1164710800910692353
@@ -480,10 +480,10 @@ Mike Schmidt is going to talk about some optech newsletters that he has been con
     
     <item>
       <title>Spam Attacks Analysis</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2017/spam-attacks-analysis/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2017/spam-attacks-analysis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2017/spam-attacks-analysis/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2017/spam-attacks-analysis/</guid>
       <description>Hunting moby dick, an analysis of 2015-2016 spam attacks
 Antoine Le Calvez (khannib)
 video: https://www.youtube.com/watch?v=eCE2OzKIab8&amp;amp;t=1h12m10s
@@ -494,10 +494,10 @@ Moby Dick and spam attacks&amp;ndash; let me explain, Moby Dick is an entity tha
     
     <item>
       <title>Sydney Socratic Seminar (2021-02-23)</title>
-      <link>//btctranscripts.com/sydney-bitcoin-meetup/2021-02-23-socratic-seminar/</link>
+      <link>https://btctranscripts.com/sydney-bitcoin-meetup/2021-02-23-socratic-seminar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/sydney-bitcoin-meetup/2021-02-23-socratic-seminar/</guid>
+      <guid>https://btctranscripts.com/sydney-bitcoin-meetup/2021-02-23-socratic-seminar/</guid>
       <description>Name: Socratic Seminar
 Topic: Agenda in Google Doc below
 Location: Bitcoin Sydney (online)
@@ -509,20 +509,20 @@ The conversation has been anonymized by default to protect the identities of the
     
     <item>
       <title>Systematizing Knowledge</title>
-      <link>//btctranscripts.com/scalingbitcoin/montreal-2015/systematizing-knowledge/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/montreal-2015/systematizing-knowledge/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/montreal-2015/systematizing-knowledge/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/montreal-2015/systematizing-knowledge/</guid>
       <description>There should be a SNARK wiki. Any website that is better than someone saying &amp;ldquo;you know, check the June July 2014 bitcoin-wizard logs&amp;rdquo;. We need to research gmaxwell scalability. We should probably fix that.
 Let&amp;rsquo;s talk about what some of the goals are that we might get out of this. We have some different ideas for approaches to systematizing knowledge. There are at least three camps here. I think Bryan&amp;rsquo;s paper repositories.</description>
     </item>
     
     <item>
       <title>Threshold Schnorr Signatures</title>
-      <link>//btctranscripts.com/cryptoeconomic-systems/2019/threshold-schnorr-signatures/</link>
+      <link>https://btctranscripts.com/cryptoeconomic-systems/2019/threshold-schnorr-signatures/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/cryptoeconomic-systems/2019/threshold-schnorr-signatures/</guid>
+      <guid>https://btctranscripts.com/cryptoeconomic-systems/2019/threshold-schnorr-signatures/</guid>
       <description>Name: Tim Ruffing
 Topic: The Quest for Practical Threshold Schnorr Signatures
 Location: Cryptoeconomic Systems Summit 2019
@@ -536,10 +536,10 @@ Disclaimer First of all, this is work in progress.</description>
     
     <item>
       <title>Unchained Capital Socratic Seminar (2019-01-05)</title>
-      <link>//btctranscripts.com/misc/2019-01-05-unchained-capital-socratic-seminar/</link>
+      <link>https://btctranscripts.com/misc/2019-01-05-unchained-capital-socratic-seminar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/misc/2019-01-05-unchained-capital-socratic-seminar/</guid>
+      <guid>https://btctranscripts.com/misc/2019-01-05-unchained-capital-socratic-seminar/</guid>
       <description>Unchained Capital Bitcoin Socratic Seminar
 2019-01-05
 Socratic Seminar 87 at BitDevs NYC has all of the links on meetup.com available.
@@ -552,10 +552,10 @@ J: The chaincode labs guys in NYC .</description>
     
     <item>
       <title>Validation Cost Metric</title>
-      <link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/validation-cost-metric/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/validation-cost-metric/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/hong-kong-2015/validation-cost-metric/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/validation-cost-metric/</guid>
       <description>Jonas Nick
 slides: https://scalingbitcoin.org/hongkong2015/presentations/DAY2/3_tweaking_the_chain_3_nick.pdf
 video: https://www.youtube.com/watch?v=fst1IK_mrng&amp;amp;t=4h52m35s
@@ -565,10 +565,10 @@ However, blocksize proposals usually only directly change one aspect of full nod
     
     <item>
       <title>Wallet Architecture</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/wallet-architecture/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/wallet-architecture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/wallet-architecture/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/wallet-architecture/</guid>
       <description>Bitcoin Core wallet architecture
 John Newbery
 https://twitter.com/kanzure/status/1171018684816605185
@@ -577,10 +577,10 @@ Introduction Thanks Bryan for talking about HD wallets. I am going to be talking
     
     <item>
       <title>Wasabi Research Club - Coinswap (2020-06-15)</title>
-      <link>//btctranscripts.com/wasabi-research-club/2020-06-15-coinswap/</link>
+      <link>https://btctranscripts.com/wasabi-research-club/2020-06-15-coinswap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/wasabi-research-club/2020-06-15-coinswap/</guid>
+      <guid>https://btctranscripts.com/wasabi-research-club/2020-06-15-coinswap/</guid>
       <description>Name: Wasabi Research Club
 Topic: CoinSwaps
 Location: Wasabi Research Club (online)
@@ -594,10 +594,10 @@ This is a 2020 ongoing GitHub research paper that Chris Belcher has been working
     
     <item>
       <title>Zerolink Sudoku</title>
-      <link>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/zerolink-sudoku/</link>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/zerolink-sudoku/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/scalingbitcoin/tel-aviv-2019/zerolink-sudoku/</guid>
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/zerolink-sudoku/</guid>
       <description>ZeroLink sudoku: real vs perceived anonymity
 Yuval Kogman
 https://twitter.com/kanzure/status/1171788514326908928

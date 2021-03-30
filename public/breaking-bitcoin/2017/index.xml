@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Breaking Bitcoin 2017 on ₿itcoin Transcripts</title>
-    <link>//btctranscripts.com/breaking-bitcoin/2017/</link>
+    <link>https://btctranscripts.com/breaking-bitcoin/2017/</link>
     <description>Recent content in Breaking Bitcoin 2017 on ₿itcoin Transcripts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//btctranscripts.com/breaking-bitcoin/2017/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://btctranscripts.com/breaking-bitcoin/2017/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Banks As Bitcoin Custodians</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2017/banks-as-bitcoin-custodians/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2017/banks-as-bitcoin-custodians/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2017/banks-as-bitcoin-custodians/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2017/banks-as-bitcoin-custodians/</guid>
       <description>Traditional banks as bitcoin custodians: Security challenges and implications
 Giacomo Zucco
 video: https://www.youtube.com/watch?v=eCE2OzKIab8&amp;amp;t=4h8m
@@ -23,10 +23,10 @@ I am a theoretical physicist. I worked at Accenture as a technology consultant a
     
     <item>
       <title>Breaking Hardware Wallets</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2017/breaking-hardware-wallets/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2017/breaking-hardware-wallets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2017/breaking-hardware-wallets/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2017/breaking-hardware-wallets/</guid>
       <description>Breaking hardware wallets: Tales from the trenches and glimpses into the future
 Nicolas Bacca
 video: https://www.youtube.com/watch?v=eCE2OzKIab8&amp;amp;t=6h42m30s
@@ -37,10 +37,10 @@ Introduction Hi everybody. Thanks for making a great conference so far. I am Nic
     
     <item>
       <title>Changing Consensus Rules Without Breaking Bitcoin</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2017/changing-consensus-rules-without-breaking-bitcoin/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2017/changing-consensus-rules-without-breaking-bitcoin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2017/changing-consensus-rules-without-breaking-bitcoin/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2017/changing-consensus-rules-without-breaking-bitcoin/</guid>
       <description>Changing consensus rules without breaking bitcoin
 Eric Lombrozo (CodeShark)
 video: https://www.youtube.com/watch?v=0WCaoGiAOHE&amp;amp;t=32min9s
@@ -52,10 +52,10 @@ Comparing open-source development to bitcoin&amp;rsquo;s blockchain &amp;hellip;
     
     <item>
       <title>Christopher Jeffrey Consensus Pitfalls (2017-09-10)</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2017/2017-09-10-christopher-jeffrey-consensus-pitfalls/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2017/2017-09-10-christopher-jeffrey-consensus-pitfalls/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2017/2017-09-10-christopher-jeffrey-consensus-pitfalls/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2017/2017-09-10-christopher-jeffrey-consensus-pitfalls/</guid>
       <description>Name: Christopher Jeffrey (JJ)
 Topic: Pitfalls of Consensus Implementation
 Location: Breaking Bitcoin
@@ -67,10 +67,10 @@ Demo Right now I am SSH’d into a server with a couple of nodes on it. I am goi
     
     <item>
       <title>Interview Adam Back Elizabeth Stark</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2017/interview-adam-back-elizabeth-stark/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2017/interview-adam-back-elizabeth-stark/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2017/interview-adam-back-elizabeth-stark/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2017/interview-adam-back-elizabeth-stark/</guid>
       <description>Interview with Adam Back and Elizabeth Stark
 Adam Back
 Elizabeth Stark
@@ -81,10 +81,10 @@ stark: Thank you Giacomo. Who here had too much fun at the party last night? My 
     
     <item>
       <title>Light Clients During 2017 Interfork Period</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2017/light-clients-during-2017-interfork-period/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2017/light-clients-during-2017-interfork-period/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2017/light-clients-during-2017-interfork-period/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2017/light-clients-during-2017-interfork-period/</guid>
       <description>Light clients during the 2017 interfork period
 Thomas Voegtlin
 video: https://www.youtube.com/watch?v=eCE2OzKIab8&amp;amp;t=5h9m
@@ -96,10 +96,10 @@ So we have segwit and we are very happy about that.</description>
     
     <item>
       <title>Socialized Costs Of Hard Forks</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2017/socialized-costs-of-hard-forks/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2017/socialized-costs-of-hard-forks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2017/socialized-costs-of-hard-forks/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2017/socialized-costs-of-hard-forks/</guid>
       <description>Socialized costs of hard-forks
 Jimmy Song
 https://twitter.com/kanzure/status/1005518746260262912
@@ -109,10 +109,10 @@ KL: Can you hear me? Is it good? Okay. I hope you have practiced your French bec
     
     <item>
       <title>Solar Powered Space Pirates</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2017/solar-powered-space-pirates/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2017/solar-powered-space-pirates/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2017/solar-powered-space-pirates/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2017/solar-powered-space-pirates/</guid>
       <description>Solar powered space pirates: A threat to bitcoin?
 petertodd
 video: https://www.youtube.com/watch?v=0WCaoGiAOHE&amp;amp;t=1m33s
@@ -123,10 +123,10 @@ My name is Peter Todd. I do cryptography consulting. I&amp;rsquo;ve been involve
     
     <item>
       <title>Spam Attacks Analysis</title>
-      <link>//btctranscripts.com/breaking-bitcoin/2017/spam-attacks-analysis/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2017/spam-attacks-analysis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//btctranscripts.com/breaking-bitcoin/2017/spam-attacks-analysis/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2017/spam-attacks-analysis/</guid>
       <description>Hunting moby dick, an analysis of 2015-2016 spam attacks
 Antoine Le Calvez (khannib)
 video: https://www.youtube.com/watch?v=eCE2OzKIab8&amp;amp;t=1h12m10s
