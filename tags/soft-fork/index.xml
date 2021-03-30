@@ -3,7 +3,11 @@ Topic: On Consensus and All Kinds of Forks
 Location: Let’s Talk Bitcoin podcast (Episode 333)
 Date: June 4th 2017
 Audio: https://letstalkbitcoin.com/blog/post/lets-talk-bitcoin-333-on-consensus-and-all-kinds-of-forks
-User activated soft forks vs hard forks Adam Levine (AL): I’m trying to look at the user activated soft fork thing and not see hypocrisy just steaming out of its ears. I’m really in need of you to help me understand why this is not the case Andreas.</description></item><item><title>John Light Bitcoin Full Nodes (2018-07-23)</title><link>//btctranscripts.com/london-bitcoin-devs/2018-07-23-john-light-bitcoin-full-nodes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/london-bitcoin-devs/2018-07-23-john-light-bitcoin-full-nodes/</guid><description>Name: John Light
+User activated soft forks vs hard forks Adam Levine (AL): I’m trying to look at the user activated soft fork thing and not see hypocrisy just steaming out of its ears. I’m really in need of you to help me understand why this is not the case Andreas.</description></item><item><title>Great Consensus Cleanup (2019-06-06)</title><link>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-06-great-consensus-cleanup/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/bitcoin-core-dev-tech/2019-06-06-great-consensus-cleanup/</guid><description>2019-06-06
+Great consensus cleanup https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2019-March/016714.html
+https://twitter.com/kanzure/status/1136591286012698626
+Introduction There&amp;rsquo;s not much new to talk about. Unclear about CODESEPARATOR. You want to make it a consensus rule that transactions can&amp;rsquo;t be larger than 100 kb. No reactions to that? Alright. Fine, we&amp;rsquo;re doing it. Let&amp;rsquo;s do it. Does everyone know what this proposal is?
+Validation time for any block&amp;ndash; we were lazy about fixing this. Segwit was a first step to fixing this, by giving people a way to do this in a more efficient way.</description></item><item><title>John Light - Bitcoin Full Nodes (2018-07-23)</title><link>//btctranscripts.com/london-bitcoin-devs/2018-07-23-john-light-bitcoin-full-nodes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/london-bitcoin-devs/2018-07-23-john-light-bitcoin-full-nodes/</guid><description>Name: John Light
 Topic: Bitcoin Full Nodes
 Location: London Bitcoin Devs
 Date: July 23rd 2018

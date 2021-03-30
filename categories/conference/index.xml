@@ -111,7 +111,7 @@ History This should be easy to follow. I want to start off with some history. Th
 paper: http://homepages.cs.ncl.ac.uk/patrick.mc-corry/atomically-trading-roger.pdf
 Ethan Heilman
 This is joint work with Patrick McCorry, Andrew Miller and myslef. Patrick was originally going to give this talk but he was unable to make it. I&amp;rsquo;ll give the talk with his slides. I want to acknowledge Roger Ver for permission to use his name in the title of the talk. We asked permission.
-I will only be talking about some of the information in the paper.</description></item><item><title>Attacking Evm Resource Metering</title><link>//btctranscripts.com/stanford-blockchain-conference/2020/attacking-evm-resource-metering/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/stanford-blockchain-conference/2020/attacking-evm-resource-metering/</guid><description>Broken Metre: Attacking resource metering in EVM
+I will only be talking about some of the information in the paper.</description></item><item><title>Attacking EVM Resource Metering (2019-02-19)</title><link>//btctranscripts.com/stanford-blockchain-conference/2020/attacking-evm-resource-metering/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/stanford-blockchain-conference/2020/attacking-evm-resource-metering/</guid><description>Broken Metre: Attacking resource metering in EVM
 Daniel Perez, Benjamin Livshits
 https://twitter.com/kanzure/status/1230222221110468609
 https://arxiv.org/abs/1909.07220
@@ -133,8 +133,7 @@ Video: https://www.youtube.com/watch?v=TtPXYPJ5_eE
 Slides: https://github.com/CppCon/CppCon2020/blob/main/Presentations/fuzzing_class_interfaces_for_generating_and_running_tests_with_libfuzzer/fuzzing_class_interfaces_for_generating_and_running_tests_with_libfuzzer__barnab%C3%A1s_b%C3%A1gyi__cppcon_2020.pdf
 LibFuzzer: https://llvm.org/docs/LibFuzzer.html
 LibFuzzer tutorial: https://github.com/google/fuzzing/blob/master/tutorial/libFuzzerTutorial.md
-Transcript completed by: Michael Folkson
-Intro Hello everyone. My name is Barnabas Bagyi. I am a C++ developer currently working at Ericsson with some previous experience in the automative industry. I will be talking about fuzzing class interfaces for generating and running tests with libFuzzer.</description></item><item><title>Bastien Teinturier Trampoline Routing (2019-10-20)</title><link>//btctranscripts.com/lightning-conference/2019/2019-10-20-bastien-teinturier-trampoline-routing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/lightning-conference/2019/2019-10-20-bastien-teinturier-trampoline-routing/</guid><description>Bastien Teinturier
+Intro Hello everyone. My name is Barnabas Bagyi. I am a C++ developer currently working at Ericsson with some previous experience in the automative industry. I will be talking about fuzzing class interfaces for generating and running tests with libFuzzer. This was also the topic of my Masters thesis that I recently finished.</description></item><item><title>Bastien Teinturier Trampoline Routing (2019-10-20)</title><link>//btctranscripts.com/lightning-conference/2019/2019-10-20-bastien-teinturier-trampoline-routing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/lightning-conference/2019/2019-10-20-bastien-teinturier-trampoline-routing/</guid><description>Bastien Teinturier
 Trampoline Routing
 The Lightning Conference Day 2 (Stage 2)
 Video: https://www.youtube.com/watch?v=1E-KhLA6Gck
@@ -273,7 +272,7 @@ slides: http://strateman.ninja/initial_block_synchronization.pdf
 video: http://youtube.com/watch?v=TgjrS-BPWDQ&amp;amp;t=2h02m06s
 Block synchronization is how nodes join the market. New nodes download the blockchain and validate everything. This is how the security of the network works. Who is responsible for doing this? Everyone must be doing a full block synchronization. If you are not doing this, you&amp;rsquo;re not on the bitcoin network. As a simple hypothesis, the block size growth is related to initial block synchronization as a simple function of the integral.</description></item><item><title>Blockchain Database Technology In A Global Context</title><link>//btctranscripts.com/coindesk-consensus-2016/blockchain-database-technology-in-a-global-context/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/coindesk-consensus-2016/blockchain-database-technology-in-a-global-context/</guid><description>Preliminary notes:
 Contact me- https://twitter.com/kanzure
-categories: [&amp;lsquo;conference&amp;rsquo;] Blockchain database technology in a global context
+Blockchain database technology in a global context
 Alan Murray - Moderator
 Lawrence H. Summers
 AM: I would like to show a video.
@@ -411,7 +410,7 @@ Video: https://youtu.be/0WCaoGiAOHE?t=9000
 Intro I’d like to talk about breaking Bitcoin today. Before I do that I’d like to give a short demonstration.
 Demo Right now I am SSH’d into a server with a couple of nodes on it. I am going to start up a bitcoind node and I am going to connect to one of these nodes and have it serve me a chain.</description></item><item><title>Clearing And Settlement For Global Financial Institutions</title><link>//btctranscripts.com/coindesk-consensus-2016/clearing-and-settlement-for-global-financial-institutions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/coindesk-consensus-2016/clearing-and-settlement-for-global-financial-institutions/</guid><description>Preliminary notes:
 Contact me- https://twitter.com/kanzure
-categories: [&amp;lsquo;conference&amp;rsquo;] Clearing and settlement for global financial institutions
+Clearing and settlement for global financial institutions
 Matthew Bishop, The Economist - Moderator
 Charles Cascarilla, itBit
 Chris Church, Digital Asset Holdings
@@ -448,7 +447,7 @@ EPFL
 Eleftherios Kokoris Kogias
 https://twitter.com/kanzure/status/785102844839985153
 We are starting the session called &amp;ldquo;breaking the chain&amp;rdquo;. We will first have collective signing presentation. Thank you.
-categories: [&amp;lsquo;conference&amp;rsquo;] tags: [&amp;lsquo;security&amp;rsquo;] This is joint work with some collaborators.
+This is joint work with some collaborators.
 What we have now is that real-time verification is not safe. What we managed to get is that we get transaction commitment in about 20-90 seconds at close to 1,000 transactions/second.</description></item><item><title>Comments And Observations About Timelocks Ron Rivest</title><link>//btctranscripts.com/verifiable-delay-functions/vdf-day-2019/comments-and-observations-about-timelocks-ron-rivest/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/verifiable-delay-functions/vdf-day-2019/comments-and-observations-about-timelocks-ron-rivest/</guid><description>Comments and observations about timelocks and verifiable delay functions
 Ron Rivest
 video: https://www.youtube.com/watch?v=NadhhH_eQBQ
@@ -677,7 +676,7 @@ Adam Back
 https://twitter.com/kanzure/status/784676022318952448
 Introduction Alright. So let&amp;rsquo;s get started. Okay. Why fungibility? Let&amp;rsquo;s start. What does fungibility mean? Bitcoin is like cash. The hope is that it&amp;rsquo;s for immediate and final payments. To add some nuiance there, you might have to wait for some confirmations. Once you receive a bitcoin, you have a bitcoin and that&amp;rsquo;s final. So even with banks and PayPal, who sometimes shutdown accounts for trivial reasons or sometimes no reason at all, it&amp;rsquo;s typically not the case that it&amp;rsquo;s someone who sent you money&amp;hellip; if you were selling something on ebay, and someone bought an item from you, and that person had an account shutdown, the money you received will not be removed from your account.</description></item><item><title>Future Of Blockchains</title><link>//btctranscripts.com/coindesk-consensus-2016/future-of-blockchains/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/coindesk-consensus-2016/future-of-blockchains/</guid><description>Preliminary notes:
 Contact me- https://twitter.com/kanzure
-categories: [&amp;lsquo;conference&amp;rsquo;] The future of blockchains
+The future of blockchains
 Paul Vigna, WSJ - Moderator
 Balaji Srinivasan, 21 Inc.
 David Rutter, R3
@@ -692,7 +691,7 @@ Brandon Goodell, Andrew Poelstra, Alexandra Moxin
 AM: That&amp;rsquo;s not good. Hi everyone. Thanks for coming to the future of privacy coins panel. I want to spend a minute talking ablout backgrounds and interest in this area.
 BG: I have a PhD in something. I got into monero a couple of years ago. I needed to pay rent, so I did some work in math in exchange for money.</description></item><item><title>Future Of Regulation</title><link>//btctranscripts.com/coindesk-consensus-2016/future-of-regulation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/coindesk-consensus-2016/future-of-regulation/</guid><description>Preliminary notes:
 Contact me- https://twitter.com/kanzure
-categories: [&amp;lsquo;conference&amp;rsquo;] tags: [&amp;lsquo;regulation&amp;rsquo;] The future of regulation
+The future of regulation
 Jerry Brito, Coin Center
 J. Christopher Giancarlo, CFTC
 Benjamin Lawsky, Lawsky Group
@@ -750,7 +749,7 @@ Ian Miers (secparam)
 unrelated, https://arxiv.org/pdf/1706.00916.pdf
 Introductions Hi everybody. This is a talk on how much privacy is enough, evaluating trade-offs in privacy and scalability. This is going to be unusual for this conference because I will not be presenting new technical content. I am going to be talking about evaluating the tradeoffs between these scalability and privacy. As context, my name is Ian Miers.</description></item><item><title>How Tech Companies Are Embracing Blockchain Database Technology</title><link>//btctranscripts.com/coindesk-consensus-2016/how-tech-companies-are-embracing-blockchain-database-technology/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/coindesk-consensus-2016/how-tech-companies-are-embracing-blockchain-database-technology/</guid><description>Preliminary notes:
 Contact me- https://twitter.com/kanzure
-categories: [&amp;lsquo;conference&amp;rsquo;] How tech companies are embracing blockchain database technology
+How tech companies are embracing blockchain database technology
 Martha Bennett, Forrester - Moderator
 Jerry Cuomo, IBM
 Austin Hill, Blockstream
@@ -761,7 +760,7 @@ Aviv Zohar
 Our next talk is getting into layer 2. Leaving hwat needs to done at th&amp;hellip;
 I am going to start with maybe a simple beginning talking about a single channel between Alice and Bob. We heard about channels yesterday so I am not going to go into details. Alice is not going to cheat Bob in my scenario. Everything is going to run as if everyone honest and doing their best effort, for my example.</description></item><item><title>How To Get Bitcoin</title><link>//btctranscripts.com/coindesk-consensus-2016/how-to-get-bitcoin/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/coindesk-consensus-2016/how-to-get-bitcoin/</guid><description>Preliminary notes:
 Contact me- https://twitter.com/kanzure
-categories: [&amp;lsquo;conference&amp;rsquo;] How to get bitcoin
+How to get bitcoin
 Balaji Srinivasan
 My talk is going to be pretty different from the others. I will try to make this relevant to the blockchain database technology attendees. We&amp;rsquo;re going to talk here today what we call the machine web. It&amp;rsquo;s a web where machines earn bitcoin on each HTTP request. Who here knows what an HTTP request? Every time you load a web page, you make a lot of HTTP requests.</description></item><item><title>How To Meme Bitcoin To The Moon</title><link>//btctranscripts.com/bit-block-boom/2019/how-to-meme-bitcoin-to-the-moon/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/bit-block-boom/2019/how-to-meme-bitcoin-to-the-moon/</guid><description>How to meme bitcoin to the moon
 Michael Goldstein (bitstein)
@@ -799,7 +798,7 @@ https://twitter.com/kanzure/status/1048767166823071746
 Introduction Hi. Good morning. I am Zeta. I am going to talk about how to incentivize payment channel watchtowers. This is joint work with my collaborators.
 Micropayment channels There are many ways to construct channels such as lightning channels and duplex channels. There&amp;rsquo;s hops, you can route payments, and other proposals more recent ones for doing channels in payment networks like sprites, eltoo, all of them although they are different they all share the fundamental nature of channels.</description></item><item><title>Internal Approaches Blockchain Database Technology Strategies</title><link>//btctranscripts.com/coindesk-consensus-2016/internal-approaches-blockchain-database-technology-strategies/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/coindesk-consensus-2016/internal-approaches-blockchain-database-technology-strategies/</guid><description>Preliminary notes:
 Contact me- https://twitter.com/kanzure
-categories: [&amp;lsquo;conference&amp;rsquo;] William Mougayar, The Business Blockchain - Moderator
+William Mougayar, The Business Blockchain - Moderator
 Edward Budd, Deutsche Bank
 Ian Lee, Citi Ventures
 Scott Manuel, Thomson Reuters
@@ -876,7 +875,7 @@ Adlai Chandrasekhar
 https://twitter.com/kanzure/status/784681036504522752
 slides: https://scalingbitcoin.org/milan2016/presentations/D1%20-%202%20-%20Adlai%20Chandrasekhar.pdf
 Finding a risk-free rate for Bitcoin
-Joinmarket, just to clear up a misconception&amp;hellip; Joinmarket, like bitcoin, it is a protocol. Not a company. The protocol is defined by an open-source reference implementation. There are other versions of the code out there. It&amp;rsquo;s entirely, I guess you could say it&amp;rsquo;s voluntary like bitcoin. Those of you who might have less of a finance background might not be familiar with the term risk-free rate.</description></item><item><title>Jonathan Metzman Structured Fuzzing (2019-08-07)</title><link>//btctranscripts.com/black-hat/2019-08-07-jonathan-metzman-structured-fuzzing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/black-hat/2019-08-07-jonathan-metzman-structured-fuzzing/</guid><description>Name: Jonathan Metzman
+Joinmarket, just to clear up a misconception&amp;hellip; Joinmarket, like bitcoin, it is a protocol. Not a company. The protocol is defined by an open-source reference implementation. There are other versions of the code out there. It&amp;rsquo;s entirely, I guess you could say it&amp;rsquo;s voluntary like bitcoin. Those of you who might have less of a finance background might not be familiar with the term risk-free rate.</description></item><item><title>Jonathan Metzman Structured Fuzzing (2019-08-07)</title><link>//btctranscripts.com/misc/2019-08-07-jonathan-metzman-structured-fuzzing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/misc/2019-08-07-jonathan-metzman-structured-fuzzing/</guid><description>Name: Jonathan Metzman
 Topic: Going Beyond Coverage Guided Fuzzing with Structured Fuzzing
 Location: Black Hat USA 2019
 Date: August 7th 2019
@@ -919,7 +918,7 @@ Date: April 18th 2020
 Video: https://www.youtube.com/watch?v=h34fUGuDjMg
 Intro (Laolu Osuntokun) Thanks everyone for coming. This is my first time doing a VR presentation, really cool. I am going to be talking about lnd 0.10. Right now we are on rc2, the next major lnd release, it has a bunch of cool features, bug fixes, optimizations. I am going to talk about some big ticket features in 0.</description></item><item><title>Law Enforcement And Anonymous Transactions</title><link>//btctranscripts.com/coindesk-consensus-2016/law-enforcement-and-anonymous-transactions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/coindesk-consensus-2016/law-enforcement-and-anonymous-transactions/</guid><description>Preliminary notes:
 Contact me- https://twitter.com/kanzure
-categories: [&amp;lsquo;conference&amp;rsquo;] tags: [&amp;lsquo;consensus&amp;rsquo;, &amp;lsquo;proof-of-work&amp;rsquo;] Law enforcement and anonymous transactions
+Law enforcement and anonymous transactions
 Jason Weinstein, Blockchain Alliance, moderator
 Brian Klein, Baker Marquart
 Prakash Santhana, Deloitte
@@ -1026,7 +1025,7 @@ https://twitter.com/kanzure/status/1230183338746335233
 Introduction Okay, thank you. The title of my talk is exploring the limits of plasma. This is joint work with others.
 Plasma Let me start by telling you about Plasma. It&amp;rsquo;s a family of layer 2 solutions for scaling blockchain. It was proposed in 2017 by Poon and Buterin. It&amp;rsquo;s a family of protocols. There&amp;rsquo;s plenty of different plasmas.</description></item><item><title>Maaku Panel</title><link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/maaku-panel/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2016/maaku-panel/</guid><description>This can be a broad range of topics for improvements. I am Mark Friedenbach, I have worked on Bitcoin protocol research, but I also do Core tech engineering at Blockstream. We also have Jonas, an independent Bitcoin Core developer. We also have Andrew Poelstra, who has been core to the crypto work which has been incoporated into Bitcoin, such as libsecp256k1 which we recently integrated in the 0.12 release. It speeds up Bitcoin validation by 7-8x.</description></item><item><title>Marco Santori Delaware Initiative</title><link>//btctranscripts.com/coindesk-consensus-2016/marco-santori-delaware-initiative/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/coindesk-consensus-2016/marco-santori-delaware-initiative/</guid><description>Preliminary notes:
 Contact me- https://twitter.com/kanzure
-categories: [&amp;lsquo;conference&amp;rsquo;] tags: [&amp;lsquo;mining&amp;rsquo;, &amp;lsquo;proof-of-work&amp;rsquo;] Marco Santori
+Marco Santori
 Delaware initiative
 It&amp;rsquo;s good to see so many friendly audiences in the audience. I am at Pillsbury Wintrhop Shaw Pittman. We are focusing on distinct areas of law as it applies to blockchain tech. We have been in the space as early as 2011 so we were trying to do the land grab. My team has been asked by the State of Delaware to serve as legal ambassadors to the blockchain industry.</description></item><item><title>Matt Corallo Sidechains</title><link>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2015/matt-corallo-sidechains/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2015/matt-corallo-sidechains/</guid><description>Matt Corallo (BlueMatt)
 Sidechains, Blockstream
@@ -1138,12 +1137,12 @@ Dan Boneh
 We will be starting in 10 minutes. I would like to ask the first speaker in the first session for grin to walk to the back of the room to get your microphone ready for the talk.
 It&amp;rsquo;s 9 o&amp;rsquo;clock and time to get started. Could everyone please get to their seats? Alright, let&amp;rsquo;s do this. Welcome everybody. This is the Stanford Blockchain Conference. This is the third time we&amp;rsquo;re running this conference.</description></item><item><title>Opening Remarks State Of Blockchain Ryan Selkis</title><link>//btctranscripts.com/coindesk-consensus-2016/opening-remarks-state-of-blockchain-ryan-selkis/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/coindesk-consensus-2016/opening-remarks-state-of-blockchain-ryan-selkis/</guid><description>Preliminary notes:
 Contact me- https://twitter.com/kanzure
-categories: [&amp;lsquo;conference&amp;rsquo;] Opening remarks &amp;amp; state of blockchain
+Opening remarks &amp;amp; state of blockchain
 Ryan Selkis, Coindesk
 Garrick Hileman, The Cambridge Centre for Alternative Finance
-categories: [&amp;lsquo;conference&amp;rsquo;] Ladies and gentlemen, the session will begin in 5 minutes. Please take your seats. The session is about to begin.
+Ladies and gentlemen, the session will begin in 5 minutes. Please take your seats. The session is about to begin.
 Please welcome Ryan Selkis from CoinDesk. (obnoxious music plays, overly dramatic)
-Wow is all I can say about what&amp;rsquo;s happening over the last couple of months.</description></item><item><title>Optimistic Vm</title><link>//btctranscripts.com/stanford-blockchain-conference/2020/optimistic-vm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/stanford-blockchain-conference/2020/optimistic-vm/</guid><description>The optimistic VM
+Wow is all I can say about what&amp;rsquo;s happening over the last couple of months. This is absolutely incredible.</description></item><item><title>Optimistic Vm</title><link>//btctranscripts.com/stanford-blockchain-conference/2020/optimistic-vm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/stanford-blockchain-conference/2020/optimistic-vm/</guid><description>The optimistic VM
 Karl Floersch
 https://twitter.com/kanzure/status/1230974707249233921
 Introduction Okay, let&amp;rsquo;s get started our afternoon session. Our first talk I am very happy to introduce our speaker on optimistic virtual machines. Earlier in this conference we heard about optimistic roll-ups and I&amp;rsquo;m looking forward to this talk on optimistic virtual machines which is an up-and-coming approach on doing this.
@@ -1205,7 +1204,7 @@ Georgios Konstantopoulos
 https://twitter.com/kanzure/status/1172108023705284609
 paper: https://github.com/loomnetwork/plasma-paper/blob/master/plasma_cash.pdf
 slides: https://gakonst.com/scalingbitcoin2019.pdf
-Introduction We have known how to do these things for at least a year, but the question is how can we find the minimum changes that we can figure out to do in bitcoin if any on how to explore the layer 2 space in a better sense rather than just accepting that lightning network is the dominant solution?</description></item><item><title>Plasma Cash</title><link>//btctranscripts.com/stanford-blockchain-conference/2019/plasma-cash/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/stanford-blockchain-conference/2019/plasma-cash/</guid><description>Plasma Cash: Towards more efficient Plasma constructions
+Introduction We have known how to do these things for at least a year, but the question is how can we find the minimum changes that we can figure out to do in bitcoin if any on how to explore the layer 2 space in a better sense rather than just accepting that lightning network is the dominant solution?</description></item><item><title>Plasma Cash (2019-01-20)</title><link>//btctranscripts.com/stanford-blockchain-conference/2019/plasma-cash/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/stanford-blockchain-conference/2019/plasma-cash/</guid><description>Plasma Cash: Towards more efficient Plasma constructions
 Georgios Konstantopolous (gakonst)
 https://twitter.com/kanzure/status/1090691501561020416
 Shi: Okay, we&amp;rsquo;re going to start the next session. Please return to your seats. I have an important announcement before the session starts. Because of the fire code, we can&amp;rsquo;t allow people standing room. Please go to the overflow rooms at the end of the hallway. We don&amp;rsquo;t want the fire marshall to come and shutdown the conference. Also, the acoustics of the room make it so that we can hear the details of your conversations in the back.</description></item><item><title>Playing With Fire Adjusting Bitcoin Block Subsidy</title><link>//btctranscripts.com/scalingbitcoin/tokyo-2018/playing-with-fire-adjusting-bitcoin-block-subsidy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/playing-with-fire-adjusting-bitcoin-block-subsidy/</guid><description>Playing with fire: Adjusting bitcoin&amp;rsquo;s block subsidy
@@ -1300,7 +1299,7 @@ Kathleen Breitman
 I work at R3. It manages the distributed ledger group, of 42 banks interested in using blockchain or distributed ledger tech. People wonder when I tell them that I work for a consortium that wants to use electronic ledgers. What does that have to do with capital markets?
 Ledgers can track transactions. Typically in a capital market context, this responsibility falls to the backoffice. After a trade, you finalize it and actually transfer value.</description></item><item><title>Reaching Consensus Open Blockchains</title><link>//btctranscripts.com/coindesk-consensus-2016/reaching-consensus-open-blockchains/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/coindesk-consensus-2016/reaching-consensus-open-blockchains/</guid><description>Preliminary notes:
 Contact me- https://twitter.com/kanzure
-categories: [&amp;lsquo;conference&amp;rsquo;] tags: [&amp;lsquo;consensus&amp;rsquo;] Reaching consensus on open blockchains
+Reaching consensus on open blockchains
 Moderator- Pindar Wong
 Gavin Andresen, MIT Digital Currency Initiative
 Vitalik Buterin, Ethereum Foundation
@@ -1411,7 +1410,7 @@ Video: https://www.youtube.com/watch?v=_Z0ID-0DOnc&amp;amp;feature=youtu.be&amp;
 Slides: URL expired
 Pieter Wuille presentation on Schnorr at BPASE 2018: https://diyhpl.us/wiki/transcripts/blockchain-protocol-analysis-security-engineering/2018/schnorr-signatures-for-bitcoin-challenges-opportunities/
 Transcript completed by: Bryan Bishop Edited by: Michael Folkson
-Intro Today I will be talking about Schnorr signatures for Bitcoin. I want to say a few things in advance. One is even though this is a talk about cryptography and in particular new cryptography I don&amp;rsquo;t consider myself to be a cryptographer.</description></item><item><title>Schnorr Signatures For Bitcoin Challenges Opportunities</title><link>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/schnorr-signatures-for-bitcoin-challenges-opportunities/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/schnorr-signatures-for-bitcoin-challenges-opportunities/</guid><description>Schnorr signatures for Bitcoin: Opportunities and challenges
+Intro Today I will be talking about Schnorr signatures for Bitcoin. I want to say a few things in advance. One is even though this is a talk about cryptography and in particular new cryptography I don&amp;rsquo;t consider myself to be a cryptographer.</description></item><item><title>Schnorr Signatures For Bitcoin - Challenges and Opportunities</title><link>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/schnorr-signatures-for-bitcoin-challenges-opportunities/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/blockchain-protocol-analysis-security-engineering/2018/schnorr-signatures-for-bitcoin-challenges-opportunities/</guid><description>Schnorr signatures for Bitcoin: Opportunities and challenges
 Pieter Wuille (sipa)
 2018-01-31
 video: https://www.youtube.com/watch?v=oTsjMz3DaLs
@@ -1475,7 +1474,7 @@ Okay. So I am Pieter Wuille. I&amp;rsquo;ll be talking about segregated witness 
 Greg Sanders (instagibbs)
 https://twitter.com/kanzure/status/785034301272420353
 https://www.youtube.com/watch?v=_Z0ID-0DOnc
-categories: [&amp;lsquo;conference&amp;rsquo;] tags: [&amp;lsquo;segwit&amp;rsquo;, &amp;lsquo;consensus&amp;rsquo;, &amp;lsquo;forks&amp;rsquo;, &amp;lsquo;security&amp;rsquo;, &amp;lsquo;lightning&amp;rsquo;] Hi. My name is Greg Sanders. I will be giving a talk about segwit in bitcoin lessons learned. I will also give some takeaways that I think are important. A little bit about myself. I work on Elements Project at Blockstream. I was a reviewer on segwit for Bitcoin Core. How do we scale protocol development?</description></item><item><title>Self Reproducing Coins As Universal Turing Machine</title><link>//btctranscripts.com/scalingbitcoin/tokyo-2018/self-reproducing-coins-as-universal-turing-machine/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/self-reproducing-coins-as-universal-turing-machine/</guid><description>Self-reproducing coins as universal turing machine
+Hi. My name is Greg Sanders. I will be giving a talk about segwit in bitcoin lessons learned. I will also give some takeaways that I think are important. A little bit about myself. I work on Elements Project at Blockstream. I was a reviewer on segwit for Bitcoin Core. How do we scale protocol development? How do we scale review and keep things safe?</description></item><item><title>Self Reproducing Coins As Universal Turing Machine</title><link>//btctranscripts.com/scalingbitcoin/tokyo-2018/self-reproducing-coins-as-universal-turing-machine/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/self-reproducing-coins-as-universal-turing-machine/</guid><description>Self-reproducing coins as universal turing machine
 Dmitry Meshkov, Alexander Chepurnoy and Vasily Kharin (Ergo Platform)
 paper: https://arxiv.org/abs/1806.10116
 Introduction This is joint work with my colleagues. I am Alexander Chepurnoy. We work for Ergo Platform. Vasily is an external member. This talk is about turing completeness in the blockchain. This talk will be pretty high-level. This talk is based on already-published paper, which was presented at the CBT conference. Because of copyright agreements with Springer, you will not find the latest version on arxiv.</description></item><item><title>Self Sovereign Identity Ideology And Architecture</title><link>//btctranscripts.com/rebooting-web-of-trust/2019-prague/self-sovereign-identity-ideology-and-architecture/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/rebooting-web-of-trust/2019-prague/self-sovereign-identity-ideology-and-architecture/</guid><description>Self-sovereign identity: Ideology &amp;amp; architecture
@@ -1495,7 +1494,7 @@ Paul Sztorc
 https://twitter.com/kanzure/status/784767020290150400
 slides https://scalingbitcoin.org/milan2016/presentations/D1%20-%209%20-%20Paul.pdf
 Before we begin, we will explain how the workshops will work upstairs. There will be some topics and room numbers. Now we will start the next presentation on sidechain scaling with Paul Sztorc. Thank you everyone.
-categories: [&amp;lsquo;conference&amp;rsquo;] Thanks a lot. So this talk will be a little different. Scaling via strategy, not physics. This will not change the kilobytes sent over&amp;ndash; it will, just not in the literal sense.</description></item><item><title>Sidechains And Federation Models</title><link>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/sidechains-and-federation-models/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/sidechains-and-federation-models/</guid><description>Sidechains and federation models
+Thanks a lot. So this talk will be a little different. Scaling via strategy, not physics. This will not change the kilobytes sent over&amp;ndash; it will, just not in the literal sense.</description></item><item><title>Sidechains And Federation Models</title><link>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/sidechains-and-federation-models/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/sidechains-and-federation-models/</guid><description>Sidechains and federation models
 Greg Sanders (instagibbs)
 https://twitter.com/kanzure/status/1048008467871666178
 Introduction The name &amp;ldquo;sidechain&amp;rdquo; is overloaded. My favorite private sidechain is my coach. That&amp;rsquo;s my private sidechain. Hopefully I can explain the high-level concepts of a sidechain, at a 10,000 foot view. What are these? What do they give you?
@@ -1572,7 +1571,7 @@ https://twitter.com/kanzure/status/1091042382072532992
 Introduction I am an assistant professor at King&amp;rsquo;s College London. There are many collaborators on this project. Also IC3. Who here has heard of state channels before? Okay, about half of the audience. Let me remove some misconceptions around them.
 Scalability problems in bitcoin Why are state channels necessary for cryptocurrencies? Cryptocurrencies do not scale. Bitcoin supports 10 transactions/second, ethereum is 12 transactions/second sort of depending on how big your transaction is going to be.</description></item><item><title>State Of Blockchain</title><link>//btctranscripts.com/coindesk-consensus-2016/state-of-blockchain/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/coindesk-consensus-2016/state-of-blockchain/</guid><description>Preliminary notes:
 Contact me- https://twitter.com/kanzure
-categories: [&amp;lsquo;conference&amp;rsquo;] I am at the Cambridge center of alternative finance. I am also the founde rof&amp;hellip; macroeconomics if you will&amp;hellip; very proud to have created and &amp;hellip; this is our .. we started this in 2014, this is a snapshot of what will be coming out over the next few days. If you are worried about the speed that I will be going through these, it will be online soon.</description></item><item><title>State Of Cryptography</title><link>//btctranscripts.com/scalingbitcoin/stanford-2017/state-of-cryptography/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/scalingbitcoin/stanford-2017/state-of-cryptography/</guid><description>State of cryptography for blockchains beyond ECDSA and sha256
+I am at the Cambridge center of alternative finance. I am also the founde rof&amp;hellip; macroeconomics if you will&amp;hellip; very proud to have created and &amp;hellip; this is our .. we started this in 2014, this is a snapshot of what will be coming out over the next few days. If you are worried about the speed that I will be going through these, it will be online soon.</description></item><item><title>State Of Cryptography</title><link>//btctranscripts.com/scalingbitcoin/stanford-2017/state-of-cryptography/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/scalingbitcoin/stanford-2017/state-of-cryptography/</guid><description>State of cryptography for blockchains beyond ECDSA and sha256
 Signatures and zero-knowledge proofs
 Benedikt Bunz, Stanford University
 Am going to talk about cryptography relevant to blockchains. I&amp;rsquo;ll talk about signatures and zero-knowledge proofs. It has a lot of applications to bitcoin. It turns out that bitcoin is pretty simple in terms of cryptography. It just uses a hash function (sha256) and,s eparately, ECDSA for signatures. I will be mentioning some other cryptography that bitcoin could use.</description></item><item><title>State Of Lightning Network</title><link>//btctranscripts.com/magicalcryptoconference/2019/state-of-lightning-network/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/magicalcryptoconference/2019/state-of-lightning-network/</guid><description>Fireside chat on the state of the lightning network
@@ -1614,7 +1613,7 @@ Let&amp;rsquo;s talk about what some of the goals are that we might get out of t
 Elichai Turkel
 https://docs.google.com/presentation/d/1YVOYJGmQ_mY-5_Rs0Cu84AYSI6wCvpfIgoapfgsYP2U/edit
 https://github.com/bitcoinops/taproot-workshop/tree/BitcoinEdge
-https://github.com/bitcoinops/bitcoin/releases/tag/v0.1</description></item><item><title>Taproot And Graftroot</title><link>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/taproot-and-graftroot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/taproot-and-graftroot/</guid><description>Taproot and graftroot
+https://github.com/bitcoinops/bitcoin/releases/tag/v0.1</description></item><item><title>Taproot and Graftroot</title><link>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/taproot-and-graftroot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/taproot-and-graftroot/</guid><description>Taproot and graftroot
 Greg Sanders (instagibbs)
 https://twitter.com/kanzure/status/1047764770265284608
 Introduction Taproot and graftroot are recent proposals in the bitcoin world. Every script type looks different and they are distinct. From a privacy perspective, that&amp;rsquo;s pretty bad. You watermark or fingerprint yourself all the time by showing unique scripts on the blockchain or in your transactions. This causes censorship risks and other problems for fungibility. Often you are paying for contigencies that are never used, like the whoopsies branches in your scripts.</description></item><item><title>Taproot Schnorr Soft Fork</title><link>//btctranscripts.com/bit-block-boom/2019/taproot-schnorr-soft-fork/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/bit-block-boom/2019/taproot-schnorr-soft-fork/</guid><description>Taproot, Schnorr, and the next soft-fork
@@ -1722,7 +1721,7 @@ http://lightning.network/
 https://twitter.com/kanzure/status/784752625074012160
 Okay. Hi everyone. Check. Wow. Check one two. Okay it&amp;rsquo;s working. And I have 25 minutes. Great. So I am going to talk about unlinkable outsourced channel modeling. Everyone likes channels. You can update states. You can link them together to make a network. This is really great. There are risks. These are additional risks. The price of scalability is eternal vigilance. You have to keep watching your channels.</description></item><item><title>Upgrading Capital Markets For Digital Asset Trading</title><link>//btctranscripts.com/coindesk-consensus-2016/upgrading-capital-markets-for-digital-asset-trading/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/coindesk-consensus-2016/upgrading-capital-markets-for-digital-asset-trading/</guid><description>Preliminary notes:
 Contact me- https://twitter.com/kanzure
-categories: [&amp;lsquo;conference&amp;rsquo;] Upgrading capital markets for digital asset trading
+Upgrading capital markets for digital asset trading
 Brian Kelly - Moderator
 Juthica Chou, LedgerX
 Bobby Lee, BTCC
@@ -1752,7 +1751,7 @@ Tim Ruffing
 Thank you.
 We have seen two talks now about putting privacy in layer two. But let&amp;rsquo;s talk about layer one. We still don&amp;rsquo;t have great privacy there. So the title of this talk is valueshuffle - mixing confidential transactions. I don&amp;rsquo;t have to convince you that bitcoin at the moment is not really private. There are a lot of possibilities to link&amp;hellip; to deal them as, to link addresses together.</description></item><item><title>Visa Chain</title><link>//btctranscripts.com/coindesk-consensus-2016/visa-chain/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/coindesk-consensus-2016/visa-chain/</guid><description>Preliminary notes:
 Contact me- https://twitter.com/kanzure
-categories: [&amp;lsquo;conference&amp;rsquo;] Visa &amp;amp; Chain
+Visa &amp;amp; Chain
 My name is Adam Ludwin. We are here to talk about blockchain database technology networks. Chain.com is a blockchain database technology company. We do one thing. We partner with financia leaders like Visa to launch blockchain database technology networks. I want to talk about why. There&amp;rsquo;s a lot of hype in blockchain database technology. There&amp;rsquo;s a lot of attention in blockchain database technology.</description></item><item><title>Vulnerability Detection</title><link>//btctranscripts.com/stanford-blockchain-conference/2019/vulnerability-detection/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/stanford-blockchain-conference/2019/vulnerability-detection/</guid><description>Automatic detection of vulnerabilities in smart contracts
 Mooly Sagiv
 Introduction If you find a bug in a smart contract, it&amp;rsquo;s really hard to mitigate that bug. In formal verification, we really look for bugs. We can identify subtle bugs, like reentrancy attacks, ownership violation, incorrect transactions, bugs due to updated code. We also want to assure the absence of bugs.
@@ -1784,7 +1783,7 @@ Okay, we&amp;rsquo;re going to get started in five minutes. We&amp;rsquo;re goin
 Alright. So let&amp;rsquo;s do this.
 Okay, welcome to the fourth Stanford Blockchain Conference. It&amp;rsquo;s been a lot of fun running this conference for a couple of years now.</description></item><item><title>Why Bitcoin Still Matters</title><link>//btctranscripts.com/coindesk-consensus-2016/why-bitcoin-still-matters/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/coindesk-consensus-2016/why-bitcoin-still-matters/</guid><description>Preliminary notes:
 Contact me- https://twitter.com/kanzure
-categories: [&amp;lsquo;conference&amp;rsquo;] Why bitcoin still matters
+Why bitcoin still matters
 Hutchins, Founder of Silver Lake
 I hope in the coming days that the experts will critique me to help me learn more. I hope people from the general community, rather the experts pardon me, what I have an initial hypothesis regarding what will help bitcoin reach its full potential for its extraordinary opportunity that I think it is.
 The title of my presentation was &amp;ldquo;Why bitcoin still matters&amp;rdquo;.</description></item><item><title>Why Block Sizes Should Not Be Too Big</title><link>//btctranscripts.com/magicalcryptoconference/2019/why-block-sizes-should-not-be-too-big/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/magicalcryptoconference/2019/why-block-sizes-should-not-be-too-big/</guid><description>Briefly, why block sizes shouldn&amp;rsquo;t be too big

@@ -14,7 +14,7 @@ Date: April 16th 2020
 Video: https://www.youtube.com/watch?v=8TaY730YlMg
 Intro I’m going to talk to you today about attacking Bitcoin Core.
 Bitcoin To start with the fundamentals. As we all know Bitcoin is a money and it is different to our existing centralized solution of money because instead we have nodes that are running all around the world.
-Consensus Fundamentally what is required for this to work is the idea of consensus where all the nodes must agree on the same fundamental values.</description></item><item><title>Luke Dashjr Segwit Psbt Vulnerability (2020-06-18)</title><link>//btctranscripts.com/la-bitdevs/2020-06-18-luke-dashjr-segwit-psbt-vulnerability/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/la-bitdevs/2020-06-18-luke-dashjr-segwit-psbt-vulnerability/</guid><description>Name: Luke Dashjr
+Consensus Fundamentally what is required for this to work is the idea of consensus where all the nodes must agree on the same fundamental values.</description></item><item><title>Luke Dashjr - Segwit, PSBT Vulnerability (2020-06-18)</title><link>//btctranscripts.com/la-bitdevs/2020-06-18-luke-dashjr-segwit-psbt-vulnerability/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/la-bitdevs/2020-06-18-luke-dashjr-segwit-psbt-vulnerability/</guid><description>Name: Luke Dashjr
 Topic: SegWit/PSBT vulnerability (CVE-2020-14199)
 Location: LA BitDevs (online)
 Date: June 18th 2020

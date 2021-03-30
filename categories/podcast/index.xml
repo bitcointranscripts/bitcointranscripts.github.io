@@ -9,20 +9,23 @@ Bitcoin Block Re-orgs Peter McCormack (PM): Adam, how are you?
 Adam Back (AB): Good!
 PM: How you doing Bryan?
 Bryan Bishop (BB): Doing good!
-PM: So we&amp;rsquo;re here to talk about re-orgs. Something I&amp;rsquo;d heard about before because didn&amp;rsquo;t the BSV chain have a couple of re-orgs recently?</description></item><item><title>Aj Towns Schnorr Taproot (2019-12-27)</title><link>//btctranscripts.com/stephan-livera-podcast/2019-12-27-aj-towns-schnorr-taproot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/stephan-livera-podcast/2019-12-27-aj-towns-schnorr-taproot/</guid><description>Name: AJ Towns
+PM: So we&amp;rsquo;re here to talk about re-orgs. Something I&amp;rsquo;d heard about before because didn&amp;rsquo;t the BSV chain have a couple of re-orgs recently?</description></item><item><title>AJ Towns - Schnorr Taproot (2019-12-27)</title><link>//btctranscripts.com/stephan-livera-podcast/2019-12-27-aj-towns-schnorr-taproot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/stephan-livera-podcast/2019-12-27-aj-towns-schnorr-taproot/</guid><description>Name: AJ Towns
 Topic: Schnorr Taproot Tapscript BIPs
 Location: Stephan Livera Podcast
 Date: December 27th 2019
 Video: https://stephanlivera.com/episode/137/
 Transcript Stephan Livera: AJ, welcome to the show.
 AJ Towns: Howdy.
-Stephan Livera: Thanks for joining me AJ. I know you’re doing a lot of really cool work with the Schnorr and Taproot proposal and the review club. But let’s start with a bit of your background and I know you’re working at Xapo as well.</description></item><item><title>Andrew Poelstra Miniscript (2019-05-11)</title><link>//btctranscripts.com/noded-podcast/2019-05-11-andrew-poelstra-miniscript/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/noded-podcast/2019-05-11-andrew-poelstra-miniscript/</guid><description>Noded podcast May 10th 2019
+Stephan Livera: Thanks for joining me AJ. I know you’re doing a lot of really cool work with the Schnorr and Taproot proposal and the review club. But let’s start with a bit of your background and I know you’re working at Xapo as well.</description></item><item><title>Andreas Antonopoulos - Schnorr Signatures (2018-10-07)</title><link>//btctranscripts.com/andreas-antonopoulos/2018-10-07-andreas-antonopoulos-schnorr-signatures/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/andreas-antonopoulos/2018-10-07-andreas-antonopoulos-schnorr-signatures/</guid><description>Andreas Antonopoulos
+LTB Episode 378 - The Petro inside Venezuela &amp;amp; Schnorr Signatures
+Schnorr signatures We’re currently using the elliptic curve digital signature algorithm (ECDSA) which is a specific way of doing digital signatures with elliptic curves but not the only way. Schnorr signatures have some unique characteristics that make them better in many ways than the ECDSA algorithm we use today in Bitcoin.
+Schnorr signatures are better because they have certain quirks in the way the mathematics plays out.</description></item><item><title>Andrew Poelstra Miniscript (2019-05-11)</title><link>//btctranscripts.com/noded-podcast/2019-05-11-andrew-poelstra-miniscript/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/noded-podcast/2019-05-11-andrew-poelstra-miniscript/</guid><description>Noded podcast May 10th 2019
 Audio: https://soundcloud.com/noded-bitcoin-podcast/noded-0490-with-andrew-poelstra
 https://twitter.com/kanzure/status/1135217746059415552
 Intros Pierre: Welcome to the Noded Bitcoin podcast. I’m your co-host Pierre Rochard with my other co-host Michael Goldstein aka bitstein. How’s it going Michael?
 bitstein: It’s going well, I just hope they don’t ban Bitcoin
 Pierre: Any day now. We have a very special guest on today, Andrew Poelstra from Blockstream. Andrew, how are you?
-Andrew: I’m good. How are you?</description></item><item><title>Andrew Poelstra Tftc (2019-06-18)</title><link>//btctranscripts.com/tftc-podcast/2019-06-18-andrew-poelstra-tftc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/tftc-podcast/2019-06-18-andrew-poelstra-tftc/</guid><description>TFTC podcast with Andrew Poelstra - June 18th 2019 (Abridged)
+Andrew: I’m good. How are you?</description></item><item><title>Andrew Poelstra TFTC (2019-06-18)</title><link>//btctranscripts.com/tftc-podcast/2019-06-18-andrew-poelstra-tftc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/tftc-podcast/2019-06-18-andrew-poelstra-tftc/</guid><description>TFTC podcast with Andrew Poelstra - June 18th 2019 (Abridged)
 https://twitter.com/kanzure/status/1160178010986876928
 Podcast: https://talesfromthecrypt.libsyn.com/tales-from-the-crypt-80-andrew-poelstra
 How the idea of Taproot was formed Andrew: There are some small off suit IRC channels of bitcoin-wizards where people discuss some specific topics such as Minisketch which is a set reconciliation protocol that was developed by Greg Maxwell, Pieter Wuille and Gleb Naumenko among a couple of others. It was mostly those three. They have a channel where they talk about things.</description></item><item><title>Bryan Bishop (2019-09-22)</title><link>//btctranscripts.com/stephan-livera-podcast/2019-09-22-bryan-bishop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/stephan-livera-podcast/2019-09-22-bryan-bishop/</guid><description>Stephan Livera Podcast with Bryan Bishop - September 22nd 2019
@@ -30,7 +33,16 @@ Bitcoin Vaults and Custody
 Podcast: https://stephanlivera.com/episode/108/
 Stephan Livera: Bryan, welcome to the show, man. I’m a big fan of your work.
 Bryan Bishop: Thank you. I’m a big fan of yours as well.
-Stephan Livera: Yeah, so look, we’re doing Bitcoin Custody. I know you’re one of the guys to talk to on this exact topic. And so, maybe we’ll just start with a little bit of a background.</description></item><item><title>Christian Decker Channel Factories (2019-03-14)</title><link>//btctranscripts.com/stephan-livera-podcast/2019-03-14-christian-decker-channel-factories/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/stephan-livera-podcast/2019-03-14-christian-decker-channel-factories/</guid><description>Name: Christian Decker
+Stephan Livera: Yeah, so look, we’re doing Bitcoin Custody. I know you’re one of the guys to talk to on this exact topic. And so, maybe we’ll just start with a little bit of a background.</description></item><item><title>Carl Dong - Reproducible Builds (2020-11-30)</title><link>//btctranscripts.com/chaincode-labs/chaincode-podcast/2020-11-30-carl-dong-reproducible-builds/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/chaincode-labs/chaincode-podcast/2020-11-30-carl-dong-reproducible-builds/</guid><description>Name: Carl Dong
+Topic: Reproducible Build Systems
+Location: Chaincode Labs Podcast (Episode 9 and 10)
+Date: November 30th 2020
+Video: https://www.youtube.com/watch?v=Y5Gfli3x6rI
+Carl Dong’s presentation at Breaking Bitcoin 2019 on “Bitcoin Build System Security”: https://diyhpl.us/wiki/transcripts/breaking-bitcoin/2019/bitcoin-build-system/
+Intro Adam Jonas (AJ): Welcome to the Chaincode podcast Carl.
+Carl Dong (CD): Hello.
+AJ: You know we’ve been doing this podcast for a while now. How come you haven’t been on the show yet?
+CD: We’ve been at home.</description></item><item><title>Christian Decker Channel Factories (2019-03-14)</title><link>//btctranscripts.com/stephan-livera-podcast/2019-03-14-christian-decker-channel-factories/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/stephan-livera-podcast/2019-03-14-christian-decker-channel-factories/</guid><description>Name: Christian Decker
 Topic: Lightning Channel Factories
 Location: Stephan Livera Podcast
 Date: March 14th 2019
@@ -76,7 +88,16 @@ Eric Lombrozo (EL): We are doing great.</description></item><item><title>James O
 The Truth About ‘Power’ in Bitcoin
 Podcast: https://stephanlivera.com/episode/66/
 https://twitter.com/kanzure/status/1198289594069983237
-Stephan Livera: Hello and welcome to the Stephan Livera podcast focused on Bitcoin and Austrian economics. Today my guest is James O’Beirne, Bitcoin Core engineer working at Chaincode Labs. Here’s the interview. James, I’m a fan of what you are working on over at Chaincode Labs and welcome to the show.</description></item><item><title>Jnewbery Cve 2018 17144 Bug</title><link>//btctranscripts.com/noded-podcast/jnewbery-cve-2018-17144-bug/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/noded-podcast/jnewbery-cve-2018-17144-bug/</guid><description>Noded podcast September 26th 2018
+Stephan Livera: Hello and welcome to the Stephan Livera podcast focused on Bitcoin and Austrian economics. Today my guest is James O’Beirne, Bitcoin Core engineer working at Chaincode Labs. Here’s the interview. James, I’m a fan of what you are working on over at Chaincode Labs and welcome to the show.</description></item><item><title>Jeremy Rubin CTV (2020-02-11)</title><link>//btctranscripts.com/chaincode-labs/chaincode-podcast/2020-02-11-jeremy-rubin-ctv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/chaincode-labs/chaincode-podcast/2020-02-11-jeremy-rubin-ctv/</guid><description>Name: Jeremy Rubin
+Topic: CHECKTEMPLATEVERIFY
+Location: Chaincode Labs Podcast
+Date: February 11th 2020
+Video: https://www.youtube.com/watch?v=Lqcpk5o1Y2E
+CTV BIP review workshop transcript: https://diyhpl.us/wiki/transcripts/ctv-bip-review-workshop/
+Intro Jonas: Welcome to the podcast Jeremy.
+Jeremy: Thanks for having me on.
+Jonas: I think to start us off tell us a bit about your background, how you got into Bitcoin and we&amp;rsquo;ll take it from there.
+Jeremy: I first heard about Bitcoin in 2011. I was interning at MIT during high school and I was doing what interns do which is read Hacker News.</description></item><item><title>Jnewbery Cve 2018 17144 Bug</title><link>//btctranscripts.com/noded-podcast/jnewbery-cve-2018-17144-bug/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/noded-podcast/jnewbery-cve-2018-17144-bug/</guid><description>Noded podcast September 26th 2018
 Video: https://www.youtube.com/watch?v=286EmFqGMb8
 Intros
 Pierre: This is an issue that affects our audience directly, right. This is the Noded podcast. It is for people who run Bitcoin full nodes and we had what is called a critical vulnerability exposure - CVE drop on Monday and there was an issue with our node software - specific versions and we can get into that.
@@ -86,7 +107,7 @@ Podcast: https://stephanlivera.com/episode/124/
 https://twitter.com/kanzure/status/1195848417186078720
 Stephan Livera: Jon, welcome to the show.
 Jon Atack: Hi, Stephan. Thanks for having me on. I’m pleased to be here.
-Stephan Livera: So, Jon, I had the pleasure of meeting you at The Lightning Conference recently and I know you are working on Bitcoin Core in a part time capacity to do some review and development work.</description></item><item><title>Jonas Nick Tim Ruffing Musig2 (2020-10-27)</title><link>//btctranscripts.com/stephan-livera-podcast/2020-10-27-jonas-nick-tim-ruffing-musig2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/stephan-livera-podcast/2020-10-27-jonas-nick-tim-ruffing-musig2/</guid><description>Name: Jonas Nick and Tim Ruffing
+Stephan Livera: So, Jon, I had the pleasure of meeting you at The Lightning Conference recently and I know you are working on Bitcoin Core in a part time capacity to do some review and development work.</description></item><item><title>Jonas Nick, Tim Ruffing - MuSig, MuSig-DN and MuSig2 (2020-10-27)</title><link>//btctranscripts.com/stephan-livera-podcast/2020-10-27-jonas-nick-tim-ruffing-musig2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/stephan-livera-podcast/2020-10-27-jonas-nick-tim-ruffing-musig2/</guid><description>Name: Jonas Nick and Tim Ruffing
 Topic: MuSig, MuSig-DN and MuSig2
 Location: Stephan Livera Podcast
 Date: October 27th 2020
@@ -124,12 +145,22 @@ Part 2: https://letstalkbitcoin.com/blog/post/lets-talk-bitcoin-401-the-tools-an
 Draft of BIP-Schnorr: https://github.com/sipa/bips/blob/bip-schnorr/bip-schnorr.mediawiki
 Draft of BIP-Taproot: https://github.com/sipa/bips/blob/bip-schnorr/bip-taproot.mediawiki
 Draft of BIP-Tapscript: https://github.com/sipa/bips/blob/bip-schnorr/bip-tapscript.mediawiki
-Part 1 Adam: On this episode we&amp;rsquo;ll be digging deeply into some of the most important changes coming soon to the Bitcoin protocol in the form of BIPs or Bitcoin Improvement Proposals focused on Taproot, Tapscript and Schnorr signatures.</description></item><item><title>Matt Corallo Taproot Activation (2021-02-11)</title><link>//btctranscripts.com/tftc-podcast/2021-02-11-matt-corallo-taproot-activation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/tftc-podcast/2021-02-11-matt-corallo-taproot-activation/</guid><description>Name: Matt Corallo
+Part 1 Adam: On this episode we&amp;rsquo;ll be digging deeply into some of the most important changes coming soon to the Bitcoin protocol in the form of BIPs or Bitcoin Improvement Proposals focused on Taproot, Tapscript and Schnorr signatures.</description></item><item><title>Matt Corallo - UASFs, BIP 148, BIP 91 and Taproot Activation (2021-02-11)</title><link>//btctranscripts.com/tftc-podcast/2021-02-11-matt-corallo-taproot-activation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/tftc-podcast/2021-02-11-matt-corallo-taproot-activation/</guid><description>Name: Matt Corallo
 Topic: UASFs, BIP 148, BIP 91 and Taproot Activation
 Location: Tales from the Crypt podcast
 Date: February 11th 2021
 Audio: https://anchor.fm/tales-from-the-crypt/episodes/228-UASFs--BIP-148--BIP-91--and-Taproot-Activation-with-Matt-Corallo-eq7cif
-Intro Marty Bent (MB): Sitting down with a man who needs no introduction on this podcast. I think you have been on four times already. I think this is number five Matt. You are worried about the future of Bitcoin. What the hell is going on? You reached out to me last week, you scaring the s*** out of me.</description></item><item><title>Michael Flaxman (2019-08-08)</title><link>//btctranscripts.com/stephan-livera-podcast/2019-08-08-michael-flaxman/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/stephan-livera-podcast/2019-08-08-michael-flaxman/</guid><description>Name: Michael Flaxman
+Intro Marty Bent (MB): Sitting down with a man who needs no introduction on this podcast. I think you have been on four times already. I think this is number five Matt. You are worried about the future of Bitcoin. What the hell is going on? You reached out to me last week, you scaring the s*** out of me.</description></item><item><title>Matt Corallo Compact Blocks Fibre (2020-03-12)</title><link>//btctranscripts.com/chaincode-labs/chaincode-podcast/2020-03-12-matt-corallo-compact-blocks-fibre/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/chaincode-labs/chaincode-podcast/2020-03-12-matt-corallo-compact-blocks-fibre/</guid><description>Name: Matt Corallo
+Topic: Compact Blocks and FIBRE
+Location: Chaincode Labs Podcast (Episode 6)
+Date: March 12th 2020
+Video: https://www.youtube.com/watch?v=0uPDDELGjdo
+Intro Adam Jonas (AJ): Welcome Matt
+Matt Corallo (MC): Hi
+John Newbery (JN): Hi Matt
+AJ: Today we are going to do a little bit of a “This is your life Bitcoin”.
+MC: I am not dead yet.
+AJ: You have a lot of contributions over the years so there is lots to talk about but we’ll start with three.</description></item><item><title>Michael Flaxman (2019-08-08)</title><link>//btctranscripts.com/stephan-livera-podcast/2019-08-08-michael-flaxman/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/stephan-livera-podcast/2019-08-08-michael-flaxman/</guid><description>Name: Michael Flaxman
 Topic: Every Bitcoin Hardware Wallet Sucks
 Location: Stephan Livera Podcast
 Date: August 8th 2019
@@ -155,7 +186,16 @@ nix-bitcoin on GitHub: https://github.com/fort-nix/nix-bitcoin
 Transcript completed by: Stephan Livera Edited by: Michael Folkson
 Intro Stephan Livera (SL): nixbitcoindev welcome to the show.
 nixbitcoindev (NBD): Hello. Thank you for having me.
-SL: Obviously as you’re under a pseudonym don’t dox anything about yourself but can you just tell us what you’re interested in about Bitcoin and is it the computer science aspects or what aspects of it interest you?</description></item><item><title>Roy Sheinfeld Stephan Livera (2019-07-31)</title><link>//btctranscripts.com/stephan-livera-podcast/2019-07-31-roy-sheinfeld-stephan-livera/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/stephan-livera-podcast/2019-07-31-roy-sheinfeld-stephan-livera/</guid><description>Stephan Livera podcast with Roy Sheinfeld - July 31st 2019
+SL: Obviously as you’re under a pseudonym don’t dox anything about yourself but can you just tell us what you’re interested in about Bitcoin and is it the computer science aspects or what aspects of it interest you?</description></item><item><title>Pieter Wuille (2020-01-28)</title><link>//btctranscripts.com/chaincode-labs/chaincode-podcast/2020-01-28-pieter-wuille/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/chaincode-labs/chaincode-podcast/2020-01-28-pieter-wuille/</guid><description>Chaincode Labs podcast with Pieter Wuille
+Part 1: https://www.youtube.com/watch?v=s0XopkGcN9U
+Part 2: https://www.youtube.com/watch?v=Q2lXSRcacAo
+Part 1 Jonas: Welcome to the podcast
+John: Hi Pieter
+Pieter: Hello John and Jonas
+John: Thank you for being the first guest on our podcast.
+Jonas: So far the most important guest we’ve had.
+Pieter: That’s an amazing honor. Thank you so much for having me.
+John: We’re here to talk about Bitcoin and Bitcoin Core development. We have Pieter Wuille as our guest who is a Bitcoin Core contributor of many years standing.</description></item><item><title>Roy Sheinfeld Stephan Livera (2019-07-31)</title><link>//btctranscripts.com/stephan-livera-podcast/2019-07-31-roy-sheinfeld-stephan-livera/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/stephan-livera-podcast/2019-07-31-roy-sheinfeld-stephan-livera/</guid><description>Stephan Livera podcast with Roy Sheinfeld - July 31st 2019
 Podcast: https://stephanlivera.com/episode/94/
 Stephan Livera: Roy, welcome to the show.
 Roy Sheinfeld: Hey Stephan, great to be here.

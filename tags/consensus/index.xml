@@ -9,10 +9,10 @@ Date: April 16th 2020
 Video: https://www.youtube.com/watch?v=8TaY730YlMg
 Intro I’m going to talk to you today about attacking Bitcoin Core.
 Bitcoin To start with the fundamentals. As we all know Bitcoin is a money and it is different to our existing centralized solution of money because instead we have nodes that are running all around the world.
-Consensus Fundamentally what is required for this to work is the idea of consensus where all the nodes must agree on the same fundamental values.</description></item><item><title>Andreas Antonopoulos Initial Blockchain Download (2018-10-23)</title><link>//btctranscripts.com/andreas-antonopoulos/2018-10-23-andreas-antonopoulos-initial-blockchain-download/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/andreas-antonopoulos/2018-10-23-andreas-antonopoulos-initial-blockchain-download/</guid><description>Andreas Antonopoulos
+Consensus Fundamentally what is required for this to work is the idea of consensus where all the nodes must agree on the same fundamental values.</description></item><item><title>Andreas Antonopoulos - Initial Blockchain Download (2018-10-23)</title><link>//btctranscripts.com/andreas-antonopoulos/2018-10-23-andreas-antonopoulos-initial-blockchain-download/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/andreas-antonopoulos/2018-10-23-andreas-antonopoulos-initial-blockchain-download/</guid><description>Andreas Antonopoulos
 Bitcoin Q&amp;amp;A: Initial blockchain download
 Video: https://www.youtube.com/watch?v=OrYDehC-8TU
-Initial blockchain download Becca asks why does it take it so long to download the blockchain? I do have a fast internet connection and I could download 200GB in less than a hour. What Becca is talking about is what’s called the initial blockchain download or IBD which is the first synchronization of the Bitcoin node or any kind of blockchain node to its blockchain.</description></item><item><title>Andrew Poelstra Bulletproofs (2018-02-02)</title><link>//btctranscripts.com/misc/2018-02-02-andrew-poelstra-bulletproofs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/misc/2018-02-02-andrew-poelstra-bulletproofs/</guid><description>Bulletproofs
+Initial blockchain download Becca asks why does it take it so long to download the blockchain? I do have a fast internet connection and I could download 200GB in less than a hour. What Becca is talking about is what’s called the initial blockchain download or IBD which is the first synchronization of the Bitcoin node or any kind of blockchain node to its blockchain.</description></item><item><title>Andrew Poelstra - Bulletproofs (2018-02-02)</title><link>//btctranscripts.com/misc/2018-02-02-andrew-poelstra-bulletproofs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/misc/2018-02-02-andrew-poelstra-bulletproofs/</guid><description>Bulletproofs
 Andrew Poelstra (andytoshi)
 2018-02-02
 49th Milan Bitcoin meetup
@@ -35,7 +35,17 @@ slides: https://scalingbitcoin.org/hongkong2015/presentations/DAY1/1_overview_1_
 video: https://youtube.com/watch?v=aQ1--w4uEMM&amp;amp;t=1121
 bip99 https://github.com/bitcoin/bips/blob/master/bip-0099.mediawiki
 We are going to focus on consensus rules. I am going to give an introduction and then focus on controversial versus non-controversial hard-forks.
-Why do we want to classify consensus changes in the first place? Well, for one, you often have long discussions many times in Bitcoin, we don&amp;rsquo;t always share the same terminology and the same definitions, and this could lead to disagreement.</description></item><item><title>Blockchain Hub</title><link>//btctranscripts.com/w3-blockchain-workshop-2016/blockchain-hub/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/w3-blockchain-workshop-2016/blockchain-hub/</guid><description>Kenji Saito
+Why do we want to classify consensus changes in the first place? Well, for one, you often have long discussions many times in Bitcoin, we don&amp;rsquo;t always share the same terminology and the same definitions, and this could lead to disagreement.</description></item><item><title>Bitcoin Optech - Schnorr and Taproot workshop (2019-09-27)</title><link>//btctranscripts.com/misc/2019-09-27-schnorr-taproot-workshop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/misc/2019-09-27-schnorr-taproot-workshop/</guid><description>Location: Chaincode Labs, NYC
+https://bitcoinops.org/en/schnorr-taproot-workshop/
+https://github.com/bitcoinops/taproot-workshop
+https://bitcoinops.slack.com
+https://twitter.com/kanzure/status/1177697093462482949
+Run: jupyter notebook
+See also Schnorr signatures and taproot: https://diyhpl.us/wiki/transcripts/sf-bitcoin-meetup/2018-07-09-taproot-schnorr-signatures-and-sighash-noinput-oh-my/
+https://github.com/sipa/bips/blob/bip-schnorr/bip-schnorr.mediawiki
+https://github.com/sipa/bips/blob/bip-schnorr/bip-taproot.mediawiki
+https://github.com/sipa/bips/blob/bip-schnorr/bip-tapscript.mediawiki
+Why Schnorr and why taproot? Who here already feels comfortbale with Schnorr/Taproot? This is a proposed consensus change to bitcoin. When we talk about consensus changes, we often talk about tradeoffs and compromises. It would be irresponsible to say taproot has no downsides, but I think it&amp;rsquo;s important to mention it&amp;rsquo;s a clear win for bitcoin.</description></item><item><title>Blockchain Hub</title><link>//btctranscripts.com/w3-blockchain-workshop-2016/blockchain-hub/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/w3-blockchain-workshop-2016/blockchain-hub/</guid><description>Kenji Saito
 BlockchainHub
 My understanding is that there is application logic, consensus mechanism, distributed timestamp and ledger structure. With these layers, the blockchain can give total control of assets to the end. This materializes the attitude and philosophy of the internet. The intention is I think great. There is a missing link, though. It would be nice if these blockchain could manage the digital representational of physical assets.
 I have been working with real estate escrow company in Japan to work on the proof-of-concept service of the real estate trading based on blockchain.</description></item><item><title>Casper</title><link>//btctranscripts.com/stanford-blockchain-conference/2019/casper/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/stanford-blockchain-conference/2019/casper/</guid><description>Casper the friendly ghost: A &amp;ldquo;correct-by-construction&amp;rdquo; blockchain consensus protocol
@@ -94,17 +104,17 @@ Introduction This is joint work with Yonatan. I am going to talk about a DAG-bas
 Great consensus cleanup https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2019-March/016714.html
 https://twitter.com/kanzure/status/1136591286012698626
 Introduction There&amp;rsquo;s not much new to talk about. Unclear about CODESEPARATOR. You want to make it a consensus rule that transactions can&amp;rsquo;t be larger than 100 kb. No reactions to that? Alright. Fine, we&amp;rsquo;re doing it. Let&amp;rsquo;s do it. Does everyone know what this proposal is?
-Validation time for any block&amp;ndash; we were lazy about fixing this. Segwit was a first step to fixing this, by giving people a way to do this in a more efficient way.</description></item><item><title>Greg Maxwell Taproot Pace</title><link>//btctranscripts.com/greg-maxwell/greg-maxwell-taproot-pace/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/greg-maxwell/greg-maxwell-taproot-pace/</guid><description>Name: Greg Maxwell
+Validation time for any block&amp;ndash; we were lazy about fixing this. Segwit was a first step to fixing this, by giving people a way to do this in a more efficient way.</description></item><item><title>Greg Maxwell - Taproot Pace (2020-07-20)</title><link>//btctranscripts.com/greg-maxwell/2020-07-20-greg-maxwell-taproot-pace/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/greg-maxwell/2020-07-20-greg-maxwell-taproot-pace/</guid><description>Name: Greg Maxwell
 Topic: Is Taproot development moving too fast or too slow?
 Location: Reddit
-Date: August 2020
+Date: July 20, 2020
 https://www.reddit.com/r/Bitcoin/comments/hrlpnc/technical_taproot_why_activate/fyqbn8s?utm_source=share&amp;amp;utm_medium=web2x&amp;amp;context=3
 Is Taproot development moving too fast or too slow? Taproot has been discussed for 2.5 years already and by the time it would activate it will certainly at this point be over three years.
 The bulk of the Taproot proposal, other than Taproot itself and specific encoding details, is significantly older too.</description></item><item><title>Handel Practical Multisig Aggregation</title><link>//btctranscripts.com/stanford-blockchain-conference/2019/handel-practical-multisig-aggregation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/stanford-blockchain-conference/2019/handel-practical-multisig-aggregation/</guid><description>Handel: Practical multi-signature aggregation for large byzantine committees
 Nicolas Gailly
 Introduction Handle is a aggregation protocol for large scale byzantine committees. This is work with my colleagues in addition to myself.
 Why aggregate? Distributed systems often require gathering statements about large subsets of nodes. However, processing (filtering, aggregating&amp;hellip;) measurements can be a bottleneck. We want to apply some processing while collecting the measurements.
-Why byzantine? A byzantine node is a node that can be arbitrary.</description></item><item><title>John Newbery Wallet Development (2019-06-19)</title><link>//btctranscripts.com/chaincode-labs/2019-06-19-john-newbery-wallet-development/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/chaincode-labs/2019-06-19-john-newbery-wallet-development/</guid><description>Name: John Newbery
+Why byzantine? A byzantine node is a node that can be arbitrary.</description></item><item><title>John Newbery Wallet Development (2019-06-19)</title><link>//btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-19-john-newbery-wallet-development/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-19-john-newbery-wallet-development/</guid><description>Name: John Newbery
 Topic: Wallet Development in Bitcoin Core
 Location: Chaincode Labs 2019 Residency
 Date: June 19th 2019
@@ -117,7 +127,7 @@ https://twitter.com/kanzure/status/785116246257856512
 http://diyhpl.us/wiki/transcripts/scalingbitcoin/hong-kong/braiding-the-blockchain/
 Introduction Okay, hello. My name is David Vorick. I have been with bitcoin since 2011. I have been a full-time blockchain engineer since about 2014. I run an altcoin for decentralized cloud storage called Sia. Today I am going to be talking about braiding which basically means we take the straight line blockchain of bitcoin and we allow blocks to have multiple parents.</description></item><item><title>Law Enforcement And Anonymous Transactions</title><link>//btctranscripts.com/coindesk-consensus-2016/law-enforcement-and-anonymous-transactions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/coindesk-consensus-2016/law-enforcement-and-anonymous-transactions/</guid><description>Preliminary notes:
 Contact me- https://twitter.com/kanzure
-categories: [&amp;lsquo;conference&amp;rsquo;] tags: [&amp;lsquo;consensus&amp;rsquo;, &amp;lsquo;proof-of-work&amp;rsquo;] Law enforcement and anonymous transactions
+Law enforcement and anonymous transactions
 Jason Weinstein, Blockchain Alliance, moderator
 Brian Klein, Baker Marquart
 Prakash Santhana, Deloitte
@@ -146,17 +156,7 @@ Joachim Breitner
 Introduction Thanks, Byron. Glad to be here. My name is Dominic Williams. I am founder of the internet computer project at Dfinity Foundation. Last year we talked about consensus protocols. Today we are talking about tools for building on top of the internet computer which is great news and shows the progress we have made. I&amp;rsquo;m going to give some introductory context, and then our senior researcher from our languages division will talk about Motoko.</description></item><item><title>Network Topologies And Their Scalability Implications On Decentralized Off Chain Networks</title><link>//btctranscripts.com/scalingbitcoin/hong-kong-2015/network-topologies-and-their-scalability-implications-on-decentralized-off-chain-networks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/scalingbitcoin/hong-kong-2015/network-topologies-and-their-scalability-implications-on-decentralized-off-chain-networks/</guid><description>Joseph Poon
 slides: https://scalingbitcoin.org/hongkong2015/presentations/DAY2/1_layer2_3_poon.pdf
 video: https://www.youtube.com/watch?v=fst1IK_mrng&amp;amp;t=1h29m38s
-LN transactions are real Bitcoin transactions. These are real zero-confirmation transactions. What&amp;rsquo;s interesting is that the original idea behind Bitcoin was solving the double-spending problem. When you move off-chain and off-block, you sort of have this opposite situation where you use double-spends to your advantage, spending from the same output, except you have this global consensus of block but you have this local ordering that you use through this lightning system of penalties through which you can update the balances between two people.</description></item><item><title>Notes</title><link>//btctranscripts.com/bitcoinops/schnorr-taproot-workshop-2019/notes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/bitcoinops/schnorr-taproot-workshop-2019/notes/</guid><description>Schnorr and taproot workshop 2019 NYC
-https://bitcoinops.org/en/schnorr-taproot-workshop/
-https://github.com/bitcoinops/taproot-workshop
-https://bitcoinops.slack.com
-https://twitter.com/kanzure/status/1177697093462482949
-Run: jupyter notebook
-See also Schnorr signatures and taproot: https://diyhpl.us/wiki/transcripts/sf-bitcoin-meetup/2018-07-09-taproot-schnorr-signatures-and-sighash-noinput-oh-my/
-https://github.com/sipa/bips/blob/bip-schnorr/bip-schnorr.mediawiki
-https://github.com/sipa/bips/blob/bip-schnorr/bip-taproot.mediawiki
-https://github.com/sipa/bips/blob/bip-schnorr/bip-tapscript.mediawiki
-Why Schnorr and why taproot? Who here already feels comfortbale with Schnorr/Taproot? This is a proposed consensus change to bitcoin. When we talk about consensus changes, we often talk about tradeoffs and compromises. It would be irresponsible to say taproot has no downsides, but I think it&amp;rsquo;s important to mention it&amp;rsquo;s a clear win for bitcoin.</description></item><item><title>P2P Encryption</title><link>//btctranscripts.com/breaking-bitcoin/2019/p2p-encryption/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/breaking-bitcoin/2019/p2p-encryption/</guid><description>bip324: v2 message transport protocol
+LN transactions are real Bitcoin transactions. These are real zero-confirmation transactions. What&amp;rsquo;s interesting is that the original idea behind Bitcoin was solving the double-spending problem. When you move off-chain and off-block, you sort of have this opposite situation where you use double-spends to your advantage, spending from the same output, except you have this global consensus of block but you have this local ordering that you use through this lightning system of penalties through which you can update the balances between two people.</description></item><item><title>P2P Encryption</title><link>//btctranscripts.com/breaking-bitcoin/2019/p2p-encryption/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/breaking-bitcoin/2019/p2p-encryption/</guid><description>bip324: v2 message transport protocol
 Jonas Schnelli
 https://twitter.com/kanzure/status/1137312478373851136
 slides: https://twitter.com/_jonasschnelli_/status/1137389541512351749
@@ -183,7 +183,7 @@ https://eprint.iacr.org/2018/990
 Introduction Good morning. I am here to talk to you about Quisquis which is a new design for an anonymous cryptocurrency. This talk is going to focus on the transaction layer. We don&amp;rsquo;t talk about consensus or smart contracts or higher applications.
 Outline I am going to talk about bitcoin and anonymity. I&amp;rsquo;ll talk about existing cryptocurrencies that claim to have anonymity and about their limitations.</description></item><item><title>Reaching Consensus Open Blockchains</title><link>//btctranscripts.com/coindesk-consensus-2016/reaching-consensus-open-blockchains/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/coindesk-consensus-2016/reaching-consensus-open-blockchains/</guid><description>Preliminary notes:
 Contact me- https://twitter.com/kanzure
-categories: [&amp;lsquo;conference&amp;rsquo;] tags: [&amp;lsquo;consensus&amp;rsquo;] Reaching consensus on open blockchains
+Reaching consensus on open blockchains
 Moderator- Pindar Wong
 Gavin Andresen, MIT Digital Currency Initiative
 Vitalik Buterin, Ethereum Foundation
@@ -219,7 +219,7 @@ Disclaimer It&amp;rsquo;s not at all certain that a bip-taproot soft-fork will a
 Greg Sanders (instagibbs)
 https://twitter.com/kanzure/status/785034301272420353
 https://www.youtube.com/watch?v=_Z0ID-0DOnc
-categories: [&amp;lsquo;conference&amp;rsquo;] tags: [&amp;lsquo;segwit&amp;rsquo;, &amp;lsquo;consensus&amp;rsquo;, &amp;lsquo;forks&amp;rsquo;, &amp;lsquo;security&amp;rsquo;, &amp;lsquo;lightning&amp;rsquo;] Hi. My name is Greg Sanders. I will be giving a talk about segwit in bitcoin lessons learned. I will also give some takeaways that I think are important. A little bit about myself. I work on Elements Project at Blockstream. I was a reviewer on segwit for Bitcoin Core. How do we scale protocol development?</description></item><item><title>Sidechains And Federation Models</title><link>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/sidechains-and-federation-models/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/sidechains-and-federation-models/</guid><description>Sidechains and federation models
+Hi. My name is Greg Sanders. I will be giving a talk about segwit in bitcoin lessons learned. I will also give some takeaways that I think are important. A little bit about myself. I work on Elements Project at Blockstream. I was a reviewer on segwit for Bitcoin Core. How do we scale protocol development? How do we scale review and keep things safe?</description></item><item><title>Sidechains And Federation Models</title><link>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/sidechains-and-federation-models/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/sidechains-and-federation-models/</guid><description>Sidechains and federation models
 Greg Sanders (instagibbs)
 https://twitter.com/kanzure/status/1048008467871666178
 Introduction The name &amp;ldquo;sidechain&amp;rdquo; is overloaded. My favorite private sidechain is my coach. That&amp;rsquo;s my private sidechain. Hopefully I can explain the high-level concepts of a sidechain, at a 10,000 foot view. What are these? What do they give you?

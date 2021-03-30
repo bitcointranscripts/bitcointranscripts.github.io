@@ -42,7 +42,7 @@ video: https://www.youtube.com/watch?v=f33HlAvJUFw
 slides: https://www.dropbox.com/s/9kt32069hoxmgnt/john-newbery-bitcoincore0.17.pptx
 https://twitter.com/kanzure/status/1031960170027536384
 Introduction I am John Newbery. I work on Bitcoin Core. This talk is going to be mostly about Bitcoin Core 0.17 which was branched on Monday. Hopefully the final release will be in the next couple of weeks.
-whoami I live in New York and work at Chaincode Labs. I&amp;rsquo;m not actually a native born New Yorker. It&amp;rsquo;s nice to be back in London and talking with you guys about bitcoin.</description></item><item><title>John Light Bitcoin Full Nodes (2018-07-23)</title><link>//btctranscripts.com/london-bitcoin-devs/2018-07-23-john-light-bitcoin-full-nodes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/london-bitcoin-devs/2018-07-23-john-light-bitcoin-full-nodes/</guid><description>Name: John Light
+whoami I live in New York and work at Chaincode Labs. I&amp;rsquo;m not actually a native born New Yorker. It&amp;rsquo;s nice to be back in London and talking with you guys about bitcoin.</description></item><item><title>John Light - Bitcoin Full Nodes (2018-07-23)</title><link>//btctranscripts.com/london-bitcoin-devs/2018-07-23-john-light-bitcoin-full-nodes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/london-bitcoin-devs/2018-07-23-john-light-bitcoin-full-nodes/</guid><description>Name: John Light
 Topic: Bitcoin Full Nodes
 Location: London Bitcoin Devs
 Date: July 23rd 2018
@@ -74,21 +74,21 @@ Topic: Grokking Bitcoin by Kalle Rosenbaum
 Location: London BitDevs (online)
 Date: April 22nd 2020
 The conversation has been anonymized to protect the identity of the participants.
-Discussion of Hopin video conferencing software We tested this a few weeks back for a German meetup and it was pretty nice. It was reliable and it worked. Of course it is not open source and Jitsi could be much better. We were quite happy with the experience.</description></item><item><title>Socratic Seminar Bip Schnorr (2020-06-16)</title><link>//btctranscripts.com/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/</guid><description>Name: Socratic Seminar
-Topic: BIP Schnorr (BIP 340)
-Location: London BitDevs (online)
-Date: June 16th 2020
-Video: https://www.youtube.com/watch?v=uE3lLsf38O4
-Pastebin of the resources discussed: https://pastebin.com/uyktht33
-August 2020 update: Since this Socratic on BIP Schnorr there has been a proposed change to the BIP revisting the squaredness tiebreaker for the R point.
-The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed.</description></item><item><title>Socratic Seminar Bip Taproot (2020-07-21)</title><link>//btctranscripts.com/london-bitcoin-devs/2020-07-21-socratic-seminar-bip-taproot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/london-bitcoin-devs/2020-07-21-socratic-seminar-bip-taproot/</guid><description>Name: Socratic Seminar
+Discussion of Hopin video conferencing software We tested this a few weeks back for a German meetup and it was pretty nice. It was reliable and it worked. Of course it is not open source and Jitsi could be much better. We were quite happy with the experience.</description></item><item><title>Socratic Seminar - BIP Taproot (2020-07-21)</title><link>//btctranscripts.com/london-bitcoin-devs/2020-07-21-socratic-seminar-bip-taproot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/london-bitcoin-devs/2020-07-21-socratic-seminar-bip-taproot/</guid><description>Name: Socratic Seminar
 Topic: BIP Taproot (BIP 341)
 Location: London BitDevs (online)
 Date: July 21st 2020
 Video: https://www.youtube.com/watch?v=bPcguc108QM
 Pastebin of the resources discussed: https://pastebin.com/vsT3DNqW
 Transcript of Socratic Seminar on BIP-Schnorr: https://diyhpl.us/wiki/transcripts/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/
-The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.</description></item><item><title>Socratic Seminar Coinswap (2020-06-23)</title><link>//btctranscripts.com/london-bitcoin-devs/2020-06-23-socratic-seminar-coinswap/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/london-bitcoin-devs/2020-06-23-socratic-seminar-coinswap/</guid><description>Name: Socratic Seminar
+The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.</description></item><item><title>Socratic Seminar Bip Schnorr (2020-06-16)</title><link>//btctranscripts.com/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/</guid><description>Name: Socratic Seminar
+Topic: BIP Schnorr (BIP 340)
+Location: London BitDevs (online)
+Date: June 16th 2020
+Video: https://www.youtube.com/watch?v=uE3lLsf38O4
+Pastebin of the resources discussed: https://pastebin.com/uyktht33
+August 2020 update: Since this Socratic on BIP Schnorr there has been a proposed change to the BIP revisting the squaredness tiebreaker for the R point.
+The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed.</description></item><item><title>Socratic Seminar Coinswap (2020-06-23)</title><link>//btctranscripts.com/london-bitcoin-devs/2020-06-23-socratic-seminar-coinswap/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/london-bitcoin-devs/2020-06-23-socratic-seminar-coinswap/</guid><description>Name: Socratic Seminar
 Topic: CoinSwap
 Location: London BitDevs (online)
 Date: June 23rd 2020

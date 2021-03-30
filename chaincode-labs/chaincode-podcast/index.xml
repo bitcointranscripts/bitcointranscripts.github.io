@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Chaincode Podcast on ₿itcoin Transcripts</title><link>//btctranscripts.com/chaincode-labs/chaincode-podcast/</link><description>Recent content in Chaincode Podcast on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="//btctranscripts.com/chaincode-labs/chaincode-podcast/index.xml" rel="self" type="application/rss+xml"/><item><title>Carl Dong - Reproducible Builds (2020-11-30)</title><link>//btctranscripts.com/chaincode-labs/chaincode-podcast/2020-11-30-carl-dong-reproducible-builds/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/chaincode-labs/chaincode-podcast/2020-11-30-carl-dong-reproducible-builds/</guid><description>Name: Carl Dong
+Topic: Reproducible Build Systems
+Location: Chaincode Labs Podcast (Episode 9 and 10)
+Date: November 30th 2020
+Video: https://www.youtube.com/watch?v=Y5Gfli3x6rI
+Carl Dong’s presentation at Breaking Bitcoin 2019 on “Bitcoin Build System Security”: https://diyhpl.us/wiki/transcripts/breaking-bitcoin/2019/bitcoin-build-system/
+Intro Adam Jonas (AJ): Welcome to the Chaincode podcast Carl.
+Carl Dong (CD): Hello.
+AJ: You know we’ve been doing this podcast for a while now. How come you haven’t been on the show yet?
+CD: We’ve been at home.</description></item><item><title>Jeremy Rubin CTV (2020-02-11)</title><link>//btctranscripts.com/chaincode-labs/chaincode-podcast/2020-02-11-jeremy-rubin-ctv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/chaincode-labs/chaincode-podcast/2020-02-11-jeremy-rubin-ctv/</guid><description>Name: Jeremy Rubin
+Topic: CHECKTEMPLATEVERIFY
+Location: Chaincode Labs Podcast
+Date: February 11th 2020
+Video: https://www.youtube.com/watch?v=Lqcpk5o1Y2E
+CTV BIP review workshop transcript: https://diyhpl.us/wiki/transcripts/ctv-bip-review-workshop/
+Intro Jonas: Welcome to the podcast Jeremy.
+Jeremy: Thanks for having me on.
+Jonas: I think to start us off tell us a bit about your background, how you got into Bitcoin and we&amp;rsquo;ll take it from there.
+Jeremy: I first heard about Bitcoin in 2011. I was interning at MIT during high school and I was doing what interns do which is read Hacker News.</description></item><item><title>Matt Corallo Compact Blocks Fibre (2020-03-12)</title><link>//btctranscripts.com/chaincode-labs/chaincode-podcast/2020-03-12-matt-corallo-compact-blocks-fibre/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/chaincode-labs/chaincode-podcast/2020-03-12-matt-corallo-compact-blocks-fibre/</guid><description>Name: Matt Corallo
+Topic: Compact Blocks and FIBRE
+Location: Chaincode Labs Podcast (Episode 6)
+Date: March 12th 2020
+Video: https://www.youtube.com/watch?v=0uPDDELGjdo
+Intro Adam Jonas (AJ): Welcome Matt
+Matt Corallo (MC): Hi
+John Newbery (JN): Hi Matt
+AJ: Today we are going to do a little bit of a “This is your life Bitcoin”.
+MC: I am not dead yet.
+AJ: You have a lot of contributions over the years so there is lots to talk about but we’ll start with three.</description></item><item><title>Pieter Wuille (2020-01-28)</title><link>//btctranscripts.com/chaincode-labs/chaincode-podcast/2020-01-28-pieter-wuille/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/chaincode-labs/chaincode-podcast/2020-01-28-pieter-wuille/</guid><description>Chaincode Labs podcast with Pieter Wuille
+Part 1: https://www.youtube.com/watch?v=s0XopkGcN9U
+Part 2: https://www.youtube.com/watch?v=Q2lXSRcacAo
+Part 1 Jonas: Welcome to the podcast
+John: Hi Pieter
+Pieter: Hello John and Jonas
+John: Thank you for being the first guest on our podcast.
+Jonas: So far the most important guest we’ve had.
+Pieter: That’s an amazing honor. Thank you so much for having me.
+John: We’re here to talk about Bitcoin and Bitcoin Core development. We have Pieter Wuille as our guest who is a Bitcoin Core contributor of many years standing.</description></item></channel></rss>

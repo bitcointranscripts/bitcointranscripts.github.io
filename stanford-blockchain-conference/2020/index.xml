@@ -6,7 +6,7 @@ Matteo Maffei
 https://diyhpl.us/wiki/transcripts/scalingbitcoin/tel-aviv-2019/atomic-multi-channel-updates/
 https://twitter.com/kanzure/status/1230929981011660800
 Introduction Matteo got sick and couldn&amp;rsquo;t come. His coauthors couldn&amp;rsquo;t come either. So a talk was pre-recorded and will be played now. Our work is about realizing atomic multi-channel updates with constant collateral in bitcoin.
-Scalability issues We all know that blockchains have scalability issues. Public verifiability means we have to store each transaction on the blockchain.</description></item><item><title>Attacking Evm Resource Metering</title><link>//btctranscripts.com/stanford-blockchain-conference/2020/attacking-evm-resource-metering/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/stanford-blockchain-conference/2020/attacking-evm-resource-metering/</guid><description>Broken Metre: Attacking resource metering in EVM
+Scalability issues We all know that blockchains have scalability issues. Public verifiability means we have to store each transaction on the blockchain.</description></item><item><title>Attacking EVM Resource Metering (2019-02-19)</title><link>//btctranscripts.com/stanford-blockchain-conference/2020/attacking-evm-resource-metering/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//btctranscripts.com/stanford-blockchain-conference/2020/attacking-evm-resource-metering/</guid><description>Broken Metre: Attacking resource metering in EVM
 Daniel Perez, Benjamin Livshits
 https://twitter.com/kanzure/status/1230222221110468609
 https://arxiv.org/abs/1909.07220
