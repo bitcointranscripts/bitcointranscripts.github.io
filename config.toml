@@ -17,9 +17,9 @@ DefaultContentLanguage = "en"
     title = "Transcripciones de ₿itcoin"
     languageName = "Español"
     weight = 2
-  [languages.fr]
-    title = "Transcriptions ₿itcoin"
-    languageName = "Française"
+  [languages.pt]
+    title = "Transcrições de ₿itcoin"
+    languageName = "Português"
     weight = 2
 
 [outputs]
