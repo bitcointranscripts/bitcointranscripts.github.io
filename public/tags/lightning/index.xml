@@ -234,6 +234,18 @@ SL: I wanted to chat with you about a bunch of stuff that you’ve been doing. W
     </item>
     
     <item>
+      <title>Christian Decker - Onion Routing Deep Dive (2019-06-25)</title>
+      <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-25-christian-decker-onion-routing-deep-dive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-25-christian-decker-onion-routing-deep-dive/</guid>
+      <description>Name: Dr. Christian Decker
+Location: Chaincode Residency – Summer 2019
+Video: https://youtu.be/D4kX0gR-H0Y
+Onion Routing Deep Dive But we&amp;rsquo;ve not seen exactly why we are using an onion, or why we chose this construction of an onion and how this construction of an onion actually looks like. So my goal right now is to basically walk you through the iterations that onion routing packets have done so far, and why we chose this construction we have here.</description>
+    </item>
+    
+    <item>
       <title>Conner Fromknecht - Lnd 0.6 Beta (2019-05-02)</title>
       <link>https://btctranscripts.com/sf-bitcoin-meetup/2019-05-02-conner-fromknecht-lnd-0.6-beta/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -339,6 +351,23 @@ Video: https://www.youtube.com/watch?v=qX4Z3JY1094
 Slides: https://lightningresidency.com/assets/presentations/Ou_Bootstrapping_and_Maintaining_a_Lightning_Node.pdf
 Intro My name ie Elaine. I’ll talk about bootstrapping and maintaining a lightning node. Pretty much all of you have probably already set up a node so this should all be review. You guys will probably know more about this than I do.
 Bootstrapping and Maintaining a Lightning Node We’ll start with an overview of how routing works just to understand what the nodes are trying to do and from there we’ll step back and look at ways of finding peers and getting incoming channels and maintaining capacity.</description>
+    </item>
+    
+    <item>
+      <title>Fabrice Drouin - Base and Transport Layers of the Lightning Network (2019-06-24)</title>
+      <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-24-fabrice-drouin-base-and-transport-layers-of-lightning-network/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-24-fabrice-drouin-base-and-transport-layers-of-lightning-network/</guid>
+      <description>Name: Fabrice Drouin
+Date: 2019-06-24
+Topic: Base and Transport Layers of the Lightning Network
+Location: Chaincode Labs Lightning Residency 2019
+Video: https://www.youtube.com/watch?v=wyri7cc83kQ
+Slides: https://residency.chaincode.com/presentations/lightning/Base_Transport.pdf
+Introduction Fabrice: The base and transport layer, almost everything was already introduced this morning so it&amp;rsquo;s going to be very quick. So have you visited the lightning repo on GitHub? Who hasn&amp;rsquo;t?
+Okay, good. So you&amp;rsquo;ve seen all this? That was a test.
+We&amp;rsquo;ve covered almost everything this morning.</description>
     </item>
     
     <item>

@@ -3,12 +3,14 @@
 
 <h1>{{ .Title }}</h1>
 
-{{ if .Params.transcript_by }}
-    <p><i>Transcript by: {{ .Params.transcript_by }}</i></p>
+<p><i>{{ i18n "transcript_by" | title }}: {{ .Params.transcript_by }}</i></p>
+
+{{ if .Params.translation_by }}
+    <p><i>{{ i18n "translation_by" | title }}: {{ .Params.translation_by }}</i></p>
 {{ end }}
 
 {{ if (.GetTerms "tags") }}
-    <p>Tags:
+    <p>{{ i18n "tags" | title }}:
     {{ range $i, $e := .Params.tags -}}
         {{- if $i -}}, {{ end -}}
         <a href='{{ "/tags/" | relLangURL }}{{ . | urlize }}'>{{ $e | humanize }}</a>
@@ -17,7 +19,7 @@
 {{ end }}
 
 {{ if (.GetTerms "categories") }}
-    <p>Category:
+    <p>{{ i18n "category" | title }}:
     {{ range $i, $e := .Params.categories -}}
         {{- if $i -}}, {{ end -}}
         <a href='{{ "/categories/" | relLangURL }}{{ . | urlize }}'>{{ $e | humanize }}</a>

@@ -1,6 +1,5 @@
 baseURL = "https://btctranscripts.com/"
 languageCode = "en-us"
-title = "₿itcoin Transcripts"
 
 theme = "ace-documentation"
 orderSectionsby = "title"
