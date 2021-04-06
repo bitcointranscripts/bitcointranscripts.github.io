@@ -12,6 +12,12 @@ For install instructions, take a look at the [Hugo install instructions](https:/
 - Run `hugo server`
 - Go to `http://localhost:1313`
 
+## i18n
+
+All i18n snippets can be found in the `/i18n` folder. Pre-configured languages are currently Spanish and Portuguese. If you'd like to propose a new language, you can do so by modifying the [site config](https://github.com/bitcointranscripts/bitcointranscripts.github.io/blob/master/config.toml) and translating the appropraite [i18n file](https://github.com/bitcointranscripts/bitcointranscripts.github.io/blob/master/i18n).
+
+We'd love transcripts in other languages so we've made every effort to make i18n as easy as possible.
+
 ## Attributions
 
 This project was based on [diyhpluswiki](https://github.com/kanzure/diyhpluswiki) and would not be possible without the many years of work by [kanzure](https://github.com/kanzure).

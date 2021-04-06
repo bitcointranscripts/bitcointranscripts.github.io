@@ -922,7 +922,7 @@
 {
 	"uri": "/chaincode-labs/chaincode-residency/",
 	"title": "Chaincode Residency",
-	"content": " Alex Bosworth - Building Lightning Applications (2018-10-22)   Alex Bosworth - Channel Management (2018-10-22)   Alex Bosworth - Lightning Protocol (2018-10-22)   Amiti Uttarwar - Transaction Rebroadcast (2019-09-09)   Christian Decker - C-Lightning API (2018-10-24)   Christian Decker - Eltoo (2019-06-25)   Elaine Ou - Bootstrapping Lightning Node (2018-10-22)   Elichai Turkel - Schnorr Signatures (2019-08-16)   Ethan Heilman Network Partitioning Attacks (2019-06-12)   Fabian Jahr - Debugging …"
+	"content": " Alex Bosworth - Building Lightning Applications (2018-10-22)   Alex Bosworth - Channel Management (2018-10-22)   Alex Bosworth - Lightning Protocol (2018-10-22)   Amiti Uttarwar - Transaction Rebroadcast (2019-09-09)   Christian Decker - C-Lightning API (2018-10-24)   Christian Decker - Eltoo (2019-06-25)   Christian Decker - Onion Routing Deep Dive (2019-06-25)   Elaine Ou - Bootstrapping Lightning Node (2018-10-22)   Elichai Turkel - Schnorr Signatures (2019-08-16)   Ethan Heilman Network …"
 },
 {
 	"uri": "/scalingbitcoin/stanford-2017/changes-without-unanimous-consent/",
@@ -973,6 +973,11 @@
 	"uri": "/stephan-livera-podcast/2020-08-13-christian-decker-lightning-topics/",
 	"title": "Christian Decker - Lightning Topics (2020-08-13)",
 	"content": "Name: Christian Decker\nTopic: ANYPREVOUT, MPP, Mitigating Lightning Attacks\nLocation: Stephan Livera Podcast\nDate: August 13th 2020\nAudio: https://stephanlivera.com/episode/200/\nTranscript completed by: Stephan Livera Edited by: Michael Folkson\nLatest ANYPREVOUT update ANYPREVOUT BIP (BIP 118): https://github.com/ajtowns/bips/blob/bip-anyprevout/bip-0118.mediawiki\nStephan Livera (SL): Christian welcome back to the show.\nChristian Decker (CD): Hey Stephan, thanks for having me.\nSL: I wanted to …"
+},
+{
+	"uri": "/chaincode-labs/chaincode-residency/2019-06-25-christian-decker-onion-routing-deep-dive/",
+	"title": "Christian Decker - Onion Routing Deep Dive (2019-06-25)",
+	"content": "Name: Dr. Christian Decker\nLocation: Chaincode Residency – Summer 2019\nVideo: https://youtu.be/D4kX0gR-H0Y\nOnion Routing Deep Dive But we\u0026amp;rsquo;ve not seen exactly why we are using an onion, or why we chose this construction of an onion and how this construction of an onion actually looks like. So my goal right now is to basically walk you through the iterations that onion routing packets have done so far, and why we chose this construction we have here.\nSo, just to be funny, I have once again …"
 },
 {
 	"uri": "/w3-blockchain-workshop-2016/christopher-allen/",
@@ -1483,6 +1488,11 @@
 	"uri": "/advancing-bitcoin/2020/2020-02-07-fabian-jahr-debugging-workshop/",
 	"title": "Fabian Jahr - Debugging Workshop (2020-02-07)",
 	"content": "Name: Fabian Jahr\nTopic: Debugging Bitcoin Core Workshop\nLocation: Advancing Bitcoin\nDate: February 7th 2020\nVideo: No video was posted online\nFabian presentation at Bitcoin Edge Dev++ 2019: https://diyhpl.us/wiki/transcripts/scalingbitcoin/tel-aviv-2019/edgedevplusplus/debugging-bitcoin/\nDebugging Bitcoin Core doc: https://github.com/fjahr/debugging_bitcoin\nDebugging Bitcoin Core Workshop: https://gist.github.com/fjahr/5bf65daaf9ff189a0993196195005386\nIntroduction First of all welcome to the …"
+},
+{
+	"uri": "/chaincode-labs/chaincode-residency/2019-06-24-fabrice-drouin-base-and-transport-layers-of-lightning-network/",
+	"title": "Fabrice Drouin - Base and Transport Layers of the Lightning Network (2019-06-24)",
+	"content": "Name: Fabrice Drouin\nDate: 2019-06-24\nTopic: Base and Transport Layers of the Lightning Network\nLocation: Chaincode Labs Lightning Residency 2019\nVideo: https://www.youtube.com/watch?v=wyri7cc83kQ\nSlides: https://residency.chaincode.com/presentations/lightning/Base_Transport.pdf\nIntroduction Fabrice: The base and transport layer, almost everything was already introduced this morning so it\u0026amp;rsquo;s going to be very quick. So have you visited the lightning repo on GitHub? Who hasn\u0026amp;rsquo;t?\nOkay, …"
 },
 {
 	"uri": "/misc/failures-of-secret-key-cryptography/",
@@ -2775,6 +2785,11 @@
 	"content": "On the security and performance of proof-of-work blockchains\nArthur Gervais\nhttps://twitter.com/kanzure/status/785066988532068352\nAs most of you might know, in bitcoin and blockchains, the information is very important. Every node should receive the blocks in the network. Increase latency and risk network partition. If individual peers do not get the information, they could be victims of selfish mining and so on. Multiple blockchains has been proposed, multiple reparameterizations like litecoin, …"
 },
 {
+	"uri": "/tags/onion/",
+	"title": "onion",
+	"content": ""
+},
+{
 	"uri": "/scalingbitcoin/milan-2016/onion-routing-in-lightning/",
 	"title": "Onion Routing In Lightning",
 	"content": "Onion routing in lightning network\nOlaoluwa Osuntokun (roasbeef)\nhttp://lightning.network/\nhttps://twitter.com/kanzure/status/784742298089299969\nvideo: https://www.youtube.com/watch?v=Gzg_u9gHc5Q#t=2m44s\nPrivacy-preserving decentralized micropayments\nWe\u0026amp;rsquo;re excited about lightning because the second layer could be an important opportunity to improve privacy and fungibility. Also, there might be timing information in the payments themselves.\nDistributed set of onion routers (OR, cite OG …"
@@ -3698,6 +3713,11 @@
 	"uri": "/breaking-bitcoin/2017/spam-attacks-analysis/",
 	"title": "Spam Attacks Analysis",
 	"content": "Hunting moby dick, an analysis of 2015-2016 spam attacks\nAntoine Le Calvez (khannib)\nvideo: https://www.youtube.com/watch?v=eCE2OzKIab8\u0026amp;amp;t=1h12m10s\nhttps://twitter.com/kanzure/status/1005525351517360129\nIntroduction Hi. Thanks for Breaking Bitcoin to invite me to speak and to present this research on Moby Dick.\nMoby Dick and spam attacks\u0026amp;ndash; let me explain, Moby Dick is an entity that spammed or sent a lot of transactions in bitcoin in 2015. We did some analysis on who this person is or …"
+},
+{
+	"uri": "/tags/sphinx/",
+	"title": "sphinx",
+	"content": ""
 },
 {
 	"uri": "/stanford-blockchain-conference/2019/spork-probabilistic-bitcoin-soft-forks/",
