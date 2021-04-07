@@ -72,6 +72,22 @@ Onion Routing Deep Dive But we&amp;rsquo;ve not seen exactly why we are using an
     </item>
     
     <item>
+      <title>Christian Decker - Rendezvous Routing (2019-06-28)</title>
+      <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-28-christian-decker-rendezvous-routing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-28-christian-decker-rendezvous-routing/</guid>
+      <description>Name: Christian Decker
+Topic: Rendezvous Routing (Lightning Network)
+Date: 2019-06-28
+Location: Chaincode Residency 2019
+Video: https://youtu.be/Ms2WwRzBdkM
+Slides: https://residency.chaincode.com/presentations/lightning/Rendezvous_Routing.pdf
+Transcript by: Caralie Chrisco and Davius Parvin
+Introduction Okay, the second part is rendezvous routing. I basically already gave away the trick but I hope you all forgot. So what is rendezvous routing? Anybody have a good explanation of what we are trying to do here? So we have someplace where we meet in the middle, and I don&amp;rsquo;t have to know where you live, you don&amp;rsquo;t have to know where I live, we&amp;rsquo;re all really private.</description>
+    </item>
+    
+    <item>
       <title>Day 1 Group Summaries</title>
       <link>https://btctranscripts.com/scalingbitcoin/milan-2016/day-1-group-summaries/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

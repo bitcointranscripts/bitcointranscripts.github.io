@@ -747,6 +747,16 @@
   
   <url>
     <loc>https://btctranscripts.com/chaincode-labs/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/chaincode-labs/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/chaincode-labs/"
+                />
   </url>
   
   <url>
@@ -755,6 +765,16 @@
   
   <url>
     <loc>https://btctranscripts.com/chaincode-labs/chaincode-residency/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/chaincode-labs/chaincode-residency/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/chaincode-labs/chaincode-residency/"
+                />
   </url>
   
   <url>
@@ -787,6 +807,16 @@
   
   <url>
     <loc>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-25-christian-decker-eltoo/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/chaincode-labs/chaincode-residency/2019-06-25-christian-decker-eltoo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-25-christian-decker-eltoo/"
+                />
   </url>
   
   <url>
@@ -799,6 +829,10 @@
   
   <url>
     <loc>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-25-christian-decker-onion-routing-deep-dive/</loc>
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-28-christian-decker-rendezvous-routing/</loc>
   </url>
   
   <url>
@@ -1147,6 +1181,16 @@
   
   <url>
     <loc>https://btctranscripts.com/tags/eltoo/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/tags/eltoo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/tags/eltoo/"
+                />
   </url>
   
   <url>
@@ -1427,6 +1471,16 @@
   
   <url>
     <loc>https://btctranscripts.com/categories/hackathon/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://btctranscripts.com/pt/categories/hackathon/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/categories/hackathon/"
+                />
   </url>
   
   <url>
@@ -1859,6 +1913,21 @@
   
   <url>
     <loc>https://btctranscripts.com/tags/lightning/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/tags/lightning/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://btctranscripts.com/pt/tags/lightning/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/tags/lightning/"
+                />
   </url>
   
   <url>
@@ -1875,6 +1944,16 @@
   
   <url>
     <loc>https://btctranscripts.com/lightning-hack-day/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://btctranscripts.com/pt/lightning-hack-day/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/lightning-hack-day/"
+                />
   </url>
   
   <url>
@@ -2419,6 +2498,16 @@
   
   <url>
     <loc>https://btctranscripts.com/tags/privacy/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://btctranscripts.com/pt/tags/privacy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/tags/privacy/"
+                />
   </url>
   
   <url>
@@ -2659,6 +2748,16 @@
   
   <url>
     <loc>https://btctranscripts.com/tags/scalability/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://btctranscripts.com/pt/tags/scalability/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/tags/scalability/"
+                />
   </url>
   
   <url>
@@ -2743,6 +2842,16 @@
   
   <url>
     <loc>https://btctranscripts.com/tags/security/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://btctranscripts.com/pt/tags/security/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/tags/security/"
+                />
   </url>
   
   <url>
@@ -2791,6 +2900,16 @@
   
   <url>
     <loc>https://btctranscripts.com/lightning-hack-day/2020-05-09-sergei-tikhomirov-lightning-privacy/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://btctranscripts.com/pt/lightning-hack-day/2020-05-09-sergei-tikhomirov-lightning-privacy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/lightning-hack-day/2020-05-09-sergei-tikhomirov-lightning-privacy/"
+                />
   </url>
   
   <url>
@@ -3490,6 +3609,10 @@
   
   <url>
     <loc>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/zkvm/</loc>
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/categories/residency/</loc>
   </url>
   
   <url>
