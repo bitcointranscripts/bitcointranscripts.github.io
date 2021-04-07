@@ -22,6 +22,81 @@
   </url>
   
   <url>
+    <loc>https://btctranscripts.com/es/chaincode-labs/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/chaincode-labs/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/chaincode-labs/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/es/chaincode-labs/chaincode-residency/2019-06-25-christian-decker-eltoo/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-25-christian-decker-eltoo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/chaincode-labs/chaincode-residency/2019-06-25-christian-decker-eltoo/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/es/tags/eltoo/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/tags/eltoo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/tags/eltoo/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/es/tags/lightning/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/tags/lightning/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://btctranscripts.com/pt/tags/lightning/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/tags/lightning/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/es/chaincode-labs/chaincode-residency/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/chaincode-labs/chaincode-residency/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/chaincode-labs/chaincode-residency/"
+                />
+  </url>
+  
+  <url>
     <loc>https://btctranscripts.com/es/tags/</loc>
     <xhtml:link
                 rel="alternate"

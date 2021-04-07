@@ -922,7 +922,7 @@
 {
 	"uri": "/chaincode-labs/chaincode-residency/",
 	"title": "Chaincode Residency",
-	"content": " Alex Bosworth - Building Lightning Applications (2018-10-22)   Alex Bosworth - Channel Management (2018-10-22)   Alex Bosworth - Lightning Protocol (2018-10-22)   Amiti Uttarwar - Transaction Rebroadcast (2019-09-09)   Christian Decker - C-Lightning API (2018-10-24)   Christian Decker - Eltoo (2019-06-25)   Christian Decker - Onion Routing Deep Dive (2019-06-25)   Elaine Ou - Bootstrapping Lightning Node (2018-10-22)   Elichai Turkel - Schnorr Signatures (2019-08-16)   Ethan Heilman Network …"
+	"content": " Alex Bosworth - Building Lightning Applications (2018-10-22)   Alex Bosworth - Channel Management (2018-10-22)   Alex Bosworth - Lightning Protocol (2018-10-22)   Amiti Uttarwar - Transaction Rebroadcast (2019-09-09)   Christian Decker - C-Lightning API (2018-10-24)   Christian Decker - Eltoo (2019-06-25)   Christian Decker - Onion Routing Deep Dive (2019-06-25)   Christian Decker - Rendezvous Routing (2019-06-28)   Elaine Ou - Bootstrapping Lightning Node (2018-10-22)   Elichai Turkel - …"
 },
 {
 	"uri": "/scalingbitcoin/stanford-2017/changes-without-unanimous-consent/",
@@ -978,6 +978,11 @@
 	"uri": "/chaincode-labs/chaincode-residency/2019-06-25-christian-decker-onion-routing-deep-dive/",
 	"title": "Christian Decker - Onion Routing Deep Dive (2019-06-25)",
 	"content": "Name: Dr. Christian Decker\nLocation: Chaincode Residency – Summer 2019\nVideo: https://youtu.be/D4kX0gR-H0Y\nOnion Routing Deep Dive But we\u0026amp;rsquo;ve not seen exactly why we are using an onion, or why we chose this construction of an onion and how this construction of an onion actually looks like. So my goal right now is to basically walk you through the iterations that onion routing packets have done so far, and why we chose this construction we have here.\nSo, just to be funny, I have once again …"
+},
+{
+	"uri": "/chaincode-labs/chaincode-residency/2019-06-28-christian-decker-rendezvous-routing/",
+	"title": "Christian Decker - Rendezvous Routing (2019-06-28)",
+	"content": "Name: Christian Decker\nTopic: Rendezvous Routing (Lightning Network)\nDate: 2019-06-28\nLocation: Chaincode Residency 2019\nVideo: https://youtu.be/Ms2WwRzBdkM\nSlides: https://residency.chaincode.com/presentations/lightning/Rendezvous_Routing.pdf\nTranscript by: Caralie Chrisco and Davius Parvin\nIntroduction Okay, the second part is rendezvous routing. I basically already gave away the trick but I hope you all forgot. So what is rendezvous routing? Anybody have a good explanation of what we are …"
 },
 {
 	"uri": "/w3-blockchain-workshop-2016/christopher-allen/",
@@ -3822,7 +3827,7 @@
 {
 	"uri": "/magicalcryptoconference/2019/submarine-swaps/",
 	"title": "Submarine Swaps",
-	"content": "Bridging off-chain and on-chain with submarine swaps\nAlex Bosworth\nIntroduction Hi, I work at Lightning Labs. I want to talk about the dawn of hyperloop. It\u0026amp;rsquo;s a new concept.\nHyperloop To zoom out on what problem we\u0026amp;rsquo;re working on here, we had this cool lightning network. But it\u0026amp;rsquo;s, the way the lightning network works, is that it\u0026amp;rsquo;s complementary to the bitcoin network. Each side has its pro\u0026amp;rsquo;s and con\u0026amp;rsquo;s. If you want the most effective way to send capital around, …"
+	"content": "Bridging off-chain and on-chain with submarine swaps\nAlex Bosworth\nIntroduction Hi, I work at Lightning Labs. I want to talk about the dawn of hyperloop. It\u0026amp;rsquo;s a new concept.\nHyperloop To zoom out on what problem we\u0026amp;rsquo;re working on here, we had this cool lightning network. But it\u0026amp;rsquo;s, the way the lightning network works, is that it\u0026amp;rsquo;s complementary to the bitcoin network. Each side has its pros and cons. If you want the most effective way to send capital around, you want to …"
 },
 {
 	"uri": "/tags/submarine-swaps/",
@@ -4323,6 +4328,11 @@
 	"uri": "/scalingbitcoin/tel-aviv-2019/zkvm/",
 	"title": "Zkvm",
 	"content": "ZkVM: zero-knowledge virtual machine for fast confidential smart contracts\nFats, private, flexible blockchain contracts\nOleg Andreev (Stellar) (oleganza)\nhttps://medium.com/stellar-developers-blog/zkvm-a-new-design-for-fast-confidential-smart-contracts-d1122890d9ae and https://twitter.com/oleganza/status/1126612382728372224\nhttps://twitter.com/kanzure/status/1171711553512583169\nIntroduction Okay, welcome. What is zkvm? It\u0026amp;rsquo;s a multi-asset blockchain architecture that combines smart …"
+},
+{
+	"uri": "/categories/residency/",
+	"title": "‘residency’",
+	"content": ""
 },
 {
 	"uri": "/",
