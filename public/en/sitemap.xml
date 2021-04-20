@@ -2719,6 +2719,20 @@
   </url>
   
   <url>
+    <loc>https://btctranscripts.com/categories/residency/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/categories/residency/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/categories/residency/"
+                />
+  </url>
+  
+  <url>
     <loc>https://btctranscripts.com/scalingbitcoin/montreal-2015/reworking-bitcoin-core-p2p-code-for-robustness-and-event-driven/</loc>
   </url>
   
@@ -3673,10 +3687,6 @@
   
   <url>
     <loc>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/zkvm/</loc>
-  </url>
-  
-  <url>
-    <loc>https://btctranscripts.com/categories/residency/</loc>
   </url>
   
   <url>

@@ -189,6 +189,20 @@
   </url>
   
   <url>
+    <loc>https://btctranscripts.com/es/categories/residency/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/categories/residency/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/categories/residency/"
+                />
+  </url>
+  
+  <url>
     <loc>https://btctranscripts.com/es/tags/seguridad/</loc>
   </url>
   

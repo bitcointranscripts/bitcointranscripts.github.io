@@ -3195,6 +3195,11 @@
 	"content": "11:45 am: Open Discussion - R\u0026amp;amp;D Goals \u0026amp;amp; Challenges – Patrick Murck, Gavin Andresen, Cory Fields\nWe often see people saying they are testing the waters, they fixed a typo, they made a tiny little fix that doesn\u0026amp;rsquo;t impact much, they are getting used to the process. They are finding that it\u0026amp;rsquo;s really easy to contribut to Bitcoin Core. You code your changes, you submit your changes, there\u0026amp;rsquo;s not much to it.\nThere\u0026amp;rsquo;s a difference, and the lines are fuzzy and undefined, and …"
 },
 {
+	"uri": "/categories/residency/",
+	"title": "residency",
+	"content": ""
+},
+{
 	"uri": "/scalingbitcoin/montreal-2015/reworking-bitcoin-core-p2p-code-for-robustness-and-event-driven/",
 	"title": "Reworking Bitcoin Core P2P Code For Robustness And Event Driven",
 	"content": "Cory Fields\nReworking Bitcoin Core\u0026amp;rsquo;s p2p code to be more robust and event-driven.\nThat is me. I want to apologize right off. I am here to talk about reworking Bitcoin Core p2p code. This is a Bitcoin Core specific topic. I have been working on some software for the past few weeks to talk about working things rather than theory. The presentation is going to suffer because of this.\nBitcoin Core has a networking stack that dates back all the way to the initial implementation from Satoshi or …"
@@ -4333,11 +4338,6 @@
 	"uri": "/scalingbitcoin/tel-aviv-2019/zkvm/",
 	"title": "Zkvm",
 	"content": "ZkVM: zero-knowledge virtual machine for fast confidential smart contracts\nFats, private, flexible blockchain contracts\nOleg Andreev (Stellar) (oleganza)\nhttps://medium.com/stellar-developers-blog/zkvm-a-new-design-for-fast-confidential-smart-contracts-d1122890d9ae and https://twitter.com/oleganza/status/1126612382728372224\nhttps://twitter.com/kanzure/status/1171711553512583169\nIntroduction Okay, welcome. What is zkvm? It\u0026amp;rsquo;s a multi-asset blockchain architecture that combines smart …"
-},
-{
-	"uri": "/categories/residency/",
-	"title": "‘residency’",
-	"content": ""
 },
 {
 	"uri": "/",
