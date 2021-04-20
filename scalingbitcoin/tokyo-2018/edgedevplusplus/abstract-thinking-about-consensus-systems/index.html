@@ -21,9 +21,10 @@ These simple fields are called the block header, and are committed to simply by 
 But the block hash also commits to more information using two more complicated algorithms, call a block chain and a merkle tree, which provide extra functionality not relevant to this topic.
 Despite the additional complexity and mid-calculation hashes, at the end of the day, these are both still just committing to information.</p><h1 id=abstract-transactions-and-extending-them>Abstract transactions, and extending them</h1><p>This extends to the transactions as well.
 One is tempted to just see a transaction as a sequence of formatted bytes indicating a transfer, but in reality, the transaction can be represented any way an implementer likes, so long as the commitment is correctly calculated when it is mined into a block.
-There are also two additional commitments needed for transactions: the transaction id, which must be calculated when spending an output created by such a transaction, and the signatures, which are calculated using an asymmetric digital signature to prove this transaction has permission to consume its inputs. But these similarly are commitments to the abstract information making up a transaction.</p><p>Since the serialisation of transactions and blocks is not relevant to the consensus system itself, let&rsquo;s disregard it, and use JSON instead to look at them.</p><p>A nice property of looking at this in JSON, is that it becomes obvious that we can add new keys without disrupting anything.
+There are also two additional commitments needed for transactions: the transaction id, which must be calculated when spending an output created by such a transaction, and the signatures, which are calculated using an asymmetric digital signature to prove this transaction has permission to consume its inputs. But these similarly are commitments to the abstract information making up a transaction.</p><p>Since the serialisation of transactions and blocks is not relevant to the consensus system itself, let&rsquo;s disregard it, and use JSON instead to look at them.
+<slide></p><p>A nice property of looking at this in JSON, is that it becomes obvious that we can add new keys without disrupting anything.
 For example, we could add a &ldquo;memo&rdquo; field.
-Since the block does not commit to this memo field, however, it does not need to be processed by other nodes to validate the block.
+<slide>Since the block does not commit to this memo field, however, it does not need to be processed by other nodes to validate the block.
 That makes sense, since other nodes really don&rsquo;t care about the memo.
 But if your counterparty does, you can send it to them using any common network protocol.</p><h1 id=adding-consensus-critical-fields-to-transactions>Adding consensus-critical fields to transactions</h1><p>However, what if you want to use this field in new rules?
 For example, let&rsquo;s look at Segwit.
@@ -31,7 +32,7 @@ The infamous problem with unintended malleability was a result of the transactio
 Specifically, the transaction id committed to the &ldquo;signature&rdquo; field, while the signature obviously could not commit to itself.
 The solution was to add a new field, called the &ldquo;witness&rdquo;, and move the signature there, while requiring the old &ldquo;signature&rdquo; field to be empty.
 By requiring the old field to be empty, it is effectively deleted, as its commitment becomes a constant.
-So now we have replaced the &ldquo;signature&rdquo; field with a new &ldquo;witness&rdquo; field.
+<slide>So now we have replaced the &ldquo;signature&rdquo; field with a new &ldquo;witness&rdquo; field.
 None of the block, the transaction id, nor the signature commit to this new field, so like the &ldquo;memo&rdquo; field, it can be ignored by other nodes.
 But with a softfork, we can add a consensus rule that a block is only valid if the &ldquo;witness&rdquo; fields all verify correctly.
 Now, nodes must receive and validate the &ldquo;witness&rdquo; field even without any commitment to it.</p><h1 id=extending-the-block-commitment>Extending the block commitment</h1><p>Unfortunately, without a commitment to the new information, an attacker can use a valid block hash to trigger the more CPU-time consuming signature validations for a block that is invalid because the final witness fails due to corruption.

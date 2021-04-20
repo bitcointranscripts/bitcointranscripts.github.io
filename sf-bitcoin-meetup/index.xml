@@ -19,7 +19,7 @@ Bram Cohen
 video: https://www.youtube.com/watch?v=52FVkHlCh7Y
 code: https://github.com/bramcohen/MerkleSet
 https://twitter.com/kanzure/status/888836850529558531
-Introduction There&amp;rsquo;s been a fair amount of talk about putting UTXO commitmentsin bitcoin blocks. Whether this is a good idea or not, but on the off-chance that it might be a good idea, I spent a fair amount of time thinking and actually good merkle set implementation whic his what you you need to put utxo set commitments in bitcoin blocks.</description></item><item><title>Christopher Jeffrey Bcoin (2016-09-28)</title><link>https://btctranscripts.com/sf-bitcoin-meetup/2016-09-28-christopher-jeffrey-bcoin/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/sf-bitcoin-meetup/2016-09-28-christopher-jeffrey-bcoin/</guid><description>Name: Christopher Jeffrey (JJ)
+Introduction There&amp;rsquo;s been a fair amount of talk about putting UTXO commitments in bitcoin blocks. Whether this is a good idea or not, but on the off-chance that it might be a good idea, I spent a fair amount of time thinking and actually good merkle set implementation whic his what you you need to put utxo set commitments in bitcoin blocks.</description></item><item><title>Christopher Jeffrey Bcoin (2016-09-28)</title><link>https://btctranscripts.com/sf-bitcoin-meetup/2016-09-28-christopher-jeffrey-bcoin/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/sf-bitcoin-meetup/2016-09-28-christopher-jeffrey-bcoin/</guid><description>Name: Christopher Jeffrey (JJ)
 Topic: Bcoin
 Location: SF Bitcoin Devs
 Date: September 28th 2016
@@ -70,7 +70,7 @@ Basic super quick summary of Lightning I am going to re-cap lightning network re
 Andrew Poelstra (andytoshi)
 https://www.youtube.com/watch?v=aHTRlbCaUyM
 https://twitter.com/kanzure/status/801990263543648256
-History As Denise said, I gave a talk in Milan about mimblewimble about a month ago(slides). This is more or less the same talk, but rebalanced a bit to try to emphasize what I think is important and add some history that has happened in the intervening time. I&amp;rsquo;ll get started.
+History As Denise said, I gave a talk in Milan about mimblewimble about a month ago (slides). This is more or less the same talk, but rebalanced a bit to try to emphasize what I think is important and add some history that has happened in the intervening time. I&amp;rsquo;ll get started.
 Many of you have heard of mimblewimble. It&amp;rsquo;s been in the news. It has a catchy name.</description></item><item><title>New Address Type For Segwit Addresses (2017-03-29)</title><link>https://btctranscripts.com/sf-bitcoin-meetup/2017-03-29-new-address-type-for-segwit-addresses/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/sf-bitcoin-meetup/2017-03-29-new-address-type-for-segwit-addresses/</guid><description>Name: Pieter Wuille
 Topic: Bech32 addresses for Bitcoin
 Location: SF Bitcoin Devs

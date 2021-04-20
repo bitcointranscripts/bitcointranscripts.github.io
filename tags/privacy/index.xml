@@ -110,7 +110,7 @@ gmaxwell
 https://twitter.com/kanzure/status/859604355917414400
 https://www.youtube.com/watch?v=LHPYNZ8i1cU
 Introduction Thank you.
-So as mentioned, I am going to be talking about confidential transactionstoday. And I look at confidential transactions as a building block fundamental piece of technology, it&amp;rsquo;s not like altcoin or something like that. It&amp;rsquo;s not a turnkey system, it&amp;rsquo;s some fundamental tech, and there are many different ways to use it and deploy it.
+So as mentioned, I am going to be talking about confidential transactions today. And I look at confidential transactions as a building block fundamental piece of technology, it&amp;rsquo;s not like altcoin or something like that. It&amp;rsquo;s not a turnkey system, it&amp;rsquo;s some fundamental tech, and there are many different ways to use it and deploy it.
 My interest in this technology is primarily driven by bitcoin, but the technology here could be applied to many other things, including things outside of the cryptocurrency space.</description></item><item><title>How Much Privacy Is Enough</title><link>https://btctranscripts.com/scalingbitcoin/tokyo-2018/how-much-privacy-is-enough/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/scalingbitcoin/tokyo-2018/how-much-privacy-is-enough/</guid><description>How much privacy is enough? Threats, scaling, and trade-offs in blockchain privacy protocols
 Ian Miers (secparam)
 unrelated, https://arxiv.org/pdf/1706.00916.pdf
@@ -134,14 +134,14 @@ Privacy matters Privacy matters on the blockchain.</description></item><item><ti
 coredev.tech september 2017
 https://twitter.com/kanzure/status/907233490919464960
 ((As always, any errors are most likely my own. etc.))
-There is significant concern regarding whether BlueMatt has become a misnomer.
+# Introduction There is significant concern regarding whether BlueMatt has become a misnomer.
 Monday night presentation: http://diyhpl.us/wiki/transcripts/sf-bitcoin-meetup/2017-09-04-jonas-schenlli-bip150-bip151/
 I think we should continue to use #bitcoin-core-dev for anything about changing Bitcoin Core and try to keep things open even though we&amp;rsquo;re together here today and tomorrow and the next.
-Nobody produces P2SH change when they have a native output.</description></item><item><title>Mimblewimble (2016-11-21)</title><link>https://btctranscripts.com/sf-bitcoin-meetup/2016-11-21-mimblewimble/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/sf-bitcoin-meetup/2016-11-21-mimblewimble/</guid><description>Mimblewimble
+# Wallets and block pruning and rescans Nobody produces P2SH change when they have a native output.</description></item><item><title>Mimblewimble (2016-11-21)</title><link>https://btctranscripts.com/sf-bitcoin-meetup/2016-11-21-mimblewimble/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/sf-bitcoin-meetup/2016-11-21-mimblewimble/</guid><description>Mimblewimble
 Andrew Poelstra (andytoshi)
 https://www.youtube.com/watch?v=aHTRlbCaUyM
 https://twitter.com/kanzure/status/801990263543648256
-History As Denise said, I gave a talk in Milan about mimblewimble about a month ago(slides). This is more or less the same talk, but rebalanced a bit to try to emphasize what I think is important and add some history that has happened in the intervening time. I&amp;rsquo;ll get started.
+History As Denise said, I gave a talk in Milan about mimblewimble about a month ago (slides). This is more or less the same talk, but rebalanced a bit to try to emphasize what I think is important and add some history that has happened in the intervening time. I&amp;rsquo;ll get started.
 Many of you have heard of mimblewimble. It&amp;rsquo;s been in the news. It has a catchy name.</description></item><item><title>Mixicles</title><link>https://btctranscripts.com/stanford-blockchain-conference/2020/mixicles/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stanford-blockchain-conference/2020/mixicles/</guid><description>Mixicles: Simple Private Decentralized Finance
 Ari Juels
 https://twitter.com/kanzure/status/1230666545803563008
