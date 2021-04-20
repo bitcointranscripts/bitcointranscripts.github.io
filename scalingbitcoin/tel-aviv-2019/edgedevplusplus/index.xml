@@ -79,7 +79,7 @@ Introduction If you want to know the details of statechains, I recommend checkin
 Elichai Turkel
 https://docs.google.com/presentation/d/1YVOYJGmQ_mY-5_Rs0Cu84AYSI6wCvpfIgoapfgsYP2U/edit
 https://github.com/bitcoinops/taproot-workshop/tree/BitcoinEdge
-https://github.com/bitcoinops/bitcoin/releases/tag/v0.1</description></item><item><title>Wallet Architecture</title><link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/wallet-architecture/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/wallet-architecture/</guid><description>Bitcoin Core wallet architecture
+https://github.com/bitcoinops/bitcoin/releases/tag/v0.1</description></item><item><title>Wallet Architecture in Bitcoin Core (2018-10-04)</title><link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/wallet-architecture/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/wallet-architecture/</guid><description>Bitcoin Core wallet architecture
 John Newbery
 https://twitter.com/kanzure/status/1171018684816605185
 Introduction Thanks Bryan for talking about HD wallets. I am going to be talking about wallet architecture in Bitcoin Core. Alright. Who am I? I work on Bitcoin Core. I&amp;rsquo;ve been writing code on Bitcoin Core for about 3 years. Lately I have been working on the wallet. I work for Chaincode Labs which is why I get to work on Bitcoin Core. We are a small research lab in New York.</description></item></channel></rss>

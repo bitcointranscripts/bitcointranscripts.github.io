@@ -31,7 +31,7 @@ Stepan Snigirev
 D419 C410 1E24 5B09 0D2C 46BF 8C3D 2C48 560E 81AC
 https://twitter.com/kanzure/status/1137663515957837826
 Introduction We are making a secure hardware platform for developers so that they can build their own hardware wallets. Today I want to talk about certain challenges for hardware wallets, what we&amp;rsquo;re missing, and how we can get better.
-Current capabilities of hardware wallets Normally, hardware wallets keep keys reasonably secret and are able to spend coins or sign transactions.</description></item><item><title>Joost Jager - HODL Invoices (2019-06-13)</title><link>https://btctranscripts.com/breaking-bitcoin/2019/2019-06-13-joost-jager-hodl-invoices/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/breaking-bitcoin/2019/2019-06-13-joost-jager-hodl-invoices/</guid><description>Joost Jager
+Current capabilities of hardware wallets Normally, hardware wallets keep keys reasonably secret and are able to spend coins or sign transactions.</description></item><item><title>Joost Jager - HODL Invoices (2019-06-13)</title><link>https://btctranscripts.com/breaking-bitcoin/2019/2019-06-09-joost-jager-hodl-invoices/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/breaking-bitcoin/2019/2019-06-09-joost-jager-hodl-invoices/</guid><description>Joost Jager
 Hodl Invoices (Breaking Bitcoin training session)
 Video: https://www.youtube.com/watch?v=jOEq9PvN-7A
 https://twitter.com/kanzure/status/1146124260324384768
@@ -46,9 +46,12 @@ Introduction MF: I will start by thanking Kevin and Lea and the organizers. It&a
 Istvan Andras Seres
 paper: https://arxiv.org/abs/1901.04972
 https://github.com/seresistvanandras/LNTopology
-Introduction Knowing the topology is not necessarily a vulnerability, but it gives you a lot of information. If I know Bryan&amp;rsquo;s full node is connected to some other nodes, I will have an easier time to cut Bryan out of the network or launch attacks against him. Knowing the topology is not necessarily a vulnerability, but it&amp;rsquo;s really strong information.</description></item><item><title>Mempool Analysis Simulation</title><link>https://btctranscripts.com/breaking-bitcoin/2019/mempool-analysis-simulation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/breaking-bitcoin/2019/mempool-analysis-simulation/</guid><description>Mempool analysis and simulation
+Introduction Knowing the topology is not necessarily a vulnerability, but it gives you a lot of information. If I know Bryan&amp;rsquo;s full node is connected to some other nodes, I will have an easier time to cut Bryan out of the network or launch attacks against him. Knowing the topology is not necessarily a vulnerability, but it&amp;rsquo;s really strong information.</description></item><item><title>Mempool Analysis &amp; Simulation (2019-06-08)</title><link>https://btctranscripts.com/breaking-bitcoin/2019/2019-06-08-mempool-analysis-simulation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/breaking-bitcoin/2019/2019-06-08-mempool-analysis-simulation/</guid><description>Mempool analysis and simulation
 kallewoof
+Date: 2019-06-08
 https://twitter.com/kanzure/status/1137342023063744512
+video: https://www.youtube.com/watch?v=Mznn1uVyTUQ
+slides: https://breaking-bitcoin.com/docs/slides/2019/mempoolAnalysis.pdf
 Introduction Fun fact: I don&amp;rsquo;t think anyone knows this fact, but antpool is a miner and antpool is not mining replace-by-fee transactions. What I mean by that is that if you do a replace-by-fee transaction, they will ignore the second high fee transaction. There are cases where transactions are RBF-bumped to increase the fee to make it mined faster, so you RBF bump it, and then you have people spending the unconfirmed RBF version and then have a chain of transactions but then the original transaction is mined and not the other chained transactions.</description></item><item><title>Neutrino</title><link>https://btctranscripts.com/breaking-bitcoin/2019/neutrino/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/breaking-bitcoin/2019/neutrino/</guid><description>Neutrino bip158
 Jimmy Song
 &amp;hellip; 228C D70C FAA6 17E3 2679 E455
