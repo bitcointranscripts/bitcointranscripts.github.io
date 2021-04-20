@@ -352,7 +352,7 @@
 {
 	"uri": "/bitcoin-core-dev-tech/2019-06-07-assumeutxo/",
 	"title": "Assumeutxo (2019-06-07)",
-	"content": "assumeutxo\nhttps://twitter.com/kanzure/status/1137008648620838912\nWhy assumeutxo assumeutxo is a spiritual continuation of assumevalid. Why do we want to do this in the first place? At the moment, it takes hours and days to do initial block download. Various projects in the community have been implementing meassures to speed this up. Casa I think bundles datadir with their nodes. Other projects like btcpay have various ways of bundling this up and signing things with gpg keys and these solutions …"
+	"content": "Assumeutxo\nhttps://twitter.com/kanzure/status/1137008648620838912\nWhy assumeutxo assumeutxo is a spiritual continuation of assumevalid. Why do we want to do this in the first place? At the moment, it takes hours and days to do initial block download. Various projects in the community have been implementing meassures to speed this up. Casa I think bundles datadir with their nodes. Other projects like btcpay have various ways of bundling this up and signing things with gpg keys and these solutions …"
 },
 {
 	"uri": "/scalingbitcoin/tel-aviv-2019/atomic-multi-channel-updates/",
@@ -772,7 +772,7 @@
 {
 	"uri": "/sf-bitcoin-meetup/2017-07-08-bram-cohen-merkle-sets/",
 	"title": "Bram Cohen Merkle Sets (2017-07-08)",
-	"content": "2017-07-08\nMerkle set data structures for scaling bitcoin\nBram Cohen\nvideo: https://www.youtube.com/watch?v=52FVkHlCh7Y\ncode: https://github.com/bramcohen/MerkleSet\nhttps://twitter.com/kanzure/status/888836850529558531\nIntroduction There\u0026amp;rsquo;s been a fair amount of talk about putting UTXO commitmentsin bitcoin blocks. Whether this is a good idea or not, but on the off-chance that it might be a good idea, I spent a fair amount of time thinking and actually good merkle set implementation whic …"
+	"content": "2017-07-08\nMerkle set data structures for scaling bitcoin\nBram Cohen\nvideo: https://www.youtube.com/watch?v=52FVkHlCh7Y\ncode: https://github.com/bramcohen/MerkleSet\nhttps://twitter.com/kanzure/status/888836850529558531\nIntroduction There\u0026amp;rsquo;s been a fair amount of talk about putting UTXO commitments in bitcoin blocks. Whether this is a good idea or not, but on the off-chance that it might be a good idea, I spent a fair amount of time thinking and actually good merkle set implementation whic …"
 },
 {
 	"uri": "/breaking-bitcoin/",
@@ -787,7 +787,7 @@
 {
 	"uri": "/breaking-bitcoin/2019/",
 	"title": "Breaking Bitcoin 2019",
-	"content": " Bitcoin Build System   Breaking Bitcoin Privacy   Breaking Wasabi   Defense Of Bitcoin   Extracting Seeds From Hardware Wallets   Fud Perceived Vs Real Bitcoin Risks   Future Of Hardware Wallets   Joost Jager - HODL Invoices (2019-06-13)   Lightning Network Routing Security   Lightning Network Security Panel   Lightning Network Topological Analysis   Mempool Analysis Simulation   Neutrino   Opening Remarks   P2P Encryption   Secure Protocols Bip Taproot   Security Attacks Decentralized Mining …"
+	"content": " Bitcoin Build System   Breaking Bitcoin Privacy   Breaking Wasabi   Defense Of Bitcoin   Extracting Seeds From Hardware Wallets   Fud Perceived Vs Real Bitcoin Risks   Future Of Hardware Wallets   Joost Jager - HODL Invoices (2019-06-13)   Lightning Network Routing Security   Lightning Network Security Panel   Lightning Network Topological Analysis   Mempool Analysis \u0026amp;amp; Simulation (2019-06-08)   Neutrino   Opening Remarks   P2P Encryption   Secure Protocols Bip Taproot   Security Attacks …"
 },
 {
 	"uri": "/breaking-bitcoin/2019/breaking-bitcoin-privacy/",
@@ -902,12 +902,12 @@
 {
 	"uri": "/misc/cftc-bitcoin/",
 	"title": "CFTC Bitcoin",
-	"content": "Commodity Futures Trading Commission\nhttp://www.onlinevideoservice.com/clients/cftc/video.htm?eventid=cftclive\ndescription Panel I: CFTC Clearing for Non-Deliverable Forwards (NDF)\nThe first panel will discuss whether mandatory clearing should be required of NDF swaps contracts. Each panelist will present and then there will be opportunity for broader discussion and questions. Representatives from the CFTC, the Bank of England, and the European Securities and Markets Authority will also be …"
+	"content": "Commodity Futures Trading Commission\nhttp://www.onlinevideoservice.com/clients/cftc/video.htm?eventid=cftclive\n# NDFs description Panel I: CFTC Clearing for Non-Deliverable Forwards (NDF)\nThe first panel will discuss whether mandatory clearing should be required of NDF swaps contracts. Each panelist will present and then there will be opportunity for broader discussion and questions. Representatives from the CFTC, the Bank of England, and the European Securities and Markets Authority will also …"
 },
 {
 	"uri": "/scalingbitcoin/milan-2016/chainbreak/",
 	"title": "Chainbreak",
-	"content": "braids Properties of a braid system Inclusivity Equal pay for equal proof-of-work\nDelayed tx fee allocation You can\u0026amp;rsquo;t allocate tx fees until you see the state of the network\n  do you split fees?\n  if you don\u0026amp;rsquo;t, you can fee-snipe\n  if you do, smart wallets will cheat the fee reallocation\n  smart wallets that pay specific miners compromise centralization\n  tx fees should be the best way to get your tx confirmed\n    could eliminate gossip broadcast of txs (\u0026amp;ldquo;p2p layer\u0026amp;rdquo;)\n  PoW …"
+	"content": "Table of Contents  1. braids  1.1. Properties of a braid system  1.1.1. Inclusivity 1.1.2. Delayed tx fee allocation 1.1.3. Network size measured by graph structure 1.1.4. cohort algorithm / sub-cohort ordering 1.1.5. outstanding problem - merging blocks of different difficulty   1.2. fee sniping  1.2.1. what even is fee sniping?   1.3. definition of a cohort 1.4. tx processing system must process all txs 1.5. can you have both high blocktime and a braid?  1.5.1. problem is double spends 1.5.2. …"
 },
 {
 	"uri": "/chaincode-labs/",
@@ -1382,7 +1382,7 @@
 {
 	"uri": "/scalingbitcoin/tel-aviv-2019/edgedevplusplus/",
 	"title": "Edgedevplusplus",
-	"content": " Accumulators   Bitcoin Core Functional Test Framework   Bitcoin Data Structures   Blockchain Design Patterns   Bosminer   Debugging Bitcoin   Hardware Wallet Design Best Practices   Libbitcoin   Lightning Network Layer By Layer   Lightning Network Routing   Lightning Network Sphinx And Onion Routing   Lightning network topology, its creation and maintenance   Metadata   Mining Firmware Security   Privacy Concepts   Rebroadcasting   Signet   Statechains   Taproot   Wallet Architecture    "
+	"content": " Accumulators   Bitcoin Core Functional Test Framework   Bitcoin Data Structures   Blockchain Design Patterns   Bosminer   Debugging Bitcoin   Hardware Wallet Design Best Practices   Libbitcoin   Lightning Network Layer By Layer   Lightning Network Routing   Lightning Network Sphinx And Onion Routing   Lightning network topology, its creation and maintenance   Metadata   Mining Firmware Security   Privacy Concepts   Rebroadcasting   Signet   Statechains   Taproot   Wallet Architecture in Bitcoin …"
 },
 {
 	"uri": "/scalingbitcoin/tokyo-2018/edgedevplusplus/",
@@ -1652,7 +1652,7 @@
 {
 	"uri": "/greg-maxwell/2017-04-28-gmaxwell-confidential-transactions/",
 	"title": "Gmaxwell - Confidential Transactions (2017-04-28)",
-	"content": "Confidential transactions\ngmaxwell\n2017-04-28\nhttps://twitter.com/kanzure/status/859604355917414400\nhttps://www.youtube.com/watch?v=LHPYNZ8i1cU\nIntroduction Thank you.\nSo as mentioned, I am going to be talking about confidential transactionstoday. And I look at confidential transactions as a building block fundamental piece of technology, it\u0026amp;rsquo;s not like altcoin or something like that. It\u0026amp;rsquo;s not a turnkey system, it\u0026amp;rsquo;s some fundamental tech, and there are many different ways to use …"
+	"content": "Confidential transactions\ngmaxwell\n2017-04-28\nhttps://twitter.com/kanzure/status/859604355917414400\nhttps://www.youtube.com/watch?v=LHPYNZ8i1cU\nIntroduction Thank you.\nSo as mentioned, I am going to be talking about confidential transactions today. And I look at confidential transactions as a building block fundamental piece of technology, it\u0026amp;rsquo;s not like altcoin or something like that. It\u0026amp;rsquo;s not a turnkey system, it\u0026amp;rsquo;s some fundamental tech, and there are many different ways to …"
 },
 {
 	"uri": "/greg-maxwell/2017-08-28-gmaxwell-deep-dive-bitcoin-core-v0.15/",
@@ -1895,6 +1895,11 @@
 	"content": "Human side of trust\n Matt Weiss Joe Gerber  We would like to start with a brief activity. In you rprograms, this says design workshop. If that scares you, then we will not be doing trust falls. We will not be forming teams. But we would like to start with an activity. Identify someone around you who you do not know. Keep a mental image of that person in your mind.\nWould you trust this person to save your seat? Would you trust them to watch your laptop if you went to get lunch? Would you loan …"
 },
 {
+	"uri": "/tags/ibd/",
+	"title": "IBD",
+	"content": ""
+},
+{
 	"uri": "/mit-bitcoin-expo/mit-bitcoin-expo-2017/ideal-number-of-full-bitcoin-nodes/",
 	"title": "Ideal Number Of Full Bitcoin Nodes",
 	"content": "Ideal number of full bitcoin nodes\nDavid Vorick\n2017-03-04\nhttps://www.youtube.com/watch?v=0mVOq1jaR1U\u0026amp;amp;t=56m20s\nhttps://twitter.com/kanzure/status/838481130944876544\nToday I am going to be talking about bitcoin full nodes. Can everyone hear me? Okay, great. I don\u0026amp;rsquo;t actually think there\u0026amp;rsquo;s a specific number. I think a lot of people do. They look for a number. 5000 is about how many we have today, 6000. Some people ask whether it\u0026amp;rsquo;s a good number. I think that\u0026amp;rsquo;s the wrong …"
@@ -1942,7 +1947,7 @@
 {
 	"uri": "/breaking-bitcoin/2017/interview-adam-back-elizabeth-stark/",
 	"title": "Interview Adam Back Elizabeth Stark",
-	"content": "Interview with Adam Back and Elizabeth Stark\nAdam Back\nElizabeth Stark\nvideo: https://www.youtube.com/watch?v=0WCaoGiAOHE\u0026amp;amp;t=1h58m3s\nhttps://twitter.com/kanzure/status/1005842855271784449\nstark: Thank you Giacomo. Who here had too much fun at the party last night? My voice is going. Hopefully it will stay for this interview. We are lucky to have Adam Back here today, co-founder of Blockstreamand inventor of Hashcash(history). He just happened to appear and there was an available spot. Thank …"
+	"content": "Interview with Adam Back and Elizabeth Stark\nAdam Back\nElizabeth Stark\nvideo: https://www.youtube.com/watch?v=0WCaoGiAOHE\u0026amp;amp;t=1h58m3s\nhttps://twitter.com/kanzure/status/1005842855271784449\nstark: Thank you Giacomo. Who here had too much fun at the party last night? My voice is going. Hopefully it will stay for this interview. We are lucky to have Adam Back here today, co-founder of Blockstream and inventor of Hashcash (history). He just happened to appear and there was an available spot. Thank …"
 },
 {
 	"uri": "/dallas-bitcoin-symposium/intro/",
@@ -2100,14 +2105,14 @@
 	"content": "Name: John Newbery\nTopic: Contracts in Bitcoin\nLocation: She256 Onboarding to Bitcoin Webinar\nDate: April 8, 2020\nVideo: https://youtu.be/H-wH6mY9pZo?t=2549\nIntroduction John: My name is John. I am a Bitcoin Protocol Engineer at Chaincode Labs in New York. I\u0026amp;rsquo;m going to talk about contracts a little bit from a theoretical perspective, but I\u0026amp;rsquo;m not a lawyer, and I\u0026amp;rsquo;m not a legal scholar. For all of you legally minded people out there, I apologize in advance if I gobble this and say …"
 },
 {
+	"uri": "/chaincode-labs/chaincode-residency/2019-06-19-john-newbery-wallet-development/",
+	"title": "John Newbery - Wallet Development (2019-06-19)",
+	"content": "Name: John Newbery\nTopic: Wallet Development in Bitcoin Core\nLocation: Chaincode Labs 2019 Residency\nDate: June 19th 2019\nVideo: https://www.youtube.com/watch?v=j0V8elTzYAA\nSlides: https://residency.chaincode.com/presentations/bitcoin/Wallet_Development.pdf\nIntro I am going to talk to you about wallets. As for the previous presentation I have all of the links in this document which I will share with you. First of all why should we care about wallets? Kind of boring right? You’ve had all this fun …"
+},
+{
 	"uri": "/chaincode-labs/chaincode-residency/2019-06-17-john-newbery-security-models/",
 	"title": "John Newbery Security Models (2019-06-17)",
 	"content": "Name: John Newbery\nTopic: Security Models\nLocation: Chaincode Labs 2019 Residency\nVideo: https://youtu.be/6gGcS4N5Rg4\nSlides: https://residency.chaincode.com/presentations/bitcoin/security_models.pdf\nJohn Newbery: Alright, Security Models. This is going to be like a quick whistle-stop tour of various things, very high-level view. I\u0026amp;rsquo;m going to start by giving you some kind of framework to think about things. So in cryptography, we often talk about security proofs in terms of existing …"
-},
-{
-	"uri": "/chaincode-labs/chaincode-residency/2019-06-19-john-newbery-wallet-development/",
-	"title": "John Newbery Wallet Development (2019-06-19)",
-	"content": "Name: John Newbery\nTopic: Wallet Development in Bitcoin Core\nLocation: Chaincode Labs 2019 Residency\nDate: June 19th 2019\nVideo: https://www.youtube.com/watch?v=j0V8elTzYAA\nSlides: https://residency.chaincode.com/presentations/bitcoin/Wallet_Development.pdf\nIntro I am going to talk to you about wallets. As for the previous presentation I have all of the links in this document which I will share with you. First of all why should we care about wallets? Kind of boring right? You’ve had all this fun …"
 },
 {
 	"uri": "/scalingbitcoin/stanford-2017/joi-ito/",
@@ -2140,7 +2145,7 @@
 	"content": "Name: Jonathan Metzman\nTopic: Going Beyond Coverage Guided Fuzzing with Structured Fuzzing\nLocation: Black Hat USA 2019\nDate: August 7th 2019\nVideo: https://www.youtube.com/watch?v=TtPXYPJ5_eE\nBlackhat: https://www.blackhat.com/us-19/briefings/schedule/#going-beyond-coverage-guided-fuzzing-with-structured-fuzzing-16110\nSlides: https://i.blackhat.com/USA-19/Wednesday/us-19-Metzman-Going-Beyond-Coverage-Guided-Fuzzing-With-Structured-Fuzzing.pdf\nTranscript completed by: Michael Folkson\nIntro Hi …"
 },
 {
-	"uri": "/breaking-bitcoin/2019/2019-06-13-joost-jager-hodl-invoices/",
+	"uri": "/breaking-bitcoin/2019/2019-06-09-joost-jager-hodl-invoices/",
 	"title": "Joost Jager - HODL Invoices (2019-06-13)",
 	"content": "Joost Jager\nHodl Invoices (Breaking Bitcoin training session)\nVideo: https://www.youtube.com/watch?v=jOEq9PvN-7A\nhttps://twitter.com/kanzure/status/1146124260324384768\nIntro My name is Joost, Michael introduced me already. I’ve been working with Lightning Labs since the middle of last year and during that time I’ve worked on several subprojects within lnd. lnd is the Lightning implementation developed by Lightning Labs. I’m not sure really what the background knowledge is at this point in this …"
 },
@@ -2542,7 +2547,7 @@
 {
 	"uri": "/bitcoin-core-dev-tech/2017-09-05-meeting-notes/",
 	"title": "Meeting Notes (2017-09-05)",
-	"content": "﻿2017-09-05 - 2017-09-07\ncoredev.tech september 2017\nhttps://twitter.com/kanzure/status/907233490919464960\n((As always, any errors are most likely my own. etc.))\nThere is significant concern regarding whether BlueMatt has become a misnomer.\nMonday night presentation: http://diyhpl.us/wiki/transcripts/sf-bitcoin-meetup/2017-09-04-jonas-schenlli-bip150-bip151/\nI think we should continue to use #bitcoin-core-dev for anything about changing Bitcoin Core and try to keep things open even though …"
+	"content": "﻿2017-09-05 - 2017-09-07\ncoredev.tech september 2017\nhttps://twitter.com/kanzure/status/907233490919464960\n((As always, any errors are most likely my own. etc.))\n# Introduction There is significant concern regarding whether BlueMatt has become a misnomer.\nMonday night presentation: http://diyhpl.us/wiki/transcripts/sf-bitcoin-meetup/2017-09-04-jonas-schenlli-bip150-bip151/\nI think we should continue to use #bitcoin-core-dev for anything about changing Bitcoin Core and try to keep things open …"
 },
 {
 	"uri": "/categories/meetup/",
@@ -2555,9 +2560,9 @@
 	"content": ""
 },
 {
-	"uri": "/breaking-bitcoin/2019/mempool-analysis-simulation/",
-	"title": "Mempool Analysis Simulation",
-	"content": "Mempool analysis and simulation\nkallewoof\nhttps://twitter.com/kanzure/status/1137342023063744512\nIntroduction Fun fact: I don\u0026amp;rsquo;t think anyone knows this fact, but antpool is a miner and antpool is not mining replace-by-fee transactions. What I mean by that is that if you do a replace-by-fee transaction, they will ignore the second high fee transaction. There are cases where transactions are RBF-bumped to increase the fee to make it mined faster, so you RBF bump it, and then you have people …"
+	"uri": "/breaking-bitcoin/2019/2019-06-08-mempool-analysis-simulation/",
+	"title": "Mempool Analysis \u0026 Simulation (2019-06-08)",
+	"content": "Mempool analysis and simulation\nkallewoof\nDate: 2019-06-08\nhttps://twitter.com/kanzure/status/1137342023063744512\nvideo: https://www.youtube.com/watch?v=Mznn1uVyTUQ\nslides: https://breaking-bitcoin.com/docs/slides/2019/mempoolAnalysis.pdf\nIntroduction Fun fact: I don\u0026amp;rsquo;t think anyone knows this fact, but antpool is a miner and antpool is not mining replace-by-fee transactions. What I mean by that is that if you do a replace-by-fee transaction, they will ignore the second high fee …"
 },
 {
 	"uri": "/tags/merkle-trees/",
@@ -2607,7 +2612,7 @@
 {
 	"uri": "/sf-bitcoin-meetup/2016-11-21-mimblewimble/",
 	"title": "Mimblewimble (2016-11-21)",
-	"content": "Mimblewimble\nAndrew Poelstra (andytoshi)\nhttps://www.youtube.com/watch?v=aHTRlbCaUyM\nhttps://twitter.com/kanzure/status/801990263543648256\nHistory As Denise said, I gave a talk in Milan about mimblewimble about a month ago(slides). This is more or less the same talk, but rebalanced a bit to try to emphasize what I think is important and add some history that has happened in the intervening time. I\u0026amp;rsquo;ll get started.\nMany of you have heard of mimblewimble. It\u0026amp;rsquo;s been in the news. It has a …"
+	"content": "Mimblewimble\nAndrew Poelstra (andytoshi)\nhttps://www.youtube.com/watch?v=aHTRlbCaUyM\nhttps://twitter.com/kanzure/status/801990263543648256\nHistory As Denise said, I gave a talk in Milan about mimblewimble about a month ago (slides). This is more or less the same talk, but rebalanced a bit to try to emphasize what I think is important and add some history that has happened in the intervening time. I\u0026amp;rsquo;ll get started.\nMany of you have heard of mimblewimble. It\u0026amp;rsquo;s been in the news. It has …"
 },
 {
 	"uri": "/mit-bitcoin-expo/mit-bitcoin-expo-2017/mimblewimble-and-scriptless-scripts/",
@@ -3187,7 +3192,7 @@
 {
 	"uri": "/bitcoin-core-dev-tech/bitcoin-devcore-2015/research-and-development-goals/",
 	"title": "Research And Development Goals",
-	"content": "11:45 am: Open Discussion - R\u0026amp;amp;D Goals \u0026amp;amp; Challenges – Patrick Murck, Gavin Andresen, Cory Fields\nWe often see people saying htey are testing the waters, they fixed a typo, they made a tiny little fix that doesn\u0026amp;rsquo;t impact much, they are getting used to the process. They are finding that it\u0026amp;rsquo;s really easy to contribut to Bitcoin Core. You code your changes, you submit your changes, there\u0026amp;rsquo;s not much to it.\nThere\u0026amp;rsquo;s a difference, and the lines are fuzzy and undefined, and …"
+	"content": "11:45 am: Open Discussion - R\u0026amp;amp;D Goals \u0026amp;amp; Challenges – Patrick Murck, Gavin Andresen, Cory Fields\nWe often see people saying they are testing the waters, they fixed a typo, they made a tiny little fix that doesn\u0026amp;rsquo;t impact much, they are getting used to the process. They are finding that it\u0026amp;rsquo;s really easy to contribut to Bitcoin Core. You code your changes, you submit your changes, there\u0026amp;rsquo;s not much to it.\nThere\u0026amp;rsquo;s a difference, and the lines are fuzzy and undefined, and …"
 },
 {
 	"uri": "/scalingbitcoin/montreal-2015/reworking-bitcoin-core-p2p-code-for-robustness-and-event-driven/",
@@ -3322,7 +3327,7 @@
 {
 	"uri": "/mit-bitcoin-expo/mit-bitcoin-expo-2017/scaling-and-utxos/",
 	"title": "Scaling And Utxos",
-	"content": "Scaling and TXO commitments\nPeter Todd\n2017-03-04\nhttps://www.youtube.com/watch?v=0mVOq1jaR1U\u0026amp;amp;feature=youtu.be\u0026amp;amp;t=1h20m\nhttps://twitter.com/kanzure/status/838481311992012800\nThank you. I\u0026amp;rsquo;ll admit the last one was probably the most fun other than. On the schedule, it said scaling and UTXO and I threw something together. TXO commitmentswere a bold idea but recently there were some observations that make it more interesting. I thought I would start by going through what problem they …"
+	"content": "Scaling and TXO commitments\nPeter Todd\n2017-03-04\nhttps://www.youtube.com/watch?v=0mVOq1jaR1U\u0026amp;amp;feature=youtu.be\u0026amp;amp;t=1h20m\nhttps://twitter.com/kanzure/status/838481311992012800\nThank you. I\u0026amp;rsquo;ll admit the last one was probably the most fun other than. On the schedule, it said scaling and UTXO and I threw something together. TXO commitments were a bold idea but recently there were some observations that make it more interesting. I thought I would start by going through what problem they …"
 },
 {
 	"uri": "/scalingbitcoin/",
@@ -4200,19 +4205,19 @@
 	"content": ""
 },
 {
-	"uri": "/scalingbitcoin/tel-aviv-2019/edgedevplusplus/wallet-architecture/",
-	"title": "Wallet Architecture",
-	"content": "Bitcoin Core wallet architecture\nJohn Newbery\nhttps://twitter.com/kanzure/status/1171018684816605185\nIntroduction Thanks Bryan for talking about HD wallets. I am going to be talking about wallet architecture in Bitcoin Core. Alright. Who am I? I work on Bitcoin Core. I\u0026amp;rsquo;ve been writing code on Bitcoin Core for about 3 years. Lately I have been working on the wallet. I work for Chaincode Labs which is why I get to work on Bitcoin Core. We are a small research lab in New York. There\u0026amp;rsquo;s …"
-},
-{
 	"uri": "/bitcoin-core-dev-tech/2019-06-05-wallet-architecture/",
 	"title": "Wallet Architecture (2019-06-05)",
 	"content": "2019-06-05\nBitcoin Core wallet architecture + descriptors\nhttps://twitter.com/kanzure/status/1136282460675878915\nwriteup: https://github.com/bitcoin/bitcoin/issues/16165\nWallet architecture discussion There are three main areas here. One is IsMine: how do I determine a particular output is affecting my wallet? What about asking for a new address, where is it coming from? That\u0026amp;rsquo;s not just get new address, it\u0026amp;rsquo;s get raw change address, it\u0026amp;rsquo;s also change being created in …"
 },
 {
+	"uri": "/scalingbitcoin/tel-aviv-2019/edgedevplusplus/wallet-architecture/",
+	"title": "Wallet Architecture in Bitcoin Core (2018-10-04)",
+	"content": "Bitcoin Core wallet architecture\nJohn Newbery\nhttps://twitter.com/kanzure/status/1171018684816605185\nIntroduction Thanks Bryan for talking about HD wallets. I am going to be talking about wallet architecture in Bitcoin Core. Alright. Who am I? I work on Bitcoin Core. I\u0026amp;rsquo;ve been writing code on Bitcoin Core for about 3 years. Lately I have been working on the wallet. I work for Chaincode Labs which is why I get to work on Bitcoin Core. We are a small research lab in New York. There\u0026amp;rsquo;s …"
+},
+{
 	"uri": "/scalingbitcoin/tokyo-2018/edgedevplusplus/wallet-security/",
-	"title": "Wallet Security",
-	"content": "Bryan Bishop\nWallet Security, Key Management \u0026amp;amp; Hardware Security Modules (HSMs)\nhttps://twitter.com/kanzure/status/1049813559750746112\nDev++ / BC2 - October 4th-5th 2018 - Keio University, Tokyo, Japan https://bitcoinedge.org/event/keio-devplusplus-2018\nschedule: https://keio-devplusplus-2018.bitcoinedge.org/#schedule\nvideo: https://youtu.be/WcOIXsOLJ3w?t=3550\nAlright, I’m now going to talk about bitcoin wallet security. And I was asked to talk about key management and hardware security …"
+	"title": "Wallet Security, Key Management \u0026 HSMs (2018-10-04)",
+	"content": "Bryan Bishop\nWallet Security, Key Management \u0026amp;amp; Hardware Security Modules (HSMs)\nhttps://twitter.com/kanzure/status/1049813559750746112\nDev++ / BC2 - October 4th-5th 2018 - Keio University, Tokyo, Japan https://bitcoinedge.org/event/keio-devplusplus-2018\nschedule: https://keio-devplusplus-2018.bitcoinedge.org/#schedule\nvideo: https://youtu.be/WcOIXsOLJ3w?t=3550\nIntro Alright, I’m now going to talk about bitcoin wallet security. And I was asked to talk about key management and hardware …"
 },
 {
 	"uri": "/bitcoin-core-dev-tech/2018-10-09-wallet-stuff/",

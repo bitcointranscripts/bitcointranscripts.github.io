@@ -172,10 +172,30 @@
   
   <url>
     <loc>https://btctranscripts.com/andreas-antonopoulos/2014-10-08-andreas-antonopolous-canada-senate-bitcoin/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/andreas-antonopoulos/2014-10-08-andreas-antonopolous-canada-senate-bitcoin/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/andreas-antonopoulos/2014-10-08-andreas-antonopolous-canada-senate-bitcoin/"
+                />
   </url>
   
   <url>
     <loc>https://btctranscripts.com/andreas-antonopoulos/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/andreas-antonopoulos/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/andreas-antonopoulos/"
+                />
   </url>
   
   <url>
@@ -188,14 +208,44 @@
   
   <url>
     <loc>https://btctranscripts.com/andreas-antonopoulos/2018-10-23-andreas-antonopoulos-initial-blockchain-download/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/andreas-antonopoulos/2018-10-23-andreas-antonopoulos-initial-blockchain-download/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/andreas-antonopoulos/2018-10-23-andreas-antonopoulos-initial-blockchain-download/"
+                />
   </url>
   
   <url>
     <loc>https://btctranscripts.com/andreas-antonopoulos/2018-10-07-andreas-antonopoulos-schnorr-signatures/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/andreas-antonopoulos/2018-10-07-andreas-antonopoulos-schnorr-signatures/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/andreas-antonopoulos/2018-10-07-andreas-antonopoulos-schnorr-signatures/"
+                />
   </url>
   
   <url>
     <loc>https://btctranscripts.com/andreas-antonopoulos/2020-04-08-andreas-antonopoulos-seed-splitting/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/andreas-antonopoulos/2020-04-08-andreas-antonopoulos-seed-splitting/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/andreas-antonopoulos/2020-04-08-andreas-antonopoulos-seed-splitting/"
+                />
   </url>
   
   <url>
@@ -1584,6 +1634,10 @@
   </url>
   
   <url>
+    <loc>https://btctranscripts.com/tags/ibd/</loc>
+  </url>
+  
+  <url>
     <loc>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2017/ideal-number-of-full-bitcoin-nodes/</loc>
   </url>
   
@@ -1748,11 +1802,11 @@
   </url>
   
   <url>
-    <loc>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-17-john-newbery-security-models/</loc>
+    <loc>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-19-john-newbery-wallet-development/</loc>
   </url>
   
   <url>
-    <loc>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-19-john-newbery-wallet-development/</loc>
+    <loc>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-17-john-newbery-security-models/</loc>
   </url>
   
   <url>
@@ -1780,7 +1834,7 @@
   </url>
   
   <url>
-    <loc>https://btctranscripts.com/breaking-bitcoin/2019/2019-06-13-joost-jager-hodl-invoices/</loc>
+    <loc>https://btctranscripts.com/breaking-bitcoin/2019/2019-06-09-joost-jager-hodl-invoices/</loc>
   </url>
   
   <url>
@@ -2137,7 +2191,7 @@
   </url>
   
   <url>
-    <loc>https://btctranscripts.com/breaking-bitcoin/2019/mempool-analysis-simulation/</loc>
+    <loc>https://btctranscripts.com/breaking-bitcoin/2019/2019-06-08-mempool-analysis-simulation/</loc>
   </url>
   
   <url>
@@ -2474,6 +2528,16 @@
   
   <url>
     <loc>https://btctranscripts.com/categories/podcast/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/categories/podcast/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/categories/podcast/"
+                />
   </url>
   
   <url>
@@ -3508,11 +3572,11 @@
   </url>
   
   <url>
-    <loc>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/wallet-architecture/</loc>
+    <loc>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-05-wallet-architecture/</loc>
   </url>
   
   <url>
-    <loc>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-05-wallet-architecture/</loc>
+    <loc>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/wallet-architecture/</loc>
   </url>
   
   <url>

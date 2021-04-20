@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>seguridad on Transcripciones de ₿itcoin</title>
+    <link>https://btctranscripts.com/es/tags/seguridad/</link>
+    <description>Recent content in seguridad on Transcripciones de ₿itcoin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://btctranscripts.com/es/tags/seguridad/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Andreas Antonopolous Senado de Canadá Bitcoin (2014-10-08)</title>
+      <link>https://btctranscripts.com/es/andreas-antonopoulos/2014-10-08-andreas-antonopolous-canada-senate-bitcoin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/es/andreas-antonopoulos/2014-10-08-andreas-antonopolous-canada-senate-bitcoin/</guid>
+      <description>Esta es una transcripción de las pruebas presentadas ante el Comité del Senado de Canadá sobre Banca, Comercio y Economía. Aquí hay un video. El discurso de apertura se puede encontrar aquí.
+Puede aparecer otra transcripción aquí pero quién sabe.
+Se puede encontrar una transcripción adicional aquí.
+Informe final: http://www.parl.gc.ca/Content/SEN/Committee/412/banc/rep/rep12jun15-e.pdf
+Observaciones preparadas. Mi experiencia se centra principalmente en la seguridad de la información y la arquitectura de redes. Tengo un máster en redes y sistemas distribuidos y he trabajado en este campo desde 1992.</description>
+    </item>
+    
+    <item>
+      <title>Andreas Antonopoulos - División de la semilla (2020-04-08)</title>
+      <link>https://btctranscripts.com/es/andreas-antonopoulos/2020-04-08-andreas-antonopoulos-seed-splitting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/es/andreas-antonopoulos/2020-04-08-andreas-antonopoulos-seed-splitting/</guid>
+      <description>Nombre: Andreas Antonopoulos
+Tema: ¿Por qué es una mala idea dividir las semillas?
+Localisación: Canal de YouTube de Andreas Antonopoulos
+Día: 8 de abril de 2020
+Vídeo: https://www.youtube.com/watch?v=p5nSibpfHYE
+¿Por qué es una mala idea dividir las semillas? Esto es algo que se discute todo el tiempo, especialmente en los foros de novatos. Realmente hay que tener mucho cuidado. Un amigo tuvo la idea de lograr una protección de 2 de 3 de la semilla de mi cartera almacenando la semilla de la siguiente manera:</description>
+    </item>
+    
+  </channel>
+</rss>

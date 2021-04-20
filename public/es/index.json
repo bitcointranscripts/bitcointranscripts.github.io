@@ -1,5 +1,35 @@
 [
 {
+	"uri": "/es/andreas-antonopoulos/2014-10-08-andreas-antonopolous-canada-senate-bitcoin/",
+	"title": "Andreas Antonopolous Senado de Canadá Bitcoin (2014-10-08)",
+	"content": "Esta es una transcripción de las pruebas presentadas ante el Comité del Senado de Canadá sobre Banca, Comercio y Economía. Aquí hay un video. El discurso de apertura se puede encontrar aquí.\nPuede aparecer otra transcripción aquí pero quién sabe.\nSe puede encontrar una transcripción adicional aquí.\nInforme final: http://www.parl.gc.ca/Content/SEN/Committee/412/banc/rep/rep12jun15-e.pdf\nObservaciones preparadas. Mi experiencia se centra principalmente en la seguridad de la información y la …"
+},
+{
+	"uri": "/es/andreas-antonopoulos/",
+	"title": "Andreas Antonopoulos",
+	"content": " Andreas Antonopolous Senado de Canadá Bitcoin (2014-10-08)   Andreas Antonopoulos - Descarga inicial de la cadena de bloques (2018-10-23)   Andreas Antonopoulos - División de la semilla (2020-04-08)   Andreas Antonopoulos - Firmas Schnorr (2018-10-07)    "
+},
+{
+	"uri": "/es/andreas-antonopoulos/2018-10-23-andreas-antonopoulos-initial-blockchain-download/",
+	"title": "Andreas Antonopoulos - Descarga inicial de la cadena de bloques (2018-10-23)",
+	"content": "Andreas Antonopoulos\nBitcoin Q\u0026amp;amp;A: Descarga inicial de la cadena de bloques\nVídeo: https://www.youtube.com/watch?v=OrYDehC-8TU\nDescarga inicial de la cadena de bloques Becca pregunta por qué se tarda tanto en descargar el blockchain. Yo tengo una conexión rápida a Internet y he podido descargar 200GB en menos de una hora. A lo que Becca se refiere es a lo que se llama la descarga inicial del blockchain o IBD, que es la primera sincronización del nodo de Bitcoin o de cualquier tipo de nodo de …"
+},
+{
+	"uri": "/es/andreas-antonopoulos/2020-04-08-andreas-antonopoulos-seed-splitting/",
+	"title": "Andreas Antonopoulos - División de la semilla (2020-04-08)",
+	"content": "Nombre: Andreas Antonopoulos\nTema: ¿Por qué es una mala idea dividir las semillas?\nLocalisación: Canal de YouTube de Andreas Antonopoulos\nDía: 8 de abril de 2020\nVídeo: https://www.youtube.com/watch?v=p5nSibpfHYE\n¿Por qué es una mala idea dividir las semillas? Esto es algo que se discute todo el tiempo, especialmente en los foros de novatos. Realmente hay que tener mucho cuidado. Un amigo tuvo la idea de lograr una protección de 2 de 3 de la semilla de mi cartera almacenando la semilla de la …"
+},
+{
+	"uri": "/es/andreas-antonopoulos/2018-10-07-andreas-antonopoulos-schnorr-signatures/",
+	"title": "Andreas Antonopoulos - Firmas Schnorr (2018-10-07)",
+	"content": "Andreas Antonopoulos\nLTB Episodio 378 - El Petro dentro de Venezuela y las firmas Schnorr\nFirmas Schnorr Actualmente utilizamos el algoritmo de firma digital de curva elíptica (ECDSA), que es una forma específica de realizar firmas digitales con curvas elípticas, pero no la única. Las firmas Schnorr tienen algunas características únicas que las hacen mejores en muchos aspectos que el algoritmo ECDSA que usamos actualmente en Bitcoin.\nLas firmas Schnorr son mejores porque tienen ciertas …"
+},
+{
+	"uri": "/es/tags/cartera/",
+	"title": "cartera",
+	"content": ""
+},
+{
 	"uri": "/es/categories/",
 	"title": "Categories",
 	"content": ""
@@ -15,6 +45,11 @@
 	"content": "Nombre: Christian Decker\nTema: Eltoo: El (lejano) futuro de lightning\nLugar: Chaincode Labs\nFecha: 18 de Septiembre 2019\nVideo: https://www.youtube.com/watch?v=3ZjymCOmn_A\nDiapositivas: https://residency.chaincode.com/presentations/lightning/Eltoo.pdf\nEltoo white paper: https://blockstream.com/eltoo.pdf\nArtículo de Bitcoin Magazine: https://bitcoinmagazine.com/articles/noinput-class-bitcoin-soft-fork-simplify-lightning\nIntro ¿Quién nunca ha oído hablar de eltoo? Es mi proyecto favorito y estoy …"
 },
 {
+	"uri": "/es/tags/consenso/",
+	"title": "consenso",
+	"content": ""
+},
+{
 	"uri": "/es/tags/eltoo/",
 	"title": "eltoo",
 	"content": ""
@@ -25,9 +60,19 @@
 	"content": ""
 },
 {
+	"uri": "/es/categories/podcast/",
+	"title": "podcast",
+	"content": ""
+},
+{
 	"uri": "/es/chaincode-labs/chaincode-residency/",
 	"title": "Residencia de Chaincode",
 	"content": " Christian Decker - Eltoo (2019-06-25)    "
+},
+{
+	"uri": "/es/tags/seguridad/",
+	"title": "seguridad",
+	"content": ""
 },
 {
 	"uri": "/es/tags/",

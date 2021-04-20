@@ -3,6 +3,80 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://btctranscripts.com/es/andreas-antonopoulos/2014-10-08-andreas-antonopolous-canada-senate-bitcoin/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/andreas-antonopoulos/2014-10-08-andreas-antonopolous-canada-senate-bitcoin/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/andreas-antonopoulos/2014-10-08-andreas-antonopolous-canada-senate-bitcoin/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/es/andreas-antonopoulos/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/andreas-antonopoulos/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/andreas-antonopoulos/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/es/andreas-antonopoulos/2018-10-23-andreas-antonopoulos-initial-blockchain-download/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/andreas-antonopoulos/2018-10-23-andreas-antonopoulos-initial-blockchain-download/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/andreas-antonopoulos/2018-10-23-andreas-antonopoulos-initial-blockchain-download/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/es/andreas-antonopoulos/2020-04-08-andreas-antonopoulos-seed-splitting/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/andreas-antonopoulos/2020-04-08-andreas-antonopoulos-seed-splitting/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/andreas-antonopoulos/2020-04-08-andreas-antonopoulos-seed-splitting/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/es/andreas-antonopoulos/2018-10-07-andreas-antonopoulos-schnorr-signatures/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/andreas-antonopoulos/2018-10-07-andreas-antonopoulos-schnorr-signatures/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/andreas-antonopoulos/2018-10-07-andreas-antonopoulos-schnorr-signatures/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/es/tags/cartera/</loc>
+  </url>
+  
+  <url>
     <loc>https://btctranscripts.com/es/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -50,6 +124,10 @@
   </url>
   
   <url>
+    <loc>https://btctranscripts.com/es/tags/consenso/</loc>
+  </url>
+  
+  <url>
     <loc>https://btctranscripts.com/es/tags/eltoo/</loc>
     <xhtml:link
                 rel="alternate"
@@ -83,6 +161,20 @@
   </url>
   
   <url>
+    <loc>https://btctranscripts.com/es/categories/podcast/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/categories/podcast/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/categories/podcast/"
+                />
+  </url>
+  
+  <url>
     <loc>https://btctranscripts.com/es/chaincode-labs/chaincode-residency/</loc>
     <xhtml:link
                 rel="alternate"
@@ -94,6 +186,10 @@
                 hreflang="es"
                 href="https://btctranscripts.com/es/chaincode-labs/chaincode-residency/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/es/tags/seguridad/</loc>
   </url>
   
   <url>

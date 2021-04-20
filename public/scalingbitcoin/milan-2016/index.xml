@@ -53,13 +53,7 @@ Good morning. This is such a beautiful conference. Eric and I are excited to spe
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://btctranscripts.com/scalingbitcoin/milan-2016/chainbreak/</guid>
-      <description>braids Properties of a braid system Inclusivity Equal pay for equal proof-of-work
-Delayed tx fee allocation You can&amp;rsquo;t allocate tx fees until you see the state of the network
-  do you split fees?
-  if you don&amp;rsquo;t, you can fee-snipe
-  if you do, smart wallets will cheat the fee reallocation
-  smart wallets that pay specific miners compromise centralization
-  tx fees should be the best way to get your tx confirmed</description>
+      <description>Table of Contents  1. braids  1.1. Properties of a braid system  1.1.1. Inclusivity 1.1.2. Delayed tx fee allocation 1.1.3. Network size measured by graph structure 1.1.4. cohort algorithm / sub-cohort ordering 1.1.5. outstanding problem - merging blocks of different difficulty   1.2. fee sniping  1.2.1. what even is fee sniping?   1.3. definition of a cohort 1.4. tx processing system must process all txs 1.</description>
     </item>
     
     <item>

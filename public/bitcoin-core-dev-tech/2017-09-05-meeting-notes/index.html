@@ -28,10 +28,10 @@
 coredev.tech september 2017
 https://twitter.com/kanzure/status/907233490919464960
 ((As always, any errors are most likely my own. etc.))
-There is significant concern regarding whether BlueMatt has become a misnomer.
+# Introduction There is significant concern regarding whether BlueMatt has become a misnomer.
 Monday night presentation: http://diyhpl.us/wiki/transcripts/sf-bitcoin-meetup/2017-09-04-jonas-schenlli-bip150-bip151/
 I think we should continue to use #bitcoin-core-dev for anything about changing Bitcoin Core and try to keep things open even though we&rsquo;re together here today and tomorrow and the next.
-Nobody produces P2SH change when they have a native output."/>
+# Wallets and block pruning and rescans Nobody produces P2SH change when they have a native output."/>
 
     
 
@@ -7495,15 +7495,17 @@ Nobody produces P2SH change when they have a native output."/>
 <p>coredev.tech september 2017</p>
 <p><a href="https://twitter.com/kanzure/status/907233490919464960">https://twitter.com/kanzure/status/907233490919464960</a></p>
 <p>((As always, any errors are most likely my own. etc.))</p>
-<!-- raw HTML omitted -->
+<div id="intro" />
+# Introduction
 <p>There is significant concern regarding whether BlueMatt has become a misnomer.</p>
 <p>Monday night presentation: <a href="http://diyhpl.us/wiki/transcripts/sf-bitcoin-meetup/2017-09-04-jonas-schenlli-bip150-bip151/">http://diyhpl.us/wiki/transcripts/sf-bitcoin-meetup/2017-09-04-jonas-schenlli-bip150-bip151/</a></p>
 <p>I think we should continue to use #bitcoin-core-dev for anything about changing Bitcoin Core and try to keep things open even though we&rsquo;re together here today and tomorrow and the next.</p>
-<!-- raw HTML omitted -->
+<div id="rescans" />
+# Wallets and block pruning and rescans
 <p>Nobody produces P2SH change when they have a native output. And producing a mixed set of outputs will tell you which one it is. So this is not ideal from a privacy standpoint.</p>
 <p>If you scan a transaction&hellip; so, there&rsquo;s still this question of for do you have&hellip; P2SH embedded or not. And we will need separate ones, for other script versions too. &hellip;.</p>
 <p>At some point, you can&rsquo;t expect all nodes to have the full blockchain. So we should have wallet management practices which will not be gratuitously requiring as much, and such rescans. You could have a Bloom filter, scan it, and then determine if you are going to fetch the block or not, like if you know you have correlated things that you want to fetch from that block. You can add noise, sure, that will help.</p>
-<p>I suspect that the way that rescan will work a year from now is to <!-- raw HTML omitted -->implement Laolu&rsquo;s proposal<!-- raw HTML omitted -->. So we&rsquo;d say that the &hellip; Bloom filter for every block, and then a rescan will scan the filters, and then go for it. We should not limit ourselves to&hellip; there, just because we might&hellip; This is basically like when we generate keys for P2SH embedded.</p>
+<p>I suspect that the way that rescan will work a year from now is to <a href="https://www.youtube.com/watch?v=7FWKc8lM4Ek">implement Laolu&rsquo;s proposal</a>. So we&rsquo;d say that the &hellip; Bloom filter for every block, and then a rescan will scan the filters, and then go for it. We should not limit ourselves to&hellip; there, just because we might&hellip; This is basically like when we generate keys for P2SH embedded.</p>
 <p>Do I have the pubkey? Well, if not, then never consider it mine. Right now you won&rsquo;t accept a P2SH that is paying.. key hash. You will. If you have the P2SH, yes. Ah I think I have a solution. If you have a redeemScript then it will try to recurse into it. There are more possibilities&ndash; the pubkeyhash versus the scripthash, &hellip; maybe two chains.</p>
 <p>You should only accept things you issued. It&rsquo;s important to have this discussion. Bryan had previously raised a concern that it looked like we would accept IsMine() people converting your&hellip; in order to accept anything witness, the equivalent redeemScript must be in your key store, meaning you must have explicitly added it.</p>
 <p>There&rsquo;s all kinds of other scripts that you can have that use the same keys. You only want to accept payments to those if you added that script. That template as applies to that key. The problem with that rule is that the situation is not robust&hellip; backup. This goes back to an earlier concern&hellip; every time you use the wallet, you have to backup now. I&rsquo;d like to think about, as we move forward, that the logic for determining is this a payment to me becomes a completely separate logic from the logic of how do I sign for this. Right now they are intertwined in multiple ways. If we have a private key for something, then we accept the &hellip; for the way this was&hellip; but not for a 1-of-2 multisig. We accept P2SH stuff&ndash; the backup&mdash; P2SH is &hellip; supported in Bitcoin Core, it&rsquo;s like a shim for testing.</p>
@@ -7556,19 +7558,24 @@ Nobody produces P2SH change when they have a native output."/>
 <p>You shouldn&rsquo;t discriminate against less sophisticated users: say your transaction can become cheaper in exchange for some privacy; we have this massive performance improvement with dbcache that only sophisticated users know about. This is an argument against having settings. Well, there&rsquo;s a GUI option for dbcache size, but it&rsquo;s hidden in menus.</p>
 <p>So are we going to add a GUI option for what type of change address?</p>
 <p>P2SH .. witness. Default for change as of one is bare witness but that&rsquo;s still open for debate. If nobody debates it, then it doesn&rsquo;t change. Well it&rsquo;s up to whoever implements it. Joinmarket wants to use Bech32, openbazaar is using it, &hellip; Alright, lunch.</p>
-<!-- raw HTML omitted -->
+<div id="p2sh-adoption" />
+# P2SH adoption
 <p>How long did it take with P2SH before you could generally assume you could send it? Well, quite a while. You can&rsquo;t&hellip; it took years, but blockchain.info has P2SH support now, yes. They still have it. So right now if you send to a&hellip; they don&rsquo;t index it, you cannot see transactions by a certain address, it shows up as &hellip; so everyone is using them because they are &ldquo;private&rdquo;? It took years&ndash; perhaps faster around this time, but still some time.</p>
 <p>blockchain.info didn&rsquo;t maintain their site for like 2 years. Armory didn&rsquo;t implement it for a long time, either. There&rsquo;s also special cases, like say you have a Bitcoin Core wallet. Coinbase was&hellip; bech32.. say I have an exchange &hellip;  the particular case of sending to yourself from a service is a case that people will use quickly. Nobody wants to make an extra round trip. If I&rsquo;m paying myself, I&rsquo;ll take it. I did have someone ask can we have the bip URI.. and I said, the problem is that it&rsquo;s even more things to worry about.</p>
-<!-- raw HTML omitted -->
+<div id="testnet" />
+# testnet difficulty adjustment algorithm
 <p>Testnet difficulty adjustment algorithm is why the blockheight is high on testnet3.</p>
-<!-- raw HTML omitted -->
+<div id="bumpfee" />
+# bumpfee and rebroadcasting
 <p>Do wallets commonly re-broadcast if the transaction is not in the blockchain after a few days? Anyonecanspend covenant utxo that it needs to create a new one of itself in its output. If you had covenants, you could somehow &hellip;. oh we could do it that other way, but it&rsquo;s not as cool as covenants. Replay protection with covenants would be a good use of covenants instead of some other uses of covenants. Segwit2x should add strong two-way replay protection.</p>
-<!-- raw HTML omitted -->
+<div id="libevent" />
+# libevent
 <p><a href="https://github.com/bitcoin/bitcoin/pull/11227">https://github.com/bitcoin/bitcoin/pull/11227</a></p>
 <p>There are three layers in libevent. There&rsquo;s the base that deals with socket read/write events, then a layer on top of that which is their arrays or their buffers, whatever they call them, which have callbacks, and then buffer events on top of that like when I get data then do this etc. I started out at the most abstract level because I assumed it would be nice and clean. I started with buffer events because they were the most abstract and I thought it would lead to the cleanest code. There are a few little annoying things that don&rsquo;t work quite how we wanted it to, so I added a ton of hacks that ruined the abstraction anyway. So I went down a level and found the same problem. And then I went down to the most basic events, and it  ended up being the least amount of changes to the code. After rewriting it so many times, I was never happy with the diff and the readability. It&rsquo;s something that was straightforward, and now it&rsquo;s sort of&ndash; it&rsquo;s going back. When it&rsquo;s callback based, the code is hard to read. I am satisfied now that it is reasonably easy to follow and see what&rsquo;s going on. &ldquo;If this is set, set it to zero&rdquo;. I didn&rsquo;t do those because I pushed this Sunday night and I wanted to discuss it here.</p>
 <p>The previous implementation was a single thread for networking and peers were connected to sequentially with a pause in between. But now with the event loop we can do multiple simultaneous connection attempts and do it all at once in an asynchronous manner.</p>
 <p>New plan for Cory is we&rsquo;ll merge his work immediately, then we will just have Cory fix the problems as they show up, and we&rsquo;ll rename Bitcoin Core to Bitcoin Cory.</p>
-<!-- raw HTML omitted -->
+<div id="toolchain-builder" />
+# Tool chain builder
 <p>How many turtles should we go down? Should this system attempt to be self-deterministic, or do you still run it inside of gitian to do builds? You have something that looks like depends, builds the toolchain for your system, builds whatever utilities you need, should that thing itself attempt to be produce a deterministic build between people? It would be nice, but might not be realistic. It would only be realistic if you kind of real blow-up what you build it. Maybe build your own shell, your own&hellip; It should build a compiler, a linker, and binutils. Not all the unix utilities.</p>
 <p>Filesystem can impact build results, although we think we have fixed that. There&rsquo;s bit rot, and deterministic work done in upstreams, but a lot of it we can&rsquo;t use it because we&rsquo;re&hellip;. but if we were to assume we were using a way newer version of these tools, then we can eliminate a bunch of those tools, but we&rsquo;re relying on those tools. Doing a build of your own shell and busybox and building that stuff is kind of over the top. What&rsquo;s the minimal requirements to build? Maybe it&rsquo;s not that many. It needs a shell. It needs the build utilities. Busybox would be the easiest way to do it.</p>
 <p>Compiler, linker, assembler are absolutely required. We should assume a linux system for builds. From linux, build host environment for OSX. Have a deterministic build from gitian that is the same, even if you build on OSX. It&rsquo;s pushing it, I recognize. Most of the time you assume build and host are the same. But maybe you build the toolchain on linux, and then run it on osx. It&rsquo;s about the same effort as supporting a new platform. wumpus does (non-deterministic) builds on openbsd and freebsd.</p>
@@ -7576,9 +7583,11 @@ Nobody produces P2SH change when they have a native output."/>
 <p>If you change all the transactions in history to use indexes, that&rsquo;s an extra 30% reduction in chain size. So you get a 20% reduction using&hellip; but if you turn all the &hellip; it&rsquo;s another 30% reduction. It&rsquo;s really good savings. You have to have an index of&hellip;</p>
 <h1 id="other-other">other other</h1>
 <p><a href="http://bitcoin.sipa.be/bech32/demo/demo.html">http://bitcoin.sipa.be/bech32/demo/demo.html</a></p>
-<!-- raw HTML omitted -->
+<div id="signature-aggregation" />
+# Signature aggregation
 <p>Moved to <a href="http://diyhpl.us/wiki/transcripts/bitcoin-core-dev-tech/2017-09-06-signature-aggregation/">http://diyhpl.us/wiki/transcripts/bitcoin-core-dev-tech/2017-09-06-signature-aggregation/</a></p>
-<!-- raw HTML omitted -->
+<div id="coin-selection" />
+# Coin selection
 <p>First time around uses branch-and-bound. And then it falls back to the other method if it fails. It&rsquo;s one-shot. The branch-and-bound, first time it runs, it sees if it can construct&hellip; it uses effective values for the inputs. The argument I had for not using effective values is that it causes you to grind-down change more often. So the concern about effective value is that.. [bad things but since BnB creates no change it’s not a problem]</p>
 <p>Use the discard rate for deciding change. Calculating the cost of change and using discard rate, instead of the 1008 block estimate Say you have a 1k sat input and it would cost you 999 sat to spend it. You&rsquo;re happy to pick it, even though the fee rate you&rsquo;re paying is high. It&rsquo;s sorted by&hellip; given a list of inputs, we sort it first, in largest to smallest, and then we pick going down that. The window it has to hit is based on the discard rate. The discard rate is small compared to the total fee rate. The cost of creating a change is our current fee rate, so 34x. That&rsquo;s several thousand. Unlikely to pick anything smaller than that. Picks larger effective rates first. So it doesn&rsquo;t get into the window.</p>
 <p>The effective value is &hellip;  serialized or virtual size of the input (vsize), &hellip; 148 bytes for non-SegWit, with your current fee rate, is used to compute the effective fee rate. Maybe exclude things that are smaller than 50% of their effective value. It&rsquo;s already going past zero and negative value. Might take multiple passes&hellip; done experiments where the smaller the window is&hellip; Instead of stopping at the first one, find as many that fit as possible, from the same branch down, and then use some other restrict to find the &lsquo;best&rsquo;. If you take the first solution, go off and find the one with the highest discard rate but has the most number of inputs.</p>
@@ -7601,17 +7610,21 @@ Nobody produces P2SH change when they have a native output."/>
 <p>Sort by effective value, keep adding them top down, and if we haven&rsquo;t at that point then we literally can&rsquo;t make the payment. Litecoin added 800 MB to their utxo set early on because someone sent 1 sat to everyone. And you had like a million small utxos and the coin selection algorithm failed because it could never find your real outputs.</p>
 <p>If you go above the target, you cut off that branch. This gives you a small corridor in the binary tree where you actually have to explore in order to find all possible solutions. You would usually probably be broadly in range of that amounts maybe at the top of it, and you&rsquo;re throwing away a lot of money that you don&rsquo;t want to do that&ndash; we want to minimize the waste. What could be the metric to measure the waste? The idea of this right now just take the first and we would continue searching and then depending on how many inputs our smallest solution has, we would calculate how much fees we pay for the inputs that we would not necessarily need compared to the long-term expectation of what an input would cost, plus the allowance. So we had two inputs, we find a solution that hits the allowance window in the lower area, so it&rsquo;s less give to the fees, but if we add two more inputs at 100 sat/byte, then the user is wasting money because he could send more to the fees but later when it&rsquo;s cheaper. Well we don&rsquo;t know it&rsquo;s going to be cheaper.</p>
 <p>We have a lot of different things in the metric. Right now we just strictly prioritize things. We already have 6 confirm stuff, then 1 confirm stuff, then 0 confirm stuff, and maybe we want to treat every address as one unit, then you go on&hellip;. I&rsquo;m not sure that discardfee. Maybe minimize discardfee. No, just whatever. We could minimize number of inputs, minimize amount of fee we discard&hellip;.</p>
-<!-- raw HTML omitted -->
+<div id="release-validation" />
+# Release validation
 <p>I have a pubkey in the binary. A download tool to check the binary that you&rsquo;ve downloaded, as an alternative to asking the user to manually check that the release was signed by the bitcoin developers. verifysignature is not good for this. sha256. I am just saying minimum work. That would be a small number of lines.</p>
-<!-- raw HTML omitted -->
+<div id="jenkins" />
+# jenkins
 <p>jenkins has standard IRC integration and we could use it to trigger builds. It also has some interaction with github pull requests. The advantage of running things on not travis-ci is that we could run a full set of tests because we wouldn&rsquo;t be limited to the same machines that travis-ci provides. You could also guarantee that there&rsquo;s nothing else running concurrently. You can build in parallel, still.</p>
-<!-- raw HTML omitted -->
+<div id="conflicting-transactions" />
+# Conflicting transactions for withdrawals
 <p>We&rsquo;re trying to prevent transactions from expiring. We treat our change outputs as being spendable immediately. With SegWit we can avoid malleability. We can immediately spend the output from the last round in our transaction. And then we have a long-chain of unconfirmed transaction. Then we need to compute the fee rate to bump the entire chain.</p>
 <p>You take all the unconfirmed transactions in the graph and you compute their size, you look at the fees, and then you say what&rsquo;s the size of the whole package, and what&rsquo;s the fee for the whole package that needs to be added. So for every withdrawal, update to the current fee target. In Core, it&rsquo;d be nice to do replacement stuff.</p>
 <p>Treat your own unconfirmed outputs as trustworthy, and deposits keep the confirmation depth requirement. Other people can chain off your stuff and mess it up, instead&hellip;.</p>
 <p>Do child pays for parent instead of replacement. CPFP for chains of 25 transactions. At some point you have to stop doing withdraws. An exchange was anchoring his replacements, which caused problems. Replacement is a lot more efficient.</p>
 <p>200 byte transaction that pays 30 sat/byte. It gets spent by a 1 sat/byte 100 kb transaction, but my bump to replace it has to pay an enormous amount of sat/byte in order to pay the thing it bumped out. It doesn&rsquo;t have to be the fee rate, it has to be the thing it bumped out.</p>
-<!-- raw HTML omitted -->
+<div id="mast" />
+# Merkle trees and MASTs
 <p>Moved to <a href="http://diyhpl.us/wiki/transcripts/bitcoin-core-dev-tech/2017-09-07-merkleized-abstract-syntax-trees/">http://diyhpl.us/wiki/transcripts/bitcoin-core-dev-tech/2017-09-07-merkleized-abstract-syntax-trees/</a></p>
 
 

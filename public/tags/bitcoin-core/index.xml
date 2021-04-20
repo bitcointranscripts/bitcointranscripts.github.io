@@ -7,6 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://btctranscripts.com/tags/bitcoin-core/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Assumeutxo (2019-06-07)</title>
+      <link>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-07-assumeutxo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-07-assumeutxo/</guid>
+      <description>Assumeutxo
+https://twitter.com/kanzure/status/1137008648620838912
+Why assumeutxo assumeutxo is a spiritual continuation of assumevalid. Why do we want to do this in the first place? At the moment, it takes hours and days to do initial block download. Various projects in the community have been implementing meassures to speed this up. Casa I think bundles datadir with their nodes. Other projects like btcpay have various ways of bundling this up and signing things with gpg keys and these solutions are not quite half-baked but they are probably not desirable either.</description>
+    </item>
+    
+    <item>
       <title>Fabian Jahr - Debugging Workshop (2020-02-07)</title>
       <link>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-07-fabian-jahr-debugging-workshop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -66,6 +77,20 @@ I&amp;rsquo;m a bitcoin core developer. Also worked at LedgerX (4 years). I also
     </item>
     
     <item>
+      <title>Overview Bitcoin Core Architecture</title>
+      <link>https://btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/overview-bitcoin-core-architecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/overview-bitcoin-core-architecture/</guid>
+      <description>Bitcoin Core architecture overview
+James O&amp;rsquo;Beirne (jamesob)
+https://twitter.com/kanzure/status/1048098034234445824
+slides: http://jameso.be/dev++2018/
+video: https://www.youtube.com/watch?v=L_sI_tXmy2U
+Introduction Alright guys, how are you guys doing? You guys look tired. Given your brains are probably fried, I am delighted to tell you that this talk will be pretty high level. I am James O&amp;rsquo;Beirne, I work at Chaincode Labs. I&amp;rsquo;ve been working on Bitcoin Core since 2015. I am in New York most of the time.</description>
+    </item>
+    
+    <item>
       <title>Sighash Noinput</title>
       <link>https://btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/sighash-noinput/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -83,18 +108,28 @@ So, just really brief about who I am. I have a software development background. 
     </item>
     
     <item>
-      <title>Wallet Security</title>
-      <link>https://btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/wallet-security/</link>
+      <title>Wallet Architecture (2019-06-05)</title>
+      <link>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-05-wallet-architecture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/wallet-security/</guid>
-      <description>Bryan Bishop
-Wallet Security, Key Management &amp;amp; Hardware Security Modules (HSMs)
-https://twitter.com/kanzure/status/1049813559750746112
-Dev++ / BC2 - October 4th-5th 2018 - Keio University, Tokyo, Japan https://bitcoinedge.org/event/keio-devplusplus-2018
-schedule: https://keio-devplusplus-2018.bitcoinedge.org/#schedule
-video: https://youtu.be/WcOIXsOLJ3w?t=3550
-Alright, I’m now going to talk about bitcoin wallet security. And I was asked to talk about key management and hardware security modules and a bunch of other topics all in one talk. This will be a bit broader than some of the other talks because this is an important subject about how do you actually store bitcoin and then some of the developments around the actual storage of bitcoin in a secure way.</description>
+      <guid>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-05-wallet-architecture/</guid>
+      <description>2019-06-05
+Bitcoin Core wallet architecture + descriptors
+https://twitter.com/kanzure/status/1136282460675878915
+writeup: https://github.com/bitcoin/bitcoin/issues/16165
+Wallet architecture discussion There are three main areas here. One is IsMine: how do I determine a particular output is affecting my wallet? What about asking for a new address, where is it coming from? That&amp;rsquo;s not just get new address, it&amp;rsquo;s get raw change address, it&amp;rsquo;s also change being created in fundrawtransaction. The third issue is wallet signing. Storage is not an entrypoint, it&amp;rsquo;s just a way of implementing these things.</description>
+    </item>
+    
+    <item>
+      <title>Wallet Architecture in Bitcoin Core (2018-10-04)</title>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/wallet-architecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/wallet-architecture/</guid>
+      <description>Bitcoin Core wallet architecture
+John Newbery
+https://twitter.com/kanzure/status/1171018684816605185
+Introduction Thanks Bryan for talking about HD wallets. I am going to be talking about wallet architecture in Bitcoin Core. Alright. Who am I? I work on Bitcoin Core. I&amp;rsquo;ve been writing code on Bitcoin Core for about 3 years. Lately I have been working on the wallet. I work for Chaincode Labs which is why I get to work on Bitcoin Core. We are a small research lab in New York.</description>
     </item>
     
   </channel>

@@ -1281,13 +1281,7 @@ Plumo Plumo sands for &amp;ldquo;feather&amp;rdquo; in esperanto. I hope most pe
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://btctranscripts.com/scalingbitcoin/milan-2016/chainbreak/</guid>
-      <description>braids Properties of a braid system Inclusivity Equal pay for equal proof-of-work
-Delayed tx fee allocation You can&amp;rsquo;t allocate tx fees until you see the state of the network
-  do you split fees?
-  if you don&amp;rsquo;t, you can fee-snipe
-  if you do, smart wallets will cheat the fee reallocation
-  smart wallets that pay specific miners compromise centralization
-  tx fees should be the best way to get your tx confirmed</description>
+      <description>Table of Contents  1. braids  1.1. Properties of a braid system  1.1.1. Inclusivity 1.1.2. Delayed tx fee allocation 1.1.3. Network size measured by graph structure 1.1.4. cohort algorithm / sub-cohort ordering 1.1.5. outstanding problem - merging blocks of different difficulty   1.2. fee sniping  1.2.1. what even is fee sniping?   1.3. definition of a cohort 1.4. tx processing system must process all txs 1.</description>
     </item>
     
     <item>
@@ -2644,7 +2638,7 @@ Adam Back
 Elizabeth Stark
 video: https://www.youtube.com/watch?v=0WCaoGiAOHE&amp;amp;t=1h58m3s
 https://twitter.com/kanzure/status/1005842855271784449
-stark: Thank you Giacomo. Who here had too much fun at the party last night? My voice is going. Hopefully it will stay for this interview. We are lucky to have Adam Back here today, co-founder of Blockstreamand inventor of Hashcash(history). He just happened to appear and there was an available spot. Thank you for making this work.</description>
+stark: Thank you Giacomo. Who here had too much fun at the party last night? My voice is going. Hopefully it will stay for this interview. We are lucky to have Adam Back here today, co-founder of Blockstream and inventor of Hashcash (history). He just happened to appear and there was an available spot. Thank you for making this work.</description>
     </item>
     
     <item>
@@ -2867,10 +2861,10 @@ Intro Hi everyone. Thanks for coming to my talk. As I was introduced I’m Jonat
     
     <item>
       <title>Joost Jager - HODL Invoices (2019-06-13)</title>
-      <link>https://btctranscripts.com/breaking-bitcoin/2019/2019-06-13-joost-jager-hodl-invoices/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/2019-06-09-joost-jager-hodl-invoices/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://btctranscripts.com/breaking-bitcoin/2019/2019-06-13-joost-jager-hodl-invoices/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/2019-06-09-joost-jager-hodl-invoices/</guid>
       <description>Joost Jager
 Hodl Invoices (Breaking Bitcoin training session)
 Video: https://www.youtube.com/watch?v=jOEq9PvN-7A
@@ -3418,14 +3412,17 @@ We have the rest of the team wathcing remotely. I think the motivation for this 
     </item>
     
     <item>
-      <title>Mempool Analysis Simulation</title>
-      <link>https://btctranscripts.com/breaking-bitcoin/2019/mempool-analysis-simulation/</link>
+      <title>Mempool Analysis &amp; Simulation (2019-06-08)</title>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/2019-06-08-mempool-analysis-simulation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://btctranscripts.com/breaking-bitcoin/2019/mempool-analysis-simulation/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/2019-06-08-mempool-analysis-simulation/</guid>
       <description>Mempool analysis and simulation
 kallewoof
+Date: 2019-06-08
 https://twitter.com/kanzure/status/1137342023063744512
+video: https://www.youtube.com/watch?v=Mznn1uVyTUQ
+slides: https://breaking-bitcoin.com/docs/slides/2019/mempoolAnalysis.pdf
 Introduction Fun fact: I don&amp;rsquo;t think anyone knows this fact, but antpool is a miner and antpool is not mining replace-by-fee transactions. What I mean by that is that if you do a replace-by-fee transaction, they will ignore the second high fee transaction. There are cases where transactions are RBF-bumped to increase the fee to make it mined faster, so you RBF bump it, and then you have people spending the unconfirmed RBF version and then have a chain of transactions but then the original transaction is mined and not the other chained transactions.</description>
     </item>
     
@@ -4524,7 +4521,7 @@ Peter Todd
 2017-03-04
 https://www.youtube.com/watch?v=0mVOq1jaR1U&amp;amp;feature=youtu.be&amp;amp;t=1h20m
 https://twitter.com/kanzure/status/838481311992012800
-Thank you. I&amp;rsquo;ll admit the last one was probably the most fun other than. On the schedule, it said scaling and UTXO and I threw something together. TXO commitmentswere a bold idea but recently there were some observations that make it more interesting. I thought I would start by going through what problem they are actually solving.
+Thank you. I&amp;rsquo;ll admit the last one was probably the most fun other than. On the schedule, it said scaling and UTXO and I threw something together. TXO commitments were a bold idea but recently there were some observations that make it more interesting. I thought I would start by going through what problem they are actually solving.
 Like David was saying in the last presentation, running a full node is kind of a pain.</description>
     </item>
     
@@ -5743,7 +5740,7 @@ Device drivers I come from the domain of Windows device drivers.</description>
     </item>
     
     <item>
-      <title>Wallet Architecture</title>
+      <title>Wallet Architecture in Bitcoin Core (2018-10-04)</title>
       <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/wallet-architecture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -5755,7 +5752,7 @@ Introduction Thanks Bryan for talking about HD wallets. I am going to be talking
     </item>
     
     <item>
-      <title>Wallet Security</title>
+      <title>Wallet Security, Key Management &amp; HSMs (2018-10-04)</title>
       <link>https://btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/wallet-security/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -5766,7 +5763,7 @@ https://twitter.com/kanzure/status/1049813559750746112
 Dev++ / BC2 - October 4th-5th 2018 - Keio University, Tokyo, Japan https://bitcoinedge.org/event/keio-devplusplus-2018
 schedule: https://keio-devplusplus-2018.bitcoinedge.org/#schedule
 video: https://youtu.be/WcOIXsOLJ3w?t=3550
-Alright, I’m now going to talk about bitcoin wallet security. And I was asked to talk about key management and hardware security modules and a bunch of other topics all in one talk. This will be a bit broader than some of the other talks because this is an important subject about how do you actually store bitcoin and then some of the developments around the actual storage of bitcoin in a secure way.</description>
+Intro Alright, I’m now going to talk about bitcoin wallet security. And I was asked to talk about key management and hardware security modules and a bunch of other topics all in one talk. This will be a bit broader than some of the other talks because this is an important subject about how do you actually store bitcoin and then some of the developments around the actual storage of bitcoin in a secure way.</description>
     </item>
     
     <item>

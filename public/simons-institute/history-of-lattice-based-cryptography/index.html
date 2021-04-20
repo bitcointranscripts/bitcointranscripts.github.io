@@ -7640,7 +7640,11 @@ Introduction 1 So this first of all thanks for coming back from lunch, it&rsquo;
 </code></pre>
 <p>.. it is not, it is a lattice crypto function.. this is just a hash function. At the time, something practically useful was still a big challeng.e But in the case of hash functions, in 2008, we managed to find a truly practical implementation of those functions, it&rsquo;s something that could go as fast as something you want. It was a hash function as fast as SHA-2. SSE/AVX, arithmetic mod q = 257, use w = 42. You can make cyclic lattices really efficient. I wrote a small program to find the best parameters, but little did I know that the values would be so small.</p>
 <p>If you try to put these foundational papers into a table, we have these injective and surjective functions &hellip;</p>
-<!-- raw HTML omitted -->
+<table>
+<tr><td>Surjective<, Weaker assumptions, Fewer applications</td><td>Injective, Stronger assumptions, More applications</td></tr>
+<tr><td>General lattices, Weaker assumption, Inefficient</td><td>Ajtai 1996, SIS one-way function, Complexity omega(n^2)</td><td>Regev 2004, LWE encryption +, Complexity omega(n^2)</td></tr>
+<tr>Ring lattices, Stronger assumption, Efficient</td><td>M 2002, RingSIS one-way, Complexity O tilde (n)</td></tr>
+</table>
 <p>Many other papers: MR 2002, PR 2006, LM 2006, SSTX 2009.</p>
 <p>&hellip; SIS function, and we have the less efficient and more efficient version versus whether you use structural lattices or not. Ajtai founded this area, of surjective function .. based on general lattices, and Regev 2004 got the more powerful injective version of this, but still inefficient. And still the cyclic lattice work got efficiency but only for surjective and weaker assumptions. And later <a href="https://en.wikipedia.org/wiki/Ideal_lattice_cryptography#Ring-LWE">RingLWE</a> in LPR 2010 sort of fixed that. Basically combining these two things. So they can do much more than that. And this was pseudorandom, so it brought even more algebraic number theory into the game. There are several other related papers that are technically equally important, one of them is MR 2004, PR 2006, LM 2006, SSTX 2009. The SSTX 2009 paper technically predates the RingLWE paper results. This function was one-way, but we don&rsquo;t show pseudorandomness, so it&rsquo;s technically interesting and nice, but proving the sort of pseudorandomness is what was needed to get it past that for other applications.</p>
 <h1 id="fully-homomorphic-encryption">Fully homomorphic encryption</h1>
