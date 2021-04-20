@@ -413,7 +413,7 @@ When we talk about bitcoin wallets, you always have some kind of secret or entro
     </item>
     
     <item>
-      <title>John Newbery Wallet Development (2019-06-19)</title>
+      <title>John Newbery - Wallet Development (2019-06-19)</title>
       <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-19-john-newbery-wallet-development/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -726,18 +726,6 @@ Okay. Hi everyone. Check. Wow. Check one two. Okay it&amp;rsquo;s working. And I
     </item>
     
     <item>
-      <title>Wallet Architecture</title>
-      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/wallet-architecture/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/wallet-architecture/</guid>
-      <description>Bitcoin Core wallet architecture
-John Newbery
-https://twitter.com/kanzure/status/1171018684816605185
-Introduction Thanks Bryan for talking about HD wallets. I am going to be talking about wallet architecture in Bitcoin Core. Alright. Who am I? I work on Bitcoin Core. I&amp;rsquo;ve been writing code on Bitcoin Core for about 3 years. Lately I have been working on the wallet. I work for Chaincode Labs which is why I get to work on Bitcoin Core. We are a small research lab in New York.</description>
-    </item>
-    
-    <item>
       <title>Wallet Architecture (2019-06-05)</title>
       <link>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-05-wallet-architecture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -751,7 +739,19 @@ Wallet architecture discussion There are three main areas here. One is IsMine: h
     </item>
     
     <item>
-      <title>Wallet Security</title>
+      <title>Wallet Architecture in Bitcoin Core (2018-10-04)</title>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/wallet-architecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/wallet-architecture/</guid>
+      <description>Bitcoin Core wallet architecture
+John Newbery
+https://twitter.com/kanzure/status/1171018684816605185
+Introduction Thanks Bryan for talking about HD wallets. I am going to be talking about wallet architecture in Bitcoin Core. Alright. Who am I? I work on Bitcoin Core. I&amp;rsquo;ve been writing code on Bitcoin Core for about 3 years. Lately I have been working on the wallet. I work for Chaincode Labs which is why I get to work on Bitcoin Core. We are a small research lab in New York.</description>
+    </item>
+    
+    <item>
+      <title>Wallet Security, Key Management &amp; HSMs (2018-10-04)</title>
       <link>https://btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/wallet-security/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -762,7 +762,7 @@ https://twitter.com/kanzure/status/1049813559750746112
 Dev++ / BC2 - October 4th-5th 2018 - Keio University, Tokyo, Japan https://bitcoinedge.org/event/keio-devplusplus-2018
 schedule: https://keio-devplusplus-2018.bitcoinedge.org/#schedule
 video: https://youtu.be/WcOIXsOLJ3w?t=3550
-Alright, I’m now going to talk about bitcoin wallet security. And I was asked to talk about key management and hardware security modules and a bunch of other topics all in one talk. This will be a bit broader than some of the other talks because this is an important subject about how do you actually store bitcoin and then some of the developments around the actual storage of bitcoin in a secure way.</description>
+Intro Alright, I’m now going to talk about bitcoin wallet security. And I was asked to talk about key management and hardware security modules and a bunch of other topics all in one talk. This will be a bit broader than some of the other talks because this is an important subject about how do you actually store bitcoin and then some of the developments around the actual storage of bitcoin in a secure way.</description>
     </item>
     
     <item>

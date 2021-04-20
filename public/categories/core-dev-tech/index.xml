@@ -12,7 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-07-assumeutxo/</guid>
-      <description>assumeutxo
+      <description>Assumeutxo
 https://twitter.com/kanzure/status/1137008648620838912
 Why assumeutxo assumeutxo is a spiritual continuation of assumevalid. Why do we want to do this in the first place? At the moment, it takes hours and days to do initial block download. Various projects in the community have been implementing meassures to speed this up. Casa I think bundles datadir with their nodes. Other projects like btcpay have various ways of bundling this up and signing things with gpg keys and these solutions are not quite half-baked but they are probably not desirable either.</description>
     </item>
@@ -152,10 +152,10 @@ It would be good to have better oversight or overview about who is working in wh
 coredev.tech september 2017
 https://twitter.com/kanzure/status/907233490919464960
 ((As always, any errors are most likely my own. etc.))
-There is significant concern regarding whether BlueMatt has become a misnomer.
+# Introduction There is significant concern regarding whether BlueMatt has become a misnomer.
 Monday night presentation: http://diyhpl.us/wiki/transcripts/sf-bitcoin-meetup/2017-09-04-jonas-schenlli-bip150-bip151/
 I think we should continue to use #bitcoin-core-dev for anything about changing Bitcoin Core and try to keep things open even though we&amp;rsquo;re together here today and tomorrow and the next.
-Nobody produces P2SH change when they have a native output.</description>
+# Wallets and block pruning and rescans Nobody produces P2SH change when they have a native output.</description>
     </item>
     
     <item>
@@ -167,7 +167,7 @@ Nobody produces P2SH change when they have a native output.</description>
       <description>﻿https://twitter.com/kanzure/status/907075529534328832
 Merkleized abstract syntax trees (MAST) https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-September/014932.html
 I am going to talk about the scheme I posted to the mailing list yesterday which is to implement MAST (merkleized abstract syntax trees) in bitcoin in a minimally invasive way as possible. It&amp;rsquo;s broken into two major consensus features that together gives us MAST. I&amp;rsquo;ll start with the last BIP.
-This is tail-call evaluation. Can we generalize P2SHto give us more general capabilities, than just a single redeem script.</description>
+This is tail-call evaluation. Can we generalize P2SH to give us more general capabilities, than just a single redeem script.</description>
     </item>
     
     <item>
@@ -214,7 +214,7 @@ There&amp;rsquo;s an ex-Google product director interested in helping with Bitco
       
       <guid>https://btctranscripts.com/bitcoin-core-dev-tech/bitcoin-devcore-2015/research-and-development-goals/</guid>
       <description>11:45 am: Open Discussion - R&amp;amp;D Goals &amp;amp; Challenges – Patrick Murck, Gavin Andresen, Cory Fields
-We often see people saying htey are testing the waters, they fixed a typo, they made a tiny little fix that doesn&amp;rsquo;t impact much, they are getting used to the process. They are finding that it&amp;rsquo;s really easy to contribut to Bitcoin Core. You code your changes, you submit your changes, there&amp;rsquo;s not much to it.</description>
+We often see people saying they are testing the waters, they fixed a typo, they made a tiny little fix that doesn&amp;rsquo;t impact much, they are getting used to the process. They are finding that it&amp;rsquo;s really easy to contribut to Bitcoin Core. You code your changes, you submit your changes, there&amp;rsquo;s not much to it.</description>
     </item>
     
     <item>

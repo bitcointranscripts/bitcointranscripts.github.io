@@ -93,7 +93,7 @@ Intro I am going to talk about BetterHash this evening. If you are coming to Adv
       <description>﻿https://twitter.com/kanzure/status/907075529534328832
 Merkleized abstract syntax trees (MAST) https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-September/014932.html
 I am going to talk about the scheme I posted to the mailing list yesterday which is to implement MAST (merkleized abstract syntax trees) in bitcoin in a minimally invasive way as possible. It&amp;rsquo;s broken into two major consensus features that together gives us MAST. I&amp;rsquo;ll start with the last BIP.
-This is tail-call evaluation. Can we generalize P2SHto give us more general capabilities, than just a single redeem script.</description>
+This is tail-call evaluation. Can we generalize P2SH to give us more general capabilities, than just a single redeem script.</description>
     </item>
     
     <item>

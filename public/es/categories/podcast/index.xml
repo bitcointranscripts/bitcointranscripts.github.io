@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>podcast on Transcripciones de ₿itcoin</title>
+    <link>https://btctranscripts.com/es/categories/podcast/</link>
+    <description>Recent content in podcast on Transcripciones de ₿itcoin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://btctranscripts.com/es/categories/podcast/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Andreas Antonopoulos - Firmas Schnorr (2018-10-07)</title>
+      <link>https://btctranscripts.com/es/andreas-antonopoulos/2018-10-07-andreas-antonopoulos-schnorr-signatures/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/es/andreas-antonopoulos/2018-10-07-andreas-antonopoulos-schnorr-signatures/</guid>
+      <description>Andreas Antonopoulos
+LTB Episodio 378 - El Petro dentro de Venezuela y las firmas Schnorr
+Firmas Schnorr Actualmente utilizamos el algoritmo de firma digital de curva elíptica (ECDSA), que es una forma específica de realizar firmas digitales con curvas elípticas, pero no la única. Las firmas Schnorr tienen algunas características únicas que las hacen mejores en muchos aspectos que el algoritmo ECDSA que usamos actualmente en Bitcoin.
+Las firmas Schnorr son mejores porque tienen ciertas peculiaridades en la forma en que se desarrollan las matemáticas.</description>
+    </item>
+    
+  </channel>
+</rss>

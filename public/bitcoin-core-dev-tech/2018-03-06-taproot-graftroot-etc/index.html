@@ -7509,9 +7509,9 @@ graftroot The idea of graftroot is that in every contract there is a superset of
 <p>&hellip;</p>
 <h1 id="taproot-and-graftroot">Taproot and graftroot</h1>
 <p>Taproot: P = c + H(c || script) G</p>
-<p>Graftroot: sig<!-- raw HTML omitted -->p<!-- raw HTML omitted -->(script)</p>
+<p>Graftroot: sig<sub>p</sub>(script)</p>
 <p>An output is a point p. c is some other point. There is some other point, and its private key may not exist.</p>
-<p>Direct spending is sig<!-- raw HTML omitted -->p<!-- raw HTML omitted -->(tx).</p>
+<p>Direct spending is sig<sub>p</sub>(tx).</p>
 <p>Taproot spending&hellip;</p>
 <p>The scriptpubkey becomes an actual pubkey, that&rsquo;s the discussion about whether it should be a pubkey or a pubkeyhash. Once we have quantum computers&hellip;.</p>
 <p>An output is a public key and version number. There are three different ways to spend it- either sign with the key and there&rsquo;s a transaction which is the most common situation. Any single key. It&rsquo;s just a signature&hellip; you may want to use musig to construct the public key but that&rsquo;s only one of the possibilities, and it&rsquo;s up to the wallet. You have given authorization to this public key to spend this output. There&rsquo;s a signature with that key that is being spent. Sometimes it&rsquo;s not a public key, though. Yes. Calling it a public key is probably&hellip;.. it&rsquo;s a public key in that it&rsquo;s a scriptpubkey, someone with a quantum computer can spend it.</p>

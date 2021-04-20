@@ -7496,6 +7496,9 @@ Context Fabrice: Alright so, I&rsquo;m going to talk about the payments model we
 
 
 
+    <p>Category:
+    <a href='/categories/residency'>Residency</a></p>
+
 
 <p>Name: Fabrice Drouin</p>
 <p>Location: Chaincode Labs Lightning Residency 2019</p>
@@ -7517,7 +7520,7 @@ Context Fabrice: Alright so, I&rsquo;m going to talk about the payments model we
 <p>So the preimage goes back to Bob and then back to Alice. Alice has paid, and Carol has been paid.</p>
 <p>From Bob&rsquo;s point of view, his overall balance has not changed, he&rsquo;s just moved money from one channel to the other. Basically that&rsquo;s why lightning is really special when it comes to payment networks because it&rsquo;s a payment network that is not custodial. Typical payment processors, when you use a payment processor for Visa or whatever, your customers will pay your payment processor and your payment processor will pay you after a while. This is really different. Bob is not really holding funds that belong to Carol and Alice. So from a payment point of view, even though it&rsquo;s not clear-cut yet, from a regulation point of view, Bob is not a custodian as in traditional payment gateways.</p>
 <p>There are limitations to this, for example what happens if you reuse a payment hash? Suppose Carol&rsquo;s program for creating payment requests is really bad because it&rsquo;s Javascript and when you reload the page you start with the same values, and I&rsquo;m not making this up, do you know what happens when you reuse R values in ECDSA signatures? Is it something you&rsquo;ve seen?</p>
-<p>Audience <!-- raw HTML omitted --></p>
+<p>Audience <Inaudible></p>
 <p>Fabrice: Yes, so basically signatures in ECDSA are a couple of numbers, usually you call them R and S. R is a random value and S is the result of a computation that includes your private key and the message you want to sign. If you reuse R values, basically you have two equations, two unknowns and it’s game over, you know the private key. All it takes is two signatures with the same R value and a different message obviously, it was a hack for the Playstation and for many many printed bitcoin wallets using Javascript because it&rsquo;s really hard to generate good random values. Very very hard. A lot of attacks actually target bad random generators and the stupidest generators you can use are the ones that start from the same value when you just reboot your application, which is something that can happen to you very easily if you&rsquo;re doing Javascript in web pages and you&rsquo;re not really careful about what happens when you reload the webpage.</p>
 <p>So in the case of Carol, if she reuses payment hashes, basically Bob, when he sees the payment with the same payment hash he says &ldquo;OK, I&rsquo;m not going to forward the payment, I&rsquo;m going to send the preimage back to Alice, I&rsquo;m gonna get paid and Alice will get a preimage.&rdquo; This is extremely bad because Alice has a valid proof of payment. Carol never saw the money the second time but Carol, if there&rsquo;s a conflict between Alice and Carol, Alice will say “I have a payment request that you&rsquo;ve signed, signed by Carol&rsquo;s node, and I have a preimage that matches the payment request.” It&rsquo;s really bad. If she was buying something then Carol has to send the product to Alice.</p>
 <p>Reusing preimages is really bad and it&rsquo;s really bad to get yourself into a situation when you actually, unknowingly reuse random values.</p>
@@ -7548,11 +7551,11 @@ Audience: If I just basically lied about &lt;fee drop-off?&gt; method, that&rsqu
 <p>Decker: So that happens after 2^64 payment attempts</p>
 <p>Audience: If it&rsquo;s limited on the destination then you have to store that many hashes?</p>
 <p>Decker: So all he actually has to do is to remember the last index he used, and so we have constant memory for the machine itself. And we both have a primage generation mechanism that uses that index and some pre-shared index to start generating preimage and he will then go on to generate hashes from those primages, and my job is just to stop and create requests.</p>
-<p>Fabrice: &hellip;so what happens when your vending machine <!-- raw HTML omitted --> offline <!-- raw HTML omitted -->?</p>
+<p>Fabrice: &hellip;so what happens when your vending machine <inaudible> offline <inaudible>?</p>
 <p>I know that for example we were contacted by a company in South Africa that is very interested in offline payments because they want, for them it&rsquo;s too complex to have the machines setup connected to the internet and they want to use the customers' internet connections, basically that&rsquo;s what it&rsquo;s doing.</p>
-<p>Audience: Key … <!-- raw HTML omitted --> &hellip; they have small devices for offline payments?</p>
+<p>Audience: Key … <inaudible> &hellip; they have small devices for offline payments?</p>
 <p>Fabrice: Yes.</p>
-<p>Audience: <!-- raw HTML omitted --></p>
+<p>Audience: <inaudible></p>
 <p>Fabrice: Do you remember, have you heard of them? I don&rsquo;t remember the name but, basically there&rsquo;s some kind of secure element in a tiny device you can put in vending machines and basically it can sign things but it&rsquo;s impossible to steal it. I don&rsquo;t remember the name of the company.</p>
 <p>There&rsquo;s something that is very important to notice, when you forward payments the delay you have to &lt;?&gt; payments, has to be a bit smaller on this side than on this side. Can you see why? Suppose Bob forwards a payment to Carol and the payment times out, if the timeout on the left side is shorter than the timeout on the right side, Bob has a problem.</p>
 <p>Audience: Because the hash will be cancelled and when Bob gets the preimage he has no-one to ask.</p>
@@ -7582,14 +7585,14 @@ Audience: If I just basically lied about &lt;fee drop-off?&gt; method, that&rsqu
 <p>Audience: So quicker than timing out, Carol would say it&rsquo;s failed or succeeded. And if there&rsquo;s no quick fail or succeed message, then you know that it&rsquo;s gotta be closed.</p>
 <p>Decker: Then the channel will drop onto the blockchain because at some point this HTLC timeout will be getting closed, and I need time to actually react on it.</p>
 <p>Fabrice: That&rsquo;s also a valid point because what makes lightning hard to implement if you want to implement absolutely everything is that, when you&rsquo;re monitoring the blockchain, you need to implement the case you described where the channel is closed between Bob and Carol because Carol is not sending back the preimage, but she publishes an HTLC success transaction on-chain, so you need to be able to understand what&rsquo;s going on, Bob needs to be able to understand what&rsquo;s going on and extract the preimage from the on-chain transaction and send it back to Alice, otherwise it&rsquo;s lost money.</p>
-<p>Audience: And worse than that, you may have <!-- raw HTML omitted --></p>
+<p>Audience: And worse than that, you may have <?> and Carol may publish it's commitment transaction with an HTLC success transaction, or preimage transaction, and so Bob must be sure, or must wait, <be sure that Bob’s going to open before the timeout?></p>
 <p>Fabrice: No, suppose that Bob sees the preimage on-chain&hellip;</p>
 <p>Audience: But in a failure Case, if Bob&hellip;</p>
 <p>Fabrice: Yes, he must be sure he got his money back</p>
 <p>Decker: Oh you mean the re-org case, in combination with the channel&hellip; that&rsquo;s nasty.</p>
 <p>Fabrice: If you want to implement your own lightning node, all these corner cases are really hard to get right. It takes a lot of time&hellip;</p>
 <p>Decker: Wait, this is not a problem with eltoo!</p>
-<!-- raw HTML omitted -->
+<laughter>
 <p>Decker: You will get so sick of me saying that the entire week.</p>
 <p>Audience: So during this time when the channel between Bob and Carol is gone on-chain, while you&rsquo;re waiting for that, between Alice and Bob they&rsquo;re unable to close that channel.</p>
 <p>Decker: They could close the channel unilaterally at any point in time, but they have chosen their timeouts high-enough so that, hopefully the Bob and Carol part will be settled and give them the necessary information to basically settle that HTLC gracefully.</p>
@@ -7604,10 +7607,10 @@ Audience: If I just basically lied about &lt;fee drop-off?&gt; method, that&rsqu
 <p>Fabrice: If, suppose Bob closes the left hand side channel with Alice before this one has been closed, then you have the same problem of monitoring what&rsquo;s happening to the HTLC output. Can you get the preimage?</p>
 <p>Audience:- So you have to wait</p>
 <p>Audience: So the thing is, if Bob closes the channel with Carol on-chain, Bob probably does this because Carol is not responding or anything right, so in this way Bob has to timeout because Carol could still show up and on-chain enforce the preimage. So Bob has to wait for the timeout and then can turn to Alice and &ldquo;let&rsquo;s cancel our HTLC because there&rsquo;s no preimage coming&rdquo;. Because you have already seen on-chain that it&rsquo;s not coming. He already claimed his funds back. On the other side, if Carol is quick and provides a preimage quickly, Bob can turn around and claim the funds from Alice off-chain, because he now knows the preimage.</p>
-<p>Fabrice: So when it works well, lightning is almost instant <!-- raw HTML omitted -->, but when it fails it&rsquo;s a bit ugly because you need to wait and basically a stuck payment in lightning is not something you can cancel and say &ldquo;OK i&rsquo;ll try again&rdquo;. If you&rsquo;re trying to buy something on the internet with lightning, and if it doesn&rsquo;t work, you can&rsquo;t try to buy again because it&rsquo;s not safe; you may end up paying twice. Unless the shop is really… A lot of early lightning merchants were happy to settle any HTLC even if the same item had been sold before and the checks they made on links between their inventory and payment requests were very very limited, it&rsquo;s probably better now but&hellip;</p>
+<p>Fabrice: So when it works well, lightning is almost instant <laughter>, but when it fails it&rsquo;s a bit ugly because you need to wait and basically a stuck payment in lightning is not something you can cancel and say &ldquo;OK i&rsquo;ll try again&rdquo;. If you&rsquo;re trying to buy something on the internet with lightning, and if it doesn&rsquo;t work, you can&rsquo;t try to buy again because it&rsquo;s not safe; you may end up paying twice. Unless the shop is really… A lot of early lightning merchants were happy to settle any HTLC even if the same item had been sold before and the checks they made on links between their inventory and payment requests were very very limited, it&rsquo;s probably better now but&hellip;</p>
 <ul>
 <li>
-<!-- raw HTML omitted -->
+<inaudible>
 </li>
 </ul>
 <p>Fabrice: If you do that, you may end up paying twice.</p>

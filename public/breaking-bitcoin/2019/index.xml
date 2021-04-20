@@ -104,10 +104,10 @@ Current capabilities of hardware wallets Normally, hardware wallets keep keys re
     
     <item>
       <title>Joost Jager - HODL Invoices (2019-06-13)</title>
-      <link>https://btctranscripts.com/breaking-bitcoin/2019/2019-06-13-joost-jager-hodl-invoices/</link>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/2019-06-09-joost-jager-hodl-invoices/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://btctranscripts.com/breaking-bitcoin/2019/2019-06-13-joost-jager-hodl-invoices/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/2019-06-09-joost-jager-hodl-invoices/</guid>
       <description>Joost Jager
 Hodl Invoices (Breaking Bitcoin training session)
 Video: https://www.youtube.com/watch?v=jOEq9PvN-7A
@@ -154,14 +154,17 @@ Introduction Knowing the topology is not necessarily a vulnerability, but it giv
     </item>
     
     <item>
-      <title>Mempool Analysis Simulation</title>
-      <link>https://btctranscripts.com/breaking-bitcoin/2019/mempool-analysis-simulation/</link>
+      <title>Mempool Analysis &amp; Simulation (2019-06-08)</title>
+      <link>https://btctranscripts.com/breaking-bitcoin/2019/2019-06-08-mempool-analysis-simulation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://btctranscripts.com/breaking-bitcoin/2019/mempool-analysis-simulation/</guid>
+      <guid>https://btctranscripts.com/breaking-bitcoin/2019/2019-06-08-mempool-analysis-simulation/</guid>
       <description>Mempool analysis and simulation
 kallewoof
+Date: 2019-06-08
 https://twitter.com/kanzure/status/1137342023063744512
+video: https://www.youtube.com/watch?v=Mznn1uVyTUQ
+slides: https://breaking-bitcoin.com/docs/slides/2019/mempoolAnalysis.pdf
 Introduction Fun fact: I don&amp;rsquo;t think anyone knows this fact, but antpool is a miner and antpool is not mining replace-by-fee transactions. What I mean by that is that if you do a replace-by-fee transaction, they will ignore the second high fee transaction. There are cases where transactions are RBF-bumped to increase the fee to make it mined faster, so you RBF bump it, and then you have people spending the unconfirmed RBF version and then have a chain of transactions but then the original transaction is mined and not the other chained transactions.</description>
     </item>
     

@@ -24,13 +24,7 @@
 <meta name="twitter:image" content="https://btctranscripts.com/images/btctranscripts.png"/>
 
 <meta name="twitter:title" content="Chainbreak"/>
-<meta name="twitter:description" content="braids Properties of a braid system Inclusivity Equal pay for equal proof-of-work
-Delayed tx fee allocation You can&rsquo;t allocate tx fees until you see the state of the network
-  do you split fees?
-  if you don&rsquo;t, you can fee-snipe
-  if you do, smart wallets will cheat the fee reallocation
-  smart wallets that pay specific miners compromise centralization
-  tx fees should be the best way to get your tx confirmed"/>
+<meta name="twitter:description" content="Table of Contents  1. braids  1.1. Properties of a braid system  1.1.1. Inclusivity 1.1.2. Delayed tx fee allocation 1.1.3. Network size measured by graph structure 1.1.4. cohort algorithm / sub-cohort ordering 1.1.5. outstanding problem - merging blocks of different difficulty   1.2. fee sniping  1.2.1. what even is fee sniping?   1.3. definition of a cohort 1.4. tx processing system must process all txs 1."/>
 
     
 
@@ -7214,64 +7208,64 @@ Delayed tx fee allocation You can&rsquo;t allocate tx fees until you see the sta
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky"><div class="docs-toc">
 	<nav id="TableOfContents">
   <ul>
-    <li><a href="#braidsa-idsec-1-namesec-1a">braids<!-- raw HTML omitted --><!-- raw HTML omitted --></a>
+    <li><a href="#braidsa-idsec-1-namesec-1a">braids<a id="sec-1" name="sec-1"></a></a>
       <ul>
-        <li><a href="#properties-of-a-braid-systema-idsec-1-1-namesec-1-1a">Properties of a braid system<!-- raw HTML omitted --><!-- raw HTML omitted --></a>
+        <li><a href="#properties-of-a-braid-systema-idsec-1-1-namesec-1-1a">Properties of a braid system<a id="sec-1-1" name="sec-1-1"></a></a>
           <ul>
-            <li><a href="#inclusivitya-idsec-1-1-1-namesec-1-1-1a">Inclusivity<!-- raw HTML omitted --><!-- raw HTML omitted --></a></li>
-            <li><a href="#delayed-tx-fee-allocationa-idsec-1-1-2-namesec-1-1-2a">Delayed tx fee allocation<!-- raw HTML omitted --><!-- raw HTML omitted --></a></li>
-            <li><a href="#network-size-measured-by-graph-structurea-idsec-1-1-3-namesec-1-1-3a">Network size measured by graph structure<!-- raw HTML omitted --><!-- raw HTML omitted --></a></li>
-            <li><a href="#cohort-algorithm--sub-cohort-orderinga-idsec-1-1-4-namesec-1-1-4a">cohort algorithm / sub-cohort ordering<!-- raw HTML omitted --><!-- raw HTML omitted --></a></li>
-            <li><a href="#outstanding-problem---merging-blocks-of-different-difficultya-idsec-1-1-5-namesec-1-1-5a">outstanding problem - merging blocks of different difficulty<!-- raw HTML omitted --><!-- raw HTML omitted --></a></li>
+            <li><a href="#inclusivitya-idsec-1-1-1-namesec-1-1-1a">Inclusivity<a id="sec-1-1-1" name="sec-1-1-1"></a></a></li>
+            <li><a href="#delayed-tx-fee-allocationa-idsec-1-1-2-namesec-1-1-2a">Delayed tx fee allocation<a id="sec-1-1-2" name="sec-1-1-2"></a></a></li>
+            <li><a href="#network-size-measured-by-graph-structurea-idsec-1-1-3-namesec-1-1-3a">Network size measured by graph structure<a id="sec-1-1-3" name="sec-1-1-3"></a></a></li>
+            <li><a href="#cohort-algorithm--sub-cohort-orderinga-idsec-1-1-4-namesec-1-1-4a">cohort algorithm / sub-cohort ordering<a id="sec-1-1-4" name="sec-1-1-4"></a></a></li>
+            <li><a href="#outstanding-problem---merging-blocks-of-different-difficultya-idsec-1-1-5-namesec-1-1-5a">outstanding problem - merging blocks of different difficulty<a id="sec-1-1-5" name="sec-1-1-5"></a></a></li>
           </ul>
         </li>
-        <li><a href="#fee-snipinga-idsec-1-2-namesec-1-2a">fee sniping<!-- raw HTML omitted --><!-- raw HTML omitted --></a>
+        <li><a href="#fee-snipinga-idsec-1-2-namesec-1-2a">fee sniping<a id="sec-1-2" name="sec-1-2"></a></a>
           <ul>
-            <li><a href="#what-even-is-fee-snipinga-idsec-1-2-1-namesec-1-2-1a">what even is fee sniping?<!-- raw HTML omitted --><!-- raw HTML omitted --></a></li>
+            <li><a href="#what-even-is-fee-snipinga-idsec-1-2-1-namesec-1-2-1a">what even is fee sniping?<a id="sec-1-2-1" name="sec-1-2-1"></a></a></li>
           </ul>
         </li>
-        <li><a href="#definition-of-a-cohorta-idsec-1-3-namesec-1-3a">definition of a cohort<!-- raw HTML omitted --><!-- raw HTML omitted --></a></li>
-        <li><a href="#tx-processing-system-must-process-all-txsa-idsec-1-4-namesec-1-4a">tx processing system must process all txs<!-- raw HTML omitted --><!-- raw HTML omitted --></a></li>
-        <li><a href="#can-you-have-both-high-blocktime-and-a-braida-idsec-1-5-namesec-1-5a">can you have both high blocktime and a braid?<!-- raw HTML omitted --><!-- raw HTML omitted --></a>
+        <li><a href="#definition-of-a-cohorta-idsec-1-3-namesec-1-3a">definition of a cohort<a id="sec-1-3" name="sec-1-3"></a></a></li>
+        <li><a href="#tx-processing-system-must-process-all-txsa-idsec-1-4-namesec-1-4a">tx processing system must process all txs<a id="sec-1-4" name="sec-1-4"></a></a></li>
+        <li><a href="#can-you-have-both-high-blocktime-and-a-braida-idsec-1-5-namesec-1-5a">can you have both high blocktime and a braid?<a id="sec-1-5" name="sec-1-5"></a></a>
           <ul>
-            <li><a href="#problem-is-double-spendsa-idsec-1-5-1-namesec-1-5-1a">problem is double spends<!-- raw HTML omitted --><!-- raw HTML omitted --></a></li>
-            <li><a href="#two-ways-to-get-paid---inflation-and-tx-feesa-idsec-1-5-2-namesec-1-5-2a">two ways to get paid - inflation, and tx fees<!-- raw HTML omitted --><!-- raw HTML omitted --></a></li>
-            <li><a href="#braids-are-a-constant-factor-improvement-not-scalabilitya-idsec-1-5-3-namesec-1-5-3a">braids are a constant-factor improvement, not &ldquo;scalability&rdquo;<!-- raw HTML omitted --><!-- raw HTML omitted --></a></li>
+            <li><a href="#problem-is-double-spendsa-idsec-1-5-1-namesec-1-5-1a">problem is double spends<a id="sec-1-5-1" name="sec-1-5-1"></a></a></li>
+            <li><a href="#two-ways-to-get-paid---inflation-and-tx-feesa-idsec-1-5-2-namesec-1-5-2a">two ways to get paid - inflation, and tx fees<a id="sec-1-5-2" name="sec-1-5-2"></a></a></li>
+            <li><a href="#braids-are-a-constant-factor-improvement-not-scalabilitya-idsec-1-5-3-namesec-1-5-3a">braids are a constant-factor improvement, not &ldquo;scalability&rdquo;<a id="sec-1-5-3" name="sec-1-5-3"></a></a></li>
           </ul>
         </li>
       </ul>
     </li>
-    <li><a href="#bitcoin-conflates-source-of-scarcity-with-source-of-valuea-idsec-2-namesec-2a">Bitcoin conflates source-of-scarcity with source-of-value<!-- raw HTML omitted --><!-- raw HTML omitted --></a></li>
-    <li><a href="#treechainsa-idsec-3-namesec-3a">treechains<!-- raw HTML omitted --><!-- raw HTML omitted --></a>
+    <li><a href="#bitcoin-conflates-source-of-scarcity-with-source-of-valuea-idsec-2-namesec-2a">Bitcoin conflates source-of-scarcity with source-of-value<a id="sec-2" name="sec-2"></a></a></li>
+    <li><a href="#treechainsa-idsec-3-namesec-3a">treechains<a id="sec-3" name="sec-3"></a></a>
       <ul>
-        <li><a href="#goala-idsec-3-1-namesec-3-1a">goal<!-- raw HTML omitted --><!-- raw HTML omitted --></a>
+        <li><a href="#goala-idsec-3-1-namesec-3-1a">goal<a id="sec-3-1" name="sec-3-1"></a></a>
           <ul>
-            <li><a href="#miners-are-working-as-a-team-to-make-replayrewind-of-history-difficulta-idsec-3-1-1-namesec-3-1-1a">miners are working as a team to make replay/rewind of history difficult<!-- raw HTML omitted --><!-- raw HTML omitted --></a></li>
-            <li><a href="#we-want-to-make-their-job-easier-so-they-dont-have-to-track-everything-to-contribute-to-this-efforta-idsec-3-1-2-namesec-3-1-2a">we want to make their job easier, so they don&rsquo;t have to track everything to contribute to this effort<!-- raw HTML omitted --><!-- raw HTML omitted --></a></li>
+            <li><a href="#miners-are-working-as-a-team-to-make-replayrewind-of-history-difficulta-idsec-3-1-1-namesec-3-1-1a">miners are working as a team to make replay/rewind of history difficult<a id="sec-3-1-1" name="sec-3-1-1"></a></a></li>
+            <li><a href="#we-want-to-make-their-job-easier-so-they-dont-have-to-track-everything-to-contribute-to-this-efforta-idsec-3-1-2-namesec-3-1-2a">we want to make their job easier, so they don&rsquo;t have to track everything to contribute to this effort<a id="sec-3-1-2" name="sec-3-1-2"></a></a></li>
           </ul>
         </li>
-        <li><a href="#how-do-you-keep-your-spota-idsec-3-2-namesec-3-2a">how do you keep your spot?<!-- raw HTML omitted --><!-- raw HTML omitted --></a></li>
-        <li><a href="#potentially-infinite-depth-of-chainsa-idsec-3-3-namesec-3-3a">potentially infinite depth of chains<!-- raw HTML omitted --><!-- raw HTML omitted --></a></li>
-        <li><a href="#this-is-a-proof-of-publication-systema-idsec-3-4-namesec-3-4a">this is a proof-of-publication system<!-- raw HTML omitted --><!-- raw HTML omitted --></a></li>
-        <li><a href="#everyone-has-top-chaina-idsec-3-5-namesec-3-5a">everyone has top chain<!-- raw HTML omitted --><!-- raw HTML omitted --></a>
+        <li><a href="#how-do-you-keep-your-spota-idsec-3-2-namesec-3-2a">how do you keep your spot?<a id="sec-3-2" name="sec-3-2"></a></a></li>
+        <li><a href="#potentially-infinite-depth-of-chainsa-idsec-3-3-namesec-3-3a">potentially infinite depth of chains<a id="sec-3-3" name="sec-3-3"></a></a></li>
+        <li><a href="#this-is-a-proof-of-publication-systema-idsec-3-4-namesec-3-4a">this is a proof-of-publication system<a id="sec-3-4" name="sec-3-4"></a></a></li>
+        <li><a href="#everyone-has-top-chaina-idsec-3-5-namesec-3-5a">everyone has top chain<a id="sec-3-5" name="sec-3-5"></a></a>
           <ul>
-            <li><a href="#broadness-of-chain-backups-decreases-as-chain-depth-increasesa-idsec-3-5-1-namesec-3-5-1a">broadness of chain backups decreases as chain depth increases<!-- raw HTML omitted --><!-- raw HTML omitted --></a></li>
+            <li><a href="#broadness-of-chain-backups-decreases-as-chain-depth-increasesa-idsec-3-5-1-namesec-3-5-1a">broadness of chain backups decreases as chain depth increases<a id="sec-3-5-1" name="sec-3-5-1"></a></a></li>
           </ul>
         </li>
-        <li><a href="#you-can-pick-which-depth-you-target-based-on-your-hashpowera-idsec-3-6-namesec-3-6a">you can pick which depth you target based on your hashpower<!-- raw HTML omitted --><!-- raw HTML omitted --></a></li>
-        <li><a href="#validators-dont-know-validity-but-do-notice-changesa-idsec-3-7-namesec-3-7a">validators don&rsquo;t know validity, but do notice changes<!-- raw HTML omitted --><!-- raw HTML omitted --></a>
+        <li><a href="#you-can-pick-which-depth-you-target-based-on-your-hashpowera-idsec-3-6-namesec-3-6a">you can pick which depth you target based on your hashpower<a id="sec-3-6" name="sec-3-6"></a></a></li>
+        <li><a href="#validators-dont-know-validity-but-do-notice-changesa-idsec-3-7-namesec-3-7a">validators don&rsquo;t know validity, but do notice changes<a id="sec-3-7" name="sec-3-7"></a></a>
           <ul>
-            <li><a href="#does-including-data-in-your-block-reduce-the-chance-other-miners-will-build-on-ita-idsec-3-7-1-namesec-3-7-1a">does including data in your block reduce the chance other miners will build on it?<!-- raw HTML omitted --><!-- raw HTML omitted --></a></li>
+            <li><a href="#does-including-data-in-your-block-reduce-the-chance-other-miners-will-build-on-ita-idsec-3-7-1-namesec-3-7-1a">does including data in your block reduce the chance other miners will build on it?<a id="sec-3-7-1" name="sec-3-7-1"></a></a></li>
           </ul>
         </li>
-        <li><a href="#validity-of-separate-outputs-within-a-single-transaction-is-independenta-idsec-3-8-namesec-3-8a">validity of separate outputs within a single transaction is independent?<!-- raw HTML omitted --><!-- raw HTML omitted --></a>
+        <li><a href="#validity-of-separate-outputs-within-a-single-transaction-is-independenta-idsec-3-8-namesec-3-8a">validity of separate outputs within a single transaction is independent?<a id="sec-3-8" name="sec-3-8"></a></a>
           <ul>
-            <li><a href="#transactions-must-specify-precise-flow-from-each-input-to-each-outputa-idsec-3-8-1-namesec-3-8-1a">transactions must specify precise flow from each input to each output<!-- raw HTML omitted --><!-- raw HTML omitted --></a></li>
+            <li><a href="#transactions-must-specify-precise-flow-from-each-input-to-each-outputa-idsec-3-8-1-namesec-3-8-1a">transactions must specify precise flow from each input to each output<a id="sec-3-8-1" name="sec-3-8-1"></a></a></li>
           </ul>
         </li>
-        <li><a href="#treechains-could-be-implemented-with-bitcoin-as-the-root---undetectablya-idsec-3-9-namesec-3-9a">treechains could be implemented with bitcoin as the root - undetectably<!-- raw HTML omitted --><!-- raw HTML omitted --></a>
+        <li><a href="#treechains-could-be-implemented-with-bitcoin-as-the-root---undetectablya-idsec-3-9-namesec-3-9a">treechains could be implemented with bitcoin as the root - undetectably<a id="sec-3-9" name="sec-3-9"></a></a>
           <ul>
-            <li><a href="#dont-need-to-put-all-data-in-the-chain-only-commitmentsa-idsec-3-9-1-namesec-3-9-1a">don&rsquo;t need to put all data in the chain, only commitments<!-- raw HTML omitted --><!-- raw HTML omitted --></a></li>
+            <li><a href="#dont-need-to-put-all-data-in-the-chain-only-commitmentsa-idsec-3-9-1-namesec-3-9-1a">don&rsquo;t need to put all data in the chain, only commitments<a id="sec-3-9-1" name="sec-3-9-1"></a></a></li>
           </ul>
         </li>
       </ul>
@@ -7573,12 +7567,80 @@ Delayed tx fee allocation You can&rsquo;t allocate tx fees until you see the sta
     <a href='/categories/conference'>Conference</a></p>
 
 
-<!-- raw HTML omitted -->
-<h1 id="braidsa-idsec-1-namesec-1a">braids<!-- raw HTML omitted --><!-- raw HTML omitted --></h1>
-<h2 id="properties-of-a-braid-systema-idsec-1-1-namesec-1-1a">Properties of a braid system<!-- raw HTML omitted --><!-- raw HTML omitted --></h2>
-<h3 id="inclusivitya-idsec-1-1-1-namesec-1-1-1a">Inclusivity<!-- raw HTML omitted --><!-- raw HTML omitted --></h3>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. braids</a>
+<ul>
+<li><a href="#sec-1-1">1.1. Properties of a braid system</a>
+<ul>
+<li><a href="#sec-1-1-1">1.1.1. Inclusivity</a></li>
+<li><a href="#sec-1-1-2">1.1.2. Delayed tx fee allocation</a></li>
+<li><a href="#sec-1-1-3">1.1.3. Network size measured by graph structure</a></li>
+<li><a href="#sec-1-1-4">1.1.4. cohort algorithm / sub-cohort ordering</a></li>
+<li><a href="#sec-1-1-5">1.1.5. outstanding problem - merging blocks of different difficulty</a></li>
+</ul>
+</li>
+<li><a href="#sec-1-2">1.2. fee sniping</a>
+<ul>
+<li><a href="#sec-1-2-1">1.2.1. what even is fee sniping?</a></li>
+</ul>
+</li>
+<li><a href="#sec-1-3">1.3. definition of a cohort</a></li>
+<li><a href="#sec-1-4">1.4. tx processing system must process all txs</a></li>
+<li><a href="#sec-1-5">1.5. can you have both high blocktime and a braid?</a>
+<ul>
+<li><a href="#sec-1-5-1">1.5.1. problem is double spends</a></li>
+<li><a href="#sec-1-5-2">1.5.2. two ways to get paid - inflation, and tx fees</a></li>
+<li><a href="#sec-1-5-3">1.5.3. braids are a constant-factor improvement, not "scalability"</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#sec-2">2. Bitcoin conflates source-of-scarcity with source-of-value</a></li>
+<li><a href="#sec-3">3. treechains</a>
+<ul>
+<li><a href="#sec-3-1">3.1. goal</a>
+<ul>
+<li><a href="#sec-3-1-1">3.1.1. miners are working as a team to make replay/rewind of history difficult</a></li>
+<li><a href="#sec-3-1-2">3.1.2. we want to make their job easier, so they don't have to track everything to contribute to this effort</a></li>
+</ul>
+</li>
+<li><a href="#sec-3-2">3.2. how do you keep your spot?</a></li>
+<li><a href="#sec-3-3">3.3. potentially infinite depth of chains</a></li>
+<li><a href="#sec-3-4">3.4. this is a proof-of-publication system</a></li>
+<li><a href="#sec-3-5">3.5. everyone has top chain</a>
+<ul>
+<li><a href="#sec-3-5-1">3.5.1. broadness of chain backups decreases as chain depth increases</a></li>
+</ul>
+</li>
+<li><a href="#sec-3-6">3.6. you can pick which depth you target based on your hashpower</a></li>
+<li><a href="#sec-3-7">3.7. validators don't know validity, but do notice changes</a>
+<ul>
+<li><a href="#sec-3-7-1">3.7.1. does including data in your block reduce the chance other miners will build on it?</a></li>
+</ul>
+</li>
+<li><a href="#sec-3-8">3.8. validity of separate outputs within a single transaction is independent?</a>
+<ul>
+<li><a href="#sec-3-8-1">3.8.1. transactions must specify precise flow from each input to each output</a></li>
+</ul>
+</li>
+<li><a href="#sec-3-9">3.9. treechains could be implemented with bitcoin as the root - undetectably</a>
+<ul>
+<li><a href="#sec-3-9-1">3.9.1. don't need to put all data in the chain, only commitments</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<h1 id="braidsa-idsec-1-namesec-1a">braids<a id="sec-1" name="sec-1"></a></h1>
+<h2 id="properties-of-a-braid-systema-idsec-1-1-namesec-1-1a">Properties of a braid system<a id="sec-1-1" name="sec-1-1"></a></h2>
+<h3 id="inclusivitya-idsec-1-1-1-namesec-1-1-1a">Inclusivity<a id="sec-1-1-1" name="sec-1-1-1"></a></h3>
 <p>Equal pay for equal proof-of-work</p>
-<h3 id="delayed-tx-fee-allocationa-idsec-1-1-2-namesec-1-1-2a">Delayed tx fee allocation<!-- raw HTML omitted --><!-- raw HTML omitted --></h3>
+<h3 id="delayed-tx-fee-allocationa-idsec-1-1-2-namesec-1-1-2a">Delayed tx fee allocation<a id="sec-1-1-2" name="sec-1-1-2"></a></h3>
 <p>You can&rsquo;t allocate tx fees until you see the state of the network</p>
 <ol>
 <li>
@@ -7619,7 +7681,7 @@ Delayed tx fee allocation You can&rsquo;t allocate tx fees until you see the sta
 </ol>
 </li>
 </ol>
-<h3 id="network-size-measured-by-graph-structurea-idsec-1-1-3-namesec-1-1-3a">Network size measured by graph structure<!-- raw HTML omitted --><!-- raw HTML omitted --></h3>
+<h3 id="network-size-measured-by-graph-structurea-idsec-1-1-3-namesec-1-1-3a">Network size measured by graph structure<a id="sec-1-1-3" name="sec-1-1-3"></a></h3>
 <ol>
 <li>
 <p>cohort can only be delineated once no blocks appear for a certain period</p>
@@ -7629,8 +7691,8 @@ Delayed tx fee allocation You can&rsquo;t allocate tx fees until you see the sta
 <p>(yes - that&rsquo;s Jute)</p>
 </li>
 </ol>
-<h3 id="cohort-algorithm--sub-cohort-orderinga-idsec-1-1-4-namesec-1-1-4a">cohort algorithm / sub-cohort ordering<!-- raw HTML omitted --><!-- raw HTML omitted --></h3>
-<h3 id="outstanding-problem---merging-blocks-of-different-difficultya-idsec-1-1-5-namesec-1-1-5a">outstanding problem - merging blocks of different difficulty<!-- raw HTML omitted --><!-- raw HTML omitted --></h3>
+<h3 id="cohort-algorithm--sub-cohort-orderinga-idsec-1-1-4-namesec-1-1-4a">cohort algorithm / sub-cohort ordering<a id="sec-1-1-4" name="sec-1-1-4"></a></h3>
+<h3 id="outstanding-problem---merging-blocks-of-different-difficultya-idsec-1-1-5-namesec-1-1-5a">outstanding problem - merging blocks of different difficulty<a id="sec-1-1-5" name="sec-1-1-5"></a></h3>
 <ol>
 <li>
 <p>question of how bead/block difficulty is determined</p>
@@ -7647,8 +7709,8 @@ Delayed tx fee allocation You can&rsquo;t allocate tx fees until you see the sta
 </ol>
 </li>
 </ol>
-<h2 id="fee-snipinga-idsec-1-2-namesec-1-2a">fee sniping<!-- raw HTML omitted --><!-- raw HTML omitted --></h2>
-<h3 id="what-even-is-fee-snipinga-idsec-1-2-1-namesec-1-2-1a">what even is fee sniping?<!-- raw HTML omitted --><!-- raw HTML omitted --></h3>
+<h2 id="fee-snipinga-idsec-1-2-namesec-1-2a">fee sniping<a id="sec-1-2" name="sec-1-2"></a></h2>
+<h3 id="what-even-is-fee-snipinga-idsec-1-2-1-namesec-1-2-1a">what even is fee sniping?<a id="sec-1-2-1" name="sec-1-2-1"></a></h3>
 <ol>
 <li>
 <p>miner sees high-fee tx in one block</p>
@@ -7657,12 +7719,12 @@ Delayed tx fee allocation You can&rsquo;t allocate tx fees until you see the sta
 <p>makes competing block with same tx</p>
 </li>
 </ol>
-<h2 id="definition-of-a-cohorta-idsec-1-3-namesec-1-3a">definition of a cohort<!-- raw HTML omitted --><!-- raw HTML omitted --></h2>
+<h2 id="definition-of-a-cohorta-idsec-1-3-namesec-1-3a">definition of a cohort<a id="sec-1-3" name="sec-1-3"></a></h2>
 <p>series of blocks where everything before is an ancestor of everything that comes after</p>
-<h2 id="tx-processing-system-must-process-all-txsa-idsec-1-4-namesec-1-4a">tx processing system must process all txs<!-- raw HTML omitted --><!-- raw HTML omitted --></h2>
+<h2 id="tx-processing-system-must-process-all-txsa-idsec-1-4-namesec-1-4a">tx processing system must process all txs<a id="sec-1-4" name="sec-1-4"></a></h2>
 <p>tx never sits in limbo indefinitely</p>
-<h2 id="can-you-have-both-high-blocktime-and-a-braida-idsec-1-5-namesec-1-5a">can you have both high blocktime and a braid?<!-- raw HTML omitted --><!-- raw HTML omitted --></h2>
-<h3 id="problem-is-double-spendsa-idsec-1-5-1-namesec-1-5-1a">problem is double spends<!-- raw HTML omitted --><!-- raw HTML omitted --></h3>
+<h2 id="can-you-have-both-high-blocktime-and-a-braida-idsec-1-5-namesec-1-5a">can you have both high blocktime and a braid?<a id="sec-1-5" name="sec-1-5"></a></h2>
+<h3 id="problem-is-double-spendsa-idsec-1-5-1-namesec-1-5-1a">problem is double spends<a id="sec-1-5-1" name="sec-1-5-1"></a></h3>
 <p>double spending is free</p>
 <ol>
 <li>
@@ -7678,25 +7740,25 @@ Delayed tx fee allocation You can&rsquo;t allocate tx fees until you see the sta
 <p>in an inclusive DAG, you submit those blocks late, and still get paid</p>
 </li>
 </ol>
-<h3 id="two-ways-to-get-paid---inflation-and-tx-feesa-idsec-1-5-2-namesec-1-5-2a">two ways to get paid - inflation, and tx fees<!-- raw HTML omitted --><!-- raw HTML omitted --></h3>
-<h3 id="braids-are-a-constant-factor-improvement-not-scalabilitya-idsec-1-5-3-namesec-1-5-3a">braids are a constant-factor improvement, not &ldquo;scalability&rdquo;<!-- raw HTML omitted --><!-- raw HTML omitted --></h3>
-<h1 id="bitcoin-conflates-source-of-scarcity-with-source-of-valuea-idsec-2-namesec-2a">Bitcoin conflates source-of-scarcity with source-of-value<!-- raw HTML omitted --><!-- raw HTML omitted --></h1>
-<h1 id="treechainsa-idsec-3-namesec-3a">treechains<!-- raw HTML omitted --><!-- raw HTML omitted --></h1>
-<h2 id="goala-idsec-3-1-namesec-3-1a">goal<!-- raw HTML omitted --><!-- raw HTML omitted --></h2>
-<h3 id="miners-are-working-as-a-team-to-make-replayrewind-of-history-difficulta-idsec-3-1-1-namesec-3-1-1a">miners are working as a team to make replay/rewind of history difficult<!-- raw HTML omitted --><!-- raw HTML omitted --></h3>
-<h3 id="we-want-to-make-their-job-easier-so-they-dont-have-to-track-everything-to-contribute-to-this-efforta-idsec-3-1-2-namesec-3-1-2a">we want to make their job easier, so they don&rsquo;t have to track everything to contribute to this effort<!-- raw HTML omitted --><!-- raw HTML omitted --></h3>
-<h2 id="how-do-you-keep-your-spota-idsec-3-2-namesec-3-2a">how do you keep your spot?<!-- raw HTML omitted --><!-- raw HTML omitted --></h2>
-<h2 id="potentially-infinite-depth-of-chainsa-idsec-3-3-namesec-3-3a">potentially infinite depth of chains<!-- raw HTML omitted --><!-- raw HTML omitted --></h2>
-<h2 id="this-is-a-proof-of-publication-systema-idsec-3-4-namesec-3-4a">this is a proof-of-publication system<!-- raw HTML omitted --><!-- raw HTML omitted --></h2>
-<h2 id="everyone-has-top-chaina-idsec-3-5-namesec-3-5a">everyone has top chain<!-- raw HTML omitted --><!-- raw HTML omitted --></h2>
-<h3 id="broadness-of-chain-backups-decreases-as-chain-depth-increasesa-idsec-3-5-1-namesec-3-5-1a">broadness of chain backups decreases as chain depth increases<!-- raw HTML omitted --><!-- raw HTML omitted --></h3>
-<h2 id="you-can-pick-which-depth-you-target-based-on-your-hashpowera-idsec-3-6-namesec-3-6a">you can pick which depth you target based on your hashpower<!-- raw HTML omitted --><!-- raw HTML omitted --></h2>
-<h2 id="validators-dont-know-validity-but-do-notice-changesa-idsec-3-7-namesec-3-7a">validators don&rsquo;t know validity, but do notice changes<!-- raw HTML omitted --><!-- raw HTML omitted --></h2>
-<h3 id="does-including-data-in-your-block-reduce-the-chance-other-miners-will-build-on-ita-idsec-3-7-1-namesec-3-7-1a">does including data in your block reduce the chance other miners will build on it?<!-- raw HTML omitted --><!-- raw HTML omitted --></h3>
-<h2 id="validity-of-separate-outputs-within-a-single-transaction-is-independenta-idsec-3-8-namesec-3-8a">validity of separate outputs within a single transaction is independent?<!-- raw HTML omitted --><!-- raw HTML omitted --></h2>
-<h3 id="transactions-must-specify-precise-flow-from-each-input-to-each-outputa-idsec-3-8-1-namesec-3-8-1a">transactions must specify precise flow from each input to each output<!-- raw HTML omitted --><!-- raw HTML omitted --></h3>
-<h2 id="treechains-could-be-implemented-with-bitcoin-as-the-root---undetectablya-idsec-3-9-namesec-3-9a">treechains could be implemented with bitcoin as the root - undetectably<!-- raw HTML omitted --><!-- raw HTML omitted --></h2>
-<h3 id="dont-need-to-put-all-data-in-the-chain-only-commitmentsa-idsec-3-9-1-namesec-3-9-1a">don&rsquo;t need to put all data in the chain, only commitments<!-- raw HTML omitted --><!-- raw HTML omitted --></h3>
+<h3 id="two-ways-to-get-paid---inflation-and-tx-feesa-idsec-1-5-2-namesec-1-5-2a">two ways to get paid - inflation, and tx fees<a id="sec-1-5-2" name="sec-1-5-2"></a></h3>
+<h3 id="braids-are-a-constant-factor-improvement-not-scalabilitya-idsec-1-5-3-namesec-1-5-3a">braids are a constant-factor improvement, not &ldquo;scalability&rdquo;<a id="sec-1-5-3" name="sec-1-5-3"></a></h3>
+<h1 id="bitcoin-conflates-source-of-scarcity-with-source-of-valuea-idsec-2-namesec-2a">Bitcoin conflates source-of-scarcity with source-of-value<a id="sec-2" name="sec-2"></a></h1>
+<h1 id="treechainsa-idsec-3-namesec-3a">treechains<a id="sec-3" name="sec-3"></a></h1>
+<h2 id="goala-idsec-3-1-namesec-3-1a">goal<a id="sec-3-1" name="sec-3-1"></a></h2>
+<h3 id="miners-are-working-as-a-team-to-make-replayrewind-of-history-difficulta-idsec-3-1-1-namesec-3-1-1a">miners are working as a team to make replay/rewind of history difficult<a id="sec-3-1-1" name="sec-3-1-1"></a></h3>
+<h3 id="we-want-to-make-their-job-easier-so-they-dont-have-to-track-everything-to-contribute-to-this-efforta-idsec-3-1-2-namesec-3-1-2a">we want to make their job easier, so they don&rsquo;t have to track everything to contribute to this effort<a id="sec-3-1-2" name="sec-3-1-2"></a></h3>
+<h2 id="how-do-you-keep-your-spota-idsec-3-2-namesec-3-2a">how do you keep your spot?<a id="sec-3-2" name="sec-3-2"></a></h2>
+<h2 id="potentially-infinite-depth-of-chainsa-idsec-3-3-namesec-3-3a">potentially infinite depth of chains<a id="sec-3-3" name="sec-3-3"></a></h2>
+<h2 id="this-is-a-proof-of-publication-systema-idsec-3-4-namesec-3-4a">this is a proof-of-publication system<a id="sec-3-4" name="sec-3-4"></a></h2>
+<h2 id="everyone-has-top-chaina-idsec-3-5-namesec-3-5a">everyone has top chain<a id="sec-3-5" name="sec-3-5"></a></h2>
+<h3 id="broadness-of-chain-backups-decreases-as-chain-depth-increasesa-idsec-3-5-1-namesec-3-5-1a">broadness of chain backups decreases as chain depth increases<a id="sec-3-5-1" name="sec-3-5-1"></a></h3>
+<h2 id="you-can-pick-which-depth-you-target-based-on-your-hashpowera-idsec-3-6-namesec-3-6a">you can pick which depth you target based on your hashpower<a id="sec-3-6" name="sec-3-6"></a></h2>
+<h2 id="validators-dont-know-validity-but-do-notice-changesa-idsec-3-7-namesec-3-7a">validators don&rsquo;t know validity, but do notice changes<a id="sec-3-7" name="sec-3-7"></a></h2>
+<h3 id="does-including-data-in-your-block-reduce-the-chance-other-miners-will-build-on-ita-idsec-3-7-1-namesec-3-7-1a">does including data in your block reduce the chance other miners will build on it?<a id="sec-3-7-1" name="sec-3-7-1"></a></h3>
+<h2 id="validity-of-separate-outputs-within-a-single-transaction-is-independenta-idsec-3-8-namesec-3-8a">validity of separate outputs within a single transaction is independent?<a id="sec-3-8" name="sec-3-8"></a></h2>
+<h3 id="transactions-must-specify-precise-flow-from-each-input-to-each-outputa-idsec-3-8-1-namesec-3-8-1a">transactions must specify precise flow from each input to each output<a id="sec-3-8-1" name="sec-3-8-1"></a></h3>
+<h2 id="treechains-could-be-implemented-with-bitcoin-as-the-root---undetectablya-idsec-3-9-namesec-3-9a">treechains could be implemented with bitcoin as the root - undetectably<a id="sec-3-9" name="sec-3-9"></a></h2>
+<h3 id="dont-need-to-put-all-data-in-the-chain-only-commitmentsa-idsec-3-9-1-namesec-3-9-1a">don&rsquo;t need to put all data in the chain, only commitments<a id="sec-3-9-1" name="sec-3-9-1"></a></h3>
 
 
     

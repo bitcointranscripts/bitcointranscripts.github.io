@@ -25,7 +25,7 @@
 
 <meta name="twitter:title" content="Research And Development Goals"/>
 <meta name="twitter:description" content="11:45 am: Open Discussion - R&amp;D Goals &amp; Challenges – Patrick Murck, Gavin Andresen, Cory Fields
-We often see people saying htey are testing the waters, they fixed a typo, they made a tiny little fix that doesn&rsquo;t impact much, they are getting used to the process. They are finding that it&rsquo;s really easy to contribut to Bitcoin Core. You code your changes, you submit your changes, there&rsquo;s not much to it."/>
+We often see people saying they are testing the waters, they fixed a typo, they made a tiny little fix that doesn&rsquo;t impact much, they are getting used to the process. They are finding that it&rsquo;s really easy to contribut to Bitcoin Core. You code your changes, you submit your changes, there&rsquo;s not much to it."/>
 
     
 
@@ -7487,13 +7487,13 @@ We often see people saying htey are testing the waters, they fixed a typo, they 
 
 
 <p>11:45 am: Open Discussion - R&amp;D Goals &amp; Challenges – Patrick Murck, Gavin Andresen, Cory Fields</p>
-<p>We often see people saying htey are testing the waters, they fixed a typo, they made a tiny little fix that doesn&rsquo;t impact much, they are getting used to the process. They are finding that it&rsquo;s really easy to contribut to Bitcoin Core. You code your changes, you submit your changes, there&rsquo;s not much to it.</p>
+<p>We often see people saying they are testing the waters, they fixed a typo, they made a tiny little fix that doesn&rsquo;t impact much, they are getting used to the process. They are finding that it&rsquo;s really easy to contribut to Bitcoin Core. You code your changes, you submit your changes, there&rsquo;s not much to it.</p>
 <p>There&rsquo;s a difference, and the lines are fuzzy and undefined, and you cna make a change to Core that changes a spelling error or a change to policy or consensus rules, for those high-level things, for ecosystem-level things, there&rsquo;s several mailing lists, the dev list gets the most traffic. Things get debated there, they get debated on the social media. So it boils down to what changes you are after, so whether you&rsquo;re adding functionality to the program itself it&rsquo;s easy to do that as long as it&rsquo;s not controversial.</p>
 <p>Touching on what Gavin said, we are working on making things much more modular. We have confusion about the fact that we have pull requests for the pipeline as well as policy changes all in the same pipeline, as things like the wallet or things like the miner start to become broken out, we don&rsquo;t have to worry about thos ethings, we have just the more core central big fun changes. It&rsquo;s a way to weed out some of the noise. That&rsquo;s one of the things I&rsquo;m currently working towards. As far as contributing, I would say it&rsquo;s actually we have a very low barrier for entry for anyone who actually has some functional changes that they want to make.</p>
 <p>That&rsquo;s great. So again we want to make this more of an open conservation so that I don&rsquo;t have to monopolize Cory and Gavin&rsquo;s time. More importantly, let&rsquo;s open the floor up for questions.</p>
 <p>Q: Gavin I think you said that the wallet could be greatly improved or broken out as a requirement before version 1.0, and it would be the community&rsquo;s call or something. Do you consider it that the wallet has to go into a separate repository before a Bitcoin Core could get to a 1.0 stamp of approval? Could it be improved in a way, plausible to release the whole thing as a 1.0?</p>
 <p>A: I call Bitcoin Core a reference implementation. A good way to do a wallet to do it is nice. Right now the wallet is not a good reference implementation. It doesn&rsquo;t use HD keys, and it ought to. To make it do that is basically a rewrite. It still uses BerkeleyDB, which we don&rsquo;t like for lots of reasons. We would prefer a different way to store keys in the wallet. It should interact with hardware key storage in some way. It doesn&rsquo;t at all right now. If I was thinking about what wallet would be a good reference implementation wallet, if we had that I think it would be fine if it was part of Bitcoin Core, and we don&rsquo;t have that right now.</p>
-<p>Q: But you want to modulariz eit?</p>
+<p>Q: But you want to modularize it?</p>
 <p>A: You can compile Bitcoin Core without the wallet at all. I don&rsquo;t care whehter it&rsquo;s a separate repository or not. If we ship a Bitcoin Core 1.0 with wallet code, it should be something we could point at and say it&rsquo;s best practice.</p>
 <p>I saw another hand, who&rsquo;s the next victim?</p>
 <p>Q: Who would you expect to run a full validating node? Your average consumer, businesses, who would you expect to do that?</p>
