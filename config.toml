@@ -36,6 +36,8 @@ DefaultContentLanguage = "en"
 [markup]
   [markup.tableOfContents]
     startLevel = 1
+  [markup.goldmark.renderer]
+    unsafe = true
 
 [[menu.shortcuts]]
     name = "<i class='fab fa-github'></i>"
