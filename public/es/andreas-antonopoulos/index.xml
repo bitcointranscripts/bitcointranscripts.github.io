@@ -57,5 +57,19 @@ Firmas Schnorr Actualmente utilizamos el algoritmo de firma digital de curva el�
 Las firmas Schnorr son mejores porque tienen ciertas peculiaridades en la forma en que se desarrollan las matemáticas.</description>
     </item>
     
+    <item>
+      <title>Andreas Antonopoulos - Seguridad de la cartera de hardware (2019-02-01)</title>
+      <link>https://btctranscripts.com/es/andreas-antonopoulos/2019-02-01-andreas-antonopoulos-hardware-wallet-security/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/es/andreas-antonopoulos/2019-02-01-andreas-antonopoulos-hardware-wallet-security/</guid>
+      <description>Nombre: Andreas Antonpoulos
+Tema: ¿Son los monederos electrónicos lo suficientemente seguros?
+Localización: Canal de YouTube de Andreas Antonopoulos
+Día: 1 de febrero de 2019
+Video: https://www.youtube.com/watch?v=3zNVDIz6Snw
+¿Son los monederos electrónicos lo suficientemente seguros? P - Hola Andreas. Almaceno mi criptografía en un Ledger. Escuchando a Trace Mayer esta semana me preocupa que esto no sea lo suficientemente seguro. Trace dice que necesitas Bitcoin Core para la validación de la red, Armory para gestionar las claves privadas y un protocolo Glacier para los procedimientos operativos estándar y un portátil Purism para el hardware.</description>
+    </item>
+    
   </channel>
 </rss>

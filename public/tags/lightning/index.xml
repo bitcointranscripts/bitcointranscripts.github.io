@@ -65,6 +65,23 @@ BOLT 00: Build Apps What I try to do is go through the BOLTs and look at only th
     </item>
     
     <item>
+      <title>Alex Bosworth - Lightning Routing (2021-03-27)</title>
+      <link>https://btctranscripts.com/lightning-hack-day/2021-03-27-alex-bosworth-lightning-routing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/lightning-hack-day/2021-03-27-alex-bosworth-lightning-routing/</guid>
+      <description>Name: Alex Bosworth
+Topic: Lightning Routing - Building a new economy
+Location: Lightning Hack Day
+Date: March 27th 2021
+Video: No video posted online
+Slides: https://www.dropbox.com/s/oo9o8ij62utvlfo/alex-bosworth-lightning-routing.pdf
+Transcript of presentation on Channel Management (2018): https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-channel-management/
+Transcript by: Michael Folkson
+Intro With Lightning routing I think it is a very exciting topic because we’re doing something that no one has ever really done before, to build this peer-to-peer marketplace. It is a required component of the Lightning Network because the Lightning Network is dependent on this concept of liquidity.</description>
+    </item>
+    
+    <item>
       <title>Amiko Pay</title>
       <link>https://btctranscripts.com/scalingbitcoin/montreal-2015/amiko-pay/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

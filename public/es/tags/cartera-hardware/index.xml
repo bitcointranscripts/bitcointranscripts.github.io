@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cartera hardware on Transcripciones de ₿itcoin</title>
+    <link>https://btctranscripts.com/es/tags/cartera-hardware/</link>
+    <description>Recent content in cartera hardware on Transcripciones de ₿itcoin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://btctranscripts.com/es/tags/cartera-hardware/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Andreas Antonopoulos - Seguridad de la cartera de hardware (2019-02-01)</title>
+      <link>https://btctranscripts.com/es/andreas-antonopoulos/2019-02-01-andreas-antonopoulos-hardware-wallet-security/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/es/andreas-antonopoulos/2019-02-01-andreas-antonopoulos-hardware-wallet-security/</guid>
+      <description>Nombre: Andreas Antonpoulos
+Tema: ¿Son los monederos electrónicos lo suficientemente seguros?
+Localización: Canal de YouTube de Andreas Antonopoulos
+Día: 1 de febrero de 2019
+Video: https://www.youtube.com/watch?v=3zNVDIz6Snw
+¿Son los monederos electrónicos lo suficientemente seguros? P - Hola Andreas. Almaceno mi criptografía en un Ledger. Escuchando a Trace Mayer esta semana me preocupa que esto no sea lo suficientemente seguro. Trace dice que necesitas Bitcoin Core para la validación de la red, Armory para gestionar las claves privadas y un protocolo Glacier para los procedimientos operativos estándar y un portátil Purism para el hardware.</description>
+    </item>
+    
+  </channel>
+</rss>

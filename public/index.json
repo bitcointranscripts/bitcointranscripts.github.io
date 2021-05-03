@@ -170,6 +170,11 @@
 	"content": "Alex Bosworth\nThe Lightning Protocol, an Application Design Perspective\nVideo: https://www.youtube.com/watch?v=1R5DNUcCYRg\nSlides: https://lightningresidency.com/assets/presentations/Bosworth_The_Lightning_Protocol.pdf\nIntro I’m talking about the protocol design and also going through the BOLTs. What I’m going to talk about is also about the BOLTs. The BOLTs are like the spec for Lightning and there’s a bunch of them.\nBOLT 00: Build Apps What I try to do is go through the BOLTs and look at only …"
 },
 {
+	"uri": "/lightning-hack-day/2021-03-27-alex-bosworth-lightning-routing/",
+	"title": "Alex Bosworth - Lightning Routing (2021-03-27)",
+	"content": "Name: Alex Bosworth\nTopic: Lightning Routing - Building a new economy\nLocation: Lightning Hack Day\nDate: March 27th 2021\nVideo: No video posted online\nSlides: https://www.dropbox.com/s/oo9o8ij62utvlfo/alex-bosworth-lightning-routing.pdf\nTranscript of presentation on Channel Management (2018): https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-channel-management/\nTranscript by: Michael Folkson\nIntro With Lightning routing I think it is a very exciting topic …"
+},
+{
 	"uri": "/london-bitcoin-devs/2019-07-03-alex-bosworth-submarine-swaps/",
 	"title": "Alex Bosworth - Submarine Swaps (2019-07-03)",
 	"content": "Alex Bosworth\nLondon Bitcoin Devs\nSubmarine Swaps and Loop\nVideo: https://www.youtube.com/watch?v=eB_HkYb7Y2M\nSlides: https://www.dropbox.com/s/cyh97jv81hrz8tf/alex-bosworth-submarine-swaps-loop.pdf?dl=0\nhttps://twitter.com/kanzure/status/1151158631527849985\nIntro Thanks for inviting me. I’m going to talk about submarine swaps and Lightning Loop which is something that I work on at Lightning Labs.\nBitcoin - One Currency, Multiple Settlement Networks Something that is pretty important to …"
@@ -572,7 +577,7 @@
 {
 	"uri": "/bitcoin-magazine/",
 	"title": "Bitcoin Magazine",
-	"content": " Eric Lombrozo, Luke Dashjr - Taproot Activation (2020-08-03)   Taproot activation and LOT=true vs LOT=false (2021-02-26)   Taproot Activation with Speedy Trial (2021-03-12)    "
+	"content": " Eric Lombrozo, Luke Dashjr - Taproot Activation (2020-08-03)   Taproot activation and LOT=true vs LOT=false (2021-02-26)   Taproot Activation Update (2021-04-23)   Taproot Activation with Speedy Trial (2021-03-12)    "
 },
 {
 	"uri": "/baltic-honeybadger/2018/bitcoin-maximalism-dissected/",
@@ -2332,7 +2337,7 @@
 {
 	"uri": "/lightning-hack-day/",
 	"title": "Lightning Hack Day",
-	"content": " Christian Decker - Lightning Backups (2020-05-03)   Pierre Rochard - Excel In Lightning (2018-10-27)   Rootzoll, Openoms, Raspiblitz (2020-06-21)   Sergei Tikhomirov - Lightning Privacy (2020-05-09)   Sergi Delgado - Watchtowers (2020-05-24)   Tom Kirkpatrick - Zap Wallet (2018-12-01)    "
+	"content": " Alex Bosworth - Lightning Routing (2021-03-27)   Christian Decker - Lightning Backups (2020-05-03)   Pierre Rochard - Excel In Lightning (2018-10-27)   Rootzoll, Openoms, Raspiblitz (2020-06-21)   Sergei Tikhomirov - Lightning Privacy (2020-05-09)   Sergi Delgado - Watchtowers (2020-05-24)   Tom Kirkpatrick - Zap Wallet (2018-12-01)    "
 },
 {
 	"uri": "/scalingbitcoin/tokyo-2018/edgedevplusplus/lightning-network/",
@@ -3898,6 +3903,11 @@
 	"uri": "/bitcoin-magazine/2021-02-26-taproot-activation-lockinontimeout/",
 	"title": "Taproot activation and LOT=true vs LOT=false (2021-02-26)",
 	"content": "Name: Sjors Provoost and Aaron van Wirdum\nLocation: Bitcoin Magazine (online)\nDate: February 26th 2021\nVideo: https://www.youtube.com/watch?v=7ouVGgE75zg\nBIP 8: https://github.com/bitcoin/bips/blob/master/bip-0008.mediawiki\nArguments for LOT=true and LOT=false (T1-T6 and F1-F6): https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-February/018380.html\nAdditional argument for LOT=false (F7): https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-February/018415.html\nAaron van Wirdum …"
+},
+{
+	"uri": "/bitcoin-magazine/2021-04-23-taproot-activation-update/",
+	"title": "Taproot Activation Update (2021-04-23)",
+	"content": "Name: Sjors Provoost and Aaron van Wirdum\nTopic: Taproot Activation Update: Speedy Trial and the LOT=true client\nLocation: Bitcoin Magazine (online)\nDate: April 23rd 2021\nVideo: https://www.youtube.com/watch?v=SHmEXPvN6t4\nPrevious episode on lockinontimeout (LOT): https://btctranscripts.com/bitcoin-magazine/2021-02-26-taproot-activation-lockinontimeout/\nPrevious episode on Speedy Trial: https://btctranscripts.com/bitcoin-magazine/2021-03-12-taproot-activation-speedy-trial/\nAaron van Wirdum on …"
 },
 {
 	"uri": "/bitcoin-magazine/2021-03-12-taproot-activation-speedy-trial/",
