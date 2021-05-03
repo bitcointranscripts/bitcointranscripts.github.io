@@ -3,4 +3,18 @@ Tema: ¿Por qué es una mala idea dividir las semillas?
 Localisación: Canal de YouTube de Andreas Antonopoulos
 Día: 8 de abril de 2020
 Vídeo: https://www.youtube.com/watch?v=p5nSibpfHYE
-¿Por qué es una mala idea dividir las semillas? Esto es algo que se discute todo el tiempo, especialmente en los foros de novatos. Realmente hay que tener mucho cuidado. Un amigo tuvo la idea de lograr una protección de 2 de 3 de la semilla de mi cartera almacenando la semilla de la siguiente manera:</description></item></channel></rss>
+¿Por qué es una mala idea dividir las semillas? Esto es algo que se discute todo el tiempo, especialmente en los foros de novatos. Realmente hay que tener mucho cuidado. Un amigo tuvo la idea de lograr una protección de 2 de 3 de la semilla de mi cartera almacenando la semilla de la siguiente manera:</description></item><item><title>Andreas Antonopoulos - Seguridad de la cartera de hardware (2019-02-01)</title><link>https://btctranscripts.com/es/andreas-antonopoulos/2019-02-01-andreas-antonopoulos-hardware-wallet-security/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/es/andreas-antonopoulos/2019-02-01-andreas-antonopoulos-hardware-wallet-security/</guid><description>Nombre: Andreas Antonpoulos
+Tema: ¿Son los monederos electrónicos lo suficientemente seguros?
+Localización: Canal de YouTube de Andreas Antonopoulos
+Día: 1 de febrero de 2019
+Video: https://www.youtube.com/watch?v=3zNVDIz6Snw
+¿Son los monederos electrónicos lo suficientemente seguros? P - Hola Andreas. Almaceno mi criptografía en un Ledger. Escuchando a Trace Mayer esta semana me preocupa que esto no sea lo suficientemente seguro. Trace dice que necesitas Bitcoin Core para la validación de la red, Armory para gestionar las claves privadas y un protocolo Glacier para los procedimientos operativos estándar y un portátil Purism para el hardware.</description></item><item><title>Andrew Chow - Carteras de descriptores (2020-02-06)</title><link>https://btctranscripts.com/es/advancing-bitcoin/2020/2020-02-06-andrew-chow-descriptor-wallets/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/es/advancing-bitcoin/2020/2020-02-06-andrew-chow-descriptor-wallets/</guid><description>Nombre: Andrew Chow
+Tema: Repensar la arquitectura de las carteras: Carteras de descriptores nativos
+Ubicación: El avance de Bitcoin
+Día: 6 de febrero de 2020
+Vídeo: https://www.youtube.com/watch?v=xC25NzIjzog
+Diapositivas: https://www.dropbox.com/s/142b4o4lrbkvqnh/Rethinking%20Wallet%20Architecture_%20Native%20Descriptor%20Wallets.pptx
+Soporte para descriptores de salida en Bitcoin Core: https://github.com/bitcoin/bitcoin/blob/master/doc/descriptors.md
+Bitcoin Optech en los descriptores de la secuencia de comandos de salida: https://bitcoinops.org/en/topics/output-script-descriptors/
+Bitcoin Core dev wiki sobre los cambios en la estructura de la cartera: https://github.com/bitcoin-core/bitcoin-devwiki/wiki/Wallet-Class-Structure-Changes
+Introducción Hola a todos. Soy Andrew Chow, soy ingeniero en Blockstream y también colaborador de Bitcoin Core, trabajando principalmente en el monedero de Bitcoin Core.</description></item></channel></rss>

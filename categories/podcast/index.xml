@@ -233,7 +233,16 @@ Arguments for LOT=true and LOT=false (T1-T6 and F1-F6): https://lists.linuxfound
 Additional argument for LOT=false (F7): https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-February/018415.html
 Aaron van Wirdum article on LOT=true or LOT=false: https://bitcoinmagazine.com/articles/lottrue-or-lotfalse-this-is-the-last-hurdle-before-taproot-activation
 Intro Aaron van Wirdum (AvW): Live from Utrecht, this is the van Wirdum Sjorsnado. Sjors, make the pun.
-Sjors Provoost (SP): We have a “lot” to talk about.</description></item><item><title>Taproot Activation with Speedy Trial (2021-03-12)</title><link>https://btctranscripts.com/bitcoin-magazine/2021-03-12-taproot-activation-speedy-trial/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-magazine/2021-03-12-taproot-activation-speedy-trial/</guid><description>Name: Sjors Provoost and Aaron van Wirdum
+Sjors Provoost (SP): We have a “lot” to talk about.</description></item><item><title>Taproot Activation Update (2021-04-23)</title><link>https://btctranscripts.com/bitcoin-magazine/2021-04-23-taproot-activation-update/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-magazine/2021-04-23-taproot-activation-update/</guid><description>Name: Sjors Provoost and Aaron van Wirdum
+Topic: Taproot Activation Update: Speedy Trial and the LOT=true client
+Location: Bitcoin Magazine (online)
+Date: April 23rd 2021
+Video: https://www.youtube.com/watch?v=SHmEXPvN6t4
+Previous episode on lockinontimeout (LOT): https://btctranscripts.com/bitcoin-magazine/2021-02-26-taproot-activation-lockinontimeout/
+Previous episode on Speedy Trial: https://btctranscripts.com/bitcoin-magazine/2021-03-12-taproot-activation-speedy-trial/
+Aaron van Wirdum on “There are now two Taproot activation clients, here’s why”: https://bitcoinmagazine.com/technical/there-are-now-two-taproot-activation-clients-heres-why
+Transcript by: Michael Folkson
+Intro Aaron van Wirdum (AvW): Live from Utrecht this is the van Wirdum Sjorsnado.</description></item><item><title>Taproot Activation with Speedy Trial (2021-03-12)</title><link>https://btctranscripts.com/bitcoin-magazine/2021-03-12-taproot-activation-speedy-trial/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-magazine/2021-03-12-taproot-activation-speedy-trial/</guid><description>Name: Sjors Provoost and Aaron van Wirdum
 Topic: Taproot Activation with Speedy Trial
 Location: Bitcoin Magazine (online)
 Date: March 12th 2021
