@@ -23,5 +23,20 @@ Artículo de Bitcoin Magazine: https://bitcoinmagazine.com/articles/noinput-clas
 Intro ¿Quién nunca ha oído hablar de eltoo? Es mi proyecto favorito y estoy bastante orgulloso de él. Intentaré que esto sea breve. Me dijeron que todos vieron mi presentación sobre la evolución de los protocolos de actualización. Probablemente iré bastante rápido.</description>
     </item>
     
+    <item>
+      <title>Matt Corallo - Lightning Rust (2019-02-07)</title>
+      <link>https://btctranscripts.com/es/advancing-bitcoin/2019/2019-02-07-matt-corallo-rust-lightning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/es/advancing-bitcoin/2019/2019-02-07-matt-corallo-rust-lightning/</guid>
+      <description>Matt Corallo
+Lightning flexible en Rust
+Vídeo: https://vimeo.com/316624439
+Diapositivas: https://docs.google.com/presentation/d/154bMWdcMCFUco4ZXQ3lWfF51U5dad8pQ23rKVkncnns/edit#slide=id.p
+https://twitter.com/kanzure/status/1144256392490029057
+Introducción Gracias por recibirme. Quiero hablar un poco sobre un proyecto en el que he estado trabajando durante un año llamado &amp;ldquo;Rust-lightning&amp;rdquo;. Lo empecé en diciembre, así que hace un año y unos meses. Esta es mi primera presentación en él, así que estoy emocionado de finalmente llegar a hablar de ello un poco.
+Objetivos Es otra implementación de Lightning porque de alguna manera necesitábamos otra supongo o realmente no.</description>
+    </item>
+    
   </channel>
 </rss>

@@ -42,6 +42,24 @@ Sjors Provoost (SP): We have a “lot” to talk about.</description>
     </item>
     
     <item>
+      <title>Taproot Activation Update (2021-04-23)</title>
+      <link>https://btctranscripts.com/bitcoin-magazine/2021-04-23-taproot-activation-update/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/bitcoin-magazine/2021-04-23-taproot-activation-update/</guid>
+      <description>Name: Sjors Provoost and Aaron van Wirdum
+Topic: Taproot Activation Update: Speedy Trial and the LOT=true client
+Location: Bitcoin Magazine (online)
+Date: April 23rd 2021
+Video: https://www.youtube.com/watch?v=SHmEXPvN6t4
+Previous episode on lockinontimeout (LOT): https://btctranscripts.com/bitcoin-magazine/2021-02-26-taproot-activation-lockinontimeout/
+Previous episode on Speedy Trial: https://btctranscripts.com/bitcoin-magazine/2021-03-12-taproot-activation-speedy-trial/
+Aaron van Wirdum on “There are now two Taproot activation clients, here’s why”: https://bitcoinmagazine.com/technical/there-are-now-two-taproot-activation-clients-heres-why
+Transcript by: Michael Folkson
+Intro Aaron van Wirdum (AvW): Live from Utrecht this is the van Wirdum Sjorsnado.</description>
+    </item>
+    
+    <item>
       <title>Taproot Activation with Speedy Trial (2021-03-12)</title>
       <link>https://btctranscripts.com/bitcoin-magazine/2021-03-12-taproot-activation-speedy-trial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

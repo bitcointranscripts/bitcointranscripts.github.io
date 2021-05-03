@@ -3,6 +3,48 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://btctranscripts.com/es/advancing-bitcoin/2019/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/advancing-bitcoin/2019/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/advancing-bitcoin/2019/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/es/advancing-bitcoin/2020/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/advancing-bitcoin/2020/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/advancing-bitcoin/2020/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/es/advancing-bitcoin/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/advancing-bitcoin/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/advancing-bitcoin/"
+                />
+  </url>
+  
+  <url>
     <loc>https://btctranscripts.com/es/andreas-antonopoulos/2014-10-08-andreas-antonopolous-canada-senate-bitcoin/</loc>
     <xhtml:link
                 rel="alternate"
@@ -73,7 +115,39 @@
   </url>
   
   <url>
+    <loc>https://btctranscripts.com/es/andreas-antonopoulos/2019-02-01-andreas-antonopoulos-hardware-wallet-security/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/andreas-antonopoulos/2019-02-01-andreas-antonopoulos-hardware-wallet-security/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/andreas-antonopoulos/2019-02-01-andreas-antonopoulos-hardware-wallet-security/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/es/advancing-bitcoin/2020/2020-02-06-andrew-chow-descriptor-wallets/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-chow-descriptor-wallets/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/advancing-bitcoin/2020/2020-02-06-andrew-chow-descriptor-wallets/"
+                />
+  </url>
+  
+  <url>
     <loc>https://btctranscripts.com/es/tags/cartera/</loc>
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/es/tags/cartera-hardware/</loc>
   </url>
   
   <url>
@@ -124,6 +198,10 @@
   </url>
   
   <url>
+    <loc>https://btctranscripts.com/es/categories/conferencia/</loc>
+  </url>
+  
+  <url>
     <loc>https://btctranscripts.com/es/tags/consenso/</loc>
   </url>
   
@@ -157,6 +235,20 @@
                 rel="alternate"
                 hreflang="es"
                 href="https://btctranscripts.com/es/tags/lightning/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/es/advancing-bitcoin/2019/2019-02-07-matt-corallo-rust-lightning/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/advancing-bitcoin/2019/2019-02-07-matt-corallo-rust-lightning/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/advancing-bitcoin/2019/2019-02-07-matt-corallo-rust-lightning/"
                 />
   </url>
   
@@ -226,6 +318,10 @@
   </url>
   
   <url>
+    <loc>https://btctranscripts.com/es/categories/taller/</loc>
+  </url>
+  
+  <url>
     <loc>https://btctranscripts.com/es/</loc>
     <xhtml:link
                 rel="alternate"
@@ -242,6 +338,10 @@
                 hreflang="es"
                 href="https://btctranscripts.com/es/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/es/tags/validaci%C3%B3n/</loc>
   </url>
   
 </urlset>
