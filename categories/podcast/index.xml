@@ -175,7 +175,16 @@ Matt Corallo (MC): Hi
 John Newbery (JN): Hi Matt
 AJ: Today we are going to do a little bit of a “This is your life Bitcoin”.
 MC: I am not dead yet.
-AJ: You have a lot of contributions over the years so there is lots to talk about but we’ll start with three.</description></item><item><title>Michael Flaxman (2019-08-08)</title><link>https://btctranscripts.com/stephan-livera-podcast/2019-08-08-michael-flaxman/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2019-08-08-michael-flaxman/</guid><description>Name: Michael Flaxman
+AJ: You have a lot of contributions over the years so there is lots to talk about but we’ll start with three.</description></item><item><title>Matt Corallo Lightning Development Kit (2021-05-12)</title><link>https://btctranscripts.com/chaincode-labs/chaincode-podcast/2021-05-12-matt-corallo-ldk/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/chaincode-labs/chaincode-podcast/2021-05-12-matt-corallo-ldk/</guid><description>Name: Matt Corallo
+Topic: Lightning Development Kit (LDK)
+Location: Chaincode Labs Podcast (Episode 13)
+Date: May 12th 2021
+Audio: https://podcast.chaincode.com/2021/05/12/matt-corallo-13.html
+Matt Corallo presentation at Advancing Bitcoin 2019: https://btctranscripts.com/advancing-bitcoin/2019/2019-02-07-matt-corallo-rust-lightning/
+rust-lightning repo: https://github.com/rust-bitcoin/rust-lightning
+Intro Adam Jonas (AJ): Welcome back to the office Matt, glad to have you back on the podcast.
+Matt Corallo (MC): Thank you.
+Update on LDK AJ: We are going to start with LDK. Where are we at? What is going on?</description></item><item><title>Michael Flaxman (2019-08-08)</title><link>https://btctranscripts.com/stephan-livera-podcast/2019-08-08-michael-flaxman/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2019-08-08-michael-flaxman/</guid><description>Name: Michael Flaxman
 Topic: Every Bitcoin Hardware Wallet Sucks
 Location: Stephan Livera Podcast
 Date: August 8th 2019
