@@ -1,5 +1,10 @@
 [
 {
+	"uri": "/es/advancing-bitcoin/",
+	"title": "Advancing Bitcoin",
+	"content": " Advancing Bitcoin 2019   Advancing Bitcoin 2020    "
+},
+{
 	"uri": "/es/advancing-bitcoin/2019/",
 	"title": "Advancing Bitcoin 2019",
 	"content": " Matt Corallo - Lightning Rust (2019-02-07)    "
@@ -8,11 +13,6 @@
 	"uri": "/es/advancing-bitcoin/2020/",
 	"title": "Advancing Bitcoin 2020",
 	"content": " Andrew Chow - Carteras de descriptores (2020-02-06)    "
-},
-{
-	"uri": "/es/advancing-bitcoin/",
-	"title": "Advancing-bitcoins",
-	"content": ""
 },
 {
 	"uri": "/es/andreas-antonopoulos/2014-10-08-andreas-antonopolous-canada-senate-bitcoin/",
@@ -66,8 +66,8 @@
 },
 {
 	"uri": "/es/chaincode-labs/",
-	"title": "Chaincode-labs",
-	"content": ""
+	"title": "Chaincode Labs",
+	"content": " Residencia de Chaincode    "
 },
 {
 	"uri": "/es/chaincode-labs/chaincode-residency/2019-06-25-christian-decker-eltoo/",

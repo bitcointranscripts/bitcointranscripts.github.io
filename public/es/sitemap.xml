@@ -3,6 +3,20 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://btctranscripts.com/es/advancing-bitcoin/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/advancing-bitcoin/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/advancing-bitcoin/"
+                />
+  </url>
+  
+  <url>
     <loc>https://btctranscripts.com/es/advancing-bitcoin/2019/</loc>
     <xhtml:link
                 rel="alternate"
@@ -27,20 +41,6 @@
                 rel="alternate"
                 hreflang="es"
                 href="https://btctranscripts.com/es/advancing-bitcoin/2020/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://btctranscripts.com/es/advancing-bitcoin/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://btctranscripts.com/advancing-bitcoin/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://btctranscripts.com/es/advancing-bitcoin/"
                 />
   </url>
   
