@@ -2672,7 +2672,7 @@
 {
 	"uri": "/mit-bitcoin-expo/",
 	"title": "MIT Bitcoin Expo",
-	"content": " Mit Bitcoin Expo 2015   Mit Bitcoin Expo 2016   Mit Bitcoin Expo 2017   Mit Bitcoin Expo 2018   Mit Bitcoin Expo 2019   Mit Bitcoin Expo 2020    "
+	"content": " Mit Bitcoin Expo 2015   Mit Bitcoin Expo 2016   Mit Bitcoin Expo 2017   Mit Bitcoin Expo 2018   Mit Bitcoin Expo 2019   Mit Bitcoin Expo 2020   Mit Bitcoin Expo 2021    "
 },
 {
 	"uri": "/mit-bitcoin-expo/mit-bitcoin-expo-2015/",
@@ -2703,6 +2703,11 @@
 	"uri": "/mit-bitcoin-expo/mit-bitcoin-expo-2020/",
 	"title": "Mit Bitcoin Expo 2020",
 	"content": " Andrew Poelstra - Taproot (2020-03-07)    "
+},
+{
+	"uri": "/mit-bitcoin-expo/mit-bitcoin-expo-2021/",
+	"title": "Mit Bitcoin Expo 2021",
+	"content": " Tadge Dryja - How much Security is too much Security? Defending against a 99.999% Attack (2021-04-03)    "
 },
 {
 	"uri": "/stanford-blockchain-conference/2020/mixicles/",
@@ -3883,6 +3888,11 @@
 	"uri": "/scalingbitcoin/montreal-2015/systematizing-knowledge/",
 	"title": "Systematizing Knowledge",
 	"content": "There should be a SNARK wiki. Any website that is better than someone saying \u0026amp;ldquo;you know, check the June July 2014 bitcoin-wizard logs\u0026amp;rdquo;. We need to research gmaxwell scalability. We should probably fix that.\nLet\u0026amp;rsquo;s talk about what some of the goals are that we might get out of this. We have some different ideas for approaches to systematizing knowledge. There are at least three camps here. I think Bryan\u0026amp;rsquo;s paper repositories.. whenever you search for papers on Google Scholar, …"
+},
+{
+	"uri": "/mit-bitcoin-expo/mit-bitcoin-expo-2021/2021-04-03-defending-against-99-attack/",
+	"title": "Tadge Dryja - How much Security is too much Security? Defending against a 99.999% Attack (2021-04-03)",
+	"content": "Name: Tadge Dryja\nTopic: How much Security is too much Security? Defending Against a 99.999% Attack\nDate: 2021-04-03\nLocation: Online\nVideo: https://mitbitcoinexpo.org/ - Day 1, Part 1 @ 38:15\nIntroduction Hi everyone, it\u0026amp;rsquo;s too bad that we can\u0026amp;rsquo;t be in person but I think by next year we\u0026amp;rsquo;ll be able to do this in person. It\u0026amp;rsquo;s been a long year without conferences. And I guess for maybe many people watching the MIT Bitcoin Expo last March, was the last time I saw a bunch of …"
 },
 {
 	"uri": "/tags/",
