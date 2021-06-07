@@ -3315,6 +3315,11 @@
 	"content": "Future technological directions in bitcoin: An unreliable guide\nRusty Russell\n2018-01-24\nvideo: https://www.youtube.com/watch?v=VABppufTdpA\nnotes: https://docs.google.com/document/d/1iNzJtJRq9-0vdILQAe9Bcj7r1a7xYVf8CSY0_oFrH9c/edit or http://diyhpl.us/~bryan/papers2/bitcoin/Future%20technological%20directions%20in%20bitcoin%20-%202018-01-24.pdf\nhttps://twitter.com/kanzure/status/957318453181939712\nIntroduction Thank you very much for that introduction. Alright, well polished machine right there. …"
 },
 {
+	"uri": "/wasabi-research-club/2021-05-30-rusty-russell-improving-lightning/",
+	"title": "Rusty Russell Improving the Lightning Network (2021-05-30)",
+	"content": "Name: Rusty Russell\nTopic: Improving the Lightning Network\nLocation: Join the Wasabikas podcast\nDate: May 30th 2021\nAudio: https://www.youtube.com/watch?v=BRkSE00aj5k\u0026amp;amp;list=PLPwc75tPMdsixsuhwau82Q0IfxECo0z_E\u0026amp;amp;index=18\nHow Rusty got into Lightning Max Hillebrand (MH): So Rusty, I am very happy that you joined me for this conversation today. You have been a pioneer in Lightning Network. To start off this conversation I am curious, 6 years ago before you got into the Lightning Network what …"
+},
+{
 	"uri": "/stephan-livera-podcast/2019-08-12-rusty-russell-joe-netti/",
 	"title": "Rusty Russell, Joe Netti (2019-08-12)",
 	"content": "Stephan Livera podcast with Rusty Russell and Joe Netti - August 12th 2019\nPodcast: https://stephanlivera.com/episode/98/\nStephan Livera:\tRusty and Joe, welcome to the show.\nJoe Netti:\tHi. How’s it going?\nRusty Russell:\tHey, Stephan. Good to be back.\nStephan Livera:\tThanks for rejoining me, Rusty, and thanks for joining me, Joe. So, just a quick intro just for the listeners. Joe, do you want to start?\nJoe Netti:\tYeah, sure. So, I got into Bitcoin in around 2013, and took me a while to learn what …"
@@ -4257,7 +4262,7 @@
 {
 	"uri": "/wasabi-research-club/",
 	"title": "Wasabi Research Club",
-	"content": " Wasabi Research Club - Coinswap (2020-06-15)    "
+	"content": " Rusty Russell Improving the Lightning Network (2021-05-30)   Wasabi Research Club - Coinswap (2020-06-15)    "
 },
 {
 	"uri": "/wasabi-research-club/2020-06-15-coinswap/",

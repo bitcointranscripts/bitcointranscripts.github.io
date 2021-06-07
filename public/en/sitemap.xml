@@ -332,6 +332,16 @@
   
   <url>
     <loc>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-07-andrew-poelstra-miniscript/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/advancing-bitcoin/2020/2020-02-07-andrew-poelstra-miniscript/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/advancing-bitcoin/2020/2020-02-07-andrew-poelstra-miniscript/"
+                />
   </url>
   
   <url>
@@ -2332,6 +2342,16 @@
   
   <url>
     <loc>https://btctranscripts.com/tags/miniscript/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/tags/miniscript/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/tags/miniscript/"
+                />
   </url>
   
   <url>
@@ -2882,6 +2902,10 @@
   
   <url>
     <loc>https://btctranscripts.com/misc/2018-01-24-rusty-russell-future-bitcoin-tech-directions/</loc>
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/wasabi-research-club/2021-05-30-rusty-russell-improving-lightning/</loc>
   </url>
   
   <url>
