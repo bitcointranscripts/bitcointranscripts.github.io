@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>miniscript on Transcripciones de ₿itcoin</title><link>https://btctranscripts.com/es/tags/miniscript/</link><description>Recent content in miniscript on Transcripciones de ₿itcoin</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://btctranscripts.com/es/tags/miniscript/index.xml" rel="self" type="application/rss+xml"/><item><title>Andrew Poelstra - Miniscript (2020-02-07)</title><link>https://btctranscripts.com/es/advancing-bitcoin/2020/2020-02-07-andrew-poelstra-miniscript/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/es/advancing-bitcoin/2020/2020-02-07-andrew-poelstra-miniscript/</guid><description>Andrew Poelstra
+Taller sobre el avance de Bitcoin
+Miniscript
+Página Web: https://bitcoin.sipa.be/miniscript/
+Taller de reposición: https://github.com/apoelstra/miniscript-workshop
+Transcripción de la presentación de Londres Bitcoin Devs Miniscript: https://btctranscripts.com/london-bitcoin-devs/2020-02-04-andrew-poelstra-miniscript/
+Parte 1 Así que lo que vamos a hacer, es un par de cosas. Vamos a ir a través del sitio web de Miniscript y aprender sobre cómo se construye Miniscript, cómo funciona el sistema de tipos, algunas de las reglas de antimaleabilidad. Luego vamos a ir a un repo que creé anoche, un repo Git con algunos programas de ejemplo.</description></item></channel></rss>

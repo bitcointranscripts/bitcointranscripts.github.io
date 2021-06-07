@@ -23,7 +23,12 @@ Boltathon
 JSON Interface with c-lightning and Writing Extensions
 video: https://www.youtube.com/watch?v=sNB1N7FyMHA
 https://twitter.com/kanzure/status/1230892247345852416
-Intro Ok I have top running. We have a plan and we’re going to start from zero. We’re going to clone c-lightning, we’re going to compile it, we’re going to set up a test node. I’m assuming Bitcoin is already installed. We’re going to talk a little about configuring it and stuff like that. All this stuff is useful to see somebody else do.</description></item><item><title>Sergi Delgado - Watchtowers (2020-05-24)</title><link>https://btctranscripts.com/lightning-hack-day/2020-05-24-sergi-delgado-watchtowers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-hack-day/2020-05-24-sergi-delgado-watchtowers/</guid><description>Name: Sergi Delgado
+Intro Ok I have top running. We have a plan and we’re going to start from zero. We’re going to clone c-lightning, we’re going to compile it, we’re going to set up a test node. I’m assuming Bitcoin is already installed. We’re going to talk a little about configuring it and stuff like that. All this stuff is useful to see somebody else do.</description></item><item><title>Rusty Russell Improving the Lightning Network (2021-05-30)</title><link>https://btctranscripts.com/wasabi-research-club/2021-05-30-rusty-russell-improving-lightning/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/wasabi-research-club/2021-05-30-rusty-russell-improving-lightning/</guid><description>Name: Rusty Russell
+Topic: Improving the Lightning Network
+Location: Join the Wasabikas podcast
+Date: May 30th 2021
+Audio: https://www.youtube.com/watch?v=BRkSE00aj5k&amp;amp;list=PLPwc75tPMdsixsuhwau82Q0IfxECo0z_E&amp;amp;index=18
+How Rusty got into Lightning Max Hillebrand (MH): So Rusty, I am very happy that you joined me for this conversation today. You have been a pioneer in Lightning Network. To start off this conversation I am curious, 6 years ago before you got into the Lightning Network what was your understanding of Bitcoin back then and where did you see some of the big problems that needed to be solved at that point?</description></item><item><title>Sergi Delgado - Watchtowers (2020-05-24)</title><link>https://btctranscripts.com/lightning-hack-day/2020-05-24-sergi-delgado-watchtowers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-hack-day/2020-05-24-sergi-delgado-watchtowers/</guid><description>Name: Sergi Delgado
 Topic: Watchtowers and BOLT 13
 Location: Potzblitz (online)
 Date: May 24th 2020
