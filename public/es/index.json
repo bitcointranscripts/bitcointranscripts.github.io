@@ -12,7 +12,7 @@
 {
 	"uri": "/es/advancing-bitcoin/2020/",
 	"title": "Advancing Bitcoin 2020",
-	"content": " Andrew Chow - Carteras de descriptores (2020-02-06)    "
+	"content": " Andrew Chow - Carteras de descriptores (2020-02-06)   Andrew Poelstra - Miniscript (2020-02-07)    "
 },
 {
 	"uri": "/es/andreas-antonopoulos/2014-10-08-andreas-antonopolous-canada-senate-bitcoin/",
@@ -48,6 +48,11 @@
 	"uri": "/es/advancing-bitcoin/2020/2020-02-06-andrew-chow-descriptor-wallets/",
 	"title": "Andrew Chow - Carteras de descriptores  (2020-02-06)",
 	"content": "Nombre: Andrew Chow\nTema: Repensar la arquitectura de las carteras: Carteras de descriptores nativos\nUbicación: El avance de Bitcoin\nDía: 6 de febrero de 2020\nVídeo: https://www.youtube.com/watch?v=xC25NzIjzog\nDiapositivas: https://www.dropbox.com/s/142b4o4lrbkvqnh/Rethinking%20Wallet%20Architecture_%20Native%20Descriptor%20Wallets.pptx\nSoporte para descriptores de salida en Bitcoin Core: https://github.com/bitcoin/bitcoin/blob/master/doc/descriptors.md\nBitcoin Optech en los descriptores de la …"
+},
+{
+	"uri": "/es/advancing-bitcoin/2020/2020-02-07-andrew-poelstra-miniscript/",
+	"title": "Andrew Poelstra - Miniscript (2020-02-07)",
+	"content": "Andrew Poelstra\nTaller sobre el avance de Bitcoin\nMiniscript\nPágina Web: https://bitcoin.sipa.be/miniscript/\nTaller de reposición: https://github.com/apoelstra/miniscript-workshop\nTranscripción de la presentación de Londres Bitcoin Devs Miniscript: https://btctranscripts.com/london-bitcoin-devs/2020-02-04-andrew-poelstra-miniscript/\nParte 1 Así que lo que vamos a hacer, es un par de cosas. Vamos a ir a través del sitio web de Miniscript y aprender sobre cómo se construye Miniscript, cómo …"
 },
 {
 	"uri": "/es/tags/cartera/",
@@ -98,6 +103,11 @@
 	"uri": "/es/advancing-bitcoin/2019/2019-02-07-matt-corallo-rust-lightning/",
 	"title": "Matt Corallo - Lightning Rust (2019-02-07)",
 	"content": "Matt Corallo\nLightning flexible en Rust\nVídeo: https://vimeo.com/316624439\nDiapositivas: https://docs.google.com/presentation/d/154bMWdcMCFUco4ZXQ3lWfF51U5dad8pQ23rKVkncnns/edit#slide=id.p\nhttps://twitter.com/kanzure/status/1144256392490029057\nIntroducción Gracias por recibirme. Quiero hablar un poco sobre un proyecto en el que he estado trabajando durante un año llamado \u0026amp;ldquo;Rust-lightning\u0026amp;rdquo;. Lo empecé en diciembre, así que hace un año y unos meses. Esta es mi primera presentación en él, …"
+},
+{
+	"uri": "/es/tags/miniscript/",
+	"title": "miniscript",
+	"content": ""
 },
 {
 	"uri": "/es/categories/podcast/",
