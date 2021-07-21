@@ -157,6 +157,34 @@
   </url>
   
   <url>
+    <loc>https://btctranscripts.com/es/advancing-bitcoin/2020/2020-02-06-andrew-poelstra-miniscript-intro/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-poelstra-miniscript-intro/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/advancing-bitcoin/2020/2020-02-06-andrew-poelstra-miniscript-intro/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/es/advancing-bitcoin/2020/2020-02-06-antoine-riard-taproot-lightning/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-antoine-riard-taproot-lightning/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/advancing-bitcoin/2020/2020-02-06-antoine-riard-taproot-lightning/"
+                />
+  </url>
+  
+  <url>
     <loc>https://btctranscripts.com/es/tags/cartera/</loc>
   </url>
   
@@ -323,6 +351,20 @@
   </url>
   
   <url>
+    <loc>https://btctranscripts.com/es/tags/schnorr/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/tags/schnorr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/tags/schnorr/"
+                />
+  </url>
+  
+  <url>
     <loc>https://btctranscripts.com/es/tags/seguridad/</loc>
   </url>
   
@@ -347,6 +389,20 @@
   
   <url>
     <loc>https://btctranscripts.com/es/categories/taller/</loc>
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/es/tags/taproot/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/tags/taproot/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/tags/taproot/"
+                />
   </url>
   
   <url>

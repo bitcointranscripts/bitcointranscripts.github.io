@@ -6915,6 +6915,15 @@ Lightning architecture The Lightning architecture for those who are not familiar
                  
     
 
+
+    
+      
+
+        
+                
+                 
+    
+
         </ul>
     </li>
 
@@ -7676,6 +7685,15 @@ Lightning architecture The Lightning architecture for those who are not familiar
 <p>A - Yes. Right now there is this idea of <a href="https://diyhpl.us/wiki/transcripts/lightning-conference/2019/2019-10-20-bastien-teinturier-trampoline-routing/">trampoline routing</a> which is maybe great for user experience but on the privacy side it is broken. What gives us a lot of privacy in Lightning is source routing. Going to trampoline routing means the person who does the trampoline routing for you is going to learn who you are if you are using one hop and worse is going to know who you are sending funds to. There is trampoline routing, if you are not using privacy preserving Lightning clients… Nobody has done a real privacy study on Lightning clients. Neutrino, bloom filters, no one has done real research. They are not great, there are privacy leaks if you are using them. There are Lightning privacy issues and there are base layer privacy issues. If you are building an application you should have all of them in mind. It is really hard. Using the node pubkey I don’t think is great. I would like <a href="https://lists.linuxfoundation.org/pipermail/lightning-dev/2018-November/001498.html">rendez-vous routing</a> to be done on Lightning to avoid announcing my pubkey, having my invoice tied to my pubkey and my pubkey being part of Lightning. And channel announcement of course. I hope at some point we have some kind of proof of ownership so I can prove I own this channel without revealing which UTXO I own.</p>
 
 
+    
+        <h4></h4>
+        <ul>
+            
+                <li>
+                    <a href="/es/advancing-bitcoin/2020/2020-02-06-antoine-riard-taproot-lightning/">es: Antoine Riard - Taproot Lightning (2020-02-06)</a>
+                </li>
+            
+          </ul>
     
 
     

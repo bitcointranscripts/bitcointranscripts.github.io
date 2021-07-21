@@ -346,6 +346,16 @@
   
   <url>
     <loc>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-poelstra-miniscript-intro/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/advancing-bitcoin/2020/2020-02-06-andrew-poelstra-miniscript-intro/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-poelstra-miniscript-intro/"
+                />
   </url>
   
   <url>
@@ -370,6 +380,16 @@
   
   <url>
     <loc>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-antoine-riard-taproot-lightning/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/advancing-bitcoin/2020/2020-02-06-antoine-riard-taproot-lightning/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-antoine-riard-taproot-lightning/"
+                />
   </url>
   
   <url>
@@ -2964,6 +2984,16 @@
   
   <url>
     <loc>https://btctranscripts.com/tags/schnorr/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/tags/schnorr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/tags/schnorr/"
+                />
   </url>
   
   <url>
@@ -3395,6 +3425,10 @@
   </url>
   
   <url>
+    <loc>https://btctranscripts.com/sydney-bitcoin-meetup/2021-06-01-socratic-seminar/</loc>
+  </url>
+  
+  <url>
     <loc>https://btctranscripts.com/scalingbitcoin/montreal-2015/systematizing-knowledge/</loc>
   </url>
   
@@ -3427,6 +3461,16 @@
   
   <url>
     <loc>https://btctranscripts.com/tags/taproot/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/tags/taproot/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/tags/taproot/"
+                />
   </url>
   
   <url>
