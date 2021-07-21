@@ -1,11 +1,632 @@
-<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=canonical href=https://btctranscripts.com/stanford-blockchain-conference/2020/hardware-accelerated-rsa/><title>Hardware Accelerated Rsa | ₿itcoin Transcripts</title><link href=https://btctranscripts.com/css/fontawesome.min.css rel=stylesheet><link rel=stylesheet href=https://btctranscripts.com/css/ace.min.css><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://btctranscripts.com/images/btctranscripts.png"><meta name=twitter:title content="Hardware Accelerated Rsa"><meta name=twitter:description content="Hardware Accelerated RSA - VDFs, SNARKs, and Accumulators
+<!doctype html><html><head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<link rel=canonical href=https://btctranscripts.com/stanford-blockchain-conference/2020/hardware-accelerated-rsa/>
+<title>
+Hardware Accelerated Rsa | ₿itcoin Transcripts
+</title>
+<link href=https://btctranscripts.com/css/fontawesome.min.css rel=stylesheet>
+<link rel=stylesheet href=https://btctranscripts.com/css/ace.min.css>
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://btctranscripts.com/images/btctranscripts.png">
+<meta name=twitter:title content="Hardware Accelerated Rsa">
+<meta name=twitter:description content="Hardware Accelerated RSA - VDFs, SNARKs, and Accumulators
 Simon Peffers
 https://twitter.com/kanzure/status/1230551345700069377
 Introduction I am going to talk about accelerating RSA operations in hardware. So let&rsquo;s just get into it.
-Outline I&rsquo;ll talk about what acceleration is and why we&rsquo;re interested in it, then we&rsquo;ll get into RSA primitives, then we&rsquo;ll get into algorithms, and then various platforms for hardware. Hardware is anything you&rsquo;re going to run software on. We&rsquo;ll look at what the tradeoffs are, and then some performance numbers and measurements we&rsquo;ve taken."></head><body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id=navbarMain><div class=container><div><a class=navbar-brand href=/>₿itcoin Transcripts</a></div><div class="collapse navbar-collapse" id=navbarMainCollapse><ul class="navbar-nav ml-auto"><li class=nav-item><a class=nav-link href=https://github.com/bitcointranscripts/bitcointranscripts target=_blank><i class="fab fa-github"></i></a></li></ul></div></div></nav><div class=container-fluid><div class=row><div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0"><button class="navbar-toggler navbar-toggler-right collapsed" type=button data-toggle=collapse data-target=#sidenav-left-collapse aria-controls=sidenav-left-collapse aria-expanded=false aria-label="Toggle navigation">
-<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse align-items-start flex-column" id=sidenav-left-collapse><form class="form-inline my-2 my-lg-0 searchbox"><input class="form-control mr-sm-2 w-100" data-search-input id=search-by type=text placeholder='Search (press "/")'></form><ul class="navbar-nav flex-column pt-3"><li data-nav-id=/advancing-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/><h6>Advancing Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/advancing-bitcoin/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2019/><h6>Advancing Bitcoin 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/advancing-bitcoin/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2020/><h6>Advancing Bitcoin 2020</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/andreas-antonopoulos/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/andreas-antonopoulos/><h6>Andreas Antonopoulos</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/austin-bitcoin-developers/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/austin-bitcoin-developers/><h6>Austin Bitcoin Developers</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/baltic-honeybadger/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/><h6>Baltic Honeybadger</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/baltic-honeybadger/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/2018/><h6>Baltic Honeybadger 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/baltic-honeybadger/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/2019/><h6>Baltic Honeybadger 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bit-block-boom/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bit-block-boom/><h6>Bit Block Boom</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bit-block-boom/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bit-block-boom/2019/><h6>Bit Block Boom 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-core-dev-tech/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/><h6>Bitcoin Core Dev Tech</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bitcoin-core-dev-tech/bitcoin-devcore-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/bitcoin-devcore-2015/><h6>Bitcoin Devcore Meetup (2015)</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-design/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-design/><h6>Bitcoin Design</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-magazine/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-magazine/><h6>Bitcoin Magazine</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoinops/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinops/><h6>Bitcoinops</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bitcoinops/schnorr-taproot-workshop-2019/ class="nav-item my-1"><a class="nav-link p-0" href=/bitcoinops/schnorr-taproot-workshop-2019/><h6>Schnorr Taproot Workshop 2019</h6></a></li></ul></li><li data-nav-id=/blockchain-protocol-analysis-security-engineering/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/><h6>Blockchain Protocol Analysis Security Eng</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/blockchain-protocol-analysis-security-engineering/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2017/><h6>Blockchain Protocol Analysis Security Engineering 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/blockchain-protocol-analysis-security-engineering/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2018/><h6>Blockchain Protocol Analysis Security Engineering 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/blockstream-webinars/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockstream-webinars/><h6>Blockstream Webinars</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/boltathon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/boltathon/><h6>Boltathon</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/breaking-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/><h6>Breaking Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/breaking-bitcoin/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/2017/><h6>Breaking Bitcoin 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/breaking-bitcoin/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/2019/><h6>Breaking Bitcoin 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/building-on-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/building-on-bitcoin/><h6>Building On Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/building-on-bitcoin/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/building-on-bitcoin/2018/><h6>Building On Bitcoin 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/chaincode-labs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-labs/><h6>Chaincode Labs</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/chaincode-labs/chaincode-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-labs/chaincode-podcast/><h6>Chaincode Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/chaincode-labs/chaincode-residency/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-labs/chaincode-residency/><h6>Chaincode Residency</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/chicago-bitdevs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chicago-bitdevs/><h6>Chicago Bitdevs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/coindesk-consensus-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coindesk-consensus-2016/><h6>Coindesk Consensus</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/coordination-of-decentralized-finance-workshop/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/><h6>Coordination of Decentralized Finance</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/coordination-of-decentralized-finance-workshop/2020-stanford/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/2020-stanford/><h6>2020 Stanford</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/cppcon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/><h6>CPPcon</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/cppcon/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/2017/><h6>CPPcon 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/cppcon/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/2020/><h6>CPPcon 2020</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/cryptoeconomic-systems/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cryptoeconomic-systems/><h6>Cryptoeconomic Systems</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/cryptoeconomic-systems/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cryptoeconomic-systems/2019/><h6>Cryptoeconomic Systems 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/dallas-bitcoin-symposium/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/dallas-bitcoin-symposium/><h6>Dallas Bitcoin Symposium</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/decentralized-financial-architecture-workshop/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/decentralized-financial-architecture-workshop/><h6>Decentralized Financial Architecture Workshop</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-developers-miners-meeting-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-developers-miners-meeting-2016/><h6>Developers-Miners Meeting</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/greg-maxwell/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/greg-maxwell/><h6>Greg Maxwell</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/grincon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/grincon/><h6>Grincon</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/grincon/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/grincon/2019/><h6>Grincon 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/honey-badger-diaries/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/honey-badger-diaries/><h6>Honey Badger Diaries</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/la-bitdevs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/la-bitdevs/><h6>LA Bitdevs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/layer2-summit/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/layer2-summit/><h6>Layer2 Summit</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/layer2-summit/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/layer2-summit/2018/><h6>Layer2 Summit 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/lets-talk-bitcoin-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lets-talk-bitcoin-podcast/><h6>Lets Talk Bitcoin Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/lightning-conference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-conference/><h6>Lightning Conference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/lightning-conference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-conference/2019/><h6>Lightning Conference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/lightning-hack-day/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-hack-day/><h6>Lightning Hack Day</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/london-bitcoin-devs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/london-bitcoin-devs/><h6>London Bitcoin Devs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/magicalcryptoconference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/magicalcryptoconference/><h6>Magicalcryptoconference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/magicalcryptoconference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/magicalcryptoconference/2019/><h6>Magicalcryptoconference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/misc/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/misc/><h6>Misc</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/><h6>MIT Bitcoin Expo</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2015/><h6>Mit Bitcoin Expo 2015</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2016/><h6>Mit Bitcoin Expo 2016</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2017/><h6>Mit Bitcoin Expo 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2018/><h6>Mit Bitcoin Expo 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2019/><h6>Mit Bitcoin Expo 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2020/><h6>Mit Bitcoin Expo 2020</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2021/><h6>Mit Bitcoin Expo 2021</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/munich-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/munich-meetup/><h6>Munich Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/noded-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/noded-podcast/><h6>Noded Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/realworldcrypto/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/><h6>Realworldcrypto</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/realworldcrypto/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/2018/><h6>Realworldcrypto 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/rebooting-web-of-trust/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/rebooting-web-of-trust/><h6>Rebooting Web Of Trust</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/rebooting-web-of-trust/2019-prague/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/rebooting-web-of-trust/2019-prague/><h6>2019 Prague</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/ruben-somsen/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/ruben-somsen/><h6>Ruben Somsen</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/satoshi-roundtable/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/satoshi-roundtable/><h6>Satoshi Roundtable</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/satoshi-roundtable/sr-004/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/satoshi-roundtable/sr-004/><h6>Sr 004</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/scalingbitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/><h6>Scaling Bitcoin Conference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/scalingbitcoin/montreal-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/montreal-2015/><h6>Montreal (2015)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/hong-kong-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/hong-kong-2015/><h6>Hong Kong (2015)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/milan-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/milan-2016/><h6>Milan (2016)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/stanford-2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/><h6>Stanford (2017)</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/scalingbitcoin/stanford-2017/edgeplusplus/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/edgeplusplus/><h6>Edgeplusplus</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/scalingbitcoin/tokyo-2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/><h6>Tokyo (2018)</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/scalingbitcoin/tokyo-2018/edgedevplusplus/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/edgedevplusplus/><h6>Edgedevplusplus</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/scalingbitcoin/tel-aviv-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/><h6>Tel Aviv (2019)</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/scalingbitcoin/tel-aviv-2019/edgedevplusplus/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/edgedevplusplus/><h6>Edgedevplusplus</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li></ul></li><li data-nav-id=/sf-bitcoin-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/sf-bitcoin-meetup/><h6>SF Bitcoin Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/simons-institute/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/simons-institute/><h6>Simons Institute</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/stanford-blockchain-conference/ class="nav-item my-1 parent haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/><h6>Stanford Blockchain</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/stanford-blockchain-conference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/2019/><h6>Stanford Blockchain Conference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/stanford-blockchain-conference/2020/ class="nav-item my-1 parent haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/2020/><h6>Stanford Blockchain Conference 2020</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/stephan-livera-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stephan-livera-podcast/><h6>Stephan Livera Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/sydney-bitcoin-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/sydney-bitcoin-meetup/><h6>Sydney Bitcoin Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/texas-bitcoin-conference-2014/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/texas-bitcoin-conference-2014/><h6>Texas Bitcoin Conference</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/tftc-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tftc-podcast/><h6>TFTC Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/verifiable-delay-functions/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/verifiable-delay-functions/><h6>Verifiable Delay Functions</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/verifiable-delay-functions/vdf-day-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/verifiable-delay-functions/vdf-day-2019/><h6>Vdf Day 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/vr-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/vr-bitcoin/><h6>VR Bitcoin</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/w3-blockchain-workshop-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/w3-blockchain-workshop-2016/><h6>W3 Blockchain Workshop</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/wasabi-research-club/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/wasabi-research-club/><h6>Wasabi Research Club</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/what-bitcoin-did-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/what-bitcoin-did-podcast/><h6>What Bitcoin Did Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></div></nav></div><div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky"><div class=docs-toc><nav id=TableOfContents><ul><li><a href=#introduction>Introduction</a></li><li><a href=#outline>Outline</a></li><li><a href=#why-accelerate-rsa>Why accelerate RSA</a></li><li><a href=#recipe-for-acceleration>Recipe for acceleration</a></li><li><a href=#rsa-primitives>RSA primitives</a></li><li><a href=#performance>Performance</a></li><li><a href=#performance-impacts-of-algorithms>Performance impacts of algorithms</a></li><li><a href=#large-integer-arithmetic-on-hardware>Large integer arithmetic on hardware</a></li><li><a href=#available-platforms>Available platforms</a></li><li><a href=#performance-1>Performance</a></li><li><a href=#proofs>Proofs</a></li></ul></nav></div></div><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3"><a href=/>Home</a>
-&lt; <a href=/stanford-blockchain-conference/>Stanford Blockchain</a>
-&lt; <a href=/stanford-blockchain-conference/2020/>Stanford Blockchain Conference 2020</a>
-&lt; Hardware Accelerated Rsa<h1>Hardware Accelerated Rsa</h1><p><i>Transcript By: Bryan Bishop</i></p><p>Tags:
-<a href=/tags/zero-knowledge>Zero knowledge</a>, <a href=/tags/scalability>Scalability</a></p><p>Category:
-<a href=/categories/conference>Conference</a></p><p>Hardware Accelerated RSA - VDFs, SNARKs, and Accumulators</p><p>Simon Peffers</p><p><a href=https://twitter.com/kanzure/status/1230551345700069377>https://twitter.com/kanzure/status/1230551345700069377</a></p><h1 id=introduction>Introduction</h1><p>I am going to talk about accelerating RSA operations in hardware. So let&rsquo;s just get into it.</p><h1 id=outline>Outline</h1><p>I&rsquo;ll talk about what acceleration is and why we&rsquo;re interested in it, then we&rsquo;ll get into RSA primitives, then we&rsquo;ll get into algorithms, and then various platforms for hardware. Hardware is anything you&rsquo;re going to run software on. We&rsquo;ll look at what the tradeoffs are, and then some performance numbers and measurements we&rsquo;ve taken.</p><h1 id=why-accelerate-rsa>Why accelerate RSA</h1><p>There&rsquo;s been amazing new cryptographic primitives being introduced like VDFs, SNARKs, zero-knowledge, proofs of exponentiation and they enable all kinds of use cases like scalability, compression of proofs and storage, but they are all computationally very intensive which means you need time or money. But if we can accelerate this stuff and make it more efficient to run, then we can have higher secure and not compromise on size of keys. You could get greater scale, you could do larger circuits in your SNARK, and you could improve user experience because latency bound and getting results back faster. Lowering costs is also important.</p><p>The other interesting thing is that while this is RSA, the underlying computational primitives are common across all of cryptography and it&rsquo;s broadly applicable.</p><h1 id=recipe-for-acceleration>Recipe for acceleration</h1><p>We&rsquo;ll talk about what is the recipe for acceleration. First define the use case, figure out what you&rsquo;re accelerating, understand the pain points and figure out what to solve. You have to identify the key operations underneath it. Then there&rsquo;s selecting a target platform like CPU, GPU, FPGA, we want to pick the right one depending on the characteristics of the function. Then we have to map those operations on to hardware, and this is important if you want the best performance and you have to map it to the specifics of that hardware.</p><p>One thing we&rsquo;ve been looking at is mapping out the ecosystem. This diagram can help you navigate. There&rsquo;s accumulators, DARKs, VDF evaluation, VDF proofs, modular squaring, modular exponentiation, etc, etc.</p><h1 id=rsa-primitives>RSA primitives</h1><p>The RSA primitives boil down to four functions: square, multiply, add, subtraction. If you do those well, you&rsquo;ll accelerate most of what you see coming through here. These things apply to ECC and BLS and other things.</p><p>VDF evaluation is x^(2^t) and this ends up being iterated squaring, so you just need to make squaring really fast. For exponentiation it&rsquo;s x^y and that just needs optimization of squaring and multiply. You might have look-up tables or something, but in the end you&rsquo;re going to use these fundamental operations.</p><h1 id=performance>Performance</h1><p>So how do you measure performance? There&rsquo;s latency- the desire that you want results as fast as possible. Then there&rsquo;s throughput where you have a lot of items and it doesn&rsquo;t matter how fast one particular thing is, you just want to get the whole batch done. So understanding if you&rsquo;re optimizing for latency or throughput will effect how you optimize. Different algorithms can vary if they are latency or throughput limited while they run, so you have to profile the functions and figure out how this is going to work.</p><h1 id=performance-impacts-of-algorithms>Performance impacts of algorithms</h1><p>Algorithms are huge. The VDF proof for example- if you take the straightforward approach, it&rsquo;s very expensive and high latency. But you can change the algorithm and make it so that it becomes throughput oriented instead, which can give orders of magnitude in performance. Even doing things like looking at Montgomery space can make a huge difference. Spend time here and get it right before going to lower-level optimization.</p><h1 id=large-integer-arithmetic-on-hardware>Large integer arithmetic on hardware</h1><p>Large integer arithmetic usually works all the same. In RSA space, you have integers that don&rsquo;t fit into the word size on a computer. So it gets divided into small limbs, and then you perform basic operations on those limbs. This gives you an example in this diagram for some x86 operations. Add and subtract is pretty simple. You can walk through the limbs and do add, then there&rsquo;s operations for large integer arithmetic like add with carry and subtract with borrow.</p><p>Multiply is a little bit more tricky because you have to do the cross-multiply. You can generate the partial products by multiplying smaller limbs, then at the end you sum down the columns. There&rsquo;s a specialized instruction for this as well, like MULX, also look at acdx and adox. There&rsquo;s also adc, sbb.</p><p>One interesting thing is we mentioned squaring and multiply.. You can do a square with a multiply, but there&rsquo;s a nice optimization if you optimize for just squaring. If you look at the very bottom of the multiply triangle, if x and y are the same, you compute the same partial product twice, so why not just compute it once and double it, and in binary that&rsquo;s a shift left which is very cheap and you can save a lot of computation by doing this. If you look at a larger 2k operation, it&rsquo;s a pretty stark difference both in the number of operations and also the depth of the tree which is the latency effectively.</p><h1 id=available-platforms>Available platforms</h1><p>Let&rsquo;s look at the available platforms and the underlying primitives to perform these calculations. This shows the pipeline for an Intel x86 processor. If you look under port 5, there&rsquo;s a MUL&ndash; you get one per cycle, the data path is 64-bits wide&mldr;. For each of these platforms, we calculated a theoretical upper bound of how many multiplies you could do in a given amount of time, for two k-bit numbers. We take word size, the number of operations, and we multiply it out. If we look at a 5 GHz core, we need 1024 operations for a 2k number, and this gives us 39 million operations/second and you can scale with the number of cores since it&rsquo;s linear scaling.</p><p>Before the integer unit, there&rsquo;s a 512-bit vector unit which does operations in 8 64-bit lanes. Historically you couldn&rsquo;t do multiplies, but now something is coming out that lets you do 8 multiplies at the same time which could allow for a nice speed-up in upcoming systems.</p><p>This is a nvidia 2080 TI pipeline GPU. These are 32-bit pipelines. There&rsquo;s an int there, that&rsquo;s int32 and you get one per cycle there. The interesting thing about the GPU is that the frequency is lower. There&rsquo;s 4600 cores, that&rsquo;s the beauty of a GPU it&rsquo;s massively parallel. The total throughput is 1.7 billion operations per second. The latency is higher since they are smaller. The throughput is great, but it doesn&rsquo;t take into account memory operations which will typically pull the performance down some.</p><p>In an FPGA, you&rsquo;re generally targetting DSPs. This is a Xilinx DSp. It&rsquo;s a 27x18-bit multiplier and it runs with 6840 cores, and it gives you 327 million operations/second. Compared to a GPU, there&rsquo;s a stark difference for throughput. For latency, an FPGA can do pretty well relative to the other platforms since you can target your whole pipeline in an FPGA for a specific function.</p><p>If you&rsquo;re going to build custom silicon and ASICs, then you can make up the functional units you want and you can target the operations you want to do. Here&rsquo;s a picture of an architecture we&rsquo;ve been looking at for about a year, targeted at RSA operations. There&rsquo;s two configurations I&rsquo;m showing you here. If you want to do a latency-oriented operation, you can build a massive squaring unit. If you think about VDF evaluators, you want a whole squaring unit and you want to shrink it down to as low latency as possible. We think we can get this down to single digit nanoseconds for one square. But if you want a throughput one, you might have 256 parts and then tile it out, and you get a larger word size so you get higher throughput per clock cycle. If you look at running with 1 GHz with 1000 cores, you can estimate that with that word size, you need&mldr;. 15 thousand million operations per second, it&rsquo;s 10x faster than the GPU and you can sort of choose with an ASIC too becaus you can make it as large or small as you want and choose what performance you target there.</p><p>One interesting thing to note about the GPU- we talked about the mulx and the other instructions&mldr; this shows the code sequences on the left for what those instructions look like. You can get a 50% improvement using mulx over using a naieve implementation. Usually the compilers don&rsquo;t generate addcx and they don&rsquo;t like the carry-chains. If you&rsquo;re looking at your code, make sure you&rsquo;re using assembly code somewhere in your compiled stream so you can get the advantage of these operations. That&rsquo;s an easy way to get a 50% improvement. The instruction sequence on the right is for a 512-bit integer fused multiply add (IFMA) unit. It&rsquo;s an instruction like vpmadd52luq or vpmadd52huq. There&rsquo;s 8 lanes of 52x52 + 64. You can get a huge speedup switching to this operation.</p><h1 id=performance-1>Performance</h1><p>We benchmarked some of these platforms. We were doing a 2k Montgomery multiplication with a reduction. This shows throughput for a variety of platforms. The CPU runs fast and it&rsquo;s great for general purpose, it&rsquo;s fairly low in throughput. But it&rsquo;s easy to buy more cores and make things run faster and the program modulus is pretty easy. The GPU we measured at 350&mldr; that&rsquo;s a huge throughput, the trick with the GPU is that you have to get the data to the GPU and from the GPU&mldr; So while you can in theory get 350 but often you don&rsquo;t see that in a real application. As you go through optimizing, you want to know what is the theoretical limit of the system and how do you know when you&rsquo;re done optimizing? If you find you&rsquo;re 10% of this performance, then there&rsquo;s a lot of room to improve still and you should figure out what&rsquo;s causing the 90% friction and maybe you can tackle it maybe you can&rsquo;t but part of it is about getting the best performance is understanding the fundamentals. With FPGA, we did the same measurement and got about 40. With the ASIC, you can make a huge difference, we got a throughput of 8000. You get rid of all the extra logic that you have with CPU and GPUs which are more general purpose, and the ASIC is solving one specific thing very well.</p><p>On latency, the interesting thing here is that the GPU and FPGA are switched places from the last diagram. The GPU doesn&rsquo;t have great latency, you can do things but it takes a while. For the FPGA, you can see that where in the previous one the GPU had 10x performance throughput, we see another 10x swap on latency here. If you have a latency-oriented problem, then an FPGA is a good place to start. If you&rsquo;re targeting on latency, you can do a great job another 10x difference with ASIC.</p><h1 id=proofs>Proofs</h1><p>Let me talk about a couple of proof points for where we can apply some of this. About a year ago, almost to the day, we started to look at VDF evaluators and we found this 35 year-old timelock puzzle that Rivest setup. We were building a low latency circuit and we looked at the problem and we found that we could solve it, we did it in about 3 months. It was 20 years into the timelock, it took about 2 months of runtime and here you can see we&rsquo;re at MIT and Rivest is in this photo and we broke the timelock. The unfortunate thing is that Bernard was running the timelock on his desktop CPU and he solved it two weeks before we did. It was a well-earned win for him, the diligence and perseverance is remarkable.</p><p>Ron Rivest estimated it would take 35 years to solve it, and Bernard was able to do it in 3 years and it was because of the specialized operations in the CPU cores and CPUs have come a really long way in spite of Moore&rsquo;s law and the slowing down of the frequency game, the performance has continued to increase. You can also make a big difference with ASICs.</p><p>We looked at the VDF evaluator for a while. We built an implementation of VDF-as-a-service. We decided why not put this stuff into the world? We stood up this srevice and you can go look at it today. There&rsquo;s a 30 minute VDF Wesolowski proof. It runs at about 26 nanoseconds per square to make a VDF. These get published online and you can look at it and verify the proof, do let me know if you see one that doesn&rsquo;t verify. This has about 1% overhead on the proof generation.</p><p><a href=https://vdfalliance.org/service>https://vdfalliance.org/service</a></p><hr><p><i>Sponsorship</i>: These transcripts are <a href=https://twitter.com/ChristopherA/status/1228763593782394880>sponsored</a> by <a href=https://blockchaincommons.com/>Blockchain Commons</a>.</p><p><i>Disclaimer</i>: These are unpaid transcriptions, performed in real-time and in-person during the actual source presentation. Due to personal time constraints they are usually not reviewed against the source material once published. Errors are possible. If the original author/speaker or anyone else finds errors of substance, please email me at <a href=mailto:kanzure@gmail.com>kanzure@gmail.com</a> for corrections or contribute online via github/git. I sometimes add annotations to the transcription text. These will always be denoted by a standard editor&rsquo;s note in parenthesis brackets ((like this)), or in a numbered footnote. I welcome feedback and discussion of these as well.</p><p>Tweet: Transcript: &ldquo;Hardware Accelerated RSA - VDFs, SNARKs, and Accumulators&rdquo; <a href=https://diyhpl.us/wiki/transcripts/stanford-blockchain-conference/2020/hardware-accelerated-rsa/>https://diyhpl.us/wiki/transcripts/stanford-blockchain-conference/2020/hardware-accelerated-rsa/</a> @_Supranational @CBRStanford #SBC20</p><div class=row></div></div></div></div><script src=https://btctranscripts.com/lib/jquery.min.js></script><script src=https://btctranscripts.com/lib/popper.min.js></script><script src=https://btctranscripts.com/js/bootstrap.min.js></script><script type=text/javascript src=/plugins/lunr.min.js></script><script type=text/javascript src=/plugins/auto-complete.js></script><link href=/plugins/auto-complete.css rel=stylesheet><script type=text/javascript>var baseurl="https://btctranscripts.com/"</script><script type=text/javascript src=/plugins/search.js></script><script type=text/javascript src=https://btctranscripts.com/js/custom.js></script><script type=text/javascript src=/plugins/clipboard.js></script><script>new ClipboardJS('.btn')</script></body></html>
+Outline I&rsquo;ll talk about what acceleration is and why we&rsquo;re interested in it, then we&rsquo;ll get into RSA primitives, then we&rsquo;ll get into algorithms, and then various platforms for hardware. Hardware is anything you&rsquo;re going to run software on. We&rsquo;ll look at what the tradeoffs are, and then some performance numbers and measurements we&rsquo;ve taken.">
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id=navbarMain>
+<div class=container>
+<div>
+<a class=navbar-brand href=/>
+₿itcoin Transcripts
+</a>
+</div>
+<div class="collapse navbar-collapse" id=navbarMainCollapse>
+<ul class="navbar-nav ml-auto">
+<li class=nav-item>
+<a class=nav-link href=https://github.com/bitcointranscripts/bitcointranscripts target=_blank>
+<i class="fab fa-github"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<div class=container-fluid>
+<div class=row>
+<div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
+<button class="navbar-toggler navbar-toggler-right collapsed" type=button data-toggle=collapse data-target=#sidenav-left-collapse aria-controls=sidenav-left-collapse aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span>
+</button>
+<div class="collapse navbar-collapse align-items-start flex-column" id=sidenav-left-collapse>
+<form class="form-inline my-2 my-lg-0 searchbox">
+<input class="form-control mr-sm-2 w-100" data-search-input id=search-by type=text placeholder='Search (press "/")'>
+</form>
+<ul class="navbar-nav flex-column pt-3">
+<li data-nav-id=/advancing-bitcoin/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/advancing-bitcoin/><h6>Advancing Bitcoin</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/advancing-bitcoin/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/advancing-bitcoin/2019/><h6>Advancing Bitcoin 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/advancing-bitcoin/2020/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/advancing-bitcoin/2020/><h6>Advancing Bitcoin 2020</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/andreas-antonopoulos/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/andreas-antonopoulos/><h6>Andreas Antonopoulos</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/austin-bitcoin-developers/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/austin-bitcoin-developers/><h6>Austin Bitcoin Developers</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/baltic-honeybadger/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/baltic-honeybadger/><h6>Baltic Honeybadger</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/baltic-honeybadger/2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/baltic-honeybadger/2018/><h6>Baltic Honeybadger 2018</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/baltic-honeybadger/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/baltic-honeybadger/2019/><h6>Baltic Honeybadger 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/bit-block-boom/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bit-block-boom/><h6>Bit Block Boom</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/bit-block-boom/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bit-block-boom/2019/><h6>Bit Block Boom 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/bitcoin-core-dev-tech/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bitcoin-core-dev-tech/><h6>Bitcoin Core Dev Tech</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/bitcoin-core-dev-tech/bitcoin-devcore-2015/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bitcoin-core-dev-tech/bitcoin-devcore-2015/><h6>Bitcoin Devcore Meetup (2015)</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/bitcoin-design/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bitcoin-design/><h6>Bitcoin Design</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/bitcoin-magazine/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bitcoin-magazine/><h6>Bitcoin Magazine</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/bitcoinops/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bitcoinops/><h6>Bitcoinops</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/bitcoinops/schnorr-taproot-workshop-2019/ class="nav-item my-1">
+<a class="nav-link p-0" href=/bitcoinops/schnorr-taproot-workshop-2019/><h6>Schnorr Taproot Workshop 2019</h6></a>
+</li>
+</ul>
+</li>
+<li data-nav-id=/blockchain-protocol-analysis-security-engineering/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/><h6>Blockchain Protocol Analysis Security Eng</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/blockchain-protocol-analysis-security-engineering/2017/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2017/><h6>Blockchain Protocol Analysis Security Engineering 2017</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/blockchain-protocol-analysis-security-engineering/2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2018/><h6>Blockchain Protocol Analysis Security Engineering 2018</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/blockstream-webinars/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/blockstream-webinars/><h6>Blockstream Webinars</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/boltathon/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/boltathon/><h6>Boltathon</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/breaking-bitcoin/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/breaking-bitcoin/><h6>Breaking Bitcoin</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/breaking-bitcoin/2017/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/breaking-bitcoin/2017/><h6>Breaking Bitcoin 2017</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/breaking-bitcoin/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/breaking-bitcoin/2019/><h6>Breaking Bitcoin 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/building-on-bitcoin/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/building-on-bitcoin/><h6>Building On Bitcoin</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/building-on-bitcoin/2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/building-on-bitcoin/2018/><h6>Building On Bitcoin 2018</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/chaincode-labs/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/chaincode-labs/><h6>Chaincode Labs</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/chaincode-labs/chaincode-podcast/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/chaincode-labs/chaincode-podcast/><h6>Chaincode Podcast</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/chaincode-labs/chaincode-residency/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/chaincode-labs/chaincode-residency/><h6>Chaincode Residency</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/chicago-bitdevs/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/chicago-bitdevs/><h6>Chicago Bitdevs</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/coindesk-consensus-2016/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/coindesk-consensus-2016/><h6>Coindesk Consensus</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/coordination-of-decentralized-finance-workshop/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/><h6>Coordination of Decentralized Finance</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/coordination-of-decentralized-finance-workshop/2020-stanford/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/2020-stanford/><h6>2020 Stanford</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/cppcon/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/cppcon/><h6>CPPcon</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/cppcon/2017/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/cppcon/2017/><h6>CPPcon 2017</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/cppcon/2020/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/cppcon/2020/><h6>CPPcon 2020</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/cryptoeconomic-systems/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/cryptoeconomic-systems/><h6>Cryptoeconomic Systems</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/cryptoeconomic-systems/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/cryptoeconomic-systems/2019/><h6>Cryptoeconomic Systems 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/dallas-bitcoin-symposium/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/dallas-bitcoin-symposium/><h6>Dallas Bitcoin Symposium</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/decentralized-financial-architecture-workshop/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/decentralized-financial-architecture-workshop/><h6>Decentralized Financial Architecture Workshop</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/bitcoin-developers-miners-meeting-2016/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bitcoin-developers-miners-meeting-2016/><h6>Developers-Miners Meeting</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/greg-maxwell/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/greg-maxwell/><h6>Greg Maxwell</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/grincon/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/grincon/><h6>Grincon</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/grincon/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/grincon/2019/><h6>Grincon 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/honey-badger-diaries/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/honey-badger-diaries/><h6>Honey Badger Diaries</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/la-bitdevs/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/la-bitdevs/><h6>LA Bitdevs</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/layer2-summit/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/layer2-summit/><h6>Layer2 Summit</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/layer2-summit/2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/layer2-summit/2018/><h6>Layer2 Summit 2018</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/lets-talk-bitcoin-podcast/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/lets-talk-bitcoin-podcast/><h6>Lets Talk Bitcoin Podcast</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/lightning-conference/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/lightning-conference/><h6>Lightning Conference</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/lightning-conference/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/lightning-conference/2019/><h6>Lightning Conference 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/lightning-hack-day/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/lightning-hack-day/><h6>Lightning Hack Day</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/london-bitcoin-devs/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/london-bitcoin-devs/><h6>London Bitcoin Devs</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/magicalcryptoconference/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/magicalcryptoconference/><h6>Magicalcryptoconference</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/magicalcryptoconference/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/magicalcryptoconference/2019/><h6>Magicalcryptoconference 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/misc/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/misc/><h6>Misc</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/><h6>MIT Bitcoin Expo</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2015/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2015/><h6>Mit Bitcoin Expo 2015</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2016/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2016/><h6>Mit Bitcoin Expo 2016</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2017/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2017/><h6>Mit Bitcoin Expo 2017</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2018/><h6>Mit Bitcoin Expo 2018</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2019/><h6>Mit Bitcoin Expo 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2020/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2020/><h6>Mit Bitcoin Expo 2020</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2021/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2021/><h6>Mit Bitcoin Expo 2021</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/munich-meetup/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/munich-meetup/><h6>Munich Meetup</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/noded-podcast/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/noded-podcast/><h6>Noded Podcast</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/realworldcrypto/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/realworldcrypto/><h6>Realworldcrypto</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/realworldcrypto/2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/realworldcrypto/2018/><h6>Realworldcrypto 2018</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/rebooting-web-of-trust/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/rebooting-web-of-trust/><h6>Rebooting Web Of Trust</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/rebooting-web-of-trust/2019-prague/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/rebooting-web-of-trust/2019-prague/><h6>2019 Prague</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/ruben-somsen/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/ruben-somsen/><h6>Ruben Somsen</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/satoshi-roundtable/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/satoshi-roundtable/><h6>Satoshi Roundtable</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/satoshi-roundtable/sr-004/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/satoshi-roundtable/sr-004/><h6>Sr 004</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/scalingbitcoin/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/><h6>Scaling Bitcoin Conference</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/scalingbitcoin/montreal-2015/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/montreal-2015/><h6>Montreal (2015)</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/scalingbitcoin/hong-kong-2015/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/hong-kong-2015/><h6>Hong Kong (2015)</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/scalingbitcoin/milan-2016/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/milan-2016/><h6>Milan (2016)</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/scalingbitcoin/stanford-2017/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/><h6>Stanford (2017)</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/scalingbitcoin/stanford-2017/edgeplusplus/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/edgeplusplus/><h6>Edgeplusplus</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/scalingbitcoin/tokyo-2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/><h6>Tokyo (2018)</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/scalingbitcoin/tokyo-2018/edgedevplusplus/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/edgedevplusplus/><h6>Edgedevplusplus</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/scalingbitcoin/tel-aviv-2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/><h6>Tel Aviv (2019)</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/scalingbitcoin/tel-aviv-2019/edgedevplusplus/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/edgedevplusplus/><h6>Edgedevplusplus</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/sf-bitcoin-meetup/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/sf-bitcoin-meetup/><h6>SF Bitcoin Meetup</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/simons-institute/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/simons-institute/><h6>Simons Institute</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/stanford-blockchain-conference/ class="nav-item my-1 parent haschildren">
+<a class="nav-link p-0" href=/stanford-blockchain-conference/><h6>Stanford Blockchain</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/stanford-blockchain-conference/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/stanford-blockchain-conference/2019/><h6>Stanford Blockchain Conference 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/stanford-blockchain-conference/2020/ class="nav-item my-1 parent haschildren">
+<a class="nav-link p-0" href=/stanford-blockchain-conference/2020/><h6>Stanford Blockchain Conference 2020</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/stephan-livera-podcast/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/stephan-livera-podcast/><h6>Stephan Livera Podcast</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/sydney-bitcoin-meetup/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/sydney-bitcoin-meetup/><h6>Sydney Bitcoin Meetup</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/texas-bitcoin-conference-2014/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/texas-bitcoin-conference-2014/><h6>Texas Bitcoin Conference</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/tftc-podcast/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/tftc-podcast/><h6>TFTC Podcast</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/verifiable-delay-functions/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/verifiable-delay-functions/><h6>Verifiable Delay Functions</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/verifiable-delay-functions/vdf-day-2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/verifiable-delay-functions/vdf-day-2019/><h6>Vdf Day 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/vr-bitcoin/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/vr-bitcoin/><h6>VR Bitcoin</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/w3-blockchain-workshop-2016/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/w3-blockchain-workshop-2016/><h6>W3 Blockchain Workshop</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/wasabi-research-club/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/wasabi-research-club/><h6>Wasabi Research Club</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/what-bitcoin-did-podcast/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/what-bitcoin-did-podcast/><h6>What Bitcoin Did Podcast</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+<div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky"><div class=docs-toc>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#introduction>Introduction</a></li>
+<li><a href=#outline>Outline</a></li>
+<li><a href=#why-accelerate-rsa>Why accelerate RSA</a></li>
+<li><a href=#recipe-for-acceleration>Recipe for acceleration</a></li>
+<li><a href=#rsa-primitives>RSA primitives</a></li>
+<li><a href=#performance>Performance</a></li>
+<li><a href=#performance-impacts-of-algorithms>Performance impacts of algorithms</a></li>
+<li><a href=#large-integer-arithmetic-on-hardware>Large integer arithmetic on hardware</a></li>
+<li><a href=#available-platforms>Available platforms</a></li>
+<li><a href=#performance-1>Performance</a></li>
+<li><a href=#proofs>Proofs</a></li>
+</ul>
+</nav>
+</div>
+</div>
+<div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+<a href=/>Home</a>
+&lt; <a href=/stanford-blockchain-conference/>
+Stanford Blockchain
+</a>
+&lt; <a href=/stanford-blockchain-conference/2020/>
+Stanford Blockchain Conference 2020
+</a>
+&lt; Hardware Accelerated Rsa
+<h1>Hardware Accelerated Rsa</h1>
+<p><i>Transcript By: Bryan Bishop</i></p>
+<p>Tags:
+<a href=/tags/zero-knowledge>Zero knowledge</a>, <a href=/tags/scalability>Scalability</a></p>
+<p>Category:
+<a href=/categories/conference>Conference</a></p>
+<p>Hardware Accelerated RSA - VDFs, SNARKs, and Accumulators</p>
+<p>Simon Peffers</p>
+<p><a href=https://twitter.com/kanzure/status/1230551345700069377>https://twitter.com/kanzure/status/1230551345700069377</a></p>
+<h1 id=introduction>Introduction</h1>
+<p>I am going to talk about accelerating RSA operations in hardware. So let&rsquo;s just get into it.</p>
+<h1 id=outline>Outline</h1>
+<p>I&rsquo;ll talk about what acceleration is and why we&rsquo;re interested in it, then we&rsquo;ll get into RSA primitives, then we&rsquo;ll get into algorithms, and then various platforms for hardware. Hardware is anything you&rsquo;re going to run software on. We&rsquo;ll look at what the tradeoffs are, and then some performance numbers and measurements we&rsquo;ve taken.</p>
+<h1 id=why-accelerate-rsa>Why accelerate RSA</h1>
+<p>There&rsquo;s been amazing new cryptographic primitives being introduced like VDFs, SNARKs, zero-knowledge, proofs of exponentiation and they enable all kinds of use cases like scalability, compression of proofs and storage, but they are all computationally very intensive which means you need time or money. But if we can accelerate this stuff and make it more efficient to run, then we can have higher secure and not compromise on size of keys. You could get greater scale, you could do larger circuits in your SNARK, and you could improve user experience because latency bound and getting results back faster. Lowering costs is also important.</p>
+<p>The other interesting thing is that while this is RSA, the underlying computational primitives are common across all of cryptography and it&rsquo;s broadly applicable.</p>
+<h1 id=recipe-for-acceleration>Recipe for acceleration</h1>
+<p>We&rsquo;ll talk about what is the recipe for acceleration. First define the use case, figure out what you&rsquo;re accelerating, understand the pain points and figure out what to solve. You have to identify the key operations underneath it. Then there&rsquo;s selecting a target platform like CPU, GPU, FPGA, we want to pick the right one depending on the characteristics of the function. Then we have to map those operations on to hardware, and this is important if you want the best performance and you have to map it to the specifics of that hardware.</p>
+<p>One thing we&rsquo;ve been looking at is mapping out the ecosystem. This diagram can help you navigate. There&rsquo;s accumulators, DARKs, VDF evaluation, VDF proofs, modular squaring, modular exponentiation, etc, etc.</p>
+<h1 id=rsa-primitives>RSA primitives</h1>
+<p>The RSA primitives boil down to four functions: square, multiply, add, subtraction. If you do those well, you&rsquo;ll accelerate most of what you see coming through here. These things apply to ECC and BLS and other things.</p>
+<p>VDF evaluation is x^(2^t) and this ends up being iterated squaring, so you just need to make squaring really fast. For exponentiation it&rsquo;s x^y and that just needs optimization of squaring and multiply. You might have look-up tables or something, but in the end you&rsquo;re going to use these fundamental operations.</p>
+<h1 id=performance>Performance</h1>
+<p>So how do you measure performance? There&rsquo;s latency- the desire that you want results as fast as possible. Then there&rsquo;s throughput where you have a lot of items and it doesn&rsquo;t matter how fast one particular thing is, you just want to get the whole batch done. So understanding if you&rsquo;re optimizing for latency or throughput will effect how you optimize. Different algorithms can vary if they are latency or throughput limited while they run, so you have to profile the functions and figure out how this is going to work.</p>
+<h1 id=performance-impacts-of-algorithms>Performance impacts of algorithms</h1>
+<p>Algorithms are huge. The VDF proof for example- if you take the straightforward approach, it&rsquo;s very expensive and high latency. But you can change the algorithm and make it so that it becomes throughput oriented instead, which can give orders of magnitude in performance. Even doing things like looking at Montgomery space can make a huge difference. Spend time here and get it right before going to lower-level optimization.</p>
+<h1 id=large-integer-arithmetic-on-hardware>Large integer arithmetic on hardware</h1>
+<p>Large integer arithmetic usually works all the same. In RSA space, you have integers that don&rsquo;t fit into the word size on a computer. So it gets divided into small limbs, and then you perform basic operations on those limbs. This gives you an example in this diagram for some x86 operations. Add and subtract is pretty simple. You can walk through the limbs and do add, then there&rsquo;s operations for large integer arithmetic like add with carry and subtract with borrow.</p>
+<p>Multiply is a little bit more tricky because you have to do the cross-multiply. You can generate the partial products by multiplying smaller limbs, then at the end you sum down the columns. There&rsquo;s a specialized instruction for this as well, like MULX, also look at acdx and adox. There&rsquo;s also adc, sbb.</p>
+<p>One interesting thing is we mentioned squaring and multiply.. You can do a square with a multiply, but there&rsquo;s a nice optimization if you optimize for just squaring. If you look at the very bottom of the multiply triangle, if x and y are the same, you compute the same partial product twice, so why not just compute it once and double it, and in binary that&rsquo;s a shift left which is very cheap and you can save a lot of computation by doing this. If you look at a larger 2k operation, it&rsquo;s a pretty stark difference both in the number of operations and also the depth of the tree which is the latency effectively.</p>
+<h1 id=available-platforms>Available platforms</h1>
+<p>Let&rsquo;s look at the available platforms and the underlying primitives to perform these calculations. This shows the pipeline for an Intel x86 processor. If you look under port 5, there&rsquo;s a MUL&ndash; you get one per cycle, the data path is 64-bits wide&mldr;. For each of these platforms, we calculated a theoretical upper bound of how many multiplies you could do in a given amount of time, for two k-bit numbers. We take word size, the number of operations, and we multiply it out. If we look at a 5 GHz core, we need 1024 operations for a 2k number, and this gives us 39 million operations/second and you can scale with the number of cores since it&rsquo;s linear scaling.</p>
+<p>Before the integer unit, there&rsquo;s a 512-bit vector unit which does operations in 8 64-bit lanes. Historically you couldn&rsquo;t do multiplies, but now something is coming out that lets you do 8 multiplies at the same time which could allow for a nice speed-up in upcoming systems.</p>
+<p>This is a nvidia 2080 TI pipeline GPU. These are 32-bit pipelines. There&rsquo;s an int there, that&rsquo;s int32 and you get one per cycle there. The interesting thing about the GPU is that the frequency is lower. There&rsquo;s 4600 cores, that&rsquo;s the beauty of a GPU it&rsquo;s massively parallel. The total throughput is 1.7 billion operations per second. The latency is higher since they are smaller. The throughput is great, but it doesn&rsquo;t take into account memory operations which will typically pull the performance down some.</p>
+<p>In an FPGA, you&rsquo;re generally targetting DSPs. This is a Xilinx DSp. It&rsquo;s a 27x18-bit multiplier and it runs with 6840 cores, and it gives you 327 million operations/second. Compared to a GPU, there&rsquo;s a stark difference for throughput. For latency, an FPGA can do pretty well relative to the other platforms since you can target your whole pipeline in an FPGA for a specific function.</p>
+<p>If you&rsquo;re going to build custom silicon and ASICs, then you can make up the functional units you want and you can target the operations you want to do. Here&rsquo;s a picture of an architecture we&rsquo;ve been looking at for about a year, targeted at RSA operations. There&rsquo;s two configurations I&rsquo;m showing you here. If you want to do a latency-oriented operation, you can build a massive squaring unit. If you think about VDF evaluators, you want a whole squaring unit and you want to shrink it down to as low latency as possible. We think we can get this down to single digit nanoseconds for one square. But if you want a throughput one, you might have 256 parts and then tile it out, and you get a larger word size so you get higher throughput per clock cycle. If you look at running with 1 GHz with 1000 cores, you can estimate that with that word size, you need&mldr;. 15 thousand million operations per second, it&rsquo;s 10x faster than the GPU and you can sort of choose with an ASIC too becaus you can make it as large or small as you want and choose what performance you target there.</p>
+<p>One interesting thing to note about the GPU- we talked about the mulx and the other instructions&mldr; this shows the code sequences on the left for what those instructions look like. You can get a 50% improvement using mulx over using a naieve implementation. Usually the compilers don&rsquo;t generate addcx and they don&rsquo;t like the carry-chains. If you&rsquo;re looking at your code, make sure you&rsquo;re using assembly code somewhere in your compiled stream so you can get the advantage of these operations. That&rsquo;s an easy way to get a 50% improvement. The instruction sequence on the right is for a 512-bit integer fused multiply add (IFMA) unit. It&rsquo;s an instruction like vpmadd52luq or vpmadd52huq. There&rsquo;s 8 lanes of 52x52 + 64. You can get a huge speedup switching to this operation.</p>
+<h1 id=performance-1>Performance</h1>
+<p>We benchmarked some of these platforms. We were doing a 2k Montgomery multiplication with a reduction. This shows throughput for a variety of platforms. The CPU runs fast and it&rsquo;s great for general purpose, it&rsquo;s fairly low in throughput. But it&rsquo;s easy to buy more cores and make things run faster and the program modulus is pretty easy. The GPU we measured at 350&mldr; that&rsquo;s a huge throughput, the trick with the GPU is that you have to get the data to the GPU and from the GPU&mldr; So while you can in theory get 350 but often you don&rsquo;t see that in a real application. As you go through optimizing, you want to know what is the theoretical limit of the system and how do you know when you&rsquo;re done optimizing? If you find you&rsquo;re 10% of this performance, then there&rsquo;s a lot of room to improve still and you should figure out what&rsquo;s causing the 90% friction and maybe you can tackle it maybe you can&rsquo;t but part of it is about getting the best performance is understanding the fundamentals. With FPGA, we did the same measurement and got about 40. With the ASIC, you can make a huge difference, we got a throughput of 8000. You get rid of all the extra logic that you have with CPU and GPUs which are more general purpose, and the ASIC is solving one specific thing very well.</p>
+<p>On latency, the interesting thing here is that the GPU and FPGA are switched places from the last diagram. The GPU doesn&rsquo;t have great latency, you can do things but it takes a while. For the FPGA, you can see that where in the previous one the GPU had 10x performance throughput, we see another 10x swap on latency here. If you have a latency-oriented problem, then an FPGA is a good place to start. If you&rsquo;re targeting on latency, you can do a great job another 10x difference with ASIC.</p>
+<h1 id=proofs>Proofs</h1>
+<p>Let me talk about a couple of proof points for where we can apply some of this. About a year ago, almost to the day, we started to look at VDF evaluators and we found this 35 year-old timelock puzzle that Rivest setup. We were building a low latency circuit and we looked at the problem and we found that we could solve it, we did it in about 3 months. It was 20 years into the timelock, it took about 2 months of runtime and here you can see we&rsquo;re at MIT and Rivest is in this photo and we broke the timelock. The unfortunate thing is that Bernard was running the timelock on his desktop CPU and he solved it two weeks before we did. It was a well-earned win for him, the diligence and perseverance is remarkable.</p>
+<p>Ron Rivest estimated it would take 35 years to solve it, and Bernard was able to do it in 3 years and it was because of the specialized operations in the CPU cores and CPUs have come a really long way in spite of Moore&rsquo;s law and the slowing down of the frequency game, the performance has continued to increase. You can also make a big difference with ASICs.</p>
+<p>We looked at the VDF evaluator for a while. We built an implementation of VDF-as-a-service. We decided why not put this stuff into the world? We stood up this srevice and you can go look at it today. There&rsquo;s a 30 minute VDF Wesolowski proof. It runs at about 26 nanoseconds per square to make a VDF. These get published online and you can look at it and verify the proof, do let me know if you see one that doesn&rsquo;t verify. This has about 1% overhead on the proof generation.</p>
+<p><a href=https://vdfalliance.org/service>https://vdfalliance.org/service</a></p>
+<hr>
+<p><i>Sponsorship</i>: These transcripts are <a href=https://twitter.com/ChristopherA/status/1228763593782394880>sponsored</a> by <a href=https://blockchaincommons.com/>Blockchain Commons</a>.</p>
+<p><i>Disclaimer</i>: These are unpaid transcriptions, performed in real-time and in-person during the actual source presentation. Due to personal time constraints they are usually not reviewed against the source material once published. Errors are possible. If the original author/speaker or anyone else finds errors of substance, please email me at <a href=mailto:kanzure@gmail.com>kanzure@gmail.com</a> for corrections or contribute online via github/git. I sometimes add annotations to the transcription text. These will always be denoted by a standard editor&rsquo;s note in parenthesis brackets ((like this)), or in a numbered footnote. I welcome feedback and discussion of these as well.</p>
+<p>Tweet: Transcript: &ldquo;Hardware Accelerated RSA - VDFs, SNARKs, and Accumulators&rdquo; <a href=https://diyhpl.us/wiki/transcripts/stanford-blockchain-conference/2020/hardware-accelerated-rsa/>https://diyhpl.us/wiki/transcripts/stanford-blockchain-conference/2020/hardware-accelerated-rsa/</a> @_Supranational @CBRStanford #SBC20</p>
+<div class=row></div>
+</div>
+</div>
+</div>
+<script src=https://btctranscripts.com/lib/jquery.min.js></script>
+<script src=https://btctranscripts.com/lib/popper.min.js></script>
+<script src=https://btctranscripts.com/js/bootstrap.min.js></script>
+<script type=text/javascript src=/plugins/lunr.min.js></script>
+<script type=text/javascript src=/plugins/auto-complete.js></script>
+<link href=/plugins/auto-complete.css rel=stylesheet>
+<script type=text/javascript>var baseurl="https://btctranscripts.com/"</script>
+<script type=text/javascript src=/plugins/search.js></script>
+<script type=text/javascript src=https://btctranscripts.com/js/custom.js></script>
+<script type=text/javascript src=/plugins/clipboard.js></script>
+<script>new ClipboardJS('.btn')</script>
+</body>
+</html>

@@ -1,10 +1,625 @@
-<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=canonical href=https://btctranscripts.com/scalingbitcoin/tokyo-2018/how-much-privacy-is-enough/><title>How Much Privacy Is Enough | ₿itcoin Transcripts</title><link href=https://btctranscripts.com/css/fontawesome.min.css rel=stylesheet><link rel=stylesheet href=https://btctranscripts.com/css/ace.min.css><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://btctranscripts.com/images/btctranscripts.png"><meta name=twitter:title content="How Much Privacy Is Enough"><meta name=twitter:description content="How much privacy is enough? Threats, scaling, and trade-offs in blockchain privacy protocols
+<!doctype html><html><head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<link rel=canonical href=https://btctranscripts.com/scalingbitcoin/tokyo-2018/how-much-privacy-is-enough/>
+<title>
+How Much Privacy Is Enough | ₿itcoin Transcripts
+</title>
+<link href=https://btctranscripts.com/css/fontawesome.min.css rel=stylesheet>
+<link rel=stylesheet href=https://btctranscripts.com/css/ace.min.css>
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://btctranscripts.com/images/btctranscripts.png">
+<meta name=twitter:title content="How Much Privacy Is Enough">
+<meta name=twitter:description content="How much privacy is enough? Threats, scaling, and trade-offs in blockchain privacy protocols
 Ian Miers (secparam)
 unrelated, https://arxiv.org/pdf/1706.00916.pdf
-Introductions Hi everybody. This is a talk on how much privacy is enough, evaluating trade-offs in privacy and scalability. This is going to be unusual for this conference because I will not be presenting new technical content. I am going to be talking about evaluating the tradeoffs between these scalability and privacy. As context, my name is Ian Miers."></head><body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id=navbarMain><div class=container><div><a class=navbar-brand href=/>₿itcoin Transcripts</a></div><div class="collapse navbar-collapse" id=navbarMainCollapse><ul class="navbar-nav ml-auto"><li class=nav-item><a class=nav-link href=https://github.com/bitcointranscripts/bitcointranscripts target=_blank><i class="fab fa-github"></i></a></li></ul></div></div></nav><div class=container-fluid><div class=row><div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0"><button class="navbar-toggler navbar-toggler-right collapsed" type=button data-toggle=collapse data-target=#sidenav-left-collapse aria-controls=sidenav-left-collapse aria-expanded=false aria-label="Toggle navigation">
-<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse align-items-start flex-column" id=sidenav-left-collapse><form class="form-inline my-2 my-lg-0 searchbox"><input class="form-control mr-sm-2 w-100" data-search-input id=search-by type=text placeholder='Search (press "/")'></form><ul class="navbar-nav flex-column pt-3"><li data-nav-id=/advancing-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/><h6>Advancing Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/advancing-bitcoin/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2019/><h6>Advancing Bitcoin 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/advancing-bitcoin/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2020/><h6>Advancing Bitcoin 2020</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/andreas-antonopoulos/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/andreas-antonopoulos/><h6>Andreas Antonopoulos</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/austin-bitcoin-developers/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/austin-bitcoin-developers/><h6>Austin Bitcoin Developers</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/baltic-honeybadger/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/><h6>Baltic Honeybadger</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/baltic-honeybadger/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/2018/><h6>Baltic Honeybadger 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/baltic-honeybadger/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/2019/><h6>Baltic Honeybadger 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bit-block-boom/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bit-block-boom/><h6>Bit Block Boom</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bit-block-boom/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bit-block-boom/2019/><h6>Bit Block Boom 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-core-dev-tech/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/><h6>Bitcoin Core Dev Tech</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bitcoin-core-dev-tech/bitcoin-devcore-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/bitcoin-devcore-2015/><h6>Bitcoin Devcore Meetup (2015)</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-design/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-design/><h6>Bitcoin Design</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-magazine/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-magazine/><h6>Bitcoin Magazine</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoinops/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinops/><h6>Bitcoinops</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bitcoinops/schnorr-taproot-workshop-2019/ class="nav-item my-1"><a class="nav-link p-0" href=/bitcoinops/schnorr-taproot-workshop-2019/><h6>Schnorr Taproot Workshop 2019</h6></a></li></ul></li><li data-nav-id=/blockchain-protocol-analysis-security-engineering/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/><h6>Blockchain Protocol Analysis Security Eng</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/blockchain-protocol-analysis-security-engineering/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2017/><h6>Blockchain Protocol Analysis Security Engineering 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/blockchain-protocol-analysis-security-engineering/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2018/><h6>Blockchain Protocol Analysis Security Engineering 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/blockstream-webinars/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockstream-webinars/><h6>Blockstream Webinars</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/boltathon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/boltathon/><h6>Boltathon</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/breaking-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/><h6>Breaking Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/breaking-bitcoin/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/2017/><h6>Breaking Bitcoin 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/breaking-bitcoin/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/2019/><h6>Breaking Bitcoin 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/building-on-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/building-on-bitcoin/><h6>Building On Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/building-on-bitcoin/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/building-on-bitcoin/2018/><h6>Building On Bitcoin 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/chaincode-labs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-labs/><h6>Chaincode Labs</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/chaincode-labs/chaincode-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-labs/chaincode-podcast/><h6>Chaincode Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/chaincode-labs/chaincode-residency/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-labs/chaincode-residency/><h6>Chaincode Residency</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/chicago-bitdevs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chicago-bitdevs/><h6>Chicago Bitdevs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/coindesk-consensus-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coindesk-consensus-2016/><h6>Coindesk Consensus</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/coordination-of-decentralized-finance-workshop/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/><h6>Coordination of Decentralized Finance</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/coordination-of-decentralized-finance-workshop/2020-stanford/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/2020-stanford/><h6>2020 Stanford</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/cppcon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/><h6>CPPcon</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/cppcon/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/2017/><h6>CPPcon 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/cppcon/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/2020/><h6>CPPcon 2020</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/cryptoeconomic-systems/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cryptoeconomic-systems/><h6>Cryptoeconomic Systems</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/cryptoeconomic-systems/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cryptoeconomic-systems/2019/><h6>Cryptoeconomic Systems 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/dallas-bitcoin-symposium/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/dallas-bitcoin-symposium/><h6>Dallas Bitcoin Symposium</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/decentralized-financial-architecture-workshop/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/decentralized-financial-architecture-workshop/><h6>Decentralized Financial Architecture Workshop</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-developers-miners-meeting-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-developers-miners-meeting-2016/><h6>Developers-Miners Meeting</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/greg-maxwell/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/greg-maxwell/><h6>Greg Maxwell</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/grincon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/grincon/><h6>Grincon</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/grincon/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/grincon/2019/><h6>Grincon 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/honey-badger-diaries/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/honey-badger-diaries/><h6>Honey Badger Diaries</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/la-bitdevs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/la-bitdevs/><h6>LA Bitdevs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/layer2-summit/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/layer2-summit/><h6>Layer2 Summit</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/layer2-summit/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/layer2-summit/2018/><h6>Layer2 Summit 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/lets-talk-bitcoin-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lets-talk-bitcoin-podcast/><h6>Lets Talk Bitcoin Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/lightning-conference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-conference/><h6>Lightning Conference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/lightning-conference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-conference/2019/><h6>Lightning Conference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/lightning-hack-day/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-hack-day/><h6>Lightning Hack Day</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/london-bitcoin-devs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/london-bitcoin-devs/><h6>London Bitcoin Devs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/magicalcryptoconference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/magicalcryptoconference/><h6>Magicalcryptoconference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/magicalcryptoconference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/magicalcryptoconference/2019/><h6>Magicalcryptoconference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/misc/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/misc/><h6>Misc</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/><h6>MIT Bitcoin Expo</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2015/><h6>Mit Bitcoin Expo 2015</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2016/><h6>Mit Bitcoin Expo 2016</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2017/><h6>Mit Bitcoin Expo 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2018/><h6>Mit Bitcoin Expo 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2019/><h6>Mit Bitcoin Expo 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2020/><h6>Mit Bitcoin Expo 2020</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2021/><h6>Mit Bitcoin Expo 2021</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/munich-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/munich-meetup/><h6>Munich Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/noded-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/noded-podcast/><h6>Noded Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/realworldcrypto/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/><h6>Realworldcrypto</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/realworldcrypto/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/2018/><h6>Realworldcrypto 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/rebooting-web-of-trust/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/rebooting-web-of-trust/><h6>Rebooting Web Of Trust</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/rebooting-web-of-trust/2019-prague/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/rebooting-web-of-trust/2019-prague/><h6>2019 Prague</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/ruben-somsen/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/ruben-somsen/><h6>Ruben Somsen</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/satoshi-roundtable/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/satoshi-roundtable/><h6>Satoshi Roundtable</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/satoshi-roundtable/sr-004/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/satoshi-roundtable/sr-004/><h6>Sr 004</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/scalingbitcoin/ class="nav-item my-1 parent haschildren"><a class="nav-link p-0" href=/scalingbitcoin/><h6>Scaling Bitcoin Conference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/scalingbitcoin/montreal-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/montreal-2015/><h6>Montreal (2015)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/hong-kong-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/hong-kong-2015/><h6>Hong Kong (2015)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/milan-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/milan-2016/><h6>Milan (2016)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/stanford-2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/><h6>Stanford (2017)</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/scalingbitcoin/stanford-2017/edgeplusplus/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/edgeplusplus/><h6>Edgeplusplus</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/scalingbitcoin/tokyo-2018/ class="nav-item my-1 parent haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/><h6>Tokyo (2018)</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/scalingbitcoin/tokyo-2018/edgedevplusplus/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/edgedevplusplus/><h6>Edgedevplusplus</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/scalingbitcoin/tel-aviv-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/><h6>Tel Aviv (2019)</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/scalingbitcoin/tel-aviv-2019/edgedevplusplus/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/edgedevplusplus/><h6>Edgedevplusplus</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li></ul></li><li data-nav-id=/sf-bitcoin-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/sf-bitcoin-meetup/><h6>SF Bitcoin Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/simons-institute/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/simons-institute/><h6>Simons Institute</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/stanford-blockchain-conference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/><h6>Stanford Blockchain</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/stanford-blockchain-conference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/2019/><h6>Stanford Blockchain Conference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/stanford-blockchain-conference/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/2020/><h6>Stanford Blockchain Conference 2020</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/stephan-livera-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stephan-livera-podcast/><h6>Stephan Livera Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/sydney-bitcoin-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/sydney-bitcoin-meetup/><h6>Sydney Bitcoin Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/texas-bitcoin-conference-2014/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/texas-bitcoin-conference-2014/><h6>Texas Bitcoin Conference</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/tftc-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tftc-podcast/><h6>TFTC Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/verifiable-delay-functions/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/verifiable-delay-functions/><h6>Verifiable Delay Functions</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/verifiable-delay-functions/vdf-day-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/verifiable-delay-functions/vdf-day-2019/><h6>Vdf Day 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/vr-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/vr-bitcoin/><h6>VR Bitcoin</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/w3-blockchain-workshop-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/w3-blockchain-workshop-2016/><h6>W3 Blockchain Workshop</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/wasabi-research-club/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/wasabi-research-club/><h6>Wasabi Research Club</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/what-bitcoin-did-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/what-bitcoin-did-podcast/><h6>What Bitcoin Did Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></div></nav></div><div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky"><div class=docs-toc><nav id=TableOfContents><ul><li><a href=#introductions>Introductions</a></li><li><a href=#privacy-tech>Privacy tech</a></li><li><a href=#evaluating-privacy>Evaluating privacy</a></li><li><a href=#some-real-world-privacy-threats>Some real-world privacy threats</a></li><li><a href=#what-are-the-defenses>What are the defenses?</a></li><li><a href=#bitcoin-privacy-is-not-intuitive>Bitcoin privacy is not intuitive</a></li><li><a href=#privacy-approaches>Privacy approaches</a></li><li><a href=#are-decoy-systems-private>Are decoy systems private</a></li><li><a href=#identifying-anonymous-merchants>Identifying anonymous merchants</a></li><li><a href=#dust-attack-confirming-where-money-is-spent>Dust attack: confirming where money is spent</a></li><li><a href=#limitations-of-decoy-approaches>Limitations of decoy approaches</a></li><li><a href=#if-you-do-use-decoy-schemes>If you do use decoy schemes</a></li><li><a href=#scalability>Scalability</a></li></ul></nav></div></div><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3"><a href=/>Home</a>
-&lt; <a href=/scalingbitcoin/>Scaling Bitcoin Conference</a>
-&lt; <a href=/scalingbitcoin/tokyo-2018/>Tokyo (2018)</a>
-&lt; How Much Privacy Is Enough<h1>How Much Privacy Is Enough</h1><p><i>Transcript By: Bryan Bishop</i></p><p>Tags:
-<a href=/tags/privacy>Privacy</a>, <a href=/tags/scalability>Scalability</a></p><p>Category:
-<a href=/categories/conference>Conference</a></p><p>How much privacy is enough? Threats, scaling, and trade-offs in blockchain privacy protocols</p><p>Ian Miers (secparam)</p><p>unrelated, <a href=https://arxiv.org/pdf/1706.00916.pdf>https://arxiv.org/pdf/1706.00916.pdf</a></p><h1 id=introductions>Introductions</h1><p>Hi everybody. This is a talk on how much privacy is enough, evaluating trade-offs in privacy and scalability. This is going to be unusual for this conference because I will not be presenting new technical content. I am going to be talking about evaluating the tradeoffs between these scalability and privacy. As context, my name is Ian Miers. I am a postdoc at Cornell Tech. I&rsquo;ve been working on privacy tech since 2011.</p><h1 id=privacy-tech>Privacy tech</h1><p>Back in the day, bitcoin was understood to be completely anonymous. These days, we know this is not the case. There are in fact even companies in the ubsiness of doing analytics on the bitcoin blockchain as surveillance and so on. We&rsquo;ve seen a large number of proposals to improve privacy ranging from simple things like don&rsquo;t reuse addresses, to complex cryptographic protocols, like coinjoin, mixcoin, coinswap, coinjoinxt, joinmarket, tumblebit, bolt, etc. How do you evaluate these? If you are going to do this for real world usage, you have to evaluate this. Engineers know how to run performance metrics and do back-of-the-envelope calculatiosn which is usually not controversial unless you involve twitter. But how you measure how much privacy you get is tricky, and yo uneed to figure out that answer before you figure out a scheme to use.</p><h1 id=evaluating-privacy>Evaluating privacy</h1><p>Evaluation of privacy is tricky because we can&rsquo;t resort to empirical results. It would be like trying to evaluate privacy on the internet in 1992 when the only website was CERN, before cookies, targeted ads, surveillance, etc. So we can&rsquo;t really make an empirical estimate of how much privacy these techniques provide. So you need to do something else, right? You can&rsquo;t really measure with empirical attacks. You need ot use thought experiments, and to do this we must understand realistic threats. As a researcher, if this data existed, I couldn&rsquo;t use it- I have costs concerns, I have ethical limitations, I have to go through IRBs&mldr; so instead I just have to use thought experiments and think about 5 years, 10 years, 20 years. What are the realistic threats? How do things play out in other related domains?</p><h1 id=some-real-world-privacy-threats>Some real-world privacy threats</h1><p>The common threat that people worry about was the government and law enforcement looking at what&rsquo;s on the blockchain. That&rsquo;s one threat, but by no means the only threat or the most realistic threat. We have seen that Google has been collecting payment data from Visa and Mastercard and using that for targeted ads for you. This is probably not a good thing because if Google is doing it then so are a bunch of people that you have never heard of and they are probably less reputable. Also, we know that companies want to build rich profiles about wha ttheir customers do. There was a famous case of Walmart about building up a profile based on your customer loyalty card and they could figure out if you were pregnant and they could sometimes figure that out before you know. The apocryphal story was that some teenager was pregnant and they sent her some material about pregnancy, and her dad got irate because how dare they send this content to her but it turned out she hadn&rsquo;t told her father.</p><p>Also, we have venmo. For those who don&rsquo;t know, venmo is a system for doing payments between friends for paying for a bar tab or a restaurant. It had a by-default a public feed of every transaction you&rsquo;ve done, with your name, your recipient&rsquo;s name, the amount, and a memo field. So it&rsquo;s pretty close you get from the blockchain but instead of doing all the work to deanonymize people, they just give you that data. This was pretty stupid, but people made guides like &ldquo;how to stalk your ex&rdquo;. This is completely creepy.</p><p>Another one more relevant to the cryptocurrency community tha twe&rsquo;re seeing an issue with is fungibility. We know that freshly mined coins sell for a premium, and exchanges sometimes block customers based on transaction history like where they send the money after withdrawals. Exchanges are pretty powerful; they know more than just the transaction graph, they know your trades.</p><h1 id=what-are-the-defenses>What are the defenses?</h1><p>So that&rsquo;s why you should care about privacy and cryptocurrency. So what are the defenses? Plausible deniability is not a plausible defense. Frequently people recommend plausible deniability to me and &ldquo;hey you can&rsquo;t prove it&rsquo;s me&rdquo;. But that&rsquo;s not sufficient. These algorithms don&rsquo;t care if it&rsquo;s plausibly deniable, and most people in law enforcement don&rsquo;t care either.</p><h1 id=bitcoin-privacy-is-not-intuitive>Bitcoin privacy is not intuitive</h1><p>Typically people think about third-party passive observers as the main threat. But you need to consider other attackers, like active attackers that can send payments to you, receive payments from you, interact with third-parties. You need to think about obvious attacks like merchants trying to track their customers; users who try to identify who their receivers are, and exchanges trying to track you.</p><h1 id=privacy-approaches>Privacy approaches</h1><p>There&rsquo;s vanilla bitcoin where you explicitly identify origin of payments. Then there&rsquo;s decoy-based transaction systems where you pick 5 different origins and you hide what&rsquo;s going on. And then there&rsquo;s stronger approaches like zerocoin and zerocash where you don&rsquo;t even identify an origin. In bitcoin, if you pay a merchant, you have to explicitly identify where the money you&rsquo;re paying them came from. This is why you basically have no privacy, those transaction inputs. In decoy systems like coinjoin and monero, you hide the origin of your coins by using some decoys that aren&rsquo;t the real source but nobody looking at the transaction can&rsquo;t tell. In systems such as zerocash, you don&rsquo;t have any identifying information whatsoever.</p><h1 id=are-decoy-systems-private>Are decoy systems private</h1><p>The privacy limitations of bitcoin have been well-studied. The privacy limitations of zerocash have been studied in academic literature and in practice. But what about the decoy-based systems? This seems like one of the main things at the cryptocurrency community is considering for scalable privacy. Do these things work?</p><p>Taint tree: you can identify the possible source of funds and find the transaction graph and go look at it. You end up with a tree of possible tainted payments that go back in history where you don&rsquo;t know quite what happened. It&rsquo;s a fuzzy family tree where you have some notion of what&rsquo;s going on. If you pay a merchant, you can see where the payment goes, but you might not know where it goes because it might also use decoy payments. These two things give you a lot of power, and it causes a lot of problems, because you might see it repeated over multiple interactions.</p><p>One thing you could do is if you&rsquo;re a merchant or a set of colluding merchants is that you can track customers. Say you&rsquo;re going to Target every day and buying something in cash, and instead you start using cryptocurrency. Ideally, if I make three separate purchases, there should be no linkages between me. If you had real privacy, that&rsquo;s what we want. Looking at this naievly, it seems private. But if I buy something and I give someone $20, it probably doesn&rsquo;t cost $20 and I get back a change amount. I get back $5 in change. I do this in each payment. Eventually I am going to have to spend the change. The moment that one of my decoy transactions is the change that I received from that merchant. You were selecting decoys at random from all possible transactions throughout history; you can do roughly uniform sampling. The odds are that if you include a tainted coin then it&rsquo;s more likely that it&rsquo;s a tained coin from the same customer rather than other coins. So this gives information to the merchant.</p><p>Consider multiple payments made to one merchant and you don&rsquo;t want them to understand that you&rsquo;re the same person. So you have a taint tree of possible ancestors. But what happens if there&rsquo;s a common origin to those coins? There&rsquo;s going to be one source of the funds. If you look back, you can find the intersection and figure out who the person was. This works not just for one merchant, but a bunch of merchants can work together and collude about who you are and find your money. This is also a problem.</p><h1 id=identifying-anonymous-merchants>Identifying anonymous merchants</h1><p>Suppose I have a website where I take anonymous donations. I don&rsquo;t want to reveal my identity, my life is at risk, but I want donations for my activities, and my local government is trying to identify me. In a privacy-preserving system, it should be safe for me to take that money and deposit the money in the exchange and they would have no way to identify me. I should be safe. But this is not the case: if the government wants to identify me, they have a line on the website, it might be accessible over tor, they can just send&ndash; say, three, tracking payments &mldr; they could be small.. and then I take them, deposit them, and then anyone who gets the records from the exchanges (prehaps through hacking or buying them or whatever) can test whether these anonymous payments were me&mldr;. they can do this by looking at the taint tree. For any random person, it&rsquo;s going ot be the case that some of the deposits might involve one of those payments and it might be happenstance you might have picked one of those as your decoys and then you make a deposit. But on the other hand, you&rsquo;re not going to do that multiple times for 3, 5, 10 or 100 payments. So, if the government goes through and looks at all your deposits and see you have all 100 of the trace payments they sent in your taint tree, then they have with overwhelming probability some evidence that you&rsquo;re really that pseudonym. So this is very problematic. It violates most people&rsquo;s intuitions for what privacy is for cryptocurrency, and I think people using this would be vulnerable.</p><p>Repeated interactions with a malicious sender/spender are in fact dangerous.</p><h1 id=dust-attack-confirming-where-money-is-spent>Dust attack: confirming where money is spent</h1><p>Send some dust to my friends. I watch the taint tree and the transaction graph. If this happens a bunch of times, you can have some strong evidence that your friend is making purchases at a certain merchant. You can use this to identify where your friend is spending their money.</p><h1 id=limitations-of-decoy-approaches>Limitations of decoy approaches</h1><p>Customers can be tracked. Use of change transactions and outputs breaks the privacy. Common origins can be found in taint trees. Anonymous merchants can be identified. Third parties can see where your money goes. Hiding behind 7 proxies doesn&rsquo;t save you here. The common perception is that bitcoin is not private, but anything more than that is considered private, but that&rsquo;s not the reality. There&rsquo;s some tradeoffs between these systems about how private they are, and you have to understand what those tradeoffs mean and what they mean to your particular scenario. I&rsquo;m a little biased, I would not use any of these approaches if I really wanted privacy for myself. But again, that&rsquo;s the tradeoff you should be making for yourself. You need to understand the tradeoff.</p><h1 id=if-you-do-use-decoy-schemes>If you do use decoy schemes</h1><p>These decoy schemes might be viable if there&rsquo;s a very large anonymity set with like 5 million origins instead of 5 origins. Also, the decoy sets have to substantially overlap across all recent transactions otherwies you get a repeated common origin problem or whatever. And finally, you have to sample the decoys very carefully. There&rsquo;s been a sequence of one or two papers that showed the distribution by which monero sampled their decoys didn&rsquo;t line up with the distribution by which real people spend their coins. There was a gap. This is now somewhat fixed. With overwhelming probability in an old version of monero, the last transaction was the real transaction. This is a hard problem to solve and I don&rsquo;t know how to do it. If you take this approach, you need to do rigorous analysis about how much privacy you are providing, and you need to carefully understand where things fail, and you need to acknowledge the limitations.</p><h1 id=scalability>Scalability</h1><p>Use a zero-knowledge proof of inclusion of a coin in the utxo set like zerocash does, or use layer two scalability and do off-chain privacy stuff. That might work.</p><div class=row></div></div></div></div><script src=https://btctranscripts.com/lib/jquery.min.js></script><script src=https://btctranscripts.com/lib/popper.min.js></script><script src=https://btctranscripts.com/js/bootstrap.min.js></script><script type=text/javascript src=/plugins/lunr.min.js></script><script type=text/javascript src=/plugins/auto-complete.js></script><link href=/plugins/auto-complete.css rel=stylesheet><script type=text/javascript>var baseurl="https://btctranscripts.com/"</script><script type=text/javascript src=/plugins/search.js></script><script type=text/javascript src=https://btctranscripts.com/js/custom.js></script><script type=text/javascript src=/plugins/clipboard.js></script><script>new ClipboardJS('.btn')</script></body></html>
+Introductions Hi everybody. This is a talk on how much privacy is enough, evaluating trade-offs in privacy and scalability. This is going to be unusual for this conference because I will not be presenting new technical content. I am going to be talking about evaluating the tradeoffs between these scalability and privacy. As context, my name is Ian Miers.">
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id=navbarMain>
+<div class=container>
+<div>
+<a class=navbar-brand href=/>
+₿itcoin Transcripts
+</a>
+</div>
+<div class="collapse navbar-collapse" id=navbarMainCollapse>
+<ul class="navbar-nav ml-auto">
+<li class=nav-item>
+<a class=nav-link href=https://github.com/bitcointranscripts/bitcointranscripts target=_blank>
+<i class="fab fa-github"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<div class=container-fluid>
+<div class=row>
+<div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
+<button class="navbar-toggler navbar-toggler-right collapsed" type=button data-toggle=collapse data-target=#sidenav-left-collapse aria-controls=sidenav-left-collapse aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span>
+</button>
+<div class="collapse navbar-collapse align-items-start flex-column" id=sidenav-left-collapse>
+<form class="form-inline my-2 my-lg-0 searchbox">
+<input class="form-control mr-sm-2 w-100" data-search-input id=search-by type=text placeholder='Search (press "/")'>
+</form>
+<ul class="navbar-nav flex-column pt-3">
+<li data-nav-id=/advancing-bitcoin/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/advancing-bitcoin/><h6>Advancing Bitcoin</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/advancing-bitcoin/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/advancing-bitcoin/2019/><h6>Advancing Bitcoin 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/advancing-bitcoin/2020/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/advancing-bitcoin/2020/><h6>Advancing Bitcoin 2020</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/andreas-antonopoulos/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/andreas-antonopoulos/><h6>Andreas Antonopoulos</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/austin-bitcoin-developers/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/austin-bitcoin-developers/><h6>Austin Bitcoin Developers</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/baltic-honeybadger/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/baltic-honeybadger/><h6>Baltic Honeybadger</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/baltic-honeybadger/2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/baltic-honeybadger/2018/><h6>Baltic Honeybadger 2018</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/baltic-honeybadger/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/baltic-honeybadger/2019/><h6>Baltic Honeybadger 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/bit-block-boom/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bit-block-boom/><h6>Bit Block Boom</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/bit-block-boom/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bit-block-boom/2019/><h6>Bit Block Boom 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/bitcoin-core-dev-tech/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bitcoin-core-dev-tech/><h6>Bitcoin Core Dev Tech</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/bitcoin-core-dev-tech/bitcoin-devcore-2015/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bitcoin-core-dev-tech/bitcoin-devcore-2015/><h6>Bitcoin Devcore Meetup (2015)</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/bitcoin-design/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bitcoin-design/><h6>Bitcoin Design</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/bitcoin-magazine/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bitcoin-magazine/><h6>Bitcoin Magazine</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/bitcoinops/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bitcoinops/><h6>Bitcoinops</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/bitcoinops/schnorr-taproot-workshop-2019/ class="nav-item my-1">
+<a class="nav-link p-0" href=/bitcoinops/schnorr-taproot-workshop-2019/><h6>Schnorr Taproot Workshop 2019</h6></a>
+</li>
+</ul>
+</li>
+<li data-nav-id=/blockchain-protocol-analysis-security-engineering/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/><h6>Blockchain Protocol Analysis Security Eng</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/blockchain-protocol-analysis-security-engineering/2017/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2017/><h6>Blockchain Protocol Analysis Security Engineering 2017</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/blockchain-protocol-analysis-security-engineering/2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2018/><h6>Blockchain Protocol Analysis Security Engineering 2018</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/blockstream-webinars/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/blockstream-webinars/><h6>Blockstream Webinars</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/boltathon/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/boltathon/><h6>Boltathon</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/breaking-bitcoin/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/breaking-bitcoin/><h6>Breaking Bitcoin</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/breaking-bitcoin/2017/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/breaking-bitcoin/2017/><h6>Breaking Bitcoin 2017</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/breaking-bitcoin/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/breaking-bitcoin/2019/><h6>Breaking Bitcoin 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/building-on-bitcoin/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/building-on-bitcoin/><h6>Building On Bitcoin</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/building-on-bitcoin/2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/building-on-bitcoin/2018/><h6>Building On Bitcoin 2018</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/chaincode-labs/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/chaincode-labs/><h6>Chaincode Labs</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/chaincode-labs/chaincode-podcast/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/chaincode-labs/chaincode-podcast/><h6>Chaincode Podcast</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/chaincode-labs/chaincode-residency/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/chaincode-labs/chaincode-residency/><h6>Chaincode Residency</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/chicago-bitdevs/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/chicago-bitdevs/><h6>Chicago Bitdevs</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/coindesk-consensus-2016/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/coindesk-consensus-2016/><h6>Coindesk Consensus</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/coordination-of-decentralized-finance-workshop/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/><h6>Coordination of Decentralized Finance</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/coordination-of-decentralized-finance-workshop/2020-stanford/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/2020-stanford/><h6>2020 Stanford</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/cppcon/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/cppcon/><h6>CPPcon</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/cppcon/2017/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/cppcon/2017/><h6>CPPcon 2017</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/cppcon/2020/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/cppcon/2020/><h6>CPPcon 2020</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/cryptoeconomic-systems/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/cryptoeconomic-systems/><h6>Cryptoeconomic Systems</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/cryptoeconomic-systems/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/cryptoeconomic-systems/2019/><h6>Cryptoeconomic Systems 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/dallas-bitcoin-symposium/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/dallas-bitcoin-symposium/><h6>Dallas Bitcoin Symposium</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/decentralized-financial-architecture-workshop/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/decentralized-financial-architecture-workshop/><h6>Decentralized Financial Architecture Workshop</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/bitcoin-developers-miners-meeting-2016/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bitcoin-developers-miners-meeting-2016/><h6>Developers-Miners Meeting</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/greg-maxwell/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/greg-maxwell/><h6>Greg Maxwell</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/grincon/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/grincon/><h6>Grincon</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/grincon/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/grincon/2019/><h6>Grincon 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/honey-badger-diaries/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/honey-badger-diaries/><h6>Honey Badger Diaries</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/la-bitdevs/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/la-bitdevs/><h6>LA Bitdevs</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/layer2-summit/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/layer2-summit/><h6>Layer2 Summit</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/layer2-summit/2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/layer2-summit/2018/><h6>Layer2 Summit 2018</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/lets-talk-bitcoin-podcast/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/lets-talk-bitcoin-podcast/><h6>Lets Talk Bitcoin Podcast</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/lightning-conference/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/lightning-conference/><h6>Lightning Conference</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/lightning-conference/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/lightning-conference/2019/><h6>Lightning Conference 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/lightning-hack-day/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/lightning-hack-day/><h6>Lightning Hack Day</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/london-bitcoin-devs/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/london-bitcoin-devs/><h6>London Bitcoin Devs</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/magicalcryptoconference/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/magicalcryptoconference/><h6>Magicalcryptoconference</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/magicalcryptoconference/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/magicalcryptoconference/2019/><h6>Magicalcryptoconference 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/misc/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/misc/><h6>Misc</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/><h6>MIT Bitcoin Expo</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2015/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2015/><h6>Mit Bitcoin Expo 2015</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2016/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2016/><h6>Mit Bitcoin Expo 2016</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2017/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2017/><h6>Mit Bitcoin Expo 2017</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2018/><h6>Mit Bitcoin Expo 2018</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2019/><h6>Mit Bitcoin Expo 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2020/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2020/><h6>Mit Bitcoin Expo 2020</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2021/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2021/><h6>Mit Bitcoin Expo 2021</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/munich-meetup/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/munich-meetup/><h6>Munich Meetup</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/noded-podcast/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/noded-podcast/><h6>Noded Podcast</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/realworldcrypto/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/realworldcrypto/><h6>Realworldcrypto</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/realworldcrypto/2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/realworldcrypto/2018/><h6>Realworldcrypto 2018</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/rebooting-web-of-trust/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/rebooting-web-of-trust/><h6>Rebooting Web Of Trust</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/rebooting-web-of-trust/2019-prague/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/rebooting-web-of-trust/2019-prague/><h6>2019 Prague</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/ruben-somsen/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/ruben-somsen/><h6>Ruben Somsen</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/satoshi-roundtable/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/satoshi-roundtable/><h6>Satoshi Roundtable</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/satoshi-roundtable/sr-004/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/satoshi-roundtable/sr-004/><h6>Sr 004</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/scalingbitcoin/ class="nav-item my-1 parent haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/><h6>Scaling Bitcoin Conference</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/scalingbitcoin/montreal-2015/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/montreal-2015/><h6>Montreal (2015)</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/scalingbitcoin/hong-kong-2015/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/hong-kong-2015/><h6>Hong Kong (2015)</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/scalingbitcoin/milan-2016/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/milan-2016/><h6>Milan (2016)</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/scalingbitcoin/stanford-2017/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/><h6>Stanford (2017)</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/scalingbitcoin/stanford-2017/edgeplusplus/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/edgeplusplus/><h6>Edgeplusplus</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/scalingbitcoin/tokyo-2018/ class="nav-item my-1 parent haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/><h6>Tokyo (2018)</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/scalingbitcoin/tokyo-2018/edgedevplusplus/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/edgedevplusplus/><h6>Edgedevplusplus</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/scalingbitcoin/tel-aviv-2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/><h6>Tel Aviv (2019)</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/scalingbitcoin/tel-aviv-2019/edgedevplusplus/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/edgedevplusplus/><h6>Edgedevplusplus</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/sf-bitcoin-meetup/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/sf-bitcoin-meetup/><h6>SF Bitcoin Meetup</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/simons-institute/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/simons-institute/><h6>Simons Institute</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/stanford-blockchain-conference/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/stanford-blockchain-conference/><h6>Stanford Blockchain</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/stanford-blockchain-conference/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/stanford-blockchain-conference/2019/><h6>Stanford Blockchain Conference 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/stanford-blockchain-conference/2020/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/stanford-blockchain-conference/2020/><h6>Stanford Blockchain Conference 2020</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/stephan-livera-podcast/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/stephan-livera-podcast/><h6>Stephan Livera Podcast</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/sydney-bitcoin-meetup/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/sydney-bitcoin-meetup/><h6>Sydney Bitcoin Meetup</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/texas-bitcoin-conference-2014/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/texas-bitcoin-conference-2014/><h6>Texas Bitcoin Conference</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/tftc-podcast/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/tftc-podcast/><h6>TFTC Podcast</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/verifiable-delay-functions/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/verifiable-delay-functions/><h6>Verifiable Delay Functions</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/verifiable-delay-functions/vdf-day-2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/verifiable-delay-functions/vdf-day-2019/><h6>Vdf Day 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/vr-bitcoin/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/vr-bitcoin/><h6>VR Bitcoin</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/w3-blockchain-workshop-2016/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/w3-blockchain-workshop-2016/><h6>W3 Blockchain Workshop</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/wasabi-research-club/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/wasabi-research-club/><h6>Wasabi Research Club</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/what-bitcoin-did-podcast/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/what-bitcoin-did-podcast/><h6>What Bitcoin Did Podcast</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+<div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky"><div class=docs-toc>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#introductions>Introductions</a></li>
+<li><a href=#privacy-tech>Privacy tech</a></li>
+<li><a href=#evaluating-privacy>Evaluating privacy</a></li>
+<li><a href=#some-real-world-privacy-threats>Some real-world privacy threats</a></li>
+<li><a href=#what-are-the-defenses>What are the defenses?</a></li>
+<li><a href=#bitcoin-privacy-is-not-intuitive>Bitcoin privacy is not intuitive</a></li>
+<li><a href=#privacy-approaches>Privacy approaches</a></li>
+<li><a href=#are-decoy-systems-private>Are decoy systems private</a></li>
+<li><a href=#identifying-anonymous-merchants>Identifying anonymous merchants</a></li>
+<li><a href=#dust-attack-confirming-where-money-is-spent>Dust attack: confirming where money is spent</a></li>
+<li><a href=#limitations-of-decoy-approaches>Limitations of decoy approaches</a></li>
+<li><a href=#if-you-do-use-decoy-schemes>If you do use decoy schemes</a></li>
+<li><a href=#scalability>Scalability</a></li>
+</ul>
+</nav>
+</div>
+</div>
+<div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+<a href=/>Home</a>
+&lt; <a href=/scalingbitcoin/>
+Scaling Bitcoin Conference
+</a>
+&lt; <a href=/scalingbitcoin/tokyo-2018/>
+Tokyo (2018)
+</a>
+&lt; How Much Privacy Is Enough
+<h1>How Much Privacy Is Enough</h1>
+<p><i>Transcript By: Bryan Bishop</i></p>
+<p>Tags:
+<a href=/tags/privacy>Privacy</a>, <a href=/tags/scalability>Scalability</a></p>
+<p>Category:
+<a href=/categories/conference>Conference</a></p>
+<p>How much privacy is enough? Threats, scaling, and trade-offs in blockchain privacy protocols</p>
+<p>Ian Miers (secparam)</p>
+<p>unrelated, <a href=https://arxiv.org/pdf/1706.00916.pdf>https://arxiv.org/pdf/1706.00916.pdf</a></p>
+<h1 id=introductions>Introductions</h1>
+<p>Hi everybody. This is a talk on how much privacy is enough, evaluating trade-offs in privacy and scalability. This is going to be unusual for this conference because I will not be presenting new technical content. I am going to be talking about evaluating the tradeoffs between these scalability and privacy. As context, my name is Ian Miers. I am a postdoc at Cornell Tech. I&rsquo;ve been working on privacy tech since 2011.</p>
+<h1 id=privacy-tech>Privacy tech</h1>
+<p>Back in the day, bitcoin was understood to be completely anonymous. These days, we know this is not the case. There are in fact even companies in the ubsiness of doing analytics on the bitcoin blockchain as surveillance and so on. We&rsquo;ve seen a large number of proposals to improve privacy ranging from simple things like don&rsquo;t reuse addresses, to complex cryptographic protocols, like coinjoin, mixcoin, coinswap, coinjoinxt, joinmarket, tumblebit, bolt, etc. How do you evaluate these? If you are going to do this for real world usage, you have to evaluate this. Engineers know how to run performance metrics and do back-of-the-envelope calculatiosn which is usually not controversial unless you involve twitter. But how you measure how much privacy you get is tricky, and yo uneed to figure out that answer before you figure out a scheme to use.</p>
+<h1 id=evaluating-privacy>Evaluating privacy</h1>
+<p>Evaluation of privacy is tricky because we can&rsquo;t resort to empirical results. It would be like trying to evaluate privacy on the internet in 1992 when the only website was CERN, before cookies, targeted ads, surveillance, etc. So we can&rsquo;t really make an empirical estimate of how much privacy these techniques provide. So you need to do something else, right? You can&rsquo;t really measure with empirical attacks. You need ot use thought experiments, and to do this we must understand realistic threats. As a researcher, if this data existed, I couldn&rsquo;t use it- I have costs concerns, I have ethical limitations, I have to go through IRBs&mldr; so instead I just have to use thought experiments and think about 5 years, 10 years, 20 years. What are the realistic threats? How do things play out in other related domains?</p>
+<h1 id=some-real-world-privacy-threats>Some real-world privacy threats</h1>
+<p>The common threat that people worry about was the government and law enforcement looking at what&rsquo;s on the blockchain. That&rsquo;s one threat, but by no means the only threat or the most realistic threat. We have seen that Google has been collecting payment data from Visa and Mastercard and using that for targeted ads for you. This is probably not a good thing because if Google is doing it then so are a bunch of people that you have never heard of and they are probably less reputable. Also, we know that companies want to build rich profiles about wha ttheir customers do. There was a famous case of Walmart about building up a profile based on your customer loyalty card and they could figure out if you were pregnant and they could sometimes figure that out before you know. The apocryphal story was that some teenager was pregnant and they sent her some material about pregnancy, and her dad got irate because how dare they send this content to her but it turned out she hadn&rsquo;t told her father.</p>
+<p>Also, we have venmo. For those who don&rsquo;t know, venmo is a system for doing payments between friends for paying for a bar tab or a restaurant. It had a by-default a public feed of every transaction you&rsquo;ve done, with your name, your recipient&rsquo;s name, the amount, and a memo field. So it&rsquo;s pretty close you get from the blockchain but instead of doing all the work to deanonymize people, they just give you that data. This was pretty stupid, but people made guides like &ldquo;how to stalk your ex&rdquo;. This is completely creepy.</p>
+<p>Another one more relevant to the cryptocurrency community tha twe&rsquo;re seeing an issue with is fungibility. We know that freshly mined coins sell for a premium, and exchanges sometimes block customers based on transaction history like where they send the money after withdrawals. Exchanges are pretty powerful; they know more than just the transaction graph, they know your trades.</p>
+<h1 id=what-are-the-defenses>What are the defenses?</h1>
+<p>So that&rsquo;s why you should care about privacy and cryptocurrency. So what are the defenses? Plausible deniability is not a plausible defense. Frequently people recommend plausible deniability to me and &ldquo;hey you can&rsquo;t prove it&rsquo;s me&rdquo;. But that&rsquo;s not sufficient. These algorithms don&rsquo;t care if it&rsquo;s plausibly deniable, and most people in law enforcement don&rsquo;t care either.</p>
+<h1 id=bitcoin-privacy-is-not-intuitive>Bitcoin privacy is not intuitive</h1>
+<p>Typically people think about third-party passive observers as the main threat. But you need to consider other attackers, like active attackers that can send payments to you, receive payments from you, interact with third-parties. You need to think about obvious attacks like merchants trying to track their customers; users who try to identify who their receivers are, and exchanges trying to track you.</p>
+<h1 id=privacy-approaches>Privacy approaches</h1>
+<p>There&rsquo;s vanilla bitcoin where you explicitly identify origin of payments. Then there&rsquo;s decoy-based transaction systems where you pick 5 different origins and you hide what&rsquo;s going on. And then there&rsquo;s stronger approaches like zerocoin and zerocash where you don&rsquo;t even identify an origin. In bitcoin, if you pay a merchant, you have to explicitly identify where the money you&rsquo;re paying them came from. This is why you basically have no privacy, those transaction inputs. In decoy systems like coinjoin and monero, you hide the origin of your coins by using some decoys that aren&rsquo;t the real source but nobody looking at the transaction can&rsquo;t tell. In systems such as zerocash, you don&rsquo;t have any identifying information whatsoever.</p>
+<h1 id=are-decoy-systems-private>Are decoy systems private</h1>
+<p>The privacy limitations of bitcoin have been well-studied. The privacy limitations of zerocash have been studied in academic literature and in practice. But what about the decoy-based systems? This seems like one of the main things at the cryptocurrency community is considering for scalable privacy. Do these things work?</p>
+<p>Taint tree: you can identify the possible source of funds and find the transaction graph and go look at it. You end up with a tree of possible tainted payments that go back in history where you don&rsquo;t know quite what happened. It&rsquo;s a fuzzy family tree where you have some notion of what&rsquo;s going on. If you pay a merchant, you can see where the payment goes, but you might not know where it goes because it might also use decoy payments. These two things give you a lot of power, and it causes a lot of problems, because you might see it repeated over multiple interactions.</p>
+<p>One thing you could do is if you&rsquo;re a merchant or a set of colluding merchants is that you can track customers. Say you&rsquo;re going to Target every day and buying something in cash, and instead you start using cryptocurrency. Ideally, if I make three separate purchases, there should be no linkages between me. If you had real privacy, that&rsquo;s what we want. Looking at this naievly, it seems private. But if I buy something and I give someone $20, it probably doesn&rsquo;t cost $20 and I get back a change amount. I get back $5 in change. I do this in each payment. Eventually I am going to have to spend the change. The moment that one of my decoy transactions is the change that I received from that merchant. You were selecting decoys at random from all possible transactions throughout history; you can do roughly uniform sampling. The odds are that if you include a tainted coin then it&rsquo;s more likely that it&rsquo;s a tained coin from the same customer rather than other coins. So this gives information to the merchant.</p>
+<p>Consider multiple payments made to one merchant and you don&rsquo;t want them to understand that you&rsquo;re the same person. So you have a taint tree of possible ancestors. But what happens if there&rsquo;s a common origin to those coins? There&rsquo;s going to be one source of the funds. If you look back, you can find the intersection and figure out who the person was. This works not just for one merchant, but a bunch of merchants can work together and collude about who you are and find your money. This is also a problem.</p>
+<h1 id=identifying-anonymous-merchants>Identifying anonymous merchants</h1>
+<p>Suppose I have a website where I take anonymous donations. I don&rsquo;t want to reveal my identity, my life is at risk, but I want donations for my activities, and my local government is trying to identify me. In a privacy-preserving system, it should be safe for me to take that money and deposit the money in the exchange and they would have no way to identify me. I should be safe. But this is not the case: if the government wants to identify me, they have a line on the website, it might be accessible over tor, they can just send&ndash; say, three, tracking payments &mldr; they could be small.. and then I take them, deposit them, and then anyone who gets the records from the exchanges (prehaps through hacking or buying them or whatever) can test whether these anonymous payments were me&mldr;. they can do this by looking at the taint tree. For any random person, it&rsquo;s going ot be the case that some of the deposits might involve one of those payments and it might be happenstance you might have picked one of those as your decoys and then you make a deposit. But on the other hand, you&rsquo;re not going to do that multiple times for 3, 5, 10 or 100 payments. So, if the government goes through and looks at all your deposits and see you have all 100 of the trace payments they sent in your taint tree, then they have with overwhelming probability some evidence that you&rsquo;re really that pseudonym. So this is very problematic. It violates most people&rsquo;s intuitions for what privacy is for cryptocurrency, and I think people using this would be vulnerable.</p>
+<p>Repeated interactions with a malicious sender/spender are in fact dangerous.</p>
+<h1 id=dust-attack-confirming-where-money-is-spent>Dust attack: confirming where money is spent</h1>
+<p>Send some dust to my friends. I watch the taint tree and the transaction graph. If this happens a bunch of times, you can have some strong evidence that your friend is making purchases at a certain merchant. You can use this to identify where your friend is spending their money.</p>
+<h1 id=limitations-of-decoy-approaches>Limitations of decoy approaches</h1>
+<p>Customers can be tracked. Use of change transactions and outputs breaks the privacy. Common origins can be found in taint trees. Anonymous merchants can be identified. Third parties can see where your money goes. Hiding behind 7 proxies doesn&rsquo;t save you here. The common perception is that bitcoin is not private, but anything more than that is considered private, but that&rsquo;s not the reality. There&rsquo;s some tradeoffs between these systems about how private they are, and you have to understand what those tradeoffs mean and what they mean to your particular scenario. I&rsquo;m a little biased, I would not use any of these approaches if I really wanted privacy for myself. But again, that&rsquo;s the tradeoff you should be making for yourself. You need to understand the tradeoff.</p>
+<h1 id=if-you-do-use-decoy-schemes>If you do use decoy schemes</h1>
+<p>These decoy schemes might be viable if there&rsquo;s a very large anonymity set with like 5 million origins instead of 5 origins. Also, the decoy sets have to substantially overlap across all recent transactions otherwies you get a repeated common origin problem or whatever. And finally, you have to sample the decoys very carefully. There&rsquo;s been a sequence of one or two papers that showed the distribution by which monero sampled their decoys didn&rsquo;t line up with the distribution by which real people spend their coins. There was a gap. This is now somewhat fixed. With overwhelming probability in an old version of monero, the last transaction was the real transaction. This is a hard problem to solve and I don&rsquo;t know how to do it. If you take this approach, you need to do rigorous analysis about how much privacy you are providing, and you need to carefully understand where things fail, and you need to acknowledge the limitations.</p>
+<h1 id=scalability>Scalability</h1>
+<p>Use a zero-knowledge proof of inclusion of a coin in the utxo set like zerocash does, or use layer two scalability and do off-chain privacy stuff. That might work.</p>
+<div class=row></div>
+</div>
+</div>
+</div>
+<script src=https://btctranscripts.com/lib/jquery.min.js></script>
+<script src=https://btctranscripts.com/lib/popper.min.js></script>
+<script src=https://btctranscripts.com/js/bootstrap.min.js></script>
+<script type=text/javascript src=/plugins/lunr.min.js></script>
+<script type=text/javascript src=/plugins/auto-complete.js></script>
+<link href=/plugins/auto-complete.css rel=stylesheet>
+<script type=text/javascript>var baseurl="https://btctranscripts.com/"</script>
+<script type=text/javascript src=/plugins/search.js></script>
+<script type=text/javascript src=https://btctranscripts.com/js/custom.js></script>
+<script type=text/javascript src=/plugins/clipboard.js></script>
+<script>new ClipboardJS('.btn')</script>
+</body>
+</html>

@@ -1,12 +1,637 @@
-<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=canonical href=https://btctranscripts.com/scalingbitcoin/tokyo-2018/fraud-proofs/><title>Fraud Proofs | ₿itcoin Transcripts</title><link href=https://btctranscripts.com/css/fontawesome.min.css rel=stylesheet><link rel=stylesheet href=https://btctranscripts.com/css/ace.min.css><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://btctranscripts.com/images/btctranscripts.png"><meta name=twitter:title content="Fraud Proofs"><meta name=twitter:description content="Improving SPV client validation and security with fraud proofs
+<!doctype html><html><head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<link rel=canonical href=https://btctranscripts.com/scalingbitcoin/tokyo-2018/fraud-proofs/>
+<title>
+Fraud Proofs | ₿itcoin Transcripts
+</title>
+<link href=https://btctranscripts.com/css/fontawesome.min.css rel=stylesheet>
+<link rel=stylesheet href=https://btctranscripts.com/css/ace.min.css>
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://btctranscripts.com/images/btctranscripts.png">
+<meta name=twitter:title content="Fraud Proofs">
+<meta name=twitter:description content="Improving SPV client validation and security with fraud proofs
 Mustafa Al-Bassam (University College London)
 paper: https://arxiv.org/pdf/1809.09044.pdf
 https://twitter.com/kanzure/status/1048446183004233731
 Introduction I am going to be talking about fraud proofs. It allows lite clients to have a leve lof security of almost the level of a full node. Before I describe fraud proofs, how about we talk about motivations.
-Motivations There&rsquo;s a large tradeoff between blockchain decentralization and how much on-chain throughput you can get."></head><body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id=navbarMain><div class=container><div><a class=navbar-brand href=/>₿itcoin Transcripts</a></div><div class="collapse navbar-collapse" id=navbarMainCollapse><ul class="navbar-nav ml-auto"><li class=nav-item><a class=nav-link href=https://github.com/bitcointranscripts/bitcointranscripts target=_blank><i class="fab fa-github"></i></a></li></ul></div></div></nav><div class=container-fluid><div class=row><div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0"><button class="navbar-toggler navbar-toggler-right collapsed" type=button data-toggle=collapse data-target=#sidenav-left-collapse aria-controls=sidenav-left-collapse aria-expanded=false aria-label="Toggle navigation">
-<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse align-items-start flex-column" id=sidenav-left-collapse><form class="form-inline my-2 my-lg-0 searchbox"><input class="form-control mr-sm-2 w-100" data-search-input id=search-by type=text placeholder='Search (press "/")'></form><ul class="navbar-nav flex-column pt-3"><li data-nav-id=/advancing-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/><h6>Advancing Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/advancing-bitcoin/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2019/><h6>Advancing Bitcoin 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/advancing-bitcoin/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2020/><h6>Advancing Bitcoin 2020</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/andreas-antonopoulos/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/andreas-antonopoulos/><h6>Andreas Antonopoulos</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/austin-bitcoin-developers/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/austin-bitcoin-developers/><h6>Austin Bitcoin Developers</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/baltic-honeybadger/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/><h6>Baltic Honeybadger</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/baltic-honeybadger/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/2018/><h6>Baltic Honeybadger 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/baltic-honeybadger/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/2019/><h6>Baltic Honeybadger 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bit-block-boom/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bit-block-boom/><h6>Bit Block Boom</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bit-block-boom/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bit-block-boom/2019/><h6>Bit Block Boom 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-core-dev-tech/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/><h6>Bitcoin Core Dev Tech</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bitcoin-core-dev-tech/bitcoin-devcore-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/bitcoin-devcore-2015/><h6>Bitcoin Devcore Meetup (2015)</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-design/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-design/><h6>Bitcoin Design</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-magazine/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-magazine/><h6>Bitcoin Magazine</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoinops/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinops/><h6>Bitcoinops</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bitcoinops/schnorr-taproot-workshop-2019/ class="nav-item my-1"><a class="nav-link p-0" href=/bitcoinops/schnorr-taproot-workshop-2019/><h6>Schnorr Taproot Workshop 2019</h6></a></li></ul></li><li data-nav-id=/blockchain-protocol-analysis-security-engineering/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/><h6>Blockchain Protocol Analysis Security Eng</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/blockchain-protocol-analysis-security-engineering/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2017/><h6>Blockchain Protocol Analysis Security Engineering 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/blockchain-protocol-analysis-security-engineering/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2018/><h6>Blockchain Protocol Analysis Security Engineering 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/blockstream-webinars/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockstream-webinars/><h6>Blockstream Webinars</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/boltathon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/boltathon/><h6>Boltathon</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/breaking-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/><h6>Breaking Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/breaking-bitcoin/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/2017/><h6>Breaking Bitcoin 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/breaking-bitcoin/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/2019/><h6>Breaking Bitcoin 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/building-on-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/building-on-bitcoin/><h6>Building On Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/building-on-bitcoin/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/building-on-bitcoin/2018/><h6>Building On Bitcoin 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/chaincode-labs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-labs/><h6>Chaincode Labs</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/chaincode-labs/chaincode-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-labs/chaincode-podcast/><h6>Chaincode Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/chaincode-labs/chaincode-residency/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-labs/chaincode-residency/><h6>Chaincode Residency</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/chicago-bitdevs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chicago-bitdevs/><h6>Chicago Bitdevs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/coindesk-consensus-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coindesk-consensus-2016/><h6>Coindesk Consensus</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/coordination-of-decentralized-finance-workshop/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/><h6>Coordination of Decentralized Finance</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/coordination-of-decentralized-finance-workshop/2020-stanford/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/2020-stanford/><h6>2020 Stanford</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/cppcon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/><h6>CPPcon</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/cppcon/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/2017/><h6>CPPcon 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/cppcon/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/2020/><h6>CPPcon 2020</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/cryptoeconomic-systems/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cryptoeconomic-systems/><h6>Cryptoeconomic Systems</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/cryptoeconomic-systems/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cryptoeconomic-systems/2019/><h6>Cryptoeconomic Systems 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/dallas-bitcoin-symposium/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/dallas-bitcoin-symposium/><h6>Dallas Bitcoin Symposium</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/decentralized-financial-architecture-workshop/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/decentralized-financial-architecture-workshop/><h6>Decentralized Financial Architecture Workshop</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-developers-miners-meeting-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-developers-miners-meeting-2016/><h6>Developers-Miners Meeting</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/greg-maxwell/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/greg-maxwell/><h6>Greg Maxwell</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/grincon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/grincon/><h6>Grincon</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/grincon/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/grincon/2019/><h6>Grincon 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/honey-badger-diaries/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/honey-badger-diaries/><h6>Honey Badger Diaries</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/la-bitdevs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/la-bitdevs/><h6>LA Bitdevs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/layer2-summit/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/layer2-summit/><h6>Layer2 Summit</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/layer2-summit/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/layer2-summit/2018/><h6>Layer2 Summit 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/lets-talk-bitcoin-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lets-talk-bitcoin-podcast/><h6>Lets Talk Bitcoin Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/lightning-conference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-conference/><h6>Lightning Conference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/lightning-conference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-conference/2019/><h6>Lightning Conference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/lightning-hack-day/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-hack-day/><h6>Lightning Hack Day</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/london-bitcoin-devs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/london-bitcoin-devs/><h6>London Bitcoin Devs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/magicalcryptoconference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/magicalcryptoconference/><h6>Magicalcryptoconference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/magicalcryptoconference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/magicalcryptoconference/2019/><h6>Magicalcryptoconference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/misc/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/misc/><h6>Misc</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/><h6>MIT Bitcoin Expo</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2015/><h6>Mit Bitcoin Expo 2015</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2016/><h6>Mit Bitcoin Expo 2016</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2017/><h6>Mit Bitcoin Expo 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2018/><h6>Mit Bitcoin Expo 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2019/><h6>Mit Bitcoin Expo 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2020/><h6>Mit Bitcoin Expo 2020</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2021/><h6>Mit Bitcoin Expo 2021</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/munich-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/munich-meetup/><h6>Munich Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/noded-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/noded-podcast/><h6>Noded Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/realworldcrypto/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/><h6>Realworldcrypto</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/realworldcrypto/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/2018/><h6>Realworldcrypto 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/rebooting-web-of-trust/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/rebooting-web-of-trust/><h6>Rebooting Web Of Trust</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/rebooting-web-of-trust/2019-prague/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/rebooting-web-of-trust/2019-prague/><h6>2019 Prague</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/ruben-somsen/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/ruben-somsen/><h6>Ruben Somsen</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/satoshi-roundtable/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/satoshi-roundtable/><h6>Satoshi Roundtable</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/satoshi-roundtable/sr-004/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/satoshi-roundtable/sr-004/><h6>Sr 004</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/scalingbitcoin/ class="nav-item my-1 parent haschildren"><a class="nav-link p-0" href=/scalingbitcoin/><h6>Scaling Bitcoin Conference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/scalingbitcoin/montreal-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/montreal-2015/><h6>Montreal (2015)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/hong-kong-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/hong-kong-2015/><h6>Hong Kong (2015)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/milan-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/milan-2016/><h6>Milan (2016)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/stanford-2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/><h6>Stanford (2017)</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/scalingbitcoin/stanford-2017/edgeplusplus/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/edgeplusplus/><h6>Edgeplusplus</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/scalingbitcoin/tokyo-2018/ class="nav-item my-1 parent haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/><h6>Tokyo (2018)</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/scalingbitcoin/tokyo-2018/edgedevplusplus/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/edgedevplusplus/><h6>Edgedevplusplus</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/scalingbitcoin/tel-aviv-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/><h6>Tel Aviv (2019)</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/scalingbitcoin/tel-aviv-2019/edgedevplusplus/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/edgedevplusplus/><h6>Edgedevplusplus</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li></ul></li><li data-nav-id=/sf-bitcoin-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/sf-bitcoin-meetup/><h6>SF Bitcoin Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/simons-institute/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/simons-institute/><h6>Simons Institute</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/stanford-blockchain-conference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/><h6>Stanford Blockchain</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/stanford-blockchain-conference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/2019/><h6>Stanford Blockchain Conference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/stanford-blockchain-conference/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/2020/><h6>Stanford Blockchain Conference 2020</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/stephan-livera-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stephan-livera-podcast/><h6>Stephan Livera Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/sydney-bitcoin-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/sydney-bitcoin-meetup/><h6>Sydney Bitcoin Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/texas-bitcoin-conference-2014/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/texas-bitcoin-conference-2014/><h6>Texas Bitcoin Conference</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/tftc-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tftc-podcast/><h6>TFTC Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/verifiable-delay-functions/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/verifiable-delay-functions/><h6>Verifiable Delay Functions</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/verifiable-delay-functions/vdf-day-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/verifiable-delay-functions/vdf-day-2019/><h6>Vdf Day 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/vr-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/vr-bitcoin/><h6>VR Bitcoin</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/w3-blockchain-workshop-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/w3-blockchain-workshop-2016/><h6>W3 Blockchain Workshop</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/wasabi-research-club/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/wasabi-research-club/><h6>Wasabi Research Club</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/what-bitcoin-did-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/what-bitcoin-did-podcast/><h6>What Bitcoin Did Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></div></nav></div><div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky"><div class=docs-toc><nav id=TableOfContents><ul><li><a href=#introduction>Introduction</a></li><li><a href=#motivations>Motivations</a></li><li><a href=#fraud-proofs>Fraud proofs</a></li><li><a href=#earlier-discussions-on-fraud-proofs>Earlier discussions on fraud proofs</a></li><li><a href=#generalizing-the-blockchain-as-a-state-transition-system>Generalizing the blockchain as a state transition system</a></li><li><a href=#representing-the-entire-state-as-a-merkle-root-using-a-sparse-merkle-tree>Representing the entire state as a merkle root using a sparse merkle tree</a></li><li><a href=#the-data-availability-problem>The data availability problem</a></li><li><a href=#naive-data-availability-scheme>Naive data availability scheme</a></li><li><a href=#multidimensional-erasure-coding>Multidimensional erasure coding</a></li><li><a href=#selective-releasing-of-pieces>Selective releasing of pieces</a></li><li><a href=#preventing-selective-releasing-of-pieces>Preventing selective releasing of pieces</a></li><li><a href=#block-validity-security-assumptions-comparison>Block validity security assumptions comparison</a></li><li><a href=#conclusions>Conclusions</a></li></ul></nav></div></div><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3"><a href=/>Home</a>
-&lt; <a href=/scalingbitcoin/>Scaling Bitcoin Conference</a>
-&lt; <a href=/scalingbitcoin/tokyo-2018/>Tokyo (2018)</a>
-&lt; Fraud Proofs<h1>Fraud Proofs</h1><p><i>Transcript By: Bryan Bishop</i></p><p>Tags:
-<a href=/tags/security>Security</a>, <a href=/tags/validation>Validation</a>, <a href=/tags/miners>Miners</a></p><p>Category:
-<a href=/categories/conference>Conference</a></p><p>Improving SPV client validation and security with fraud proofs</p><p>Mustafa Al-Bassam (University College London)</p><p>paper: <a href=https://arxiv.org/pdf/1809.09044.pdf>https://arxiv.org/pdf/1809.09044.pdf</a></p><p><a href=https://twitter.com/kanzure/status/1048446183004233731>https://twitter.com/kanzure/status/1048446183004233731</a></p><h1 id=introduction>Introduction</h1><p>I am going to be talking about fraud proofs. It allows lite clients to have a leve lof security of almost the level of a full node. Before I describe fraud proofs, how about we talk about motivations.</p><h1 id=motivations>Motivations</h1><p>There&rsquo;s a large tradeoff between blockchain decentralization and how much on-chain throughput you can get. The more transactions you have on the chain, the more resources you need to validate the chain. If the blockchain is fast becoming big, then in theory more users will want SPV nodes or lite clients. I use the terms interchangeably. Instead of running full nodes.</p><p>The problem with SPV nodes is that they will gladly accept invalid blocks from miners. They just check the accumulated PoW rule and they do nothing to validate that the transactions in the block are valid. They make a very large assumption that the majority of the consensus is honest. This is different from how full nodes work in bitcoin. If everyone was running an SPV node instead of a full node, then malicious miners could collude together to create money out of thin air. The only thing that the 51% attack can do right now is double spend transactions; they can&rsquo;t insert invalid transactions at the moment. But with SPV clients only, then they would be able to do that.</p><p>How could we make it possible for these non-fully-validating nodes, these SPV nodes, to reject invalid blocks so that we don&rsquo;t have to trust miners? That&rsquo;s essentially what fraud proofs aim to do.</p><h1 id=fraud-proofs>Fraud proofs</h1><p>This talk is based on the fraud proofs paper we released last week. This is a joint project with Vitalik and some other coauthors. The basic idea of fraud proofs is that you have a lite client and a full node and SPV nodes only download the block headers of the blockchain, they don&rsquo;t download transaction data except merkle proofs of certain transactions relevant to them. Full nodes download everything.</p><p>With a fraud proof system, if a full node downloads a block and detects an invalid transaction, they could in theory send a proof to that SPV node that the block has an invalid transaction and then the SPV node could verify the proof and reject that block permanently. The problem with this is what if the miner only sends the blockheaders to the SPV client but doesn&rsquo;t actually publish the transaction data? In that case, it would be impossible for the full node to generate a fraud proof that the transactions are invalid because they don&rsquo;t know what the transactions are. You can end up in a situation where SPV nodes are accepting invalid blocks because nobody can generate a fraud proof for them.</p><h1 id=earlier-discussions-on-fraud-proofs>Earlier discussions on fraud proofs</h1><p>The original bitcoin whitepaper briefly mentions the concept of &ldquo;alerts&rdquo; or fraud proofs. The idea of &ldquo;alerts&rdquo; (separate from the alert system) is that nodes could send warnings to SPV nodes that some block is invalid and this would prompt the SPV client to re-download the entire block and validate the transactions. In practice, this doesn&rsquo;t work because a full node could tell the SPV node to download all the blocks and you would have no way to find out if it is valid or not without downloading the blocks yourself and checking. In the worst case scneario, the efficiency of running this kind of SPV node requires the same kind of resources as running a full node.</p><p>gmaxwell and petertodd have take nthis idea further by proposing &ldquo;compact fraud proofs&rdquo; where you wouldn&rsquo;t just alert lite clients about invalidity, but you would also prove that it&rsquo;s invalid and then you verify the proof. However, this requires a different fraud proof for each of the different ways to violate bitcoin rules. One fraud proof type for double spending, and one for block size, and so on.</p><p>We are going to simplify this down to all one fraud proofs.</p><p>gmaxwell has also discussed on IRC using erasure coding for data avialability with a scheme using &ldquo;designated source&rdquo; with PoW rate-limiting. His scheme relies on a designated source and rate limiting.</p><h1 id=generalizing-the-blockchain-as-a-state-transition-system>Generalizing the blockchain as a state transition system</h1><p>Let&rsquo;s talk about creating a fraud proof of the system with a single fraud proof. W eneed to generalize the blockchain as a state transition system. Every single transaction in the blockchain basically just reads or modifies the state of the blockchain. We have this state transition function. It takes the current state of the blockchain and the transaction you want to apply, and it retunrs a new state or if the transaction is invalid then it returns an error.</p><p>Our goal is to find a way to prove these invalid state transitions to lite clients. We need a way to represent efficiently the entire status of the blockchain as a merkle root in a merkle tree. We could store this as a key-value store. If we imagine this store state as a key-value store, in the case of bitcoin, all the keys would be basically UTXO ids. But all the values would be a boolean that represents if the transaction is unspent or otherwise, or if it doesn&rsquo;t exist or is already spent. We also need non-membership proofs so tha tyou can prove that some UTXO does not exist in the state.</p><h1 id=representing-the-entire-state-as-a-merkle-root-using-a-sparse-merkle-tree>Representing the entire state as a merkle root using a sparse merkle tree</h1><p>We can use a sparse merkle tree to do this, which is all the rage lately. A sprase merkle tree is a merkle tree with an insanely large number of leaves. If you want to be able to represent every possible sha256 hash as a key, then this sparse merkle tree would need 2^256 leaves. And you might be wondering how is that possible to generate that? And it turns out it&rsquo;s quick to generate that because the vast majority of the leaves in this tree will be basically be 0, which is the default value in the tree. Because of the vast majority of the leaves in the tree are 0, then that means the vast majority of intermediate nodes in the tree will also be zero. You don&rsquo;t need to recompute every node in the tree; you already know the vast majority of the leafs in the tree will be zero. Merkle proofs will be O(log(n)) like in a regular merkle tree. To access key K in the tree, you access the Hash(K)th item.</p><p>We can thus represent the entire state of the blockchain as a single merkle root, including all UTXOs. You can append this merkle root to the end of each block. A sparse mekrle tree is not the only way to represent a key-value store, you could also use a patricia tree.</p><p>Now that we have the merkle root as a state, you could imagine the blockchain as a state root transition system. Instead of transitioning the state, you transition the merkle root of the state. You redefine the transition function and create a transitionRoot function that takes stateRoot, transaction and witness as inputs to this new function. It will take in some transaction and also witnesses, and returns the new state tree of the blockchain or an error. A witness of a transaction is simply the set of the mekrle proofs for the state root of the block that basically shows you all the parts of the state that the transaction accesses or reads. Using these witnesses, you can recompute the entire state root of the tree. All you need are the merkle proofs of the parts of the state that the transaction accesses, and you can figure out the new merkle root if you only modify that part of the tree. This allows you to find out the new state of the blockchain without requiring the entire state of the blockchain.</p><p>What we can do with this is that we can do an execution trace in every block. We need to include the post-state root of the transactions in the block (every few transactions). W einclude the new state root after every single transition in the block. If you execute the transactions each, we can include the state root after every single transaction. This gives you an execution trace of the block. You don&rsquo;t actually have to include it after every transaction, you could also do it after every few transactions if you want to.</p><p>The fraud proof would now consist of this, the pre-state root for the transaction, the transaction itself, the state root, all of the merkle proofs for the witnesses, and the transaction itself, and a few other itesm. A full node would send a lite client all of this data and that lite client can execute this function and if it finds out that after executing this state transition function is different from the per-state root in the block, then this means the fraud proof is correct and the block can be rejected.</p><p>You don&rsquo;t have to include the state root after every transaction; this saves block space but the fraud proof gets bigger.</p><h1 id=the-data-availability-problem>The data availability problem</h1><p>If the data isn&rsquo;t available, then the fraud proof can&rsquo;t be generated. You could use erasure coding to solve this. It&rsquo;s a technique that lets you take some number of pieces of data, extend it to 2x the size, doubling the data, and then if you lose some parts of the data, then you can recover the whole data from some subset number of pieces, and in fact the pieces don&rsquo;t need to be consecutive parts of the data. It doesn&rsquo;t matter the ordering of the pieces, as long as you have the right number of them.</p><h1 id=naive-data-availability-scheme>Naive data availability scheme</h1><p>You might require a miner to commit with the merkle root of the erasure coded version of the block data. If you do that, it means that for the miner to hide any piece of the block, they have to hide half of the block. Because if they hide just one piece here, then that piece can be recovered from the rest of the pieces. However, if they hide a bit more than half of the data, then the block cannot be recovered. Using this, you can build a sampling based availability scheme. It&rsquo;s no longer 100% availability problem, now it&rsquo;s a 50% availability problem. A client can randomly sample different pieces of the block. If you assume the miner has hidden 50% of the block or slightly more because they don&rsquo;t want the block data to be recovered, then there&rsquo;s a chance that the client will land on an unavailable piece, then the block is rejected. Clients would then gossip pieces to full nodes for recovery of the data.</p><p>The problem is what happens if the miner incorrectly generates the erasure code? You have no way of recovering the data. The lite client would have to download the entire block and re-generate the erasure code to see if it&rsquo;s correct or not, but that&rsquo;s going back to square one. We want lite clients to not have to download the full block.</p><h1 id=multidimensional-erasure-coding>Multidimensional erasure coding</h1><p>Here, we&rsquo;re using three-dimensional erasure coding for simplicity but you could take it to higher dimensions. So if you use this, you have the original&ndash; you have ot arrange all of the original data in the block into a square, and then you extend that data, and extend the square&mldr;. these columns and rows are extended individually using the erasure coding. The fraud proof would be limited to a column or row. If any row or column is incorrectly generated, a fraud proof that the code is incorrectly generated is limited to that specific row or column, that&rsquo;s O(sqrt(blocksize)). Miner has to hide roughly 25% of the square to hide any pieces.</p><p>What is the probability of a client landing on at least one of the available piece if the miner has hidden 25% of the square (if sampling without replacement)? 60% after 3 samplings; 99% after 15 samplings. After 15 samplings, there&rsquo;s only a 1% chance that the miner can fool a user into thinking that a block is available when it&rsquo;s unavailable. On average, miners would have to do 100x more PoW in order to generate that invalid block. But you could also have a high probability if you do more samplings.</p><h1 id=selective-releasing-of-pieces>Selective releasing of pieces</h1><p>What if a miner only releases pieces as clients ask for them? Remember, the moment that a miner releases 25% of the square, then a full node can recover the whole data. A miner might want to fool as many clients as possible without releasing 25% of the square. So they might want to release just under 25% of the square. What that would mean is that the miner could always pass the sampling challenge the first couple of hundred or thousand of lite clients. The exact number of that depends on ohw many samples each client makes&mldr; the exact number of how many clients can be fooled depends on how many samples they make each (s) and how wide the square (k), and whether the miner doesn&rsquo;t drop the connection to many of the connecting nodes that are making these sampling requests.</p><h1 id=preventing-selective-releasing-of-pieces>Preventing selective releasing of pieces</h1><p>We can prevent this by assuming an enhanced network model. Clients send requests anonymously. The order in which requests are received by the network are uniformly random (clients sampled are interleaved). For example, using a mixnet. This would mean that a miner would have the same probability of fooling all client,s including the first ones to ask for samples. The requests are unlinkable to the clients.</p><h1 id=block-validity-security-assumptions-comparison>Block validity security assumptions comparison</h1><p>Let&rsquo;s compare the scheme to the assumptions that SPV nodes and full nodes make. An SPV client assumes 51% of the hashrate is being honest. SPV clients with fraud proofs ohave to assume there&rsquo;s at least one honest full node in connected network graph, that the maximum network delay to receive proofs (e.g. 5 minutes), and a minimum number of lite clients (few hundreds).</p><h1 id=conclusions>Conclusions</h1><p>It&rsquo;s quite efficient in the space, a state fraud proof would be quite small. Our computations are also efficient, taking a few milliseconds. The link to the full paper is here. I&rsquo;ll take questions now, thank you.</p><p><a href=https://github.com/musalbas/smt>https://github.com/musalbas/smt</a></p><div class=row></div></div></div></div><script src=https://btctranscripts.com/lib/jquery.min.js></script><script src=https://btctranscripts.com/lib/popper.min.js></script><script src=https://btctranscripts.com/js/bootstrap.min.js></script><script type=text/javascript src=/plugins/lunr.min.js></script><script type=text/javascript src=/plugins/auto-complete.js></script><link href=/plugins/auto-complete.css rel=stylesheet><script type=text/javascript>var baseurl="https://btctranscripts.com/"</script><script type=text/javascript src=/plugins/search.js></script><script type=text/javascript src=https://btctranscripts.com/js/custom.js></script><script type=text/javascript src=/plugins/clipboard.js></script><script>new ClipboardJS('.btn')</script></body></html>
+Motivations There&rsquo;s a large tradeoff between blockchain decentralization and how much on-chain throughput you can get.">
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id=navbarMain>
+<div class=container>
+<div>
+<a class=navbar-brand href=/>
+₿itcoin Transcripts
+</a>
+</div>
+<div class="collapse navbar-collapse" id=navbarMainCollapse>
+<ul class="navbar-nav ml-auto">
+<li class=nav-item>
+<a class=nav-link href=https://github.com/bitcointranscripts/bitcointranscripts target=_blank>
+<i class="fab fa-github"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<div class=container-fluid>
+<div class=row>
+<div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
+<button class="navbar-toggler navbar-toggler-right collapsed" type=button data-toggle=collapse data-target=#sidenav-left-collapse aria-controls=sidenav-left-collapse aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span>
+</button>
+<div class="collapse navbar-collapse align-items-start flex-column" id=sidenav-left-collapse>
+<form class="form-inline my-2 my-lg-0 searchbox">
+<input class="form-control mr-sm-2 w-100" data-search-input id=search-by type=text placeholder='Search (press "/")'>
+</form>
+<ul class="navbar-nav flex-column pt-3">
+<li data-nav-id=/advancing-bitcoin/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/advancing-bitcoin/><h6>Advancing Bitcoin</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/advancing-bitcoin/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/advancing-bitcoin/2019/><h6>Advancing Bitcoin 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/advancing-bitcoin/2020/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/advancing-bitcoin/2020/><h6>Advancing Bitcoin 2020</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/andreas-antonopoulos/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/andreas-antonopoulos/><h6>Andreas Antonopoulos</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/austin-bitcoin-developers/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/austin-bitcoin-developers/><h6>Austin Bitcoin Developers</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/baltic-honeybadger/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/baltic-honeybadger/><h6>Baltic Honeybadger</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/baltic-honeybadger/2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/baltic-honeybadger/2018/><h6>Baltic Honeybadger 2018</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/baltic-honeybadger/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/baltic-honeybadger/2019/><h6>Baltic Honeybadger 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/bit-block-boom/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bit-block-boom/><h6>Bit Block Boom</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/bit-block-boom/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bit-block-boom/2019/><h6>Bit Block Boom 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/bitcoin-core-dev-tech/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bitcoin-core-dev-tech/><h6>Bitcoin Core Dev Tech</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/bitcoin-core-dev-tech/bitcoin-devcore-2015/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bitcoin-core-dev-tech/bitcoin-devcore-2015/><h6>Bitcoin Devcore Meetup (2015)</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/bitcoin-design/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bitcoin-design/><h6>Bitcoin Design</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/bitcoin-magazine/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bitcoin-magazine/><h6>Bitcoin Magazine</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/bitcoinops/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bitcoinops/><h6>Bitcoinops</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/bitcoinops/schnorr-taproot-workshop-2019/ class="nav-item my-1">
+<a class="nav-link p-0" href=/bitcoinops/schnorr-taproot-workshop-2019/><h6>Schnorr Taproot Workshop 2019</h6></a>
+</li>
+</ul>
+</li>
+<li data-nav-id=/blockchain-protocol-analysis-security-engineering/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/><h6>Blockchain Protocol Analysis Security Eng</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/blockchain-protocol-analysis-security-engineering/2017/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2017/><h6>Blockchain Protocol Analysis Security Engineering 2017</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/blockchain-protocol-analysis-security-engineering/2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2018/><h6>Blockchain Protocol Analysis Security Engineering 2018</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/blockstream-webinars/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/blockstream-webinars/><h6>Blockstream Webinars</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/boltathon/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/boltathon/><h6>Boltathon</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/breaking-bitcoin/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/breaking-bitcoin/><h6>Breaking Bitcoin</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/breaking-bitcoin/2017/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/breaking-bitcoin/2017/><h6>Breaking Bitcoin 2017</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/breaking-bitcoin/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/breaking-bitcoin/2019/><h6>Breaking Bitcoin 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/building-on-bitcoin/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/building-on-bitcoin/><h6>Building On Bitcoin</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/building-on-bitcoin/2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/building-on-bitcoin/2018/><h6>Building On Bitcoin 2018</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/chaincode-labs/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/chaincode-labs/><h6>Chaincode Labs</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/chaincode-labs/chaincode-podcast/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/chaincode-labs/chaincode-podcast/><h6>Chaincode Podcast</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/chaincode-labs/chaincode-residency/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/chaincode-labs/chaincode-residency/><h6>Chaincode Residency</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/chicago-bitdevs/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/chicago-bitdevs/><h6>Chicago Bitdevs</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/coindesk-consensus-2016/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/coindesk-consensus-2016/><h6>Coindesk Consensus</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/coordination-of-decentralized-finance-workshop/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/><h6>Coordination of Decentralized Finance</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/coordination-of-decentralized-finance-workshop/2020-stanford/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/2020-stanford/><h6>2020 Stanford</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/cppcon/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/cppcon/><h6>CPPcon</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/cppcon/2017/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/cppcon/2017/><h6>CPPcon 2017</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/cppcon/2020/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/cppcon/2020/><h6>CPPcon 2020</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/cryptoeconomic-systems/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/cryptoeconomic-systems/><h6>Cryptoeconomic Systems</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/cryptoeconomic-systems/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/cryptoeconomic-systems/2019/><h6>Cryptoeconomic Systems 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/dallas-bitcoin-symposium/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/dallas-bitcoin-symposium/><h6>Dallas Bitcoin Symposium</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/decentralized-financial-architecture-workshop/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/decentralized-financial-architecture-workshop/><h6>Decentralized Financial Architecture Workshop</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/bitcoin-developers-miners-meeting-2016/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bitcoin-developers-miners-meeting-2016/><h6>Developers-Miners Meeting</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/greg-maxwell/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/greg-maxwell/><h6>Greg Maxwell</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/grincon/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/grincon/><h6>Grincon</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/grincon/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/grincon/2019/><h6>Grincon 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/honey-badger-diaries/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/honey-badger-diaries/><h6>Honey Badger Diaries</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/la-bitdevs/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/la-bitdevs/><h6>LA Bitdevs</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/layer2-summit/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/layer2-summit/><h6>Layer2 Summit</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/layer2-summit/2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/layer2-summit/2018/><h6>Layer2 Summit 2018</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/lets-talk-bitcoin-podcast/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/lets-talk-bitcoin-podcast/><h6>Lets Talk Bitcoin Podcast</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/lightning-conference/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/lightning-conference/><h6>Lightning Conference</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/lightning-conference/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/lightning-conference/2019/><h6>Lightning Conference 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/lightning-hack-day/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/lightning-hack-day/><h6>Lightning Hack Day</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/london-bitcoin-devs/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/london-bitcoin-devs/><h6>London Bitcoin Devs</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/magicalcryptoconference/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/magicalcryptoconference/><h6>Magicalcryptoconference</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/magicalcryptoconference/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/magicalcryptoconference/2019/><h6>Magicalcryptoconference 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/misc/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/misc/><h6>Misc</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/><h6>MIT Bitcoin Expo</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2015/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2015/><h6>Mit Bitcoin Expo 2015</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2016/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2016/><h6>Mit Bitcoin Expo 2016</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2017/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2017/><h6>Mit Bitcoin Expo 2017</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2018/><h6>Mit Bitcoin Expo 2018</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2019/><h6>Mit Bitcoin Expo 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2020/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2020/><h6>Mit Bitcoin Expo 2020</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2021/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2021/><h6>Mit Bitcoin Expo 2021</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/munich-meetup/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/munich-meetup/><h6>Munich Meetup</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/noded-podcast/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/noded-podcast/><h6>Noded Podcast</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/realworldcrypto/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/realworldcrypto/><h6>Realworldcrypto</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/realworldcrypto/2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/realworldcrypto/2018/><h6>Realworldcrypto 2018</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/rebooting-web-of-trust/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/rebooting-web-of-trust/><h6>Rebooting Web Of Trust</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/rebooting-web-of-trust/2019-prague/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/rebooting-web-of-trust/2019-prague/><h6>2019 Prague</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/ruben-somsen/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/ruben-somsen/><h6>Ruben Somsen</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/satoshi-roundtable/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/satoshi-roundtable/><h6>Satoshi Roundtable</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/satoshi-roundtable/sr-004/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/satoshi-roundtable/sr-004/><h6>Sr 004</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/scalingbitcoin/ class="nav-item my-1 parent haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/><h6>Scaling Bitcoin Conference</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/scalingbitcoin/montreal-2015/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/montreal-2015/><h6>Montreal (2015)</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/scalingbitcoin/hong-kong-2015/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/hong-kong-2015/><h6>Hong Kong (2015)</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/scalingbitcoin/milan-2016/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/milan-2016/><h6>Milan (2016)</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/scalingbitcoin/stanford-2017/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/><h6>Stanford (2017)</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/scalingbitcoin/stanford-2017/edgeplusplus/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/edgeplusplus/><h6>Edgeplusplus</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/scalingbitcoin/tokyo-2018/ class="nav-item my-1 parent haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/><h6>Tokyo (2018)</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/scalingbitcoin/tokyo-2018/edgedevplusplus/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/edgedevplusplus/><h6>Edgedevplusplus</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/scalingbitcoin/tel-aviv-2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/><h6>Tel Aviv (2019)</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/scalingbitcoin/tel-aviv-2019/edgedevplusplus/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/edgedevplusplus/><h6>Edgedevplusplus</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/sf-bitcoin-meetup/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/sf-bitcoin-meetup/><h6>SF Bitcoin Meetup</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/simons-institute/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/simons-institute/><h6>Simons Institute</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/stanford-blockchain-conference/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/stanford-blockchain-conference/><h6>Stanford Blockchain</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/stanford-blockchain-conference/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/stanford-blockchain-conference/2019/><h6>Stanford Blockchain Conference 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/stanford-blockchain-conference/2020/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/stanford-blockchain-conference/2020/><h6>Stanford Blockchain Conference 2020</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/stephan-livera-podcast/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/stephan-livera-podcast/><h6>Stephan Livera Podcast</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/sydney-bitcoin-meetup/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/sydney-bitcoin-meetup/><h6>Sydney Bitcoin Meetup</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/texas-bitcoin-conference-2014/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/texas-bitcoin-conference-2014/><h6>Texas Bitcoin Conference</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/tftc-podcast/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/tftc-podcast/><h6>TFTC Podcast</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/verifiable-delay-functions/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/verifiable-delay-functions/><h6>Verifiable Delay Functions</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/verifiable-delay-functions/vdf-day-2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/verifiable-delay-functions/vdf-day-2019/><h6>Vdf Day 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/vr-bitcoin/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/vr-bitcoin/><h6>VR Bitcoin</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/w3-blockchain-workshop-2016/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/w3-blockchain-workshop-2016/><h6>W3 Blockchain Workshop</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/wasabi-research-club/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/wasabi-research-club/><h6>Wasabi Research Club</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/what-bitcoin-did-podcast/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/what-bitcoin-did-podcast/><h6>What Bitcoin Did Podcast</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+<div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky"><div class=docs-toc>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#introduction>Introduction</a></li>
+<li><a href=#motivations>Motivations</a></li>
+<li><a href=#fraud-proofs>Fraud proofs</a></li>
+<li><a href=#earlier-discussions-on-fraud-proofs>Earlier discussions on fraud proofs</a></li>
+<li><a href=#generalizing-the-blockchain-as-a-state-transition-system>Generalizing the blockchain as a state transition system</a></li>
+<li><a href=#representing-the-entire-state-as-a-merkle-root-using-a-sparse-merkle-tree>Representing the entire state as a merkle root using a sparse merkle tree</a></li>
+<li><a href=#the-data-availability-problem>The data availability problem</a></li>
+<li><a href=#naive-data-availability-scheme>Naive data availability scheme</a></li>
+<li><a href=#multidimensional-erasure-coding>Multidimensional erasure coding</a></li>
+<li><a href=#selective-releasing-of-pieces>Selective releasing of pieces</a></li>
+<li><a href=#preventing-selective-releasing-of-pieces>Preventing selective releasing of pieces</a></li>
+<li><a href=#block-validity-security-assumptions-comparison>Block validity security assumptions comparison</a></li>
+<li><a href=#conclusions>Conclusions</a></li>
+</ul>
+</nav>
+</div>
+</div>
+<div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+<a href=/>Home</a>
+&lt; <a href=/scalingbitcoin/>
+Scaling Bitcoin Conference
+</a>
+&lt; <a href=/scalingbitcoin/tokyo-2018/>
+Tokyo (2018)
+</a>
+&lt; Fraud Proofs
+<h1>Fraud Proofs</h1>
+<p><i>Transcript By: Bryan Bishop</i></p>
+<p>Tags:
+<a href=/tags/security>Security</a>, <a href=/tags/validation>Validation</a>, <a href=/tags/miners>Miners</a></p>
+<p>Category:
+<a href=/categories/conference>Conference</a></p>
+<p>Improving SPV client validation and security with fraud proofs</p>
+<p>Mustafa Al-Bassam (University College London)</p>
+<p>paper: <a href=https://arxiv.org/pdf/1809.09044.pdf>https://arxiv.org/pdf/1809.09044.pdf</a></p>
+<p><a href=https://twitter.com/kanzure/status/1048446183004233731>https://twitter.com/kanzure/status/1048446183004233731</a></p>
+<h1 id=introduction>Introduction</h1>
+<p>I am going to be talking about fraud proofs. It allows lite clients to have a leve lof security of almost the level of a full node. Before I describe fraud proofs, how about we talk about motivations.</p>
+<h1 id=motivations>Motivations</h1>
+<p>There&rsquo;s a large tradeoff between blockchain decentralization and how much on-chain throughput you can get. The more transactions you have on the chain, the more resources you need to validate the chain. If the blockchain is fast becoming big, then in theory more users will want SPV nodes or lite clients. I use the terms interchangeably. Instead of running full nodes.</p>
+<p>The problem with SPV nodes is that they will gladly accept invalid blocks from miners. They just check the accumulated PoW rule and they do nothing to validate that the transactions in the block are valid. They make a very large assumption that the majority of the consensus is honest. This is different from how full nodes work in bitcoin. If everyone was running an SPV node instead of a full node, then malicious miners could collude together to create money out of thin air. The only thing that the 51% attack can do right now is double spend transactions; they can&rsquo;t insert invalid transactions at the moment. But with SPV clients only, then they would be able to do that.</p>
+<p>How could we make it possible for these non-fully-validating nodes, these SPV nodes, to reject invalid blocks so that we don&rsquo;t have to trust miners? That&rsquo;s essentially what fraud proofs aim to do.</p>
+<h1 id=fraud-proofs>Fraud proofs</h1>
+<p>This talk is based on the fraud proofs paper we released last week. This is a joint project with Vitalik and some other coauthors. The basic idea of fraud proofs is that you have a lite client and a full node and SPV nodes only download the block headers of the blockchain, they don&rsquo;t download transaction data except merkle proofs of certain transactions relevant to them. Full nodes download everything.</p>
+<p>With a fraud proof system, if a full node downloads a block and detects an invalid transaction, they could in theory send a proof to that SPV node that the block has an invalid transaction and then the SPV node could verify the proof and reject that block permanently. The problem with this is what if the miner only sends the blockheaders to the SPV client but doesn&rsquo;t actually publish the transaction data? In that case, it would be impossible for the full node to generate a fraud proof that the transactions are invalid because they don&rsquo;t know what the transactions are. You can end up in a situation where SPV nodes are accepting invalid blocks because nobody can generate a fraud proof for them.</p>
+<h1 id=earlier-discussions-on-fraud-proofs>Earlier discussions on fraud proofs</h1>
+<p>The original bitcoin whitepaper briefly mentions the concept of &ldquo;alerts&rdquo; or fraud proofs. The idea of &ldquo;alerts&rdquo; (separate from the alert system) is that nodes could send warnings to SPV nodes that some block is invalid and this would prompt the SPV client to re-download the entire block and validate the transactions. In practice, this doesn&rsquo;t work because a full node could tell the SPV node to download all the blocks and you would have no way to find out if it is valid or not without downloading the blocks yourself and checking. In the worst case scneario, the efficiency of running this kind of SPV node requires the same kind of resources as running a full node.</p>
+<p>gmaxwell and petertodd have take nthis idea further by proposing &ldquo;compact fraud proofs&rdquo; where you wouldn&rsquo;t just alert lite clients about invalidity, but you would also prove that it&rsquo;s invalid and then you verify the proof. However, this requires a different fraud proof for each of the different ways to violate bitcoin rules. One fraud proof type for double spending, and one for block size, and so on.</p>
+<p>We are going to simplify this down to all one fraud proofs.</p>
+<p>gmaxwell has also discussed on IRC using erasure coding for data avialability with a scheme using &ldquo;designated source&rdquo; with PoW rate-limiting. His scheme relies on a designated source and rate limiting.</p>
+<h1 id=generalizing-the-blockchain-as-a-state-transition-system>Generalizing the blockchain as a state transition system</h1>
+<p>Let&rsquo;s talk about creating a fraud proof of the system with a single fraud proof. W eneed to generalize the blockchain as a state transition system. Every single transaction in the blockchain basically just reads or modifies the state of the blockchain. We have this state transition function. It takes the current state of the blockchain and the transaction you want to apply, and it retunrs a new state or if the transaction is invalid then it returns an error.</p>
+<p>Our goal is to find a way to prove these invalid state transitions to lite clients. We need a way to represent efficiently the entire status of the blockchain as a merkle root in a merkle tree. We could store this as a key-value store. If we imagine this store state as a key-value store, in the case of bitcoin, all the keys would be basically UTXO ids. But all the values would be a boolean that represents if the transaction is unspent or otherwise, or if it doesn&rsquo;t exist or is already spent. We also need non-membership proofs so tha tyou can prove that some UTXO does not exist in the state.</p>
+<h1 id=representing-the-entire-state-as-a-merkle-root-using-a-sparse-merkle-tree>Representing the entire state as a merkle root using a sparse merkle tree</h1>
+<p>We can use a sparse merkle tree to do this, which is all the rage lately. A sprase merkle tree is a merkle tree with an insanely large number of leaves. If you want to be able to represent every possible sha256 hash as a key, then this sparse merkle tree would need 2^256 leaves. And you might be wondering how is that possible to generate that? And it turns out it&rsquo;s quick to generate that because the vast majority of the leaves in this tree will be basically be 0, which is the default value in the tree. Because of the vast majority of the leaves in the tree are 0, then that means the vast majority of intermediate nodes in the tree will also be zero. You don&rsquo;t need to recompute every node in the tree; you already know the vast majority of the leafs in the tree will be zero. Merkle proofs will be O(log(n)) like in a regular merkle tree. To access key K in the tree, you access the Hash(K)th item.</p>
+<p>We can thus represent the entire state of the blockchain as a single merkle root, including all UTXOs. You can append this merkle root to the end of each block. A sparse mekrle tree is not the only way to represent a key-value store, you could also use a patricia tree.</p>
+<p>Now that we have the merkle root as a state, you could imagine the blockchain as a state root transition system. Instead of transitioning the state, you transition the merkle root of the state. You redefine the transition function and create a transitionRoot function that takes stateRoot, transaction and witness as inputs to this new function. It will take in some transaction and also witnesses, and returns the new state tree of the blockchain or an error. A witness of a transaction is simply the set of the mekrle proofs for the state root of the block that basically shows you all the parts of the state that the transaction accesses or reads. Using these witnesses, you can recompute the entire state root of the tree. All you need are the merkle proofs of the parts of the state that the transaction accesses, and you can figure out the new merkle root if you only modify that part of the tree. This allows you to find out the new state of the blockchain without requiring the entire state of the blockchain.</p>
+<p>What we can do with this is that we can do an execution trace in every block. We need to include the post-state root of the transactions in the block (every few transactions). W einclude the new state root after every single transition in the block. If you execute the transactions each, we can include the state root after every single transaction. This gives you an execution trace of the block. You don&rsquo;t actually have to include it after every transaction, you could also do it after every few transactions if you want to.</p>
+<p>The fraud proof would now consist of this, the pre-state root for the transaction, the transaction itself, the state root, all of the merkle proofs for the witnesses, and the transaction itself, and a few other itesm. A full node would send a lite client all of this data and that lite client can execute this function and if it finds out that after executing this state transition function is different from the per-state root in the block, then this means the fraud proof is correct and the block can be rejected.</p>
+<p>You don&rsquo;t have to include the state root after every transaction; this saves block space but the fraud proof gets bigger.</p>
+<h1 id=the-data-availability-problem>The data availability problem</h1>
+<p>If the data isn&rsquo;t available, then the fraud proof can&rsquo;t be generated. You could use erasure coding to solve this. It&rsquo;s a technique that lets you take some number of pieces of data, extend it to 2x the size, doubling the data, and then if you lose some parts of the data, then you can recover the whole data from some subset number of pieces, and in fact the pieces don&rsquo;t need to be consecutive parts of the data. It doesn&rsquo;t matter the ordering of the pieces, as long as you have the right number of them.</p>
+<h1 id=naive-data-availability-scheme>Naive data availability scheme</h1>
+<p>You might require a miner to commit with the merkle root of the erasure coded version of the block data. If you do that, it means that for the miner to hide any piece of the block, they have to hide half of the block. Because if they hide just one piece here, then that piece can be recovered from the rest of the pieces. However, if they hide a bit more than half of the data, then the block cannot be recovered. Using this, you can build a sampling based availability scheme. It&rsquo;s no longer 100% availability problem, now it&rsquo;s a 50% availability problem. A client can randomly sample different pieces of the block. If you assume the miner has hidden 50% of the block or slightly more because they don&rsquo;t want the block data to be recovered, then there&rsquo;s a chance that the client will land on an unavailable piece, then the block is rejected. Clients would then gossip pieces to full nodes for recovery of the data.</p>
+<p>The problem is what happens if the miner incorrectly generates the erasure code? You have no way of recovering the data. The lite client would have to download the entire block and re-generate the erasure code to see if it&rsquo;s correct or not, but that&rsquo;s going back to square one. We want lite clients to not have to download the full block.</p>
+<h1 id=multidimensional-erasure-coding>Multidimensional erasure coding</h1>
+<p>Here, we&rsquo;re using three-dimensional erasure coding for simplicity but you could take it to higher dimensions. So if you use this, you have the original&ndash; you have ot arrange all of the original data in the block into a square, and then you extend that data, and extend the square&mldr;. these columns and rows are extended individually using the erasure coding. The fraud proof would be limited to a column or row. If any row or column is incorrectly generated, a fraud proof that the code is incorrectly generated is limited to that specific row or column, that&rsquo;s O(sqrt(blocksize)). Miner has to hide roughly 25% of the square to hide any pieces.</p>
+<p>What is the probability of a client landing on at least one of the available piece if the miner has hidden 25% of the square (if sampling without replacement)? 60% after 3 samplings; 99% after 15 samplings. After 15 samplings, there&rsquo;s only a 1% chance that the miner can fool a user into thinking that a block is available when it&rsquo;s unavailable. On average, miners would have to do 100x more PoW in order to generate that invalid block. But you could also have a high probability if you do more samplings.</p>
+<h1 id=selective-releasing-of-pieces>Selective releasing of pieces</h1>
+<p>What if a miner only releases pieces as clients ask for them? Remember, the moment that a miner releases 25% of the square, then a full node can recover the whole data. A miner might want to fool as many clients as possible without releasing 25% of the square. So they might want to release just under 25% of the square. What that would mean is that the miner could always pass the sampling challenge the first couple of hundred or thousand of lite clients. The exact number of that depends on ohw many samples each client makes&mldr; the exact number of how many clients can be fooled depends on how many samples they make each (s) and how wide the square (k), and whether the miner doesn&rsquo;t drop the connection to many of the connecting nodes that are making these sampling requests.</p>
+<h1 id=preventing-selective-releasing-of-pieces>Preventing selective releasing of pieces</h1>
+<p>We can prevent this by assuming an enhanced network model. Clients send requests anonymously. The order in which requests are received by the network are uniformly random (clients sampled are interleaved). For example, using a mixnet. This would mean that a miner would have the same probability of fooling all client,s including the first ones to ask for samples. The requests are unlinkable to the clients.</p>
+<h1 id=block-validity-security-assumptions-comparison>Block validity security assumptions comparison</h1>
+<p>Let&rsquo;s compare the scheme to the assumptions that SPV nodes and full nodes make. An SPV client assumes 51% of the hashrate is being honest. SPV clients with fraud proofs ohave to assume there&rsquo;s at least one honest full node in connected network graph, that the maximum network delay to receive proofs (e.g. 5 minutes), and a minimum number of lite clients (few hundreds).</p>
+<h1 id=conclusions>Conclusions</h1>
+<p>It&rsquo;s quite efficient in the space, a state fraud proof would be quite small. Our computations are also efficient, taking a few milliseconds. The link to the full paper is here. I&rsquo;ll take questions now, thank you.</p>
+<p><a href=https://github.com/musalbas/smt>https://github.com/musalbas/smt</a></p>
+<div class=row></div>
+</div>
+</div>
+</div>
+<script src=https://btctranscripts.com/lib/jquery.min.js></script>
+<script src=https://btctranscripts.com/lib/popper.min.js></script>
+<script src=https://btctranscripts.com/js/bootstrap.min.js></script>
+<script type=text/javascript src=/plugins/lunr.min.js></script>
+<script type=text/javascript src=/plugins/auto-complete.js></script>
+<link href=/plugins/auto-complete.css rel=stylesheet>
+<script type=text/javascript>var baseurl="https://btctranscripts.com/"</script>
+<script type=text/javascript src=/plugins/search.js></script>
+<script type=text/javascript src=https://btctranscripts.com/js/custom.js></script>
+<script type=text/javascript src=/plugins/clipboard.js></script>
+<script>new ClipboardJS('.btn')</script>
+</body>
+</html>

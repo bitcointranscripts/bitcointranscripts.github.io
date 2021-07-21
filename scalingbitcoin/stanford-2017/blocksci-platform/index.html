@@ -1,14 +1,606 @@
-<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=canonical href=https://btctranscripts.com/scalingbitcoin/stanford-2017/blocksci-platform/><title>Blocksci Platform | ₿itcoin Transcripts</title><link href=https://btctranscripts.com/css/fontawesome.min.css rel=stylesheet><link rel=stylesheet href=https://btctranscripts.com/css/ace.min.css><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://btctranscripts.com/images/btctranscripts.png"><meta name=twitter:title content="Blocksci Platform"><meta name=twitter:description content="BlockSci: a Platform for Blockchain Science and Exploration
+<!doctype html><html><head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<link rel=canonical href=https://btctranscripts.com/scalingbitcoin/stanford-2017/blocksci-platform/>
+<title>
+Blocksci Platform | ₿itcoin Transcripts
+</title>
+<link href=https://btctranscripts.com/css/fontawesome.min.css rel=stylesheet>
+<link rel=stylesheet href=https://btctranscripts.com/css/ace.min.css>
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://btctranscripts.com/images/btctranscripts.png">
+<meta name=twitter:title content="Blocksci Platform">
+<meta name=twitter:description content="BlockSci: a Platform for Blockchain Science and Exploration
 Harry Kalodner, Princeton University (Arvind Narayanan etc.)
-Alright well, my name is Harry Kalodner, I am a student at Princeton University and I am here to tell you about a tool I built alon with some colleagues at Princeton which could be used for analyzing the blockchain in different ways. So far most of the talks today have been constructive about new ways to use the blockchain and protocols to slightly modify bitcoin in roder to improve privacy or scaling."></head><body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id=navbarMain><div class=container><div><a class=navbar-brand href=/>₿itcoin Transcripts</a></div><div class="collapse navbar-collapse" id=navbarMainCollapse><ul class="navbar-nav ml-auto"><li class=nav-item><a class=nav-link href=https://github.com/bitcointranscripts/bitcointranscripts target=_blank><i class="fab fa-github"></i></a></li></ul></div></div></nav><div class=container-fluid><div class=row><div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0"><button class="navbar-toggler navbar-toggler-right collapsed" type=button data-toggle=collapse data-target=#sidenav-left-collapse aria-controls=sidenav-left-collapse aria-expanded=false aria-label="Toggle navigation">
-<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse align-items-start flex-column" id=sidenav-left-collapse><form class="form-inline my-2 my-lg-0 searchbox"><input class="form-control mr-sm-2 w-100" data-search-input id=search-by type=text placeholder='Search (press "/")'></form><ul class="navbar-nav flex-column pt-3"><li data-nav-id=/advancing-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/><h6>Advancing Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/advancing-bitcoin/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2019/><h6>Advancing Bitcoin 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/advancing-bitcoin/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2020/><h6>Advancing Bitcoin 2020</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/andreas-antonopoulos/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/andreas-antonopoulos/><h6>Andreas Antonopoulos</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/austin-bitcoin-developers/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/austin-bitcoin-developers/><h6>Austin Bitcoin Developers</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/baltic-honeybadger/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/><h6>Baltic Honeybadger</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/baltic-honeybadger/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/2018/><h6>Baltic Honeybadger 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/baltic-honeybadger/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/2019/><h6>Baltic Honeybadger 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bit-block-boom/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bit-block-boom/><h6>Bit Block Boom</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bit-block-boom/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bit-block-boom/2019/><h6>Bit Block Boom 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-core-dev-tech/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/><h6>Bitcoin Core Dev Tech</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bitcoin-core-dev-tech/bitcoin-devcore-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/bitcoin-devcore-2015/><h6>Bitcoin Devcore Meetup (2015)</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-design/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-design/><h6>Bitcoin Design</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-magazine/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-magazine/><h6>Bitcoin Magazine</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoinops/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinops/><h6>Bitcoinops</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bitcoinops/schnorr-taproot-workshop-2019/ class="nav-item my-1"><a class="nav-link p-0" href=/bitcoinops/schnorr-taproot-workshop-2019/><h6>Schnorr Taproot Workshop 2019</h6></a></li></ul></li><li data-nav-id=/blockchain-protocol-analysis-security-engineering/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/><h6>Blockchain Protocol Analysis Security Eng</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/blockchain-protocol-analysis-security-engineering/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2017/><h6>Blockchain Protocol Analysis Security Engineering 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/blockchain-protocol-analysis-security-engineering/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2018/><h6>Blockchain Protocol Analysis Security Engineering 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/blockstream-webinars/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockstream-webinars/><h6>Blockstream Webinars</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/boltathon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/boltathon/><h6>Boltathon</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/breaking-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/><h6>Breaking Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/breaking-bitcoin/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/2017/><h6>Breaking Bitcoin 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/breaking-bitcoin/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/2019/><h6>Breaking Bitcoin 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/building-on-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/building-on-bitcoin/><h6>Building On Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/building-on-bitcoin/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/building-on-bitcoin/2018/><h6>Building On Bitcoin 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/chaincode-labs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-labs/><h6>Chaincode Labs</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/chaincode-labs/chaincode-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-labs/chaincode-podcast/><h6>Chaincode Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/chaincode-labs/chaincode-residency/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-labs/chaincode-residency/><h6>Chaincode Residency</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/chicago-bitdevs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chicago-bitdevs/><h6>Chicago Bitdevs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/coindesk-consensus-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coindesk-consensus-2016/><h6>Coindesk Consensus</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/coordination-of-decentralized-finance-workshop/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/><h6>Coordination of Decentralized Finance</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/coordination-of-decentralized-finance-workshop/2020-stanford/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/2020-stanford/><h6>2020 Stanford</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/cppcon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/><h6>CPPcon</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/cppcon/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/2017/><h6>CPPcon 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/cppcon/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/2020/><h6>CPPcon 2020</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/cryptoeconomic-systems/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cryptoeconomic-systems/><h6>Cryptoeconomic Systems</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/cryptoeconomic-systems/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cryptoeconomic-systems/2019/><h6>Cryptoeconomic Systems 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/dallas-bitcoin-symposium/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/dallas-bitcoin-symposium/><h6>Dallas Bitcoin Symposium</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/decentralized-financial-architecture-workshop/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/decentralized-financial-architecture-workshop/><h6>Decentralized Financial Architecture Workshop</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-developers-miners-meeting-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-developers-miners-meeting-2016/><h6>Developers-Miners Meeting</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/greg-maxwell/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/greg-maxwell/><h6>Greg Maxwell</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/grincon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/grincon/><h6>Grincon</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/grincon/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/grincon/2019/><h6>Grincon 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/honey-badger-diaries/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/honey-badger-diaries/><h6>Honey Badger Diaries</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/la-bitdevs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/la-bitdevs/><h6>LA Bitdevs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/layer2-summit/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/layer2-summit/><h6>Layer2 Summit</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/layer2-summit/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/layer2-summit/2018/><h6>Layer2 Summit 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/lets-talk-bitcoin-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lets-talk-bitcoin-podcast/><h6>Lets Talk Bitcoin Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/lightning-conference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-conference/><h6>Lightning Conference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/lightning-conference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-conference/2019/><h6>Lightning Conference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/lightning-hack-day/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-hack-day/><h6>Lightning Hack Day</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/london-bitcoin-devs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/london-bitcoin-devs/><h6>London Bitcoin Devs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/magicalcryptoconference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/magicalcryptoconference/><h6>Magicalcryptoconference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/magicalcryptoconference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/magicalcryptoconference/2019/><h6>Magicalcryptoconference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/misc/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/misc/><h6>Misc</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/><h6>MIT Bitcoin Expo</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2015/><h6>Mit Bitcoin Expo 2015</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2016/><h6>Mit Bitcoin Expo 2016</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2017/><h6>Mit Bitcoin Expo 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2018/><h6>Mit Bitcoin Expo 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2019/><h6>Mit Bitcoin Expo 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2020/><h6>Mit Bitcoin Expo 2020</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2021/><h6>Mit Bitcoin Expo 2021</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/munich-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/munich-meetup/><h6>Munich Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/noded-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/noded-podcast/><h6>Noded Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/realworldcrypto/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/><h6>Realworldcrypto</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/realworldcrypto/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/2018/><h6>Realworldcrypto 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/rebooting-web-of-trust/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/rebooting-web-of-trust/><h6>Rebooting Web Of Trust</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/rebooting-web-of-trust/2019-prague/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/rebooting-web-of-trust/2019-prague/><h6>2019 Prague</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/ruben-somsen/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/ruben-somsen/><h6>Ruben Somsen</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/satoshi-roundtable/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/satoshi-roundtable/><h6>Satoshi Roundtable</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/satoshi-roundtable/sr-004/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/satoshi-roundtable/sr-004/><h6>Sr 004</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/scalingbitcoin/ class="nav-item my-1 parent haschildren"><a class="nav-link p-0" href=/scalingbitcoin/><h6>Scaling Bitcoin Conference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/scalingbitcoin/montreal-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/montreal-2015/><h6>Montreal (2015)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/hong-kong-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/hong-kong-2015/><h6>Hong Kong (2015)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/milan-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/milan-2016/><h6>Milan (2016)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/stanford-2017/ class="nav-item my-1 parent haschildren"><a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/><h6>Stanford (2017)</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/scalingbitcoin/stanford-2017/edgeplusplus/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/edgeplusplus/><h6>Edgeplusplus</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/scalingbitcoin/tokyo-2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/><h6>Tokyo (2018)</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/scalingbitcoin/tokyo-2018/edgedevplusplus/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/edgedevplusplus/><h6>Edgedevplusplus</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/scalingbitcoin/tel-aviv-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/><h6>Tel Aviv (2019)</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/scalingbitcoin/tel-aviv-2019/edgedevplusplus/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/edgedevplusplus/><h6>Edgedevplusplus</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li></ul></li><li data-nav-id=/sf-bitcoin-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/sf-bitcoin-meetup/><h6>SF Bitcoin Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/simons-institute/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/simons-institute/><h6>Simons Institute</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/stanford-blockchain-conference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/><h6>Stanford Blockchain</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/stanford-blockchain-conference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/2019/><h6>Stanford Blockchain Conference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/stanford-blockchain-conference/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/2020/><h6>Stanford Blockchain Conference 2020</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/stephan-livera-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stephan-livera-podcast/><h6>Stephan Livera Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/sydney-bitcoin-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/sydney-bitcoin-meetup/><h6>Sydney Bitcoin Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/texas-bitcoin-conference-2014/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/texas-bitcoin-conference-2014/><h6>Texas Bitcoin Conference</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/tftc-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tftc-podcast/><h6>TFTC Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/verifiable-delay-functions/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/verifiable-delay-functions/><h6>Verifiable Delay Functions</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/verifiable-delay-functions/vdf-day-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/verifiable-delay-functions/vdf-day-2019/><h6>Vdf Day 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/vr-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/vr-bitcoin/><h6>VR Bitcoin</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/w3-blockchain-workshop-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/w3-blockchain-workshop-2016/><h6>W3 Blockchain Workshop</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/wasabi-research-club/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/wasabi-research-club/><h6>Wasabi Research Club</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/what-bitcoin-did-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/what-bitcoin-did-podcast/><h6>What Bitcoin Did Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></div></nav></div><div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky"><div class=docs-toc><nav id=TableOfContents><ul><li><a href=#qa>Q&A</a></li></ul></nav></div></div><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3"><a href=/>Home</a>
-&lt; <a href=/scalingbitcoin/>Scaling Bitcoin Conference</a>
-&lt; <a href=/scalingbitcoin/stanford-2017/>Stanford (2017)</a>
-&lt; Blocksci Platform<h1>Blocksci Platform</h1><p><i>Transcript By: Bryan Bishop</i></p><p>Tags:
-<a href=/tags/privacy>Privacy</a></p><p>Category:
-<a href=/categories/conference>Conference</a></p><p>BlockSci: a Platform for Blockchain Science and Exploration</p><p>Harry Kalodner, Princeton University (Arvind Narayanan etc.)</p><p>Alright well, my name is Harry Kalodner, I am a student at Princeton University and I am here to tell you about a tool I built alon with some colleagues at Princeton which could be used for analyzing the blockchain in different ways. So far most of the talks today have been constructive about new ways to use the blockchain and protocols to slightly modify bitcoin in roder to improve privacy or scaling. I am going ot take a step back and look at scaling demands beyond &mldr; to look at why are blocks full?</p><p>Why do we need analytics? We need to be able to motivate the scaling solutions. It&rsquo;s very cool to just present an idea and say it would increase htorughput in this way. We want ot be able to know how that is going ot effect actual kind of use cases of bitcoin. And so, using analytics, we can deliver new areas of improvement by getting better understanding of what kinds of transactions and usecases people have in practice. We can categorize these cases to see whether scaling effects some use cases more than others. It&rsquo;s important to keep a general view of the whole ecosystem rathe rthan getting swamped in the technical details and understanding the circumstances in which they occur.</p><p>I am going to start by talking about some interesting economic questions we can ask about bitcoin. These are all use cases for blocksci. The second part of my talk is some more details about blocksci is built and what blocksci is.</p><p>Can we tell the difference between organic and artificial demand for bitcoin? For instance, are blocks totally full? Is the mempool overloaded because there are a lot of people doing transactions? Or is there a spam attack going on? When you&rsquo;re counting transactions in the mempool, it might look the same by that metric alone.</p><p>We can differentiate between different types of demand for block space. If we&rsquo;re looking at how much bitcoin is moving in a given day, well, the total number is going to have a lot of noise in it. It&rsquo;s going ot include change addresses, people sending money to htemselves, al sorts of stuff. So we want to differentiate how much bitcoin is going to be transferred between people and businesses and so on. So is it just churn? Also, is it a store of value, or a medium of exchange? What is the viscosity of bitcoin? Are people just investors which seems like a good idea right now, or are people buying coffee? Is there serious exchange of currency for goods going on? And how do we detect organic demand from a wide base of users, or just malicious spam? Is there just one particular business doing something that generates a lot of transaction load? It&rsquo;s not that hard to overload the network.</p><p>One thing we can look at is the velocity of bitcoin. This idea is just looking at how much bitcoin has moved in a day, like bitcoin days destroyed. We can look at output amonuts and add them up in a signel given day. There&rsquo;s no rhyme or reason as to what goes on in bitcoin. People are sending money in no discernable pattern and you can&rsquo;t really learn anything. But we can clean this up a lot and try to figure out how much money is actually being moved in bitcoin. We can discount self-churn. That&rsquo;s change addresses, that&rsquo;s send to self, and to do that, you need to be able to have a good heuristic understanding of blockchain based on current whatever state of the art address clustering you have and linkability.</p><p>What&rsquo;s interesting here is that if you look at our orange adjusted line, you see something that makes more sense. Bitcoin has been fairly steady in its demad and just recently in this year started a gradual rise. This is what I like to think about- people sending each other bitcoin in exchange for goods or services or what have you. Anther thing you can look at is you can try to see, you can try to get some sort of handle of how much of bitcoin&rsquo;s volume is people going to exchanges ,buying it, and holdong on to it. One interesting thing we did here is that we can correlate between&mldr; the blue line is percentage of outputs that have moved in the last month. Are the outputs just sitting? Or are people spending their UTXOs and we correlated that with trade volume from exchanges and their data feeds. The spikes are extremely correlated. Basically any time a lot of bitcoin is being moved around, right now it looks like people buying and selling on exchanges, based on this correlation.</p><p>And turning into the details of how blocksci helps figure this out.. one thing we implemented on top of blocksci, and again I haven&rsquo;t described blocksci yet, the ability to implement clustering heuristics. There was mention in earlier talks that there&rsquo;s a lot you can do, starting from work from a while ago, to link addresses together and try to understand what wallets&mldr; to see a single user controlling multiple addresses. We can look at change addresses, address reuse, shared inputs, there are other specific methods we can use, like to estimate what calculation algorithm was used for coin selection etc&mldr; And there&rsquo;s a lot of choices to make. There&rsquo;s nothing clear. Having a system where we can try out multiple combinations of heuristics to see what effects they have, and that&rsquo;s a powerful thing. And this compares to most of the current state of the art clustering which is in their defense is leaps and bounds ahead of what we have produced in blocksci- they have a lot of data sources, but we only look at blockchain. But they don&rsquo;t give you control over what you want to do and linking together addresses. Blocksci allows you to build arbitrary heuristics for connecting addresses for &mldr;</p><p>The real sell for blocksci is that it is capable of clustering the entire blockchain in under 10 minutes. You can try out different weights to different heuristics and try out different rules to get new results.</p><p>There are a bunch of tools out there for analyzing bitcoin data in different ways. All the different ones I have seen is that they have a number of differnet problems&ndash; a lot of closed source services out there that will give you interesting data about the blockchain but you have no way of validating or verifying that data. As someone who is interested in decentralized systems, it seems weird to trust a central party about bitcoin analytics when we have blockchain data ourselves. Many of the tools have limited functionality, they were specifically designed to calculate some statistic, and their use stops there. So making a tool that can answer any sort of question that you might want to pose is a really powerful thing. Further, there are a lot of tools that run into problems of insufficient performance. Anyone who has tried to import the bitcoin blockchain into a general purpose database, it&rsquo;s not fast, and it&rsquo;s huge. So having a tool that gets raound that issue, I think that might be better. So the solution that solves all of those issues is&mldr; blocksci.</p><p>I am going to throw up here the architecture diagram. I wont go into all the details. We have a paper out there. The code is also public on github. I want to talk about the big picture of how&mldr; &mldr; we have a custom database format, designed by hand to be compact and highly localized. We use a protocol independent format so that it can be made to work with bitcoin but also bitcoin testnet or litecoin or namecoin or any number of other blockchains. On the other side of that, we have the parser which actually does the owrk of producing this data format. And so, and that has the benefit of, which some other tools have, but I think hasn&rsquo;t been done super nicely, of providing incremental updates as new blocks come in, it can update the databsae, handle reorgs, which are not fun to handle, but it can be done in a way that can provide a static view of the blockchain to our analysis library.</p><p>Just a small shot of what it&rsquo;s like to use block sci</p><pre><code>fees = [sum(block.fees) for block in chain.range('2017')]
+Alright well, my name is Harry Kalodner, I am a student at Princeton University and I am here to tell you about a tool I built alon with some colleagues at Princeton which could be used for analyzing the blockchain in different ways. So far most of the talks today have been constructive about new ways to use the blockchain and protocols to slightly modify bitcoin in roder to improve privacy or scaling.">
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id=navbarMain>
+<div class=container>
+<div>
+<a class=navbar-brand href=/>
+₿itcoin Transcripts
+</a>
+</div>
+<div class="collapse navbar-collapse" id=navbarMainCollapse>
+<ul class="navbar-nav ml-auto">
+<li class=nav-item>
+<a class=nav-link href=https://github.com/bitcointranscripts/bitcointranscripts target=_blank>
+<i class="fab fa-github"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<div class=container-fluid>
+<div class=row>
+<div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
+<button class="navbar-toggler navbar-toggler-right collapsed" type=button data-toggle=collapse data-target=#sidenav-left-collapse aria-controls=sidenav-left-collapse aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span>
+</button>
+<div class="collapse navbar-collapse align-items-start flex-column" id=sidenav-left-collapse>
+<form class="form-inline my-2 my-lg-0 searchbox">
+<input class="form-control mr-sm-2 w-100" data-search-input id=search-by type=text placeholder='Search (press "/")'>
+</form>
+<ul class="navbar-nav flex-column pt-3">
+<li data-nav-id=/advancing-bitcoin/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/advancing-bitcoin/><h6>Advancing Bitcoin</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/advancing-bitcoin/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/advancing-bitcoin/2019/><h6>Advancing Bitcoin 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/advancing-bitcoin/2020/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/advancing-bitcoin/2020/><h6>Advancing Bitcoin 2020</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/andreas-antonopoulos/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/andreas-antonopoulos/><h6>Andreas Antonopoulos</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/austin-bitcoin-developers/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/austin-bitcoin-developers/><h6>Austin Bitcoin Developers</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/baltic-honeybadger/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/baltic-honeybadger/><h6>Baltic Honeybadger</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/baltic-honeybadger/2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/baltic-honeybadger/2018/><h6>Baltic Honeybadger 2018</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/baltic-honeybadger/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/baltic-honeybadger/2019/><h6>Baltic Honeybadger 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/bit-block-boom/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bit-block-boom/><h6>Bit Block Boom</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/bit-block-boom/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bit-block-boom/2019/><h6>Bit Block Boom 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/bitcoin-core-dev-tech/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bitcoin-core-dev-tech/><h6>Bitcoin Core Dev Tech</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/bitcoin-core-dev-tech/bitcoin-devcore-2015/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bitcoin-core-dev-tech/bitcoin-devcore-2015/><h6>Bitcoin Devcore Meetup (2015)</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/bitcoin-design/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bitcoin-design/><h6>Bitcoin Design</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/bitcoin-magazine/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bitcoin-magazine/><h6>Bitcoin Magazine</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/bitcoinops/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bitcoinops/><h6>Bitcoinops</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/bitcoinops/schnorr-taproot-workshop-2019/ class="nav-item my-1">
+<a class="nav-link p-0" href=/bitcoinops/schnorr-taproot-workshop-2019/><h6>Schnorr Taproot Workshop 2019</h6></a>
+</li>
+</ul>
+</li>
+<li data-nav-id=/blockchain-protocol-analysis-security-engineering/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/><h6>Blockchain Protocol Analysis Security Eng</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/blockchain-protocol-analysis-security-engineering/2017/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2017/><h6>Blockchain Protocol Analysis Security Engineering 2017</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/blockchain-protocol-analysis-security-engineering/2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2018/><h6>Blockchain Protocol Analysis Security Engineering 2018</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/blockstream-webinars/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/blockstream-webinars/><h6>Blockstream Webinars</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/boltathon/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/boltathon/><h6>Boltathon</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/breaking-bitcoin/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/breaking-bitcoin/><h6>Breaking Bitcoin</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/breaking-bitcoin/2017/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/breaking-bitcoin/2017/><h6>Breaking Bitcoin 2017</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/breaking-bitcoin/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/breaking-bitcoin/2019/><h6>Breaking Bitcoin 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/building-on-bitcoin/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/building-on-bitcoin/><h6>Building On Bitcoin</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/building-on-bitcoin/2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/building-on-bitcoin/2018/><h6>Building On Bitcoin 2018</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/chaincode-labs/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/chaincode-labs/><h6>Chaincode Labs</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/chaincode-labs/chaincode-podcast/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/chaincode-labs/chaincode-podcast/><h6>Chaincode Podcast</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/chaincode-labs/chaincode-residency/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/chaincode-labs/chaincode-residency/><h6>Chaincode Residency</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/chicago-bitdevs/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/chicago-bitdevs/><h6>Chicago Bitdevs</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/coindesk-consensus-2016/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/coindesk-consensus-2016/><h6>Coindesk Consensus</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/coordination-of-decentralized-finance-workshop/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/><h6>Coordination of Decentralized Finance</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/coordination-of-decentralized-finance-workshop/2020-stanford/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/2020-stanford/><h6>2020 Stanford</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/cppcon/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/cppcon/><h6>CPPcon</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/cppcon/2017/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/cppcon/2017/><h6>CPPcon 2017</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/cppcon/2020/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/cppcon/2020/><h6>CPPcon 2020</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/cryptoeconomic-systems/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/cryptoeconomic-systems/><h6>Cryptoeconomic Systems</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/cryptoeconomic-systems/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/cryptoeconomic-systems/2019/><h6>Cryptoeconomic Systems 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/dallas-bitcoin-symposium/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/dallas-bitcoin-symposium/><h6>Dallas Bitcoin Symposium</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/decentralized-financial-architecture-workshop/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/decentralized-financial-architecture-workshop/><h6>Decentralized Financial Architecture Workshop</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/bitcoin-developers-miners-meeting-2016/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bitcoin-developers-miners-meeting-2016/><h6>Developers-Miners Meeting</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/greg-maxwell/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/greg-maxwell/><h6>Greg Maxwell</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/grincon/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/grincon/><h6>Grincon</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/grincon/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/grincon/2019/><h6>Grincon 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/honey-badger-diaries/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/honey-badger-diaries/><h6>Honey Badger Diaries</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/la-bitdevs/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/la-bitdevs/><h6>LA Bitdevs</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/layer2-summit/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/layer2-summit/><h6>Layer2 Summit</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/layer2-summit/2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/layer2-summit/2018/><h6>Layer2 Summit 2018</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/lets-talk-bitcoin-podcast/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/lets-talk-bitcoin-podcast/><h6>Lets Talk Bitcoin Podcast</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/lightning-conference/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/lightning-conference/><h6>Lightning Conference</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/lightning-conference/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/lightning-conference/2019/><h6>Lightning Conference 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/lightning-hack-day/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/lightning-hack-day/><h6>Lightning Hack Day</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/london-bitcoin-devs/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/london-bitcoin-devs/><h6>London Bitcoin Devs</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/magicalcryptoconference/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/magicalcryptoconference/><h6>Magicalcryptoconference</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/magicalcryptoconference/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/magicalcryptoconference/2019/><h6>Magicalcryptoconference 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/misc/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/misc/><h6>Misc</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/><h6>MIT Bitcoin Expo</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2015/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2015/><h6>Mit Bitcoin Expo 2015</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2016/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2016/><h6>Mit Bitcoin Expo 2016</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2017/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2017/><h6>Mit Bitcoin Expo 2017</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2018/><h6>Mit Bitcoin Expo 2018</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2019/><h6>Mit Bitcoin Expo 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2020/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2020/><h6>Mit Bitcoin Expo 2020</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2021/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2021/><h6>Mit Bitcoin Expo 2021</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/munich-meetup/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/munich-meetup/><h6>Munich Meetup</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/noded-podcast/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/noded-podcast/><h6>Noded Podcast</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/realworldcrypto/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/realworldcrypto/><h6>Realworldcrypto</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/realworldcrypto/2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/realworldcrypto/2018/><h6>Realworldcrypto 2018</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/rebooting-web-of-trust/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/rebooting-web-of-trust/><h6>Rebooting Web Of Trust</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/rebooting-web-of-trust/2019-prague/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/rebooting-web-of-trust/2019-prague/><h6>2019 Prague</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/ruben-somsen/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/ruben-somsen/><h6>Ruben Somsen</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/satoshi-roundtable/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/satoshi-roundtable/><h6>Satoshi Roundtable</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/satoshi-roundtable/sr-004/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/satoshi-roundtable/sr-004/><h6>Sr 004</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/scalingbitcoin/ class="nav-item my-1 parent haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/><h6>Scaling Bitcoin Conference</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/scalingbitcoin/montreal-2015/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/montreal-2015/><h6>Montreal (2015)</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/scalingbitcoin/hong-kong-2015/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/hong-kong-2015/><h6>Hong Kong (2015)</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/scalingbitcoin/milan-2016/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/milan-2016/><h6>Milan (2016)</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/scalingbitcoin/stanford-2017/ class="nav-item my-1 parent haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/><h6>Stanford (2017)</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/scalingbitcoin/stanford-2017/edgeplusplus/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/edgeplusplus/><h6>Edgeplusplus</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/scalingbitcoin/tokyo-2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/><h6>Tokyo (2018)</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/scalingbitcoin/tokyo-2018/edgedevplusplus/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/edgedevplusplus/><h6>Edgedevplusplus</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/scalingbitcoin/tel-aviv-2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/><h6>Tel Aviv (2019)</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/scalingbitcoin/tel-aviv-2019/edgedevplusplus/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/edgedevplusplus/><h6>Edgedevplusplus</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/sf-bitcoin-meetup/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/sf-bitcoin-meetup/><h6>SF Bitcoin Meetup</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/simons-institute/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/simons-institute/><h6>Simons Institute</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/stanford-blockchain-conference/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/stanford-blockchain-conference/><h6>Stanford Blockchain</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/stanford-blockchain-conference/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/stanford-blockchain-conference/2019/><h6>Stanford Blockchain Conference 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/stanford-blockchain-conference/2020/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/stanford-blockchain-conference/2020/><h6>Stanford Blockchain Conference 2020</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/stephan-livera-podcast/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/stephan-livera-podcast/><h6>Stephan Livera Podcast</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/sydney-bitcoin-meetup/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/sydney-bitcoin-meetup/><h6>Sydney Bitcoin Meetup</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/texas-bitcoin-conference-2014/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/texas-bitcoin-conference-2014/><h6>Texas Bitcoin Conference</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/tftc-podcast/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/tftc-podcast/><h6>TFTC Podcast</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/verifiable-delay-functions/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/verifiable-delay-functions/><h6>Verifiable Delay Functions</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/verifiable-delay-functions/vdf-day-2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/verifiable-delay-functions/vdf-day-2019/><h6>Vdf Day 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/vr-bitcoin/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/vr-bitcoin/><h6>VR Bitcoin</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/w3-blockchain-workshop-2016/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/w3-blockchain-workshop-2016/><h6>W3 Blockchain Workshop</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/wasabi-research-club/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/wasabi-research-club/><h6>Wasabi Research Club</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/what-bitcoin-did-podcast/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/what-bitcoin-did-podcast/><h6>What Bitcoin Did Podcast</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+<div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky"><div class=docs-toc>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#qa>Q&A</a></li>
+</ul>
+</nav>
+</div>
+</div>
+<div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+<a href=/>Home</a>
+&lt; <a href=/scalingbitcoin/>
+Scaling Bitcoin Conference
+</a>
+&lt; <a href=/scalingbitcoin/stanford-2017/>
+Stanford (2017)
+</a>
+&lt; Blocksci Platform
+<h1>Blocksci Platform</h1>
+<p><i>Transcript By: Bryan Bishop</i></p>
+<p>Tags:
+<a href=/tags/privacy>Privacy</a></p>
+<p>Category:
+<a href=/categories/conference>Conference</a></p>
+<p>BlockSci: a Platform for Blockchain Science and Exploration</p>
+<p>Harry Kalodner, Princeton University (Arvind Narayanan etc.)</p>
+<p>Alright well, my name is Harry Kalodner, I am a student at Princeton University and I am here to tell you about a tool I built alon with some colleagues at Princeton which could be used for analyzing the blockchain in different ways. So far most of the talks today have been constructive about new ways to use the blockchain and protocols to slightly modify bitcoin in roder to improve privacy or scaling. I am going ot take a step back and look at scaling demands beyond &mldr; to look at why are blocks full?</p>
+<p>Why do we need analytics? We need to be able to motivate the scaling solutions. It&rsquo;s very cool to just present an idea and say it would increase htorughput in this way. We want ot be able to know how that is going ot effect actual kind of use cases of bitcoin. And so, using analytics, we can deliver new areas of improvement by getting better understanding of what kinds of transactions and usecases people have in practice. We can categorize these cases to see whether scaling effects some use cases more than others. It&rsquo;s important to keep a general view of the whole ecosystem rathe rthan getting swamped in the technical details and understanding the circumstances in which they occur.</p>
+<p>I am going to start by talking about some interesting economic questions we can ask about bitcoin. These are all use cases for blocksci. The second part of my talk is some more details about blocksci is built and what blocksci is.</p>
+<p>Can we tell the difference between organic and artificial demand for bitcoin? For instance, are blocks totally full? Is the mempool overloaded because there are a lot of people doing transactions? Or is there a spam attack going on? When you&rsquo;re counting transactions in the mempool, it might look the same by that metric alone.</p>
+<p>We can differentiate between different types of demand for block space. If we&rsquo;re looking at how much bitcoin is moving in a given day, well, the total number is going to have a lot of noise in it. It&rsquo;s going ot include change addresses, people sending money to htemselves, al sorts of stuff. So we want to differentiate how much bitcoin is going to be transferred between people and businesses and so on. So is it just churn? Also, is it a store of value, or a medium of exchange? What is the viscosity of bitcoin? Are people just investors which seems like a good idea right now, or are people buying coffee? Is there serious exchange of currency for goods going on? And how do we detect organic demand from a wide base of users, or just malicious spam? Is there just one particular business doing something that generates a lot of transaction load? It&rsquo;s not that hard to overload the network.</p>
+<p>One thing we can look at is the velocity of bitcoin. This idea is just looking at how much bitcoin has moved in a day, like bitcoin days destroyed. We can look at output amonuts and add them up in a signel given day. There&rsquo;s no rhyme or reason as to what goes on in bitcoin. People are sending money in no discernable pattern and you can&rsquo;t really learn anything. But we can clean this up a lot and try to figure out how much money is actually being moved in bitcoin. We can discount self-churn. That&rsquo;s change addresses, that&rsquo;s send to self, and to do that, you need to be able to have a good heuristic understanding of blockchain based on current whatever state of the art address clustering you have and linkability.</p>
+<p>What&rsquo;s interesting here is that if you look at our orange adjusted line, you see something that makes more sense. Bitcoin has been fairly steady in its demad and just recently in this year started a gradual rise. This is what I like to think about- people sending each other bitcoin in exchange for goods or services or what have you. Anther thing you can look at is you can try to see, you can try to get some sort of handle of how much of bitcoin&rsquo;s volume is people going to exchanges ,buying it, and holdong on to it. One interesting thing we did here is that we can correlate between&mldr; the blue line is percentage of outputs that have moved in the last month. Are the outputs just sitting? Or are people spending their UTXOs and we correlated that with trade volume from exchanges and their data feeds. The spikes are extremely correlated. Basically any time a lot of bitcoin is being moved around, right now it looks like people buying and selling on exchanges, based on this correlation.</p>
+<p>And turning into the details of how blocksci helps figure this out.. one thing we implemented on top of blocksci, and again I haven&rsquo;t described blocksci yet, the ability to implement clustering heuristics. There was mention in earlier talks that there&rsquo;s a lot you can do, starting from work from a while ago, to link addresses together and try to understand what wallets&mldr; to see a single user controlling multiple addresses. We can look at change addresses, address reuse, shared inputs, there are other specific methods we can use, like to estimate what calculation algorithm was used for coin selection etc&mldr; And there&rsquo;s a lot of choices to make. There&rsquo;s nothing clear. Having a system where we can try out multiple combinations of heuristics to see what effects they have, and that&rsquo;s a powerful thing. And this compares to most of the current state of the art clustering which is in their defense is leaps and bounds ahead of what we have produced in blocksci- they have a lot of data sources, but we only look at blockchain. But they don&rsquo;t give you control over what you want to do and linking together addresses. Blocksci allows you to build arbitrary heuristics for connecting addresses for &mldr;</p>
+<p>The real sell for blocksci is that it is capable of clustering the entire blockchain in under 10 minutes. You can try out different weights to different heuristics and try out different rules to get new results.</p>
+<p>There are a bunch of tools out there for analyzing bitcoin data in different ways. All the different ones I have seen is that they have a number of differnet problems&ndash; a lot of closed source services out there that will give you interesting data about the blockchain but you have no way of validating or verifying that data. As someone who is interested in decentralized systems, it seems weird to trust a central party about bitcoin analytics when we have blockchain data ourselves. Many of the tools have limited functionality, they were specifically designed to calculate some statistic, and their use stops there. So making a tool that can answer any sort of question that you might want to pose is a really powerful thing. Further, there are a lot of tools that run into problems of insufficient performance. Anyone who has tried to import the bitcoin blockchain into a general purpose database, it&rsquo;s not fast, and it&rsquo;s huge. So having a tool that gets raound that issue, I think that might be better. So the solution that solves all of those issues is&mldr; blocksci.</p>
+<p>I am going to throw up here the architecture diagram. I wont go into all the details. We have a paper out there. The code is also public on github. I want to talk about the big picture of how&mldr; &mldr; we have a custom database format, designed by hand to be compact and highly localized. We use a protocol independent format so that it can be made to work with bitcoin but also bitcoin testnet or litecoin or namecoin or any number of other blockchains. On the other side of that, we have the parser which actually does the owrk of producing this data format. And so, and that has the benefit of, which some other tools have, but I think hasn&rsquo;t been done super nicely, of providing incremental updates as new blocks come in, it can update the databsae, handle reorgs, which are not fun to handle, but it can be done in a way that can provide a static view of the blockchain to our analysis library.</p>
+<p>Just a small shot of what it&rsquo;s like to use block sci</p>
+<pre><code>fees = [sum(block.fees) for block in chain.range('2017')]
 times = [block.time for block in chain.range('2017')]
 converter = blocksci.CurrencyConverter()
 df = pandas.DataFrame({&quot;Fee&quot;:fees}, index=times)
 df = converter.satoshi_to_currency_df(df, chain)
-</code></pre><p>We want to be able to hand this over to economists and get their insights, and give them a tool that they can really use to do good work. So that&rsquo;s really my favorite thing about blocksci, the broad applicability of it. We have this python interface for it, and for people who know python it&rsquo;s quite easy to use. As you may have seen in the previous example, we can easily incorporate external data feeds. We can convert between BTC and your local currency. We have support for standard script types. For a given pubkey, we can find everywhere it appears on the blockchain, and you can see if it was pay-to-pubkey, pay-to-scripthash, inside of P2WPKH, we can deduplicate on all of those because of this nice database format.</p><p>The big thing with blocksci and the thing I want to highlight is the performance. And kind of, I&rsquo;m really excited about this, we can iterate on every input and output in the blockchain, it scales pretty linearly, in about 10.3 seconds. So what that means is that the processing capability here&ndash; and this is all on a single machine and we just run on an ec2 instance with 64 GB memory. So nothing hard to setup. Any of you could do that, it&rsquo;s available online. So blocksci enables you to scale what you&rsquo;re looking at to levels that other tools can&rsquo;t achieve.</p><p>S ojust a few tidbits of how we achieve this performance. We have a highly customized data format which is all coded in C++. We use memory mapping which allows you to directly load files into memory and allows the OS to efficiently decide what to load and how to access your data. It&rsquo;s all in C++ which gives it serious speed. And a caveat to the earlier performance slide&ndash; the python interface is great to use, but without compiling with cython, it&rsquo;s a few orders of magnitude. You have to use the C++ library if you want to achieve these speeds. Any reasonable query can be completed in about half an hour.</p><p>So far I have focused on scalability implications related to bitcoin. I want to take a mention to second a few other things that blocksci can do. We can look into privacy of multisig. One of the purported uses of multisig was for organizations to manage their funds so that they can distribute keys to multiple people. But this allows leakage of private data, you can see some keys, acccess patterns ,etc. We looked at places where the keys used for a multisig changed slightly. For instance, if there was a 3-of-3 multisig, we found locations where there was an input and output where only one of the 3 keys changed. And that is a fairly substantial violation in organizational privacy if outside observers can tell when&mldr; it might just be a key swap, or maybe you booted someone out for control of the funds. You can explore this with blocksci, and you can see how much money is in outputs that exhibit these signs. So looking at the last few years, there are recently as much as 10k transactions per month with these properties, and a fair amount of money involved in them. These are serious privacy violations.</p><p>&ldquo;When the cookie mets the blockchain: Privacy risks of web payments via cryptocurrencies&rdquo;</p><p>&ldquo;BlockSci: Design and applications of a blockchain analysis platform&rdquo;</p><h1 id=qa>Q&A</h1><p>Q: What indexes do you need on Bitcoin Core?</p><p>A: The default setup. You don&rsquo;t need txindex. We parse all of the block files ourselves without using any sort of indexing. The reason for this is that we would like to be able to have blocksci running concurrently with a node. This is not possible with bitcoin core&rsquo;s current leveldb indexes which only support single reader.</p><div class=row></div></div></div></div><script src=https://btctranscripts.com/lib/jquery.min.js></script><script src=https://btctranscripts.com/lib/popper.min.js></script><script src=https://btctranscripts.com/js/bootstrap.min.js></script><script type=text/javascript src=/plugins/lunr.min.js></script><script type=text/javascript src=/plugins/auto-complete.js></script><link href=/plugins/auto-complete.css rel=stylesheet><script type=text/javascript>var baseurl="https://btctranscripts.com/"</script><script type=text/javascript src=/plugins/search.js></script><script type=text/javascript src=https://btctranscripts.com/js/custom.js></script><script type=text/javascript src=/plugins/clipboard.js></script><script>new ClipboardJS('.btn')</script></body></html>
+</code></pre>
+<p>We want to be able to hand this over to economists and get their insights, and give them a tool that they can really use to do good work. So that&rsquo;s really my favorite thing about blocksci, the broad applicability of it. We have this python interface for it, and for people who know python it&rsquo;s quite easy to use. As you may have seen in the previous example, we can easily incorporate external data feeds. We can convert between BTC and your local currency. We have support for standard script types. For a given pubkey, we can find everywhere it appears on the blockchain, and you can see if it was pay-to-pubkey, pay-to-scripthash, inside of P2WPKH, we can deduplicate on all of those because of this nice database format.</p>
+<p>The big thing with blocksci and the thing I want to highlight is the performance. And kind of, I&rsquo;m really excited about this, we can iterate on every input and output in the blockchain, it scales pretty linearly, in about 10.3 seconds. So what that means is that the processing capability here&ndash; and this is all on a single machine and we just run on an ec2 instance with 64 GB memory. So nothing hard to setup. Any of you could do that, it&rsquo;s available online. So blocksci enables you to scale what you&rsquo;re looking at to levels that other tools can&rsquo;t achieve.</p>
+<p>S ojust a few tidbits of how we achieve this performance. We have a highly customized data format which is all coded in C++. We use memory mapping which allows you to directly load files into memory and allows the OS to efficiently decide what to load and how to access your data. It&rsquo;s all in C++ which gives it serious speed. And a caveat to the earlier performance slide&ndash; the python interface is great to use, but without compiling with cython, it&rsquo;s a few orders of magnitude. You have to use the C++ library if you want to achieve these speeds. Any reasonable query can be completed in about half an hour.</p>
+<p>So far I have focused on scalability implications related to bitcoin. I want to take a mention to second a few other things that blocksci can do. We can look into privacy of multisig. One of the purported uses of multisig was for organizations to manage their funds so that they can distribute keys to multiple people. But this allows leakage of private data, you can see some keys, acccess patterns ,etc. We looked at places where the keys used for a multisig changed slightly. For instance, if there was a 3-of-3 multisig, we found locations where there was an input and output where only one of the 3 keys changed. And that is a fairly substantial violation in organizational privacy if outside observers can tell when&mldr; it might just be a key swap, or maybe you booted someone out for control of the funds. You can explore this with blocksci, and you can see how much money is in outputs that exhibit these signs. So looking at the last few years, there are recently as much as 10k transactions per month with these properties, and a fair amount of money involved in them. These are serious privacy violations.</p>
+<p>&ldquo;When the cookie mets the blockchain: Privacy risks of web payments via cryptocurrencies&rdquo;</p>
+<p>&ldquo;BlockSci: Design and applications of a blockchain analysis platform&rdquo;</p>
+<h1 id=qa>Q&A</h1>
+<p>Q: What indexes do you need on Bitcoin Core?</p>
+<p>A: The default setup. You don&rsquo;t need txindex. We parse all of the block files ourselves without using any sort of indexing. The reason for this is that we would like to be able to have blocksci running concurrently with a node. This is not possible with bitcoin core&rsquo;s current leveldb indexes which only support single reader.</p>
+<div class=row></div>
+</div>
+</div>
+</div>
+<script src=https://btctranscripts.com/lib/jquery.min.js></script>
+<script src=https://btctranscripts.com/lib/popper.min.js></script>
+<script src=https://btctranscripts.com/js/bootstrap.min.js></script>
+<script type=text/javascript src=/plugins/lunr.min.js></script>
+<script type=text/javascript src=/plugins/auto-complete.js></script>
+<link href=/plugins/auto-complete.css rel=stylesheet>
+<script type=text/javascript>var baseurl="https://btctranscripts.com/"</script>
+<script type=text/javascript src=/plugins/search.js></script>
+<script type=text/javascript src=https://btctranscripts.com/js/custom.js></script>
+<script type=text/javascript src=/plugins/clipboard.js></script>
+<script>new ClipboardJS('.btn')</script>
+</body>
+</html>

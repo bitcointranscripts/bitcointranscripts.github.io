@@ -1,10 +1,659 @@
-<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=canonical href=https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/zerolink-sudoku/><title>Zerolink Sudoku | ₿itcoin Transcripts</title><link href=https://btctranscripts.com/css/fontawesome.min.css rel=stylesheet><link rel=stylesheet href=https://btctranscripts.com/css/ace.min.css><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://btctranscripts.com/images/btctranscripts.png"><meta name=twitter:title content="Zerolink Sudoku"><meta name=twitter:description content="ZeroLink sudoku: real vs perceived anonymity
+<!doctype html><html><head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<link rel=canonical href=https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/zerolink-sudoku/>
+<title>
+Zerolink Sudoku | ₿itcoin Transcripts
+</title>
+<link href=https://btctranscripts.com/css/fontawesome.min.css rel=stylesheet>
+<link rel=stylesheet href=https://btctranscripts.com/css/ace.min.css>
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://btctranscripts.com/images/btctranscripts.png">
+<meta name=twitter:title content="Zerolink Sudoku">
+<meta name=twitter:description content="ZeroLink sudoku: real vs perceived anonymity
 Yuval Kogman
 https://twitter.com/kanzure/status/1171788514326908928
-Introduction I used to work in software. I transitioned to something else, but bitcoin changed my mind. This talk is a little bit of a work in progress. This was started by a guy named Aviv Milner who is involved with Wasabi. He roped me into this and then subsequently became unavailable. So this is basically me presenting his work. It&rsquo;s been severely &mldr;&mldr;."></head><body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id=navbarMain><div class=container><div><a class=navbar-brand href=/>₿itcoin Transcripts</a></div><div class="collapse navbar-collapse" id=navbarMainCollapse><ul class="navbar-nav ml-auto"><li class=nav-item><a class=nav-link href=https://github.com/bitcointranscripts/bitcointranscripts target=_blank><i class="fab fa-github"></i></a></li></ul></div></div></nav><div class=container-fluid><div class=row><div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0"><button class="navbar-toggler navbar-toggler-right collapsed" type=button data-toggle=collapse data-target=#sidenav-left-collapse aria-controls=sidenav-left-collapse aria-expanded=false aria-label="Toggle navigation">
-<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse align-items-start flex-column" id=sidenav-left-collapse><form class="form-inline my-2 my-lg-0 searchbox"><input class="form-control mr-sm-2 w-100" data-search-input id=search-by type=text placeholder='Search (press "/")'></form><ul class="navbar-nav flex-column pt-3"><li data-nav-id=/advancing-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/><h6>Advancing Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/advancing-bitcoin/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2019/><h6>Advancing Bitcoin 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/advancing-bitcoin/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2020/><h6>Advancing Bitcoin 2020</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/andreas-antonopoulos/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/andreas-antonopoulos/><h6>Andreas Antonopoulos</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/austin-bitcoin-developers/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/austin-bitcoin-developers/><h6>Austin Bitcoin Developers</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/baltic-honeybadger/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/><h6>Baltic Honeybadger</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/baltic-honeybadger/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/2018/><h6>Baltic Honeybadger 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/baltic-honeybadger/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/2019/><h6>Baltic Honeybadger 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bit-block-boom/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bit-block-boom/><h6>Bit Block Boom</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bit-block-boom/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bit-block-boom/2019/><h6>Bit Block Boom 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-core-dev-tech/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/><h6>Bitcoin Core Dev Tech</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bitcoin-core-dev-tech/bitcoin-devcore-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/bitcoin-devcore-2015/><h6>Bitcoin Devcore Meetup (2015)</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-design/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-design/><h6>Bitcoin Design</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-magazine/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-magazine/><h6>Bitcoin Magazine</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoinops/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinops/><h6>Bitcoinops</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bitcoinops/schnorr-taproot-workshop-2019/ class="nav-item my-1"><a class="nav-link p-0" href=/bitcoinops/schnorr-taproot-workshop-2019/><h6>Schnorr Taproot Workshop 2019</h6></a></li></ul></li><li data-nav-id=/blockchain-protocol-analysis-security-engineering/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/><h6>Blockchain Protocol Analysis Security Eng</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/blockchain-protocol-analysis-security-engineering/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2017/><h6>Blockchain Protocol Analysis Security Engineering 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/blockchain-protocol-analysis-security-engineering/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2018/><h6>Blockchain Protocol Analysis Security Engineering 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/blockstream-webinars/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockstream-webinars/><h6>Blockstream Webinars</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/boltathon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/boltathon/><h6>Boltathon</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/breaking-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/><h6>Breaking Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/breaking-bitcoin/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/2017/><h6>Breaking Bitcoin 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/breaking-bitcoin/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/2019/><h6>Breaking Bitcoin 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/building-on-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/building-on-bitcoin/><h6>Building On Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/building-on-bitcoin/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/building-on-bitcoin/2018/><h6>Building On Bitcoin 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/chaincode-labs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-labs/><h6>Chaincode Labs</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/chaincode-labs/chaincode-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-labs/chaincode-podcast/><h6>Chaincode Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/chaincode-labs/chaincode-residency/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-labs/chaincode-residency/><h6>Chaincode Residency</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/chicago-bitdevs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chicago-bitdevs/><h6>Chicago Bitdevs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/coindesk-consensus-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coindesk-consensus-2016/><h6>Coindesk Consensus</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/coordination-of-decentralized-finance-workshop/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/><h6>Coordination of Decentralized Finance</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/coordination-of-decentralized-finance-workshop/2020-stanford/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/2020-stanford/><h6>2020 Stanford</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/cppcon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/><h6>CPPcon</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/cppcon/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/2017/><h6>CPPcon 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/cppcon/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/2020/><h6>CPPcon 2020</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/cryptoeconomic-systems/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cryptoeconomic-systems/><h6>Cryptoeconomic Systems</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/cryptoeconomic-systems/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cryptoeconomic-systems/2019/><h6>Cryptoeconomic Systems 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/dallas-bitcoin-symposium/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/dallas-bitcoin-symposium/><h6>Dallas Bitcoin Symposium</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/decentralized-financial-architecture-workshop/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/decentralized-financial-architecture-workshop/><h6>Decentralized Financial Architecture Workshop</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-developers-miners-meeting-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-developers-miners-meeting-2016/><h6>Developers-Miners Meeting</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/greg-maxwell/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/greg-maxwell/><h6>Greg Maxwell</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/grincon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/grincon/><h6>Grincon</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/grincon/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/grincon/2019/><h6>Grincon 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/honey-badger-diaries/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/honey-badger-diaries/><h6>Honey Badger Diaries</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/la-bitdevs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/la-bitdevs/><h6>LA Bitdevs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/layer2-summit/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/layer2-summit/><h6>Layer2 Summit</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/layer2-summit/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/layer2-summit/2018/><h6>Layer2 Summit 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/lets-talk-bitcoin-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lets-talk-bitcoin-podcast/><h6>Lets Talk Bitcoin Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/lightning-conference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-conference/><h6>Lightning Conference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/lightning-conference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-conference/2019/><h6>Lightning Conference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/lightning-hack-day/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-hack-day/><h6>Lightning Hack Day</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/london-bitcoin-devs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/london-bitcoin-devs/><h6>London Bitcoin Devs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/magicalcryptoconference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/magicalcryptoconference/><h6>Magicalcryptoconference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/magicalcryptoconference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/magicalcryptoconference/2019/><h6>Magicalcryptoconference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/misc/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/misc/><h6>Misc</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/><h6>MIT Bitcoin Expo</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2015/><h6>Mit Bitcoin Expo 2015</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2016/><h6>Mit Bitcoin Expo 2016</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2017/><h6>Mit Bitcoin Expo 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2018/><h6>Mit Bitcoin Expo 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2019/><h6>Mit Bitcoin Expo 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2020/><h6>Mit Bitcoin Expo 2020</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2021/><h6>Mit Bitcoin Expo 2021</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/munich-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/munich-meetup/><h6>Munich Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/noded-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/noded-podcast/><h6>Noded Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/realworldcrypto/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/><h6>Realworldcrypto</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/realworldcrypto/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/2018/><h6>Realworldcrypto 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/rebooting-web-of-trust/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/rebooting-web-of-trust/><h6>Rebooting Web Of Trust</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/rebooting-web-of-trust/2019-prague/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/rebooting-web-of-trust/2019-prague/><h6>2019 Prague</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/ruben-somsen/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/ruben-somsen/><h6>Ruben Somsen</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/satoshi-roundtable/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/satoshi-roundtable/><h6>Satoshi Roundtable</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/satoshi-roundtable/sr-004/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/satoshi-roundtable/sr-004/><h6>Sr 004</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/scalingbitcoin/ class="nav-item my-1 parent haschildren"><a class="nav-link p-0" href=/scalingbitcoin/><h6>Scaling Bitcoin Conference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/scalingbitcoin/montreal-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/montreal-2015/><h6>Montreal (2015)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/hong-kong-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/hong-kong-2015/><h6>Hong Kong (2015)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/milan-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/milan-2016/><h6>Milan (2016)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/stanford-2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/><h6>Stanford (2017)</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/scalingbitcoin/stanford-2017/edgeplusplus/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/edgeplusplus/><h6>Edgeplusplus</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/scalingbitcoin/tokyo-2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/><h6>Tokyo (2018)</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/scalingbitcoin/tokyo-2018/edgedevplusplus/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/edgedevplusplus/><h6>Edgedevplusplus</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/scalingbitcoin/tel-aviv-2019/ class="nav-item my-1 parent haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/><h6>Tel Aviv (2019)</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/scalingbitcoin/tel-aviv-2019/edgedevplusplus/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/edgedevplusplus/><h6>Edgedevplusplus</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li></ul></li><li data-nav-id=/sf-bitcoin-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/sf-bitcoin-meetup/><h6>SF Bitcoin Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/simons-institute/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/simons-institute/><h6>Simons Institute</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/stanford-blockchain-conference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/><h6>Stanford Blockchain</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/stanford-blockchain-conference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/2019/><h6>Stanford Blockchain Conference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/stanford-blockchain-conference/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/2020/><h6>Stanford Blockchain Conference 2020</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/stephan-livera-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stephan-livera-podcast/><h6>Stephan Livera Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/sydney-bitcoin-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/sydney-bitcoin-meetup/><h6>Sydney Bitcoin Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/texas-bitcoin-conference-2014/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/texas-bitcoin-conference-2014/><h6>Texas Bitcoin Conference</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/tftc-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tftc-podcast/><h6>TFTC Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/verifiable-delay-functions/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/verifiable-delay-functions/><h6>Verifiable Delay Functions</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/verifiable-delay-functions/vdf-day-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/verifiable-delay-functions/vdf-day-2019/><h6>Vdf Day 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/vr-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/vr-bitcoin/><h6>VR Bitcoin</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/w3-blockchain-workshop-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/w3-blockchain-workshop-2016/><h6>W3 Blockchain Workshop</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/wasabi-research-club/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/wasabi-research-club/><h6>Wasabi Research Club</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/what-bitcoin-did-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/what-bitcoin-did-podcast/><h6>What Bitcoin Did Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></div></nav></div><div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky"><div class=docs-toc><nav id=TableOfContents><ul><li><a href=#introduction>Introduction</a></li><li><a href=#agenda>Agenda</a></li><li><a href=#what-is-wasabi-wallet>What is wasabi wallet</a></li><li><a href=#privacy>Privacy</a></li><li><a href=#bitcoin-whitepaper-on-privacy>Bitcoin whitepaper on privacy</a></li><li><a href=#fungibility>Fungibility</a></li><li><a href=#censorship-resistance>Censorship resistance</a></li><li><a href=#bitcoin-transactions>Bitcoin transactions</a></li><li><a href=#privacy-and-fungibility-challenges>Privacy and fungibility challenges</a></li><li><a href=#early-research>Early research</a></li><li><a href=#common-ownership-heuristic>Common ownership heuristic</a></li><li><a href=#change-identification-heuristic>Change identification heuristic</a></li><li><a href=#coinjoin>Coinjoin</a></li><li><a href=#some-coinjoin-implementations>Some coinjoin implementations</a></li><li><a href=#coinjoin-and-privacy>Coinjoin and privacy</a></li><li><a href=#coinjoin-and-fungible>Coinjoin and fungible</a></li><li><a href=#coinjoin-research>Coinjoin research</a></li><li><a href=#chaumian-coinjoin>Chaumian coinjoin</a></li><li><a href=#simplified-protocol>Simplified protocol</a></li><li><a href=#obtaining-wasabi-subgraph>Obtaining wasabi subgraph</a></li></ul></nav></div></div><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3"><a href=/>Home</a>
-&lt; <a href=/scalingbitcoin/>Scaling Bitcoin Conference</a>
-&lt; <a href=/scalingbitcoin/tel-aviv-2019/>Tel Aviv (2019)</a>
-&lt; Zerolink Sudoku<h1>Zerolink Sudoku</h1><p><i>Transcript By: Bryan Bishop</i></p><p>Tags:
-<a href=/tags/research>Research</a></p><p>Category:
-<a href=/categories/conference>Conference</a></p><p>ZeroLink sudoku: real vs perceived anonymity</p><p>Yuval Kogman</p><p><a href=https://twitter.com/kanzure/status/1171788514326908928>https://twitter.com/kanzure/status/1171788514326908928</a></p><h1 id=introduction>Introduction</h1><p>I used to work in software. I transitioned to something else, but bitcoin changed my mind. This talk is a little bit of a work in progress. This was started by a guy named Aviv Milner who is involved with Wasabi. He roped me into this and then subsequently became unavailable. So this is basically me presenting his work. It&rsquo;s been severely &mldr;&mldr;. as I said, Aviv started this project, he defined the research questions and then became unavailable so I&rsquo;m here presenting in his stead. He also arranged for funding to be provided for me by zksnacks, the company behind wasabi. I have no formal qualifications, I am just a confused code monkey.</p><p>The title is a misnomer. The sudoku bit is still a work in progress, the idea of solving associated inputs and outputs. I am apprehensive about saying anything about real world anonymity.</p><h1 id=agenda>Agenda</h1><p>With that aside, the outline of the talk is going to be a few minutes to introduce Wasabi and what it is and what it&rsquo;s for and how it works, then we&rsquo;re going to look at some transactions made on the blockchain and then if time permits then we have some thoughts about future directions.</p><p><a href=https://github.com/nothingmuch/zerolink-sudoku>https://github.com/nothingmuch/zerolink-sudoku</a></p><h1 id=what-is-wasabi-wallet>What is wasabi wallet</h1><p>Wasabi is an open-source desktop wallet that has a key feature called Chaumian coinjoin which is a specific type of non-custodial mixing strategy for bitcoin. It was first released last year. The beta release was August last year, the final release 3 months later.</p><h1 id=privacy>Privacy</h1><p>When I talk about privacy, I am referring to on-chain leaks of activity and net worth. This is a multi-faceted subject and I&rsquo;m deliberately using a very narrow definition of privacy. It&rsquo;s narrow even in the context of bitcoin. I&rsquo;d like to refer you to the fantastic writeup on privacy on the bitcoin wiki for something comprehensive and well-rounded.</p><h1 id=bitcoin-whitepaper-on-privacy>Bitcoin whitepaper on privacy</h1><p>The bitcoin whitepaper just for historical interest had a statement on privacy. I think this is a naive take on what it means to be private.</p><h1 id=fungibility>Fungibility</h1><p>The second term I&rsquo;ll be using a lot is fungibility. By this, I mean the units of some currency are interchangeable with one another due to their indistinguishability. This is a very important property of money that Wasabi tries to promote. We&rsquo;re going to explore how it does that.</p><h1 id=censorship-resistance>Censorship resistance</h1><p>It&rsquo;s important to distinguish between censorship resistance as part of the network and resistance in terms of unaccepted by the recipient in terms of fungibility. There was another joinmarket post on <a href=https://joinmarket.me/blog/blog/the-steganographic-principle/>https://joinmarket.me/blog/blog/the-steganographic-principle/</a> which talks about the potential of bitcoin to talk about hiding data and also it gives a fantastic overview of just the various tradeoffs betwee nscalability, privacy and security.</p><h1 id=bitcoin-transactions>Bitcoin transactions</h1><p>We can think of bitcoin transactions as creating outputs, where outputs are just an amount and some opaque condition for how you spend it (the output script). In particular, this is going to be, we can think of it as a sort of bipartite graph between transactions and outputs that is directed forward in time even if this isn&rsquo;t how it works under the hood.</p><h1 id=privacy-and-fungibility-challenges>Privacy and fungibility challenges</h1><p>The typical bitcoin transaction is quite problematic for both privacy and fungibility because an adversary can make easy inferences about which output belongs to whom. The properties of what it takes for a transactio nto be valid; there&rsquo;s a lot of public information. All the amounts are completely open, the relatedness of all transactions is completely transparent to anyone who wishes to validate the data, and the cryptographic identifiers associated with all this activity are again&mldr;. and you can see the public keys and signatures. So in a sense, bitcoin is trivially non-fungible because literally every coin is uniquely identifiable on this graph. It also means transactions leak a fair amount of confidential information, especially to counterparties who can make inferences about which outputs are yours and what your prior or subsequent activity after you transact with them.</p><h1 id=early-research>Early research</h1><p>These problems were fairly obvious early on. There was a lot of early research on this all the way back to 2011. There were a few papers that I first found:</p><ul><li>An analysis of anon&mldr;.</li></ul><p>&mldr; these heuristics trace back to the whitepaper.</p><h1 id=common-ownership-heuristic>Common ownership heuristic</h1><p>The common ownership heuristic is that when you see a transaction, all inputs are assumed to be owned by a single entity that produces the transaction unilaterally. This is not technically true, but it&rsquo;s a common assumption to make when analyzing activity.</p><h1 id=change-identification-heuristic>Change identification heuristic</h1><p>The change identification heuristic can identify which outputs are payments and which outputs are the change output sending back to the payer.</p><h1 id=coinjoin>Coinjoin</h1><p>This motivates what coinjoin is for. A coinjoin is a technique for creating bitcoin transactions that is based on the idea that inputs are signed independently but the transaction is only valid if all inputs are signed. Transactions are atomic, but they don&rsquo;t have to be the product of a single user. They can have multiple participants constructing them collaboratively. The second observation is that within the scope of a single transaction, if there are outputs with identical amounts then those are in some sense fungible within that very narrow scope of that transaction. So there&rsquo;s some caveats to that, but the goal is to kind of utilize these two properties to create privacy.</p><p>This is gmaxwell&rsquo;s post on bitcointalk.org is where I took this image from. This is an example of a coinjoin transaction. The idea is that you cannot attribute the inputs to the outputs at least not unambiguously.</p><p>For historical interest, this idea dates back earlier in various forms. The author of Wasabi&ndash; zksnacks&ndash; has a nice little overview of the history of this.</p><h1 id=some-coinjoin-implementations>Some coinjoin implementations</h1><p>There&rsquo;s some coinjoin implementations. The dominant one is joinmarket, which is a p2p market. Takers create coinjoin transactions by buying offers from makers. So makers put up coins, and then takers use those coins to create transactions that obscure the traceability of the taker&rsquo;s data. The makers are not fully anonymous in this model since they do publish offers. In practice, they do gain privacy as well.</p><p>The two other coinjoin dominant implementations are Wasabi and Samurai both of which use a Chaumian coinjoin protocol.</p><h1 id=coinjoin-and-privacy>Coinjoin and privacy</h1><p>Are coinjoins actually private? I would say yes, but with serious caveats. The problem inherently lies in the connectedness of the graph and the transparency of the amounts. You have to be very careful about how you&rsquo;re going to go and consume the outputs of coinjoin transactions, whether or not you&rsquo;re linking them together in a subsequent transaction reveals information.</p><p>You also have to make an assumption that you&rsquo;re not mixing only with malicious entity, or in particular one malicious entity who is pretending to be multiple entities, thereby being able to recover all of your activity.</p><h1 id=coinjoin-and-fungible>Coinjoin and fungible</h1><p>It remains to be seen if coinjoin promotes fungibility. We could argue that all privacy tech could help fungibility in principle, in that it obscures information on the blockchain. But in practice, it often ends up identifying the subgraph of a transactions that actually utilize privacy tech, necessarily restricts the total population of users and therefore the anonymity set. So in effect, you often have a smaller anonymity set in some circumstances. For fungibility, those transactions are clearly identifiable by the patterns they leave.</p><h1 id=coinjoin-research>Coinjoin research</h1><ul><li>Coinjoin sudoku, Atlas K 2014</li><li>Anonymous alone? Measuring bitcoin&rsquo;s second generation anonymization techniques (2017)</li><li>Anonymous coinjoin transactions with arbitrary values (2017)</li></ul><p>Moser has publsihed a number of papers about bitcoin anonymization. There&rsquo;s also a bit of research into how to do better coinjoins I guess for lack of a better term. As it stands right now, you should know that only coinjoin transactions with identical outputs are actually deployed and used effectively although in theory the property that the amounts are identical is not strictly necessary.</p><h1 id=chaumian-coinjoin>Chaumian coinjoin</h1><p>Chaumian coinjoin&ndash; zerolink is the name of the protocol that Wasabi wallet uses. The idea here is that a server helps a number of users to collaboratively build a coinjoin transaction without the server being able to identify which output is associated with which user, or which input. Both Samurai and Wasabi give heritage here. If I&rsquo;m not mistaken, the authors collaborated on the original spec.</p><p>This utilizes blind signatures, which are normal digital signatures with an additional property that they contain a blinding factor that allows a signer to create a transaction without seeing what they&rsquo;re signing and then later it is possible to verify those signatures with respect to the unblinded message.</p><p>Here&rsquo;s the verification equation in case anyone is curious.</p><h1 id=simplified-protocol>Simplified protocol</h1><p>Wasabi uses Schnorr protocols on bitcoin&rsquo;s secp256k1 curve. The actual protocol as implemented is an HTTP-based API. The roles here are Alice and Bob which are both the same user and there&rsquo;s many such users. Here in this interaction diagram, we can see the protocol going as follows. Alice connects to the server. Alice checks whether coinjoins are being built right now and if so what amounts are necessary. She then submits her inputs and blinded outputs. The server verifies that the inputs are valid, and can use &mldr; in such a transaction, and returns a blind signature on that output. After all participants have signed up and the round moves to the after registration phase, Alice reconnects under a new tor identity Bob, and submits her unblinded signature provided by the server. This allows the server to validate that Bob did indeed participate as Alice without knowing specifically who Bob is. After all users have submitted their outputs, the server creates a signed transaction, and finally if they see all their outputs are represented faithfully, they then sign the transaction and it&rsquo;s broadcasted.</p><p>Any questions so far now that we have this out of the way?</p><h1 id=obtaining-wasabi-subgraph>Obtaining wasabi subgraph</h1><p>We were going to use blocksci but we ran into some issues, so we have a homegrown solution using electrum. The data is a subgraph of the entire blockchain. We first downloaded all transactions that look like coinjoins and spend to the wasabi fee earning address. We downloaded all transactions associated with any scripts specified in those transactions, in order to look into address reuse.</p><p>There&rsquo;s just over 5,000 transactions with an average about 100 outputs per transaction. A total of about 46,290 BTC &mldr; 117,000 BTC. Now I will go to some graphs.</p><div class=row></div></div></div></div><script src=https://btctranscripts.com/lib/jquery.min.js></script><script src=https://btctranscripts.com/lib/popper.min.js></script><script src=https://btctranscripts.com/js/bootstrap.min.js></script><script type=text/javascript src=/plugins/lunr.min.js></script><script type=text/javascript src=/plugins/auto-complete.js></script><link href=/plugins/auto-complete.css rel=stylesheet><script type=text/javascript>var baseurl="https://btctranscripts.com/"</script><script type=text/javascript src=/plugins/search.js></script><script type=text/javascript src=https://btctranscripts.com/js/custom.js></script><script type=text/javascript src=/plugins/clipboard.js></script><script>new ClipboardJS('.btn')</script></body></html>
+Introduction I used to work in software. I transitioned to something else, but bitcoin changed my mind. This talk is a little bit of a work in progress. This was started by a guy named Aviv Milner who is involved with Wasabi. He roped me into this and then subsequently became unavailable. So this is basically me presenting his work. It&rsquo;s been severely &mldr;&mldr;.">
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id=navbarMain>
+<div class=container>
+<div>
+<a class=navbar-brand href=/>
+₿itcoin Transcripts
+</a>
+</div>
+<div class="collapse navbar-collapse" id=navbarMainCollapse>
+<ul class="navbar-nav ml-auto">
+<li class=nav-item>
+<a class=nav-link href=https://github.com/bitcointranscripts/bitcointranscripts target=_blank>
+<i class="fab fa-github"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<div class=container-fluid>
+<div class=row>
+<div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
+<button class="navbar-toggler navbar-toggler-right collapsed" type=button data-toggle=collapse data-target=#sidenav-left-collapse aria-controls=sidenav-left-collapse aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span>
+</button>
+<div class="collapse navbar-collapse align-items-start flex-column" id=sidenav-left-collapse>
+<form class="form-inline my-2 my-lg-0 searchbox">
+<input class="form-control mr-sm-2 w-100" data-search-input id=search-by type=text placeholder='Search (press "/")'>
+</form>
+<ul class="navbar-nav flex-column pt-3">
+<li data-nav-id=/advancing-bitcoin/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/advancing-bitcoin/><h6>Advancing Bitcoin</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/advancing-bitcoin/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/advancing-bitcoin/2019/><h6>Advancing Bitcoin 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/advancing-bitcoin/2020/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/advancing-bitcoin/2020/><h6>Advancing Bitcoin 2020</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/andreas-antonopoulos/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/andreas-antonopoulos/><h6>Andreas Antonopoulos</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/austin-bitcoin-developers/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/austin-bitcoin-developers/><h6>Austin Bitcoin Developers</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/baltic-honeybadger/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/baltic-honeybadger/><h6>Baltic Honeybadger</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/baltic-honeybadger/2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/baltic-honeybadger/2018/><h6>Baltic Honeybadger 2018</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/baltic-honeybadger/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/baltic-honeybadger/2019/><h6>Baltic Honeybadger 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/bit-block-boom/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bit-block-boom/><h6>Bit Block Boom</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/bit-block-boom/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bit-block-boom/2019/><h6>Bit Block Boom 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/bitcoin-core-dev-tech/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bitcoin-core-dev-tech/><h6>Bitcoin Core Dev Tech</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/bitcoin-core-dev-tech/bitcoin-devcore-2015/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bitcoin-core-dev-tech/bitcoin-devcore-2015/><h6>Bitcoin Devcore Meetup (2015)</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/bitcoin-design/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bitcoin-design/><h6>Bitcoin Design</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/bitcoin-magazine/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bitcoin-magazine/><h6>Bitcoin Magazine</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/bitcoinops/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bitcoinops/><h6>Bitcoinops</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/bitcoinops/schnorr-taproot-workshop-2019/ class="nav-item my-1">
+<a class="nav-link p-0" href=/bitcoinops/schnorr-taproot-workshop-2019/><h6>Schnorr Taproot Workshop 2019</h6></a>
+</li>
+</ul>
+</li>
+<li data-nav-id=/blockchain-protocol-analysis-security-engineering/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/><h6>Blockchain Protocol Analysis Security Eng</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/blockchain-protocol-analysis-security-engineering/2017/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2017/><h6>Blockchain Protocol Analysis Security Engineering 2017</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/blockchain-protocol-analysis-security-engineering/2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2018/><h6>Blockchain Protocol Analysis Security Engineering 2018</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/blockstream-webinars/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/blockstream-webinars/><h6>Blockstream Webinars</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/boltathon/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/boltathon/><h6>Boltathon</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/breaking-bitcoin/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/breaking-bitcoin/><h6>Breaking Bitcoin</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/breaking-bitcoin/2017/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/breaking-bitcoin/2017/><h6>Breaking Bitcoin 2017</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/breaking-bitcoin/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/breaking-bitcoin/2019/><h6>Breaking Bitcoin 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/building-on-bitcoin/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/building-on-bitcoin/><h6>Building On Bitcoin</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/building-on-bitcoin/2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/building-on-bitcoin/2018/><h6>Building On Bitcoin 2018</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/chaincode-labs/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/chaincode-labs/><h6>Chaincode Labs</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/chaincode-labs/chaincode-podcast/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/chaincode-labs/chaincode-podcast/><h6>Chaincode Podcast</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/chaincode-labs/chaincode-residency/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/chaincode-labs/chaincode-residency/><h6>Chaincode Residency</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/chicago-bitdevs/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/chicago-bitdevs/><h6>Chicago Bitdevs</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/coindesk-consensus-2016/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/coindesk-consensus-2016/><h6>Coindesk Consensus</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/coordination-of-decentralized-finance-workshop/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/><h6>Coordination of Decentralized Finance</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/coordination-of-decentralized-finance-workshop/2020-stanford/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/2020-stanford/><h6>2020 Stanford</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/cppcon/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/cppcon/><h6>CPPcon</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/cppcon/2017/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/cppcon/2017/><h6>CPPcon 2017</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/cppcon/2020/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/cppcon/2020/><h6>CPPcon 2020</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/cryptoeconomic-systems/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/cryptoeconomic-systems/><h6>Cryptoeconomic Systems</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/cryptoeconomic-systems/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/cryptoeconomic-systems/2019/><h6>Cryptoeconomic Systems 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/dallas-bitcoin-symposium/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/dallas-bitcoin-symposium/><h6>Dallas Bitcoin Symposium</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/decentralized-financial-architecture-workshop/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/decentralized-financial-architecture-workshop/><h6>Decentralized Financial Architecture Workshop</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/bitcoin-developers-miners-meeting-2016/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bitcoin-developers-miners-meeting-2016/><h6>Developers-Miners Meeting</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/greg-maxwell/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/greg-maxwell/><h6>Greg Maxwell</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/grincon/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/grincon/><h6>Grincon</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/grincon/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/grincon/2019/><h6>Grincon 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/honey-badger-diaries/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/honey-badger-diaries/><h6>Honey Badger Diaries</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/la-bitdevs/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/la-bitdevs/><h6>LA Bitdevs</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/layer2-summit/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/layer2-summit/><h6>Layer2 Summit</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/layer2-summit/2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/layer2-summit/2018/><h6>Layer2 Summit 2018</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/lets-talk-bitcoin-podcast/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/lets-talk-bitcoin-podcast/><h6>Lets Talk Bitcoin Podcast</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/lightning-conference/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/lightning-conference/><h6>Lightning Conference</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/lightning-conference/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/lightning-conference/2019/><h6>Lightning Conference 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/lightning-hack-day/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/lightning-hack-day/><h6>Lightning Hack Day</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/london-bitcoin-devs/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/london-bitcoin-devs/><h6>London Bitcoin Devs</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/magicalcryptoconference/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/magicalcryptoconference/><h6>Magicalcryptoconference</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/magicalcryptoconference/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/magicalcryptoconference/2019/><h6>Magicalcryptoconference 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/misc/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/misc/><h6>Misc</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/><h6>MIT Bitcoin Expo</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2015/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2015/><h6>Mit Bitcoin Expo 2015</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2016/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2016/><h6>Mit Bitcoin Expo 2016</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2017/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2017/><h6>Mit Bitcoin Expo 2017</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2018/><h6>Mit Bitcoin Expo 2018</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2019/><h6>Mit Bitcoin Expo 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2020/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2020/><h6>Mit Bitcoin Expo 2020</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2021/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2021/><h6>Mit Bitcoin Expo 2021</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/munich-meetup/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/munich-meetup/><h6>Munich Meetup</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/noded-podcast/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/noded-podcast/><h6>Noded Podcast</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/realworldcrypto/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/realworldcrypto/><h6>Realworldcrypto</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/realworldcrypto/2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/realworldcrypto/2018/><h6>Realworldcrypto 2018</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/rebooting-web-of-trust/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/rebooting-web-of-trust/><h6>Rebooting Web Of Trust</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/rebooting-web-of-trust/2019-prague/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/rebooting-web-of-trust/2019-prague/><h6>2019 Prague</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/ruben-somsen/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/ruben-somsen/><h6>Ruben Somsen</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/satoshi-roundtable/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/satoshi-roundtable/><h6>Satoshi Roundtable</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/satoshi-roundtable/sr-004/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/satoshi-roundtable/sr-004/><h6>Sr 004</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/scalingbitcoin/ class="nav-item my-1 parent haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/><h6>Scaling Bitcoin Conference</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/scalingbitcoin/montreal-2015/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/montreal-2015/><h6>Montreal (2015)</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/scalingbitcoin/hong-kong-2015/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/hong-kong-2015/><h6>Hong Kong (2015)</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/scalingbitcoin/milan-2016/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/milan-2016/><h6>Milan (2016)</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/scalingbitcoin/stanford-2017/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/><h6>Stanford (2017)</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/scalingbitcoin/stanford-2017/edgeplusplus/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/edgeplusplus/><h6>Edgeplusplus</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/scalingbitcoin/tokyo-2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/><h6>Tokyo (2018)</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/scalingbitcoin/tokyo-2018/edgedevplusplus/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/edgedevplusplus/><h6>Edgedevplusplus</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/scalingbitcoin/tel-aviv-2019/ class="nav-item my-1 parent haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/><h6>Tel Aviv (2019)</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/scalingbitcoin/tel-aviv-2019/edgedevplusplus/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/edgedevplusplus/><h6>Edgedevplusplus</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/sf-bitcoin-meetup/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/sf-bitcoin-meetup/><h6>SF Bitcoin Meetup</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/simons-institute/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/simons-institute/><h6>Simons Institute</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/stanford-blockchain-conference/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/stanford-blockchain-conference/><h6>Stanford Blockchain</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/stanford-blockchain-conference/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/stanford-blockchain-conference/2019/><h6>Stanford Blockchain Conference 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/stanford-blockchain-conference/2020/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/stanford-blockchain-conference/2020/><h6>Stanford Blockchain Conference 2020</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/stephan-livera-podcast/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/stephan-livera-podcast/><h6>Stephan Livera Podcast</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/sydney-bitcoin-meetup/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/sydney-bitcoin-meetup/><h6>Sydney Bitcoin Meetup</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/texas-bitcoin-conference-2014/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/texas-bitcoin-conference-2014/><h6>Texas Bitcoin Conference</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/tftc-podcast/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/tftc-podcast/><h6>TFTC Podcast</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/verifiable-delay-functions/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/verifiable-delay-functions/><h6>Verifiable Delay Functions</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/verifiable-delay-functions/vdf-day-2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/verifiable-delay-functions/vdf-day-2019/><h6>Vdf Day 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/vr-bitcoin/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/vr-bitcoin/><h6>VR Bitcoin</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/w3-blockchain-workshop-2016/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/w3-blockchain-workshop-2016/><h6>W3 Blockchain Workshop</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/wasabi-research-club/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/wasabi-research-club/><h6>Wasabi Research Club</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/what-bitcoin-did-podcast/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/what-bitcoin-did-podcast/><h6>What Bitcoin Did Podcast</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+<div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky"><div class=docs-toc>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#introduction>Introduction</a></li>
+<li><a href=#agenda>Agenda</a></li>
+<li><a href=#what-is-wasabi-wallet>What is wasabi wallet</a></li>
+<li><a href=#privacy>Privacy</a></li>
+<li><a href=#bitcoin-whitepaper-on-privacy>Bitcoin whitepaper on privacy</a></li>
+<li><a href=#fungibility>Fungibility</a></li>
+<li><a href=#censorship-resistance>Censorship resistance</a></li>
+<li><a href=#bitcoin-transactions>Bitcoin transactions</a></li>
+<li><a href=#privacy-and-fungibility-challenges>Privacy and fungibility challenges</a></li>
+<li><a href=#early-research>Early research</a></li>
+<li><a href=#common-ownership-heuristic>Common ownership heuristic</a></li>
+<li><a href=#change-identification-heuristic>Change identification heuristic</a></li>
+<li><a href=#coinjoin>Coinjoin</a></li>
+<li><a href=#some-coinjoin-implementations>Some coinjoin implementations</a></li>
+<li><a href=#coinjoin-and-privacy>Coinjoin and privacy</a></li>
+<li><a href=#coinjoin-and-fungible>Coinjoin and fungible</a></li>
+<li><a href=#coinjoin-research>Coinjoin research</a></li>
+<li><a href=#chaumian-coinjoin>Chaumian coinjoin</a></li>
+<li><a href=#simplified-protocol>Simplified protocol</a></li>
+<li><a href=#obtaining-wasabi-subgraph>Obtaining wasabi subgraph</a></li>
+</ul>
+</nav>
+</div>
+</div>
+<div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+<a href=/>Home</a>
+&lt; <a href=/scalingbitcoin/>
+Scaling Bitcoin Conference
+</a>
+&lt; <a href=/scalingbitcoin/tel-aviv-2019/>
+Tel Aviv (2019)
+</a>
+&lt; Zerolink Sudoku
+<h1>Zerolink Sudoku</h1>
+<p><i>Transcript By: Bryan Bishop</i></p>
+<p>Tags:
+<a href=/tags/research>Research</a></p>
+<p>Category:
+<a href=/categories/conference>Conference</a></p>
+<p>ZeroLink sudoku: real vs perceived anonymity</p>
+<p>Yuval Kogman</p>
+<p><a href=https://twitter.com/kanzure/status/1171788514326908928>https://twitter.com/kanzure/status/1171788514326908928</a></p>
+<h1 id=introduction>Introduction</h1>
+<p>I used to work in software. I transitioned to something else, but bitcoin changed my mind. This talk is a little bit of a work in progress. This was started by a guy named Aviv Milner who is involved with Wasabi. He roped me into this and then subsequently became unavailable. So this is basically me presenting his work. It&rsquo;s been severely &mldr;&mldr;. as I said, Aviv started this project, he defined the research questions and then became unavailable so I&rsquo;m here presenting in his stead. He also arranged for funding to be provided for me by zksnacks, the company behind wasabi. I have no formal qualifications, I am just a confused code monkey.</p>
+<p>The title is a misnomer. The sudoku bit is still a work in progress, the idea of solving associated inputs and outputs. I am apprehensive about saying anything about real world anonymity.</p>
+<h1 id=agenda>Agenda</h1>
+<p>With that aside, the outline of the talk is going to be a few minutes to introduce Wasabi and what it is and what it&rsquo;s for and how it works, then we&rsquo;re going to look at some transactions made on the blockchain and then if time permits then we have some thoughts about future directions.</p>
+<p><a href=https://github.com/nothingmuch/zerolink-sudoku>https://github.com/nothingmuch/zerolink-sudoku</a></p>
+<h1 id=what-is-wasabi-wallet>What is wasabi wallet</h1>
+<p>Wasabi is an open-source desktop wallet that has a key feature called Chaumian coinjoin which is a specific type of non-custodial mixing strategy for bitcoin. It was first released last year. The beta release was August last year, the final release 3 months later.</p>
+<h1 id=privacy>Privacy</h1>
+<p>When I talk about privacy, I am referring to on-chain leaks of activity and net worth. This is a multi-faceted subject and I&rsquo;m deliberately using a very narrow definition of privacy. It&rsquo;s narrow even in the context of bitcoin. I&rsquo;d like to refer you to the fantastic writeup on privacy on the bitcoin wiki for something comprehensive and well-rounded.</p>
+<h1 id=bitcoin-whitepaper-on-privacy>Bitcoin whitepaper on privacy</h1>
+<p>The bitcoin whitepaper just for historical interest had a statement on privacy. I think this is a naive take on what it means to be private.</p>
+<h1 id=fungibility>Fungibility</h1>
+<p>The second term I&rsquo;ll be using a lot is fungibility. By this, I mean the units of some currency are interchangeable with one another due to their indistinguishability. This is a very important property of money that Wasabi tries to promote. We&rsquo;re going to explore how it does that.</p>
+<h1 id=censorship-resistance>Censorship resistance</h1>
+<p>It&rsquo;s important to distinguish between censorship resistance as part of the network and resistance in terms of unaccepted by the recipient in terms of fungibility. There was another joinmarket post on <a href=https://joinmarket.me/blog/blog/the-steganographic-principle/>https://joinmarket.me/blog/blog/the-steganographic-principle/</a> which talks about the potential of bitcoin to talk about hiding data and also it gives a fantastic overview of just the various tradeoffs betwee nscalability, privacy and security.</p>
+<h1 id=bitcoin-transactions>Bitcoin transactions</h1>
+<p>We can think of bitcoin transactions as creating outputs, where outputs are just an amount and some opaque condition for how you spend it (the output script). In particular, this is going to be, we can think of it as a sort of bipartite graph between transactions and outputs that is directed forward in time even if this isn&rsquo;t how it works under the hood.</p>
+<h1 id=privacy-and-fungibility-challenges>Privacy and fungibility challenges</h1>
+<p>The typical bitcoin transaction is quite problematic for both privacy and fungibility because an adversary can make easy inferences about which output belongs to whom. The properties of what it takes for a transactio nto be valid; there&rsquo;s a lot of public information. All the amounts are completely open, the relatedness of all transactions is completely transparent to anyone who wishes to validate the data, and the cryptographic identifiers associated with all this activity are again&mldr;. and you can see the public keys and signatures. So in a sense, bitcoin is trivially non-fungible because literally every coin is uniquely identifiable on this graph. It also means transactions leak a fair amount of confidential information, especially to counterparties who can make inferences about which outputs are yours and what your prior or subsequent activity after you transact with them.</p>
+<h1 id=early-research>Early research</h1>
+<p>These problems were fairly obvious early on. There was a lot of early research on this all the way back to 2011. There were a few papers that I first found:</p>
+<ul>
+<li>An analysis of anon&mldr;.</li>
+</ul>
+<p>&mldr; these heuristics trace back to the whitepaper.</p>
+<h1 id=common-ownership-heuristic>Common ownership heuristic</h1>
+<p>The common ownership heuristic is that when you see a transaction, all inputs are assumed to be owned by a single entity that produces the transaction unilaterally. This is not technically true, but it&rsquo;s a common assumption to make when analyzing activity.</p>
+<h1 id=change-identification-heuristic>Change identification heuristic</h1>
+<p>The change identification heuristic can identify which outputs are payments and which outputs are the change output sending back to the payer.</p>
+<h1 id=coinjoin>Coinjoin</h1>
+<p>This motivates what coinjoin is for. A coinjoin is a technique for creating bitcoin transactions that is based on the idea that inputs are signed independently but the transaction is only valid if all inputs are signed. Transactions are atomic, but they don&rsquo;t have to be the product of a single user. They can have multiple participants constructing them collaboratively. The second observation is that within the scope of a single transaction, if there are outputs with identical amounts then those are in some sense fungible within that very narrow scope of that transaction. So there&rsquo;s some caveats to that, but the goal is to kind of utilize these two properties to create privacy.</p>
+<p>This is gmaxwell&rsquo;s post on bitcointalk.org is where I took this image from. This is an example of a coinjoin transaction. The idea is that you cannot attribute the inputs to the outputs at least not unambiguously.</p>
+<p>For historical interest, this idea dates back earlier in various forms. The author of Wasabi&ndash; zksnacks&ndash; has a nice little overview of the history of this.</p>
+<h1 id=some-coinjoin-implementations>Some coinjoin implementations</h1>
+<p>There&rsquo;s some coinjoin implementations. The dominant one is joinmarket, which is a p2p market. Takers create coinjoin transactions by buying offers from makers. So makers put up coins, and then takers use those coins to create transactions that obscure the traceability of the taker&rsquo;s data. The makers are not fully anonymous in this model since they do publish offers. In practice, they do gain privacy as well.</p>
+<p>The two other coinjoin dominant implementations are Wasabi and Samurai both of which use a Chaumian coinjoin protocol.</p>
+<h1 id=coinjoin-and-privacy>Coinjoin and privacy</h1>
+<p>Are coinjoins actually private? I would say yes, but with serious caveats. The problem inherently lies in the connectedness of the graph and the transparency of the amounts. You have to be very careful about how you&rsquo;re going to go and consume the outputs of coinjoin transactions, whether or not you&rsquo;re linking them together in a subsequent transaction reveals information.</p>
+<p>You also have to make an assumption that you&rsquo;re not mixing only with malicious entity, or in particular one malicious entity who is pretending to be multiple entities, thereby being able to recover all of your activity.</p>
+<h1 id=coinjoin-and-fungible>Coinjoin and fungible</h1>
+<p>It remains to be seen if coinjoin promotes fungibility. We could argue that all privacy tech could help fungibility in principle, in that it obscures information on the blockchain. But in practice, it often ends up identifying the subgraph of a transactions that actually utilize privacy tech, necessarily restricts the total population of users and therefore the anonymity set. So in effect, you often have a smaller anonymity set in some circumstances. For fungibility, those transactions are clearly identifiable by the patterns they leave.</p>
+<h1 id=coinjoin-research>Coinjoin research</h1>
+<ul>
+<li>Coinjoin sudoku, Atlas K 2014</li>
+<li>Anonymous alone? Measuring bitcoin&rsquo;s second generation anonymization techniques (2017)</li>
+<li>Anonymous coinjoin transactions with arbitrary values (2017)</li>
+</ul>
+<p>Moser has publsihed a number of papers about bitcoin anonymization. There&rsquo;s also a bit of research into how to do better coinjoins I guess for lack of a better term. As it stands right now, you should know that only coinjoin transactions with identical outputs are actually deployed and used effectively although in theory the property that the amounts are identical is not strictly necessary.</p>
+<h1 id=chaumian-coinjoin>Chaumian coinjoin</h1>
+<p>Chaumian coinjoin&ndash; zerolink is the name of the protocol that Wasabi wallet uses. The idea here is that a server helps a number of users to collaboratively build a coinjoin transaction without the server being able to identify which output is associated with which user, or which input. Both Samurai and Wasabi give heritage here. If I&rsquo;m not mistaken, the authors collaborated on the original spec.</p>
+<p>This utilizes blind signatures, which are normal digital signatures with an additional property that they contain a blinding factor that allows a signer to create a transaction without seeing what they&rsquo;re signing and then later it is possible to verify those signatures with respect to the unblinded message.</p>
+<p>Here&rsquo;s the verification equation in case anyone is curious.</p>
+<h1 id=simplified-protocol>Simplified protocol</h1>
+<p>Wasabi uses Schnorr protocols on bitcoin&rsquo;s secp256k1 curve. The actual protocol as implemented is an HTTP-based API. The roles here are Alice and Bob which are both the same user and there&rsquo;s many such users. Here in this interaction diagram, we can see the protocol going as follows. Alice connects to the server. Alice checks whether coinjoins are being built right now and if so what amounts are necessary. She then submits her inputs and blinded outputs. The server verifies that the inputs are valid, and can use &mldr; in such a transaction, and returns a blind signature on that output. After all participants have signed up and the round moves to the after registration phase, Alice reconnects under a new tor identity Bob, and submits her unblinded signature provided by the server. This allows the server to validate that Bob did indeed participate as Alice without knowing specifically who Bob is. After all users have submitted their outputs, the server creates a signed transaction, and finally if they see all their outputs are represented faithfully, they then sign the transaction and it&rsquo;s broadcasted.</p>
+<p>Any questions so far now that we have this out of the way?</p>
+<h1 id=obtaining-wasabi-subgraph>Obtaining wasabi subgraph</h1>
+<p>We were going to use blocksci but we ran into some issues, so we have a homegrown solution using electrum. The data is a subgraph of the entire blockchain. We first downloaded all transactions that look like coinjoins and spend to the wasabi fee earning address. We downloaded all transactions associated with any scripts specified in those transactions, in order to look into address reuse.</p>
+<p>There&rsquo;s just over 5,000 transactions with an average about 100 outputs per transaction. A total of about 46,290 BTC &mldr; 117,000 BTC. Now I will go to some graphs.</p>
+<div class=row></div>
+</div>
+</div>
+</div>
+<script src=https://btctranscripts.com/lib/jquery.min.js></script>
+<script src=https://btctranscripts.com/lib/popper.min.js></script>
+<script src=https://btctranscripts.com/js/bootstrap.min.js></script>
+<script type=text/javascript src=/plugins/lunr.min.js></script>
+<script type=text/javascript src=/plugins/auto-complete.js></script>
+<link href=/plugins/auto-complete.css rel=stylesheet>
+<script type=text/javascript>var baseurl="https://btctranscripts.com/"</script>
+<script type=text/javascript src=/plugins/search.js></script>
+<script type=text/javascript src=https://btctranscripts.com/js/custom.js></script>
+<script type=text/javascript src=/plugins/clipboard.js></script>
+<script>new ClipboardJS('.btn')</script>
+</body>
+</html>

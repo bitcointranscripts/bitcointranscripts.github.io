@@ -1,9 +1,673 @@
-<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=canonical href=https://btctranscripts.com/stanford-blockchain-conference/2019/spork-probabilistic-bitcoin-soft-forks/><title>Spork Probabilistic Bitcoin Soft Forks | ₿itcoin Transcripts</title><link href=https://btctranscripts.com/css/fontawesome.min.css rel=stylesheet><link rel=stylesheet href=https://btctranscripts.com/css/ace.min.css><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://btctranscripts.com/images/btctranscripts.png"><meta name=twitter:title content="Spork Probabilistic Bitcoin Soft Forks"><meta name=twitter:description content="Spork: Probabilistic bitcoin soft-forks
+<!doctype html><html><head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<link rel=canonical href=https://btctranscripts.com/stanford-blockchain-conference/2019/spork-probabilistic-bitcoin-soft-forks/>
+<title>
+Spork Probabilistic Bitcoin Soft Forks | ₿itcoin Transcripts
+</title>
+<link href=https://btctranscripts.com/css/fontawesome.min.css rel=stylesheet>
+<link rel=stylesheet href=https://btctranscripts.com/css/ace.min.css>
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://btctranscripts.com/images/btctranscripts.png">
+<meta name=twitter:title content="Spork Probabilistic Bitcoin Soft Forks">
+<meta name=twitter:description content="Spork: Probabilistic bitcoin soft-forks
 Jeremy Rubin
-Introduction Thank you for the introduction. I have a secret. I am not an economist, so you&rsquo;ll have to forgive me if I don&rsquo;t have your favorite annotations today. I have my own annotations. I originally gave a predecessor to this talk in Japan. You might notice my title here is a haiku: these are protocols used for changing the bitcoin netwokr protocols. People do highly value staying together for a chain, we&rsquo;re doing coordinated activation of a new upgrade."></head><body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id=navbarMain><div class=container><div><a class=navbar-brand href=/>₿itcoin Transcripts</a></div><div class="collapse navbar-collapse" id=navbarMainCollapse><ul class="navbar-nav ml-auto"><li class=nav-item><a class=nav-link href=https://github.com/bitcointranscripts/bitcointranscripts target=_blank><i class="fab fa-github"></i></a></li></ul></div></div></nav><div class=container-fluid><div class=row><div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0"><button class="navbar-toggler navbar-toggler-right collapsed" type=button data-toggle=collapse data-target=#sidenav-left-collapse aria-controls=sidenav-left-collapse aria-expanded=false aria-label="Toggle navigation">
-<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse align-items-start flex-column" id=sidenav-left-collapse><form class="form-inline my-2 my-lg-0 searchbox"><input class="form-control mr-sm-2 w-100" data-search-input id=search-by type=text placeholder='Search (press "/")'></form><ul class="navbar-nav flex-column pt-3"><li data-nav-id=/advancing-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/><h6>Advancing Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/advancing-bitcoin/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2019/><h6>Advancing Bitcoin 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/advancing-bitcoin/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2020/><h6>Advancing Bitcoin 2020</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/andreas-antonopoulos/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/andreas-antonopoulos/><h6>Andreas Antonopoulos</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/austin-bitcoin-developers/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/austin-bitcoin-developers/><h6>Austin Bitcoin Developers</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/baltic-honeybadger/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/><h6>Baltic Honeybadger</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/baltic-honeybadger/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/2018/><h6>Baltic Honeybadger 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/baltic-honeybadger/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/2019/><h6>Baltic Honeybadger 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bit-block-boom/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bit-block-boom/><h6>Bit Block Boom</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bit-block-boom/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bit-block-boom/2019/><h6>Bit Block Boom 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-core-dev-tech/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/><h6>Bitcoin Core Dev Tech</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bitcoin-core-dev-tech/bitcoin-devcore-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/bitcoin-devcore-2015/><h6>Bitcoin Devcore Meetup (2015)</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-design/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-design/><h6>Bitcoin Design</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-magazine/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-magazine/><h6>Bitcoin Magazine</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoinops/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinops/><h6>Bitcoinops</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bitcoinops/schnorr-taproot-workshop-2019/ class="nav-item my-1"><a class="nav-link p-0" href=/bitcoinops/schnorr-taproot-workshop-2019/><h6>Schnorr Taproot Workshop 2019</h6></a></li></ul></li><li data-nav-id=/blockchain-protocol-analysis-security-engineering/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/><h6>Blockchain Protocol Analysis Security Eng</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/blockchain-protocol-analysis-security-engineering/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2017/><h6>Blockchain Protocol Analysis Security Engineering 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/blockchain-protocol-analysis-security-engineering/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2018/><h6>Blockchain Protocol Analysis Security Engineering 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/blockstream-webinars/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockstream-webinars/><h6>Blockstream Webinars</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/boltathon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/boltathon/><h6>Boltathon</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/breaking-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/><h6>Breaking Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/breaking-bitcoin/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/2017/><h6>Breaking Bitcoin 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/breaking-bitcoin/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/2019/><h6>Breaking Bitcoin 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/building-on-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/building-on-bitcoin/><h6>Building On Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/building-on-bitcoin/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/building-on-bitcoin/2018/><h6>Building On Bitcoin 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/chaincode-labs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-labs/><h6>Chaincode Labs</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/chaincode-labs/chaincode-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-labs/chaincode-podcast/><h6>Chaincode Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/chaincode-labs/chaincode-residency/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-labs/chaincode-residency/><h6>Chaincode Residency</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/chicago-bitdevs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chicago-bitdevs/><h6>Chicago Bitdevs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/coindesk-consensus-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coindesk-consensus-2016/><h6>Coindesk Consensus</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/coordination-of-decentralized-finance-workshop/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/><h6>Coordination of Decentralized Finance</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/coordination-of-decentralized-finance-workshop/2020-stanford/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/2020-stanford/><h6>2020 Stanford</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/cppcon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/><h6>CPPcon</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/cppcon/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/2017/><h6>CPPcon 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/cppcon/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/2020/><h6>CPPcon 2020</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/cryptoeconomic-systems/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cryptoeconomic-systems/><h6>Cryptoeconomic Systems</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/cryptoeconomic-systems/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cryptoeconomic-systems/2019/><h6>Cryptoeconomic Systems 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/dallas-bitcoin-symposium/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/dallas-bitcoin-symposium/><h6>Dallas Bitcoin Symposium</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/decentralized-financial-architecture-workshop/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/decentralized-financial-architecture-workshop/><h6>Decentralized Financial Architecture Workshop</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-developers-miners-meeting-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-developers-miners-meeting-2016/><h6>Developers-Miners Meeting</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/greg-maxwell/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/greg-maxwell/><h6>Greg Maxwell</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/grincon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/grincon/><h6>Grincon</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/grincon/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/grincon/2019/><h6>Grincon 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/honey-badger-diaries/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/honey-badger-diaries/><h6>Honey Badger Diaries</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/la-bitdevs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/la-bitdevs/><h6>LA Bitdevs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/layer2-summit/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/layer2-summit/><h6>Layer2 Summit</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/layer2-summit/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/layer2-summit/2018/><h6>Layer2 Summit 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/lets-talk-bitcoin-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lets-talk-bitcoin-podcast/><h6>Lets Talk Bitcoin Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/lightning-conference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-conference/><h6>Lightning Conference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/lightning-conference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-conference/2019/><h6>Lightning Conference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/lightning-hack-day/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-hack-day/><h6>Lightning Hack Day</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/london-bitcoin-devs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/london-bitcoin-devs/><h6>London Bitcoin Devs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/magicalcryptoconference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/magicalcryptoconference/><h6>Magicalcryptoconference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/magicalcryptoconference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/magicalcryptoconference/2019/><h6>Magicalcryptoconference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/misc/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/misc/><h6>Misc</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/><h6>MIT Bitcoin Expo</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2015/><h6>Mit Bitcoin Expo 2015</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2016/><h6>Mit Bitcoin Expo 2016</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2017/><h6>Mit Bitcoin Expo 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2018/><h6>Mit Bitcoin Expo 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2019/><h6>Mit Bitcoin Expo 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2020/><h6>Mit Bitcoin Expo 2020</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2021/><h6>Mit Bitcoin Expo 2021</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/munich-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/munich-meetup/><h6>Munich Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/noded-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/noded-podcast/><h6>Noded Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/realworldcrypto/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/><h6>Realworldcrypto</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/realworldcrypto/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/2018/><h6>Realworldcrypto 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/rebooting-web-of-trust/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/rebooting-web-of-trust/><h6>Rebooting Web Of Trust</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/rebooting-web-of-trust/2019-prague/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/rebooting-web-of-trust/2019-prague/><h6>2019 Prague</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/ruben-somsen/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/ruben-somsen/><h6>Ruben Somsen</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/satoshi-roundtable/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/satoshi-roundtable/><h6>Satoshi Roundtable</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/satoshi-roundtable/sr-004/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/satoshi-roundtable/sr-004/><h6>Sr 004</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/scalingbitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/><h6>Scaling Bitcoin Conference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/scalingbitcoin/montreal-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/montreal-2015/><h6>Montreal (2015)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/hong-kong-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/hong-kong-2015/><h6>Hong Kong (2015)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/milan-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/milan-2016/><h6>Milan (2016)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/stanford-2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/><h6>Stanford (2017)</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/scalingbitcoin/stanford-2017/edgeplusplus/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/edgeplusplus/><h6>Edgeplusplus</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/scalingbitcoin/tokyo-2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/><h6>Tokyo (2018)</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/scalingbitcoin/tokyo-2018/edgedevplusplus/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/edgedevplusplus/><h6>Edgedevplusplus</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/scalingbitcoin/tel-aviv-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/><h6>Tel Aviv (2019)</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/scalingbitcoin/tel-aviv-2019/edgedevplusplus/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/edgedevplusplus/><h6>Edgedevplusplus</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li></ul></li><li data-nav-id=/sf-bitcoin-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/sf-bitcoin-meetup/><h6>SF Bitcoin Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/simons-institute/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/simons-institute/><h6>Simons Institute</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/stanford-blockchain-conference/ class="nav-item my-1 parent haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/><h6>Stanford Blockchain</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/stanford-blockchain-conference/2019/ class="nav-item my-1 parent haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/2019/><h6>Stanford Blockchain Conference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/stanford-blockchain-conference/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/2020/><h6>Stanford Blockchain Conference 2020</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/stephan-livera-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stephan-livera-podcast/><h6>Stephan Livera Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/sydney-bitcoin-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/sydney-bitcoin-meetup/><h6>Sydney Bitcoin Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/texas-bitcoin-conference-2014/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/texas-bitcoin-conference-2014/><h6>Texas Bitcoin Conference</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/tftc-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tftc-podcast/><h6>TFTC Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/verifiable-delay-functions/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/verifiable-delay-functions/><h6>Verifiable Delay Functions</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/verifiable-delay-functions/vdf-day-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/verifiable-delay-functions/vdf-day-2019/><h6>Vdf Day 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/vr-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/vr-bitcoin/><h6>VR Bitcoin</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/w3-blockchain-workshop-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/w3-blockchain-workshop-2016/><h6>W3 Blockchain Workshop</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/wasabi-research-club/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/wasabi-research-club/><h6>Wasabi Research Club</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/what-bitcoin-did-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/what-bitcoin-did-podcast/><h6>What Bitcoin Did Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></div></nav></div><div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky"><div class=docs-toc><nav id=TableOfContents><ul><li><a href=#introduction>Introduction</a></li><li><a href=#dining-cryptographers>Dining cryptographers</a></li><li><a href=#dining-bitcoiners>Dining bitcoiners</a></li><li><a href=#what-the-fork>What the fork</a></li><li><a href=#basic-types-of-bitcoin-forks>Basic types of bitcoin forks</a></li><li><a href=#altcoin-solutions>Altcoin solutions</a></li><li><a href=#bitcoin-soft-forks>Bitcoin soft-forks</a></li><li><a href=#segwit>Segwit</a></li><li><a href=#bip8>bip8</a></li><li><a href=#bip9-version-bits>bip9 version bits</a></li><li><a href=#where-versionbits-went-wrong>Where versionbits went wrong</a></li><li><a href=#honest-signaling>Honest signaling</a></li><li><a href=#what-happened-with-segwit>What happened with segwit?</a></li><li><a href=#sorta-probably-a-fork-spork>Sorta probably a fork (spork)</a></li><li><a href=#analysis-voting>Analysis: voting</a></li><li><a href=#analysis-honesty>Analysis: honesty</a></li><li><a href=#analysis-timeouts>Analysis: timeouts</a></li><li><a href=#analysis-transient-profit>Analysis: transient profit</a></li><li><a href=#analysis-bad-strat-profit>Analysis: bad strat profit</a></li><li><a href=#analysis-good-strat-profit>Analysis: good strat profit</a></li><li><a href=#analysis-behavior>Analysis: behavior</a></li><li><a href=#how-can-we-use-this-practically>How can we use this practically?</a></li><li><a href=#when-spork>When spork?</a></li><li><a href=#future-work>Future work</a></li><li><a href=#scaling-bitcoin>Scaling Bitcoin</a></li></ul></nav></div></div><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3"><a href=/>Home</a>
-&lt; <a href=/stanford-blockchain-conference/>Stanford Blockchain</a>
-&lt; <a href=/stanford-blockchain-conference/2019/>Stanford Blockchain Conference 2019</a>
-&lt; Spork Probabilistic Bitcoin Soft Forks<h1>Spork Probabilistic Bitcoin Soft Forks</h1><p><i>Transcript By: Bryan Bishop</i></p><p>Tags:
-<a href=/tags/forks>Forks</a>, <a href=/tags/privacy>Privacy</a></p><p>Category:
-<a href=/categories/conference>Conference</a></p><p>Spork: Probabilistic bitcoin soft-forks</p><p>Jeremy Rubin</p><h1 id=introduction>Introduction</h1><p>Thank you for the introduction. I have a secret. I am not an economist, so you&rsquo;ll have to forgive me if I don&rsquo;t have your favorite annotations today. I have my own annotations. I originally gave a predecessor to this talk in Japan. You might notice my title here is a haiku: these are protocols used for changing the bitcoin netwokr protocols. People do highly value staying together for a chain, we&rsquo;re doing coordinated activation of a new upgrade.</p><h1 id=dining-cryptographers>Dining cryptographers</h1><p>You might notice that computer scientists really like food. We have cookies, bytes, and forks. The first problem of computer science is a problem of dining philosophers and it&rsquo;s used to show how you can coordinate concurrency in programs. Later, we have the dining cryptographers used to demonstrate the coordination of privacy.</p><h1 id=dining-bitcoiners>Dining bitcoiners</h1><p>I am introducing dining bitcoiners, and there&rsquo;s no fork on the table, and they want to coordinate what kind of utencil they want to use.</p><h1 id=what-the-fork>What the fork</h1><p>So what is a fork? In linux, you run whatever you like. You don&rsquo;t need the central maintainer&rsquo;s approval. But if you do want his approval, he might say no get your crap code out of here and we only want high quality code that conforms to our standards. If you still want to run it for yourself, you can do this.</p><p>But in cryptocurrency, we all have to run the same code. We have to get our patches merged on master in order to get it to work. We&rsquo;re not just trying to convince one maintainer, but we&rsquo;re trying to convince everyone. Nobody has key control to say this is the change that will happen.</p><h1 id=basic-types-of-bitcoin-forks>Basic types of bitcoin forks</h1><p>A hard-fork is a breaking change that requires the entire network to update immediately. This removes a rule restriction and makes it more permissive. On the other hand, soft-forks are backwards and forward compatible changes that is compatible. It can only further restrict the existing rules.</p><p>Each of these types of forks have a pro and con. In a hard-fork, you could get better code quality. When you change eveyrthing, you can get rid of bad practices from the old code base. In a soft-fork, you&rsquo;re stuck with what you had before. In a hard-fork, you suffer from centralized decision making and you might spend a lot of time figuring out exactly how much should be changed. On the other hand, in a soft-fork, you don&rsquo;t have this coordination issue, and not everyone needs to run the latest version but this does lead to some weird considerations where perhaps a small majority like 51% start enforcing a new rule that not everyone is aware of and it causes transaction censorship or something. But there&rsquo;s usually less arguing about the soft-fork details.</p><h1 id=altcoin-solutions>Altcoin solutions</h1><p>Tezos is built on the premise of making all the rules amended in the protocol itself. And stellar has a &ldquo;blocking set&rdquo; where nodes could stop progress until a new change is adopted.</p><h1 id=bitcoin-soft-forks>Bitcoin soft-forks</h1><p>Let&rsquo;s talk about bitcoin soft-forks and what they look like concretely. In a typical bitcoin sof-tfork for enabling a new feature, you usually take a NOP operation in the script interpreter and you change it into something that verifies some property. So you take some NOP and you say you want to check a sha3 hash. Right now there&rsquo;s no sha3 in bitcoin. You check that both of the arguments, sha3 from the stack&mldr; an old client will have the same execution semantics, so you might just choose to discard them afterwards, except a transaction that doesnt' include the correct preimage will be invalid after the fork is adopted.</p><h1 id=segwit>Segwit</h1><p>Pieter made this process a lot nicer in his design of segwit where he said there&rsquo;s a new script interpreter version, and all nodes just assume the script is valid when you see a version you don&rsquo;t understand. As a user, you shouldn&rsquo;t use the script version that hasn&rsquo;t been defined yet because you don&rsquo;t know what the script semantics are yet and it will always be true until it is defined.</p><p>How do soft-forks get proposed?</p><h1 id=bip8>bip8</h1><p>After some block height, we activate a new rule.</p><h1 id=bip9-version-bits>bip9 version bits</h1><p>There&rsquo;s a state flow diagram in bip9 where you define a fork, and once it&rsquo;s defined in everyone&rsquo;s software, it becomes started at a certain time and then you collect signals on each block to see whether there&rsquo;s enough support for the fork to activate. Under the bip9 proposal, you look for a 95% threshold of miners signaling. If you had a 51% attack at the same time, it would be 51%. It&rsquo;s 95% assuming no network attack.</p><h1 id=where-versionbits-went-wrong>Where versionbits went wrong</h1><p>Versionbits was used for a bit, but in controversial situations versionbits causes problems. There&rsquo;s a small misunderstanding in the issue of signaling vs voting. I think this is the key thing that delayed segwit&rsquo;s activation. bip9 is for signaling for readiness. You&rsquo;re not voting for acceptance or rejection of changes. Once a bip is in the bip9 process, developers have assumed that it is wanted. At this point, it needs to be ready for industry to adopt.</p><p>But miners interpreted this differently. They thought this would be a vote for or against the protocol and that this is their time to do it. But they were supposed to do this earlier in the process, before the developers really worked on it. They had that opportunity but didn&rsquo;t take it.</p><p>How could we fix this?</p><h1 id=honest-signaling>Honest signaling</h1><p>In bip9, it doesn&rsquo;t cost the miner anything to signal yes or no or to change their vote. But we can impose a cost so that we know the signals are true. If we don&rsquo;t do this, we get a game of chickens. Otherwise there&rsquo;s a faceoff of developers and miners and are the miners signaling etc. This process makes for delay because you push for another round. So because the remaining amount of time is known, there&rsquo;s a case where we reject the change and it never activates. So behavior gets conditioned based on whether developers are paniced about this update. This creates a sense of urgency because as the time runs short, there&rsquo;s urgency for those who want to modify it who are making this tradeoff on this change they pushed and another change that a miner might request.</p><p>We can show this in a normal nash equilibrium game that the thing that should happen that if there&rsquo;s a benefit to a change to a developer and there&rsquo;s some cost to the change to the miner, and there&rsquo;s some requests they could make, then nothing should happen and no change ends up getting adopted which is kind of a nice result not a perfect result but it at least shows us that something is wrong with this mechanism. Segwit did activate, so what happened?</p><h1 id=what-happened-with-segwit>What happened with segwit?</h1><p>The answer was we really didn&rsquo;t know. There was like 30 different things going on at the time that segwit activated. We can&rsquo;t retroactively say this is what happened. In the code base, what people ended up doing is that in bip9 when it activates, they just say let&rsquo;s just activate and now they turn it into bip8 because it did activate.</p><h1 id=sorta-probably-a-fork-spork>Sorta probably a fork (spork)</h1><p>We should be able to point to the economic conditions for something to activate, and here&rsquo;s what it cost them to vote, and so on. So I am going to propose spork (sorta probably a fork), a mechanism for making these forks more incentive compatible.</p><p>So we have a probabilistic block filter. One out of every some amount of blocks will activate based on this filter that I have written there. d > hash(hash(block)||&ldquo;upgrade name&rdquo;). The original PoW is in that hash. If you want to grind on that hash using hardware, the best you can do is normal bitcoin mining. And the nactivate after the above condition is met.</p><p>Say I want to add CHECKBLOCKHASHVERIFY. It&rsquo;s going to give us replay protection, it allows us to invalidate transactions during a reorg, and it requires a mempool rewrite. It&rsquo;s going to take some engineering effort it&rsquo;s a little complex.</p><p>So someone will draft a BIP for this, they are going to take nop8 and turn it into CHECKBLOCKATHEIGHTVERIFY. The expected activation of the rule will be set to 6 months, so it should be less than 6 months of block work.</p><p>Now it goes into a feedback loop. We have defined what ew want the change to be, nbut now we should collect feedback from the community. Say there&rsquo;s a bug, and someone will point out that you introduced an unintended side effect. So let&rsquo;s do some new mechanism that accomplishes the same goal, so the solution in this case is that you would do a non-sha256 hash and that would address this problem. Once it has gone through a feedback review concern, and everyone has raised all posisble concerns, then we make a reference implementation. And then we do backports of this feature into the last few versions so that if you&rsquo;re depending on older APIs or older behavior then you don&rsquo;t lose that you just enforce the new role.</p><p>The rollout looks like the following: at a certain point it activates, but in general we expect it to activate in 6 months. At any point before that, we still expect it to take 6 months to activate.</p><h1 id=analysis-voting>Analysis: voting</h1><p>By the time that an upgrade is a spork, we have reached rough consensus and have figured out if there&rsquo;s support or strong opposition. Every miner has an ability to vote against a fork. They can refuse to build on top of blocks that signal the fork. Miners can just say they wont mine on that and that&rsquo;s the vote. However, this voting can be costly because it might require them to orphan their blocks. So they need to throw away their own block. This isn&rsquo;t a permanent problem- you&rsquo;re thinking about these lost blocks, is that bad for the network? Well, bitcoin has difficulty adjustments, and it would just manifest as a change in difficulty, and with a parameter of 6 months it&rsquo;s going to be well within the variance of hash rate anyway.</p><h1 id=analysis-honesty>Analysis: honesty</h1><p>Every miner has a large incentive. They have spent a lot of money to get that block, and they would have to throw it away. They will have to really throw away money here.</p><h1 id=analysis-timeouts>Analysis: timeouts</h1><p>The expected activation is constant. At all times, we expect it to be 6 months. We do kind of get conditional information after this point, but if it&rsquo;s taking 100 years then we&rsquo;re pretty sure people are politically opposed to it, but we let that happen naturally. Making someone wait, doesn&rsquo;t gain a miner any influence.</p><h1 id=analysis-transient-profit>Analysis: transient profit</h1><p>Before and after the fork, we&rsquo;re going to say the miner has some probability of mining a block. A miner is probably opposed to a fork because it decreases their probability of mining a block. So at each step, with some probability they get a reward and then they repeat the process and then we discount their next round with some discounting factor. Discounting has some support in the economic literature which as a reaosnable model&mldr; there are other models you could plug in, but I&rsquo;m not an economist. Under this one, it&rsquo;s a simple geometric sum. After the fork in the transient case, we&rsquo;re expected to be earning RPinactive over (1-delta), and .. before the fork.. and what is this discounting rate? Where does it come from? Maybe increased competition from the future miners mining in the future. Or maybe our hardware will get too hot and break. Any secret advantage we have might get well known across the market, and maybe our patented advantage becomes a disadvantage. Or maybe we have to convert to dollars and have to&mldr; have to discount our future profits compared to our current profits. A simple model for this is to observe hashrate on the network and observe its growth over time. It&rsquo;s reasonably like 2x every year, and based on that we can look at what a curve block discounting rate should be, which is a really big probability. We don&rsquo;t discount that much for every step in our model. If we see 2x per rate, the delta value is 0.9999868.</p><h1 id=analysis-bad-strat-profit>Analysis: bad strat profit</h1><p>There is some probability 1/t that they activate the fork, and some probability 1/(1-t) that there is no fork and I start over again from the beginning. We can analyze this state machine and figure out the expected value by starting to traverse this graph, and it ends up being a little more complex than the earlier analysis of the transient state. We get an expression from this.</p><h1 id=analysis-good-strat-profit>Analysis: good strat profit</h1><p>When we get that block that activates, we call that good and oh well I had my fun and run in the sun, and I agree to lose my higher p inactive rate. We can analyze this all the same and get another expression of the expected value.</p><h1 id=analysis-behavior>Analysis: behavior</h1><p>When is the expected value of the good strategy greater than or equal to the expected value of the bad strategy? So when do miners behave? The miners would prefer to activate the rule if it happens, which is better than orphaning their own block. We want to set it up so that miners are okay with activating the rule even with decreased hashrate.</p><p>We can graph this inequality and see what it is. You can see that you get some kind of interesting results. What I&rsquo;m showing you is on the x axis is p inactive and on the y axis is p active over x. So I&rsquo;m just showing you this expresses something as a percentage of what the p inactive is. You can see a wall. For a 1 year expected activation and a discounting rate of 40%/year. So in one year you expect your hashrate to be worth only 40% of what it is worth today. In these circumstances, it shows you that something under 10% of the hashrate can be opposed to a fork. That doesn&rsquo;t sound too good- let&rsquo;s look at another parameter.</p><p>What if discounting is 80%? What if we expect our hashrate to decrease in value only 20% per year. So this is 80%. In this regime, everyone is willing to adopt the new rule right away as soon as it activates. Nobody is throwing away their own block. This is counterintuitive. What this is suggesting is that because of the decay, miners who have a lesser decline in their future profit are more willing to accept a change even though it hurts them more in the future. They have this longer time period where the hashrate is active at a lowe rrate, but because they end up valuing things as they do, and you can convince yourself how this works more concretely, it ends up working out.</p><p>Let&rsquo;s look at a few more examples and then talk about how to apply this result. Say you set it to 6 months, and they discount to 20% in a year. You get a more even picture, where under 20% of the miners should be opposed and then you get everyone activating faithfully. If you change that discounting rate, so if you increase it from 0.2 to 0.4, you see a similar result where everyone is activating. I wanted to show you that the transitions happen at different discounting rates.</p><h1 id=how-can-we-use-this-practically>How can we use this practically?</h1><p>Here, with 12 months and discounting equals 1/2 per year, this is a pretty good regime of activation. If under 30% of miners are opposed, then they would actually be happy with just activating the rule and not choosing to orphan their own block. There&rsquo;s some other models that suggest bitcoin is unstable if we have 30% of miners thinking about one thing anyway. So we can see in the far left of this graph is that there&rsquo;s an indifference region where miners don&rsquo;t care about the good strategy or bad strategy. I&rsquo;d like to think they would go with the good strategy, but maybe not.</p><p>Let&rsquo;s say we wanted to improve this and ew wanted to say let&rsquo;s get this even better. Just increasing the time, that makes things worse. If we increase the time, because of the way miners discount things, as you increase the time the miner&rsquo;s time preference changes and then they become more opposed ot the change. There&rsquo;s a lot of room to fork, because miners will be orphaning their own blocks.</p><p>On the other hand, if we decrease from 1 year to 6 months, we increase the space of where miners are happy and now for all values it&rsquo;s profitable for miners comparing the good strategy and bad strategy.</p><h1 id=when-spork>When spork?</h1><p>This does let us think about the variables at stake for miners and how we might model it and change the timelines and sometimes making the timelines longer messes with miner discount rates, and counterintuitively we might want to put some time pressure on miners but allow them to organically vote on it indefinitely, because this makes it more compatible to activate it if they don&rsquo;t mind either way.</p><h1 id=future-work>Future work</h1><p>There are some extensions that might make it easier to apply in practice. In practice, you might want a spork start height where the rollout can&rsquo;t happen before some height. In my model, it was just a probabilistic filter and a match, but that&rsquo;s unreasonable because you need some time to upgrade. So maybe it starts in a month or something, but it shouldn&rsquo;t be as soon as the binary is released.</p><p>You might want a n-block phase delay&ndash; so wait n blocks after it passes or activates. This is useful for an exchange customer, where they weren&rsquo;t awake in their timezone and they have to wake up their engineers to make sure the migration goes well. So let it be like 1 week and people can be ready to flip any flags they have to flip.</p><p>You might also want to do n-block pass enable, after n-blocks pass the threshold, then enable the feature. No individual block would be copable for the activation of this, it&rsquo;s just a number of blocks that end up activating this. So the first few miners don&rsquo;t have as large incentive to oprhan their own block. This reduces variance and we don&rsquo;t have to encode any concrete timeline.</p><p>We might want an early adopter rule. If the activating block itself is not compatible with the new rule, then invalidate the block reward in that block. This would incentivize everyone to have compatibility earlier, which incentivies earlier compatibility. So the soft-fork could be put in place and enforced by most miners even before the fork is completely activated.</p><p>You could also do orphan-proof activation where just the existence of a block that activates it, so if someone had enough hashrate to temporarily rent and the nactivate it, then it&rsquo;s harder to prove self-orphan reduce antagonistic&mldr;.</p><h1 id=scaling-bitcoin>Scaling Bitcoin</h1><p>Also, Stanford Blockchain Conference was announced at the last Scaling Bitcoin so I&rsquo;m going ot be announcing Scaling Bitcoin 2019 in Tel Aviv, Israel and also Bitcoin Edge Dev++.</p><div class=row></div></div></div></div><script src=https://btctranscripts.com/lib/jquery.min.js></script><script src=https://btctranscripts.com/lib/popper.min.js></script><script src=https://btctranscripts.com/js/bootstrap.min.js></script><script type=text/javascript src=/plugins/lunr.min.js></script><script type=text/javascript src=/plugins/auto-complete.js></script><link href=/plugins/auto-complete.css rel=stylesheet><script type=text/javascript>var baseurl="https://btctranscripts.com/"</script><script type=text/javascript src=/plugins/search.js></script><script type=text/javascript src=https://btctranscripts.com/js/custom.js></script><script type=text/javascript src=/plugins/clipboard.js></script><script>new ClipboardJS('.btn')</script></body></html>
+Introduction Thank you for the introduction. I have a secret. I am not an economist, so you&rsquo;ll have to forgive me if I don&rsquo;t have your favorite annotations today. I have my own annotations. I originally gave a predecessor to this talk in Japan. You might notice my title here is a haiku: these are protocols used for changing the bitcoin netwokr protocols. People do highly value staying together for a chain, we&rsquo;re doing coordinated activation of a new upgrade.">
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id=navbarMain>
+<div class=container>
+<div>
+<a class=navbar-brand href=/>
+₿itcoin Transcripts
+</a>
+</div>
+<div class="collapse navbar-collapse" id=navbarMainCollapse>
+<ul class="navbar-nav ml-auto">
+<li class=nav-item>
+<a class=nav-link href=https://github.com/bitcointranscripts/bitcointranscripts target=_blank>
+<i class="fab fa-github"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<div class=container-fluid>
+<div class=row>
+<div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
+<button class="navbar-toggler navbar-toggler-right collapsed" type=button data-toggle=collapse data-target=#sidenav-left-collapse aria-controls=sidenav-left-collapse aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span>
+</button>
+<div class="collapse navbar-collapse align-items-start flex-column" id=sidenav-left-collapse>
+<form class="form-inline my-2 my-lg-0 searchbox">
+<input class="form-control mr-sm-2 w-100" data-search-input id=search-by type=text placeholder='Search (press "/")'>
+</form>
+<ul class="navbar-nav flex-column pt-3">
+<li data-nav-id=/advancing-bitcoin/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/advancing-bitcoin/><h6>Advancing Bitcoin</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/advancing-bitcoin/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/advancing-bitcoin/2019/><h6>Advancing Bitcoin 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/advancing-bitcoin/2020/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/advancing-bitcoin/2020/><h6>Advancing Bitcoin 2020</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/andreas-antonopoulos/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/andreas-antonopoulos/><h6>Andreas Antonopoulos</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/austin-bitcoin-developers/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/austin-bitcoin-developers/><h6>Austin Bitcoin Developers</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/baltic-honeybadger/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/baltic-honeybadger/><h6>Baltic Honeybadger</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/baltic-honeybadger/2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/baltic-honeybadger/2018/><h6>Baltic Honeybadger 2018</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/baltic-honeybadger/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/baltic-honeybadger/2019/><h6>Baltic Honeybadger 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/bit-block-boom/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bit-block-boom/><h6>Bit Block Boom</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/bit-block-boom/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bit-block-boom/2019/><h6>Bit Block Boom 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/bitcoin-core-dev-tech/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bitcoin-core-dev-tech/><h6>Bitcoin Core Dev Tech</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/bitcoin-core-dev-tech/bitcoin-devcore-2015/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bitcoin-core-dev-tech/bitcoin-devcore-2015/><h6>Bitcoin Devcore Meetup (2015)</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/bitcoin-design/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bitcoin-design/><h6>Bitcoin Design</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/bitcoin-magazine/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bitcoin-magazine/><h6>Bitcoin Magazine</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/bitcoinops/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bitcoinops/><h6>Bitcoinops</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/bitcoinops/schnorr-taproot-workshop-2019/ class="nav-item my-1">
+<a class="nav-link p-0" href=/bitcoinops/schnorr-taproot-workshop-2019/><h6>Schnorr Taproot Workshop 2019</h6></a>
+</li>
+</ul>
+</li>
+<li data-nav-id=/blockchain-protocol-analysis-security-engineering/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/><h6>Blockchain Protocol Analysis Security Eng</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/blockchain-protocol-analysis-security-engineering/2017/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2017/><h6>Blockchain Protocol Analysis Security Engineering 2017</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/blockchain-protocol-analysis-security-engineering/2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2018/><h6>Blockchain Protocol Analysis Security Engineering 2018</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/blockstream-webinars/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/blockstream-webinars/><h6>Blockstream Webinars</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/boltathon/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/boltathon/><h6>Boltathon</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/breaking-bitcoin/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/breaking-bitcoin/><h6>Breaking Bitcoin</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/breaking-bitcoin/2017/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/breaking-bitcoin/2017/><h6>Breaking Bitcoin 2017</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/breaking-bitcoin/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/breaking-bitcoin/2019/><h6>Breaking Bitcoin 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/building-on-bitcoin/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/building-on-bitcoin/><h6>Building On Bitcoin</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/building-on-bitcoin/2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/building-on-bitcoin/2018/><h6>Building On Bitcoin 2018</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/chaincode-labs/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/chaincode-labs/><h6>Chaincode Labs</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/chaincode-labs/chaincode-podcast/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/chaincode-labs/chaincode-podcast/><h6>Chaincode Podcast</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/chaincode-labs/chaincode-residency/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/chaincode-labs/chaincode-residency/><h6>Chaincode Residency</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/chicago-bitdevs/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/chicago-bitdevs/><h6>Chicago Bitdevs</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/coindesk-consensus-2016/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/coindesk-consensus-2016/><h6>Coindesk Consensus</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/coordination-of-decentralized-finance-workshop/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/><h6>Coordination of Decentralized Finance</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/coordination-of-decentralized-finance-workshop/2020-stanford/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/2020-stanford/><h6>2020 Stanford</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/cppcon/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/cppcon/><h6>CPPcon</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/cppcon/2017/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/cppcon/2017/><h6>CPPcon 2017</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/cppcon/2020/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/cppcon/2020/><h6>CPPcon 2020</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/cryptoeconomic-systems/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/cryptoeconomic-systems/><h6>Cryptoeconomic Systems</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/cryptoeconomic-systems/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/cryptoeconomic-systems/2019/><h6>Cryptoeconomic Systems 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/dallas-bitcoin-symposium/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/dallas-bitcoin-symposium/><h6>Dallas Bitcoin Symposium</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/decentralized-financial-architecture-workshop/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/decentralized-financial-architecture-workshop/><h6>Decentralized Financial Architecture Workshop</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/bitcoin-developers-miners-meeting-2016/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bitcoin-developers-miners-meeting-2016/><h6>Developers-Miners Meeting</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/greg-maxwell/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/greg-maxwell/><h6>Greg Maxwell</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/grincon/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/grincon/><h6>Grincon</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/grincon/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/grincon/2019/><h6>Grincon 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/honey-badger-diaries/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/honey-badger-diaries/><h6>Honey Badger Diaries</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/la-bitdevs/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/la-bitdevs/><h6>LA Bitdevs</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/layer2-summit/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/layer2-summit/><h6>Layer2 Summit</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/layer2-summit/2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/layer2-summit/2018/><h6>Layer2 Summit 2018</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/lets-talk-bitcoin-podcast/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/lets-talk-bitcoin-podcast/><h6>Lets Talk Bitcoin Podcast</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/lightning-conference/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/lightning-conference/><h6>Lightning Conference</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/lightning-conference/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/lightning-conference/2019/><h6>Lightning Conference 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/lightning-hack-day/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/lightning-hack-day/><h6>Lightning Hack Day</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/london-bitcoin-devs/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/london-bitcoin-devs/><h6>London Bitcoin Devs</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/magicalcryptoconference/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/magicalcryptoconference/><h6>Magicalcryptoconference</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/magicalcryptoconference/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/magicalcryptoconference/2019/><h6>Magicalcryptoconference 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/misc/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/misc/><h6>Misc</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/><h6>MIT Bitcoin Expo</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2015/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2015/><h6>Mit Bitcoin Expo 2015</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2016/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2016/><h6>Mit Bitcoin Expo 2016</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2017/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2017/><h6>Mit Bitcoin Expo 2017</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2018/><h6>Mit Bitcoin Expo 2018</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2019/><h6>Mit Bitcoin Expo 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2020/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2020/><h6>Mit Bitcoin Expo 2020</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2021/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2021/><h6>Mit Bitcoin Expo 2021</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/munich-meetup/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/munich-meetup/><h6>Munich Meetup</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/noded-podcast/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/noded-podcast/><h6>Noded Podcast</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/realworldcrypto/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/realworldcrypto/><h6>Realworldcrypto</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/realworldcrypto/2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/realworldcrypto/2018/><h6>Realworldcrypto 2018</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/rebooting-web-of-trust/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/rebooting-web-of-trust/><h6>Rebooting Web Of Trust</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/rebooting-web-of-trust/2019-prague/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/rebooting-web-of-trust/2019-prague/><h6>2019 Prague</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/ruben-somsen/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/ruben-somsen/><h6>Ruben Somsen</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/satoshi-roundtable/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/satoshi-roundtable/><h6>Satoshi Roundtable</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/satoshi-roundtable/sr-004/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/satoshi-roundtable/sr-004/><h6>Sr 004</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/scalingbitcoin/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/><h6>Scaling Bitcoin Conference</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/scalingbitcoin/montreal-2015/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/montreal-2015/><h6>Montreal (2015)</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/scalingbitcoin/hong-kong-2015/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/hong-kong-2015/><h6>Hong Kong (2015)</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/scalingbitcoin/milan-2016/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/milan-2016/><h6>Milan (2016)</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/scalingbitcoin/stanford-2017/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/><h6>Stanford (2017)</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/scalingbitcoin/stanford-2017/edgeplusplus/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/edgeplusplus/><h6>Edgeplusplus</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/scalingbitcoin/tokyo-2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/><h6>Tokyo (2018)</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/scalingbitcoin/tokyo-2018/edgedevplusplus/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/edgedevplusplus/><h6>Edgedevplusplus</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/scalingbitcoin/tel-aviv-2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/><h6>Tel Aviv (2019)</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/scalingbitcoin/tel-aviv-2019/edgedevplusplus/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/edgedevplusplus/><h6>Edgedevplusplus</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/sf-bitcoin-meetup/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/sf-bitcoin-meetup/><h6>SF Bitcoin Meetup</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/simons-institute/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/simons-institute/><h6>Simons Institute</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/stanford-blockchain-conference/ class="nav-item my-1 parent haschildren">
+<a class="nav-link p-0" href=/stanford-blockchain-conference/><h6>Stanford Blockchain</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/stanford-blockchain-conference/2019/ class="nav-item my-1 parent haschildren">
+<a class="nav-link p-0" href=/stanford-blockchain-conference/2019/><h6>Stanford Blockchain Conference 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/stanford-blockchain-conference/2020/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/stanford-blockchain-conference/2020/><h6>Stanford Blockchain Conference 2020</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/stephan-livera-podcast/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/stephan-livera-podcast/><h6>Stephan Livera Podcast</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/sydney-bitcoin-meetup/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/sydney-bitcoin-meetup/><h6>Sydney Bitcoin Meetup</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/texas-bitcoin-conference-2014/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/texas-bitcoin-conference-2014/><h6>Texas Bitcoin Conference</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/tftc-podcast/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/tftc-podcast/><h6>TFTC Podcast</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/verifiable-delay-functions/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/verifiable-delay-functions/><h6>Verifiable Delay Functions</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/verifiable-delay-functions/vdf-day-2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/verifiable-delay-functions/vdf-day-2019/><h6>Vdf Day 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/vr-bitcoin/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/vr-bitcoin/><h6>VR Bitcoin</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/w3-blockchain-workshop-2016/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/w3-blockchain-workshop-2016/><h6>W3 Blockchain Workshop</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/wasabi-research-club/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/wasabi-research-club/><h6>Wasabi Research Club</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/what-bitcoin-did-podcast/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/what-bitcoin-did-podcast/><h6>What Bitcoin Did Podcast</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+<div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky"><div class=docs-toc>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#introduction>Introduction</a></li>
+<li><a href=#dining-cryptographers>Dining cryptographers</a></li>
+<li><a href=#dining-bitcoiners>Dining bitcoiners</a></li>
+<li><a href=#what-the-fork>What the fork</a></li>
+<li><a href=#basic-types-of-bitcoin-forks>Basic types of bitcoin forks</a></li>
+<li><a href=#altcoin-solutions>Altcoin solutions</a></li>
+<li><a href=#bitcoin-soft-forks>Bitcoin soft-forks</a></li>
+<li><a href=#segwit>Segwit</a></li>
+<li><a href=#bip8>bip8</a></li>
+<li><a href=#bip9-version-bits>bip9 version bits</a></li>
+<li><a href=#where-versionbits-went-wrong>Where versionbits went wrong</a></li>
+<li><a href=#honest-signaling>Honest signaling</a></li>
+<li><a href=#what-happened-with-segwit>What happened with segwit?</a></li>
+<li><a href=#sorta-probably-a-fork-spork>Sorta probably a fork (spork)</a></li>
+<li><a href=#analysis-voting>Analysis: voting</a></li>
+<li><a href=#analysis-honesty>Analysis: honesty</a></li>
+<li><a href=#analysis-timeouts>Analysis: timeouts</a></li>
+<li><a href=#analysis-transient-profit>Analysis: transient profit</a></li>
+<li><a href=#analysis-bad-strat-profit>Analysis: bad strat profit</a></li>
+<li><a href=#analysis-good-strat-profit>Analysis: good strat profit</a></li>
+<li><a href=#analysis-behavior>Analysis: behavior</a></li>
+<li><a href=#how-can-we-use-this-practically>How can we use this practically?</a></li>
+<li><a href=#when-spork>When spork?</a></li>
+<li><a href=#future-work>Future work</a></li>
+<li><a href=#scaling-bitcoin>Scaling Bitcoin</a></li>
+</ul>
+</nav>
+</div>
+</div>
+<div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+<a href=/>Home</a>
+&lt; <a href=/stanford-blockchain-conference/>
+Stanford Blockchain
+</a>
+&lt; <a href=/stanford-blockchain-conference/2019/>
+Stanford Blockchain Conference 2019
+</a>
+&lt; Spork Probabilistic Bitcoin Soft Forks
+<h1>Spork Probabilistic Bitcoin Soft Forks</h1>
+<p><i>Transcript By: Bryan Bishop</i></p>
+<p>Tags:
+<a href=/tags/forks>Forks</a>, <a href=/tags/privacy>Privacy</a></p>
+<p>Category:
+<a href=/categories/conference>Conference</a></p>
+<p>Spork: Probabilistic bitcoin soft-forks</p>
+<p>Jeremy Rubin</p>
+<h1 id=introduction>Introduction</h1>
+<p>Thank you for the introduction. I have a secret. I am not an economist, so you&rsquo;ll have to forgive me if I don&rsquo;t have your favorite annotations today. I have my own annotations. I originally gave a predecessor to this talk in Japan. You might notice my title here is a haiku: these are protocols used for changing the bitcoin netwokr protocols. People do highly value staying together for a chain, we&rsquo;re doing coordinated activation of a new upgrade.</p>
+<h1 id=dining-cryptographers>Dining cryptographers</h1>
+<p>You might notice that computer scientists really like food. We have cookies, bytes, and forks. The first problem of computer science is a problem of dining philosophers and it&rsquo;s used to show how you can coordinate concurrency in programs. Later, we have the dining cryptographers used to demonstrate the coordination of privacy.</p>
+<h1 id=dining-bitcoiners>Dining bitcoiners</h1>
+<p>I am introducing dining bitcoiners, and there&rsquo;s no fork on the table, and they want to coordinate what kind of utencil they want to use.</p>
+<h1 id=what-the-fork>What the fork</h1>
+<p>So what is a fork? In linux, you run whatever you like. You don&rsquo;t need the central maintainer&rsquo;s approval. But if you do want his approval, he might say no get your crap code out of here and we only want high quality code that conforms to our standards. If you still want to run it for yourself, you can do this.</p>
+<p>But in cryptocurrency, we all have to run the same code. We have to get our patches merged on master in order to get it to work. We&rsquo;re not just trying to convince one maintainer, but we&rsquo;re trying to convince everyone. Nobody has key control to say this is the change that will happen.</p>
+<h1 id=basic-types-of-bitcoin-forks>Basic types of bitcoin forks</h1>
+<p>A hard-fork is a breaking change that requires the entire network to update immediately. This removes a rule restriction and makes it more permissive. On the other hand, soft-forks are backwards and forward compatible changes that is compatible. It can only further restrict the existing rules.</p>
+<p>Each of these types of forks have a pro and con. In a hard-fork, you could get better code quality. When you change eveyrthing, you can get rid of bad practices from the old code base. In a soft-fork, you&rsquo;re stuck with what you had before. In a hard-fork, you suffer from centralized decision making and you might spend a lot of time figuring out exactly how much should be changed. On the other hand, in a soft-fork, you don&rsquo;t have this coordination issue, and not everyone needs to run the latest version but this does lead to some weird considerations where perhaps a small majority like 51% start enforcing a new rule that not everyone is aware of and it causes transaction censorship or something. But there&rsquo;s usually less arguing about the soft-fork details.</p>
+<h1 id=altcoin-solutions>Altcoin solutions</h1>
+<p>Tezos is built on the premise of making all the rules amended in the protocol itself. And stellar has a &ldquo;blocking set&rdquo; where nodes could stop progress until a new change is adopted.</p>
+<h1 id=bitcoin-soft-forks>Bitcoin soft-forks</h1>
+<p>Let&rsquo;s talk about bitcoin soft-forks and what they look like concretely. In a typical bitcoin sof-tfork for enabling a new feature, you usually take a NOP operation in the script interpreter and you change it into something that verifies some property. So you take some NOP and you say you want to check a sha3 hash. Right now there&rsquo;s no sha3 in bitcoin. You check that both of the arguments, sha3 from the stack&mldr; an old client will have the same execution semantics, so you might just choose to discard them afterwards, except a transaction that doesnt' include the correct preimage will be invalid after the fork is adopted.</p>
+<h1 id=segwit>Segwit</h1>
+<p>Pieter made this process a lot nicer in his design of segwit where he said there&rsquo;s a new script interpreter version, and all nodes just assume the script is valid when you see a version you don&rsquo;t understand. As a user, you shouldn&rsquo;t use the script version that hasn&rsquo;t been defined yet because you don&rsquo;t know what the script semantics are yet and it will always be true until it is defined.</p>
+<p>How do soft-forks get proposed?</p>
+<h1 id=bip8>bip8</h1>
+<p>After some block height, we activate a new rule.</p>
+<h1 id=bip9-version-bits>bip9 version bits</h1>
+<p>There&rsquo;s a state flow diagram in bip9 where you define a fork, and once it&rsquo;s defined in everyone&rsquo;s software, it becomes started at a certain time and then you collect signals on each block to see whether there&rsquo;s enough support for the fork to activate. Under the bip9 proposal, you look for a 95% threshold of miners signaling. If you had a 51% attack at the same time, it would be 51%. It&rsquo;s 95% assuming no network attack.</p>
+<h1 id=where-versionbits-went-wrong>Where versionbits went wrong</h1>
+<p>Versionbits was used for a bit, but in controversial situations versionbits causes problems. There&rsquo;s a small misunderstanding in the issue of signaling vs voting. I think this is the key thing that delayed segwit&rsquo;s activation. bip9 is for signaling for readiness. You&rsquo;re not voting for acceptance or rejection of changes. Once a bip is in the bip9 process, developers have assumed that it is wanted. At this point, it needs to be ready for industry to adopt.</p>
+<p>But miners interpreted this differently. They thought this would be a vote for or against the protocol and that this is their time to do it. But they were supposed to do this earlier in the process, before the developers really worked on it. They had that opportunity but didn&rsquo;t take it.</p>
+<p>How could we fix this?</p>
+<h1 id=honest-signaling>Honest signaling</h1>
+<p>In bip9, it doesn&rsquo;t cost the miner anything to signal yes or no or to change their vote. But we can impose a cost so that we know the signals are true. If we don&rsquo;t do this, we get a game of chickens. Otherwise there&rsquo;s a faceoff of developers and miners and are the miners signaling etc. This process makes for delay because you push for another round. So because the remaining amount of time is known, there&rsquo;s a case where we reject the change and it never activates. So behavior gets conditioned based on whether developers are paniced about this update. This creates a sense of urgency because as the time runs short, there&rsquo;s urgency for those who want to modify it who are making this tradeoff on this change they pushed and another change that a miner might request.</p>
+<p>We can show this in a normal nash equilibrium game that the thing that should happen that if there&rsquo;s a benefit to a change to a developer and there&rsquo;s some cost to the change to the miner, and there&rsquo;s some requests they could make, then nothing should happen and no change ends up getting adopted which is kind of a nice result not a perfect result but it at least shows us that something is wrong with this mechanism. Segwit did activate, so what happened?</p>
+<h1 id=what-happened-with-segwit>What happened with segwit?</h1>
+<p>The answer was we really didn&rsquo;t know. There was like 30 different things going on at the time that segwit activated. We can&rsquo;t retroactively say this is what happened. In the code base, what people ended up doing is that in bip9 when it activates, they just say let&rsquo;s just activate and now they turn it into bip8 because it did activate.</p>
+<h1 id=sorta-probably-a-fork-spork>Sorta probably a fork (spork)</h1>
+<p>We should be able to point to the economic conditions for something to activate, and here&rsquo;s what it cost them to vote, and so on. So I am going to propose spork (sorta probably a fork), a mechanism for making these forks more incentive compatible.</p>
+<p>So we have a probabilistic block filter. One out of every some amount of blocks will activate based on this filter that I have written there. d > hash(hash(block)||&ldquo;upgrade name&rdquo;). The original PoW is in that hash. If you want to grind on that hash using hardware, the best you can do is normal bitcoin mining. And the nactivate after the above condition is met.</p>
+<p>Say I want to add CHECKBLOCKHASHVERIFY. It&rsquo;s going to give us replay protection, it allows us to invalidate transactions during a reorg, and it requires a mempool rewrite. It&rsquo;s going to take some engineering effort it&rsquo;s a little complex.</p>
+<p>So someone will draft a BIP for this, they are going to take nop8 and turn it into CHECKBLOCKATHEIGHTVERIFY. The expected activation of the rule will be set to 6 months, so it should be less than 6 months of block work.</p>
+<p>Now it goes into a feedback loop. We have defined what ew want the change to be, nbut now we should collect feedback from the community. Say there&rsquo;s a bug, and someone will point out that you introduced an unintended side effect. So let&rsquo;s do some new mechanism that accomplishes the same goal, so the solution in this case is that you would do a non-sha256 hash and that would address this problem. Once it has gone through a feedback review concern, and everyone has raised all posisble concerns, then we make a reference implementation. And then we do backports of this feature into the last few versions so that if you&rsquo;re depending on older APIs or older behavior then you don&rsquo;t lose that you just enforce the new role.</p>
+<p>The rollout looks like the following: at a certain point it activates, but in general we expect it to activate in 6 months. At any point before that, we still expect it to take 6 months to activate.</p>
+<h1 id=analysis-voting>Analysis: voting</h1>
+<p>By the time that an upgrade is a spork, we have reached rough consensus and have figured out if there&rsquo;s support or strong opposition. Every miner has an ability to vote against a fork. They can refuse to build on top of blocks that signal the fork. Miners can just say they wont mine on that and that&rsquo;s the vote. However, this voting can be costly because it might require them to orphan their blocks. So they need to throw away their own block. This isn&rsquo;t a permanent problem- you&rsquo;re thinking about these lost blocks, is that bad for the network? Well, bitcoin has difficulty adjustments, and it would just manifest as a change in difficulty, and with a parameter of 6 months it&rsquo;s going to be well within the variance of hash rate anyway.</p>
+<h1 id=analysis-honesty>Analysis: honesty</h1>
+<p>Every miner has a large incentive. They have spent a lot of money to get that block, and they would have to throw it away. They will have to really throw away money here.</p>
+<h1 id=analysis-timeouts>Analysis: timeouts</h1>
+<p>The expected activation is constant. At all times, we expect it to be 6 months. We do kind of get conditional information after this point, but if it&rsquo;s taking 100 years then we&rsquo;re pretty sure people are politically opposed to it, but we let that happen naturally. Making someone wait, doesn&rsquo;t gain a miner any influence.</p>
+<h1 id=analysis-transient-profit>Analysis: transient profit</h1>
+<p>Before and after the fork, we&rsquo;re going to say the miner has some probability of mining a block. A miner is probably opposed to a fork because it decreases their probability of mining a block. So at each step, with some probability they get a reward and then they repeat the process and then we discount their next round with some discounting factor. Discounting has some support in the economic literature which as a reaosnable model&mldr; there are other models you could plug in, but I&rsquo;m not an economist. Under this one, it&rsquo;s a simple geometric sum. After the fork in the transient case, we&rsquo;re expected to be earning RPinactive over (1-delta), and .. before the fork.. and what is this discounting rate? Where does it come from? Maybe increased competition from the future miners mining in the future. Or maybe our hardware will get too hot and break. Any secret advantage we have might get well known across the market, and maybe our patented advantage becomes a disadvantage. Or maybe we have to convert to dollars and have to&mldr; have to discount our future profits compared to our current profits. A simple model for this is to observe hashrate on the network and observe its growth over time. It&rsquo;s reasonably like 2x every year, and based on that we can look at what a curve block discounting rate should be, which is a really big probability. We don&rsquo;t discount that much for every step in our model. If we see 2x per rate, the delta value is 0.9999868.</p>
+<h1 id=analysis-bad-strat-profit>Analysis: bad strat profit</h1>
+<p>There is some probability 1/t that they activate the fork, and some probability 1/(1-t) that there is no fork and I start over again from the beginning. We can analyze this state machine and figure out the expected value by starting to traverse this graph, and it ends up being a little more complex than the earlier analysis of the transient state. We get an expression from this.</p>
+<h1 id=analysis-good-strat-profit>Analysis: good strat profit</h1>
+<p>When we get that block that activates, we call that good and oh well I had my fun and run in the sun, and I agree to lose my higher p inactive rate. We can analyze this all the same and get another expression of the expected value.</p>
+<h1 id=analysis-behavior>Analysis: behavior</h1>
+<p>When is the expected value of the good strategy greater than or equal to the expected value of the bad strategy? So when do miners behave? The miners would prefer to activate the rule if it happens, which is better than orphaning their own block. We want to set it up so that miners are okay with activating the rule even with decreased hashrate.</p>
+<p>We can graph this inequality and see what it is. You can see that you get some kind of interesting results. What I&rsquo;m showing you is on the x axis is p inactive and on the y axis is p active over x. So I&rsquo;m just showing you this expresses something as a percentage of what the p inactive is. You can see a wall. For a 1 year expected activation and a discounting rate of 40%/year. So in one year you expect your hashrate to be worth only 40% of what it is worth today. In these circumstances, it shows you that something under 10% of the hashrate can be opposed to a fork. That doesn&rsquo;t sound too good- let&rsquo;s look at another parameter.</p>
+<p>What if discounting is 80%? What if we expect our hashrate to decrease in value only 20% per year. So this is 80%. In this regime, everyone is willing to adopt the new rule right away as soon as it activates. Nobody is throwing away their own block. This is counterintuitive. What this is suggesting is that because of the decay, miners who have a lesser decline in their future profit are more willing to accept a change even though it hurts them more in the future. They have this longer time period where the hashrate is active at a lowe rrate, but because they end up valuing things as they do, and you can convince yourself how this works more concretely, it ends up working out.</p>
+<p>Let&rsquo;s look at a few more examples and then talk about how to apply this result. Say you set it to 6 months, and they discount to 20% in a year. You get a more even picture, where under 20% of the miners should be opposed and then you get everyone activating faithfully. If you change that discounting rate, so if you increase it from 0.2 to 0.4, you see a similar result where everyone is activating. I wanted to show you that the transitions happen at different discounting rates.</p>
+<h1 id=how-can-we-use-this-practically>How can we use this practically?</h1>
+<p>Here, with 12 months and discounting equals 1/2 per year, this is a pretty good regime of activation. If under 30% of miners are opposed, then they would actually be happy with just activating the rule and not choosing to orphan their own block. There&rsquo;s some other models that suggest bitcoin is unstable if we have 30% of miners thinking about one thing anyway. So we can see in the far left of this graph is that there&rsquo;s an indifference region where miners don&rsquo;t care about the good strategy or bad strategy. I&rsquo;d like to think they would go with the good strategy, but maybe not.</p>
+<p>Let&rsquo;s say we wanted to improve this and ew wanted to say let&rsquo;s get this even better. Just increasing the time, that makes things worse. If we increase the time, because of the way miners discount things, as you increase the time the miner&rsquo;s time preference changes and then they become more opposed ot the change. There&rsquo;s a lot of room to fork, because miners will be orphaning their own blocks.</p>
+<p>On the other hand, if we decrease from 1 year to 6 months, we increase the space of where miners are happy and now for all values it&rsquo;s profitable for miners comparing the good strategy and bad strategy.</p>
+<h1 id=when-spork>When spork?</h1>
+<p>This does let us think about the variables at stake for miners and how we might model it and change the timelines and sometimes making the timelines longer messes with miner discount rates, and counterintuitively we might want to put some time pressure on miners but allow them to organically vote on it indefinitely, because this makes it more compatible to activate it if they don&rsquo;t mind either way.</p>
+<h1 id=future-work>Future work</h1>
+<p>There are some extensions that might make it easier to apply in practice. In practice, you might want a spork start height where the rollout can&rsquo;t happen before some height. In my model, it was just a probabilistic filter and a match, but that&rsquo;s unreasonable because you need some time to upgrade. So maybe it starts in a month or something, but it shouldn&rsquo;t be as soon as the binary is released.</p>
+<p>You might want a n-block phase delay&ndash; so wait n blocks after it passes or activates. This is useful for an exchange customer, where they weren&rsquo;t awake in their timezone and they have to wake up their engineers to make sure the migration goes well. So let it be like 1 week and people can be ready to flip any flags they have to flip.</p>
+<p>You might also want to do n-block pass enable, after n-blocks pass the threshold, then enable the feature. No individual block would be copable for the activation of this, it&rsquo;s just a number of blocks that end up activating this. So the first few miners don&rsquo;t have as large incentive to oprhan their own block. This reduces variance and we don&rsquo;t have to encode any concrete timeline.</p>
+<p>We might want an early adopter rule. If the activating block itself is not compatible with the new rule, then invalidate the block reward in that block. This would incentivize everyone to have compatibility earlier, which incentivies earlier compatibility. So the soft-fork could be put in place and enforced by most miners even before the fork is completely activated.</p>
+<p>You could also do orphan-proof activation where just the existence of a block that activates it, so if someone had enough hashrate to temporarily rent and the nactivate it, then it&rsquo;s harder to prove self-orphan reduce antagonistic&mldr;.</p>
+<h1 id=scaling-bitcoin>Scaling Bitcoin</h1>
+<p>Also, Stanford Blockchain Conference was announced at the last Scaling Bitcoin so I&rsquo;m going ot be announcing Scaling Bitcoin 2019 in Tel Aviv, Israel and also Bitcoin Edge Dev++.</p>
+<div class=row></div>
+</div>
+</div>
+</div>
+<script src=https://btctranscripts.com/lib/jquery.min.js></script>
+<script src=https://btctranscripts.com/lib/popper.min.js></script>
+<script src=https://btctranscripts.com/js/bootstrap.min.js></script>
+<script type=text/javascript src=/plugins/lunr.min.js></script>
+<script type=text/javascript src=/plugins/auto-complete.js></script>
+<link href=/plugins/auto-complete.css rel=stylesheet>
+<script type=text/javascript>var baseurl="https://btctranscripts.com/"</script>
+<script type=text/javascript src=/plugins/search.js></script>
+<script type=text/javascript src=https://btctranscripts.com/js/custom.js></script>
+<script type=text/javascript src=/plugins/clipboard.js></script>
+<script>new ClipboardJS('.btn')</script>
+</body>
+</html>

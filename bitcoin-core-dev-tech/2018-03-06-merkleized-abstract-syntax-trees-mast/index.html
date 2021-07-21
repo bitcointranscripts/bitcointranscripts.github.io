@@ -1,10 +1,624 @@
-<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=canonical href=https://btctranscripts.com/bitcoin-core-dev-tech/2018-03-06-merkleized-abstract-syntax-trees-mast/><title>Merkleized Abstract Syntax Trees - MAST (2018-03-06) | ₿itcoin Transcripts</title><link href=https://btctranscripts.com/css/fontawesome.min.css rel=stylesheet><link rel=stylesheet href=https://btctranscripts.com/css/ace.min.css><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://btctranscripts.com/images/btctranscripts.png"><meta name=twitter:title content="Merkleized Abstract Syntax Trees - MAST (2018-03-06)"><meta name=twitter:description content="https://twitter.com/kanzure/status/972120890279432192
+<!doctype html><html><head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<link rel=canonical href=https://btctranscripts.com/bitcoin-core-dev-tech/2018-03-06-merkleized-abstract-syntax-trees-mast/>
+<title>
+Merkleized Abstract Syntax Trees - MAST (2018-03-06) | ₿itcoin Transcripts
+</title>
+<link href=https://btctranscripts.com/css/fontawesome.min.css rel=stylesheet>
+<link rel=stylesheet href=https://btctranscripts.com/css/ace.min.css>
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://btctranscripts.com/images/btctranscripts.png">
+<meta name=twitter:title content="Merkleized Abstract Syntax Trees - MAST (2018-03-06)">
+<meta name=twitter:description content="https://twitter.com/kanzure/status/972120890279432192
 See also http://diyhpl.us/wiki/transcripts/bitcoin-core-dev-tech/2017-09-07-merkleized-abstract-syntax-trees/
 MAST stuff You could directly merkleize scripts if you switch from IF, IFNOT, ELSE with IFJUMP that has the number of bytes.
 With graftroot and taproot, you never to do any scripts (which were a hack to get things started). But we&rsquo;re doing validation and computation.
-You take every single path it has; so instead, it becomes &mldr; certain condition, or certain not conditions&mldr; You take every possible ifs, you use this, you say it&rsquo;s one of these, then you specify which one, and you show it and everyone else can validate this."></head><body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id=navbarMain><div class=container><div><a class=navbar-brand href=/>₿itcoin Transcripts</a></div><div class="collapse navbar-collapse" id=navbarMainCollapse><ul class="navbar-nav ml-auto"><li class=nav-item><a class=nav-link href=https://github.com/bitcointranscripts/bitcointranscripts target=_blank><i class="fab fa-github"></i></a></li></ul></div></div></nav><div class=container-fluid><div class=row><div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0"><button class="navbar-toggler navbar-toggler-right collapsed" type=button data-toggle=collapse data-target=#sidenav-left-collapse aria-controls=sidenav-left-collapse aria-expanded=false aria-label="Toggle navigation">
-<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse align-items-start flex-column" id=sidenav-left-collapse><form class="form-inline my-2 my-lg-0 searchbox"><input class="form-control mr-sm-2 w-100" data-search-input id=search-by type=text placeholder='Search (press "/")'></form><ul class="navbar-nav flex-column pt-3"><li data-nav-id=/advancing-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/><h6>Advancing Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/advancing-bitcoin/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2019/><h6>Advancing Bitcoin 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/advancing-bitcoin/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2020/><h6>Advancing Bitcoin 2020</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/andreas-antonopoulos/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/andreas-antonopoulos/><h6>Andreas Antonopoulos</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/austin-bitcoin-developers/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/austin-bitcoin-developers/><h6>Austin Bitcoin Developers</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/baltic-honeybadger/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/><h6>Baltic Honeybadger</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/baltic-honeybadger/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/2018/><h6>Baltic Honeybadger 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/baltic-honeybadger/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/2019/><h6>Baltic Honeybadger 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bit-block-boom/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bit-block-boom/><h6>Bit Block Boom</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bit-block-boom/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bit-block-boom/2019/><h6>Bit Block Boom 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-core-dev-tech/ class="nav-item my-1 parent haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/><h6>Bitcoin Core Dev Tech</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bitcoin-core-dev-tech/bitcoin-devcore-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/bitcoin-devcore-2015/><h6>Bitcoin Devcore Meetup (2015)</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-design/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-design/><h6>Bitcoin Design</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-magazine/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-magazine/><h6>Bitcoin Magazine</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoinops/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinops/><h6>Bitcoinops</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bitcoinops/schnorr-taproot-workshop-2019/ class="nav-item my-1"><a class="nav-link p-0" href=/bitcoinops/schnorr-taproot-workshop-2019/><h6>Schnorr Taproot Workshop 2019</h6></a></li></ul></li><li data-nav-id=/blockchain-protocol-analysis-security-engineering/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/><h6>Blockchain Protocol Analysis Security Eng</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/blockchain-protocol-analysis-security-engineering/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2017/><h6>Blockchain Protocol Analysis Security Engineering 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/blockchain-protocol-analysis-security-engineering/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2018/><h6>Blockchain Protocol Analysis Security Engineering 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/blockstream-webinars/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockstream-webinars/><h6>Blockstream Webinars</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/boltathon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/boltathon/><h6>Boltathon</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/breaking-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/><h6>Breaking Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/breaking-bitcoin/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/2017/><h6>Breaking Bitcoin 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/breaking-bitcoin/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/2019/><h6>Breaking Bitcoin 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/building-on-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/building-on-bitcoin/><h6>Building On Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/building-on-bitcoin/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/building-on-bitcoin/2018/><h6>Building On Bitcoin 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/chaincode-labs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-labs/><h6>Chaincode Labs</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/chaincode-labs/chaincode-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-labs/chaincode-podcast/><h6>Chaincode Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/chaincode-labs/chaincode-residency/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-labs/chaincode-residency/><h6>Chaincode Residency</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/chicago-bitdevs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chicago-bitdevs/><h6>Chicago Bitdevs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/coindesk-consensus-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coindesk-consensus-2016/><h6>Coindesk Consensus</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/coordination-of-decentralized-finance-workshop/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/><h6>Coordination of Decentralized Finance</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/coordination-of-decentralized-finance-workshop/2020-stanford/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/2020-stanford/><h6>2020 Stanford</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/cppcon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/><h6>CPPcon</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/cppcon/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/2017/><h6>CPPcon 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/cppcon/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/2020/><h6>CPPcon 2020</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/cryptoeconomic-systems/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cryptoeconomic-systems/><h6>Cryptoeconomic Systems</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/cryptoeconomic-systems/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cryptoeconomic-systems/2019/><h6>Cryptoeconomic Systems 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/dallas-bitcoin-symposium/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/dallas-bitcoin-symposium/><h6>Dallas Bitcoin Symposium</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/decentralized-financial-architecture-workshop/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/decentralized-financial-architecture-workshop/><h6>Decentralized Financial Architecture Workshop</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-developers-miners-meeting-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-developers-miners-meeting-2016/><h6>Developers-Miners Meeting</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/greg-maxwell/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/greg-maxwell/><h6>Greg Maxwell</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/grincon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/grincon/><h6>Grincon</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/grincon/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/grincon/2019/><h6>Grincon 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/honey-badger-diaries/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/honey-badger-diaries/><h6>Honey Badger Diaries</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/la-bitdevs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/la-bitdevs/><h6>LA Bitdevs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/layer2-summit/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/layer2-summit/><h6>Layer2 Summit</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/layer2-summit/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/layer2-summit/2018/><h6>Layer2 Summit 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/lets-talk-bitcoin-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lets-talk-bitcoin-podcast/><h6>Lets Talk Bitcoin Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/lightning-conference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-conference/><h6>Lightning Conference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/lightning-conference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-conference/2019/><h6>Lightning Conference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/lightning-hack-day/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-hack-day/><h6>Lightning Hack Day</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/london-bitcoin-devs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/london-bitcoin-devs/><h6>London Bitcoin Devs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/magicalcryptoconference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/magicalcryptoconference/><h6>Magicalcryptoconference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/magicalcryptoconference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/magicalcryptoconference/2019/><h6>Magicalcryptoconference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/misc/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/misc/><h6>Misc</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/><h6>MIT Bitcoin Expo</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2015/><h6>Mit Bitcoin Expo 2015</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2016/><h6>Mit Bitcoin Expo 2016</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2017/><h6>Mit Bitcoin Expo 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2018/><h6>Mit Bitcoin Expo 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2019/><h6>Mit Bitcoin Expo 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2020/><h6>Mit Bitcoin Expo 2020</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2021/><h6>Mit Bitcoin Expo 2021</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/munich-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/munich-meetup/><h6>Munich Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/noded-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/noded-podcast/><h6>Noded Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/realworldcrypto/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/><h6>Realworldcrypto</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/realworldcrypto/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/2018/><h6>Realworldcrypto 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/rebooting-web-of-trust/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/rebooting-web-of-trust/><h6>Rebooting Web Of Trust</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/rebooting-web-of-trust/2019-prague/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/rebooting-web-of-trust/2019-prague/><h6>2019 Prague</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/ruben-somsen/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/ruben-somsen/><h6>Ruben Somsen</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/satoshi-roundtable/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/satoshi-roundtable/><h6>Satoshi Roundtable</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/satoshi-roundtable/sr-004/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/satoshi-roundtable/sr-004/><h6>Sr 004</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/scalingbitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/><h6>Scaling Bitcoin Conference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/scalingbitcoin/montreal-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/montreal-2015/><h6>Montreal (2015)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/hong-kong-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/hong-kong-2015/><h6>Hong Kong (2015)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/milan-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/milan-2016/><h6>Milan (2016)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/stanford-2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/><h6>Stanford (2017)</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/scalingbitcoin/stanford-2017/edgeplusplus/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/edgeplusplus/><h6>Edgeplusplus</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/scalingbitcoin/tokyo-2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/><h6>Tokyo (2018)</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/scalingbitcoin/tokyo-2018/edgedevplusplus/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/edgedevplusplus/><h6>Edgedevplusplus</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/scalingbitcoin/tel-aviv-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/><h6>Tel Aviv (2019)</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/scalingbitcoin/tel-aviv-2019/edgedevplusplus/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/edgedevplusplus/><h6>Edgedevplusplus</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li></ul></li><li data-nav-id=/sf-bitcoin-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/sf-bitcoin-meetup/><h6>SF Bitcoin Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/simons-institute/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/simons-institute/><h6>Simons Institute</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/stanford-blockchain-conference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/><h6>Stanford Blockchain</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/stanford-blockchain-conference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/2019/><h6>Stanford Blockchain Conference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/stanford-blockchain-conference/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/2020/><h6>Stanford Blockchain Conference 2020</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/stephan-livera-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stephan-livera-podcast/><h6>Stephan Livera Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/sydney-bitcoin-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/sydney-bitcoin-meetup/><h6>Sydney Bitcoin Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/texas-bitcoin-conference-2014/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/texas-bitcoin-conference-2014/><h6>Texas Bitcoin Conference</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/tftc-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tftc-podcast/><h6>TFTC Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/verifiable-delay-functions/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/verifiable-delay-functions/><h6>Verifiable Delay Functions</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/verifiable-delay-functions/vdf-day-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/verifiable-delay-functions/vdf-day-2019/><h6>Vdf Day 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/vr-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/vr-bitcoin/><h6>VR Bitcoin</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/w3-blockchain-workshop-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/w3-blockchain-workshop-2016/><h6>W3 Blockchain Workshop</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/wasabi-research-club/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/wasabi-research-club/><h6>Wasabi Research Club</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/what-bitcoin-did-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/what-bitcoin-did-podcast/><h6>What Bitcoin Did Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></div></nav></div><div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky"><div class=docs-toc><nav id=TableOfContents><ul><li><a href=#mast-stuff>MAST stuff</a></li><li><a href=#mast-discussion>MAST discussion</a></li></ul></nav></div></div><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3"><a href=/>Home</a>
-&lt; <a href=/bitcoin-core-dev-tech/>Bitcoin Core Dev Tech</a>
-&lt; Merkleized Abstract Syntax Trees - MAST (2018-03-06)<h1>Merkleized Abstract Syntax Trees - MAST (2018-03-06)</h1><p><i>Transcript By: Bryan Bishop</i></p><p>Tags:
-<a href=/tags/taproot>Taproot</a>, <a href=/tags/covenants>Covenants</a>, <a href=/tags/validation>Validation</a></p><p>Category:
-<a href=/categories/core-dev-tech>Core dev tech</a></p><p><a href=https://twitter.com/kanzure/status/972120890279432192>https://twitter.com/kanzure/status/972120890279432192</a></p><p>See also <a href=http://diyhpl.us/wiki/transcripts/bitcoin-core-dev-tech/2017-09-07-merkleized-abstract-syntax-trees/>http://diyhpl.us/wiki/transcripts/bitcoin-core-dev-tech/2017-09-07-merkleized-abstract-syntax-trees/</a></p><h1 id=mast-stuff>MAST stuff</h1><p>You could directly merkleize scripts if you switch from IF, IFNOT, ELSE with IFJUMP that has the number of bytes.</p><p>With graftroot and taproot, you never to do any scripts (which were a hack to get things started). But we&rsquo;re doing validation and computation.</p><p>You take every single path it has; so instead, it becomes &mldr; certain condition, or certain not conditions&mldr; You take every possible ifs, you use this, you say it&rsquo;s one of these, then you specify which one, and you show it and everyone else can validate this.</p><p>If you&rsquo;re doing covenants by way of showing the hierarchy inside of a taproot, bramc made the interesting point that you could have a decay rate attached to it so that the amount decreases over time. You can have a mandate any covenant enforcing a covenant, which is explicit in taproot; you could say the amount being enforced is less than or equal to the amount&mldr;. you could make it monotonic by making it decrease by 1 satoshi every time. You should pick a number like, some number of dust level. You could do something dust/weight related. And how do you get out of lock-up situations. The new taproot scheme will make covenants even better. There&rsquo;s taproot, graftroot, and then how do you combine this with MAST to make this growth logarithmic, all the conditions can be represented as fidxed functions, you commit to some script but you could get rid of the script, instead you commit to a merkle tree of possible conditions each of which specifies the conditions tha twould be enforced, it&rsquo;s not a script tha texecutes, it&rsquo;s just a data structure where first field might be relative locktime, second field might be a list of empty covenants, etc. If you want to covenant an output, the taptree looks like this or something, that&rsquo;s what you&rsquo;re saying. You show a derivation pathway, Anything you don&rsquo;t care about, you fill those in by witness upon spend. The output could be whatever, as long as you can show a merkle proof for the part of it you do care about. Attached to that covenant would be an amount.. and maybe other propreties&mldr; maybe attach arithmetic logic to that amount, and then it&rsquo;s only decreasing in size, or the sum of all covenants introduced by an input is only decreasing in size, and then in mathematical theory you have eliminated perpetual covenants, and if you tie this into the dust limits, then you have practically eliminated those unspendable covenants.</p><h1 id=mast-discussion>MAST discussion</h1><p>MAST (merkleized abstract syntax tree) is a syntax tree where, you turn it into a merkle tree, yo udon&rsquo;t have to reveal the whole tree. This idea has changed a little bit to what we are now calling MAST. It&rsquo;s quite different from the original prupoposal. The original idea was that we had &ldquo;if some condition&rdquo;, and then clause, and then else, and then some other clause. What we would do is we would hash the script (the conditional) and if it turned out that the witness, this clause here, we would reveal this other script. That was the original idea. It turns out that this is basically the same as you&ndash; could split this into two possible scripts. There&rsquo;s the assert condition, and then you have something called the &ldquo;then clause&rdquo;. And then you have the &ldquo;assert not condition&rdquo; which is the else clause. And so you broke one script, which had conditional execution into two scripts that are completely linearized. This can generalize for loops. As long as we have any straight run through of a script, then you can split it up into all the various possible exeuction paths. You get a condition where coins would be spendable by one of all of these possible scripts, even once linearized.</p><p>The next step would be to hash each of the possibilities and make a merkle tree, and then reveal which one of the possibilities you want to spend. You no longer have syntax trees, but we still call them MASTs. This is what bip116 and bip117 provide. I&rsquo;ll get specific on these, and then someone can talk about bip114.</p><p>bip116 provides OP_MERKLEBRANCHVERIFY (MBV) and it takes a count of the number of items that it is pulling out of the merkle tree. It takes the root. It takes a proof and it takes the item it is pulling out. So (item, proof, root, item count, MBV opcode). The item count is the number of elements, it&rsquo;s useful to pull out a number of elemenst. It validates. This is what bip116 provides.</p><p>In bip117, it provides tail-call semantics, because we&rsquo;re going to emulate something that looks like p2sh. In p2sh, if my memory serves me, is &ldquo;hash160 equal&rdquo;. If you wanted to see how this connects to tail-call, I&rsquo;m going to go through what this does. There&rsquo;s a script pushed on to the stack, hashes it, sees if it equals hte hash from the scriptpubkey, and that&rsquo;s it. Now, the way&ndash; if you were to actually execute this, we do template matching; but if we were to actually execute it, it would end up with one, the true value on the stack, and consume the script. If we just modified this for the heck of it, to say, instead, we&rsquo;re going to put a DUP and duplicate the script. So if you run it, it&rsquo;s the script value and the 1 on the stack. And say you change the EQUAL to EQUALVERIFY so that it consumes the result. So when it runs, it will check that it&rsquo;s the original value committed to, and leave the script on the stack. If we first pushed all the arguments and the witness for the script to execute, you&rsquo;re going to end up with a stack that looks like arg1 arg2 &mldr; argN and then the script on the stack. And that&rsquo;s what would the witness stack contain at this point. The observation is that if we treat any situation where we have two or more items on the stack, as a tail-call situation where we pop-off the last element and recurse into it as a script, this would make this modified p2sh work, and it would no longer be a special case. This would be providing a hash function for how you check that the pre-commitment matched to the script. When there&rsquo;s more than one item on a stack, you treat the last item on the stack as a script? That&rsquo;s the general tail-call idea, and the proposal is that we only do this once. How do you enforce a depth of one? That&rsquo;s easy&mldr; It&rsquo;s soft-fork compatible, if you were to want to do it, and I&rsquo;m not convinced yet that&rsquo;s a great idea, it could be an interesting application in a few places but is it something that bitcoin needs I&rsquo;m not sure, for that implementation. Do you need a push limit to the script? One downside to this is that this script would be pushed as an element, which would be 512 bytes. That can be fixed in the future by another version of script. The push limit for script is annoying because you have to include the various conditions. There&rsquo;s already a 200 opcode limit anyway&mldr; The segwit witness deserialization code enforces something here&mldr; for all but the last element. There&rsquo;s a strict limit that all stack elements during actual execution are limited to 520 bytes. This is only true of version 0, of course. Version 1 doesn&rsquo;t have any execution rules associated with it. It&rsquo;s a temporary limitation.</p><p>Had we realized this beforehand, we could have done P2SH beforehand in this way. Tail call recurison would have worked. As we found out with segwit&mldr;. When you want to do p2sh, you &mldr; 160 bits of security for the hash function&mldr; Had we done it this way, you could do 256 bits of security or something with a HASH256 opcode or something&mldr; You could provide any method for mapping the commitment in the scriptpubkey to the actual script you&rsquo;re going to execute it.</p><p>The connection to MAST is that, if you&rsquo;re okay with doing this with P2SH, the idea is to use bip116 with merklebranchverify. Instead of duplicate and hash (DUP HASH256), we push this root, and we check that the script provided in the witness stack matches. It becomes merklebranchverify and some DROP opcodes at the end. You consume the elements, prove it was what you were thinking it was, drop them off, it&rsquo;s a soft-fork opcode, and then recurse into it. At that point, things get complicated in the BIPs because it turns out in segwit we decided to not allow more than one element on the stack or else execution is set to fail. That&rsquo;s an actual consensus-enforced rule. This is something we could fix in version 1. In version 0, we don&rsquo;t need to waste a segwit version&ndash; there&rsquo;s a trick in the BIP, which we could push to the alt stack. Any parameters you have, you send it to the alt stack, and then when it does the check for whether there are any items in both, it looks at both, and then it looks at the size of items in both stacks.</p><p>Originally the idea would be to applied to all scripts. One problem that crops up is that you can no longer introspect the script to be executed, using static analysis, for the purpose of checking sigop counts or something. This could lead to DoS possibilities for anything except segwit v0. You could have valid spends of whole UTXOs that become no longer valid if they&ndash; if you have some old UTXO that would fail cleanstack, then this general &mldr; cleanstack is only active for segwit and consensus. There could be single pubkey things&mldr; that there exists a valid signature for.. but it fails cleanstack. I looked through all of testnet and mainnet, and on testnet it looked like there might be something weird.</p><p>In p2sh, cleanstack is not consensus-enforced. You woudln&rsquo;t want to recurse again if there was something left something on the stack&mldr; There were DoS vectors for p2sh, obvious ones for scritpubkey bare script&mldr; I just want to make sure you don&rsquo;t make something unspendable. The only situation where you would make something unspendable, is if there&rsquo;s a segwit v0 script which left something on the alt stack. Nobody uses the alt stack. I checked. But you can&rsquo;t assume nobody is using the alt stack, because of p2sh.</p><p>There&rsquo;s an important point: you cna&rsquo;t manipulate thingts on the altstack. You can push and pull. The only situation with stuff remaining on the altstack is a scrpit that pushed something there, and then forgot about it. In practice, why would anyone do it? Maybe someone did that, committed coins to such a UTXO already? Maybe limit the rule only for segwit or something. Oh, it is. DoS reasons why we want to remove it from bare scriptpubkey and p2sh and have it only apply to any form of segwit or something, and P2WSH also works or whatever the P2SH wrapped one is.</p><p>In the bip, I call out that there&rsquo;s no sigop counting for the subscript. No opcode counting. I think that&rsquo;s correct. You can&rsquo;t know ahead of time what these are going to be, without running a script interpreter and seeing what state you end up in. You can run numbers on what kind of denial of service you can construct doing this, like stufing it full of signature validations or something. It&rsquo;s not much more than a constant size factor of expected normal blocks&mldr; but if you&rsquo;re worried, you could introduce a script evaluation limit, that looks at the size of the stacks or the scripts, and says I wont execute more than that size times or divided by 64 checksigs or something, and that&rsquo;s the limit that gets applied. This would bound the size of what kinds of transactions could be used here.</p><p>What about doing a merkle sum tree of&mldr; I looked at merkle sum trees of this&mldr; bip98, is a dependency of bip116. bip98 specifies a more efficient and compact merkle tree structure that has even with Pieter&rsquo;s optimizations, are still 2.24x better than that, which is a modification of Satoshi&rsquo;s code. And, it does this by not doing full sha256, it does some sort of sha256 with updates and it doesn&rsquo;t have the duplication&mldr; that&rsquo;s what gets us our&mldr; the duplication bug is actually kind of bad because one of the usecases of MBV is that, say you have a 2-of-however many keys is required to sign&mldr; if you have duplication bug then you could have as many as you want of your own key, so either you make validation logic on the consensus side to &mldr; or you switch it. That&rsquo;s what bip98 is. That&rsquo;s micro-optimizing merkle trees, and you can get a factor of 2 on performance, or you decrease the size of the security factor the hashing.</p><p>Russell O&rsquo;Connor has a different merkle tree structure that he has been looking at. You could do standard initialization, do a block with whatever information you want to put in there, and hten maintain that state. The merkle trees, in bip98, use a separate hashing from sha256, because it hashes a block of information first&mldr; don&rsquo;t want to be stuck with some stupid python implementation of sha256.</p><p>jl2012 has the bip114 proposal. It is a restricted version of bip116 and bip117 combined. You put a root hash, you have a merkle root of the different scripts, you put the root hash in the scriptpubkey. And then to expand, you provide one of the scripts and the path and also the position. And then it will execute the script. It&rsquo;s a restricted version in the sense that it only does it once. And it happens with that specific pattern. I think the main difference is that bip114 allows static analysis. It&rsquo;s just like p2sh basically, you provide a path and a position. If you make the commitment upfront to say that this is going to be a standardized format like version 1 segwit, no matter what approach, you can do that. Where different groups here differ, is in whether we should take that approach upfront, or introduce a primitive and then see how it&rsquo;s used.</p><p>In bip117, it&rsquo;s a variation of OP_EVAL. If we could do 117, then I don&rsquo;t see why we couldn&rsquo;t do OP_EVAL. But it requires pushing state. If you&rsquo;re going to do some kind of evaluation in turn to the original context, that&rsquo;s a much larger implementation challenge. Tail-call is easier because you throw away the old state. We have history of bip17, where &mldr; or bip12 maybe. The implementation was wrong and vulnerable. We got appropriately scared over that, and then we went with p2sh instead. Conservativism is why you might prefer tail-call over OP_EVAL. If you have generalized p2sh, then any OP_EVAL program can be transformed into a tail-call recursion program, assuming you don&rsquo;t require turing completeness or something. You can restructure your script so that you leave remaining things on the stack.</p><p>Relationship between MAST and taproot, current state of the pull requests. bip114 is more efficient in that you don&rsquo;t need to recompute the hash. So you lose one level of the tree that needs to be revealed, effectively. Is this going to be a templated MAST mode, or a programmable MAST mode? bip114 has other stuff though. It also has disabled opcodes and stuff. Is it going to be programmable execution, or templated roots.</p><p>What about OP_CHECKINPUTVERIFY and then if you have&ndash; it&rsquo;s tricky to get completely right, but you can say, I would like to be paired with some set of other inputs. And then another input could say it would like to be paired with other inputs, and then lets you pre-sign combinatorially, you would be signing with a set of other things, and you don&rsquo;t need to sign m by m transactions, you can just specify an input that can be paired in any combination. This lets you do pre-signed transactions and then later do coin control without exponential blow-up in the number of pre-signed transactions. And you can check that an input existed, from the script. And you need to be able to put the commitment to the input, outside of the txid. If it&rsquo;s inside the txid, then you can&rsquo;t like, you can&rsquo;t, one has to come before the other and becomes reliant on the other. The commitment to the tree of inputs that you would want to be paired with, has to be outside the txid for the output that you&rsquo;re&mldr;. One example is, let&rsquo;s say I have one transaction, and I want it to go through, and it has some set of inputs, and I have a bunch of 1 bitcoin transactions, and I just want to spend one of those, and I don&rsquo;t want to require any one particular of them. You know the output ahead of time. What this would let you do is, it would let you&ndash; you can, batch transactions&mldr;. You would be using this. Rather than having like, the sighash specify to look at the inputs and that&rsquo;s what you end up signing, you put that in the script. What this would let you do is, pick from a list and there are a like of use cases, this is something in Andrew Miller was working on this simultaneously, like his lotteries that require you to have a number of inputs potentially and it&rsquo;s exponential blow-up&mldr; The cleanfix for the blow-up in amiller&rsquo;s case is difficult if not impossible to do in bitcoin. What is the usecase for the lottery? The usecase is that there&rsquo;s people gambling, like 1000 people, all of whom want to each put in one coin, and at random one of us is going to get all 1000 BTC and we wish to do this without wanting to stake massive quantities of stuff, but we wish to do it without extra staking, and we want it to be done in a way that is auditably fair across all of us. Andrew Miller came up with a clever way of doing this, which has good scaling properties in ethereum but has exponential blow-up problem in bitcoin which could be fixed if you could make it so that txid don&rsquo;t factor in all the information about how they came to be. You have brackets, and pairs of people, one of them wins, and then you do more pairs, and to prepare this out in advance, you need to sign things in advance for all the possible ways that the brackets could end, without having this exponential blow-up. I don&rsquo;t know how much of a tangent that was. Another case is coin control and security. You don&rsquo;t have share the keys for them. This is being able to specify all the transactions, without exponential blow-up.</p><p>Graftroot vs MAST v2?</p><p>How does this MAST stuff change in light of taproot and graftroot? And what&rsquo;s the current status of implementation?</p><p>bip116 and bip117 have an implementation that is on github. The PR is currently active. We believe that the implementation is correct and complete. It has been reviewed by maaku, kallewoof, by a few people inside of Blockstream and I wont name names because I might get them wrong, hasn&rsquo;t had much external review yet. There was a discussion on the mailing list, I guess. That kind of feeds into review priority thing. As far as I know, they are ready.</p><p>Taproot and graftroot in my mind changes only one aspect of this. I think they are fundamentally compatible with each other. This is not an either-or situation. MAST gets a lot of benefit for getting rolled out in a way that people can use this. What you might be using, taproot to a commitment to a script that is itself a MAST, and this gets you log size scaling&mldr; Either they are exactly compatible, or you get am ore compact version with taproot with the same merkle structures.</p><p>Consensus soft-forks should be divorced from the release process. They should come out separately. They should not be bundled with releases. We have some 30-odd bits, and we should not try to bundle features together into the same soft-forks. Bundling features together looks like political compromise. This has no segwit versions introduction. This MAST proposal seems to mostly interact with taproot. The default should be to use graftroot. It makes little sense to use MAST with graftroot because you already have that functionality. MAST with taproot makes sense. No. Graftroot is a mechanism whereby you can delegate signing authority to someone else, subject to a condition perhaps, and that other person has their own signing authority which could use some sort of MAST. Maybe they are a threshold signer and when they can&rsquo;t have everyone online, for example.</p><p>What&rsquo;s the application of MAST? Generalizing smart contracts in bitcoin, it&rsquo;s creating trees of transactions ahead of time, that are signed, you sign the root and then work your way up, and there&rsquo;s contingencies already pre-signed. Each one of these spends is possibly conditoined by locktimes, or hash locks, and kind of smart contracts that people make, are boiling down to these primitives. When we talk about making a MAST or taproot, we have all of these ways that outputs could be spent, and we need some compact way of specifying them at validation time, or asserting them at validation time, that they are valid. Then there&rsquo;s sprites, zero-collateral lotteries, lightning, &mldr; The only primitives, of all of our smart contracts are built on, are that I require a signature with this e, I require a checklocktime, or a hash preimage. The hash preimage is at least partially subsumable by scriptless script. You can have one hash preimage per script for free&mldr;. If we would know we would be restricted to just those (and I don&rsquo;t think we will be), and I&rsquo;m sure anything covenants like could be on this (and covenants become easy with taproot), you could say that we have a merkle tree and every leaf is a combination of a number of public keys aggregated together and a locktime and a hash preimage, or any of these other library options. It appears that covenants have things like checklocktimeverify, they don&rsquo;t add much to the logic, just more assertions about inputs and output sizes and output scriptpubkeys and stuff.</p><p>Where does MAST come in with these other future changes? Graftroot is nice in that it&rsquo;s constant-sized, but there are downsides, requiring interaction between all signers, you have to keep that information. The alternative is taproot, but it&rsquo;s linear scaling and you have to linearly reveal things&mldr; at some point, we could use a MAST-like construction. The trivial case for a single element is&mldr;. I think you could say that MAST is a natural augmentation of taproot in the sense that, both of them have the no-interactive setup, and once you have the interactive setup, graftroot covers everything.</p><p>If you require a script to encode the fact that there is even a MAST in place, this is inherently less efficient than saying the hash I&rsquo;m revealing is a root of a tree in the first place. It&rsquo;s an extra hash. It&rsquo;s exactly one extra hash. So this is about 40 witness bytes. Say you have 2^n combinations you want to form at the same level.</p><p>There&rsquo;s a programmable model for MAST and a templated model for MAST. THis is the bip117 vs the bip114 approach. Ignoring taproot for a second, you would have an output that is (in the programmable model) is a hash of the script of the form &ldquo;root merklebranchverify&rdquo;. In the case of the templated approach, you just have an output that is providing the root. And the input- whether inside the script or in the witness or in some other embedding level, will in the programmable model have &ldquo;proof and leaf scripts&rdquo;&mldr; you have to reveal what this hash is for, but then you need to provide the proof, and the leaf script, and connect those things together. In the input, in the templated approach, all you have is the proof and then the leaf script. The fact that the merklebranchverify in the programmable approach.. it&rsquo;s always something added, and this is orthogonal to whether you are using taproot.</p><p>In the taproot case, we could make the merkle tree root hash the thing inside the taproot&mldr; You could say that, you have taproot with the thing being &mldr;. The taproot point is either C + hash(c, root) or P = C + hash(script)&mldr;. Whatever goes into that formula in the taproot derivation, can either be the programming model or the template model. The bip114 thing will always be more efficient in there. The proof could be empty, and then the script is the root. Just verifying the hash of the script is the root, a tree with one element then the root becomes the scripthash. And the path to it is just &ldquo;null&rdquo;. The &ldquo;proof&rdquo; contains the path, in this. It contains one hash per level of tree that you are descending. In the specific case of taproot, you&rsquo;re already doing a hash due to the concatenation&mldr; so why not omit the extra hash?</p><p>In the programmable case, you have the extra hash of the root and merklebranchverify, it&rsquo;s pointless, it&rsquo;s extra bytes. Right.</p><p>On bip117, it was first proposed as only proving one thing was brought out of the merkle tree. There are cases where you might want to show 2 or 3 elements or something, multi-deriving them and then checking if the elemnets are the same, and it makes sense to do this in one opcode. Say you want a 3-of-1000 multisig, and you have a tree of 1000 keys, and you want to give proof that these are 3 elements from the tree. You could do a highly efficient serialization for a proof to pull multiple elements out of the merkle tree. In the case of taproot, you&rsquo;re only ever pulling one element out. In bip117, we decided there should not be a special case for just one element. But if we&rsquo;re going to have taproot, then it make ssense to do a special case, so that&rsquo;s the only change I would make to bip117.</p><p>You can have multiple items in taproot&mldr; but you would need to reveal the multiple items, so you lose the advantage.</p><p>You could do merklebranchverify on the same root multiple times, it would just cost more in space. Yes you could do that.</p><p>In bip117, you can bitwise compare proofs. There&rsquo;s a unique encoding for every subset of the tree. If you want to check two things pulled out are the same, you can compare those, or you can compare the proofs.</p><p>With taproot, for a merkle root, do you want P on the stack?</p><p>The roots in taproot, might be the root of a tree, but it could also be thought of as a script. The inferential difference to the idea is smaller if you talk about taproot committing to a script. But there&rsquo;s no reason that it&rsquo;s just some script, it could be the root of a merkle tree.</p><p>Taproot shows why a templated approach should not be rolled out. MAST was ready in January and we could have made a stronger push to get that out. If we had it templated like in bip114, in v1 maybe you push a MAST root, and it turns out that taproot is a better MAST &mldr;. you do the MAST thing, you get a root, and then you put it into the public key. If we would have come up with taproot after a programmable MAST approach had been adopted, &mldr;.. No. Say we had done the templated approach from the beginning. 2 months ago, we would have taken bip114 and committed to a MAST root. And then 2 weeks later, we realized we can do taproot, and that completely subsumes the old model. Witness program versions though? Do we want to keep aggregating complexity. You always have to maintain the old stuff. This is an approach to consensus changes that I&rsquo;m in favor of, we should make incremental changes that add new features, and if there&rsquo;s a more complex but more efficient variant that requires things that we don&rsquo;t have operational experience yet, then we should consider it. We&rsquo;re doing research on taproot and graftroot, and there&rsquo;s no PR yet. Having just a permissionless wide variety of how people can use something helps with experimentation, a question I ask myself is what if bitcoin script would have been pubkeys from the start and then ECDSA and we would not have come up with Schnorr or something&mldr; I am not sure if&mldr; that is contrast with, usually the more flexible approach is harder to reason about, especially because of this is explicitly designed to support things you don&rsquo;t know about at the time you design it. Checksigverify was not a thing when lightning was designed. You don&rsquo;t want to add in a lot of complexity to a programmatic approach that is not easy to verify. There is an inherent conflict between the experimentation and encouraging mechanism where you don&rsquo;t know how it will be used, that inherently makes it also harder to reason about, when you mentioned bip117, we were removing sigops and you bring up an argument like that the worst case scenario is not much worse then I believe you when you say that, but it puts a burden on any future change becfause now we have to wonder about how it interacts. There would have to be a ratelimiter for any other expensive operation. On the other hand, there&rsquo;s also, for a fungibility reasons, you want actual production usage to be fairly restricted. The mimblewimble scriptless script approach is trying to figure out how to get the most functionality out of the least number of features. A restricted approach is easier to recommend. But we don&rsquo;t want to deprecate the programmable approach, do we? A MAST thing looks exactly like p2sh or p2wsh with extra stack elements. We have scripts operating on what code is being executed, and this scares me to death.</p><p>Signature aggregation across soft-forks&mldr; Any time a soft-fork is rolled out, that changes which opcodes are being executed. So, for example, changing a NOP into something that&ndash; like CSV and CLTV were soft-forks of this type. Say you have a checksig before such an opcode and one after, and an old node, is always going to assume both are being executed and is going to expect a signature that uses both. However, after your soft-fork, now this second one is not executed anymore, and as a result, your aggregated signature can either be valid pre- or post- soft-fork nodes because they will have a different idea of which checksig operations have been executed. The older nodes don&rsquo;t see the new verifies. This is a bad example. Use the return true and then change to return false, that example. You&rsquo;re adding a new opcode that also does signature checks. And now you can obviously not aggregate the old checksig operators signatures with the new opcodes. And this is not a problem, but it weakens the strength of&ndash; if you have multiple deployments that add a bit of functionality and all of them imply a different set of checksig operators have been done, any potentially, reduces the effect of the aggregation. Any time the potential execution of your script changes, then maybe you must have a new version, and then there&rsquo;s only one aggregate per version&mldr;. Inevitably, &mldr; &ldquo;this is the last time that checksig operators are introduced&rdquo;, there&rsquo;s no way we can do that.</p><p>If we knew that we were rolling out taproot and we also wanted to let people using traditional script use schnorr as well, it would be more efficient to group them together, than to do them separately. Or do taproot first, and then Schnorr second. This seems to be specific to aggregation. Verify semantics soft-fork on its own could be fine. The idea is to drop that requirement. The idea behind segwit was to let us do more kinds of soft-forks&mldr;. If it doesn&rsquo;t verify, then the script is invalid. So any time there is a difference, the transaction is invalid. A bit more context: something talked about before, is that, changing OP_NOPs into OP_RETURNTRUE constructions, is very incompatible with that idea.</p><p>Why not provide extra witness data to&mldr;. you&rsquo;re doing an aggregation, on new version, can&rsquo;t you provide in the witness the extra pubkeys that are going to be aggregated in? Yes. This is one of the ways in which you could deal with cross-version aggregation where you have a block with saying, here is an aggregate signature, and here is the list of al lthe public keys it is with, and then you make your scripts, assertions of this public key must be included in that list, but it&rsquo;s not very efficient. And you need the messages, so you basically have nothing. It becomes malleable witness information, so there&rsquo;s DoS attacks. It&rsquo;s not good. We should not do any of that, and have a version number, maybe a version number inside a witness does not need to be the major one outside the scriptpubkey, and whenever the possible set of aggregations changes, you must use a new version number, and then there&rsquo;s per version number on aggregates, I think this is fine. We should not stubbornly try to get everything into a single aggregate, that&rsquo;s not going to work long-term anyway, but it&rsquo;s something to keep in mind that many incremental stages are less efficient than doing multiple things at once. When you incremenet the version number, you&rsquo;re only aggregating amongst that version; for each version, there is only one aggregate in the transaction.</p><p>bip117 should be a development priority, not a research priority. This would also apply to taproot and graftroot. What is the bar for merging any of these?</p><p>The sigops limit is still a concern, even though bip114 and bip116+bip117 is implemented. It&rsquo;s not ready for merge, because of this. Counting the sigops&ndash; the actual method in the pull request? It&rsquo;s going to take more than one developer and to say, here&rsquo;s what the limit that we really want, before we add one more limit to the consensus rules. We know a good limit. It&rsquo;s a conservative limit.</p><div class=row></div></div></div></div><script src=https://btctranscripts.com/lib/jquery.min.js></script><script src=https://btctranscripts.com/lib/popper.min.js></script><script src=https://btctranscripts.com/js/bootstrap.min.js></script><script type=text/javascript src=/plugins/lunr.min.js></script><script type=text/javascript src=/plugins/auto-complete.js></script><link href=/plugins/auto-complete.css rel=stylesheet><script type=text/javascript>var baseurl="https://btctranscripts.com/"</script><script type=text/javascript src=/plugins/search.js></script><script type=text/javascript src=https://btctranscripts.com/js/custom.js></script><script type=text/javascript src=/plugins/clipboard.js></script><script>new ClipboardJS('.btn')</script></body></html>
+You take every single path it has; so instead, it becomes &mldr; certain condition, or certain not conditions&mldr; You take every possible ifs, you use this, you say it&rsquo;s one of these, then you specify which one, and you show it and everyone else can validate this.">
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id=navbarMain>
+<div class=container>
+<div>
+<a class=navbar-brand href=/>
+₿itcoin Transcripts
+</a>
+</div>
+<div class="collapse navbar-collapse" id=navbarMainCollapse>
+<ul class="navbar-nav ml-auto">
+<li class=nav-item>
+<a class=nav-link href=https://github.com/bitcointranscripts/bitcointranscripts target=_blank>
+<i class="fab fa-github"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<div class=container-fluid>
+<div class=row>
+<div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
+<button class="navbar-toggler navbar-toggler-right collapsed" type=button data-toggle=collapse data-target=#sidenav-left-collapse aria-controls=sidenav-left-collapse aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span>
+</button>
+<div class="collapse navbar-collapse align-items-start flex-column" id=sidenav-left-collapse>
+<form class="form-inline my-2 my-lg-0 searchbox">
+<input class="form-control mr-sm-2 w-100" data-search-input id=search-by type=text placeholder='Search (press "/")'>
+</form>
+<ul class="navbar-nav flex-column pt-3">
+<li data-nav-id=/advancing-bitcoin/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/advancing-bitcoin/><h6>Advancing Bitcoin</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/advancing-bitcoin/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/advancing-bitcoin/2019/><h6>Advancing Bitcoin 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/advancing-bitcoin/2020/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/advancing-bitcoin/2020/><h6>Advancing Bitcoin 2020</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/andreas-antonopoulos/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/andreas-antonopoulos/><h6>Andreas Antonopoulos</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/austin-bitcoin-developers/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/austin-bitcoin-developers/><h6>Austin Bitcoin Developers</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/baltic-honeybadger/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/baltic-honeybadger/><h6>Baltic Honeybadger</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/baltic-honeybadger/2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/baltic-honeybadger/2018/><h6>Baltic Honeybadger 2018</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/baltic-honeybadger/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/baltic-honeybadger/2019/><h6>Baltic Honeybadger 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/bit-block-boom/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bit-block-boom/><h6>Bit Block Boom</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/bit-block-boom/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bit-block-boom/2019/><h6>Bit Block Boom 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/bitcoin-core-dev-tech/ class="nav-item my-1 parent haschildren">
+<a class="nav-link p-0" href=/bitcoin-core-dev-tech/><h6>Bitcoin Core Dev Tech</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/bitcoin-core-dev-tech/bitcoin-devcore-2015/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bitcoin-core-dev-tech/bitcoin-devcore-2015/><h6>Bitcoin Devcore Meetup (2015)</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/bitcoin-design/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bitcoin-design/><h6>Bitcoin Design</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/bitcoin-magazine/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bitcoin-magazine/><h6>Bitcoin Magazine</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/bitcoinops/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bitcoinops/><h6>Bitcoinops</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/bitcoinops/schnorr-taproot-workshop-2019/ class="nav-item my-1">
+<a class="nav-link p-0" href=/bitcoinops/schnorr-taproot-workshop-2019/><h6>Schnorr Taproot Workshop 2019</h6></a>
+</li>
+</ul>
+</li>
+<li data-nav-id=/blockchain-protocol-analysis-security-engineering/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/><h6>Blockchain Protocol Analysis Security Eng</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/blockchain-protocol-analysis-security-engineering/2017/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2017/><h6>Blockchain Protocol Analysis Security Engineering 2017</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/blockchain-protocol-analysis-security-engineering/2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2018/><h6>Blockchain Protocol Analysis Security Engineering 2018</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/blockstream-webinars/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/blockstream-webinars/><h6>Blockstream Webinars</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/boltathon/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/boltathon/><h6>Boltathon</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/breaking-bitcoin/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/breaking-bitcoin/><h6>Breaking Bitcoin</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/breaking-bitcoin/2017/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/breaking-bitcoin/2017/><h6>Breaking Bitcoin 2017</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/breaking-bitcoin/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/breaking-bitcoin/2019/><h6>Breaking Bitcoin 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/building-on-bitcoin/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/building-on-bitcoin/><h6>Building On Bitcoin</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/building-on-bitcoin/2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/building-on-bitcoin/2018/><h6>Building On Bitcoin 2018</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/chaincode-labs/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/chaincode-labs/><h6>Chaincode Labs</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/chaincode-labs/chaincode-podcast/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/chaincode-labs/chaincode-podcast/><h6>Chaincode Podcast</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/chaincode-labs/chaincode-residency/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/chaincode-labs/chaincode-residency/><h6>Chaincode Residency</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/chicago-bitdevs/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/chicago-bitdevs/><h6>Chicago Bitdevs</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/coindesk-consensus-2016/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/coindesk-consensus-2016/><h6>Coindesk Consensus</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/coordination-of-decentralized-finance-workshop/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/><h6>Coordination of Decentralized Finance</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/coordination-of-decentralized-finance-workshop/2020-stanford/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/2020-stanford/><h6>2020 Stanford</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/cppcon/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/cppcon/><h6>CPPcon</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/cppcon/2017/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/cppcon/2017/><h6>CPPcon 2017</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/cppcon/2020/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/cppcon/2020/><h6>CPPcon 2020</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/cryptoeconomic-systems/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/cryptoeconomic-systems/><h6>Cryptoeconomic Systems</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/cryptoeconomic-systems/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/cryptoeconomic-systems/2019/><h6>Cryptoeconomic Systems 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/dallas-bitcoin-symposium/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/dallas-bitcoin-symposium/><h6>Dallas Bitcoin Symposium</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/decentralized-financial-architecture-workshop/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/decentralized-financial-architecture-workshop/><h6>Decentralized Financial Architecture Workshop</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/bitcoin-developers-miners-meeting-2016/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/bitcoin-developers-miners-meeting-2016/><h6>Developers-Miners Meeting</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/greg-maxwell/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/greg-maxwell/><h6>Greg Maxwell</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/grincon/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/grincon/><h6>Grincon</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/grincon/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/grincon/2019/><h6>Grincon 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/honey-badger-diaries/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/honey-badger-diaries/><h6>Honey Badger Diaries</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/la-bitdevs/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/la-bitdevs/><h6>LA Bitdevs</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/layer2-summit/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/layer2-summit/><h6>Layer2 Summit</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/layer2-summit/2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/layer2-summit/2018/><h6>Layer2 Summit 2018</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/lets-talk-bitcoin-podcast/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/lets-talk-bitcoin-podcast/><h6>Lets Talk Bitcoin Podcast</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/lightning-conference/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/lightning-conference/><h6>Lightning Conference</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/lightning-conference/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/lightning-conference/2019/><h6>Lightning Conference 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/lightning-hack-day/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/lightning-hack-day/><h6>Lightning Hack Day</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/london-bitcoin-devs/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/london-bitcoin-devs/><h6>London Bitcoin Devs</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/magicalcryptoconference/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/magicalcryptoconference/><h6>Magicalcryptoconference</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/magicalcryptoconference/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/magicalcryptoconference/2019/><h6>Magicalcryptoconference 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/misc/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/misc/><h6>Misc</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/><h6>MIT Bitcoin Expo</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2015/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2015/><h6>Mit Bitcoin Expo 2015</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2016/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2016/><h6>Mit Bitcoin Expo 2016</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2017/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2017/><h6>Mit Bitcoin Expo 2017</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2018/><h6>Mit Bitcoin Expo 2018</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2019/><h6>Mit Bitcoin Expo 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2020/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2020/><h6>Mit Bitcoin Expo 2020</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2021/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2021/><h6>Mit Bitcoin Expo 2021</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/munich-meetup/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/munich-meetup/><h6>Munich Meetup</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/noded-podcast/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/noded-podcast/><h6>Noded Podcast</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/realworldcrypto/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/realworldcrypto/><h6>Realworldcrypto</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/realworldcrypto/2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/realworldcrypto/2018/><h6>Realworldcrypto 2018</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/rebooting-web-of-trust/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/rebooting-web-of-trust/><h6>Rebooting Web Of Trust</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/rebooting-web-of-trust/2019-prague/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/rebooting-web-of-trust/2019-prague/><h6>2019 Prague</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/ruben-somsen/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/ruben-somsen/><h6>Ruben Somsen</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/satoshi-roundtable/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/satoshi-roundtable/><h6>Satoshi Roundtable</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/satoshi-roundtable/sr-004/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/satoshi-roundtable/sr-004/><h6>Sr 004</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/scalingbitcoin/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/><h6>Scaling Bitcoin Conference</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/scalingbitcoin/montreal-2015/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/montreal-2015/><h6>Montreal (2015)</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/scalingbitcoin/hong-kong-2015/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/hong-kong-2015/><h6>Hong Kong (2015)</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/scalingbitcoin/milan-2016/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/milan-2016/><h6>Milan (2016)</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/scalingbitcoin/stanford-2017/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/><h6>Stanford (2017)</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/scalingbitcoin/stanford-2017/edgeplusplus/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/edgeplusplus/><h6>Edgeplusplus</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/scalingbitcoin/tokyo-2018/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/><h6>Tokyo (2018)</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/scalingbitcoin/tokyo-2018/edgedevplusplus/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/edgedevplusplus/><h6>Edgedevplusplus</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/scalingbitcoin/tel-aviv-2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/><h6>Tel Aviv (2019)</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/scalingbitcoin/tel-aviv-2019/edgedevplusplus/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/edgedevplusplus/><h6>Edgedevplusplus</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/sf-bitcoin-meetup/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/sf-bitcoin-meetup/><h6>SF Bitcoin Meetup</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/simons-institute/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/simons-institute/><h6>Simons Institute</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/stanford-blockchain-conference/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/stanford-blockchain-conference/><h6>Stanford Blockchain</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/stanford-blockchain-conference/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/stanford-blockchain-conference/2019/><h6>Stanford Blockchain Conference 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/stanford-blockchain-conference/2020/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/stanford-blockchain-conference/2020/><h6>Stanford Blockchain Conference 2020</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/stephan-livera-podcast/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/stephan-livera-podcast/><h6>Stephan Livera Podcast</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/sydney-bitcoin-meetup/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/sydney-bitcoin-meetup/><h6>Sydney Bitcoin Meetup</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/texas-bitcoin-conference-2014/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/texas-bitcoin-conference-2014/><h6>Texas Bitcoin Conference</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/tftc-podcast/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/tftc-podcast/><h6>TFTC Podcast</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/verifiable-delay-functions/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/verifiable-delay-functions/><h6>Verifiable Delay Functions</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/verifiable-delay-functions/vdf-day-2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/verifiable-delay-functions/vdf-day-2019/><h6>Vdf Day 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/vr-bitcoin/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/vr-bitcoin/><h6>VR Bitcoin</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/w3-blockchain-workshop-2016/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/w3-blockchain-workshop-2016/><h6>W3 Blockchain Workshop</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/wasabi-research-club/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/wasabi-research-club/><h6>Wasabi Research Club</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/what-bitcoin-did-podcast/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/what-bitcoin-did-podcast/><h6>What Bitcoin Did Podcast</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+<div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky"><div class=docs-toc>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#mast-stuff>MAST stuff</a></li>
+<li><a href=#mast-discussion>MAST discussion</a></li>
+</ul>
+</nav>
+</div>
+</div>
+<div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+<a href=/>Home</a>
+&lt; <a href=/bitcoin-core-dev-tech/>
+Bitcoin Core Dev Tech
+</a>
+&lt; Merkleized Abstract Syntax Trees - MAST (2018-03-06)
+<h1>Merkleized Abstract Syntax Trees - MAST (2018-03-06)</h1>
+<p><i>Transcript By: Bryan Bishop</i></p>
+<p>Tags:
+<a href=/tags/taproot>Taproot</a>, <a href=/tags/covenants>Covenants</a>, <a href=/tags/validation>Validation</a></p>
+<p>Category:
+<a href=/categories/core-dev-tech>Core dev tech</a></p>
+<p><a href=https://twitter.com/kanzure/status/972120890279432192>https://twitter.com/kanzure/status/972120890279432192</a></p>
+<p>See also <a href=http://diyhpl.us/wiki/transcripts/bitcoin-core-dev-tech/2017-09-07-merkleized-abstract-syntax-trees/>http://diyhpl.us/wiki/transcripts/bitcoin-core-dev-tech/2017-09-07-merkleized-abstract-syntax-trees/</a></p>
+<h1 id=mast-stuff>MAST stuff</h1>
+<p>You could directly merkleize scripts if you switch from IF, IFNOT, ELSE with IFJUMP that has the number of bytes.</p>
+<p>With graftroot and taproot, you never to do any scripts (which were a hack to get things started). But we&rsquo;re doing validation and computation.</p>
+<p>You take every single path it has; so instead, it becomes &mldr; certain condition, or certain not conditions&mldr; You take every possible ifs, you use this, you say it&rsquo;s one of these, then you specify which one, and you show it and everyone else can validate this.</p>
+<p>If you&rsquo;re doing covenants by way of showing the hierarchy inside of a taproot, bramc made the interesting point that you could have a decay rate attached to it so that the amount decreases over time. You can have a mandate any covenant enforcing a covenant, which is explicit in taproot; you could say the amount being enforced is less than or equal to the amount&mldr;. you could make it monotonic by making it decrease by 1 satoshi every time. You should pick a number like, some number of dust level. You could do something dust/weight related. And how do you get out of lock-up situations. The new taproot scheme will make covenants even better. There&rsquo;s taproot, graftroot, and then how do you combine this with MAST to make this growth logarithmic, all the conditions can be represented as fidxed functions, you commit to some script but you could get rid of the script, instead you commit to a merkle tree of possible conditions each of which specifies the conditions tha twould be enforced, it&rsquo;s not a script tha texecutes, it&rsquo;s just a data structure where first field might be relative locktime, second field might be a list of empty covenants, etc. If you want to covenant an output, the taptree looks like this or something, that&rsquo;s what you&rsquo;re saying. You show a derivation pathway, Anything you don&rsquo;t care about, you fill those in by witness upon spend. The output could be whatever, as long as you can show a merkle proof for the part of it you do care about. Attached to that covenant would be an amount.. and maybe other propreties&mldr; maybe attach arithmetic logic to that amount, and then it&rsquo;s only decreasing in size, or the sum of all covenants introduced by an input is only decreasing in size, and then in mathematical theory you have eliminated perpetual covenants, and if you tie this into the dust limits, then you have practically eliminated those unspendable covenants.</p>
+<h1 id=mast-discussion>MAST discussion</h1>
+<p>MAST (merkleized abstract syntax tree) is a syntax tree where, you turn it into a merkle tree, yo udon&rsquo;t have to reveal the whole tree. This idea has changed a little bit to what we are now calling MAST. It&rsquo;s quite different from the original prupoposal. The original idea was that we had &ldquo;if some condition&rdquo;, and then clause, and then else, and then some other clause. What we would do is we would hash the script (the conditional) and if it turned out that the witness, this clause here, we would reveal this other script. That was the original idea. It turns out that this is basically the same as you&ndash; could split this into two possible scripts. There&rsquo;s the assert condition, and then you have something called the &ldquo;then clause&rdquo;. And then you have the &ldquo;assert not condition&rdquo; which is the else clause. And so you broke one script, which had conditional execution into two scripts that are completely linearized. This can generalize for loops. As long as we have any straight run through of a script, then you can split it up into all the various possible exeuction paths. You get a condition where coins would be spendable by one of all of these possible scripts, even once linearized.</p>
+<p>The next step would be to hash each of the possibilities and make a merkle tree, and then reveal which one of the possibilities you want to spend. You no longer have syntax trees, but we still call them MASTs. This is what bip116 and bip117 provide. I&rsquo;ll get specific on these, and then someone can talk about bip114.</p>
+<p>bip116 provides OP_MERKLEBRANCHVERIFY (MBV) and it takes a count of the number of items that it is pulling out of the merkle tree. It takes the root. It takes a proof and it takes the item it is pulling out. So (item, proof, root, item count, MBV opcode). The item count is the number of elements, it&rsquo;s useful to pull out a number of elemenst. It validates. This is what bip116 provides.</p>
+<p>In bip117, it provides tail-call semantics, because we&rsquo;re going to emulate something that looks like p2sh. In p2sh, if my memory serves me, is &ldquo;hash160 equal&rdquo;. If you wanted to see how this connects to tail-call, I&rsquo;m going to go through what this does. There&rsquo;s a script pushed on to the stack, hashes it, sees if it equals hte hash from the scriptpubkey, and that&rsquo;s it. Now, the way&ndash; if you were to actually execute this, we do template matching; but if we were to actually execute it, it would end up with one, the true value on the stack, and consume the script. If we just modified this for the heck of it, to say, instead, we&rsquo;re going to put a DUP and duplicate the script. So if you run it, it&rsquo;s the script value and the 1 on the stack. And say you change the EQUAL to EQUALVERIFY so that it consumes the result. So when it runs, it will check that it&rsquo;s the original value committed to, and leave the script on the stack. If we first pushed all the arguments and the witness for the script to execute, you&rsquo;re going to end up with a stack that looks like arg1 arg2 &mldr; argN and then the script on the stack. And that&rsquo;s what would the witness stack contain at this point. The observation is that if we treat any situation where we have two or more items on the stack, as a tail-call situation where we pop-off the last element and recurse into it as a script, this would make this modified p2sh work, and it would no longer be a special case. This would be providing a hash function for how you check that the pre-commitment matched to the script. When there&rsquo;s more than one item on a stack, you treat the last item on the stack as a script? That&rsquo;s the general tail-call idea, and the proposal is that we only do this once. How do you enforce a depth of one? That&rsquo;s easy&mldr; It&rsquo;s soft-fork compatible, if you were to want to do it, and I&rsquo;m not convinced yet that&rsquo;s a great idea, it could be an interesting application in a few places but is it something that bitcoin needs I&rsquo;m not sure, for that implementation. Do you need a push limit to the script? One downside to this is that this script would be pushed as an element, which would be 512 bytes. That can be fixed in the future by another version of script. The push limit for script is annoying because you have to include the various conditions. There&rsquo;s already a 200 opcode limit anyway&mldr; The segwit witness deserialization code enforces something here&mldr; for all but the last element. There&rsquo;s a strict limit that all stack elements during actual execution are limited to 520 bytes. This is only true of version 0, of course. Version 1 doesn&rsquo;t have any execution rules associated with it. It&rsquo;s a temporary limitation.</p>
+<p>Had we realized this beforehand, we could have done P2SH beforehand in this way. Tail call recurison would have worked. As we found out with segwit&mldr;. When you want to do p2sh, you &mldr; 160 bits of security for the hash function&mldr; Had we done it this way, you could do 256 bits of security or something with a HASH256 opcode or something&mldr; You could provide any method for mapping the commitment in the scriptpubkey to the actual script you&rsquo;re going to execute it.</p>
+<p>The connection to MAST is that, if you&rsquo;re okay with doing this with P2SH, the idea is to use bip116 with merklebranchverify. Instead of duplicate and hash (DUP HASH256), we push this root, and we check that the script provided in the witness stack matches. It becomes merklebranchverify and some DROP opcodes at the end. You consume the elements, prove it was what you were thinking it was, drop them off, it&rsquo;s a soft-fork opcode, and then recurse into it. At that point, things get complicated in the BIPs because it turns out in segwit we decided to not allow more than one element on the stack or else execution is set to fail. That&rsquo;s an actual consensus-enforced rule. This is something we could fix in version 1. In version 0, we don&rsquo;t need to waste a segwit version&ndash; there&rsquo;s a trick in the BIP, which we could push to the alt stack. Any parameters you have, you send it to the alt stack, and then when it does the check for whether there are any items in both, it looks at both, and then it looks at the size of items in both stacks.</p>
+<p>Originally the idea would be to applied to all scripts. One problem that crops up is that you can no longer introspect the script to be executed, using static analysis, for the purpose of checking sigop counts or something. This could lead to DoS possibilities for anything except segwit v0. You could have valid spends of whole UTXOs that become no longer valid if they&ndash; if you have some old UTXO that would fail cleanstack, then this general &mldr; cleanstack is only active for segwit and consensus. There could be single pubkey things&mldr; that there exists a valid signature for.. but it fails cleanstack. I looked through all of testnet and mainnet, and on testnet it looked like there might be something weird.</p>
+<p>In p2sh, cleanstack is not consensus-enforced. You woudln&rsquo;t want to recurse again if there was something left something on the stack&mldr; There were DoS vectors for p2sh, obvious ones for scritpubkey bare script&mldr; I just want to make sure you don&rsquo;t make something unspendable. The only situation where you would make something unspendable, is if there&rsquo;s a segwit v0 script which left something on the alt stack. Nobody uses the alt stack. I checked. But you can&rsquo;t assume nobody is using the alt stack, because of p2sh.</p>
+<p>There&rsquo;s an important point: you cna&rsquo;t manipulate thingts on the altstack. You can push and pull. The only situation with stuff remaining on the altstack is a scrpit that pushed something there, and then forgot about it. In practice, why would anyone do it? Maybe someone did that, committed coins to such a UTXO already? Maybe limit the rule only for segwit or something. Oh, it is. DoS reasons why we want to remove it from bare scriptpubkey and p2sh and have it only apply to any form of segwit or something, and P2WSH also works or whatever the P2SH wrapped one is.</p>
+<p>In the bip, I call out that there&rsquo;s no sigop counting for the subscript. No opcode counting. I think that&rsquo;s correct. You can&rsquo;t know ahead of time what these are going to be, without running a script interpreter and seeing what state you end up in. You can run numbers on what kind of denial of service you can construct doing this, like stufing it full of signature validations or something. It&rsquo;s not much more than a constant size factor of expected normal blocks&mldr; but if you&rsquo;re worried, you could introduce a script evaluation limit, that looks at the size of the stacks or the scripts, and says I wont execute more than that size times or divided by 64 checksigs or something, and that&rsquo;s the limit that gets applied. This would bound the size of what kinds of transactions could be used here.</p>
+<p>What about doing a merkle sum tree of&mldr; I looked at merkle sum trees of this&mldr; bip98, is a dependency of bip116. bip98 specifies a more efficient and compact merkle tree structure that has even with Pieter&rsquo;s optimizations, are still 2.24x better than that, which is a modification of Satoshi&rsquo;s code. And, it does this by not doing full sha256, it does some sort of sha256 with updates and it doesn&rsquo;t have the duplication&mldr; that&rsquo;s what gets us our&mldr; the duplication bug is actually kind of bad because one of the usecases of MBV is that, say you have a 2-of-however many keys is required to sign&mldr; if you have duplication bug then you could have as many as you want of your own key, so either you make validation logic on the consensus side to &mldr; or you switch it. That&rsquo;s what bip98 is. That&rsquo;s micro-optimizing merkle trees, and you can get a factor of 2 on performance, or you decrease the size of the security factor the hashing.</p>
+<p>Russell O&rsquo;Connor has a different merkle tree structure that he has been looking at. You could do standard initialization, do a block with whatever information you want to put in there, and hten maintain that state. The merkle trees, in bip98, use a separate hashing from sha256, because it hashes a block of information first&mldr; don&rsquo;t want to be stuck with some stupid python implementation of sha256.</p>
+<p>jl2012 has the bip114 proposal. It is a restricted version of bip116 and bip117 combined. You put a root hash, you have a merkle root of the different scripts, you put the root hash in the scriptpubkey. And then to expand, you provide one of the scripts and the path and also the position. And then it will execute the script. It&rsquo;s a restricted version in the sense that it only does it once. And it happens with that specific pattern. I think the main difference is that bip114 allows static analysis. It&rsquo;s just like p2sh basically, you provide a path and a position. If you make the commitment upfront to say that this is going to be a standardized format like version 1 segwit, no matter what approach, you can do that. Where different groups here differ, is in whether we should take that approach upfront, or introduce a primitive and then see how it&rsquo;s used.</p>
+<p>In bip117, it&rsquo;s a variation of OP_EVAL. If we could do 117, then I don&rsquo;t see why we couldn&rsquo;t do OP_EVAL. But it requires pushing state. If you&rsquo;re going to do some kind of evaluation in turn to the original context, that&rsquo;s a much larger implementation challenge. Tail-call is easier because you throw away the old state. We have history of bip17, where &mldr; or bip12 maybe. The implementation was wrong and vulnerable. We got appropriately scared over that, and then we went with p2sh instead. Conservativism is why you might prefer tail-call over OP_EVAL. If you have generalized p2sh, then any OP_EVAL program can be transformed into a tail-call recursion program, assuming you don&rsquo;t require turing completeness or something. You can restructure your script so that you leave remaining things on the stack.</p>
+<p>Relationship between MAST and taproot, current state of the pull requests. bip114 is more efficient in that you don&rsquo;t need to recompute the hash. So you lose one level of the tree that needs to be revealed, effectively. Is this going to be a templated MAST mode, or a programmable MAST mode? bip114 has other stuff though. It also has disabled opcodes and stuff. Is it going to be programmable execution, or templated roots.</p>
+<p>What about OP_CHECKINPUTVERIFY and then if you have&ndash; it&rsquo;s tricky to get completely right, but you can say, I would like to be paired with some set of other inputs. And then another input could say it would like to be paired with other inputs, and then lets you pre-sign combinatorially, you would be signing with a set of other things, and you don&rsquo;t need to sign m by m transactions, you can just specify an input that can be paired in any combination. This lets you do pre-signed transactions and then later do coin control without exponential blow-up in the number of pre-signed transactions. And you can check that an input existed, from the script. And you need to be able to put the commitment to the input, outside of the txid. If it&rsquo;s inside the txid, then you can&rsquo;t like, you can&rsquo;t, one has to come before the other and becomes reliant on the other. The commitment to the tree of inputs that you would want to be paired with, has to be outside the txid for the output that you&rsquo;re&mldr;. One example is, let&rsquo;s say I have one transaction, and I want it to go through, and it has some set of inputs, and I have a bunch of 1 bitcoin transactions, and I just want to spend one of those, and I don&rsquo;t want to require any one particular of them. You know the output ahead of time. What this would let you do is, it would let you&ndash; you can, batch transactions&mldr;. You would be using this. Rather than having like, the sighash specify to look at the inputs and that&rsquo;s what you end up signing, you put that in the script. What this would let you do is, pick from a list and there are a like of use cases, this is something in Andrew Miller was working on this simultaneously, like his lotteries that require you to have a number of inputs potentially and it&rsquo;s exponential blow-up&mldr; The cleanfix for the blow-up in amiller&rsquo;s case is difficult if not impossible to do in bitcoin. What is the usecase for the lottery? The usecase is that there&rsquo;s people gambling, like 1000 people, all of whom want to each put in one coin, and at random one of us is going to get all 1000 BTC and we wish to do this without wanting to stake massive quantities of stuff, but we wish to do it without extra staking, and we want it to be done in a way that is auditably fair across all of us. Andrew Miller came up with a clever way of doing this, which has good scaling properties in ethereum but has exponential blow-up problem in bitcoin which could be fixed if you could make it so that txid don&rsquo;t factor in all the information about how they came to be. You have brackets, and pairs of people, one of them wins, and then you do more pairs, and to prepare this out in advance, you need to sign things in advance for all the possible ways that the brackets could end, without having this exponential blow-up. I don&rsquo;t know how much of a tangent that was. Another case is coin control and security. You don&rsquo;t have share the keys for them. This is being able to specify all the transactions, without exponential blow-up.</p>
+<p>Graftroot vs MAST v2?</p>
+<p>How does this MAST stuff change in light of taproot and graftroot? And what&rsquo;s the current status of implementation?</p>
+<p>bip116 and bip117 have an implementation that is on github. The PR is currently active. We believe that the implementation is correct and complete. It has been reviewed by maaku, kallewoof, by a few people inside of Blockstream and I wont name names because I might get them wrong, hasn&rsquo;t had much external review yet. There was a discussion on the mailing list, I guess. That kind of feeds into review priority thing. As far as I know, they are ready.</p>
+<p>Taproot and graftroot in my mind changes only one aspect of this. I think they are fundamentally compatible with each other. This is not an either-or situation. MAST gets a lot of benefit for getting rolled out in a way that people can use this. What you might be using, taproot to a commitment to a script that is itself a MAST, and this gets you log size scaling&mldr; Either they are exactly compatible, or you get am ore compact version with taproot with the same merkle structures.</p>
+<p>Consensus soft-forks should be divorced from the release process. They should come out separately. They should not be bundled with releases. We have some 30-odd bits, and we should not try to bundle features together into the same soft-forks. Bundling features together looks like political compromise. This has no segwit versions introduction. This MAST proposal seems to mostly interact with taproot. The default should be to use graftroot. It makes little sense to use MAST with graftroot because you already have that functionality. MAST with taproot makes sense. No. Graftroot is a mechanism whereby you can delegate signing authority to someone else, subject to a condition perhaps, and that other person has their own signing authority which could use some sort of MAST. Maybe they are a threshold signer and when they can&rsquo;t have everyone online, for example.</p>
+<p>What&rsquo;s the application of MAST? Generalizing smart contracts in bitcoin, it&rsquo;s creating trees of transactions ahead of time, that are signed, you sign the root and then work your way up, and there&rsquo;s contingencies already pre-signed. Each one of these spends is possibly conditoined by locktimes, or hash locks, and kind of smart contracts that people make, are boiling down to these primitives. When we talk about making a MAST or taproot, we have all of these ways that outputs could be spent, and we need some compact way of specifying them at validation time, or asserting them at validation time, that they are valid. Then there&rsquo;s sprites, zero-collateral lotteries, lightning, &mldr; The only primitives, of all of our smart contracts are built on, are that I require a signature with this e, I require a checklocktime, or a hash preimage. The hash preimage is at least partially subsumable by scriptless script. You can have one hash preimage per script for free&mldr;. If we would know we would be restricted to just those (and I don&rsquo;t think we will be), and I&rsquo;m sure anything covenants like could be on this (and covenants become easy with taproot), you could say that we have a merkle tree and every leaf is a combination of a number of public keys aggregated together and a locktime and a hash preimage, or any of these other library options. It appears that covenants have things like checklocktimeverify, they don&rsquo;t add much to the logic, just more assertions about inputs and output sizes and output scriptpubkeys and stuff.</p>
+<p>Where does MAST come in with these other future changes? Graftroot is nice in that it&rsquo;s constant-sized, but there are downsides, requiring interaction between all signers, you have to keep that information. The alternative is taproot, but it&rsquo;s linear scaling and you have to linearly reveal things&mldr; at some point, we could use a MAST-like construction. The trivial case for a single element is&mldr;. I think you could say that MAST is a natural augmentation of taproot in the sense that, both of them have the no-interactive setup, and once you have the interactive setup, graftroot covers everything.</p>
+<p>If you require a script to encode the fact that there is even a MAST in place, this is inherently less efficient than saying the hash I&rsquo;m revealing is a root of a tree in the first place. It&rsquo;s an extra hash. It&rsquo;s exactly one extra hash. So this is about 40 witness bytes. Say you have 2^n combinations you want to form at the same level.</p>
+<p>There&rsquo;s a programmable model for MAST and a templated model for MAST. THis is the bip117 vs the bip114 approach. Ignoring taproot for a second, you would have an output that is (in the programmable model) is a hash of the script of the form &ldquo;root merklebranchverify&rdquo;. In the case of the templated approach, you just have an output that is providing the root. And the input- whether inside the script or in the witness or in some other embedding level, will in the programmable model have &ldquo;proof and leaf scripts&rdquo;&mldr; you have to reveal what this hash is for, but then you need to provide the proof, and the leaf script, and connect those things together. In the input, in the templated approach, all you have is the proof and then the leaf script. The fact that the merklebranchverify in the programmable approach.. it&rsquo;s always something added, and this is orthogonal to whether you are using taproot.</p>
+<p>In the taproot case, we could make the merkle tree root hash the thing inside the taproot&mldr; You could say that, you have taproot with the thing being &mldr;. The taproot point is either C + hash(c, root) or P = C + hash(script)&mldr;. Whatever goes into that formula in the taproot derivation, can either be the programming model or the template model. The bip114 thing will always be more efficient in there. The proof could be empty, and then the script is the root. Just verifying the hash of the script is the root, a tree with one element then the root becomes the scripthash. And the path to it is just &ldquo;null&rdquo;. The &ldquo;proof&rdquo; contains the path, in this. It contains one hash per level of tree that you are descending. In the specific case of taproot, you&rsquo;re already doing a hash due to the concatenation&mldr; so why not omit the extra hash?</p>
+<p>In the programmable case, you have the extra hash of the root and merklebranchverify, it&rsquo;s pointless, it&rsquo;s extra bytes. Right.</p>
+<p>On bip117, it was first proposed as only proving one thing was brought out of the merkle tree. There are cases where you might want to show 2 or 3 elements or something, multi-deriving them and then checking if the elemnets are the same, and it makes sense to do this in one opcode. Say you want a 3-of-1000 multisig, and you have a tree of 1000 keys, and you want to give proof that these are 3 elements from the tree. You could do a highly efficient serialization for a proof to pull multiple elements out of the merkle tree. In the case of taproot, you&rsquo;re only ever pulling one element out. In bip117, we decided there should not be a special case for just one element. But if we&rsquo;re going to have taproot, then it make ssense to do a special case, so that&rsquo;s the only change I would make to bip117.</p>
+<p>You can have multiple items in taproot&mldr; but you would need to reveal the multiple items, so you lose the advantage.</p>
+<p>You could do merklebranchverify on the same root multiple times, it would just cost more in space. Yes you could do that.</p>
+<p>In bip117, you can bitwise compare proofs. There&rsquo;s a unique encoding for every subset of the tree. If you want to check two things pulled out are the same, you can compare those, or you can compare the proofs.</p>
+<p>With taproot, for a merkle root, do you want P on the stack?</p>
+<p>The roots in taproot, might be the root of a tree, but it could also be thought of as a script. The inferential difference to the idea is smaller if you talk about taproot committing to a script. But there&rsquo;s no reason that it&rsquo;s just some script, it could be the root of a merkle tree.</p>
+<p>Taproot shows why a templated approach should not be rolled out. MAST was ready in January and we could have made a stronger push to get that out. If we had it templated like in bip114, in v1 maybe you push a MAST root, and it turns out that taproot is a better MAST &mldr;. you do the MAST thing, you get a root, and then you put it into the public key. If we would have come up with taproot after a programmable MAST approach had been adopted, &mldr;.. No. Say we had done the templated approach from the beginning. 2 months ago, we would have taken bip114 and committed to a MAST root. And then 2 weeks later, we realized we can do taproot, and that completely subsumes the old model. Witness program versions though? Do we want to keep aggregating complexity. You always have to maintain the old stuff. This is an approach to consensus changes that I&rsquo;m in favor of, we should make incremental changes that add new features, and if there&rsquo;s a more complex but more efficient variant that requires things that we don&rsquo;t have operational experience yet, then we should consider it. We&rsquo;re doing research on taproot and graftroot, and there&rsquo;s no PR yet. Having just a permissionless wide variety of how people can use something helps with experimentation, a question I ask myself is what if bitcoin script would have been pubkeys from the start and then ECDSA and we would not have come up with Schnorr or something&mldr; I am not sure if&mldr; that is contrast with, usually the more flexible approach is harder to reason about, especially because of this is explicitly designed to support things you don&rsquo;t know about at the time you design it. Checksigverify was not a thing when lightning was designed. You don&rsquo;t want to add in a lot of complexity to a programmatic approach that is not easy to verify. There is an inherent conflict between the experimentation and encouraging mechanism where you don&rsquo;t know how it will be used, that inherently makes it also harder to reason about, when you mentioned bip117, we were removing sigops and you bring up an argument like that the worst case scenario is not much worse then I believe you when you say that, but it puts a burden on any future change becfause now we have to wonder about how it interacts. There would have to be a ratelimiter for any other expensive operation. On the other hand, there&rsquo;s also, for a fungibility reasons, you want actual production usage to be fairly restricted. The mimblewimble scriptless script approach is trying to figure out how to get the most functionality out of the least number of features. A restricted approach is easier to recommend. But we don&rsquo;t want to deprecate the programmable approach, do we? A MAST thing looks exactly like p2sh or p2wsh with extra stack elements. We have scripts operating on what code is being executed, and this scares me to death.</p>
+<p>Signature aggregation across soft-forks&mldr; Any time a soft-fork is rolled out, that changes which opcodes are being executed. So, for example, changing a NOP into something that&ndash; like CSV and CLTV were soft-forks of this type. Say you have a checksig before such an opcode and one after, and an old node, is always going to assume both are being executed and is going to expect a signature that uses both. However, after your soft-fork, now this second one is not executed anymore, and as a result, your aggregated signature can either be valid pre- or post- soft-fork nodes because they will have a different idea of which checksig operations have been executed. The older nodes don&rsquo;t see the new verifies. This is a bad example. Use the return true and then change to return false, that example. You&rsquo;re adding a new opcode that also does signature checks. And now you can obviously not aggregate the old checksig operators signatures with the new opcodes. And this is not a problem, but it weakens the strength of&ndash; if you have multiple deployments that add a bit of functionality and all of them imply a different set of checksig operators have been done, any potentially, reduces the effect of the aggregation. Any time the potential execution of your script changes, then maybe you must have a new version, and then there&rsquo;s only one aggregate per version&mldr;. Inevitably, &mldr; &ldquo;this is the last time that checksig operators are introduced&rdquo;, there&rsquo;s no way we can do that.</p>
+<p>If we knew that we were rolling out taproot and we also wanted to let people using traditional script use schnorr as well, it would be more efficient to group them together, than to do them separately. Or do taproot first, and then Schnorr second. This seems to be specific to aggregation. Verify semantics soft-fork on its own could be fine. The idea is to drop that requirement. The idea behind segwit was to let us do more kinds of soft-forks&mldr;. If it doesn&rsquo;t verify, then the script is invalid. So any time there is a difference, the transaction is invalid. A bit more context: something talked about before, is that, changing OP_NOPs into OP_RETURNTRUE constructions, is very incompatible with that idea.</p>
+<p>Why not provide extra witness data to&mldr;. you&rsquo;re doing an aggregation, on new version, can&rsquo;t you provide in the witness the extra pubkeys that are going to be aggregated in? Yes. This is one of the ways in which you could deal with cross-version aggregation where you have a block with saying, here is an aggregate signature, and here is the list of al lthe public keys it is with, and then you make your scripts, assertions of this public key must be included in that list, but it&rsquo;s not very efficient. And you need the messages, so you basically have nothing. It becomes malleable witness information, so there&rsquo;s DoS attacks. It&rsquo;s not good. We should not do any of that, and have a version number, maybe a version number inside a witness does not need to be the major one outside the scriptpubkey, and whenever the possible set of aggregations changes, you must use a new version number, and then there&rsquo;s per version number on aggregates, I think this is fine. We should not stubbornly try to get everything into a single aggregate, that&rsquo;s not going to work long-term anyway, but it&rsquo;s something to keep in mind that many incremental stages are less efficient than doing multiple things at once. When you incremenet the version number, you&rsquo;re only aggregating amongst that version; for each version, there is only one aggregate in the transaction.</p>
+<p>bip117 should be a development priority, not a research priority. This would also apply to taproot and graftroot. What is the bar for merging any of these?</p>
+<p>The sigops limit is still a concern, even though bip114 and bip116+bip117 is implemented. It&rsquo;s not ready for merge, because of this. Counting the sigops&ndash; the actual method in the pull request? It&rsquo;s going to take more than one developer and to say, here&rsquo;s what the limit that we really want, before we add one more limit to the consensus rules. We know a good limit. It&rsquo;s a conservative limit.</p>
+<div class=row></div>
+</div>
+</div>
+</div>
+<script src=https://btctranscripts.com/lib/jquery.min.js></script>
+<script src=https://btctranscripts.com/lib/popper.min.js></script>
+<script src=https://btctranscripts.com/js/bootstrap.min.js></script>
+<script type=text/javascript src=/plugins/lunr.min.js></script>
+<script type=text/javascript src=/plugins/auto-complete.js></script>
+<link href=/plugins/auto-complete.css rel=stylesheet>
+<script type=text/javascript>var baseurl="https://btctranscripts.com/"</script>
+<script type=text/javascript src=/plugins/search.js></script>
+<script type=text/javascript src=https://btctranscripts.com/js/custom.js></script>
+<script type=text/javascript src=/plugins/clipboard.js></script>
+<script>new ClipboardJS('.btn')</script>
+</body>
+</html>
