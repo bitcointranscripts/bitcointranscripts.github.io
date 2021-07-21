@@ -12,7 +12,7 @@
 {
 	"uri": "/es/advancing-bitcoin/2020/",
 	"title": "Advancing Bitcoin 2020",
-	"content": " Andrew Chow - Carteras de descriptores (2020-02-06)   Andrew Poelstra - Miniscript (2020-02-07)    "
+	"content": " Andrew Chow - Carteras de descriptores (2020-02-06)   Andrew Poelstra - Miniscript (2020-02-07)   Andrew Poelstra - Miniscript Introducción (2020-02-06)   Antoine Riard - Taproot Lightning (2020-02-06)    "
 },
 {
 	"uri": "/es/andreas-antonopoulos/2014-10-08-andreas-antonopolous-canada-senate-bitcoin/",
@@ -53,6 +53,16 @@
 	"uri": "/es/advancing-bitcoin/2020/2020-02-07-andrew-poelstra-miniscript/",
 	"title": "Andrew Poelstra - Miniscript (2020-02-07)",
 	"content": "Andrew Poelstra\nTaller sobre el avance de Bitcoin\nMiniscript\nPágina Web: https://bitcoin.sipa.be/miniscript/\nTaller de reposición: https://github.com/apoelstra/miniscript-workshop\nTranscripción de la presentación de Londres Bitcoin Devs Miniscript: https://btctranscripts.com/london-bitcoin-devs/2020-02-04-andrew-poelstra-miniscript/\nParte 1 Así que lo que vamos a hacer, es un par de cosas. Vamos a ir a través del sitio web de Miniscript y aprender sobre cómo se construye Miniscript, cómo …"
+},
+{
+	"uri": "/es/advancing-bitcoin/2020/2020-02-06-andrew-poelstra-miniscript-intro/",
+	"title": "Andrew Poelstra - Miniscript Introducción (2020-02-06)",
+	"content": "Nombre: Andrew Poelstra\nTema: Introducción a Miniscript\nLocación: El avance de Bitcoin\nDía: 6 de febrero de 2020\nVídeo: https://www.youtube.com/watch?v=eTUuwASdUBE\nDiapositivas: https://www.dropbox.com/s/vgh5vaooqqbgg1v/andrew-poelstra.pdf\nIntroducción Hola a todos. Algunos de vosotros estuvisteis en mi presentación de Bitcoin sobre Miniscript hace un par de días donde me las arreglé para pasar más de 2 horas dando una presentación sobre esto. Creo que esta vez la he reducido a 20 minutos, pero …"
+},
+{
+	"uri": "/es/advancing-bitcoin/2020/2020-02-06-antoine-riard-taproot-lightning/",
+	"title": "Antoine Riard - Taproot Lightning (2020-02-06)",
+	"content": "Nombre: Antoine Riard\nTema: A Schnorr-Taproot’ed Lightning\nUbicación: El avance de Bitcoin\nFecha: 6 de febrero de 2020\nVideo (acceso de pago): https://www.advancingbitcoin.com/video/a-schnorr-taprooted-lightning,11/\nDiapositivas: https://www.dropbox.com/s/9vs54e9bqf317u0/Schnorr-Taproot%27ed-LN.pdf\nIntroducción Hoy Schnorr y Taproot para Lightning, es un tema realmente apasionante.\nArquitectura Lightning La arquitectura Lightning para aquellos que no están familiarizados con ella. Usted tiene el …"
 },
 {
 	"uri": "/es/tags/cartera/",
@@ -125,6 +135,11 @@
 	"content": ""
 },
 {
+	"uri": "/es/tags/schnorr/",
+	"title": "schnorr",
+	"content": ""
+},
+{
 	"uri": "/es/tags/seguridad/",
 	"title": "seguridad",
 	"content": ""
@@ -137,6 +152,11 @@
 {
 	"uri": "/es/categories/taller/",
 	"title": "taller",
+	"content": ""
+},
+{
+	"uri": "/es/tags/taproot/",
+	"title": "taproot",
 	"content": ""
 },
 {

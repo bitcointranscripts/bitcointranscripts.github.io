@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>schnorr on Transcripciones de ₿itcoin</title>
+    <link>https://btctranscripts.com/es/tags/schnorr/</link>
+    <description>Recent content in schnorr on Transcripciones de ₿itcoin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://btctranscripts.com/es/tags/schnorr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Antoine Riard - Taproot Lightning (2020-02-06)</title>
+      <link>https://btctranscripts.com/es/advancing-bitcoin/2020/2020-02-06-antoine-riard-taproot-lightning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/es/advancing-bitcoin/2020/2020-02-06-antoine-riard-taproot-lightning/</guid>
+      <description>Nombre: Antoine Riard
+Tema: A Schnorr-Taproot’ed Lightning
+Ubicación: El avance de Bitcoin
+Fecha: 6 de febrero de 2020
+Video (acceso de pago): https://www.advancingbitcoin.com/video/a-schnorr-taprooted-lightning,11/
+Diapositivas: https://www.dropbox.com/s/9vs54e9bqf317u0/Schnorr-Taproot%27ed-LN.pdf
+Introducción Hoy Schnorr y Taproot para Lightning, es un tema realmente apasionante.
+Arquitectura Lightning La arquitectura Lightning para aquellos que no están familiarizados con ella. Usted tiene el blockchain como la capa subyacente. Encima de ella vas a construir un canal, tienes un HTLC y la gente va a gastar capas hacia ti.</description>
+    </item>
+    
+  </channel>
+</rss>
