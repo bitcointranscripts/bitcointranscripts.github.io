@@ -1500,6 +1500,11 @@
 	"content": "Name: Fabian Jahr\nTopic: Debugging Bitcoin Core Workshop\nLocation: Advancing Bitcoin\nDate: February 7th 2020\nVideo: No video was posted online\nFabian presentation at Bitcoin Edge Dev++ 2019: https://diyhpl.us/wiki/transcripts/scalingbitcoin/tel-aviv-2019/edgedevplusplus/debugging-bitcoin/\nDebugging Bitcoin Core doc: https://github.com/fjahr/debugging_bitcoin\nDebugging Bitcoin Core Workshop: https://gist.github.com/fjahr/5bf65daaf9ff189a0993196195005386\nIntroduction First of all welcome to the …"
 },
 {
+	"uri": "/chaincode-labs/chaincode-residency/2019-06-25-fabrice-drouin-attack-vectors-of-lightning-network/",
+	"title": "Fabrice Drouin - Attack Vectors of Lightning Network (2019-06-25)",
+	"content": "Name: Fabrice Drouin\nTopic: Attack Vectors of Lightning Network\nLocation: Chaincode Residency – Summer 2019\nDate: June 25th 2019\nVideo: https://youtu.be/R5cSrftd8nc\nIntroduction All right so I\u0026amp;rsquo;m going to introduce really quickly attack vectors on Lightning. I focus on first what you can do with the Lightning protocol, but I will mostly speak about how attacks will probably happen in real life. It\u0026amp;rsquo;s probably not going to be direct attacks on the protocol itself.\nDenial of Service So …"
+},
+{
 	"uri": "/chaincode-labs/chaincode-residency/2019-06-24-fabrice-drouin-base-and-transport-layers-of-lightning-network/",
 	"title": "Fabrice Drouin - Base and Transport Layers of the Lightning Network (2019-06-24)",
 	"content": "Name: Fabrice Drouin\nDate: 2019-06-24\nTopic: Base and Transport Layers of the Lightning Network\nLocation: Chaincode Labs Lightning Residency 2019\nVideo: https://www.youtube.com/watch?v=wyri7cc83kQ\nSlides: https://residency.chaincode.com/presentations/lightning/Base_Transport.pdf\nIntroduction Fabrice: The base and transport layer, almost everything was already introduced this morning so it\u0026amp;rsquo;s going to be very quick. So have you visited the lightning repo on GitHub? Who hasn\u0026amp;rsquo;t?\nOkay, …"
