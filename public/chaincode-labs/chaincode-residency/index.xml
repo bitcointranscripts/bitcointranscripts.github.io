@@ -184,6 +184,20 @@ Introduction I’m talking about debugging Bitcoin and that means to me using lo
     </item>
     
     <item>
+      <title>Fabrice Drouin - Attack Vectors of Lightning Network (2019-06-25)</title>
+      <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-25-fabrice-drouin-attack-vectors-of-lightning-network/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-25-fabrice-drouin-attack-vectors-of-lightning-network/</guid>
+      <description>Name: Fabrice Drouin
+Topic: Attack Vectors of Lightning Network
+Location: Chaincode Residency – Summer 2019
+Date: June 25th 2019
+Video: https://youtu.be/R5cSrftd8nc
+Introduction All right so I&amp;rsquo;m going to introduce really quickly attack vectors on Lightning. I focus on first what you can do with the Lightning protocol, but I will mostly speak about how attacks will probably happen in real life. It&amp;rsquo;s probably not going to be direct attacks on the protocol itself.</description>
+    </item>
+    
+    <item>
       <title>Fabrice Drouin - Base and Transport Layers of the Lightning Network (2019-06-24)</title>
       <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-24-fabrice-drouin-base-and-transport-layers-of-lightning-network/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
