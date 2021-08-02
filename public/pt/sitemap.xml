@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
   <url>
     <loc>https://btctranscripts.com/pt/categories/</loc>
     <xhtml:link
@@ -18,7 +19,112 @@
                 hreflang="pt"
                 href="https://btctranscripts.com/pt/categories/"
                 />
-  </url><url>
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/pt/categories/hackathon/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/categories/hackathon/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://btctranscripts.com/pt/categories/hackathon/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/pt/tags/lightning/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/tags/lightning/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/tags/lightning/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://btctranscripts.com/pt/tags/lightning/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/pt/lightning-hack-day/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/lightning-hack-day/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://btctranscripts.com/pt/lightning-hack-day/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/pt/tags/privacy/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/tags/privacy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://btctranscripts.com/pt/tags/privacy/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/pt/tags/scalability/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/tags/scalability/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://btctranscripts.com/pt/tags/scalability/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/pt/tags/security/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/tags/security/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://btctranscripts.com/pt/tags/security/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/pt/lightning-hack-day/2020-05-09-sergei-tikhomirov-lightning-privacy/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/lightning-hack-day/2020-05-09-sergei-tikhomirov-lightning-privacy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://btctranscripts.com/pt/lightning-hack-day/2020-05-09-sergei-tikhomirov-lightning-privacy/"
+                />
+  </url>
+  
+  <url>
     <loc>https://btctranscripts.com/pt/tags/</loc>
     <xhtml:link
                 rel="alternate"
@@ -35,7 +141,9 @@
                 hreflang="pt"
                 href="https://btctranscripts.com/pt/tags/"
                 />
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://btctranscripts.com/pt/</loc>
     <xhtml:link
                 rel="alternate"
@@ -53,4 +161,5 @@
                 href="https://btctranscripts.com/pt/"
                 />
   </url>
+  
 </urlset>
