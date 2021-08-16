@@ -39,5 +39,36 @@ Transcripción de la presentación de Londres Bitcoin Devs Miniscript: https://b
 Parte 1 Así que lo que vamos a hacer, es un par de cosas. Vamos a ir a través del sitio web de Miniscript y aprender sobre cómo se construye Miniscript, cómo funciona el sistema de tipos, algunas de las reglas de antimaleabilidad. Luego vamos a ir a un repo que creé anoche, un repo Git con algunos programas de ejemplo.</description>
     </item>
     
+    <item>
+      <title>Fabian Jahr - Taller de depuración (2020-02-07)</title>
+      <link>https://btctranscripts.com/es/advancing-bitcoin/2020/2020-02-07-fabian-jahr-debugging-workshop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/es/advancing-bitcoin/2020/2020-02-07-fabian-jahr-debugging-workshop/</guid>
+      <description>Nombre: Fabian Jahr
+Tema: Taller de depuración de Bitcoin Core
+Localización: El avanece de Bitcoin
+Día: 7 de febrero de 2020
+Vídeo: No se ha publicado ningún vídeo en Internet
+Presentación de Fabian en el Bitcoin Edge Dev++ 2019: https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/debugging-bitcoin/
+Depuración de Bitcoin Core doc: https://github.com/fjahr/debugging_bitcoin
+Taller de depuración de Bitcoin Core: https://gist.github.com/fjahr/5bf65daaf9ff189a0993196195005386
+Introducción En primer lugar bienvenido al taller de depuración de Bitcoin Core. Todo lo que sé más o menos sobre el uso de un depurador para aprender de Bitcoin Core y para solucionar problemas en Bitcoin Core.</description>
+    </item>
+    
+    <item>
+      <title>Taller Signet de Kalle Alm (2020-02-07)</title>
+      <link>https://btctranscripts.com/es/advancing-bitcoin/2020/2020-02-07-kalle-alm-signet-workshop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/es/advancing-bitcoin/2020/2020-02-07-kalle-alm-signet-workshop/</guid>
+      <description>Nombre: Kalle Alm
+Tema: Taller Signet
+Localización: El avance de Bitcoin
+Día: 7 de febrero de 2020
+Vídeo: No se ha publicado ningún vídeo en línea
+Preparémonos mkdir workspace cd workspace git clone https://github.com/bitcoin/bitcoin.git cd bitcoin git remote add kallewoof https://github.com/kallewoof/bitcoin.git git fetch kallewoof git checkout signet ./autogen.sh ./configure -C --disable-bench --disable-test --without-gui make -j5 Cuando intentes ejecutar la parte de configuración vas a tener algunos problemas si no tienes las dependencias.</description>
+    </item>
+    
   </channel>
 </rss>

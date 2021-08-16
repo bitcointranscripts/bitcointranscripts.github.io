@@ -43,6 +43,7 @@ A - It absolutely is.</description>
       <guid>https://btctranscripts.com/magicalcryptoconference/2019/ln-present-and-future-panel/</guid>
       <description>Lightning network present &amp;amp; future panel
 Will O&amp;rsquo;Beirne, Lisa Neigut, Alex Bosworth, Leigh Cuen
+Video: https://youtu.be/OzpfiieV5C4
 LC: Can everyone hear me now? Alright, alright.
 WO: It&amp;rsquo;s getting some good usage. A lot of those are businesses. Definitely it&amp;rsquo;s in the early stage. Elizabeth talked about this. There&amp;rsquo;s a lot of things that are mostly for fun, it&amp;rsquo;s not really at ecommerce yet.
 LC: That&amp;rsquo;s for lnd?
@@ -122,6 +123,7 @@ Intro I am going to be talking about towers and a bit about BOLT 13 too. Before 
       <guid>https://btctranscripts.com/magicalcryptoconference/2019/taxonomy-of-ln-nodes/</guid>
       <description>Taxonomy of lightning nodes
 Lisa Neigut
+Video: https://youtu.be/A4i5cEI1jnc
 Introduction Hello. I work at Blockstream on c-lightning. I am here today to talk to you about a taxonomy of nodes about who&amp;rsquo;s who on the lightning network. I wnat ot go through the tools that have been built, looking through the perspectives of what different nodes are trying to accomplish.
 LN map There&amp;rsquo;s a bunch of nodes on the network. Let&amp;rsquo;s look at some stats.</description>
     </item>

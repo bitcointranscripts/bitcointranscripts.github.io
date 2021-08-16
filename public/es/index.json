@@ -12,7 +12,7 @@
 {
 	"uri": "/es/advancing-bitcoin/2020/",
 	"title": "Advancing Bitcoin 2020",
-	"content": " Andrew Chow - Carteras de descriptores (2020-02-06)   Andrew Poelstra - Miniscript (2020-02-07)   Andrew Poelstra - Miniscript Introducción (2020-02-06)   Antoine Riard - Taproot Lightning (2020-02-06)    "
+	"content": " Andrew Chow - Carteras de descriptores (2020-02-06)   Andrew Poelstra - Miniscript (2020-02-07)   Andrew Poelstra - Miniscript Introducción (2020-02-06)   Antoine Riard - Taproot Lightning (2020-02-06)   Fabian Jahr - Taller de depuración (2020-02-07)   Taller Signet de Kalle Alm (2020-02-07)    "
 },
 {
 	"uri": "/es/andreas-antonopoulos/2014-10-08-andreas-antonopolous-canada-senate-bitcoin/",
@@ -65,6 +65,11 @@
 	"content": "Nombre: Antoine Riard\nTema: A Schnorr-Taproot’ed Lightning\nUbicación: El avance de Bitcoin\nFecha: 6 de febrero de 2020\nVideo (acceso de pago): https://www.advancingbitcoin.com/video/a-schnorr-taprooted-lightning,11/\nDiapositivas: https://www.dropbox.com/s/9vs54e9bqf317u0/Schnorr-Taproot%27ed-LN.pdf\nIntroducción Hoy Schnorr y Taproot para Lightning, es un tema realmente apasionante.\nArquitectura Lightning La arquitectura Lightning para aquellos que no están familiarizados con ella. Usted tiene el …"
 },
 {
+	"uri": "/es/tags/bitcoin-core/",
+	"title": "bitcoin core",
+	"content": ""
+},
+{
 	"uri": "/es/tags/cartera/",
 	"title": "cartera",
 	"content": ""
@@ -103,6 +108,11 @@
 	"uri": "/es/tags/eltoo/",
 	"title": "eltoo",
 	"content": ""
+},
+{
+	"uri": "/es/advancing-bitcoin/2020/2020-02-07-fabian-jahr-debugging-workshop/",
+	"title": "Fabian Jahr - Taller de depuración (2020-02-07)",
+	"content": "Nombre: Fabian Jahr\nTema: Taller de depuración de Bitcoin Core\nLocalización: El avanece de Bitcoin\nDía: 7 de febrero de 2020\nVídeo: No se ha publicado ningún vídeo en Internet\nPresentación de Fabian en el Bitcoin Edge Dev++ 2019: https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/debugging-bitcoin/\nDepuración de Bitcoin Core doc: https://github.com/fjahr/debugging_bitcoin\nTaller de depuración de Bitcoin Core: https://gist.github.com/fjahr/5bf65daaf9ff189a0993196195005386 …"
 },
 {
 	"uri": "/es/tags/lightning/",
@@ -153,6 +163,11 @@
 	"uri": "/es/categories/taller/",
 	"title": "taller",
 	"content": ""
+},
+{
+	"uri": "/es/advancing-bitcoin/2020/2020-02-07-kalle-alm-signet-workshop/",
+	"title": "Taller Signet de Kalle Alm (2020-02-07)",
+	"content": "Nombre: Kalle Alm\nTema: Taller Signet\nLocalización: El avance de Bitcoin\nDía: 7 de febrero de 2020\nVídeo: No se ha publicado ningún vídeo en línea\nPreparémonos mkdir workspace cd workspace git clone https://github.com/bitcoin/bitcoin.git cd bitcoin git remote add kallewoof https://github.com/kallewoof/bitcoin.git git fetch kallewoof git checkout signet ./autogen.sh ./configure -C --disable-bench --disable-test --without-gui make -j5 Cuando intentes ejecutar la parte de configuración vas a tener …"
 },
 {
 	"uri": "/es/tags/taproot/",
