@@ -612,7 +612,7 @@
 {
 	"uri": "/magicalcryptoconference/2019/bitcoin-protocol-development-panel/",
 	"title": "Bitcoin Protocol Development Panel",
-	"content": "Bitcoin protocol development panel\nEric Lombrozo, Matt Corallo, John Newbery, Luke Dashjr, Katherine Wu\nKW: We have some wonderful panelists today. Let\u0026amp;rsquo;s kick it off. Let\u0026amp;rsquo;s start with Eric. Who are you and what role do you play in bitcoin development?\nEL: I got into bitcoin in 2011. I had my own network stack. I almost had a full node implementation but I stopped short because it wasn\u0026amp;rsquo;t as well tested or reviewed as Bitcoin Core. So I started to look into the community a little …"
+	"content": "Video: https://youtu.be/8B1fX2i4dMY\nBitcoin protocol development panel\nEric Lombrozo, Matt Corallo, John Newbery, Luke Dashjr, Katherine Wu\nKW: We have some wonderful panelists today. Let\u0026amp;rsquo;s kick it off. Let\u0026amp;rsquo;s start with Eric. Who are you and what role do you play in bitcoin development?\nEL: I got into bitcoin in 2011. I had my own network stack. I almost had a full node implementation but I stopped short because it wasn\u0026amp;rsquo;t as well tested or reviewed as Bitcoin Core. So I started …"
 },
 {
 	"uri": "/mit-bitcoin-expo/mit-bitcoin-expo-2015/bitcoin-regulation-landscape/",
@@ -622,7 +622,7 @@
 {
 	"uri": "/magicalcryptoconference/2019/bitcoin-satellite-network/",
 	"title": "Bitcoin Satellite Network",
-	"content": "Bitcoin satellite network\nAdam Back\nBitcoin in Spaaace! I am going to be talking about the bitcoin satellite service that Blockstream has been offering for a few years now. I am going to talk about what it does and why that\u0026amp;rsquo;s interesting to users.\nSatellite infrastructure There are 4 satellites, 2 uplinks with base stations sending data up to the satellites, and then 5 transponders. It\u0026amp;rsquo;s covering both Asia and Australia with one satellite with two transponders. Telstar 18v was …"
+	"content": "Bitcoin satellite network\nAdam Back\nVideo: https://youtu.be/tJOI2i6h3HM\nBitcoin in Spaaace! I am going to be talking about the bitcoin satellite service that Blockstream has been offering for a few years now. I am going to talk about what it does and why that\u0026amp;rsquo;s interesting to users.\nSatellite infrastructure There are 4 satellites, 2 uplinks with base stations sending data up to the satellites, and then 5 transponders. It\u0026amp;rsquo;s covering both Asia and Australia with one satellite with two …"
 },
 {
 	"uri": "/scalingbitcoin/tokyo-2018/bitcoin-script/",
@@ -652,7 +652,7 @@
 {
 	"uri": "/magicalcryptoconference/2019/bitcoin-without-internet/",
 	"title": "Bitcoin Without Internet",
-	"content": "Bitcoin without internet\nAdam Back, Rodolfo Novak (Coinkite), Elaine Ou, Adam Back, Richard Myers (GoTenna)\nSM: We have a special announcement to make. Let me kick it over to Richard right now.\nRM: We completed a project that will integrate the GoTenna mesh radio system with Blockstream\u0026amp;rsquo;s blocksat satellite system. It\u0026amp;rsquo;s pretty exciting. It\u0026amp;rsquo;s called txtenna. It will allow anybody to send a signed bitcoin transaction from an off-grid full node that is receiving blockchain data …"
+	"content": "Bitcoin without internet\nAdam Back, Rodolfo Novak (Coinkite), Elaine Ou, Adam Back, Richard Myers (GoTenna)\nVideo: https://youtu.be/5Fim6g2BMZI\nSM: We have a special announcement to make. Let me kick it over to Richard right now.\nRM: We completed a project that will integrate the GoTenna mesh radio system with Blockstream\u0026amp;rsquo;s blocksat satellite system. It\u0026amp;rsquo;s pretty exciting. It\u0026amp;rsquo;s called txtenna. It will allow anybody to send a signed bitcoin transaction from an off-grid full node …"
 },
 {
 	"uri": "/bitcoinops/",
@@ -1202,7 +1202,7 @@
 {
 	"uri": "/magicalcryptoconference/2019/crypto-in-cryptocurrency/",
 	"title": "Crypto In Cryptocurrency",
-	"content": "The \u0026amp;ldquo;crypto\u0026amp;rdquo; in cryptocurrency: Why everything is weird and hard\nAndrew Poelstra\nI do not have any slides for you. This is my attempt to keep this non-technical, by depriving myself of any ability to write equations on screen. The topic of my talk is why everything is weird and hard in cryptocurrency. What is cryptography as a mathematics and field of science? And how does this work in practice?\nEncryption Historically the purvue of cryptography is encryption, like trying to come up …"
+	"content": "The \u0026amp;ldquo;crypto\u0026amp;rdquo; in cryptocurrency: Why everything is weird and hard\nAndrew Poelstra\nVideo: https://youtu.be/mRl3c9ppO78\nI do not have any slides for you. This is my attempt to keep this non-technical, by depriving myself of any ability to write equations on screen. The topic of my talk is why everything is weird and hard in cryptocurrency. What is cryptography as a mathematics and field of science? And how does this work in practice?\nEncryption Historically the purvue of cryptography is …"
 },
 {
 	"uri": "/cryptoeconomic-systems/",
@@ -1217,7 +1217,7 @@
 {
 	"uri": "/magicalcryptoconference/2019/cryptographic-hocus-pocus/",
 	"title": "Cryptographic Hocus Pocus",
-	"content": "Cryptographic hocus-pocus meaning nothing: The zcash trusted setup MPC\nor: \u0026amp;ldquo;Peter Todd\u0026amp;rsquo;s secret love letter to Zooko\u0026amp;rdquo;\nPeter Todd\nBackground See http://web.archive.org/web/20170717025249/https://petertodd.org/2016/cypherpunk-desert-bus-zcash-trusted-setup-ceremony\nand later it was then redacted: https://petertodd.org/2016/cypherpunk-desert-bus-zcash-trusted-setup-ceremony\nIntroduction Alright. Hopefully you guys are all awake ish or something. I am going to give a talk about the …"
+	"content": "Cryptographic hocus-pocus meaning nothing: The zcash trusted setup MPC\nor: \u0026amp;ldquo;Peter Todd\u0026amp;rsquo;s secret love letter to Zooko\u0026amp;rdquo;\nPeter Todd\nVideo: https://youtu.be/YHieWJWwVbE\nBackground See http://web.archive.org/web/20170717025249/https://petertodd.org/2016/cypherpunk-desert-bus-zcash-trusted-setup-ceremony\nand later it was then redacted: https://petertodd.org/2016/cypherpunk-desert-bus-zcash-trusted-setup-ceremony\nIntroduction Alright. Hopefully you guys are all awake ish or something. …"
 },
 {
 	"uri": "/tags/cryptography/",
@@ -1547,7 +1547,7 @@
 {
 	"uri": "/magicalcryptoconference/2019/fork-dynamics/",
 	"title": "Fork Dynamics",
-	"content": "Fork dynamics\nEric Lombrozo\nThank you, Samson, for that great introduction and thank you for organizing this awesome event. It\u0026amp;rsquo;s great seeing everyone. A few years ago, the situation was extremely different. When Samson originally asked me to give a talk, I kind of thought a little bit about what I should talk about and I wasn\u0026amp;rsquo;t sure what\u0026amp;rsquo;s most interesting. A few years ago, it was much more clear about the set of things going on. I had something to say about those things. I …"
+	"content": "Fork dynamics\nEric Lombrozo\nVideo: https://youtu.be/zFN__b6ARH4?t=12523\nThank you, Samson, for that great introduction and thank you for organizing this awesome event. It\u0026amp;rsquo;s great seeing everyone. A few years ago, the situation was extremely different. When Samson originally asked me to give a talk, I kind of thought a little bit about what I should talk about and I wasn\u0026amp;rsquo;t sure what\u0026amp;rsquo;s most interesting. A few years ago, it was much more clear about the set of things going on. I …"
 },
 {
 	"uri": "/tags/forks/",
@@ -1617,7 +1617,7 @@
 {
 	"uri": "/magicalcryptoconference/2019/future-of-privacy-coins/",
 	"title": "Future Of Privacy Coins",
-	"content": "Future of privacy coins\nBrandon Goodell, Andrew Poelstra, Alexandra Moxin\nAM: That\u0026amp;rsquo;s not good. Hi everyone. Thanks for coming to the future of privacy coins panel. I want to spend a minute talking ablout backgrounds and interest in this area.\nBG: I have a PhD in something. I got into monero a couple of years ago. I needed to pay rent, so I did some work in math in exchange for money.\nAP: I work on confidential transactions and scriptless scripts and I do not have a PhD.\nAM: What do you …"
+	"content": "Future of privacy coins\nVideo: https://youtu.be/eGpa45y4_HQ\nBrandon Goodell, Andrew Poelstra, Alexandra Moxin\nAM: That\u0026amp;rsquo;s not good. Hi everyone. Thanks for coming to the future of privacy coins panel. I want to spend a minute talking ablout backgrounds and interest in this area.\nBG: I have a PhD in something. I got into monero a couple of years ago. I needed to pay rent, so I did some work in math in exchange for money.\nAP: I work on confidential transactions and scriptless scripts and I do …"
 },
 {
 	"uri": "/coindesk-consensus-2016/future-of-regulation/",
@@ -1652,7 +1652,7 @@
 {
 	"uri": "/greg-maxwell/2017-11-27-gmaxwell-advances-in-block-propagation/",
 	"title": "Gmaxwell - Advances In Block Propagation (2017-11-27)",
-	"content": "Advances in block propagation\nGreg Maxwell\n2017-11-27\nslides: https://people.xiph.org/~greg/gmaxwell-sf-prop-2017.pdf\nvideo: https://www.youtube.com/watch?v=EHIuuKCm53o\nhttps://en.bitcoin.it/wiki/User:Gmaxwell/block_network_coding\nefficient block transfer: https://people.xiph.org/~greg/efficient.block.xfer.txt\nlow latency block transfer: https://people.xiph.org/~greg/lowlatency.block.xfer.txt\nhttps://people.xiph.org/~greg/mempool_sync_relay.txt\nhttps://people.xiph.org/~greg/weakblocks.txt …"
+	"content": "Advances in block propagation\nGreg Maxwell\n2017-11-27\nslides: https://web.archive.org/web/20190416113003/https://people.xiph.org/~greg/gmaxwell-sf-prop-2017.pdf\nvideo: https://www.youtube.com/watch?v=EHIuuKCm53o\nhttps://en.bitcoin.it/wiki/User:Gmaxwell/block_network_coding\nefficient block transfer: https://web.archive.org/web/20170912171304/https://people.xiph.org/~greg/efficient.block.xfer.txt\nlow latency block xfer: …"
 },
 {
 	"uri": "/greg-maxwell/2015-04-29-gmaxwell-bitcoin-selection-cryptography/",
@@ -1892,7 +1892,7 @@
 {
 	"uri": "/magicalcryptoconference/2019/htc/",
 	"title": "Htc",
-	"content": "HTC / Exodus\nPhil Chen\nIntroduction SM: This conversation started a couple months ago in Hong Kong with Phil Chen and Adam Back were sitting in a bar talking about the bitcoin industry and what would move it forward. Without further adue, please welcome Phil Chen.\nSpecial announcement from HTC Exodus Hi. I am Phil Chen from HTC. As you may know, we built the first Android phone in 2008. The reason why we did that was because we believe in open-source. We believe in the promise of the internet. …"
+	"content": "HTC / Exodus\nPhil Chen\nVideo: https://youtu.be/CyieujRFk3g?t=8077\nIntroduction SM: This conversation started a couple months ago in Hong Kong with Phil Chen and Adam Back were sitting in a bar talking about the bitcoin industry and what would move it forward. Without further adue, please welcome Phil Chen.\nSpecial announcement from HTC Exodus Hi. I am Phil Chen from HTC. As you may know, we built the first Android phone in 2008. The reason why we did that was because we believe in open-source. …"
 },
 {
 	"uri": "/stanford-blockchain-conference/2019/htlcs-considered-harmful/",
@@ -1967,7 +1967,7 @@
 {
 	"uri": "/magicalcryptoconference/2019/intro/",
 	"title": "Intro",
-	"content": "Intro\nWhalepanda\nHello? Ladies and gentlemen, please take your seats and we\u0026amp;rsquo;re going to start now. Good afternoon everyone. I\u0026amp;rsquo;m a self-proclaimed VP of operations and swag for this crypto conference. I\u0026amp;rsquo;m also a friend of the Magical Crypto Friends. I\u0026amp;rsquo;m very happy to see the turnout for this conference. I see people who are clearly passionate based on the way they dress. Thank you all for coming. I am going to ask a question. What\u0026amp;rsquo;s your favorite thing about this …"
+	"content": "Intro\nVideo: https://youtu.be/CyieujRFk3g\nWhalepanda\nHello? Ladies and gentlemen, please take your seats and we\u0026amp;rsquo;re going to start now. Good afternoon everyone. I\u0026amp;rsquo;m a self-proclaimed VP of operations and swag for this crypto conference. I\u0026amp;rsquo;m also a friend of the Magical Crypto Friends. I\u0026amp;rsquo;m very happy to see the turnout for this conference. I see people who are clearly passionate based on the way they dress. Thank you all for coming. I am going to ask a question. …"
 },
 {
 	"uri": "/rebooting-web-of-trust/2019-prague/intro/",
@@ -2412,7 +2412,7 @@
 {
 	"uri": "/magicalcryptoconference/2019/lightning-payments/",
 	"title": "Lightning Payments",
-	"content": "Lightning payments (and more) on the web\nWill O\u0026amp;rsquo;Beirne\nCL: Thank you Elizabeth and Stacy for that great talk. Who runs a lightning node here? So a lot of you. Are you guys excited about lightning? Great, we have like four more talks on lightning. Next we have Will O\u0026amp;rsquo;Beirne who will be talking about lightning payments on the web. Big round of applause.\nIntroduction Hey y\u0026amp;rsquo;all. We\u0026amp;rsquo;re doing a DIY setup here. Just bare with me. Alright. It was great to hear from Elizabeth …"
+	"content": "Lightning payments (and more) on the web\nWill O\u0026amp;rsquo;Beirne\nVideo: https://youtu.be/wd-dNd2Wck4\nCL: Thank you Elizabeth and Stacy for that great talk. Who runs a lightning node here? So a lot of you. Are you guys excited about lightning? Great, we have like four more talks on lightning. Next we have Will O\u0026amp;rsquo;Beirne who will be talking about lightning payments on the web. Big round of applause.\nIntroduction Hey y\u0026amp;rsquo;all. We\u0026amp;rsquo;re doing a DIY setup here. Just bare with me. Alright. It …"
 },
 {
 	"uri": "/building-on-bitcoin/2018/lightning-routing-ants-pheromones/",
@@ -2447,7 +2447,7 @@
 {
 	"uri": "/magicalcryptoconference/2019/ln-present-and-future-panel/",
 	"title": "Ln Present And Future Panel",
-	"content": "Lightning network present \u0026amp;amp; future panel\nWill O\u0026amp;rsquo;Beirne, Lisa Neigut, Alex Bosworth, Leigh Cuen\nLC: Can everyone hear me now? Alright, alright.\nWO: It\u0026amp;rsquo;s getting some good usage. A lot of those are businesses. Definitely it\u0026amp;rsquo;s in the early stage. Elizabeth talked about this. There\u0026amp;rsquo;s a lot of things that are mostly for fun, it\u0026amp;rsquo;s not really at ecommerce yet.\nLC: That\u0026amp;rsquo;s for lnd?\nWO: Sure, and I think Lisa can talk about c-lightning.\nLC: I like these different …"
+	"content": "Lightning network present \u0026amp;amp; future panel\nWill O\u0026amp;rsquo;Beirne, Lisa Neigut, Alex Bosworth, Leigh Cuen\nVideo: https://youtu.be/OzpfiieV5C4\nLC: Can everyone hear me now? Alright, alright.\nWO: It\u0026amp;rsquo;s getting some good usage. A lot of those are businesses. Definitely it\u0026amp;rsquo;s in the early stage. Elizabeth talked about this. There\u0026amp;rsquo;s a lot of things that are mostly for fun, it\u0026amp;rsquo;s not really at ecommerce yet.\nLC: That\u0026amp;rsquo;s for lnd?\nWO: Sure, and I think Lisa can talk about …"
 },
 {
 	"uri": "/tags/lnd/",
@@ -2547,7 +2547,7 @@
 {
 	"uri": "/magicalcryptoconference/2019/mcf-episode/",
 	"title": "Mcf Episode",
-	"content": "WP: The short was not about Craig Wright. It was not about him being a fraud, because he is not a fraud.\nSM: We also have a store. I don\u0026amp;rsquo;t think we\u0026amp;rsquo;re ready to start shipping stuff yet, so inventory will remain zero. I\u0026amp;rsquo;ll post a tweet when we\u0026amp;rsquo;re ready to start selling stuff. We might have some t-shirts and some other stuff. But not the coins, which are limited edition.\nWP: The coins are just for the conference here. If someone else at home wants to buy them, then they …"
+	"content": "Video: https://youtu.be/0MnuvKybuo0?t=1463\nVideo MCF Short: https://youtu.be/SnfKIKL_Ghk\nWP: The short was not about Craig Wright. It was not about him being a fraud, because he is not a fraud.\nSM: We also have a store. I don\u0026amp;rsquo;t think we\u0026amp;rsquo;re ready to start shipping stuff yet, so inventory will remain zero. I\u0026amp;rsquo;ll post a tweet when we\u0026amp;rsquo;re ready to start selling stuff. We might have some t-shirts and some other stuff. But not the coins, which are limited edition.\nWP: The coins …"
 },
 {
 	"uri": "/scalingbitcoin/stanford-2017/measuring-network-maximum-sustained-transaction-throughput/",
@@ -3822,7 +3822,7 @@
 {
 	"uri": "/magicalcryptoconference/2019/state-of-lightning-network/",
 	"title": "State Of Lightning Network",
-	"content": "Fireside chat on the state of the lightning network\nStacy Herbert, Elizabeth Stark\nIntroduction WP: We have a fireside chat with Stacy Herbert from Kaiser Report and Elizabeth Stark. Some people say she is the CEO of Lightning Network, but she is the CEO of Lightning Labs. Let\u0026amp;rsquo;s invite them on stage.\nSH: Did anyone notice the bitcoin price today? How many here are reckless? How many of you have used lightning? Alright, how many are torchbearers? Wow, not very many. How many are running …"
+	"content": "Fireside chat on the state of the lightning network\nStacy Herbert, Elizabeth Stark\nVideo: https://youtu.be/kk2dUD6QXgw\nIntroduction WP: We have a fireside chat with Stacy Herbert from Kaiser Report and Elizabeth Stark. Some people say she is the CEO of Lightning Network, but she is the CEO of Lightning Labs. Let\u0026amp;rsquo;s invite them on stage.\nSH: Did anyone notice the bitcoin price today? How many here are reckless? How many of you have used lightning? Alright, how many are torchbearers? Wow, not …"
 },
 {
 	"uri": "/bit-block-boom/2019/state-of-multisig/",
@@ -3867,7 +3867,7 @@
 {
 	"uri": "/magicalcryptoconference/2019/submarine-swaps/",
 	"title": "Submarine Swaps",
-	"content": "Bridging off-chain and on-chain with submarine swaps\nAlex Bosworth\nIntroduction Hi, I work at Lightning Labs. I want to talk about the dawn of hyperloop. It\u0026amp;rsquo;s a new concept.\nHyperloop To zoom out on what problem we\u0026amp;rsquo;re working on here, we had this cool lightning network. But it\u0026amp;rsquo;s, the way the lightning network works, is that it\u0026amp;rsquo;s complementary to the bitcoin network. Each side has its pros and cons. If you want the most effective way to send capital around, you want to …"
+	"content": "Bridging off-chain and on-chain with submarine swaps\nAlex Bosworth\nVideo: https://youtu.be/SCxaV2HCQ5o\nIntroduction Hi, I work at Lightning Labs. I want to talk about the dawn of hyperloop. It\u0026amp;rsquo;s a new concept.\nHyperloop To zoom out on what problem we\u0026amp;rsquo;re working on here, we had this cool lightning network. But it\u0026amp;rsquo;s, the way the lightning network works, is that it\u0026amp;rsquo;s complementary to the bitcoin network. Each side has its pros and cons. If you want the most effective way to …"
 },
 {
 	"uri": "/tags/submarine-swaps/",
@@ -3977,7 +3977,7 @@
 {
 	"uri": "/magicalcryptoconference/2019/taxonomy-of-ln-nodes/",
 	"title": "Taxonomy Of Ln Nodes",
-	"content": "Taxonomy of lightning nodes\nLisa Neigut\nIntroduction Hello. I work at Blockstream on c-lightning. I am here today to talk to you about a taxonomy of nodes about who\u0026amp;rsquo;s who on the lightning network. I wnat ot go through the tools that have been built, looking through the perspectives of what different nodes are trying to accomplish.\nLN map There\u0026amp;rsquo;s a bunch of nodes on the network. Let\u0026amp;rsquo;s look at some stats. There\u0026amp;rsquo;s a little over 8,317 nodes. There are two categories so far. …"
+	"content": "Taxonomy of lightning nodes\nLisa Neigut\nVideo: https://youtu.be/A4i5cEI1jnc\nIntroduction Hello. I work at Blockstream on c-lightning. I am here today to talk to you about a taxonomy of nodes about who\u0026amp;rsquo;s who on the lightning network. I wnat ot go through the tools that have been built, looking through the perspectives of what different nodes are trying to accomplish.\nLN map There\u0026amp;rsquo;s a bunch of nodes on the network. Let\u0026amp;rsquo;s look at some stats. There\u0026amp;rsquo;s a little over 8,317 …"
 },
 {
 	"uri": "/coordination-of-decentralized-finance-workshop/2020-stanford/technological-stability/",
@@ -4332,7 +4332,7 @@
 {
 	"uri": "/magicalcryptoconference/2019/why-block-sizes-should-not-be-too-big/",
 	"title": "Why Block Sizes Should Not Be Too Big",
-	"content": "Briefly, why block sizes shouldn\u0026amp;rsquo;t be too big\nLuke Dashjr\nslides: https://luke.dashjr.org/tmp/code/block-sizes-mcc.pdf\nI am luke-jr. I am going to go over why block size shouldn\u0026amp;rsquo;t be too big.\nHow does bitcoin work? Miners put transactrions into blocks. Users verify that the blocks are valid. If the users don\u0026amp;rsquo;t verify this, then miners can do basically anything. Because the users do this, 51% attacks are limited to reorgs which is undoing transactions. If there\u0026amp;rsquo;s no users …"
+	"content": "Briefly, why block sizes shouldn\u0026amp;rsquo;t be too big\nLuke Dashjr\nslides: https://luke.dashjr.org/tmp/code/block-sizes-mcc.pdf\nVideo: https://youtu.be/JJF5Gnro1GU\nI am luke-jr. I am going to go over why block size shouldn\u0026amp;rsquo;t be too big.\nHow does bitcoin work? Miners put transactrions into blocks. Users verify that the blocks are valid. If the users don\u0026amp;rsquo;t verify this, then miners can do basically anything. Because the users do this, 51% attacks are limited to reorgs which is undoing …"
 },
 {
 	"uri": "/scalingbitcoin/hong-kong-2015/why-miners-will-not-voluntarily-individually-produce-smaller-blocks/",

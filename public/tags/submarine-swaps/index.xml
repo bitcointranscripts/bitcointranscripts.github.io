@@ -30,8 +30,9 @@ Bitcoin - One Currency, Multiple Settlement Networks Something that is pretty im
       <guid>https://btctranscripts.com/magicalcryptoconference/2019/submarine-swaps/</guid>
       <description>Bridging off-chain and on-chain with submarine swaps
 Alex Bosworth
+Video: https://youtu.be/SCxaV2HCQ5o
 Introduction Hi, I work at Lightning Labs. I want to talk about the dawn of hyperloop. It&amp;rsquo;s a new concept.
-Hyperloop To zoom out on what problem we&amp;rsquo;re working on here, we had this cool lightning network. But it&amp;rsquo;s, the way the lightning network works, is that it&amp;rsquo;s complementary to the bitcoin network. Each side has its pros and cons. If you want the most effective way to send capital around, you want to leverage both.</description>
+Hyperloop To zoom out on what problem we&amp;rsquo;re working on here, we had this cool lightning network. But it&amp;rsquo;s, the way the lightning network works, is that it&amp;rsquo;s complementary to the bitcoin network. Each side has its pros and cons.</description>
     </item>
     
   </channel>

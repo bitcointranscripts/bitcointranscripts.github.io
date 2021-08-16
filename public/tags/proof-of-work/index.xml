@@ -251,6 +251,7 @@ Introduction I am basically going to talk about why bitcoin will basically eat a
       <description>Briefly, why block sizes shouldn&amp;rsquo;t be too big
 Luke Dashjr
 slides: https://luke.dashjr.org/tmp/code/block-sizes-mcc.pdf
+Video: https://youtu.be/JJF5Gnro1GU
 I am luke-jr. I am going to go over why block size shouldn&amp;rsquo;t be too big.
 How does bitcoin work? Miners put transactrions into blocks. Users verify that the blocks are valid. If the users don&amp;rsquo;t verify this, then miners can do basically anything. Because the users do this, 51% attacks are limited to reorgs which is undoing transactions.</description>
     </item>

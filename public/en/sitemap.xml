@@ -546,6 +546,16 @@
   
   <url>
     <loc>https://btctranscripts.com/tags/bitcoin-core/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/tags/bitcoin-core/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/tags/bitcoin-core/"
+                />
   </url>
   
   <url>
@@ -1385,6 +1395,16 @@
   
   <url>
     <loc>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-07-fabian-jahr-debugging-workshop/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/advancing-bitcoin/2020/2020-02-07-fabian-jahr-debugging-workshop/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/advancing-bitcoin/2020/2020-02-07-fabian-jahr-debugging-workshop/"
+                />
   </url>
   
   <url>
@@ -1943,6 +1963,16 @@
   
   <url>
     <loc>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-07-kalle-alm-signet-workshop/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/advancing-bitcoin/2020/2020-02-07-kalle-alm-signet-workshop/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/advancing-bitcoin/2020/2020-02-07-kalle-alm-signet-workshop/"
+                />
   </url>
   
   <url>

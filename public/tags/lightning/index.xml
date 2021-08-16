@@ -151,7 +151,8 @@ Bitcoin Optech is trying to encourage bitcoin businesses to adopt better scaling
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://btctranscripts.com/magicalcryptoconference/2019/bitcoin-protocol-development-panel/</guid>
-      <description>Bitcoin protocol development panel
+      <description>Video: https://youtu.be/8B1fX2i4dMY
+Bitcoin protocol development panel
 Eric Lombrozo, Matt Corallo, John Newbery, Luke Dashjr, Katherine Wu
 KW: We have some wonderful panelists today. Let&amp;rsquo;s kick it off. Let&amp;rsquo;s start with Eric. Who are you and what role do you play in bitcoin development?
 EL: I got into bitcoin in 2011. I had my own network stack. I almost had a full node implementation but I stopped short because it wasn&amp;rsquo;t as well tested or reviewed as Bitcoin Core.</description>
@@ -740,6 +741,7 @@ Philosophical perspective and scalability Before I do that though, following up 
       <guid>https://btctranscripts.com/magicalcryptoconference/2019/lightning-payments/</guid>
       <description>Lightning payments (and more) on the web
 Will O&amp;rsquo;Beirne
+Video: https://youtu.be/wd-dNd2Wck4
 CL: Thank you Elizabeth and Stacy for that great talk. Who runs a lightning node here? So a lot of you. Are you guys excited about lightning? Great, we have like four more talks on lightning. Next we have Will O&amp;rsquo;Beirne who will be talking about lightning payments on the web. Big round of applause.
 Introduction Hey y&amp;rsquo;all. We&amp;rsquo;re doing a DIY setup here.</description>
     </item>
@@ -791,6 +793,7 @@ Introduction Good morning everyone my name is Chris and I&amp;rsquo;m a bitcoine
       <guid>https://btctranscripts.com/magicalcryptoconference/2019/ln-present-and-future-panel/</guid>
       <description>Lightning network present &amp;amp; future panel
 Will O&amp;rsquo;Beirne, Lisa Neigut, Alex Bosworth, Leigh Cuen
+Video: https://youtu.be/OzpfiieV5C4
 LC: Can everyone hear me now? Alright, alright.
 WO: It&amp;rsquo;s getting some good usage. A lot of those are businesses. Definitely it&amp;rsquo;s in the early stage. Elizabeth talked about this. There&amp;rsquo;s a lot of things that are mostly for fun, it&amp;rsquo;s not really at ecommerce yet.
 LC: That&amp;rsquo;s for lnd?
@@ -1161,6 +1164,7 @@ This is not an original idea to me. This was presented by roasbeef, co-founder o
       <guid>https://btctranscripts.com/magicalcryptoconference/2019/state-of-lightning-network/</guid>
       <description>Fireside chat on the state of the lightning network
 Stacy Herbert, Elizabeth Stark
+Video: https://youtu.be/kk2dUD6QXgw
 Introduction WP: We have a fireside chat with Stacy Herbert from Kaiser Report and Elizabeth Stark. Some people say she is the CEO of Lightning Network, but she is the CEO of Lightning Labs. Let&amp;rsquo;s invite them on stage.
 SH: Did anyone notice the bitcoin price today? How many here are reckless? How many of you have used lightning?</description>
     </item>
@@ -1186,8 +1190,9 @@ Statechains This is another layer 2 scaling solution, by avoiding on-chain trans
       <guid>https://btctranscripts.com/magicalcryptoconference/2019/submarine-swaps/</guid>
       <description>Bridging off-chain and on-chain with submarine swaps
 Alex Bosworth
+Video: https://youtu.be/SCxaV2HCQ5o
 Introduction Hi, I work at Lightning Labs. I want to talk about the dawn of hyperloop. It&amp;rsquo;s a new concept.
-Hyperloop To zoom out on what problem we&amp;rsquo;re working on here, we had this cool lightning network. But it&amp;rsquo;s, the way the lightning network works, is that it&amp;rsquo;s complementary to the bitcoin network. Each side has its pros and cons. If you want the most effective way to send capital around, you want to leverage both.</description>
+Hyperloop To zoom out on what problem we&amp;rsquo;re working on here, we had this cool lightning network. But it&amp;rsquo;s, the way the lightning network works, is that it&amp;rsquo;s complementary to the bitcoin network. Each side has its pros and cons.</description>
     </item>
     
     <item>
@@ -1243,6 +1248,7 @@ Agenda: https://github.com/bitcoin-sydney/socratic/blob/master/README.md#2021-07
       <guid>https://btctranscripts.com/magicalcryptoconference/2019/taxonomy-of-ln-nodes/</guid>
       <description>Taxonomy of lightning nodes
 Lisa Neigut
+Video: https://youtu.be/A4i5cEI1jnc
 Introduction Hello. I work at Blockstream on c-lightning. I am here today to talk to you about a taxonomy of nodes about who&amp;rsquo;s who on the lightning network. I wnat ot go through the tools that have been built, looking through the perspectives of what different nodes are trying to accomplish.
 LN map There&amp;rsquo;s a bunch of nodes on the network. Let&amp;rsquo;s look at some stats.</description>
     </item>
