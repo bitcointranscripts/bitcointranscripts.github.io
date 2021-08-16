@@ -11,6 +11,7 @@ Introduction Hello everyone. I’m Christian. I’m a software developer at Bloc
 Q and A Q - Is it possible to run c-lightning and lnd on the same host in parallel?
 A - It absolutely is.</description></item><item><title>Ln Present And Future Panel</title><link>https://btctranscripts.com/magicalcryptoconference/2019/ln-present-and-future-panel/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/magicalcryptoconference/2019/ln-present-and-future-panel/</guid><description>Lightning network present &amp;amp; future panel
 Will O&amp;rsquo;Beirne, Lisa Neigut, Alex Bosworth, Leigh Cuen
+Video: https://youtu.be/OzpfiieV5C4
 LC: Can everyone hear me now? Alright, alright.
 WO: It&amp;rsquo;s getting some good usage. A lot of those are businesses. Definitely it&amp;rsquo;s in the early stage. Elizabeth talked about this. There&amp;rsquo;s a lot of things that are mostly for fun, it&amp;rsquo;s not really at ecommerce yet.
 LC: That&amp;rsquo;s for lnd?
@@ -45,5 +46,6 @@ https://github.com/ElementsProject/lightning/issues/3724
 Conner Fromknecht presentation on watchtowers: https://diyhpl.us/wiki/transcripts/boltathon/2019-04-06-conner-fromknecht-watchtowers/
 Intro I am going to be talking about towers and a bit about BOLT 13 too. Before jumping into watchtowers and this general idea of watchtowers for the Lightning Network that most of the community knows about I would like to go back one step back to try to narrow down the paradigm that we are going to be talking about.</description></item><item><title>Taxonomy Of Ln Nodes</title><link>https://btctranscripts.com/magicalcryptoconference/2019/taxonomy-of-ln-nodes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/magicalcryptoconference/2019/taxonomy-of-ln-nodes/</guid><description>Taxonomy of lightning nodes
 Lisa Neigut
+Video: https://youtu.be/A4i5cEI1jnc
 Introduction Hello. I work at Blockstream on c-lightning. I am here today to talk to you about a taxonomy of nodes about who&amp;rsquo;s who on the lightning network. I wnat ot go through the tools that have been built, looking through the perspectives of what different nodes are trying to accomplish.
 LN map There&amp;rsquo;s a bunch of nodes on the network. Let&amp;rsquo;s look at some stats.</description></item></channel></rss>

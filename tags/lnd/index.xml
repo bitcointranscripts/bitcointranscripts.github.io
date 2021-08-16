@@ -38,6 +38,7 @@ D146 D0F6 8939 4362 68FA 9A13 0E26 BB61 B76C 4D3A
 https://twitter.com/kanzure/status/1137740282139676672
 Introduction Together with my colleagues I am building lnd. It&amp;rsquo;s one of the implementations of lightning. In routing, there&amp;rsquo;s the sender of the payment, the intermediate routing nodes that forward payments, and a receiver. I would like to scope this down to looking at security just from the perspective of the sender.</description></item><item><title>Ln Present And Future Panel</title><link>https://btctranscripts.com/magicalcryptoconference/2019/ln-present-and-future-panel/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/magicalcryptoconference/2019/ln-present-and-future-panel/</guid><description>Lightning network present &amp;amp; future panel
 Will O&amp;rsquo;Beirne, Lisa Neigut, Alex Bosworth, Leigh Cuen
+Video: https://youtu.be/OzpfiieV5C4
 LC: Can everyone hear me now? Alright, alright.
 WO: It&amp;rsquo;s getting some good usage. A lot of those are businesses. Definitely it&amp;rsquo;s in the early stage. Elizabeth talked about this. There&amp;rsquo;s a lot of things that are mostly for fun, it&amp;rsquo;s not really at ecommerce yet.
 LC: That&amp;rsquo;s for lnd?

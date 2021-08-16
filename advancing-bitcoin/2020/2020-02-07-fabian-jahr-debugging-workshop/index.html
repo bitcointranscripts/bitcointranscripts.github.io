@@ -649,6 +649,12 @@ Advancing Bitcoin 2020
 <p>A - You have 6000 seconds from the point where you start the functional test, the Python file. It is a general constraint that the testing framework sets on the functional tests. Nobody should ever want to run a functional test that takes longer than 60 seconds or an arbitrary number. We don’t want that to restrict our debugging.</p>
 <p>Q - Does it matter which specific file it would set the <code>import pdb</code>?</p>
 <p>A - I wanted to test <code>getblockchaininfo</code>. The functional tests are instructions on what is being run on this pdb file. Usually you will have some question about the specific state or something that happens in Bitcoin. Then I would suggest that you look for a functional test that is bringing the node into that state. Maybe you want to test mempool eviction. For that you need to have a full mempool so the cheapest transaction gets pushed out the mempool. To do that manually you would have to write a whole bunch of scripts or do a lot of typing in the console. You can look for a test that is doing exactly that for you and then you stop that test and insert the pdb stop in there and execute that test. You could also run the full functional test suite but you would have to wait longer.</p>
+<h4></h4>
+<ul>
+<li>
+<a href=/es/advancing-bitcoin/2020/2020-02-07-fabian-jahr-debugging-workshop/>es: Fabian Jahr - Taller de depuración (2020-02-07)</a>
+</li>
+</ul>
 <div class=row></div>
 </div>
 </div>

@@ -78,6 +78,7 @@ https://twitter.com/kanzure/status/1014483571946508288
 I am going to do a brain dump of basically anything that people who are building systems protecting private keys are thinking about. Hopefully you can ingest this for when you decide to build one of these systems.
 If you have been in this space for long at all, you should be well aware that there are risks for trusting third-parties.</description></item><item><title>Crypto In Cryptocurrency</title><link>https://btctranscripts.com/magicalcryptoconference/2019/crypto-in-cryptocurrency/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/magicalcryptoconference/2019/crypto-in-cryptocurrency/</guid><description>The &amp;ldquo;crypto&amp;rdquo; in cryptocurrency: Why everything is weird and hard
 Andrew Poelstra
+Video: https://youtu.be/mRl3c9ppO78
 I do not have any slides for you. This is my attempt to keep this non-technical, by depriving myself of any ability to write equations on screen. The topic of my talk is why everything is weird and hard in cryptocurrency. What is cryptography as a mathematics and field of science? And how does this work in practice?</description></item><item><title>Cryptography Audit</title><link>https://btctranscripts.com/grincon/2019/cryptography-audit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/grincon/2019/cryptography-audit/</guid><description>libsecp256k1-zkp audit
 John Woeltz
 It&amp;rsquo;s a real treat to be able to be a part of this.

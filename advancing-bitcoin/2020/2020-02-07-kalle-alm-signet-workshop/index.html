@@ -718,6 +718,12 @@ vSeeds.push_back(&quot;178.128.221.177&quot;);
 <p>Q - This is the Merkle tree part? You don’t provide the whole script, you only provide the path that you are executing.</p>
 <p>A - Yes. This works exactly like the Merkle root inside transactions except there are some tweaks with version bytes and stuff.</p>
 <p>If you look at it like this you are not saving a lot of space but you have to remember that these things are all big blobs, 32 byte values. If you look here you see this thing is kind of big. If you don’t have to show one of these you are saving space and saving fees. It is a huge improvement. If everyone agrees you can spend it as if it was a regular pubkey. That is a huge saving privacy wise and fee wise. Nobody is going to be able to separate your custom stuff with a normal pubkey if everyone is in agreement. Think about a payment channel in Lightning, how often do you have the other person not agreeing to close a channel? Usually they are like “Ok”. Normally you would just use the pubkey and be done with it. In this example I actually have the private key, normally you don’t. The way you do this is you use MuSig or something to create the internal private key. That way nobody actually knows the private key but you can still spend it. I didn’t get as far as I hoped but hopefully you got a start at least.</p>
+<h4></h4>
+<ul>
+<li>
+<a href=/es/advancing-bitcoin/2020/2020-02-07-kalle-alm-signet-workshop/>es: Taller Signet de Kalle Alm (2020-02-07)</a>
+</li>
+</ul>
 <div class=row></div>
 </div>
 </div>
