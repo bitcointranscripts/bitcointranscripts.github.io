@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html><head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="canonical" href="https://btctranscripts.com/es/advancing-bitcoin/2020/2020-02-07-kalle-alm-signet-workshop/">
+
+    <title>
+        
+        Taller Signet de Kalle Alm (2020-02-07) | Transcripciones de ₿itcoin
+        
+    </title>
+
+    
+    <link href="https://btctranscripts.com/css/fontawesome.min.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://btctranscripts.com/css/ace.min.css">
+
+    
+    
+        <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://btctranscripts.com/images/btctranscripts.png"/>
+
+<meta name="twitter:title" content="Taller Signet de Kalle Alm (2020-02-07)"/>
+<meta name="twitter:description" content="Nombre: Kalle Alm
+Tema: Taller Signet
+Localización: El avance de Bitcoin
+Día: 7 de febrero de 2020
+Vídeo: No se ha publicado ningún vídeo en línea
+Preparémonos mkdir workspace cd workspace git clone https://github.com/bitcoin/bitcoin.git cd bitcoin git remote add kallewoof https://github.com/kallewoof/bitcoin.git git fetch kallewoof git checkout signet ./autogen.sh ./configure -C --disable-bench --disable-test --without-gui make -j5 Cuando intentes ejecutar la parte de configuración vas a tener algunos problemas si no tienes las dependencias."/>
+
+    
+
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id="navbarMain">
+    <div class="container">
+        <div>
+            <a class="navbar-brand" href="/es">
+                
+                Transcripciones de ₿itcoin
+            </a>
+        </div>
+        
+            
+
+            <div class="collapse navbar-collapse" id="navbarMainCollapse">
+              <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://github.com/bitcointranscripts/bitcointranscripts" target="_blank">
+                                  <i class='fab fa-github'></i>
+                                </a>
+                            </li>
+              </ul>
+            </div>
+    </div>
+</nav>
+<div class="container-fluid">
+            <div class="row">
+
+                <div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
+    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#sidenav-left-collapse" aria-controls="sidenav-left-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+     <div class="collapse navbar-collapse align-items-start flex-column" id="sidenav-left-collapse">
+            <form class="form-inline my-2 my-lg-0 searchbox">
+                <input class="form-control mr-sm-2 w-100" data-search-input id="search-by" type="text" placeholder='Search (press "/")'>
+            </form>
+         <ul class="navbar-nav flex-column pt-3">
+
+    <li data-nav-id="/es/advancing-bitcoin/" class="nav-item my-1 parent haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/es/advancing-bitcoin/"><h6>Advancing Bitcoin</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/es/advancing-bitcoin/2019/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/es/advancing-bitcoin/2019/"><h6>Advancing Bitcoin 2019</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/es/advancing-bitcoin/2020/" class="nav-item my-1 parent haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/es/advancing-bitcoin/2020/"><h6>Advancing Bitcoin 2020</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/es/andreas-antonopoulos/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/es/andreas-antonopoulos/"><h6>Andreas Antonopoulos</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/es/chaincode-labs/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/es/chaincode-labs/"><h6>Chaincode Labs</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/es/chaincode-labs/chaincode-residency/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/es/chaincode-labs/chaincode-residency/"><h6>Residencia de Chaincode</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+        </ul>
+    </div>
+</nav>
+
+
+</div>
+                <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky"><div class="docs-toc">
+	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#preparémonos">Preparémonos</a></li>
+    <li><a href="#btcdeb">btcdeb</a></li>
+    <li><a href="#controles-remotos">Controles remotos</a></li>
+    <li><a href="#ramass">Ramass</a></li>
+    <li><a href="#ramas-después-de-la-fusión-de-firmas">Ramas (después de la fusión de firmas)</a></li>
+    <li><a href="#ramas-futuro">Ramas (futuro)</a></li>
+    <li><a href="#la-rama-signet">La rama signet</a></li>
+    <li><a href="#la-rama-signet-vanilla-feature">La rama signet-vanilla-feature</a></li>
+    <li><a href="#la-rama-de-características">La rama de características</a></li>
+    <li><a href="#btcdeb-1">btcdeb</a></li>
+  </ul>
+</nav>
+</div>
+</div>
+                <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+                
+
+
+    <a href="/">Home</a>
+  	
+
+
+
+
+
+	
+	
+	
+		&lt; <a href="/es/advancing-bitcoin/">
+		Advancing Bitcoin
+		</a>
+		
+		
+			
+
+
+
+
+
+	
+	
+	
+		&lt; <a href="/es/advancing-bitcoin/2019/">
+		Advancing Bitcoin 2019
+		</a>
+		
+		
+	
+
+	
+	
+	
+		&lt; <a href="/es/advancing-bitcoin/2020/">
+		Advancing Bitcoin 2020
+		</a>
+		
+		
+	
+
+
+		
+	
+
+	
+	
+	
+		&lt; <a href="/es/andreas-antonopoulos/">
+		Andreas Antonopoulos
+		</a>
+		
+		
+	
+
+	
+	
+	
+		&lt; <a href="/es/chaincode-labs/">
+		Chaincode Labs
+		</a>
+		
+		
+			
+
+
+
+
+
+	
+	
+	
+
+
+		
+	
+
+
+    
+	
+
+	
+		&lt; Taller Signet de Kalle Alm (2020-02-07)
+	
+
+
+<h1>Taller Signet de Kalle Alm (2020-02-07)</h1>
+
+<p><i>Transcripción De: Michael Folkson</i></p>
+
+
+    <p><i>Traducción Por: Blue Moon</i></p>
+
+
+
+    <p>Tags:
+    <a href='/es/tags/taproot'>Taproot</a></p>
+
+
+
+    <p>Categoría:
+    <a href='/es/categories/taller'>Taller</a></p>
+
+
+<p>Nombre: Kalle Alm</p>
+<p>Tema: Taller Signet</p>
+<p>Localización: El avance de Bitcoin</p>
+<p>Día: 7 de febrero de 2020</p>
+<p>Vídeo: No se ha publicado ningún vídeo en línea</p>
+<h1 id="preparémonos">Preparémonos</h1>
+<pre><code>mkdir workspace
+cd workspace
+git clone https://github.com/bitcoin/bitcoin.git
+cd bitcoin
+git remote add kallewoof https://github.com/kallewoof/bitcoin.git
+git fetch kallewoof
+git checkout signet
+./autogen.sh
+./configure -C --disable-bench --disable-test --without-gui
+make -j5
+</code></pre><p>Cuando intentes ejecutar la parte de configuración vas a tener algunos problemas si no tienes las dependencias. Si no tienes las dependencias busca en Google tu sistema operativo y &ldquo;Bitcoin build&rdquo;. Si tienes Windows no tienes suerte.</p>
+<pre><code>cd ..
+git clone https://github.com/kallewoof/btcdeb.git
+cd btcdeb
+git checkout taproot
+./autogen.sh
+./configure -C --enable-dangerous
+make -j5
+</code></pre><p>En tu carpeta src deberías tener bitcoind, bitcoin-cli y un par de binarios. Si ya has terminado con esta parte, puedes ir a tu carpeta src y escribir <code>./bitcoind -signet</code> y pulsar enter.</p>
+<p>Si has conseguido sincronizar Signet hazlo:</p>
+<p><code>./bitcoin-cli -signet getnewaddress</code></p>
+<p>Deberías obtener una dirección <code>sb1...</code>. Publica esta dirección en el grupo de Telegram.</p>
+<p>P - ¿Hay que estar totalmente sincronizado para obtener una nueva dirección?</p>
+<p>R - No es así.</p>
+<p><code>./bitcoin-cli -signet getbalance</code></p>
+<p><code>ssh gcog</code></p>
+<p><code>cd workspace/signet/src</code></p>
+<p><code>./bitcoin-cli -datadir=$HOME/signet-sgniii getrawtransaction 4b9911….88c7 1</code></p>
+<p><code>bitcoin-cli -datadir=$HOME/signet-sgniii sendtoaddress sb1…5spr 100</code></p>
+<p><code>cd contrib/signet</code></p>
+<p><code>./mkblock.sh ../../src/bitcoin-cli -datadir=$HOME/signet-taproot</code></p>
+<p><code>./bitcoin-cli -signet getbalance</code></p>
+<p><code>./bitcoin-cli -signet getunconfirmedbalance</code></p>
+<p>Alguna persona por ahí montó su propio Signet así que estamos recibiendo bloques para ello.</p>
+<p><code>./bitcoin-cli -signet getconnectioncount</code></p>
+<p><code>./bitcoin-cli-signet getblockcount</code></p>
+<p><code>./bitcoin-cli-signet getpeerinfo</code></p>
+<p>Ahora mismo tengo una red que funciona con Signet Taproot. Al final nos cambiaremos a ella. Si vas a ir al taller de hardware de Stepan Snigirev esta tarde, lo cual te recomiendo que hagas, entonces podrás seguir usando la configuración de Signet Taproot que tienes con monedas y todo en su taller con una cartera de hardware.</p>
+<p><code>./bitcoin-cli -signet settxfee 0.00001</code></p>
+<p><code>./bitcoin-cli -signet sendtoaddress sb1….8mg 1</code></p>
+<p>Estoy enviando a todos 1 Signet Bitcoin. Si vas al <a href="https://explorer.bc-2.jp/">explorador de bloques de Signet</a> copia la cadena de texto <code>AddToWallet</code> y ponla en el explorador de bloques. Deberíais ver que está sin confirmar, las tarifas, etc.</p>
+<h1 id="btcdeb">btcdeb</h1>
+<p>Voy a pasar a la parte de btcdeb. Este es el depurador de Bitcoin que mantengo. Tiene soporte experimental para Taproot así que me imaginé que podíamos usarlo.</p>
+<pre><code>cd ..
+git clone https://github.com/kallewoof/btcdeb.git
+cd btcdeb
+git checkout taproot
+./autogen.sh
+./configure -C --enable-dangerous
+make -j5
+</code></pre><p>P - Tengo un problema con un archivo de configuración.</p>
+<p>R - Es posible que tenga que eliminar la bandera -C.</p>
+<p>P - ¿Qué hace la bandera -C?</p>
+<p>R - Acelera la configuración cuando se ejecuta varias veces porque se almacenan en caché todas las salidas. Pero creo que hay un problema con libsecp que hace que esto sea un problema la primera vez. Puedes prescindir de -C.</p>
+<h1 id="controles-remotos">Controles remotos</h1>
+<p>Su bifurcación de Bitcoin Core <a href="mailto:git@github.com">git@github.com</a>:user/bitcoin.git</p>
+<p>Upstream <a href="https://github.com/bitcoin/bitcoin.git">https://github.com/bitcoin/bitcoin.git</a></p>
+<p>Función de control remoto <a href="https://github.com/owner/bitcoin.git">https://github.com/owner/bitcoin.git</a></p>
+<pre><code>origin git@github.com:kallewoof/bitcoin.git (fetch)
+origin git@github.com:kallewoof/bitcoin.git (push)
+sipa https://github.com/sipa/bitcoin.git (fetch)
+sipa https://github.com/sipa/bitcoin.git (push)
+upstream https://github.com/bitcoin/bitcoin.git (fetch)
+upstream https://github.com/bitcoin/bitcoin.git (push)
+</code></pre><p>Ahora mismo Signet no está en Bitcoin Core, lo que causa complicaciones. El <a href="https://github.com/bitcoin/bitcoin/pull/18267">Signet PR</a> está en la categoría de <a href="https://github.com/bitcoin/bitcoin/projects/8">bloqueadores de alta prioridad</a> por lo que esperamos que esté en la versión 0.20 que se supone que será lanzada en mayo. Hasta entonces tenemos que hacer malabares con los repositorios de GitHub. Eventualmente podrás usar el Signet por defecto con cualquier característica personalizada soportada. Con Taproot o OP_CHECKTEMPLATEVERIFY o cualquier bifurcación suave potencial, en el futuro si hay cualquier bifurcación suave, tan pronto como se agregan al minero Signet que es sólo una máquina, cualquiera puede activar y desactivar estos como quiera. Si quieres minar Taproot puedes coger la rama Taproot. Puedes enviar transacciones de Taproot y puedes recibirlas. Ahora mismo es un poco manual. Intentaremos crear un Signet personalizado para la gente de aquí. Escogeremos una persona que sea el minero o un par de personas. Podríamos hacer uno de todos aquí si quisiéramos. Yo diría que sólo elija un minero. No sé si usted está familiarizado con el uso de GitHub, pero hay algo que se llama un remoto. Por defecto sólo hay un remoto, se llama origen. Es lo que escribes después de git clone. Pero puedes añadir remotos. Puedes hacer <code>git remote add name URL</code> y entonces tendrás otro remoto.  Puedes hacer <code>git fetch remote-name</code> y lo obtendrás. En este caso estoy creando una red Taproot Signet. Tengo mi origen que es mi repositorio de Bitcoin. Debido a que estoy usando <code>git@github</code> aquí soy capaz de utilizar claves RSA en lugar de tener que introducir una contraseña todo el tiempo. Estoy añadiendo este remoto sipa porque sipa es la persona que está haciendo el trabajo en progreso Taproot <a href="https://github.com/bitcoin/bitcoin/pull/17977">pull request</a>. No tienes que añadir esto, podrías tirar directamente del pull request pero esto es en cierto modo más fácil. Usted puede tirar directamente. Upstream es Bitcoin, realmente no necesitas upstream en este caso. En tu caso sustituirías el origen kallewoof por tu nombre.</p>
+<h1 id="ramass">Ramass</h1>
+<p>Debido a que Signet no está fusionado todavía, hay una rama <code>signet</code>. Tan pronto como se fusione con Bitcoin Core ya no tendremos eso. En nuestro GitHub creamos una rama de Signet y luego creamos una rama <code>signet-vanilla-taproot</code> (signet y parámetros de red). Tenemos una rama <code>taproot</code> que es la de sipa. Luego creamos una rama <code>signet-taproot</code>. Esta es la característica (<code>taproot</code>) fusionada sobre <code>signet-vanilla-taproot</code>.</p>
+<h1 id="ramas-después-de-la-fusión-de-firmas">Ramas (después de la fusión de firmas)</h1>
+<p>Una vez que se fusione no tendremos una rama <code>signet</code>.</p>
+<h1 id="ramas-futuro">Ramas (futuro)</h1>
+<p>En el futuro sólo tendremos una rama de característcas (<code>taproot</code>) (característica de los parámetros de signet). Hoy en día va a ser un poco quisquilloso, pero vamos a ver hasta dónde llegamos.</p>
+<h1 id="la-rama-signet">La rama signet</h1>
+<p>Nosotros ya hemos hecho esta parte y tú ya deberías haber construido esta rama.</p>
+<p>(Puede añadir <a href="https://github.com/kallewoof/bitcoin.git">https://github.com/kallewoof/bitcoin.git</a> como remoto y luego recuperarlo y simplemente comprobar la rama de signet)</p>
+<pre><code>git remote add kallewoof https://github.com/kallewoof/bitcoin.git
+git fetch kallewoof
+git checkout signet
+</code></pre><p>(También puedes obtener la solicitud de extracción directamente desde el sitio web de Bitcoin)</p>
+<pre><code>git fetch upstream pull/16411/head:signet
+git checkout signet
+</code></pre><h1 id="la-rama-signet-vanilla-feature">La rama signet-vanilla-feature</h1>
+<p>(Creamos esto una vez y luego basamos nuestra rama signet-feature en ella. Si acabamos queriendo reajustar signet-feature lo hacemos recreando en base a esta rama).</p>
+<p>Desde la rama signet hazlo</p>
+<p><code>git checkout -b signet-vanilla-taproot</code></p>
+<p>(Y luego ajustar el archivo chainparams.cpp (lo hacemos más tarde)</p>
+<p>Ahora mismo estamos en la rama signet. Lo que queremos hacer es cambiar un poco los parámetros de la cadena. Si usamos signet justo después de esto va a usar todo el signet que no tiene soporte de Taproot. Si vamos a crear un Signet personalizado para la característica propia, o la característica de sipa, necesitamos primero ajustar algunos parámetros de la cadena. Creamos esta rama aquí <code>signet-vanilla-taproot</code>.</p>
+<p>P - ¿Esto está en el repo de Bitcoin?</p>
+<p>R - Sí. btcdeb ya está configurado para trabajar con esto.</p>
+<p>Si lo has hecho, ahora deberías tener una rama llamada <code>signet-vanilla-taproot</code>. No vamos a hacer nada con ella ahora, pero sí vamos a cambiar los parámetros de la cadena más adelante.</p>
+<h1 id="la-rama-de-características">La rama de características</h1>
+<p>(Mantenemos esto idéntico al propietario (aquí &ldquo;sipa&rdquo;) y nunca divergimos:</p>
+<pre><code>git remote add sipa https://github.com/sipa/bitcoin.git
+git fetch sipa
+git checkout taproot
+git pull
+git reset --hard sipa/taproot
+</code></pre><p>sipa es Pieter Wuille, por cierto.</p>
+<p>P - &hellip;</p>
+<p>R - Algún otro Signet estaba técnicamente conectado a nosotros. Puedes salir si quieres o puedes mantenerlo en funcionamiento por ahora.</p>
+<p><code>git checkout signet-vanilla-taproot</code></p>
+<p>Ya hemos creado esta rama <code>signet-vanilla-taproot</code>, compruébala. No creo que vayamos a tener tiempo de hacer nuestra propia cadena así que vamos a utilizar una que ya he hecho. En el Telegram publiqué este fragmento de código de chainparams.cpp. En el editor que quieras si abres este archivo (chainparams.cpp) y luego bajas a buscar la clase llamada <code>SigNetParams</code>. Hay este caso si aquí y dentro de aquí son los parámetros por defecto de Signet. Quieres borrar todo eso y luego poner esto en su lugar. Lo he puesto en el Telegram para que no tengas que escribirlo manualmente.</p>
+<pre><code>LogPrintf(&quot;Using default taproot signet network\n&quot;);
+bin = ParseHex(&quot;512103ad5e0edad18cb1f0fc0d28a3d4f1f3e445640337489abb10404f2d1e086be430210359ef5021964fe22d6f8e05b2463c9540ce96883fe3b278760f048f5189f2e6c452ae&quot;);
+genesis_nonce = 280965
+vSeeds.push_back(&quot;178.128.221.177&quot;);
+</code></pre><p>P - ¿En qué rama está esto?</p>
+<p>R - signet-vanilla.</p>
+<p>Voy a repasar rápidamente lo que es esto. La parte <code>bin</code> es el reto. Probablemente lo reconozcas. Parece un script normal de Bitcoin. Lo que hace es un 1 y un push de 33 bytes y una pubkey y un 1 y un CHECKMULTISIG. Es un MULTISIG 1-de-1. La segunda parte es un genesis nonce, ya hablaré de eso. La tercera parte es una semilla, el ordenador que está ejecutando esta versión de Signet.</p>
+<p><code>git commit -am “new signet parameters”</code></p>
+<p>Debe confirmar su repositorio signet-vanilla-taproot con sus nuevos parámetros. Una vez que tenga eso puede fusionar esto con taproot. Cuando lo ejecutamos deberíamos ser capaces de usar Taproot.</p>
+<p>Q - &hellip;</p>
+<p>R - No es necesario compilar ahora mismo. Si quieres compilar es probablemente una buena idea para asegurarte de que no tienes ningún error.</p>
+<p>Comprobamos que el sello de la raíz.</p>
+<p><code>git checkout -b signet-taproot</code></p>
+<p>Y luego hacemos el <code>git merge taproot</code>. Si ya has hecho <code>git checkout -b signet-taproot</code> es posible que quieras hacer <code>git merge signet-vanilla-taproot</code> primero. Cuando lo hayas hecho, haz <code>git merge taproot</code>.</p>
+<p>(Combinamos taproot sobre signet-taproot)</p>
+<p>Cuando hagas el <code>git merge taproot</code> vas a tener conflictos. Necesitas ambas partes, pero elimina el programa testigo de verificación en la primera parte.</p>
+<p>La razón por la que te estoy haciendo pasar por esto es porque esto es exactamente lo que vas a tener que hacer si alguna vez tienes una característica que quieres fusionar. Tendrás estos conflictos de fusión que aparecen. Ahora estamos en la parte donde nuestro Signet está trabajando. Si consigues compilar esto y ejecutarlo, se bloqueará. La razón por la que se bloquea es porque se está ejecutando un Signet antiguo. Usted quiere borrar la carpeta de Signet en su Data. Vamos a hacer eso. Detenga su bitcoind en ejecución.</p>
+<p><code>rm -rf ~/.bitcoin/signet</code></p>
+<p>Para Macs:</p>
+<p><code>rm -rf ~/Library/Application\ Support/bitcoin/signet</code></p>
+<p>Elimina esa carpeta. Debería estar en la rama <code>signet-taproot</code>.</p>
+<p><code>make</code></p>
+<p>Una vez que haya terminado de hacer:</p>
+<p><code>./bitcoind -signet</code></p>
+<p>Si te acordaste de borrar la carpeta de Signet en tus datos ahora debería conectarse a un Signet diferente que tiene Taproot. Este comenzó en enero de 2020. Si usted estaba de vuelta en 2019 que está utilizando el anterior Signet.</p>
+<p><code>./autogen.sh</code></p>
+<p><code>./configure -C --disable-test --disable-bench --without-gui</code></p>
+<p>Si te encuentras con errores de compilación es posible que tengas que <code>./autogen.sh</code> y <code>./configure</code> de nuevo y luego <code>make clean</code>.</p>
+<h1 id="btcdeb-1">btcdeb</h1>
+<p>Mientras esperamos algunas cosas del compilador tomemos los últimos minutos para ver si podemos hacer algo con esto. Tenemos la carpeta btcdeb.</p>
+<p><code>cd btcdeb</code></p>
+<p>Hay un hombre <code>tap</code> aquí que tiene un montón de características.</p>
+<p><code>./tap</code></p>
+<p>La tarea es usar a este hombre para crear una dirección de Taproot y enviármela. Si me la envías, te enviaré algunas monedas. Todo esto es experimental y nuevo. Si haces esto y te encuentras con problemas, tienes bugs lo que sea, eso es invaluable para la comunidad Bitcoin. Te animo a que lo hagas. Incluso puede ser capaz de hacer una contribución al actual <a href="https://github.com/bitcoin/bitcoin/pull/17977">pull request</a>, el trabajo en progreso Taproot pull request en el repositorio de Bitcoin Core. Si la gente juega con este material y lo rompe, entonces podemos mejorar ese pull request. Pero todo es muy nuevo y experimental. Puedo mostrarte un ejemplo. No sé si has usado btcdeb antes. Esta versión de btcdeb puede manejar los gastos de BIP-Taproot.</p>
+<p><code>./btcdeb --txin=$txin --tx=020000…</code></p>
+<p>Lo que estoy haciendo es decir &ldquo;Esta es la transacción de entrada aquí y luego esta es la transacción y dime qué pasa&rdquo;. Dice que esta es una transacción SegWit y da los datos de la transacción. Entonces aquí llegamos al <code>Taproot commitment</code>. Esto tiene el objeto <code>control</code>. ¿Has oído hablar de MAST? Esto es MAST implementado en Taproot. Lo que hace Taproot es usar MAST para probar que un script particular, este <code>script</code>, fue realmente añadido a la dirección en el momento de la creación. Cuando creas la dirección puedes insertar cualquier cantidad de scripts que quieras pero nadie va a ver los scripts a menos que los uses para gastar. En este caso estoy usando este para gastar la transacción. El objeto <code>control</code> está diciendo que usas estos datos para derivar la raíz del árbol de Merkle. Si tienes una raíz del árbol de Merkle y coincide, entonces ese script fue comprometido. El objeto <code>control</code> tiene un byte de versión y luego es seguido por una pubkey. Las pubkeys en Taproot son de 32 bytes. Si está acostumbrado a las pubkeys en Bitcoin en general son de 33 bytes. Tienen 02 o 03 seguido de un valor hexadecimal. Quitamos el 02 o 03 y se asume que son de un tipo particular. Luego hay un <code>program</code>. Hay <code>p</code> y <code>q</code>. <code>p</code> es la pubkey interna utilizada para crear este gasto de Taproot. Luego hay algunas cosas de la raíz de Merkle que se van. Lo que btcdeb hace aquí es pasar por esta fase de compromiso. Hay esta <code>final k</code> aquí y luego hay un <code>TapTweak</code>. Hay un <code>CheckPayToContract</code> aquí. Este script sólo tiene una entrada por lo que no tiene un árbol de Merkle en absoluto. Una vez que esto termina con la comprobación del compromiso de Taproot vemos que el script se ejecuta. Es OP_SHA256, OP_EQUALVERIFY y luego hay una pubkey y un OP_CHECKSIG. Esto es como lo normal.</p>
+<p><code>btcdeb&gt; step</code></p>
+<p>Este es el resultado del OP_CHECKSIG. Puedes ver algunas cosas aquí. Es una pubkey de 32 bytes por lo que es un <code>schnorr sig check</code>. Esta pubkey es diferente de la pubkey interna que dimos. Esto es parte del script, esta es la pubkey de Alice. La pubkey interna es la pubkey de todos que comparten. Hacemos el <code>VerifySchnorrSignature</code> y eso funciona. Hay un <a href="https://github.com/bitcoin-core/btcdeb/blob/taproot/doc/tapscript-example-with-tap.md">documento</a> donde voy a través de un ejemplo que tiene dos scripts diferentes. <a href="https://github.com/bitcoin-core/btcdeb/blob/taproot/doc/tapscript-example-with-tap.md">Este</a> es el script normal de Bitcoin. En lugar de hacer esta cosa OP_IF OP_ELSE OP_ENDIF tomamos esto y el CHECKSIG como un script y tomamos esto y el CHECKSIG como el otro script. Cuando lo pasamos no tenemos que mostrar al mundo todo esto. Solo probamos que esto era una posibilidad y lo satisfacemos.</p>
+<p>P - ¿Esta es la parte del árbol de Merkle? No proporcionas todo el script, sólo proporcionas la ruta que estás ejecutando..</p>
+<p>R - Sí. Esto funciona exactamente como la raíz Merkle dentro de las transacciones, excepto que hay algunos ajustes con los bytes de versión y otras cosas.</p>
+<p>Si lo miras así, no estás ahorrando mucho espacio, pero tienes que recordar que estas cosas son todos blobs grandes, valores de 32 bytes. Si miras aquí ves que esta cosa es bastante grande. Si no tienes que mostrar uno de estos estás ahorrando espacio y ahorrando tasas. Es una gran mejora. Si todo el mundo está de acuerdo puedes gastarlo como si fuera una pubkey normal. Eso es un gran ahorro de privacidad y de tasas. Nadie va a poder separar tus cosas personalizadas con una pubkey normal si todos están de acuerdo. Piensa en un canal de pago en Lightning, ¿cuántas veces la otra persona no está de acuerdo en cerrar un canal? Por lo general, son como &ldquo;Ok&rdquo;. Normalmente se utiliza la clave pública y se acaba con ella. En este ejemplo yo tengo la clave privada, normalmente no la tienes. La forma de hacerlo es usar MuSig o algo así para crear la clave privada interna. De esta manera nadie sabe realmente la clave privada, pero todavía se puede gastar. No llegué tan lejos como esperaba pero espero que al menos tengas un comienzo.</p>
+
+
+    
+        <h4></h4>
+        <ul>
+            
+                <li>
+                    <a href="/advancing-bitcoin/2020/2020-02-07-kalle-alm-signet-workshop/">en: Kalle Alm Signet Workshop (2020-02-07)</a>
+                </li>
+            
+          </ul>
+    
+
+    
+
+                    
+                    <div class="row"></div> 
+
+                </div>
+
+            </div> 
+
+        </div> 
+<script src="https://btctranscripts.com/lib/jquery.min.js"></script> 
+<script src="https://btctranscripts.com/lib/popper.min.js"></script> 
+
+<script src="https://btctranscripts.com/js/bootstrap.min.js"></script> 
+
+
+<script type="text/javascript" src="/plugins/lunr.min.js"></script>
+<script type="text/javascript" src="/plugins/auto-complete.js"></script>
+<link href="/plugins/auto-complete.css" rel="stylesheet">
+<script type="text/javascript">
+  
+      var baseurl = "https:\/\/btctranscripts.com\/\/es";
+  
+</script>
+<script type="text/javascript" src="/plugins/search.js"></script>
+
+
+<script type="text/javascript" src="https://btctranscripts.com/js/custom.js"></script>
+
+
+<script type="text/javascript" src="/plugins/clipboard.js"></script>
+<script>
+  new ClipboardJS('.btn');
+</script>
+</body>
+</html>
