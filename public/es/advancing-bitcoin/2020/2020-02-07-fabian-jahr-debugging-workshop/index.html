@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html><head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="canonical" href="https://btctranscripts.com/es/advancing-bitcoin/2020/2020-02-07-fabian-jahr-debugging-workshop/">
+
+    <title>
+        
+        Fabian Jahr - Taller de depuración (2020-02-07) | Transcripciones de ₿itcoin
+        
+    </title>
+
+    
+    <link href="https://btctranscripts.com/css/fontawesome.min.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://btctranscripts.com/css/ace.min.css">
+
+    
+    
+        <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://btctranscripts.com/images/btctranscripts.png"/>
+
+<meta name="twitter:title" content="Fabian Jahr - Taller de depuración (2020-02-07)"/>
+<meta name="twitter:description" content="Nombre: Fabian Jahr
+Tema: Taller de depuración de Bitcoin Core
+Localización: El avanece de Bitcoin
+Día: 7 de febrero de 2020
+Vídeo: No se ha publicado ningún vídeo en Internet
+Presentación de Fabian en el Bitcoin Edge Dev&#43;&#43; 2019: https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/debugging-bitcoin/
+Depuración de Bitcoin Core doc: https://github.com/fjahr/debugging_bitcoin
+Taller de depuración de Bitcoin Core: https://gist.github.com/fjahr/5bf65daaf9ff189a0993196195005386
+Introducción En primer lugar bienvenido al taller de depuración de Bitcoin Core. Todo lo que sé más o menos sobre el uso de un depurador para aprender de Bitcoin Core y para solucionar problemas en Bitcoin Core."/>
+
+    
+
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id="navbarMain">
+    <div class="container">
+        <div>
+            <a class="navbar-brand" href="/es">
+                
+                Transcripciones de ₿itcoin
+            </a>
+        </div>
+        
+            
+
+            <div class="collapse navbar-collapse" id="navbarMainCollapse">
+              <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://github.com/bitcointranscripts/bitcointranscripts" target="_blank">
+                                  <i class='fab fa-github'></i>
+                                </a>
+                            </li>
+              </ul>
+            </div>
+    </div>
+</nav>
+<div class="container-fluid">
+            <div class="row">
+
+                <div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
+    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#sidenav-left-collapse" aria-controls="sidenav-left-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+     <div class="collapse navbar-collapse align-items-start flex-column" id="sidenav-left-collapse">
+            <form class="form-inline my-2 my-lg-0 searchbox">
+                <input class="form-control mr-sm-2 w-100" data-search-input id="search-by" type="text" placeholder='Search (press "/")'>
+            </form>
+         <ul class="navbar-nav flex-column pt-3">
+
+    <li data-nav-id="/es/advancing-bitcoin/" class="nav-item my-1 parent haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/es/advancing-bitcoin/"><h6>Advancing Bitcoin</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/es/advancing-bitcoin/2019/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/es/advancing-bitcoin/2019/"><h6>Advancing Bitcoin 2019</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/es/advancing-bitcoin/2020/" class="nav-item my-1 parent haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/es/advancing-bitcoin/2020/"><h6>Advancing Bitcoin 2020</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/es/andreas-antonopoulos/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/es/andreas-antonopoulos/"><h6>Andreas Antonopoulos</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+
+    <li data-nav-id="/es/chaincode-labs/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/es/chaincode-labs/"><h6>Chaincode Labs</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    <li data-nav-id="/es/chaincode-labs/chaincode-residency/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/es/chaincode-labs/chaincode-residency/"><h6>Residencia de Chaincode</h6></a>
+        <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
+        </ul>
+    </li>
+
+        </ul>
+    </li>
+
+        </ul>
+    </div>
+</nav>
+
+
+</div>
+                <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky"><div class="docs-toc">
+	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#por-qué-depurar-con-lldb-y-gdb">¿Por qué depurar con lldb y gdb?</a></li>
+    <li><a href="#por-qué-utilizar-la-interfaz-cli-simple">¿Por qué utilizar la interfaz CLI simple?</a></li>
+    <li><a href="#comandos-útiles">Comandos útiles</a></li>
+    <li><a href="#varios-consejos">Varios consejos</a></li>
+    <li><a href="#ejercicios">Ejercicios</a></li>
+    <li><a href="#uso-de-la-depuración-con-pruebas-unitarias">Uso de la depuración con pruebas unitarias</a></li>
+    <li><a href="#uso-de-la-depuración-con-pruebas-funcionales">Uso de la depuración con pruebas funcionales</a></li>
+  </ul>
+</nav>
+</div>
+</div>
+                <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+                
+
+
+    <a href="/">Home</a>
+  	
+
+
+
+
+
+	
+	
+	
+		&lt; <a href="/es/advancing-bitcoin/">
+		Advancing Bitcoin
+		</a>
+		
+		
+			
+
+
+
+
+
+	
+	
+	
+		&lt; <a href="/es/advancing-bitcoin/2019/">
+		Advancing Bitcoin 2019
+		</a>
+		
+		
+	
+
+	
+	
+	
+		&lt; <a href="/es/advancing-bitcoin/2020/">
+		Advancing Bitcoin 2020
+		</a>
+		
+		
+	
+
+
+		
+	
+
+	
+	
+	
+		&lt; <a href="/es/andreas-antonopoulos/">
+		Andreas Antonopoulos
+		</a>
+		
+		
+	
+
+	
+	
+	
+		&lt; <a href="/es/chaincode-labs/">
+		Chaincode Labs
+		</a>
+		
+		
+			
+
+
+
+
+
+	
+	
+	
+
+
+		
+	
+
+
+    
+	
+
+	
+		&lt; Fabian Jahr - Taller de depuración (2020-02-07)
+	
+
+
+<h1>Fabian Jahr - Taller de depuración (2020-02-07)</h1>
+
+<p><i>Transcripción De: Michael Folkson</i></p>
+
+
+    <p><i>Traducción Por: Blue Moon</i></p>
+
+
+
+    <p>Tags:
+    <a href='/es/tags/bitcoin-core'>Bitcoin core</a></p>
+
+
+
+    <p>Categoría:
+    <a href='/es/categories/taller'>Taller</a></p>
+
+
+<p>Nombre: Fabian Jahr</p>
+<p>Tema: Taller de depuración de Bitcoin Core</p>
+<p>Localización: El avanece de Bitcoin</p>
+<p>Día: 7 de febrero de 2020</p>
+<p>Vídeo: No se ha publicado ningún vídeo en Internet</p>
+<p>Presentación de Fabian en el Bitcoin Edge Dev++ 2019: <a href="https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/debugging-bitcoin/">https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/debugging-bitcoin/</a></p>
+<p>Depuración de Bitcoin Core doc: <a href="https://github.com/fjahr/debugging_bitcoin">https://github.com/fjahr/debugging_bitcoin</a></p>
+<p>Taller de depuración de Bitcoin Core: <a href="https://gist.github.com/fjahr/5bf65daaf9ff189a0993196195005386">https://gist.github.com/fjahr/5bf65daaf9ff189a0993196195005386</a></p>
+<h1 id="introducción">Introducción</h1>
+<p>En primer lugar bienvenido al taller de depuración de Bitcoin Core. Todo lo que sé más o menos sobre el uso de un depurador para aprender de Bitcoin Core y para solucionar problemas en Bitcoin Core. No he ido con diapositivas tradicionales porque quiero enseñarte a usar esta herramienta, el depurador, en el contexto de Bitcoin Core. Puede que no lo necesites en la próxima semana pero quizás lo necesites en tres semanas. Si has olvidado lo que hicimos aquí espero que puedas volver a este documento, mirarlo y usar estas instrucciones de nuevo. Por eso lo he estructurado como un gist. <a href="https://gist.github.com/fjahr/5bf65daaf9ff189a0993196195005386">Este</a> se mantendrá y será algo que podrás utilizar más adelante. Aprenderemos a usar estas herramientas. Personalmente estoy usando lldb porque estoy en MacOS. La gente en Linux puede instalar lldb pero puede que no sea tan bueno. gdb también está disponible, ha existido mucho más tiempo que lldb. Se supone que es una versión mejorada de éste. Estoy mostrando diferentes versiones de los comandos para que puedas seguir usando gdb de la misma manera. Yo estoy usando lldb pero si estás usando gdb y te encuentras con algún problema me acercaré y te ayudaré. Intentaremos solucionarlo. Te mostraré algunos comandos básicos y cómo usarlos en el contexto de Bitcoin Core. Luego tengo ejercicios. Estos ejercicios son más bien simulacros, no son súper emocionantes. El punto es que estás usando las herramientas. Te voy a dar un ejercicio en el que podrías encontrar la respuesta a este ejercicio con sólo mirar el archivo en el código. Pensé que si edito el código y te doy una versión específica que tienes que arreglar estaríamos todos sentados y compilando mucho. Realmente no quería hacer eso porque es normalmente donde el taller se rompe y todo el mundo está sentado compilando, diferentes cosas pasan para diferentes personas. Todos haremos esto en el master y miraremos el código. Al mismo tiempo, si tienes algo que crees que es más interesante que el ejercicio que te doy, si tienes algo que quieres depurar, una parte diferente del código, por favor sigue adelante y explora. Yo seguiré viniendo y ayudándote si tienes algún problema. He estructurado para esto dos horas. Ahora tenemos tres horas, así que hay mucho más tiempo para cavar en las cosas tanto como quieras. Nos mantenemos en un nivel alto. Puedes usar depuradores para profundizar mucho más en el código.</p>
+<h1 id="por-qué-depurar-con-lldb-y-gdb">¿Por qué depurar con lldb y gdb?</h1>
+<p>En primer lugar, ¿qué es un depurador? Un depurador es una aplicación que se utiliza para depurar otra aplicación. Realmente no hay mucho más que eso. Se trata de recorrer el código. Lo haces estableciendo puntos de interrupción en los que se detiene la ejecución del programa. Entonces puedes ir a través de la ejecución del programa paso a paso. Usted puede evaluar las cosas que están sucediendo. Puedes mirar las variables, cuál es su contenido. Puedes ejecutar expresiones, añadir variables si quieres. Puedes mirar a través del backtrace, el backtrace es el conjunto de funciones que se están ejecutando en ese momento. ¿Por qué me importa esto? Vengo de lenguajes de programación de mayor nivel que C++. Mi primer trabajo profesional como programador fue usando Ruby. Allí era típico saltar a pry. Pry era el depurador. También tienes que interactuar con el shell interactivo de Ruby. pdb es la herramienta comparable en Python. Lo usaba casi todos los días mientras averiguaba cosas en Ruby. Cuando entré en C++, principalmente motivado por Bitcoin Core, sentí que no había ninguna herramienta. Entonces descubrí gdb y lldb. La mayoría de la gente no está usando eso en la medida que yo hubiera pensado en el desarrollo de Bitcoin Core. He conocido a bastantes personas que están contribuyendo a Bitcoin Core y piensan que es demasiado trabajo usar estas herramientas. No las usan muy a menudo. Prefieren confiar en las declaraciones de impresión o algo así. O se quedan mirando el código hasta que se renderiza. Eso es válido, estas personas siguen siendo productivas, pero para mí quería tener esta herramienta en mi cadena de herramientas. No es algo que use todos los días, pero lo uso con bastante frecuencia, sobre todo cuando me quedo atascado. Si puedo resolver un problema en pocos minutos mirando el código y leyendo a través de él, pero a menudo me quedo confundido sobre el código. Saltar al depurador es otra forma de explorarlo y entender mejor lo que está pasando. Por eso es una herramienta muy útil. Definitivamente me ha ayudado en diferentes situaciones. Tanto si eres un completo principiante, como si nunca has contribuido con código a Bitcoin Core o si ya tienes algunas contribuciones pero no utilizas un depurador muy a menudo, esto te ayudará a adoptarlo.</p>
+<h1 id="por-qué-utilizar-la-interfaz-cli-simple">¿Por qué utilizar la interfaz CLI simple?</h1>
+<p>Utilizaremos lldb y gdb con la interfaz CLI simple. Yo personalmente también hago esto. La razón de esto es que generalmente me gusta estar en la línea de comandos. También trato de mantener mi configuración lo más simple posible. Me gusta que sea portátil. Si estoy en una máquina que no he configurado yo mismo y que he personalizado mucho, normalmente podré encontrar mi camino. También uso Vim, que está en casi todas las máquinas. Tengo algunos comandos personalizados pero intento mantenerlos al mínimo porque me gusta poder saltar a la máquina de otras personas y me gusta la programación en pareja. Cuando tengo la oportunidad de colaborar con alguien, usando su teclado, todavía es posible. Hay algunos GUIs para lldb y gdb que presentan el contenido de una forma más agradable. He mirado en estos pero no había ninguna primera opción obvia que saltó a mí. La mayoría de los productos que vi allí, no había commits para varios años. Pensé que me quedaría con la versión más simple que se me ocurrió. Eso es lo que vamos a utilizar hoy. Sin embargo fuera de la caja lldb y gdb también ofrecen un modo GUI. Este muestra las cosas de manera un poco diferente. No puedes ejecutar los mismos comandos allí. Hay una visión general de la información que se esconde detrás de los comandos. Lo mostraré brevemente y puedes jugar con él también. En lldb sólo tienes que escribir <code>gui</code>. Lo mostraré pero no me ha sido tan útil. Los preparativos que espero que todo el mundo haya hecho ya.</p>
+<p><code>./configure --enable-debug</code> aka <code>-O0 -ggdb3</code></p>
+<p>Usted construye Bitcoin Core de la misma manera que se describe en la documentación. Pero tienes que configurar con esta opción <code>--enable-debug</code>. Lo que esto significa es que pasas las banderas <code>-O0</code> y <code>-ggdb3</code> al compilador. No hay optimizaciones. <code>-O0</code> significa dejar fuera las optimizaciones. Típicamente se compila con <code>-O2</code> creo. ¿Por qué no queremos optimizaciones? Porque el compilador elimina información del código y también reestructura el código de una manera que hace más eficiente su ejecución en un sentido general. Si ejecutaras este <code>--enable-debug</code> como un nodo completo verías un rendimiento degradado. Lo que queremos hacer es mirar el código. Por eso quieres tener tanta información disponible como sea posible. Ponemos las optimizaciones a cero y esta otra instrucción mantiene alrededor alguna información adicional a la que puedes acceder cuando estás haciendo la depuración.</p>
+<h1 id="comandos-útiles">Comandos útiles</h1>
+<p><a href="https://gist.github.com/fjahr/5bf65daaf9ff189a0993196195005386#useful-commands">https://gist.github.com/fjahr/5bf65daaf9ff189a0993196195005386#useful-commands</a></p>
+<p>Te hablaré de un par de comandos. Estos son los comandos que he estado utilizando principalmente. Los he presentado en esta <a href="https://gist.github.com/fjahr/5bf65daaf9ff189a0993196195005386#useful-commands">tabla comprimida</a>. Hay muchos más comandos disponibles en lldb y gdb. Al final tengo un mapa completo de comandos que lista los comandos que están disponibles en gdb y lldb al mismo tiempo. Puedes explorarlos también. Para los ejercicios y para empezar esta lista será suficiente. Mostraré algunas cosas demostrándolo. Luego puedes volver a esta lista y usarlas. En primer lugar, cuando haces cosas con el depurador, primero tienes que cargar el programa que quieres inspeccionar. Lo hacemos en la línea de comandos escribiendo:</p>
+<p><code>lldb /path/to/foo.app</code></p>
+<p>Le proporcionas la ruta del ejecutable que estás utilizando. Si estás en la carpeta de Bitcoin Core sería <code>src/....</code> Luego interactúas con los puntos de interrupción. Como he mencionado, un punto de interrupción es un punto que se establece en el código. Puede estar en una función pero también puede estar en una línea específica. Hay diferentes maneras de hacerlo. Puedes establecerlos con diferentes comandos. Después de suministrar este comando <code>lldb /ruta/al/foo.app</code> estarás en un shell interactivo que te permite interactuar con lldb y establecer puntos de interrupción. Si ya ha establecido algunos puntos de interrupción, puede utilizar el comando <code>breakpoint list</code> para obtener una lista de todos los puntos de interrupción que se establecieron. Puede establecer puntos de interrupción proporcionando el nombre del archivo. <code>breakpoint set -f foo.c -l 12</code> foo.c es sólo un ejemplo estúpido y luego la línea, esto significa que se establece un punto de interrupción en esta línea específica en ese archivo específico. Esta es la forma más precisa. También puedes establecer un breakpoint en un nombre. <code>breakpoint set -n foo</code> Eso sería típicamente el nombre de una función o algo así. Yo hago esto por conveniencia bastante a menudo. Es peligroso porque esto lo establecerá en cada función que tenga ese nombre en todo el código base. Si quieres ser preciso debes ir con la otra opción, pero si sabes que sólo hay un nombre o estás ejecutando lldb en un entorno controlado y sabes que no vas a golpear ninguna otra función haciendo otras cosas, entonces puedes usarlo. Hay otras tres o cuatro formas de establecer puntos de interrupción en esa tabla. También puedes eliminar puntos de interrupción. <code>breakpoint delete 1</code>. También puedes desactivar y volver a activar los puntos de interrupción. Yo no hago mucho esto porque normalmente establezco un punto de interrupción, lo golpeo, miro alrededor y luego cierro el proceso. Tomo algo de código, tal vez lo recompilo y luego vuelvo a empezar. Las opciones están ahí para hacer una investigación mucho más amplia. Usar diferentes puntos de interrupción, listarlos, habilitarlos, deshabilitarlos. Yo no he hecho esto extensivamente. Esto es interesante pero tampoco lo he usado mucho. <code>watch set var global</code> Puedes establecer puntos de interrupción. Esto es un punto de interrupción que se activa si se escribe en una variable específica. Si estás interesado en saber cuándo cambian las globales, cuándo se escriben en ellas, puedes establecer puntos de control en las globales. Entonces, después de haber establecido diferentes puntos de interrupción y cualquier punto de vigilancia, se ejecutará el ejecutable. Hasta este punto el proceso bitcoind que iniciaste, el programa que cargaste aquí, no se ha ejecutado. <code>run</code> es el comando que se utiliza para iniciar el proceso. Este es también el punto en el que añades argumentos a ese proceso bitcoind en ejecución. Hay diferentes maneras de suministrar los argumentos. Esta es la que yo utilizo, nombrándolos igual que cuando ejecutas bitcoind en general, nombrándolos aquí después de <code>run</code>. Otra forma de cargar un programa es adjuntándolo a programas ya en ejecución. Esto será interesante cuando veamos cómo adjuntar a un bitcoind que está siendo ejecutado por una aplicación funcional. Esto es súper útil. Algo que aún no he usado pero que es súper interesante es que puedes nombrar el proceso y luego dejar que lldb lo espere. Esto puede ser interesante si tienes una aplicación de terceros que está lanzando bitcoind para ti de una manera específica. Existen proyectos como Node Launcher de Pierre Rochard que lanzan Bitcoin por ti y lo gestionan por ti. En este contexto esto puede ser algo útil para usar. Cuando se llega a un punto de interrupción se puede inspeccionar un programa. Tengo más instrucciones al respecto aquí abajo. Cuando hayas terminado de inspeccionar entonces usarás <code>continue</code> para dejar que tu programa se ejecute si estás interesado en ello. Tenemos diferentes instrucciones <code>step</code>. Hay diferentes nombres para estos. Stepping in significa que si estás en una línea que tiene una llamada a una función, entonces entrarás en esa función. Estás en la función foo y eso tiene una función bar, estás en esa línea. Si pisas en ese contexto entrarás en la función bar. Cuando <code>step-over</code> o <code>next</code> entonces sólo irás a la siguiente línea de la función foo y no entrarás en la función bar.</p>
+<p>P - ¿Ejecutará la función hasta el final? ¿Si se hace un <code>step-over</code> ejecutará esas líneas o simplemente las ignorará?</p>
+<p>R - Ejecutará la barra completamente.</p>
+<p>P - Hay mejores herramientas hoy en día, basadas en GUI. ¿Por qué utiliza cosas tan primitivas?</p>
+<p>R - He intentado explicarlo al principio. No he encontrado ninguna herramienta que me haga feliz que esté basada en GUI. ¿Qué herramientas te gusta utilizar?</p>
+<p>P - Visual Studio</p>
+<p>P - ¿Es de código abierto?</p>
+<p>R - No he encontrado ninguna que me haga feliz en poco tiempo. Me gustan estas herramientas sencillas. No le estoy diciendo a nadie que siga ese camino. Esta es la forma en que yo trabajo y al mantener el taller de la misma manera todo el mundo no tiene que instalar estas herramientas.</p>
+<p>P - ¿Cuáles son las ventajas además de ser una GUI?</p>
+<p>R - Con una GUI puedo pasar el ratón por encima y ver su valor. Puedo hacer todo lo que se describe allí mucho más rápido cuando tengo herramientas diseñadas para un humano. Por eso se inventaron las GUI.</p>
+<p>Si hacemos <code>step-over</code> entonces la función <code>bar</code> se ejecutará normalmente pero luego bajará a la siguiente línea. También tenemos <code>step-out</code> o <code>finish</code> que significa que dejaremos <code>foo</code> y entraremos en la función que estaba llamando a <code>foo</code>. Este es un buen ejemplo para mostrar la diferencia entre lldb y gdb. gdb ha existido por mucho tiempo pero es un poco inconsistente con estos comandos. Utiliza el comando <code>step</code> para entrar, el comando <code>next</code> para salir y el comando <code>finish</code> para salir. Me gustan y los uso en lldb porque son alias en lldb. Pero al mismo tiempo no son muy precisos. Por eso se creó lldb, para limpiar esto. lldb tiene comandos primarios <code>thread step-in</code>, <code>thread step-over</code> y <code>thread step-out</code> que son mucho más precisos. Muestran lo que hacen pero también tienes los alias de gdb en lldb. En este caso los prefiero y los uso. Luego interactuar con hilos, no hay muchos puntos en los que haya interactuado con hilos. Lamentablemente esto también me ha creado algunos problemas. En uno de los ejercicios te voy a dar una pista en la que pisas algo porque la razón por la que hay algunos problemas con los hilos es que Boost los usa como librería y creo que esto está confundiendo el proceso de depuración. Puedes mirar los diferentes hilos y puedes saltar entre ellos pero no es algo que vaya a tocar. Hay diferentes comandos en la lista completa.</p>
+<p>P - Acabo de intentar compilar con el parámetro <code>-O0</code> y dice que es una opción no reconocida.</p>
+<p>R - ¿Has ejecutado <code>./config --enable-debug aka -O0 -ggdb3</code>? Esto es para explicar lo que hace <code>enable-debug</code> en el proceso de configuración.</p>
+<p>P - ¿Son parámetros para <code>enable-debug</code>?</p>
+<p>R - El resto es sólo una explicación de lo que significa. Lo que hace <code>enable-debug</code> es establecer banderas para el compilador que son las optimizaciones <code>0</code> y <code>gdb3</code>. Eso es lo que se usa internamente. Sólo lo puse como una explicación de lo que realmente está pasando, lo que este <code>enable-debug</code> está haciendo. Sólo necesitas <code>enable-debug</code> cuando lo ejecutas.</p>
+<p>Puede imprimir variables, que es una de las principales cosas que probablemente va a hacer cuando está utilizando un depurador. En lldb tienes que hacer una distinción entre una variable de marco de pila y una variable global. Mientras que con gdb no hay distinción. Usas <code>p</code> para ambas. Puedes interactuar con variables de entorno, yo no lo he usado mucho. Puedes evaluar expresiones. Esto es algo que uso mucho. Si quieres ejecutar una función y ver lo que la función devuelve o si quieres establecer una variable a un valor específico eso es lo que haces con <code>expr</code>. Significa que ejecutas esta línea de código ahora mismo y luego sigues. También puedes buscar información de símbolos si tienes problemas con variables que vienen de otras bibliotecas.</p>
+<h1 id="varios-consejos">Varios consejos</h1>
+<p>Luego tengo algunos consejos generales. Si está ejecutando lldb y encuentra que estos comandos son un poco demasiado para escribir, puede abreviarlos y efectivamente hacer una coincidencia regex en él. La coincidencia más corta con estos comandos puede ser la que usted desee. Si quieres establecer un punto de interrupción también puedes hacer <code>br s</code> y hará lo mismo. Me gusta escribirlos pero si quieres optimizar tu flujo de trabajo y no escribir tanto puedes hacer esto. Puedes poner un archivo <code>/.lldbinit</code> si quieres. Así es como se personaliza el entorno. Por ejemplo puedes personalizar como se imprimen las variables. No lo he usado todavía pero es algo que puedes investigar si te encuentras usando el depurador cada vez más y quieres personalizar tu entorno. Un detalle que me irritó cuando empecé a usar el depurador es que si entras en un bucle y el bucle es muy largo no hay instrucciones claras de cómo salir de ese bucle. No hay un comando de salida de bucle en lldb o gdb. La forma en que resolvemos esto es que si tienes un punto de interrupción en ese bucle, primero estableces un punto de interrupción detrás de ese bucle y luego sales de ese punto de interrupción.</p>
+<h1 id="ejercicios">Ejercicios</h1>
+<p>Ahora estamos finalmente en los ejercicios. Haré una pequeña demostración de cómo iniciar un depurador para este primer ejercicio. Puedes explorar esto tanto como quieras. Luego, después de algún tiempo, caminaré por ahí. Luego haremos la segunda parte que es donde usamos el depurador con pruebas funcionales.</p>
+<p>Sólo quiero bitcoind de una manera muy estándar y luego interactuar con él a través de la RPC. Haré <code>lldb src/bitcoind</code>. El programa se ha cargado. He configurado mis parámetros en mi archivo de configuración para no tener que cambiar nada. Ya está configurado para ser regtest. Si no tienes regtest configurado puedes poner <code>-regtest</code>. Hago <code>run</code>, se ejecuta y se obtiene la salida de la manera estándar. Aquí puedo interactuar con él. Voy a establecer un punto de interrupción.</p>
+<p><code>breakpoint set -name getblockchaininfo</code></p>
+<p>Esto es un poco descuidado. No estoy utilizando el archivo y la línea en este momento, sólo para fines de demostración. Lo ejecuto. El proceso se está ejecutando ahora y el punto de interrupción se establece, pero nada va a suceder todavía.</p>
+<p><code>bitcoin-cli getblockchaininfo</code></p>
+<p>Ahora se va a ejecutar en el punto de interrupción y estoy en el comienzo de <code>getblockchaininfo</code>. Ahora puedes interactuar con él. Mira estos ejercicios. Te he dado algunas pequeñas ideas para mirar, probar y profundizar.</p>
+<p>P - Has alcanzado el punto de ruptura y estás en una línea del código. Quiero ver el código alrededor de esa línea.</p>
+<p>R - Aquí ves una ventana muy pequeña. Lo que tal vez necesites es la GUI que mencioné. Para ir a la GUI sólo tienes que escribir <code>gui</code>. Aquí no puedes interactuar con ella. Puedes ejecutar expresiones aquí. Por eso no lo uso. Vuelvo a una ventana donde tengo el código abierto de todos modos. Lo tengo en una ventana paralela.</p>
+<p>P - ¿Si usted <code>enable-debug</code> y está en MacOS usará automáticamente lldb?</p>
+<p>R - lldb es sólo un programa. No tiene nada que ver con Bitcoin. Puedes seguir ejecutando lldb en bitcoind sin <code>enable-debug</code>, sólo que la salida no va a ser muy útil.</p>
+<p>Primero voy a iniciar bitcoind con lldb.</p>
+<p><code>lldb src/bitcoind</code></p>
+<p>He visto muchos de usar <code>-name</code> así que esta vez voy a utilizar el archivo y la línea. Si tienes una buena idea de dónde estás y a dónde quieres ir yo usaría el archivo y la línea. Estoy aquí en el archivo RPC <code>blockchain.cpp</code> y quiero entrar en esta función <code>getblockchaininfo</code>.</p>
+<p>P - ¿Cuál es tu editor?</p>
+<p>R - Vim</p>
+<p>Quiero estar en esta línea. Las siguientes líneas son interesantes para mí.</p>
+<p><code>breakpoint set -f rpc/blockchain.cpp -l 1255</code>.</p>
+<p>Ahora puedo <code>run</code>.</p>
+<p>P - ¿Cuál es el comando de gdb para <code>breakpoint</code>? Dice comando indefinido.</p>
+<p>R - <code>break</code>.</p>
+<p>Ahora llamo a <code>getblockchainfo</code>. Uso <code>step-over</code> para llegar a una línea que me interese. Digamos que quiero ir a <code>getblockhash</code>. Aquí abajo haría <code>step-in</code> porque quiero ver de dónde viene esto. Aquí haría <code>step</code> y me meto en <code>getblockhash</code>. Puedo ver que estoy en <code>CBlockIndex</code> y esto está devolviendo <code>phashBlock</code> desde dentro de esa clase. Esto es todo lo que quería que hicieras para este primer ejercicio. Usando <code>step-over</code> para ir a través de diferentes líneas en <code>getblockchaininfo</code> y luego entrar en algunas de esas funciones que hice allí, paso más adentro para ver de dónde vienen los valores. Sólo para acostumbrarse a esta navegación con lldb.</p>
+<p>P - Cada vez que llegas a un punto de interrupción, ¿sólo estás escaneando con tus ojos para ver si hay una palabra clave que sea interesante?</p>
+<p>R - Cuando te metes en problemas en los que ya no entiendes lo que está pasando en el código simplemente leyendo el código es cuando puedes usar el depurador. Es difícil crear ejercicios de forma artificial&hellip; Lo descubrirás simplemente navegando por los archivos.</p>
+<p>P - ¿Cómo puedo ver el valor de una variable?</p>
+<p>R - <code>target variable</code> es para las globales y <code>frame variable</code> es para el marco de la pila.</p>
+<p>Así que esto es bastante básico lo que hemos hecho hasta ahora. Manejando el bitcoind a través de interacciones con bitcoin-cli. Hay muy pocos casos en los que haría esto porque suelen ser cosas muy básicas que están sucediendo. Se pone mucho más interesante si usted está utilizando las pruebas y desea inspeccionar lo que está pasando.</p>
+<h1 id="uso-de-la-depuración-con-pruebas-unitarias">Uso de la depuración con pruebas unitarias</h1>
+<p>Las pruebas unitarias funcionan básicamente de la misma manera en cuanto al uso del depurador. Pero con las pruebas funcionales es mucho más interesante. Con las pruebas unitarias inicias el depurador de la misma manera que lo hacías aquí arriba con el CLI. Lo único que hay que tener en cuenta es que los tests tienen su propio ejecutable. En lugar de bitcoind tienes que proporcionar este archivo <code>test_bitcoin</code>. Ahí es donde se construyen las pruebas unitarias. Puedes establecer puntos de interrupción en cualquier parte de las pruebas unitarias exactamente igual que lo hacías con bitcoind. Las pruebas se ejecutarán. Si quieres ejecutar una prueba específica, que suele ser el caso, puedes certificarlo con este parámetro <code>--log_level=all --run_test=*/lthash_tests</code>. Puedes ir a la <a href="https://github.com/bitcoin/bitcoin/tree/master/src/test">documentación de las pruebas unitarias</a> sobre cómo ejecutar las pruebas. No es tan diferente de bitcoind e interactuar con el CLI.</p>
+<h1 id="uso-de-la-depuración-con-pruebas-funcionales">Uso de la depuración con pruebas funcionales</h1>
+<p>Lo que es mucho más interesante son las pruebas funcionales, lo que estoy depurando con más frecuencia. Por lo general, cuando estás investigando cosas en Bitcoin no son sólo cosas que son muy simples es que hay pasos muy complejos que sucedieron antes y se llega a un estado que se quiere investigar. Miramos el regtest y generamos 100 bloques, eso no es tan interesante. Lo que es mucho más interesante es si tienes una gran red P2P y quieres ver cómo los nodos están interactuando entre sí. Si tienes un mempool lleno y las transacciones son desalojadas del mempool no quieres tener que escribir un script para que tu nodo Bitcoin llegue a su punto. Por suerte ya hay pruebas funcionales que hacen eso por ti. Si quieres inspeccionar el estado del sistema entonces te recomendaría que encontraras la prueba funcional que está llevando al sistema a ese punto y luego inspeccionar el sistema cuando está siendo ejecutado por esa prueba funcional.</p>
+<p>P - ¿Las pruebas funcionales son pruebas de integración?</p>
+<p>R - Se denominan pruebas funcionales en Bitcoin.</p>
+<p>Las pruebas funcionales están escritas en Python. Está en <code>/tests</code> en el repo. Usted encontrará un montón de pruebas de Python. También está el marco de pruebas. Ese es el primer paso que haremos juntos porque es algo que tienes que hacer si quieres hacer algo con estas pruebas funcionales. Está este archivo <code>test/functional/test_framework/test_framework.py</code>. Allí, en la línea 99, se especifica un tiempo de espera RPC. Lo que sucede es que este marco de pruebas cuando está ejecutando las pruebas, las está escribiendo en el RPC como lo haría un usuario y hay un tiempo de espera especificado. Normalmente, cuando se ejecutan las pruebas funcionales, se ejecuta todo el conjunto de pruebas. Hay más de 100 pruebas. No quieres tener esta prueba ejecutándose para siempre. Hay un tiempo de espera de 60 segundos, ninguna prueba se ejecutará más de 60 segundos. Lo que vamos a hacer es detener la prueba funcional de la ejecución, a continuación, vaya en el nodo que está bajo la prueba y hacer algunas cosas allí. Probablemente no vamos a ser capaces de hacer eso en 60 segundos. Es por eso que tenemos que extender ese tiempo de espera. Me gustaría que usted vaya a la estructura de prueba funcional y cambiar este parámetro. Lo he cambiado a 6000. Por favor, actualízalo a un número más alto porque no quieres que la prueba se agote. Entonces su nodo se bloqueará y tendrá que empezar de nuevo.</p>
+<p>He mencionado que tenemos estas pruebas funcionales de Python. Estos son la conducción de los nodos a través de la RPC al igual que un usuario lo haría. Lo que queremos hacer es inspeccionar estos nodos que se están ejecutando a través de la prueba de Python y ser capaz de depurar dentro. Lo principal que tenemos que hacer es acceder a ese proceso bitcoind que está siendo ejecutado por la prueba funcional. La prueba funcional no nos está esperando por sí misma, tenemos que detener la prueba funcional primero. No va a terminar antes de que podamos conectarnos a ese proceso bitcoind. La forma en que vamos a hacer eso es insertar esta línea <code>import pdb; pdb.set_trace()</code> que va a importar pdb y luego usar <code>set_trace</code> para establecer un punto de interrupción en esta prueba funcional. Es como el inicio. Primero estamos estableciendo un punto de interrupción en el programa de Python con el fin de detenerlo para que luego podamos establecer un punto de interrupción en bitcoind. Voy a hacer una demostración en un momento. Primero insertas esta línea en la prueba de Python que quieres inspeccionar. A continuación, ejecutar esa prueba manualmente, ejecutar ese archivo. Ese archivo se detendrá en la línea donde has insertado esta declaración <code>import pdb</code>. Entonces tienes un shell interactivo allí y puedes interactuar con la prueba. El test debería tener ya nodos que están dentro de este test y usando <code>process.pid</code> puedes llegar al proceso de ese nodo específico. Por favor, recuerda que si tienes varios nodos que están siendo probados en, por ejemplo, una prueba P2P, estarán bajo diferentes números. Tendrás un array con tal vez cinco o seis nodos y tienes que mirar la prueba y ver cuál es el nodo al que quieres adjuntar, al que quieres mirar para observar las cosas que te interesan. Ahora tenemos el ID del proceso en este punto. Ahora podemos iniciar lldb y luego podemos adjuntar a este ID de proceso que hemos visto corriendo allí. El ejemplo es <code>12345</code>. Entonces podemos hacer lo que queramos hacer allí. Podemos establecer puntos de interrupción. Usted estará familiarizado con lo que está viendo porque se verá igual que antes. Puedes establecer un punto de interrupción y luego dejar que el proceso continúe. En ese momento quizás esperas que pase algo pero no va a pasar nada porque el proceso sigue parado desde la prueba funcional. También tienes que te</p>
+<p>Esta es una de las pruebas funcionales. Voy a probar <code>getblockchaininfo</code> de nuevo. Aquí hay una prueba funcional para <code>getblockchaininfo</code>. Hay una configuración específica en esta prueba y quiero ahorrarme hacerla manualmente. Aquí especificaría la línea que he descrito antes. He editado manualmente este archivo Python aquí, muy simple. Ahora voy a ejecutar ese archivo desde la consola. Debería pararse en algún momento. Ahora nos encontramos con el punto de interrupción de la pdb que establecí hace un segundo. Puedo buscar aquí el PID del nodo. Esto es un array. Si va a haber varios nodos que se están probando esta matriz tendrá más de un objeto en ella. Este es simple, solo tiene uno. Voy a hacer <code>process.pid</code> y esto me va a dar el PID del proceso que se está ejecutando en el fondo que está siendo ejecutado por la prueba. Tomo este PID y lanzo lldb. Quiero adjuntar a este nodo que se está ejecutando allí. <code>attach --pid 12345</code> Ahora hemos cargado este proceso bitcoind que se está ejecutando en segundo plano. Ahora puedo establecer mi punto de interrupción. <code>breakpoint set -name getblockchaininfo</code> Entonces voy a <code>continue</code>. En este punto el proceso se detiene dos veces. Una vez se detiene en Python y otra en C++ o lldb. Hago <code>continue</code>. Sigue parado en Python lo que me confundió como diez veces al principio. Vuelvo a teclear <code>continue</code> y ahora estamos en el punto de interrupción que he puesto. Este nodo está siendo ejecutado por la prueba funcional. Si hubo un millón de pasos antes en la prueba funcional este será el nodo que pasó por el millón de pasos. Ahora puede interactuar con el nodo. Esta es la magia. Son muchos pasos. A no ser que tengáis preguntas ahora dadle una oportunidad. Los pasos están en el documento y si te quedas atascado en cualquier lugar házmelo saber.</p>
+<p>P - ¿Tiene 6000 segundos para averiguar qué está mal?</p>
+<p>R - Usted tiene 6000 segundos desde el punto en que se inicia la prueba funcional, el archivo de Python. Es una restricción general que el marco de pruebas establece en las pruebas funcionales. Nadie debería querer nunca ejecutar una prueba funcional que tarde más de 60 segundos o un número arbitrario. No queremos que eso restrinja nuestra depuración.</p>
+<p>P - ¿Importa qué archivo específico establecería el <code>import pdb</code>?</p>
+<p>R - Quería probar <code>getblockchaininfo</code>. Las pruebas funcionales son instrucciones sobre lo que se ejecuta en este archivo pdb. Normalmente tendrás alguna pregunta sobre el estado específico o algo que ocurre en Bitcoin. Entonces te sugeriría que busques una prueba funcional que lleve al nodo a ese estado. Quizás quieras probar el desalojo del mempool. Para eso necesitas tener un mempool lleno para que la transacción más barata sea expulsada del mempool. Para hacerlo manualmente tendrías que escribir un montón de scripts o escribir mucho en la consola. Puedes buscar una prueba que esté haciendo exactamente eso por ti y luego detener esa prueba e insertar la parada pdb allí y ejecutar esa prueba. También podría ejecutar el conjunto de pruebas funcionales completo, pero tendría que esperar más tiempo.</p>
+
+
+    
+        <h4></h4>
+        <ul>
+            
+                <li>
+                    <a href="/advancing-bitcoin/2020/2020-02-07-fabian-jahr-debugging-workshop/">en: Fabian Jahr - Debugging Workshop (2020-02-07)</a>
+                </li>
+            
+          </ul>
+    
+
+    
+
+                    
+                    <div class="row"></div> 
+
+                </div>
+
+            </div> 
+
+        </div> 
+<script src="https://btctranscripts.com/lib/jquery.min.js"></script> 
+<script src="https://btctranscripts.com/lib/popper.min.js"></script> 
+
+<script src="https://btctranscripts.com/js/bootstrap.min.js"></script> 
+
+
+<script type="text/javascript" src="/plugins/lunr.min.js"></script>
+<script type="text/javascript" src="/plugins/auto-complete.js"></script>
+<link href="/plugins/auto-complete.css" rel="stylesheet">
+<script type="text/javascript">
+  
+      var baseurl = "https:\/\/btctranscripts.com\/\/es";
+  
+</script>
+<script type="text/javascript" src="/plugins/search.js"></script>
+
+
+<script type="text/javascript" src="https://btctranscripts.com/js/custom.js"></script>
+
+
+<script type="text/javascript" src="/plugins/clipboard.js"></script>
+<script>
+  new ClipboardJS('.btn');
+</script>
+</body>
+</html>

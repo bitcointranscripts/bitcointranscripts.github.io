@@ -880,6 +880,16 @@
 	"content": ""
 },
 {
+	"uri": "/c-lightning/",
+	"title": "c-lightning",
+	"content": " c-lightning developer call (2021-08-09)    "
+},
+{
+	"uri": "/c-lightning/2021-08-09-developer-call/",
+	"title": "c-lightning developer call (2021-08-09)",
+	"content": "Name: c-lightning developer call\nTopic: Various topics\nLocation: Jitsi online\nDate: August 9th 2021\nVideo: No video posted online\nThe conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.\nIndividual updates Today I started to review some pull requests. I also finished my first …"
+},
+{
 	"uri": "/bitcoin-developers-miners-meeting-2016/cali2016/",
 	"title": "Cali 2016",
 	"content": "California Gathering 2016\nTranscription introduction Some Bitcoin developers and miners gathered together during the end of the July to socialize and become better acquainted with each other. The following discussions were live transcribed by an untrained volunteer with attribution removed as per Chatham House rules. In bitcoin, discussions can move very quickly, which can cause an increase in errors, including semantic errors, when typing in real time. This text was not produced from an audio …"
@@ -3673,6 +3683,11 @@
 	"uri": "/london-bitcoin-devs/2020-06-23-socratic-seminar-coinswap/",
 	"title": "Socratic Seminar - Coinswap (2020-06-23)",
 	"content": "Name: Socratic Seminar\nTopic: CoinSwap\nLocation: London BitDevs (online)\nDate: June 23rd 2020\nVideo: https://www.youtube.com/watch?v=u7l6rP49hIA\nPastebin of the resources discussed: https://pastebin.com/zbegGmb8\nThe conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.\nIntroductions …"
+},
+{
+	"uri": "/london-bitcoin-devs/2021-08-10-socratic-seminar-dlcs/",
+	"title": "Socratic Seminar - Discreet Log Contracts (2021-08-10)",
+	"content": "Name: Socratic Seminar\nTopic: Discreet Log Contracts\nLocation: London BitDevs (online)\nDate: August 10th 2021\nVideo: https://www.youtube.com/watch?v=h6SkBwOCFsA\nGist of resources discussed: https://gist.github.com/michaelfolkson/f5da6774c24f99dba5c6c16ec8d499e9\nThis event was livestreamed on YouTube and so comments are attributed to specific individuals by the name or pseudonym that was visible on the livestream. If you were a participant and would like your comments to be anonymized please get …"
 },
 {
 	"uri": "/london-bitcoin-devs/2020-08-19-socratic-seminar-signet/",

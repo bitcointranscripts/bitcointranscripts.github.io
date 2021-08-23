@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>c-lightning on ₿itcoin Transcripts</title>
+    <link>https://btctranscripts.com/c-lightning/</link>
+    <description>Recent content in c-lightning on ₿itcoin Transcripts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://btctranscripts.com/c-lightning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>c-lightning developer call (2021-08-09)</title>
+      <link>https://btctranscripts.com/c-lightning/2021-08-09-developer-call/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/c-lightning/2021-08-09-developer-call/</guid>
+      <description>Name: c-lightning developer call
+Topic: Various topics
+Location: Jitsi online
+Date: August 9th 2021
+Video: No video posted online
+The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
+Individual updates Today I started to review some pull requests.</description>
+    </item>
+    
+  </channel>
+</rss>
