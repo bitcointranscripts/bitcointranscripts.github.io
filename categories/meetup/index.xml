@@ -69,7 +69,13 @@ Bram Cohen
 video: https://www.youtube.com/watch?v=52FVkHlCh7Y
 code: https://github.com/bramcohen/MerkleSet
 https://twitter.com/kanzure/status/888836850529558531
-Introduction There&amp;rsquo;s been a fair amount of talk about putting UTXO commitments in bitcoin blocks. Whether this is a good idea or not, but on the off-chance that it might be a good idea, I spent a fair amount of time thinking and actually good merkle set implementation whic his what you you need to put utxo set commitments in bitcoin blocks.</description></item><item><title>Cali 2016</title><link>https://btctranscripts.com/bitcoin-developers-miners-meeting-2016/cali2016/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-developers-miners-meeting-2016/cali2016/</guid><description>California Gathering 2016
+Introduction There&amp;rsquo;s been a fair amount of talk about putting UTXO commitments in bitcoin blocks. Whether this is a good idea or not, but on the off-chance that it might be a good idea, I spent a fair amount of time thinking and actually good merkle set implementation whic his what you you need to put utxo set commitments in bitcoin blocks.</description></item><item><title>c-lightning developer call (2021-08-09)</title><link>https://btctranscripts.com/c-lightning/2021-08-09-developer-call/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/c-lightning/2021-08-09-developer-call/</guid><description>Name: c-lightning developer call
+Topic: Various topics
+Location: Jitsi online
+Date: August 9th 2021
+Video: No video posted online
+The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
+Individual updates Today I started to review some pull requests.</description></item><item><title>Cali 2016</title><link>https://btctranscripts.com/bitcoin-developers-miners-meeting-2016/cali2016/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-developers-miners-meeting-2016/cali2016/</guid><description>California Gathering 2016
 Transcription introduction Some Bitcoin developers and miners gathered together during the end of the July to socialize and become better acquainted with each other. The following discussions were live transcribed by an untrained volunteer with attribution removed as per Chatham House rules. In bitcoin, discussions can move very quickly, which can cause an increase in errors, including semantic errors, when typing in real time. This text was not produced from an audio recording.</description></item><item><title>Christopher Jeffrey Bcoin (2016-09-28)</title><link>https://btctranscripts.com/sf-bitcoin-meetup/2016-09-28-christopher-jeffrey-bcoin/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/sf-bitcoin-meetup/2016-09-28-christopher-jeffrey-bcoin/</guid><description>Name: Christopher Jeffrey (JJ)
 Topic: Bcoin
 Location: SF Bitcoin Devs
@@ -301,7 +307,14 @@ Date: June 23rd 2020
 Video: https://www.youtube.com/watch?v=u7l6rP49hIA
 Pastebin of the resources discussed: https://pastebin.com/zbegGmb8
 The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
-Introductions Michael Folkson (MF): This is London BitDevs, this is a Socratic Seminar.</description></item><item><title>Socratic Seminar - Signet (2020-08-19)</title><link>https://btctranscripts.com/london-bitcoin-devs/2020-08-19-socratic-seminar-signet/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/london-bitcoin-devs/2020-08-19-socratic-seminar-signet/</guid><description>Name: Socratic Seminar
+Introductions Michael Folkson (MF): This is London BitDevs, this is a Socratic Seminar.</description></item><item><title>Socratic Seminar - Discreet Log Contracts (2021-08-10)</title><link>https://btctranscripts.com/london-bitcoin-devs/2021-08-10-socratic-seminar-dlcs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/london-bitcoin-devs/2021-08-10-socratic-seminar-dlcs/</guid><description>Name: Socratic Seminar
+Topic: Discreet Log Contracts
+Location: London BitDevs (online)
+Date: August 10th 2021
+Video: https://www.youtube.com/watch?v=h6SkBwOCFsA
+Gist of resources discussed: https://gist.github.com/michaelfolkson/f5da6774c24f99dba5c6c16ec8d499e9
+This event was livestreamed on YouTube and so comments are attributed to specific individuals by the name or pseudonym that was visible on the livestream. If you were a participant and would like your comments to be anonymized please get in touch.
+Intro Michael Folkson (MF): Welcome to everyone on the call, welcome to people watching on YouTube.</description></item><item><title>Socratic Seminar - Signet (2020-08-19)</title><link>https://btctranscripts.com/london-bitcoin-devs/2020-08-19-socratic-seminar-signet/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/london-bitcoin-devs/2020-08-19-socratic-seminar-signet/</guid><description>Name: Socratic Seminar
 Topic: Signet
 Location: London BitDevs (online)
 Date: August 19th 2020

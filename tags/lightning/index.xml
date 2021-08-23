@@ -57,7 +57,13 @@ Building on Bitcoin 2018
 acinq
 https://twitter.com/kanzure/status/1014531050503065601
 My name is Fabrice Drouin. I work with ACINQ. We are a comapny working on printing LN. I am going to talk about what happens, what was the process of bootstrapping and developing lightning and what happened on mainnet.
-Timeline Who doesn&amp;rsquo;t know what lightning is? And who has used lightning? Okay, almost everyone. It&amp;rsquo;s an evolution on the idea of payment channels.</description></item><item><title>Christian Decker - C-Lightning API (2018-10-24)</title><link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-24-christian-decker-c-lightning-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-24-christian-decker-c-lightning-api/</guid><description>Christian Decker
+Timeline Who doesn&amp;rsquo;t know what lightning is? And who has used lightning? Okay, almost everyone. It&amp;rsquo;s an evolution on the idea of payment channels.</description></item><item><title>c-lightning developer call (2021-08-09)</title><link>https://btctranscripts.com/c-lightning/2021-08-09-developer-call/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/c-lightning/2021-08-09-developer-call/</guid><description>Name: c-lightning developer call
+Topic: Various topics
+Location: Jitsi online
+Date: August 9th 2021
+Video: No video posted online
+The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
+Individual updates Today I started to review some pull requests.</description></item><item><title>Christian Decker - C-Lightning API (2018-10-24)</title><link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-24-christian-decker-c-lightning-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-24-christian-decker-c-lightning-api/</guid><description>Christian Decker
 Developing on c-lightning
 Location: Chaincode Labs Lightning Residency 2018
 Video: https://www.youtube.com/watch?v=l8OLD7or0DA
@@ -404,7 +410,14 @@ Intro I am going to be talking about towers and a bit about BOLT 13 too. Before 
 petertodd
 Building on Bitcoin 2018
 https://twitter.com/kanzure/status/1014168068447195136
-I am going to talk about single use seals and ways to use them. They are a concept of building consensus applications and things that need consensus. I want to mention why that matters. What problem are we trying to solve? Imagine my cell phone and I open up my banking app or the banking app or lightning app&amp;hellip; I want to make sure that what I see on my screen is the same as what you see on your screen.</description></item><item><title>Socratic Seminar 5 (2020-01-21)</title><link>https://btctranscripts.com/austin-bitcoin-developers/2020-01-21-socratic-seminar-5/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/austin-bitcoin-developers/2020-01-21-socratic-seminar-5/</guid><description>Austin Bitcoin Developers Socratic Seminar 5
+I am going to talk about single use seals and ways to use them. They are a concept of building consensus applications and things that need consensus. I want to mention why that matters. What problem are we trying to solve? Imagine my cell phone and I open up my banking app or the banking app or lightning app&amp;hellip; I want to make sure that what I see on my screen is the same as what you see on your screen.</description></item><item><title>Socratic Seminar - Discreet Log Contracts (2021-08-10)</title><link>https://btctranscripts.com/london-bitcoin-devs/2021-08-10-socratic-seminar-dlcs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/london-bitcoin-devs/2021-08-10-socratic-seminar-dlcs/</guid><description>Name: Socratic Seminar
+Topic: Discreet Log Contracts
+Location: London BitDevs (online)
+Date: August 10th 2021
+Video: https://www.youtube.com/watch?v=h6SkBwOCFsA
+Gist of resources discussed: https://gist.github.com/michaelfolkson/f5da6774c24f99dba5c6c16ec8d499e9
+This event was livestreamed on YouTube and so comments are attributed to specific individuals by the name or pseudonym that was visible on the livestream. If you were a participant and would like your comments to be anonymized please get in touch.
+Intro Michael Folkson (MF): Welcome to everyone on the call, welcome to people watching on YouTube.</description></item><item><title>Socratic Seminar 5 (2020-01-21)</title><link>https://btctranscripts.com/austin-bitcoin-developers/2020-01-21-socratic-seminar-5/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/austin-bitcoin-developers/2020-01-21-socratic-seminar-5/</guid><description>Austin Bitcoin Developers Socratic Seminar 5
 https://www.meetup.com/Austin-Bitcoin-Developers/events/267941700/
 https://bitdevs.org/2019-12-03-socratic-seminar-99
 https://bitdevs.org/2020-01-09-socratic-seminar-100
