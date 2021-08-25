@@ -185,6 +185,20 @@
   </url>
   
   <url>
+    <loc>https://btctranscripts.com/es/austin-bitcoin-developers/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/austin-bitcoin-developers/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/austin-bitcoin-developers/"
+                />
+  </url>
+  
+  <url>
     <loc>https://btctranscripts.com/es/tags/bitcoin-core/</loc>
     <xhtml:link
                 rel="alternate"
@@ -379,6 +393,10 @@
   </url>
   
   <url>
+    <loc>https://btctranscripts.com/es/categories/reuni%C3%B3n/</loc>
+  </url>
+  
+  <url>
     <loc>https://btctranscripts.com/es/tags/schnorr/</loc>
     <xhtml:link
                 rel="alternate"
@@ -394,6 +412,20 @@
   
   <url>
     <loc>https://btctranscripts.com/es/tags/seguridad/</loc>
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/es/austin-bitcoin-developers/2020-02-24-socratic-seminar-6/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/austin-bitcoin-developers/2020-02-24-socratic-seminar-6/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/austin-bitcoin-developers/2020-02-24-socratic-seminar-6/"
+                />
   </url>
   
   <url>

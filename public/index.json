@@ -2347,7 +2347,7 @@
 {
 	"uri": "/lightning-conference/2019/",
 	"title": "Lightning Conference 2019",
-	"content": " Antoine Riard - Rust Lightning (2019-10-20)   Bastien Teinturier - Trampoline Routing (2019-10-20)   Chris Stewart - Private Key Management (2019-10-19)   Nadav Kohen - Payment Points (2019-10-20)    "
+	"content": " Antoine Riard - Rust Lightning (2019-10-20)   Bastien Teinturier - Trampoline Routing (2019-10-20)   Chris Stewart - Private Key Management (2019-10-19)   Nadav Kohen - Payment Points (2019-10-20)   Rusty Russell - Offers (2019-10-19)    "
 },
 {
 	"uri": "/lightning-hack-day/",
@@ -3323,6 +3323,11 @@
 	"uri": "/boltathon/2019-04-06-rusty-russell-json-interface/",
 	"title": "Rusty Russell - JSON Interface (2019-04-06)",
 	"content": "Rusty Russell\nBoltathon\nJSON Interface with c-lightning and Writing Extensions\nvideo: https://www.youtube.com/watch?v=sNB1N7FyMHA\nhttps://twitter.com/kanzure/status/1230892247345852416\nIntro Ok I have top running. We have a plan and we’re going to start from zero. We’re going to clone c-lightning, we’re going to compile it, we’re going to set up a test node. I’m assuming Bitcoin is already installed. We’re going to talk a little about configuring it and stuff like that. All this stuff is useful …"
+},
+{
+	"uri": "/lightning-conference/2019/2019-10-19-rusty-russell-offers/",
+	"title": "Rusty Russell - Offers (2019-10-19)",
+	"content": "Name: Rusty Russell\nTopic: Make Me An Offer: Next Level Invoicing\nThe Lightning Conference Day 1 (Stage 1)\nVideo: https://www.youtube.com/watch?v=Wq75pGWmMd4\nBOLT 11: https://github.com/lightningnetwork/lightning-rfc/blob/master/11-payment-encoding.md\nBOLT 12 PR: https://github.com/lightningnetwork/lightning-rfc/pull/798\nbolt12.org: https://bolt12.org/\nIntro Hi. My name is Rusty Russell and this is actually my official job title at Blockstream, code contributor. It is generic, it is flexible, it …"
 },
 {
 	"uri": "/misc/2018-01-24-rusty-russell-future-bitcoin-tech-directions/",
