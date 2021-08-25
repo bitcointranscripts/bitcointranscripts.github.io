@@ -1,0 +1,212 @@
+<!doctype html><html><head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<link rel=canonical href=https://btctranscripts.com/es/austin-bitcoin-developers/2020-02-24-socratic-seminar-6/>
+<title>
+Seminario Socrático 6 (2020-02-24) | Transcripciones de ₿itcoin
+</title>
+<link href=https://btctranscripts.com/css/fontawesome.min.css rel=stylesheet>
+<link rel=stylesheet href=https://btctranscripts.com/css/ace.min.css>
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://btctranscripts.com/images/btctranscripts.png">
+<meta name=twitter:title content="Seminario Socrático 6 (2020-02-24)">
+<meta name=twitter:description content="Seminario socrático para desarrolladores de Bitcoin en Austin 6
+https://www.meetup.com/Austin-Bitcoin-Developers/events/268812642/
+https://bitdevs.org/2020-02-12-socratic-seminar-101
+https://twitter.com/kanzure/status/1232132693179207682
+Introducción Muy bien, vamos a empezar. Reúnanse. A Phil le vendría bien algo de compañía. A nadie le gusta la primera fila. Tal vez los bancos. Así que tengo un formato un poco diferente de cómo quiero hacerlo esta semana. Normalmente cubro una amplia serie de temas que robo de la lista de reuniones de Nueva York. Revisando eso, pensé que había algo que parecía interesante que era las nuevas propuestas de taproot que finalmente fueron publicadas por Pieter Wuille.">
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id=navbarMain>
+<div class=container>
+<div>
+<a class=navbar-brand href=/es>
+Transcripciones de ₿itcoin
+</a>
+</div>
+<div class="collapse navbar-collapse" id=navbarMainCollapse>
+<ul class="navbar-nav ml-auto">
+<li class=nav-item>
+<a class=nav-link href=https://github.com/bitcointranscripts/bitcointranscripts target=_blank>
+<i class="fab fa-github"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<div class=container-fluid>
+<div class=row>
+<div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
+<button class="navbar-toggler navbar-toggler-right collapsed" type=button data-toggle=collapse data-target=#sidenav-left-collapse aria-controls=sidenav-left-collapse aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span>
+</button>
+<div class="collapse navbar-collapse align-items-start flex-column" id=sidenav-left-collapse>
+<form class="form-inline my-2 my-lg-0 searchbox">
+<input class="form-control mr-sm-2 w-100" data-search-input id=search-by type=text placeholder='Search (press "/")'>
+</form>
+<ul class="navbar-nav flex-column pt-3">
+<li data-nav-id=/es/advancing-bitcoin/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/es/advancing-bitcoin/><h6>Advancing Bitcoin</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/es/advancing-bitcoin/2019/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/es/advancing-bitcoin/2019/><h6>Advancing Bitcoin 2019</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/es/advancing-bitcoin/2020/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/es/advancing-bitcoin/2020/><h6>Advancing Bitcoin 2020</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/es/andreas-antonopoulos/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/es/andreas-antonopoulos/><h6>Andreas Antonopoulos</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/es/austin-bitcoin-developers/ class="nav-item my-1 parent haschildren">
+<a class="nav-link p-0" href=/es/austin-bitcoin-developers/><h6>Austin Bitcoin Developers</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+<li data-nav-id=/es/chaincode-labs/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/es/chaincode-labs/><h6>Chaincode Labs</h6></a>
+<ul class="list-unstyled ml-2">
+<li data-nav-id=/es/chaincode-labs/chaincode-residency/ class="nav-item my-1 haschildren">
+<a class="nav-link p-0" href=/es/chaincode-labs/chaincode-residency/><h6>Residencia de Chaincode</h6></a>
+<ul class="list-unstyled ml-2">
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+<div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky"><div class=docs-toc>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#introducción>Introducción</a></li>
+<li><a href=#presentaciones>Presentaciones</a></li>
+<li><a href=#bip340>bip340</a>
+<ul>
+<li><a href=#diseño-bip340>Diseño bip340</a></li>
+</ul>
+</li>
+<li><a href=#bip341>bip341</a></li>
+<li><a href=#bip342>bip342</a></li>
+</ul>
+</nav>
+</div>
+</div>
+<div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+<a href=/>Home</a>
+&lt; <a href=/es/advancing-bitcoin/>
+Advancing Bitcoin
+</a>
+&lt; <a href=/es/andreas-antonopoulos/>
+Andreas Antonopoulos
+</a>
+&lt; <a href=/es/austin-bitcoin-developers/>
+Austin Bitcoin Developers
+</a>
+&lt; <a href=/es/chaincode-labs/>
+Chaincode Labs
+</a>
+&lt; Seminario Socrático 6 (2020-02-24)
+<h1>Seminario Socrático 6 (2020-02-24)</h1>
+<p><i>Transcripción De: Bryan Bishop</i></p>
+<p><i>Traducción Por: Blue Moon</i></p>
+<p>Tags:
+<a href=/es/tags/taproot>Taproot</a></p>
+<p>Categoría:
+<a href=/es/categories/reuni%C3%B3n>Reunión</a></p>
+<p>Seminario socrático para desarrolladores de Bitcoin en Austin 6</p>
+<p><a href=https://www.meetup.com/Austin-Bitcoin-Developers/events/268812642/>https://www.meetup.com/Austin-Bitcoin-Developers/events/268812642/</a></p>
+<p><a href=https://bitdevs.org/2020-02-12-socratic-seminar-101>https://bitdevs.org/2020-02-12-socratic-seminar-101</a></p>
+<p><a href=https://twitter.com/kanzure/status/1232132693179207682>https://twitter.com/kanzure/status/1232132693179207682</a></p>
+<h1 id=introducción>Introducción</h1>
+<p>Muy bien, vamos a empezar. Reúnanse. A Phil le vendría bien algo de compañía. A nadie le gusta la primera fila. Tal vez los bancos. Así que tengo un formato un poco diferente de cómo quiero hacerlo esta semana. Normalmente cubro una amplia serie de temas que robo de la lista de reuniones de Nueva York. Revisando eso, pensé que había algo que parecía interesante que era las nuevas propuestas de taproot que finalmente fueron publicadas por Pieter Wuille.</p>
+<p>Mi experiencia con los PBI es que pueden ser muy informativos porque son una especificación exacta, motivación y descripción de los cambios en el protocolo. Pero pueden ser muy densos y difíciles de leer, difíciles de entender, especialmente si eres un poco más nuevo. Siempre he pensado que estaría bien poder discutir estas cosas en grupo. La primera vez que te acercas a un BIP, eso sería mejor que tratar de entenderlo por ti mismo.</p>
+<p>Eventualmente podríamos repasar los BIPs de segwit o los bips de cartera como bip32 los realmente importantes. Esta es una buena prueba. Tengo las cosas normales en cola aquí, así que si encontramos esto demasiado aburrido, entonces podríamos cambiar a eso. Háganme saber. Podríamos querer la pizarra. Si pudieras desplegar eso&mldr; podríamos encontrarlo útil.</p>
+<h1 id=presentaciones>Presentaciones</h1>
+<p>((se omitio))</p>
+<h1 id=bip340>bip340</h1>
+<p><a href=https://github.com/bitcoin/bips/blob/master/bip-0340.mediawiki>https://github.com/bitcoin/bips/blob/master/bip-0340.mediawiki</a></p>
+<p>La transcripción aquí puede ser aburrida porque sólo voy a leer el BIP. Hay tres BIPs: bip340 (bip-schnorr), bip341 (bip-taproot), bip342 (bip-tapscript). El último es el más corto, es cambios de script para taproot.</p>
+<p>P: ¿Por qué? ¿Cuál es la razón breve de todo esto?</p>
+<p>R: Hay una sección de motivación aquí. &ldquo;Esta propuesta pretende mejorar la privacidad, la eficiencia y la flexibilidad de las capacidades del lenguaje de scripting de bitcoin sin añadir nuevos supuestos de seguridad. Intenta minimizar la fuga de información que tiene. Y permite las actualizaciones&rdquo;.</p>
+<p>Bitcoin utiliza firmas ECDSA. Las firmas Schnorr tienen algunas ventajas. Tienen seguridad demostrable. Hay una prueba de seguridad de que no se pueden falsificar las firmas bajo un cierto conjunto de supuestos. Para dar una prueba equivalente en ECDSA necesitas suposiciones más fuertes. Hay una prueba matemática mejor de que las firmas no pueden ser falsificadas. Es mejor tener una prueba de que algo no puede ocurrir.</p>
+<p>Otro aspecto es la no maleabilidad. Hemos tenido problemas con la maleabilidad en el pasado. ¿Cuál es una buena manera de describir la maleabilidad? ((bryan explica)) Parece que es bueno tener no maleabilidad, pero ¿el principal beneficio es el antispam, o es que intentas demostrar que no tienes una clave privada&mldr; asumimos que la no maleabilidad es buena? Bueno, la maleabilidad dificulta tu contabilidad. Esto es lo que MtGox afirma que sucedió. Dijeron que la maleabilidad dificultaba que su sistema contabilizara los retiros duplicados, por lo que poco a poco fueron desangrándose los fondos durante meses, hasta llegar a las 8 cifras y nadie se dio cuenta. Así que otra razón es la simplicidad. Segwit resuelve la maleabilidad para el rayo. Si quiero firmar una transacción de reembolso por algo que aún no ha sucedido, te gustaría vivir en un mundo donde las firmas no afecten a los ID de las transacciones.</p>
+<pre><code>17:30 &lt; kanzure&gt; en el bip de taproot, la no maleabilidad es una motivación: ¿por qué? segwit lo soluciona ¿no? me gusta la no maleabilidad por supuesto.
+17:41 &lt; aj&gt; kanzure: wtxid la maleabilidad sigue siendo agradable de evitar, al igual que el hecho de tener diferentes tamaños de datos de los testigos, lo que podría permitir a la gente malear su tarifa sobre p2p?
+17:48 &lt; sipa&gt; también la propagación de la tx se ve perjudicada por la maleabilidad, lo que contribuye indirectamente a la propagación de bloques en bloques compactos &amp; co 
+18:00 &lt; kanzure&gt; Gracias. Estamos en un seminario socrático en este momento :).
+</code></pre>
+<p>La linealidad (agregación de pubkeys) también es muy buena. Pero taproot no motiva realmente la agregación de claves por sí misma. Taproot podría utilizar multifirmas ECDSA dentro de cada rama.</p>
+<p>Codificación de la firma - la gente tiene que poner bytes en la cadena de bloques y serializarla. ECDSA tiene esta codificación DER. Son 72 bytes. Podemos bajar a 64 bytes para las firmas Schnorr. Una clave pública es un par de números - son sólo 32 bytes. Sólo almacenamos esos dos números y nada más. Nos ahorramos al menos 8 bytes, eso es bastante bueno, mejor que el 10%.</p>
+<p>En lugar de utilizar codificaciones comprimidas de 33 bytes de los puntos de la curva elíptica, en esta propuesta las claves públicas se codifican en 32 bytes. Es la coordenada x o y. Aquí sólo elegimos una de ellas. Es el par.</p>
+<p>También están normalizando la forma de hacer la verificación de los lotes.</p>
+<p>Completamente especificado- es determinista. Con ECDSA hay algunos problemas, como ver bip66.</p>
+<p>El último punto es que bip-schnorr utiliza la misma matemática de curva elíptica secp256k1 para hacer las firmas y la verificación. También las mismas funciones hash. Podemos conservar los métodos existentes para los secretos y las claves públicas. No necesitamos nuevas formas de producir secretos o claves públicas, ni necesitamos nuevas suposiciones. Es la misma matemática detrás, sólo una forma diferente de aplicarla. ¿Alguna pregunta?</p>
+<h2 id=diseño-bip340>Diseño bip340</h2>
+<p>Resumen de la firma Schnorr: <a href="https://www.youtube.com/watch?v=FU-rA5dkTHI&t=18m40s">https://www.youtube.com/watch?v=FU-rA5dkTHI&t=18m40s</a></p>
+<p>diapositivas (diapositiva 21?): <a href="https://docs.google.com/presentation/d/1QXZBtELcVMoCq6wx-rJr31KvtsqxxcWIewMvuSTpsa4/edit#slide=id.g24158d2d92_0_15">https://docs.google.com/presentation/d/1QXZBtELcVMoCq6wx-rJr31KvtsqxxcWIewMvuSTpsa4/edit#slide=id.g24158d2d92_0_15</a></p>
+<p>((gracias tadge esto salvó nuestros culos colectivos aquí))</p>
+<p>Este sistema criptográfico tiene unas cuantas funciones: generar la clave, firmar el mensaje, verificar el mensaje dada una firma y un mensaje. Así que Schnorr existe desde hace décadas; la cuestión es qué formato serializar esto para bitcoin.</p>
+<p>Las firmas Schnorr pueden verificarse por lotes. La verificación por lotes aprovecha la propiedad de linealidad de schnorr. Esto hará que la descarga del bloque inicial sea un poco más rápida. El IBD todavía está limitado por la entrada y salida. No lo hará más lento, eso es seguro. &ldquo;Elegimos la opción R porque soporta la verificación por lotes&rdquo;.</p>
+<p>No entiendo la prefijación de la clave y los ataques relacionados con la clave. Vamos con retraso, así que vamos a saltarnos esta sección.</p>
+<p>Hay varias formas de codificar el nonce temporal y el nonce público. Hay algunas formas diferentes. La primera es un poco más eficiente para la verificación, la tercera es más pequeña y resulta en un directorio de datos de bitcoin más pequeño, así que eligen la tercera opción. La contrapartida es que en lugar de ser rápido en la verificación, es más lento pero son menos datos los que tienen que mantener alrededor. Lo hacen incluyendo sólo la coordenada x.</p>
+<p>También hay otra información sobre la serialización de las diferentes primitivas involucradas en las firmas Schnorr, incluyendo el residuo cuadrático.</p>
+<p>Etiquetado como hashes&mldr;</p>
+<pre><code>18:04 &lt; kanzure&gt; para los hashes etiquetados, ¿en qué situación se espera la reutilización del nonce? como los nonces de baja entropía...? 
+18:04 &lt; aj&gt; ¿se refiere a la reutilización de etiquetas? 
+18:05 &lt; kanzure&gt; &quot;Por ejemplo, sin el hashing etiquetado, una firma BIP340 podría ser también válida para un esquema de firma en el que la única diferencia es que los argumentos de la función hash están reordenados. Peor aún, si la función de derivación del nonce de BIP340 fue copiada o creada independientemente, entonces el nonce podría ser reutilizado accidentalmente en el otro esquema filtrando la clave secreta&quot;. 
+18:05 &lt; kanzure&gt; esto sólo sería cierto para los nonces de baja entropía, ¿verdad? 
+18:05 &lt; aj&gt; o si el nonce es determinista 
+18:06 &lt; kanzure&gt; Oh, ya veo, puedo ver formas en que los nonces deterministas entrarían en conflicto. 
+</code></pre>
+<p>Pasemos a las aplicaciones. Firmas de adaptadores&mldr;. útiles para la privacidad en los relámpagos para que cada salto no revele las preimágenes o deje que los observadores sepan qué protocolo estaba ocurriendo realmente una vez que las cosas se encadenan. Bien, entonces sí. Genial.</p>
+<p>Hay algunas cosas para firmas ciegas, es decir, protocolos en los que eres capaz de firmar algo sin saber cuál es el mensaje. Otro ejemplo es wasabi y samourai coinjoins donde no les das tus entradas, les das una versión encriptada de la misma, la firman, luego la revelas después de que la firmen. No saben quién registró cada entrada.</p>
+<p>Tienen vectores de prueba y una implementación en python de esto. Esto es legible. Son 120 líneas. Es bastante loco, tal vez deberíamos haber leído esto en lugar de bip340.</p>
+<p>Eso fue un BIP completo. No creo que haya ido muy bien. Lo admito. No sé si este es el mejor formato. ¿Qué piensan ustedes? Nos empantanamos un poco. Había una cosa que quería repasar. Estaba un poco confundido en ese momento. Una cosa que es interesante es que si buscas terrylab schnorr&mldr; es este interesante artículo que da ejemplos de rust-bitcoin para muchas de estas cosas. Este es un ejemplo de agregación de firmas. Si tienes dos pubkeys, puedes tomar la suma de ellas&mldr;.. La firma agregada se puede construir, es igual a la suma de las dos firmas. Esto es lo de la agregación de firmas. El problema de hacer esto es que básicamente hay un&mldr; puedes componer, estás haciendo algo con gente en la que no confías&mldr; si su pubkey &mldr;. el problema es que les dices que tu pubkey es la tuya menos la suya y eres capaz de restar tu clave pública. Musig ha resuelto este problema. Hay que ser inteligente en la forma de hacerlo. Musig es un intento de cómo resolver esto. La linealidad tiene algunas armas de pie.</p>
+<h1 id=bip341>bip341</h1>
+<p><a href=https://github.com/bitcoin/bips/blob/master/bip-0341.mediawiki>https://github.com/bitcoin/bips/blob/master/bip-0341.mediawiki</a></p>
+<p>¿Quieres repasar el taproot? El bip de schnorr tardó mucho más de lo que esperaba. Taproot es un BIP más grande. Es realmente duro. Podríamos hacer un resumen ejecutivo tal vez. Hagamos motivaciones y aplicaciones.</p>
+<p>Ya hemos leído la sección de motivación. Venden taproot como un intercambio que implementa algunas cosas anteriores (como bip114, bip117, etc, para MAST) y también algunas otras cosas como graftroot, g&rsquo;root, etc.</p>
+<p>Hay dos formas&mldr; tapscript puede ser dos cosas: puede ser como, estas pubkeys sumadas y hacer una firma con estas o puedes tener este árbol de diferentes condiciones de ejecución y eliges uno de estos caminos a lo largo del árbol y proporcionas una prueba o lo que sea. Esto ayuda a preservar la privacidad de tus otras condiciones de gasto. Tus tres primitivas son hashes, firmas o timelocks. Con esas tres cosas puedes construir cualquier árbol de condiciones que se te ocurra. Sin embargo, esas son las tres cosas con las que tienes que construir.</p>
+<p>Introdujeron el anexo en el testigo, aún no se usa, pero podría usarse eventualmente. También se compromete con otra información en el sighash. Siempre se compromete con el scriptpubkey que supongo que no se utiliza en segwit bip141. La pubkey se incluye directamente en la salida. Este es un material bastante denso.</p>
+<p>&ldquo;Se dice que los hashes de clave pública protegen contra los adversarios cuánticos, pero la protección es muy débil. La resistencia real a estos sistemas puede ser introducida al basarse en diferentes supuestos criptográficos.&rdquo; Todas las monedas de Satoshi son de pago por clave pública, así que eso es interesante. Hay un montón de mejoras que se pueden hacer. Pay-to-pubkey puede ser utilizado como una identidad de comunicación en tor. Eso es interesante, no he escuchado eso. Esto cambia la narrativa que pay-to-pubkey no es necesariamente una cosa mala. Los ordenadores cuánticos van a romper esto de todos modos, así que hasta que tengamos algo mejor, deberíamos probar una variedad de criptosistemas.</p>
+<p>No tendrás direcciones heredadas aquí. No puedes tener direcciones taproot heredadas. El uso de salidas envueltas en P2SH proporciona sólo 80 bits de seguridad contra colisiones debido al uso de un hash de 160 bits. La principal preocupación es que si es multipartita&mldr; si tienes una persona, si tienes 2 de 2, &mldr;. ellos tendrán la mitad del script de su pubkey. Todo esto es realmente en la maleza.</p>
+<p>&ldquo;¿Por qué el mensaje que firma incluye el scriptPubKey?&rdquo; Esto evita que se mienta a los dispositivos de firma fuera de línea sobre la salida que se gasta. Esto demuestra a un monedero de hardware qué rutas de ejecución no utilizadas existen.</p>
+<h1 id=bip342>bip342</h1>
+<p><a href=https://github.com/bitcoin/bips/blob/master/bip-0342.mediawiki>https://github.com/bitcoin/bips/blob/master/bip-0342.mediawiki</a></p>
+<p>Este incluye cambios en el sistema de scripts. Vamos a repasar esto rápidamente y luego iremos a por una barbacoa. Una de las cosas interesantes es que han reemplazado OP_CHECKMULTISIG y OP_CHECKMULTISIGVERIFY.. En la descripción no se decía nada de incompatibilidad con ECDSA, sólo se decía que es ineficiente y que este nuevo es batchable. ¿Podemos ver un ejemplo de OP_CHECKSIGADD y verificación por lotes?</p>
+<p>Usas CHECKSIGADD para obtener los 1&rsquo;s y 0&rsquo;s y los sumas para ver si los CHECKSIGs suman algún número. Después puedes hacer NUMEQUAL. Puedes hacer un lote de firmas y ver si el umbral es suficiente. Si tuvieras un 2 de 3 y un 2 de 3, sumarías las seis y verías si son cuatro. No estoy seguro de que la explicación es lo suficientemente fuerte en bip342 de cómo se supone que esto funciona frente a cómo solía funcionar.</p>
+<p>Musig es cuando se suman firmas y pubkeys. Musig requiere 3 rondas de interacción. Puedes hacer k-de-n de forma asíncrona. Con musig, todo el mundo necesita comprometer nonces, y luego todos revelamos nuestros nonces y luego todos firmamos. Musig es el siguiente. Con musig sólo tienes una pubkey que representa todo y una firma al final, pero a costa de un protocolo complejo. En este, obtienes guiones más grandes pero no tienes interactividad.</p>
+<p>La última es la firma nativa del umbral de Schnorr, pero se necesita un protocolo interactivo. Algunos de estos protocolos como Musig parecen realmente complicados.</p>
+<p>Lamento que esto haya sido un poco desorganizado. Tal vez no utilicemos este formato en el futuro.</p>
+<h4></h4>
+<ul>
+<li>
+<a href=/austin-bitcoin-developers/2020-02-24-socratic-seminar-6/>en: Socratic Seminar 6 (2020-02-24)</a>
+</li>
+</ul>
+<div class=row></div>
+</div>
+</div>
+</div>
+<script src=https://btctranscripts.com/lib/jquery.min.js></script>
+<script src=https://btctranscripts.com/lib/popper.min.js></script>
+<script src=https://btctranscripts.com/js/bootstrap.min.js></script>
+<script type=text/javascript src=/plugins/lunr.min.js></script>
+<script type=text/javascript src=/plugins/auto-complete.js></script>
+<link href=/plugins/auto-complete.css rel=stylesheet>
+<script type=text/javascript>var baseurl="https://btctranscripts.com//es"</script>
+<script type=text/javascript src=/plugins/search.js></script>
+<script type=text/javascript src=https://btctranscripts.com/js/custom.js></script>
+<script type=text/javascript src=/plugins/clipboard.js></script>
+<script>new ClipboardJS('.btn')</script>
+</body>
+</html>
