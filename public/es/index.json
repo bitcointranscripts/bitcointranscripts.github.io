@@ -65,6 +65,11 @@
 	"content": "Nombre: Antoine Riard\nTema: A Schnorr-Taproot’ed Lightning\nUbicación: El avance de Bitcoin\nFecha: 6 de febrero de 2020\nVideo (acceso de pago): https://www.advancingbitcoin.com/video/a-schnorr-taprooted-lightning,11/\nDiapositivas: https://www.dropbox.com/s/9vs54e9bqf317u0/Schnorr-Taproot%27ed-LN.pdf\nIntroducción Hoy Schnorr y Taproot para Lightning, es un tema realmente apasionante.\nArquitectura Lightning La arquitectura Lightning para aquellos que no están familiarizados con ella. Usted tiene el …"
 },
 {
+	"uri": "/es/austin-bitcoin-developers/",
+	"title": "Austin Bitcoin Developers",
+	"content": " Seminario Socrático 6 (2020-02-24)    "
+},
+{
 	"uri": "/es/tags/bitcoin-core/",
 	"title": "bitcoin core",
 	"content": ""
@@ -145,6 +150,11 @@
 	"content": ""
 },
 {
+	"uri": "/es/categories/reuni%C3%B3n/",
+	"title": "reunión",
+	"content": ""
+},
+{
 	"uri": "/es/tags/schnorr/",
 	"title": "schnorr",
 	"content": ""
@@ -153,6 +163,11 @@
 	"uri": "/es/tags/seguridad/",
 	"title": "seguridad",
 	"content": ""
+},
+{
+	"uri": "/es/austin-bitcoin-developers/2020-02-24-socratic-seminar-6/",
+	"title": "Seminario Socrático 6 (2020-02-24)",
+	"content": "Seminario socrático para desarrolladores de Bitcoin en Austin 6\nhttps://www.meetup.com/Austin-Bitcoin-Developers/events/268812642/\nhttps://bitdevs.org/2020-02-12-socratic-seminar-101\nhttps://twitter.com/kanzure/status/1232132693179207682\nIntroducción Muy bien, vamos a empezar. Reúnanse. A Phil le vendría bien algo de compañía. A nadie le gusta la primera fila. Tal vez los bancos. Así que tengo un formato un poco diferente de cómo quiero hacerlo esta semana. Normalmente cubro una amplia serie de …"
 },
 {
 	"uri": "/es/tags/",

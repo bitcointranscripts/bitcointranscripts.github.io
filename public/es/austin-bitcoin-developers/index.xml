@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Austin Bitcoin Developers on Transcripciones de ₿itcoin</title>
+    <link>https://btctranscripts.com/es/austin-bitcoin-developers/</link>
+    <description>Recent content in Austin Bitcoin Developers on Transcripciones de ₿itcoin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://btctranscripts.com/es/austin-bitcoin-developers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Seminario Socrático 6 (2020-02-24)</title>
+      <link>https://btctranscripts.com/es/austin-bitcoin-developers/2020-02-24-socratic-seminar-6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/es/austin-bitcoin-developers/2020-02-24-socratic-seminar-6/</guid>
+      <description>Seminario socrático para desarrolladores de Bitcoin en Austin 6
+https://www.meetup.com/Austin-Bitcoin-Developers/events/268812642/
+https://bitdevs.org/2020-02-12-socratic-seminar-101
+https://twitter.com/kanzure/status/1232132693179207682
+Introducción Muy bien, vamos a empezar. Reúnanse. A Phil le vendría bien algo de compañía. A nadie le gusta la primera fila. Tal vez los bancos. Así que tengo un formato un poco diferente de cómo quiero hacerlo esta semana. Normalmente cubro una amplia serie de temas que robo de la lista de reuniones de Nueva York. Revisando eso, pensé que había algo que parecía interesante que era las nuevas propuestas de taproot que finalmente fueron publicadas por Pieter Wuille.</description>
+    </item>
+    
+  </channel>
+</rss>

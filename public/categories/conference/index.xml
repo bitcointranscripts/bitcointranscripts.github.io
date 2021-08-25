@@ -4496,6 +4496,22 @@ Intro Ok I have top running. We have a plan and we’re going to start from zero
     </item>
     
     <item>
+      <title>Rusty Russell - Offers (2019-10-19)</title>
+      <link>https://btctranscripts.com/lightning-conference/2019/2019-10-19-rusty-russell-offers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/lightning-conference/2019/2019-10-19-rusty-russell-offers/</guid>
+      <description>Name: Rusty Russell
+Topic: Make Me An Offer: Next Level Invoicing
+The Lightning Conference Day 1 (Stage 1)
+Video: https://www.youtube.com/watch?v=Wq75pGWmMd4
+BOLT 11: https://github.com/lightningnetwork/lightning-rfc/blob/master/11-payment-encoding.md
+BOLT 12 PR: https://github.com/lightningnetwork/lightning-rfc/pull/798
+bolt12.org: https://bolt12.org/
+Intro Hi. My name is Rusty Russell and this is actually my official job title at Blockstream, code contributor. It is generic, it is flexible, it is probably a little too humble maybe but that is me. Before we begin the main part of this talk I want to tell you a story.</description>
+    </item>
+    
+    <item>
       <title>Scalable Rsa Modulus Generation</title>
       <link>https://btctranscripts.com/stanford-blockchain-conference/2020/scalable-rsa-modulus-generation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
