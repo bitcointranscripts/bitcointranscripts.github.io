@@ -865,6 +865,10 @@
   </url>
   
   <url>
+    <loc>https://btctranscripts.com/c-lightning/2021-08-23-developer-call/</loc>
+  </url>
+  
+  <url>
     <loc>https://btctranscripts.com/bitcoin-developers-miners-meeting-2016/cali2016/</loc>
   </url>
   
@@ -3334,6 +3338,16 @@
   
   <url>
     <loc>https://btctranscripts.com/austin-bitcoin-developers/2020-01-21-socratic-seminar-5/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/austin-bitcoin-developers/2020-01-21-socratic-seminar-5/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/austin-bitcoin-developers/2020-01-21-socratic-seminar-5/"
+                />
   </url>
   
   <url>
