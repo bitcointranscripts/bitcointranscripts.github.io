@@ -669,7 +669,7 @@ Blockstream Webinars
 <p>And get our balance.</p>
 <p><code>l1-cli balance</code></p>
 <p>That is a little bit prettier. It has done some rounding. We’ve got a prettier output at that point. That may be readable to you and me. We’ve got 10 Bitcoin and we know that’s a lot but it is not all that useful. Really what we should be doing is giving some sort of fiat representation as well. Fortunately this is Python so it is surprisingly easy to do. We are going to import a couple of packages that do the magic for us.</p>
-<pre><code>import requests
+<pre tabindex=0><code>import requests
 import json
 </code></pre><p>We are going to call out to one of the places that will offer a API that does this, bitcoinaverage.com for example has an API that converts.</p>
 <p><code>def balance (plugin, currency=‘USD’, prefix=‘USD \$’):</code></p>

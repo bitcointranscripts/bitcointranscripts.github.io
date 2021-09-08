@@ -588,7 +588,7 @@ Advancing Bitcoin 2020
 <p>What’s nice about this repo is the README down here. A couple of useful links. The first I want is the <a href=https://bitcoin.sipa.be/miniscript/>Miniscript website</a>. This is linked to in the Git repo but it is also fairly easy to memorize. Let me give a quick overview of what Miniscript is although I guess I did a talk yesterday and some of you were at the Bitcoin developer <a href=https://diyhpl.us/wiki/transcripts/london-bitcoin-devs/2020-02-04-andrew-poelstra-miniscript/>meetup</a> on Tuesday where I did a 2 hour detailed thing. Basically what Miniscript is is a subset of Bitcoin Script which we can represent in this nice form. Let me show you an example.</p>
 <p><code>and_v(or_c(pk(B),or_c(pk(C),v:older(1000))),pk(A))</code></p>
 <p>Rather than looking like Bitcoin Script. Bitcoin Script is stack based, opcode based and very low level. Here we are encoding spending policies in an obscure looking way. What we have are different key checks, hash preimage checks, timelocks and we can combine these in various ANDs and ORs and thresholds and so forth to compose more expressive spending policies. You can sort of see what is going on. You’ve got these <code>pk</code> <code>pk</code> with the pubkey signature checks. You have this AND that is a boolean AND and all of the rest of the noise, the <code>_v</code> the <code>v:</code> stuff like that, those reflect the underlying Bitcoin Script being encoded here. If I click “Analyze” here you can see the actual Bitcoin Script that is represented by this Miniscript.</p>
-<pre><code>&lt;B&gt; OP_CHECKSIG OP_NOTIF
+<pre tabindex=0><code>&lt;B&gt; OP_CHECKSIG OP_NOTIF
   &lt;C&gt; OP_CHECKSIG OP_NOTIF
     &lt;e803&gt; OP_CHECKSEQUENCEVERIFY OP_VERIFY
   OP_ENDIF
@@ -742,7 +742,7 @@ OP_ENDIF
 <p>This still works. Now I have a public key and these are just strings. I can no longer translate this into a Bitcoin Script, I lose a lot of functionality but I can parse, serialize and do analysis on these. This is a really useful feature both in testing and storing keys in interesting ways. There is other functionality that I’m not going to go into that allows you to translate all the public keys, we provide a function to translate public keys. In Liquid we actually parse Scripts like this where we use a string representing all the participants. After we have parsed that and done a couple of sanity checks then we look up in our hash table of which peers, which connections, which keys and we translate the string keys into a richer type. We have a bunch of extra errors that we can throw at that point. We turn that into a richer type which either indicates a raw functionary key or one that is tweaked for pay-to-contract hash or whatever. There are a bunch of fairly advanced abilities explored by this library that let you do very rich things with keys. We’re going to stick with dummy keys here. One quick thing that I want to illustrate. I have a more interesting Script here.</p>
 <p><code>”wsh(c:or_i(pk(), pk()))”</code></p>
 <p>I’ve got this <code>or_i</code> which is the IF ELSE ENDIF thing. I have my c wrapper on the outside of my <code>or_i</code>. Let me print out this descriptor.</p>
-<pre><code>let descriptor = Descriptor:: &lt;miniscript::bitcoin::PublicKey&gt;::from_str(“wsh(c:or_i(pk(020202….), pk(020202…)))”,
+<pre tabindex=0><code>let descriptor = Descriptor:: &lt;miniscript::bitcoin::PublicKey&gt;::from_str(“wsh(c:or_i(pk(020202….), pk(020202…)))”,
 )
 .unwrap();
 println!(“***Witness Script: {}”, descriptor….ss_script());
