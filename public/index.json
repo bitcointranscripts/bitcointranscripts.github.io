@@ -165,6 +165,11 @@
 	"content": "Alex Bosworth\nChannel Management\nVideo: https://www.youtube.com/watch?v=HlPIB6jt6ww\nSlides: https://lightningresidency.com/assets/presentations/Bosworth_Channel_Management.pdf\nIntro Today I’m going to talk about something a little bit different to building apps. I’m going to talk about becoming a great router. Managing your node so that your node can be routing payments and be a good citizen if you choose to have public channels.\nUptime So basically the big message overall is and I think I’ve …"
 },
 {
+	"uri": "/chaincode-labs/chaincode-residency/2018-09-18-alex-bosworth-incentive-problems-in-the-lightning-network/",
+	"title": "Alex Bosworth - Incentive Problems in the Lightning Network (2018-09-18)",
+	"content": "Alex Bosworth\nVideo: https://youtu.be/lByQUr7zPr0\nIncentive Problems in the Lightning Network I\u0026amp;rsquo;m going to talk about high-level incentive problems in the Lighting Network.\nMechanisms The first thing to think about is that we have two different mechanisms for making Bitcoin and lightning work. One mechanism is math — If you do a SHA 256 of something you don\u0026amp;rsquo;t have to worry about incentives, whether that\u0026amp;rsquo;s going to match to the expected result. There\u0026amp;rsquo;s no incentive there. …"
+},
+{
 	"uri": "/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-lightning-protocol/",
 	"title": "Alex Bosworth - Lightning Protocol (2018-10-22)",
 	"content": "Alex Bosworth\nThe Lightning Protocol, an Application Design Perspective\nVideo: https://www.youtube.com/watch?v=1R5DNUcCYRg\nSlides: https://lightningresidency.com/assets/presentations/Bosworth_The_Lightning_Protocol.pdf\nIntro I’m talking about the protocol design and also going through the BOLTs. What I’m going to talk about is also about the BOLTs. The BOLTs are like the spec for Lightning and there’s a bunch of them.\nBOLT 00: Build Apps What I try to do is go through the BOLTs and look at only …"
@@ -882,7 +887,7 @@
 {
 	"uri": "/c-lightning/",
 	"title": "c-lightning",
-	"content": " c-lightning developer call (2021-08-09)   c-lightning developer call (2021-08-23)    "
+	"content": " c-lightning developer call (2021-08-09)   c-lightning developer call (2021-08-23)   c-lightning developer call (2021-09-06)    "
 },
 {
 	"uri": "/c-lightning/2021-08-09-developer-call/",
@@ -893,6 +898,11 @@
 	"uri": "/c-lightning/2021-08-23-developer-call/",
 	"title": "c-lightning developer call (2021-08-23)",
 	"content": "Name: c-lightning developer call\nTopic: Various topics\nLocation: Jitsi online\nDate: August 23rd 2021\nVideo: No video posted online\nThe conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.\nIndividual updates I’ve been working on connectd, we got that merged. It was not a big …"
+},
+{
+	"uri": "/c-lightning/2021-09-06-developer-call/",
+	"title": "c-lightning developer call (2021-09-06)",
+	"content": "Name: c-lightning developer call\nTopic: Various topics\nLocation: Jitsi online\nDate: September 6th 2021\nVideo: No video posted online\nThe conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.\nIndividual updates I’ve been mostly shepherding the pull requests on c-lightning and …"
 },
 {
 	"uri": "/bitcoin-developers-miners-meeting-2016/cali2016/",
@@ -942,7 +952,7 @@
 {
 	"uri": "/chaincode-labs/chaincode-residency/",
 	"title": "Chaincode Residency",
-	"content": " Alex Bosworth - Building Lightning Applications (2018-10-22)   Alex Bosworth - Channel Management (2018-10-22)   Alex Bosworth - Lightning Protocol (2018-10-22)   Amiti Uttarwar - Transaction Rebroadcast (2019-09-09)   Christian Decker - C-Lightning API (2018-10-24)   Christian Decker - Eltoo (2019-06-25)   Christian Decker - Onion Routing Deep Dive (2019-06-25)   Christian Decker - Rendezvous Routing (2019-06-28)   Elaine Ou - Bootstrapping Lightning Node (2018-10-22)   Elichai Turkel - …"
+	"content": " Alex Bosworth - Building Lightning Applications (2018-10-22)   Alex Bosworth - Channel Management (2018-10-22)   Alex Bosworth - Incentive Problems in the Lightning Network (2018-09-18)   Alex Bosworth - Lightning Protocol (2018-10-22)   Amiti Uttarwar - Transaction Rebroadcast (2019-09-09)   Christian Decker - C-Lightning API (2018-10-24)   Christian Decker - Eltoo (2019-06-25)   Christian Decker - Onion Routing Deep Dive (2019-06-25)   Christian Decker - Rendezvous Routing (2019-06-28) …"
 },
 {
 	"uri": "/scalingbitcoin/stanford-2017/changes-without-unanimous-consent/",
@@ -3203,6 +3213,11 @@
 	"uri": "/scalingbitcoin/montreal-2015/relay-network/",
 	"title": "Relay Network",
 	"content": "It was indicative of two issues. A lot of people were reducing their security model by not validating their bitcoin. It was potentially less secure. That\u0026amp;rsquo;s not something that relay networks try to address. The big issue with the decreasing number of nodes, which the relay network doesn\u0026amp;rsquo;t address, is that it reduces the resilience against attack. If there\u0026amp;rsquo;s only 100 nodes, there\u0026amp;rsquo;s really only some 100 VPses that you have to knock offline before the bitcoin network stops …"
+},
+{
+	"uri": "/chaincode-labs/chaincode-residency/2019-06-24-rene-pickhardt-multihop-in-lightning/",
+	"title": "René Pickhardt - Multihop of the Lightning Network (2019-06-24)",
+	"content": "Name: René Pickhardt\nTopic: Multihop of the Lightning Network\nLocation: Chaincode Labs Lightning Residency 2019\nDate: 2019-06-24\nVideo: https://www.youtube.com/watch?v=P7I-C0_sijg\nSlides: https://residency.chaincode.com/presentations/lightning/Multihop_Layer.pdf\nIntroduction I\u0026amp;rsquo;m going to talk about Lightning Network payment channels and the update layer which is basically multihop payments and the outline of this talk is one slide myths about routing that are floating around and I just …"
 },
 {
 	"uri": "/scalingbitcoin/tokyo-2018/edgedevplusplus/reorgs/",

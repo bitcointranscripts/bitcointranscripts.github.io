@@ -198,6 +198,21 @@ Individual updates I’ve been working on connectd, we got that merged.</descrip
     </item>
     
     <item>
+      <title>c-lightning developer call (2021-09-06)</title>
+      <link>https://btctranscripts.com/c-lightning/2021-09-06-developer-call/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/c-lightning/2021-09-06-developer-call/</guid>
+      <description>Name: c-lightning developer call
+Topic: Various topics
+Location: Jitsi online
+Date: September 6th 2021
+Video: No video posted online
+The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
+Individual updates I’ve been mostly shepherding the pull requests on c-lightning and looking into issues we need to fix for the coming release.</description>
+    </item>
+    
+    <item>
       <title>Cali 2016</title>
       <link>https://btctranscripts.com/bitcoin-developers-miners-meeting-2016/cali2016/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
