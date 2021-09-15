@@ -15,7 +15,10 @@ Channel Management
 Video: https://www.youtube.com/watch?v=HlPIB6jt6ww
 Slides: https://lightningresidency.com/assets/presentations/Bosworth_Channel_Management.pdf
 Intro Today I’m going to talk about something a little bit different to building apps. I’m going to talk about becoming a great router. Managing your node so that your node can be routing payments and be a good citizen if you choose to have public channels.
-Uptime So basically the big message overall is and I think I’ve said this before, if you have public channels you’re kind of like waving to everybody “please use these channels to do routing”.</description></item><item><title>Alex Bosworth - Lightning Protocol (2018-10-22)</title><link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-lightning-protocol/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-lightning-protocol/</guid><description>Alex Bosworth
+Uptime So basically the big message overall is and I think I’ve said this before, if you have public channels you’re kind of like waving to everybody “please use these channels to do routing”.</description></item><item><title>Alex Bosworth - Incentive Problems in the Lightning Network (2018-09-18)</title><link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-09-18-alex-bosworth-incentive-problems-in-the-lightning-network/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-09-18-alex-bosworth-incentive-problems-in-the-lightning-network/</guid><description>Alex Bosworth
+Video: https://youtu.be/lByQUr7zPr0
+Incentive Problems in the Lightning Network I&amp;rsquo;m going to talk about high-level incentive problems in the Lighting Network.
+Mechanisms The first thing to think about is that we have two different mechanisms for making Bitcoin and lightning work. One mechanism is math — If you do a SHA 256 of something you don&amp;rsquo;t have to worry about incentives, whether that&amp;rsquo;s going to match to the expected result.</description></item><item><title>Alex Bosworth - Lightning Protocol (2018-10-22)</title><link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-lightning-protocol/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-lightning-protocol/</guid><description>Alex Bosworth
 The Lightning Protocol, an Application Design Perspective
 Video: https://www.youtube.com/watch?v=1R5DNUcCYRg
 Slides: https://lightningresidency.com/assets/presentations/Bosworth_The_Lightning_Protocol.pdf
@@ -69,7 +72,13 @@ Location: Jitsi online
 Date: August 23rd 2021
 Video: No video posted online
 The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
-Individual updates I’ve been working on connectd, we got that merged.</description></item><item><title>Christian Decker - C-Lightning API (2018-10-24)</title><link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-24-christian-decker-c-lightning-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-24-christian-decker-c-lightning-api/</guid><description>Christian Decker
+Individual updates I’ve been working on connectd, we got that merged.</description></item><item><title>c-lightning developer call (2021-09-06)</title><link>https://btctranscripts.com/c-lightning/2021-09-06-developer-call/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/c-lightning/2021-09-06-developer-call/</guid><description>Name: c-lightning developer call
+Topic: Various topics
+Location: Jitsi online
+Date: September 6th 2021
+Video: No video posted online
+The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
+Individual updates I’ve been mostly shepherding the pull requests on c-lightning and looking into issues we need to fix for the coming release.</description></item><item><title>Christian Decker - C-Lightning API (2018-10-24)</title><link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-24-christian-decker-c-lightning-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-24-christian-decker-c-lightning-api/</guid><description>Christian Decker
 Developing on c-lightning
 Location: Chaincode Labs Lightning Residency 2018
 Video: https://www.youtube.com/watch?v=l8OLD7or0DA
@@ -350,7 +359,13 @@ The easiest way to censor things is to punish communication, not prevent communi
 Sebastián Reca (Muun)
 https://twitter.com/kanzure/status/1048753406628655105
 Introduction This talk is going to be about rebalancing in the lightning network. I&amp;rsquo;ll talk about the implications and about running a lightning node.
-Financial costs In the lightning network, routing nodes will incur in financial costs by having their money locked inside channels. They can&amp;rsquo;t use that money elsewhere. They incur a financial cost to doing this activity, at least an opportunity cost.</description></item><item><title>Reproducible Lightning Benchmark</title><link>https://btctranscripts.com/scalingbitcoin/tokyo-2018/reproducible-lightning-benchmark/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/scalingbitcoin/tokyo-2018/reproducible-lightning-benchmark/</guid><description>Reproducible lightning benchmark
+Financial costs In the lightning network, routing nodes will incur in financial costs by having their money locked inside channels. They can&amp;rsquo;t use that money elsewhere. They incur a financial cost to doing this activity, at least an opportunity cost.</description></item><item><title>René Pickhardt - Multihop of the Lightning Network (2019-06-24)</title><link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-24-rene-pickhardt-multihop-in-lightning/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-24-rene-pickhardt-multihop-in-lightning/</guid><description>Name: René Pickhardt
+Topic: Multihop of the Lightning Network
+Location: Chaincode Labs Lightning Residency 2019
+Date: 2019-06-24
+Video: https://www.youtube.com/watch?v=P7I-C0_sijg
+Slides: https://residency.chaincode.com/presentations/lightning/Multihop_Layer.pdf
+Introduction I&amp;rsquo;m going to talk about Lightning Network payment channels and the update layer which is basically multihop payments and the outline of this talk is one slide myths about routing that are floating around and I just want to discuss them in the beginning very briefly. Then I will talk about the payment process on the Lightning Network and compare it a little bit with the payment process on Bitcoin.</description></item><item><title>Reproducible Lightning Benchmark</title><link>https://btctranscripts.com/scalingbitcoin/tokyo-2018/reproducible-lightning-benchmark/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/scalingbitcoin/tokyo-2018/reproducible-lightning-benchmark/</guid><description>Reproducible lightning benchmark
 Nicolas Dorier (DG Lab)
 https://github.com/dgarage/LightningBenchmarks
 https://twitter.com/kanzure/status/1048760545699016705
