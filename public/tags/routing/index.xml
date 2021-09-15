@@ -239,5 +239,20 @@ Introduction This talk is going to be about rebalancing in the lightning network
 Financial costs In the lightning network, routing nodes will incur in financial costs by having their money locked inside channels. They can&amp;rsquo;t use that money elsewhere. They incur a financial cost to doing this activity, at least an opportunity cost.</description>
     </item>
     
+    <item>
+      <title>René Pickhardt - Multihop of the Lightning Network (2019-06-24)</title>
+      <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-24-rene-pickhardt-multihop-in-lightning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-24-rene-pickhardt-multihop-in-lightning/</guid>
+      <description>Name: René Pickhardt
+Topic: Multihop of the Lightning Network
+Location: Chaincode Labs Lightning Residency 2019
+Date: 2019-06-24
+Video: https://www.youtube.com/watch?v=P7I-C0_sijg
+Slides: https://residency.chaincode.com/presentations/lightning/Multihop_Layer.pdf
+Introduction I&amp;rsquo;m going to talk about Lightning Network payment channels and the update layer which is basically multihop payments and the outline of this talk is one slide myths about routing that are floating around and I just want to discuss them in the beginning very briefly. Then I will talk about the payment process on the Lightning Network and compare it a little bit with the payment process on Bitcoin.</description>
+    </item>
+    
   </channel>
 </rss>

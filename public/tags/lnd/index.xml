@@ -22,6 +22,18 @@ Design Philosophy So what is the big idea behind lnd? What are we thinking about
     </item>
     
     <item>
+      <title>Alex Bosworth - Incentive Problems in the Lightning Network (2018-09-18)</title>
+      <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-09-18-alex-bosworth-incentive-problems-in-the-lightning-network/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-09-18-alex-bosworth-incentive-problems-in-the-lightning-network/</guid>
+      <description>Alex Bosworth
+Video: https://youtu.be/lByQUr7zPr0
+Incentive Problems in the Lightning Network I&amp;rsquo;m going to talk about high-level incentive problems in the Lighting Network.
+Mechanisms The first thing to think about is that we have two different mechanisms for making Bitcoin and lightning work. One mechanism is math — If you do a SHA 256 of something you don&amp;rsquo;t have to worry about incentives, whether that&amp;rsquo;s going to match to the expected result.</description>
+    </item>
+    
+    <item>
       <title>Christian Decker - C-Lightning Questions (2019-09-04)</title>
       <link>https://btctranscripts.com/blockstream-webinars/2019-09-04-christian-decker-c-lightning-questions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

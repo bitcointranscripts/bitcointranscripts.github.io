@@ -165,6 +165,10 @@
   </url>
   
   <url>
+    <loc>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-09-18-alex-bosworth-incentive-problems-in-the-lightning-network/</loc>
+  </url>
+  
+  <url>
     <loc>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-lightning-protocol/</loc>
   </url>
   
@@ -866,6 +870,10 @@
   
   <url>
     <loc>https://btctranscripts.com/c-lightning/2021-08-23-developer-call/</loc>
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/c-lightning/2021-09-06-developer-call/</loc>
   </url>
   
   <url>
@@ -2867,6 +2875,10 @@
   </url>
   
   <url>
+    <loc>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-24-rene-pickhardt-multihop-in-lightning/</loc>
+  </url>
+  
+  <url>
     <loc>https://btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/reorgs/</loc>
   </url>
   
@@ -3330,10 +3342,30 @@
   
   <url>
     <loc>https://btctranscripts.com/austin-bitcoin-developers/2019-10-14-socratic-seminar-3/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/austin-bitcoin-developers/2019-10-14-socratic-seminar-3/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/austin-bitcoin-developers/2019-10-14-socratic-seminar-3/"
+                />
   </url>
   
   <url>
     <loc>https://btctranscripts.com/austin-bitcoin-developers/2019-11-19-socratic-seminar-4/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/austin-bitcoin-developers/2019-11-19-socratic-seminar-4/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/austin-bitcoin-developers/2019-11-19-socratic-seminar-4/"
+                />
   </url>
   
   <url>
