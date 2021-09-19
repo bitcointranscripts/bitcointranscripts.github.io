@@ -199,7 +199,12 @@ http://lightning.network/
 video: https://www.youtube.com/watch?v=-lgYYz3y_hY
 slides: http://diyhpl.us/~bryan/papers2/bitcoin/Lightning%20Network%20as%20Directed%20Graph%20Single-Funded%20Channel%20Topology%20-%20Tadge%20Dryja%20-%202016-04-11.pdf
 Okay. Hello everyone. Yes, okay, great. Yes. Yeah, I&amp;rsquo;m working on Lightning Network. Bitcoin is great and fun to work on.
-Basic super quick summary of Lightning I am going to re-cap lightning network real quick. The basic idea is to have channels between two nodes. A channel, from the perspective of the rest of the world, is just a 2-of-2 multisig output.</description></item><item><title>Luke Dashjr - Segwit, PSBT Vulnerability (2020-06-18)</title><link>https://btctranscripts.com/la-bitdevs/2020-06-18-luke-dashjr-segwit-psbt-vulnerability/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/la-bitdevs/2020-06-18-luke-dashjr-segwit-psbt-vulnerability/</guid><description>Name: Luke Dashjr
+Basic super quick summary of Lightning I am going to re-cap lightning network real quick. The basic idea is to have channels between two nodes. A channel, from the perspective of the rest of the world, is just a 2-of-2 multisig output.</description></item><item><title>Lightning Network BOLT by BOLT (2018-07-24)</title><link>https://btctranscripts.com/misc/2018-07-24-la-blockchain-jim-posen-lightning-bolt-by-bolt/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/misc/2018-07-24-la-blockchain-jim-posen-lightning-bolt-by-bolt/</guid><description>Name: Jim Posen
+Topic: Lightning Network BOLT by BOLT
+Location: LA Blockchain Meetup
+Video: https://www.youtube.com/watch?v=Ysj2yobFMF4
+Transcript by: glozow
+Introduction I&amp;rsquo;m Jim from the protocol team at Coinbase. We work on open source stuff in the crypto space. We just contribute to projects like Bitcoin core. The reason I&amp;rsquo;m talking about this is I&amp;rsquo;ve been contributing on and off to one of the major lightning implementations lnd for the past eight months or so.</description></item><item><title>Luke Dashjr - Segwit, PSBT Vulnerability (2020-06-18)</title><link>https://btctranscripts.com/la-bitdevs/2020-06-18-luke-dashjr-segwit-psbt-vulnerability/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/la-bitdevs/2020-06-18-luke-dashjr-segwit-psbt-vulnerability/</guid><description>Name: Luke Dashjr
 Topic: SegWit/PSBT vulnerability (CVE-2020-14199)
 Location: LA BitDevs (online)
 Date: June 18th 2020
