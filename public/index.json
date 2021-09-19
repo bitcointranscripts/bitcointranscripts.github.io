@@ -915,6 +915,11 @@
 	"content": "Name: Carl Dong\nTopic: Reproducible Build Systems\nLocation: Chaincode Labs Podcast (Episode 9 and 10)\nDate: November 30th 2020\nVideo: https://www.youtube.com/watch?v=Y5Gfli3x6rI\nCarl Dong’s presentation at Breaking Bitcoin 2019 on “Bitcoin Build System Security”: https://diyhpl.us/wiki/transcripts/breaking-bitcoin/2019/bitcoin-build-system/\nIntro Adam Jonas (AJ): Welcome to the Chaincode podcast Carl.\nCarl Dong (CD): Hello.\nAJ: You know we’ve been doing this podcast for a while now. How come you …"
 },
 {
+	"uri": "/scalingbitcoin/tel-aviv-2019/edgedevplusplus/2019-09-09-carla-kirk-cohen-routing-problems-and-solutions/",
+	"title": "Carla Kirk-Cohen - Routing Problems and Solutions",
+	"content": "Name: Carla Kirk-Cohen\nTopic: Routing Problems and Solutions\nDate: 2019-09-09\nLocation: Tel-Aviv 2019\nVideo: https://youtu.be/1O-bhcbh9vE\nIntroduction I\u0026amp;rsquo;m going to be talking about routing in the lighting network now. So I\u0026amp;rsquo;m gonna touch on how it\u0026amp;rsquo;s currently operating, some issues that you run into when you are routing, and then some potential expansions to the spec which are going to address some of these issues.\nSo we ran through the lighting network graph, the nodes of …"
+},
+{
 	"uri": "/stanford-blockchain-conference/2019/casper/",
 	"title": "Casper",
 	"content": "Casper the friendly ghost: A \u0026amp;ldquo;correct-by-construction\u0026amp;rdquo; blockchain consensus protocol\nVlad Zamfir (Ethereum Foundation)\nhttps://twitter.com/kanzure/status/1091460316288868352\nI have one announcement to make before we start the session. If you feel like after all of these talks that the thing you really need is a drink, then there\u0026amp;rsquo;s help. Chainlink is hosting the Stanford Blockchain Conference happy hour at The Patio which is the most famous bar in Palo Alto. It doesn\u0026amp;rsquo;t …"
@@ -1412,7 +1417,7 @@
 {
 	"uri": "/scalingbitcoin/tel-aviv-2019/edgedevplusplus/",
 	"title": "Edgedevplusplus",
-	"content": " Accumulators   Bitcoin Core Functional Test Framework   Bitcoin Data Structures   Blockchain Design Patterns   Bosminer   Debugging Bitcoin   Hardware Wallet Design Best Practices   Libbitcoin   Lightning Network Layer By Layer   Lightning Network Routing   Lightning Network Sphinx And Onion Routing   Lightning network topology, its creation and maintenance   Metadata   Mining Firmware Security   Privacy Concepts   Rebroadcasting   Signet   Statechains   Taproot   Wallet Architecture in Bitcoin …"
+	"content": " Accumulators   Bitcoin Core Functional Test Framework   Bitcoin Data Structures   Blockchain Design Patterns   Bosminer   Carla Kirk-Cohen - Routing Problems and Solutions   Debugging Bitcoin   Hardware Wallet Design Best Practices   Libbitcoin   Lightning Network Layer By Layer   Lightning Network Routing   Lightning Network Sphinx And Onion Routing   Lightning network topology, its creation and maintenance   Metadata   Mining Firmware Security   Privacy Concepts   Rebroadcasting   Signet …"
 },
 {
 	"uri": "/scalingbitcoin/tokyo-2018/edgedevplusplus/",
@@ -1533,6 +1538,11 @@
 	"uri": "/chaincode-labs/chaincode-residency/2019-06-24-fabrice-drouin-base-and-transport-layers-of-lightning-network/",
 	"title": "Fabrice Drouin - Base and Transport Layers of the Lightning Network (2019-06-24)",
 	"content": "Name: Fabrice Drouin\nDate: 2019-06-24\nTopic: Base and Transport Layers of the Lightning Network\nLocation: Chaincode Labs Lightning Residency 2019\nVideo: https://www.youtube.com/watch?v=wyri7cc83kQ\nSlides: https://residency.chaincode.com/presentations/lightning/Base_Transport.pdf\nIntroduction Fabrice: The base and transport layer, almost everything was already introduced this morning so it\u0026amp;rsquo;s going to be very quick. So have you visited the lightning repo on GitHub? Who hasn\u0026amp;rsquo;t?\nOkay, …"
+},
+{
+	"uri": "/chaincode-labs/chaincode-residency/2019-06-26-fabrice-drouin-limitations-of-lightweight-clients/",
+	"title": "Fabrice Drouin - Limitations of Lightweight Clients",
+	"content": "Name: Fabrice Drouin\nTopic: Limitations of Lightweight Clients\nLocation: Chaincode Labs Lightning Residency 2019\nDate: 2019-06-26\nVideo: https://youtu.be/ULVItljEiFE\nIntroduction The limitations it\u0026amp;rsquo;s uh you have to fight when you want to build lightweight clients mobile clients so this again, this is how mobile clients work, you scan payment requests, you have a view of the network that is supposed to be good enough, you compute the routes, you get an HTLC, you get a preimage back …"
 },
 {
 	"uri": "/misc/failures-of-secret-key-cryptography/",
@@ -2390,6 +2400,11 @@
 	"content": "2016-04-11\nLightning Network as a Directed Graph: Single-Funded Channel Network Topology\nTadge Dryja rx@awsomnet.org\nhttp://lightning.network/\nvideo: https://www.youtube.com/watch?v=-lgYYz3y_hY\nslides: http://diyhpl.us/~bryan/papers2/bitcoin/Lightning%20Network%20as%20Directed%20Graph%20Single-Funded%20Channel%20Topology%20-%20Tadge%20Dryja%20-%202016-04-11.pdf\nOkay. Hello everyone. Yes, okay, great. Yes. Yeah, I\u0026amp;rsquo;m working on Lightning Network. Bitcoin is great and fun to work on.\nBasic …"
 },
 {
+	"uri": "/misc/2018-07-24-la-blockchain-jim-posen-lightning-bolt-by-bolt/",
+	"title": "Lightning Network BOLT by BOLT (2018-07-24)",
+	"content": "Name: Jim Posen\nTopic: Lightning Network BOLT by BOLT\nLocation: LA Blockchain Meetup\nVideo: https://www.youtube.com/watch?v=Ysj2yobFMF4\nTranscript by: glozow\nIntroduction I\u0026amp;rsquo;m Jim from the protocol team at Coinbase. We work on open source stuff in the crypto space. We just contribute to projects like Bitcoin core. The reason I\u0026amp;rsquo;m talking about this is I\u0026amp;rsquo;ve been contributing on and off to one of the major lightning implementations lnd for the past eight months or so.\nThis is gonna …"
+},
+{
 	"uri": "/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-layer-by-layer/",
 	"title": "Lightning Network Layer By Layer",
 	"content": "Name: Carla Kirk-Cohen\nTopic: The Lightning Network Layer by Layer\nLocation: Dev++ O3-19 Tel Aviv\nVideo: https://www.youtube.com/watch?v=tie0Gpq2eJI\nIntroduction Good afternoon everyone. My name is Carla. I\u0026amp;rsquo;m one of the Chaincode residents from the summer residency that they ran in New York this year and this afternoon I\u0026amp;rsquo;m going to be talking about Lightning. In this talk, I\u0026amp;rsquo;m gonna be walking you through the protocol layer by layer and having a look at the different components …"
@@ -3213,6 +3228,11 @@
 	"uri": "/scalingbitcoin/montreal-2015/relay-network/",
 	"title": "Relay Network",
 	"content": "It was indicative of two issues. A lot of people were reducing their security model by not validating their bitcoin. It was potentially less secure. That\u0026amp;rsquo;s not something that relay networks try to address. The big issue with the decreasing number of nodes, which the relay network doesn\u0026amp;rsquo;t address, is that it reduces the resilience against attack. If there\u0026amp;rsquo;s only 100 nodes, there\u0026amp;rsquo;s really only some 100 VPses that you have to knock offline before the bitcoin network stops …"
+},
+{
+	"uri": "/chaincode-labs/chaincode-residency/2019-06-26-rene-pickhardt-splicing/",
+	"title": "Rene Pickhardt - Splicing",
+	"content": "Name: Rene Pickhardt\nTopic: Splicing\nLocation: Chaincode Labs Lightning Residency 2019\nVideo: https://youtu.be/ZzSveBMtUGI\nTranscript by: Caralie Chrisco\nIntroduction So splicing basically means you have a payment channel, you have a certain capacity of a payment channel and you want to change the capacity on the payment channel. But you don\u0026amp;rsquo;t want to change your balance right? For balance change,(inaudible) we\u0026amp;rsquo;ll get some money on it. But splicing really means you want to change the …"
 },
 {
 	"uri": "/chaincode-labs/chaincode-residency/2019-06-24-rene-pickhardt-multihop-in-lightning/",
@@ -4428,6 +4448,16 @@
 	"uri": "/scalingbitcoin/tel-aviv-2019/zkvm/",
 	"title": "Zkvm",
 	"content": "ZkVM: zero-knowledge virtual machine for fast confidential smart contracts\nFats, private, flexible blockchain contracts\nOleg Andreev (Stellar) (oleganza)\nhttps://medium.com/stellar-developers-blog/zkvm-a-new-design-for-fast-confidential-smart-contracts-d1122890d9ae and https://twitter.com/oleganza/status/1126612382728372224\nhttps://twitter.com/kanzure/status/1171711553512583169\nIntroduction Okay, welcome. What is zkvm? It\u0026amp;rsquo;s a multi-asset blockchain architecture that combines smart …"
+},
+{
+	"uri": "/tags/limitations/",
+	"title": "‘limitations’",
+	"content": ""
+},
+{
+	"uri": "/tags/splicing/",
+	"title": "‘splicing’",
+	"content": ""
 },
 {
 	"uri": "/",

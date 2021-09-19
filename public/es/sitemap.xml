@@ -304,6 +304,24 @@
   </url>
   
   <url>
+    <loc>https://btctranscripts.com/es/tags/hardware-wallet/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/tags/hardware-wallet/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/tags/hardware-wallet/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/es/tags/investigaci%C3%B3n/</loc>
+  </url>
+  
+  <url>
     <loc>https://btctranscripts.com/es/tags/lightning/</loc>
     <xhtml:link
                 rel="alternate"
@@ -347,6 +365,20 @@
                 rel="alternate"
                 hreflang="es"
                 href="https://btctranscripts.com/es/tags/miniscript/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/es/tags/multisig/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/tags/multisig/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/tags/multisig/"
                 />
   </url>
   
@@ -412,6 +444,20 @@
   
   <url>
     <loc>https://btctranscripts.com/es/tags/seguridad/</loc>
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/es/austin-bitcoin-developers/2019-08-22-socratic-seminar-2/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/austin-bitcoin-developers/2019-08-22-socratic-seminar-2/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/austin-bitcoin-developers/2019-08-22-socratic-seminar-2/"
+                />
   </url>
   
   <url>
@@ -542,6 +588,20 @@
   
   <url>
     <loc>https://btctranscripts.com/es/tags/validaci%C3%B3n/</loc>
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/es/tags/wallet/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/tags/wallet/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/tags/wallet/"
+                />
   </url>
   
 </urlset>

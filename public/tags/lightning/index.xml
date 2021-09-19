@@ -231,6 +231,21 @@ Individual updates I’ve been mostly shepherding the pull requests on c-lightni
     </item>
     
     <item>
+      <title>Carla Kirk-Cohen - Routing Problems and Solutions</title>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/2019-09-09-carla-kirk-cohen-routing-problems-and-solutions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/2019-09-09-carla-kirk-cohen-routing-problems-and-solutions/</guid>
+      <description>Name: Carla Kirk-Cohen
+Topic: Routing Problems and Solutions
+Date: 2019-09-09
+Location: Tel-Aviv 2019
+Video: https://youtu.be/1O-bhcbh9vE
+Introduction I&amp;rsquo;m going to be talking about routing in the lighting network now. So I&amp;rsquo;m gonna touch on how it&amp;rsquo;s currently operating, some issues that you run into when you are routing, and then some potential expansions to the spec which are going to address some of these issues.
+So we ran through the lighting network graph, the nodes of vertices, the channels in this graph of edges and at the moment nodes need to keep this graph in memory so they can route quickly if you stored in your database it&amp;rsquo;s gonna slow you down very much and that&amp;rsquo;s starting in about 40 Meg&amp;rsquo;s which is acceptable at the current state of the network but we do expect this to grow.</description>
+    </item>
+    
+    <item>
       <title>Christian Decker - C-Lightning API (2018-10-24)</title>
       <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-24-christian-decker-c-lightning-api/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -459,6 +474,20 @@ Slides: https://residency.chaincode.com/presentations/lightning/Base_Transport.p
 Introduction Fabrice: The base and transport layer, almost everything was already introduced this morning so it&amp;rsquo;s going to be very quick. So have you visited the lightning repo on GitHub? Who hasn&amp;rsquo;t?
 Okay, good. So you&amp;rsquo;ve seen all this? That was a test.
 We&amp;rsquo;ve covered almost everything this morning.</description>
+    </item>
+    
+    <item>
+      <title>Fabrice Drouin - Limitations of Lightweight Clients</title>
+      <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-26-fabrice-drouin-limitations-of-lightweight-clients/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-26-fabrice-drouin-limitations-of-lightweight-clients/</guid>
+      <description>Name: Fabrice Drouin
+Topic: Limitations of Lightweight Clients
+Location: Chaincode Labs Lightning Residency 2019
+Date: 2019-06-26
+Video: https://youtu.be/ULVItljEiFE
+Introduction The limitations it&amp;rsquo;s uh you have to fight when you want to build lightweight clients mobile clients so this again, this is how mobile clients work, you scan payment requests, you have a view of the network that is supposed to be good enough, you compute the routes, you get an HTLC, you get a preimage back you&amp;rsquo;ve paid.</description>
     </item>
     
     <item>
@@ -1022,6 +1051,20 @@ Sebastián Reca (Muun)
 https://twitter.com/kanzure/status/1048753406628655105
 Introduction This talk is going to be about rebalancing in the lightning network. I&amp;rsquo;ll talk about the implications and about running a lightning node.
 Financial costs In the lightning network, routing nodes will incur in financial costs by having their money locked inside channels. They can&amp;rsquo;t use that money elsewhere. They incur a financial cost to doing this activity, at least an opportunity cost.</description>
+    </item>
+    
+    <item>
+      <title>Rene Pickhardt - Splicing</title>
+      <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-26-rene-pickhardt-splicing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-26-rene-pickhardt-splicing/</guid>
+      <description>Name: Rene Pickhardt
+Topic: Splicing
+Location: Chaincode Labs Lightning Residency 2019
+Video: https://youtu.be/ZzSveBMtUGI
+Transcript by: Caralie Chrisco
+Introduction So splicing basically means you have a payment channel, you have a certain capacity of a payment channel and you want to change the capacity on the payment channel. But you don&amp;rsquo;t want to change your balance right? For balance change,(inaudible) we&amp;rsquo;ll get some money on it. But splicing really means you want to change the capacity.</description>
     </item>
     
     <item>
