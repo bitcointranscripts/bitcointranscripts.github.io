@@ -196,6 +196,20 @@ Intro Hi everyone. Thanks for coming to my talk. As I was introduced I’m Jonat
     </item>
     
     <item>
+      <title>Lightning Network BOLT by BOLT (2018-07-24)</title>
+      <link>https://btctranscripts.com/misc/2018-07-24-la-blockchain-jim-posen-lightning-bolt-by-bolt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/misc/2018-07-24-la-blockchain-jim-posen-lightning-bolt-by-bolt/</guid>
+      <description>Name: Jim Posen
+Topic: Lightning Network BOLT by BOLT
+Location: LA Blockchain Meetup
+Video: https://www.youtube.com/watch?v=Ysj2yobFMF4
+Transcript by: glozow
+Introduction I&amp;rsquo;m Jim from the protocol team at Coinbase. We work on open source stuff in the crypto space. We just contribute to projects like Bitcoin core. The reason I&amp;rsquo;m talking about this is I&amp;rsquo;ve been contributing on and off to one of the major lightning implementations lnd for the past eight months or so.</description>
+    </item>
+    
+    <item>
       <title>Mcelrath On Chain Defense In Depth (2019-02-09)</title>
       <link>https://btctranscripts.com/misc/2019-02-09-mcelrath-on-chain-defense-in-depth/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

@@ -885,6 +885,10 @@
   </url>
   
   <url>
+    <loc>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/2019-09-09-carla-kirk-cohen-routing-problems-and-solutions/</loc>
+  </url>
+  
+  <url>
     <loc>https://btctranscripts.com/stanford-blockchain-conference/2019/casper/</loc>
   </url>
   
@@ -1446,6 +1450,10 @@
   </url>
   
   <url>
+    <loc>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-26-fabrice-drouin-limitations-of-lightweight-clients/</loc>
+  </url>
+  
+  <url>
     <loc>https://btctranscripts.com/misc/failures-of-secret-key-cryptography/</loc>
   </url>
   
@@ -1697,6 +1705,16 @@
   
   <url>
     <loc>https://btctranscripts.com/tags/hardware-wallet/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/tags/hardware-wallet/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/tags/hardware-wallet/"
+                />
   </url>
   
   <url>
@@ -2175,6 +2193,10 @@
   </url>
   
   <url>
+    <loc>https://btctranscripts.com/misc/2018-07-24-la-blockchain-jim-posen-lightning-bolt-by-bolt/</loc>
+  </url>
+  
+  <url>
     <loc>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/lightning-network-layer-by-layer/</loc>
   </url>
   
@@ -2496,6 +2518,16 @@
   
   <url>
     <loc>https://btctranscripts.com/tags/multisig/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/tags/multisig/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/tags/multisig/"
+                />
   </url>
   
   <url>
@@ -2872,6 +2904,10 @@
   
   <url>
     <loc>https://btctranscripts.com/scalingbitcoin/montreal-2015/relay-network/</loc>
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-26-rene-pickhardt-splicing/</loc>
   </url>
   
   <url>
@@ -3334,6 +3370,16 @@
   
   <url>
     <loc>https://btctranscripts.com/austin-bitcoin-developers/2019-08-22-socratic-seminar-2/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/austin-bitcoin-developers/2019-08-22-socratic-seminar-2/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/austin-bitcoin-developers/2019-08-22-socratic-seminar-2/"
+                />
   </url>
   
   <url>
@@ -3855,6 +3901,16 @@
   
   <url>
     <loc>https://btctranscripts.com/tags/wallet/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/tags/wallet/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/tags/wallet/"
+                />
   </url>
   
   <url>
@@ -3959,6 +4015,14 @@
   
   <url>
     <loc>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/zkvm/</loc>
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/tags/limitations/</loc>
+  </url>
+  
+  <url>
+    <loc>https://btctranscripts.com/tags/splicing/</loc>
   </url>
   
   <url>

@@ -227,6 +227,20 @@ We&amp;rsquo;ve covered almost everything this morning.</description>
     </item>
     
     <item>
+      <title>Fabrice Drouin - Limitations of Lightweight Clients</title>
+      <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-26-fabrice-drouin-limitations-of-lightweight-clients/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-26-fabrice-drouin-limitations-of-lightweight-clients/</guid>
+      <description>Name: Fabrice Drouin
+Topic: Limitations of Lightweight Clients
+Location: Chaincode Labs Lightning Residency 2019
+Date: 2019-06-26
+Video: https://youtu.be/ULVItljEiFE
+Introduction The limitations it&amp;rsquo;s uh you have to fight when you want to build lightweight clients mobile clients so this again, this is how mobile clients work, you scan payment requests, you have a view of the network that is supposed to be good enough, you compute the routes, you get an HTLC, you get a preimage back you&amp;rsquo;ve paid.</description>
+    </item>
+    
+    <item>
       <title>History of the Lightning Network</title>
       <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-christian-decker-history-of-lightning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -329,6 +343,20 @@ Introduction Good morning everyone my name is Chris and I&amp;rsquo;m a bitcoine
 Lightning Excel Plugin
 Video: https://www.youtube.com/watch?v=AXeUZrS-8mE&amp;amp;t=0s&amp;amp;list=PLpLH33TRghT2jmuP9YQRo-e8gk969Q2F_&amp;amp;index=10
 Demo My project is to create a user interface for lightning that might appeal to a different crowd than ours. We’re kind of used to Linux, open source, free software so being in a proprietary environment like Excel is unfamiliar territory for us. And yet I think that there is a large demographic of people who are interested in Bitcoin who work in the business world where they use Excel day to day.</description>
+    </item>
+    
+    <item>
+      <title>Rene Pickhardt - Splicing</title>
+      <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-26-rene-pickhardt-splicing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-26-rene-pickhardt-splicing/</guid>
+      <description>Name: Rene Pickhardt
+Topic: Splicing
+Location: Chaincode Labs Lightning Residency 2019
+Video: https://youtu.be/ZzSveBMtUGI
+Transcript by: Caralie Chrisco
+Introduction So splicing basically means you have a payment channel, you have a certain capacity of a payment channel and you want to change the capacity on the payment channel. But you don&amp;rsquo;t want to change your balance right? For balance change,(inaudible) we&amp;rsquo;ll get some money on it. But splicing really means you want to change the capacity.</description>
     </item>
     
     <item>

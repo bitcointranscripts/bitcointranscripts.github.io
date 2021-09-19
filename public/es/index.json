@@ -67,7 +67,7 @@
 {
 	"uri": "/es/austin-bitcoin-developers/",
 	"title": "Austin Bitcoin Developers",
-	"content": " Seminario Socrático 3 (2019-10-14)   Seminario Socrático 4 (2019-11-19)   Seminario Socrático 5 (2020-01-21)   Seminario Socrático 6 (2020-02-24)    "
+	"content": " Seminario Socrático 2 (2019-08-22)   Seminario Socrático 3 (2019-10-14)   Seminario Socrático 4 (2019-11-19)   Seminario Socrático 5 (2020-01-21)   Seminario Socrático 6 (2020-02-24)    "
 },
 {
 	"uri": "/es/tags/bitcoin-core/",
@@ -120,6 +120,16 @@
 	"content": "Nombre: Fabian Jahr\nTema: Taller de depuración de Bitcoin Core\nLocalización: El avanece de Bitcoin\nDía: 7 de febrero de 2020\nVídeo: No se ha publicado ningún vídeo en Internet\nPresentación de Fabian en el Bitcoin Edge Dev++ 2019: https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/debugging-bitcoin/\nDepuración de Bitcoin Core doc: https://github.com/fjahr/debugging_bitcoin\nTaller de depuración de Bitcoin Core: https://gist.github.com/fjahr/5bf65daaf9ff189a0993196195005386 …"
 },
 {
+	"uri": "/es/tags/hardware-wallet/",
+	"title": "hardware wallet",
+	"content": ""
+},
+{
+	"uri": "/es/tags/investigaci%C3%B3n/",
+	"title": "investigación",
+	"content": ""
+},
+{
 	"uri": "/es/tags/lightning/",
 	"title": "lightning",
 	"content": ""
@@ -132,6 +142,11 @@
 {
 	"uri": "/es/tags/miniscript/",
 	"title": "miniscript",
+	"content": ""
+},
+{
+	"uri": "/es/tags/multisig/",
+	"title": "multisig",
 	"content": ""
 },
 {
@@ -163,6 +178,11 @@
 	"uri": "/es/tags/seguridad/",
 	"title": "seguridad",
 	"content": ""
+},
+{
+	"uri": "/es/austin-bitcoin-developers/2019-08-22-socratic-seminar-2/",
+	"title": "Seminario Socrático 2 (2019-08-22)",
+	"content": "2019-08-22\nSeminario Socrático de Desarrolladores de Bitcoin de Austin 2\nhttps://twitter.com/kanzure/status/1164710800910692353\nIntroducción Hola. La idea era hacer una reunión de estilo más socrático. Esto fue popularizado por Bitdevs NYC y se extendió a SF. Lo intentamos hace unos meses con Jay. La idea es que recorremos las noticias de investigación, los boletines, los podcasters, hablamos de lo que ha pasado en la comunidad técnica de bitcoin. Vamos a tener diferentes presentadores.\nMike …"
 },
 {
 	"uri": "/es/austin-bitcoin-developers/2019-10-14-socratic-seminar-3/",
@@ -212,5 +232,10 @@
 {
 	"uri": "/es/tags/validaci%C3%B3n/",
 	"title": "validación",
+	"content": ""
+},
+{
+	"uri": "/es/tags/wallet/",
+	"title": "wallet",
 	"content": ""
 }]

@@ -77,6 +77,21 @@ Payment channels Alice and Bob are connected through a payment channel. This is 
     </item>
     
     <item>
+      <title>Carla Kirk-Cohen - Routing Problems and Solutions</title>
+      <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/2019-09-09-carla-kirk-cohen-routing-problems-and-solutions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/2019-09-09-carla-kirk-cohen-routing-problems-and-solutions/</guid>
+      <description>Name: Carla Kirk-Cohen
+Topic: Routing Problems and Solutions
+Date: 2019-09-09
+Location: Tel-Aviv 2019
+Video: https://youtu.be/1O-bhcbh9vE
+Introduction I&amp;rsquo;m going to be talking about routing in the lighting network now. So I&amp;rsquo;m gonna touch on how it&amp;rsquo;s currently operating, some issues that you run into when you are routing, and then some potential expansions to the spec which are going to address some of these issues.
+So we ran through the lighting network graph, the nodes of vertices, the channels in this graph of edges and at the moment nodes need to keep this graph in memory so they can route quickly if you stored in your database it&amp;rsquo;s gonna slow you down very much and that&amp;rsquo;s starting in about 40 Meg&amp;rsquo;s which is acceptable at the current state of the network but we do expect this to grow.</description>
+    </item>
+    
+    <item>
       <title>Christian Decker - Onion Routing Deep Dive (2019-06-25)</title>
       <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-25-christian-decker-onion-routing-deep-dive/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
