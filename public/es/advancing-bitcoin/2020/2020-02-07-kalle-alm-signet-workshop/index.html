@@ -264,6 +264,24 @@ Preparémonos mkdir workspace cd workspace git clone https://github.com/bitcoin/
                  
     
 
+
+    
+      
+
+        
+                
+                 
+    
+
+
+    
+      
+
+        
+                
+                 
+    
+
         </ul>
     </li>
 
@@ -441,7 +459,7 @@ Preparémonos mkdir workspace cd workspace git clone https://github.com/bitcoin/
 <p>Día: 7 de febrero de 2020</p>
 <p>Vídeo: No se ha publicado ningún vídeo en línea</p>
 <h1 id="preparémonos">Preparémonos</h1>
-<pre><code>mkdir workspace
+<pre tabindex="0"><code>mkdir workspace
 cd workspace
 git clone https://github.com/bitcoin/bitcoin.git
 cd bitcoin
@@ -452,7 +470,7 @@ git checkout signet
 ./configure -C --disable-bench --disable-test --without-gui
 make -j5
 </code></pre><p>Cuando intentes ejecutar la parte de configuración vas a tener algunos problemas si no tienes las dependencias. Si no tienes las dependencias busca en Google tu sistema operativo y &ldquo;Bitcoin build&rdquo;. Si tienes Windows no tienes suerte.</p>
-<pre><code>cd ..
+<pre tabindex="0"><code>cd ..
 git clone https://github.com/kallewoof/btcdeb.git
 cd btcdeb
 git checkout taproot
@@ -484,7 +502,7 @@ make -j5
 <p>Estoy enviando a todos 1 Signet Bitcoin. Si vas al <a href="https://explorer.bc-2.jp/">explorador de bloques de Signet</a> copia la cadena de texto <code>AddToWallet</code> y ponla en el explorador de bloques. Deberíais ver que está sin confirmar, las tarifas, etc.</p>
 <h1 id="btcdeb">btcdeb</h1>
 <p>Voy a pasar a la parte de btcdeb. Este es el depurador de Bitcoin que mantengo. Tiene soporte experimental para Taproot así que me imaginé que podíamos usarlo.</p>
-<pre><code>cd ..
+<pre tabindex="0"><code>cd ..
 git clone https://github.com/kallewoof/btcdeb.git
 cd btcdeb
 git checkout taproot
@@ -499,7 +517,7 @@ make -j5
 <p>Su bifurcación de Bitcoin Core <a href="mailto:git@github.com">git@github.com</a>:user/bitcoin.git</p>
 <p>Upstream <a href="https://github.com/bitcoin/bitcoin.git">https://github.com/bitcoin/bitcoin.git</a></p>
 <p>Función de control remoto <a href="https://github.com/owner/bitcoin.git">https://github.com/owner/bitcoin.git</a></p>
-<pre><code>origin git@github.com:kallewoof/bitcoin.git (fetch)
+<pre tabindex="0"><code>origin git@github.com:kallewoof/bitcoin.git (fetch)
 origin git@github.com:kallewoof/bitcoin.git (push)
 sipa https://github.com/sipa/bitcoin.git (fetch)
 sipa https://github.com/sipa/bitcoin.git (push)
@@ -515,11 +533,11 @@ upstream https://github.com/bitcoin/bitcoin.git (push)
 <h1 id="la-rama-signet">La rama signet</h1>
 <p>Nosotros ya hemos hecho esta parte y tú ya deberías haber construido esta rama.</p>
 <p>(Puede añadir <a href="https://github.com/kallewoof/bitcoin.git">https://github.com/kallewoof/bitcoin.git</a> como remoto y luego recuperarlo y simplemente comprobar la rama de signet)</p>
-<pre><code>git remote add kallewoof https://github.com/kallewoof/bitcoin.git
+<pre tabindex="0"><code>git remote add kallewoof https://github.com/kallewoof/bitcoin.git
 git fetch kallewoof
 git checkout signet
 </code></pre><p>(También puedes obtener la solicitud de extracción directamente desde el sitio web de Bitcoin)</p>
-<pre><code>git fetch upstream pull/16411/head:signet
+<pre tabindex="0"><code>git fetch upstream pull/16411/head:signet
 git checkout signet
 </code></pre><h1 id="la-rama-signet-vanilla-feature">La rama signet-vanilla-feature</h1>
 <p>(Creamos esto una vez y luego basamos nuestra rama signet-feature en ella. Si acabamos queriendo reajustar signet-feature lo hacemos recreando en base a esta rama).</p>
@@ -532,7 +550,7 @@ git checkout signet
 <p>Si lo has hecho, ahora deberías tener una rama llamada <code>signet-vanilla-taproot</code>. No vamos a hacer nada con ella ahora, pero sí vamos a cambiar los parámetros de la cadena más adelante.</p>
 <h1 id="la-rama-de-características">La rama de características</h1>
 <p>(Mantenemos esto idéntico al propietario (aquí &ldquo;sipa&rdquo;) y nunca divergimos:</p>
-<pre><code>git remote add sipa https://github.com/sipa/bitcoin.git
+<pre tabindex="0"><code>git remote add sipa https://github.com/sipa/bitcoin.git
 git fetch sipa
 git checkout taproot
 git pull
@@ -542,7 +560,7 @@ git reset --hard sipa/taproot
 <p>R - Algún otro Signet estaba técnicamente conectado a nosotros. Puedes salir si quieres o puedes mantenerlo en funcionamiento por ahora.</p>
 <p><code>git checkout signet-vanilla-taproot</code></p>
 <p>Ya hemos creado esta rama <code>signet-vanilla-taproot</code>, compruébala. No creo que vayamos a tener tiempo de hacer nuestra propia cadena así que vamos a utilizar una que ya he hecho. En el Telegram publiqué este fragmento de código de chainparams.cpp. En el editor que quieras si abres este archivo (chainparams.cpp) y luego bajas a buscar la clase llamada <code>SigNetParams</code>. Hay este caso si aquí y dentro de aquí son los parámetros por defecto de Signet. Quieres borrar todo eso y luego poner esto en su lugar. Lo he puesto en el Telegram para que no tengas que escribirlo manualmente.</p>
-<pre><code>LogPrintf(&quot;Using default taproot signet network\n&quot;);
+<pre tabindex="0"><code>LogPrintf(&quot;Using default taproot signet network\n&quot;);
 bin = ParseHex(&quot;512103ad5e0edad18cb1f0fc0d28a3d4f1f3e445640337489abb10404f2d1e086be430210359ef5021964fe22d6f8e05b2463c9540ce96883fe3b278760f048f5189f2e6c452ae&quot;);
 genesis_nonce = 280965
 vSeeds.push_back(&quot;178.128.221.177&quot;);

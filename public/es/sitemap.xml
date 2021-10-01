@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://btctranscripts.com/es/advancing-bitcoin/</loc>
     <xhtml:link
@@ -14,9 +13,7 @@
                 hreflang="es"
                 href="https://btctranscripts.com/es/advancing-bitcoin/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/es/advancing-bitcoin/2019/</loc>
     <xhtml:link
                 rel="alternate"
@@ -28,9 +25,7 @@
                 hreflang="es"
                 href="https://btctranscripts.com/es/advancing-bitcoin/2019/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/es/advancing-bitcoin/2020/</loc>
     <xhtml:link
                 rel="alternate"
@@ -42,9 +37,7 @@
                 hreflang="es"
                 href="https://btctranscripts.com/es/advancing-bitcoin/2020/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/es/andreas-antonopoulos/2014-10-08-andreas-antonopolous-canada-senate-bitcoin/</loc>
     <xhtml:link
                 rel="alternate"
@@ -56,9 +49,7 @@
                 hreflang="es"
                 href="https://btctranscripts.com/es/andreas-antonopoulos/2014-10-08-andreas-antonopolous-canada-senate-bitcoin/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/es/andreas-antonopoulos/</loc>
     <xhtml:link
                 rel="alternate"
@@ -70,9 +61,7 @@
                 hreflang="es"
                 href="https://btctranscripts.com/es/andreas-antonopoulos/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/es/andreas-antonopoulos/2018-10-23-andreas-antonopoulos-initial-blockchain-download/</loc>
     <xhtml:link
                 rel="alternate"
@@ -84,9 +73,7 @@
                 hreflang="es"
                 href="https://btctranscripts.com/es/andreas-antonopoulos/2018-10-23-andreas-antonopoulos-initial-blockchain-download/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/es/andreas-antonopoulos/2020-04-08-andreas-antonopoulos-seed-splitting/</loc>
     <xhtml:link
                 rel="alternate"
@@ -98,9 +85,7 @@
                 hreflang="es"
                 href="https://btctranscripts.com/es/andreas-antonopoulos/2020-04-08-andreas-antonopoulos-seed-splitting/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/es/andreas-antonopoulos/2018-10-07-andreas-antonopoulos-schnorr-signatures/</loc>
     <xhtml:link
                 rel="alternate"
@@ -112,9 +97,7 @@
                 hreflang="es"
                 href="https://btctranscripts.com/es/andreas-antonopoulos/2018-10-07-andreas-antonopoulos-schnorr-signatures/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/es/andreas-antonopoulos/2019-02-01-andreas-antonopoulos-hardware-wallet-security/</loc>
     <xhtml:link
                 rel="alternate"
@@ -126,9 +109,7 @@
                 hreflang="es"
                 href="https://btctranscripts.com/es/andreas-antonopoulos/2019-02-01-andreas-antonopoulos-hardware-wallet-security/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/es/advancing-bitcoin/2020/2020-02-06-andrew-chow-descriptor-wallets/</loc>
     <xhtml:link
                 rel="alternate"
@@ -140,9 +121,7 @@
                 hreflang="es"
                 href="https://btctranscripts.com/es/advancing-bitcoin/2020/2020-02-06-andrew-chow-descriptor-wallets/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/es/advancing-bitcoin/2020/2020-02-07-andrew-poelstra-miniscript/</loc>
     <xhtml:link
                 rel="alternate"
@@ -154,9 +133,7 @@
                 hreflang="es"
                 href="https://btctranscripts.com/es/advancing-bitcoin/2020/2020-02-07-andrew-poelstra-miniscript/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/es/advancing-bitcoin/2020/2020-02-06-andrew-poelstra-miniscript-intro/</loc>
     <xhtml:link
                 rel="alternate"
@@ -168,9 +145,7 @@
                 hreflang="es"
                 href="https://btctranscripts.com/es/advancing-bitcoin/2020/2020-02-06-andrew-poelstra-miniscript-intro/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/es/advancing-bitcoin/2020/2020-02-06-antoine-riard-taproot-lightning/</loc>
     <xhtml:link
                 rel="alternate"
@@ -182,9 +157,7 @@
                 hreflang="es"
                 href="https://btctranscripts.com/es/advancing-bitcoin/2020/2020-02-06-antoine-riard-taproot-lightning/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/es/austin-bitcoin-developers/</loc>
     <xhtml:link
                 rel="alternate"
@@ -196,9 +169,7 @@
                 hreflang="es"
                 href="https://btctranscripts.com/es/austin-bitcoin-developers/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/es/tags/bitcoin-core/</loc>
     <xhtml:link
                 rel="alternate"
@@ -210,17 +181,13 @@
                 hreflang="es"
                 href="https://btctranscripts.com/es/tags/bitcoin-core/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://btctranscripts.com/es/tags/capa-2/</loc>
+  </url><url>
     <loc>https://btctranscripts.com/es/tags/cartera/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/es/tags/cartera-hardware/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/es/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -237,9 +204,7 @@
                 hreflang="es"
                 href="https://btctranscripts.com/es/categories/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/es/chaincode-labs/</loc>
     <xhtml:link
                 rel="alternate"
@@ -251,9 +216,7 @@
                 hreflang="es"
                 href="https://btctranscripts.com/es/chaincode-labs/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/es/chaincode-labs/chaincode-residency/2019-06-25-christian-decker-eltoo/</loc>
     <xhtml:link
                 rel="alternate"
@@ -265,17 +228,23 @@
                 hreflang="es"
                 href="https://btctranscripts.com/es/chaincode-labs/chaincode-residency/2019-06-25-christian-decker-eltoo/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/es/categories/conferencia/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/es/tags/consenso/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://btctranscripts.com/es/austin-bitcoin-developers/2019-05-27-drivechain-paul-sztorc/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/austin-bitcoin-developers/2019-05-27-drivechain-paul-sztorc/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/austin-bitcoin-developers/2019-05-27-drivechain-paul-sztorc/"
+                />
+  </url><url>
     <loc>https://btctranscripts.com/es/tags/eltoo/</loc>
     <xhtml:link
                 rel="alternate"
@@ -287,9 +256,7 @@
                 hreflang="es"
                 href="https://btctranscripts.com/es/tags/eltoo/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/es/advancing-bitcoin/2020/2020-02-07-fabian-jahr-debugging-workshop/</loc>
     <xhtml:link
                 rel="alternate"
@@ -301,9 +268,7 @@
                 hreflang="es"
                 href="https://btctranscripts.com/es/advancing-bitcoin/2020/2020-02-07-fabian-jahr-debugging-workshop/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/es/tags/hardware-wallet/</loc>
     <xhtml:link
                 rel="alternate"
@@ -315,13 +280,21 @@
                 hreflang="es"
                 href="https://btctranscripts.com/es/tags/hardware-wallet/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://btctranscripts.com/es/austin-bitcoin-developers/2019-06-29-hardware-wallets/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/austin-bitcoin-developers/2019-06-29-hardware-wallets/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/austin-bitcoin-developers/2019-06-29-hardware-wallets/"
+                />
+  </url><url>
     <loc>https://btctranscripts.com/es/tags/investigaci%C3%B3n/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/es/tags/lightning/</loc>
     <xhtml:link
                 rel="alternate"
@@ -338,9 +311,7 @@
                 hreflang="es"
                 href="https://btctranscripts.com/es/tags/lightning/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/es/advancing-bitcoin/2019/2019-02-07-matt-corallo-rust-lightning/</loc>
     <xhtml:link
                 rel="alternate"
@@ -352,9 +323,7 @@
                 hreflang="es"
                 href="https://btctranscripts.com/es/advancing-bitcoin/2019/2019-02-07-matt-corallo-rust-lightning/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/es/tags/miniscript/</loc>
     <xhtml:link
                 rel="alternate"
@@ -366,9 +335,7 @@
                 hreflang="es"
                 href="https://btctranscripts.com/es/tags/miniscript/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/es/tags/multisig/</loc>
     <xhtml:link
                 rel="alternate"
@@ -380,9 +347,7 @@
                 hreflang="es"
                 href="https://btctranscripts.com/es/tags/multisig/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/es/categories/podcast/</loc>
     <xhtml:link
                 rel="alternate"
@@ -394,9 +359,7 @@
                 hreflang="es"
                 href="https://btctranscripts.com/es/categories/podcast/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/es/chaincode-labs/chaincode-residency/</loc>
     <xhtml:link
                 rel="alternate"
@@ -408,9 +371,7 @@
                 hreflang="es"
                 href="https://btctranscripts.com/es/chaincode-labs/chaincode-residency/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/es/categories/residency/</loc>
     <xhtml:link
                 rel="alternate"
@@ -422,13 +383,9 @@
                 hreflang="es"
                 href="https://btctranscripts.com/es/categories/residency/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/es/categories/reuni%C3%B3n/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/es/tags/schnorr/</loc>
     <xhtml:link
                 rel="alternate"
@@ -440,13 +397,9 @@
                 hreflang="es"
                 href="https://btctranscripts.com/es/tags/schnorr/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/es/tags/seguridad/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/es/austin-bitcoin-developers/2019-08-22-socratic-seminar-2/</loc>
     <xhtml:link
                 rel="alternate"
@@ -458,9 +411,7 @@
                 hreflang="es"
                 href="https://btctranscripts.com/es/austin-bitcoin-developers/2019-08-22-socratic-seminar-2/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/es/austin-bitcoin-developers/2019-10-14-socratic-seminar-3/</loc>
     <xhtml:link
                 rel="alternate"
@@ -472,9 +423,7 @@
                 hreflang="es"
                 href="https://btctranscripts.com/es/austin-bitcoin-developers/2019-10-14-socratic-seminar-3/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/es/austin-bitcoin-developers/2019-11-19-socratic-seminar-4/</loc>
     <xhtml:link
                 rel="alternate"
@@ -486,9 +435,7 @@
                 hreflang="es"
                 href="https://btctranscripts.com/es/austin-bitcoin-developers/2019-11-19-socratic-seminar-4/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/es/austin-bitcoin-developers/2020-01-21-socratic-seminar-5/</loc>
     <xhtml:link
                 rel="alternate"
@@ -500,9 +447,7 @@
                 hreflang="es"
                 href="https://btctranscripts.com/es/austin-bitcoin-developers/2020-01-21-socratic-seminar-5/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/es/austin-bitcoin-developers/2020-02-24-socratic-seminar-6/</loc>
     <xhtml:link
                 rel="alternate"
@@ -514,9 +459,7 @@
                 hreflang="es"
                 href="https://btctranscripts.com/es/austin-bitcoin-developers/2020-02-24-socratic-seminar-6/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/es/tags/</loc>
     <xhtml:link
                 rel="alternate"
@@ -533,13 +476,9 @@
                 hreflang="es"
                 href="https://btctranscripts.com/es/tags/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/es/categories/taller/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/es/advancing-bitcoin/2020/2020-02-07-kalle-alm-signet-workshop/</loc>
     <xhtml:link
                 rel="alternate"
@@ -551,9 +490,7 @@
                 hreflang="es"
                 href="https://btctranscripts.com/es/advancing-bitcoin/2020/2020-02-07-kalle-alm-signet-workshop/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/es/tags/taproot/</loc>
     <xhtml:link
                 rel="alternate"
@@ -565,9 +502,7 @@
                 hreflang="es"
                 href="https://btctranscripts.com/es/tags/taproot/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/es/</loc>
     <xhtml:link
                 rel="alternate"
@@ -584,13 +519,9 @@
                 hreflang="es"
                 href="https://btctranscripts.com/es/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/es/tags/validaci%C3%B3n/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/es/tags/wallet/</loc>
     <xhtml:link
                 rel="alternate"
@@ -603,5 +534,4 @@
                 href="https://btctranscripts.com/es/tags/wallet/"
                 />
   </url>
-  
 </urlset>

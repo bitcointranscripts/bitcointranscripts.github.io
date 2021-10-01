@@ -1623,6 +1623,15 @@ Intro For those who don’t know me I’m Pieter Wuille. I have been working on 
                  
     
 
+
+    
+      
+
+        
+                
+                 
+    
+
         </ul>
     </li>
 
@@ -1692,6 +1701,15 @@ Intro For those who don’t know me I’m Pieter Wuille. I have been working on 
         
         <a class="nav-link p-0" href="/chaincode-labs/chaincode-residency/"><h6>Chaincode Residency</h6></a>
         <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
 
     
       
@@ -7719,7 +7737,7 @@ Intro For those who don’t know me I’m Pieter Wuille. I have been working on 
 <h1 id="merkle-tree">Merkle tree</h1>
 <p>The idea is you start with a bunch of leaves, in this case keys, you take their hashes, and you combine them pairwise to produce a higher layer of hashes. You start with a layer of 8 possibilities, combine two of them together into the hash of both, this results in 4 hashes. Then you take two of them together to produce two hashes again and you combine those together to create a root hash. Anyone can then prove membership of this root and I will show you how.</p>
 <h1 id="program">Program</h1>
-<pre><code>Check(root,h3,b3,h2,b2,h1,b1,x):
+<pre tabindex="0"><code>Check(root,h3,b3,h2,b2,h1,b1,x):
     if (b1):
         swap(x,h1)
     x = SHA256(x,h1)
@@ -7731,7 +7749,7 @@ Intro For those who don’t know me I’m Pieter Wuille. I have been working on 
     x = SHA256(x,h3)
     return x == root
 </code></pre><p>This is a program in pseudo Python style coding. The question is given a root and a leaf, prove to me that that leaf is actually part of the set was that hashed to construct this root. x is the leaf in this code. It takes as input three booleans to determine which direction you are going up and three hashes that are being combined. I will go over it. Say we want to prove that k4 is part of the root, I publish k4. I also publish k3 and a boolean to say k4 is the second here. You combine those two together to recompute D. I also give you C and say it is left of it, hash those together to produce A. Then I publish B and say it is on the right of it, hash them together to get the root and you verify this root matches. You can see that this is three times the same step we are doing. We start with the leaf, combine it with something to produce a higher level hash and repeat this. Not going into the details but this is the program. The question is could we potentially implement such a program to run inside Bitcoin scripting language because we don’t have a native construct in Bitcoin to do so? We can almost.</p>
-<pre><code>					r,h3,b3,h2,b2,h1,b1,x
+<pre tabindex="0"><code>					r,h3,b3,h2,b2,h1,b1,x
 SWAP IF			r,h3,b3,h2,b2,h1,x
 	SWAP			r,h3,b3,h2,b2,x,h1
 CAT SHA256		r,h3,b3,h2,b2,x

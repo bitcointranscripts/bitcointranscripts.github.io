@@ -7,6 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://btctranscripts.com/es/tags/hardware-wallet/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Hardware Wallets (2019-06-29)</title>
+      <link>https://btctranscripts.com/es/austin-bitcoin-developers/2019-06-29-hardware-wallets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/es/austin-bitcoin-developers/2019-06-29-hardware-wallets/</guid>
+      <description>2019-06-29
+Stepan Snigirev
+livestream: https://www.youtube.com/watch?v=rK0jUeHeDf0
+https://twitter.com/kanzure/status/1145019634547978240
+Ver también:
+ Extracción de semillas de hardware wallets El futuro de las hardware wallets coredev.tech 2019 debate de hardware wallets  Antecedentes Hace algo más de un año, pasé por la clase de Jimmy Song de Programación de Blockchain. Ahí fue donde conocí a M, donde él era el asistente de enseñanza. Básicamente, se escribe una biblioteca de bitcoin en python desde cero. La API de esta librería y las clases y funcciones que usa Jimmy son muy fáciles de leer y entender.</description>
+    </item>
+    
+    <item>
       <title>Seminario Socrático 2 (2019-08-22)</title>
       <link>https://btctranscripts.com/es/austin-bitcoin-developers/2019-08-22-socratic-seminar-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

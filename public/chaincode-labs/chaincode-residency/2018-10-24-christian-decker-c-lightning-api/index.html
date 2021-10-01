@@ -1621,6 +1621,15 @@ Intro Good morning from the last day of presentations. I’m Chris still. Today 
                  
     
 
+
+    
+      
+
+        
+                
+                 
+    
+
         </ul>
     </li>
 
@@ -1690,6 +1699,15 @@ Intro Good morning from the last day of presentations. I’m Chris still. Today 
         
         <a class="nav-link p-0" href="/chaincode-labs/chaincode-residency/"><h6>Chaincode Residency</h6></a>
         <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
 
     
       
@@ -7719,7 +7737,7 @@ Intro Good morning from the last day of presentations. I’m Chris still. Today 
 <p>First of all the goals of c-lightning are basically to be fast and lightweight. We want you to be able to deploy this on Raspberry Pis, on big beefy server machines, on your laptops, wherever you sort of have a stable connection. There you give the best utility to the rest of the network. We want c-lightning to be flexible and customizable because we don’t think that we will guess the exact configuration that you will need. We want to give you the tools to adapt it to your own needs. We want to optimize for power users. There’s plenty of options for Lightning nodes to run on home devices, on mobile phones. While we can do that we will know how to optimize for that. We want to be the server backend running big services on top of this.</p>
 <h1 id="tldr-i-want-my-node-now">TL;DR I want my node now</h1>
 <p>After this slide you can probably stop listening because that is all you need to know. We provide a PPA for Ubuntu and Debian based systems. All you need to do is just add the repository <code>lightningnetwork</code>, do an <code>apt-get update</code> and install <code>lightningd</code>.</p>
-<pre><code>sudo add-apt-repository ppa:lightningnetwork/ppa
+<pre tabindex="0"><code>sudo add-apt-repository ppa:lightningnetwork/ppa
 sudo apt-get update
 sudo apt-get install lightningd
 </code></pre><p>Then you can start lightningd. Notice that by default we still have the testnet as the network configuration. We also encourage people to enable <code>log-level=debug</code> because that gives us loads of information should anything go wrong. We can help you try to debug whatever happened.</p>
@@ -7756,7 +7774,7 @@ sudo apt-get install lightningd
 <h1 id="invoicingreceiving-payments">Invoicing/Receiving Payments</h1>
 <p><code>lightning-cli invoice [msatoshi][label][description]</code></p>
 <p>Just really quick, going through the invoices flow, invoicing and receiving payments. To receive a payment you first of all have to create an invoice by specifying the amount in millisatoshis you’d like to receive, a label and a description. The label has to be unique. The reason why we have the label in there is because we don’t want to force you to have whatever external system track what invoice matches what shopping cart for example. If you are using WooCommerce which is a popular shopping plugin for Wordpress, what you could do there is have the label be the numeric id of the shopping cart that matches this invoice. This is a way for you to later be able to associate an incoming payment with whatever you wanted to have paid for. The description is what will end up in the invoice. That is you telling the customer I just bought 3 baseball caps and a coffee. It is not necessary but it is always nice to tell people what they bought.</p>
-<pre><code>lightning-cli listinvoices
+<pre tabindex="0"><code>lightning-cli listinvoices
 lightning-cli waitinvoice [label]
 lightning-cli waitanyinvoice [last-pay-index]
 </code></pre><p>To wait for invoices we have the <code>lightning-cli listinvoices</code>. That’s just basically a huge list of all invoices. Or you could also specify a label in which case it will just show this one invoice. We have ‘waitinvoice’ followed by label if you want to wait for a specific invoice to be paid. That’s a way to do it. If you have a lot of pending invoices you are probably better off with the <code>waitanyinvoice</code> which gives you the next invoice that is completed after the <code>last-pay-index</code>. What you can do is I receive a payment, this payment has a payment index and in the meantime more payments come in and then if you just want the next one you can add the <code>last-pay-index</code> which will give you the next one. If there has already been a next invoice that has been paid you will get that one. If there was no next payment then this will block until an invoice is paid. This is just acting as a message queue for you to consume invoices that have been paid.</p>
@@ -7772,7 +7790,7 @@ lightning-cli waitanyinvoice [last-pay-index]
 <p>Q - What is the experience when running <code>waitinvoice</code> from the shell? It is idle until the payment is received?</p>
 <p>A - Yes. The <code>waitanyinvoice</code> will block the command until it has something to return. There is also a variant where you can specify a timeout saying “Hey I would like to wait for 5 minutes. If nothing comes in give me back control over my shell and I will be doing something else then. The same is true for the JSON-RPC. It will also block until something was received or a timeout expired.</p>
 <p>So <code>pay</code> is automated, it is magic, it might not be what you want to use. If you want to have more control over what happens.</p>
-<pre><code>lightning-cli getroute [destination][msatoshi][riskfactor]
+<pre tabindex="0"><code>lightning-cli getroute [destination][msatoshi][riskfactor]
 lightning-cli sendpay [route][payment_hash]
 lightning-cli waitsendpay [payment_hash]
 </code></pre><p>For example if you want to create a special route that drops off more money like Rene did a few days ago you can use <code>getroute</code> and that will give you a JSON description of the path that the payment might take. You can actually edit that however you’d like. Be careful if you reduce the fee amounts or something like that. The forwarding node might not forward it anymore. You can do fun stuff like concatenate two routes from A to B and then B to A and create circles and all of that fun stuff. If you really want to do that there are really nice things we can do with this like lotteries over Lightning. Have me trigger some coin flip on a gambling service and then getting the payout in the form of a Lightning payment. <code>sendpay</code> will actually take the route that you just created with <code>getroute</code> and given a payment hash will attempt to pay that route with that payment hash. And <code>waitsendpay</code> is again a way for you to wait for this payment to succeed.</p>

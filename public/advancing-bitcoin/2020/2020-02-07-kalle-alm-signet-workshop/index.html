@@ -1621,6 +1621,15 @@ Let’s prepare mkdir workspace cd workspace git clone https://github.com/bitcoi
                  
     
 
+
+    
+      
+
+        
+                
+                 
+    
+
         </ul>
     </li>
 
@@ -1690,6 +1699,15 @@ Let’s prepare mkdir workspace cd workspace git clone https://github.com/bitcoi
         
         <a class="nav-link p-0" href="/chaincode-labs/chaincode-residency/"><h6>Chaincode Residency</h6></a>
         <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
 
     
       
@@ -7715,7 +7733,7 @@ Let’s prepare mkdir workspace cd workspace git clone https://github.com/bitcoi
 <p>Date: February 7th 2020</p>
 <p>Video: No video posted online</p>
 <h1 id="lets-prepare">Let’s prepare</h1>
-<pre><code>mkdir workspace
+<pre tabindex="0"><code>mkdir workspace
 cd workspace
 git clone https://github.com/bitcoin/bitcoin.git
 cd bitcoin
@@ -7726,7 +7744,7 @@ git checkout signet
 ./configure -C --disable-bench --disable-test --without-gui
 make -j5
 </code></pre><p>When you try to run the configure part you are going to have some problems if you don’t have the dependencies. If you don’t have the dependencies Google your OS and “Bitcoin build”. If you have Windows you’re out of luck.</p>
-<pre><code>cd ..
+<pre tabindex="0"><code>cd ..
 git clone https://github.com/kallewoof/btcdeb.git
 cd btcdeb
 git checkout taproot
@@ -7758,7 +7776,7 @@ make -j5
 <p>I am sending everyone 1 Signet Bitcoin. If you go to the <a href="https://explorer.bc-2.jp/">Signet block explorer</a> copy the <code>AddToWallet</code> text string and put it into the block explorer. You should see it is unconfirmed, the fees etc.</p>
 <h1 id="btcdeb">btcdeb</h1>
 <p>I am going to move onto the btcdeb part. This is the Bitcoin debugger that I maintain. It has experimental support for Taproot so I figured out we could use that.</p>
-<pre><code>cd ..
+<pre tabindex="0"><code>cd ..
 git clone https://github.com/kallewoof/btcdeb.git
 cd btcdeb
 git checkout taproot
@@ -7773,7 +7791,7 @@ make -j5
 <p>Your fork of Bitcoin Core <a href="mailto:git@github.com">git@github.com</a>:user/bitcoin.git</p>
 <p>Upstream <a href="https://github.com/bitcoin/bitcoin.git">https://github.com/bitcoin/bitcoin.git</a></p>
 <p>Feature remote <a href="https://github.com/owner/bitcoin.git">https://github.com/owner/bitcoin.git</a></p>
-<pre><code>origin git@github.com:kallewoof/bitcoin.git (fetch)
+<pre tabindex="0"><code>origin git@github.com:kallewoof/bitcoin.git (fetch)
 origin git@github.com:kallewoof/bitcoin.git (push)
 sipa https://github.com/sipa/bitcoin.git (fetch)
 sipa https://github.com/sipa/bitcoin.git (push)
@@ -7789,11 +7807,11 @@ upstream https://github.com/bitcoin/bitcoin.git (push)
 <h1 id="the-signet-branch">The signet branch</h1>
 <p>We have already done this part and you should have built this branch already.</p>
 <p>(You can add <a href="https://github.com/kallewoof/bitcoin.git">https://github.com/kallewoof/bitcoin.git</a> as a remote and then fetch it and simply checkout the signet branch)</p>
-<pre><code>git remote add kallewoof https://github.com/kallewoof/bitcoin.git
+<pre tabindex="0"><code>git remote add kallewoof https://github.com/kallewoof/bitcoin.git
 git fetch kallewoof
 git checkout signet
 </code></pre><p>(Alternatively you can fetch the pull request directly from the bitcoin remote)</p>
-<pre><code>git fetch upstream pull/16411/head:signet
+<pre tabindex="0"><code>git fetch upstream pull/16411/head:signet
 git checkout signet
 </code></pre><h1 id="the-signet-vanilla-feature-branch">The signet-vanilla-feature branch</h1>
 <p>(We create this once and then base our signet-feature branch off of it. If we end up wanting to reset signet-feature we do so by recreating it based on this branch.)</p>
@@ -7806,7 +7824,7 @@ git checkout signet
 <p>If you have done that you should now have a branch called <code>signet-vanilla-taproot</code>. We’re not going to do anything with that now but we are going to change the chain parameters later.</p>
 <h1 id="the-feature-branch">The feature branch</h1>
 <p>(We keep this identical to owner (here “sipa”) and never diverge:</p>
-<pre><code>git remote add sipa https://github.com/sipa/bitcoin.git
+<pre tabindex="0"><code>git remote add sipa https://github.com/sipa/bitcoin.git
 git fetch sipa
 git checkout taproot
 git pull
@@ -7816,7 +7834,7 @@ git reset --hard sipa/taproot
 <p>A - Some other Signet was technically connected to us. You can exit if you want to or you can keep it running for now.</p>
 <p><code>git checkout signet-vanilla-taproot</code></p>
 <p>We have already created this <code>signet-vanilla-taproot</code> branch, check it out. I don’t think we are going to have time to do our own network so let’s use one that I have already made. In the Telegram I posted this code snippet from chainparams.cpp. In whatever editor you want if you open this file (chainparams.cpp) and then you go down to find the class called <code>SigNetParams</code>. There is this if case here and inside here is the default Signet parameters. You want to delete all that and then put this instead. I have posted that in the Telegram so you don’t have to type it manually.</p>
-<pre><code>LogPrintf(&quot;Using default taproot signet network\n&quot;);
+<pre tabindex="0"><code>LogPrintf(&quot;Using default taproot signet network\n&quot;);
 bin = ParseHex(&quot;512103ad5e0edad18cb1f0fc0d28a3d4f1f3e445640337489abb10404f2d1e086be430210359ef5021964fe22d6f8e05b2463c9540ce96883fe3b278760f048f5189f2e6c452ae&quot;);
 genesis_nonce = 280965
 vSeeds.push_back(&quot;178.128.221.177&quot;);

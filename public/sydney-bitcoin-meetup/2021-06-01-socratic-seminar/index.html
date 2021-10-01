@@ -1622,6 +1622,15 @@ The conversation has been anonymized by default to protect the identities of the
                  
     
 
+
+    
+      
+
+        
+                
+                 
+    
+
         </ul>
     </li>
 
@@ -1691,6 +1700,15 @@ The conversation has been anonymized by default to protect the identities of the
         
         <a class="nav-link p-0" href="/chaincode-labs/chaincode-residency/"><h6>Chaincode Residency</h6></a>
         <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
 
     
       
@@ -7747,7 +7765,7 @@ The conversation has been anonymized by default to protect the identities of the
 <h1 id="designing-bitcoin-smart-contracts-with-sapio-jeremy-rubin">Designing Bitcoin Smart Contracts with Sapio (Jeremy Rubin)</h1>
 <p><a href="https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-April/018759.html">https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-April/018759.html</a></p>
 <p>I’ve got this <a href="https://judica.org/blog/sapio-tutorial/">blog post</a>, this is being released by Judica which is a research lab / development team started by Jeremy Rubin. Their first big release is this Sapio language, this Sapio compiler for the language. It is a smart contract compiler but smart contract doesn’t necessarily mean one transaction. It is a contract that could be expressed through many transaction trees. What’s the angle here? I have taken a look at this blog post. What he has got here is a really basic public key contract which means these funds can be taken by making a signature under somebody’s public key.</p>
-<pre><code>class PayToPublicKey(Contract):
+<pre tabindex="0"><code>class PayToPublicKey(Contract):
     class Fields:
         key: PubKey
 
@@ -7756,7 +7774,7 @@ The conversation has been anonymized by default to protect the identities of the
         return SignedBy(self.key)
 </code></pre><p>There’s this class, it seems very Pythonic in a lot of ways this language. This class has fields and it has a pubkey and you can unlock the funds with this @ decorator thing, the predicate being if it is signed by <code>self.key</code>. That should be straightforward, that’s what it looks like for the simplest possible spend. Then he goes for a more complicated one next.</p>
 <p>Same thing except we have multiple keys now, three keys and we have this <code>unlock</code> which are these two disjunctions here, signed by escrow and Alice or Bob or just signed by Alice and Bob. This typical escrow output, 2-of-3.</p>
-<pre><code>class BasicEscrow(Contract):
+<pre tabindex="0"><code>class BasicEscrow(Contract):
     class Fields:
         alice: PubKey
         bob: PubKey
@@ -7768,7 +7786,7 @@ The conversation has been anonymized by default to protect the identities of the
             SignedBy(self.alice) &amp; SignedBy(self.bob)
         )
 </code></pre><p>What he is showing here, if you want to make that a bit simpler, you can have two methods now. There’s unlock <code>use_escrow</code> and unlock <code>cooperate</code> which is Alice and Bob. The two sides of the disjunction up here are now two different methods.</p>
-<pre><code>class BasicEscrow2(Contract):
+<pre tabindex="0"><code>class BasicEscrow2(Contract):
     class Fields:
         alice: PubKey
         bob: PubKey
@@ -7783,7 +7801,7 @@ The conversation has been anonymized by default to protect the identities of the
         return SignedBy(self.alice) &amp; SignedBy(self.bob)
 </code></pre><p>That’s as complicated as it gets up until using CHECKTEMPLATEVERIFY. The question I have at this point is what would this look like if you are using this as an engineer. My guess is that you take this code, you compile it and it will give you an instance of this contract. Then you will be able to pass in these fields as variables as runtime and it will compile out this contract. What that will leave you with is an address to send the money to, to lock it in to this contract, and also any subsequent steps and an interface to create the transactions that spend from it and any subsequent steps you have in executing this contract. This very simple one has one step, money goes in, you take it out by <code>use_escrow</code> or <code>cooperate</code>.</p>
 <p>This is where things get a little more complicated. Here he has what he is calling trustless escrow but the key thing to look at here is he’s got this unlock <code>cooperate</code> as he did last time but now the <code>use_escrow</code> has this <code>guarantee</code> decorator and it has this transaction thing going on. He makes a <code>TransactionTemplate</code> and adds outputs to the transaction and sets a sequence. Now you can see that the logic of this, if you <code>use_escrow</code> what is going to happen to you as an engineer interacting with this is you are only going to be able to spend from this output that you initially put the funds in using a transaction that satisfies the transaction template using OP_CTV.</p>
-<pre><code>class TrustlessEscrow(Contract):
+<pre tabindex="0"><code>class TrustlessEscrow(Contract):
     class Fields:
         alice: PubKey
         bob: PubKey

@@ -1621,6 +1621,15 @@ Intro Hi I’m Dan Robinson, I’m one of the Product Architects at Chain which 
                  
     
 
+
+    
+      
+
+        
+                
+                 
+    
+
         </ul>
     </li>
 
@@ -1690,6 +1699,15 @@ Intro Hi I’m Dan Robinson, I’m one of the Product Architects at Chain which 
         
         <a class="nav-link p-0" href="/chaincode-labs/chaincode-residency/"><h6>Chaincode Residency</h6></a>
         <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
 
     
       
@@ -7748,7 +7766,7 @@ Intro Hi I’m Dan Robinson, I’m one of the Product Architects at Chain which 
 <p>What this does is if everyone is familiar with how this logic in Bitcoin Script works, is you’d have an IF statement, a conditional that checks the value of some path selector here. This will either be a 0 or a 1, meaning that you should either approve or cancel the transaction. The first thing this does is check whether that path selector is equal to 0. If so it takes this path that expects 3 items on the stack. Otherwise it checks if the path selector is 1 and if so it does the other logic with the other items expected on the stack. This can get you a lot of flexibility and really simplifies all that random bookkeeping conditional logic, the idea of having multiple paths that can be followed.</p>
 <h1 id="covenants">Covenants</h1>
 <p>Now let’s get a little ridiculous. I was very pleased to go <a href="https://diyhpl.us/wiki/transcripts/blockchain-protocol-analysis-security-engineering/2017/2017-01-26-russell-oconnor-posts-theorem/">after</a> Russell (O’Connor) for a couple of reasons. One is that he explained what a predicate language was but another one is that I use one of the examples from his <a href="https://blockstream.com/2016/11/02/en-covenants-in-elements-alpha/">blog post</a> in this presentation. If everyone is familiar with covenants, covenants would be a feature that could be added to Bitcoin and is available on other blockchain platforms including Chain’s. This is the ability for an input to be conditional on the presence of a particular output in that transaction. This can be used in Bitcoin to implement a lot of interesting ideas. Andrew mentioned that it saves a lot of trouble and can be used to make a more efficient lottery in Bitcoin and it can be used for some security things like vaults. On multi asset blockchains like Chain’s it allows you to get really interesting in the kind of smart contract applications that you can do. Russell had a post where he realized that the two additional signatures in Blockstream’s Elements Alpha sidechain and those script extensions allow you to implement covenants in a very roundabout way. This is a very simple covenant and this is one that requires that the input can be spent but only to an identical output, an output whose script is the same as the input script. He calls it a recursive covenant. You could also a consider it a quine. It has to get a little clever in order to use these opcodes that don’t give you direct access to the output to be able to construct that transaction. I am not going into the logic of that but it is a really fun blog post if you want to read it. I found this.</p>
-<pre><code>	1.	&lt;0x0100000001&gt;
+<pre tabindex="0"><code>	1.	&lt;0x0100000001&gt;
 	2.	OP_SWAP OP_SIZE 36 OP_NUMEQUALVERIFY OP_CAT
 	3.	&lt;0x00&gt; OP_CAT
 	4.	OP_SWAP OP_SIZE 32 OP_NUMEQUALVERIFY OP_CAT
