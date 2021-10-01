@@ -887,7 +887,7 @@
 {
 	"uri": "/c-lightning/",
 	"title": "c-lightning",
-	"content": " c-lightning developer call (2021-08-09)   c-lightning developer call (2021-08-23)   c-lightning developer call (2021-09-06)    "
+	"content": " c-lightning developer call (2021-08-09)   c-lightning developer call (2021-08-23)   c-lightning developer call (2021-09-06)   c-lightning developer call (2021-09-20)    "
 },
 {
 	"uri": "/c-lightning/2021-08-09-developer-call/",
@@ -903,6 +903,11 @@
 	"uri": "/c-lightning/2021-09-06-developer-call/",
 	"title": "c-lightning developer call (2021-09-06)",
 	"content": "Name: c-lightning developer call\nTopic: Various topics\nLocation: Jitsi online\nDate: September 6th 2021\nVideo: No video posted online\nThe conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.\nIndividual updates I’ve been mostly shepherding the pull requests on c-lightning and …"
+},
+{
+	"uri": "/c-lightning/2021-09-20-developer-call/",
+	"title": "c-lightning developer call (2021-09-20)",
+	"content": "Name: c-lightning developer call\nTopic: Various topics\nLocation: Jitsi online\nDate: September 20th 2021\nVideo: No video posted online\nAgenda: https://hackmd.io/@cdecker/Sy-9vZIQt\nThe conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.\nIndividual updates Let’s start with a quick …"
 },
 {
 	"uri": "/bitcoin-developers-miners-meeting-2016/cali2016/",
@@ -3235,6 +3240,11 @@
 	"content": "Name: Rene Pickhardt\nTopic: Splicing\nLocation: Chaincode Labs Lightning Residency 2019\nVideo: https://youtu.be/ZzSveBMtUGI\nTranscript by: Caralie Chrisco\nIntroduction So splicing basically means you have a payment channel, you have a certain capacity of a payment channel and you want to change the capacity on the payment channel. But you don\u0026amp;rsquo;t want to change your balance right? For balance change,(inaudible) we\u0026amp;rsquo;ll get some money on it. But splicing really means you want to change the …"
 },
 {
+	"uri": "/chaincode-labs/chaincode-residency/2019-06-26-rene-pickhardt-update-layer/",
+	"title": "Rene Pickhardt - The Update Layer",
+	"content": "Name: René Pickhardt\nTopic: The Update Layer\nLocation: Chaincode Labs Lightning Residency 2019\nDate: 2019-06-26\nVideo: https://youtu.be/SoFlRCNdqDg\nIntroduction Maybe we had a wrong impression, you can ask, like in Christian’s talk, as many questions as you want while the presentation is there. So, it\u0026amp;rsquo;s a small disclaimer just saying: these slides are part of a much larger slide set which is open-source and you find notes and, I think, we share slides in the Google Docs anyway.\nThe outline …"
+},
+{
 	"uri": "/chaincode-labs/chaincode-residency/2019-06-24-rene-pickhardt-multihop-in-lightning/",
 	"title": "René Pickhardt - Multihop of the Lightning Network (2019-06-24)",
 	"content": "Name: René Pickhardt\nTopic: Multihop of the Lightning Network\nLocation: Chaincode Labs Lightning Residency 2019\nDate: 2019-06-24\nVideo: https://www.youtube.com/watch?v=P7I-C0_sijg\nSlides: https://residency.chaincode.com/presentations/lightning/Multihop_Layer.pdf\nIntroduction I\u0026amp;rsquo;m going to talk about Lightning Network payment channels and the update layer which is basically multihop payments and the outline of this talk is one slide myths about routing that are floating around and I just …"
@@ -4457,6 +4467,11 @@
 {
 	"uri": "/tags/splicing/",
 	"title": "‘splicing’",
+	"content": ""
+},
+{
+	"uri": "/tags/update-layer/",
+	"title": "‘update layer’",
 	"content": ""
 },
 {

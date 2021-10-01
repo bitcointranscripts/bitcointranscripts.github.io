@@ -1624,6 +1624,15 @@ We&rsquo;ve covered almost everything this morning."/>
                  
     
 
+
+    
+      
+
+        
+                
+                 
+    
+
         </ul>
     </li>
 
@@ -1693,6 +1702,15 @@ We&rsquo;ve covered almost everything this morning."/>
         
         <a class="nav-link p-0" href="/chaincode-labs/chaincode-residency/"><h6>Chaincode Residency</h6></a>
         <ul class="list-unstyled ml-2">
+
+    
+      
+
+        
+                
+                 
+    
+
 
     
       
@@ -7763,7 +7781,7 @@ something that sounds reasonable for the protocol. If your protocol sends thousa
 <p>Fabrice: No, it&rsquo;s because you need to generate blocks. Then it would be notified that new blocks have been known. I think everyone is using the zmq classifications. What are you using?</p>
 <p>Christian: We poll for blocks.</p>
 <p>Fabrice: Okay, but whether it&rsquo;s polling or using zmq notifications it&rsquo;s not really instant. It takes a few seconds before you get the notifications.</p>
-<p>Christian: So even in that case, since there are denial of service concerns, we implement what&rsquo;s called a staggered broadcast. We queue up changes in our local buffer, deduplicating them, and only after a minute or so do we flush them to our peers. So that means that I can bombard you with channel updates because you can actually do that. But since I buffer them locally and keep it, you duplicate only the last one and it will actually reach beyond the rest of the network. So that&rsquo;s how we throttle your broadcasts in the network, but that also means that your update will actually be delayed by the diameter time one minute. So that may be the case there. So what we have is in the Deaf mode for c-lightning, for example. We simply set this staggering mode to a second or so, and then it probably takes like a diameter number of seconds&hellip;</p>
+<p>Christian: So even in that case, since there are denial of service concerns, we implement what&rsquo;s called a staggered broadcast. We queue up changes in our local buffer, deduplicating them, and only after a minute or so do we flush them to our peers. So that means that I can bombard you with channel updates because, well, you can actually do that. But since I buffer them locally and deduplicate, only the last one will actually reach beyond me, to the rest of the network. So that’s how we throttle your broadcasts in the network. So that&rsquo;s how we throttle your broadcasts in the network, but that also means that your update will actually be delayed by the diameter time one minute. So that may be the case there. So what we have is in the Deaf mode for c-lightning, for example. We simply set this staggering mode to a second or so, and then it probably takes like a diameter number of seconds&hellip;</p>
 <p>If you compile it with <code>developer=1</code> you can do.</p>
 <p>Fabrice: So the next option is <code>option_upfront_shutdown_script</code>. Basically, what it says is as soon as you open the channel, you&rsquo;re gonna tell it to use your what&rsquo;s public key script for the final closing transaction. It&rsquo;s an option that&rsquo;s useful because suppose your node gets compromised and someone takes control of it to get you to steal your money. It&rsquo;s very easy. You close the channel and send everything to the hijackers address. If you use this option, what it means is, even if somebody takes control of your node and makes it initiate a closing transaction. That closing transaction will send money using the public key script that was defined when you see that control of your node and that it&rsquo;s supposed to be much harder for the attackers to steal funds from.</p>
 <p>And the last option is <code>gossip_queries</code>. It&rsquo;s more sophisticated gossip control. It is still pretty basic, but basically it&rsquo;s a few queries. (I think it&rsquo;s gonna be explained in detail some more.) You can use them to synchronize your routing table much more efficiently than just, “send me everything.” This is something for which there&rsquo;s an open pull request to extend it further with timestamps and checksums. Basically it&rsquo;s a way to very quickly get the information that you&rsquo;re missing so that you can start finding paths for payments very quickly when you start.</p>

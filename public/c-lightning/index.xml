@@ -51,5 +51,21 @@ The conversation has been anonymized by default to protect the identities of the
 Individual updates I’ve been mostly shepherding the pull requests on c-lightning and looking into issues we need to fix for the coming release.</description>
     </item>
     
+    <item>
+      <title>c-lightning developer call (2021-09-20)</title>
+      <link>https://btctranscripts.com/c-lightning/2021-09-20-developer-call/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/c-lightning/2021-09-20-developer-call/</guid>
+      <description>Name: c-lightning developer call
+Topic: Various topics
+Location: Jitsi online
+Date: September 20th 2021
+Video: No video posted online
+Agenda: https://hackmd.io/@cdecker/Sy-9vZIQt
+The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
+Individual updates Let’s start with a quick round of updates from the team.</description>
+    </item>
+    
   </channel>
 </rss>

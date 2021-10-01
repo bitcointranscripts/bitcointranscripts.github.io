@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://btctranscripts.com/pt/categories/</loc>
     <xhtml:link
@@ -19,9 +18,7 @@
                 hreflang="pt"
                 href="https://btctranscripts.com/pt/categories/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/pt/categories/hackathon/</loc>
     <xhtml:link
                 rel="alternate"
@@ -33,9 +30,7 @@
                 hreflang="pt"
                 href="https://btctranscripts.com/pt/categories/hackathon/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/pt/tags/lightning/</loc>
     <xhtml:link
                 rel="alternate"
@@ -52,9 +47,7 @@
                 hreflang="pt"
                 href="https://btctranscripts.com/pt/tags/lightning/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/pt/lightning-hack-day/</loc>
     <xhtml:link
                 rel="alternate"
@@ -66,9 +59,7 @@
                 hreflang="pt"
                 href="https://btctranscripts.com/pt/lightning-hack-day/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/pt/tags/privacy/</loc>
     <xhtml:link
                 rel="alternate"
@@ -80,9 +71,7 @@
                 hreflang="pt"
                 href="https://btctranscripts.com/pt/tags/privacy/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/pt/tags/scalability/</loc>
     <xhtml:link
                 rel="alternate"
@@ -94,9 +83,7 @@
                 hreflang="pt"
                 href="https://btctranscripts.com/pt/tags/scalability/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/pt/tags/security/</loc>
     <xhtml:link
                 rel="alternate"
@@ -108,9 +95,7 @@
                 hreflang="pt"
                 href="https://btctranscripts.com/pt/tags/security/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/pt/lightning-hack-day/2020-05-09-sergei-tikhomirov-lightning-privacy/</loc>
     <xhtml:link
                 rel="alternate"
@@ -122,9 +107,7 @@
                 hreflang="pt"
                 href="https://btctranscripts.com/pt/lightning-hack-day/2020-05-09-sergei-tikhomirov-lightning-privacy/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/pt/tags/</loc>
     <xhtml:link
                 rel="alternate"
@@ -141,9 +124,7 @@
                 hreflang="pt"
                 href="https://btctranscripts.com/pt/tags/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://btctranscripts.com/pt/</loc>
     <xhtml:link
                 rel="alternate"
@@ -161,5 +142,4 @@
                 href="https://btctranscripts.com/pt/"
                 />
   </url>
-  
 </urlset>
