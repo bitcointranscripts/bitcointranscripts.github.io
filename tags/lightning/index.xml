@@ -78,7 +78,14 @@ Location: Jitsi online
 Date: September 6th 2021
 Video: No video posted online
 The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
-Individual updates I’ve been mostly shepherding the pull requests on c-lightning and looking into issues we need to fix for the coming release.</description></item><item><title>Carla Kirk-Cohen - Routing Problems and Solutions</title><link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/2019-09-09-carla-kirk-cohen-routing-problems-and-solutions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/2019-09-09-carla-kirk-cohen-routing-problems-and-solutions/</guid><description>Name: Carla Kirk-Cohen
+Individual updates I’ve been mostly shepherding the pull requests on c-lightning and looking into issues we need to fix for the coming release.</description></item><item><title>c-lightning developer call (2021-09-20)</title><link>https://btctranscripts.com/c-lightning/2021-09-20-developer-call/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/c-lightning/2021-09-20-developer-call/</guid><description>Name: c-lightning developer call
+Topic: Various topics
+Location: Jitsi online
+Date: September 20th 2021
+Video: No video posted online
+Agenda: https://hackmd.io/@cdecker/Sy-9vZIQt
+The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
+Individual updates Let’s start with a quick round of updates from the team.</description></item><item><title>Carla Kirk-Cohen - Routing Problems and Solutions</title><link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/2019-09-09-carla-kirk-cohen-routing-problems-and-solutions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/2019-09-09-carla-kirk-cohen-routing-problems-and-solutions/</guid><description>Name: Carla Kirk-Cohen
 Topic: Routing Problems and Solutions
 Date: 2019-09-09
 Location: Tel-Aviv 2019
@@ -375,7 +382,12 @@ Topic: Splicing
 Location: Chaincode Labs Lightning Residency 2019
 Video: https://youtu.be/ZzSveBMtUGI
 Transcript by: Caralie Chrisco
-Introduction So splicing basically means you have a payment channel, you have a certain capacity of a payment channel and you want to change the capacity on the payment channel. But you don&amp;rsquo;t want to change your balance right? For balance change,(inaudible) we&amp;rsquo;ll get some money on it. But splicing really means you want to change the capacity.</description></item><item><title>René Pickhardt - Multihop of the Lightning Network (2019-06-24)</title><link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-24-rene-pickhardt-multihop-in-lightning/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-24-rene-pickhardt-multihop-in-lightning/</guid><description>Name: René Pickhardt
+Introduction So splicing basically means you have a payment channel, you have a certain capacity of a payment channel and you want to change the capacity on the payment channel. But you don&amp;rsquo;t want to change your balance right? For balance change,(inaudible) we&amp;rsquo;ll get some money on it. But splicing really means you want to change the capacity.</description></item><item><title>Rene Pickhardt - The Update Layer</title><link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-26-rene-pickhardt-update-layer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-26-rene-pickhardt-update-layer/</guid><description>Name: René Pickhardt
+Topic: The Update Layer
+Location: Chaincode Labs Lightning Residency 2019
+Date: 2019-06-26
+Video: https://youtu.be/SoFlRCNdqDg
+Introduction Maybe we had a wrong impression, you can ask, like in Christian’s talk, as many questions as you want while the presentation is there. So, it&amp;rsquo;s a small disclaimer just saying: these slides are part of a much larger slide set which is open-source and you find notes and, I think, we share slides in the Google Docs anyway.</description></item><item><title>René Pickhardt - Multihop of the Lightning Network (2019-06-24)</title><link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-24-rene-pickhardt-multihop-in-lightning/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-24-rene-pickhardt-multihop-in-lightning/</guid><description>Name: René Pickhardt
 Topic: Multihop of the Lightning Network
 Location: Chaincode Labs Lightning Residency 2019
 Date: 2019-06-24
