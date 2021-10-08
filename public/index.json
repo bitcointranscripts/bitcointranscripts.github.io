@@ -887,7 +887,7 @@
 {
 	"uri": "/c-lightning/",
 	"title": "c-lightning",
-	"content": " c-lightning developer call (2021-08-09)   c-lightning developer call (2021-08-23)   c-lightning developer call (2021-09-06)   c-lightning developer call (2021-09-20)    "
+	"content": " c-lightning developer call (2021-08-09)   c-lightning developer call (2021-08-23)   c-lightning developer call (2021-09-06)   c-lightning developer call (2021-09-20)   c-lightning developer call (2021-10-04)    "
 },
 {
 	"uri": "/c-lightning/2021-08-09-developer-call/",
@@ -908,6 +908,11 @@
 	"uri": "/c-lightning/2021-09-20-developer-call/",
 	"title": "c-lightning developer call (2021-09-20)",
 	"content": "Name: c-lightning developer call\nTopic: Various topics\nLocation: Jitsi online\nDate: September 20th 2021\nVideo: No video posted online\nAgenda: https://hackmd.io/@cdecker/Sy-9vZIQt\nThe conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.\nIndividual updates Let’s start with a quick …"
+},
+{
+	"uri": "/c-lightning/2021-10-04-developer-call/",
+	"title": "c-lightning developer call (2021-10-04)",
+	"content": "Name: c-lightning developer call\nTopic: Various topics\nLocation: Jitsi online\nDate: October 4th 2021\nVideo: No video posted online\nThe conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.\nDust HTLC exposure (Lisa Neigut) Antoine Riard email to the Lightning dev mailing list: …"
 },
 {
 	"uri": "/bitcoin-developers-miners-meeting-2016/cali2016/",
