@@ -262,6 +262,38 @@ Dust HTLC exposure (Lisa Neigut) Antoine Riard email to the Lightning dev mailin
     </item>
     
     <item>
+      <title>c-lightning developer call (2021-10-18)</title>
+      <link>https://btctranscripts.com/c-lightning/2021-10-18-developer-call/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/c-lightning/2021-10-18-developer-call/</guid>
+      <description>Name: c-lightning developer call
+Topic: Various topics
+Location: Jitsi online
+Date: October 18th 2021
+Video: No video posted online
+The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
+c-lightning v0.10.2 release https://medium.com/blockstream/c-lightning-v0-10-2-bitcoin-dust-consensus-rule-33e777d58657
+We are nominally past the release date.</description>
+    </item>
+    
+    <item>
+      <title>c-lightning developer call (2021-11-01)</title>
+      <link>https://btctranscripts.com/c-lightning/2021-11-01-developer-call/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/c-lightning/2021-11-01-developer-call/</guid>
+      <description>Name: c-lightning developer call
+Topic: Various topics
+Location: Jitsi online
+Date: November 1st 2021
+Video: No video posted online
+The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
+c-lightning v0.10.2 release https://medium.com/blockstream/c-lightning-v0-10-2-bitcoin-dust-consensus-rule-33e777d58657
+We’ve tagged RC1 to get people testing.</description>
+    </item>
+    
+    <item>
       <title>Carla Kirk-Cohen - Routing Problems and Solutions</title>
       <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/2019-09-09-carla-kirk-cohen-routing-problems-and-solutions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

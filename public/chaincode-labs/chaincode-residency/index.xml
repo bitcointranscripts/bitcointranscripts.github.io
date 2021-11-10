@@ -334,6 +334,20 @@ Introduction Good morning everyone my name is Chris and I&amp;rsquo;m a bitcoine
     </item>
     
     <item>
+      <title>Multiparty Channels (Lightning Network) with Christian Decker (2019-06-28)</title>
+      <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-28-christian-decker-multiparty-channels/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-28-christian-decker-multiparty-channels/</guid>
+      <description>Name: Christian Decker
+Topic: Multiparty Channels (Lightning Network)
+Location: Chaincode Labs Lightning Residency 2019
+Video: https://youtu.be/PUDWGH_MvmQ
+Slides: https://residency.chaincode.com/presentations/lightning/Multiparty_Channels.pdf
+Symmetric Update Protocols eltoo Update Mechanism Two days ago, we’ve seen the symmetric update mechanism called eltoo, and having a symmetric update mechanism has some really nice properties that enable some really cool stuff. Just to remind everybody, this is what eltoo looks like. That’s the one you&amp;rsquo;ve already seen. It’s not the only symmetric update mechanism, though.</description>
+    </item>
+    
+    <item>
       <title>Pierre Rochard - Lightning Excel Plugin (2018-10-26)</title>
       <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-26-pierre-rochard-lightning-excel-plugin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

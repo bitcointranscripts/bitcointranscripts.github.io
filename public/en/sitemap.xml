@@ -518,6 +518,10 @@
   </url><url>
     <loc>https://btctranscripts.com/c-lightning/2021-10-04-developer-call/</loc>
   </url><url>
+    <loc>https://btctranscripts.com/c-lightning/2021-10-18-developer-call/</loc>
+  </url><url>
+    <loc>https://btctranscripts.com/c-lightning/2021-11-01-developer-call/</loc>
+  </url><url>
     <loc>https://btctranscripts.com/bitcoin-developers-miners-meeting-2016/cali2016/</loc>
   </url><url>
     <loc>https://btctranscripts.com/chaincode-labs/chaincode-podcast/2020-11-30-carl-dong-reproducible-builds/</loc>
@@ -1427,6 +1431,8 @@
     <loc>https://btctranscripts.com/scalingbitcoin/tokyo-2018/multi-hop-locks/</loc>
   </url><url>
     <loc>https://btctranscripts.com/scalingbitcoin/tokyo-2018/multi-party-channels-in-the-utxo-model-challenges-and-opportunities/</loc>
+  </url><url>
+    <loc>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-28-christian-decker-multiparty-channels/</loc>
   </url><url>
     <loc>https://btctranscripts.com/tags/multisig/</loc>
     <xhtml:link
