@@ -45,7 +45,13 @@ Video: https://www.youtube.com/watch?v=8mdfygEzQjE
 Slides: https://www.dropbox.com/s/k02o32d0pagac4r/Andrew%20Chow%20slides.pdf
 BIP174 (PSBT): https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki
 PSBT Howto for Bitcoin Core: https://github.com/bitcoin/bitcoin/blob/master/doc/psbt.md
-Introduction Hey everyone. As you may have guessed I’m Andrew Chow. I’m Engineer at Blockstream and I also work on Bitcoin Core a lot, mostly in the wallet. I am going to be talking about hardware wallets and a bit history with them in Core and also how to integrate them in Core and how we are integrating them into Core.</description></item><item><title>Andrew Poelstra - Miniscript Intro (2020-02-06)</title><link>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-poelstra-miniscript-intro/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-poelstra-miniscript-intro/</guid><description>Name: Andrew Poelstra
+Introduction Hey everyone. As you may have guessed I’m Andrew Chow. I’m Engineer at Blockstream and I also work on Bitcoin Core a lot, mostly in the wallet. I am going to be talking about hardware wallets and a bit history with them in Core and also how to integrate them in Core and how we are integrating them into Core.</description></item><item><title>Andrew Poelstra - Miniscript (2021-11-06)</title><link>https://btctranscripts.com/tabconf/2021/2021-11-06-andrew-poelstra-miniscript/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/tabconf/2021/2021-11-06-andrew-poelstra-miniscript/</guid><description>Name: Andrew Poelstra
+Topic: Miniscript - Custody, Computable, Composable
+Location: TABConf (The Atlanta Bitcoin Conference)
+Date: November 6th 2021
+Video: https://www.youtube.com/watch?v=mVihRFrbsbc&amp;amp;t=6470s
+Slides: https://download.wpsoftware.net/bitcoin/wizardry/2021-11-tabconf/slides.pdf
+Intro I am here to talk about Miniscript. This is something that I have talked about a few times before but usually in a much more technical way where we get into the weeds of Bitcoin Script and what Miniscript is and how to use it and stuff.</description></item><item><title>Andrew Poelstra - Miniscript Intro (2020-02-06)</title><link>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-poelstra-miniscript-intro/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-poelstra-miniscript-intro/</guid><description>Name: Andrew Poelstra
 Topic: Introduction to Miniscript
 Location: Advancing Bitcoin
 Date: February 6th 2020

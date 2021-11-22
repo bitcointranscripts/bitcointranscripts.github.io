@@ -63,7 +63,13 @@ Miniscript
 Website: https://bitcoin.sipa.be/miniscript/
 Workshop repo: https://github.com/apoelstra/miniscript-workshop
 Transcript of London Bitcoin Devs Miniscript presentation: https://diyhpl.us/wiki/transcripts/london-bitcoin-devs/2020-02-04-andrew-poelstra-miniscript/
-Part 1 So what we’re going to do, there is a couple of things. We are going to go through the Miniscript website and learn about how Miniscript is constructed, how the type system works, some of the anti-malleability rules. Then we’re going to go to a repo that I created last night, a Git repo with some example programs.</description></item><item><title>Andrew Poelstra - Miniscript Intro (2020-02-06)</title><link>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-poelstra-miniscript-intro/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-poelstra-miniscript-intro/</guid><description>Name: Andrew Poelstra
+Part 1 So what we’re going to do, there is a couple of things. We are going to go through the Miniscript website and learn about how Miniscript is constructed, how the type system works, some of the anti-malleability rules. Then we’re going to go to a repo that I created last night, a Git repo with some example programs.</description></item><item><title>Andrew Poelstra - Miniscript (2021-11-06)</title><link>https://btctranscripts.com/tabconf/2021/2021-11-06-andrew-poelstra-miniscript/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/tabconf/2021/2021-11-06-andrew-poelstra-miniscript/</guid><description>Name: Andrew Poelstra
+Topic: Miniscript - Custody, Computable, Composable
+Location: TABConf (The Atlanta Bitcoin Conference)
+Date: November 6th 2021
+Video: https://www.youtube.com/watch?v=mVihRFrbsbc&amp;amp;t=6470s
+Slides: https://download.wpsoftware.net/bitcoin/wizardry/2021-11-tabconf/slides.pdf
+Intro I am here to talk about Miniscript. This is something that I have talked about a few times before but usually in a much more technical way where we get into the weeds of Bitcoin Script and what Miniscript is and how to use it and stuff.</description></item><item><title>Andrew Poelstra - Miniscript Intro (2020-02-06)</title><link>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-poelstra-miniscript-intro/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-andrew-poelstra-miniscript-intro/</guid><description>Name: Andrew Poelstra
 Topic: Introduction to Miniscript
 Location: Advancing Bitcoin
 Date: February 6th 2020
@@ -890,7 +896,13 @@ Location: BPASE 2017, Stanford University
 Date: January 26th 2017
 Video: https://www.youtube.com/watch?v=r7xN7K0OqaA
 Slides: https://cyber.stanford.edu/sites/g/files/sbiybj9936/f/jeremyrubin.pdf
-Intro Hey everyone. How is it going? Happy to be going last right now given that I had all these wonderful speakers before me to explain so much of what I am about to tell you. I’m going to talk to you today about structuring multi-transaction contracts in Bitcoin. I think there is a lot of great work that happens in Bitcoin at the script level, at the individual input and output.</description></item><item><title>Joi Ito</title><link>https://btctranscripts.com/scalingbitcoin/stanford-2017/joi-ito/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/scalingbitcoin/stanford-2017/joi-ito/</guid><description>Joi Ito
+Intro Hey everyone. How is it going? Happy to be going last right now given that I had all these wonderful speakers before me to explain so much of what I am about to tell you. I’m going to talk to you today about structuring multi-transaction contracts in Bitcoin. I think there is a lot of great work that happens in Bitcoin at the script level, at the individual input and output.</description></item><item><title>Jeremy Rubin, Andrew Poelstra - Covenants (2021-11-05)</title><link>https://btctranscripts.com/tabconf/2021/2021-11-05-jeremy-rubin-andrew-poelstra-covenants/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/tabconf/2021/2021-11-05-jeremy-rubin-andrew-poelstra-covenants/</guid><description>Name: Jeremy Rubin and Andrew Poelstra
+Topic: Covenants
+Location: TABConf (The Atlanta Bitcoin Conference)
+Date: November 5th 2021
+Video: No video was posted online
+As per Socratic village rules names of all attendees (other than the advertised speakers) have been anonymized and audio will not be published to preserve anonymity of the question askers.
+The covenant concept  Shaun Apps (SA): I’ll kick things off with a bit of an introduction.</description></item><item><title>Joi Ito</title><link>https://btctranscripts.com/scalingbitcoin/stanford-2017/joi-ito/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/scalingbitcoin/stanford-2017/joi-ito/</guid><description>Joi Ito
 Welcome back to Scaling Bitcoin day 2. I am sure everyone went home and tried Ethan&amp;rsquo;s wagering setup yesterday. Today we are going to be covering topics like layer 2, fees, and consensus. To get us started today, we have a very special guest, Joi Ito, director of the MIT Media Lab, and he will be talking about parallels to the internet and ICOs and he will cover a lot of ground.</description></item><item><title>Joinmarket</title><link>https://btctranscripts.com/scalingbitcoin/milan-2016/joinmarket/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/scalingbitcoin/milan-2016/joinmarket/</guid><description>Joinmarket
 Adlai Chandrasekhar
 https://twitter.com/kanzure/status/784681036504522752
