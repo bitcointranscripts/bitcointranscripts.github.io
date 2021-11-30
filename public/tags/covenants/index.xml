@@ -37,12 +37,12 @@ This all started from a very basic and simple observation about the current stat
       
       <guid>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/2017-01-26-jeremy-rubin-covenants/</guid>
       <description>Name: Jeremy Rubin
-Topic: Contracts with Merklized Covenants
+Topic: Structuring Multi Transaction Contracts in Bitcoin
 Location: BPASE 2017, Stanford University
 Date: January 26th 2017
 Video: https://www.youtube.com/watch?v=r7xN7K0OqaA
-Slides: https://cyber.stanford.edu/sites/g/files/sbiybj9936/f/jeremyrubin.pdf
-Intro Hey everyone. How is it going? Happy to be going last right now given that I had all these wonderful speakers before me to explain so much of what I am about to tell you. I’m going to talk to you today about structuring multi-transaction contracts in Bitcoin. I think there is a lot of great work that happens in Bitcoin at the script level, at the individual input and output.</description>
+Slides: https://rubin.io/public/pdfs/multi-txn-contracts.pdf
+Intro Hey everyone. How is it going? Happy to be going last right now given that I had all these wonderful speakers before me to explain so much of what I am about to tell you. I’m going to talk to you today about structuring multi-transaction contracts in Bitcoin.</description>
     </item>
     
     <item>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lightning Specification on ₿itcoin Transcripts</title>
+    <link>https://btctranscripts.com/lightning-specification/</link>
+    <description>Recent content in Lightning Specification on ₿itcoin Transcripts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://btctranscripts.com/lightning-specification/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lightning specification call (2021-11-22)</title>
+      <link>https://btctranscripts.com/lightning-specification/2021-11-22-specification-call/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/lightning-specification/2021-11-22-specification-call/</guid>
+      <description>Name: Lightning specification call
+Topic: Agenda below
+Location: Google Meet
+Date: November 22nd 2021
+Video: No video posted online
+Agenda: https://github.com/lightning/bolts/issues/936
+The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
+BOLT 7 onion message support https://github.</description>
+    </item>
+    
+  </channel>
+</rss>
