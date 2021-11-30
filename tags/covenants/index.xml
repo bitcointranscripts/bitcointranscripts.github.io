@@ -5,12 +5,12 @@ https://twitter.com/kanzure/status/785071789705728000
 https://www.youtube.com/watch?time_continue=10254&amp;amp;v=_Z0ID-0DOnc
 We published this last February at an academic workshop. The work itself has interesting ramifications. My real goal here is to start a conversation and then do a follow-up blog post where we collate feedback from the community. We would like to add this to Bitcoin Core. Covenants.
 This all started from a very basic and simple observation about the current status of our computing infrastructure.</description></item><item><title>Jeremy Rubin - Covenants (2017-01-26)</title><link>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/2017-01-26-jeremy-rubin-covenants/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/2017-01-26-jeremy-rubin-covenants/</guid><description>Name: Jeremy Rubin
-Topic: Contracts with Merklized Covenants
+Topic: Structuring Multi Transaction Contracts in Bitcoin
 Location: BPASE 2017, Stanford University
 Date: January 26th 2017
 Video: https://www.youtube.com/watch?v=r7xN7K0OqaA
-Slides: https://cyber.stanford.edu/sites/g/files/sbiybj9936/f/jeremyrubin.pdf
-Intro Hey everyone. How is it going? Happy to be going last right now given that I had all these wonderful speakers before me to explain so much of what I am about to tell you. I’m going to talk to you today about structuring multi-transaction contracts in Bitcoin. I think there is a lot of great work that happens in Bitcoin at the script level, at the individual input and output.</description></item><item><title>Jeremy Rubin, Andrew Poelstra - Covenants (2021-11-05)</title><link>https://btctranscripts.com/tabconf/2021/2021-11-05-jeremy-rubin-andrew-poelstra-covenants/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/tabconf/2021/2021-11-05-jeremy-rubin-andrew-poelstra-covenants/</guid><description>Name: Jeremy Rubin and Andrew Poelstra
+Slides: https://rubin.io/public/pdfs/multi-txn-contracts.pdf
+Intro Hey everyone. How is it going? Happy to be going last right now given that I had all these wonderful speakers before me to explain so much of what I am about to tell you. I’m going to talk to you today about structuring multi-transaction contracts in Bitcoin.</description></item><item><title>Jeremy Rubin, Andrew Poelstra - Covenants (2021-11-05)</title><link>https://btctranscripts.com/tabconf/2021/2021-11-05-jeremy-rubin-andrew-poelstra-covenants/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/tabconf/2021/2021-11-05-jeremy-rubin-andrew-poelstra-covenants/</guid><description>Name: Jeremy Rubin and Andrew Poelstra
 Topic: Covenants
 Location: TABConf (The Atlanta Bitcoin Conference)
 Date: November 5th 2021
