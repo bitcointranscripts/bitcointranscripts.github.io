@@ -276,6 +276,21 @@ We’ve tagged RC1 to get people testing.</description>
     </item>
     
     <item>
+      <title>c-lightning developer call (2021-11-15)</title>
+      <link>https://btctranscripts.com/c-lightning/2021-11-15-developer-call/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/c-lightning/2021-11-15-developer-call/</guid>
+      <description>Name: c-lightning developer call
+Topic: Various topics
+Location: Jitsi online
+Date: November 15th 2021
+Video: No video posted online
+The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
+Upgrading c-lightning for Taproot So, Taproot. The one place in the spec where Taproot matters if you are using it as an individual, generally it doesn’t matter where you keep your funds when it is not in a channel, doesn’t affect the spec, except the shutdown case.</description>
+    </item>
+    
+    <item>
       <title>Cali 2016</title>
       <link>https://btctranscripts.com/bitcoin-developers-miners-meeting-2016/cali2016/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -606,6 +621,22 @@ Location: LA Blockchain Meetup
 Video: https://www.youtube.com/watch?v=Ysj2yobFMF4
 Transcript by: glozow
 Introduction I&amp;rsquo;m Jim from the protocol team at Coinbase. We work on open source stuff in the crypto space. We just contribute to projects like Bitcoin core. The reason I&amp;rsquo;m talking about this is I&amp;rsquo;ve been contributing on and off to one of the major lightning implementations lnd for the past eight months or so.</description>
+    </item>
+    
+    <item>
+      <title>Lightning specification call (2021-11-22)</title>
+      <link>https://btctranscripts.com/lightning-specification/2021-11-22-specification-call/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/lightning-specification/2021-11-22-specification-call/</guid>
+      <description>Name: Lightning specification call
+Topic: Agenda below
+Location: Google Meet
+Date: November 22nd 2021
+Video: No video posted online
+Agenda: https://github.com/lightning/bolts/issues/936
+The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
+BOLT 7 onion message support https://github.</description>
     </item>
     
     <item>

@@ -892,7 +892,7 @@
 {
 	"uri": "/c-lightning/",
 	"title": "c-lightning",
-	"content": " c-lightning developer call (2021-08-09)   c-lightning developer call (2021-08-23)   c-lightning developer call (2021-09-06)   c-lightning developer call (2021-09-20)   c-lightning developer call (2021-10-04)   c-lightning developer call (2021-10-18)   c-lightning developer call (2021-11-01)    "
+	"content": " c-lightning developer call (2021-08-09)   c-lightning developer call (2021-08-23)   c-lightning developer call (2021-09-06)   c-lightning developer call (2021-09-20)   c-lightning developer call (2021-10-04)   c-lightning developer call (2021-10-18)   c-lightning developer call (2021-11-01)   c-lightning developer call (2021-11-15)    "
 },
 {
 	"uri": "/c-lightning/2021-08-09-developer-call/",
@@ -928,6 +928,11 @@
 	"uri": "/c-lightning/2021-11-01-developer-call/",
 	"title": "c-lightning developer call (2021-11-01)",
 	"content": "Name: c-lightning developer call\nTopic: Various topics\nLocation: Jitsi online\nDate: November 1st 2021\nVideo: No video posted online\nThe conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.\nc-lightning v0.10.2 release …"
+},
+{
+	"uri": "/c-lightning/2021-11-15-developer-call/",
+	"title": "c-lightning developer call (2021-11-15)",
+	"content": "Name: c-lightning developer call\nTopic: Various topics\nLocation: Jitsi online\nDate: November 15th 2021\nVideo: No video posted online\nThe conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.\nUpgrading c-lightning for Taproot So, Taproot. The one place in the spec where Taproot …"
 },
 {
 	"uri": "/bitcoin-developers-miners-meeting-2016/cali2016/",
@@ -2137,7 +2142,7 @@
 {
 	"uri": "/blockchain-protocol-analysis-security-engineering/2017/2017-01-26-jeremy-rubin-covenants/",
 	"title": "Jeremy Rubin - Covenants (2017-01-26)",
-	"content": "Name: Jeremy Rubin\nTopic: Contracts with Merklized Covenants\nLocation: BPASE 2017, Stanford University\nDate: January 26th 2017\nVideo: https://www.youtube.com/watch?v=r7xN7K0OqaA\nSlides: https://cyber.stanford.edu/sites/g/files/sbiybj9936/f/jeremyrubin.pdf\nIntro Hey everyone. How is it going? Happy to be going last right now given that I had all these wonderful speakers before me to explain so much of what I am about to tell you. I’m going to talk to you today about structuring multi-transaction …"
+	"content": "Name: Jeremy Rubin\nTopic: Structuring Multi Transaction Contracts in Bitcoin\nLocation: BPASE 2017, Stanford University\nDate: January 26th 2017\nVideo: https://www.youtube.com/watch?v=r7xN7K0OqaA\nSlides: https://rubin.io/public/pdfs/multi-txn-contracts.pdf\nIntro Hey everyone. How is it going? Happy to be going last right now given that I had all these wonderful speakers before me to explain so much of what I am about to tell you. I’m going to talk to you today about structuring multi-transaction …"
 },
 {
 	"uri": "/chaincode-labs/chaincode-podcast/2020-02-11-jeremy-rubin-ctv/",
@@ -2488,6 +2493,16 @@
 	"uri": "/building-on-bitcoin/2018/lightning-routing-ants-pheromones/",
 	"title": "Lightning Routing Ants Pheromones",
 	"content": "Ant routing for lightning network\nRicardo Perez-Marco\nBuilding on Bitcoin 2018\nhttps://twitter.com/kanzure/status/1014530761398145025\nhttps://twitter.com/rperezmarco/status/1013938984718884866\nIntroduction I wanted to present some ideas for alternative ideas for routing on LN. This was published on arxiv: 1807.00151 (July 2018).\nhttp://webusers.imj-prg.fr/~ricardo.perez-marco\nOverview I am going to talk about what I understand to be decentralized network. Fabrice has already explained most of …"
+},
+{
+	"uri": "/lightning-specification/",
+	"title": "Lightning Specification",
+	"content": " Lightning specification call (2021-11-22)    "
+},
+{
+	"uri": "/lightning-specification/2021-11-22-specification-call/",
+	"title": "Lightning specification call (2021-11-22)",
+	"content": "Name: Lightning specification call\nTopic: Agenda below\nLocation: Google Meet\nDate: November 22nd 2021\nVideo: No video posted online\nAgenda: https://github.com/lightning/bolts/issues/936\nThe conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.\nBOLT 7 onion message support …"
 },
 {
 	"uri": "/building-on-bitcoin/2018/lightning-wallet-design/",
