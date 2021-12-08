@@ -94,6 +94,20 @@ Intro With Lightning routing I think it is a very exciting topic because we’re
     </item>
     
     <item>
+      <title>Alex Bosworth - Multiple-path Payments (MPP)</title>
+      <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-25-alex-bosworth-mpp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-25-alex-bosworth-mpp/</guid>
+      <description>Name: Alex Bosworth
+Topic: Multiple-path Payments (MPP)
+Location: Chaincode Residency 2019
+Date: 2019-06-25
+Video: https://youtu.be/Og4TGERPZMY
+Bigger, Faster, Cheaper - Multiplexing Payments Alex: How to do multiple path payments. So there&amp;rsquo;s a question: why do we even need multiple path payments? So you have a channel &amp;ndash; like &amp;ndash; we don&amp;rsquo;t have them now, so are we really hurting for them? So I kind of like describing different situations where you would need it.</description>
+    </item>
+    
+    <item>
       <title>Amiko Pay</title>
       <link>https://btctranscripts.com/scalingbitcoin/montreal-2015/amiko-pay/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -306,6 +320,21 @@ Date: November 15th 2021
 Video: No video posted online
 The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
 Upgrading c-lightning for Taproot So, Taproot. The one place in the spec where Taproot matters if you are using it as an individual, generally it doesn’t matter where you keep your funds when it is not in a channel, doesn’t affect the spec, except the shutdown case.</description>
+    </item>
+    
+    <item>
+      <title>c-lightning developer call (2021-11-29)</title>
+      <link>https://btctranscripts.com/c-lightning/2021-11-29-developer-call/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/c-lightning/2021-11-29-developer-call/</guid>
+      <description>Name: c-lightning developer call
+Topic: Various topics
+Location: Jitsi online
+Date: November 29th 2021
+Video: No video posted online
+The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
+CI problems I will note we have been having CI problems.</description>
     </item>
     
     <item>

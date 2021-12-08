@@ -180,6 +180,11 @@
 	"content": "Name: Alex Bosworth\nTopic: Lightning Routing - Building a new economy\nLocation: Lightning Hack Day\nDate: March 27th 2021\nVideo: No video posted online\nSlides: https://www.dropbox.com/s/oo9o8ij62utvlfo/alex-bosworth-lightning-routing.pdf\nTranscript of presentation on Channel Management (2018): https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-channel-management/\nTranscript by: Michael Folkson\nIntro With Lightning routing I think it is a very exciting topic …"
 },
 {
+	"uri": "/chaincode-labs/chaincode-residency/2019-06-25-alex-bosworth-mpp/",
+	"title": "Alex Bosworth - Multiple-path Payments (MPP)",
+	"content": "Name: Alex Bosworth\nTopic: Multiple-path Payments (MPP)\nLocation: Chaincode Residency 2019\nDate: 2019-06-25\nVideo: https://youtu.be/Og4TGERPZMY\nBigger, Faster, Cheaper - Multiplexing Payments Alex: How to do multiple path payments. So there\u0026amp;rsquo;s a question: why do we even need multiple path payments? So you have a channel \u0026amp;ndash; like \u0026amp;ndash; we don\u0026amp;rsquo;t have them now, so are we really hurting for them? So I kind of like describing different situations where you would need it. So in the …"
+},
+{
 	"uri": "/london-bitcoin-devs/2019-07-03-alex-bosworth-submarine-swaps/",
 	"title": "Alex Bosworth - Submarine Swaps (2019-07-03)",
 	"content": "Alex Bosworth\nLondon Bitcoin Devs\nSubmarine Swaps and Loop\nVideo: https://www.youtube.com/watch?v=eB_HkYb7Y2M\nSlides: https://www.dropbox.com/s/cyh97jv81hrz8tf/alex-bosworth-submarine-swaps-loop.pdf?dl=0\nhttps://twitter.com/kanzure/status/1151158631527849985\nIntro Thanks for inviting me. I’m going to talk about submarine swaps and Lightning Loop which is something that I work on at Lightning Labs.\nBitcoin - One Currency, Multiple Settlement Networks Something that is pretty important to …"
@@ -892,7 +897,7 @@
 {
 	"uri": "/c-lightning/",
 	"title": "c-lightning",
-	"content": " c-lightning developer call (2021-08-09)   c-lightning developer call (2021-08-23)   c-lightning developer call (2021-09-06)   c-lightning developer call (2021-09-20)   c-lightning developer call (2021-10-04)   c-lightning developer call (2021-10-18)   c-lightning developer call (2021-11-01)   c-lightning developer call (2021-11-15)    "
+	"content": " c-lightning developer call (2021-08-09)   c-lightning developer call (2021-08-23)   c-lightning developer call (2021-09-06)   c-lightning developer call (2021-09-20)   c-lightning developer call (2021-10-04)   c-lightning developer call (2021-10-18)   c-lightning developer call (2021-11-01)   c-lightning developer call (2021-11-15)   c-lightning developer call (2021-11-29)    "
 },
 {
 	"uri": "/c-lightning/2021-08-09-developer-call/",
@@ -933,6 +938,11 @@
 	"uri": "/c-lightning/2021-11-15-developer-call/",
 	"title": "c-lightning developer call (2021-11-15)",
 	"content": "Name: c-lightning developer call\nTopic: Various topics\nLocation: Jitsi online\nDate: November 15th 2021\nVideo: No video posted online\nThe conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.\nUpgrading c-lightning for Taproot So, Taproot. The one place in the spec where Taproot …"
+},
+{
+	"uri": "/c-lightning/2021-11-29-developer-call/",
+	"title": "c-lightning developer call (2021-11-29)",
+	"content": "Name: c-lightning developer call\nTopic: Various topics\nLocation: Jitsi online\nDate: November 29th 2021\nVideo: No video posted online\nThe conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.\nCI problems I will note we have been having CI problems. We obviously slowly grew to the …"
 },
 {
 	"uri": "/bitcoin-developers-miners-meeting-2016/cali2016/",
@@ -987,7 +997,7 @@
 {
 	"uri": "/chaincode-labs/chaincode-residency/",
 	"title": "Chaincode Residency",
-	"content": " Alex Bosworth - Building Lightning Applications (2018-10-22)   Alex Bosworth - Channel Management (2018-10-22)   Alex Bosworth - Incentive Problems in the Lightning Network (2018-09-18)   Alex Bosworth - Lightning Protocol (2018-10-22)   Amiti Uttarwar - Transaction Rebroadcast (2019-09-09)   Christian Decker - C-Lightning API (2018-10-24)   Christian Decker - Eltoo (2019-06-25)   Christian Decker - Onion Routing Deep Dive (2019-06-25)   Christian Decker - Rendezvous Routing (2019-06-28) …"
+	"content": " Alex Bosworth - Building Lightning Applications (2018-10-22)   Alex Bosworth - Channel Management (2018-10-22)   Alex Bosworth - Incentive Problems in the Lightning Network (2018-09-18)   Alex Bosworth - Lightning Protocol (2018-10-22)   Alex Bosworth - Multiple-path Payments (MPP)   Amiti Uttarwar - Transaction Rebroadcast (2019-09-09)   Christian Decker - C-Lightning API (2018-10-24)   Christian Decker - Eltoo (2019-06-25)   Christian Decker - Onion Routing Deep Dive (2019-06-25)   Christian …"
 },
 {
 	"uri": "/scalingbitcoin/stanford-2017/changes-without-unanimous-consent/",
@@ -4517,6 +4527,11 @@
 {
 	"uri": "/tags/limitations/",
 	"title": "‘limitations’",
+	"content": ""
+},
+{
+	"uri": "/tags/multiple-path-payments/",
+	"title": "‘multiple-path payments’",
 	"content": ""
 },
 {

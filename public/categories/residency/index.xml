@@ -62,6 +62,20 @@ BOLT 00: Build Apps What I try to do is go through the BOLTs and look at only th
     </item>
     
     <item>
+      <title>Alex Bosworth - Multiple-path Payments (MPP)</title>
+      <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-25-alex-bosworth-mpp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-25-alex-bosworth-mpp/</guid>
+      <description>Name: Alex Bosworth
+Topic: Multiple-path Payments (MPP)
+Location: Chaincode Residency 2019
+Date: 2019-06-25
+Video: https://youtu.be/Og4TGERPZMY
+Bigger, Faster, Cheaper - Multiplexing Payments Alex: How to do multiple path payments. So there&amp;rsquo;s a question: why do we even need multiple path payments? So you have a channel &amp;ndash; like &amp;ndash; we don&amp;rsquo;t have them now, so are we really hurting for them? So I kind of like describing different situations where you would need it.</description>
+    </item>
+    
+    <item>
       <title>Amiti Uttarwar - Transaction Rebroadcast (2019-09-09)</title>
       <link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-09-09-amiti-uttarwar-transaction-rebroadcast/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
