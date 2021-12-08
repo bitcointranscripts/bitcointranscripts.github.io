@@ -17,7 +17,12 @@ The Lightning Protocol, an Application Design Perspective
 Video: https://www.youtube.com/watch?v=1R5DNUcCYRg
 Slides: https://lightningresidency.com/assets/presentations/Bosworth_The_Lightning_Protocol.pdf
 Intro I’m talking about the protocol design and also going through the BOLTs. What I’m going to talk about is also about the BOLTs. The BOLTs are like the spec for Lightning and there’s a bunch of them.
-BOLT 00: Build Apps What I try to do is go through the BOLTs and look at only the parts of the BOLTs, the protocol design, that you as an app developer would need to care about.</description></item><item><title>Amiti Uttarwar - Transaction Rebroadcast (2019-09-09)</title><link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-09-09-amiti-uttarwar-transaction-rebroadcast/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-09-09-amiti-uttarwar-transaction-rebroadcast/</guid><description>Amiti Uttarwar
+BOLT 00: Build Apps What I try to do is go through the BOLTs and look at only the parts of the BOLTs, the protocol design, that you as an app developer would need to care about.</description></item><item><title>Alex Bosworth - Multiple-path Payments (MPP)</title><link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-25-alex-bosworth-mpp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-25-alex-bosworth-mpp/</guid><description>Name: Alex Bosworth
+Topic: Multiple-path Payments (MPP)
+Location: Chaincode Residency 2019
+Date: 2019-06-25
+Video: https://youtu.be/Og4TGERPZMY
+Bigger, Faster, Cheaper - Multiplexing Payments Alex: How to do multiple path payments. So there&amp;rsquo;s a question: why do we even need multiple path payments? So you have a channel &amp;ndash; like &amp;ndash; we don&amp;rsquo;t have them now, so are we really hurting for them? So I kind of like describing different situations where you would need it.</description></item><item><title>Amiti Uttarwar - Transaction Rebroadcast (2019-09-09)</title><link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-09-09-amiti-uttarwar-transaction-rebroadcast/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-09-09-amiti-uttarwar-transaction-rebroadcast/</guid><description>Amiti Uttarwar
 Transaction Rebroadcast
 Video: https://www.youtube.com/watch?v=v4TXfwwz_VI
 https://twitter.com/kanzure/status/1199710296199385088
