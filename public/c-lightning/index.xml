@@ -129,5 +129,20 @@ The conversation has been anonymized by default to protect the identities of the
 Upgrading c-lightning for Taproot So, Taproot. The one place in the spec where Taproot matters if you are using it as an individual, generally it doesn’t matter where you keep your funds when it is not in a channel, doesn’t affect the spec, except the shutdown case.</description>
     </item>
     
+    <item>
+      <title>c-lightning developer call (2021-11-29)</title>
+      <link>https://btctranscripts.com/c-lightning/2021-11-29-developer-call/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/c-lightning/2021-11-29-developer-call/</guid>
+      <description>Name: c-lightning developer call
+Topic: Various topics
+Location: Jitsi online
+Date: November 29th 2021
+Video: No video posted online
+The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
+CI problems I will note we have been having CI problems.</description>
+    </item>
+    
   </channel>
 </rss>
