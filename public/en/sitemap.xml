@@ -859,7 +859,11 @@
   </url><url>
     <loc>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-24-fabrice-drouin-base-and-transport-layers-of-lightning-network/</loc>
   </url><url>
+    <loc>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-25-fabrice-drouin-fee-management/</loc>
+  </url><url>
     <loc>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-26-fabrice-drouin-limitations-of-lightweight-clients/</loc>
+  </url><url>
+    <loc>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-25-fabrice-drouin-routing-failures/</loc>
   </url><url>
     <loc>https://btctranscripts.com/misc/failures-of-secret-key-cryptography/</loc>
   </url><url>
@@ -1658,6 +1662,8 @@
   </url><url>
     <loc>https://btctranscripts.com/scalingbitcoin/montreal-2015/relay-network/</loc>
   </url><url>
+    <loc>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-26-rene-pickhardt-path-finding-lightning-network/</loc>
+  </url><url>
     <loc>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-26-rene-pickhardt-splicing/</loc>
   </url><url>
     <loc>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-26-rene-pickhardt-update-layer/</loc>
@@ -2287,9 +2293,15 @@
   </url><url>
     <loc>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/zkvm/</loc>
   </url><url>
+    <loc>https://btctranscripts.com/tags/fee-management/</loc>
+  </url><url>
     <loc>https://btctranscripts.com/tags/limitations/</loc>
   </url><url>
     <loc>https://btctranscripts.com/tags/multiple-path-payments/</loc>
+  </url><url>
+    <loc>https://btctranscripts.com/tags/path-finding/</loc>
+  </url><url>
+    <loc>https://btctranscripts.com/tags/routing-failures/</loc>
   </url><url>
     <loc>https://btctranscripts.com/tags/splicing/</loc>
   </url><url>
