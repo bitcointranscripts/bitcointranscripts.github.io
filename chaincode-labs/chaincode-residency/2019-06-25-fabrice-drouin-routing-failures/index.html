@@ -1,17 +1,21 @@
 <!doctype html><html><head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
-<link rel=alternate type=application/rss+xml href=https://btctranscripts.com/categories/residency/index.xml title="₿itcoin Transcripts">
-<link rel=canonical href=https://btctranscripts.com/categories/residency/>
+<link rel=canonical href=https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-25-fabrice-drouin-routing-failures/>
 <title>
-residency | ₿itcoin Transcripts
+Fabrice Drouin - Routing Failures | ₿itcoin Transcripts
 </title>
 <link href=https://btctranscripts.com/css/fontawesome.min.css rel=stylesheet>
 <link rel=stylesheet href=https://btctranscripts.com/css/ace.min.css>
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://btctranscripts.com/images/btctranscripts.png">
-<meta name=twitter:title content="residency">
-<meta name=twitter:description content="A treasure trove of ₿itcoin transcripts (mostly recorded by @kanzure)">
+<meta name=twitter:title content="Fabrice Drouin - Routing Failures">
+<meta name=twitter:description content="Name: Fabrice Drouin
+Topic: Routing Failures
+Location: Chaincode Labs Lightning Residency 2019
+Date: 2019-06-25
+Video: https://youtu.be/z5vEyvc2vrE
+Introduction So I&rsquo;m going to talk about routing failures in lightning. Basically lightning is a network of payment channels and you can pay anyone, you can find a route. In routing in lightning you have two completely different concepts: how to find a route (path finding) and once you have a route how to actually send a payment through the routes to the final destination.">
 </head>
 <body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id=navbarMain>
 <div class=container>
@@ -175,7 +179,7 @@ residency | ₿itcoin Transcripts
 <ul class="list-unstyled ml-2">
 </ul>
 </li>
-<li data-nav-id=/chaincode-labs/ class="nav-item my-1 haschildren">
+<li data-nav-id=/chaincode-labs/ class="nav-item my-1 parent haschildren">
 <a class="nav-link p-0" href=/chaincode-labs/><h6>Chaincode Labs</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/chaincode-labs/chaincode-podcast/ class="nav-item my-1 haschildren">
@@ -183,7 +187,7 @@ residency | ₿itcoin Transcripts
 <ul class="list-unstyled ml-2">
 </ul>
 </li>
-<li data-nav-id=/chaincode-labs/chaincode-residency/ class="nav-item my-1 haschildren">
+<li data-nav-id=/chaincode-labs/chaincode-residency/ class="nav-item my-1 parent haschildren">
 <a class="nav-link p-0" href=/chaincode-labs/chaincode-residency/><h6>Chaincode Residency</h6></a>
 <ul class="list-unstyled ml-2">
 </ul>
@@ -555,114 +559,85 @@ residency | ₿itcoin Transcripts
 </nav>
 </div>
 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky"><div class=docs-toc>
+<nav id=TableOfContents>
+<ul>
+<li>
+<ul>
+<li><a href=#introduction>Introduction</a></li>
+<li><a href=#routing-failures>Routing Failures</a></li>
+</ul>
+</li>
+</ul>
+</nav>
 </div>
 </div>
 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
-<h1>Residency</h1>
-<ul>
-<li>
-<a href=/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-building-lightning-applications/>Alex Bosworth - Building Lightning Applications (2018-10-22)</a>
-</li>
-<li>
-<a href=/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-channel-management/>Alex Bosworth - Channel Management (2018-10-22)</a>
-</li>
-<li>
-<a href=/chaincode-labs/chaincode-residency/2018-09-18-alex-bosworth-incentive-problems-in-the-lightning-network/>Alex Bosworth - Incentive Problems in the Lightning Network (2018-09-18)</a>
-</li>
-<li>
-<a href=/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-lightning-protocol/>Alex Bosworth - Lightning Protocol (2018-10-22)</a>
-</li>
-<li>
-<a href=/chaincode-labs/chaincode-residency/2019-06-25-alex-bosworth-mpp/>Alex Bosworth - Multiple-path Payments (MPP)</a>
-</li>
-<li>
-<a href=/chaincode-labs/chaincode-residency/2019-09-09-amiti-uttarwar-transaction-rebroadcast/>Amiti Uttarwar - Transaction Rebroadcast (2019-09-09)</a>
-</li>
-<li>
-<a href=/chaincode-labs/chaincode-residency/2018-10-24-christian-decker-c-lightning-api/>Christian Decker - C-Lightning API (2018-10-24)</a>
-</li>
-<li>
-<a href=/chaincode-labs/chaincode-residency/2019-06-25-christian-decker-eltoo/>Christian Decker - Eltoo (2019-06-25)</a>
-</li>
-<li>
-<a href=/chaincode-labs/chaincode-residency/2019-06-25-christian-decker-onion-routing-deep-dive/>Christian Decker - Onion Routing Deep Dive (2019-06-25)</a>
-</li>
-<li>
-<a href=/chaincode-labs/chaincode-residency/2019-06-28-christian-decker-rendezvous-routing/>Christian Decker - Rendezvous Routing (2019-06-28)</a>
-</li>
-<li>
-<a href=/chaincode-labs/chaincode-residency/2018-10-22-elaine-ou-bootstrapping-lightning-node/>Elaine Ou - Bootstrapping Lightning Node (2018-10-22)</a>
-</li>
-<li>
-<a href=/chaincode-labs/chaincode-residency/2019-08-16-elichai-turkel-schnorr-signatures/>Elichai Turkel - Schnorr Signatures (2019-08-16)</a>
-</li>
-<li>
-<a href=/chaincode-labs/chaincode-residency/2019-06-12-ethan-heilman-network-partitioning-attacks/>Ethan Heilman Network Partitioning Attacks (2019-06-12)</a>
-</li>
-<li>
-<a href=/chaincode-labs/chaincode-residency/2019-08-22-fabian-jahr-debugging/>Fabian Jahr - Debugging Bitcoin Core (2019-08-22)</a>
-</li>
-<li>
-<a href=/chaincode-labs/chaincode-residency/2019-06-25-fabrice-drouin-attack-vectors-of-lightning-network/>Fabrice Drouin - Attack Vectors of Lightning Network (2019-06-25)</a>
-</li>
-<li>
-<a href=/chaincode-labs/chaincode-residency/2019-06-24-fabrice-drouin-base-and-transport-layers-of-lightning-network/>Fabrice Drouin - Base and Transport Layers of the Lightning Network (2019-06-24)</a>
-</li>
-<li>
-<a href=/chaincode-labs/chaincode-residency/2019-06-25-fabrice-drouin-fee-management/>Fabrice Drouin - Fee Management (Lightning Network)</a>
-</li>
-<li>
-<a href=/chaincode-labs/chaincode-residency/2019-06-26-fabrice-drouin-limitations-of-lightweight-clients/>Fabrice Drouin - Limitations of Lightweight Clients</a>
-</li>
-<li>
-<a href=/chaincode-labs/chaincode-residency/2019-06-25-fabrice-drouin-routing-failures/>Fabrice Drouin - Routing Failures</a>
-</li>
-<li>
-<a href=/chaincode-labs/chaincode-residency/2018-10-22-christian-decker-history-of-lightning/>History of the Lightning Network</a>
-</li>
-<li>
-<a href=/chaincode-labs/chaincode-residency/2019-08-22-james-chiang-taproot-policy/>James Chiang Taproot Policy (2019-08-22)</a>
-</li>
-<li>
-<a href=/chaincode-labs/chaincode-residency/2019-06-18-james-obeirne-advanced-segwit/>James O'Beirne Advanced Segwit (2019-06-18)</a>
-</li>
-<li>
-<a href=/chaincode-labs/chaincode-residency/2019-06-19-john-newbery-wallet-development/>John Newbery - Wallet Development (2019-06-19)</a>
-</li>
-<li>
-<a href=/chaincode-labs/chaincode-residency/2019-06-17-john-newbery-security-models/>John Newbery Security Models (2019-06-17)</a>
-</li>
-<li>
-<a href=/chaincode-labs/chaincode-residency/2019-06-24-fabrice-drouin-the-transfer-layer/>Lightning - The Transfer Layer</a>
-</li>
-<li>
-<a href=/chaincode-labs/chaincode-residency/2018-10-22-christian-decker-lightning-bitcoin/>Lightning ≈ Bitcoin</a>
-</li>
-<li>
-<a href=/chaincode-labs/chaincode-residency/2019-06-28-christian-decker-multiparty-channels/>Multiparty Channels (Lightning Network) with Christian Decker (2019-06-28)</a>
-</li>
-<li>
-<a href=/chaincode-labs/chaincode-residency/2018-10-26-pierre-rochard-lightning-excel-plugin/>Pierre Rochard - Lightning Excel Plugin (2018-10-26)</a>
-</li>
-<li>
-<a href=/chaincode-labs/chaincode-residency/2019-06-26-rene-pickhardt-path-finding-lightning-network/>Rene Pickhardt - Path Finding in the Lightning Network</a>
-</li>
-<li>
-<a href=/chaincode-labs/chaincode-residency/2019-06-26-rene-pickhardt-splicing/>Rene Pickhardt - Splicing</a>
-</li>
-<li>
-<a href=/chaincode-labs/chaincode-residency/2019-06-26-rene-pickhardt-update-layer/>Rene Pickhardt - The Update Layer</a>
-</li>
-<li>
-<a href=/chaincode-labs/chaincode-residency/2019-06-24-rene-pickhardt-multihop-in-lightning/>René Pickhardt - Multihop of the Lightning Network (2019-06-24)</a>
-</li>
-</ul>
-<h4></h4>
-<ul>
-<li>
-<a href=/es/categories/residency/>es: residency</a>
-</li>
-</ul>
+<a href=/>Home</a>
+&lt; <a href=/chaincode-labs/>
+Chaincode Labs
+</a>
+&lt; <a href=/chaincode-labs/chaincode-residency/>
+Chaincode Residency
+</a>
+&lt; Fabrice Drouin - Routing Failures
+<h1>Fabrice Drouin - Routing Failures</h1>
+<p><i>Transcript By: Andrew Toth and Caralie Chrisco</i></p>
+<p>Tags:
+<a href=/tags/lightning>‘lightning’</a>, <a href=/tags/routing-failures>‘routing failures’</a></p>
+<p>Category:
+<a href=/categories/residency>‘residency’</a></p>
+<p>Name: Fabrice Drouin</p>
+<p>Topic: Routing Failures</p>
+<p>Location: Chaincode Labs Lightning Residency 2019</p>
+<p>Date: 2019-06-25</p>
+<p>Video: <a href=https://youtu.be/z5vEyvc2vrE>https://youtu.be/z5vEyvc2vrE</a></p>
+<h2 id=introduction>Introduction</h2>
+<p>So I&rsquo;m going to talk about routing failures in lightning. Basically lightning is a network of payment channels and you can pay anyone, you can find a route. In routing in lightning you have two completely different concepts: how to find a route (path finding) and once you have a route how to actually send a payment through the routes to the final destination. This is what Christian showed that&rsquo;s the source routing.</p>
+<p>So it&rsquo;s two different parts. When you have the graph, how do you find a route to your destination that is not part of lightning. Path finding is not defined anywhere in the specs. You do what you want, you can compute it yourself, you can ask someone to compute the route for you, but it&rsquo;s not specified in the actual lightning specs. Once you have a route what is specified is how you create onion messages to get the payments to be forwarded to its destination.</p>
+<p>##Routing Table</p>
+<p>To have a model for this for the graph that you have, we use a routing table that is made up of gossip messages. You have three types of gossip messages. You have node announcements this is a lightning node, you have channel announcements this is lightning channel, and you have channel updates and you have wallet updates for each side of every channel.</p>
+<p>Can you tell me why you need two updates, one for each side? What are these updates used for?</p>
+<p>Audience Member speaks</p>
+<p>Fabian: Yes exactly. So if you have a channel between A and B, A will say, “Okay if you want to route through me using this channel, this is a fee, these are the fees I&rsquo;m going to ask you to pay for and this is the CLTV Delta I&rsquo;m going to ask you to use.” If you want route payments using the same channel but through B you would say, okay these are the fees that you need to use and this is the CLTV Delta that you need to use.” So A sets a routing fee when you want to have a route through A and B sets routing fees when you go through B. And it&rsquo;s very possible that you can use a channel on one side only. If all the money is on A side it won&rsquo;t be possible to use it to route payment through B. So you won&rsquo;t have channel updates for this side or you will have one that is disabled. The only information actually needed to create onion payments are channel updates. You don&rsquo;t need channel announcements, you don&rsquo;t need node announcements.</p>
+<p>So this has been shown to you already when you receive a payment you peel off your onion layer and it reveals that destination, the next hop, the amount and CLTV that you&rsquo;re supposed to use when you forward the payments.</p>
+<h2 id=routing-failures>Routing Failures</h2>
+<p>So basically you get this. The node that is relaying a payment as an incoming payment, we call it “upstream” and outgoing payments “downstream” and it&rsquo;s relaying payments. It has an amount and an expiry on the upstream side, and on the destination on the channel that it&rsquo;s supposed to forward the payments to it has also an amount and an expiry. So why do you think the node in blue could fail to route payments? What do you think are potential reasons for failing to route payments?</p>
+<p>Audience Member: Not enough fees.</p>
+<p>Fabian: Yes, not enough fees.</p>
+<p>Audience Member speaks</p>
+<p>Fabian: It could also be a failure because the node is not available. There&rsquo;s another one.</p>
+<p>Audience Member: CLTV is too small.</p>
+<p>Fabian: Yes.</p>
+<p>Audience Member: The payment hash is not nice.</p>
+<p>So also if you use tricks like these spontaneous payments [inaudible] could be that also. So you have plenty of reasons for payments to fail. It could be because the HTLC is badly formatted, the onion is unreadable. It could be because you have errors on the upstream channel. Like the balance is not enough to move money from one side to the other because there&rsquo;s a problem with the CLTV expiry. It could be because you have problems on the downstream channel because there are balance issues; not enough money to send to the downstream channel because the number of pending payments or the amount that is locked in pending payments is too high.</p>
+<p>These are causes for failures, but it could also be because relay fees are not met. Or because the CLTV delta, the delta at the time I want to fix problems downstream it&rsquo;s too short for me. It could also be because the channel doesn&rsquo;t exist. You are using a routing table that is old, the channel has been closed but you don&rsquo;t know it. So you&rsquo;re trying to route through something that doesn&rsquo;t exist anymore. It could be because the node that you&rsquo;re trying to forward payments to is offline. You have many different types of errors that would cause your payments to fail. So in the specs you assign them types. And for certain types that are not fatal errors, for errors where you can actually retry, when you return errors you can attach a channel update.</p>
+<p>So the errors we have today are bad onion, which can&rsquo;t read what&rsquo;s in the onion that is attached to an HTLC. You have permanent failures; it&rsquo;s never going to work. You have node failures; the node trying to relay the payments is having problems. And you have update failures. So it&rsquo;s almost right but for example you are using fees that are wrong because you probably have a view of the network that is outdated.</p>
+<p>The channel updates used to compute the routes are too old and do not reflect the latest fees that have been set by the node you&rsquo;re trying to relay the payment through. So when you have - for some types of errors the payment is failed and you need to compute a new route and try again. Or some type of errors like update errors, you can actually keep the route you have, apply the new update, so just change the fees you&rsquo;re paying along the routes and try again.</p>
+<p>And you can ban channels for a short while when you have temporary errors, or you can just remove channels from your local view of a network when you have permanent errors. But this has an impact on UX because every time you retry it with a few seconds basically to compute new routes and retry the payments. So if your view of the routing table is too old, too outdated, you will get new information as it fails, but it&rsquo;s really bad UX. So there&rsquo;s a compromise to be found between synchronizing everything when you start your lightning node, and I think a good enough routing table that you can start attempting to pay but failing because your updates are too old.</p>
+<p>And that&rsquo;s, yeah, that&rsquo;s what we see tomorrow or, in two days when we talk about gossip. How do you efficiently synchronize routing tables? How do you make sure that you have enough information to find routes, and that route you compute is good enough so that your payments will go through and you will not have to retry. And for some of you - if you&rsquo;ve been using Eclair for example, a few months ago we would attempt to pay even if the routing table was not really synchronized. And you will see the first payments - very often users will complain that the first payment was slow.</p>
+<p>It looks slow, it takes a few seconds and then it&rsquo;s quicker. It&rsquo;s because we&rsquo;re trying to update the routing table and we often fail. The first payments get your dates we needed and try again with the new updates. So it&rsquo;s something you can see. It&rsquo;s in some lightning wallets and it’s bad UX. So we&rsquo;ve pushed really hard for changes in aspects to make routing sync more efficient because if you use outdated data you pay the price from a UX point of view. Your payments are slow and that&rsquo;s not good. The idea is you open your wallet and you want to be able to pay in a few seconds. If it takes more than that it’s bad UX. So that&rsquo;s why I think a good view of the network is very important especially for end users and that&rsquo;s why it’s so important to know how to efficiently synchronize routing tables.</p>
+<p>There&rsquo;s something that was I think not mentioned by Alex when it comes to incentives, but if you look at this, what do you think the node in the middle needs to know about the network? What kind of routing table does it need to have to forward payments? Does it need to have good information on the network to be able to forward payments? It doesn&rsquo;t need anything.</p>
+<p>Right now we have a strange situation where the big nodes like in the middle of that one that do all the related stuff don&rsquo;t really have an incentive to have good routing tables because they don&rsquo;t use them. The only ones you really need a good routing tables are the end users and they&rsquo;re in many ways the weakest nodes in the network. It runs on phones offline, often on small devices, less CPU and less memory and they&rsquo;re the only ones who actually need routing tables. No one in the middle, it doesn&rsquo;t need anything. Which is why trampoline is changing this. If you’re a trampoline node you do need at least a partial view of the routing tables. So the incentive I think I way are fixed by trampoline because for this to work even with the lightning nodes will need to have at least a partial view of the network days up to date that&rsquo;s not the case today.</p>
+<p>Audience Member asks a question.</p>
+<p>Fabian: I wouldn&rsquo;t say there’s scoring, but I’m pretty sure every implementation is looking at ways to ban peers that misbehave. We&rsquo;ve become more and more aggressive. If you send us updates for channels that are being closed after a while we will ban you.</p>
+<p>Audience Member: I mean all of us little use use a scoring off of a certain kind it&rsquo;s just the type of signal that we mix in to that score that that changes so we are currently using the CLTV deltas because that&rsquo;s a time it money might be locked up and the fees as a signal into the score and I guess you are also using the same signal. Then you can add additional signals, it’s not an issue.</p>
+<p>Audience Member speaks</p>
+<p>Audience Member: We don&rsquo;t have an autopilot per se yet. So we use it mostly for choosing a route or prioritizing one channel over another.</p>
+<p>Fabian: Yes the same way of heuristics to try basically with if possible we try to find the route that is least expensive as possible for you. We try to use the oldest channel and the ones with the biggest balance because of capacity with the smallest CLTV delta. Well that&rsquo;s just heuristics. But what you’re saying, I think is a bit different.</p>
+<p>Every explorer now, every lightning explorer is trying to push their own ranking system, which can be heavily game and basically that&rsquo;s a different story. But that&rsquo;s what [inaudible] was trying to do with lightning beach and [inaudible] ranking information I think others too - but how it&rsquo;s computed is not really open yet.</p>
+<p>Audience Member speaks</p>
+<p>Fabian: I think what you do locally to ban peers that misbehave, like for example you can do probing. I think C lightning does that now.</p>
+<p>Audience Member: We have plugins that do that.</p>
+<p>Fabian: So for probing, you basically create payments with the random payment hash - and it&rsquo;s supposed to fail right away. If it doesn&rsquo;t fail it means something&rsquo;s wrong and eventually someone will detect that nothing is coming back and after a while you would close channels. Because having channels that are not efficient is a waste of money, we believe that as the network grows and channels become bigger nodes will start being more aggressive when it comes to banning misbehaving peers and closing channels that are not used.</p>
+<p>Audience Member speaks</p>
+<p>Fabian: Maybe not blacklisting but if you have a channel that is never used, you close it. If every channel where every parent time fails, you close it. We run a fairly big node on mainnet, one of the biggest and we have started being fairly aggressive when it comes to channels that are non efficient or not used because it&rsquo;s a waste of everything. It&rsquo;s a waste of money for us and it&rsquo;s bad for everyone because it makes payments not reliable.</p>
+<p>But I will also say that you don&rsquo;t want to have only public channels. Suppose mobile phones are all private channels you would like to have mobile phones connect to because mobile users will mostly likely pay.</p>
+<p>Audience Member speaks</p>
+<p>Fabian: You want to be as reliable as possible, so that people want to connect to you because they know if they pay through you, it will work.</p>
+<p>Audience Member speaks</p>
+<p>Fabian: Not today, no.</p>
+<p>Audience Member speaks</p>
+<p>Without enough channels or nodes with zero fees today, I think we’re going to add more.</p>
 <div class=row></div>
 </div>
 </div>

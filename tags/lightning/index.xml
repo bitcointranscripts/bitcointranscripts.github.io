@@ -215,12 +215,22 @@ Video: https://www.youtube.com/watch?v=wyri7cc83kQ
 Slides: https://residency.chaincode.com/presentations/lightning/Base_Transport.pdf
 Introduction Fabrice: The base and transport layer, almost everything was already introduced this morning so it&amp;rsquo;s going to be very quick. So have you visited the lightning repo on GitHub? Who hasn&amp;rsquo;t?
 Okay, good. So you&amp;rsquo;ve seen all this? That was a test.
-We&amp;rsquo;ve covered almost everything this morning.</description></item><item><title>Fabrice Drouin - Limitations of Lightweight Clients</title><link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-26-fabrice-drouin-limitations-of-lightweight-clients/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-26-fabrice-drouin-limitations-of-lightweight-clients/</guid><description>Name: Fabrice Drouin
+We&amp;rsquo;ve covered almost everything this morning.</description></item><item><title>Fabrice Drouin - Fee Management (Lightning Network)</title><link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-25-fabrice-drouin-fee-management/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-25-fabrice-drouin-fee-management/</guid><description>Name: Fabrice Drouin
+Topic: Fee Management (Lightning Network)
+Location: Chaincode Labs Lightning Residency 2019
+Date: 2019-06-25
+Video: https://youtu.be/r8S3iELg9_U
+Fabrice: So I&amp;rsquo;m going to talk about fee management in Lightning which has been surprisingly one of the biggest operational issues we had when we launched the Lightning Network. So again the idea of Lightning is you have transactions that are not published but publishable, and in our case the problem is what does exactly publishable mean.</description></item><item><title>Fabrice Drouin - Limitations of Lightweight Clients</title><link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-26-fabrice-drouin-limitations-of-lightweight-clients/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-26-fabrice-drouin-limitations-of-lightweight-clients/</guid><description>Name: Fabrice Drouin
 Topic: Limitations of Lightweight Clients
 Location: Chaincode Labs Lightning Residency 2019
 Date: 2019-06-26
 Video: https://youtu.be/ULVItljEiFE
-Introduction The limitations it&amp;rsquo;s uh you have to fight when you want to build lightweight clients mobile clients so this again, this is how mobile clients work, you scan payment requests, you have a view of the network that is supposed to be good enough, you compute the routes, you get an HTLC, you get a preimage back you&amp;rsquo;ve paid.</description></item><item><title>Flare Routing In Lightning</title><link>https://btctranscripts.com/scalingbitcoin/milan-2016/flare-routing-in-lightning/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/scalingbitcoin/milan-2016/flare-routing-in-lightning/</guid><description>Flare: An approach to routing in lightning network
+Introduction The limitations it&amp;rsquo;s uh you have to fight when you want to build lightweight clients mobile clients so this again, this is how mobile clients work, you scan payment requests, you have a view of the network that is supposed to be good enough, you compute the routes, you get an HTLC, you get a preimage back you&amp;rsquo;ve paid.</description></item><item><title>Fabrice Drouin - Routing Failures</title><link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-25-fabrice-drouin-routing-failures/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-25-fabrice-drouin-routing-failures/</guid><description>Name: Fabrice Drouin
+Topic: Routing Failures
+Location: Chaincode Labs Lightning Residency 2019
+Date: 2019-06-25
+Video: https://youtu.be/z5vEyvc2vrE
+Introduction So I&amp;rsquo;m going to talk about routing failures in lightning. Basically lightning is a network of payment channels and you can pay anyone, you can find a route. In routing in lightning you have two completely different concepts: how to find a route (path finding) and once you have a route how to actually send a payment through the routes to the final destination.</description></item><item><title>Flare Routing In Lightning</title><link>https://btctranscripts.com/scalingbitcoin/milan-2016/flare-routing-in-lightning/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/scalingbitcoin/milan-2016/flare-routing-in-lightning/</guid><description>Flare: An approach to routing in lightning network
 https://twitter.com/kanzure/status/784745976170999810
 Pavel Prihodko
 Kolya Sakhno
@@ -421,7 +431,12 @@ The easiest way to censor things is to punish communication, not prevent communi
 Sebastián Reca (Muun)
 https://twitter.com/kanzure/status/1048753406628655105
 Introduction This talk is going to be about rebalancing in the lightning network. I&amp;rsquo;ll talk about the implications and about running a lightning node.
-Financial costs In the lightning network, routing nodes will incur in financial costs by having their money locked inside channels. They can&amp;rsquo;t use that money elsewhere. They incur a financial cost to doing this activity, at least an opportunity cost.</description></item><item><title>Rene Pickhardt - Splicing</title><link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-26-rene-pickhardt-splicing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-26-rene-pickhardt-splicing/</guid><description>Name: Rene Pickhardt
+Financial costs In the lightning network, routing nodes will incur in financial costs by having their money locked inside channels. They can&amp;rsquo;t use that money elsewhere. They incur a financial cost to doing this activity, at least an opportunity cost.</description></item><item><title>Rene Pickhardt - Path Finding in the Lightning Network</title><link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-26-rene-pickhardt-path-finding-lightning-network/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-26-rene-pickhardt-path-finding-lightning-network/</guid><description>Name: Rene Pickhardt
+Topic: Path Finding in the Lightning Network
+Location: Chaincode Residency 2019
+Date: 2019-06-26
+Video: https://www.youtube.com/watch?v=NT_dMqB1xuA
+Introduction Today I&amp;rsquo;m going to talk a little bit about path finding on the Lightning Network and some part of it will be about the gossip protocol which is like a little bit of a review of what the gossip messages are going to look like. So it&amp;rsquo;s a little bit basic again.</description></item><item><title>Rene Pickhardt - Splicing</title><link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-26-rene-pickhardt-splicing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-26-rene-pickhardt-splicing/</guid><description>Name: Rene Pickhardt
 Topic: Splicing
 Location: Chaincode Labs Lightning Residency 2019
 Video: https://youtu.be/ZzSveBMtUGI
