@@ -1580,9 +1580,19 @@
 	"content": "Name: Fabrice Drouin\nDate: 2019-06-24\nTopic: Base and Transport Layers of the Lightning Network\nLocation: Chaincode Labs Lightning Residency 2019\nVideo: https://www.youtube.com/watch?v=wyri7cc83kQ\nSlides: https://residency.chaincode.com/presentations/lightning/Base_Transport.pdf\nIntroduction Fabrice: The base and transport layer, almost everything was already introduced this morning so it\u0026amp;rsquo;s going to be very quick. So have you visited the lightning repo on GitHub? Who hasn\u0026amp;rsquo;t?\nOkay, …"
 },
 {
+	"uri": "/chaincode-labs/chaincode-residency/2019-06-25-fabrice-drouin-fee-management/",
+	"title": "Fabrice Drouin - Fee Management (Lightning Network)",
+	"content": "Name: Fabrice Drouin\nTopic: Fee Management (Lightning Network)\nLocation: Chaincode Labs Lightning Residency 2019\nDate: 2019-06-25\nVideo: https://youtu.be/r8S3iELg9_U\nFabrice: So I\u0026amp;rsquo;m going to talk about fee management in Lightning which has been surprisingly one of the biggest operational issues we had when we launched the Lightning Network. So again the idea of Lightning is you have transactions that are not published but publishable, and in our case the problem is what does exactly …"
+},
+{
 	"uri": "/chaincode-labs/chaincode-residency/2019-06-26-fabrice-drouin-limitations-of-lightweight-clients/",
 	"title": "Fabrice Drouin - Limitations of Lightweight Clients",
 	"content": "Name: Fabrice Drouin\nTopic: Limitations of Lightweight Clients\nLocation: Chaincode Labs Lightning Residency 2019\nDate: 2019-06-26\nVideo: https://youtu.be/ULVItljEiFE\nIntroduction The limitations it\u0026amp;rsquo;s uh you have to fight when you want to build lightweight clients mobile clients so this again, this is how mobile clients work, you scan payment requests, you have a view of the network that is supposed to be good enough, you compute the routes, you get an HTLC, you get a preimage back …"
+},
+{
+	"uri": "/chaincode-labs/chaincode-residency/2019-06-25-fabrice-drouin-routing-failures/",
+	"title": "Fabrice Drouin - Routing Failures",
+	"content": "Name: Fabrice Drouin\nTopic: Routing Failures\nLocation: Chaincode Labs Lightning Residency 2019\nDate: 2019-06-25\nVideo: https://youtu.be/z5vEyvc2vrE\nIntroduction So I\u0026amp;rsquo;m going to talk about routing failures in lightning. Basically lightning is a network of payment channels and you can pay anyone, you can find a route. In routing in lightning you have two completely different concepts: how to find a route (path finding) and once you have a route how to actually send a payment through the …"
 },
 {
 	"uri": "/misc/failures-of-secret-key-cryptography/",
@@ -3290,6 +3300,11 @@
 	"content": "It was indicative of two issues. A lot of people were reducing their security model by not validating their bitcoin. It was potentially less secure. That\u0026amp;rsquo;s not something that relay networks try to address. The big issue with the decreasing number of nodes, which the relay network doesn\u0026amp;rsquo;t address, is that it reduces the resilience against attack. If there\u0026amp;rsquo;s only 100 nodes, there\u0026amp;rsquo;s really only some 100 VPses that you have to knock offline before the bitcoin network stops …"
 },
 {
+	"uri": "/chaincode-labs/chaincode-residency/2019-06-26-rene-pickhardt-path-finding-lightning-network/",
+	"title": "Rene Pickhardt - Path Finding in the Lightning Network",
+	"content": "Name: Rene Pickhardt\nTopic: Path Finding in the Lightning Network\nLocation: Chaincode Residency 2019\nDate: 2019-06-26\nVideo: https://www.youtube.com/watch?v=NT_dMqB1xuA\nIntroduction Today I\u0026amp;rsquo;m going to talk a little bit about path finding on the Lightning Network and some part of it will be about the gossip protocol which is like a little bit of a review of what the gossip messages are going to look like. So it\u0026amp;rsquo;s a little bit basic again. But other than that, I\u0026amp;rsquo;ve been told that …"
+},
+{
 	"uri": "/chaincode-labs/chaincode-residency/2019-06-26-rene-pickhardt-splicing/",
 	"title": "Rene Pickhardt - Splicing",
 	"content": "Name: Rene Pickhardt\nTopic: Splicing\nLocation: Chaincode Labs Lightning Residency 2019\nVideo: https://youtu.be/ZzSveBMtUGI\nTranscript by: Caralie Chrisco\nIntroduction So splicing basically means you have a payment channel, you have a certain capacity of a payment channel and you want to change the capacity on the payment channel. But you don\u0026amp;rsquo;t want to change your balance right? For balance change,(inaudible) we\u0026amp;rsquo;ll get some money on it. But splicing really means you want to change the …"
@@ -4525,6 +4540,11 @@
 	"content": "ZkVM: zero-knowledge virtual machine for fast confidential smart contracts\nFats, private, flexible blockchain contracts\nOleg Andreev (Stellar) (oleganza)\nhttps://medium.com/stellar-developers-blog/zkvm-a-new-design-for-fast-confidential-smart-contracts-d1122890d9ae and https://twitter.com/oleganza/status/1126612382728372224\nhttps://twitter.com/kanzure/status/1171711553512583169\nIntroduction Okay, welcome. What is zkvm? It\u0026amp;rsquo;s a multi-asset blockchain architecture that combines smart …"
 },
 {
+	"uri": "/tags/fee-management/",
+	"title": "‘fee management’",
+	"content": ""
+},
+{
 	"uri": "/tags/limitations/",
 	"title": "‘limitations’",
 	"content": ""
@@ -4532,6 +4552,16 @@
 {
 	"uri": "/tags/multiple-path-payments/",
 	"title": "‘multiple-path payments’",
+	"content": ""
+},
+{
+	"uri": "/tags/path-finding/",
+	"title": "‘path-finding’",
+	"content": ""
+},
+{
+	"uri": "/tags/routing-failures/",
+	"title": "‘routing failures’",
 	"content": ""
 },
 {
