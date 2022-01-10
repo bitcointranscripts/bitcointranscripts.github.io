@@ -126,7 +126,14 @@ Location: Jitsi online
 Date: November 29th 2021
 Video: No video posted online
 The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
-CI problems I will note we have been having CI problems.</description></item><item><title>Cali 2016</title><link>https://btctranscripts.com/bitcoin-developers-miners-meeting-2016/cali2016/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-developers-miners-meeting-2016/cali2016/</guid><description>California Gathering 2016
+CI problems I will note we have been having CI problems.</description></item><item><title>c-lightning developer call (2021-12-13)</title><link>https://btctranscripts.com/c-lightning/2021-12-13-developer-call/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/c-lightning/2021-12-13-developer-call/</guid><description>Name: c-lightning developer call
+Topic: Various topics
+Location: Jitsi online
+Date: December 13th 2021
+Video: No video posted online
+The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
+Enabling multi channel support https://github.com/ElementsProject/lightning/pull/4984
+https://github.com/ElementsProject/lightning/pull/4985</description></item><item><title>Cali 2016</title><link>https://btctranscripts.com/bitcoin-developers-miners-meeting-2016/cali2016/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-developers-miners-meeting-2016/cali2016/</guid><description>California Gathering 2016
 Transcription introduction Some Bitcoin developers and miners gathered together during the end of the July to socialize and become better acquainted with each other. The following discussions were live transcribed by an untrained volunteer with attribution removed as per Chatham House rules. In bitcoin, discussions can move very quickly, which can cause an increase in errors, including semantic errors, when typing in real time. This text was not produced from an audio recording.</description></item><item><title>Christopher Jeffrey Bcoin (2016-09-28)</title><link>https://btctranscripts.com/sf-bitcoin-meetup/2016-09-28-christopher-jeffrey-bcoin/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/sf-bitcoin-meetup/2016-09-28-christopher-jeffrey-bcoin/</guid><description>Name: Christopher Jeffrey (JJ)
 Topic: Bcoin
 Location: SF Bitcoin Devs
@@ -250,7 +257,22 @@ Date: November 22nd 2021
 Video: No video posted online
 Agenda: https://github.com/lightning/bolts/issues/936
 The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
-BOLT 7 onion message support https://github.</description></item><item><title>Luke Dashjr - Segwit, PSBT Vulnerability (2020-06-18)</title><link>https://btctranscripts.com/la-bitdevs/2020-06-18-luke-dashjr-segwit-psbt-vulnerability/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/la-bitdevs/2020-06-18-luke-dashjr-segwit-psbt-vulnerability/</guid><description>Name: Luke Dashjr
+BOLT 7 onion message support https://github.</description></item><item><title>Lightning specification call (2021-12-06)</title><link>https://btctranscripts.com/lightning-specification/2021-12-06-specification-call/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-specification/2021-12-06-specification-call/</guid><description>Name: Lightning specification call
+Topic: Agenda below
+Location: Google Meet
+Date: December 6th 2021
+Video: No video posted online
+Agenda: https://github.com/lightning/bolts/issues/943
+The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
+Add payment metadata to payment request https://github.</description></item><item><title>Lightning specification call (2022-01-03)</title><link>https://btctranscripts.com/lightning-specification/2022-01-03-specification-call/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-specification/2022-01-03-specification-call/</guid><description>Name: Lightning specification call
+Topic: Agenda below
+Location: Jitsi
+Date: January 3rd 2022
+Video: No video posted online
+Agenda: https://github.com/lightning/bolts/issues/949
+Introduction When people put comments and they are fixed they should mark them as resolved so that we don’t waste time thinking there are lots of outstanding comments and we have to read them again. I think that helps a lot.
+I can spend some time doing that.
+There are a lot of comments, I’m starting at the bottom to see the things that have maybe not been addressed yet.</description></item><item><title>Luke Dashjr - Segwit, PSBT Vulnerability (2020-06-18)</title><link>https://btctranscripts.com/la-bitdevs/2020-06-18-luke-dashjr-segwit-psbt-vulnerability/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/la-bitdevs/2020-06-18-luke-dashjr-segwit-psbt-vulnerability/</guid><description>Name: Luke Dashjr
 Topic: SegWit/PSBT vulnerability (CVE-2020-14199)
 Location: LA BitDevs (online)
 Date: June 18th 2020
@@ -452,7 +474,14 @@ Location: Bitcoin Sydney (online)
 Date: July 6th 2021
 Video: No video posted online
 The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
-Agenda: https://github.com/bitcoin-sydney/socratic/blob/master/README.md#2021-07</description></item><item><title>Taproot Schnorr Signatures And Sighash Noinput Oh My (2018-07-09)</title><link>https://btctranscripts.com/sf-bitcoin-meetup/2018-07-09-taproot-schnorr-signatures-and-sighash-noinput-oh-my/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/sf-bitcoin-meetup/2018-07-09-taproot-schnorr-signatures-and-sighash-noinput-oh-my/</guid><description>Taproot, Schnorr signatures, and SIGHASH_NOINPUT, oh my!
+Agenda: https://github.com/bitcoin-sydney/socratic/blob/master/README.md#2021-07</description></item><item><title>Sydney Socratic Seminar (2021-11-02)</title><link>https://btctranscripts.com/sydney-bitcoin-meetup/2021-11-02-socratic-seminar/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/sydney-bitcoin-meetup/2021-11-02-socratic-seminar/</guid><description>Name: Socratic Seminar
+Topic: Package relay
+Location: Bitcoin Sydney (online)
+Date: November 2nd 2021
+Video: No video posted online
+The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
+Agenda: https://github.com/bitcoin-sydney/socratic/blob/master/README.md#2021-11
+Package Mempool Accept and Package RBF: https://lists.</description></item><item><title>Taproot Schnorr Signatures And Sighash Noinput Oh My (2018-07-09)</title><link>https://btctranscripts.com/sf-bitcoin-meetup/2018-07-09-taproot-schnorr-signatures-and-sighash-noinput-oh-my/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/sf-bitcoin-meetup/2018-07-09-taproot-schnorr-signatures-and-sighash-noinput-oh-my/</guid><description>Taproot, Schnorr signatures, and SIGHASH_NOINPUT, oh my!
 Pieter Wuille (sipa)
 https://twitter.com/kanzure/status/1021880538020368385
 video: https://www.youtube.com/watch?v=YSUVRj8iznU

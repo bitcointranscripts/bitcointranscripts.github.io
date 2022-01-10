@@ -55,4 +55,11 @@ Location: Jitsi online
 Date: November 29th 2021
 Video: No video posted online
 The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
-CI problems I will note we have been having CI problems.</description></item></channel></rss>
+CI problems I will note we have been having CI problems.</description></item><item><title>c-lightning developer call (2021-12-13)</title><link>https://btctranscripts.com/c-lightning/2021-12-13-developer-call/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/c-lightning/2021-12-13-developer-call/</guid><description>Name: c-lightning developer call
+Topic: Various topics
+Location: Jitsi online
+Date: December 13th 2021
+Video: No video posted online
+The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
+Enabling multi channel support https://github.com/ElementsProject/lightning/pull/4984
+https://github.com/ElementsProject/lightning/pull/4985</description></item></channel></rss>
