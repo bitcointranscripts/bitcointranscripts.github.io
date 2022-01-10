@@ -530,6 +530,8 @@
   </url><url>
     <loc>https://btctranscripts.com/c-lightning/2021-11-29-developer-call/</loc>
   </url><url>
+    <loc>https://btctranscripts.com/c-lightning/2021-12-13-developer-call/</loc>
+  </url><url>
     <loc>https://btctranscripts.com/bitcoin-developers-miners-meeting-2016/cali2016/</loc>
   </url><url>
     <loc>https://btctranscripts.com/chaincode-labs/chaincode-podcast/2020-11-30-carl-dong-reproducible-builds/</loc>
@@ -868,6 +870,8 @@
     <loc>https://btctranscripts.com/misc/failures-of-secret-key-cryptography/</loc>
   </url><url>
     <loc>https://btctranscripts.com/scalingbitcoin/milan-2016/fast-difficulty-adjustment/</loc>
+  </url><url>
+    <loc>https://btctranscripts.com/tags/fee-management/</loc>
   </url><url>
     <loc>https://btctranscripts.com/tags/fees/</loc>
   </url><url>
@@ -1302,9 +1306,15 @@
   </url><url>
     <loc>https://btctranscripts.com/lightning-specification/2021-11-22-specification-call/</loc>
   </url><url>
+    <loc>https://btctranscripts.com/lightning-specification/2021-12-06-specification-call/</loc>
+  </url><url>
+    <loc>https://btctranscripts.com/lightning-specification/2022-01-03-specification-call/</loc>
+  </url><url>
     <loc>https://btctranscripts.com/building-on-bitcoin/2018/lightning-wallet-design/</loc>
   </url><url>
     <loc>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-christian-decker-lightning-bitcoin/</loc>
+  </url><url>
+    <loc>https://btctranscripts.com/tags/limitations/</loc>
   </url><url>
     <loc>https://btctranscripts.com/stanford-blockchain-conference/2020/linking-anonymous-transactions/</loc>
   </url><url>
@@ -1452,6 +1462,8 @@
   </url><url>
     <loc>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-28-christian-decker-multiparty-channels/</loc>
   </url><url>
+    <loc>https://btctranscripts.com/tags/multiple-path-payments/</loc>
+  </url><url>
     <loc>https://btctranscripts.com/tags/multisig/</loc>
     <xhtml:link
                 rel="alternate"
@@ -1535,6 +1547,8 @@
     <loc>https://btctranscripts.com/sf-bitcoin-meetup/2019-03-15-partially-signed-bitcoin-transactions/</loc>
   </url><url>
     <loc>https://btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/partially-signed-bitcoin-transactions-bip174/</loc>
+  </url><url>
+    <loc>https://btctranscripts.com/tags/path-finding/</loc>
   </url><url>
     <loc>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/payment-channel-recovery-with-seeds/</loc>
   </url><url>
@@ -1711,6 +1725,8 @@
     <loc>https://btctranscripts.com/scalingbitcoin/montreal-2015/roundgroup-roundup-2/</loc>
   </url><url>
     <loc>https://btctranscripts.com/tags/routing/</loc>
+  </url><url>
+    <loc>https://btctranscripts.com/tags/routing-failures/</loc>
   </url><url>
     <loc>https://btctranscripts.com/stephan-livera-podcast/2019-07-31-roy-sheinfeld-stephan-livera/</loc>
   </url><url>
@@ -2004,6 +2020,8 @@
   </url><url>
     <loc>https://btctranscripts.com/tags/sphinx/</loc>
   </url><url>
+    <loc>https://btctranscripts.com/tags/splicing/</loc>
+  </url><url>
     <loc>https://btctranscripts.com/stanford-blockchain-conference/2019/spork-probabilistic-bitcoin-soft-forks/</loc>
   </url><url>
     <loc>https://btctranscripts.com/tags/spv/</loc>
@@ -2061,6 +2079,8 @@
     <loc>https://btctranscripts.com/sydney-bitcoin-meetup/2021-06-01-socratic-seminar/</loc>
   </url><url>
     <loc>https://btctranscripts.com/sydney-bitcoin-meetup/2021-07-06-socratic-seminar/</loc>
+  </url><url>
+    <loc>https://btctranscripts.com/sydney-bitcoin-meetup/2021-11-02-socratic-seminar/</loc>
   </url><url>
     <loc>https://btctranscripts.com/scalingbitcoin/montreal-2015/systematizing-knowledge/</loc>
   </url><url>
@@ -2195,6 +2215,8 @@
   </url><url>
     <loc>https://btctranscripts.com/scalingbitcoin/milan-2016/unlinkable-outsourced-channel-monitoring/</loc>
   </url><url>
+    <loc>https://btctranscripts.com/tags/update-layer/</loc>
+  </url><url>
     <loc>https://btctranscripts.com/coindesk-consensus-2016/upgrading-capital-markets-for-digital-asset-trading/</loc>
   </url><url>
     <loc>https://btctranscripts.com/stanford-blockchain-conference/2019/urkel-trees/</loc>
@@ -2292,20 +2314,6 @@
     <loc>https://btctranscripts.com/cryptoeconomic-systems/2019/zksharks/</loc>
   </url><url>
     <loc>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/zkvm/</loc>
-  </url><url>
-    <loc>https://btctranscripts.com/tags/fee-management/</loc>
-  </url><url>
-    <loc>https://btctranscripts.com/tags/limitations/</loc>
-  </url><url>
-    <loc>https://btctranscripts.com/tags/multiple-path-payments/</loc>
-  </url><url>
-    <loc>https://btctranscripts.com/tags/path-finding/</loc>
-  </url><url>
-    <loc>https://btctranscripts.com/tags/routing-failures/</loc>
-  </url><url>
-    <loc>https://btctranscripts.com/tags/splicing/</loc>
-  </url><url>
-    <loc>https://btctranscripts.com/tags/update-layer/</loc>
   </url><url>
     <loc>https://btctranscripts.com/</loc>
     <xhtml:link

@@ -291,7 +291,7 @@ Introduction So I&amp;rsquo;m going to talk about routing failures in lightning.
       <description>Name: Dr. Christian Decker
 Location: Chaincode Labs Lightning Residency 2018
 Video: https://youtu.be/HauP9F16mUM
-Introduction Hi I&amp;rsquo;m Chris, as I said like three times before, and I&amp;rsquo;ll be talking about the history of lightning and history of off-chain protocols or layer two, or you name it, whatever name you want. I like to call them off chain because it doesn&amp;rsquo;t imply a hierarchy of layers but I&amp;rsquo;ll use all three terms interchangeably anyway.</description>
+Introduction Hi I&amp;rsquo;m Chris, as I said like three times before, and I&amp;rsquo;ll be talking about the history of Lightning and history of off-chain protocols or layer two, or you name it, whatever name you want. I like to call them off chain because it doesn&amp;rsquo;t imply a hierarchy of layers but I&amp;rsquo;ll use all three terms interchangeably anyway.</description>
     </item>
     
     <item>
@@ -372,7 +372,7 @@ Context Fabrice: Alright so, I&amp;rsquo;m going to talk about the payments mode
       <description>Name: Dr. Christian Decker
 Location: Chaincode Labs Lightning Residency 2018
 Video: https://youtu.be/8lMLo-7yF5k
-Introduction Good morning everyone my name is Chris and I&amp;rsquo;m a bitcoiners anonymous. So my job today is basically to tell you why lightning is Bitcoin and why it&amp;rsquo;s not exactly Bitcoin. So there&amp;rsquo;s a few fundamental differences between bitcoin onchain payment and lightning. I will always call Bitcoin onchain payments just because it&amp;rsquo;s sort of the classical way of doing it.</description>
+Introduction Good morning everyone my name is Chris and I&amp;rsquo;m a bitcoiners anonymous. So my job today is basically to tell you why Lightning is Bitcoin and why it&amp;rsquo;s not exactly Bitcoin. So there&amp;rsquo;s a few fundamental differences between Bitcoin on-chain payments and Lightning. I will always call Bitcoin on-chain payments just because it&amp;rsquo;s sort of the classical way of doing it.</description>
     </item>
     
     <item>

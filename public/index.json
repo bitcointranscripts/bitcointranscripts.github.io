@@ -897,7 +897,7 @@
 {
 	"uri": "/c-lightning/",
 	"title": "c-lightning",
-	"content": " c-lightning developer call (2021-08-09)   c-lightning developer call (2021-08-23)   c-lightning developer call (2021-09-06)   c-lightning developer call (2021-09-20)   c-lightning developer call (2021-10-04)   c-lightning developer call (2021-10-18)   c-lightning developer call (2021-11-01)   c-lightning developer call (2021-11-15)   c-lightning developer call (2021-11-29)    "
+	"content": " c-lightning developer call (2021-08-09)   c-lightning developer call (2021-08-23)   c-lightning developer call (2021-09-06)   c-lightning developer call (2021-09-20)   c-lightning developer call (2021-10-04)   c-lightning developer call (2021-10-18)   c-lightning developer call (2021-11-01)   c-lightning developer call (2021-11-15)   c-lightning developer call (2021-11-29)   c-lightning developer call (2021-12-13)    "
 },
 {
 	"uri": "/c-lightning/2021-08-09-developer-call/",
@@ -943,6 +943,11 @@
 	"uri": "/c-lightning/2021-11-29-developer-call/",
 	"title": "c-lightning developer call (2021-11-29)",
 	"content": "Name: c-lightning developer call\nTopic: Various topics\nLocation: Jitsi online\nDate: November 29th 2021\nVideo: No video posted online\nThe conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.\nCI problems I will note we have been having CI problems. We obviously slowly grew to the …"
+},
+{
+	"uri": "/c-lightning/2021-12-13-developer-call/",
+	"title": "c-lightning developer call (2021-12-13)",
+	"content": "Name: c-lightning developer call\nTopic: Various topics\nLocation: Jitsi online\nDate: December 13th 2021\nVideo: No video posted online\nThe conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.\nEnabling multi channel support https://github.com/ElementsProject/lightning/pull/4984 …"
 },
 {
 	"uri": "/bitcoin-developers-miners-meeting-2016/cali2016/",
@@ -1605,6 +1610,11 @@
 	"content": "Fast difficulty adjustment using a low-pass finite impulse response filter\nMark Friedenbach (maaku)\nhttps://twitter.com/kanzure/status/785107422323085312\nslides https://scalingbitcoin.org/milan2016/presentations/Scaling%20Bitcoin%203%20-%20Mark%20Friedenbach.pdf\nIntroductions I work at Blockstream Labs. This work is based on work I did in 2013 which is now only being presented. If there are any control engineers, I would encourage you. I am going to cover some mistakes that have been covered in …"
 },
 {
+	"uri": "/tags/fee-management/",
+	"title": "fee management",
+	"content": ""
+},
+{
 	"uri": "/tags/fees/",
 	"title": "fees",
 	"content": ""
@@ -1937,7 +1947,7 @@
 {
 	"uri": "/chaincode-labs/chaincode-residency/2018-10-22-christian-decker-history-of-lightning/",
 	"title": "History of the Lightning Network",
-	"content": "Name: Dr. Christian Decker\nLocation: Chaincode Labs Lightning Residency 2018\nVideo: https://youtu.be/HauP9F16mUM\nIntroduction Hi I\u0026amp;rsquo;m Chris, as I said like three times before, and I\u0026amp;rsquo;ll be talking about the history of lightning and history of off-chain protocols or layer two, or you name it, whatever name you want. I like to call them off chain because it doesn\u0026amp;rsquo;t imply a hierarchy of layers but I\u0026amp;rsquo;ll use all three terms interchangeably anyway.\nI like to have an interactive …"
+	"content": "Name: Dr. Christian Decker\nLocation: Chaincode Labs Lightning Residency 2018\nVideo: https://youtu.be/HauP9F16mUM\nIntroduction Hi I\u0026amp;rsquo;m Chris, as I said like three times before, and I\u0026amp;rsquo;ll be talking about the history of Lightning and history of off-chain protocols or layer two, or you name it, whatever name you want. I like to call them off chain because it doesn\u0026amp;rsquo;t imply a hierarchy of layers but I\u0026amp;rsquo;ll use all three terms interchangeably anyway.\nI like to have an interactive …"
 },
 {
 	"uri": "/honey-badger-diaries/",
@@ -2517,12 +2527,22 @@
 {
 	"uri": "/lightning-specification/",
 	"title": "Lightning Specification",
-	"content": " Lightning specification call (2021-11-22)    "
+	"content": " Lightning specification call (2021-11-22)   Lightning specification call (2021-12-06)   Lightning specification call (2022-01-03)    "
 },
 {
 	"uri": "/lightning-specification/2021-11-22-specification-call/",
 	"title": "Lightning specification call (2021-11-22)",
 	"content": "Name: Lightning specification call\nTopic: Agenda below\nLocation: Google Meet\nDate: November 22nd 2021\nVideo: No video posted online\nAgenda: https://github.com/lightning/bolts/issues/936\nThe conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.\nBOLT 7 onion message support …"
+},
+{
+	"uri": "/lightning-specification/2021-12-06-specification-call/",
+	"title": "Lightning specification call (2021-12-06)",
+	"content": "Name: Lightning specification call\nTopic: Agenda below\nLocation: Google Meet\nDate: December 6th 2021\nVideo: No video posted online\nAgenda: https://github.com/lightning/bolts/issues/943\nThe conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.\nAdd payment metadata to payment request …"
+},
+{
+	"uri": "/lightning-specification/2022-01-03-specification-call/",
+	"title": "Lightning specification call (2022-01-03)",
+	"content": "Name: Lightning specification call\nTopic: Agenda below\nLocation: Jitsi\nDate: January 3rd 2022\nVideo: No video posted online\nAgenda: https://github.com/lightning/bolts/issues/949\nIntroduction When people put comments and they are fixed they should mark them as resolved so that we don’t waste time thinking there are lots of outstanding comments and we have to read them again. I think that helps a lot.\nI can spend some time doing that.\nThere are a lot of comments, I’m starting at the bottom to see …"
 },
 {
 	"uri": "/building-on-bitcoin/2018/lightning-wallet-design/",
@@ -2532,7 +2552,12 @@
 {
 	"uri": "/chaincode-labs/chaincode-residency/2018-10-22-christian-decker-lightning-bitcoin/",
 	"title": "Lightning ≈ Bitcoin",
-	"content": "Name: Dr. Christian Decker\nLocation: Chaincode Labs Lightning Residency 2018\nVideo: https://youtu.be/8lMLo-7yF5k\nIntroduction Good morning everyone my name is Chris and I\u0026amp;rsquo;m a bitcoiners anonymous. So my job today is basically to tell you why lightning is Bitcoin and why it\u0026amp;rsquo;s not exactly Bitcoin. So there\u0026amp;rsquo;s a few fundamental differences between bitcoin onchain payment and lightning. I will always call Bitcoin onchain payments just because it\u0026amp;rsquo;s sort of the classical way of …"
+	"content": "Name: Dr. Christian Decker\nLocation: Chaincode Labs Lightning Residency 2018\nVideo: https://youtu.be/8lMLo-7yF5k\nIntroduction Good morning everyone my name is Chris and I\u0026amp;rsquo;m a bitcoiners anonymous. So my job today is basically to tell you why Lightning is Bitcoin and why it\u0026amp;rsquo;s not exactly Bitcoin. So there\u0026amp;rsquo;s a few fundamental differences between Bitcoin on-chain payments and Lightning. I will always call Bitcoin on-chain payments just because it\u0026amp;rsquo;s sort of the classical way …"
+},
+{
+	"uri": "/tags/limitations/",
+	"title": "limitations",
+	"content": ""
 },
 {
 	"uri": "/stanford-blockchain-conference/2020/linking-anonymous-transactions/",
@@ -2850,6 +2875,11 @@
 	"content": "Name: Christian Decker\nTopic: Multiparty Channels (Lightning Network)\nLocation: Chaincode Labs Lightning Residency 2019\nVideo: https://youtu.be/PUDWGH_MvmQ\nSlides: https://residency.chaincode.com/presentations/lightning/Multiparty_Channels.pdf\nSymmetric Update Protocols eltoo Update Mechanism Two days ago, we’ve seen the symmetric update mechanism called eltoo, and having a symmetric update mechanism has some really nice properties that enable some really cool stuff. Just to remind everybody, …"
 },
 {
+	"uri": "/tags/multiple-path-payments/",
+	"title": "multiple-path payments",
+	"content": ""
+},
+{
 	"uri": "/tags/multisig/",
 	"title": "multisig",
 	"content": ""
@@ -3033,6 +3063,11 @@
 	"uri": "/scalingbitcoin/tokyo-2018/edgedevplusplus/partially-signed-bitcoin-transactions-bip174/",
 	"title": "Partially Signed Bitcoin Transactions Bip174",
 	"content": "Partially-signed bitcoin transactions (bip174)\nGreg Sanders (instagibbs)\nhttps://twitter.com/kanzure/status/1047730297242935296\nIntroduction Bryan briefly mentioned partially-signed bitcoin transactions (PSBT). I can give more depth on this. There\u0026amp;rsquo;s history and motivation, a background of why this is important, what these things are doing. What is the software doing?\nHistory and motivation Historically, there was no standard for this. Armory had its own format. Bitcoin Core had …"
+},
+{
+	"uri": "/tags/path-finding/",
+	"title": "path-finding",
+	"content": ""
 },
 {
 	"uri": "/scalingbitcoin/tel-aviv-2019/payment-channel-recovery-with-seeds/",
@@ -3397,6 +3432,11 @@
 {
 	"uri": "/tags/routing/",
 	"title": "routing",
+	"content": ""
+},
+{
+	"uri": "/tags/routing-failures/",
+	"title": "routing failures",
 	"content": ""
 },
 {
@@ -3905,6 +3945,11 @@
 	"content": ""
 },
 {
+	"uri": "/tags/splicing/",
+	"title": "splicing",
+	"content": ""
+},
+{
 	"uri": "/stanford-blockchain-conference/2019/spork-probabilistic-bitcoin-soft-forks/",
 	"title": "Spork Probabilistic Bitcoin Soft Forks",
 	"content": "Spork: Probabilistic bitcoin soft-forks\nJeremy Rubin\nIntroduction Thank you for the introduction. I have a secret. I am not an economist, so you\u0026amp;rsquo;ll have to forgive me if I don\u0026amp;rsquo;t have your favorite annotations today. I have my own annotations. I originally gave a predecessor to this talk in Japan. You might notice my title here is a haiku: these are protocols used for changing the bitcoin netwokr protocols. People do highly value staying together for a chain, we\u0026amp;rsquo;re doing …"
@@ -4032,7 +4077,7 @@
 {
 	"uri": "/sydney-bitcoin-meetup/",
 	"title": "Sydney Bitcoin Meetup",
-	"content": " Socratic Seminar (2020-05-19)   Socratic Seminar (2020-06-23)   Socratic Seminar (2020-07-21)   Socratic Seminar (2020-08-25)   Sydney Socratic Seminar (2021-02-23)   Sydney Socratic Seminar (2021-06-01)   Sydney Socratic Seminar (2021-07-06)    "
+	"content": " Socratic Seminar (2020-05-19)   Socratic Seminar (2020-06-23)   Socratic Seminar (2020-07-21)   Socratic Seminar (2020-08-25)   Sydney Socratic Seminar (2021-02-23)   Sydney Socratic Seminar (2021-06-01)   Sydney Socratic Seminar (2021-07-06)   Sydney Socratic Seminar (2021-11-02)    "
 },
 {
 	"uri": "/sydney-bitcoin-meetup/2021-02-23-socratic-seminar/",
@@ -4048,6 +4093,11 @@
 	"uri": "/sydney-bitcoin-meetup/2021-07-06-socratic-seminar/",
 	"title": "Sydney Socratic Seminar (2021-07-06)",
 	"content": "Name: Socratic Seminar\nTopic: Fee bumping and layer 2 protocols\nLocation: Bitcoin Sydney (online)\nDate: July 6th 2021\nVideo: No video posted online\nThe conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.\nAgenda: …"
+},
+{
+	"uri": "/sydney-bitcoin-meetup/2021-11-02-socratic-seminar/",
+	"title": "Sydney Socratic Seminar (2021-11-02)",
+	"content": "Name: Socratic Seminar\nTopic: Package relay\nLocation: Bitcoin Sydney (online)\nDate: November 2nd 2021\nVideo: No video posted online\nThe conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.\nAgenda: https://github.com/bitcoin-sydney/socratic/blob/master/README.md#2021-11\nPackage …"
 },
 {
 	"uri": "/scalingbitcoin/montreal-2015/systematizing-knowledge/",
@@ -4320,6 +4370,11 @@
 	"content": "Unlinkable outsourced channel monitoring\nTadge Dryja\nhttp://lightning.network/\nhttps://twitter.com/kanzure/status/784752625074012160\nOkay. Hi everyone. Check. Wow. Check one two. Okay it\u0026amp;rsquo;s working. And I have 25 minutes. Great. So I am going to talk about unlinkable outsourced channel modeling. Everyone likes channels. You can update states. You can link them together to make a network. This is really great. There are risks. These are additional risks. The price of scalability is eternal …"
 },
 {
+	"uri": "/tags/update-layer/",
+	"title": "update layer",
+	"content": ""
+},
+{
 	"uri": "/coindesk-consensus-2016/upgrading-capital-markets-for-digital-asset-trading/",
 	"title": "Upgrading Capital Markets For Digital Asset Trading",
 	"content": "Preliminary notes:\nContact me- https://twitter.com/kanzure\nUpgrading capital markets for digital asset trading\nBrian Kelly - Moderator\nJuthica Chou, LedgerX\nBobby Lee, BTCC\nMichael More, Genesis\nBarry Silbert, Digital Currency Group\nPlease welcome Brian Kelly, Juthica Chou, Bobby Lee, Michael More, and Barry Silbert.\nBK: Alright. Welcome everyone to the upgrading capital markets panel. You have the introductions of who these people are. Just one thing before we start, does anyone want to …"
@@ -4538,41 +4593,6 @@
 	"uri": "/scalingbitcoin/tel-aviv-2019/zkvm/",
 	"title": "Zkvm",
 	"content": "ZkVM: zero-knowledge virtual machine for fast confidential smart contracts\nFats, private, flexible blockchain contracts\nOleg Andreev (Stellar) (oleganza)\nhttps://medium.com/stellar-developers-blog/zkvm-a-new-design-for-fast-confidential-smart-contracts-d1122890d9ae and https://twitter.com/oleganza/status/1126612382728372224\nhttps://twitter.com/kanzure/status/1171711553512583169\nIntroduction Okay, welcome. What is zkvm? It\u0026amp;rsquo;s a multi-asset blockchain architecture that combines smart …"
-},
-{
-	"uri": "/tags/fee-management/",
-	"title": "‘fee management’",
-	"content": ""
-},
-{
-	"uri": "/tags/limitations/",
-	"title": "‘limitations’",
-	"content": ""
-},
-{
-	"uri": "/tags/multiple-path-payments/",
-	"title": "‘multiple-path payments’",
-	"content": ""
-},
-{
-	"uri": "/tags/path-finding/",
-	"title": "‘path-finding’",
-	"content": ""
-},
-{
-	"uri": "/tags/routing-failures/",
-	"title": "‘routing failures’",
-	"content": ""
-},
-{
-	"uri": "/tags/splicing/",
-	"title": "‘splicing’",
-	"content": ""
-},
-{
-	"uri": "/tags/update-layer/",
-	"title": "‘update layer’",
-	"content": ""
 },
 {
 	"uri": "/",
