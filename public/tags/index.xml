@@ -142,6 +142,15 @@
     </item>
     
     <item>
+      <title>fee management</title>
+      <link>https://btctranscripts.com/tags/fee-management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/tags/fee-management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>fees</title>
       <link>https://btctranscripts.com/tags/fees/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -241,6 +250,15 @@
     </item>
     
     <item>
+      <title>limitations</title>
+      <link>https://btctranscripts.com/tags/limitations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/tags/limitations/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>lnd</title>
       <link>https://btctranscripts.com/tags/lnd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -295,6 +313,15 @@
     </item>
     
     <item>
+      <title>multiple-path payments</title>
+      <link>https://btctranscripts.com/tags/multiple-path-payments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/tags/multiple-path-payments/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>multisig</title>
       <link>https://btctranscripts.com/tags/multisig/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -336,6 +363,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://btctranscripts.com/tags/p2sh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>path-finding</title>
+      <link>https://btctranscripts.com/tags/path-finding/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/tags/path-finding/</guid>
       <description></description>
     </item>
     
@@ -408,6 +444,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://btctranscripts.com/tags/routing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>routing failures</title>
+      <link>https://btctranscripts.com/tags/routing-failures/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/tags/routing-failures/</guid>
       <description></description>
     </item>
     
@@ -502,6 +547,15 @@
     </item>
     
     <item>
+      <title>splicing</title>
+      <link>https://btctranscripts.com/tags/splicing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/tags/splicing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>spv</title>
       <link>https://btctranscripts.com/tags/spv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -565,6 +619,15 @@
     </item>
     
     <item>
+      <title>update layer</title>
+      <link>https://btctranscripts.com/tags/update-layer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/tags/update-layer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>ux</title>
       <link>https://btctranscripts.com/tags/ux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -597,69 +660,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://btctranscripts.com/tags/zero-knowledge/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>‘fee management’</title>
-      <link>https://btctranscripts.com/tags/fee-management/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://btctranscripts.com/tags/fee-management/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>‘limitations’</title>
-      <link>https://btctranscripts.com/tags/limitations/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://btctranscripts.com/tags/limitations/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>‘multiple-path payments’</title>
-      <link>https://btctranscripts.com/tags/multiple-path-payments/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://btctranscripts.com/tags/multiple-path-payments/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>‘path-finding’</title>
-      <link>https://btctranscripts.com/tags/path-finding/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://btctranscripts.com/tags/path-finding/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>‘routing failures’</title>
-      <link>https://btctranscripts.com/tags/routing-failures/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://btctranscripts.com/tags/routing-failures/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>‘splicing’</title>
-      <link>https://btctranscripts.com/tags/splicing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://btctranscripts.com/tags/splicing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>‘update layer’</title>
-      <link>https://btctranscripts.com/tags/update-layer/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://btctranscripts.com/tags/update-layer/</guid>
       <description></description>
     </item>
     
