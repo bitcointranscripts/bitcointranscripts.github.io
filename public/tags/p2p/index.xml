@@ -110,6 +110,21 @@ Introduction My name is Gleb. I’ve worked on Bitcoin stuff since 2015, buildin
     </item>
     
     <item>
+      <title>Gloria Zhao - Transaction Relay Policy (2021-11-16)</title>
+      <link>https://btctranscripts.com/adopting-bitcoin/2021/2021-11-16-gloria-zhao-transaction-relay-policy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/adopting-bitcoin/2021/2021-11-16-gloria-zhao-transaction-relay-policy/</guid>
+      <description>Name: Gloria Zhao
+Topic: Transaction Relay Policy for L2 Developers
+Location: Adopting Bitcoin
+Date: November 16th 2021
+Video: https://www.youtube.com/watch?v=fbWSQvJjKFs
+Slides: https://github.com/glozow/bitcoin-notes/blob/master/Tx%20Relay%20Policy%20for%20L2%20Devs%20-%20Adopting%20Bitcoin%202021.pdf
+Intro Hi I’m Gloria, I work on Bitcoin Core at Brink. Today I am going to talk a bit about mempool policy and why you cannot always expect your transactions to propagate or your fee bumps to work. What we are doing to try to resolve stuff like that. This talk is for those of you who find the mempool a bit murky or unstable or unpredictable.</description>
+    </item>
+    
+    <item>
       <title>Graphene Set Reconciliation</title>
       <link>https://btctranscripts.com/scalingbitcoin/stanford-2017/graphene-set-reconciliation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

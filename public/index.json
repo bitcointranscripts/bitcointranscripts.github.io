@@ -125,6 +125,16 @@
 	"content": "Bitcoin scaling tradeoffs with Adam Back (adam3us) at Paralelni Polis\nInstitute of Cryptoanarchy http://www.paralelnipolis.cz/\nvideo: https://www.youtube.com/watch?v=HEZAlNBJjA0\nslides: http://www.slideshare.net/paralelnipolis/bitcoin-scaling-tradeoffs-with-adam-back\ndescription: \u0026amp;ldquo;In this talk, Adam Back overviews the Bitcoin scaling and discuses his personal view about its tradeoffs and future development.\u0026amp;rdquo;\ndate: 2016-04-05\nIntro fluff And now I would like to introduce you to a …"
 },
 {
+	"uri": "/adopting-bitcoin/",
+	"title": "Adopting Bitcoin",
+	"content": " Adopting Bitcoin 2021    "
+},
+{
+	"uri": "/adopting-bitcoin/2021/",
+	"title": "Adopting Bitcoin 2021",
+	"content": " Gloria Zhao - Transaction Relay Policy (2021-11-16)    "
+},
+{
 	"uri": "/advancing-bitcoin/",
 	"title": "Advancing Bitcoin",
 	"content": " Advancing Bitcoin 2019   Advancing Bitcoin 2020    "
@@ -1745,6 +1755,11 @@
 	"content": "Gleb Naumenko\nLondon Bitcoin Devs\nCurrent state of P2P research in Bitcoin\nVideo: https://www.youtube.com/watch?v=ZUWs00Anpaw\nhttps://twitter.com/kanzure/status/1201861687097352198\nIntroduction My name is Gleb. I’ve worked on Bitcoin stuff since 2015, building wallets and exchanges in Ukraine. Then I realized that I can do more fun stuff. I want to do more protocol research, improving Bitcoin itself, not just using it. I decided I will go to Canada to do a Masters. I started working on this …"
 },
 {
+	"uri": "/adopting-bitcoin/2021/2021-11-16-gloria-zhao-transaction-relay-policy/",
+	"title": "Gloria Zhao - Transaction Relay Policy (2021-11-16)",
+	"content": "Name: Gloria Zhao\nTopic: Transaction Relay Policy for L2 Developers\nLocation: Adopting Bitcoin\nDate: November 16th 2021\nVideo: https://www.youtube.com/watch?v=fbWSQvJjKFs\nSlides: https://github.com/glozow/bitcoin-notes/blob/master/Tx%20Relay%20Policy%20for%20L2%20Devs%20-%20Adopting%20Bitcoin%202021.pdf\nIntro Hi I’m Gloria, I work on Bitcoin Core at Brink. Today I am going to talk a bit about mempool policy and why you cannot always expect your transactions to propagate or your fee bumps to …"
+},
+{
 	"uri": "/greg-maxwell/2017-11-27-gmaxwell-advances-in-block-propagation/",
 	"title": "Gmaxwell - Advances In Block Propagation (2017-11-27)",
 	"content": "Advances in block propagation\nGreg Maxwell\n2017-11-27\nslides: https://web.archive.org/web/20190416113003/https://people.xiph.org/~greg/gmaxwell-sf-prop-2017.pdf\nvideo: https://www.youtube.com/watch?v=EHIuuKCm53o\nhttps://en.bitcoin.it/wiki/User:Gmaxwell/block_network_coding\nefficient block transfer: https://web.archive.org/web/20170912171304/https://people.xiph.org/~greg/efficient.block.xfer.txt\nlow latency block xfer: …"
@@ -1792,7 +1807,12 @@
 {
 	"uri": "/greg-maxwell/",
 	"title": "Greg Maxwell",
-	"content": " Gmaxwell - Advances In Block Propagation (2017-11-27)   Gmaxwell - Bitcoin Selection Cryptography (2015-04-29)   Gmaxwell - Confidential Transactions (2017-04-28)   Gmaxwell - Deep Dive Bitcoin Core V0.15 (2017-08-28)   Gmaxwell - Mining And Block Size Etc (2015-11-09)   Gmaxwell - Sidechains Elements (2015-06-08)   Greg Maxwell - Bitcoin Core Github (2020-10-26)   Greg Maxwell - Bitcoin Core Testing (2018-09-23)   Greg Maxwell - Checkmultisig Bug (2020-08-27)   Greg Maxwell - Hardware Wallets …"
+	"content": " Gmaxwell - Advances In Block Propagation (2017-11-27)   Gmaxwell - Bitcoin Selection Cryptography (2015-04-29)   Gmaxwell - Confidential Transactions (2017-04-28)   Gmaxwell - Deep Dive Bitcoin Core V0.15 (2017-08-28)   Gmaxwell - Mining And Block Size Etc (2015-11-09)   Gmaxwell - Sidechains Elements (2015-06-08)   Greg Maxwell - 51 percent mining attack (2019–10-04)   Greg Maxwell - Bitcoin Core Github (2020-10-26)   Greg Maxwell - Bitcoin Core Testing (2018-09-23)   Greg Maxwell - …"
+},
+{
+	"uri": "/greg-maxwell/2019-10-04-majority-miner-attack/",
+	"title": "Greg Maxwell - 51 percent mining attack (2019–10-04)",
+	"content": "Name: Greg Maxwell\nTopic: Should we be more concerned by the prospect of a 51 percent mining attack?\nLocation: Reddit\nDate: October 4th 2019\nhttps://www.reddit.com/r/Bitcoin/comments/ddddfl/comment/f2g9e7b/?utm_source=share\u0026amp;amp;utm_medium=web2x\u0026amp;amp;context=3\nShould we be more concerned by the prospect of a 51 percent mining attack? I think questions like this are ultimately the result of a fundamental lack of understanding about what Bitcoin is doing.\nThe problem Bitcoin is attempting to solve …"
 },
 {
 	"uri": "/greg-maxwell/2020-10-26-greg-maxwell-bitcoin-core-github/",
