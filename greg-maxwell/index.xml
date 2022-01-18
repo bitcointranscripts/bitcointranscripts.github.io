@@ -39,7 +39,13 @@ Gregory Maxwell DE47 BC9E 6D2D A6B0 2DC6 10B1 AC85 9362 B041 3BFA
 slides: https://people.xiph.org/~greg/blockstream.gmaxwell.elements.talk.060815.pdf
 video: https://s3-us-west-1.amazonaws.com/blkstrm/video/elements-gmaxwell.mp4
 https://github.com/ElementsProject/elements/
-Hello, I am Greg Maxwell, one of the developers of the Bitcoin system and its reference software. Since 2011, I have worked on the system facing many interesting challenges and developing many solutions to many problems, adapting and growing and maintaining Bitcoin along with a community of other technical contributors.</description></item><item><title>Greg Maxwell - Bitcoin Core Github (2020-10-26)</title><link>https://btctranscripts.com/greg-maxwell/2020-10-26-greg-maxwell-bitcoin-core-github/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/greg-maxwell/2020-10-26-greg-maxwell-bitcoin-core-github/</guid><description>Name: Greg Maxwell
+Hello, I am Greg Maxwell, one of the developers of the Bitcoin system and its reference software. Since 2011, I have worked on the system facing many interesting challenges and developing many solutions to many problems, adapting and growing and maintaining Bitcoin along with a community of other technical contributors.</description></item><item><title>Greg Maxwell - 51 percent mining attack (2019–10-04)</title><link>https://btctranscripts.com/greg-maxwell/2019-10-04-majority-miner-attack/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/greg-maxwell/2019-10-04-majority-miner-attack/</guid><description>Name: Greg Maxwell
+Topic: Should we be more concerned by the prospect of a 51 percent mining attack?
+Location: Reddit
+Date: October 4th 2019
+https://www.reddit.com/r/Bitcoin/comments/ddddfl/comment/f2g9e7b/?utm_source=share&amp;amp;utm_medium=web2x&amp;amp;context=3
+Should we be more concerned by the prospect of a 51 percent mining attack? I think questions like this are ultimately the result of a fundamental lack of understanding about what Bitcoin is doing.
+The problem Bitcoin is attempting to solve is getting everyone everywhere to agree on the same stable history of transactions.</description></item><item><title>Greg Maxwell - Bitcoin Core Github (2020-10-26)</title><link>https://btctranscripts.com/greg-maxwell/2020-10-26-greg-maxwell-bitcoin-core-github/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/greg-maxwell/2020-10-26-greg-maxwell-bitcoin-core-github/</guid><description>Name: Greg Maxwell
 Topic: Bitcoin Core and GitHub
 Location: Reddit
 Date: October 2020
