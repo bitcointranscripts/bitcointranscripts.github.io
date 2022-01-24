@@ -132,7 +132,7 @@
 {
 	"uri": "/adopting-bitcoin/2021/",
 	"title": "Adopting Bitcoin 2021",
-	"content": " Gloria Zhao - Transaction Relay Policy (2021-11-16)    "
+	"content": " Bastien Teinturier - Privacy On Lightning (2021-11-17)   Gloria Zhao - Transaction Relay Policy (2021-11-16)    "
 },
 {
 	"uri": "/advancing-bitcoin/",
@@ -453,6 +453,11 @@
 	"uri": "/cppcon/2020/2020-10-09-barnabas-bagyi-fuzzing-class-interfaces/",
 	"title": "Barnabas Bagyi - Fuzzing Class Interfaces (2020-10-09)",
 	"content": "Name: Barnabás Bágyi\nTopic: Fuzzing Class Interfaces for Generating and Running Tests with libFuzzer\nLocation: CppCon 2020\nDate: October 9th 2020\nVideo: https://www.youtube.com/watch?v=TtPXYPJ5_eE\nSlides: https://github.com/CppCon/CppCon2020/blob/main/Presentations/fuzzing_class_interfaces_for_generating_and_running_tests_with_libfuzzer/fuzzing_class_interfaces_for_generating_and_running_tests_with_libfuzzer__barnab%C3%A1s_b%C3%A1gyi__cppcon_2020.pdf\nLibFuzzer: …"
+},
+{
+	"uri": "/adopting-bitcoin/2021/2021-11-17-bastien-teinturier-privacy-on-lightning/",
+	"title": "Bastien Teinturier - Privacy On Lightning (2021-11-17)",
+	"content": "Name: Bastien Teinturier\nTopic: Privacy On Lightning\nVideo: https://www.youtube.com/watch?v=gOiKlx9a1xg\nSlides: https://docs.google.com/presentation/d/1llk70vI2Mo5uQ7vnpfbl1qlr0qe0NLpySIelChIKhH4/edit\nIntroduction Buenos Dias San Salvador, I\u0026amp;rsquo;m Bastien. Hopefully my slides are going to come up. Oh yay, perfect. So I\u0026amp;rsquo;m working on the Lightning Protocol Specification and one of its main implementation at Acinq.\nI\u0026amp;rsquo;m here to talk to you about privacy. This is a big topic. It\u0026amp;rsquo;s …"
 },
 {
 	"uri": "/lightning-conference/2019/2019-10-20-bastien-teinturier-trampoline-routing/",

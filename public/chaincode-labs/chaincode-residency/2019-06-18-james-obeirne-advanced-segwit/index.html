@@ -90,6 +90,15 @@ James O&rsquo;Beirne: To sort of vamp off of Jonas&rsquo;s preamble, I&rsquo;m n
                  
     
 
+
+    
+      
+
+        
+                
+                 
+    
+
         </ul>
     </li>
 
@@ -8012,7 +8021,7 @@ James O&rsquo;Beirne: To sort of vamp off of Jonas&rsquo;s preamble, I&rsquo;m n
 <p>Audience Member: Or just spend it to yourself. You just make a script and spend it to yourself.</p>
 <p>Elichai: That&rsquo;s harder than making them find the collision. You need to find the specific collision.</p>
 <p>Audience Member: You could have some random data that you&rsquo;re rotating.</p>
-<p>Felix: You would probably say here that, &ldquo;let&rsquo;s generate a 2-of-2 multi-sig&rdquo;, and then you&rsquo;re the other person thinks that it&rsquo;s a 2-of-2 multisig, but you have the same P2SH which is a 1-of-1 multi-sig.</p>
+<p>Felix: You would probably say here that, &ldquo;let&rsquo;s generate a 2-of-2 multi-sig&rdquo;, and then the other person thinks that it&rsquo;s a 2-of-2 multisig, but you have the same P2SH which is a 1-of-1 multi-sig.</p>
 <p>John Newbery: Yeah, that&rsquo;s the attack which lowers it from 160 bits to 80 bits where you control the digest and it would lower SHA-256 to 128.</p>
 <p>Elichai: But that&rsquo;s where it lowers it by two, but that&rsquo;s for a basic collision, not for a specific hash. From any hash of all of the range one of them to have a collision that would be a birthday attack. And not to take a specific hash rate that it&rsquo;s not a birthday attack as far as I understand.</p>
 <p>Felix: It&rsquo;s easier if you try to don&rsquo;t attack a specific…</p>
@@ -8111,7 +8120,7 @@ Hugo?</p>
 <p>&hellip;</p>
 <p>James O&rsquo;B: Just by way of general advice in your leagues of free time, you should definitely get acquainted with the different message types and how they work in the protocol. I think the <a href="https://developer.bitcoin.org/devguide/p2p_network.html">bitcoin.org developer documentation</a> has some pretty nice walkthroughs of how these message flows go. But that&rsquo;s really helpful to have a good handle on, and it&rsquo;s a really great entry point into the Core codebase itself because if you understand those message flows, you can then read through net processing and subsequently into validation and then follow where the messages go, and that&rsquo;s a great way of exploring the codebase. Anyway, that&rsquo;s kind of off track.</p>
 <p>Basically, we just introduced a few new INV types to use with GETDATA, where you&rsquo;re basically signaling, &ldquo;Hey, I want a witness transaction. Yeah, I want a witness block in the new SegWit format.&rdquo;</p>
-<p>Another thing that happened is we introduced this service bit, which is basically a mechanism for saying to your peers what parts of bitcoin you support. Other examples of service bits are like whether or not you&rsquo;re a pruned node, whether you can offer some blocks. One interesting thing to do is if you want to go through all the peer-to-peer implications of SegWit yourself, you just grab for this NODE_WITNESS, which is the constant associated with the SegWit service bit. We would do various things on the basis of whether our peers signal this the service bit. For example, in the initial code, we would only create outbound connections to nodes that signaled node witness. Unless we tried 40 different connections, failed all of them, and then we fail back to a non-witness node. This is obviously just because you don&rsquo;t want to partition yourself off of the network if you can&rsquo;t find any other witness nodes.</p>
+<p>Another thing that happened is we introduced this service bit, which is basically a mechanism for saying to your peers what parts of bitcoin you support. Other examples of service bits are like whether or not you&rsquo;re a pruned node, whether you can offer some blocks. One interesting thing to do is if you want to go through all the peer-to-peer implications of SegWit yourself, you just grab for this NODE_WITNESS, which is the constant associated with the SegWit service bit. We would do various things on the basis of whether our peers signal this the service bit. For example, <a href="https://github.com/bitcoin/bitcoin/pull/8149/commits/b8a97498df1e83f8dcc49bc3fa4344f9e9799242#diff-00021eed586a482abdb09d6cdada1d90115abe988a91421851960e26658bed02R1679-R1682">in the initial code</a>, we would only create outbound connections to nodes that signaled node witness. Unless we tried 40 different connections, failed all of them, and then we fail back to a non-witness node. This is obviously just because you don&rsquo;t want to partition yourself off of the network if you can&rsquo;t find any other witness nodes.</p>
 <p>Nowadays, the code is a little bit more nuanced because we introduced this idea of feeler connections, which Ethan Heilman may have talked about when he was discussing the peer-to-peer eclipse attack resistant stuff. The idea of feeler connections is, we have some limited number of connections that we just kind of make free indiscriminately. For any non-feeler connection, we now call this thing called &ldquo;has all desirable service flags,&rdquo; which is basically just like can they serve me blocks, and are they a witness node? So we actually enforce that for our outbound connections as if they&rsquo;re all witnesses.</p>
 <p>You can take a look back at Matt&rsquo;s commit where he actually changed this, and Matt basically says, &ldquo;it&rsquo;s far enough past deployment time that there are a ton of witness nodes on the network so we can kind of safely transition this over to being more stringent about who we connect with.&rdquo; Funnily enough, it looks like he made that change while he was refactoring, so welcome to classic Bitcoin. [Laughter]</p>
 <p>Audience Member: Service bits are not reusable, right? Once you designate a bit as something, you can never reuse again, right?</p>

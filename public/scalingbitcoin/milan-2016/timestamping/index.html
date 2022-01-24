@@ -89,6 +89,15 @@ Hi everybody. I attended Montreal and Hong Kong. It&rsquo;s a pleasurable to be 
                  
     
 
+
+    
+      
+
+        
+                
+                 
+    
+
         </ul>
     </li>
 
@@ -7990,7 +7999,7 @@ Hi everybody. I attended Montreal and Hong Kong. It&rsquo;s a pleasurable to be 
 <h1 id="chainpoint">Chainpoint</h1>
 <p>Chainpoint describes a merkle tree where the chainpoint proof is in JSON. It contains information to go from the data to the hash of the transaction timestamped that contains the timestamping information. Basically, it contains data that is in the red circle. We can see that this operation is supported by receipt and tools provided to verify receipts, and supported anchor ties. We have bitcoin and ethereum. A single receipt and a single type of hash&hellip; so this&hellip;. so if we, we can put together two receipts because we are doing JSON-LD, to create something we have seen before. .. for the same data. The target hash is the same. So we use this receipt, if the initial packet is in common between the two receipts, then we have some redundancy in the proof, but it&rsquo;s just initial compact. But in some cases, like we have seen before, we have the hash in the bitcoin blockchain merkle tree, is different from the timestamp merkle tree, it&rsquo;s difficult to represent using this system.</p>
 <p>For the comparison of the size of proofs for opentimestamp versus chainpoint using json, as we can see the json is not that big of a deal. We can use msgpack for json serialization format. Testing compression is not very interesting. We can have gzip with better results, and most of the time msgpack + gzip is slightly better. Apart from size comparison, the point of the binary format of opentimestamps was to give a format with an atomic interpretation that you can either parse the data or you could do nothing with it. And that&rsquo;s exactly what we want.</p>
-<p><img src="https://xkcd.com/927/" /></p>
+<p><img src="https://imgs.xkcd.com/comics/standards_2x.png" /></p>
 
 
     
