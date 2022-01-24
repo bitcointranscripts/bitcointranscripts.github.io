@@ -31,6 +31,20 @@ Introduction Hi. I am Alessandro Chiesa, a faculty member at UC Berkeley. I work
     </item>
     
     <item>
+      <title>Bastien Teinturier - Privacy On Lightning (2021-11-17)</title>
+      <link>https://btctranscripts.com/adopting-bitcoin/2021/2021-11-17-bastien-teinturier-privacy-on-lightning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/adopting-bitcoin/2021/2021-11-17-bastien-teinturier-privacy-on-lightning/</guid>
+      <description>Name: Bastien Teinturier
+Topic: Privacy On Lightning
+Video: https://www.youtube.com/watch?v=gOiKlx9a1xg
+Slides: https://docs.google.com/presentation/d/1llk70vI2Mo5uQ7vnpfbl1qlr0qe0NLpySIelChIKhH4/edit
+Introduction Buenos Dias San Salvador, I&amp;rsquo;m Bastien. Hopefully my slides are going to come up. Oh yay, perfect. So I&amp;rsquo;m working on the Lightning Protocol Specification and one of its main implementation at Acinq.
+I&amp;rsquo;m here to talk to you about privacy. This is a big topic. It&amp;rsquo;s not a black and white thing. There are various degrees of gray when you talk about what your threat model is, who you want to protect against.</description>
+    </item>
+    
+    <item>
       <title>Bip Securethebag</title>
       <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/bip-securethebag/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
