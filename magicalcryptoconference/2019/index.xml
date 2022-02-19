@@ -58,7 +58,12 @@ Hyperloop To zoom out on what problem we&amp;rsquo;re working on here, we had th
 Lisa Neigut
 Video: https://youtu.be/A4i5cEI1jnc
 Introduction Hello. I work at Blockstream on c-lightning. I am here today to talk to you about a taxonomy of nodes about who&amp;rsquo;s who on the lightning network. I wnat ot go through the tools that have been built, looking through the perspectives of what different nodes are trying to accomplish.
-LN map There&amp;rsquo;s a bunch of nodes on the network. Let&amp;rsquo;s look at some stats.</description></item><item><title>Why Block Sizes Should Not Be Too Big</title><link>https://btctranscripts.com/magicalcryptoconference/2019/why-block-sizes-should-not-be-too-big/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/magicalcryptoconference/2019/why-block-sizes-should-not-be-too-big/</guid><description>Briefly, why block sizes shouldn&amp;rsquo;t be too big
+LN map There&amp;rsquo;s a bunch of nodes on the network. Let&amp;rsquo;s look at some stats.</description></item><item><title>The State of Bitcoin Mining</title><link>https://btctranscripts.com/magicalcryptoconference/2019/the-state-of-bitcoin-mining/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/magicalcryptoconference/2019/the-state-of-bitcoin-mining/</guid><description>Name: Matt Corallo
+Topic: The State of Bitcoin Mining: No Good, The Bad, and The Ugly
+Matt Corallo
+Date: May 12th 2019
+Video: https://www.youtube.com/watch?v=k_z-FBAil6k
+So I&amp;rsquo;m going to talk a little bit about kind of the state of mining and the set of protocols that are used for mining today, a tiny bit about the history. And then I&amp;rsquo;m going to talk very briefly about some of the solutions that are being proposed, whether it&amp;rsquo;s BetterHash, whether it&amp;rsquo;s Braidpool design, rebooting P2Pool, and some of the other stuff, only kind of briefly at the end.</description></item><item><title>Why Block Sizes Should Not Be Too Big</title><link>https://btctranscripts.com/magicalcryptoconference/2019/why-block-sizes-should-not-be-too-big/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/magicalcryptoconference/2019/why-block-sizes-should-not-be-too-big/</guid><description>Briefly, why block sizes shouldn&amp;rsquo;t be too big
 Luke Dashjr
 slides: https://luke.dashjr.org/tmp/code/block-sizes-mcc.pdf
 Video: https://youtu.be/JJF5Gnro1GU
