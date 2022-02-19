@@ -368,6 +368,36 @@ https://github.com/ElementsProject/lightning/pull/4985</description>
     </item>
     
     <item>
+      <title>c-lightning developer call (2022-01-10)</title>
+      <link>https://btctranscripts.com/c-lightning/2022-01-10-developer-call/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/c-lightning/2022-01-10-developer-call/</guid>
+      <description>Name: c-lightning developer call
+Topic: Various topics
+Location: Jitsi online
+Date: January 10th 2022
+Video: No video posted online
+The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
+Accounting plugin I have been working on the accounting plugin for the last few months.</description>
+    </item>
+    
+    <item>
+      <title>c-lightning developer call (2022-01-24)</title>
+      <link>https://btctranscripts.com/c-lightning/2022-01-24-developer-call/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/c-lightning/2022-01-24-developer-call/</guid>
+      <description>Name: c-lightning developer call
+Topic: Various topics
+Location: Jitsi online
+Date: January 24th 2022
+Video: No video posted online
+The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
+Individual updates Still working on the cln stuff.</description>
+    </item>
+    
+    <item>
       <title>Carla Kirk-Cohen - Routing Problems and Solutions</title>
       <link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/2019-09-09-carla-kirk-cohen-routing-problems-and-solutions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1060,6 +1090,37 @@ Agenda: https://github.com/lightning/bolts/issues/949
 Introduction When people put comments and they are fixed they should mark them as resolved so that we don’t waste time thinking there are lots of outstanding comments and we have to read them again. I think that helps a lot.
 I can spend some time doing that.
 There are a lot of comments, I’m starting at the bottom to see the things that have maybe not been addressed yet.</description>
+    </item>
+    
+    <item>
+      <title>Lightning specification call (2022-01-31)</title>
+      <link>https://btctranscripts.com/lightning-specification/2022-01-31-specification-call/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/lightning-specification/2022-01-31-specification-call/</guid>
+      <description>Name: Lightning specification call
+Topic: Agenda below
+Location: Jitsi
+Date: January 31st 2022
+Video: No video posted online
+Agenda: https://github.com/lightning/bolts/issues/955
+Bitcoin Core funding a transaction without looking at ancestors I have something that I wanted to ask of our implementers who implemented a wallet. It is tangentially related to Lightning especially for anchor outputs. I realized recently that when you ask Bitcoin Core to fund a transaction at a given fee rate it is not going to look at the ancestors and it is not going to take the ancestor’s fee rate into account.</description>
+    </item>
+    
+    <item>
+      <title>Lightning specification call (2022-02-14)</title>
+      <link>https://btctranscripts.com/lightning-specification/2022-02-14-specification-call/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/lightning-specification/2022-02-14-specification-call/</guid>
+      <description>Name: Lightning specification call
+Topic: Agenda below
+Location: Jitsi
+Date: February 14th 2022
+Video: No video posted online
+Agenda: https://github.com/lightning/bolts/issues/957
+Organizing a Lightning Core Dev meetup I was talking about organizing a face to face Lightning Core Dev meetup. If I understand correctly there has only been one formal one and that was in 2019 in Australia. There has been two?
+Milan, the kickoff. There has only ever been two.</description>
     </item>
     
     <item>

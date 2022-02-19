@@ -538,6 +538,10 @@
   </url><url>
     <loc>https://btctranscripts.com/c-lightning/2021-12-13-developer-call/</loc>
   </url><url>
+    <loc>https://btctranscripts.com/c-lightning/2022-01-10-developer-call/</loc>
+  </url><url>
+    <loc>https://btctranscripts.com/c-lightning/2022-01-24-developer-call/</loc>
+  </url><url>
     <loc>https://btctranscripts.com/bitcoin-developers-miners-meeting-2016/cali2016/</loc>
   </url><url>
     <loc>https://btctranscripts.com/chaincode-labs/chaincode-podcast/2020-11-30-carl-dong-reproducible-builds/</loc>
@@ -1320,6 +1324,10 @@
   </url><url>
     <loc>https://btctranscripts.com/lightning-specification/2022-01-03-specification-call/</loc>
   </url><url>
+    <loc>https://btctranscripts.com/lightning-specification/2022-01-31-specification-call/</loc>
+  </url><url>
+    <loc>https://btctranscripts.com/lightning-specification/2022-02-14-specification-call/</loc>
+  </url><url>
     <loc>https://btctranscripts.com/building-on-bitcoin/2018/lightning-wallet-design/</loc>
   </url><url>
     <loc>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-christian-decker-lightning-bitcoin/</loc>
@@ -1425,6 +1433,8 @@
     <loc>https://btctranscripts.com/tags/miners/</loc>
   </url><url>
     <loc>https://btctranscripts.com/tags/mining/</loc>
+  </url><url>
+    <loc>https://btctranscripts.com/categories/mining/</loc>
   </url><url>
     <loc>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/mining-firmware-security/</loc>
   </url><url>
@@ -2170,6 +2180,8 @@
     <loc>https://btctranscripts.com/baltic-honeybadger/2018/the-future-of-lightning/</loc>
   </url><url>
     <loc>https://btctranscripts.com/baltic-honeybadger/2018/the-reserve-currency-fallacy/</loc>
+  </url><url>
+    <loc>https://btctranscripts.com/magicalcryptoconference/2019/the-state-of-bitcoin-mining/</loc>
   </url><url>
     <loc>https://btctranscripts.com/bit-block-boom/2019/there-can-only-be-one/</loc>
   </url><url>
