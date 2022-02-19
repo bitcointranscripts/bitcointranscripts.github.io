@@ -912,7 +912,7 @@
 {
 	"uri": "/c-lightning/",
 	"title": "c-lightning",
-	"content": " c-lightning developer call (2021-08-09)   c-lightning developer call (2021-08-23)   c-lightning developer call (2021-09-06)   c-lightning developer call (2021-09-20)   c-lightning developer call (2021-10-04)   c-lightning developer call (2021-10-18)   c-lightning developer call (2021-11-01)   c-lightning developer call (2021-11-15)   c-lightning developer call (2021-11-29)   c-lightning developer call (2021-12-13)    "
+	"content": " c-lightning developer call (2021-08-09)   c-lightning developer call (2021-08-23)   c-lightning developer call (2021-09-06)   c-lightning developer call (2021-09-20)   c-lightning developer call (2021-10-04)   c-lightning developer call (2021-10-18)   c-lightning developer call (2021-11-01)   c-lightning developer call (2021-11-15)   c-lightning developer call (2021-11-29)   c-lightning developer call (2021-12-13)   c-lightning developer call (2022-01-10)   c-lightning developer call …"
 },
 {
 	"uri": "/c-lightning/2021-08-09-developer-call/",
@@ -963,6 +963,16 @@
 	"uri": "/c-lightning/2021-12-13-developer-call/",
 	"title": "c-lightning developer call (2021-12-13)",
 	"content": "Name: c-lightning developer call\nTopic: Various topics\nLocation: Jitsi online\nDate: December 13th 2021\nVideo: No video posted online\nThe conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.\nEnabling multi channel support https://github.com/ElementsProject/lightning/pull/4984 …"
+},
+{
+	"uri": "/c-lightning/2022-01-10-developer-call/",
+	"title": "c-lightning developer call (2022-01-10)",
+	"content": "Name: c-lightning developer call\nTopic: Various topics\nLocation: Jitsi online\nDate: January 10th 2022\nVideo: No video posted online\nThe conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.\nAccounting plugin I have been working on the accounting plugin for the last few months. We …"
+},
+{
+	"uri": "/c-lightning/2022-01-24-developer-call/",
+	"title": "c-lightning developer call (2022-01-24)",
+	"content": "Name: c-lightning developer call\nTopic: Various topics\nLocation: Jitsi online\nDate: January 24th 2022\nVideo: No video posted online\nThe conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.\nIndividual updates Still working on the cln stuff. cln is basically the Rust libraries …"
 },
 {
 	"uri": "/bitcoin-developers-miners-meeting-2016/cali2016/",
@@ -2552,7 +2562,7 @@
 {
 	"uri": "/lightning-specification/",
 	"title": "Lightning Specification",
-	"content": " Lightning specification call (2021-11-22)   Lightning specification call (2021-12-06)   Lightning specification call (2022-01-03)    "
+	"content": " Lightning specification call (2021-11-22)   Lightning specification call (2021-12-06)   Lightning specification call (2022-01-03)   Lightning specification call (2022-01-31)   Lightning specification call (2022-02-14)    "
 },
 {
 	"uri": "/lightning-specification/2021-11-22-specification-call/",
@@ -2568,6 +2578,16 @@
 	"uri": "/lightning-specification/2022-01-03-specification-call/",
 	"title": "Lightning specification call (2022-01-03)",
 	"content": "Name: Lightning specification call\nTopic: Agenda below\nLocation: Jitsi\nDate: January 3rd 2022\nVideo: No video posted online\nAgenda: https://github.com/lightning/bolts/issues/949\nIntroduction When people put comments and they are fixed they should mark them as resolved so that we don’t waste time thinking there are lots of outstanding comments and we have to read them again. I think that helps a lot.\nI can spend some time doing that.\nThere are a lot of comments, I’m starting at the bottom to see …"
+},
+{
+	"uri": "/lightning-specification/2022-01-31-specification-call/",
+	"title": "Lightning specification call (2022-01-31)",
+	"content": "Name: Lightning specification call\nTopic: Agenda below\nLocation: Jitsi\nDate: January 31st 2022\nVideo: No video posted online\nAgenda: https://github.com/lightning/bolts/issues/955\nBitcoin Core funding a transaction without looking at ancestors I have something that I wanted to ask of our implementers who implemented a wallet. It is tangentially related to Lightning especially for anchor outputs. I realized recently that when you ask Bitcoin Core to fund a transaction at a given fee rate it is not …"
+},
+{
+	"uri": "/lightning-specification/2022-02-14-specification-call/",
+	"title": "Lightning specification call (2022-02-14)",
+	"content": "Name: Lightning specification call\nTopic: Agenda below\nLocation: Jitsi\nDate: February 14th 2022\nVideo: No video posted online\nAgenda: https://github.com/lightning/bolts/issues/957\nOrganizing a Lightning Core Dev meetup I was talking about organizing a face to face Lightning Core Dev meetup. If I understand correctly there has only been one formal one and that was in 2019 in Australia. There has been two?\nMilan, the kickoff. There has only ever been two.\nThat was probably before my time in …"
 },
 {
 	"uri": "/building-on-bitcoin/2018/lightning-wallet-design/",
@@ -2647,7 +2667,7 @@
 {
 	"uri": "/magicalcryptoconference/2019/",
 	"title": "Magicalcryptoconference 2019",
-	"content": " Bitcoin Protocol Development Panel   Bitcoin Satellite Network   Bitcoin Without Internet   Crypto In Cryptocurrency   Cryptographic Hocus Pocus   Fork Dynamics   Future Of Privacy Coins   Htc   Intro   Lightning Payments   Ln Present And Future Panel   Mcf Episode   State Of Lightning Network   Submarine Swaps   Taxonomy Of Ln Nodes   Why Block Sizes Should Not Be Too Big    "
+	"content": " Bitcoin Protocol Development Panel   Bitcoin Satellite Network   Bitcoin Without Internet   Crypto In Cryptocurrency   Cryptographic Hocus Pocus   Fork Dynamics   Future Of Privacy Coins   Htc   Intro   Lightning Payments   Ln Present And Future Panel   Mcf Episode   State Of Lightning Network   Submarine Swaps   Taxonomy Of Ln Nodes   The State of Bitcoin Mining   Why Block Sizes Should Not Be Too Big    "
 },
 {
 	"uri": "/bitcoin-core-dev-tech/2019-06-06-maintainers/",
@@ -2806,6 +2826,11 @@
 },
 {
 	"uri": "/tags/mining/",
+	"title": "mining",
+	"content": ""
+},
+{
+	"uri": "/categories/mining/",
 	"title": "mining",
 	"content": ""
 },
@@ -4258,6 +4283,11 @@
 	"uri": "/baltic-honeybadger/2018/the-reserve-currency-fallacy/",
 	"title": "The Reserve Currency Fallacy",
 	"content": "The reserve currency fallacy\nEric Voskuil (evoskuil)\nhttps://twitter.com/kanzure/status/1043385469134925824\nThank you. Developers, developers, developers, developers. Alright, it wasn\u0026amp;rsquo;t that bad. There\u0026amp;rsquo;s a lot of content to explain this concept of the reserve currency fallacy. It\u0026amp;rsquo;s hard to get through it in the amount of available time. I\u0026amp;rsquo;ll be available at the party tonight. I want to go through four slides and talk about the history of this question of scaling, and then …"
+},
+{
+	"uri": "/magicalcryptoconference/2019/the-state-of-bitcoin-mining/",
+	"title": "The State of Bitcoin Mining",
+	"content": "Name: Matt Corallo\nTopic: The State of Bitcoin Mining: No Good, The Bad, and The Ugly\nMatt Corallo\nDate: May 12th 2019\nVideo: https://www.youtube.com/watch?v=k_z-FBAil6k\nSo I\u0026amp;rsquo;m going to talk a little bit about kind of the state of mining and the set of protocols that are used for mining today, a tiny bit about the history. And then I\u0026amp;rsquo;m going to talk very briefly about some of the solutions that are being proposed, whether it\u0026amp;rsquo;s BetterHash, whether it\u0026amp;rsquo;s Braidpool design, …"
 },
 {
 	"uri": "/bit-block-boom/2019/there-can-only-be-one/",
