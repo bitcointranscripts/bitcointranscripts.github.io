@@ -726,6 +726,16 @@
     <loc>https://btctranscripts.com/magicalcryptoconference/2019/cryptographic-hocus-pocus/</loc>
   </url><url>
     <loc>https://btctranscripts.com/tags/cryptography/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/tags/cryptography/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/tags/cryptography/"
+                />
   </url><url>
     <loc>https://btctranscripts.com/grincon/2019/cryptography-audit/</loc>
   </url><url>
@@ -1453,6 +1463,16 @@
                 />
   </url><url>
     <loc>https://btctranscripts.com/misc/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/misc/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/misc/"
+                />
   </url><url>
     <loc>https://btctranscripts.com/mit-bitcoin-expo/</loc>
   </url><url>
@@ -1841,6 +1861,11 @@
     <loc>https://btctranscripts.com/breaking-bitcoin/2019/secure-protocols-bip-taproot/</loc>
   </url><url>
     <loc>https://btctranscripts.com/tags/security/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/tags/security/"
+                />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"

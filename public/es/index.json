@@ -1,5 +1,10 @@
 [
 {
+	"uri": "/es/misc/2019-08-04-incomplete_history/",
+	"title": "0xB10C - The Incomplete History of Bitcoin Development",
+	"content": "Autor: 0xB10C Texto original: https://b10c.me/blog/004-the-incomplete-history-of-bitcoin-development/\nLa historia incompleta del desarrollo de Bitcoin domingo, 4 de agosto de 2019\nPara comprender plenamente la justificación del estado actual del desarrollo de Bitcoin, el conocimiento de los eventos históricos es esencial. Esta publicación de blog destaca eventos históricos seleccionados, versiones de software y correcciones de errores antes y después de que Satoshi abandonara el proyecto. …"
+},
+{
 	"uri": "/es/advancing-bitcoin/",
 	"title": "Advancing Bitcoin",
 	"content": " Advancing Bitcoin 2019   Advancing Bitcoin 2020    "
@@ -65,6 +70,11 @@
 	"content": "Nombre: Antoine Riard\nTema: A Schnorr-Taproot’ed Lightning\nUbicación: El avance de Bitcoin\nFecha: 6 de febrero de 2020\nVideo (acceso de pago): https://www.advancingbitcoin.com/video/a-schnorr-taprooted-lightning,11/\nDiapositivas: https://www.dropbox.com/s/9vs54e9bqf317u0/Schnorr-Taproot%27ed-LN.pdf\nIntroducción Hoy Schnorr y Taproot para Lightning, es un tema realmente apasionante.\nArquitectura Lightning La arquitectura Lightning para aquellos que no están familiarizados con ella. Usted tiene el …"
 },
 {
+	"uri": "/es/misc/2017-08-29-bitcoin-academic-pedigree/",
+	"title": "Arvind Narayanan and Jeremy Clark - Bitcoin's Academic Pedigree (2017-08-29)",
+	"content": "Autores: Arvind Narayanan and Jeremy Clark Texto original: https://queue.acm.org/detail.cfm?id=3136559\nPedigrí académico de Bitcoin El concepto de criptomonedas se basa en ideas olvidadas en la literatura de investigación. Arvind Narayanan y Jeremy Clark\nSi has leído sobre bitcoin en la prensa y tienes cierta familiaridad con la investigación académica en el campo de la criptografía, podrías tener razonablemente la siguiente impresión: La investigación de varias décadas sobre el efectivo …"
+},
+{
 	"uri": "/es/austin-bitcoin-developers/",
 	"title": "Austin Bitcoin Developers",
 	"content": " Drivechain Paul Sztorc (2019-05-27)   Hardware Wallets (2019-06-29)   Seminario Socrático 2 (2019-08-22)   Seminario Socrático 3 (2019-10-14)   Seminario Socrático 4 (2019-11-19)   Seminario Socrático 5 (2020-01-21)   Seminario Socrático 6 (2020-02-24)    "
@@ -115,6 +125,11 @@
 	"content": ""
 },
 {
+	"uri": "/es/tags/cryptography/",
+	"title": "cryptography",
+	"content": ""
+},
+{
 	"uri": "/es/austin-bitcoin-developers/2019-05-27-drivechain-paul-sztorc/",
 	"title": "Drivechain Paul Sztorc (2019-05-27)",
 	"content": "2019-05-27\nPaul Sztorc (Niveles)\nDrivechain: Una capa de interoperabilidad-2, descrita en términos de la red lightning - algo que ya entiendes\nhttps://twitter.com/kanzure/status/1133202672570519552\nvideo: https://www.youtube.com/watch?v=BH-qZhEZSrg\nSobre mí Bien, aquí hay algunas cosas sobre mí. He sido un bitcoiner desde 2012. He publicado investigaciones sobre bitcoin en el blog truthcoin.info. He presentado en Scaling Bitcoin 1, 2, 3, 4, tabconf, y Building on Bitcoin. Mi formación es en …"
@@ -140,9 +155,24 @@
 	"content": "2019-06-29\nStepan Snigirev\nlivestream: https://www.youtube.com/watch?v=rK0jUeHeDf0\nhttps://twitter.com/kanzure/status/1145019634547978240\nVer también:\n Extracción de semillas de hardware wallets El futuro de las hardware wallets coredev.tech 2019 debate de hardware wallets  Antecedentes Hace algo más de un año, pasé por la clase de Jimmy Song de Programación de Blockchain. Ahí fue donde conocí a M, donde él era el asistente de enseñanza. Básicamente, se escribe una biblioteca de bitcoin en …"
 },
 {
+	"uri": "/es/tags/history/",
+	"title": "history",
+	"content": ""
+},
+{
 	"uri": "/es/tags/investigaci%C3%B3n/",
 	"title": "investigación",
 	"content": ""
+},
+{
+	"uri": "/es/misc/2016-11-13-lopp-bitcoin-security-model/",
+	"title": "Jameson Lopp - Bitcoin's Security Model - A Deep Dive (2016-11-13)",
+	"content": "Autores: Jameson Lopp Texto original: https://www.coindesk.com/markets/2016/11/13/bitcoins-security-model-a-deep-dive/\nEl modelo de seguridad de Bitcoin: una profunda inmersión CoinDesk echa un vistazo bajo el capó para entender qué funciones de seguridad ofrecen y qué no ofrecen bitcoin. Cuando se discuten los mecanismos de consenso para diferentes criptomonedas, un tema que a menudo causa argumentos es la falta de comprensión (y definición) del modelo de seguridad que proporcionan para los …"
+},
+{
+	"uri": "/es/chaincode-labs/chaincode-residency/2019-06-17-newbery-security-models/",
+	"title": "John Newbery Security Models (2019-06-17)",
+	"content": "Texto original: https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-17-john-newbery-security-models/\nTranscripción de: Caralie Chrisco\nNombre: John Newbery\nTema: Security Models\nUbicación: Residencia de Chaincode Labs 2019\nVídeo: https://youtu.be/6gGcS4N5Rg4\nDiapositivas: https://residency.chaincode.com/presentations/bitcoin/security_models.pdf\nJohn Newbery: Muy bien, modelos de seguridad. Esto va a ser como un recorrido rápido de varias cosas, vista de muy alto nivel. Empezaré …"
 },
 {
 	"uri": "/es/tags/lightning/",
@@ -160,6 +190,11 @@
 	"content": ""
 },
 {
+	"uri": "/es/misc/",
+	"title": "Misc",
+	"content": " 0xB10C - The Incomplete History of Bitcoin Development   Arvind Narayanan and Jeremy Clark - Bitcoin\u0026amp;#39;s Academic Pedigree (2017-08-29)   Jameson Lopp - Bitcoin\u0026amp;#39;s Security Model - A Deep Dive (2016-11-13)   Ray Dillinger - If I\u0026amp;#39;d Known What We Were Starting (2017-09-20)    "
+},
+{
 	"uri": "/es/tags/multisig/",
 	"title": "multisig",
 	"content": ""
@@ -170,9 +205,14 @@
 	"content": ""
 },
 {
+	"uri": "/es/misc/2017-09-20-ray-dillinger-if-id-known/",
+	"title": "Ray Dillinger -  If I'd Known What We Were Starting (2017-09-20)",
+	"content": "Autor: Ray Dillinger Texto original: https://www.linkedin.com/pulse/id-known-what-we-were-starting-ray-dillinger/\nSi hubiera sabido lo que estábamos empezando En noviembre de 2008, realicé una revisión de código y una auditoría de seguridad para la parte de la blockchain del código fuente de Bitcoin. El fallecido Hal Finney revisó el código y auditó el lenguaje de scripting, y ambos analizamos el código de contabilidad. Satoshi Nakamoto, arquitecto seudónimo y autor del código, alternó entre …"
+},
+{
 	"uri": "/es/chaincode-labs/chaincode-residency/",
 	"title": "Residencia de Chaincode",
-	"content": " Christian Decker - Eltoo (2019-06-25)    "
+	"content": " Christian Decker - Eltoo (2019-06-25)   John Newbery Security Models (2019-06-17)    "
 },
 {
 	"uri": "/es/categories/residency/",
@@ -187,6 +227,11 @@
 {
 	"uri": "/es/tags/schnorr/",
 	"title": "schnorr",
+	"content": ""
+},
+{
+	"uri": "/es/tags/security/",
+	"title": "security",
 	"content": ""
 },
 {

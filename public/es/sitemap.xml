@@ -2,6 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://btctranscripts.com/es/misc/2019-08-04-incomplete_history/</loc>
+  </url><url>
     <loc>https://btctranscripts.com/es/advancing-bitcoin/</loc>
     <xhtml:link
                 rel="alternate"
@@ -158,6 +160,8 @@
                 href="https://btctranscripts.com/es/advancing-bitcoin/2020/2020-02-06-antoine-riard-taproot-lightning/"
                 />
   </url><url>
+    <loc>https://btctranscripts.com/es/misc/2017-08-29-bitcoin-academic-pedigree/</loc>
+  </url><url>
     <loc>https://btctranscripts.com/es/austin-bitcoin-developers/</loc>
     <xhtml:link
                 rel="alternate"
@@ -233,6 +237,18 @@
   </url><url>
     <loc>https://btctranscripts.com/es/tags/consenso/</loc>
   </url><url>
+    <loc>https://btctranscripts.com/es/tags/cryptography/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/tags/cryptography/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/tags/cryptography/"
+                />
+  </url><url>
     <loc>https://btctranscripts.com/es/austin-bitcoin-developers/2019-05-27-drivechain-paul-sztorc/</loc>
     <xhtml:link
                 rel="alternate"
@@ -293,7 +309,13 @@
                 href="https://btctranscripts.com/es/austin-bitcoin-developers/2019-06-29-hardware-wallets/"
                 />
   </url><url>
+    <loc>https://btctranscripts.com/es/tags/history/</loc>
+  </url><url>
     <loc>https://btctranscripts.com/es/tags/investigaci%C3%B3n/</loc>
+  </url><url>
+    <loc>https://btctranscripts.com/es/misc/2016-11-13-lopp-bitcoin-security-model/</loc>
+  </url><url>
+    <loc>https://btctranscripts.com/es/chaincode-labs/chaincode-residency/2019-06-17-newbery-security-models/</loc>
   </url><url>
     <loc>https://btctranscripts.com/es/tags/lightning/</loc>
     <xhtml:link
@@ -336,6 +358,18 @@
                 href="https://btctranscripts.com/es/tags/miniscript/"
                 />
   </url><url>
+    <loc>https://btctranscripts.com/es/misc/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/misc/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/misc/"
+                />
+  </url><url>
     <loc>https://btctranscripts.com/es/tags/multisig/</loc>
     <xhtml:link
                 rel="alternate"
@@ -359,6 +393,8 @@
                 hreflang="es"
                 href="https://btctranscripts.com/es/categories/podcast/"
                 />
+  </url><url>
+    <loc>https://btctranscripts.com/es/misc/2017-09-20-ray-dillinger-if-id-known/</loc>
   </url><url>
     <loc>https://btctranscripts.com/es/chaincode-labs/chaincode-residency/</loc>
     <xhtml:link
@@ -396,6 +432,23 @@
                 rel="alternate"
                 hreflang="es"
                 href="https://btctranscripts.com/es/tags/schnorr/"
+                />
+  </url><url>
+    <loc>https://btctranscripts.com/es/tags/security/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://btctranscripts.com/tags/security/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://btctranscripts.com/pt/tags/security/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/tags/security/"
                 />
   </url><url>
     <loc>https://btctranscripts.com/es/tags/seguridad/</loc>

@@ -23,6 +23,22 @@ Arquitectura Lightning La arquitectura Lightning para aquellos que no están fam
     </item>
     
     <item>
+      <title>John Newbery Security Models (2019-06-17)</title>
+      <link>https://btctranscripts.com/es/chaincode-labs/chaincode-residency/2019-06-17-newbery-security-models/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/es/chaincode-labs/chaincode-residency/2019-06-17-newbery-security-models/</guid>
+      <description>Texto original: https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-17-john-newbery-security-models/
+Transcripción de: Caralie Chrisco
+Nombre: John Newbery
+Tema: Security Models
+Ubicación: Residencia de Chaincode Labs 2019
+Vídeo: https://youtu.be/6gGcS4N5Rg4
+Diapositivas: https://residency.chaincode.com/presentations/bitcoin/security_models.pdf
+John Newbery: Muy bien, modelos de seguridad. Esto va a ser como un recorrido rápido de varias cosas, vista de muy alto nivel. Empezaré dándote algún tipo de marco para pensar en las cosas. Así que en criptografía, a menudo hablamos de pruebas de seguridad en términos de esquemas existentes, hablamos de suposiciones.</description>
+    </item>
+    
+    <item>
       <title>Seminario Socrático 3 (2019-10-14)</title>
       <link>https://btctranscripts.com/es/austin-bitcoin-developers/2019-10-14-socratic-seminar-3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
