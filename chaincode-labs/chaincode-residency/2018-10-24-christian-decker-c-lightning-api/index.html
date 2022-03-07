@@ -4,8 +4,7 @@
 <link rel=canonical href=https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-24-christian-decker-c-lightning-api/>
 <title>
 Christian Decker - C-Lightning API (2018-10-24) | ₿itcoin Transcripts
-</title>
-<link href=https://btctranscripts.com/css/fontawesome.min.css rel=stylesheet>
+</title><link href=https://btctranscripts.com/css/fontawesome.min.css rel=stylesheet>
 <link rel=stylesheet href=https://btctranscripts.com/css/ace.min.css>
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://btctranscripts.com/images/btctranscripts.png">
@@ -16,26 +15,19 @@ Location: Chaincode Labs Lightning Residency 2018
 Video: https://www.youtube.com/watch?v=l8OLD7or0DA
 https://twitter.com/kanzure/status/1232313790311436290
 Intro Good morning from the last day of presentations. I’m Chris still. Today I will be talking to you about c-lightning, how to develop on it, how to extend it, adapt it to your needs and how to customize it so it fits into whatever you are trying to do. Not whatever we thought you might want to do.">
-</head>
-<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id=navbarMain>
+</head><body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id=navbarMain>
 <div class=container>
 <div>
 <a class=navbar-brand href=/>
 ₿itcoin Transcripts
 </a>
-</div>
-<div class="collapse navbar-collapse" id=navbarMainCollapse>
+</div><div class="collapse navbar-collapse" id=navbarMainCollapse>
 <ul class="navbar-nav ml-auto">
 <li class=nav-item>
 <a class=nav-link href=https://github.com/bitcointranscripts/bitcointranscripts target=_blank>
 <i class="fab fa-github"></i>
 </a>
-</li>
-</ul>
-</div>
-</div>
-</nav>
-<div class=container-fluid>
+</li></ul></div></div></nav><div class=container-fluid>
 <div class=row>
 <div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
 <button class="navbar-toggler navbar-toggler-right collapsed" type=button data-toggle=collapse data-target=#sidenav-left-collapse aria-controls=sidenav-left-collapse aria-expanded=false aria-label="Toggle navigation">
@@ -44,547 +36,322 @@ Intro Good morning from the last day of presentations. I’m Chris still. Today 
 <div class="collapse navbar-collapse align-items-start flex-column" id=sidenav-left-collapse>
 <form class="form-inline my-2 my-lg-0 searchbox">
 <input class="form-control mr-sm-2 w-100" data-search-input id=search-by type=text placeholder='Search (press "/")'>
-</form>
-<ul class="navbar-nav flex-column pt-3">
+</form><ul class="navbar-nav flex-column pt-3">
 <li data-nav-id=/adopting-bitcoin/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/adopting-bitcoin/><h6>Adopting Bitcoin</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/adopting-bitcoin/2021/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/adopting-bitcoin/2021/><h6>Adopting Bitcoin 2021</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/advancing-bitcoin/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/advancing-bitcoin/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/advancing-bitcoin/><h6>Advancing Bitcoin</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/advancing-bitcoin/2019/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/advancing-bitcoin/2019/><h6>Advancing Bitcoin 2019</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/advancing-bitcoin/2020/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/advancing-bitcoin/2020/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/advancing-bitcoin/2020/><h6>Advancing Bitcoin 2020</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/andreas-antonopoulos/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/andreas-antonopoulos/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/andreas-antonopoulos/><h6>Andreas Antonopoulos</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/austin-bitcoin-developers/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/austin-bitcoin-developers/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/austin-bitcoin-developers/><h6>Austin Bitcoin Developers</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/baltic-honeybadger/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/baltic-honeybadger/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/baltic-honeybadger/><h6>Baltic Honeybadger</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/baltic-honeybadger/2018/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/baltic-honeybadger/2018/><h6>Baltic Honeybadger 2018</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/baltic-honeybadger/2019/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/baltic-honeybadger/2019/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/baltic-honeybadger/2019/><h6>Baltic Honeybadger 2019</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/bit-block-boom/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/bit-block-boom/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/bit-block-boom/><h6>Bit Block Boom</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/bit-block-boom/2019/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/bit-block-boom/2019/><h6>Bit Block Boom 2019</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/bitcoin-core-dev-tech/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/bitcoin-core-dev-tech/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/bitcoin-core-dev-tech/><h6>Bitcoin Core Dev Tech</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/bitcoin-core-dev-tech/bitcoin-devcore-2015/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/bitcoin-core-dev-tech/bitcoin-devcore-2015/><h6>Bitcoin Devcore Meetup (2015)</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/bitcoin-design/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/bitcoin-design/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/bitcoin-design/><h6>Bitcoin Design</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/bitcoin-magazine/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/bitcoin-magazine/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/bitcoin-magazine/><h6>Bitcoin Magazine</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/bitcoinops/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/bitcoinops/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/bitcoinops/><h6>Bitcoinops</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/bitcoinops/schnorr-taproot-workshop-2019/ class="nav-item my-1">
 <a class="nav-link p-0" href=/bitcoinops/schnorr-taproot-workshop-2019/><h6>Schnorr Taproot Workshop 2019</h6></a>
-</li>
-</ul>
-</li>
-<li data-nav-id=/blockchain-protocol-analysis-security-engineering/ class="nav-item my-1 haschildren">
+</li></ul></li><li data-nav-id=/blockchain-protocol-analysis-security-engineering/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/><h6>Blockchain Protocol Analysis Security Eng</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/blockchain-protocol-analysis-security-engineering/2017/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2017/><h6>Blockchain Protocol Analysis Security Engineering 2017</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/blockchain-protocol-analysis-security-engineering/2018/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/blockchain-protocol-analysis-security-engineering/2018/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2018/><h6>Blockchain Protocol Analysis Security Engineering 2018</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/blockstream-webinars/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/blockstream-webinars/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/blockstream-webinars/><h6>Blockstream Webinars</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/boltathon/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/boltathon/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/boltathon/><h6>Boltathon</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/breaking-bitcoin/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/breaking-bitcoin/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/breaking-bitcoin/><h6>Breaking Bitcoin</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/breaking-bitcoin/2017/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/breaking-bitcoin/2017/><h6>Breaking Bitcoin 2017</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/breaking-bitcoin/2019/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/breaking-bitcoin/2019/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/breaking-bitcoin/2019/><h6>Breaking Bitcoin 2019</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/building-on-bitcoin/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/building-on-bitcoin/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/building-on-bitcoin/><h6>Building On Bitcoin</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/building-on-bitcoin/2018/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/building-on-bitcoin/2018/><h6>Building On Bitcoin 2018</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/c-lightning/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/c-lightning/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/c-lightning/><h6>c-lightning</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/chaincode-labs/ class="nav-item my-1 parent haschildren">
+</ul></li><li data-nav-id=/chaincode-labs/ class="nav-item my-1 parent haschildren">
 <a class="nav-link p-0" href=/chaincode-labs/><h6>Chaincode Labs</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/chaincode-labs/chaincode-podcast/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/chaincode-labs/chaincode-podcast/><h6>Chaincode Podcast</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/chaincode-labs/chaincode-residency/ class="nav-item my-1 parent haschildren">
+</ul></li><li data-nav-id=/chaincode-labs/chaincode-residency/ class="nav-item my-1 parent haschildren">
 <a class="nav-link p-0" href=/chaincode-labs/chaincode-residency/><h6>Chaincode Residency</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/chicago-bitdevs/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/chicago-bitdevs/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/chicago-bitdevs/><h6>Chicago Bitdevs</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/coindesk-consensus-2016/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/coindesk-consensus-2016/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/coindesk-consensus-2016/><h6>Coindesk Consensus</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/coordination-of-decentralized-finance-workshop/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/coordination-of-decentralized-finance-workshop/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/><h6>Coordination of Decentralized Finance</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/coordination-of-decentralized-finance-workshop/2020-stanford/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/2020-stanford/><h6>2020 Stanford</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/cppcon/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/cppcon/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/cppcon/><h6>CPPcon</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/cppcon/2017/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/cppcon/2017/><h6>CPPcon 2017</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/cppcon/2020/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/cppcon/2020/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/cppcon/2020/><h6>CPPcon 2020</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/cryptoeconomic-systems/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/cryptoeconomic-systems/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/cryptoeconomic-systems/><h6>Cryptoeconomic Systems</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/cryptoeconomic-systems/2019/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/cryptoeconomic-systems/2019/><h6>Cryptoeconomic Systems 2019</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/dallas-bitcoin-symposium/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/dallas-bitcoin-symposium/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/dallas-bitcoin-symposium/><h6>Dallas Bitcoin Symposium</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/decentralized-financial-architecture-workshop/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/decentralized-financial-architecture-workshop/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/decentralized-financial-architecture-workshop/><h6>Decentralized Financial Architecture Workshop</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/bitcoin-developers-miners-meeting-2016/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/bitcoin-developers-miners-meeting-2016/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/bitcoin-developers-miners-meeting-2016/><h6>Developers-Miners Meeting</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/greg-maxwell/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/greg-maxwell/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/greg-maxwell/><h6>Greg Maxwell</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/grincon/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/grincon/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/grincon/><h6>Grincon</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/grincon/2019/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/grincon/2019/><h6>Grincon 2019</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/honey-badger-diaries/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/honey-badger-diaries/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/honey-badger-diaries/><h6>Honey Badger Diaries</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/la-bitdevs/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/la-bitdevs/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/la-bitdevs/><h6>LA Bitdevs</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/layer2-summit/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/layer2-summit/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/layer2-summit/><h6>Layer2 Summit</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/layer2-summit/2018/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/layer2-summit/2018/><h6>Layer2 Summit 2018</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/lets-talk-bitcoin-podcast/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/lets-talk-bitcoin-podcast/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/lets-talk-bitcoin-podcast/><h6>Lets Talk Bitcoin Podcast</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/lightning-conference/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/lightning-conference/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/lightning-conference/><h6>Lightning Conference</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/lightning-conference/2019/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/lightning-conference/2019/><h6>Lightning Conference 2019</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/lightning-hack-day/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/lightning-hack-day/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/lightning-hack-day/><h6>Lightning Hack Day</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/lightning-specification/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/lightning-specification/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/lightning-specification/><h6>Lightning Specification</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/london-bitcoin-devs/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/london-bitcoin-devs/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/london-bitcoin-devs/><h6>London Bitcoin Devs</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/magicalcryptoconference/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/magicalcryptoconference/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/magicalcryptoconference/><h6>Magicalcryptoconference</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/magicalcryptoconference/2019/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/magicalcryptoconference/2019/><h6>Magicalcryptoconference 2019</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/misc/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/misc/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/misc/><h6>Misc</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/mit-bitcoin-expo/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/mit-bitcoin-expo/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/mit-bitcoin-expo/><h6>MIT Bitcoin Expo</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2015/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2015/><h6>Mit Bitcoin Expo 2015</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2016/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2016/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2016/><h6>Mit Bitcoin Expo 2016</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2017/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2017/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2017/><h6>Mit Bitcoin Expo 2017</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2018/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2018/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2018/><h6>Mit Bitcoin Expo 2018</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2019/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2019/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2019/><h6>Mit Bitcoin Expo 2019</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2020/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2020/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2020/><h6>Mit Bitcoin Expo 2020</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2021/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2021/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2021/><h6>Mit Bitcoin Expo 2021</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/munich-meetup/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/munich-meetup/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/munich-meetup/><h6>Munich Meetup</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/noded-podcast/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/noded-podcast/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/noded-podcast/><h6>Noded Podcast</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/realworldcrypto/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/realworldcrypto/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/realworldcrypto/><h6>Realworldcrypto</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/realworldcrypto/2018/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/realworldcrypto/2018/><h6>Realworldcrypto 2018</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/rebooting-web-of-trust/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/rebooting-web-of-trust/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/rebooting-web-of-trust/><h6>Rebooting Web Of Trust</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/rebooting-web-of-trust/2019-prague/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/rebooting-web-of-trust/2019-prague/><h6>2019 Prague</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/ruben-somsen/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/ruben-somsen/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/ruben-somsen/><h6>Ruben Somsen</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/satoshi-roundtable/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/satoshi-roundtable/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/satoshi-roundtable/><h6>Satoshi Roundtable</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/satoshi-roundtable/sr-004/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/satoshi-roundtable/sr-004/><h6>Sr 004</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/scalingbitcoin/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/scalingbitcoin/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/scalingbitcoin/><h6>Scaling Bitcoin Conference</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/scalingbitcoin/montreal-2015/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/scalingbitcoin/montreal-2015/><h6>Montreal (2015)</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/scalingbitcoin/hong-kong-2015/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/scalingbitcoin/hong-kong-2015/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/scalingbitcoin/hong-kong-2015/><h6>Hong Kong (2015)</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/scalingbitcoin/milan-2016/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/scalingbitcoin/milan-2016/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/scalingbitcoin/milan-2016/><h6>Milan (2016)</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/scalingbitcoin/stanford-2017/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/scalingbitcoin/stanford-2017/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/><h6>Stanford (2017)</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/scalingbitcoin/stanford-2017/edgeplusplus/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/edgeplusplus/><h6>Edgeplusplus</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/scalingbitcoin/tokyo-2018/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/scalingbitcoin/tokyo-2018/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/><h6>Tokyo (2018)</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/scalingbitcoin/tokyo-2018/edgedevplusplus/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/edgedevplusplus/><h6>Edgedevplusplus</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/scalingbitcoin/tel-aviv-2019/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/scalingbitcoin/tel-aviv-2019/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/><h6>Tel Aviv (2019)</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/scalingbitcoin/tel-aviv-2019/edgedevplusplus/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/edgedevplusplus/><h6>Edgedevplusplus</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/sf-bitcoin-meetup/ class="nav-item my-1 haschildren">
+</ul></li></ul></li></ul></li><li data-nav-id=/sf-bitcoin-meetup/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/sf-bitcoin-meetup/><h6>SF Bitcoin Meetup</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/simons-institute/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/simons-institute/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/simons-institute/><h6>Simons Institute</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/stanford-blockchain-conference/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/stanford-blockchain-conference/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/stanford-blockchain-conference/><h6>Stanford Blockchain</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/stanford-blockchain-conference/2019/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/stanford-blockchain-conference/2019/><h6>Stanford Blockchain Conference 2019</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/stanford-blockchain-conference/2020/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/stanford-blockchain-conference/2020/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/stanford-blockchain-conference/2020/><h6>Stanford Blockchain Conference 2020</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/stephan-livera-podcast/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/stephan-livera-podcast/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/stephan-livera-podcast/><h6>Stephan Livera Podcast</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/sydney-bitcoin-meetup/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/sydney-bitcoin-meetup/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/sydney-bitcoin-meetup/><h6>Sydney Bitcoin Meetup</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/tabconf/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/tabconf/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/tabconf/><h6>TABConf</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/tabconf/2021/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/tabconf/2021/><h6>TABConf 2021</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/texas-bitcoin-conference-2014/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/texas-bitcoin-conference-2014/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/texas-bitcoin-conference-2014/><h6>Texas Bitcoin Conference</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/tftc-podcast/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/tftc-podcast/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/tftc-podcast/><h6>TFTC Podcast</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/verifiable-delay-functions/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/verifiable-delay-functions/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/verifiable-delay-functions/><h6>Verifiable Delay Functions</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/verifiable-delay-functions/vdf-day-2019/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/verifiable-delay-functions/vdf-day-2019/><h6>Vdf Day 2019</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/vr-bitcoin/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/vr-bitcoin/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/vr-bitcoin/><h6>VR Bitcoin</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/w3-blockchain-workshop-2016/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/w3-blockchain-workshop-2016/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/w3-blockchain-workshop-2016/><h6>W3 Blockchain Workshop</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/wasabi-research-club/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/wasabi-research-club/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/wasabi-research-club/><h6>Wasabi Research Club</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/what-bitcoin-did-podcast/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/what-bitcoin-did-podcast/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/what-bitcoin-did-podcast/><h6>What Bitcoin Did Podcast</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</div>
-</nav>
-</div>
-<div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky"><div class=docs-toc>
+</ul></li></ul></div></nav></div><div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky"><div class=docs-toc>
 <nav id=TableOfContents>
 <ul>
-<li><a href=#intro>Intro</a></li>
-<li><a href=#goals>Goals</a></li>
-<li><a href=#tldr-i-want-my-node-now>TL;DR I want my node now</a></li>
-<li><a href=#architecture>Architecture</a></li>
-<li><a href=#json-rpc-interface>JSON-RPC Interface</a></li>
-<li><a href=#invoicingreceiving-payments>Invoicing/Receiving Payments</a></li>
-<li><a href=#sending-payments>Sending payments</a></li>
-<li><a href=#subdaemons>Subdaemons</a></li>
-<li><a href=#plugins-tbd>Plugins (tbd)</a></li>
-</ul>
-</nav>
-</div>
-</div>
-<div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+<li><a href=#intro>Intro</a></li><li><a href=#goals>Goals</a></li><li><a href=#tldr-i-want-my-node-now>TL;DR I want my node now</a></li><li><a href=#architecture>Architecture</a></li><li><a href=#json-rpc-interface>JSON-RPC Interface</a></li><li><a href=#invoicingreceiving-payments>Invoicing/Receiving Payments</a></li><li><a href=#sending-payments>Sending payments</a></li><li><a href=#subdaemons>Subdaemons</a></li><li><a href=#plugins-tbd>Plugins (tbd)</a></li></ul></nav></div></div><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
 <a href=/>Home</a>
 &lt; <a href=/chaincode-labs/>
 Chaincode Labs
@@ -593,96 +360,18 @@ Chaincode Labs
 Chaincode Residency
 </a>
 &lt; Christian Decker - C-Lightning API (2018-10-24)
-<h1>Christian Decker - C-Lightning API (2018-10-24)</h1>
-<p><i>Transcript By: Michael Folkson</i></p>
-<p>Tags:
-<a href=/tags/lightning>Lightning</a>, <a href=/tags/c-lightning>C lightning</a></p>
-<p>Category:
-<a href=/categories/residency>Residency</a></p>
-<p>Christian Decker</p>
-<p>Developing on c-lightning</p>
-<p>Location: Chaincode Labs Lightning Residency 2018</p>
-<p>Video: <a href="https://www.youtube.com/watch?v=l8OLD7or0DA">https://www.youtube.com/watch?v=l8OLD7or0DA</a></p>
-<p><a href=https://twitter.com/kanzure/status/1232313790311436290>https://twitter.com/kanzure/status/1232313790311436290</a></p>
-<h1 id=intro>Intro</h1>
-<p>Good morning from the last day of presentations. I’m Chris still. Today I will be talking to you about c-lightning, how to develop on it, how to extend it, adapt it to your needs and how to customize it so it fits into whatever you are trying to do. Not whatever we thought you might want to do.</p>
-<h1 id=goals>Goals</h1>
-<p>First of all the goals of c-lightning are basically to be fast and lightweight. We want you to be able to deploy this on Raspberry Pis, on big beefy server machines, on your laptops, wherever you sort of have a stable connection. There you give the best utility to the rest of the network. We want c-lightning to be flexible and customizable because we don’t think that we will guess the exact configuration that you will need. We want to give you the tools to adapt it to your own needs. We want to optimize for power users. There’s plenty of options for Lightning nodes to run on home devices, on mobile phones. While we can do that we will know how to optimize for that. We want to be the server backend running big services on top of this.</p>
-<h1 id=tldr-i-want-my-node-now>TL;DR I want my node now</h1>
-<p>After this slide you can probably stop listening because that is all you need to know. We provide a PPA for Ubuntu and Debian based systems. All you need to do is just add the repository <code>lightningnetwork</code>, do an <code>apt-get update</code> and install <code>lightningd</code>.</p>
-<pre tabindex=0><code>sudo add-apt-repository ppa:lightningnetwork/ppa
+<h1>Christian Decker - C-Lightning API (2018-10-24)</h1><p><i>Transcript By: Michael Folkson</i></p><p>Tags:
+<a href=/tags/lightning>Lightning</a>, <a href=/tags/c-lightning>C lightning</a></p><p>Category:
+<a href=/categories/residency>Residency</a></p><p>Christian Decker</p><p>Developing on c-lightning</p><p>Location: Chaincode Labs Lightning Residency 2018</p><p>Video: <a href="https://www.youtube.com/watch?v=l8OLD7or0DA">https://www.youtube.com/watch?v=l8OLD7or0DA</a></p><p><a href=https://twitter.com/kanzure/status/1232313790311436290>https://twitter.com/kanzure/status/1232313790311436290</a></p><h1 id=intro>Intro</h1><p>Good morning from the last day of presentations. I’m Chris still. Today I will be talking to you about c-lightning, how to develop on it, how to extend it, adapt it to your needs and how to customize it so it fits into whatever you are trying to do. Not whatever we thought you might want to do.</p><h1 id=goals>Goals</h1><p>First of all the goals of c-lightning are basically to be fast and lightweight. We want you to be able to deploy this on Raspberry Pis, on big beefy server machines, on your laptops, wherever you sort of have a stable connection. There you give the best utility to the rest of the network. We want c-lightning to be flexible and customizable because we don’t think that we will guess the exact configuration that you will need. We want to give you the tools to adapt it to your own needs. We want to optimize for power users. There’s plenty of options for Lightning nodes to run on home devices, on mobile phones. While we can do that we will know how to optimize for that. We want to be the server backend running big services on top of this.</p><h1 id=tldr-i-want-my-node-now>TL;DR I want my node now</h1><p>After this slide you can probably stop listening because that is all you need to know. We provide a PPA for Ubuntu and Debian based systems. All you need to do is just add the repository <code>lightningnetwork</code>, do an <code>apt-get update</code> and install <code>lightningd</code>.</p><pre tabindex=0><code>sudo add-apt-repository ppa:lightningnetwork/ppa
 sudo apt-get update
 sudo apt-get install lightningd
-</code></pre><p>Then you can start lightningd. Notice that by default we still have the testnet as the network configuration. We also encourage people to enable <code>log-level=debug</code> because that gives us loads of information should anything go wrong. We can help you try to debug whatever happened.</p>
-<p><code>lightningd —network=bitcoin —log-level=debug</code></p>
-<p>If you can also pipe this output into a file because it scrolls by really fast. It is useful to have if you need help debugging. There’s loads of information there. Don’t be scared if some messages say this and this died. That is just a terminology, it is not bad, it is just a process terminating. We have had loads of these reports. To talk to lightningd just use the command line client <code>lightning-cli</code>.</p>
-<p><code>lightning-cli getinfo</code></p>
-<p><code>lightning-cli help</code> will give you all the possible JSON RPC calls that you can invoke with this. You should be ok.</p>
-<p>Q - It does not include bitcoind as a dependency?</p>
-<p>A - It does not currently include bitcoind as a dependency. If you have a running bitcoind and you are caught up this process should take you about 30 seconds on top, 5 seconds below and the last one is about 10 milliseconds. It should be ok to get started.</p>
-<p>Q - It searches for a running bitcoind instance on your system and then reads the Bitcoin conf?</p>
-<p>A - Indeed it does. What we basically use in the background is bitcoin-cli. If you can talk to bitcoind using bitcoin-cli then you are golden. If you don’t have a running bitcoind on the same machine you can also tell lightningd to reach out to some other node using the RPC <code>connect</code> command line option. There you can basically have for your organization one central bitcoind and have hundreds of Lightning nodes talk to them.</p>
-<p>Q - RPC connect with bitcoin-cli?</p>
-<p>A - What you need to do is on the lightningd command line specify <code>—bitcoin-rpcconnect=ip:port</code> or <code>ip</code> if you use the default port. What we do basically is we just hand those back to bitcoin-cli when we call it.</p>
-<h1 id=architecture>Architecture</h1>
-<p>Now that we know how to run it, let’s talk about how we can actually build stuff on top of it. The architecture of c-lightning is a bit special. Each individual box here is a different process. On the left side we have the channeld processes and onchaind processes, each of them take care of one channel. If a channel should ever catch the rest of the program should still go on. If you wanted you could actually separate them into separate security policies using SELinux or AppArmor just to be bolt them down to what you feel comfortable with. The master daemon takes care of managing the state across all of these daemons. It is the process that you start. It is also the process that will start all of the other processes. No need to think about this in day-to-day usage. It gives us a lot of flexibility. On the right hand side we have the gossipd and hsmd. gossipd is the place where we store information about the network, our local view of the network. We receive gossip messages, process them and apply them to our local view. When we need to make a routing decision we just ask for it “Hey how do I get from A to B.” hsmd is what happens the private keys. Currently it is not really a hsm, it is just called that because it is aspirational. Eventually we want to have a hsm. What this allows us is to have the key management separate from the main daemon. The main daemon doesn’t know any private information about that node. We can actually start moving the hsmd around. We could move it into an actual physical HSM. We could move it onto your phone. You could host lightningd on some third party service provider. It won’t be able to do anything and it will talk to your phone which holds the actual private keys for example. Now we have the newest addition which are plugins. Plugins are basically just tiny scripts that talk JSON-RPC over standard input and standard output. You can write them in whatever language you want. They are a bit more integrated than the JSON-RPC interface in that they get notifications and push notifications whenever something happens. We can also reach out to them to change the normal flow of operations.</p>
-<p>Q - What plugins currently exist?</p>
-<p>A - A hello world plugin because I am still developing the plugin infrastructure. Wait two weeks and then it will actually be working. Everything else is working right now.</p>
-<p>Q - Can you talk about the decision to separate all these n channeld instances rather than just having one channeld instance that maintains the state for all your channels? Can you also talk about control flow throughout the c-lightning instance. From what I can tell peer-to-peer messages come in through gossipd, master acts like some sort of controller, routes to the appropriate channel instance, maybe signs something via hsmd. Does that get pretty complex to maintain?</p>
-<p>A - The questions are twofold. One is why did we decide to go for a multi-daemon architecture and the second one is how does the flow actually work? The decision for multi-daemon architecture is so that we can easily swap out individual parts. It is a separation of concerns. We want to have the channeld only take care and only access information that is relevant for the operation of channeld. We want to have the hsmd which takes care of all things private key and gossipd is also a specialized daemon that only has access to the stuff that it needs. First of all for us it is a simplification because we don’t need to deal with the complexity of having multiple things running in the same process. It is a security concern because you can have these in separate memory spaces. You could potentially move them onto different machines as well. Thirdly we can actually separate them into their own runtimes using SELinux or AppArmor or you could even Dockerize them if you wanted. Not that Docker is particularly good at security.</p>
-<p>Q - The first question was more directed towards the specific channeld instances. Is this just so you can have different security policies for the channels that you have open? I understand separation of concerns for the wider application but specific channels themselves?</p>
-<p>A - The question is why one channeld per channel. First of all it is a security concern in our case because these daemons talk to live traffic on the network. If there is some way to crash this daemon we wanted to crash that one daemon and not the entire thing. It just makes life cycle management easier because this daemon is alive, I want to kill that connection, kill that daemon. It is rather simple and really nice because the whole process is one state machine for the channel, no handling of multiple channels in there. It is very simple. About the control flow. What we do internally is file descriptor passing. If a peer connects to a daemon called connect daemon the connect daemon will pass it off to a separate daemon which initiates the transport layer security handshake. Then passes it off to channeld.</p>
-<p>Q - What daemon is specifically connected to the outside network, is it gossipd or is it master?</p>
-<p>A - Connected to the outside world are two daemons, three if you count handshaked but we’re merging that one in. There is an additional daemon called connectd, that is only there to listen for incoming connections. As soon as an incoming connection is made it hands the file descriptor for the connection up to the master daemon. The master daemon does not touch it in any way. The master daemon spawns a channeld and passes the file descriptor over. The only things in this pattern that actually talks to the outside world are the channeld’s on the left hand side.</p>
-<p>Q - What is the responsibility of gossipd if it is not the thing that is managing…</p>
-<p>A - gossipd is there as a central store for network information.</p>
-<p>Q - There were plans to externalize the gossip so that separate Lightning daemons could utilize the same gossipd?</p>
-<p>A - The question is whether we have plans to externalize gossipd. gossipd is external currently. It currently starts a new gossipd for each c-lightning instance but you could potentially merge that into one big gossipd if you run hundreds of c-lightning nodes. You can also just have a small stub that talks to a centralized server. That gets rid of a lot of duplication in your infrastructure because gossipd is actually the thing that uses the most memory in all of this. It is only scarcely used. You could potentially just centralize that and have it talk to some routing service that is external.</p>
-<h1 id=json-rpc-interface>JSON-RPC Interface</h1>
-<p>(UNIX Socket exposed at <code>\$HOME/.lightning/lightning-rpc</code>)</p>
-<p>What I didn’t mention too much is we have a JSON-RPC. Why JSON? It is really easy, it is human readable. I can go onto a shell and start typing stuff into socket and be done with it. It is a UNIX socket so we don’t expose that over the network. That is a conscious decision because we don’t pretend to know what your authentication scheme is or your preferred transport layer is, your preferred way of interacting with the RPC is. We just have this really simple UNIX socket that you can then use to build a service on top that integrates with your infrastructure, that does whatever authentication you do, that does whatever logging you want to do and we don’t have to guess what you want to do. The easiest way to use it is the lightning-cli. That is a small wrapper around socat with some string manipulation. <code>lightning-cli help</code> and <code>lightning-cli getinfo</code> will give you all the information you need. One thing that we copied from bitcoind is that <code>help</code> will also connect to the daemon. If the daemon is not running <code>lightning-cli help</code> will do nothing. If you install from the PPA we have man pages for most of the commands. <code>lightning-cli help</code> followed by the command you want to use will pop up the man page on the shell and you will be able to get all the information that you need. If we didn’t write a man page you will get a short blurb that will still tell you what to do. It won’t be as extensive as the man page.</p>
-<p>Q - Is there anything that is preferable to develop a plugin over the CLI?</p>
-<p>A - With respect to plugin versus CLI, as long as whatever we do fits into your model and the automated way of interacting with c-lightning, accepting payments, creating invoices and all of that stuff, works for you don’t write a plugin. Just be a JSON-RPC client. If you want to customize how c-lightning interacts with the rest of the world and you don’t want to have a separate thing that you need to make sure runs you can write a plugin and have this slightly more tight integration with c-lightning.</p>
-<p>JSON-RPC clients, we have the <a href=https://pypi.org/project/pylightning>Python JSON-RPC client</a> which is the most up to date. It is also what we use for testing internally. This will actually be always on par with the c-lightning implementation. We have the <a href=https://github.com/ElementsProject/lightning-charge>Javascript client</a> which is part of Lightning Charge. Lightning Charge is basically one of these services that expose the JSON-RPC over the network. It is a NodeJS service that exposes both a JSON-RPC over HTTP as well as a REST over HTTP service. If you feel more comfortable with REST you can use that. If you feel more comfortable with JSON-RPC you can take the library part of Lightning Charge. I have written a tiny <a href=https://github.com/cdecker/kugelblitz>Go wrapper</a> that is so out of date that I feel awkward just talking about it. If you really just want to hack with c-lightning there is also the option of using socat on the shell. Mind you, you will have to write JSON messages and valid JSON-RPC calls but you could potentially run stuff from the shell as well.</p>
-<h1 id=invoicingreceiving-payments>Invoicing/Receiving Payments</h1>
-<p><code>lightning-cli invoice [msatoshi][label][description]</code></p>
-<p>Just really quick, going through the invoices flow, invoicing and receiving payments. To receive a payment you first of all have to create an invoice by specifying the amount in millisatoshis you’d like to receive, a label and a description. The label has to be unique. The reason why we have the label in there is because we don’t want to force you to have whatever external system track what invoice matches what shopping cart for example. If you are using WooCommerce which is a popular shopping plugin for Wordpress, what you could do there is have the label be the numeric id of the shopping cart that matches this invoice. This is a way for you to later be able to associate an incoming payment with whatever you wanted to have paid for. The description is what will end up in the invoice. That is you telling the customer I just bought 3 baseball caps and a coffee. It is not necessary but it is always nice to tell people what they bought.</p>
-<pre tabindex=0><code>lightning-cli listinvoices
+</code></pre><p>Then you can start lightningd. Notice that by default we still have the testnet as the network configuration. We also encourage people to enable <code>log-level=debug</code> because that gives us loads of information should anything go wrong. We can help you try to debug whatever happened.</p><p><code>lightningd —network=bitcoin —log-level=debug</code></p><p>If you can also pipe this output into a file because it scrolls by really fast. It is useful to have if you need help debugging. There’s loads of information there. Don’t be scared if some messages say this and this died. That is just a terminology, it is not bad, it is just a process terminating. We have had loads of these reports. To talk to lightningd just use the command line client <code>lightning-cli</code>.</p><p><code>lightning-cli getinfo</code></p><p><code>lightning-cli help</code> will give you all the possible JSON RPC calls that you can invoke with this. You should be ok.</p><p>Q - It does not include bitcoind as a dependency?</p><p>A - It does not currently include bitcoind as a dependency. If you have a running bitcoind and you are caught up this process should take you about 30 seconds on top, 5 seconds below and the last one is about 10 milliseconds. It should be ok to get started.</p><p>Q - It searches for a running bitcoind instance on your system and then reads the Bitcoin conf?</p><p>A - Indeed it does. What we basically use in the background is bitcoin-cli. If you can talk to bitcoind using bitcoin-cli then you are golden. If you don’t have a running bitcoind on the same machine you can also tell lightningd to reach out to some other node using the RPC <code>connect</code> command line option. There you can basically have for your organization one central bitcoind and have hundreds of Lightning nodes talk to them.</p><p>Q - RPC connect with bitcoin-cli?</p><p>A - What you need to do is on the lightningd command line specify <code>—bitcoin-rpcconnect=ip:port</code> or <code>ip</code> if you use the default port. What we do basically is we just hand those back to bitcoin-cli when we call it.</p><h1 id=architecture>Architecture</h1><p>Now that we know how to run it, let’s talk about how we can actually build stuff on top of it. The architecture of c-lightning is a bit special. Each individual box here is a different process. On the left side we have the channeld processes and onchaind processes, each of them take care of one channel. If a channel should ever catch the rest of the program should still go on. If you wanted you could actually separate them into separate security policies using SELinux or AppArmor just to be bolt them down to what you feel comfortable with. The master daemon takes care of managing the state across all of these daemons. It is the process that you start. It is also the process that will start all of the other processes. No need to think about this in day-to-day usage. It gives us a lot of flexibility. On the right hand side we have the gossipd and hsmd. gossipd is the place where we store information about the network, our local view of the network. We receive gossip messages, process them and apply them to our local view. When we need to make a routing decision we just ask for it “Hey how do I get from A to B.” hsmd is what happens the private keys. Currently it is not really a hsm, it is just called that because it is aspirational. Eventually we want to have a hsm. What this allows us is to have the key management separate from the main daemon. The main daemon doesn’t know any private information about that node. We can actually start moving the hsmd around. We could move it into an actual physical HSM. We could move it onto your phone. You could host lightningd on some third party service provider. It won’t be able to do anything and it will talk to your phone which holds the actual private keys for example. Now we have the newest addition which are plugins. Plugins are basically just tiny scripts that talk JSON-RPC over standard input and standard output. You can write them in whatever language you want. They are a bit more integrated than the JSON-RPC interface in that they get notifications and push notifications whenever something happens. We can also reach out to them to change the normal flow of operations.</p><p>Q - What plugins currently exist?</p><p>A - A hello world plugin because I am still developing the plugin infrastructure. Wait two weeks and then it will actually be working. Everything else is working right now.</p><p>Q - Can you talk about the decision to separate all these n channeld instances rather than just having one channeld instance that maintains the state for all your channels? Can you also talk about control flow throughout the c-lightning instance. From what I can tell peer-to-peer messages come in through gossipd, master acts like some sort of controller, routes to the appropriate channel instance, maybe signs something via hsmd. Does that get pretty complex to maintain?</p><p>A - The questions are twofold. One is why did we decide to go for a multi-daemon architecture and the second one is how does the flow actually work? The decision for multi-daemon architecture is so that we can easily swap out individual parts. It is a separation of concerns. We want to have the channeld only take care and only access information that is relevant for the operation of channeld. We want to have the hsmd which takes care of all things private key and gossipd is also a specialized daemon that only has access to the stuff that it needs. First of all for us it is a simplification because we don’t need to deal with the complexity of having multiple things running in the same process. It is a security concern because you can have these in separate memory spaces. You could potentially move them onto different machines as well. Thirdly we can actually separate them into their own runtimes using SELinux or AppArmor or you could even Dockerize them if you wanted. Not that Docker is particularly good at security.</p><p>Q - The first question was more directed towards the specific channeld instances. Is this just so you can have different security policies for the channels that you have open? I understand separation of concerns for the wider application but specific channels themselves?</p><p>A - The question is why one channeld per channel. First of all it is a security concern in our case because these daemons talk to live traffic on the network. If there is some way to crash this daemon we wanted to crash that one daemon and not the entire thing. It just makes life cycle management easier because this daemon is alive, I want to kill that connection, kill that daemon. It is rather simple and really nice because the whole process is one state machine for the channel, no handling of multiple channels in there. It is very simple. About the control flow. What we do internally is file descriptor passing. If a peer connects to a daemon called connect daemon the connect daemon will pass it off to a separate daemon which initiates the transport layer security handshake. Then passes it off to channeld.</p><p>Q - What daemon is specifically connected to the outside network, is it gossipd or is it master?</p><p>A - Connected to the outside world are two daemons, three if you count handshaked but we’re merging that one in. There is an additional daemon called connectd, that is only there to listen for incoming connections. As soon as an incoming connection is made it hands the file descriptor for the connection up to the master daemon. The master daemon does not touch it in any way. The master daemon spawns a channeld and passes the file descriptor over. The only things in this pattern that actually talks to the outside world are the channeld’s on the left hand side.</p><p>Q - What is the responsibility of gossipd if it is not the thing that is managing…</p><p>A - gossipd is there as a central store for network information.</p><p>Q - There were plans to externalize the gossip so that separate Lightning daemons could utilize the same gossipd?</p><p>A - The question is whether we have plans to externalize gossipd. gossipd is external currently. It currently starts a new gossipd for each c-lightning instance but you could potentially merge that into one big gossipd if you run hundreds of c-lightning nodes. You can also just have a small stub that talks to a centralized server. That gets rid of a lot of duplication in your infrastructure because gossipd is actually the thing that uses the most memory in all of this. It is only scarcely used. You could potentially just centralize that and have it talk to some routing service that is external.</p><h1 id=json-rpc-interface>JSON-RPC Interface</h1><p>(UNIX Socket exposed at <code>\$HOME/.lightning/lightning-rpc</code>)</p><p>What I didn’t mention too much is we have a JSON-RPC. Why JSON? It is really easy, it is human readable. I can go onto a shell and start typing stuff into socket and be done with it. It is a UNIX socket so we don’t expose that over the network. That is a conscious decision because we don’t pretend to know what your authentication scheme is or your preferred transport layer is, your preferred way of interacting with the RPC is. We just have this really simple UNIX socket that you can then use to build a service on top that integrates with your infrastructure, that does whatever authentication you do, that does whatever logging you want to do and we don’t have to guess what you want to do. The easiest way to use it is the lightning-cli. That is a small wrapper around socat with some string manipulation. <code>lightning-cli help</code> and <code>lightning-cli getinfo</code> will give you all the information you need. One thing that we copied from bitcoind is that <code>help</code> will also connect to the daemon. If the daemon is not running <code>lightning-cli help</code> will do nothing. If you install from the PPA we have man pages for most of the commands. <code>lightning-cli help</code> followed by the command you want to use will pop up the man page on the shell and you will be able to get all the information that you need. If we didn’t write a man page you will get a short blurb that will still tell you what to do. It won’t be as extensive as the man page.</p><p>Q - Is there anything that is preferable to develop a plugin over the CLI?</p><p>A - With respect to plugin versus CLI, as long as whatever we do fits into your model and the automated way of interacting with c-lightning, accepting payments, creating invoices and all of that stuff, works for you don’t write a plugin. Just be a JSON-RPC client. If you want to customize how c-lightning interacts with the rest of the world and you don’t want to have a separate thing that you need to make sure runs you can write a plugin and have this slightly more tight integration with c-lightning.</p><p>JSON-RPC clients, we have the <a href=https://pypi.org/project/pylightning>Python JSON-RPC client</a> which is the most up to date. It is also what we use for testing internally. This will actually be always on par with the c-lightning implementation. We have the <a href=https://github.com/ElementsProject/lightning-charge>Javascript client</a> which is part of Lightning Charge. Lightning Charge is basically one of these services that expose the JSON-RPC over the network. It is a NodeJS service that exposes both a JSON-RPC over HTTP as well as a REST over HTTP service. If you feel more comfortable with REST you can use that. If you feel more comfortable with JSON-RPC you can take the library part of Lightning Charge. I have written a tiny <a href=https://github.com/cdecker/kugelblitz>Go wrapper</a> that is so out of date that I feel awkward just talking about it. If you really just want to hack with c-lightning there is also the option of using socat on the shell. Mind you, you will have to write JSON messages and valid JSON-RPC calls but you could potentially run stuff from the shell as well.</p><h1 id=invoicingreceiving-payments>Invoicing/Receiving Payments</h1><p><code>lightning-cli invoice [msatoshi][label][description]</code></p><p>Just really quick, going through the invoices flow, invoicing and receiving payments. To receive a payment you first of all have to create an invoice by specifying the amount in millisatoshis you’d like to receive, a label and a description. The label has to be unique. The reason why we have the label in there is because we don’t want to force you to have whatever external system track what invoice matches what shopping cart for example. If you are using WooCommerce which is a popular shopping plugin for Wordpress, what you could do there is have the label be the numeric id of the shopping cart that matches this invoice. This is a way for you to later be able to associate an incoming payment with whatever you wanted to have paid for. The description is what will end up in the invoice. That is you telling the customer I just bought 3 baseball caps and a coffee. It is not necessary but it is always nice to tell people what they bought.</p><pre tabindex=0><code>lightning-cli listinvoices
 lightning-cli waitinvoice [label]
 lightning-cli waitanyinvoice [last-pay-index]
-</code></pre><p>To wait for invoices we have the <code>lightning-cli listinvoices</code>. That’s just basically a huge list of all invoices. Or you could also specify a label in which case it will just show this one invoice. We have ‘waitinvoice’ followed by label if you want to wait for a specific invoice to be paid. That’s a way to do it. If you have a lot of pending invoices you are probably better off with the <code>waitanyinvoice</code> which gives you the next invoice that is completed after the <code>last-pay-index</code>. What you can do is I receive a payment, this payment has a payment index and in the meantime more payments come in and then if you just want the next one you can add the <code>last-pay-index</code> which will give you the next one. If there has already been a next invoice that has been paid you will get that one. If there was no next payment then this will block until an invoice is paid. This is just acting as a message queue for you to consume invoices that have been paid.</p>
-<p><code>lightning-cli delexpiredinvoice [maxexpiry]</code></p>
-<p>Finally some housekeeping. Delete expired invoices if your invoice has expired and hasn’t been paid. Just delete it, you don’t have to keep it around. There is also an autodelayed expired invoices which allows you to delete after a certain amount of time. Depending on what kind of statistics you want to run against this it might not be a good idea to autodelete.</p>
-<h1 id=sending-payments>Sending payments</h1>
-<p><code>lightning-cli pay [bolt11]</code></p>
-<p>Sending is way more interesting. There is the <code>lightning-cli pay</code> command where you give a BOLT 11 string and you are done, hopefully. What that will do is find a path, try a path, check if the attempt failed. If it failed, retry. If it succeeded we go back and say “Hey it succeeded and here’s what I tried.” The output is rather large because it will tell you each payment attempt, what path it tried to use and what the error messages were. You can probably cut out 90% of the output there.</p>
-<p>Q - The <code>last-pay-index</code>. How do I know the <code>last-pay-index</code>? If I do <code>listinvoices</code> it doesn’t tell me what index?</p>
-<p>A - The question is where do I get the <code>last-pay-index</code> from? The <code>last-pay-index</code> is one of the fields returned by <code>waitanyinvoice</code>. So <code>waitanyinvoice</code> will actually tell you here’s an invoice that was paid and if you want to continue without skipping any received invoices please use this last pay index next. From there you can then incrementally consume this queue and be sure that you don’t skip any payment.</p>
-<p>Q - It is just an arbitrary order then?</p>
-<p>A - The order is actually the order in which we process the incoming payments. This does not match the database id of the invoice but it is a field that enumerates in which order we receive them and therefore in which order we should return them as well.</p>
-<p>Q - What is the experience when running <code>waitinvoice</code> from the shell? It is idle until the payment is received?</p>
-<p>A - Yes. The <code>waitanyinvoice</code> will block the command until it has something to return. There is also a variant where you can specify a timeout saying “Hey I would like to wait for 5 minutes. If nothing comes in give me back control over my shell and I will be doing something else then. The same is true for the JSON-RPC. It will also block until something was received or a timeout expired.</p>
-<p>So <code>pay</code> is automated, it is magic, it might not be what you want to use. If you want to have more control over what happens.</p>
-<pre tabindex=0><code>lightning-cli getroute [destination][msatoshi][riskfactor]
+</code></pre><p>To wait for invoices we have the <code>lightning-cli listinvoices</code>. That’s just basically a huge list of all invoices. Or you could also specify a label in which case it will just show this one invoice. We have ‘waitinvoice’ followed by label if you want to wait for a specific invoice to be paid. That’s a way to do it. If you have a lot of pending invoices you are probably better off with the <code>waitanyinvoice</code> which gives you the next invoice that is completed after the <code>last-pay-index</code>. What you can do is I receive a payment, this payment has a payment index and in the meantime more payments come in and then if you just want the next one you can add the <code>last-pay-index</code> which will give you the next one. If there has already been a next invoice that has been paid you will get that one. If there was no next payment then this will block until an invoice is paid. This is just acting as a message queue for you to consume invoices that have been paid.</p><p><code>lightning-cli delexpiredinvoice [maxexpiry]</code></p><p>Finally some housekeeping. Delete expired invoices if your invoice has expired and hasn’t been paid. Just delete it, you don’t have to keep it around. There is also an autodelayed expired invoices which allows you to delete after a certain amount of time. Depending on what kind of statistics you want to run against this it might not be a good idea to autodelete.</p><h1 id=sending-payments>Sending payments</h1><p><code>lightning-cli pay [bolt11]</code></p><p>Sending is way more interesting. There is the <code>lightning-cli pay</code> command where you give a BOLT 11 string and you are done, hopefully. What that will do is find a path, try a path, check if the attempt failed. If it failed, retry. If it succeeded we go back and say “Hey it succeeded and here’s what I tried.” The output is rather large because it will tell you each payment attempt, what path it tried to use and what the error messages were. You can probably cut out 90% of the output there.</p><p>Q - The <code>last-pay-index</code>. How do I know the <code>last-pay-index</code>? If I do <code>listinvoices</code> it doesn’t tell me what index?</p><p>A - The question is where do I get the <code>last-pay-index</code> from? The <code>last-pay-index</code> is one of the fields returned by <code>waitanyinvoice</code>. So <code>waitanyinvoice</code> will actually tell you here’s an invoice that was paid and if you want to continue without skipping any received invoices please use this last pay index next. From there you can then incrementally consume this queue and be sure that you don’t skip any payment.</p><p>Q - It is just an arbitrary order then?</p><p>A - The order is actually the order in which we process the incoming payments. This does not match the database id of the invoice but it is a field that enumerates in which order we receive them and therefore in which order we should return them as well.</p><p>Q - What is the experience when running <code>waitinvoice</code> from the shell? It is idle until the payment is received?</p><p>A - Yes. The <code>waitanyinvoice</code> will block the command until it has something to return. There is also a variant where you can specify a timeout saying “Hey I would like to wait for 5 minutes. If nothing comes in give me back control over my shell and I will be doing something else then. The same is true for the JSON-RPC. It will also block until something was received or a timeout expired.</p><p>So <code>pay</code> is automated, it is magic, it might not be what you want to use. If you want to have more control over what happens.</p><pre tabindex=0><code>lightning-cli getroute [destination][msatoshi][riskfactor]
 lightning-cli sendpay [route][payment_hash]
 lightning-cli waitsendpay [payment_hash]
-</code></pre><p>For example if you want to create a special route that drops off more money like Rene did a few days ago you can use <code>getroute</code> and that will give you a JSON description of the path that the payment might take. You can actually edit that however you’d like. Be careful if you reduce the fee amounts or something like that. The forwarding node might not forward it anymore. You can do fun stuff like concatenate two routes from A to B and then B to A and create circles and all of that fun stuff. If you really want to do that there are really nice things we can do with this like lotteries over Lightning. Have me trigger some coin flip on a gambling service and then getting the payout in the form of a Lightning payment. <code>sendpay</code> will actually take the route that you just created with <code>getroute</code> and given a payment hash will attempt to pay that route with that payment hash. And <code>waitsendpay</code> is again a way for you to wait for this payment to succeed.</p>
-<p>Q - Is routes a list of…?</p>
-<p>A - Routes is a list of dicts and the dict contains the CLTV that should be applied at that place, the amount of satoshis that should be forwarded and which channel to use obviously. That’s basically what the onion looks like when you receive it and decrypt it and now need to forward it. What CLTV should I use, how many satoshis should I forward and which channel of my five should I use?</p>
-<p>Q - Is that the same format that’s in BOLT 11 for invoices?</p>
-<p>A - I don’t think so, no because BOLT 11 uses binary encoding for this and this uses a JSON format.</p>
-<p>Q - Same data contents?</p>
-<p>A - It should have the same data contents… Actually no because BOLT 11 will tell you the deltas for each of them whilst this one will tell you the exact amounts. It will actually tell you if I want a fee of 1 satoshi and you forward 1001 satoshis, I will forward 1000. It basically has the absolute amounts for value transferred whereas the format in the BOLT 11 invoice will tell you this node would charge such and such proportional fee and such and such base fee.</p>
-<p><code>lightning-cli listpayments</code></p>
-<h1 id=subdaemons>Subdaemons</h1>
-<p>Subdaemons, this is the interesting part. Subdaemons are tightly integrated. They talk binary protocol with the main daemon. They allow you fun stuff like replacing how we talk to Bitcoin for example. You can use bitcoind, Neutrino, spruned. My Neutrino implementation isn’t quite done yet but eventually we will have one I promise. You can also talk to a central bitcoind instead of having each c-lightning be sitting right next to bitcoind which allows you to scale up the number of c-lightning nodes without having this huge impact. Routing service, as we mentioned before for all of your Lightning daemons you can centralize the gossip. That gives you a better view of what the network looks like because you get feedback from failures and successes for all of your Lightning daemons. It saves you again on infrastructure by keeping what is memory heavy in a separate centralized repository. With the hsm we can have actual hardware wallets. We can move the hsmd around, on your phone have somebody else take care of connectivity, running c-lightning and your phone having the control over private keys. This makes for a real nice onboarding story where you go to some service, you just want to dip your toe into using c-lightning, they will take care of everything. You can then upgrade to taking care of your own private keys. Then you can upgrade to moving that c-lightning daemon to your home, running it on a Raspberry Pi somewhere. Finally the extreme case is running everything on your phone. Whatever you choose that suits your needs you can do it.</p>
-<h1 id=plugins-tbd>Plugins (tbd)</h1>
-<p>Plugins, this is very much work in progress. Since I pitched plugins as a solution for everything this week I thought I might quickly talk about them. Plugins are basically just a two way street between c-lightning and some external process. You can write a plugin in whatever language you want. It receives incoming messages, both JSON-RPC calls and JSON-RPC notifications via standard input. It writes out the JSON-RPC response to standard output. Initially we probably want to make this as read only as possible. Basically c-lightning will send out notifications for state changes in c-lightning and the plugin can then reach around and talk to the JSON-RPC interface to enact some changes. The autopilot is a good example of this where you basically read the current state, how many connections do I have, how many connections would I want to have? Get notifications for disconnects and connects. If I deviate from my desired state I will just call <code>connect</code> or <code>close</code> or whatever. The next step is payment logic where we have interactions with the control flow of c-lightning. Let’s say if you have an incoming payment but don’t want to acknowledge that one yet because you don’t know whether you can deliver the service or good. You should be able to hold on to that HTLC until you have verified that the delivery works. Once I have the HTLC I can actually make sure that I will get the money eventually but I am not sure that I can deliver the service or good that I’m trying to. Once I’ve verified that I can then accept or reject. That makes refunds a lot easier because we don’t accept payments which we can’t deliver on. Short circuit payments, if you have multiple nodes in a route or the next hop is your own node you could say “Hey I know this node. No need to talk to it.” It will just give me whatever I need. We had a good example of how to load balance over any number of c-lightning nodes so that you can have a virtual node and any number of border nodes that will pretend to talk to this virtual node. The border nodes will terminate that payment and is indifferent which one of these border nodes who talk to the virtual node will receive the payment. Finally external continuations is basically what we could do for cross-chain atomic swaps. If I receive a Bitcoin payment and I don’t know how to forward Litecoin I could tell that to a plugin. The plugin knows my Litecoin c-lightning sits over there so I will just inject this payment as a continuation into another daemon. And of course whatever you can come up with. Plugins should enable you to do loads of stuff and will gradually open up the flexibility of plugins. If you have a use case please come forward and we can talk about enabling that in the library. That’s it from me.</p>
-<div class=row></div>
-</div>
-</div>
-</div>
-<script src=https://btctranscripts.com/lib/jquery.min.js></script>
+</code></pre><p>For example if you want to create a special route that drops off more money like Rene did a few days ago you can use <code>getroute</code> and that will give you a JSON description of the path that the payment might take. You can actually edit that however you’d like. Be careful if you reduce the fee amounts or something like that. The forwarding node might not forward it anymore. You can do fun stuff like concatenate two routes from A to B and then B to A and create circles and all of that fun stuff. If you really want to do that there are really nice things we can do with this like lotteries over Lightning. Have me trigger some coin flip on a gambling service and then getting the payout in the form of a Lightning payment. <code>sendpay</code> will actually take the route that you just created with <code>getroute</code> and given a payment hash will attempt to pay that route with that payment hash. And <code>waitsendpay</code> is again a way for you to wait for this payment to succeed.</p><p>Q - Is routes a list of…?</p><p>A - Routes is a list of dicts and the dict contains the CLTV that should be applied at that place, the amount of satoshis that should be forwarded and which channel to use obviously. That’s basically what the onion looks like when you receive it and decrypt it and now need to forward it. What CLTV should I use, how many satoshis should I forward and which channel of my five should I use?</p><p>Q - Is that the same format that’s in BOLT 11 for invoices?</p><p>A - I don’t think so, no because BOLT 11 uses binary encoding for this and this uses a JSON format.</p><p>Q - Same data contents?</p><p>A - It should have the same data contents… Actually no because BOLT 11 will tell you the deltas for each of them whilst this one will tell you the exact amounts. It will actually tell you if I want a fee of 1 satoshi and you forward 1001 satoshis, I will forward 1000. It basically has the absolute amounts for value transferred whereas the format in the BOLT 11 invoice will tell you this node would charge such and such proportional fee and such and such base fee.</p><p><code>lightning-cli listpayments</code></p><h1 id=subdaemons>Subdaemons</h1><p>Subdaemons, this is the interesting part. Subdaemons are tightly integrated. They talk binary protocol with the main daemon. They allow you fun stuff like replacing how we talk to Bitcoin for example. You can use bitcoind, Neutrino, spruned. My Neutrino implementation isn’t quite done yet but eventually we will have one I promise. You can also talk to a central bitcoind instead of having each c-lightning be sitting right next to bitcoind which allows you to scale up the number of c-lightning nodes without having this huge impact. Routing service, as we mentioned before for all of your Lightning daemons you can centralize the gossip. That gives you a better view of what the network looks like because you get feedback from failures and successes for all of your Lightning daemons. It saves you again on infrastructure by keeping what is memory heavy in a separate centralized repository. With the hsm we can have actual hardware wallets. We can move the hsmd around, on your phone have somebody else take care of connectivity, running c-lightning and your phone having the control over private keys. This makes for a real nice onboarding story where you go to some service, you just want to dip your toe into using c-lightning, they will take care of everything. You can then upgrade to taking care of your own private keys. Then you can upgrade to moving that c-lightning daemon to your home, running it on a Raspberry Pi somewhere. Finally the extreme case is running everything on your phone. Whatever you choose that suits your needs you can do it.</p><h1 id=plugins-tbd>Plugins (tbd)</h1><p>Plugins, this is very much work in progress. Since I pitched plugins as a solution for everything this week I thought I might quickly talk about them. Plugins are basically just a two way street between c-lightning and some external process. You can write a plugin in whatever language you want. It receives incoming messages, both JSON-RPC calls and JSON-RPC notifications via standard input. It writes out the JSON-RPC response to standard output. Initially we probably want to make this as read only as possible. Basically c-lightning will send out notifications for state changes in c-lightning and the plugin can then reach around and talk to the JSON-RPC interface to enact some changes. The autopilot is a good example of this where you basically read the current state, how many connections do I have, how many connections would I want to have? Get notifications for disconnects and connects. If I deviate from my desired state I will just call <code>connect</code> or <code>close</code> or whatever. The next step is payment logic where we have interactions with the control flow of c-lightning. Let’s say if you have an incoming payment but don’t want to acknowledge that one yet because you don’t know whether you can deliver the service or good. You should be able to hold on to that HTLC until you have verified that the delivery works. Once I have the HTLC I can actually make sure that I will get the money eventually but I am not sure that I can deliver the service or good that I’m trying to. Once I’ve verified that I can then accept or reject. That makes refunds a lot easier because we don’t accept payments which we can’t deliver on. Short circuit payments, if you have multiple nodes in a route or the next hop is your own node you could say “Hey I know this node. No need to talk to it.” It will just give me whatever I need. We had a good example of how to load balance over any number of c-lightning nodes so that you can have a virtual node and any number of border nodes that will pretend to talk to this virtual node. The border nodes will terminate that payment and is indifferent which one of these border nodes who talk to the virtual node will receive the payment. Finally external continuations is basically what we could do for cross-chain atomic swaps. If I receive a Bitcoin payment and I don’t know how to forward Litecoin I could tell that to a plugin. The plugin knows my Litecoin c-lightning sits over there so I will just inject this payment as a continuation into another daemon. And of course whatever you can come up with. Plugins should enable you to do loads of stuff and will gradually open up the flexibility of plugins. If you have a use case please come forward and we can talk about enabling that in the library. That’s it from me.</p><div class=row></div></div></div></div><script src=https://btctranscripts.com/lib/jquery.min.js></script>
 <script src=https://btctranscripts.com/lib/popper.min.js></script>
 <script src=https://btctranscripts.com/js/bootstrap.min.js></script>
 <script type=text/javascript src=/plugins/lunr.min.js></script>
@@ -692,6 +381,5 @@ lightning-cli waitsendpay [payment_hash]
 <script type=text/javascript src=/plugins/search.js></script>
 <script type=text/javascript src=https://btctranscripts.com/js/custom.js></script>
 <script type=text/javascript src=/plugins/clipboard.js></script>
-<script>new ClipboardJS('.btn')</script>
-</body>
-</html>
+<script>new ClipboardJS(".btn")</script>
+</body></html>

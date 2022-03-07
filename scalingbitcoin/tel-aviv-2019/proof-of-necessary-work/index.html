@@ -4,8 +4,7 @@
 <link rel=canonical href=https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/proof-of-necessary-work/>
 <title>
 Proof Of Necessary Work | ₿itcoin Transcripts
-</title>
-<link href=https://btctranscripts.com/css/fontawesome.min.css rel=stylesheet>
+</title><link href=https://btctranscripts.com/css/fontawesome.min.css rel=stylesheet>
 <link rel=stylesheet href=https://btctranscripts.com/css/ace.min.css>
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://btctranscripts.com/images/btctranscripts.png">
@@ -14,26 +13,19 @@ Proof Of Necessary Work | ₿itcoin Transcripts
 Assimakis Kattis
 Introduction I am going to show you proof of necessary work today. We use proof of work in a prototype. This is joint work with my collaborators.
 Problems We wanted to tackle the problem of bitcoin blockchain size increases. Every 10 minutes, a block is added to the blockchain and the blockchain grows linearly in size over time. Initial block download increases over time.">
-</head>
-<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id=navbarMain>
+</head><body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id=navbarMain>
 <div class=container>
 <div>
 <a class=navbar-brand href=/>
 ₿itcoin Transcripts
 </a>
-</div>
-<div class="collapse navbar-collapse" id=navbarMainCollapse>
+</div><div class="collapse navbar-collapse" id=navbarMainCollapse>
 <ul class="navbar-nav ml-auto">
 <li class=nav-item>
 <a class=nav-link href=https://github.com/bitcointranscripts/bitcointranscripts target=_blank>
 <i class="fab fa-github"></i>
 </a>
-</li>
-</ul>
-</div>
-</div>
-</nav>
-<div class=container-fluid>
+</li></ul></div></div></nav><div class=container-fluid>
 <div class=row>
 <div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
 <button class="navbar-toggler navbar-toggler-right collapsed" type=button data-toggle=collapse data-target=#sidenav-left-collapse aria-controls=sidenav-left-collapse aria-expanded=false aria-label="Toggle navigation">
@@ -42,555 +34,322 @@ Problems We wanted to tackle the problem of bitcoin blockchain size increases. E
 <div class="collapse navbar-collapse align-items-start flex-column" id=sidenav-left-collapse>
 <form class="form-inline my-2 my-lg-0 searchbox">
 <input class="form-control mr-sm-2 w-100" data-search-input id=search-by type=text placeholder='Search (press "/")'>
-</form>
-<ul class="navbar-nav flex-column pt-3">
+</form><ul class="navbar-nav flex-column pt-3">
 <li data-nav-id=/adopting-bitcoin/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/adopting-bitcoin/><h6>Adopting Bitcoin</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/adopting-bitcoin/2021/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/adopting-bitcoin/2021/><h6>Adopting Bitcoin 2021</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/advancing-bitcoin/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/advancing-bitcoin/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/advancing-bitcoin/><h6>Advancing Bitcoin</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/advancing-bitcoin/2019/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/advancing-bitcoin/2019/><h6>Advancing Bitcoin 2019</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/advancing-bitcoin/2020/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/advancing-bitcoin/2020/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/advancing-bitcoin/2020/><h6>Advancing Bitcoin 2020</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/andreas-antonopoulos/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/andreas-antonopoulos/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/andreas-antonopoulos/><h6>Andreas Antonopoulos</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/austin-bitcoin-developers/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/austin-bitcoin-developers/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/austin-bitcoin-developers/><h6>Austin Bitcoin Developers</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/baltic-honeybadger/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/baltic-honeybadger/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/baltic-honeybadger/><h6>Baltic Honeybadger</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/baltic-honeybadger/2018/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/baltic-honeybadger/2018/><h6>Baltic Honeybadger 2018</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/baltic-honeybadger/2019/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/baltic-honeybadger/2019/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/baltic-honeybadger/2019/><h6>Baltic Honeybadger 2019</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/bit-block-boom/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/bit-block-boom/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/bit-block-boom/><h6>Bit Block Boom</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/bit-block-boom/2019/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/bit-block-boom/2019/><h6>Bit Block Boom 2019</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/bitcoin-core-dev-tech/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/bitcoin-core-dev-tech/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/bitcoin-core-dev-tech/><h6>Bitcoin Core Dev Tech</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/bitcoin-core-dev-tech/bitcoin-devcore-2015/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/bitcoin-core-dev-tech/bitcoin-devcore-2015/><h6>Bitcoin Devcore Meetup (2015)</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/bitcoin-design/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/bitcoin-design/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/bitcoin-design/><h6>Bitcoin Design</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/bitcoin-magazine/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/bitcoin-magazine/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/bitcoin-magazine/><h6>Bitcoin Magazine</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/bitcoinops/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/bitcoinops/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/bitcoinops/><h6>Bitcoinops</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/bitcoinops/schnorr-taproot-workshop-2019/ class="nav-item my-1">
 <a class="nav-link p-0" href=/bitcoinops/schnorr-taproot-workshop-2019/><h6>Schnorr Taproot Workshop 2019</h6></a>
-</li>
-</ul>
-</li>
-<li data-nav-id=/blockchain-protocol-analysis-security-engineering/ class="nav-item my-1 haschildren">
+</li></ul></li><li data-nav-id=/blockchain-protocol-analysis-security-engineering/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/><h6>Blockchain Protocol Analysis Security Eng</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/blockchain-protocol-analysis-security-engineering/2017/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2017/><h6>Blockchain Protocol Analysis Security Engineering 2017</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/blockchain-protocol-analysis-security-engineering/2018/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/blockchain-protocol-analysis-security-engineering/2018/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2018/><h6>Blockchain Protocol Analysis Security Engineering 2018</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/blockstream-webinars/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/blockstream-webinars/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/blockstream-webinars/><h6>Blockstream Webinars</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/boltathon/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/boltathon/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/boltathon/><h6>Boltathon</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/breaking-bitcoin/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/breaking-bitcoin/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/breaking-bitcoin/><h6>Breaking Bitcoin</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/breaking-bitcoin/2017/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/breaking-bitcoin/2017/><h6>Breaking Bitcoin 2017</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/breaking-bitcoin/2019/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/breaking-bitcoin/2019/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/breaking-bitcoin/2019/><h6>Breaking Bitcoin 2019</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/building-on-bitcoin/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/building-on-bitcoin/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/building-on-bitcoin/><h6>Building On Bitcoin</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/building-on-bitcoin/2018/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/building-on-bitcoin/2018/><h6>Building On Bitcoin 2018</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/c-lightning/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/c-lightning/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/c-lightning/><h6>c-lightning</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/chaincode-labs/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/chaincode-labs/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/chaincode-labs/><h6>Chaincode Labs</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/chaincode-labs/chaincode-podcast/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/chaincode-labs/chaincode-podcast/><h6>Chaincode Podcast</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/chaincode-labs/chaincode-residency/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/chaincode-labs/chaincode-residency/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/chaincode-labs/chaincode-residency/><h6>Chaincode Residency</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/chicago-bitdevs/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/chicago-bitdevs/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/chicago-bitdevs/><h6>Chicago Bitdevs</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/coindesk-consensus-2016/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/coindesk-consensus-2016/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/coindesk-consensus-2016/><h6>Coindesk Consensus</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/coordination-of-decentralized-finance-workshop/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/coordination-of-decentralized-finance-workshop/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/><h6>Coordination of Decentralized Finance</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/coordination-of-decentralized-finance-workshop/2020-stanford/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/2020-stanford/><h6>2020 Stanford</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/cppcon/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/cppcon/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/cppcon/><h6>CPPcon</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/cppcon/2017/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/cppcon/2017/><h6>CPPcon 2017</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/cppcon/2020/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/cppcon/2020/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/cppcon/2020/><h6>CPPcon 2020</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/cryptoeconomic-systems/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/cryptoeconomic-systems/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/cryptoeconomic-systems/><h6>Cryptoeconomic Systems</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/cryptoeconomic-systems/2019/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/cryptoeconomic-systems/2019/><h6>Cryptoeconomic Systems 2019</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/dallas-bitcoin-symposium/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/dallas-bitcoin-symposium/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/dallas-bitcoin-symposium/><h6>Dallas Bitcoin Symposium</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/decentralized-financial-architecture-workshop/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/decentralized-financial-architecture-workshop/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/decentralized-financial-architecture-workshop/><h6>Decentralized Financial Architecture Workshop</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/bitcoin-developers-miners-meeting-2016/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/bitcoin-developers-miners-meeting-2016/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/bitcoin-developers-miners-meeting-2016/><h6>Developers-Miners Meeting</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/greg-maxwell/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/greg-maxwell/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/greg-maxwell/><h6>Greg Maxwell</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/grincon/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/grincon/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/grincon/><h6>Grincon</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/grincon/2019/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/grincon/2019/><h6>Grincon 2019</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/honey-badger-diaries/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/honey-badger-diaries/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/honey-badger-diaries/><h6>Honey Badger Diaries</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/la-bitdevs/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/la-bitdevs/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/la-bitdevs/><h6>LA Bitdevs</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/layer2-summit/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/layer2-summit/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/layer2-summit/><h6>Layer2 Summit</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/layer2-summit/2018/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/layer2-summit/2018/><h6>Layer2 Summit 2018</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/lets-talk-bitcoin-podcast/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/lets-talk-bitcoin-podcast/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/lets-talk-bitcoin-podcast/><h6>Lets Talk Bitcoin Podcast</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/lightning-conference/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/lightning-conference/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/lightning-conference/><h6>Lightning Conference</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/lightning-conference/2019/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/lightning-conference/2019/><h6>Lightning Conference 2019</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/lightning-hack-day/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/lightning-hack-day/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/lightning-hack-day/><h6>Lightning Hack Day</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/lightning-specification/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/lightning-specification/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/lightning-specification/><h6>Lightning Specification</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/london-bitcoin-devs/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/london-bitcoin-devs/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/london-bitcoin-devs/><h6>London Bitcoin Devs</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/magicalcryptoconference/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/magicalcryptoconference/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/magicalcryptoconference/><h6>Magicalcryptoconference</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/magicalcryptoconference/2019/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/magicalcryptoconference/2019/><h6>Magicalcryptoconference 2019</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/misc/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/misc/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/misc/><h6>Misc</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/mit-bitcoin-expo/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/mit-bitcoin-expo/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/mit-bitcoin-expo/><h6>MIT Bitcoin Expo</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2015/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2015/><h6>Mit Bitcoin Expo 2015</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2016/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2016/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2016/><h6>Mit Bitcoin Expo 2016</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2017/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2017/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2017/><h6>Mit Bitcoin Expo 2017</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2018/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2018/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2018/><h6>Mit Bitcoin Expo 2018</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2019/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2019/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2019/><h6>Mit Bitcoin Expo 2019</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2020/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2020/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2020/><h6>Mit Bitcoin Expo 2020</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2021/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2021/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2021/><h6>Mit Bitcoin Expo 2021</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/munich-meetup/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/munich-meetup/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/munich-meetup/><h6>Munich Meetup</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/noded-podcast/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/noded-podcast/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/noded-podcast/><h6>Noded Podcast</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/realworldcrypto/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/realworldcrypto/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/realworldcrypto/><h6>Realworldcrypto</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/realworldcrypto/2018/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/realworldcrypto/2018/><h6>Realworldcrypto 2018</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/rebooting-web-of-trust/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/rebooting-web-of-trust/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/rebooting-web-of-trust/><h6>Rebooting Web Of Trust</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/rebooting-web-of-trust/2019-prague/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/rebooting-web-of-trust/2019-prague/><h6>2019 Prague</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/ruben-somsen/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/ruben-somsen/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/ruben-somsen/><h6>Ruben Somsen</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/satoshi-roundtable/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/satoshi-roundtable/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/satoshi-roundtable/><h6>Satoshi Roundtable</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/satoshi-roundtable/sr-004/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/satoshi-roundtable/sr-004/><h6>Sr 004</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/scalingbitcoin/ class="nav-item my-1 parent haschildren">
+</ul></li></ul></li><li data-nav-id=/scalingbitcoin/ class="nav-item my-1 parent haschildren">
 <a class="nav-link p-0" href=/scalingbitcoin/><h6>Scaling Bitcoin Conference</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/scalingbitcoin/montreal-2015/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/scalingbitcoin/montreal-2015/><h6>Montreal (2015)</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/scalingbitcoin/hong-kong-2015/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/scalingbitcoin/hong-kong-2015/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/scalingbitcoin/hong-kong-2015/><h6>Hong Kong (2015)</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/scalingbitcoin/milan-2016/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/scalingbitcoin/milan-2016/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/scalingbitcoin/milan-2016/><h6>Milan (2016)</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/scalingbitcoin/stanford-2017/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/scalingbitcoin/stanford-2017/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/><h6>Stanford (2017)</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/scalingbitcoin/stanford-2017/edgeplusplus/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/edgeplusplus/><h6>Edgeplusplus</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/scalingbitcoin/tokyo-2018/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/scalingbitcoin/tokyo-2018/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/><h6>Tokyo (2018)</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/scalingbitcoin/tokyo-2018/edgedevplusplus/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/edgedevplusplus/><h6>Edgedevplusplus</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/scalingbitcoin/tel-aviv-2019/ class="nav-item my-1 parent haschildren">
+</ul></li></ul></li><li data-nav-id=/scalingbitcoin/tel-aviv-2019/ class="nav-item my-1 parent haschildren">
 <a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/><h6>Tel Aviv (2019)</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/scalingbitcoin/tel-aviv-2019/edgedevplusplus/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/edgedevplusplus/><h6>Edgedevplusplus</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/sf-bitcoin-meetup/ class="nav-item my-1 haschildren">
+</ul></li></ul></li></ul></li><li data-nav-id=/sf-bitcoin-meetup/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/sf-bitcoin-meetup/><h6>SF Bitcoin Meetup</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/simons-institute/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/simons-institute/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/simons-institute/><h6>Simons Institute</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/stanford-blockchain-conference/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/stanford-blockchain-conference/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/stanford-blockchain-conference/><h6>Stanford Blockchain</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/stanford-blockchain-conference/2019/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/stanford-blockchain-conference/2019/><h6>Stanford Blockchain Conference 2019</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/stanford-blockchain-conference/2020/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/stanford-blockchain-conference/2020/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/stanford-blockchain-conference/2020/><h6>Stanford Blockchain Conference 2020</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/stephan-livera-podcast/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/stephan-livera-podcast/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/stephan-livera-podcast/><h6>Stephan Livera Podcast</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/sydney-bitcoin-meetup/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/sydney-bitcoin-meetup/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/sydney-bitcoin-meetup/><h6>Sydney Bitcoin Meetup</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/tabconf/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/tabconf/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/tabconf/><h6>TABConf</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/tabconf/2021/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/tabconf/2021/><h6>TABConf 2021</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/texas-bitcoin-conference-2014/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/texas-bitcoin-conference-2014/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/texas-bitcoin-conference-2014/><h6>Texas Bitcoin Conference</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/tftc-podcast/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/tftc-podcast/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/tftc-podcast/><h6>TFTC Podcast</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/verifiable-delay-functions/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/verifiable-delay-functions/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/verifiable-delay-functions/><h6>Verifiable Delay Functions</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/verifiable-delay-functions/vdf-day-2019/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/verifiable-delay-functions/vdf-day-2019/><h6>Vdf Day 2019</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/vr-bitcoin/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/vr-bitcoin/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/vr-bitcoin/><h6>VR Bitcoin</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/w3-blockchain-workshop-2016/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/w3-blockchain-workshop-2016/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/w3-blockchain-workshop-2016/><h6>W3 Blockchain Workshop</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/wasabi-research-club/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/wasabi-research-club/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/wasabi-research-club/><h6>Wasabi Research Club</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/what-bitcoin-did-podcast/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/what-bitcoin-did-podcast/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/what-bitcoin-did-podcast/><h6>What Bitcoin Did Podcast</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</div>
-</nav>
-</div>
-<div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky"><div class=docs-toc>
+</ul></li></ul></div></nav></div><div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky"><div class=docs-toc>
 <nav id=TableOfContents>
 <ul>
-<li><a href=#introduction>Introduction</a></li>
-<li><a href=#problems>Problems</a></li>
-<li><a href=#proof-of-necessary-work>Proof of necessary work</a></li>
-<li><a href=#design-challenge>Design challenge</a></li>
-<li><a href=#proofs-of-state-validity>Proofs of state validity</a></li>
-<li><a href=#prototype-design>Prototype design</a></li>
-<li><a href=#what-did-we-achieve>What did we achieve?</a></li>
-<li><a href=#pow-from-proof-generation>PoW from proof generation</a></li>
-<li><a href=#modeling-proof-generation>Modeling proof generation</a></li>
-<li><a href=#formalizing-the-model>Formalizing the model</a></li>
-<li><a href=#committing-to-the-nonce>Committing to the nonce</a></li>
-<li><a href=#adding-nonce-to-state>Adding nonce to state</a></li>
-<li><a href=#creating-hard-predicates>Creating hard predicates</a></li>
-<li><a href=#putting-it-all-together>Putting it all together</a></li>
-<li><a href=#proof-chains>Proof chains</a></li>
-<li><a href=#related-work>Related work</a></li>
-<li><a href=#future-work>Future work</a></li>
-</ul>
-</nav>
-</div>
-</div>
-<div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+<li><a href=#introduction>Introduction</a></li><li><a href=#problems>Problems</a></li><li><a href=#proof-of-necessary-work>Proof of necessary work</a></li><li><a href=#design-challenge>Design challenge</a></li><li><a href=#proofs-of-state-validity>Proofs of state validity</a></li><li><a href=#prototype-design>Prototype design</a></li><li><a href=#what-did-we-achieve>What did we achieve?</a></li><li><a href=#pow-from-proof-generation>PoW from proof generation</a></li><li><a href=#modeling-proof-generation>Modeling proof generation</a></li><li><a href=#formalizing-the-model>Formalizing the model</a></li><li><a href=#committing-to-the-nonce>Committing to the nonce</a></li><li><a href=#adding-nonce-to-state>Adding nonce to state</a></li><li><a href=#creating-hard-predicates>Creating hard predicates</a></li><li><a href=#putting-it-all-together>Putting it all together</a></li><li><a href=#proof-chains>Proof chains</a></li><li><a href=#related-work>Related work</a></li><li><a href=#future-work>Future work</a></li></ul></nav></div></div><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
 <a href=/>Home</a>
 &lt; <a href=/scalingbitcoin/>
 Scaling Bitcoin Conference
@@ -599,61 +358,9 @@ Scaling Bitcoin Conference
 Tel Aviv (2019)
 </a>
 &lt; Proof Of Necessary Work
-<h1>Proof Of Necessary Work</h1>
-<p><i>Transcript By: Bryan Bishop</i></p>
-<p>Tags:
-<a href=/tags/proof-of-work>Proof of work</a></p>
-<p>Category:
-<a href=/categories/conference>Conference</a></p>
-<p>Proof of necessary work: Succinct state verification with fairness guarantees</p>
-<p>Assimakis Kattis</p>
-<h1 id=introduction>Introduction</h1>
-<p>I am going to show you proof of necessary work today. We use proof of work in a prototype. This is joint work with my collaborators.</p>
-<h1 id=problems>Problems</h1>
-<p>We wanted to tackle the problem of bitcoin blockchain size increases. Every 10 minutes, a block is added to the blockchain and the blockchain grows linearly in size over time. Initial block download increases over time.</p>
-<h1 id=proof-of-necessary-work>Proof of necessary work</h1>
-<p>We use proof-of-work to verify transactions. We allow lite clients to verify state with minimal processing. We generare proofs &ldquo;for free&rdquo; through PoW. To bundle this in, we can generate proofs for free by leveraging the fact that proof-of-work currently is sort of very computationally intensive.</p>
-<h1 id=design-challenge>Design challenge</h1>
-<p>There are some important results from theoretical computer science. We can create small succinct proofs from any NP statement. Such proofs can verify previous proofs efficiently. Also, you can use recursive SNARKs. This is really important because we can use this idea, we can have our proof verify the previous proof so that the previous block was correct, and the current transactions in the system. This means we&rsquo;re immediately going to have a proof from genesis up to this point that&ndash; sort of a proof that the whole state is correct.</p>
-<p>So what we want is the proof that verifies correctness of the chain, small enough to enter the blockchain (succinctness) and can be checked with very minimal resources.</p>
-<p>We use recursive SNARKs which are a specific instantiation of incremental verifiable computation.</p>
-<h1 id=proofs-of-state-validity>Proofs of state validity</h1>
-<p>We feel it&rsquo;s natural that incrementally verifiable computation fits into bitcoin. &mldr;. The miner has to keep all of the state, but it&rsquo;s the miner so we&rsquo;re fine with this large memory requirement. We use a merkle root, and the previous proof, and the verifier is going to have to do a cheap computation to check that indeed this is actually correct. We do this throughout every single block, and we attach these proofs to the block.</p>
-<h1 id=prototype-design>Prototype design</h1>
-<p>We designed a prototype that is account-based and has simple payment functionality. We wanted to establish a proof-of-concept, so there&rsquo;s no UTXOs, no scripts, and there&rsquo;s none of the hunky transaction types. We just wanted to double check that this thing is something we can get numbers for and that they would be feasible. So we did this, and we got some numbers here.</p>
-<p>We did our benchmark on AWS ra5.2xlarge with 8 cores and 64 GB RAM.</p>
-<p>We&rsquo;re using libsnark and rank-1 constraint systems. It takes about 2 minutes to process these 25 transactions on this benchmark using sort of IVC prototype from a few years ago. I&rsquo;m not an expert on what&rsquo;s the most cutting edge way of doing IVC. But the idea is that even on a system like this, we&rsquo;re still within the realm of feasibility. Our proofs of the whole system and state sort of, the correctness, is only a couple hundred bytes. We thought that was the demonstration that this is definitely something that could be instantiated.</p>
-<h1 id=what-did-we-achieve>What did we achieve?</h1>
-<p>Our prototype produces block headers of &lt;500 bytes in size, for any number of transactions per block. The number of transactions doesn&rsquo;t change what the proof size is. It doesn&rsquo;t matter how many transactions there are in the block, you still get a small blockheader. Stateless clients can just take this proof and immediately verify it almost instantaneously.</p>
-<p>We could optimize this to get something like 100 transactions/block using something like libsnark, which is a couple of orders of magnitude slower than some of the new stuff coming out. However, the problem is that proofs take a very long time to generate. We would like to incentivize people to make these proofs, and the natural idea is to make the proof-of-work do it.</p>
-<h1 id=pow-from-proof-generation>PoW from proof generation</h1>
-<p>We&rsquo;re going to follow Nakamoto consensus in bitcoin. We&rsquo;re going to add a random nonce to the proof on every single iteration. The miners can randomly sample this, and this will change pi or the proof. The nonce is randomly sampled, changing pi. Probability of success is exponentially distributed. The problem with this approach is that when you&rsquo;re doing double-sha256, you can&rsquo;t really split the sha256 up into different parts and compute them once and then churn on the rest. With SNARKs or these proofs, that is something you could definitely do. So this process favors large scale. A large miner will be able to calculate the proof at the beginning, change the nonce, and then only change the parts that effect the nonce. I drew some diagrams to try to demonstrate this.</p>
-<h1 id=modeling-proof-generation>Modeling proof generation</h1>
-<p>I want to give a high-level idea of what the model is here. We need to ensure by predicate (proof) is hard to solve in general. We model this using a hardness oracle O. The oracle is going to be providing the miner with the hard computation. The number of times that the miner queries the oracle is sort of the number of hard computations that they have to do. We want, every single time they make a new proof, we want them to not be able to reuse previous information, and they must query the oracle the same amount of time always. We don&rsquo;t want the prover to reuse any previous information, if we want the same model as double-sha256. In current succinct SNARK implementations, the oracle provides access to modular exponentiation in some prime order group G. This reduces to harndess in the generic group model.</p>
-<h1 id=formalizing-the-model>Formalizing the model</h1>
-<p>We formalize the model with the notion of epsilon hardness. A large prover only gets an epsilon advantage from previous computation when generating proofs. A definition of epsilon-hardness is provided in the paper.</p>
-<h1 id=committing-to-the-nonce>Committing to the nonce</h1>
-<p>We commit to the nonce in the proof. If the nonce is random, then changing any of the inputs without really changing this nonce, is going to lead to an invalid configuration. This really prevents any previous work from being reused. Say you try it with a nonce, you&rsquo;re out of luck, you try again. The nonce is going to change a lot of things inside the proof, so your previous computation is useless. The end result is that we want the miner to compute the whole proof from scratch.</p>
-<h1 id=adding-nonce-to-state>Adding nonce to state</h1>
-<p>In the account based model we use, we store state in a merkle tree, the leaves are accounts. For every transaction, we have to check old merkle paths, compute new merkle paths, and check that signatures and amounts are valid. The idea here is that we want to link the state and nonce through a &lsquo;seed&rsquo; parameter. It&rsquo;s some function that is unpredictable, we hash all of them, and we get some value. The end result is that altering any part of the input is going to lead to something that is required, and we are going to formally check this. This is unpredictable by the cryptographic hash function. This is sort of the value we&rsquo;re trying to go to plug into the rest of the proof to make it impossible for an adversarial miner to excervate.</p>
-<h1 id=creating-hard-predicates>Creating hard predicates</h1>
-<p>The problem is that this only requires access to state. An adversary can reuse work as p doesn&rsquo;t alter the vast majority of computation. So the goal is to alter the predicate to embed it into the proof.</p>
-<p>Strawman: insert n in every updated leaf. New merkle paths then change unpredictably as a function of the nonce. If we could inject our nonce in all of the merkle paths, then we would be done. The problem is that we only alter half of them. This gives an epsilon of about 1/2.</p>
-<p>The new idea is to modify hash function by &lsquo;cloaking&rsquo; it with p. The design challenge is to modify our hash function to use p &lsquo;almost everywhere&rsquo;, while outputting the same result as before. We want to take this hash function, make it output exactly the same thing on the output, but all the intermediate steps should be a function of this row which should be computationally unpredictable.</p>
-<p>We do the cloaking with a pedersen hash. This leverages some specific properties of Pedersen, namely the homomorphic properties. This doesn&rsquo;t add a lot of constraints into the proof system; it doesn&rsquo;t make the proof substantially larger. We do need to verify that this is an actual input; and this adds a linear amount of constraints, which can increase the proving time of our circuit.</p>
-<h1 id=putting-it-all-together>Putting it all together</h1>
-<p>We demonstrate how to cloak predicates with a nonce n, making information reuse impossible. What&rsquo;s the theoretical limits for this? For a 20 transaction predicate, there&rsquo;s like 6 million constraints, which means we lower bound our epsilon by 20% per block in our predicate when the implementing the previous ideas without optimization. It&rsquo;s the predicate of the whole block; we can use the cloaking technique for the rest of the computation namely things like the signatures, we use Schnorr, and some of the other stuff. That&rsquo;s really not that important, it is important I just don&rsquo;t go into it here because it&rsquo;s not the majority of the computation. We think it&rsquo;s promising that we can put epsilon down so low that we can have a negligble overhead for large miners.</p>
-<h1 id=proof-chains>Proof chains</h1>
-<p>Proof chains from bitcoin-ng a few years ago are a similar idea. Discarding previous profos is wasteful, so can we do better? It&rsquo;s easy to extend this and get some throughput, like &ldquo;Proof Chains&rdquo; where we require miners to build on top of previous proofs up to some largest level, until they find one that satisfies the difficulty, then they publish it all on the chain and this means that some previous verification can be &mldr; while keeping all the nice properties from Nakamoto consensus.</p>
-<h1 id=related-work>Related work</h1>
-<p>An ideal proof system would require verifier succinctness (for efficient IVC), also be trustless (no trusted seutp), and also be quantum resistant. Recent work is rapidly approaching these capabilities. Since our modification are on the predicate layer, such improvements are complemetnary to our approach. Our work uses IVC as a completely black box. As long as you can use Pedersen, we can switch into any proof systems that have the same guarantees.</p>
-<h1 id=future-work>Future work</h1>
-<p>We would like to generalize this to arbitrary proof system. We want to be watermarking some of these systems. We also want to design cloaking properties for other (faster) hash functions. We would also like to extend to full bitcoin functionality, which might require a soft-fork.</p>
-<div class=row></div>
-</div>
-</div>
-</div>
-<script src=https://btctranscripts.com/lib/jquery.min.js></script>
+<h1>Proof Of Necessary Work</h1><p><i>Transcript By: Bryan Bishop</i></p><p>Tags:
+<a href=/tags/proof-of-work>Proof of work</a></p><p>Category:
+<a href=/categories/conference>Conference</a></p><p>Proof of necessary work: Succinct state verification with fairness guarantees</p><p>Assimakis Kattis</p><h1 id=introduction>Introduction</h1><p>I am going to show you proof of necessary work today. We use proof of work in a prototype. This is joint work with my collaborators.</p><h1 id=problems>Problems</h1><p>We wanted to tackle the problem of bitcoin blockchain size increases. Every 10 minutes, a block is added to the blockchain and the blockchain grows linearly in size over time. Initial block download increases over time.</p><h1 id=proof-of-necessary-work>Proof of necessary work</h1><p>We use proof-of-work to verify transactions. We allow lite clients to verify state with minimal processing. We generare proofs &ldquo;for free&rdquo; through PoW. To bundle this in, we can generate proofs for free by leveraging the fact that proof-of-work currently is sort of very computationally intensive.</p><h1 id=design-challenge>Design challenge</h1><p>There are some important results from theoretical computer science. We can create small succinct proofs from any NP statement. Such proofs can verify previous proofs efficiently. Also, you can use recursive SNARKs. This is really important because we can use this idea, we can have our proof verify the previous proof so that the previous block was correct, and the current transactions in the system. This means we&rsquo;re immediately going to have a proof from genesis up to this point that&ndash; sort of a proof that the whole state is correct.</p><p>So what we want is the proof that verifies correctness of the chain, small enough to enter the blockchain (succinctness) and can be checked with very minimal resources.</p><p>We use recursive SNARKs which are a specific instantiation of incremental verifiable computation.</p><h1 id=proofs-of-state-validity>Proofs of state validity</h1><p>We feel it&rsquo;s natural that incrementally verifiable computation fits into bitcoin. &mldr;. The miner has to keep all of the state, but it&rsquo;s the miner so we&rsquo;re fine with this large memory requirement. We use a merkle root, and the previous proof, and the verifier is going to have to do a cheap computation to check that indeed this is actually correct. We do this throughout every single block, and we attach these proofs to the block.</p><h1 id=prototype-design>Prototype design</h1><p>We designed a prototype that is account-based and has simple payment functionality. We wanted to establish a proof-of-concept, so there&rsquo;s no UTXOs, no scripts, and there&rsquo;s none of the hunky transaction types. We just wanted to double check that this thing is something we can get numbers for and that they would be feasible. So we did this, and we got some numbers here.</p><p>We did our benchmark on AWS ra5.2xlarge with 8 cores and 64 GB RAM.</p><p>We&rsquo;re using libsnark and rank-1 constraint systems. It takes about 2 minutes to process these 25 transactions on this benchmark using sort of IVC prototype from a few years ago. I&rsquo;m not an expert on what&rsquo;s the most cutting edge way of doing IVC. But the idea is that even on a system like this, we&rsquo;re still within the realm of feasibility. Our proofs of the whole system and state sort of, the correctness, is only a couple hundred bytes. We thought that was the demonstration that this is definitely something that could be instantiated.</p><h1 id=what-did-we-achieve>What did we achieve?</h1><p>Our prototype produces block headers of &lt;500 bytes in size, for any number of transactions per block. The number of transactions doesn&rsquo;t change what the proof size is. It doesn&rsquo;t matter how many transactions there are in the block, you still get a small blockheader. Stateless clients can just take this proof and immediately verify it almost instantaneously.</p><p>We could optimize this to get something like 100 transactions/block using something like libsnark, which is a couple of orders of magnitude slower than some of the new stuff coming out. However, the problem is that proofs take a very long time to generate. We would like to incentivize people to make these proofs, and the natural idea is to make the proof-of-work do it.</p><h1 id=pow-from-proof-generation>PoW from proof generation</h1><p>We&rsquo;re going to follow Nakamoto consensus in bitcoin. We&rsquo;re going to add a random nonce to the proof on every single iteration. The miners can randomly sample this, and this will change pi or the proof. The nonce is randomly sampled, changing pi. Probability of success is exponentially distributed. The problem with this approach is that when you&rsquo;re doing double-sha256, you can&rsquo;t really split the sha256 up into different parts and compute them once and then churn on the rest. With SNARKs or these proofs, that is something you could definitely do. So this process favors large scale. A large miner will be able to calculate the proof at the beginning, change the nonce, and then only change the parts that effect the nonce. I drew some diagrams to try to demonstrate this.</p><h1 id=modeling-proof-generation>Modeling proof generation</h1><p>I want to give a high-level idea of what the model is here. We need to ensure by predicate (proof) is hard to solve in general. We model this using a hardness oracle O. The oracle is going to be providing the miner with the hard computation. The number of times that the miner queries the oracle is sort of the number of hard computations that they have to do. We want, every single time they make a new proof, we want them to not be able to reuse previous information, and they must query the oracle the same amount of time always. We don&rsquo;t want the prover to reuse any previous information, if we want the same model as double-sha256. In current succinct SNARK implementations, the oracle provides access to modular exponentiation in some prime order group G. This reduces to harndess in the generic group model.</p><h1 id=formalizing-the-model>Formalizing the model</h1><p>We formalize the model with the notion of epsilon hardness. A large prover only gets an epsilon advantage from previous computation when generating proofs. A definition of epsilon-hardness is provided in the paper.</p><h1 id=committing-to-the-nonce>Committing to the nonce</h1><p>We commit to the nonce in the proof. If the nonce is random, then changing any of the inputs without really changing this nonce, is going to lead to an invalid configuration. This really prevents any previous work from being reused. Say you try it with a nonce, you&rsquo;re out of luck, you try again. The nonce is going to change a lot of things inside the proof, so your previous computation is useless. The end result is that we want the miner to compute the whole proof from scratch.</p><h1 id=adding-nonce-to-state>Adding nonce to state</h1><p>In the account based model we use, we store state in a merkle tree, the leaves are accounts. For every transaction, we have to check old merkle paths, compute new merkle paths, and check that signatures and amounts are valid. The idea here is that we want to link the state and nonce through a &lsquo;seed&rsquo; parameter. It&rsquo;s some function that is unpredictable, we hash all of them, and we get some value. The end result is that altering any part of the input is going to lead to something that is required, and we are going to formally check this. This is unpredictable by the cryptographic hash function. This is sort of the value we&rsquo;re trying to go to plug into the rest of the proof to make it impossible for an adversarial miner to excervate.</p><h1 id=creating-hard-predicates>Creating hard predicates</h1><p>The problem is that this only requires access to state. An adversary can reuse work as p doesn&rsquo;t alter the vast majority of computation. So the goal is to alter the predicate to embed it into the proof.</p><p>Strawman: insert n in every updated leaf. New merkle paths then change unpredictably as a function of the nonce. If we could inject our nonce in all of the merkle paths, then we would be done. The problem is that we only alter half of them. This gives an epsilon of about 1/2.</p><p>The new idea is to modify hash function by &lsquo;cloaking&rsquo; it with p. The design challenge is to modify our hash function to use p &lsquo;almost everywhere&rsquo;, while outputting the same result as before. We want to take this hash function, make it output exactly the same thing on the output, but all the intermediate steps should be a function of this row which should be computationally unpredictable.</p><p>We do the cloaking with a pedersen hash. This leverages some specific properties of Pedersen, namely the homomorphic properties. This doesn&rsquo;t add a lot of constraints into the proof system; it doesn&rsquo;t make the proof substantially larger. We do need to verify that this is an actual input; and this adds a linear amount of constraints, which can increase the proving time of our circuit.</p><h1 id=putting-it-all-together>Putting it all together</h1><p>We demonstrate how to cloak predicates with a nonce n, making information reuse impossible. What&rsquo;s the theoretical limits for this? For a 20 transaction predicate, there&rsquo;s like 6 million constraints, which means we lower bound our epsilon by 20% per block in our predicate when the implementing the previous ideas without optimization. It&rsquo;s the predicate of the whole block; we can use the cloaking technique for the rest of the computation namely things like the signatures, we use Schnorr, and some of the other stuff. That&rsquo;s really not that important, it is important I just don&rsquo;t go into it here because it&rsquo;s not the majority of the computation. We think it&rsquo;s promising that we can put epsilon down so low that we can have a negligble overhead for large miners.</p><h1 id=proof-chains>Proof chains</h1><p>Proof chains from bitcoin-ng a few years ago are a similar idea. Discarding previous profos is wasteful, so can we do better? It&rsquo;s easy to extend this and get some throughput, like &ldquo;Proof Chains&rdquo; where we require miners to build on top of previous proofs up to some largest level, until they find one that satisfies the difficulty, then they publish it all on the chain and this means that some previous verification can be &mldr; while keeping all the nice properties from Nakamoto consensus.</p><h1 id=related-work>Related work</h1><p>An ideal proof system would require verifier succinctness (for efficient IVC), also be trustless (no trusted seutp), and also be quantum resistant. Recent work is rapidly approaching these capabilities. Since our modification are on the predicate layer, such improvements are complemetnary to our approach. Our work uses IVC as a completely black box. As long as you can use Pedersen, we can switch into any proof systems that have the same guarantees.</p><h1 id=future-work>Future work</h1><p>We would like to generalize this to arbitrary proof system. We want to be watermarking some of these systems. We also want to design cloaking properties for other (faster) hash functions. We would also like to extend to full bitcoin functionality, which might require a soft-fork.</p><div class=row></div></div></div></div><script src=https://btctranscripts.com/lib/jquery.min.js></script>
 <script src=https://btctranscripts.com/lib/popper.min.js></script>
 <script src=https://btctranscripts.com/js/bootstrap.min.js></script>
 <script type=text/javascript src=/plugins/lunr.min.js></script>
@@ -663,6 +370,5 @@ Tel Aviv (2019)
 <script type=text/javascript src=/plugins/search.js></script>
 <script type=text/javascript src=https://btctranscripts.com/js/custom.js></script>
 <script type=text/javascript src=/plugins/clipboard.js></script>
-<script>new ClipboardJS('.btn')</script>
-</body>
-</html>
+<script>new ClipboardJS(".btn")</script>
+</body></html>

@@ -4,8 +4,7 @@
 <link rel=canonical href=https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/secure-fountain-architecture/>
 <title>
 Secure Fountain Architecture | ₿itcoin Transcripts
-</title>
-<link href=https://btctranscripts.com/css/fontawesome.min.css rel=stylesheet>
+</title><link href=https://btctranscripts.com/css/fontawesome.min.css rel=stylesheet>
 <link rel=stylesheet href=https://btctranscripts.com/css/ace.min.css>
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://btctranscripts.com/images/btctranscripts.png">
@@ -16,26 +15,19 @@ https://twitter.com/kanzure/status/1172158545577594880
 paper: https://arxiv.org/abs/1906.12140
 Introduction I know this is the last formal talk of the day so thank you so much for being here. This is joint work with my collaborators.
 Is storage really an issue for bitcoin? Bitcoin&rsquo;s blockchain size is only 238 GB. So why is storage important? But blockchain size is a growing problem. It&rsquo;s always going to go up.">
-</head>
-<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id=navbarMain>
+</head><body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id=navbarMain>
 <div class=container>
 <div>
 <a class=navbar-brand href=/>
 ₿itcoin Transcripts
 </a>
-</div>
-<div class="collapse navbar-collapse" id=navbarMainCollapse>
+</div><div class="collapse navbar-collapse" id=navbarMainCollapse>
 <ul class="navbar-nav ml-auto">
 <li class=nav-item>
 <a class=nav-link href=https://github.com/bitcointranscripts/bitcointranscripts target=_blank>
 <i class="fab fa-github"></i>
 </a>
-</li>
-</ul>
-</div>
-</div>
-</nav>
-<div class=container-fluid>
+</li></ul></div></div></nav><div class=container-fluid>
 <div class=row>
 <div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
 <button class="navbar-toggler navbar-toggler-right collapsed" type=button data-toggle=collapse data-target=#sidenav-left-collapse aria-controls=sidenav-left-collapse aria-expanded=false aria-label="Toggle navigation">
@@ -44,560 +36,322 @@ Is storage really an issue for bitcoin? Bitcoin&rsquo;s blockchain size is only 
 <div class="collapse navbar-collapse align-items-start flex-column" id=sidenav-left-collapse>
 <form class="form-inline my-2 my-lg-0 searchbox">
 <input class="form-control mr-sm-2 w-100" data-search-input id=search-by type=text placeholder='Search (press "/")'>
-</form>
-<ul class="navbar-nav flex-column pt-3">
+</form><ul class="navbar-nav flex-column pt-3">
 <li data-nav-id=/adopting-bitcoin/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/adopting-bitcoin/><h6>Adopting Bitcoin</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/adopting-bitcoin/2021/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/adopting-bitcoin/2021/><h6>Adopting Bitcoin 2021</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/advancing-bitcoin/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/advancing-bitcoin/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/advancing-bitcoin/><h6>Advancing Bitcoin</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/advancing-bitcoin/2019/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/advancing-bitcoin/2019/><h6>Advancing Bitcoin 2019</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/advancing-bitcoin/2020/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/advancing-bitcoin/2020/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/advancing-bitcoin/2020/><h6>Advancing Bitcoin 2020</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/andreas-antonopoulos/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/andreas-antonopoulos/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/andreas-antonopoulos/><h6>Andreas Antonopoulos</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/austin-bitcoin-developers/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/austin-bitcoin-developers/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/austin-bitcoin-developers/><h6>Austin Bitcoin Developers</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/baltic-honeybadger/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/baltic-honeybadger/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/baltic-honeybadger/><h6>Baltic Honeybadger</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/baltic-honeybadger/2018/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/baltic-honeybadger/2018/><h6>Baltic Honeybadger 2018</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/baltic-honeybadger/2019/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/baltic-honeybadger/2019/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/baltic-honeybadger/2019/><h6>Baltic Honeybadger 2019</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/bit-block-boom/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/bit-block-boom/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/bit-block-boom/><h6>Bit Block Boom</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/bit-block-boom/2019/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/bit-block-boom/2019/><h6>Bit Block Boom 2019</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/bitcoin-core-dev-tech/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/bitcoin-core-dev-tech/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/bitcoin-core-dev-tech/><h6>Bitcoin Core Dev Tech</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/bitcoin-core-dev-tech/bitcoin-devcore-2015/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/bitcoin-core-dev-tech/bitcoin-devcore-2015/><h6>Bitcoin Devcore Meetup (2015)</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/bitcoin-design/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/bitcoin-design/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/bitcoin-design/><h6>Bitcoin Design</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/bitcoin-magazine/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/bitcoin-magazine/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/bitcoin-magazine/><h6>Bitcoin Magazine</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/bitcoinops/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/bitcoinops/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/bitcoinops/><h6>Bitcoinops</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/bitcoinops/schnorr-taproot-workshop-2019/ class="nav-item my-1">
 <a class="nav-link p-0" href=/bitcoinops/schnorr-taproot-workshop-2019/><h6>Schnorr Taproot Workshop 2019</h6></a>
-</li>
-</ul>
-</li>
-<li data-nav-id=/blockchain-protocol-analysis-security-engineering/ class="nav-item my-1 haschildren">
+</li></ul></li><li data-nav-id=/blockchain-protocol-analysis-security-engineering/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/><h6>Blockchain Protocol Analysis Security Eng</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/blockchain-protocol-analysis-security-engineering/2017/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2017/><h6>Blockchain Protocol Analysis Security Engineering 2017</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/blockchain-protocol-analysis-security-engineering/2018/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/blockchain-protocol-analysis-security-engineering/2018/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2018/><h6>Blockchain Protocol Analysis Security Engineering 2018</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/blockstream-webinars/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/blockstream-webinars/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/blockstream-webinars/><h6>Blockstream Webinars</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/boltathon/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/boltathon/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/boltathon/><h6>Boltathon</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/breaking-bitcoin/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/breaking-bitcoin/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/breaking-bitcoin/><h6>Breaking Bitcoin</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/breaking-bitcoin/2017/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/breaking-bitcoin/2017/><h6>Breaking Bitcoin 2017</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/breaking-bitcoin/2019/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/breaking-bitcoin/2019/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/breaking-bitcoin/2019/><h6>Breaking Bitcoin 2019</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/building-on-bitcoin/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/building-on-bitcoin/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/building-on-bitcoin/><h6>Building On Bitcoin</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/building-on-bitcoin/2018/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/building-on-bitcoin/2018/><h6>Building On Bitcoin 2018</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/c-lightning/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/c-lightning/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/c-lightning/><h6>c-lightning</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/chaincode-labs/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/chaincode-labs/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/chaincode-labs/><h6>Chaincode Labs</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/chaincode-labs/chaincode-podcast/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/chaincode-labs/chaincode-podcast/><h6>Chaincode Podcast</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/chaincode-labs/chaincode-residency/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/chaincode-labs/chaincode-residency/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/chaincode-labs/chaincode-residency/><h6>Chaincode Residency</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/chicago-bitdevs/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/chicago-bitdevs/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/chicago-bitdevs/><h6>Chicago Bitdevs</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/coindesk-consensus-2016/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/coindesk-consensus-2016/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/coindesk-consensus-2016/><h6>Coindesk Consensus</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/coordination-of-decentralized-finance-workshop/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/coordination-of-decentralized-finance-workshop/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/><h6>Coordination of Decentralized Finance</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/coordination-of-decentralized-finance-workshop/2020-stanford/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/2020-stanford/><h6>2020 Stanford</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/cppcon/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/cppcon/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/cppcon/><h6>CPPcon</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/cppcon/2017/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/cppcon/2017/><h6>CPPcon 2017</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/cppcon/2020/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/cppcon/2020/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/cppcon/2020/><h6>CPPcon 2020</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/cryptoeconomic-systems/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/cryptoeconomic-systems/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/cryptoeconomic-systems/><h6>Cryptoeconomic Systems</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/cryptoeconomic-systems/2019/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/cryptoeconomic-systems/2019/><h6>Cryptoeconomic Systems 2019</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/dallas-bitcoin-symposium/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/dallas-bitcoin-symposium/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/dallas-bitcoin-symposium/><h6>Dallas Bitcoin Symposium</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/decentralized-financial-architecture-workshop/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/decentralized-financial-architecture-workshop/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/decentralized-financial-architecture-workshop/><h6>Decentralized Financial Architecture Workshop</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/bitcoin-developers-miners-meeting-2016/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/bitcoin-developers-miners-meeting-2016/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/bitcoin-developers-miners-meeting-2016/><h6>Developers-Miners Meeting</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/greg-maxwell/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/greg-maxwell/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/greg-maxwell/><h6>Greg Maxwell</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/grincon/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/grincon/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/grincon/><h6>Grincon</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/grincon/2019/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/grincon/2019/><h6>Grincon 2019</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/honey-badger-diaries/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/honey-badger-diaries/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/honey-badger-diaries/><h6>Honey Badger Diaries</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/la-bitdevs/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/la-bitdevs/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/la-bitdevs/><h6>LA Bitdevs</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/layer2-summit/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/layer2-summit/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/layer2-summit/><h6>Layer2 Summit</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/layer2-summit/2018/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/layer2-summit/2018/><h6>Layer2 Summit 2018</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/lets-talk-bitcoin-podcast/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/lets-talk-bitcoin-podcast/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/lets-talk-bitcoin-podcast/><h6>Lets Talk Bitcoin Podcast</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/lightning-conference/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/lightning-conference/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/lightning-conference/><h6>Lightning Conference</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/lightning-conference/2019/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/lightning-conference/2019/><h6>Lightning Conference 2019</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/lightning-hack-day/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/lightning-hack-day/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/lightning-hack-day/><h6>Lightning Hack Day</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/lightning-specification/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/lightning-specification/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/lightning-specification/><h6>Lightning Specification</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/london-bitcoin-devs/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/london-bitcoin-devs/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/london-bitcoin-devs/><h6>London Bitcoin Devs</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/magicalcryptoconference/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/magicalcryptoconference/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/magicalcryptoconference/><h6>Magicalcryptoconference</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/magicalcryptoconference/2019/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/magicalcryptoconference/2019/><h6>Magicalcryptoconference 2019</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/misc/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/misc/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/misc/><h6>Misc</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/mit-bitcoin-expo/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/mit-bitcoin-expo/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/mit-bitcoin-expo/><h6>MIT Bitcoin Expo</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2015/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2015/><h6>Mit Bitcoin Expo 2015</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2016/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2016/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2016/><h6>Mit Bitcoin Expo 2016</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2017/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2017/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2017/><h6>Mit Bitcoin Expo 2017</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2018/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2018/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2018/><h6>Mit Bitcoin Expo 2018</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2019/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2019/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2019/><h6>Mit Bitcoin Expo 2019</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2020/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2020/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2020/><h6>Mit Bitcoin Expo 2020</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2021/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2021/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2021/><h6>Mit Bitcoin Expo 2021</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/munich-meetup/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/munich-meetup/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/munich-meetup/><h6>Munich Meetup</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/noded-podcast/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/noded-podcast/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/noded-podcast/><h6>Noded Podcast</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/realworldcrypto/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/realworldcrypto/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/realworldcrypto/><h6>Realworldcrypto</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/realworldcrypto/2018/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/realworldcrypto/2018/><h6>Realworldcrypto 2018</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/rebooting-web-of-trust/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/rebooting-web-of-trust/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/rebooting-web-of-trust/><h6>Rebooting Web Of Trust</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/rebooting-web-of-trust/2019-prague/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/rebooting-web-of-trust/2019-prague/><h6>2019 Prague</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/ruben-somsen/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/ruben-somsen/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/ruben-somsen/><h6>Ruben Somsen</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/satoshi-roundtable/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/satoshi-roundtable/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/satoshi-roundtable/><h6>Satoshi Roundtable</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/satoshi-roundtable/sr-004/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/satoshi-roundtable/sr-004/><h6>Sr 004</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/scalingbitcoin/ class="nav-item my-1 parent haschildren">
+</ul></li></ul></li><li data-nav-id=/scalingbitcoin/ class="nav-item my-1 parent haschildren">
 <a class="nav-link p-0" href=/scalingbitcoin/><h6>Scaling Bitcoin Conference</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/scalingbitcoin/montreal-2015/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/scalingbitcoin/montreal-2015/><h6>Montreal (2015)</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/scalingbitcoin/hong-kong-2015/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/scalingbitcoin/hong-kong-2015/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/scalingbitcoin/hong-kong-2015/><h6>Hong Kong (2015)</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/scalingbitcoin/milan-2016/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/scalingbitcoin/milan-2016/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/scalingbitcoin/milan-2016/><h6>Milan (2016)</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/scalingbitcoin/stanford-2017/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/scalingbitcoin/stanford-2017/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/><h6>Stanford (2017)</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/scalingbitcoin/stanford-2017/edgeplusplus/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/edgeplusplus/><h6>Edgeplusplus</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/scalingbitcoin/tokyo-2018/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/scalingbitcoin/tokyo-2018/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/><h6>Tokyo (2018)</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/scalingbitcoin/tokyo-2018/edgedevplusplus/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/edgedevplusplus/><h6>Edgedevplusplus</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/scalingbitcoin/tel-aviv-2019/ class="nav-item my-1 parent haschildren">
+</ul></li></ul></li><li data-nav-id=/scalingbitcoin/tel-aviv-2019/ class="nav-item my-1 parent haschildren">
 <a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/><h6>Tel Aviv (2019)</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/scalingbitcoin/tel-aviv-2019/edgedevplusplus/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/edgedevplusplus/><h6>Edgedevplusplus</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/sf-bitcoin-meetup/ class="nav-item my-1 haschildren">
+</ul></li></ul></li></ul></li><li data-nav-id=/sf-bitcoin-meetup/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/sf-bitcoin-meetup/><h6>SF Bitcoin Meetup</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/simons-institute/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/simons-institute/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/simons-institute/><h6>Simons Institute</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/stanford-blockchain-conference/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/stanford-blockchain-conference/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/stanford-blockchain-conference/><h6>Stanford Blockchain</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/stanford-blockchain-conference/2019/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/stanford-blockchain-conference/2019/><h6>Stanford Blockchain Conference 2019</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/stanford-blockchain-conference/2020/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/stanford-blockchain-conference/2020/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/stanford-blockchain-conference/2020/><h6>Stanford Blockchain Conference 2020</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/stephan-livera-podcast/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/stephan-livera-podcast/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/stephan-livera-podcast/><h6>Stephan Livera Podcast</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/sydney-bitcoin-meetup/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/sydney-bitcoin-meetup/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/sydney-bitcoin-meetup/><h6>Sydney Bitcoin Meetup</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/tabconf/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/tabconf/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/tabconf/><h6>TABConf</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/tabconf/2021/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/tabconf/2021/><h6>TABConf 2021</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/texas-bitcoin-conference-2014/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/texas-bitcoin-conference-2014/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/texas-bitcoin-conference-2014/><h6>Texas Bitcoin Conference</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/tftc-podcast/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/tftc-podcast/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/tftc-podcast/><h6>TFTC Podcast</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/verifiable-delay-functions/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/verifiable-delay-functions/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/verifiable-delay-functions/><h6>Verifiable Delay Functions</h6></a>
 <ul class="list-unstyled ml-2">
 <li data-nav-id=/verifiable-delay-functions/vdf-day-2019/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/verifiable-delay-functions/vdf-day-2019/><h6>Vdf Day 2019</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</li>
-<li data-nav-id=/vr-bitcoin/ class="nav-item my-1 haschildren">
+</ul></li></ul></li><li data-nav-id=/vr-bitcoin/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/vr-bitcoin/><h6>VR Bitcoin</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/w3-blockchain-workshop-2016/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/w3-blockchain-workshop-2016/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/w3-blockchain-workshop-2016/><h6>W3 Blockchain Workshop</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/wasabi-research-club/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/wasabi-research-club/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/wasabi-research-club/><h6>Wasabi Research Club</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-<li data-nav-id=/what-bitcoin-did-podcast/ class="nav-item my-1 haschildren">
+</ul></li><li data-nav-id=/what-bitcoin-did-podcast/ class="nav-item my-1 haschildren">
 <a class="nav-link p-0" href=/what-bitcoin-did-podcast/><h6>What Bitcoin Did Podcast</h6></a>
 <ul class="list-unstyled ml-2">
-</ul>
-</li>
-</ul>
-</div>
-</nav>
-</div>
-<div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky"><div class=docs-toc>
+</ul></li></ul></div></nav></div><div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky"><div class=docs-toc>
 <nav id=TableOfContents>
 <ul>
-<li><a href=#introduction>Introduction</a></li>
-<li><a href=#is-storage-really-an-issue-for-bitcoin>Is storage really an issue for bitcoin?</a></li>
-<li><a href=#scaling-bitcoin>Scaling bitcoin</a></li>
-<li><a href=#challenges>Challenges</a></li>
-<li><a href=#tradeoff>Tradeoff</a></li>
-<li><a href=#decentralization-via-random-sampling>Decentralization via random sampling</a></li>
-<li><a href=#erasure-coding-random-linear-codes>Erasure coding: Random linear codes</a></li>
-<li><a href=#erasure-coding-reed-solomon-codes>Erasure coding: Reed-Solomon codes</a></li>
-<li><a href=#sef-a-secure-fountain-architecture-using-fountain-codes>SeF: A secure fountain architecture using fountain codes</a></li>
-<li><a href=#sef-encoding>SeF encoding</a></li>
-<li><a href=#fountain-codes>Fountain codes</a></li>
-<li><a href=#luby-transform-lt-codes>Luby-transform (LT) codes</a></li>
-<li><a href=#peeling-decoding>Peeling decoding</a></li>
-<li><a href=#sef-luby-transform-lt-encoder>SeF: Luby-transform (LT) encoder</a></li>
-<li><a href=#sef-peeling-decoder>SeF peeling decoder</a></li>
-<li><a href=#threat-model>Threat model</a></li>
-<li><a href=#comparison-with-existing-solutions>Comparison with existing solutions</a></li>
-<li><a href=#numerical-results>Numerical results</a></li>
-<li><a href=#tackling-block-size-variability>Tackling block size variability</a></li>
-<li><a href=#experimental-results>Experimental results</a></li>
-<li><a href=#conclusion>Conclusion</a></li>
-<li><a href=#future-work>Future work</a></li>
-</ul>
-</nav>
-</div>
-</div>
-<div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+<li><a href=#introduction>Introduction</a></li><li><a href=#is-storage-really-an-issue-for-bitcoin>Is storage really an issue for bitcoin?</a></li><li><a href=#scaling-bitcoin>Scaling bitcoin</a></li><li><a href=#challenges>Challenges</a></li><li><a href=#tradeoff>Tradeoff</a></li><li><a href=#decentralization-via-random-sampling>Decentralization via random sampling</a></li><li><a href=#erasure-coding-random-linear-codes>Erasure coding: Random linear codes</a></li><li><a href=#erasure-coding-reed-solomon-codes>Erasure coding: Reed-Solomon codes</a></li><li><a href=#sef-a-secure-fountain-architecture-using-fountain-codes>SeF: A secure fountain architecture using fountain codes</a></li><li><a href=#sef-encoding>SeF encoding</a></li><li><a href=#fountain-codes>Fountain codes</a></li><li><a href=#luby-transform-lt-codes>Luby-transform (LT) codes</a></li><li><a href=#peeling-decoding>Peeling decoding</a></li><li><a href=#sef-luby-transform-lt-encoder>SeF: Luby-transform (LT) encoder</a></li><li><a href=#sef-peeling-decoder>SeF peeling decoder</a></li><li><a href=#threat-model>Threat model</a></li><li><a href=#comparison-with-existing-solutions>Comparison with existing solutions</a></li><li><a href=#numerical-results>Numerical results</a></li><li><a href=#tackling-block-size-variability>Tackling block size variability</a></li><li><a href=#experimental-results>Experimental results</a></li><li><a href=#conclusion>Conclusion</a></li><li><a href=#future-work>Future work</a></li></ul></nav></div></div><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
 <a href=/>Home</a>
 &lt; <a href=/scalingbitcoin/>
 Scaling Bitcoin Conference
@@ -606,86 +360,12 @@ Scaling Bitcoin Conference
 Tel Aviv (2019)
 </a>
 &lt; Secure Fountain Architecture
-<h1>Secure Fountain Architecture</h1>
-<p><i>Transcript By: Bryan Bishop</i></p>
-<p>Tags:
-<a href=/tags/security>Security</a></p>
-<p>Category:
-<a href=/categories/conference>Conference</a></p>
-<p>A secure fountain architecture for slashing storage costs in blockchains</p>
-<p>Swanand Kadhe (UC Berkeley)</p>
-<p><a href=https://twitter.com/kanzure/status/1172158545577594880>https://twitter.com/kanzure/status/1172158545577594880</a></p>
-<p>paper: <a href=https://arxiv.org/abs/1906.12140>https://arxiv.org/abs/1906.12140</a></p>
-<h1 id=introduction>Introduction</h1>
-<p>I know this is the last formal talk of the day so thank you so much for being here. This is joint work with my collaborators.</p>
-<h1 id=is-storage-really-an-issue-for-bitcoin>Is storage really an issue for bitcoin?</h1>
-<p>Bitcoin&rsquo;s blockchain size is only 238 GB. So why is storage important? But blockchain size is a growing problem. It&rsquo;s always going to go up. If you do some back of the envelope calculations, then the growth rate is roughly 1 block per 10 minutes so roughly 1 MB per 10 minutes. This is about 52,560 MB/year at full blocks. This is about 144 MB/day. So then the user has to figure out, do I upload this to the cloud? Do I trust the cloud?</p>
-<h1 id=scaling-bitcoin>Scaling bitcoin</h1>
-<p>How can we reduce the storage costs for nodes without reducing the security properties of bitcoin and blockchain in general? We need to take a deeper look into the bitcoin ecosystem. There are archival nodes, lite nodes and pruned nodes.</p>
-<p>The archival full nodes are the most secure way to join bitcoin. They download the entire history and validate all of the history and they store the entire blockchain. If you are an archival full node, then you also help bootstrapping the new nodes by giving them the history.</p>
-<p>The other extreme are the thin light clients. These nodes are the SPV clients and you can think of them as the most economical way to join the bitcoin system, by ignoring some of the bitcoin rules. They only download the blockheaders. But the issue is that you need to rely on full nodes, since you don&rsquo;t validate any transactions. So there are security and privacy issues.</p>
-<p>In between, there are pruned nodes. This is a third type of node. The pruned nodes are essentially bitcoin&rsquo;s solution to storage bloat. The pruned node starts as a full node, but then deletes the history and only stores the UTXO set and the last few blocks. Individually they are almost as secure as full nodes. This has a fixed storage overhead, which is great.</p>
-<p>The concern with pruned nodes is how do they interact with network health. If you are an archival full node, you are helping the new nodes to bootstrap because they can download the history and you&rsquo;re also preserving the history. What if every user tomorrow runs a pruned node or SPV client? Well, then we lose the history and it&rsquo;s not possible for a new node to join the system.</p>
-<p>We want to come up with ways where we can store the history in a more decentralized way where each node has low storage costs but we&rsquo;re not giving up on any decentralization or security property.</p>
-<h1 id=challenges>Challenges</h1>
-<p>The first challenge is security. There might be some malicious nodes that are adversarial. The second challenge is decentralization, where full nodes must perform their computations without relying on others. The other one is low computation cost, and also the next one is low bootstrap cost. The number of nodes that the new node is contacting should be small.</p>
-<h1 id=tradeoff>Tradeoff</h1>
-<p>There is a fundamental tradeoff between storage savings vs bootstrapping cost. As you reduce the storage requirements on each node, you increase the amount of work that each new node needs to pay in bootstrapping. We want to devise a scheme that has a very small bootstrapping cost.</p>
-<h1 id=decentralization-via-random-sampling>Decentralization via random sampling</h1>
-<p>When the blockchain grows by k blocks, randomly store s blocks out of k. Keep doing this as time goes on. Suppose for every 10,000 blocks I am only storing 10 blocks, so this is 1000 fold savings. This is good because the storage costs have gone down. In fact, this is used in sharding for ripple. But the problem is that this has prohibitive bootstrapping cost for new nodes. You have to communicate with a large number of nodes to find the last block.</p>
-<h1 id=erasure-coding-random-linear-codes>Erasure coding: Random linear codes</h1>
-<p>One proposal last year was to use random linear codes. Split every block into k fragments, and compute s coded fragments using random linear coding. This is a well known technique in data backup and archival. See Perard et al 2018, Dai et al 2018. The main issue here is that it&rsquo;s not possible to detect the malicious nodes. Also, recovering the block involves matrix inversion which requires O(k^2) computation. This has a small bootstrap cost, though.</p>
-<h1 id=erasure-coding-reed-solomon-codes>Erasure coding: Reed-Solomon codes</h1>
-<p>Here, what changes is how we are taking the linear combinations. Now we are doing it in a specific way, dictated by a Reed-Solomon code. Indeed, there is manageable bootstrap cost, and good storage savings of k/s. Reed-Solomon codes are error-correcting codes, and malicious coded fragments can be corrected which is great.</p>
-<p>Unfortunately, the finite field size should grow with the size of the network, which gives this a prohibitive computation cost.</p>
-<p>See Raman-Varshney 2018, Li et al 2018 (polyshard).</p>
-<h1 id=sef-a-secure-fountain-architecture-using-fountain-codes>SeF: A secure fountain architecture using fountain codes</h1>
-<p>We are essentially using secure fountain codes to distribute the blockchain history between multiple nodes. We envision that storage-constrained nodes are called droplet nodes here. They only store a small amount of data. When a new node joins the system, it contacts some subset of droplets and downloads the data. You should be able to retrieve the blockchain in the presence of malicious users. Once you retrieve the blockchain, you can act as a full node, but you also encode it and turn yourself into a new droplet. Droplet nodes will slowly replace full archival nodes.</p>
-<h1 id=sef-encoding>SeF encoding</h1>
-<p>In the current epoch (the time required for the blockchain to grow by k blocks), when the blockchain grows by k blocks, encode the k blocks into s droplets using a fountain code. The storage savings are k/s, so if k=1000 and s=10, then you have 1000x savings.</p>
-<h1 id=fountain-codes>Fountain codes</h1>
-<p>In fountain codes, they take a set of packets and encode them into potentially infinite number of droplets. It goes to the bucket and the decoder is able to recover blocks from all the droplets. That&rsquo;s the high level idea.</p>
-<h1 id=luby-transform-lt-codes>Luby-transform (LT) codes</h1>
-<p>One of the first and well-known fountain codes is luby-transform codes. Basically blocks get XORed together.</p>
-<h1 id=peeling-decoding>Peeling decoding</h1>
-<p>Collect an arbitrary subset of droplets of sufficient size. Peeling decoder recovers original source symbols.</p>
-<p>Luby 2002 designed a robust soliton degree distribution that guarantees successful recovery.</p>
-<h1 id=sef-luby-transform-lt-encoder>SeF: Luby-transform (LT) encoder</h1>
-<p>In SeF, we are going to use the luby-transform (LT) encoder as-is. So we use a robust Soliton degree distribution proposed by Luby. Once you decide how many blocks you are going to xor, you randomly choose 3 blocks, and you &mldr; then you store that. You also store the header data from the blockchain.</p>
-<p>An important property of fountain codes is that they are rateless codes, meaning it&rsquo;s possible to keep constructing droplets without knowing what any other node is doing. This is important for scalability because every node can now create its own droplets without knowing anything about the rest of the network. This helps with decentralization and also scalability of the system.</p>
-<h1 id=sef-peeling-decoder>SeF peeling decoder</h1>
-<p>For retrieving the blockchain history, we want to decode the blockchain. We can&rsquo;t use the peeling decoder as-is, because of malicious block providers. They might be giving you some garbage, which gets used in the decoding, and then there&rsquo;s error propagation and it ends up happening that you decode entirely garbage. So we need to deal with it.</p>
-<p>We&rsquo;re going to leverage the hashchain structure and merkle roots to cleverly deal with the malicious nodes.</p>
-<p>Fountain codes were originally designed for a different task. Here, we&rsquo;re using them for blockchain. Our first step in decoding is to obtain the longest valid header chain. We&rsquo;re acting as an SPV client or lite client. I can verify that this is the correct chain because of the PoW difficulty. Once we have the right chain, I am going to download some droplets from droplet nodes. Then we can create this graph where we can see each droplet is a XOR of some of this other data. Out of these droplet nodes, some of them are going to be malicious meaning that this droplet was claimed to be a XOR of block 3 and 6 but it can actually be some arbitrary data. But we don&rsquo;t know that; once you XOR the blocks, you lose all the semantic information. For a new node, you don&rsquo;t know which are malicious blocks and which are legitimate blocks. So we need to actually detect that.</p>
-<p>To do that, we&rsquo;re going to essentially use the header chain as side information to detect bad blocks. So we start in the standard way of the peeling decode,r then we need to pick a singleton block that is not XORed with anything, and let&rsquo;s compare its header with the header in the headerchain. If the headers match, then we take the payload of this block which is supposed to be transactions, and then compute the merkle root and see if the merkle root matches the one stored in the headerchain. If both of them match, then we&rsquo;re going to accept that block. But if they don&rsquo;t match, then it must be a malicious block and we&rsquo;re essentially going to delete it.n</p>
-<p>Malicious droplets are detected only when they become a singleton. Peeling is crucial in detecting malicious droplets.</p>
-<h1 id=threat-model>Threat model</h1>
-<p>The threat model is that some arbitrary set of nodes are adversarial and are giving you garbage data. We&rsquo;re assuming that there are at least a certain number of honest nodes, and the adversary is oblivious and cannot observe storage contents of the network and then choose to who to attack. In this model, we can show that if a malicious droplet becomes a singleton, it is rejected. OBlivious adversary cannot influence probability of decoding failure for honest droplets.</p>
-<h1 id=comparison-with-existing-solutions>Comparison with existing solutions</h1>
-<p>&mldr;.</p>
-<h1 id=numerical-results>Numerical results</h1>
-<p>&mldr;.</p>
-<h1 id=tackling-block-size-variability>Tackling block size variability</h1>
-<p>One thing we can do is adaptive zeor-padding, while computing bit-wise XOR, a node zero-pads the blocks to the largest block among the d blocks.</p>
-<p>Block concatenation is a natural way to reduce variance in block size, to first concatenate blocks to form superblocks and then XOR superblocks and that encoding. Then ew can have the blocks almost equal size and we can save a lot.</p>
-<h1 id=experimental-results>Experimental results</h1>
-<p>&mldr;</p>
-<h1 id=conclusion>Conclusion</h1>
-<p>We presented a secure fountain code architecture for reducing blockchain storage costs by orders of magnitude without compromising security of the network. This can be directly applied on top of bitcoin, without requiring a soft-fork or hard-fork.</p>
-<h1 id=future-work>Future work</h1>
-<ul>
+<h1>Secure Fountain Architecture</h1><p><i>Transcript By: Bryan Bishop</i></p><p>Tags:
+<a href=/tags/security>Security</a></p><p>Category:
+<a href=/categories/conference>Conference</a></p><p>A secure fountain architecture for slashing storage costs in blockchains</p><p>Swanand Kadhe (UC Berkeley)</p><p><a href=https://twitter.com/kanzure/status/1172158545577594880>https://twitter.com/kanzure/status/1172158545577594880</a></p><p>paper: <a href=https://arxiv.org/abs/1906.12140>https://arxiv.org/abs/1906.12140</a></p><h1 id=introduction>Introduction</h1><p>I know this is the last formal talk of the day so thank you so much for being here. This is joint work with my collaborators.</p><h1 id=is-storage-really-an-issue-for-bitcoin>Is storage really an issue for bitcoin?</h1><p>Bitcoin&rsquo;s blockchain size is only 238 GB. So why is storage important? But blockchain size is a growing problem. It&rsquo;s always going to go up. If you do some back of the envelope calculations, then the growth rate is roughly 1 block per 10 minutes so roughly 1 MB per 10 minutes. This is about 52,560 MB/year at full blocks. This is about 144 MB/day. So then the user has to figure out, do I upload this to the cloud? Do I trust the cloud?</p><h1 id=scaling-bitcoin>Scaling bitcoin</h1><p>How can we reduce the storage costs for nodes without reducing the security properties of bitcoin and blockchain in general? We need to take a deeper look into the bitcoin ecosystem. There are archival nodes, lite nodes and pruned nodes.</p><p>The archival full nodes are the most secure way to join bitcoin. They download the entire history and validate all of the history and they store the entire blockchain. If you are an archival full node, then you also help bootstrapping the new nodes by giving them the history.</p><p>The other extreme are the thin light clients. These nodes are the SPV clients and you can think of them as the most economical way to join the bitcoin system, by ignoring some of the bitcoin rules. They only download the blockheaders. But the issue is that you need to rely on full nodes, since you don&rsquo;t validate any transactions. So there are security and privacy issues.</p><p>In between, there are pruned nodes. This is a third type of node. The pruned nodes are essentially bitcoin&rsquo;s solution to storage bloat. The pruned node starts as a full node, but then deletes the history and only stores the UTXO set and the last few blocks. Individually they are almost as secure as full nodes. This has a fixed storage overhead, which is great.</p><p>The concern with pruned nodes is how do they interact with network health. If you are an archival full node, you are helping the new nodes to bootstrap because they can download the history and you&rsquo;re also preserving the history. What if every user tomorrow runs a pruned node or SPV client? Well, then we lose the history and it&rsquo;s not possible for a new node to join the system.</p><p>We want to come up with ways where we can store the history in a more decentralized way where each node has low storage costs but we&rsquo;re not giving up on any decentralization or security property.</p><h1 id=challenges>Challenges</h1><p>The first challenge is security. There might be some malicious nodes that are adversarial. The second challenge is decentralization, where full nodes must perform their computations without relying on others. The other one is low computation cost, and also the next one is low bootstrap cost. The number of nodes that the new node is contacting should be small.</p><h1 id=tradeoff>Tradeoff</h1><p>There is a fundamental tradeoff between storage savings vs bootstrapping cost. As you reduce the storage requirements on each node, you increase the amount of work that each new node needs to pay in bootstrapping. We want to devise a scheme that has a very small bootstrapping cost.</p><h1 id=decentralization-via-random-sampling>Decentralization via random sampling</h1><p>When the blockchain grows by k blocks, randomly store s blocks out of k. Keep doing this as time goes on. Suppose for every 10,000 blocks I am only storing 10 blocks, so this is 1000 fold savings. This is good because the storage costs have gone down. In fact, this is used in sharding for ripple. But the problem is that this has prohibitive bootstrapping cost for new nodes. You have to communicate with a large number of nodes to find the last block.</p><h1 id=erasure-coding-random-linear-codes>Erasure coding: Random linear codes</h1><p>One proposal last year was to use random linear codes. Split every block into k fragments, and compute s coded fragments using random linear coding. This is a well known technique in data backup and archival. See Perard et al 2018, Dai et al 2018. The main issue here is that it&rsquo;s not possible to detect the malicious nodes. Also, recovering the block involves matrix inversion which requires O(k^2) computation. This has a small bootstrap cost, though.</p><h1 id=erasure-coding-reed-solomon-codes>Erasure coding: Reed-Solomon codes</h1><p>Here, what changes is how we are taking the linear combinations. Now we are doing it in a specific way, dictated by a Reed-Solomon code. Indeed, there is manageable bootstrap cost, and good storage savings of k/s. Reed-Solomon codes are error-correcting codes, and malicious coded fragments can be corrected which is great.</p><p>Unfortunately, the finite field size should grow with the size of the network, which gives this a prohibitive computation cost.</p><p>See Raman-Varshney 2018, Li et al 2018 (polyshard).</p><h1 id=sef-a-secure-fountain-architecture-using-fountain-codes>SeF: A secure fountain architecture using fountain codes</h1><p>We are essentially using secure fountain codes to distribute the blockchain history between multiple nodes. We envision that storage-constrained nodes are called droplet nodes here. They only store a small amount of data. When a new node joins the system, it contacts some subset of droplets and downloads the data. You should be able to retrieve the blockchain in the presence of malicious users. Once you retrieve the blockchain, you can act as a full node, but you also encode it and turn yourself into a new droplet. Droplet nodes will slowly replace full archival nodes.</p><h1 id=sef-encoding>SeF encoding</h1><p>In the current epoch (the time required for the blockchain to grow by k blocks), when the blockchain grows by k blocks, encode the k blocks into s droplets using a fountain code. The storage savings are k/s, so if k=1000 and s=10, then you have 1000x savings.</p><h1 id=fountain-codes>Fountain codes</h1><p>In fountain codes, they take a set of packets and encode them into potentially infinite number of droplets. It goes to the bucket and the decoder is able to recover blocks from all the droplets. That&rsquo;s the high level idea.</p><h1 id=luby-transform-lt-codes>Luby-transform (LT) codes</h1><p>One of the first and well-known fountain codes is luby-transform codes. Basically blocks get XORed together.</p><h1 id=peeling-decoding>Peeling decoding</h1><p>Collect an arbitrary subset of droplets of sufficient size. Peeling decoder recovers original source symbols.</p><p>Luby 2002 designed a robust soliton degree distribution that guarantees successful recovery.</p><h1 id=sef-luby-transform-lt-encoder>SeF: Luby-transform (LT) encoder</h1><p>In SeF, we are going to use the luby-transform (LT) encoder as-is. So we use a robust Soliton degree distribution proposed by Luby. Once you decide how many blocks you are going to xor, you randomly choose 3 blocks, and you &mldr; then you store that. You also store the header data from the blockchain.</p><p>An important property of fountain codes is that they are rateless codes, meaning it&rsquo;s possible to keep constructing droplets without knowing what any other node is doing. This is important for scalability because every node can now create its own droplets without knowing anything about the rest of the network. This helps with decentralization and also scalability of the system.</p><h1 id=sef-peeling-decoder>SeF peeling decoder</h1><p>For retrieving the blockchain history, we want to decode the blockchain. We can&rsquo;t use the peeling decoder as-is, because of malicious block providers. They might be giving you some garbage, which gets used in the decoding, and then there&rsquo;s error propagation and it ends up happening that you decode entirely garbage. So we need to deal with it.</p><p>We&rsquo;re going to leverage the hashchain structure and merkle roots to cleverly deal with the malicious nodes.</p><p>Fountain codes were originally designed for a different task. Here, we&rsquo;re using them for blockchain. Our first step in decoding is to obtain the longest valid header chain. We&rsquo;re acting as an SPV client or lite client. I can verify that this is the correct chain because of the PoW difficulty. Once we have the right chain, I am going to download some droplets from droplet nodes. Then we can create this graph where we can see each droplet is a XOR of some of this other data. Out of these droplet nodes, some of them are going to be malicious meaning that this droplet was claimed to be a XOR of block 3 and 6 but it can actually be some arbitrary data. But we don&rsquo;t know that; once you XOR the blocks, you lose all the semantic information. For a new node, you don&rsquo;t know which are malicious blocks and which are legitimate blocks. So we need to actually detect that.</p><p>To do that, we&rsquo;re going to essentially use the header chain as side information to detect bad blocks. So we start in the standard way of the peeling decode,r then we need to pick a singleton block that is not XORed with anything, and let&rsquo;s compare its header with the header in the headerchain. If the headers match, then we take the payload of this block which is supposed to be transactions, and then compute the merkle root and see if the merkle root matches the one stored in the headerchain. If both of them match, then we&rsquo;re going to accept that block. But if they don&rsquo;t match, then it must be a malicious block and we&rsquo;re essentially going to delete it.n</p><p>Malicious droplets are detected only when they become a singleton. Peeling is crucial in detecting malicious droplets.</p><h1 id=threat-model>Threat model</h1><p>The threat model is that some arbitrary set of nodes are adversarial and are giving you garbage data. We&rsquo;re assuming that there are at least a certain number of honest nodes, and the adversary is oblivious and cannot observe storage contents of the network and then choose to who to attack. In this model, we can show that if a malicious droplet becomes a singleton, it is rejected. OBlivious adversary cannot influence probability of decoding failure for honest droplets.</p><h1 id=comparison-with-existing-solutions>Comparison with existing solutions</h1><p>&mldr;.</p><h1 id=numerical-results>Numerical results</h1><p>&mldr;.</p><h1 id=tackling-block-size-variability>Tackling block size variability</h1><p>One thing we can do is adaptive zeor-padding, while computing bit-wise XOR, a node zero-pads the blocks to the largest block among the d blocks.</p><p>Block concatenation is a natural way to reduce variance in block size, to first concatenate blocks to form superblocks and then XOR superblocks and that encoding. Then ew can have the blocks almost equal size and we can save a lot.</p><h1 id=experimental-results>Experimental results</h1><p>&mldr;</p><h1 id=conclusion>Conclusion</h1><p>We presented a secure fountain code architecture for reducing blockchain storage costs by orders of magnitude without compromising security of the network. This can be directly applied on top of bitcoin, without requiring a soft-fork or hard-fork.</p><h1 id=future-work>Future work</h1><ul>
 <li>
-<p>How to dynamically change epoch length k?</p>
-</li>
-<li>
-<p>How to reduce decoding complexity to be linear in k?</p>
-</li>
-</ul>
-<div class=row></div>
-</div>
-</div>
-</div>
-<script src=https://btctranscripts.com/lib/jquery.min.js></script>
+<p>How to dynamically change epoch length k?</p></li><li>
+<p>How to reduce decoding complexity to be linear in k?</p></li></ul><div class=row></div></div></div></div><script src=https://btctranscripts.com/lib/jquery.min.js></script>
 <script src=https://btctranscripts.com/lib/popper.min.js></script>
 <script src=https://btctranscripts.com/js/bootstrap.min.js></script>
 <script type=text/javascript src=/plugins/lunr.min.js></script>
@@ -695,6 +375,5 @@ Tel Aviv (2019)
 <script type=text/javascript src=/plugins/search.js></script>
 <script type=text/javascript src=https://btctranscripts.com/js/custom.js></script>
 <script type=text/javascript src=/plugins/clipboard.js></script>
-<script>new ClipboardJS('.btn')</script>
-</body>
-</html>
+<script>new ClipboardJS(".btn")</script>
+</body></html>
