@@ -92,6 +92,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="es"
+                href="https://btctranscripts.com/es/tags/security/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="pt"
                 href="https://btctranscripts.com/pt/tags/security/"
                 />

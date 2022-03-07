@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Misc on Transcripciones de ₿itcoin</title>
+    <link>https://btctranscripts.com/es/misc/</link>
+    <description>Recent content in Misc on Transcripciones de ₿itcoin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://btctranscripts.com/es/misc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>0xB10C - The Incomplete History of Bitcoin Development</title>
+      <link>https://btctranscripts.com/es/misc/2019-08-04-incomplete_history/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/es/misc/2019-08-04-incomplete_history/</guid>
+      <description>Autor: 0xB10C Texto original: https://b10c.me/blog/004-the-incomplete-history-of-bitcoin-development/
+La historia incompleta del desarrollo de Bitcoin domingo, 4 de agosto de 2019
+Para comprender plenamente la justificación del estado actual del desarrollo de Bitcoin, el conocimiento de los eventos históricos es esencial. Esta publicación de blog destaca eventos históricos seleccionados, versiones de software y correcciones de errores antes y después de que Satoshi abandonara el proyecto. Además, contiene una sección sobre el estado actual del desarrollo de Bitcoin.</description>
+    </item>
+    
+    <item>
+      <title>Arvind Narayanan and Jeremy Clark - Bitcoin&#39;s Academic Pedigree (2017-08-29)</title>
+      <link>https://btctranscripts.com/es/misc/2017-08-29-bitcoin-academic-pedigree/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/es/misc/2017-08-29-bitcoin-academic-pedigree/</guid>
+      <description>Autores: Arvind Narayanan and Jeremy Clark Texto original: https://queue.acm.org/detail.cfm?id=3136559
+Pedigrí académico de Bitcoin El concepto de criptomonedas se basa en ideas olvidadas en la literatura de investigación. Arvind Narayanan y Jeremy Clark
+Si has leído sobre bitcoin en la prensa y tienes cierta familiaridad con la investigación académica en el campo de la criptografía, podrías tener razonablemente la siguiente impresión: La investigación de varias décadas sobre el efectivo digital, comenzando por David Chaum,10,12 no condujo al éxito comercial porque requería un servidor centralizado similar a un banco que controle el sistema y ningún banco quería iniciar sesión.</description>
+    </item>
+    
+    <item>
+      <title>Jameson Lopp - Bitcoin&#39;s Security Model - A Deep Dive (2016-11-13)</title>
+      <link>https://btctranscripts.com/es/misc/2016-11-13-lopp-bitcoin-security-model/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/es/misc/2016-11-13-lopp-bitcoin-security-model/</guid>
+      <description>Autores: Jameson Lopp Texto original: https://www.coindesk.com/markets/2016/11/13/bitcoins-security-model-a-deep-dive/
+El modelo de seguridad de Bitcoin: una profunda inmersión CoinDesk echa un vistazo bajo el capó para entender qué funciones de seguridad ofrecen y qué no ofrecen bitcoin. Cuando se discuten los mecanismos de consenso para diferentes criptomonedas, un tema que a menudo causa argumentos es la falta de comprensión (y definición) del modelo de seguridad que proporcionan para los datos históricos del libro mayor.</description>
+    </item>
+    
+    <item>
+      <title>Ray Dillinger -  If I&#39;d Known What We Were Starting (2017-09-20)</title>
+      <link>https://btctranscripts.com/es/misc/2017-09-20-ray-dillinger-if-id-known/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://btctranscripts.com/es/misc/2017-09-20-ray-dillinger-if-id-known/</guid>
+      <description>Autor: Ray Dillinger Texto original: https://www.linkedin.com/pulse/id-known-what-we-were-starting-ray-dillinger/
+Si hubiera sabido lo que estábamos empezando En noviembre de 2008, realicé una revisión de código y una auditoría de seguridad para la parte de la blockchain del código fuente de Bitcoin. El fallecido Hal Finney revisó el código y auditó el lenguaje de scripting, y ambos analizamos el código de contabilidad. Satoshi Nakamoto, arquitecto seudónimo y autor del código, alternó entre responder preguntas y hacerlas.</description>
+    </item>
+    
+  </channel>
+</rss>
