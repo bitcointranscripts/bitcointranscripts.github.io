@@ -27,7 +27,7 @@ DefaultContentLanguage = "en"
 
 [params]
     disableReadmoreNav = true
-    menushortcutsnewtab = true
+    menushortcutsnewtab = false
     custom_js = ["js/custom.js"]
     custom_css = ["scss/custom.scss"]
     images = ["images/btctranscripts.png"]
@@ -39,7 +39,27 @@ DefaultContentLanguage = "en"
   [markup.goldmark.renderer]
     unsafe = true
 
-[[menu.shortcuts]]
-    name = "<i class='fab fa-github'></i>"
-    url = "https://github.com/bitcointranscripts/bitcointranscripts"
+[[languages.en.menu.shortcuts]]
+    name = "es"
+    url = "/es"
     weight = 1
+[[languages.en.menu.shortcuts]]
+    name = "pt"
+    url = "/pt"
+    weight = 2
+[[languages.es.menu.shortcuts]]
+    name = "en"
+    url = "/en"
+    weight = 1
+[[languages.es.menu.shortcuts]]
+    name = "pt"
+    url = "/pt"
+    weight = 2
+[[languages.pt.menu.shortcuts]]
+    name = "en"
+    url = "/en"
+    weight = 1
+[[languages.pt.menu.shortcuts]]
+    name = "es"
+    url = "/es"
+    weight = 2
