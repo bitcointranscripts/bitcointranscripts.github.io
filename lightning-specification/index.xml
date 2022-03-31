@@ -33,4 +33,12 @@ Date: February 14th 2022
 Video: No video posted online
 Agenda: https://github.com/lightning/bolts/issues/957
 Organizing a Lightning Core Dev meetup I was talking about organizing a face to face Lightning Core Dev meetup. If I understand correctly there has only been one formal one and that was in 2019 in Australia. There has been two?
-Milan, the kickoff. There has only ever been two.</description></item></channel></rss>
+Milan, the kickoff. There has only ever been two.</description></item><item><title>Lightning specification call (2022-03-14)</title><link>https://btctranscripts.com/lightning-specification/2022-03-14-specification-call/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-specification/2022-03-14-specification-call/</guid><description>Name: Lightning specification call
+Topic: Agenda below
+Location: Jitsi
+Date: March 14th 2022
+Video: No video posted online
+Agenda: https://github.com/lightning/bolts/issues/969
+BOLT 4: Remove legacy format, make var_onion_optin compulsory https://github.com/lightning/bolts/pull/962
+I think eclair and c-lightning have both removed support for legacy payments.
+I’ll probably make a PR to add the feature bit or at least flip it to required. The only wallet I can think of that is somewhat more fringe now is Simple Bitcoin Wallet.</description></item></channel></rss>

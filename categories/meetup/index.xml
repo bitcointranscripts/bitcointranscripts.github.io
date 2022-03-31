@@ -63,7 +63,12 @@ https://twitter.com/SFBitcoinDevs/status/1206678306721894400
 bip-taproot: https://github.com/sipa/bips/blob/bip-schnorr/bip-taproot.mediawiki
 bip-tapscript: https://github.com/sipa/bips/blob/bip-schnorr/bip-tapscript.mediawiki
 bip-schnorr: https://github.com/sipa/bips/blob/bip-schnorr/bip-schnorr.mediawiki
-Please try to find seats. Today we have a special treat. We have Pieter here, who is well known as a contributor to Bitcoin Core, stackexchange, the mailing list, and he has been around forever. He&amp;rsquo;s the author of multiple BIPs. Today he is going to talk about taproot and tapscript which is basically what the whole Schnorr movement thing became.</description></item><item><title>Bram Cohen Merkle Sets (2017-07-08)</title><link>https://btctranscripts.com/sf-bitcoin-meetup/2017-07-08-bram-cohen-merkle-sets/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/sf-bitcoin-meetup/2017-07-08-bram-cohen-merkle-sets/</guid><description>2017-07-08
+Please try to find seats. Today we have a special treat. We have Pieter here, who is well known as a contributor to Bitcoin Core, stackexchange, the mailing list, and he has been around forever. He&amp;rsquo;s the author of multiple BIPs. Today he is going to talk about taproot and tapscript which is basically what the whole Schnorr movement thing became.</description></item><item><title>Bitcoin Lightning Network Developments - with Igor Korsakov</title><link>https://btctranscripts.com/bitcoinology/2022-01-26-igor-korsakov-cool-ln-developments/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoinology/2022-01-26-igor-korsakov-cool-ln-developments/</guid><description>Name: Igor Korsakov
+Topic: Cool Lightning Network Developments
+Date: January 26th 2022
+Video: https://www.youtube.com/watch?v=5pmfNOUQg_s?t=285
+Synonym Igor Synonym is a company that John Carvalho started and he is trying to put Web3 inside of Bitcoin. But what it consists of? They&amp;rsquo;re using several things like identities and people hosting their own data.
+AOPP For identity, the first thing I want to mention is Address Ownership Proof Protocol (AOPP). This is the field that we added in BlueWallet some months ago.</description></item><item><title>Bram Cohen Merkle Sets (2017-07-08)</title><link>https://btctranscripts.com/sf-bitcoin-meetup/2017-07-08-bram-cohen-merkle-sets/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/sf-bitcoin-meetup/2017-07-08-bram-cohen-merkle-sets/</guid><description>2017-07-08
 Merkle set data structures for scaling bitcoin
 Bram Cohen
 video: https://www.youtube.com/watch?v=52FVkHlCh7Y
@@ -145,7 +150,13 @@ Location: Jitsi online
 Date: January 24th 2022
 Video: No video posted online
 The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
-Individual updates Still working on the cln stuff.</description></item><item><title>Cali 2016</title><link>https://btctranscripts.com/bitcoin-developers-miners-meeting-2016/cali2016/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-developers-miners-meeting-2016/cali2016/</guid><description>California Gathering 2016
+Individual updates Still working on the cln stuff.</description></item><item><title>c-lightning developer call (2022-03-07)</title><link>https://btctranscripts.com/c-lightning/2022-03-07-developer-call/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/c-lightning/2022-03-07-developer-call/</guid><description>Name: c-lightning developer call
+Topic: Various topics
+Location: Jitsi online
+Date: March 7th 2022
+Video: No video posted online
+The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
+Minisketch and gossip spam I’ve been working on the multi channel connect stuff, trying to not get distracted by Tether talk and other stuff like that.</description></item><item><title>Cali 2016</title><link>https://btctranscripts.com/bitcoin-developers-miners-meeting-2016/cali2016/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-developers-miners-meeting-2016/cali2016/</guid><description>California Gathering 2016
 Transcription introduction Some Bitcoin developers and miners gathered together during the end of the July to socialize and become better acquainted with each other. The following discussions were live transcribed by an untrained volunteer with attribution removed as per Chatham House rules. In bitcoin, discussions can move very quickly, which can cause an increase in errors, including semantic errors, when typing in real time. This text was not produced from an audio recording.</description></item><item><title>Christopher Jeffrey Bcoin (2016-09-28)</title><link>https://btctranscripts.com/sf-bitcoin-meetup/2016-09-28-christopher-jeffrey-bcoin/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/sf-bitcoin-meetup/2016-09-28-christopher-jeffrey-bcoin/</guid><description>Name: Christopher Jeffrey (JJ)
 Topic: Bcoin
 Location: SF Bitcoin Devs
@@ -262,7 +273,13 @@ Topic: Lightning Network BOLT by BOLT
 Location: LA Blockchain Meetup
 Video: https://www.youtube.com/watch?v=Ysj2yobFMF4
 Transcript by: glozow
-Introduction I&amp;rsquo;m Jim from the protocol team at Coinbase. We work on open source stuff in the crypto space. We just contribute to projects like Bitcoin core. The reason I&amp;rsquo;m talking about this is I&amp;rsquo;ve been contributing on and off to one of the major lightning implementations lnd for the past eight months or so.</description></item><item><title>Lightning specification call (2021-11-22)</title><link>https://btctranscripts.com/lightning-specification/2021-11-22-specification-call/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-specification/2021-11-22-specification-call/</guid><description>Name: Lightning specification call
+Introduction I&amp;rsquo;m Jim from the protocol team at Coinbase. We work on open source stuff in the crypto space. We just contribute to projects like Bitcoin core. The reason I&amp;rsquo;m talking about this is I&amp;rsquo;ve been contributing on and off to one of the major lightning implementations lnd for the past eight months or so.</description></item><item><title>Lightning Network Panel (2022-03-01)</title><link>https://btctranscripts.com/london-bitcoin-devs/2022-03-01-lightning-panel/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/london-bitcoin-devs/2022-03-01-lightning-panel/</guid><description>Name: Christian Decker, Bastien Teinturier, Oliver Gugger, Michael Folkson
+Topic: The Lightning Network in 2022
+Location: London Bitcoin Devs
+Date: March 1st 2022
+Video: TBA
+Introductions Ali Taylor-Cipolla (ATC): Ali coming in from Coinbase Recruiting. I’d like to introduce to my friend Tiago who is on the Europe side.
+Tiago Schmidt (TS): Hello everyone. Quick introduction, sitting in the recruiting team here in London and leading the expansion for engineering hiring across UK and Ireland.</description></item><item><title>Lightning specification call (2021-11-22)</title><link>https://btctranscripts.com/lightning-specification/2021-11-22-specification-call/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-specification/2021-11-22-specification-call/</guid><description>Name: Lightning specification call
 Topic: Agenda below
 Location: Google Meet
 Date: November 22nd 2021
@@ -297,7 +314,15 @@ Date: February 14th 2022
 Video: No video posted online
 Agenda: https://github.com/lightning/bolts/issues/957
 Organizing a Lightning Core Dev meetup I was talking about organizing a face to face Lightning Core Dev meetup. If I understand correctly there has only been one formal one and that was in 2019 in Australia. There has been two?
-Milan, the kickoff. There has only ever been two.</description></item><item><title>Luke Dashjr - Segwit, PSBT Vulnerability (2020-06-18)</title><link>https://btctranscripts.com/la-bitdevs/2020-06-18-luke-dashjr-segwit-psbt-vulnerability/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/la-bitdevs/2020-06-18-luke-dashjr-segwit-psbt-vulnerability/</guid><description>Name: Luke Dashjr
+Milan, the kickoff. There has only ever been two.</description></item><item><title>Lightning specification call (2022-03-14)</title><link>https://btctranscripts.com/lightning-specification/2022-03-14-specification-call/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-specification/2022-03-14-specification-call/</guid><description>Name: Lightning specification call
+Topic: Agenda below
+Location: Jitsi
+Date: March 14th 2022
+Video: No video posted online
+Agenda: https://github.com/lightning/bolts/issues/969
+BOLT 4: Remove legacy format, make var_onion_optin compulsory https://github.com/lightning/bolts/pull/962
+I think eclair and c-lightning have both removed support for legacy payments.
+I’ll probably make a PR to add the feature bit or at least flip it to required. The only wallet I can think of that is somewhat more fringe now is Simple Bitcoin Wallet.</description></item><item><title>Luke Dashjr - Segwit, PSBT Vulnerability (2020-06-18)</title><link>https://btctranscripts.com/la-bitdevs/2020-06-18-luke-dashjr-segwit-psbt-vulnerability/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/la-bitdevs/2020-06-18-luke-dashjr-segwit-psbt-vulnerability/</guid><description>Name: Luke Dashjr
 Topic: SegWit/PSBT vulnerability (CVE-2020-14199)
 Location: LA BitDevs (online)
 Date: June 18th 2020
