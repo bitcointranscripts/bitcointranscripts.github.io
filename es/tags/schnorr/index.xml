@@ -5,4 +5,10 @@ Fecha: 6 de febrero de 2020
 Video (acceso de pago): https://www.advancingbitcoin.com/video/a-schnorr-taprooted-lightning,11/
 Diapositivas: https://www.dropbox.com/s/9vs54e9bqf317u0/Schnorr-Taproot%27ed-LN.pdf
 Introducción Hoy Schnorr y Taproot para Lightning, es un tema realmente apasionante.
-Arquitectura Lightning La arquitectura Lightning para aquellos que no están familiarizados con ella. Usted tiene el blockchain como la capa subyacente. Encima de ella vas a construir un canal, tienes un HTLC y la gente va a gastar capas hacia ti.</description></item></channel></rss>
+Arquitectura Lightning La arquitectura Lightning para aquellos que no están familiarizados con ella. Usted tiene el blockchain como la capa subyacente. Encima de ella vas a construir un canal, tienes un HTLC y la gente va a gastar capas hacia ti.</description></item><item><title>LTB - Pieter Wuille, Jonas Nick (2019-06-09)</title><link>https://btctranscripts.com/es/lets-talk-bitcoin-podcast/2019-06-09-ltb-pieter-wuille-jonas-nick/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/es/lets-talk-bitcoin-podcast/2019-06-09-ltb-pieter-wuille-jonas-nick/</guid><description>Hablemos de Bitcoin con Pieter Wuille y Jonas Nick – 9 de Junio de 2019 (&amp;ldquo;Let&amp;rsquo;s Talk Bitcoin&amp;rdquo;) https://twitter.com/kanzure/status/1155851797568917504
+Parte 1: https://letstalkbitcoin.com/blog/post/lets-talk-bitcoin-400-the-tools-and-the-work
+Parte 2: https://letstalkbitcoin.com/blog/post/lets-talk-bitcoin-401-the-tools-and-the-work-part-2
+Borrador de BIP-Schnorr: https://github.com/sipa/bips/blob/bip-schnorr/bip-schnorr.mediawiki
+Borrador de BIP-Taproot: https://github.com/sipa/bips/blob/bip-schnorr/bip-taproot.mediawiki
+Borrador de BIP-Tapscript: https://github.com/sipa/bips/blob/bip-schnorr/bip-tapscript.mediawiki
+Parte 1 Adam: En este episodio vamos a adentrarnos en uno de los cambios más importantes que llegarán pronto al protocolo de Bitcoin como BIPs o Propuestas de Mejora de Bitcoin (“Bitcoin Improvement Proposals”), con foco en Taproot, Tapscript y firmas Schnorr.</description></item></channel></rss>
