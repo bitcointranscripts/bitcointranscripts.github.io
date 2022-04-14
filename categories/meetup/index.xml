@@ -376,7 +376,49 @@ https://twitter.com/kanzure/status/1161266116293009408
 Intro So the goal here as Justin said is to get the regtest environment set up. The advantages he mentioned, there is also the advantage that you can mine your own coins at will so you don’t have to mess around with testnet faucets. You can generate blocks as well so you don’t have to wait for six confirmations or whatever or even the ten minutes.</description></item><item><title>Scaling Bitcoin To Billions Of Transactions Per Day (2015-02-23)</title><link>https://btctranscripts.com/sf-bitcoin-meetup/2015-02-23-scaling-bitcoin-to-billions-of-transactions-per-day/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/sf-bitcoin-meetup/2015-02-23-scaling-bitcoin-to-billions-of-transactions-per-day/</guid><description>2015-02-23
 http://lightning.network/
 video: https://www.youtube.com/watch?v=8zVzw912wPo
-Joseph Poon joseph@lightning.network Thaddeus Dryja rx@awsomnet.org We&amp;rsquo;re doing a presentation on the lightning network and micropayments. Right now bitcoin faces some interesting problems, like transactions aren&amp;rsquo;t instant, and micropayments don&amp;rsquo;t work. The transaction fees are 1/10th of a cent or higher depending on the exchange rate. And, &amp;ldquo;bitcoin doesn&amp;rsquo;t scale&amp;rdquo; especially if you have a lot of micropayments. One megabyte blocks? Well, let&amp;rsquo;s increase them.</description></item><item><title>Socratic Seminar (2020-04-22)</title><link>https://btctranscripts.com/london-bitcoin-devs/2020-04-22-socratic-seminar/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/london-bitcoin-devs/2020-04-22-socratic-seminar/</guid><description>Name: Socratic Seminar
+Joseph Poon joseph@lightning.network Thaddeus Dryja rx@awsomnet.org We&amp;rsquo;re doing a presentation on the lightning network and micropayments. Right now bitcoin faces some interesting problems, like transactions aren&amp;rsquo;t instant, and micropayments don&amp;rsquo;t work. The transaction fees are 1/10th of a cent or higher depending on the exchange rate. And, &amp;ldquo;bitcoin doesn&amp;rsquo;t scale&amp;rdquo; especially if you have a lot of micropayments. One megabyte blocks? Well, let&amp;rsquo;s increase them.</description></item><item><title>Socratic Seminar - BIP Schnorr (2020-06-16)</title><link>https://btctranscripts.com/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/</guid><description>Name: Socratic Seminar
+Topic: BIP Schnorr (BIP 340)
+Location: London BitDevs (online)
+Date: June 16th 2020
+Video: https://www.youtube.com/watch?v=uE3lLsf38O4
+Pastebin of the resources discussed: https://pastebin.com/uyktht33
+August 2020 update: Since this Socratic on BIP Schnorr there has been a proposed change to the BIP revisting the squaredness tiebreaker for the R point.
+The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed.</description></item><item><title>Socratic Seminar - BIP Taproot (2020-07-21)</title><link>https://btctranscripts.com/london-bitcoin-devs/2020-07-21-socratic-seminar-bip-taproot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/london-bitcoin-devs/2020-07-21-socratic-seminar-bip-taproot/</guid><description>Name: Socratic Seminar
+Topic: BIP Taproot (BIP 341)
+Location: London BitDevs (online)
+Date: July 21st 2020
+Video: https://www.youtube.com/watch?v=bPcguc108QM
+Pastebin of the resources discussed: https://pastebin.com/vsT3DNqW
+Transcript of Socratic Seminar on BIP-Schnorr: https://diyhpl.us/wiki/transcripts/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/
+The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.</description></item><item><title>Socratic Seminar - Coinswap (2020-06-23)</title><link>https://btctranscripts.com/london-bitcoin-devs/2020-06-23-socratic-seminar-coinswap/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/london-bitcoin-devs/2020-06-23-socratic-seminar-coinswap/</guid><description>Name: Socratic Seminar
+Topic: CoinSwap
+Location: London BitDevs (online)
+Date: June 23rd 2020
+Video: https://www.youtube.com/watch?v=u7l6rP49hIA
+Pastebin of the resources discussed: https://pastebin.com/zbegGmb8
+The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
+Introductions Michael Folkson (MF): This is London BitDevs, this is a Socratic Seminar.</description></item><item><title>Socratic Seminar - Discreet Log Contracts (2021-08-10)</title><link>https://btctranscripts.com/london-bitcoin-devs/2021-08-10-socratic-seminar-dlcs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/london-bitcoin-devs/2021-08-10-socratic-seminar-dlcs/</guid><description>Name: Socratic Seminar
+Topic: Discreet Log Contracts
+Location: London BitDevs (online)
+Date: August 10th 2021
+Video: https://www.youtube.com/watch?v=h6SkBwOCFsA
+Gist of resources discussed: https://gist.github.com/michaelfolkson/f5da6774c24f99dba5c6c16ec8d499e9
+This event was livestreamed on YouTube and so comments are attributed to specific individuals by the name or pseudonym that was visible on the livestream. If you were a participant and would like your comments to be anonymized please get in touch.
+Intro Michael Folkson (MF): Welcome to everyone on the call, welcome to people watching on YouTube.</description></item><item><title>Socratic Seminar - Signet (2020-08-19)</title><link>https://btctranscripts.com/london-bitcoin-devs/2020-08-19-socratic-seminar-signet/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/london-bitcoin-devs/2020-08-19-socratic-seminar-signet/</guid><description>Name: Socratic Seminar
+Topic: Signet
+Location: London BitDevs (online)
+Date: August 19th 2020
+Video: https://www.youtube.com/watch?v=b0AiucAuX3E
+Pastebin of the resources discussed: https://pastebin.com/rAcXX9Tn
+The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
+Intro Michael Folkson (MF): This is a Socratic Seminar organized by London BitDevs.</description></item><item><title>Socratic Seminar - Taproot rollout (2021-07-20)</title><link>https://btctranscripts.com/london-bitcoin-devs/2021-07-20-socratic-seminar-taproot-rollout/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/london-bitcoin-devs/2021-07-20-socratic-seminar-taproot-rollout/</guid><description>Name: Socratic Seminar
+Topic: Taproot is locked in. What now?
+Location: London BitDevs (online)
+Date: July 20th 2021
+Video: https://www.youtube.com/watch?v=GAkLuZNsZzw
+Gist of resources discussed: https://gist.github.com/michaelfolkson/0803271754f851530fe8242087859254
+This event was livestreamed on YouTube and so comments are attributed to specific individuals by the name or pseudonym that was visible on the livestream. If you were a participant and would like your comments to be anonymized please get in touch.
+Intro Michael Folkson (MF): Welcome to everyone on the call, welcome to anybody on YouTube.</description></item><item><title>Socratic Seminar (2020-04-22)</title><link>https://btctranscripts.com/london-bitcoin-devs/2020-04-22-socratic-seminar/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/london-bitcoin-devs/2020-04-22-socratic-seminar/</guid><description>Name: Socratic Seminar
 Topic: Grokking Bitcoin by Kalle Rosenbaum
 Location: London BitDevs (online)
 Date: April 22nd 2020
@@ -421,49 +463,7 @@ Date: August 25th 2020
 Video: No video posted online
 Last month’s Sydney Socratic: https://diyhpl.us/wiki/transcripts/sydney-bitcoin-meetup/2020-07-21-socratic-seminar/
 Google Doc of the resources discussed: https://docs.google.com/document/d/1rJxVznWaFHKe88s5GyrxOW-RFGTeD_GKdFzHNvhrq-c/
-The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.</description></item><item><title>Socratic Seminar - BIP Schnorr (2020-06-16)</title><link>https://btctranscripts.com/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/</guid><description>Name: Socratic Seminar
-Topic: BIP Schnorr (BIP 340)
-Location: London BitDevs (online)
-Date: June 16th 2020
-Video: https://www.youtube.com/watch?v=uE3lLsf38O4
-Pastebin of the resources discussed: https://pastebin.com/uyktht33
-August 2020 update: Since this Socratic on BIP Schnorr there has been a proposed change to the BIP revisting the squaredness tiebreaker for the R point.
-The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed.</description></item><item><title>Socratic Seminar - BIP Taproot (2020-07-21)</title><link>https://btctranscripts.com/london-bitcoin-devs/2020-07-21-socratic-seminar-bip-taproot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/london-bitcoin-devs/2020-07-21-socratic-seminar-bip-taproot/</guid><description>Name: Socratic Seminar
-Topic: BIP Taproot (BIP 341)
-Location: London BitDevs (online)
-Date: July 21st 2020
-Video: https://www.youtube.com/watch?v=bPcguc108QM
-Pastebin of the resources discussed: https://pastebin.com/vsT3DNqW
-Transcript of Socratic Seminar on BIP-Schnorr: https://diyhpl.us/wiki/transcripts/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/
-The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.</description></item><item><title>Socratic Seminar - Coinswap (2020-06-23)</title><link>https://btctranscripts.com/london-bitcoin-devs/2020-06-23-socratic-seminar-coinswap/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/london-bitcoin-devs/2020-06-23-socratic-seminar-coinswap/</guid><description>Name: Socratic Seminar
-Topic: CoinSwap
-Location: London BitDevs (online)
-Date: June 23rd 2020
-Video: https://www.youtube.com/watch?v=u7l6rP49hIA
-Pastebin of the resources discussed: https://pastebin.com/zbegGmb8
-The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
-Introductions Michael Folkson (MF): This is London BitDevs, this is a Socratic Seminar.</description></item><item><title>Socratic Seminar - Discreet Log Contracts (2021-08-10)</title><link>https://btctranscripts.com/london-bitcoin-devs/2021-08-10-socratic-seminar-dlcs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/london-bitcoin-devs/2021-08-10-socratic-seminar-dlcs/</guid><description>Name: Socratic Seminar
-Topic: Discreet Log Contracts
-Location: London BitDevs (online)
-Date: August 10th 2021
-Video: https://www.youtube.com/watch?v=h6SkBwOCFsA
-Gist of resources discussed: https://gist.github.com/michaelfolkson/f5da6774c24f99dba5c6c16ec8d499e9
-This event was livestreamed on YouTube and so comments are attributed to specific individuals by the name or pseudonym that was visible on the livestream. If you were a participant and would like your comments to be anonymized please get in touch.
-Intro Michael Folkson (MF): Welcome to everyone on the call, welcome to people watching on YouTube.</description></item><item><title>Socratic Seminar - Signet (2020-08-19)</title><link>https://btctranscripts.com/london-bitcoin-devs/2020-08-19-socratic-seminar-signet/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/london-bitcoin-devs/2020-08-19-socratic-seminar-signet/</guid><description>Name: Socratic Seminar
-Topic: Signet
-Location: London BitDevs (online)
-Date: August 19th 2020
-Video: https://www.youtube.com/watch?v=b0AiucAuX3E
-Pastebin of the resources discussed: https://pastebin.com/rAcXX9Tn
-The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
-Intro Michael Folkson (MF): This is a Socratic Seminar organized by London BitDevs.</description></item><item><title>Socratic Seminar - Taproot rollout (2021-07-20)</title><link>https://btctranscripts.com/london-bitcoin-devs/2021-07-20-socratic-seminar-taproot-rollout/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/london-bitcoin-devs/2021-07-20-socratic-seminar-taproot-rollout/</guid><description>Name: Socratic Seminar
-Topic: Taproot is locked in. What now?
-Location: London BitDevs (online)
-Date: July 20th 2021
-Video: https://www.youtube.com/watch?v=GAkLuZNsZzw
-Gist of resources discussed: https://gist.github.com/michaelfolkson/0803271754f851530fe8242087859254
-This event was livestreamed on YouTube and so comments are attributed to specific individuals by the name or pseudonym that was visible on the livestream. If you were a participant and would like your comments to be anonymized please get in touch.
-Intro Michael Folkson (MF): Welcome to everyone on the call, welcome to anybody on YouTube.</description></item><item><title>Socratic Seminar 2 (2019-08-22)</title><link>https://btctranscripts.com/austin-bitcoin-developers/2019-08-22-socratic-seminar-2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/austin-bitcoin-developers/2019-08-22-socratic-seminar-2/</guid><description>2019-08-22
+The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.</description></item><item><title>Socratic Seminar 2 (2019-08-22)</title><link>https://btctranscripts.com/austin-bitcoin-developers/2019-08-22-socratic-seminar-2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/austin-bitcoin-developers/2019-08-22-socratic-seminar-2/</guid><description>2019-08-22
 Austin Bitcoin Developers Socratic Seminar 2
 https://twitter.com/kanzure/status/1164710800910692353
 Introduction Hello. The idea was to do a more socratic style meetup. This was popularized by Bitdevs NYC and spread to SF. We tried this a few months ago with Jay. The idea is we run through research news, newsletters, podcasters, talk about what happened in the technical bitcoin community. We&amp;rsquo;re going to have different presenters.
