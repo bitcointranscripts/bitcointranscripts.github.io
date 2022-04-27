@@ -9,7 +9,19 @@ http://diyhpl.us/wiki/transcripts/w3-blockchain-workshop-2016/christopher-allen/
 http://diyhpl.us/wiki/transcripts/w3-blockchain-workshop-2016/petertodd-dex/
 https://petertodd.org/2016/talks-dex-arnhem-dev-workshop
 http://www.weboftrust.info/downloads/smart-signatures.pdf
-Probably what people are least familiar with is crypto conditions. I am going to say a tiny bit about it.</description></item><item><title>Threshold Signatures</title><link>https://btctranscripts.com/stanford-blockchain-conference/2019/threshold-signatures/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stanford-blockchain-conference/2019/threshold-signatures/</guid><description>Efficient distributed key generation for threshold signatures
+Probably what people are least familiar with is crypto conditions. I am going to say a tiny bit about it.</description></item><item><title>Sydney Socratic Seminar (2022-03-29)</title><link>https://btctranscripts.com/sydney-bitcoin-meetup/2022-03-29-socratic-seminar/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/sydney-bitcoin-meetup/2022-03-29-socratic-seminar/</guid><description>Name: Socratic Seminar w/ Jesse Posner
+Topic: FROST
+Location: Bitcoin Sydney (online)
+Date: March 29th 2022
+Video: https://rumble.com/vz3i3u-frost-the-future-of-schnorr-multisignatures-on-bitcoin.html
+FROST paper: https://eprint.iacr.org/2020/852.pdf
+secp256k1-zkp PR: https://github.com/ElementsProject/secp256k1-zkp/pull/138
+secp256kfun issue: https://github.com/LLFourn/secp256kfun/issues/85
+Ceremonies for Applied Secret Sharing paper: https://cypherpunks.ca/~iang/pubs/mindgap-popets20.pdf
+Coinbase blog post: https://blog.coinbase.com/frost-flexible-round-optimized-schnorr-threshold-signatures-b2e950164ee1
+Andrew Poelstra presentation at SF Bitcoin Devs 2019: https://btctranscripts.com/sf-bitcoin-meetup/2019-02-04-threshold-signatures-and-accountability/
+Tim Ruffing presentation at CES Summit 2019: https://btctranscripts.com/cryptoeconomic-systems/2019/threshold-schnorr-signatures/
+Introduction Lloyd Fournier (LF): This is going to be a discussion meeting with our very special guest Jesse Posner is going to tell us about what he’s been up to, what he thinks about FROST and its applications to Bitcoin.</description></item><item><title>Threshold Signatures</title><link>https://btctranscripts.com/stanford-blockchain-conference/2019/threshold-signatures/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stanford-blockchain-conference/2019/threshold-signatures/</guid><description>Efficient distributed key generation for threshold signatures
 Mahnush Movahedi
 Threshold signatures Threshold signature schemes are schemes where n parties and at least t are necessary and sufficient for signing. They want to make sure that t parties are necessary. Any threshold signature scheme typically has 3 protocols: key generation, signing, and verifying.
 In key generation, one party creates a group public key as an output. Also, for each node that participates in the protocol, the protocol should output a secret key.</description></item><item><title>Threshold Signatures And Accountability (2019-02-04)</title><link>https://btctranscripts.com/sf-bitcoin-meetup/2019-02-04-threshold-signatures-and-accountability/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/sf-bitcoin-meetup/2019-02-04-threshold-signatures-and-accountability/</guid><description>Threshold signatures and accountability
