@@ -63,13 +63,24 @@ Location: Bitcointalk
 Date: August 27th 2020
 https://bitcointalk.org/index.php?topic=5271566.msg55079521#msg55079521
 What is stopping the OP_CHECKMULTISIG extra pop bug from being fixed? I think it is probably wrong to describe it as a bug. I think it was intended to indicate which signatures were present to fix the otherwise terrible performance of CHECKMULTISIG.
-Regardless, there is no real point to fixing it: Any &amp;lsquo;fix&amp;rsquo; would require that all software using CHECKMULTISIG get an incompatible change (as part of a highly disruptive hard fork).</description></item><item><title>Greg Maxwell - Hardware Wallets Altcoins (2020-11-01)</title><link>https://btctranscripts.com/greg-maxwell/2020-11-01-greg-maxwell-hardware-wallets-altcoins/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/greg-maxwell/2020-11-01-greg-maxwell-hardware-wallets-altcoins/</guid><description>Name: Greg Maxwell
+Regardless, there is no real point to fixing it: Any &amp;lsquo;fix&amp;rsquo; would require that all software using CHECKMULTISIG get an incompatible change (as part of a highly disruptive hard fork).</description></item><item><title>Greg Maxwell - Covenants and BIP119 (2022–05-05)</title><link>https://btctranscripts.com/greg-maxwell/2022-05-05-covenants-bip119/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/greg-maxwell/2022-05-05-covenants-bip119/</guid><description>Name: Greg Maxwell
+Topic: Covenants and BIP119
+Location: Reddit
+Date: May 5th 2022
+https://www.reddit.com/r/Bitcoin/comments/uim560/bip_119/i7dhfpb/
+Covenants and BIP119 I was asked by an old colleague to respond to your post because I came up with the term covenant as applied Bitcoin many years ago back when I was still a Bitcoin developer.
+does bip 119 completely mess the fungibility of bitcoin. If the idea of covenants is that you can create bitcoin that can only be sent to certain addresses, doesnt that make two classes of bitcoin?</description></item><item><title>Greg Maxwell - Hardware Wallets Altcoins (2020-11-01)</title><link>https://btctranscripts.com/greg-maxwell/2020-11-01-greg-maxwell-hardware-wallets-altcoins/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/greg-maxwell/2020-11-01-greg-maxwell-hardware-wallets-altcoins/</guid><description>Name: Greg Maxwell
 Topic: Hardware wallets and altcoins
 Location: Reddit
 Date: November 1st 2020
 https://www.reddit.com/r/Bitcoin/comments/jlwxpq/why_do_you_think_coldcard_doesnt_support_altcoins/gasoyuj?utm_source=share&amp;amp;utm_medium=web2x&amp;amp;context=3
 Why do hardware wallets not support altcoins? They&amp;rsquo;re an enormous distraction and hazard to software development. It&amp;rsquo;s hard enough to correctly and safely write software to support one system. Every minute spent creating and testing the software for some alternative is a minute taken away from supporting Bitcoin.
-I can say first hand that my efforts to review hardware wallet code against possible vulnerabilities have been actively thwarted by hardware wallet codebases being crapped up with support for altcoins.</description></item><item><title>Greg Maxwell - Liquid Censorship Resistance (2020-06-08)</title><link>https://btctranscripts.com/greg-maxwell/2020-06-08-greg-maxwell-liquid-censorship-resistance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/greg-maxwell/2020-06-08-greg-maxwell-liquid-censorship-resistance/</guid><description>Name: Greg Maxwell
+I can say first hand that my efforts to review hardware wallet code against possible vulnerabilities have been actively thwarted by hardware wallet codebases being crapped up with support for altcoins.</description></item><item><title>Greg Maxwell - libsecp256k1 testing (2015–01-08)</title><link>https://btctranscripts.com/greg-maxwell/2015-01-08-libsecp256k1-testing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/greg-maxwell/2015-01-08-libsecp256k1-testing/</guid><description>Name: Greg Maxwell
+Topic: libsecp256k1 testing
+Location: Reddit
+Date: January 8th 2015
+https://www.reddit.com/r/Bitcoin/comments/2rrxq7/on_why_010s_release_notes_say_we_have_reason_to/
+libsecp256k1 testing Today OpenSSL de-embargoed CVE-2014-3570 &amp;ldquo;Bignum squaring may produce incorrect results&amp;rdquo;. That particular security advisory is not a concern for Bitcoin users, but it allows me to explain some of the context behind a slightly cryptic statement I made in the release notes for the upcoming Bitcoin Core 0.10: “we have reason to believe that libsecp256k1 is better tested and more thoroughly reviewed than the implementation in OpenSSL”.</description></item><item><title>Greg Maxwell - Liquid Censorship Resistance (2020-06-08)</title><link>https://btctranscripts.com/greg-maxwell/2020-06-08-greg-maxwell-liquid-censorship-resistance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/greg-maxwell/2020-06-08-greg-maxwell-liquid-censorship-resistance/</guid><description>Name: Greg Maxwell
 Topic: Is Liquid censorship resistant?
 Location: Reddit
 Date: June 8, 2020
@@ -81,7 +92,12 @@ Location: Bitcointalk
 Date: September 23rd 2018
 https://bitcointalk.org/index.php?topic=5035144.msg46077622#msg46077622
 Risks of multiple implementations They would create more risk. I don&amp;rsquo;t think there is any reason to doubt that this is an objective fact which has been borne out by the history.
-First, failures in software are not independent. For example, when BU nodes were crashing due to xthin bugs, classic were also vulnerable to effectively the same bug even though their code was different and some triggers that would crash one wouldn&amp;rsquo;t crash the other.</description></item><item><title>Greg Maxwell - Replacing PGP (2020-11-25)</title><link>https://btctranscripts.com/greg-maxwell/2020-11-25-greg-maxwell-replacing-pgp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/greg-maxwell/2020-11-25-greg-maxwell-replacing-pgp/</guid><description>Name: Greg Maxwell
+First, failures in software are not independent. For example, when BU nodes were crashing due to xthin bugs, classic were also vulnerable to effectively the same bug even though their code was different and some triggers that would crash one wouldn&amp;rsquo;t crash the other.</description></item><item><title>Greg Maxwell - OpenSSL bug discovery (2015–01-08)</title><link>https://btctranscripts.com/greg-maxwell/2015-01-08-openssl-bug/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/greg-maxwell/2015-01-08-openssl-bug/</guid><description>Name: Greg Maxwell
+Topic: OpenSSL bug discovery
+Location: Reddit
+Date: January 8th 2015
+https://np.reddit.com/r/programming/comments/2rrc64/openssl_security_advisory_new_openssl_releases/cnilq2w/?context=3
+OpenSSL bug discovery I contributed to the discovery and analysis of CVE-2014-3570 &amp;ldquo;Bignum squaring may produce incorrect results&amp;rdquo;. In this case, the issue was that one of the carry propagation conditions was missed. The bug was discovered as part of the development of libsecp256k1, a high performance (and hopefully high quality: correct, complete, side-channel resistant) implementation of the cryptographic operators used by Bitcoin, developed primarily by Bitcoin Core developer Pieter Wuille along with a number of other people.</description></item><item><title>Greg Maxwell - Replacing PGP (2020-11-25)</title><link>https://btctranscripts.com/greg-maxwell/2020-11-25-greg-maxwell-replacing-pgp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/greg-maxwell/2020-11-25-greg-maxwell-replacing-pgp/</guid><description>Name: Greg Maxwell
 Topic: Replacing PGP with Bitcoin public key infrastructure
 Location: Reddit
 Date: November 25th 2020

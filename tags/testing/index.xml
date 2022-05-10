@@ -3,7 +3,17 @@ Marco Falke
 Video: https://www.youtube.com/watch?v=ZJ2t84trKVo
 https://twitter.com/kanzure/status/1048103693885759489
 Introduction Just to continue on what James said about the build system on Bitcoin Core&amp;hellip; I am going to talk about deterministic builds. I am MarcoFalke and I also work at Chaincode Labs in NYC.
-Bitcoin Core Build System The build system is based on autotools, so it should just work anywhere where autotools runs. Just run ./autogen.sh .</description></item><item><title>Jonathan Metzman - Structured Fuzzing (2019-08-07)</title><link>https://btctranscripts.com/misc/2019-08-07-jonathan-metzman-structured-fuzzing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/misc/2019-08-07-jonathan-metzman-structured-fuzzing/</guid><description>Name: Jonathan Metzman
+Bitcoin Core Build System The build system is based on autotools, so it should just work anywhere where autotools runs. Just run ./autogen.sh .</description></item><item><title>Greg Maxwell - libsecp256k1 testing (2015–01-08)</title><link>https://btctranscripts.com/greg-maxwell/2015-01-08-libsecp256k1-testing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/greg-maxwell/2015-01-08-libsecp256k1-testing/</guid><description>Name: Greg Maxwell
+Topic: libsecp256k1 testing
+Location: Reddit
+Date: January 8th 2015
+https://www.reddit.com/r/Bitcoin/comments/2rrxq7/on_why_010s_release_notes_say_we_have_reason_to/
+libsecp256k1 testing Today OpenSSL de-embargoed CVE-2014-3570 &amp;ldquo;Bignum squaring may produce incorrect results&amp;rdquo;. That particular security advisory is not a concern for Bitcoin users, but it allows me to explain some of the context behind a slightly cryptic statement I made in the release notes for the upcoming Bitcoin Core 0.10: “we have reason to believe that libsecp256k1 is better tested and more thoroughly reviewed than the implementation in OpenSSL”.</description></item><item><title>Greg Maxwell - OpenSSL bug discovery (2015–01-08)</title><link>https://btctranscripts.com/greg-maxwell/2015-01-08-openssl-bug/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/greg-maxwell/2015-01-08-openssl-bug/</guid><description>Name: Greg Maxwell
+Topic: OpenSSL bug discovery
+Location: Reddit
+Date: January 8th 2015
+https://np.reddit.com/r/programming/comments/2rrc64/openssl_security_advisory_new_openssl_releases/cnilq2w/?context=3
+OpenSSL bug discovery I contributed to the discovery and analysis of CVE-2014-3570 &amp;ldquo;Bignum squaring may produce incorrect results&amp;rdquo;. In this case, the issue was that one of the carry propagation conditions was missed. The bug was discovered as part of the development of libsecp256k1, a high performance (and hopefully high quality: correct, complete, side-channel resistant) implementation of the cryptographic operators used by Bitcoin, developed primarily by Bitcoin Core developer Pieter Wuille along with a number of other people.</description></item><item><title>Jonathan Metzman - Structured Fuzzing (2019-08-07)</title><link>https://btctranscripts.com/misc/2019-08-07-jonathan-metzman-structured-fuzzing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/misc/2019-08-07-jonathan-metzman-structured-fuzzing/</guid><description>Name: Jonathan Metzman
 Topic: Going Beyond Coverage Guided Fuzzing with Structured Fuzzing
 Location: Black Hat USA 2019
 Date: August 7th 2019

@@ -4,7 +4,13 @@ Emin Gun Sirer
 https://twitter.com/kanzure/status/785071789705728000
 https://www.youtube.com/watch?time_continue=10254&amp;amp;v=_Z0ID-0DOnc
 We published this last February at an academic workshop. The work itself has interesting ramifications. My real goal here is to start a conversation and then do a follow-up blog post where we collate feedback from the community. We would like to add this to Bitcoin Core. Covenants.
-This all started from a very basic and simple observation about the current status of our computing infrastructure.</description></item><item><title>Jeremy Rubin - Covenants (2017-01-26)</title><link>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/2017-01-26-jeremy-rubin-covenants/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/2017-01-26-jeremy-rubin-covenants/</guid><description>Name: Jeremy Rubin
+This all started from a very basic and simple observation about the current status of our computing infrastructure.</description></item><item><title>Greg Maxwell - Covenants and BIP119 (2022–05-05)</title><link>https://btctranscripts.com/greg-maxwell/2022-05-05-covenants-bip119/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/greg-maxwell/2022-05-05-covenants-bip119/</guid><description>Name: Greg Maxwell
+Topic: Covenants and BIP119
+Location: Reddit
+Date: May 5th 2022
+https://www.reddit.com/r/Bitcoin/comments/uim560/bip_119/i7dhfpb/
+Covenants and BIP119 I was asked by an old colleague to respond to your post because I came up with the term covenant as applied Bitcoin many years ago back when I was still a Bitcoin developer.
+does bip 119 completely mess the fungibility of bitcoin. If the idea of covenants is that you can create bitcoin that can only be sent to certain addresses, doesnt that make two classes of bitcoin?</description></item><item><title>Jeremy Rubin - Covenants (2017-01-26)</title><link>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/2017-01-26-jeremy-rubin-covenants/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/blockchain-protocol-analysis-security-engineering/2017/2017-01-26-jeremy-rubin-covenants/</guid><description>Name: Jeremy Rubin
 Topic: Structuring Multi Transaction Contracts in Bitcoin
 Location: BPASE 2017, Stanford University
 Date: January 26th 2017

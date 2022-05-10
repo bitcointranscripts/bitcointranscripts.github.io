@@ -15,7 +15,17 @@ Video: No video was posted online
 Fabian presentation at Bitcoin Edge Dev++ 2019: https://diyhpl.us/wiki/transcripts/scalingbitcoin/tel-aviv-2019/edgedevplusplus/debugging-bitcoin/
 Debugging Bitcoin Core doc: https://github.com/fjahr/debugging_bitcoin
 Debugging Bitcoin Core Workshop: https://gist.github.com/fjahr/5bf65daaf9ff189a0993196195005386
-Introduction First of all welcome to the debugging Bitcoin Core workshop. Everything I know more or less about using a debugger to learn from Bitcoin Core and to fix problems in Bitcoin Core.</description></item><item><title>Jeremy Rubin - Bitcoin Core (2018-04-23)</title><link>https://btctranscripts.com/sf-bitcoin-meetup/2018-04-23-jeremy-rubin-bitcoin-core/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/sf-bitcoin-meetup/2018-04-23-jeremy-rubin-bitcoin-core/</guid><description>Jeremy Rubin
+Introduction First of all welcome to the debugging Bitcoin Core workshop. Everything I know more or less about using a debugger to learn from Bitcoin Core and to fix problems in Bitcoin Core.</description></item><item><title>Greg Maxwell - libsecp256k1 testing (2015–01-08)</title><link>https://btctranscripts.com/greg-maxwell/2015-01-08-libsecp256k1-testing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/greg-maxwell/2015-01-08-libsecp256k1-testing/</guid><description>Name: Greg Maxwell
+Topic: libsecp256k1 testing
+Location: Reddit
+Date: January 8th 2015
+https://www.reddit.com/r/Bitcoin/comments/2rrxq7/on_why_010s_release_notes_say_we_have_reason_to/
+libsecp256k1 testing Today OpenSSL de-embargoed CVE-2014-3570 &amp;ldquo;Bignum squaring may produce incorrect results&amp;rdquo;. That particular security advisory is not a concern for Bitcoin users, but it allows me to explain some of the context behind a slightly cryptic statement I made in the release notes for the upcoming Bitcoin Core 0.10: “we have reason to believe that libsecp256k1 is better tested and more thoroughly reviewed than the implementation in OpenSSL”.</description></item><item><title>Greg Maxwell - OpenSSL bug discovery (2015–01-08)</title><link>https://btctranscripts.com/greg-maxwell/2015-01-08-openssl-bug/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/greg-maxwell/2015-01-08-openssl-bug/</guid><description>Name: Greg Maxwell
+Topic: OpenSSL bug discovery
+Location: Reddit
+Date: January 8th 2015
+https://np.reddit.com/r/programming/comments/2rrc64/openssl_security_advisory_new_openssl_releases/cnilq2w/?context=3
+OpenSSL bug discovery I contributed to the discovery and analysis of CVE-2014-3570 &amp;ldquo;Bignum squaring may produce incorrect results&amp;rdquo;. In this case, the issue was that one of the carry propagation conditions was missed. The bug was discovered as part of the development of libsecp256k1, a high performance (and hopefully high quality: correct, complete, side-channel resistant) implementation of the cryptographic operators used by Bitcoin, developed primarily by Bitcoin Core developer Pieter Wuille along with a number of other people.</description></item><item><title>Jeremy Rubin - Bitcoin Core (2018-04-23)</title><link>https://btctranscripts.com/sf-bitcoin-meetup/2018-04-23-jeremy-rubin-bitcoin-core/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/sf-bitcoin-meetup/2018-04-23-jeremy-rubin-bitcoin-core/</guid><description>Jeremy Rubin
 A hardCORE workout
 Video: https://www.youtube.com/watch?v=PKzJktErUdk
 Slides: https://drive.google.com/file/d/149Ta1WRXL5WEvnBdlL-HxmsFDXUbvFDy/view
