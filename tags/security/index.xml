@@ -301,7 +301,13 @@ Introduction Hi everyone. Can you hear me alright? Is my mic? Okay, cool. I was 
 Mooly Sagiv
 https://www.certora.com/pubs/sbc2020.pdf
 https://twitter.com/kanzure/status/1230906600140918784
-Introduction I am from Tel Aviv University and now we have a 1-year old company called Cotera which is located in Berlin, Seattle and Tel Aviv. Our mission is to bring formal methods into code security and I will talk to you today about how we use this method to find bugs. And actually, I try to make this talk as informal as possible but there is actually a paper just download it from the certora website.</description></item><item><title>State Of Multisig</title><link>https://btctranscripts.com/bit-block-boom/2019/state-of-multisig/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bit-block-boom/2019/state-of-multisig/</guid><description>State of multisig for bitcoin hodlers: Better wallets with PSBT
+Introduction I am from Tel Aviv University and now we have a 1-year old company called Cotera which is located in Berlin, Seattle and Tel Aviv. Our mission is to bring formal methods into code security and I will talk to you today about how we use this method to find bugs. And actually, I try to make this talk as informal as possible but there is actually a paper just download it from the certora website.</description></item><item><title>Socratic Seminar - AssumeUTXO (2021-11-02)</title><link>https://btctranscripts.com/london-bitcoin-devs/2021-11-02-socratic-seminar-assumeutxo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/london-bitcoin-devs/2021-11-02-socratic-seminar-assumeutxo/</guid><description>Name: Socratic Seminar
+Topic: AssumeUTXO
+Location: London BitDevs (online)
+Date: November 2nd 2021
+Video: https://www.youtube.com/watch?v=JottwT-kEdg
+Reading list: https://gist.github.com/michaelfolkson/f46a7085af59b2e7b9a79047155c3993
+Intros Michael Folkson (MF): This is a discussion on AssumeUTXO. We are lucky to have James O’Beirne on the call. There is a reading list that I will share in a second with a bunch of links going right from concept, some of the podcasts James has done, a couple of presentations James has done.</description></item><item><title>State Of Multisig</title><link>https://btctranscripts.com/bit-block-boom/2019/state-of-multisig/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bit-block-boom/2019/state-of-multisig/</guid><description>State of multisig for bitcoin hodlers: Better wallets with PSBT
 Justin Moon
 https://twitter.com/kanzure/status/1162769521993834496
 Introduction I am going to be talking about the state of multisig. It&amp;rsquo;s a way of creating a transaction output that requires multiple keys to sign. This is a focus for people holding bitcoin. I&amp;rsquo;ll talk about some of the benefits and some of the issues. I am not a security expert, though.

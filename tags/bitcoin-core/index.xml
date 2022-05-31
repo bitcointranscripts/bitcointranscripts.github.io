@@ -59,7 +59,13 @@ https://bitcoinedge.org/event/keio-devplusplus-2018
 https://keio-devplusplus-2018.bitcoinedge.org/#schedule
 video: https://www.youtube.com/watch?v=HlMZWvAHYno&amp;amp;t=2250s
 Hi, my name is Bryan, I&amp;rsquo;m going to be talking about SIGHASH NOINPUT. It was something that I was asked to speak about. It is currently not deployed, but it is an active proposal.
-So, just really brief about who I am. I have a software development background. I just left LedgerX last week, so that is an exciting change in my life.</description></item><item><title>Wallet Architecture (2019-06-05)</title><link>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-05-wallet-architecture/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-05-wallet-architecture/</guid><description>2019-06-05
+So, just really brief about who I am. I have a software development background. I just left LedgerX last week, so that is an exciting change in my life.</description></item><item><title>Socratic Seminar - AssumeUTXO (2021-11-02)</title><link>https://btctranscripts.com/london-bitcoin-devs/2021-11-02-socratic-seminar-assumeutxo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/london-bitcoin-devs/2021-11-02-socratic-seminar-assumeutxo/</guid><description>Name: Socratic Seminar
+Topic: AssumeUTXO
+Location: London BitDevs (online)
+Date: November 2nd 2021
+Video: https://www.youtube.com/watch?v=JottwT-kEdg
+Reading list: https://gist.github.com/michaelfolkson/f46a7085af59b2e7b9a79047155c3993
+Intros Michael Folkson (MF): This is a discussion on AssumeUTXO. We are lucky to have James O’Beirne on the call. There is a reading list that I will share in a second with a bunch of links going right from concept, some of the podcasts James has done, a couple of presentations James has done.</description></item><item><title>Wallet Architecture (2019-06-05)</title><link>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-05-wallet-architecture/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-05-wallet-architecture/</guid><description>2019-06-05
 Bitcoin Core wallet architecture + descriptors
 https://twitter.com/kanzure/status/1136282460675878915
 writeup: https://github.com/bitcoin/bitcoin/issues/16165
