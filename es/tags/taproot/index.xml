@@ -5,7 +5,14 @@ Fecha: 6 de febrero de 2020
 Video (acceso de pago): https://www.advancingbitcoin.com/video/a-schnorr-taprooted-lightning,11/
 Diapositivas: https://www.dropbox.com/s/9vs54e9bqf317u0/Schnorr-Taproot%27ed-LN.pdf
 Introducción Hoy Schnorr y Taproot para Lightning, es un tema realmente apasionante.
-Arquitectura Lightning La arquitectura Lightning para aquellos que no están familiarizados con ella. Usted tiene el blockchain como la capa subyacente. Encima de ella vas a construir un canal, tienes un HTLC y la gente va a gastar capas hacia ti.</description></item><item><title>John Newbery Security Models (2019-06-17)</title><link>https://btctranscripts.com/es/chaincode-labs/chaincode-residency/2019-06-17-newbery-security-models/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/es/chaincode-labs/chaincode-residency/2019-06-17-newbery-security-models/</guid><description>Texto original: https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-17-john-newbery-security-models/
+Arquitectura Lightning La arquitectura Lightning para aquellos que no están familiarizados con ella. Usted tiene el blockchain como la capa subyacente. Encima de ella vas a construir un canal, tienes un HTLC y la gente va a gastar capas hacia ti.</description></item><item><title>Eric Lombrozo, Luke Dashjr - Activación de Taproot (2020-08-03)</title><link>https://btctranscripts.com/es/bitcoin-magazine/2020-08-03-eric-lombrozo-luke-dashjr-taproot-activation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/es/bitcoin-magazine/2020-08-03-eric-lombrozo-luke-dashjr-taproot-activation/</guid><description>Name: Eric Lombrozo y Luke Dashjr
+Topic: Cómo activar un nuevo Soft Fork
+Location: Bitcoin Magazine (en línea)
+Date: 3 de agosto de 2020
+Video: https://www.youtube.com/watch?v=yQZb0RDyFCQ
+Aaron van Wirdum Aaron van Wirdum en Bitcoin Magazine sobre el BIP 8, el BIP 9 o la activación del Soft Fork moderno: https://bitcoinmagazine.com/articles/bip-8-bip-9-or-modern-soft-fork-activation-how-bitcoin-could-upgrade-next
+David Harding sobre las propuestas de activación de Taproot: https://gist.github.com/harding/dda66f5fd00611c0890bdfa70e28152d
+Introducción Aaron van Wirdum (AvW): Eric, Luke bienvenido. Feliz Día de la Independencia de Bitcoin.</description></item><item><title>John Newbery Security Models (2019-06-17)</title><link>https://btctranscripts.com/es/chaincode-labs/chaincode-residency/2019-06-17-newbery-security-models/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/es/chaincode-labs/chaincode-residency/2019-06-17-newbery-security-models/</guid><description>Texto original: https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-17-john-newbery-security-models/
 Transcripción de: Caralie Chrisco
 Nombre: John Newbery
 Tema: Security Models
