@@ -6,11 +6,28 @@ This repository is not the home of the transcripts themselves, which are pulled 
 
 ## Installation and building locally
 
-For install instructions, take a look at the [Hugo install instructions](https://gohugo.io/getting-started/installing/).
+To build locally, you first need to install Hugo, take a look at the [Hugo install instructions](https://gohugo.io/getting-started/installing/).
 
 - Clone the repository and `cd` into the directory
+- Run `git submodule update --init` to get the latest transcripts from the submodule (you only need the `--init` flag at the first time)
 - Run `hugo server`
 - Go to `http://localhost:1313`
+
+### Preview your transcript
+
+Having a local build allows you to see how your transcript will be displayed in the website. You can do that by using the branch containing your transcript as the content submodule.
+
+Make sure that your transcript is at `<transcript-branch>` at `<your-repository-fork>` of the [bitcointranscripts repository](https://github.com/bitcointranscripts/bitcointranscripts) and run: 
+
+- `git submodule set-url content <your-repository-fork>` to change the submodule url
+- `git submodule set-branch --branch <transcript-branch> content` to change the submodule branch (default is master)
+- `git submodule update --remote` to fetch the updated submodule content
+- `hugo server` to build the website with the updated content
+
+To reset back to using the original submodule, run:
+
+- `git restore .gitmodules`
+- `git submodule update`
 
 ## i18n
 
