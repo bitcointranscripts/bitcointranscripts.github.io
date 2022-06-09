@@ -3,6 +3,8 @@ categories = "categorías"
 tags = "tags"
 translation_by = "traducción por"
 transcript_by = "transcripción de"
+speakers = "oradores"
+date = "fecha"
 
 lead = "Un tesoro de transcripciones asociadas con Bitcoin y Lightning Network"
 section1_title = "Arqueología de Bitcoin"

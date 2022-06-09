@@ -7,6 +7,11 @@ ignoreFiles = [ "README.md", "LICENSE.md" ]
 
 DefaultContentLanguage = "en"
 
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+  speaker = 'speakers'
+
 [languages]
   [languages.en]
     title = "₿itcoin Transcripts"

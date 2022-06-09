@@ -3,6 +3,8 @@ categories = "categorias"
 tags = "tags"
 translation_by = "tradução por"
 transcipt_by = "transcrição por"
+speakers = "oradores"
+date = "data"
 
 lead = "Uma mina de ouro de transcrições associadas ao Bitcoin e à Lightning Network"
 section1_title = "Arqueologia do Bitcoin"
