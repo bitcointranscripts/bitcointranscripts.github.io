@@ -44,7 +44,13 @@ Location: Reddit
 Date: October 4th 2019
 https://www.reddit.com/r/Bitcoin/comments/ddddfl/comment/f2g9e7b/?utm_source=share&amp;amp;utm_medium=web2x&amp;amp;context=3
 Should we be more concerned by the prospect of a 51 percent mining attack? I think questions like this are ultimately the result of a fundamental lack of understanding about what Bitcoin is doing.
-The problem Bitcoin is attempting to solve is getting everyone everywhere to agree on the same stable history of transactions.</description></item><item><title>Greg Maxwell - Bitcoin Core Github (2020-10-26)</title><link>https://btctranscripts.com/greg-maxwell/2020-10-26-greg-maxwell-bitcoin-core-github/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/greg-maxwell/2020-10-26-greg-maxwell-bitcoin-core-github/</guid><description>Name: Greg Maxwell
+The problem Bitcoin is attempting to solve is getting everyone everywhere to agree on the same stable history of transactions.</description></item><item><title>Greg Maxwell - bech32 design (2017-12-22)</title><link>https://btctranscripts.com/greg-maxwell/2017-12-22-bech32-design/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/greg-maxwell/2017-12-22-bech32-design/</guid><description>Name: Greg Maxwell
+Topic: bech32 design
+Location: Bitcointalk
+Date: December 22nd 2017
+https://bitcointalk.org/index.php?topic=2624630.msg26762627#msg26762627
+bech32 design Bech32 is designed for human use and basically nothing else, the only consideration for QR codes is that all caps is also permitted.
+For all your talk of human considerations you give a strong signal of having seldom actually used bitcoin addresses as a human. 1/3 type addresses are full of visually confusing characters and the case modulations are a pain to read and enter correctly.</description></item><item><title>Greg Maxwell - Bitcoin Core Github (2020-10-26)</title><link>https://btctranscripts.com/greg-maxwell/2020-10-26-greg-maxwell-bitcoin-core-github/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/greg-maxwell/2020-10-26-greg-maxwell-bitcoin-core-github/</guid><description>Name: Greg Maxwell
 Topic: Bitcoin Core and GitHub
 Location: Reddit
 Date: October 2020
