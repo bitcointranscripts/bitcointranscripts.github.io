@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Bitcoin++ 2022 on ₿itcoin Transcripts</title><link>https://btctranscripts.com/bitcoinplusplus/2022/</link><description>Recent content in Bitcoin++ 2022 on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://btctranscripts.com/bitcoinplusplus/2022/index.xml" rel="self" type="application/rss+xml"/><item><title>Alex Myers - Minisketch and Lightning gossip (2022-06-07)</title><link>https://btctranscripts.com/bitcoinplusplus/2022/2022-06-07-alex-myers-minisketch-lightning-gossip/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoinplusplus/2022/2022-06-07-alex-myers-minisketch-lightning-gossip/</guid><description>Name: Alex Myers
+Topic: Minisketch and Lightning gossip
+Location: Bitcoin++
+Date: June 7th 2022
+Video: https://www.youtube.com/watch?v=e0u59hSsmio
+Slides: https://endothermic.dev/presentations/magical-minisketch
+Rusty Russell on using Minisketch for Lightning gossip: https://lists.linuxfoundation.org/pipermail/lightning-dev/2018-December/001741.html
+Minisketch library: https://github.com/sipa/minisketch
+Bitcoin Core PR review club on Minisketch (3 sessions):
+https://bitcoincore.reviews/minisketch-26
+https://bitcoincore.reviews/minisketch-26-2
+https://bitcoincore.reviews/minisketch
+Introduction Pretty new to Lightning Network development, joined the Core Lightning team. I’m going to present on Minisketch and what I’ve learnt about the gossip network.
+Topics I am going to go over the role of gossip in the Lightning Network.</description></item></channel></rss>

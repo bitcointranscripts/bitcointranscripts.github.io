@@ -36,7 +36,20 @@ Topic: Multiple-path Payments (MPP)
 Location: Chaincode Residency 2019
 Date: 2019-06-25
 Video: https://youtu.be/Og4TGERPZMY
-Bigger, Faster, Cheaper - Multiplexing Payments Alex: How to do multiple path payments. So there&amp;rsquo;s a question: why do we even need multiple path payments? So you have a channel &amp;ndash; like &amp;ndash; we don&amp;rsquo;t have them now, so are we really hurting for them? So I kind of like describing different situations where you would need it.</description></item><item><title>Amiko Pay</title><link>https://btctranscripts.com/scalingbitcoin/montreal-2015/amiko-pay/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/scalingbitcoin/montreal-2015/amiko-pay/</guid><description>Amiko Pay
+Bigger, Faster, Cheaper - Multiplexing Payments Alex: How to do multiple path payments. So there&amp;rsquo;s a question: why do we even need multiple path payments? So you have a channel &amp;ndash; like &amp;ndash; we don&amp;rsquo;t have them now, so are we really hurting for them? So I kind of like describing different situations where you would need it.</description></item><item><title>Alex Myers - Minisketch and Lightning gossip (2022-06-07)</title><link>https://btctranscripts.com/bitcoinplusplus/2022/2022-06-07-alex-myers-minisketch-lightning-gossip/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoinplusplus/2022/2022-06-07-alex-myers-minisketch-lightning-gossip/</guid><description>Name: Alex Myers
+Topic: Minisketch and Lightning gossip
+Location: Bitcoin++
+Date: June 7th 2022
+Video: https://www.youtube.com/watch?v=e0u59hSsmio
+Slides: https://endothermic.dev/presentations/magical-minisketch
+Rusty Russell on using Minisketch for Lightning gossip: https://lists.linuxfoundation.org/pipermail/lightning-dev/2018-December/001741.html
+Minisketch library: https://github.com/sipa/minisketch
+Bitcoin Core PR review club on Minisketch (3 sessions):
+https://bitcoincore.reviews/minisketch-26
+https://bitcoincore.reviews/minisketch-26-2
+https://bitcoincore.reviews/minisketch
+Introduction Pretty new to Lightning Network development, joined the Core Lightning team. I’m going to present on Minisketch and what I’ve learnt about the gossip network.
+Topics I am going to go over the role of gossip in the Lightning Network.</description></item><item><title>Amiko Pay</title><link>https://btctranscripts.com/scalingbitcoin/montreal-2015/amiko-pay/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/scalingbitcoin/montreal-2015/amiko-pay/</guid><description>Amiko Pay
 Come Plooy
 Amiko Pay aims to become an implementation of the lightning network. So that previous presentation was a great setup. There&amp;rsquo;s a little bit more to Amiko Pay. If you look through the basic design of the lightning network, there&amp;rsquo;s a network of payment channels. There have been several variations of this idea. Lightning Network happens to be the best so far. What Amiko Pay aims to do is to focus on the nodes, and do the routing between nodes.</description></item><item><title>Antoine Riard - Rust Lightning (2019-10-20)</title><link>https://btctranscripts.com/lightning-conference/2019/2019-10-20-antoine-riard-rust-lightning/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-conference/2019/2019-10-20-antoine-riard-rust-lightning/</guid><description>Antoine Riard
 Deploying rust-lightning in the wild
