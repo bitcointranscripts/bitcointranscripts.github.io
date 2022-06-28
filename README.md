@@ -15,19 +15,13 @@ To build locally, you first need to install Hugo, take a look at the [Hugo insta
 
 ### Preview your transcript
 
-Having a local build allows you to see how your transcript will be displayed in the website. You can do that by using the branch containing your transcript as the content submodule.
+Having a local build allows you to see how your transcript will be displayed in the website.
 
-Make sure that your transcript is at `<transcript-branch>` at `<your-repository-fork>` of the [bitcointranscripts repository](https://github.com/bitcointranscripts/bitcointranscripts) and run: 
+The `preview_branch.sh` script allows you to preview how the changes in your branch will be displayed by building locally the website using your branch as the content submodule. Usage:
 
-- `git submodule set-url content <your-repository-fork>` to change the submodule url
-- `git submodule set-branch --branch <transcript-branch> content` to change the submodule branch (default is master)
-- `git submodule update --remote` to fetch the updated submodule content
-- `hugo server` to build the website with the updated content
-
-To reset back to using the original submodule, run:
-
-- `git restore .gitmodules`
-- `git submodule update`
+```
+./preview_branch.sh <your-github-account> <your-branch-name>
+```
 
 ## i18n
 
