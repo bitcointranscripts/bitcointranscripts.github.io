@@ -187,7 +187,14 @@ Video: https://www.youtube.com/watch?v=r7Un8FZYlS4&amp;amp;list=PLseHpvCI1BjAfUx
 https://twitter.com/kanzure/status/1230527903969841152
 Introduction Hello everyone. I’m Christian. I’m a software developer at Blockstream and I work on Lightning, both the specification and the implementation. Today we are going to have a shortish webinar on how to get started with Lightning.
 Q and A Q - Is it possible to run c-lightning and lnd on the same host in parallel?
-A - It absolutely is.</description></item><item><title>Christian Decker - Eltoo (2019-06-25)</title><link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-25-christian-decker-eltoo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-25-christian-decker-eltoo/</guid><description>Name: Christian Decker
+A - It absolutely is.</description></item><item><title>Christian Decker - Deploying Lightning at Scale (2022-03-03)</title><link>https://btctranscripts.com/advancing-bitcoin/2022/2022-03-03-christian-decker-greenlight/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/advancing-bitcoin/2022/2022-03-03-christian-decker-greenlight/</guid><description>Name: Christian Decker
+Topic: Deploying Lightning at Scale (Greenlight)
+Location: Advancing Bitcoin
+Date: March 3rd 2022
+Video: https://vimeo.com/703273144
+Blog post on Greenlight: https://blog.blockstream.com/en-greenlight-by-blockstream-lightning-made-easy/
+Greenlight demo at London Bitcoin Devs: https://btctranscripts.com/london-bitcoin-devs/2022-03-01-lightning-panel/
+Intro Jeff Gallas: Next up is Christian Decker. He is a Lightning developer at Blockstream. He has got a very simple title. It is Security, Simplicity and DevOps: the trade-offs between a Lightning PPAS and running your own node. That is already half of the talk.</description></item><item><title>Christian Decker - Eltoo (2019-06-25)</title><link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-25-christian-decker-eltoo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-25-christian-decker-eltoo/</guid><description>Name: Christian Decker
 Topic: Eltoo: The (Far) Future of Lightning
 Location: Chaincode Labs
 Date: June 25th 2019
