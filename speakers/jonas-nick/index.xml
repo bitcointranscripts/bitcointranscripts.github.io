@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jonas Nick on ₿itcoin Transcripts</title><link>https://btctranscripts.com/speakers/jonas-nick/</link><description>Recent content in Jonas Nick on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 16 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://btctranscripts.com/speakers/jonas-nick/index.xml" rel="self" type="application/rss+xml"/><item><title>Jonas Nick - MuSig2 (2021-08-16)</title><link>https://btctranscripts.com/iacr/2021-08-16-jonas-nick-musig2/</link><pubDate>Mon, 16 Aug 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/iacr/2021-08-16-jonas-nick-musig2/</guid><description>Name: Jonas Nick
+Topic: MuSig2: Simple Two-Round Schnorr Multi-Signatures
+Location: IACR Crypto
+Date: August 16th 2021
+Video: https://www.youtube.com/watch?v=Dzqj236cVHk
+MuSig2 paper: https://eprint.iacr.org/2020/1261.pdf
+Introduction This is a talk about MuSig2, simple two round Schnorr multisignatures. I am Jonas Nick and this work is a collaboration with my colleague Tim Ruffing at Blockstream and Yannick Seurin.
+Multi-Signatures Multisignatures allow n signers to produce a single signature on a single message. The signing protocol can be interactive and require multiple communication rounds.</description></item></channel></rss>
