@@ -3,6 +3,19 @@
 
 <h1>{{ .Title }}</h1>
 
+{{ if (.GetTerms "speakers") }}
+    <p>{{ i18n "speakers" | title }}:
+    {{ range $i, $e := .Params.speakers -}}
+        {{- if $i -}}, {{ end -}}
+        <a href='{{ "/speakers/" | relLangURL }}{{ . | urlize }}'>{{ $e }}</a>
+    {{- end -}}
+    </p>
+{{ end }}
+
+{{ if .Params.date }}
+    <p><i>{{ i18n "date" | title }}: {{ .Params.date.Format "January 2, 2006" }}</i></p>
+{{ end }}
+
 <p><i>{{ i18n "transcript_by" | title }}: {{ .Params.transcript_by }}</i></p>
 
 {{ if .Params.translation_by }}
