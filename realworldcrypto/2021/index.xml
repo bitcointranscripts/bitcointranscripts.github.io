@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Realworldcrypto 2021 on ₿itcoin Transcripts</title><link>https://btctranscripts.com/realworldcrypto/2021/</link><description>Recent content in Realworldcrypto 2021 on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://btctranscripts.com/realworldcrypto/2021/index.xml" rel="self" type="application/rss+xml"/><item><title>Tim Ruffing - MuSig2 (2021-01-12)</title><link>https://btctranscripts.com/realworldcrypto/2021/2021-01-12-tim-ruffing-musig2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/realworldcrypto/2021/2021-01-12-tim-ruffing-musig2/</guid><description>Name: Tim Ruffing
+Topic: MuSig2: Simple Two-Round Schnorr Multi-Signatures
+Location: Real World Crypto
+Date: January 12th 2021
+Video: https://www.youtube.com/watch?v=DRzDDFetS3E
+MuSig2 paper: https://eprint.iacr.org/2020/1261.pdf
+Introduction This is about MuSig2, simple two round Schnorr multisignatures. This is joint work with Jonas Nick and Yannick Seurin. Jonas will be available to answer questions as I will be of course.
+Multi-Signatures The idea that with multisignatures is that n signers can get together and produce a single signature on a single message.</description></item></channel></rss>

@@ -158,7 +158,14 @@ Video: https://www.youtube.com/watch?v=Wy5jpgmmqAg
 Slides: https://slides.com/real-or-random/schnorr-threshold-sigs-ces-summit-2019
 Transcript completed by: Bryan Bishop Edited by: Michael Folkson
 Introduction It&amp;rsquo;s great to be here. My name is Tim Ruffing and I work for the research team at Blockstream. This is a talk about practical threshold Schnorr signatures and our quest for constructing them.
-Disclaimer First of all, this is work in progress.</description></item><item><title>Tim Ruffing - Schnorr, Multisig (2020-06-17)</title><link>https://btctranscripts.com/london-bitcoin-devs/2020-06-17-tim-ruffing-schnorr-multisig/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/london-bitcoin-devs/2020-06-17-tim-ruffing-schnorr-multisig/</guid><description>Name: Tim Ruffing
+Disclaimer First of all, this is work in progress.</description></item><item><title>Tim Ruffing - MuSig2 (2021-01-12)</title><link>https://btctranscripts.com/realworldcrypto/2021/2021-01-12-tim-ruffing-musig2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/realworldcrypto/2021/2021-01-12-tim-ruffing-musig2/</guid><description>Name: Tim Ruffing
+Topic: MuSig2: Simple Two-Round Schnorr Multi-Signatures
+Location: Real World Crypto
+Date: January 12th 2021
+Video: https://www.youtube.com/watch?v=DRzDDFetS3E
+MuSig2 paper: https://eprint.iacr.org/2020/1261.pdf
+Introduction This is about MuSig2, simple two round Schnorr multisignatures. This is joint work with Jonas Nick and Yannick Seurin. Jonas will be available to answer questions as I will be of course.
+Multi-Signatures The idea that with multisignatures is that n signers can get together and produce a single signature on a single message.</description></item><item><title>Tim Ruffing - Schnorr, Multisig (2020-06-17)</title><link>https://btctranscripts.com/london-bitcoin-devs/2020-06-17-tim-ruffing-schnorr-multisig/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/london-bitcoin-devs/2020-06-17-tim-ruffing-schnorr-multisig/</guid><description>Name: Tim Ruffing
 Topic: Taproot and Schnorr Multisignatures
 Location: London Bitcoin Devs (online)
 Date: June 17th 2020
