@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sjors Provoost on ₿itcoin Transcripts</title><link>https://btctranscripts.com/speakers/sjors-provoost/</link><description>Recent content in Sjors Provoost on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 19 Sep 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://btctranscripts.com/speakers/sjors-provoost/index.xml" rel="self" type="application/rss+xml"/><item><title>Sjors Provoost - Bitcoin Core and hardware wallets (2018-09-19)</title><link>https://btctranscripts.com/london-bitcoin-devs/2018-09-19-sjors-provoost-core-hardware-wallet/</link><pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/london-bitcoin-devs/2018-09-19-sjors-provoost-core-hardware-wallet/</guid><description>Name: Sjors Provoost
+Topic: Using Bitcoin Core with hardware wallets
+Location: London Bitcoin Devs
+Date: September 19th 2018
+Video: https://www.youtube.com/watch?v=SUDkYbkcTsQ
+Slides: https://github.com/Sjors/presentations/blob/master/2018-09-19%20London%20Bitcoin%20Devs/2018-09%20London%20Bitcoin%20Devs%200.5.pdf
+Core, HWI docs: https://hwi.readthedocs.io/en/latest/examples/bitcoin-core-usage.html
+Introduction I am Sjors, I am going to show you how to use, you probably shouldn’t try this at home, the Bitcoin Core wallet directly with a hardware wallet. Most of that work is done by Andrew Chow. I’m just showing how it works. I will have some thoughts of my own on how that could be made more user friendly.</description></item></channel></rss>
