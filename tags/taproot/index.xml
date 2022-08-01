@@ -5,7 +5,15 @@ Date: August 16th 2021
 Video: https://www.youtube.com/watch?v=Dzqj236cVHk
 MuSig2 paper: https://eprint.iacr.org/2020/1261.pdf
 Introduction This is a talk about MuSig2, simple two round Schnorr multisignatures. I am Jonas Nick and this work is a collaboration with my colleague Tim Ruffing at Blockstream and Yannick Seurin.
-Multi-Signatures Multisignatures allow n signers to produce a single signature on a single message. The signing protocol can be interactive and require multiple communication rounds.</description></item><item><title>AJ Towns - Schnorr Taproot (2019-12-27)</title><link>https://btctranscripts.com/stephan-livera-podcast/2019-12-27-aj-towns-schnorr-taproot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2019-12-27-aj-towns-schnorr-taproot/</guid><description>Name: AJ Towns
+Multi-Signatures Multisignatures allow n signers to produce a single signature on a single message. The signing protocol can be interactive and require multiple communication rounds.</description></item><item><title>Andrew Poelstra - Threshold Signatures And Accountability (2019-02-04)</title><link>https://btctranscripts.com/sf-bitcoin-meetup/2019-02-04-threshold-signatures-and-accountability/</link><pubDate>Mon, 04 Feb 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/sf-bitcoin-meetup/2019-02-04-threshold-signatures-and-accountability/</guid><description>Name: Andrew Poelstra
+Topic: Threshold Signatures and Accountability
+Location: SF Bitcoin Devs
+Date: February 4th 2019
+Video: https://www.youtube.com/watch?v=j9Wvz7zI_Ac
+Slides: https://download.wpsoftware.net/bitcoin/wizardry/2019-02-sfdevs-threshold/slides.pdf
+Transcript completed by: Bryan Bishop Edited by: Michael Folkson
+Twitter announcement: https://twitter.com/kanzure/status/1092665108960968704
+Introduction (Mark Erhardt) Sorry for the delays. We&amp;rsquo;re finally ready to talk. Welcome to our talk. We&amp;rsquo;d like to thank our sponsors including Blockstream and Digital Garage. Today we have Andrew Poelstra to talk about threshold signatures and accountability.</description></item><item><title>AJ Towns - Schnorr Taproot (2019-12-27)</title><link>https://btctranscripts.com/stephan-livera-podcast/2019-12-27-aj-towns-schnorr-taproot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2019-12-27-aj-towns-schnorr-taproot/</guid><description>Name: AJ Towns
 Topic: Schnorr Taproot Tapscript BIPs
 Location: Stephan Livera Podcast
 Date: December 27th 2019
