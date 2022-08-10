@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Stepan Snigirev on ₿itcoin Transcripts</title><link>https://btctranscripts.com/speakers/stepan-snigirev/</link><description>Recent content in Stepan Snigirev on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 01 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://btctranscripts.com/speakers/stepan-snigirev/index.xml" rel="self" type="application/rss+xml"/><item><title>Stepan Snigirev - Hardware wallet attacks (2019-05-01)</title><link>https://btctranscripts.com/london-bitcoin-devs/2019-05-01-stepan-snigirev-hardware-wallet-attacks/</link><pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/london-bitcoin-devs/2019-05-01-stepan-snigirev-hardware-wallet-attacks/</guid><description>Name: Stepan Snigirev
+Topic: Hardware Wallets (History of attacks)
+Location: London Bitcoin Devs
+Date: May 1st 2019
+Video: https://www.youtube.com/watch?v=P5PI5MZ_2yo
+Slides: https://www.dropbox.com/s/64s3mtmt3efijxo/Stepan%20Snigirev%20on%20hardware%20wallet%20attacks.pdf
+Pieter Wuille on anti covert channel signing techniques: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2020-March/017667.html
+Introduction This talk is the second in the series after my previous talk in London a few months ago at the Advancing Bitcoin conference. There I was talking mostly about general attacks on hardware, more from the theoretical perspective. I didn’t say anything bad hardware wallets that exist and I didn’t specify anything on the bad side.</description></item></channel></rss>
