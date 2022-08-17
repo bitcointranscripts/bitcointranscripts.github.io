@@ -13,7 +13,14 @@ Date: August 16th 2021
 Video: https://www.youtube.com/watch?v=Dzqj236cVHk
 MuSig2 paper: https://eprint.iacr.org/2020/1261.pdf
 Introduction This is a talk about MuSig2, simple two round Schnorr multisignatures. I am Jonas Nick and this work is a collaboration with my colleague Tim Ruffing at Blockstream and Yannick Seurin.
-Multi-Signatures Multisignatures allow n signers to produce a single signature on a single message. The signing protocol can be interactive and require multiple communication rounds.</description></item><item><title>Andrew Poelstra - Threshold Signatures And Accountability (2019-02-04)</title><link>https://btctranscripts.com/sf-bitcoin-meetup/2019-02-04-threshold-signatures-and-accountability/</link><pubDate>Mon, 04 Feb 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/sf-bitcoin-meetup/2019-02-04-threshold-signatures-and-accountability/</guid><description>Name: Andrew Poelstra
+Multi-Signatures Multisignatures allow n signers to produce a single signature on a single message. The signing protocol can be interactive and require multiple communication rounds.</description></item><item><title>Andrew Poelstra - Secure Signatures (2019-03-09)</title><link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2019/signature-scheme-security-properties/</link><pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2019/signature-scheme-security-properties/</guid><description>Name: Andrew Poelstra
+Topic: Secure Signatures - Harder Than You Think
+Location: MIT Bitcoin Expo 2019
+Date: March 9th 2019
+Video: https://www.youtube.com/watch?v=0gc1DSk8wlw
+Twitter announcement: https://twitter.com/kanzure/status/1104399812147916800
+Transcript completed by: Bryan Bishop Edited by: Michael Folkson
+Introduction Hi everyone. Can you hear me alright? Is my mic? Okay, cool. I was scheduled to talk about the history of Schnorr signatures in Bitcoin. I wanted to do that but then I realized I’ve only got 20-30 minutes to talk here.</description></item><item><title>Andrew Poelstra - Threshold Signatures And Accountability (2019-02-04)</title><link>https://btctranscripts.com/sf-bitcoin-meetup/2019-02-04-threshold-signatures-and-accountability/</link><pubDate>Mon, 04 Feb 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/sf-bitcoin-meetup/2019-02-04-threshold-signatures-and-accountability/</guid><description>Name: Andrew Poelstra
 Topic: Threshold Signatures and Accountability
 Location: SF Bitcoin Devs
 Date: February 4th 2019
@@ -120,14 +127,7 @@ video: https://www.youtube.com/watch?v=oTsjMz3DaLs
 slides: https://prezi.com/bihvorormznd/schnorr-signatures-for-bitcoin/
 https://twitter.com/kanzure/status/958776403977220098
 https://blockstream.com/2018/02/15/schnorr-signatures-bpase.html
-Introduction My name is Pieter Wuille. I work at Blockstream. I contribute to Bitcoin Core and bitcoin research in general. I work on various proposals for the bitcoin system for some time now. Today I will be talking about Schnorr signatures for bitcoin, which is a project we&amp;rsquo;ve been working on, on-and-off, for a couple of years now.</description></item><item><title>Signature Scheme Security Properties</title><link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2019/signature-scheme-security-properties/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2019/signature-scheme-security-properties/</guid><description>Name: Andrew Poelstra
-Topic: Secure Signatures - Harder Than You Think
-Location: MIT Bitcoin Expo 2019
-Date: March 9th 2019
-Video: https://www.youtube.com/watch?v=0gc1DSk8wlw
-Twitter announcement: https://twitter.com/kanzure/status/1104399812147916800
-Transcript completed by: Bryan Bishop
-Introduction Hi everyone. Can you hear me alright? Is my mic? Okay, cool. I was scheduled to talk about the history of schnorr signatures in bitcoin. I want to do that, but I only have 20-30 minutes to talk here.</description></item><item><title>Socratic Seminar - BIP Schnorr (2020-06-16)</title><link>https://btctranscripts.com/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/</guid><description>Name: Socratic Seminar
+Introduction My name is Pieter Wuille. I work at Blockstream. I contribute to Bitcoin Core and bitcoin research in general. I work on various proposals for the bitcoin system for some time now. Today I will be talking about Schnorr signatures for bitcoin, which is a project we&amp;rsquo;ve been working on, on-and-off, for a couple of years now.</description></item><item><title>Socratic Seminar - BIP Schnorr (2020-06-16)</title><link>https://btctranscripts.com/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/</guid><description>Name: Socratic Seminar
 Topic: BIP Schnorr (BIP 340)
 Location: London BitDevs (online)
 Date: June 16th 2020

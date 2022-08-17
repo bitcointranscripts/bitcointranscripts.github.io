@@ -5,7 +5,14 @@ Date: August 16th 2021
 Video: https://www.youtube.com/watch?v=Dzqj236cVHk
 MuSig2 paper: https://eprint.iacr.org/2020/1261.pdf
 Introduction This is a talk about MuSig2, simple two round Schnorr multisignatures. I am Jonas Nick and this work is a collaboration with my colleague Tim Ruffing at Blockstream and Yannick Seurin.
-Multi-Signatures Multisignatures allow n signers to produce a single signature on a single message. The signing protocol can be interactive and require multiple communication rounds.</description></item><item><title>Armory Proof Of Payment</title><link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2015/armory-proof-of-payment/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2015/armory-proof-of-payment/</guid><description>Armory proof of payment
+Multi-Signatures Multisignatures allow n signers to produce a single signature on a single message. The signing protocol can be interactive and require multiple communication rounds.</description></item><item><title>Andrew Poelstra - Secure Signatures (2019-03-09)</title><link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2019/signature-scheme-security-properties/</link><pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2019/signature-scheme-security-properties/</guid><description>Name: Andrew Poelstra
+Topic: Secure Signatures - Harder Than You Think
+Location: MIT Bitcoin Expo 2019
+Date: March 9th 2019
+Video: https://www.youtube.com/watch?v=0gc1DSk8wlw
+Twitter announcement: https://twitter.com/kanzure/status/1104399812147916800
+Transcript completed by: Bryan Bishop Edited by: Michael Folkson
+Introduction Hi everyone. Can you hear me alright? Is my mic? Okay, cool. I was scheduled to talk about the history of Schnorr signatures in Bitcoin. I wanted to do that but then I realized I’ve only got 20-30 minutes to talk here.</description></item><item><title>Armory Proof Of Payment</title><link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2015/armory-proof-of-payment/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2015/armory-proof-of-payment/</guid><description>Armory proof of payment
 Andy Ofiesh
 I am going to talk about proof of payment. This is simple. You can do this. That you couldn&amp;rsquo;t do before 2008. We&amp;rsquo;ll see if this works. I hear it might work. That&amp;rsquo;s okay, I&amp;rsquo;ll pull this up here. I have ruined everything. Just jam that in there. Here we go.
 So uh, I said who I am. Bitcoin Armory. I am here to talk about proof of payment.</description></item><item><title>Arvind Narayanan</title><link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2015/arvind-narayanan/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2015/arvind-narayanan/</guid><description>Arvind Narayanan

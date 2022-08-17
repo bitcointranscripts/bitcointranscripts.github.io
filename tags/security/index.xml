@@ -297,14 +297,7 @@ Date: May 9th 2020
 Video: https://www.youtube.com/watch?v=8lUTbfO94mM
 Slides: https://docs.google.com/presentation/d/1H9EdrhjQ9x3q0qfsei7iFYINVf2lwPyjUKHd3CScy4k/edit#slide=id.g7774542944_0_0
 Paper: https://eprint.iacr.org/2020/303
-Intro Hello everyone. I am Sergei, I am a PhD student at the University of Luxembourg. I am going to present our joint work with Pedro Moreno-Sanchez and Matteo Maffei from TU Wien on certain aspects of the privacy and scalability of the Lightning Network. The full paper can be found here.</description></item><item><title>Signature Scheme Security Properties</title><link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2019/signature-scheme-security-properties/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2019/signature-scheme-security-properties/</guid><description>Name: Andrew Poelstra
-Topic: Secure Signatures - Harder Than You Think
-Location: MIT Bitcoin Expo 2019
-Date: March 9th 2019
-Video: https://www.youtube.com/watch?v=0gc1DSk8wlw
-Twitter announcement: https://twitter.com/kanzure/status/1104399812147916800
-Transcript completed by: Bryan Bishop
-Introduction Hi everyone. Can you hear me alright? Is my mic? Okay, cool. I was scheduled to talk about the history of schnorr signatures in bitcoin. I want to do that, but I only have 20-30 minutes to talk here.</description></item><item><title>Smart Contract Bug Hunting</title><link>https://btctranscripts.com/stanford-blockchain-conference/2020/smart-contract-bug-hunting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stanford-blockchain-conference/2020/smart-contract-bug-hunting/</guid><description>Finding Bugs Automatically in Smart Contracts with Parameterized Specifications
+Intro Hello everyone. I am Sergei, I am a PhD student at the University of Luxembourg. I am going to present our joint work with Pedro Moreno-Sanchez and Matteo Maffei from TU Wien on certain aspects of the privacy and scalability of the Lightning Network. The full paper can be found here.</description></item><item><title>Smart Contract Bug Hunting</title><link>https://btctranscripts.com/stanford-blockchain-conference/2020/smart-contract-bug-hunting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stanford-blockchain-conference/2020/smart-contract-bug-hunting/</guid><description>Finding Bugs Automatically in Smart Contracts with Parameterized Specifications
 Mooly Sagiv
 https://www.certora.com/pubs/sbc2020.pdf
 https://twitter.com/kanzure/status/1230906600140918784
