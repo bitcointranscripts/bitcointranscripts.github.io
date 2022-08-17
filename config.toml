@@ -2,7 +2,6 @@ baseURL = "https://btctranscripts.com/"
 languageCode = "en-us"
 
 theme = "ace-documentation"
-orderSectionsby = "title"
 ignoreFiles = [ "README.md", "LICENSE.md" ]
 
 DefaultContentLanguage = "en"
@@ -31,6 +30,7 @@ DefaultContentLanguage = "en"
     page = [ "HTML"]
 
 [params]
+    ordersectionsby = "title"
     disableReadmoreNav = true
     menushortcutsnewtab = false
     custom_js = ["js/custom.js"]

@@ -1,4 +1,4 @@
-{{- $sortTerm :=  .Get "sort" | default "Weight" }}
+{{- $sortTerm :=  .Get "sort" | default "Title" }}
 
 {{- .Scratch.Set "current" .Page }}
 
@@ -18,8 +18,8 @@
     {{- end}}
     {{- $pages := (.Scratch.Get "pages") }}
 
-	{{- if eq $sortTerm "Weight"}}
-		{{- template "childs" dict "menu" $pages.ByWeight "pages" .Site.Pages "sortTerm" $sortTerm}}
+	{{- if eq $sortTerm "Title"}}
+		{{- template "childs" dict "menu" $pages.ByTitle "pages" .Site.Pages "sortTerm" $sortTerm}}
 	{{end}}
 </ul>
 
