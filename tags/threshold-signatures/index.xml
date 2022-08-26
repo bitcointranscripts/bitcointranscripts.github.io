@@ -6,7 +6,15 @@ Video: https://youtu.be/tWopcFzSTas?t=11604
 FROST paper: https://eprint.iacr.org/2020/852.pdf
 Sydney Socratic on FROST: https://btctranscripts.com/sydney-bitcoin-meetup/2022-03-29-socratic-seminar/
 Introduction Elizabeth Crites (EC): My name is Elizabeth Crites, I’m a postdoc at the University of Edinburgh.
-Chelsea Komlo (CK): I’m Chelsea Komlo, I’m at the University of Waterloo and I’m also a Principal Researcher at the Zcash Foundation. Today we will be giving you research updates on FROST.</description></item><item><title>Andrew Poelstra - Threshold Signatures And Accountability (2019-02-04)</title><link>https://btctranscripts.com/sf-bitcoin-meetup/2019-02-04-threshold-signatures-and-accountability/</link><pubDate>Mon, 04 Feb 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/sf-bitcoin-meetup/2019-02-04-threshold-signatures-and-accountability/</guid><description>Name: Andrew Poelstra
+Chelsea Komlo (CK): I’m Chelsea Komlo, I’m at the University of Waterloo and I’m also a Principal Researcher at the Zcash Foundation. Today we will be giving you research updates on FROST.</description></item><item><title>Tim Ruffing - ROAST (2022-07-14)</title><link>https://btctranscripts.com/misc/2022-07-14-tim-ruffing-roast/</link><pubDate>Thu, 14 Jul 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/misc/2022-07-14-tim-ruffing-roast/</guid><description>Name: Tim Ruffing
+Topic: ROAST
+Location: Monash Cybersecurity Seminars
+Date: July 14th 2022
+Video: https://www.youtube.com/watch?v=FVW6Hgt_meg
+ROAST paper: https://eprint.iacr.org/2022/550.pdf
+ROAST blog post: https://medium.com/blockstream/roast-robust-asynchronous-schnorr-threshold-signatures-ddda55a07d1b
+ROAST in Python: https://github.com/robot-dreams/roast
+Introduction (Amin Sakzad) Welcome everyone to Monash Cybersecurity Seminars. Today we will be having Tim Ruffing. Tim is an applied cryptographer in the research team of Blockstream, a Bitcoin and blockchain technology company. He obtained his PhD from Saarland University researching cryptographic aspects of cryptocurrencies.</description></item><item><title>Andrew Poelstra - Threshold Signatures And Accountability (2019-02-04)</title><link>https://btctranscripts.com/sf-bitcoin-meetup/2019-02-04-threshold-signatures-and-accountability/</link><pubDate>Mon, 04 Feb 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/sf-bitcoin-meetup/2019-02-04-threshold-signatures-and-accountability/</guid><description>Name: Andrew Poelstra
 Topic: Threshold Signatures and Accountability
 Location: SF Bitcoin Devs
 Date: February 4th 2019

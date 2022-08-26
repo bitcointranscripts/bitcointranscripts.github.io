@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tim Ruffing on ₿itcoin Transcripts</title><link>https://btctranscripts.com/speakers/tim-ruffing/</link><description>Recent content in Tim Ruffing on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 14 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://btctranscripts.com/speakers/tim-ruffing/index.xml" rel="self" type="application/rss+xml"/><item><title>Tim Ruffing - ROAST (2022-07-14)</title><link>https://btctranscripts.com/misc/2022-07-14-tim-ruffing-roast/</link><pubDate>Thu, 14 Jul 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/misc/2022-07-14-tim-ruffing-roast/</guid><description>Name: Tim Ruffing
+Topic: ROAST
+Location: Monash Cybersecurity Seminars
+Date: July 14th 2022
+Video: https://www.youtube.com/watch?v=FVW6Hgt_meg
+ROAST paper: https://eprint.iacr.org/2022/550.pdf
+ROAST blog post: https://medium.com/blockstream/roast-robust-asynchronous-schnorr-threshold-signatures-ddda55a07d1b
+ROAST in Python: https://github.com/robot-dreams/roast
+Introduction (Amin Sakzad) Welcome everyone to Monash Cybersecurity Seminars. Today we will be having Tim Ruffing. Tim is an applied cryptographer in the research team of Blockstream, a Bitcoin and blockchain technology company. He obtained his PhD from Saarland University researching cryptographic aspects of cryptocurrencies.</description></item></channel></rss>
