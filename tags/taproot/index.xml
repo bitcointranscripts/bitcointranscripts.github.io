@@ -5,7 +5,13 @@ Date: March 3rd 2022
 Video: https://www.youtube.com/watch?v=Uo3uzofPlX0
 Slides: https://jimmysong.github.io/taproot-multisig
 Pull request adding multisig Taproot support to buidl-python: https://github.com/buidl-bitcoin/buidl-python/pull/109
-Intro (Jeff Gallas) The next speaker is Jimmy Song who doesn’t really need an introduction but in any case, he has been, which is important for this conference, running the Programming Blockchain workshops for 5 years now. Leon is one of his alumni so there is a direct connection to this conference.</description></item><item><title>Jonas Nick - MuSig2 (2021-08-16)</title><link>https://btctranscripts.com/iacr/2021-08-16-jonas-nick-musig2/</link><pubDate>Mon, 16 Aug 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/iacr/2021-08-16-jonas-nick-musig2/</guid><description>Name: Jonas Nick
+Intro (Jeff Gallas) The next speaker is Jimmy Song who doesn’t really need an introduction but in any case, he has been, which is important for this conference, running the Programming Blockchain workshops for 5 years now. Leon is one of his alumni so there is a direct connection to this conference.</description></item><item><title>Stepan Snigirev - Taproot on hardware wallets (2022-03-03)</title><link>https://btctranscripts.com/advancing-bitcoin/2022/2022-03-03-stepan-snigirev-taproot-hardware-wallets/</link><pubDate>Thu, 03 Mar 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/advancing-bitcoin/2022/2022-03-03-stepan-snigirev-taproot-hardware-wallets/</guid><description>Name: Stepan Snigirev
+Topic: Taproot on hardware wallets
+Location: Advancing Bitcoin
+Date: March 3rd 2022
+Video: https://www.youtube.com/watch?v=8uM-v1pSFgs
+Intro (Jeff Gallas) I’m very happy to announce our first speaker for today. It is Stepan Snigirev from Specter, he is the CTO of Specter Solutions and has been working on Bitcoin software and hardware wallets for 3 years now so welcome Stepan.
+Overview (Stepan Snigirev) What I want to talk about is Taproot on hardware wallets.</description></item><item><title>Jonas Nick - MuSig2 (2021-08-16)</title><link>https://btctranscripts.com/iacr/2021-08-16-jonas-nick-musig2/</link><pubDate>Mon, 16 Aug 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/iacr/2021-08-16-jonas-nick-musig2/</guid><description>Name: Jonas Nick
 Topic: MuSig2: Simple Two-Round Schnorr Multi-Signatures
 Location: IACR Crypto
 Date: August 16th 2021
