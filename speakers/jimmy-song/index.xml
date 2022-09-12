@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jimmy Song on ₿itcoin Transcripts</title><link>https://btctranscripts.com/speakers/jimmy-song/</link><description>Recent content in Jimmy Song on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 03 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://btctranscripts.com/speakers/jimmy-song/index.xml" rel="self" type="application/rss+xml"/><item><title>Jimmy Song - Taproot multisig (2022-03-03)</title><link>https://btctranscripts.com/advancing-bitcoin/2022/2022-03-03-jimmy-song-taproot-multisig/</link><pubDate>Thu, 03 Mar 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/advancing-bitcoin/2022/2022-03-03-jimmy-song-taproot-multisig/</guid><description>Name: Jimmy Song
+Topic: Taproot multisig
+Location: Advancing Bitcoin
+Date: March 3rd 2022
+Video: https://www.youtube.com/watch?v=Uo3uzofPlX0
+Slides: https://jimmysong.github.io/taproot-multisig
+Pull request adding multisig Taproot support to buidl-python: https://github.com/buidl-bitcoin/buidl-python/pull/109
+Intro (Jeff Gallas) The next speaker is Jimmy Song who doesn’t really need an introduction but in any case, he has been, which is important for this conference, running the Programming Blockchain workshops for 5 years now. Leon is one of his alumni so there is a direct connection to this conference.</description></item></channel></rss>

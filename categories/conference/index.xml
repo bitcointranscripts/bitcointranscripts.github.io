@@ -6,7 +6,14 @@ Video: https://youtu.be/tWopcFzSTas?t=11604
 FROST paper: https://eprint.iacr.org/2020/852.pdf
 Sydney Socratic on FROST: https://btctranscripts.com/sydney-bitcoin-meetup/2022-03-29-socratic-seminar/
 Introduction Elizabeth Crites (EC): My name is Elizabeth Crites, I’m a postdoc at the University of Edinburgh.
-Chelsea Komlo (CK): I’m Chelsea Komlo, I’m at the University of Waterloo and I’m also a Principal Researcher at the Zcash Foundation. Today we will be giving you research updates on FROST.</description></item><item><title>Jonas Nick - MuSig2 (2021-08-16)</title><link>https://btctranscripts.com/iacr/2021-08-16-jonas-nick-musig2/</link><pubDate>Mon, 16 Aug 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/iacr/2021-08-16-jonas-nick-musig2/</guid><description>Name: Jonas Nick
+Chelsea Komlo (CK): I’m Chelsea Komlo, I’m at the University of Waterloo and I’m also a Principal Researcher at the Zcash Foundation. Today we will be giving you research updates on FROST.</description></item><item><title>Jimmy Song - Taproot multisig (2022-03-03)</title><link>https://btctranscripts.com/advancing-bitcoin/2022/2022-03-03-jimmy-song-taproot-multisig/</link><pubDate>Thu, 03 Mar 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/advancing-bitcoin/2022/2022-03-03-jimmy-song-taproot-multisig/</guid><description>Name: Jimmy Song
+Topic: Taproot multisig
+Location: Advancing Bitcoin
+Date: March 3rd 2022
+Video: https://www.youtube.com/watch?v=Uo3uzofPlX0
+Slides: https://jimmysong.github.io/taproot-multisig
+Pull request adding multisig Taproot support to buidl-python: https://github.com/buidl-bitcoin/buidl-python/pull/109
+Intro (Jeff Gallas) The next speaker is Jimmy Song who doesn’t really need an introduction but in any case, he has been, which is important for this conference, running the Programming Blockchain workshops for 5 years now. Leon is one of his alumni so there is a direct connection to this conference.</description></item><item><title>Jonas Nick - MuSig2 (2021-08-16)</title><link>https://btctranscripts.com/iacr/2021-08-16-jonas-nick-musig2/</link><pubDate>Mon, 16 Aug 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/iacr/2021-08-16-jonas-nick-musig2/</guid><description>Name: Jonas Nick
 Topic: MuSig2: Simple Two-Round Schnorr Multi-Signatures
 Location: IACR Crypto
 Date: August 16th 2021
