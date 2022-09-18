@@ -13,7 +13,14 @@ Date: March 3rd 2022
 Video: https://www.youtube.com/watch?v=Uo3uzofPlX0
 Slides: https://jimmysong.github.io/taproot-multisig
 Pull request adding multisig Taproot support to buidl-python: https://github.com/buidl-bitcoin/buidl-python/pull/109
-Intro (Jeff Gallas) The next speaker is Jimmy Song who doesn’t really need an introduction but in any case, he has been, which is important for this conference, running the Programming Blockchain workshops for 5 years now. Leon is one of his alumni so there is a direct connection to this conference.</description></item><item><title>Stepan Snigirev - Taproot on hardware wallets (2022-03-03)</title><link>https://btctranscripts.com/advancing-bitcoin/2022/2022-03-03-stepan-snigirev-taproot-hardware-wallets/</link><pubDate>Thu, 03 Mar 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/advancing-bitcoin/2022/2022-03-03-stepan-snigirev-taproot-hardware-wallets/</guid><description>Name: Stepan Snigirev
+Intro (Jeff Gallas) The next speaker is Jimmy Song who doesn’t really need an introduction but in any case, he has been, which is important for this conference, running the Programming Blockchain workshops for 5 years now. Leon is one of his alumni so there is a direct connection to this conference.</description></item><item><title>Sanket Kanjalkar - Miniscript (2022-03-03)</title><link>https://btctranscripts.com/advancing-bitcoin/2022/2022-03-03-sanket-kanjalkar-miniscript/</link><pubDate>Thu, 03 Mar 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/advancing-bitcoin/2022/2022-03-03-sanket-kanjalkar-miniscript/</guid><description>Name: Sanket Kanjalkar
+Topic: Miniscript: Composable, Analyzable and Smarter Bitcoin Script
+Location: Advancing Bitcoin
+Date: March 3rd 2022
+Video: https://www.youtube.com/watch?v=Bn1CWsqt3VQ
+Andrew Poelstra on Miniscript: https://btctranscripts.com/london-bitcoin-devs/2020-02-04-andrew-poelstra-miniscript/
+Intro (Jeff Gallas) The next speaker is Sanket. He is working at Blockstream and is mostly working on Simplicity and Miniscript and that is also what he is going to talk about, Miniscript. Please welcome Sanket.
+Intro (Sanket Kanjalkar) Good morning everyone. Today I will be discussing Miniscript which is a work of Pieter Wuille, Andrew Poelstra and me with input from many Bitcoiners.</description></item><item><title>Stepan Snigirev - Taproot on hardware wallets (2022-03-03)</title><link>https://btctranscripts.com/advancing-bitcoin/2022/2022-03-03-stepan-snigirev-taproot-hardware-wallets/</link><pubDate>Thu, 03 Mar 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/advancing-bitcoin/2022/2022-03-03-stepan-snigirev-taproot-hardware-wallets/</guid><description>Name: Stepan Snigirev
 Topic: Taproot on hardware wallets
 Location: Advancing Bitcoin
 Date: March 3rd 2022
