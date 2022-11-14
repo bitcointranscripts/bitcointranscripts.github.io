@@ -27,13 +27,21 @@
 
 {{ define "childs" }}
 		{{- range .menu }}
-			<li class="h6 child-links py-1">
-				<a href="{{.RelPermalink}}"> 
-					{{ if (.GetTerms "speakers") }}
-						{{ delimit (.Params.speakers) ", " }} - 
-					{{ end }} 
-					{{ .Title }} 
-				</a>
-			</li>
+		<div class="h6 child-links py-1">
+			<a href="{{.RelPermalink}}" class="list-group-item list-group-item-action flex-column align-items-start">
+				<div class="d-flex justify-content-between">
+					<h5 class="mb-1">{{ .Title }}</h5>
+					{{ if not .FirstSection.Params.conference }}
+						<small class="text-muted font-italic">{{ .Params.date.Format "Jan 02, 2006" }}</small>
+					{{ end }}
+				</div>
+				{{ with .Params.speakers }}
+					<p class="mb-1 text-muted">
+						{{ delimit . ", " }}
+					</p>
+				{{ end }} 
+				
+			</a>
+		</div>
 		{{ end }}
 {{ end }}
