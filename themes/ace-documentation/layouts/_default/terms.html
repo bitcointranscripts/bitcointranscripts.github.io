@@ -5,7 +5,7 @@
 <ul>
     {{ range .Data.Pages }}
     <li>
-      <a href="{{.RelPermalink}}">{{ .Title | title }}</a>
+      <a href="{{.RelPermalink}}">{{ .Title | title }} ({{ len .Data.Pages }})</a>
     </li>
     {{ end }}
 </ul>
