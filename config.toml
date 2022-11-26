@@ -24,6 +24,10 @@ DefaultContentLanguage = "en"
     title = "Transcrições de ₿itcoin"
     languageName = "Português"
     weight = 2
+  [languages.zh]
+    title = "₿itcoin 记录稿"
+    languageName = "简体中文"
+    weight = 3
 
 [outputs]
     home = [ "HTML", "JSON"]
@@ -52,6 +56,10 @@ DefaultContentLanguage = "en"
     name = "pt"
     url = "/pt"
     weight = 2
+[[languages.en.menu.shortcuts]]
+    name = "zh"
+    url = "/zh"
+    weight = 3
 [[languages.es.menu.shortcuts]]
     name = "en"
     url = "/en"
@@ -60,6 +68,10 @@ DefaultContentLanguage = "en"
     name = "pt"
     url = "/pt"
     weight = 2
+[[languages.es.menu.shortcuts]]
+    name = "zh"
+    url = "/zh"
+    weight = 3
 [[languages.pt.menu.shortcuts]]
     name = "en"
     url = "/en"
@@ -68,3 +80,19 @@ DefaultContentLanguage = "en"
     name = "es"
     url = "/es"
     weight = 2
+[[languages.pt.menu.shortcuts]]
+    name = "zh"
+    url = "/zh"
+    weight = 3
+[[languages.zh.menu.shortcuts]]
+    name = "en"
+    url = "/en"
+    weight = 1
+[[languages.zh.menu.shortcuts]]
+    name = "es"
+    url = "/es"
+    weight = 2
+[[languages.zh.menu.shortcuts]]
+    name = "pt"
+    url = "/pt"
+    weight = 3    
