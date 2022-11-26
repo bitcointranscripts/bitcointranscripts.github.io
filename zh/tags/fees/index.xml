@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>fees on ₿itcoin 记录稿</title><link>https://btctranscripts.com/zh/tags/fees/</link><description>Recent content in fees on ₿itcoin 记录稿</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 15 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://btctranscripts.com/zh/tags/fees/index.xml" rel="self" type="application/rss+xml"/><item><title>Misconceptions about segwit vbytes (2022-10-15)</title><link>https://btctranscripts.com/zh/tabconf/2022/2022-10-15-segwit-vbytes-misconceptions/</link><pubDate>Sat, 15 Oct 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/zh/tabconf/2022/2022-10-15-segwit-vbytes-misconceptions/</guid><description>度量交易的重量：见证数据的折扣 你应该已经从别人那里听到了，我的演讲会有更多个互动。我可能不会讲完我准备的所有内容。如果你在听的过程中有所疑惑，欢迎举手，这样我们就可以立即解决问题。我准备带各位了解一下非隔离见证交易和隔离见证交易的序列化。希望演讲结束之后，你可以理解交易的重量（weight） 是如何计算的，以及见证数据的折扣是如何适用的。最后，我们应该会看看一些不同的输出类型。
+隔离见证以前 在隔离见证激活之前，一笔交易是这样的：它将至少有一个输入和一个输出。这笔交易有一个 P2PKH 输入，但有 4 个输出，一个是封装的隔离见证输入，一个是传统输入。到目前为止，没什么大不了的。估计你也看过这种类型的交易。
+交易的序列化 打开引擎盖，我们来看得仔细些。如果你序列化一笔交易，或者观看一笔交易的序列化形式，就像 yogh.io 给不同数据染色一样，你可以看到，所有的数据都编码成十六进制的字符串，而且这些字符串是使用不同的函数来处理的。
+我们首先会看到交易的元数据。每一笔交易都有一个 “交易头”，包含一个 4 字节的版本字段字段、输入容器（告诉你这笔交易有多少个输入）和输出容器（告诉你这笔交易有多少个输出），以及一个 4 字节的时间锁字段。
+如果有人关注了最近关于 v3 交易的进展，这就是交易版本字段。如你所见，1 在最前面，因为这个值是小端序的（little-endian），不是大端序的（big-endian）。
+看完交易头之后我们来看看输入。
+输入的序列化 若我们要使用一个输入，我们首先必须告诉大家我们要花费的是哪个 UTXO。为了唯一地定位一个 UTXO，我们使用了 outpoint（“输出点”），就是一个交易索引号（txid）以及该 UTXO 在这个交易的输出列表中的位置。在我的幻灯片中，txid 是深蓝色的。这是这个 UTXO 的来源交易。作为计算机科学家，我们从 0 开始计数。
+要花费一个 UTXO，我们必须满足编码在这个 UTXO 中的条件脚本。这是用 “输入脚本” 来作的。输入脚本的长度是任意的，取决于我们想要满足的脚本的条件类型。因此，我们必须将输入脚本的长度编码（“输入脚本长度”）进输入。
+在这个数值之后就是输入脚本本身。以 P2PKH 输入为例，这是一种众所周知的脚本。P2PKH 条件脚本意味着资金被锁定在一个公钥的哈希值里。为了满足 P2PKH 脚本，我们要提供这个公钥，然后运行哈希计算，证明这个哈希值与存储在条件脚本里的一致，然后再提供该公钥的一个签名。
+输入的最后一个字段是 “sequence”。使用这个字段，我们可以指定这笔交易是否可以被替换。一笔交易只要有一个输入的 sequence 值小于可能的最大值，这笔交易就不算是最终版本，是可以替换的。只需要在一个输入中指定，就足以让一笔交易变成可替换的。要是这个字段的值小于 最大值 - 1 呢？ 那就意味着它启用了时间锁。我在此不赘述了。
+输出的序列化 这个示例交易有 4 个输出。我要拿出其中一个来细说。输出里的第一个字段是 “面额”，也就是进入这个锁定资金的条件脚本的聪的数量。一个输出会创建一个新的 UTXO，而一个 UTXO 会有确切的面额。然后，UTXO 还有一个锁定脚本，也就是条件脚本，指明可以花费这个 UTXO 的条件。
+Q：你能在一笔交易中分配的最大数额是多少？
+A：面额字段有 8 个字节长，所以我觉得它足以放下 2100 万 BTC。</description></item></channel></rss>
