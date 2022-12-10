@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Eric Lombrozo on ₿itcoin Transcripts</title><link>https://btctranscripts.com/speakers/eric-lombrozo/</link><description>Recent content in Eric Lombrozo on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 03 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://btctranscripts.com/speakers/eric-lombrozo/index.xml" rel="self" type="application/rss+xml"/><item><title>Taproot Activation</title><link>https://btctranscripts.com/bitcoin-magazine/2020-08-03-eric-lombrozo-luke-dashjr-taproot-activation/</link><pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-magazine/2020-08-03-eric-lombrozo-luke-dashjr-taproot-activation/</guid><description>Topic: How to Activate a New Soft Fork
+Location: Bitcoin Magazine (online)
+Aaron van Wirdum in Bitcoin Magazine on BIP 8, BIP 9 or Modern Soft Fork Activation: https://bitcoinmagazine.com/articles/bip-8-bip-9-or-modern-soft-fork-activation-how-bitcoin-could-upgrade-next
+David Harding on Taproot activation proposals: https://gist.github.com/harding/dda66f5fd00611c0890bdfa70e28152d
+Intro Aaron van Wirdum (AvW): Eric, Luke welcome. Happy Bitcoin Independence Day. How are you doing?
+Eric Lombrozo (EL): We are doing great. How are you doing?
+AvW: I am doing fine thanks. Luke how are you?</description></item><item><title>Fork Dynamics</title><link>https://btctranscripts.com/magicalcryptoconference/2019/fork-dynamics/</link><pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/magicalcryptoconference/2019/fork-dynamics/</guid><description>Fork dynamics
+Thank you, Samson, for that great introduction and thank you for organizing this awesome event. It&amp;rsquo;s great seeing everyone. A few years ago, the situation was extremely different. When Samson originally asked me to give a talk, I kind of thought a little bit about what I should talk about and I wasn&amp;rsquo;t sure what&amp;rsquo;s most interesting. A few years ago, it was much more clear about the set of things going on.</description></item><item><title>Changing Consensus Rules Without Breaking Bitcoin</title><link>https://btctranscripts.com/breaking-bitcoin/2017/changing-consensus-rules-without-breaking-bitcoin/</link><pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/breaking-bitcoin/2017/changing-consensus-rules-without-breaking-bitcoin/</guid><description>Changing consensus rules without breaking bitcoin
+https://twitter.com/kanzure/status/1005822360321216512
+Introduction I&amp;rsquo;d like to talk about &amp;hellip; we actually discovered we can replace the script completely with soft-forks.
+It&amp;rsquo;s important to note this quote from satoshi, from summer 2010: &amp;ldquo;I don&amp;rsquo;t believe a second compatible implementation will ever&amp;rdquo; &amp;hellip;&amp;hellip;
+Comparing open-source development to bitcoin&amp;rsquo;s blockchain &amp;hellip; a lot of the inspiration came from the development of open-source. All source code is public, analogous to all blockchain being public.</description></item><item><title>Whalepool</title><link>https://btctranscripts.com/misc/2016-12-14-whalepool/</link><pubDate>Wed, 14 Dec 2016 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/misc/2016-12-14-whalepool/</guid><description>Whalepool segwit transcript
+https://soundcloud.com/elux-2/the-great-stakehodler-debate-lombroso-petrov-potter-ver
+https://twitter.com/kanzure/status/809174512105295872
+Host: Mr. Ver, can you hear this?
+RV: Yes, I can.
+Host: Welcome to Whalepool.
+Gavin: Hey Roger, it&amp;rsquo;s Gavin. I heard about this.
+RV: Hey Eric. I see lots of familiar names in here.
+RV: Who was that? I don&amp;rsquo;t know whose voice that was.
+Hodl: Mr. Hodl
+RV: Thanks for organizing this. Hello Mr. Hodl.
+Host: Okay, ready to go. Here we have Eric Lombrozo who is a developer who has committed code to Bitcoin Core.</description></item><item><title>Bitcoin Protocol Development Panel</title><link>https://btctranscripts.com/magicalcryptoconference/2019/bitcoin-protocol-development-panel/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/magicalcryptoconference/2019/bitcoin-protocol-development-panel/</guid><description>Bitcoin protocol development panel
+KW: We have some wonderful panelists today. Let&amp;rsquo;s kick it off. Let&amp;rsquo;s start with Eric. Who are you and what role do you play in bitcoin development?
+EL: I got into bitcoin in 2011. I had my own network stack. I almost had a full node implementation but I stopped short because it wasn&amp;rsquo;t as well tested or reviewed as Bitcoin Core. So I started to look into the community a little bit.</description></item><item><title>Build Scale Operate</title><link>https://btctranscripts.com/scalingbitcoin/milan-2016/build-scale-operate/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/scalingbitcoin/milan-2016/build-scale-operate/</guid><description>Build - Scale - Operate: The Three Pillars of the Bitcoin Community
+https://twitter.com/kanzure/status/784713580713246720
+Good morning. This is such a beautiful conference. Eric and I are excited to speak with you. We are going to outline what our goals are. We want to be clear that we&amp;rsquo;re not here to define vision. Rather, we&amp;rsquo;re here about how to grow vision around how to grow bitcoin from a technical community perspectives. We&amp;rsquo;re going to share some of our challenges with bitcoin.</description></item><item><title>Extensibility</title><link>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/extensibility/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/scalingbitcoin/hong-kong-2015/extensibility/</guid><description>Extensibility, fraud proofs, and security models
+Eric Lombrozo (CodeShark)
+slides: https://scalingbitcoin.org/hongkong2015/presentations/DAY2/4_extensibility_lombrozo.pdf
+Transcript pending, please email link to video to kanzure@gmail.com for transcribing&amp;hellip;</description></item><item><title>Reaching Consensus Open Blockchains</title><link>https://btctranscripts.com/coindesk-consensus-2016/reaching-consensus-open-blockchains/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/coindesk-consensus-2016/reaching-consensus-open-blockchains/</guid><description>Preliminary notes:
+Contact me- https://twitter.com/kanzure
+Reaching consensus on open blockchains
+Moderator- Pindar Wong
+Gavin Andresen, MIT Digital Currency Initiative
+Vitalik Buterin, Ethereum Foundation
+Eric Lombrozo, Ciphrex and Bitcoin Core
+Neha Narula, MIT Media Lab Digital Currency Initiative
+Please silence your cell phone during this session. Thank you. Please silence your cell phones during this session. Thank you. Ladies and gentlemen, please take your seats. The session is about to begin.</description></item><item><title>Validation Costs</title><link>https://btctranscripts.com/scalingbitcoin/montreal-2015/validation-costs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/scalingbitcoin/montreal-2015/validation-costs/</guid><description>Validation costs and incentives
+How many of you have read the Satoshi whitepaper? It&amp;rsquo;s a good paper. As we have discovered, it has some serious limitations that we think can be fixed but they are serious challenges for scaling. Amongst these are, it was really built as a single code base which was meant to be run in its entirety. All machines were going to participate equally in this p2p network.</description></item></channel></rss>

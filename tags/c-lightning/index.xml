@@ -1,128 +1,70 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>c-lightning on ₿itcoin Transcripts</title><link>https://btctranscripts.com/tags/c-lightning/</link><description>Recent content in c-lightning on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://btctranscripts.com/tags/c-lightning/index.xml" rel="self" type="application/rss+xml"/><item><title>c-lightning developer call (2021-08-09)</title><link>https://btctranscripts.com/c-lightning/2021-08-09-developer-call/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/c-lightning/2021-08-09-developer-call/</guid><description>Name: c-lightning developer call
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>c-lightning on ₿itcoin Transcripts</title><link>https://btctranscripts.com/tags/c-lightning/</link><description>Recent content in c-lightning on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 07 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://btctranscripts.com/tags/c-lightning/index.xml" rel="self" type="application/rss+xml"/><item><title>c-lightning developer call</title><link>https://btctranscripts.com/c-lightning/2022-03-07-developer-call/</link><pubDate>Mon, 07 Mar 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/c-lightning/2022-03-07-developer-call/</guid><description>Name: c-lightning developer call
 Topic: Various topics
 Location: Jitsi online
-Date: August 9th 2021
 Video: No video posted online
 The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
-Individual updates Today I started to review some pull requests.</description></item><item><title>c-lightning developer call (2021-08-23)</title><link>https://btctranscripts.com/c-lightning/2021-08-23-developer-call/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/c-lightning/2021-08-23-developer-call/</guid><description>Name: c-lightning developer call
+Minisketch and gossip spam I’ve been working on the multi channel connect stuff, trying to not get distracted by Tether talk and other stuff like that.</description></item><item><title>c-lightning developer call</title><link>https://btctranscripts.com/c-lightning/2022-01-24-developer-call/</link><pubDate>Mon, 24 Jan 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/c-lightning/2022-01-24-developer-call/</guid><description>Name: c-lightning developer call
 Topic: Various topics
 Location: Jitsi online
-Date: August 23rd 2021
 Video: No video posted online
 The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
-Individual updates I’ve been working on connectd, we got that merged.</description></item><item><title>c-lightning developer call (2021-09-06)</title><link>https://btctranscripts.com/c-lightning/2021-09-06-developer-call/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/c-lightning/2021-09-06-developer-call/</guid><description>Name: c-lightning developer call
-Topic: Various topics
+Individual updates Still working on the cln stuff. cln is basically the Rust libraries that I am building to interact with c-lightning and which will become the basis for the gRPC interface.</description></item><item><title>c-lightning developer call</title><link>https://btctranscripts.com/c-lightning/2022-01-10-developer-call/</link><pubDate>Mon, 10 Jan 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/c-lightning/2022-01-10-developer-call/</guid><description>Topic: Various topics
 Location: Jitsi online
-Date: September 6th 2021
+Date: January 10th 2022
 Video: No video posted online
 The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
-Individual updates I’ve been mostly shepherding the pull requests on c-lightning and looking into issues we need to fix for the coming release.</description></item><item><title>c-lightning developer call (2021-09-20)</title><link>https://btctranscripts.com/c-lightning/2021-09-20-developer-call/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/c-lightning/2021-09-20-developer-call/</guid><description>Name: c-lightning developer call
-Topic: Various topics
+Accounting plugin I have been working on the accounting plugin for the last few months.</description></item><item><title>c-lightning developer call</title><link>https://btctranscripts.com/c-lightning/2021-12-13-developer-call/</link><pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/c-lightning/2021-12-13-developer-call/</guid><description>Topic: Various topics
 Location: Jitsi online
-Date: September 20th 2021
 Video: No video posted online
-Agenda: https://hackmd.io/@cdecker/Sy-9vZIQt
 The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
-Individual updates Let’s start with a quick round of updates from the team.</description></item><item><title>c-lightning developer call (2021-10-04)</title><link>https://btctranscripts.com/c-lightning/2021-10-04-developer-call/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/c-lightning/2021-10-04-developer-call/</guid><description>Name: c-lightning developer call
-Topic: Various topics
+Enabling multi channel support https://github.com/ElementsProject/lightning/pull/4984
+https://github.com/ElementsProject/lightning/pull/4985
+I have actually been pulling Humpty Dumpty apart. I have a series of like 40 patches which rearchitect the entire way we do c-lightning.</description></item><item><title>c-lightning developer call</title><link>https://btctranscripts.com/c-lightning/2021-11-29-developer-call/</link><pubDate>Mon, 29 Nov 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/c-lightning/2021-11-29-developer-call/</guid><description>Topic: Various topics
 Location: Jitsi online
-Date: October 4th 2021
+Date: November 29th 2021
 Video: No video posted online
 The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
-Dust HTLC exposure (Lisa Neigut) Antoine Riard email to the Lightning dev mailing list: https://lists.</description></item><item><title>c-lightning developer call (2021-10-18)</title><link>https://btctranscripts.com/c-lightning/2021-10-18-developer-call/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/c-lightning/2021-10-18-developer-call/</guid><description>Name: c-lightning developer call
-Topic: Various topics
+CI problems I will note we have been having CI problems.</description></item><item><title>c-lightning developer call</title><link>https://btctranscripts.com/c-lightning/2021-11-15-developer-call/</link><pubDate>Mon, 15 Nov 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/c-lightning/2021-11-15-developer-call/</guid><description>Topic: Various topics
+Location: Jitsi online
+Video: No video posted online
+The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
+Upgrading c-lightning for Taproot So, Taproot. The one place in the spec where Taproot matters if you are using it as an individual, generally it doesn’t matter where you keep your funds when it is not in a channel, doesn’t affect the spec, except the shutdown case.</description></item><item><title>c-lightning developer call</title><link>https://btctranscripts.com/c-lightning/2021-11-01-developer-call/</link><pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/c-lightning/2021-11-01-developer-call/</guid><description>Topic: Various topics
+Location: Jitsi online
+Video: No video posted online
+The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
+c-lightning v0.10.2 release https://medium.com/blockstream/c-lightning-v0-10-2-bitcoin-dust-consensus-rule-33e777d58657
+We’ve tagged RC1 to get people testing. The testing found 2 regressions, both related to the database handling.</description></item><item><title>c-lightning developer call</title><link>https://btctranscripts.com/c-lightning/2021-10-18-developer-call/</link><pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/c-lightning/2021-10-18-developer-call/</guid><description>Topic: Various topics
 Location: Jitsi online
 Date: October 18th 2021
 Video: No video posted online
 The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
 c-lightning v0.10.2 release https://medium.com/blockstream/c-lightning-v0-10-2-bitcoin-dust-consensus-rule-33e777d58657
-We are nominally past the release date.</description></item><item><title>c-lightning developer call (2021-11-01)</title><link>https://btctranscripts.com/c-lightning/2021-11-01-developer-call/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/c-lightning/2021-11-01-developer-call/</guid><description>Name: c-lightning developer call
+We are nominally past the release date.</description></item><item><title>c-lightning developer call</title><link>https://btctranscripts.com/c-lightning/2021-10-04-developer-call/</link><pubDate>Mon, 04 Oct 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/c-lightning/2021-10-04-developer-call/</guid><description>Name: c-lightning developer call
 Topic: Various topics
 Location: Jitsi online
-Date: November 1st 2021
 Video: No video posted online
 The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
-c-lightning v0.10.2 release https://medium.com/blockstream/c-lightning-v0-10-2-bitcoin-dust-consensus-rule-33e777d58657
-We’ve tagged RC1 to get people testing.</description></item><item><title>c-lightning developer call (2021-11-15)</title><link>https://btctranscripts.com/c-lightning/2021-11-15-developer-call/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/c-lightning/2021-11-15-developer-call/</guid><description>Name: c-lightning developer call
-Topic: Various topics
+Dust HTLC exposure (Lisa Neigut) Antoine Riard email to the Lightning dev mailing list: https://lists.</description></item><item><title>c-lightning developer call</title><link>https://btctranscripts.com/c-lightning/2021-09-20-developer-call/</link><pubDate>Mon, 20 Sep 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/c-lightning/2021-09-20-developer-call/</guid><description>Topic: Various topics
 Location: Jitsi online
-Date: November 15th 2021
 Video: No video posted online
+Agenda: https://hackmd.io/@cdecker/Sy-9vZIQt
 The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
-Upgrading c-lightning for Taproot So, Taproot. The one place in the spec where Taproot matters if you are using it as an individual, generally it doesn’t matter where you keep your funds when it is not in a channel, doesn’t affect the spec, except the shutdown case.</description></item><item><title>c-lightning developer call (2021-11-29)</title><link>https://btctranscripts.com/c-lightning/2021-11-29-developer-call/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/c-lightning/2021-11-29-developer-call/</guid><description>Name: c-lightning developer call
-Topic: Various topics
+Individual updates Let’s start with a quick round of updates from the team.</description></item><item><title>c-lightning developer call</title><link>https://btctranscripts.com/c-lightning/2021-09-06-developer-call/</link><pubDate>Mon, 06 Sep 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/c-lightning/2021-09-06-developer-call/</guid><description>Topic: Various topics
 Location: Jitsi online
-Date: November 29th 2021
+Date: September 6th 2021
 Video: No video posted online
 The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
-CI problems I will note we have been having CI problems.</description></item><item><title>c-lightning developer call (2021-12-13)</title><link>https://btctranscripts.com/c-lightning/2021-12-13-developer-call/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/c-lightning/2021-12-13-developer-call/</guid><description>Name: c-lightning developer call
-Topic: Various topics
+Individual updates I’ve been mostly shepherding the pull requests on c-lightning and looking into issues we need to fix for the coming release.</description></item><item><title>c-lightning developer call</title><link>https://btctranscripts.com/c-lightning/2021-08-23-developer-call/</link><pubDate>Mon, 23 Aug 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/c-lightning/2021-08-23-developer-call/</guid><description>Topic: Various topics
 Location: Jitsi online
-Date: December 13th 2021
 Video: No video posted online
 The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
-Enabling multi channel support https://github.com/ElementsProject/lightning/pull/4984
-https://github.com/ElementsProject/lightning/pull/4985</description></item><item><title>c-lightning developer call (2022-01-10)</title><link>https://btctranscripts.com/c-lightning/2022-01-10-developer-call/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/c-lightning/2022-01-10-developer-call/</guid><description>Name: c-lightning developer call
-Topic: Various topics
+Individual updates I’ve been working on connectd, we got that merged. It was not a big change.</description></item><item><title>c-lightning developer call</title><link>https://btctranscripts.com/c-lightning/2021-08-09-developer-call/</link><pubDate>Mon, 09 Aug 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/c-lightning/2021-08-09-developer-call/</guid><description>c-lightning developer call Topic: Various topics
 Location: Jitsi online
-Date: January 10th 2022
 Video: No video posted online
 The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
-Accounting plugin I have been working on the accounting plugin for the last few months.</description></item><item><title>c-lightning developer call (2022-01-24)</title><link>https://btctranscripts.com/c-lightning/2022-01-24-developer-call/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/c-lightning/2022-01-24-developer-call/</guid><description>Name: c-lightning developer call
-Topic: Various topics
-Location: Jitsi online
-Date: January 24th 2022
-Video: No video posted online
-The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
-Individual updates Still working on the cln stuff.</description></item><item><title>c-lightning developer call (2022-03-07)</title><link>https://btctranscripts.com/c-lightning/2022-03-07-developer-call/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/c-lightning/2022-03-07-developer-call/</guid><description>Name: c-lightning developer call
-Topic: Various topics
-Location: Jitsi online
-Date: March 7th 2022
-Video: No video posted online
-The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
-Minisketch and gossip spam I’ve been working on the multi channel connect stuff, trying to not get distracted by Tether talk and other stuff like that.</description></item><item><title>Christian Decker - C-Lightning API (2018-10-24)</title><link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-24-christian-decker-c-lightning-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-24-christian-decker-c-lightning-api/</guid><description>Christian Decker
-Developing on c-lightning
-Location: Chaincode Labs Lightning Residency 2018
-Video: https://www.youtube.com/watch?v=l8OLD7or0DA
-https://twitter.com/kanzure/status/1232313790311436290
-Intro Good morning from the last day of presentations. I’m Chris still. Today I will be talking to you about c-lightning, how to develop on it, how to extend it, adapt it to your needs and how to customize it so it fits into whatever you are trying to do. Not whatever we thought you might want to do.</description></item><item><title>Christian Decker - C-Lightning Questions (2019-09-04)</title><link>https://btctranscripts.com/blockstream-webinars/2019-09-04-christian-decker-c-lightning-questions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/blockstream-webinars/2019-09-04-christian-decker-c-lightning-questions/</guid><description>Christian Decker
-c-lightning Q and A session
-Video: https://www.youtube.com/watch?v=r7Un8FZYlS4&amp;amp;list=PLseHpvCI1BjAfUx8zjJXadlBh_eKV9zJi&amp;amp;index=8
-https://twitter.com/kanzure/status/1230527903969841152
-Introduction Hello everyone. I’m Christian. I’m a software developer at Blockstream and I work on Lightning, both the specification and the implementation. Today we are going to have a shortish webinar on how to get started with Lightning.
-Q and A Q - Is it possible to run c-lightning and lnd on the same host in parallel?
-A - It absolutely is.</description></item><item><title>Ln Present And Future Panel</title><link>https://btctranscripts.com/magicalcryptoconference/2019/ln-present-and-future-panel/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/magicalcryptoconference/2019/ln-present-and-future-panel/</guid><description>Lightning network present &amp;amp; future panel
-Will O&amp;rsquo;Beirne, Lisa Neigut, Alex Bosworth, Leigh Cuen
-Video: https://youtu.be/OzpfiieV5C4
-LC: Can everyone hear me now? Alright, alright.
-WO: It&amp;rsquo;s getting some good usage. A lot of those are businesses. Definitely it&amp;rsquo;s in the early stage. Elizabeth talked about this. There&amp;rsquo;s a lot of things that are mostly for fun, it&amp;rsquo;s not really at ecommerce yet.
-LC: That&amp;rsquo;s for lnd?
-WO: Sure, and I think Lisa can talk about c-lightning.</description></item><item><title>Rusty Russell - Getting Started With C-Lightning (2019-07-31)</title><link>https://btctranscripts.com/blockstream-webinars/2019-07-31-rusty-russell-getting-started-with-c-lightning/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/blockstream-webinars/2019-07-31-rusty-russell-getting-started-with-c-lightning/</guid><description>Rusty Russell
-Getting started with c-lightning
-video: https://www.youtube.com/watch?v=fab4P3BIZxk
-https://twitter.com/kanzure/status/1231946205380403200
-Introduction Hi everyone. We’re actually a couple of minutes early and I think we are going to give a couple of minutes past before we actually start because I think some people will probably be running late particularly with the change in times we had to make after this was announced. While we are waiting it would be interesting to find out a little bit about the attendees’ backgrounds and what they hope to get out of this.</description></item><item><title>Rusty Russell - JSON Interface (2019-04-06)</title><link>https://btctranscripts.com/boltathon/2019-04-06-rusty-russell-json-interface/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/boltathon/2019-04-06-rusty-russell-json-interface/</guid><description>Rusty Russell
-Boltathon
-JSON Interface with c-lightning and Writing Extensions
-video: https://www.youtube.com/watch?v=sNB1N7FyMHA
-https://twitter.com/kanzure/status/1230892247345852416
-Intro Ok I have top running. We have a plan and we’re going to start from zero. We’re going to clone c-lightning, we’re going to compile it, we’re going to set up a test node. I’m assuming Bitcoin is already installed. We’re going to talk a little about configuring it and stuff like that. All this stuff is useful to see somebody else do.</description></item><item><title>Rusty Russell - Offers (2019-10-19)</title><link>https://btctranscripts.com/lightning-conference/2019/2019-10-19-rusty-russell-offers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-conference/2019/2019-10-19-rusty-russell-offers/</guid><description>Name: Rusty Russell
-Topic: Make Me An Offer: Next Level Invoicing
-The Lightning Conference Day 1 (Stage 1)
-Video: https://www.youtube.com/watch?v=Wq75pGWmMd4
-BOLT 11: https://github.com/lightningnetwork/lightning-rfc/blob/master/11-payment-encoding.md
-BOLT 12 PR: https://github.com/lightningnetwork/lightning-rfc/pull/798
-bolt12.org: https://bolt12.org/
-Intro Hi. My name is Rusty Russell and this is actually my official job title at Blockstream, code contributor. It is generic, it is flexible, it is probably a little too humble maybe but that is me. Before we begin the main part of this talk I want to tell you a story.</description></item><item><title>Rusty Russell Improving the Lightning Network (2021-05-30)</title><link>https://btctranscripts.com/wasabi-research-club/2021-05-30-rusty-russell-improving-lightning/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/wasabi-research-club/2021-05-30-rusty-russell-improving-lightning/</guid><description>Name: Rusty Russell
-Topic: Improving the Lightning Network
+Individual updates Today I started to review some pull requests. I also finished my first draft of the paid order of the metrics plugin.</description></item><item><title>Improving the Lightning Network</title><link>https://btctranscripts.com/wasabi-research-club/2021-05-30-rusty-russell-improving-lightning/</link><pubDate>Sun, 30 May 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/wasabi-research-club/2021-05-30-rusty-russell-improving-lightning/</guid><description>Topic: Improving the Lightning Network
 Location: Join the Wasabikas podcast
-Date: May 30th 2021
-Audio: https://www.youtube.com/watch?v=BRkSE00aj5k&amp;amp;list=PLPwc75tPMdsixsuhwau82Q0IfxECo0z_E&amp;amp;index=18
-How Rusty got into Lightning Max Hillebrand (MH): So Rusty, I am very happy that you joined me for this conversation today. You have been a pioneer in Lightning Network. To start off this conversation I am curious, 6 years ago before you got into the Lightning Network what was your understanding of Bitcoin back then and where did you see some of the big problems that needed to be solved at that point?</description></item><item><title>Sergi Delgado - Watchtowers (2020-05-24)</title><link>https://btctranscripts.com/lightning-hack-day/2020-05-24-sergi-delgado-watchtowers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-hack-day/2020-05-24-sergi-delgado-watchtowers/</guid><description>Name: Sergi Delgado
-Topic: Watchtowers and BOLT 13
-Location: Potzblitz (online)
-Date: May 24th 2020
-Video: https://www.youtube.com/watch?v=Vkq9CVxMclE
+How Rusty got into Lightning Max Hillebrand (MH): So Rusty, I am very happy that you joined me for this conversation today. You have been a pioneer in Lightning Network. To start off this conversation I am curious, 6 years ago before you got into the Lightning Network what was your understanding of Bitcoin back then and where did you see some of the big problems that needed to be solved at that point?</description></item><item><title>Watchtowers and BOLT 13</title><link>https://btctranscripts.com/lightning-hack-day/2020-05-24-sergi-delgado-watchtowers/</link><pubDate>Sun, 24 May 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-hack-day/2020-05-24-sergi-delgado-watchtowers/</guid><description>Location: Potzblitz (online)
 Slides: https://srgi.me/resources/slides/Potzblitz!2020-Watchtowers.pdf
 The Eye of Satoshi code: https://github.com/talaia-labs/python-teos
 Draft BOLT 13: https://github.com/sr-gi/bolt13/blob/master/13-watchtowers.md
@@ -133,8 +75,26 @@ https://github.com/ElementsProject/lightning/pull/3645
 https://github.com/ElementsProject/lightning/pull/3659
 https://github.com/ElementsProject/lightning/issues/3724
 Conner Fromknecht presentation on watchtowers: https://diyhpl.us/wiki/transcripts/boltathon/2019-04-06-conner-fromknecht-watchtowers/
-Intro I am going to be talking about towers and a bit about BOLT 13 too. Before jumping into watchtowers and this general idea of watchtowers for the Lightning Network that most of the community knows about I would like to go back one step back to try to narrow down the paradigm that we are going to be talking about.</description></item><item><title>Taxonomy Of Ln Nodes</title><link>https://btctranscripts.com/magicalcryptoconference/2019/taxonomy-of-ln-nodes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/magicalcryptoconference/2019/taxonomy-of-ln-nodes/</guid><description>Taxonomy of lightning nodes
-Lisa Neigut
-Video: https://youtu.be/A4i5cEI1jnc
-Introduction Hello. I work at Blockstream on c-lightning. I am here today to talk to you about a taxonomy of nodes about who&amp;rsquo;s who on the lightning network. I wnat ot go through the tools that have been built, looking through the perspectives of what different nodes are trying to accomplish.
-LN map There&amp;rsquo;s a bunch of nodes on the network. Let&amp;rsquo;s look at some stats.</description></item></channel></rss>
+Intro I am going to be talking about towers and a bit about BOLT 13 too. Before jumping into watchtowers and this general idea of watchtowers for the Lightning Network that most of the community knows about I would like to go back one step back to try to narrow down the paradigm that we are going to be talking about.</description></item><item><title>Offers and BOLT 12</title><link>https://btctranscripts.com/lightning-conference/2019/2019-10-19-rusty-russell-offers/</link><pubDate>Sat, 19 Oct 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-conference/2019/2019-10-19-rusty-russell-offers/</guid><description>Make Me An Offer: Next Level Invoicing
+The Lightning Conference Day 1 (Stage 1)
+BOLT 11: https://github.com/lightningnetwork/lightning-rfc/blob/master/11-payment-encoding.md
+BOLT 12 PR: https://github.com/lightningnetwork/lightning-rfc/pull/798
+bolt12.org: https://bolt12.org/
+Intro Hi. My name is Rusty Russell and this is actually my official job title at Blockstream, code contributor. It is generic, it is flexible, it is probably a little too humble maybe but that is me. Before we begin the main part of this talk I want to tell you a story.</description></item><item><title>C-Lightning Questions</title><link>https://btctranscripts.com/blockstream-webinars/2019-09-04-christian-decker-c-lightning-questions/</link><pubDate>Wed, 04 Sep 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/blockstream-webinars/2019-09-04-christian-decker-c-lightning-questions/</guid><description>c-lightning Q and A session
+https://twitter.com/kanzure/status/1230527903969841152
+Introduction Hello everyone. I’m Christian. I’m a software developer at Blockstream and I work on Lightning, both the specification and the implementation. Today we are going to have a shortish webinar on how to get started with Lightning.
+Q and A Q - Is it possible to run c-lightning and lnd on the same host in parallel?
+A - It absolutely is. We actually do that on a regular basis to test compatibility between the implementations.</description></item><item><title>Getting Started With C-Lightning</title><link>https://btctranscripts.com/blockstream-webinars/2019-07-31-rusty-russell-getting-started-with-c-lightning/</link><pubDate>Wed, 31 Jul 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/blockstream-webinars/2019-07-31-rusty-russell-getting-started-with-c-lightning/</guid><description>Getting started with c-lightning
+https://twitter.com/kanzure/status/1231946205380403200
+Introduction Hi everyone. We’re actually a couple of minutes early and I think we are going to give a couple of minutes past before we actually start because I think some people will probably be running late particularly with the change in times we had to make after this was announced. While we are waiting it would be interesting to find out a little bit about the attendees’ backgrounds and what they hope to get out of this.</description></item><item><title>Ln Present And Future Panel</title><link>https://btctranscripts.com/magicalcryptoconference/2019/ln-present-and-future-panel/</link><pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/magicalcryptoconference/2019/ln-present-and-future-panel/</guid><description>Lightning network present &amp;amp; future panel
+LC: Can everyone hear me now? Alright, alright.
+WO: It&amp;rsquo;s getting some good usage. A lot of those are businesses. Definitely it&amp;rsquo;s in the early stage. Elizabeth talked about this. There&amp;rsquo;s a lot of things that are mostly for fun, it&amp;rsquo;s not really at ecommerce yet.
+LC: That&amp;rsquo;s for lnd?
+WO: Sure, and I think Lisa can talk about c-lightning.
+LC: I like these different implementations for LN.</description></item><item><title>Taxonomy Of Ln Nodes</title><link>https://btctranscripts.com/magicalcryptoconference/2019/taxonomy-of-ln-nodes/</link><pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/magicalcryptoconference/2019/taxonomy-of-ln-nodes/</guid><description>Introduction Hello. I work at Blockstream on c-lightning. I am here today to talk to you about a taxonomy of nodes about who&amp;rsquo;s who on the lightning network. I wnat ot go through the tools that have been built, looking through the perspectives of what different nodes are trying to accomplish.
+LN map There&amp;rsquo;s a bunch of nodes on the network. Let&amp;rsquo;s look at some stats. There&amp;rsquo;s a little over 8,317 nodes.</description></item><item><title>JSON Interface</title><link>https://btctranscripts.com/boltathon/2019-04-06-rusty-russell-json-interface/</link><pubDate>Sat, 06 Apr 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/boltathon/2019-04-06-rusty-russell-json-interface/</guid><description>JSON Interface with c-lightning and Writing Extensions
+https://twitter.com/kanzure/status/1230892247345852416
+Intro Ok I have top running. We have a plan and we’re going to start from zero. We’re going to clone c-lightning, we’re going to compile it, we’re going to set up a test node. I’m assuming Bitcoin is already installed. We’re going to talk a little about configuring it and stuff like that. All this stuff is useful to see somebody else do.</description></item><item><title>C-Lightning API</title><link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-24-christian-decker-c-lightning-api/</link><pubDate>Wed, 24 Oct 2018 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-24-christian-decker-c-lightning-api/</guid><description>Location: Chaincode Labs Lightning Residency 2018
+https://twitter.com/kanzure/status/1232313790311436290
+Intro Good morning from the last day of presentations. I’m Chris still. Today I will be talking to you about c-lightning, how to develop on it, how to extend it, adapt it to your needs and how to customize it so it fits into whatever you are trying to do. Not whatever we thought you might want to do.
+Goals First of all the goals of c-lightning are basically to be fast and lightweight.</description></item></channel></rss>

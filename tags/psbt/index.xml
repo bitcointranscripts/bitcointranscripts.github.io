@@ -1,17 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PSBT on ₿itcoin Transcripts</title><link>https://btctranscripts.com/tags/psbt/</link><description>Recent content in PSBT on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://btctranscripts.com/tags/psbt/index.xml" rel="self" type="application/rss+xml"/><item><title>Andrew Chow Hardware Wallets (2020-02-05)</title><link>https://btctranscripts.com/london-bitcoin-devs/2020-02-05-andrew-chow-hardware-wallets/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/london-bitcoin-devs/2020-02-05-andrew-chow-hardware-wallets/</guid><description>Andrew Chow
-London Bitcoin Devs
-February 5th 2020
-Hardware Wallets in Bitcoin Core
-Video: https://www.youtube.com/watch?v=8mdfygEzQjE
-Slides: https://www.dropbox.com/s/k02o32d0pagac4r/Andrew%20Chow%20slides.pdf
-BIP174 (PSBT): https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki
-PSBT Howto for Bitcoin Core: https://github.com/bitcoin/bitcoin/blob/master/doc/psbt.md
-Introduction Hey everyone. As you may have guessed I’m Andrew Chow. I’m Engineer at Blockstream and I also work on Bitcoin Core a lot, mostly in the wallet. I am going to be talking about hardware wallets and a bit history with them in Core and also how to integrate them in Core and how we are integrating them into Core.</description></item><item><title>Luke Dashjr - Segwit, PSBT Vulnerability (2020-06-18)</title><link>https://btctranscripts.com/la-bitdevs/2020-06-18-luke-dashjr-segwit-psbt-vulnerability/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/la-bitdevs/2020-06-18-luke-dashjr-segwit-psbt-vulnerability/</guid><description>Name: Luke Dashjr
-Topic: SegWit/PSBT vulnerability (CVE-2020-14199)
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PSBT on ₿itcoin Transcripts</title><link>https://btctranscripts.com/tags/psbt/</link><description>Recent content in PSBT on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 18 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://btctranscripts.com/tags/psbt/index.xml" rel="self" type="application/rss+xml"/><item><title>Segwit, PSBT Vulnerability</title><link>https://btctranscripts.com/la-bitdevs/2020-06-18-luke-dashjr-segwit-psbt-vulnerability/</link><pubDate>Thu, 18 Jun 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/la-bitdevs/2020-06-18-luke-dashjr-segwit-psbt-vulnerability/</guid><description>SegWit/PSBT vulnerability (CVE-2020-14199)
 Location: LA BitDevs (online)
-Date: June 18th 2020
-Video: https://www.youtube.com/watch?v=CojixIMgg3c
 CVE: https://nvd.nist.gov/vuln/detail/CVE-2020-14199
 Trezor blog post on the vulnerability: https://blog.trezor.io/latest-firmware-updates-correct-possible-segwit-transaction-vulnerability-266df0d2860
 Greg Sanders Bitcoin dev mailing list post in April 2017: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-August/014843.html
-The vulnerability The way Bitcoin transactions are encoded in the software is there is a list of coins essentially and then there is a list of destinations and the amount being sent to each destination.</description></item></channel></rss>
+The vulnerability The way Bitcoin transactions are encoded in the software is there is a list of coins essentially and then there is a list of destinations and the amount being sent to each destination. The destinations do not include the fee. Nothing in the transaction tells you what the fee of the transaction is.</description></item><item><title>Hardware Wallets</title><link>https://btctranscripts.com/london-bitcoin-devs/2020-02-05-andrew-chow-hardware-wallets/</link><pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/london-bitcoin-devs/2020-02-05-andrew-chow-hardware-wallets/</guid><description>Hardware Wallets in Bitcoin Core
+London Bitcoin Devs
+Slides: https://www.dropbox.com/s/k02o32d0pagac4r/Andrew%20Chow%20slides.pdf
+BIP174 (PSBT): https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki
+PSBT Howto for Bitcoin Core: https://github.com/bitcoin/bitcoin/blob/master/doc/psbt.md
+Introduction Hey everyone. As you may have guessed I’m Andrew Chow. I’m Engineer at Blockstream and I also work on Bitcoin Core a lot, mostly in the wallet. I am going to be talking about hardware wallets and a bit history with them in Core and also how to integrate them in Core and how we are integrating them into Core.</description></item></channel></rss>

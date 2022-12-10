@@ -1,44 +1,41 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Lightning Specification on ₿itcoin Transcripts</title><link>https://btctranscripts.com/lightning-specification/</link><description>Recent content in Lightning Specification on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://btctranscripts.com/lightning-specification/index.xml" rel="self" type="application/rss+xml"/><item><title>Lightning specification call (2021-11-22)</title><link>https://btctranscripts.com/lightning-specification/2021-11-22-specification-call/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-specification/2021-11-22-specification-call/</guid><description>Name: Lightning specification call
-Topic: Agenda below
-Location: Google Meet
-Date: November 22nd 2021
-Video: No video posted online
-Agenda: https://github.com/lightning/bolts/issues/936
-The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
-BOLT 7 onion message support https://github.</description></item><item><title>Lightning specification call (2021-12-06)</title><link>https://btctranscripts.com/lightning-specification/2021-12-06-specification-call/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-specification/2021-12-06-specification-call/</guid><description>Name: Lightning specification call
-Topic: Agenda below
-Location: Google Meet
-Date: December 6th 2021
-Video: No video posted online
-Agenda: https://github.com/lightning/bolts/issues/943
-The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
-Add payment metadata to payment request https://github.</description></item><item><title>Lightning specification call (2022-01-03)</title><link>https://btctranscripts.com/lightning-specification/2022-01-03-specification-call/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-specification/2022-01-03-specification-call/</guid><description>Name: Lightning specification call
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Lightning Specification on ₿itcoin Transcripts</title><link>https://btctranscripts.com/lightning-specification/</link><description>Recent content in Lightning Specification on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 14 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://btctranscripts.com/lightning-specification/index.xml" rel="self" type="application/rss+xml"/><item><title>Lightning specification call</title><link>https://btctranscripts.com/lightning-specification/2022-03-14-specification-call/</link><pubDate>Mon, 14 Mar 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-specification/2022-03-14-specification-call/</guid><description>Name: Lightning specification call
 Topic: Agenda below
 Location: Jitsi
-Date: January 3rd 2022
-Video: No video posted online
-Agenda: https://github.com/lightning/bolts/issues/949
-Introduction When people put comments and they are fixed they should mark them as resolved so that we don’t waste time thinking there are lots of outstanding comments and we have to read them again. I think that helps a lot.
-I can spend some time doing that.
-There are a lot of comments, I’m starting at the bottom to see the things that have maybe not been addressed yet.</description></item><item><title>Lightning specification call (2022-01-31)</title><link>https://btctranscripts.com/lightning-specification/2022-01-31-specification-call/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-specification/2022-01-31-specification-call/</guid><description>Name: Lightning specification call
-Topic: Agenda below
-Location: Jitsi
-Date: January 31st 2022
-Video: No video posted online
-Agenda: https://github.com/lightning/bolts/issues/955
-Bitcoin Core funding a transaction without looking at ancestors I have something that I wanted to ask of our implementers who implemented a wallet. It is tangentially related to Lightning especially for anchor outputs. I realized recently that when you ask Bitcoin Core to fund a transaction at a given fee rate it is not going to look at the ancestors and it is not going to take the ancestor’s fee rate into account.</description></item><item><title>Lightning specification call (2022-02-14)</title><link>https://btctranscripts.com/lightning-specification/2022-02-14-specification-call/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-specification/2022-02-14-specification-call/</guid><description>Name: Lightning specification call
-Topic: Agenda below
-Location: Jitsi
-Date: February 14th 2022
-Video: No video posted online
-Agenda: https://github.com/lightning/bolts/issues/957
-Organizing a Lightning Core Dev meetup I was talking about organizing a face to face Lightning Core Dev meetup. If I understand correctly there has only been one formal one and that was in 2019 in Australia. There has been two?
-Milan, the kickoff. There has only ever been two.</description></item><item><title>Lightning specification call (2022-03-14)</title><link>https://btctranscripts.com/lightning-specification/2022-03-14-specification-call/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-specification/2022-03-14-specification-call/</guid><description>Name: Lightning specification call
-Topic: Agenda below
-Location: Jitsi
-Date: March 14th 2022
 Video: No video posted online
 Agenda: https://github.com/lightning/bolts/issues/969
 BOLT 4: Remove legacy format, make var_onion_optin compulsory https://github.com/lightning/bolts/pull/962
 I think eclair and c-lightning have both removed support for legacy payments.
-I’ll probably make a PR to add the feature bit or at least flip it to required. The only wallet I can think of that is somewhat more fringe now is Simple Bitcoin Wallet.</description></item></channel></rss>
+I’ll probably make a PR to add the feature bit or at least flip it to required. The only wallet I can think of that is somewhat more fringe now is Simple Bitcoin Wallet.</description></item><item><title>Lightning specification call</title><link>https://btctranscripts.com/lightning-specification/2022-02-14-specification-call/</link><pubDate>Mon, 14 Feb 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-specification/2022-02-14-specification-call/</guid><description>Name: Lightning specification call
+Topic: Agenda below
+Location: Jitsi
+Video: No video posted online
+Agenda: https://github.com/lightning/bolts/issues/957
+Organizing a Lightning Core Dev meetup I was talking about organizing a face to face Lightning Core Dev meetup. If I understand correctly there has only been one formal one and that was in 2019 in Australia. There has been two?
+Milan, the kickoff. There has only ever been two.
+That was probably before my time in Bitcoin.</description></item><item><title>Lightning specification call</title><link>https://btctranscripts.com/lightning-specification/2022-01-31-specification-call/</link><pubDate>Mon, 31 Jan 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-specification/2022-01-31-specification-call/</guid><description>Name: Lightning specification call
+Topic: Agenda below
+Location: Jitsi
+Video: No video posted online
+Agenda: https://github.com/lightning/bolts/issues/955
+Bitcoin Core funding a transaction without looking at ancestors I have something that I wanted to ask of our implementers who implemented a wallet. It is tangentially related to Lightning especially for anchor outputs. I realized recently that when you ask Bitcoin Core to fund a transaction at a given fee rate it is not going to look at the ancestors and it is not going to take the ancestor’s fee rate into account.</description></item><item><title>Lightning specification call</title><link>https://btctranscripts.com/lightning-specification/2022-01-03-specification-call/</link><pubDate>Mon, 03 Jan 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-specification/2022-01-03-specification-call/</guid><description>Name: Lightning specification call
+Topic: Agenda below
+Location: Jitsi
+Video: No video posted online
+Agenda: https://github.com/lightning/bolts/issues/949
+Introduction When people put comments and they are fixed they should mark them as resolved so that we don’t waste time thinking there are lots of outstanding comments and we have to read them again. I think that helps a lot.
+I can spend some time doing that.
+There are a lot of comments, I’m starting at the bottom to see the things that have maybe not been addressed yet.</description></item><item><title>Lightning specification call</title><link>https://btctranscripts.com/lightning-specification/2021-12-06-specification-call/</link><pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-specification/2021-12-06-specification-call/</guid><description>Name: Lightning specification call
+Topic: Agenda below
+Location: Google Meet
+Video: No video posted online
+Agenda: https://github.com/lightning/bolts/issues/943
+The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
+Add payment metadata to payment request https://github.com/lightning/bolts/pull/912
+In theory you could have an invoice that is so large that it forces you to use a direct payment.</description></item><item><title>Lightning specification call</title><link>https://btctranscripts.com/lightning-specification/2021-11-22-specification-call/</link><pubDate>Mon, 22 Nov 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-specification/2021-11-22-specification-call/</guid><description>Name: Lightning specification call
+Topic: Agenda below
+Location: Google Meet
+Video: No video posted online
+Agenda: https://github.com/lightning/bolts/issues/936
+The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
+BOLT 7 onion message support https://github.com/lightning/bolts/pull/759
+So PR 759 is built on PR 765 because we used the route blinding to decrypt where the end is going to go.</description></item></channel></rss>

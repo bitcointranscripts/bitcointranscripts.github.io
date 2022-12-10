@@ -1,123 +1,57 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>taproot on ₿itcoin Transcripts</title><link>https://btctranscripts.com/tags/taproot/</link><description>Recent content in taproot on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 03 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://btctranscripts.com/tags/taproot/index.xml" rel="self" type="application/rss+xml"/><item><title>Jimmy Song - Taproot multisig (2022-03-03)</title><link>https://btctranscripts.com/advancing-bitcoin/2022/2022-03-03-jimmy-song-taproot-multisig/</link><pubDate>Thu, 03 Mar 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/advancing-bitcoin/2022/2022-03-03-jimmy-song-taproot-multisig/</guid><description>Name: Jimmy Song
-Topic: Taproot multisig
-Location: Advancing Bitcoin
-Date: March 3rd 2022
-Video: https://www.youtube.com/watch?v=Uo3uzofPlX0
-Slides: https://jimmysong.github.io/taproot-multisig
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>taproot on ₿itcoin Transcripts</title><link>https://btctranscripts.com/tags/taproot/</link><description>Recent content in taproot on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 03 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://btctranscripts.com/tags/taproot/index.xml" rel="self" type="application/rss+xml"/><item><title>Taproot multisig</title><link>https://btctranscripts.com/advancing-bitcoin/2022/2022-03-03-jimmy-song-taproot-multisig/</link><pubDate>Thu, 03 Mar 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/advancing-bitcoin/2022/2022-03-03-jimmy-song-taproot-multisig/</guid><description>Slides: https://jimmysong.github.io/taproot-multisig
 Pull request adding multisig Taproot support to buidl-python: https://github.com/buidl-bitcoin/buidl-python/pull/109
-Intro (Jeff Gallas) The next speaker is Jimmy Song who doesn’t really need an introduction but in any case, he has been, which is important for this conference, running the Programming Blockchain workshops for 5 years now. Leon is one of his alumni so there is a direct connection to this conference.</description></item><item><title>Michael Folkson - Taproot update (2022-03-03)</title><link>https://btctranscripts.com/advancing-bitcoin/2022/2022-03-03-michael-folkson-taproot-update/</link><pubDate>Thu, 03 Mar 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/advancing-bitcoin/2022/2022-03-03-michael-folkson-taproot-update/</guid><description>Name: Michael Folkson
-Topic: State of the Taproot Address 2022
-Location: Advancing Bitcoin
-Date: March 3rd 2022
-Video: https://www.youtube.com/watch?v=8RNYhwEQKxM
+Intro (Jeff Gallas) The next speaker is Jimmy Song who doesn’t really need an introduction but in any case, he has been, which is important for this conference, running the Programming Blockchain workshops for 5 years now. Leon is one of his alumni so there is a direct connection to this conference. He has also just released a new book which is a bit more political than technical, it is called “Bitcoin and the American Dream”.</description></item><item><title>Taproot on hardware wallets</title><link>https://btctranscripts.com/advancing-bitcoin/2022/2022-03-03-stepan-snigirev-taproot-hardware-wallets/</link><pubDate>Thu, 03 Mar 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/advancing-bitcoin/2022/2022-03-03-stepan-snigirev-taproot-hardware-wallets/</guid><description>Intro (Jeff Gallas) I’m very happy to announce our first speaker for today. It is Stepan Snigirev from Specter, he is the CTO of Specter Solutions and has been working on Bitcoin software and hardware wallets for 3 years now so welcome Stepan.
+Overview (Stepan Snigirev) What I want to talk about is Taproot on hardware wallets. We recently got the Taproot upgrade, yay, this is awesome. It activated in November.</description></item><item><title>Taproot update</title><link>https://btctranscripts.com/advancing-bitcoin/2022/2022-03-03-michael-folkson-taproot-update/</link><pubDate>Thu, 03 Mar 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/advancing-bitcoin/2022/2022-03-03-michael-folkson-taproot-update/</guid><description>Topic: State of the Taproot Address 2022
 Slides: https://www.dropbox.com/s/l31cy3xkw0zi6aq/Advancing%20Bitcoin%20presentation%20-%20Michael%20Folkson.pdf?dl=0
-Intro Ok, so good morning. So earlier this week there was the State of the Union Address so I thought I’d make a bad joke first up. This talk is going to be the “State of the Taproot Address”. I promise all the bad jokes that I make in this presentation will all be Drake gifs, there will be no other jokes involved.</description></item><item><title>Stepan Snigirev - Taproot on hardware wallets (2022-03-03)</title><link>https://btctranscripts.com/advancing-bitcoin/2022/2022-03-03-stepan-snigirev-taproot-hardware-wallets/</link><pubDate>Thu, 03 Mar 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/advancing-bitcoin/2022/2022-03-03-stepan-snigirev-taproot-hardware-wallets/</guid><description>Name: Stepan Snigirev
-Topic: Taproot on hardware wallets
-Location: Advancing Bitcoin
-Date: March 3rd 2022
-Video: https://www.youtube.com/watch?v=8uM-v1pSFgs
-Intro (Jeff Gallas) I’m very happy to announce our first speaker for today. It is Stepan Snigirev from Specter, he is the CTO of Specter Solutions and has been working on Bitcoin software and hardware wallets for 3 years now so welcome Stepan.
-Overview (Stepan Snigirev) What I want to talk about is Taproot on hardware wallets.</description></item><item><title>Jonas Nick - MuSig2 (2021-08-16)</title><link>https://btctranscripts.com/iacr/2021-08-16-jonas-nick-musig2/</link><pubDate>Mon, 16 Aug 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/iacr/2021-08-16-jonas-nick-musig2/</guid><description>Name: Jonas Nick
-Topic: MuSig2: Simple Two-Round Schnorr Multi-Signatures
+Intro Ok, so good morning. So earlier this week there was the State of the Union Address so I thought I’d make a bad joke first up. This talk is going to be the “State of the Taproot Address”. I promise all the bad jokes that I make in this presentation will all be Drake gifs, there will be no other jokes involved.</description></item><item><title>MuSig2</title><link>https://btctranscripts.com/iacr/2021-08-16-jonas-nick-musig2/</link><pubDate>Mon, 16 Aug 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/iacr/2021-08-16-jonas-nick-musig2/</guid><description>MuSig2: Simple Two-Round Schnorr Multi-Signatures
 Location: IACR Crypto
-Date: August 16th 2021
-Video: https://www.youtube.com/watch?v=Dzqj236cVHk
 MuSig2 paper: https://eprint.iacr.org/2020/1261.pdf
 Introduction This is a talk about MuSig2, simple two round Schnorr multisignatures. I am Jonas Nick and this work is a collaboration with my colleague Tim Ruffing at Blockstream and Yannick Seurin.
-Multi-Signatures Multisignatures allow n signers to produce a single signature on a single message. The signing protocol can be interactive and require multiple communication rounds.</description></item><item><title>Andrew Poelstra - Threshold Signatures And Accountability (2019-02-04)</title><link>https://btctranscripts.com/sf-bitcoin-meetup/2019-02-04-threshold-signatures-and-accountability/</link><pubDate>Mon, 04 Feb 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/sf-bitcoin-meetup/2019-02-04-threshold-signatures-and-accountability/</guid><description>Name: Andrew Poelstra
-Topic: Threshold Signatures and Accountability
-Location: SF Bitcoin Devs
-Date: February 4th 2019
-Video: https://www.youtube.com/watch?v=j9Wvz7zI_Ac
-Slides: https://download.wpsoftware.net/bitcoin/wizardry/2019-02-sfdevs-threshold/slides.pdf
-Transcript completed by: Bryan Bishop Edited by: Michael Folkson
-Twitter announcement: https://twitter.com/kanzure/status/1092665108960968704
-Introduction (Mark Erhardt) Sorry for the delays. We&amp;rsquo;re finally ready to talk. Welcome to our talk. We&amp;rsquo;d like to thank our sponsors including Blockstream and Digital Garage. Today we have Andrew Poelstra to talk about threshold signatures and accountability.</description></item><item><title>AJ Towns - Schnorr Taproot (2019-12-27)</title><link>https://btctranscripts.com/stephan-livera-podcast/2019-12-27-aj-towns-schnorr-taproot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2019-12-27-aj-towns-schnorr-taproot/</guid><description>Name: AJ Towns
-Topic: Schnorr Taproot Tapscript BIPs
-Location: Stephan Livera Podcast
-Date: December 27th 2019
-Video: https://stephanlivera.com/episode/137/
-Transcript Stephan Livera: AJ, welcome to the show.
-AJ Towns: Howdy.
-Stephan Livera: Thanks for joining me AJ. I know you’re doing a lot of really cool work with the Schnorr and Taproot proposal and the review club. But let’s start with a bit of your background and I know you’re working at Xapo as well.</description></item><item><title>Andrew Poelstra - Taproot (2020-03-07)</title><link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2020/2020-03-07-andrew-poelstra-taproot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2020/2020-03-07-andrew-poelstra-taproot/</guid><description>Name: Andrew Poelstra
-Topic: Taproot - Who, How, Why
-Location: MIT Bitcoin Expo 2020
-Date: March 7th 2020
-Video: https://www.youtube.com/watch?v=1VtQBVauvhw
-BIP 341: https://github.com/bitcoin/bips/blob/master/bip-0341.mediawiki
-Intro (Hugo Uvegi) I am excited to introduce our first speaker, Andrew Poelstra. He is coming to us from Blockstream where he is Director of Research. He is going to be talking about Taproot which I think is on everybody’s mind these days.
-Intro (Andrew Poelstra) Thanks for waking up so early for the first day of the conference and making the trek from the registration room over here.</description></item><item><title>Antoine Riard - Taproot Lightning (2020-02-06)</title><link>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-antoine-riard-taproot-lightning/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-antoine-riard-taproot-lightning/</guid><description>Name: Antoine Riard
-Topic: A Schnorr-Taproot’ed Lightning
-Location: Advancing Bitcoin
-Date: February 6th 2020
-Video (paid access): https://www.advancingbitcoin.com/video/a-schnorr-taprooted-lightning,11/
-Slides: https://www.dropbox.com/s/9vs54e9bqf317u0/Schnorr-Taproot%27ed-LN.pdf
-Intro Today Schnorr and Taproot for Lightning, it is a really exciting topic.
-Lightning architecture The Lightning architecture for those who are not familiar with it. You have the blockchain as the underlying layer. On top of it you are going to build a channel, you have a HTLC and people are going to spend onions to you.</description></item><item><title>Bip Taproot Bip Tapscript (2019-12-16)</title><link>https://btctranscripts.com/sf-bitcoin-meetup/2019-12-16-bip-taproot-bip-tapscript/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/sf-bitcoin-meetup/2019-12-16-bip-taproot-bip-tapscript/</guid><description>2019-12-16
-bip-taproot
-Pieter Wuille (sipa)
-slides: https://prezi.com/view/AlXd19INd3isgt3SvW8g/
-https://twitter.com/kanzure/status/1208438837845929987
-https://twitter.com/SFBitcoinDevs/status/1206678306721894400
-bip-taproot: https://github.com/sipa/bips/blob/bip-schnorr/bip-taproot.mediawiki
-bip-tapscript: https://github.com/sipa/bips/blob/bip-schnorr/bip-tapscript.mediawiki
-bip-schnorr: https://github.com/sipa/bips/blob/bip-schnorr/bip-schnorr.mediawiki
-Please try to find seats. Today we have a special treat. We have Pieter here, who is well known as a contributor to Bitcoin Core, stackexchange, the mailing list, and he has been around forever. He&amp;rsquo;s the author of multiple BIPs. Today he is going to talk about taproot and tapscript which is basically what the whole Schnorr movement thing became.</description></item><item><title>Bitcoin Optech - Schnorr and Taproot workshop (2019-09-27)</title><link>https://btctranscripts.com/misc/2019-09-27-schnorr-taproot-workshop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/misc/2019-09-27-schnorr-taproot-workshop/</guid><description>Location: Chaincode Labs, NYC
-https://bitcoinops.org/en/schnorr-taproot-workshop/
-https://github.com/bitcoinops/taproot-workshop
-https://bitcoinops.slack.com
-https://twitter.com/kanzure/status/1177697093462482949
-Run: jupyter notebook
-See also Schnorr signatures and taproot: https://diyhpl.us/wiki/transcripts/sf-bitcoin-meetup/2018-07-09-taproot-schnorr-signatures-and-sighash-noinput-oh-my/
-https://github.com/sipa/bips/blob/bip-schnorr/bip-schnorr.mediawiki
-https://github.com/sipa/bips/blob/bip-schnorr/bip-taproot.mediawiki
-https://github.com/sipa/bips/blob/bip-schnorr/bip-tapscript.mediawiki
-Why Schnorr and why taproot? Who here already feels comfortbale with Schnorr/Taproot? This is a proposed consensus change to bitcoin. When we talk about consensus changes, we often talk about tradeoffs and compromises. It would be irresponsible to say taproot has no downsides, but I think it&amp;rsquo;s important to mention it&amp;rsquo;s a clear win for bitcoin.</description></item><item><title>Bitcoin Protocol Development Panel</title><link>https://btctranscripts.com/magicalcryptoconference/2019/bitcoin-protocol-development-panel/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/magicalcryptoconference/2019/bitcoin-protocol-development-panel/</guid><description>Video: https://youtu.be/8B1fX2i4dMY
-Bitcoin protocol development panel
-Eric Lombrozo, Matt Corallo, John Newbery, Luke Dashjr, Katherine Wu
-KW: We have some wonderful panelists today. Let&amp;rsquo;s kick it off. Let&amp;rsquo;s start with Eric. Who are you and what role do you play in bitcoin development?
-EL: I got into bitcoin in 2011. I had my own network stack. I almost had a full node implementation but I stopped short because it wasn&amp;rsquo;t as well tested or reviewed as Bitcoin Core.</description></item><item><title>Bitcoin Script</title><link>https://btctranscripts.com/scalingbitcoin/tokyo-2018/bitcoin-script/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/scalingbitcoin/tokyo-2018/bitcoin-script/</guid><description>Featuring roasbeef
-Agenda opcodes OP_CHECKSIGFROMSTACK sighash flags keytree sigs MAST graftroot, taproot covenants, reverse covenants (input restrictions: this input has to be spent with tihs other input, or can only be spent if this other one doesn&amp;rsquo;t exist) stack manipulation script languages (simplicity) tx formats, serialization? what would we change with hard-fork changes to the transaction format? Segwit transaction encoding format sucks; the witnesses are at the end and inline with all the scriptsigs and that should be changed.</description></item><item><title>Blockchain Design Patterns</title><link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/blockchain-design-patterns/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/blockchain-design-patterns/</guid><description>Blockchain design patterns: Layers and scaling approaches
-Andrew Poelstra, David Vorick
-https://twitter.com/kanzure/status/1171400374336536576
-Introduction Alright. Are we ready to get going? Thumbs up? Alright. Cool. I am Andrew and this is David. We&amp;rsquo;re here to talk about blockchain design patterns: layers and scaling approaches. This will be a tour of a bunch of different scaling approaches in bitcoin in particular but it&amp;rsquo;s probably applicable to other blockchains out there. Our talk is in 3 parts.</description></item><item><title>Eric Lombrozo, Luke Dashjr - Taproot Activation (2020-08-03)</title><link>https://btctranscripts.com/bitcoin-magazine/2020-08-03-eric-lombrozo-luke-dashjr-taproot-activation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-magazine/2020-08-03-eric-lombrozo-luke-dashjr-taproot-activation/</guid><description>Name: Eric Lombrozo and Luke Dashjr
-Topic: How to Activate a New Soft Fork
+Multi-Signatures Multisignatures allow n signers to produce a single signature on a single message. The signing protocol can be interactive and require multiple communication rounds. We distinguish between multisignatures where n-of-n signers can produce a signature and threshold signatures where any subset of size t out of n signers can produce a signature.</description></item><item><title>Socratic Seminar - Taproot rollout</title><link>https://btctranscripts.com/london-bitcoin-devs/2021-07-20-socratic-seminar-taproot-rollout/</link><pubDate>Tue, 20 Jul 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/london-bitcoin-devs/2021-07-20-socratic-seminar-taproot-rollout/</guid><description>Topic: Taproot is locked in. What now?
+Name: Socratic Seminar
+Location: London BitDevs (online)
+Gist of resources discussed: https://gist.github.com/michaelfolkson/0803271754f851530fe8242087859254
+This event was livestreamed on YouTube and so comments are attributed to specific individuals by the name or pseudonym that was visible on the livestream. If you were a participant and would like your comments to be anonymized please get in touch.
+Intro Michael Folkson (MF): Welcome to everyone on the call, welcome to anybody on YouTube.</description></item><item><title>Taproot Activation Update</title><link>https://btctranscripts.com/bitcoin-magazine/2021-04-23-taproot-activation-update/</link><pubDate>Fri, 23 Apr 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-magazine/2021-04-23-taproot-activation-update/</guid><description>Topic: Taproot Activation Update: Speedy Trial and the LOT=true client
 Location: Bitcoin Magazine (online)
-Date: August 3rd 2020
-Video: https://www.youtube.com/watch?v=yQZb0RDyFCQ
-Aaron van Wirdum in Bitcoin Magazine on BIP 8, BIP 9 or Modern Soft Fork Activation: https://bitcoinmagazine.com/articles/bip-8-bip-9-or-modern-soft-fork-activation-how-bitcoin-could-upgrade-next
-David Harding on Taproot activation proposals: https://gist.github.com/harding/dda66f5fd00611c0890bdfa70e28152d
-Intro Aaron van Wirdum (AvW): Eric, Luke welcome. Happy Bitcoin Independence Day. How are you doing?
-Eric Lombrozo (EL): We are doing great.</description></item><item><title>Future Of Privacy Coins</title><link>https://btctranscripts.com/magicalcryptoconference/2019/future-of-privacy-coins/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/magicalcryptoconference/2019/future-of-privacy-coins/</guid><description>Future of privacy coins
-Video: https://youtu.be/eGpa45y4_HQ
-Brandon Goodell, Andrew Poelstra, Alexandra Moxin
-AM: That&amp;rsquo;s not good. Hi everyone. Thanks for coming to the future of privacy coins panel. I want to spend a minute talking ablout backgrounds and interest in this area.
-BG: I have a PhD in something. I got into monero a couple of years ago. I needed to pay rent, so I did some work in math in exchange for money.</description></item><item><title>Greg Maxwell - Taproot Pace (2020-07-20)</title><link>https://btctranscripts.com/greg-maxwell/2020-07-20-greg-maxwell-taproot-pace/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/greg-maxwell/2020-07-20-greg-maxwell-taproot-pace/</guid><description>Name: Greg Maxwell
-Topic: Is Taproot development moving too fast or too slow?
-Location: Reddit
-Date: July 20, 2020
-https://www.reddit.com/r/Bitcoin/comments/hrlpnc/technical_taproot_why_activate/fyqbn8s?utm_source=share&amp;amp;utm_medium=web2x&amp;amp;context=3
-Is Taproot development moving too fast or too slow? Taproot has been discussed for 2.5 years already and by the time it would activate it will certainly at this point be over three years.
-The bulk of the Taproot proposal, other than Taproot itself and specific encoding details, is significantly older too.</description></item><item><title>Improving Bitcoin Smart Contract Efficiency</title><link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2018/improving-bitcoin-smart-contract-efficiency/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2018/improving-bitcoin-smart-contract-efficiency/</guid><description>Improving efficiency of smart contracts on the bitcoin network
-Tadge Dryja
-video: https://www.youtube.com/watch?v=i-0NUqIVVV4&amp;amp;t=53m14s
-https://twitter.com/kanzure/status/980545280973201410
-Introduction I will be talking about discreet log contracts, taproot, and graftroot. Not in that order, the order will actually be taproot, graftroot, and then discreet log contracts.
-Quick intro: I&amp;rsquo;m Tadge Dryja. I work here at MIT down the street at Digital Currency Initiative. I was coauthor on the lightning network paper, and I worked on lightning.</description></item><item><title>James Chiang Taproot Policy (2019-08-22)</title><link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-08-22-james-chiang-taproot-policy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-08-22-james-chiang-taproot-policy/</guid><description>James Chiang
-Taproot and Policy
-Video: https://www.youtube.com/watch?v=EdRm_mnoCWc
-Slides: https://residency.chaincode.com/presentations/Taproot_Policy.pdf
-Introduction Hi my name is James and I have been a resident here at Chaincode. It has been a privilege. I hear they might be doing it again in the future, I highly recommend the experience, it has been really fantastic. I’ve been working on a demo library in Python for Taproot and that’s why I chose to talk about Taproot and policy today.</description></item><item><title>John Newbery Security Models (2019-06-17)</title><link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-17-john-newbery-security-models/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-17-john-newbery-security-models/</guid><description>Name: John Newbery
-Topic: Security Models
-Location: Chaincode Labs 2019 Residency
-Video: https://youtu.be/6gGcS4N5Rg4
-Slides: https://residency.chaincode.com/presentations/bitcoin/security_models.pdf
-John Newbery: Alright, Security Models. This is going to be like a quick whistle-stop tour of various things, very high-level view. I&amp;rsquo;m going to start by giving you some kind of framework to think about things. So in cryptography, we often talk about security proofs in terms of existing schemes, we talk about assumptions.
-So, for example&amp;hellip; If you can break new scheme B, then you&amp;rsquo;ll also be able to break old scheme A.</description></item><item><title>Jonas Nick, Tim Ruffing - MuSig, MuSig-DN and MuSig2 (2020-10-27)</title><link>https://btctranscripts.com/stephan-livera-podcast/2020-10-27-jonas-nick-tim-ruffing-musig2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2020-10-27-jonas-nick-tim-ruffing-musig2/</guid><description>Name: Jonas Nick and Tim Ruffing
-Topic: MuSig, MuSig-DN and MuSig2
+Previous episode on lockinontimeout (LOT): https://btctranscripts.com/bitcoin-magazine/2021-02-26-taproot-activation-lockinontimeout/
+Previous episode on Speedy Trial: https://btctranscripts.com/bitcoin-magazine/2021-03-12-taproot-activation-speedy-trial/
+Aaron van Wirdum on “There are now two Taproot activation clients, here’s why”: https://bitcoinmagazine.com/technical/there-are-now-two-taproot-activation-clients-heres-why
+Transcript by: Michael Folkson
+Intro Aaron van Wirdum (AvW): Live from Utrecht this is the van Wirdum Sjorsnado.
+Sjors Provoost (SP): Hello
+AvW: Sjors, today we have a “lot” more to discuss.</description></item><item><title>Taproot Activation</title><link>https://btctranscripts.com/stephan-livera-podcast/2021-03-17-luke-dashjr-taproot-activation/</link><pubDate>Wed, 17 Mar 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2021-03-17-luke-dashjr-taproot-activation/</guid><description>Topic: How Bitcoin UASF went down, Taproot LOT=true, Speedy Trial, Small Blocks
 Location: Stephan Livera Podcast
-Date: October 27th 2020
-Audio: https://stephanlivera.com/episode/222/
+Luke Dashjr arguments against LOT=false: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-February/018498.html
+T1-T6 and F1-F6 arguments for LOT=true and LOT=false: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-February/018380.html
+F7 argument for LOT=false: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-February/018415.html
+Transcript by: Stephan Livera Edited by: Michael Folkson
+Intro Stephan Livera (SL): Luke, welcome to the show.
+Luke Dashjr (LD): Thanks.
+SL: So, Luke for listeners who are unfamiliar, maybe you could take a minute and tell us a little bit about your background and how long you’ve been developing and contributing with Bitcoin Core.</description></item><item><title>Taproot Activation with Speedy Trial</title><link>https://btctranscripts.com/bitcoin-magazine/2021-03-12-taproot-activation-speedy-trial/</link><pubDate>Fri, 12 Mar 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-magazine/2021-03-12-taproot-activation-speedy-trial/</guid><description>Location: Bitcoin Magazine (online)
+Speedy Trial proposal: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-March/018583.html
+Transcript by: Michael Folkson
+Intro Aaron van Wirdum (AvW): Live from Utrecht this is the van Wirdum Sjorsnado. Sjors, what is your pun of the week?
+Sjors Provoost (SP): I actually asked you for a pun and then you said “Cut, re-edit. We are going to do it again.” I don’t have a pun this week.
+AvW: Puns are your thing.
+SP: We tried this LOT thing last time.</description></item><item><title>Taproot activation and LOT=true vs LOT=false</title><link>https://btctranscripts.com/bitcoin-magazine/2021-02-26-taproot-activation-lockinontimeout/</link><pubDate>Fri, 26 Feb 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-magazine/2021-02-26-taproot-activation-lockinontimeout/</guid><description>Location: Bitcoin Magazine (online)
+BIP 8: https://github.com/bitcoin/bips/blob/master/bip-0008.mediawiki
+Arguments for LOT=true and LOT=false (T1-T6 and F1-F6): https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-February/018380.html
+Additional argument for LOT=false (F7): https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-February/018415.html
+Aaron van Wirdum article on LOT=true or LOT=false: https://bitcoinmagazine.com/articles/lottrue-or-lotfalse-this-is-the-last-hurdle-before-taproot-activation
+Intro Aaron van Wirdum (AvW): Live from Utrecht, this is the van Wirdum Sjorsnado. Sjors, make the pun.
+Sjors Provoost (SP): We have a “lot” to talk about.
+AvW: We have a “lot” to discuss. In this episode we are going to discuss the Taproot activation process and the debate surrounding it on the parameter lot, lockinontimeout which can be set to true and false.</description></item><item><title>Sydney Socratic Seminar</title><link>https://btctranscripts.com/sydney-bitcoin-meetup/2021-02-23-socratic-seminar/</link><pubDate>Tue, 23 Feb 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/sydney-bitcoin-meetup/2021-02-23-socratic-seminar/</guid><description>Name: Socratic Seminar
+Topic: Agenda in Google Doc below
+Location: Bitcoin Sydney (online)
+Video: No video posted online
+Google Doc of the resources discussed: https://docs.google.com/document/d/1VAP4LNjHHVLy9RJwpQ8LqXEUw79z5TTZxr9du_Z0-9A/
+The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.</description></item><item><title>MuSig2</title><link>https://btctranscripts.com/realworldcrypto/2021/2021-01-12-tim-ruffing-musig2/</link><pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/realworldcrypto/2021/2021-01-12-tim-ruffing-musig2/</guid><description>Topic: MuSig2: Simple Two-Round Schnorr Multi-Signatures
+Location: Real World Crypto
+MuSig2 paper: https://eprint.iacr.org/2020/1261.pdf
+Introduction This is about MuSig2, simple two round Schnorr multisignatures. This is joint work with Jonas Nick and Yannick Seurin. Jonas will be available to answer questions as I will be of course.
+Multi-Signatures The idea that with multisignatures is that n signers can get together and produce a single signature on a single message. To be clear for this talk when I talk about multisignatures what I mean is n-of-n signatures and not the more general setting of threshold signatures where you can have a threshold t that is smaller than n and have something like a t-of-n signatures.</description></item><item><title>MuSig, MuSig-DN and MuSig2</title><link>https://btctranscripts.com/stephan-livera-podcast/2020-10-27-jonas-nick-tim-ruffing-musig2/</link><pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2020-10-27-jonas-nick-tim-ruffing-musig2/</guid><description>Topic: MuSig, MuSig-DN and MuSig2
+Location: Stephan Livera Podcast
 Tim Ruffing on Schnorr multisig at London Bitcoin Devs: https://diyhpl.us/wiki/transcripts/london-bitcoin-devs/2020-06-17-tim-ruffing-schnorr-multisig/
 MuSig paper: https://eprint.iacr.org/2018/068.pdf
 MuSig blog post: https://blockstream.com/2019/02/18/en-musig-a-new-multisignature-standard/
@@ -127,144 +61,133 @@ MuSig-DN blog post: https://medium.com/blockstream/musig-dn-schnorr-multisignatu
 MuSig2 paper: https://eprint.iacr.org/2020/1261.pdf
 MuSig2 blog post: https://medium.com/blockstream/musig2-simple-two-round-schnorr-multisignatures-bf9582e99295
 Transcript completed by: Stephan Livera Edited by: Michael Folkson
-Intro Stephan Livera (SL): Jonas and Tim, welcome to the show.</description></item><item><title>Kalle Alm - Signet Integration (2020-02-06)</title><link>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-kalle-alm-signet-integration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-kalle-alm-signet-integration/</guid><description>Name: Karl-Johan Alm
-Topic: Signet Integration
+Intro Stephan Livera (SL): Jonas and Tim, welcome to the show.
+Jonas Nick (JN): Hello.
+Tim Ruffing (TR): Hey.</description></item><item><title>Socratic Seminar - Signet</title><link>https://btctranscripts.com/london-bitcoin-devs/2020-08-19-socratic-seminar-signet/</link><pubDate>Wed, 19 Aug 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/london-bitcoin-devs/2020-08-19-socratic-seminar-signet/</guid><description>Topic: Signet
+Name: Socratic Seminar
+Location: London BitDevs (online)
+Pastebin of the resources discussed: https://pastebin.com/rAcXX9Tn
+The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
+Intro Michael Folkson (MF): This is a Socratic Seminar organized by London BitDevs.</description></item><item><title>Taproot Activation</title><link>https://btctranscripts.com/bitcoin-magazine/2020-08-03-eric-lombrozo-luke-dashjr-taproot-activation/</link><pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-magazine/2020-08-03-eric-lombrozo-luke-dashjr-taproot-activation/</guid><description>Topic: How to Activate a New Soft Fork
+Location: Bitcoin Magazine (online)
+Aaron van Wirdum in Bitcoin Magazine on BIP 8, BIP 9 or Modern Soft Fork Activation: https://bitcoinmagazine.com/articles/bip-8-bip-9-or-modern-soft-fork-activation-how-bitcoin-could-upgrade-next
+David Harding on Taproot activation proposals: https://gist.github.com/harding/dda66f5fd00611c0890bdfa70e28152d
+Intro Aaron van Wirdum (AvW): Eric, Luke welcome. Happy Bitcoin Independence Day. How are you doing?
+Eric Lombrozo (EL): We are doing great. How are you doing?
+AvW: I am doing fine thanks. Luke how are you?</description></item><item><title>Socratic Seminar - BIP Taproot</title><link>https://btctranscripts.com/london-bitcoin-devs/2020-07-21-socratic-seminar-bip-taproot/</link><pubDate>Tue, 21 Jul 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/london-bitcoin-devs/2020-07-21-socratic-seminar-bip-taproot/</guid><description>BIP Taproot (BIP 341)
+Location: London BitDevs (online)
+Pastebin of the resources discussed: https://pastebin.com/vsT3DNqW
+Transcript of Socratic Seminar on BIP-Schnorr: https://diyhpl.us/wiki/transcripts/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/
+The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
+Introductions Michael Folkson (MF): This is a Socratic Seminar on BIP-Taproot.</description></item><item><title>Taproot Pace</title><link>https://btctranscripts.com/greg-maxwell/2020-07-20-greg-maxwell-taproot-pace/</link><pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/greg-maxwell/2020-07-20-greg-maxwell-taproot-pace/</guid><description>Is Taproot development moving too fast or too slow?
+Location: Reddit
+https://www.reddit.com/r/Bitcoin/comments/hrlpnc/technical_taproot_why_activate/fyqbn8s?utm_source=share&amp;amp;utm_medium=web2x&amp;amp;context=3
+Is Taproot development moving too fast or too slow? Taproot has been discussed for 2.5 years already and by the time it would activate it will certainly at this point be over three years.
+The bulk of the Taproot proposal, other than Taproot itself and specific encoding details, is significantly older too. (Enough that earlier versions of our proposals have been copied and activated in other cryptocurrencies already)</description></item><item><title>Schnorr and Multisig</title><link>https://btctranscripts.com/london-bitcoin-devs/2020-06-17-tim-ruffing-schnorr-multisig/</link><pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/london-bitcoin-devs/2020-06-17-tim-ruffing-schnorr-multisig/</guid><description>Taproot and Schnorr Multisignatures
+Location: London Bitcoin Devs (online)
+Slides: https://slides.com/real-or-random/taproot-and-schnorr-multisig
+Transcript of the previous day’s Socratic Seminar on BIP-Schnorr: https://diyhpl.us/wiki/transcripts/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/
+Intro (Michael Folkson) We are now live. This is London Bitcoin Devs with Tim Ruffing. We had the Socratic Seminar yesterday, I think we have some people on the call that were at the Socratic Seminar. That was brilliant. Thanks to Tim, Pieter, Greg, waxwing and everyone for showing up and taking 2 and a half hours out of their day.</description></item><item><title>Taproot</title><link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2020/2020-03-07-andrew-poelstra-taproot/</link><pubDate>Sat, 07 Mar 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2020/2020-03-07-andrew-poelstra-taproot/</guid><description>Topic: Taproot - Who, How, Why
+Location: MIT Bitcoin Expo 2020
+BIP 341: https://github.com/bitcoin/bips/blob/master/bip-0341.mediawiki
+Intro (Hugo Uvegi) I am excited to introduce our first speaker, Andrew Poelstra. He is coming to us from Blockstream where he is Director of Research. He is going to be talking about Taproot which I think is on everybody’s mind these days.
+Intro (Andrew Poelstra) Thanks for waking up so early for the first day of the conference and making the trek from the registration room over here.</description></item><item><title>Socratic Seminar 6</title><link>https://btctranscripts.com/austin-bitcoin-developers/2020-02-24-socratic-seminar-6/</link><pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/austin-bitcoin-developers/2020-02-24-socratic-seminar-6/</guid><description>https://www.meetup.com/Austin-Bitcoin-Developers/events/268812642/
+https://bitdevs.org/2020-02-12-socratic-seminar-101
+https://twitter.com/kanzure/status/1232132693179207682
+Introduction Alrighty, let&amp;rsquo;s get started. Gather around. Phil could use some company here. Nobody likes the front row. Maybe the benches. So I have a little different format for how I want to do it this week. Usually I cover a broad series of topics that I steal from the New York&amp;rsquo;s meetup list. Going through that, I thought there was something that looked interesting which was the new taproot proposals that were finally posted by Pieter Wuille.</description></item><item><title>Signet Workshop</title><link>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-07-kalle-alm-signet-workshop/</link><pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-07-kalle-alm-signet-workshop/</guid><description>Topic: Signet Workshop
+Location: Advancing Bitcoin
+Video: No video posted online
+Let’s prepare mkdir workspace cd workspace git clone https://github.com/bitcoin/bitcoin.git cd bitcoin git remote add kallewoof https://github.com/kallewoof/bitcoin.git git fetch kallewoof git checkout signet ./autogen.sh ./configure -C --disable-bench --disable-test --without-gui make -j5 When you try to run the configure part you are going to have some problems if you don’t have the dependencies. If you don’t have the dependencies Google your OS and “Bitcoin build”.</description></item><item><title>Signet Integration</title><link>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-kalle-alm-signet-integration/</link><pubDate>Thu, 06 Feb 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-kalle-alm-signet-integration/</guid><description>Topic: Signet Integration
 Location: Advancing Bitcoin
 Date: February 6th 2020
-Video (paid access): https://www.advancingbitcoin.com/video/signet-in-practice-integrating-signet-into-your-software,5/
 Slides: https://www.dropbox.com/s/6fqwhx7ugr3ppsg/Signet%20Integration%20V2.pdf
 BIP 325: https://github.com/bitcoin/bips/blob/master/bip-0325.mediawiki
 Signet on Bitcoin Wiki: https://en.bitcoin.it/wiki/Signet
 Bitcoin dev mailing list: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2019-March/016734.html
 Bitcoin Core PR 16411 (closed): https://github.com/bitcoin/bitcoin/pull/16411
 Bitcoin Core PR 18267 (open): https://github.com/bitcoin/bitcoin/pull/18267
-Intro I am going to talk about Signet. Do you guys know what Signet is? A few people know. I will explain it briefly. I have an elevator pitch, I have three actually depending on the height of the elevator.</description></item><item><title>Kalle Alm Signet Workshop (2020-02-07)</title><link>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-07-kalle-alm-signet-workshop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-07-kalle-alm-signet-workshop/</guid><description>Name: Kalle Alm
-Topic: Signet Workshop
+Intro I am going to talk about Signet. Do you guys know what Signet is? A few people know. I will explain it briefly. I have an elevator pitch, I have three actually depending on the height of the elevator.</description></item><item><title>Taproot Lightning</title><link>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-antoine-riard-taproot-lightning/</link><pubDate>Thu, 06 Feb 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-antoine-riard-taproot-lightning/</guid><description>Name: Antoine Riard
+Topic: A Schnorr-Taproot’ed Lightning
 Location: Advancing Bitcoin
-Date: February 7th 2020
-Video: No video posted online
-Let’s prepare mkdir workspace cd workspace git clone https://github.com/bitcoin/bitcoin.git cd bitcoin git remote add kallewoof https://github.com/kallewoof/bitcoin.git git fetch kallewoof git checkout signet ./autogen.sh ./configure -C --disable-bench --disable-test --without-gui make -j5 When you try to run the configure part you are going to have some problems if you don’t have the dependencies. If you don’t have the dependencies Google your OS and “Bitcoin build”.</description></item><item><title>LTB - Pieter Wuille, Jonas Nick (2019-06-09)</title><link>https://btctranscripts.com/lets-talk-bitcoin-podcast/2019-06-09-ltb-pieter-wuille-jonas-nick/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lets-talk-bitcoin-podcast/2019-06-09-ltb-pieter-wuille-jonas-nick/</guid><description>Let&amp;rsquo;s Talk Bitcoin with Pieter Wuille and Jonas Nick - June 9th 2019
+Date: February 6th 2020
+Slides: https://www.dropbox.com/s/9vs54e9bqf317u0/Schnorr-Taproot%27ed-LN.pdf
+Intro Today Schnorr and Taproot for Lightning, it is a really exciting topic.
+Lightning architecture The Lightning architecture for those who are not familiar with it. You have the blockchain as the underlying layer. On top of it you are going to build a channel, you have a HTLC and people are going to spend onions to you.</description></item><item><title>Schnorr and Taproot</title><link>https://btctranscripts.com/stephan-livera-podcast/2019-12-27-aj-towns-schnorr-taproot/</link><pubDate>Fri, 27 Dec 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2019-12-27-aj-towns-schnorr-taproot/</guid><description>Topic: Schnorr Taproot Tapscript BIPs
+Location: Stephan Livera Podcast
+Transcript Stephan Livera: AJ, welcome to the show.
+AJ Towns: Howdy.
+Stephan Livera: Thanks for joining me AJ. I know you’re doing a lot of really cool work with the Schnorr and Taproot proposal and the review club. But let’s start with a bit of your background and I know you’re working at Xapo as well.
+AJ Towns: Yeah so I’m working at Xapo on Bitcoin Core dev, which means that I get to do open source work full time and get paid for it and it’s pretty freaking awesome.</description></item><item><title>BIP Taproot and BIP Tapscript</title><link>https://btctranscripts.com/sf-bitcoin-meetup/2019-12-16-bip-taproot-bip-tapscript/</link><pubDate>Mon, 16 Dec 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/sf-bitcoin-meetup/2019-12-16-bip-taproot-bip-tapscript/</guid><description>slides: https://prezi.com/view/AlXd19INd3isgt3SvW8g/
+https://twitter.com/kanzure/status/1208438837845929987
+https://twitter.com/SFBitcoinDevs/status/1206678306721894400
+bip-taproot: https://github.com/sipa/bips/blob/bip-schnorr/bip-taproot.mediawiki
+bip-tapscript: https://github.com/sipa/bips/blob/bip-schnorr/bip-tapscript.mediawiki
+bip-schnorr: https://github.com/sipa/bips/blob/bip-schnorr/bip-schnorr.mediawiki
+Please try to find seats. Today we have a special treat. We have Pieter here, who is well known as a contributor to Bitcoin Core, stackexchange, the mailing list, and he has been around forever. He&amp;rsquo;s the author of multiple BIPs. Today he is going to talk about taproot and tapscript which is basically what the whole Schnorr movement thing became.</description></item><item><title>Socratic Seminar 3</title><link>https://btctranscripts.com/austin-bitcoin-developers/2019-10-14-socratic-seminar-3/</link><pubDate>Mon, 14 Oct 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/austin-bitcoin-developers/2019-10-14-socratic-seminar-3/</guid><description>https://www.meetup.com/Austin-Bitcoin-Developers/events/265295570/
+https://bitdevs.org/2019-09-16-socratic-seminar-96
+We have sort of done two meetups in this format. The idea here is that in NY there&amp;rsquo;s BitDevs which is one of the oldest meetups. This has been going on for five years. They have a format called socratic where they have a talented guy named J who leads them through some topics and they try to get some discussion going on and pull from expertise in the audience.</description></item><item><title>Bitcoin Optech - Schnorr and Taproot workshop</title><link>https://btctranscripts.com/misc/2019-09-27-schnorr-taproot-workshop/</link><pubDate>Fri, 27 Sep 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/misc/2019-09-27-schnorr-taproot-workshop/</guid><description>Location: Chaincode Labs, NYC
+https://github.com/bitcoinops/taproot-workshop
+https://bitcoinops.slack.com
+https://twitter.com/kanzure/status/1177697093462482949
+Run: jupyter notebook
+See also Schnorr signatures and taproot: https://diyhpl.us/wiki/transcripts/sf-bitcoin-meetup/2018-07-09-taproot-schnorr-signatures-and-sighash-noinput-oh-my/
+https://github.com/sipa/bips/blob/bip-schnorr/bip-schnorr.mediawiki
+https://github.com/sipa/bips/blob/bip-schnorr/bip-taproot.mediawiki
+https://github.com/sipa/bips/blob/bip-schnorr/bip-tapscript.mediawiki
+Why Schnorr and why taproot? Who here already feels comfortbale with Schnorr/Taproot? This is a proposed consensus change to bitcoin. When we talk about consensus changes, we often talk about tradeoffs and compromises. It would be irresponsible to say taproot has no downsides, but I think it&amp;rsquo;s important to mention it&amp;rsquo;s a clear win for bitcoin.</description></item><item><title>Taproot Policy</title><link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-08-22-james-chiang-taproot-policy/</link><pubDate>Thu, 22 Aug 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-08-22-james-chiang-taproot-policy/</guid><description>Slides: https://residency.chaincode.com/presentations/Taproot_Policy.pdf
+Introduction Hi my name is James and I have been a resident here at Chaincode. It has been a privilege. I hear they might be doing it again in the future, I highly recommend the experience, it has been really fantastic. I’ve been working on a demo library in Python for Taproot and that’s why I chose to talk about Taproot and policy today. Seemingly two separate topics but actually there are some very interesting implications for each other.</description></item><item><title>Tales from the Crypt with Andrew Poelstra</title><link>https://btctranscripts.com/tftc-podcast/2019-06-18-andrew-poelstra-tftc/</link><pubDate>Tue, 18 Jun 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/tftc-podcast/2019-06-18-andrew-poelstra-tftc/</guid><description>TFTC podcast with Andrew Poelstra - June 18th 2019 (Abridged)
+https://twitter.com/kanzure/status/1160178010986876928
+Podcast: https://talesfromthecrypt.libsyn.com/tales-from-the-crypt-80-andrew-poelstra
+How the idea of Taproot was formed Andrew: There are some small off suit IRC channels of bitcoin-wizards where people discuss some specific topics such as Minisketch which is a set reconciliation protocol that was developed by Greg Maxwell, Pieter Wuille and Gleb Naumenko among a couple of others. It was mostly those three. They have a channel where they talk about things.</description></item><item><title>Security Models</title><link>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-17-john-newbery-security-models/</link><pubDate>Mon, 17 Jun 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/chaincode-labs/chaincode-residency/2019-06-17-john-newbery-security-models/</guid><description>Topic: Security Models
+Location: Chaincode Labs 2019 Residency
+Slides: https://residency.chaincode.com/presentations/bitcoin/security_models.pdf
+John Newbery: Alright, Security Models. This is going to be like a quick whistle-stop tour of various things, very high-level view. I&amp;rsquo;m going to start by giving you some kind of framework to think about things. So in cryptography, we often talk about security proofs in terms of existing schemes, we talk about assumptions.
+So, for example&amp;hellip; If you can break new scheme B, then you&amp;rsquo;ll also be able to break old scheme A.</description></item><item><title>The Tools and The Work</title><link>https://btctranscripts.com/lets-talk-bitcoin-podcast/2019-06-09-ltb-pieter-wuille-jonas-nick/</link><pubDate>Sun, 09 Jun 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lets-talk-bitcoin-podcast/2019-06-09-ltb-pieter-wuille-jonas-nick/</guid><description>Let&amp;rsquo;s Talk Bitcoin with Pieter Wuille and Jonas Nick - June 9th 2019
 https://twitter.com/kanzure/status/1155851797568917504
 Part 1: https://letstalkbitcoin.com/blog/post/lets-talk-bitcoin-400-the-tools-and-the-work
 Part 2: https://letstalkbitcoin.com/blog/post/lets-talk-bitcoin-401-the-tools-and-the-work-part-2
 Draft of BIP-Schnorr: https://github.com/sipa/bips/blob/bip-schnorr/bip-schnorr.mediawiki
 Draft of BIP-Taproot: https://github.com/sipa/bips/blob/bip-schnorr/bip-taproot.mediawiki
 Draft of BIP-Tapscript: https://github.com/sipa/bips/blob/bip-schnorr/bip-tapscript.mediawiki
-Part 1 Adam: On this episode we&amp;rsquo;ll be digging deeply into some of the most important changes coming soon to the Bitcoin protocol in the form of BIPs or Bitcoin Improvement Proposals focused on Taproot, Tapscript and Schnorr signatures.</description></item><item><title>Luke Dashjr - Taproot Activation (2021-03-17)</title><link>https://btctranscripts.com/stephan-livera-podcast/2021-03-17-luke-dashjr-taproot-activation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2021-03-17-luke-dashjr-taproot-activation/</guid><description>Name: Luke Dashjr
-Topic: How Bitcoin UASF went down, Taproot LOT=true, Speedy Trial, Small Blocks
-Location: Stephan Livera Podcast
-Date: March 17th 2021
-Audio: https://stephanlivera.com/episode/260/
-Luke Dashjr arguments against LOT=false: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-February/018498.html
-T1-T6 and F1-F6 arguments for LOT=true and LOT=false: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-February/018380.html
-F7 argument for LOT=false: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-February/018415.html
-Transcript by: Stephan Livera Edited by: Michael Folkson
-Intro Stephan Livera (SL): Luke, welcome to the show.
-Luke Dashjr (LD): Thanks.
-SL: So, Luke for listeners who are unfamiliar, maybe you could take a minute and tell us a little bit about your background and how long you’ve been developing and contributing with Bitcoin Core.</description></item><item><title>Merkleized Abstract Syntax Trees - MAST (2018-03-06)</title><link>https://btctranscripts.com/bitcoin-core-dev-tech/2018-03-06-merkleized-abstract-syntax-trees-mast/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-core-dev-tech/2018-03-06-merkleized-abstract-syntax-trees-mast/</guid><description>https://twitter.com/kanzure/status/972120890279432192
-See also http://diyhpl.us/wiki/transcripts/bitcoin-core-dev-tech/2017-09-07-merkleized-abstract-syntax-trees/
-MAST stuff You could directly merkleize scripts if you switch from IF, IFNOT, ELSE with IFJUMP that has the number of bytes.
-With graftroot and taproot, you never to do any scripts (which were a hack to get things started). But we&amp;rsquo;re doing validation and computation.
-You take every single path it has; so instead, it becomes &amp;hellip; certain condition, or certain not conditions&amp;hellip; You take every possible ifs, you use this, you say it&amp;rsquo;s one of these, then you specify which one, and you show it and everyone else can validate this.</description></item><item><title>Secure Protocols Bip Taproot</title><link>https://btctranscripts.com/breaking-bitcoin/2019/secure-protocols-bip-taproot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/breaking-bitcoin/2019/secure-protocols-bip-taproot/</guid><description>Secure protocols on BIP-taproot
-Jonas Nick
-36C7 1A37 C9D9 88BD E825 08D9 B1A7 0E4F 8DCD 0366
+Part 1 Adam: On this episode we&amp;rsquo;ll be digging deeply into some of the most important changes coming soon to the Bitcoin protocol in the form of BIPs or Bitcoin Improvement Proposals focused on Taproot, Tapscript and Schnorr signatures.</description></item><item><title>Secure Protocols Bip Taproot</title><link>https://btctranscripts.com/breaking-bitcoin/2019/secure-protocols-bip-taproot/</link><pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/breaking-bitcoin/2019/secure-protocols-bip-taproot/</guid><description>36C7 1A37 C9D9 88BD E825 08D9 B1A7 0E4F 8DCD 0366
 https://twitter.com/kanzure/status/1137358557584793600
 http://diyhpl.us/wiki/transcripts/bitcoin-core-dev-tech/2019-06-06-taproot/
 slides: https://nickler.ninja/slides/2019-breaking.pdf
 Introduction I am going to tlak about something that is a collaboration of many people in the bitcoin community including my colleagues at Blockstream. The bip-taproot proposal was recently posted to the bitcoin-dev mailing list which proposes an improvement for bitcoin.
-Disclaimer It&amp;rsquo;s not at all certain that a bip-taproot soft-fork will activate in its current form or at all.</description></item><item><title>Socratic Seminar - BIP Taproot (2020-07-21)</title><link>https://btctranscripts.com/london-bitcoin-devs/2020-07-21-socratic-seminar-bip-taproot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/london-bitcoin-devs/2020-07-21-socratic-seminar-bip-taproot/</guid><description>Name: Socratic Seminar
-Topic: BIP Taproot (BIP 341)
-Location: London BitDevs (online)
-Date: July 21st 2020
-Video: https://www.youtube.com/watch?v=bPcguc108QM
-Pastebin of the resources discussed: https://pastebin.com/vsT3DNqW
-Transcript of Socratic Seminar on BIP-Schnorr: https://diyhpl.us/wiki/transcripts/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/
-The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.</description></item><item><title>Socratic Seminar - Signet (2020-08-19)</title><link>https://btctranscripts.com/london-bitcoin-devs/2020-08-19-socratic-seminar-signet/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/london-bitcoin-devs/2020-08-19-socratic-seminar-signet/</guid><description>Name: Socratic Seminar
-Topic: Signet
-Location: London BitDevs (online)
-Date: August 19th 2020
-Video: https://www.youtube.com/watch?v=b0AiucAuX3E
-Pastebin of the resources discussed: https://pastebin.com/rAcXX9Tn
-The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
-Intro Michael Folkson (MF): This is a Socratic Seminar organized by London BitDevs.</description></item><item><title>Socratic Seminar - Taproot rollout (2021-07-20)</title><link>https://btctranscripts.com/london-bitcoin-devs/2021-07-20-socratic-seminar-taproot-rollout/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/london-bitcoin-devs/2021-07-20-socratic-seminar-taproot-rollout/</guid><description>Name: Socratic Seminar
-Topic: Taproot is locked in. What now?
-Location: London BitDevs (online)
-Date: July 20th 2021
-Video: https://www.youtube.com/watch?v=GAkLuZNsZzw
-Gist of resources discussed: https://gist.github.com/michaelfolkson/0803271754f851530fe8242087859254
-This event was livestreamed on YouTube and so comments are attributed to specific individuals by the name or pseudonym that was visible on the livestream. If you were a participant and would like your comments to be anonymized please get in touch.
-Intro Michael Folkson (MF): Welcome to everyone on the call, welcome to anybody on YouTube.</description></item><item><title>Socratic Seminar 3 (2019-10-14)</title><link>https://btctranscripts.com/austin-bitcoin-developers/2019-10-14-socratic-seminar-3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/austin-bitcoin-developers/2019-10-14-socratic-seminar-3/</guid><description>Austin Bitcoin Developers socratic seminar 3
-https://www.meetup.com/Austin-Bitcoin-Developers/events/265295570/
-https://bitdevs.org/2019-09-16-socratic-seminar-96
-We have sort of done two meetups in this format. The idea here is that in NY there&amp;rsquo;s BitDevs which is one of the oldest meetups. This has been going on for five years. They have a format called socratic where they have a talented guy named J who leads them through some topics and they try to get some discussion going on and pull from expertise in the audience.</description></item><item><title>Socratic Seminar 6 (2020-02-24)</title><link>https://btctranscripts.com/austin-bitcoin-developers/2020-02-24-socratic-seminar-6/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/austin-bitcoin-developers/2020-02-24-socratic-seminar-6/</guid><description>Austin Bitcoin Developers socratic seminar 6
-https://www.meetup.com/Austin-Bitcoin-Developers/events/268812642/
-https://bitdevs.org/2020-02-12-socratic-seminar-101
-https://twitter.com/kanzure/status/1232132693179207682
-Introduction Alrighty, let&amp;rsquo;s get started. Gather around. Phil could use some company here. Nobody likes the front row. Maybe the benches. So I have a little different format for how I want to do it this week. Usually I cover a broad series of topics that I steal from the New York&amp;rsquo;s meetup list. Going through that, I thought there was something that looked interesting which was the new taproot proposals that were finally posted by Pieter Wuille.</description></item><item><title>Sydney Socratic Seminar (2021-02-23)</title><link>https://btctranscripts.com/sydney-bitcoin-meetup/2021-02-23-socratic-seminar/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/sydney-bitcoin-meetup/2021-02-23-socratic-seminar/</guid><description>Name: Socratic Seminar
-Topic: Agenda in Google Doc below
-Location: Bitcoin Sydney (online)
-Date: February 23rd 2021
-Video: No video posted online
-Google Doc of the resources discussed: https://docs.google.com/document/d/1VAP4LNjHHVLy9RJwpQ8LqXEUw79z5TTZxr9du_Z0-9A/
-The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.</description></item><item><title>Taproot</title><link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/taproot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/taproot/</guid><description>Building Taproot
-Elichai Turkel
-https://docs.google.com/presentation/d/1YVOYJGmQ_mY-5_Rs0Cu84AYSI6wCvpfIgoapfgsYP2U/edit
-https://github.com/bitcoinops/taproot-workshop/tree/BitcoinEdge
-https://github.com/bitcoinops/bitcoin/releases/tag/v0.1</description></item><item><title>Taproot (2019-06-06)</title><link>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-06-taproot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-06-taproot/</guid><description>Taproot
-https://github.com/sipa/bips/blob/bip-schnorr/bip-taproot.mediawiki
+Disclaimer It&amp;rsquo;s not at all certain that a bip-taproot soft-fork will activate in its current form or at all.</description></item><item><title>Taproot</title><link>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-06-taproot/</link><pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06-06-taproot/</guid><description>Taproot
+https://github.com/bitcoin/bips/blob/master/bip-0340.mediawiki
 https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2019-May/016914.html
 https://bitcoinmagazine.com/articles/taproot-coming-what-it-and-how-it-will-benefit-bitcoin/
 previously: http://diyhpl.us/wiki/transcripts/bitcoin-core-dev-tech/2018-03-06-taproot-graftroot-etc/
 https://twitter.com/kanzure/status/1136616356827283456
-Introduction Okay, so, first question- who put my name on that list and what do they want? It wasn&amp;rsquo;t me. I&amp;rsquo;ll ask questions. I can give a summary, but there&amp;rsquo;s been a lot of talk already and I don&amp;rsquo;t know what to focus on. What would sipa like us to review in particular about it? What design decisions do you feel least confident about?</description></item><item><title>Taproot activation and LOT=true vs LOT=false (2021-02-26)</title><link>https://btctranscripts.com/bitcoin-magazine/2021-02-26-taproot-activation-lockinontimeout/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-magazine/2021-02-26-taproot-activation-lockinontimeout/</guid><description>Name: Sjors Provoost and Aaron van Wirdum
-Location: Bitcoin Magazine (online)
-Date: February 26th 2021
-Video: https://www.youtube.com/watch?v=7ouVGgE75zg
-BIP 8: https://github.com/bitcoin/bips/blob/master/bip-0008.mediawiki
-Arguments for LOT=true and LOT=false (T1-T6 and F1-F6): https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-February/018380.html
-Additional argument for LOT=false (F7): https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-February/018415.html
-Aaron van Wirdum article on LOT=true or LOT=false: https://bitcoinmagazine.com/articles/lottrue-or-lotfalse-this-is-the-last-hurdle-before-taproot-activation
-Intro Aaron van Wirdum (AvW): Live from Utrecht, this is the van Wirdum Sjorsnado. Sjors, make the pun.
-Sjors Provoost (SP): We have a “lot” to talk about.</description></item><item><title>Taproot Activation Update (2021-04-23)</title><link>https://btctranscripts.com/bitcoin-magazine/2021-04-23-taproot-activation-update/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-magazine/2021-04-23-taproot-activation-update/</guid><description>Name: Sjors Provoost and Aaron van Wirdum
-Topic: Taproot Activation Update: Speedy Trial and the LOT=true client
-Location: Bitcoin Magazine (online)
-Date: April 23rd 2021
-Video: https://www.youtube.com/watch?v=SHmEXPvN6t4
-Previous episode on lockinontimeout (LOT): https://btctranscripts.com/bitcoin-magazine/2021-02-26-taproot-activation-lockinontimeout/
-Previous episode on Speedy Trial: https://btctranscripts.com/bitcoin-magazine/2021-03-12-taproot-activation-speedy-trial/
-Aaron van Wirdum on “There are now two Taproot activation clients, here’s why”: https://bitcoinmagazine.com/technical/there-are-now-two-taproot-activation-clients-heres-why
-Transcript by: Michael Folkson
-Intro Aaron van Wirdum (AvW): Live from Utrecht this is the van Wirdum Sjorsnado.</description></item><item><title>Taproot Activation with Speedy Trial (2021-03-12)</title><link>https://btctranscripts.com/bitcoin-magazine/2021-03-12-taproot-activation-speedy-trial/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-magazine/2021-03-12-taproot-activation-speedy-trial/</guid><description>Name: Sjors Provoost and Aaron van Wirdum
-Topic: Taproot Activation with Speedy Trial
-Location: Bitcoin Magazine (online)
-Date: March 12th 2021
-Video: https://www.youtube.com/watch?v=oCPrjaw3YVI
-Speedy Trial proposal: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-March/018583.html
-Transcript by: Michael Folkson
-Intro Aaron van Wirdum (AvW): Live from Utrecht this is the van Wirdum Sjorsnado. Sjors, what is your pun of the week?
-Sjors Provoost (SP): I actually asked you for a pun and then you said “Cut, re-edit. We are going to do it again.</description></item><item><title>Taproot and Graftroot</title><link>https://btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/taproot-and-graftroot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/taproot-and-graftroot/</guid><description>Taproot and graftroot
-Greg Sanders (instagibbs)
-https://twitter.com/kanzure/status/1047764770265284608
-Introduction Taproot and graftroot are recent proposals in the bitcoin world. Every script type looks different and they are distinct. From a privacy perspective, that&amp;rsquo;s pretty bad. You watermark or fingerprint yourself all the time by showing unique scripts on the blockchain or in your transactions. This causes censorship risks and other problems for fungibility. Often you are paying for contigencies that are never used, like the whoopsies branches in your scripts.</description></item><item><title>Taproot, Graftroot, Etc (2018-03-06)</title><link>https://btctranscripts.com/bitcoin-core-dev-tech/2018-03-06-taproot-graftroot-etc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-core-dev-tech/2018-03-06-taproot-graftroot-etc/</guid><description>https://twitter.com/kanzure/status/972468121046061056
-graftroot The idea of graftroot is that in every contract there is a superset of people that can spend the money. This assumption is not always true but it&amp;rsquo;s almost always true. Say you want to lock up these coins for a year, without any conditionals to it, then it doesn&amp;rsquo;t work. But assume you have&amp;ndash; pubkey recovery? No&amp;hellip; pubkey recovery is inherently incompatible with any form of aggregation, and aggregation is far superior.</description></item><item><title>Tim Ruffing - MuSig2 (2021-01-12)</title><link>https://btctranscripts.com/realworldcrypto/2021/2021-01-12-tim-ruffing-musig2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/realworldcrypto/2021/2021-01-12-tim-ruffing-musig2/</guid><description>Name: Tim Ruffing
-Topic: MuSig2: Simple Two-Round Schnorr Multi-Signatures
-Location: Real World Crypto
-Date: January 12th 2021
-Video: https://www.youtube.com/watch?v=DRzDDFetS3E
-MuSig2 paper: https://eprint.iacr.org/2020/1261.pdf
-Introduction This is about MuSig2, simple two round Schnorr multisignatures. This is joint work with Jonas Nick and Yannick Seurin. Jonas will be available to answer questions as I will be of course.
-Multi-Signatures The idea that with multisignatures is that n signers can get together and produce a single signature on a single message.</description></item><item><title>Tim Ruffing - Schnorr, Multisig (2020-06-17)</title><link>https://btctranscripts.com/london-bitcoin-devs/2020-06-17-tim-ruffing-schnorr-multisig/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/london-bitcoin-devs/2020-06-17-tim-ruffing-schnorr-multisig/</guid><description>Name: Tim Ruffing
-Topic: Taproot and Schnorr Multisignatures
-Location: London Bitcoin Devs (online)
-Date: June 17th 2020
-Video: https://www.youtube.com/watch?v=8Op0Glp9Eoo
-Slides: https://slides.com/real-or-random/taproot-and-schnorr-multisig
-Transcript of the previous day’s Socratic Seminar on BIP-Schnorr: https://diyhpl.us/wiki/transcripts/london-bitcoin-devs/2020-06-16-socratic-seminar-bip-schnorr/
-Intro (Michael Folkson) We are now live. This is London Bitcoin Devs with Tim Ruffing. We had the Socratic Seminar yesterday, I think we have some people on the call that were at the Socratic Seminar. That was brilliant. Thanks to Tim, Pieter, Greg, waxwing and everyone for showing up and taking 2 and a half hours out of their day.</description></item><item><title>Unchained Capital Socratic Seminar (2019-01-05)</title><link>https://btctranscripts.com/misc/2019-01-05-unchained-capital-socratic-seminar/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/misc/2019-01-05-unchained-capital-socratic-seminar/</guid><description>Unchained Capital Bitcoin Socratic Seminar
-2019-01-05
+Introduction Okay, so, first question- who put my name on that list and what do they want? It wasn&amp;rsquo;t me. I&amp;rsquo;ll ask questions. I can give a summary, but there&amp;rsquo;s been a lot of talk already and I don&amp;rsquo;t know what to focus on. What would sipa like us to review in particular about it? What design decisions do you feel least confident about?</description></item><item><title>Threshold Signatures And Accountability</title><link>https://btctranscripts.com/sf-bitcoin-meetup/2019-02-04-threshold-signatures-and-accountability/</link><pubDate>Mon, 04 Feb 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/sf-bitcoin-meetup/2019-02-04-threshold-signatures-and-accountability/</guid><description>Topic: Threshold Signatures and Accountability
+Location: SF Bitcoin Devs
+Slides: https://download.wpsoftware.net/bitcoin/wizardry/2019-02-sfdevs-threshold/slides.pdf
+Transcript completed by: Bryan Bishop Edited by: Michael Folkson
+Twitter announcement: https://twitter.com/kanzure/status/1092665108960968704
+Introduction (Mark Erhardt) Sorry for the delays. We&amp;rsquo;re finally ready to talk. Welcome to our talk. We&amp;rsquo;d like to thank our sponsors including Blockstream and Digital Garage. Today we have Andrew Poelstra to talk about threshold signatures and accountability. He is known for working on Mimblewimble, Bitcoin Core, libsecp256k1, and at Blockstream.</description></item><item><title>Unchained Capital Socratic Seminar</title><link>https://btctranscripts.com/misc/2019-01-05-unchained-capital-socratic-seminar/</link><pubDate>Sat, 05 Jan 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/misc/2019-01-05-unchained-capital-socratic-seminar/</guid><description>Unchained Capital Bitcoin Socratic Seminar
 Socratic Seminar 87 at BitDevs NYC has all of the links on meetup.com available.
 https://www.meetup.com/BitDevsNYC/events/256924041/
 https://www.meetup.com/Austin-Bitcoin-Developers/events/257718282/
 https://twitter.com/kanzure/status/1081674259880120323
 Last time Last time Andrew Poelstra gave a talk about research at Blockstream. He also talked about scriptless scripts and using the properties of Schnorr signatures to do all of your scripting. There was also talk about taproot and graftroot.
-J: The chaincode labs guys in NYC .</description></item></channel></rss>
+J: The chaincode labs guys in NYC .. we had a lot of participation, it was very cool.</description></item><item><title>Merkleized Abstract Syntax Trees - MAST</title><link>https://btctranscripts.com/bitcoin-core-dev-tech/2018-03-06-merkleized-abstract-syntax-trees-mast/</link><pubDate>Tue, 06 Mar 2018 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-core-dev-tech/2018-03-06-merkleized-abstract-syntax-trees-mast/</guid><description>https://twitter.com/kanzure/status/972120890279432192
+See also http://diyhpl.us/wiki/transcripts/bitcoin-core-dev-tech/2017-09-07-merkleized-abstract-syntax-trees/
+MAST stuff You could directly merkleize scripts if you switch from IF, IFNOT, ELSE with IFJUMP that has the number of bytes.
+With graftroot and taproot, you never to do any scripts (which were a hack to get things started). But we&amp;rsquo;re doing validation and computation.
+You take every single path it has; so instead, it becomes &amp;hellip; certain condition, or certain not conditions&amp;hellip; You take every possible ifs, you use this, you say it&amp;rsquo;s one of these, then you specify which one, and you show it and everyone else can validate this.</description></item><item><title>Taproot, Graftroot, Etc</title><link>https://btctranscripts.com/bitcoin-core-dev-tech/2018-03-06-taproot-graftroot-etc/</link><pubDate>Tue, 06 Mar 2018 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-core-dev-tech/2018-03-06-taproot-graftroot-etc/</guid><description>https://twitter.com/kanzure/status/972468121046061056
+graftroot The idea of graftroot is that in every contract there is a superset of people that can spend the money. This assumption is not always true but it&amp;rsquo;s almost always true. Say you want to lock up these coins for a year, without any conditionals to it, then it doesn&amp;rsquo;t work. But assume you have&amp;ndash; pubkey recovery? No&amp;hellip; pubkey recovery is inherently incompatible with any form of aggregation, and aggregation is far superior.</description></item><item><title>Bitcoin Protocol Development Panel</title><link>https://btctranscripts.com/magicalcryptoconference/2019/bitcoin-protocol-development-panel/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/magicalcryptoconference/2019/bitcoin-protocol-development-panel/</guid><description>Bitcoin protocol development panel
+KW: We have some wonderful panelists today. Let&amp;rsquo;s kick it off. Let&amp;rsquo;s start with Eric. Who are you and what role do you play in bitcoin development?
+EL: I got into bitcoin in 2011. I had my own network stack. I almost had a full node implementation but I stopped short because it wasn&amp;rsquo;t as well tested or reviewed as Bitcoin Core. So I started to look into the community a little bit.</description></item><item><title>Bitcoin Script</title><link>https://btctranscripts.com/scalingbitcoin/tokyo-2018/bitcoin-script/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/scalingbitcoin/tokyo-2018/bitcoin-script/</guid><description>Featuring roasbeef
+Agenda opcodes OP_CHECKSIGFROMSTACK sighash flags keytree sigs MAST graftroot, taproot covenants, reverse covenants (input restrictions: this input has to be spent with tihs other input, or can only be spent if this other one doesn&amp;rsquo;t exist) stack manipulation script languages (simplicity) tx formats, serialization? what would we change with hard-fork changes to the transaction format? Segwit transaction encoding format sucks; the witnesses are at the end and inline with all the scriptsigs and that should be changed.</description></item><item><title>Blockchain Design Patterns</title><link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/blockchain-design-patterns/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/blockchain-design-patterns/</guid><description>Blockchain design patterns: Layers and scaling approaches
+https://twitter.com/kanzure/status/1171400374336536576
+Introduction Alright. Are we ready to get going? Thumbs up? Alright. Cool. I am Andrew and this is David. We&amp;rsquo;re here to talk about blockchain design patterns: layers and scaling approaches. This will be a tour of a bunch of different scaling approaches in bitcoin in particular but it&amp;rsquo;s probably applicable to other blockchains out there. Our talk is in 3 parts. We&amp;rsquo;ll talk about some existing scaling tech and related things like caching transactions and mempool propagation.</description></item><item><title>Future Of Privacy Coins</title><link>https://btctranscripts.com/magicalcryptoconference/2019/future-of-privacy-coins/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/magicalcryptoconference/2019/future-of-privacy-coins/</guid><description>Future of privacy coins
+AM: That&amp;rsquo;s not good. Hi everyone. Thanks for coming to the future of privacy coins panel. I want to spend a minute talking ablout backgrounds and interest in this area.
+BG: I have a PhD in something. I got into monero a couple of years ago. I needed to pay rent, so I did some work in math in exchange for money.
+AP: I work on confidential transactions and scriptless scripts and I do not have a PhD.</description></item><item><title>Improving Bitcoin Smart Contract Efficiency</title><link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2018/improving-bitcoin-smart-contract-efficiency/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2018/improving-bitcoin-smart-contract-efficiency/</guid><description>https://twitter.com/kanzure/status/980545280973201410
+Introduction I will be talking about discreet log contracts, taproot, and graftroot. Not in that order, the order will actually be taproot, graftroot, and then discreet log contracts.
+Quick intro: I&amp;rsquo;m Tadge Dryja. I work here at MIT down the street at Digital Currency Initiative. I was coauthor on the lightning network paper, and I worked on lightning. I also was the author of a paper introducing discreet log contracts.</description></item><item><title>Taproot</title><link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/taproot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/edgedevplusplus/taproot/</guid><description>Building Taproot
+https://docs.google.com/presentation/d/1YVOYJGmQ_mY-5_Rs0Cu84AYSI6wCvpfIgoapfgsYP2U/edit
+https://github.com/bitcoinops/taproot-workshop/tree/BitcoinEdge
+https://github.com/bitcoinops/bitcoin/releases/tag/v0.1</description></item><item><title>Taproot and Graftroot</title><link>https://btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/taproot-and-graftroot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/scalingbitcoin/tokyo-2018/edgedevplusplus/taproot-and-graftroot/</guid><description>https://twitter.com/kanzure/status/1047764770265284608
+Introduction Taproot and graftroot are recent proposals in the bitcoin world. Every script type looks different and they are distinct. From a privacy perspective, that&amp;rsquo;s pretty bad. You watermark or fingerprint yourself all the time by showing unique scripts on the blockchain or in your transactions. This causes censorship risks and other problems for fungibility. Often you are paying for contigencies that are never used, like the whoopsies branches in your scripts.</description></item></channel></rss>

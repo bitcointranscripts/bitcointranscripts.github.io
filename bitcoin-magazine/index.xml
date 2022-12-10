@@ -1,35 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Bitcoin Magazine on ₿itcoin Transcripts</title><link>https://btctranscripts.com/bitcoin-magazine/</link><description>Recent content in Bitcoin Magazine on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://btctranscripts.com/bitcoin-magazine/index.xml" rel="self" type="application/rss+xml"/><item><title>Eric Lombrozo, Luke Dashjr - Taproot Activation (2020-08-03)</title><link>https://btctranscripts.com/bitcoin-magazine/2020-08-03-eric-lombrozo-luke-dashjr-taproot-activation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-magazine/2020-08-03-eric-lombrozo-luke-dashjr-taproot-activation/</guid><description>Name: Eric Lombrozo and Luke Dashjr
-Topic: How to Activate a New Soft Fork
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Bitcoin Magazine on ₿itcoin Transcripts</title><link>https://btctranscripts.com/bitcoin-magazine/</link><description>Recent content in Bitcoin Magazine on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 23 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://btctranscripts.com/bitcoin-magazine/index.xml" rel="self" type="application/rss+xml"/><item><title>Taproot Activation Update</title><link>https://btctranscripts.com/bitcoin-magazine/2021-04-23-taproot-activation-update/</link><pubDate>Fri, 23 Apr 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-magazine/2021-04-23-taproot-activation-update/</guid><description>Topic: Taproot Activation Update: Speedy Trial and the LOT=true client
 Location: Bitcoin Magazine (online)
-Date: August 3rd 2020
-Video: https://www.youtube.com/watch?v=yQZb0RDyFCQ
-Aaron van Wirdum in Bitcoin Magazine on BIP 8, BIP 9 or Modern Soft Fork Activation: https://bitcoinmagazine.com/articles/bip-8-bip-9-or-modern-soft-fork-activation-how-bitcoin-could-upgrade-next
-David Harding on Taproot activation proposals: https://gist.github.com/harding/dda66f5fd00611c0890bdfa70e28152d
-Intro Aaron van Wirdum (AvW): Eric, Luke welcome. Happy Bitcoin Independence Day. How are you doing?
-Eric Lombrozo (EL): We are doing great.</description></item><item><title>Taproot activation and LOT=true vs LOT=false (2021-02-26)</title><link>https://btctranscripts.com/bitcoin-magazine/2021-02-26-taproot-activation-lockinontimeout/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-magazine/2021-02-26-taproot-activation-lockinontimeout/</guid><description>Name: Sjors Provoost and Aaron van Wirdum
-Location: Bitcoin Magazine (online)
-Date: February 26th 2021
-Video: https://www.youtube.com/watch?v=7ouVGgE75zg
+Previous episode on lockinontimeout (LOT): https://btctranscripts.com/bitcoin-magazine/2021-02-26-taproot-activation-lockinontimeout/
+Previous episode on Speedy Trial: https://btctranscripts.com/bitcoin-magazine/2021-03-12-taproot-activation-speedy-trial/
+Aaron van Wirdum on “There are now two Taproot activation clients, here’s why”: https://bitcoinmagazine.com/technical/there-are-now-two-taproot-activation-clients-heres-why
+Transcript by: Michael Folkson
+Intro Aaron van Wirdum (AvW): Live from Utrecht this is the van Wirdum Sjorsnado.
+Sjors Provoost (SP): Hello
+AvW: Sjors, today we have a “lot” more to discuss.</description></item><item><title>Taproot Activation with Speedy Trial</title><link>https://btctranscripts.com/bitcoin-magazine/2021-03-12-taproot-activation-speedy-trial/</link><pubDate>Fri, 12 Mar 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-magazine/2021-03-12-taproot-activation-speedy-trial/</guid><description>Location: Bitcoin Magazine (online)
+Speedy Trial proposal: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-March/018583.html
+Transcript by: Michael Folkson
+Intro Aaron van Wirdum (AvW): Live from Utrecht this is the van Wirdum Sjorsnado. Sjors, what is your pun of the week?
+Sjors Provoost (SP): I actually asked you for a pun and then you said “Cut, re-edit. We are going to do it again.” I don’t have a pun this week.
+AvW: Puns are your thing.
+SP: We tried this LOT thing last time.</description></item><item><title>Taproot activation and LOT=true vs LOT=false</title><link>https://btctranscripts.com/bitcoin-magazine/2021-02-26-taproot-activation-lockinontimeout/</link><pubDate>Fri, 26 Feb 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-magazine/2021-02-26-taproot-activation-lockinontimeout/</guid><description>Location: Bitcoin Magazine (online)
 BIP 8: https://github.com/bitcoin/bips/blob/master/bip-0008.mediawiki
 Arguments for LOT=true and LOT=false (T1-T6 and F1-F6): https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-February/018380.html
 Additional argument for LOT=false (F7): https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-February/018415.html
 Aaron van Wirdum article on LOT=true or LOT=false: https://bitcoinmagazine.com/articles/lottrue-or-lotfalse-this-is-the-last-hurdle-before-taproot-activation
 Intro Aaron van Wirdum (AvW): Live from Utrecht, this is the van Wirdum Sjorsnado. Sjors, make the pun.
-Sjors Provoost (SP): We have a “lot” to talk about.</description></item><item><title>Taproot Activation Update (2021-04-23)</title><link>https://btctranscripts.com/bitcoin-magazine/2021-04-23-taproot-activation-update/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-magazine/2021-04-23-taproot-activation-update/</guid><description>Name: Sjors Provoost and Aaron van Wirdum
-Topic: Taproot Activation Update: Speedy Trial and the LOT=true client
+Sjors Provoost (SP): We have a “lot” to talk about.
+AvW: We have a “lot” to discuss. In this episode we are going to discuss the Taproot activation process and the debate surrounding it on the parameter lot, lockinontimeout which can be set to true and false.</description></item><item><title>Taproot Activation</title><link>https://btctranscripts.com/bitcoin-magazine/2020-08-03-eric-lombrozo-luke-dashjr-taproot-activation/</link><pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-magazine/2020-08-03-eric-lombrozo-luke-dashjr-taproot-activation/</guid><description>Topic: How to Activate a New Soft Fork
 Location: Bitcoin Magazine (online)
-Date: April 23rd 2021
-Video: https://www.youtube.com/watch?v=SHmEXPvN6t4
-Previous episode on lockinontimeout (LOT): https://btctranscripts.com/bitcoin-magazine/2021-02-26-taproot-activation-lockinontimeout/
-Previous episode on Speedy Trial: https://btctranscripts.com/bitcoin-magazine/2021-03-12-taproot-activation-speedy-trial/
-Aaron van Wirdum on “There are now two Taproot activation clients, here’s why”: https://bitcoinmagazine.com/technical/there-are-now-two-taproot-activation-clients-heres-why
-Transcript by: Michael Folkson
-Intro Aaron van Wirdum (AvW): Live from Utrecht this is the van Wirdum Sjorsnado.</description></item><item><title>Taproot Activation with Speedy Trial (2021-03-12)</title><link>https://btctranscripts.com/bitcoin-magazine/2021-03-12-taproot-activation-speedy-trial/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-magazine/2021-03-12-taproot-activation-speedy-trial/</guid><description>Name: Sjors Provoost and Aaron van Wirdum
-Topic: Taproot Activation with Speedy Trial
-Location: Bitcoin Magazine (online)
-Date: March 12th 2021
-Video: https://www.youtube.com/watch?v=oCPrjaw3YVI
-Speedy Trial proposal: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-March/018583.html
-Transcript by: Michael Folkson
-Intro Aaron van Wirdum (AvW): Live from Utrecht this is the van Wirdum Sjorsnado. Sjors, what is your pun of the week?
-Sjors Provoost (SP): I actually asked you for a pun and then you said “Cut, re-edit. We are going to do it again.</description></item></channel></rss>
+Aaron van Wirdum in Bitcoin Magazine on BIP 8, BIP 9 or Modern Soft Fork Activation: https://bitcoinmagazine.com/articles/bip-8-bip-9-or-modern-soft-fork-activation-how-bitcoin-could-upgrade-next
+David Harding on Taproot activation proposals: https://gist.github.com/harding/dda66f5fd00611c0890bdfa70e28152d
+Intro Aaron van Wirdum (AvW): Eric, Luke welcome. Happy Bitcoin Independence Day. How are you doing?
+Eric Lombrozo (EL): We are doing great. How are you doing?
+AvW: I am doing fine thanks. Luke how are you?</description></item></channel></rss>
