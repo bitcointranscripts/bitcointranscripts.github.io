@@ -1,1 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Bitcoinops on ₿itcoin Transcripts</title><link>https://btctranscripts.com/bitcoinops/</link><description>Recent content in Bitcoinops on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://btctranscripts.com/bitcoinops/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Bitcoinops on ₿itcoin Transcripts</title><link>https://btctranscripts.com/bitcoinops/</link><description>Recent content in Bitcoinops on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 27 Sep 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://btctranscripts.com/bitcoinops/index.xml" rel="self" type="application/rss+xml"/><item><title>Schnorr and Taproot workshop</title><link>https://btctranscripts.com/bitcoinops/2019-09-27-schnorr-taproot-workshop/</link><pubDate>Fri, 27 Sep 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoinops/2019-09-27-schnorr-taproot-workshop/</guid><description>Location: Chaincode Labs, NYC
+https://github.com/bitcoinops/taproot-workshop
+https://bitcoinops.slack.com
+https://twitter.com/kanzure/status/1177697093462482949
+Run: jupyter notebook
+See also Schnorr signatures and taproot: https://diyhpl.us/wiki/transcripts/sf-bitcoin-meetup/2018-07-09-taproot-schnorr-signatures-and-sighash-noinput-oh-my/
+https://github.com/sipa/bips/blob/bip-schnorr/bip-schnorr.mediawiki
+https://github.com/sipa/bips/blob/bip-schnorr/bip-taproot.mediawiki
+https://github.com/sipa/bips/blob/bip-schnorr/bip-tapscript.mediawiki
+Why Schnorr and why taproot? Who here already feels comfortbale with Schnorr/Taproot? This is a proposed consensus change to bitcoin. When we talk about consensus changes, we often talk about tradeoffs and compromises. It would be irresponsible to say taproot has no downsides, but I think it&amp;rsquo;s important to mention it&amp;rsquo;s a clear win for bitcoin.</description></item></channel></rss>

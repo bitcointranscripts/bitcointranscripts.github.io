@@ -31,7 +31,7 @@ Slides: https://www.dropbox.com/s/142b4o4lrbkvqnh/Rethinking%20Wallet%20Architec
 Support for Output Descriptors in Bitcoin Core: https://github.com/bitcoin/bitcoin/blob/master/doc/descriptors.md
 Bitcoin Optech on Output script descriptors: https://bitcoinops.org/en/topics/output-script-descriptors/
 Bitcoin Core dev wiki on Wallet Class Structure Changes: https://github.com/bitcoin-core/bitcoin-devwiki/wiki/Wallet-Class-Structure-Changes
-Intro Hi everyone. I am Andrew Chow, I am an engineer at Blockstream and also a Bitcoin Core contributor working mostly on the Bitcoin Core wallet. Today I am going to be talking about rethinking the wallet architecture with native descriptor wallets.</description></item><item><title>Bitcoin Optech - Schnorr and Taproot workshop</title><link>https://btctranscripts.com/misc/2019-09-27-schnorr-taproot-workshop/</link><pubDate>Fri, 27 Sep 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/misc/2019-09-27-schnorr-taproot-workshop/</guid><description>Location: Chaincode Labs, NYC
+Intro Hi everyone. I am Andrew Chow, I am an engineer at Blockstream and also a Bitcoin Core contributor working mostly on the Bitcoin Core wallet. Today I am going to be talking about rethinking the wallet architecture with native descriptor wallets.</description></item><item><title>Schnorr and Taproot workshop</title><link>https://btctranscripts.com/bitcoinops/2019-09-27-schnorr-taproot-workshop/</link><pubDate>Fri, 27 Sep 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoinops/2019-09-27-schnorr-taproot-workshop/</guid><description>Location: Chaincode Labs, NYC
 https://github.com/bitcoinops/taproot-workshop
 https://bitcoinops.slack.com
 https://twitter.com/kanzure/status/1177697093462482949
