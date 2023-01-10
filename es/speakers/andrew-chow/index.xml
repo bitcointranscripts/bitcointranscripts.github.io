@@ -4,4 +4,7 @@ Diapositivas: https://www.dropbox.com/s/142b4o4lrbkvqnh/Rethinking%20Wallet%20Ar
 Soporte para descriptores de salida en Bitcoin Core: https://github.com/bitcoin/bitcoin/blob/master/doc/descriptors.md
 Bitcoin Optech en los descriptores de la secuencia de comandos de salida: https://bitcoinops.org/en/topics/output-script-descriptors/
 Bitcoin Core dev wiki sobre los cambios en la estructura de la cartera: https://github.com/bitcoin-core/bitcoin-devwiki/wiki/Wallet-Class-Structure-Changes
-Introducción Hola a todos. Soy Andrew Chow, soy ingeniero en Blockstream y también colaborador de Bitcoin Core, trabajando principalmente en el monedero de Bitcoin Core.</description></item></channel></rss>
+Introducción Hola a todos. Soy Andrew Chow, soy ingeniero en Blockstream y también colaborador de Bitcoin Core, trabajando principalmente en el monedero de Bitcoin Core.</description></item><item><title>Arquitecturas de las wallets</title><link>https://btctranscripts.com/es/bitcoin-core-dev-tech/2019-06-05-wallet-architecture/</link><pubDate>Wed, 05 Jun 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/es/bitcoin-core-dev-tech/2019-06-05-wallet-architecture/</guid><description>Arquitectura de la wallet de Bitcoin Core + descriptores
+https://twitter.com/kanzure/status/1136282460675878915
+writeup: https://github.com/bitcoin/bitcoin/issues/16165
+Debate sobre la arquitectura de las wallets Aquí hay tres áreas principales. Una es IsMine: ¿cómo determino que una salida concreta está afectando a mi wallet? ¿Qué hay de pedir una nueva dirección, de dónde viene? Eso no es sólo obtener una nueva dirección, es obtener una dirección de cambio en bruto, es también el cambio que se crea en fundrawtransaction.</description></item></channel></rss>
