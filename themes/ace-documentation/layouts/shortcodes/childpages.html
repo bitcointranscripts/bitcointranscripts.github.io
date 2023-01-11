@@ -28,7 +28,12 @@
 {{ define "childs" }}
 		{{- range .menu }}
 			<li class="h6 child-links py-1">
-				<a href="{{.RelPermalink}}"> {{ .Title }} </a>
+				<a href="{{.RelPermalink}}"> 
+					{{ if (.GetTerms "speakers") }}
+						{{ delimit (.Params.speakers) ", " }} - 
+					{{ end }} 
+					{{ .Title }} 
+				</a>
 			</li>
 		{{ end }}
 {{ end }}
