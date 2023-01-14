@@ -40,6 +40,12 @@
     </p>
 {{ end }}
 
+{{ if .Params.media }}
+    <p>Media: 
+        <a href='{{ .Params.media }}'>{{ .Params.media }}</a>
+    </p>
+{{ end }}
+
 {{ .Content }}
 
     {{ if .IsTranslated }}
