@@ -38,4 +38,9 @@ Video: No video posted online
 Agenda: https://github.com/lightning/bolts/issues/936
 The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
 BOLT 7 onion message support https://github.com/lightning/bolts/pull/759
-So PR 759 is built on PR 765 because we used the route blinding to decrypt where the end is going to go.</description></item></channel></rss>
+So PR 759 is built on PR 765 because we used the route blinding to decrypt where the end is going to go.</description></item><item><title/><link>https://btctranscripts.com/lightning-specification/2023-02-13-specification-call/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-specification/2023-02-13-specification-call/</guid><description>title: Lightning specification call transcript_by: Generated, Human-Verified by Carla Kirk-Cohen categories: [&amp;lsquo;meeting&amp;rsquo;] tags: [&amp;rsquo;lightning&amp;rsquo;] date: 2023-02-13 Name: Lightning specification call
+Topic: Agenda below
+Location: Jitsi
+Video: No video posted online
+Agenda: https://github.com/lightning/bolts/issues/1055
+Speaker 0: A few people won&amp;rsquo;t be able to attend. I guess we can proceed. Okay. I&amp;rsquo;m going to go down the list that you prepared for this. The first thing being dual funding. I don&amp;rsquo;t know if we have any one involved here at this point.</description></item></channel></rss>
