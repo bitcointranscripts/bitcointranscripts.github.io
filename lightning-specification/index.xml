@@ -38,7 +38,13 @@ Video: No video posted online
 Agenda: https://github.com/lightning/bolts/issues/936
 The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
 BOLT 7 onion message support https://github.com/lightning/bolts/pull/759
-So PR 759 is built on PR 765 because we used the route blinding to decrypt where the end is going to go.</description></item><item><title/><link>https://btctranscripts.com/lightning-specification/2023-02-13-specification-call/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-specification/2023-02-13-specification-call/</guid><description>title: Lightning specification call transcript_by: Generated, Human-Verified by Carla Kirk-Cohen categories: [&amp;lsquo;meeting&amp;rsquo;] tags: [&amp;rsquo;lightning&amp;rsquo;] date: 2023-02-13 Name: Lightning specification call
+So PR 759 is built on PR 765 because we used the route blinding to decrypt where the end is going to go.</description></item><item><title/><link>https://btctranscripts.com/lightning-specification/2023-01-30-specification-call/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-specification/2023-01-30-specification-call/</guid><description>title: Lightning specification call transcript_by: Generated categories: [&amp;lsquo;meeting&amp;rsquo;] tags: [&amp;rsquo;lightning&amp;rsquo;] date: 2023-01-30 Name: Lightning specification call
+Topic: Agenda below
+Location: Jitsi
+Video: No video posted online
+Agenda: https://github.com/lightning/bolts/issues/1053
+The conversation has been anonymized by default to protect the identities of the participants. Participants that wish to be attributed are welcome to propose changes to the transcript.
+Channel Pruning Speaker 2: To be honest, I don&amp;rsquo;t think anything has made a lot of progress since the last spec meeting, so I don&amp;rsquo;t think we should do the topics in order.</description></item><item><title/><link>https://btctranscripts.com/lightning-specification/2023-02-13-specification-call/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-specification/2023-02-13-specification-call/</guid><description>title: Lightning specification call transcript_by: Generated, Human-Verified by Carla Kirk-Cohen categories: [&amp;lsquo;meeting&amp;rsquo;] tags: [&amp;rsquo;lightning&amp;rsquo;] date: 2023-02-13 Name: Lightning specification call
 Topic: Agenda below
 Location: Jitsi
 Video: No video posted online
