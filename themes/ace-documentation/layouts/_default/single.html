@@ -46,6 +46,19 @@
     </p>
 {{ end }}
 
+{{ if in .Params.transcript_by "--needs-review" }}
+    <div class="alert alert-warning">
+        <div class="ai-generated">
+            <i class='fas fa-robot'></i>
+            <span> AI-Generated Transcript</span> 
+        </div>
+        <span>Review this transcript and earn sats. </span>
+        <a href="https://review.btctranscripts.com" target="_blank" data-umami-event="click-transcript-banner">
+            Learn More >
+        </a>
+    </div>
+{{ end }}
+
 {{ .Content }}
 
     {{ if .IsTranslated }}
