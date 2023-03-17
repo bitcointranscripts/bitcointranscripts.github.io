@@ -17,10 +17,25 @@
 	    {{- .Scratch.Set "pages" ($cpage.Pages | union $cpage.Sections) }}
     {{- end}}
     {{- $pages := (.Scratch.Get "pages") }}
+	{{ $readyPages := slice }}
+	{{ $needsReviewPages := slice }}
+
+	{{ range $pages }}
+		{{ $transcriptBy := .Params.transcript_by }}
+		{{ if and $transcriptBy (in $transcriptBy "--needs-review") }}
+			{{ $needsReviewPages = $needsReviewPages | append . }}
+		{{ else }}
+			{{ $readyPages = $readyPages | append . }}
+		{{ end }}
+	{{ end }}
 
 	{{- if eq $sortTerm "Title"}}
-		{{- template "childs" dict "menu" $pages.ByTitle "pages" .Site.Pages "sortTerm" $sortTerm}}
-	{{end}}
+		{{- template "childs" dict "menu" $readyPages.ByTitle "pages" .Site.Pages "sortTerm" $sortTerm}}
+		{{- if len $needsReviewPages }}
+			<h4>Review needed</h4>
+			{{- template "childs" dict "menu" $needsReviewPages "pages" .Site.Pages "sortTerm" $sortTerm "class" "needs-review"}}
+		{{- end }}
+	{{- end }}
 </ul>
 
 
@@ -28,7 +43,7 @@
 {{ define "childs" }}
 		{{- range .menu }}
 		<div class="h6 child-links py-1">
-			<a href="{{.RelPermalink}}" class="list-group-item list-group-item-action flex-column align-items-start">
+			<a href="{{.RelPermalink}}" class="list-group-item list-group-item-action flex-column align-items-start {{ $.class }}">
 				<div class="d-flex justify-content-between">
 					<h5 class="mb-1">{{ .Title }}</h5>
 					{{ if not .FirstSection.Params.conference }}
