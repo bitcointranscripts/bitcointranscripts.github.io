@@ -55,4 +55,9 @@ Location: Jitsi
 Video: No video posted online
 Agenda: https://github.com/lightning/bolts/issues/1058
 Speaker 0: Well, then let&amp;rsquo;s mix these up a bit. Is there anything anyone really wants to discuss? That has the quorum of people here who should discuss it?
-Speaker 1: There was a brief mention on the Bolt 12 discord about whether we should build a Bolt 11 compatibility wrapper where the thinking basically is: The way LNURL works today is that it actually requests it and does the LNURL handshake.</description></item></channel></rss>
+Speaker 1: There was a brief mention on the Bolt 12 discord about whether we should build a Bolt 11 compatibility wrapper where the thinking basically is: The way LNURL works today is that it actually requests it and does the LNURL handshake.</description></item><item><title/><link>https://btctranscripts.com/lightning-specification/2023-03-27-specification-call/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-specification/2023-03-27-specification-call/</guid><description>title: Lightning specification call transcript_by: Generated categories: [&amp;lsquo;meeting&amp;rsquo;] tags: [&amp;rsquo;lightning&amp;rsquo;] date: 2023-03-27 Name: Lightning specification call
+Topic: Agenda below
+Location: Jitsi
+Video: No video posted online
+Agenda: https://github.com/lightning/bolts/issues/1060
+Speaker 0: First off on the list is dual funding. I thought that we were done with dual funding, but there are actually two changes that are pending. There&amp;rsquo;s one that LDK suggested which is to change the encoding of the script witness.</description></item></channel></rss>
