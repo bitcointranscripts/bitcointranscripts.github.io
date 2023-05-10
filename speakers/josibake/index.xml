@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Josibake on ₿itcoin Transcripts</title><link>https://btctranscripts.com/speakers/josibake/</link><description>Recent content in Josibake on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 25 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://btctranscripts.com/speakers/josibake/index.xml" rel="self" type="application/rss+xml"/><item><title>Silent Payments</title><link>https://btctranscripts.com/bitcoin-core-dev-tech/2023-04-26-silent-payments/</link><pubDate>Tue, 25 Apr 2023 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-core-dev-tech/2023-04-26-silent-payments/</guid><description>BIP Overview Scanning key and spending key are different: better security. Silent payment transactions are indistinguishable from transactions with taproot outputs on-chain.
+Q: Address labeling, why not create two silent payment addresses?
+A: It doubles scanning costs.
+Limited to taproot UTXOs (currently about 3% of transactions) but when it increases we should find ways to optimize scanning, even though it currently does not seem to be an issue.
+Q: Why no P2PK</description></item><item><title>Bitcoin Developer Education Overview</title><link>https://btctranscripts.com/stephan-livera-podcast/2023-01-18-josibake/</link><pubDate>Wed, 18 Jan 2023 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2023-01-18-josibake/</guid><description>podcast: https://stephanlivera.com/episode/450/
+Josi, welcome to the show.
+Josibake – 00:02:32:
+Thanks for having me.
+Stephan- 00:02:33:
+So, Josi, I know you were keen to chat about I know you’ve been doing a bit of work in the bitcoin development world, doing some mentoring as well, and keen to chat a bit about the process of Bitcoin developer education. Why is it important, all of that. But let’s first start with a little bit about you.</description></item></channel></rss>

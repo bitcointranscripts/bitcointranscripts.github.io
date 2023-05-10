@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>lightning on ₿itcoin Transcripts</title><link>https://btctranscripts.com/tags/lightning/</link><description>Recent content in lightning on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 07 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://btctranscripts.com/tags/lightning/index.xml" rel="self" type="application/rss+xml"/><item><title>Minisketch and Lightning gossip</title><link>https://btctranscripts.com/bitcoinplusplus/2022/2022-06-07-alex-myers-minisketch-lightning-gossip/</link><pubDate>Tue, 07 Jun 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoinplusplus/2022/2022-06-07-alex-myers-minisketch-lightning-gossip/</guid><description>Location: Bitcoin++
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>lightning on ₿itcoin Transcripts</title><link>https://btctranscripts.com/tags/lightning/</link><description>Recent content in lightning on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 27 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://btctranscripts.com/tags/lightning/index.xml" rel="self" type="application/rss+xml"/><item><title>Lightning specification call</title><link>https://btctranscripts.com/lightning-specification/2023-03-27-specification-call/</link><pubDate>Mon, 27 Mar 2023 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-specification/2023-03-27-specification-call/</guid><description>Name: Lightning specification call
+Topic: Agenda below
+Location: Jitsi
+Video: No video posted online
+Agenda: https://github.com/lightning/bolts/issues/1060</description></item><item><title>Lightning specification call</title><link>https://btctranscripts.com/lightning-specification/2023-03-13-specification-call/</link><pubDate>Mon, 13 Mar 2023 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-specification/2023-03-13-specification-call/</guid><description>Name: Lightning specification call
+Topic: Agenda below
+Location: Jitsi
+Video: No video posted online
+Agenda: https://github.com/lightning/bolts/issues/1058</description></item><item><title>Lightning specification call</title><link>https://btctranscripts.com/lightning-specification/2023-02-13-specification-call/</link><pubDate>Mon, 13 Feb 2023 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-specification/2023-02-13-specification-call/</guid><description>Name: Lightning specification call
+Topic: Agenda below
+Location: Jitsi
+Video: No video posted online
+Agenda: https://github.com/lightning/bolts/issues/1055
+Speaker 0: A few people won&amp;rsquo;t be able to attend. I guess we can proceed. Okay. I&amp;rsquo;m going to go down the list that you prepared for this. The first thing being dual funding. I don&amp;rsquo;t know if we have any one involved here at this point.
+Speaker 1: All right.
+Speaker 0: Last time, both of them were moving closer towards interop.</description></item><item><title>Lightning specification call</title><link>https://btctranscripts.com/lightning-specification/2023-01-30-specification-call/</link><pubDate>Mon, 30 Jan 2023 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-specification/2023-01-30-specification-call/</guid><description>Name: Lightning specification call
+Topic: Agenda below
+Location: Jitsi
+Video: No video posted online
+Agenda: https://github.com/lightning/bolts/issues/1053
+The conversation has been anonymized by default to protect the identities of the participants. Participants that wish to be attributed are welcome to propose changes to the transcript.
+Channel Pruning Speaker 2: To be honest, I don&amp;rsquo;t think anything has made a lot of progress since the last spec meeting, so I don&amp;rsquo;t think we should do the topics in order.</description></item><item><title>Minisketch and Lightning gossip</title><link>https://btctranscripts.com/bitcoinplusplus/2022/2022-06-07-alex-myers-minisketch-lightning-gossip/</link><pubDate>Tue, 07 Jun 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoinplusplus/2022/2022-06-07-alex-myers-minisketch-lightning-gossip/</guid><description>Location: Bitcoin++
 Slides: https://endothermic.dev/presentations/magical-minisketch
 Rusty Russell on using Minisketch for Lightning gossip: https://lists.linuxfoundation.org/pipermail/lightning-dev/2018-December/001741.html
 Minisketch library: https://github.com/sipa/minisketch
@@ -152,7 +173,15 @@ media: No video posted online
 Slides: https://www.dropbox.com/s/oo9o8ij62utvlfo/alex-bosworth-lightning-routing.pdf
 Transcript of presentation on Channel Management (2018): https://btctranscripts.com/chaincode-labs/chaincode-residency/2018-10-22-alex-bosworth-channel-management/
 Transcript by: Michael Folkson
-Intro With Lightning routing I think it is a very exciting topic because we’re doing something that no one has ever really done before, to build this peer-to-peer marketplace. It is a required component of the Lightning Network because the Lightning Network is dependent on this concept of liquidity.</description></item><item><title>Sydney Socratic Seminar</title><link>https://btctranscripts.com/sydney-bitcoin-meetup/2021-02-23-socratic-seminar/</link><pubDate>Tue, 23 Feb 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/sydney-bitcoin-meetup/2021-02-23-socratic-seminar/</guid><description>Name: Socratic Seminar
+Intro With Lightning routing I think it is a very exciting topic because we’re doing something that no one has ever really done before, to build this peer-to-peer marketplace. It is a required component of the Lightning Network because the Lightning Network is dependent on this concept of liquidity.</description></item><item><title>The Label, Bitcoin Dev &amp; Consulting</title><link>https://btctranscripts.com/stephan-livera-podcast/2021-02-26-gleb-naumenko/</link><pubDate>Fri, 26 Feb 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2021-02-26-gleb-naumenko/</guid><description>podcast: https://stephanlivera.com/episode/255/
+Stephan Livera:
+Gleb welcome back to the show.
+Gleb Naumenko:
+Hi, it’s good to be back
+Stephan Livera:
+Glad you’ve been pretty busy with how you’ve started up a new Bitcoin development venture and you’re up to a few different things. Tell us what you’ve been working on lately.
+Gleb Naumenko:
+Yeah, last year it was like, I think it’s been maybe half a year or more since I came last time, I’ve been mostly working on actually lightning and related stuff like research wise, breaking lightning and fixing some existing issues.</description></item><item><title>Sydney Socratic Seminar</title><link>https://btctranscripts.com/sydney-bitcoin-meetup/2021-02-23-socratic-seminar/</link><pubDate>Tue, 23 Feb 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/sydney-bitcoin-meetup/2021-02-23-socratic-seminar/</guid><description>Name: Socratic Seminar
 Topic: Agenda in Google Doc below
 Location: Bitcoin Sydney (online)
 Video: No video posted online

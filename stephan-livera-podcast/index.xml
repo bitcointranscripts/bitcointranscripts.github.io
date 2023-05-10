@@ -1,4 +1,224 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Stephan Livera Podcast on ₿itcoin Transcripts</title><link>https://btctranscripts.com/stephan-livera-podcast/</link><description>Recent content in Stephan Livera Podcast on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 17 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://btctranscripts.com/stephan-livera-podcast/index.xml" rel="self" type="application/rss+xml"/><item><title>Taproot Activation</title><link>https://btctranscripts.com/stephan-livera-podcast/2021-03-17-luke-dashjr-taproot-activation/</link><pubDate>Wed, 17 Mar 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2021-03-17-luke-dashjr-taproot-activation/</guid><description>Topic: How Bitcoin UASF went down, Taproot LOT=true, Speedy Trial, Small Blocks
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Stephan Livera Podcast on ₿itcoin Transcripts</title><link>https://btctranscripts.com/stephan-livera-podcast/</link><description>Recent content in Stephan Livera Podcast on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 06 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://btctranscripts.com/stephan-livera-podcast/index.xml" rel="self" type="application/rss+xml"/><item><title>Bitcoin Transaction Pinning, ANYPREVOUT &amp; eltoo</title><link>https://btctranscripts.com/stephan-livera-podcast/2023-03-06-greg-sanders/</link><pubDate>Mon, 06 Mar 2023 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2023-03-06-greg-sanders/</guid><description>podcast: https://stephanlivera.com/episode/463/
+Stephan Livera – 00:02:02: So on to the discussion with Greg. Greg, also known as instagibbs. Welcome to the show.
+Greg Sanders :
+Hi, glad to be here.
+Stephan Livera :
+So, Greg, I know you’re doing a lot of work on some interesting Lightning stuff and transaction fee pinning things. I know you’ve been around for a while in terms of Bitcoin development and Lightning stuff, so yeah, interested to chat and hear a little bit more from your perspective, and want to learn a little bit about what you’re up to.</description></item><item><title>Bitcoin Multi-signature</title><link>https://btctranscripts.com/stephan-livera-podcast/2023-02-27-craig-raw-bitcoin-multi-signature/</link><pubDate>Mon, 27 Feb 2023 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2023-02-27-craig-raw-bitcoin-multi-signature/</guid><description>podcast: https://stephanlivera.com/episode/462/
+Stephan – 00:02:53 Craig, welcome back to the show.
+Craig :
+Great, Stephan, it’s really good to be back.
+Stephan :
+Yeah, there’s been so many updates going on with Sparrow Wallet and I thought it’d be great to have you back to chat about the space. Whether it’s multisignature or privacy or import and export of transactions, I think there’s lots of things to add. So, yeah, I’m just curious, as you look at the space now, what are some of the big things on your mind, just kind of more broadly?</description></item><item><title>What Bitcoin Specialises in</title><link>https://btctranscripts.com/stephan-livera-podcast/2023-02-23-matt-corallo/</link><pubDate>Thu, 23 Feb 2023 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2023-02-23-matt-corallo/</guid><description>podcast: https://stephanlivera.com/episode/461/
+Stephan:
+Welcome back to the show, Matt.
+Matt :
+Yeah, thanks for having me.
+Stephan :
+So lots of things going on. I know there’s always some topic of the day or whatever that’s happening, whether it’s Ordinals and inscriptions, which is the latest kind of craze. Maybe the Mempool is clearing out a little bit now, but yeah, I thought it would be good to chat with you again.</description></item><item><title>What are Ordinals?</title><link>https://btctranscripts.com/stephan-livera-podcast/2023-02-02-casey-rodarmor/</link><pubDate>Thu, 02 Feb 2023 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2023-02-02-casey-rodarmor/</guid><description>podcast: https://stephanlivera.com/episode/456/
+Casey, welcome to the show.
+Casey Rodarmor – 00:03:18:
+Thank you very much. It’s a real pleasure. I am a long-time listener of the pod. It’s on my short list of Bitcoin podcasts. So it’s really surreal. You’ve been whispering into my ear as I go to the gym and I do whatever for a long time now. So it’s very surreal to actually be talking to you in person or virtually.</description></item><item><title>Bitcoin Miniscript and what it enables</title><link>https://btctranscripts.com/stephan-livera-podcast/2023-01-23-antoine-poinsot-and-salvatore-ingala/</link><pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2023-01-23-antoine-poinsot-and-salvatore-ingala/</guid><description>podcast: https://stephanlivera.com/episode/452/
+Antoine and Salvatori, welcome to the show.
+Antoine :
+Thanks for having us.
+Salvatore :
+Thank you, Stephan.
+Stephan :
+So I know you guys are both building out some stuff in Miniscript. Obviously, software and hardware. And I know this is an interesting area, there’s been a bit of discussion about it, but there’s also been some critique about it as well. So I’d be interested to get into this with you guys, but maybe first if we could start.</description></item><item><title>Bitcoin Developer Education Overview</title><link>https://btctranscripts.com/stephan-livera-podcast/2023-01-18-josibake/</link><pubDate>Wed, 18 Jan 2023 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2023-01-18-josibake/</guid><description>podcast: https://stephanlivera.com/episode/450/
+Josi, welcome to the show.
+Josibake – 00:02:32:
+Thanks for having me.
+Stephan- 00:02:33:
+So, Josi, I know you were keen to chat about I know you’ve been doing a bit of work in the bitcoin development world, doing some mentoring as well, and keen to chat a bit about the process of Bitcoin developer education. Why is it important, all of that. But let’s first start with a little bit about you.</description></item><item><title>A New Way to HODL?</title><link>https://btctranscripts.com/stephan-livera-podcast/2023-01-14-james-obeirne-a-new-way-to-hodl/</link><pubDate>Sat, 14 Jan 2023 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2023-01-14-james-obeirne-a-new-way-to-hodl/</guid><description>podcast: https://stephanlivera.com/episode/449/
+James, welcome back to the show.
+James – 00:02:46:
+Hey, Stephan, it’s great to be back. I think it’s been almost four years.
+Stephan – 00:02:50:
+Damn. Yeah, well, in terms of on the show, yeah, actually in person, you know, a couple of times, some of the conferences and things. But I know you’ve got this awesome proposal out, and it looks pretty interesting to me, and I’m sure SLP listeners will be very interested to hear more about it.</description></item><item><title>v2 P2P Transport Protocol for Bitcoin (BIP324)</title><link>https://btctranscripts.com/stephan-livera-podcast/2022-11-13-dhruv-pieter-wuille-and-tim-ruffing/</link><pubDate>Sun, 13 Nov 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2022-11-13-dhruv-pieter-wuille-and-tim-ruffing/</guid><description>podcast: https://stephanlivera.com/episode/433/
+Stephan Livera – 00:03:20:
+Gentlemen, welcome to the show.
+Dhruv – 00:03:22:
+Hello.
+Tim Ruffing – 00:03:23:
+Hi.
+Stephan Livera – 00:03:24:
+Yeah, so thanks, guys, for joining me and interested to chat about what you’re working on and especially what’s going on with P2P transport, a v2 P2P transport protocol for bitcoin core.
+Dhruv – 00:03:36:
+Bitcoin?
+Stephan Livera – 00:03:37:
+Yeah, for a course for bitcoin. So I think, Pieter and Tim, I think listeners probably know you, Dhruv, if you want to just give a quick intro for yourself, just for listeners to know who you are.</description></item><item><title>What Do Bitcoin Core Maintainers Do?</title><link>https://btctranscripts.com/stephan-livera-podcast/2022-08-11-gloria-zhao/</link><pubDate>Thu, 11 Aug 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2022-08-11-gloria-zhao/</guid><description>podcast: https://stephanlivera.com/episode/404/
+Stephan Livera: Gloria, welcome back to the show.
+Gloria Zhao: Thank you for having me again.
+Stephan Livera: Yeah, always great to chat with you, Gloria. I know you’ve got a lot of things you’re working on in the space and you recently took on a role as a maintainer as well, so we’ll obviously get into that as well as all your work around the mempool. So do you want to just start with — and we’re going to keep this accessible for beginners — so you’ve taken on this role as one of the maintainers of Bitcoin Core.</description></item><item><title>Half Signature Aggregation-What is it and how does it help scale Bitcoin?</title><link>https://btctranscripts.com/stephan-livera-podcast/2022-08-02-jonas-nick-tim-ruffing/</link><pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2022-08-02-jonas-nick-tim-ruffing/</guid><description>podcast: https://stephanlivera.com/episode/400/
+Stephan Livera: Jonas and Tim, welcome back to the show. Great to chat with you guys again. And so we’re gonna chat about half signature aggregation and hear a little bit from you guys about what you’re working on and just get into what that means for Bitcoin. So Jonas, I know you probably will be best to give some background on some of this — I know you did a talk at Adopting Bitcoin in November of last year, so call it 7–8 months ago, talking about some of this at a high level.</description></item><item><title>ZKSnacks Blacklisting Coins</title><link>https://btctranscripts.com/stephan-livera-podcast/2022-04-01-max-hillebrand/</link><pubDate>Fri, 01 Apr 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2022-04-01-max-hillebrand/</guid><description>podcast: https://stephanlivera.com/episode/364/
+Stephan Livera:
+Max, great to chat again.
+Max Hillebrand:
+Oh, welcome, Stephan. I’m really looking forward to this conversation. It’s gonna be a fun one.
+Stephan Livera:
+Right. So look, as I’ve mentioned, I think we’re gonna disagree a bit on this one, but let’s chat it out. Let’s discuss what’s going on in the world of Bitcoin and privacy. So obviously the main topic here is going to be around what’s going on with Wasabi Wallet and the blacklisting, but if you wanted to just give us your thoughts on how we got to this situation, or maybe just provide a bit of an overview about what’s going on for listeners who aren’t familiar and then we can discuss the various issues.</description></item><item><title>Pickhardt Payments &amp; Zero Base Fee for Lightning Network</title><link>https://btctranscripts.com/stephan-livera-podcast/2022-03-27-rene-pickhardt/</link><pubDate>Sun, 27 Mar 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2022-03-27-rene-pickhardt/</guid><description>podcast: https://stephanlivera.com/episode/361/
+Stephan Livera:
+René, welcome back to the show.
+René Pickhardt:
+Hey thanks, Stephan. I really practiced pronouncing your name.
+Stephan Livera:
+Ah yeah, it’s all good. There’s lots going on in the Lightning Network. The network is growing and it’s maturing. And a lot of the work you’re doing is around research and looking at ways to improve that and improve the way we route our payments and getting more reliable payments as well, as I understand you.</description></item><item><title>Sensei- A new lightning node client based on BDK + LDK</title><link>https://btctranscripts.com/stephan-livera-podcast/2022-03-07-john-cantrell-sensei/</link><pubDate>Mon, 07 Mar 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2022-03-07-john-cantrell-sensei/</guid><description>podcast: https://stephanlivera.com/episode/353/
+Stephan Livera:
+John, welcome back to the show.
+John Cantrell:
+Hey, how’s it going? Happy to be back.
+Stephan Livera:
+So John, a lot has happened since the last time you were on the show. You are now working with Sensei and you’ve got this new Lightning node and interface that you’ve got to present and talk about. Do you want to just maybe tell us a little bit about the journey for yourself in terms of how you got to where you are now since the last time we spoke, since you were cracking Alistair Milne’s 12-word seed.</description></item><item><title>Bitcoin DLCs &amp; Stablechannels</title><link>https://btctranscripts.com/stephan-livera-podcast/2022-02-15-chris-stewart/</link><pubDate>Tue, 15 Feb 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2022-02-15-chris-stewart/</guid><description>podcast: https://stephanlivera.com/episode/349/
+Stephan Livera:
+Chris, welcome to the show.
+Chris Stewart:
+Hey, nice to be talking with you, Stephan.
+Stephan Livera:
+Chris, I’m a fan of your work. I like reading your posts and hearing some of your commentary in the space. I know you’re doing a lot of stuff: obviously you’re CEO and founder of Suredbits. Can you tell us a little bit about what’s on your mind lately in terms of what’s happening in the space?</description></item><item><title>Coldcard Mk4, Tapsigner, Satscard – Bitcoin Hardware Innovation</title><link>https://btctranscripts.com/stephan-livera-podcast/2022-01-31-nvk-bitcoin-hardware-innovation/</link><pubDate>Mon, 31 Jan 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2022-01-31-nvk-bitcoin-hardware-innovation/</guid><description>podcast: https://stephanlivera.com/episode/344/
+Stephan Livera:
+NVK, welcome back.
+NVK:
+Hey man. Thanks for having me, dude. It’s been a while.
+Stephan Livera:
+Yeah, it has.
+NVK:
+I’m still winning on the amount of appearances consecutively.
+Stephan Livera:
+Yeah—actually I don’t know. I haven’t run that count actually. It’s been a while. But yeah, there’s so much going on with the world of Bitcoin, and obviously there’s always improvements going on in terms of hardware security, new technology coming, and how are we dealing and adapting with that, and how’s the software going to work with that hardware, and all of this.</description></item><item><title>What is Check Template Verify?</title><link>https://btctranscripts.com/stephan-livera-podcast/2022-01-17-jeremy-rubin/</link><pubDate>Mon, 17 Jan 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2022-01-17-jeremy-rubin/</guid><description>podcast: https://stephanlivera.com/episode/339/
+Stephan Livera:
+So Jeremy, welcome to the show.
+Jeremy Rubin:
+Yeah, thanks for having me on.
+Stephan Livera:
+So Jeremy, you’ve been chatting a little bit and obviously building on this idea of Check Template Verify, and I think there’s a lot of people in the community who would really benefit from hearing from you exactly what it is, and talking a little bit about this journey of how you came to where it is now.</description></item><item><title>Ledger’s New Bitcoin App- PSBT, Taproot, Descriptors, Multi-Sig</title><link>https://btctranscripts.com/stephan-livera-podcast/2022-01-11-salvatore-ingala/</link><pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2022-01-11-salvatore-ingala/</guid><description>podcast: https://stephanlivera.com/episode/337/
+Stephan Livera:
+Salvatore, welcome to the show.
+Salvatore Ingala:
+Thank you, Stephan. I learned a lot from your past shows, so I hope I can bring contributions as well.
+Stephan Livera:
+Fantastic. Well, Salvatore, for people who don’t know you, can you tell us a little bit about yourself and what you’re doing and where you’re working?
+Salvatore Ingala:
+Yeah. So I have a background from academia. I did a PhD in algorithms before switching my attention to cryptocurrencies.</description></item><item><title>MiniMint, Federated Mints for Bitcoin scaling and privacy</title><link>https://btctranscripts.com/stephan-livera-podcast/2021-12-17-eric-sirion/</link><pubDate>Fri, 17 Dec 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2021-12-17-eric-sirion/</guid><description>podcast: https://stephanlivera.com/episode/331/
+Stephan Livera:
+Eric, welcome to the show.
+Eric Sirion:
+Hello. Yeah. Happy to be on. Nice to meet you.
+Stephan Livera:
+Yeah. So Eric, it was great to read about your proposal and read about what’s going on with MiniMint and all this stuff. And I think it’s definitely a topic that SLP listeners will be interested to hear about, ideas related to this, privacy, scalability, all sorts of things.</description></item><item><title>SLP324 Scaling Bitcoin off-chain with Matt Corallo, Alex Bosworth, Lisa Neigut, and Graham Krizek</title><link>https://btctranscripts.com/stephan-livera-podcast/2021-11-27-lisa-neigut-alex-bosworth-graham-krizek-and-matt-corallo/</link><pubDate>Sat, 27 Nov 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2021-11-27-lisa-neigut-alex-bosworth-graham-krizek-and-matt-corallo/</guid><description>podcast: https://stephanlivera.com/episode/324/
+Stephan Livera:
+So guys, thanks for joining us. We’re talking about off-chain scaling. And so obviously Lightning is the first thing that comes to our mind, but maybe we could start with this idea of What is off-chain scaling? I think Lisa, you had something to add on this, didn’t you?
+Matt Corallo:
+We had a meeting in the back and we decided we were moving Lightning to TRON.</description></item><item><title>SLP321 On-chain scaling with Bitcoin Core Developers</title><link>https://btctranscripts.com/stephan-livera-podcast/2021-11-16-pieter-wuille-andrew-poelstra-andrew-chow-mark-erhardt/</link><pubDate>Tue, 16 Nov 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2021-11-16-pieter-wuille-andrew-poelstra-andrew-chow-mark-erhardt/</guid><description>podcast: https://stephanlivera.com/episode/321/
+Emcee:
+All right. I’m really excited for this next panel. I’ve heard some of them speak in different rooms and I can’t wait to hear what they all have to say today. Next up, I’m going to bring up our moderator. He has a podcast. It is a self-titled podcast and he’s also the managing director of Swan Bitcoin International. Please everybody, welcome to the stage Stephan Livera, everyone.</description></item><item><title>Statechains and Mercury Wallet-A New Privacy Technique?</title><link>https://btctranscripts.com/stephan-livera-podcast/2021-11-12-nicholas-gregory/</link><pubDate>Fri, 12 Nov 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2021-11-12-nicholas-gregory/</guid><description>podcast: https://stephanlivera.com/episode/320/
+Stephan Livera:
+Nicholas welcome to the show.
+Nicholas Gregory:
+Hello. Thanks for having me.
+Stephan Livera:
+So Nicholas, there’s discussion in the community around scaling and how do things scale, and also how do we get more privacy in the Bitcoin ecosystem? I think these are ideas that people are talking about, and I know you’re working on some stuff that’s obviously very relevant for that as well with statechains, Mercury wallet, and stuff like that.</description></item><item><title>Lightning Protocol Privacy Exploration</title><link>https://btctranscripts.com/stephan-livera-podcast/2021-11-07-t-bast/</link><pubDate>Sun, 07 Nov 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2021-11-07-t-bast/</guid><description>podcast: https://stephanlivera.com/episode/319/
+Stephan Livera:
+T-Bast, welcome to the show.
+T-Bast:
+Hey, Stephan. Thanks for having me.
+Stephan Livera:
+So Bastien, I prefer definitely having good technical discussions about the Lightning Network. And I know you’ve got a lot of things to talk about. For people who don’t know you, do you want to just tell us a little bit about yourself?
+T-Bast:
+Yeah, sure. I started working on Lightning a few years ago.</description></item><item><title>Networking For Bitcoiners</title><link>https://btctranscripts.com/stephan-livera-podcast/2021-10-27-k3tan-networking-for-bitcoiners/</link><pubDate>Wed, 27 Oct 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2021-10-27-k3tan-networking-for-bitcoiners/</guid><description>podcast: https://stephanlivera.com/episode/315/
+Stephan Livera:
+k3tan, welcome to the show.
+K3tan:
+Thank you. Thanks for having me.
+Stephan Livera:
+Mr. Ministry of Nodes and Mr. Calyx and also Pop OS. Obviously I had to get you on the show and it was time to get you on. So for anyone who doesn’t know you, tell us a little bit about yourself.
+K3tan:
+My name’s k3tan, and I am the co-founder of Ministry of Nodes with you, Stefan, and we provide Bitcoin education material, particularly on YouTube.</description></item><item><title>The 2nd Node On The Bitcoin Network? The Early Days of Bitcoin</title><link>https://btctranscripts.com/stephan-livera-podcast/2021-10-24-dustin-trammell/</link><pubDate>Sun, 24 Oct 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2021-10-24-dustin-trammell/</guid><description>podcast: https://stephanlivera.com/episode/314/
+Stephan Livera:
+Dustin, welcome to the show.
+Dustin Trammell:
+Hey! Nice to be on.
+Stephan Livera:
+So Dustin, I’ve seen some of your work and obviously this recent discussion I think spurred some of the conversation. I thought it would be great to get you on and have a chat with you and hear a little bit about your story and where you came from and how you found all this Bitcoin stuff.</description></item><item><title>Scaling Bitcoin Exchanges With Lightning And Lightning User Profiles</title><link>https://btctranscripts.com/stephan-livera-podcast/2021-10-02-philip-glazman/</link><pubDate>Sat, 02 Oct 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2021-10-02-philip-glazman/</guid><description>podcast: https://stephanlivera.com/episode/308/
+Stephan Livera:
+Philip, welcome to the show.
+Philip Glazman:
+Hi, Stephan. Really excited to be here.
+Stephan Livera:
+So Philip, you’re at River, and River has a lot of really cool, interesting stuff going on technologically, and I’m sure you can tell us a little bit about that. Do you want to tell us a little bit about your background and how you got into the more technical side of Bitcoin?</description></item><item><title>Becoming A Lightning Routing Node Operator</title><link>https://btctranscripts.com/stephan-livera-podcast/2021-09-29-thomas-jestopher-and-anthony-potdevin/</link><pubDate>Wed, 29 Sep 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2021-09-29-thomas-jestopher-and-anthony-potdevin/</guid><description>podcast: https://stephanlivera.com/episode/307/
+Stephan Livera:
+Jestopher and Tony, welcome to the show.
+Tony :
+Hey, thank you. Thank you for having us.
+Jestopher:
+Thanks so much, Stephan.
+Stephan Livera:
+So I’ve been following what you guys are doing with Amboss and I thought it would be a good time to get you on and chat a little bit about Lightning Network just generally as well as maybe some tips out there for people who want to just get started and start running their own Lightning node and things like that.</description></item><item><title>Bitcoin multi sig security under $50</title><link>https://btctranscripts.com/stephan-livera-podcast/2021-08-24-seedsigner/</link><pubDate>Tue, 24 Aug 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2021-08-24-seedsigner/</guid><description>podcast: https://stephanlivera.com/episode/302/
+Stephan Livera:
+Seedsigner welcome to the show.
+Seedsigner:
+So glad to be here. Thank you for having me.
+Stephan Livera:
+So just for listeners, Seedsigner is operating under a pseudonym, so I’m just going to be calling him seed or SeedSigner. So seed, can you tell me a little bit about yourself and how this project came about? What was the inspiration?
+Seedsigner:
+So it’s actually a full circle kind of journey to be talking with you today because my journey with SeedSigner started probably mid to late last year with an episode that you did with Michael Flaxman on his 10x, Bitcoin security guide.</description></item><item><title>Lightning Offers / BOLT12 -The next big thing in Lightning?</title><link>https://btctranscripts.com/stephan-livera-podcast/2021-08-09-rusty-russell/</link><pubDate>Mon, 09 Aug 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2021-08-09-rusty-russell/</guid><description>podcast: https://stephanlivera.com/episode/298/
+Stephan Livera:
+Rusty welcome back to the show.
+Rusty Russell:
+Thanks. It’s always good to be here, Stephan.
+Stephan Livera:
+So Rusty, I know you’ve been making progress on this whole offers idea. Now you’ve mentioned this on the show in the past. And in fact, I recall at the Lightning conference and I think it was October, 2019 is when you actually first put this idea out there into the wild.</description></item><item><title>Output Script Descriptors for Bitcoin</title><link>https://btctranscripts.com/stephan-livera-podcast/2021-07-17-andrew-chow/</link><pubDate>Sat, 17 Jul 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2021-07-17-andrew-chow/</guid><description>podcast: https://stephanlivera.com/episode/292/
+Stephan Livera:
+Andrew welcome back to the show.
+Andrew Chow:
+Hey, thanks for having me.
+Stephan Livera:
+So, Andrew, you’ve been working on a bunch of things, one of which was the output descriptors idea. There’s been a little bit of progress on that. So maybe just tell us a little bit about what you’re working on lately.
+Andrew Chow:
+I’ve been working a lot on the Bitcoin core wallet, as usual.</description></item><item><title>Bitcoin Security &amp; Backups Primer</title><link>https://btctranscripts.com/stephan-livera-podcast/2021-07-13-nvk-bitcoin-security/</link><pubDate>Tue, 13 Jul 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2021-07-13-nvk-bitcoin-security/</guid><description>podcast: https://stephanlivera.com/episode/290/
+Stephan Livera:
+Mr. NVK. Welcome back to the show.
+NVK:
+Hey man. Thanks for having me.
+Stephan Livera:
+Yeah, dude, it’s been a while since we spoke about backups. So listeners, you might know we did an episode a little while back, but things change over time and we’ve got new listeners and new people coming in. So it was a good time. And I think there was a lot of support on Twitter for this idea of doing an episode specifically talking about how to do your backups.</description></item><item><title>Coordinating Bitcoin Upgrades With Mining Pools</title><link>https://btctranscripts.com/stephan-livera-podcast/2021-05-24-alejandro-de-la-torre/</link><pubDate>Mon, 24 May 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2021-05-24-alejandro-de-la-torre/</guid><description>podcast: https://stephanlivera.com/episode/277/
+Stephan Livera:
+Alejandro welcome to the show.
+Alejandro De La Torre:
+Thank you, Stephan. Thanks. Thanks for having me.
+Stephan Livera:
+So Alejandro, I’ve been trying to get you on for a little while, but it just kind of hasn’t happened, but I also want to, I really wanted to chat with you about some of your work you’ve been doing around taproot activation. And obviously this has come quite some way and hopefully it’s looking like it’s pretty close to being signalled, but I’d like to chat a little bit about your process and what it was like for you.</description></item><item><title>Bitcoin Lightning Privacy - FUD and Facts</title><link>https://btctranscripts.com/stephan-livera-podcast/2021-05-21-anthony-ronning-bitcoin-lightning-privacy/</link><pubDate>Fri, 21 May 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2021-05-21-anthony-ronning-bitcoin-lightning-privacy/</guid><description>podcast: https://stephanlivera.com/episode/276/
+Stephan Livera:
+Anthony welcome to the show.
+Anthony Ronning:
+Hi Stephan. Glad to be here. Thanks for inviting me on.
+Stephan Livera:
+Yeah. So I saw your article and I thought, well, we’ve got to do a discussion about this one. I think it will be very valuable for people who are trying to think more clearly about the privacy implications of Lightning. But tell us a little bit about yourself.</description></item><item><title>SlushPool Signalling For Taproot</title><link>https://btctranscripts.com/stephan-livera-podcast/2021-05-13-pavel-moravec/</link><pubDate>Thu, 13 May 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2021-05-13-pavel-moravec/</guid><description>podcast: https://stephanlivera.com/episode/275/
+Stephan Livera:
+Pavel welcome to the show.
+Pavel Moravec:
+Hello. Great to be here again.
+Stephan Livera:
+Yes, So, Pavel, I see you guys have been keeping busy over at Braiins and SlushPool. So you were one of the first pools or I think you were the first pool to signal for taproot, which is very cool. And we’re definitely going to get into some of that for listeners who don’t know much about you, can you just give us a little bit of a background on yourself?</description></item><item><title>When Satoshi Disappeared</title><link>https://btctranscripts.com/stephan-livera-podcast/2021-04-28-pete-rizzo/</link><pubDate>Wed, 28 Apr 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2021-04-28-pete-rizzo/</guid><description>podcast: https://stephanlivera.com/episode/271/
+Stephan Livera:
+Pete, welcome to the show.
+Pete Rizzo:
+Hey. Well, thanks for having me glad to be here and excited to chat.
+Stephan Livera:
+Yeah, man. So I’ve had a chance to read your article about what happened when Satoshi disappeared, and I think it’s a good one to get into. But also just for listeners who don’t know you, can you just take a minute and just tell them a bit about yourself and your involvement in the Bitcoin world?</description></item><item><title>Bitcoin Multi Sig With Sparrow Wallet</title><link>https://btctranscripts.com/stephan-livera-podcast/2021-03-24-craig-raw-bitcoin-multi-sig/</link><pubDate>Wed, 24 Mar 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2021-03-24-craig-raw-bitcoin-multi-sig/</guid><description>podcast: https://stephanlivera.com/episode/262/
+Stephan Livera:
+Craig welcome to the show.
+Craig Raw:
+Hi there, Stephan! It’s great to be here.
+Stephan Livera:
+So Craig I’ve been seeing what you’re doing with Sparrow wallet and I thought it’s time to get this guy on the show. So can you, I mean, obviously I know you’re under a pseudonym, right? So don’t dox anything about yourself that you don’t want that you’re not comfortable to, but can you tell us a little bit about how you got into Bitcoin and why you’re interested in Bitcoin?</description></item><item><title>How Bitcoin UASF Went Down, Taproot LOT=True, Speedy Trial, Small Blocks</title><link>https://btctranscripts.com/stephan-livera-podcast/2021-03-17-luke-dashjr/</link><pubDate>Wed, 17 Mar 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2021-03-17-luke-dashjr/</guid><description>podcast: https://stephanlivera.com/episode/260/
+Stephan Livera:
+Luke welcome to the show.
+Luke Dashjr:
+Thanks.
+Stephan Livera:
+So, Luke for listeners who are unfamiliar, maybe you could just take a minute and just tell us a little bit about your background and how long you’ve been developing and contributing with Bitcoin core.
+Luke Dashjr:
+I first learned about Bitcoin back at the end of 2010, it was a new year’s party and I’ve been contributing since about a week later.</description></item><item><title>Taproot Activation</title><link>https://btctranscripts.com/stephan-livera-podcast/2021-03-17-luke-dashjr-taproot-activation/</link><pubDate>Wed, 17 Mar 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2021-03-17-luke-dashjr-taproot-activation/</guid><description>Topic: How Bitcoin UASF went down, Taproot LOT=true, Speedy Trial, Small Blocks
 Location: Stephan Livera Podcast
 Luke Dashjr arguments against LOT=false: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-February/018498.html
 T1-T6 and F1-F6 arguments for LOT=true and LOT=false: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-February/018380.html
@@ -6,7 +226,37 @@ F7 argument for LOT=false: https://lists.linuxfoundation.org/pipermail/bitcoin-d
 Transcript by: Stephan Livera Edited by: Michael Folkson
 Intro Stephan Livera (SL): Luke, welcome to the show.
 Luke Dashjr (LD): Thanks.
-SL: So, Luke for listeners who are unfamiliar, maybe you could take a minute and tell us a little bit about your background and how long you’ve been developing and contributing with Bitcoin Core.</description></item><item><title>MuSig, MuSig-DN and MuSig2</title><link>https://btctranscripts.com/stephan-livera-podcast/2020-10-27-jonas-nick-tim-ruffing-musig2/</link><pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2020-10-27-jonas-nick-tim-ruffing-musig2/</guid><description>Topic: MuSig, MuSig-DN and MuSig2
+SL: So, Luke for listeners who are unfamiliar, maybe you could take a minute and tell us a little bit about your background and how long you’ve been developing and contributing with Bitcoin Core.</description></item><item><title>Bitcoin Soft Fork Activation, Taproot, and Playing Chicken</title><link>https://btctranscripts.com/stephan-livera-podcast/2021-03-04-matt-corallo/</link><pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2021-03-04-matt-corallo/</guid><description>podcast: https://stephanlivera.com/episode/257/
+Stephan Livera:
+Matt, welcome to the show.
+Matt Corallo:
+Hey yeah, thanks for having me.
+Stephan Livera:
+So guys, obviously, listeners, you know, we’re just having to re-record this. We had basically a screw up the first time around, but we wanted to chat about Taproot and soft fork activation. So perhaps Matt, if we could just start from your side, let’s try to keep this accessible for listeners who maybe they are new.</description></item><item><title>The Label, Bitcoin Dev &amp; Consulting</title><link>https://btctranscripts.com/stephan-livera-podcast/2021-02-26-gleb-naumenko/</link><pubDate>Fri, 26 Feb 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2021-02-26-gleb-naumenko/</guid><description>podcast: https://stephanlivera.com/episode/255/
+Stephan Livera:
+Gleb welcome back to the show.
+Gleb Naumenko:
+Hi, it’s good to be back
+Stephan Livera:
+Glad you’ve been pretty busy with how you’ve started up a new Bitcoin development venture and you’re up to a few different things. Tell us what you’ve been working on lately.
+Gleb Naumenko:
+Yeah, last year it was like, I think it’s been maybe half a year or more since I came last time, I’ve been mostly working on actually lightning and related stuff like research wise, breaking lightning and fixing some existing issues.</description></item><item><title>Mempool-space – helping Bitcoin migrate to a multi-layer ecosystem</title><link>https://btctranscripts.com/stephan-livera-podcast/2021-01-21-wiz-and-simon-mempool/</link><pubDate>Thu, 21 Jan 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2021-01-21-wiz-and-simon-mempool/</guid><description>podcast: https://stephanlivera.com/episode/245/
+Stephan Livera:
+Wiz and Simon. Welcome to the show.
+Simon:
+Thank you.
+Wiz:
+Yeah, thanks for having us.
+Stephan Livera:
+So, Wiz I think my listeners are already familiar with you. But let’s hear from you Simon. Tell us about yourself.
+Simon:
+I grew up in Sweden. I worked there as a software developer and about four years ago I decided to quit my day job and pursue a more nomadic lifestyle.</description></item><item><title>Maintaining Bitcoin Core-Contributions, Consensus, Conflict</title><link>https://btctranscripts.com/stephan-livera-podcast/2021-01-14-jonas-schnelli-maintaining-bitcoin-core/</link><pubDate>Thu, 14 Jan 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2021-01-14-jonas-schnelli-maintaining-bitcoin-core/</guid><description>podcast: https://stephanlivera.com/episode/242/
+Stephan Livera:
+Jonas. Welcome back to the show.
+Jonas Schnelli:
+Hey! Hi, Stephan. Thanks for having me.
+Stephan Livera:
+Jonas, Its been a while since we spoke on the show and I was excited to get another opportunity to chat with you and learn a little bit more and obviously talk about this on behalf of some of the newer listeners who are coming in and they may not be familiar with how does Bitcoin Core work.</description></item><item><title>MuSig, MuSig-DN and MuSig2</title><link>https://btctranscripts.com/stephan-livera-podcast/2020-10-27-jonas-nick-tim-ruffing-musig2/</link><pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2020-10-27-jonas-nick-tim-ruffing-musig2/</guid><description>Topic: MuSig, MuSig-DN and MuSig2
 Location: Stephan Livera Podcast
 Tim Ruffing on Schnorr multisig at London Bitcoin Devs: https://diyhpl.us/wiki/transcripts/london-bitcoin-devs/2020-06-17-tim-ruffing-schnorr-multisig/
 MuSig paper: https://eprint.iacr.org/2018/068.pdf
@@ -19,14 +269,52 @@ MuSig2 blog post: https://medium.com/blockstream/musig2-simple-two-round-schnorr
 Transcript completed by: Stephan Livera Edited by: Michael Folkson
 Intro Stephan Livera (SL): Jonas and Tim, welcome to the show.
 Jonas Nick (JN): Hello.
-Tim Ruffing (TR): Hey.</description></item><item><title>Security Guide</title><link>https://btctranscripts.com/stephan-livera-podcast/2020-09-28-michael-flaxman-security-guide/</link><pubDate>Mon, 28 Sep 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2020-09-28-michael-flaxman-security-guide/</guid><description>Topic: 10x your Bitcoin security with Multisig
+Tim Ruffing (TR): Hey.</description></item><item><title>What You Should Know About Bitcoin DLCs</title><link>https://btctranscripts.com/stephan-livera-podcast/2020-10-15-nadav-kohen-bitcoin-dlcs/</link><pubDate>Thu, 15 Oct 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2020-10-15-nadav-kohen-bitcoin-dlcs/</guid><description>podcast: https://stephanlivera.com/episode/219/
+Stephan Livera:
+Nadav welcome to the show.
+Nadav Kohen:
+Thanks for having me.
+Stephan Livera:
+Nadav I’ve been following your work for a little while. Obviously I really I like reading your blog posts over at Suredbits, and I had the chance to meet you earlier this year in London. Can you tell us a little bit about yourself and what’s your role with Suredbits?
+Nadav Kohen:
+Yeah. so I am a software engineer at Suredbits.</description></item><item><title>Learning Bitcoin Core Contribution &amp; Hosting PR Review Club</title><link>https://btctranscripts.com/stephan-livera-podcast/2020-10-02-gloria-zhao-bitcoin-core/</link><pubDate>Fri, 02 Oct 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2020-10-02-gloria-zhao-bitcoin-core/</guid><description>podcast: https://stephanlivera.com/episode/216/
+Stephan Livera:
+Gloria. Welcome to the show.
+Gloria Zhao:
+Thank you so much for having me.
+Stephan Livera:
+So Gloria I’ve heard a few things about you and I was looking up what you’ve been doing. You’ve been doing some really interesting things. Can we hear a little bit about you and how you got into Bitcoin?
+Gloria Zhao:
+Yeah, well, I didn’t get into Bitcoin by choice. Actually it was by accident.</description></item><item><title>Security Guide</title><link>https://btctranscripts.com/stephan-livera-podcast/2020-09-28-michael-flaxman-security-guide/</link><pubDate>Mon, 28 Sep 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2020-09-28-michael-flaxman-security-guide/</guid><description>Topic: 10x your Bitcoin security with Multisig
 Location: Stephan Livera Podcast
 Previous SLP episode with Michael Flaxman: https://diyhpl.us/wiki/transcripts/stephan-livera-podcast/2019-08-08-michael-flaxman/
 10x Security Bitcoin Guide: https://btcguide.github.io/
 Transcript completed by: Stephan Livera Edited by: Michael Folkson
 10x Security Bitcoin Guide Stephan Livera (SL): Michael, welcome back to the show.
 Michael Flaxman (MF): It’s great to be here. I’m a big fan of the podcast so I love to be on it.
-SL: Michael, your first appearance on the show was a very, very popular episode and I think a lot of people took it as a bit of a nightmare episode despite the cautions and saying “Let’s take an incremental approach to this.</description></item><item><title>Lightning Topics</title><link>https://btctranscripts.com/stephan-livera-podcast/2020-08-13-christian-decker-lightning-topics/</link><pubDate>Thu, 13 Aug 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2020-08-13-christian-decker-lightning-topics/</guid><description>Topic: ANYPREVOUT, MPP, Mitigating Lightning Attacks
+SL: Michael, your first appearance on the show was a very, very popular episode and I think a lot of people took it as a bit of a nightmare episode despite the cautions and saying “Let’s take an incremental approach to this.</description></item><item><title>Bitcoin Grants, Design &amp; Crypto Patents (COPA)</title><link>https://btctranscripts.com/stephan-livera-podcast/2020-09-15-steve-lee-of-square-crypto/</link><pubDate>Tue, 15 Sep 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2020-09-15-steve-lee-of-square-crypto/</guid><description>podcast: https://stephanlivera.com/episode/211/
+Stephan Livera:
+Steve. Welcome back to the show.
+Steve Lee:
+Thank you so much. Glad the glad to be here,
+Stephan Livera:
+Steve. I see you guys have been very busy over at Cquare Crypto. Since we last spoke, you’ve been doing a lot of work in different, in different arenas as well. You’ve got the grants going, design and this crypto patent stuff. So tell us a little bit about you know, what you’ve been doing over the last few months.</description></item><item><title>Specter Desktop Bitcoin Multi Sig</title><link>https://btctranscripts.com/stephan-livera-podcast/2020-08-28-stepan-snigirev-and-ben-kaufman/</link><pubDate>Fri, 28 Aug 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2020-08-28-stepan-snigirev-and-ben-kaufman/</guid><description>podcast: https://stephanlivera.com/episode/205/
+Stephan Livera:
+Stepan and Ben, welcome to the show.
+Stepan:
+Thank you. Thank you, Stephan. It’s very nice to be here again.
+Ben:
+Thank you for inviting me.
+Stephan Livera:
+Stepan I know you’ve been on the show twice before, but perhaps just for any listeners who are a little bit newer, can you tell us a little bit about yourself?
+Stepan:
+We are doing well originally I came from quantum physics into Bitcoin and started working on hardware stuff mostly.</description></item><item><title>ANYPREVOUT, MPP, Mitigating LN Attacks</title><link>https://btctranscripts.com/stephan-livera-podcast/2020-08-13-christian-decker/</link><pubDate>Thu, 13 Aug 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2020-08-13-christian-decker/</guid><description>podcast: https://stephanlivera.com/episode/200/
+Stephan Livera:
+Christian welcome back to the show.
+Christian Decker:
+Hey, Stephan, thanks for having me
+Stephan Livera:
+Wanted to chat with you about a bunch of stuff that you’ve been doing. We’ve got a couple of things that I was really interested to chat with you about ANYPREVOUT, MPP, lightning attacks. What’s the latest with lightning network. But yeah, let’s start with a little bit around ANYPREVOUT. So I see that yourself and AJ towns just recently did an update and I think AJ Towns just did an email to the mailing list saying, okay, here’s the update to ANYPREVOUT, do you want to just give us a little bit of background?</description></item><item><title>Lightning Topics</title><link>https://btctranscripts.com/stephan-livera-podcast/2020-08-13-christian-decker-lightning-topics/</link><pubDate>Thu, 13 Aug 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2020-08-13-christian-decker-lightning-topics/</guid><description>Topic: ANYPREVOUT, MPP, Mitigating Lightning Attacks
 Location: Stephan Livera Podcast
 Transcript completed by: Stephan Livera Edited by: Michael Folkson
 Latest ANYPREVOUT update ANYPREVOUT BIP (BIP 118): https://github.com/ajtowns/bips/blob/bip-anyprevout/bip-0118.mediawiki
@@ -39,24 +327,116 @@ Transcript completed by: Stephan Livera Edited by: Michael Folkson
 Intro Stephan Livera (SL): Thomas and Ghost43. Welcome back to the show.
 Thomas Voegtlin (TV): Hi, thank you.
 Ghost43 (G43): Hey Stephan, Thanks for having me.
-SL: Thomas, my listeners have already heard you on a prior episode. Ghost, did you want to tell us about yourself, how you got into Bitcoin and how you got into developing with Electrum Wallet?</description></item><item><title>Nix Bitcoin</title><link>https://btctranscripts.com/stephan-livera-podcast/2020-07-26-nix-bitcoin/</link><pubDate>Sun, 26 Jul 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2020-07-26-nix-bitcoin/</guid><description>Topic: nix-bitcoin
+SL: Thomas, my listeners have already heard you on a prior episode. Ghost, did you want to tell us about yourself, how you got into Bitcoin and how you got into developing with Electrum Wallet?</description></item><item><title>Electrum Wallet</title><link>https://btctranscripts.com/stephan-livera-podcast/2020-08-09-thomas-voegtlin-and-ghost43/</link><pubDate>Sun, 09 Aug 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2020-08-09-thomas-voegtlin-and-ghost43/</guid><description>podcast: https://stephanlivera.com/episode/199/
+Stephan Livera:
+Thomas and Ghost43. Welcome back to the show.
+Thomas V:
+Hi, thank you.
+Ghost43:
+Hey Stephan, Thanks for having me.
+Stephan Livera:
+So welcome to the show guys. Now, Thomas, I know my listeners have already heard you on the prior episode, but Ghost, did you want to tell us a little bit about yourself, how you got into Bitcoin and how you got into developing with Electrum Wallet?</description></item><item><title>A Security Focused Bitcoin Node</title><link>https://btctranscripts.com/stephan-livera-podcast/2020-07-26-nix-bitcoindev/</link><pubDate>Sun, 26 Jul 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2020-07-26-nix-bitcoindev/</guid><description>podcast: https://stephanlivera.com/episode/195/
+Stephan Livera:
+nix-bitcoindev Welcome to the show.
+Nixbitcoin:
+Hello. Thank you for having me.
+Stephan Livera:
+So nix-bitcoin Dev obviously as you’re under a pseudonym don’t dox anything about yourself, but can you just tell us a little bit in terms of like what you’re interested in about Bitcoin and is it the computer science aspects or what aspects of it interest you?
+Nixbitcoin:
+So I came into Bitcoin pretty much from the privacy angle because I’ve always pretty much since I’ve touched a computer, I’ve thought it’s really like an extension of the human brain.</description></item><item><title>Nix Bitcoin</title><link>https://btctranscripts.com/stephan-livera-podcast/2020-07-26-nix-bitcoin/</link><pubDate>Sun, 26 Jul 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2020-07-26-nix-bitcoin/</guid><description>Topic: nix-bitcoin
 Location: Stephan Livera Podcast
 Date: July 26th 2020
 nix-bitcoin on GitHub: https://github.com/fort-nix/nix-bitcoin
 Transcript completed by: Stephan Livera Edited by: Michael Folkson
 Intro Stephan Livera (SL): nixbitcoindev welcome to the show.
 nixbitcoindev (NBD): Hello. Thank you for having me.
-SL: Obviously as you’re under a pseudonym don’t dox anything about yourself but can you just tell us what you’re interested in about Bitcoin and is it the computer science aspects or what aspects of it interest you?</description></item><item><title>Schnorr and Taproot</title><link>https://btctranscripts.com/stephan-livera-podcast/2019-12-27-aj-towns-schnorr-taproot/</link><pubDate>Fri, 27 Dec 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2019-12-27-aj-towns-schnorr-taproot/</guid><description>Topic: Schnorr Taproot Tapscript BIPs
+SL: Obviously as you’re under a pseudonym don’t dox anything about yourself but can you just tell us what you’re interested in about Bitcoin and is it the computer science aspects or what aspects of it interest you?</description></item><item><title>RaspiBlitz</title><link>https://btctranscripts.com/stephan-livera-podcast/2020-07-21-rootzoll-and-openoms-raspiblitz/</link><pubDate>Tue, 21 Jul 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2020-07-21-rootzoll-and-openoms-raspiblitz/</guid><description>podcast: https://stephanlivera.com/episode/194/
+Stephan Livera:
+Hi, everyone. Welcome to the Stephan Livera podcast, a show about Bitcoin and Austrian economics today. My guests are Rootzoll and Openoms of the RaspiBlitz project. And if you’re interested in setting up your own Bitcoin node and running lightning and using Coinjoins with JoinMarket and so on, this is a great project to check out. So I’m really looking forward to my discussion with the guys today.</description></item><item><title>Bruteforcing Bitcoin Seeds</title><link>https://btctranscripts.com/stephan-livera-podcast/2020-06-30-john-cantrell-bruteforcing-bitcoin-seeds/</link><pubDate>Tue, 30 Jun 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2020-06-30-john-cantrell-bruteforcing-bitcoin-seeds/</guid><description>podcast: https://stephanlivera.com/episode/187/
+Stephan Livera:
+I’m going to bring in my guest, John is a developer and he’s also known for working on the juggernaut project and he’s got this fantastic article that he wrote recently that I wanted to get him on and discuss. So John, welcome to the show.
+John Cantrell:
+It’s great to be here.
+Stephan Livera:
+So John, tell us a little bit about yourself and your background as a developer.</description></item><item><title>Unwinding Bitcoin Coinjoins - Tumblers, Wasabi, JoinMarket</title><link>https://btctranscripts.com/stephan-livera-podcast/2020-06-09-ergo-unwinding-bitcoin/</link><pubDate>Tue, 09 Jun 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2020-06-09-ergo-unwinding-bitcoin/</guid><description>podcast: https://stephanlivera.com/episode/179/
+Stephan Livera:
+Hi Ergo, welcome to the show.
+Ergo:
+Hey Stephan. Thanks for having me back.
+Stephan Livera:
+It’s great to chat with you, and I know you’ve been doing a lot of awesome work, so I’m really excited to get into it and discuss with you. So I know you’ve got two reports that you have put out recently with OXT Research. So let’s start with the China and North Korea one.</description></item><item><title>Bitcoin Coin Selection - Managing Large Wallets</title><link>https://btctranscripts.com/stephan-livera-podcast/2020-05-27-bitcoin-coin-selection/</link><pubDate>Wed, 27 May 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2020-05-27-bitcoin-coin-selection/</guid><description>podcast: https://stephanlivera.com/episode/177/
+Stephan Livera:
+Welcome, Murch.
+Murch:
+Hey, Stephan, thanks for having me.
+Stephan Livera:
+Well, yeah, thanks for joining me, man. I am a fan. I’ve read some of your work on coin selection. And I know you’ve, you’re you’re the man to talk to about this topic. So look, let’s start with how you got into Bitcoin and Bitcoin contribution and also just some of your work at BitGo.</description></item><item><title>Lightning Network Channel Accounting and Dual Funded Channels</title><link>https://btctranscripts.com/stephan-livera-podcast/2020-04-24-lisa-neigut-lighting-network-channel/</link><pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2020-04-24-lisa-neigut-lighting-network-channel/</guid><description>podcast: https://stephanlivera.com/episode/168/
+Lisa Neigut of Blockstream joins me to talk about Lightning Network Channels, c-lightning, and Dual Funded Channels.
+Stephan Livera:
+Lisa, welcome to the show.
+Lisa Neigut:
+Hi Stephan. Thanks for having me on.
+Stephan Livera:
+So Lisa, I saw you tweeted out about wanting to talk about lightning cryptographic primitives and some of the, obviously you’re working on a range of things, at Blockstream on the Elements project working on C-lightning and the lightning spec and stuff.</description></item><item><title>What’s The Problem With Bitcoin Surveillance?</title><link>https://btctranscripts.com/stephan-livera-podcast/2020-04-21-chris-belcher/</link><pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2020-04-21-chris-belcher/</guid><description>podcast: https://stephanlivera.com/episode/167/
+Chris Belcher rejoins me on the show to talk about Bitcoin Surveillance companies, and what risks they present to Bitcoin. We also talk about JoinMarket fidelity bonds. Stephan Livera:
+Chris, welcome back to the show.
+Chris Belcher:
+Thanks for having me.
+Stephan Livera:
+So, Chris, I know you have been vocal recently in your criticism of Bitcoin surveillance companies. And I share your views on this. I thought it would be good to just have some discussion from the Bitcoin holder perspective.</description></item><item><title>erlay Bitcoin transaction relay</title><link>https://btctranscripts.com/stephan-livera-podcast/2020-04-07-gleb-naumenko-erlay/</link><pubDate>Tue, 07 Apr 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2020-04-07-gleb-naumenko-erlay/</guid><description>podcast: https://stephanlivera.com/episode/164/
+Stephan Livera:
+Gleb Naumenko of Chaincode Labs joins me in this episode to talk about erlay.
+Gleb. Welcome to the show, mate.
+Gleb Naumenko:
+Hey, nice to be here.
+Stephan Livera:
+So Gleb, let’s hear a bit about your story. I know you’re working at Chaincode labs, you’re working on erlay and a range of other things as well. Tell us a little bit about yourself and how you got into Bitcoin development.</description></item><item><title>Is Consumerism at Odds With Privacy in Bitcoin? JoinMarket, PayJoin, SNICKER</title><link>https://btctranscripts.com/stephan-livera-podcast/2020-02-16-waxwing-or-adam-gibson/</link><pubDate>Sun, 16 Feb 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2020-02-16-waxwing-or-adam-gibson/</guid><description>podcast: https://stephanlivera.com/episode/149/
+Stephan Livera:
+Adam, welcome to the show.
+Waxwing (Adam Gibson):
+Hello, Stephan,
+Stephan Livera:
+Thank you for joining me. I’ve been very keen to have you on the show. I guess some listeners will know you as Waxwing you’re probably more known as Waxwing than as Adam.
+Waxwing (Adam Gibson):
+Little bit more. Yeah, yeah.
+Stephan Livera:
+But yeah, I’m a big fan of your work. I really like what you’ve done in terms of putting a lot of educational stuff like your blog and your work with JoinMarket and obviously you’ve got a, a history within the space and a focus on, I would say, you know, Bitcoin privacy and also around the cryptography and the mathematics behind it.</description></item><item><title>Mastering Lightning &amp; Using BTCPayServer</title><link>https://btctranscripts.com/stephan-livera-podcast/2020-01-06-andreas-antonopoulos/</link><pubDate>Mon, 06 Jan 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2020-01-06-andreas-antonopoulos/</guid><description>podcast: https://stephanlivera.com/episode/139/
+Stephan Livera: Andreas, welcome back to the show.
+Andreas: It’s a pleasure. Thank you so much for having me again.
+Stephan Livera: Oh, it’s, yeah, I know you’re doing, you’ve got a lot on, I know a couple months ago, you announced recently alongside Laolu Osuntukun and Rene Pickhardt that you’re working on Mastering Lightning. I’m excited to see the result of that. Let’s talk a little bit about how that came about.</description></item><item><title>Schnorr and Taproot</title><link>https://btctranscripts.com/stephan-livera-podcast/2019-12-27-aj-towns-schnorr-taproot/</link><pubDate>Fri, 27 Dec 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2019-12-27-aj-towns-schnorr-taproot/</guid><description>Topic: Schnorr Taproot Tapscript BIPs
 Location: Stephan Livera Podcast
 Transcript Stephan Livera: AJ, welcome to the show.
 AJ Towns: Howdy.
 Stephan Livera: Thanks for joining me AJ. I know you’re doing a lot of really cool work with the Schnorr and Taproot proposal and the review club. But let’s start with a bit of your background and I know you’re working at Xapo as well.
-AJ Towns: Yeah so I’m working at Xapo on Bitcoin Core dev, which means that I get to do open source work full time and get paid for it and it’s pretty freaking awesome.</description></item><item><title>Bitcoin Core contribution</title><link>https://btctranscripts.com/stephan-livera-podcast/2019-11-13-jon-atack/</link><pubDate>Wed, 13 Nov 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2019-11-13-jon-atack/</guid><description>Stephan Livera Podcast with Jon Atack - November 13th 2019
+AJ Towns: Yeah so I’m working at Xapo on Bitcoin Core dev, which means that I get to do open source work full time and get paid for it and it’s pretty freaking awesome.</description></item><item><title>Schnorr Taproot Tapscript BIPs</title><link>https://btctranscripts.com/stephan-livera-podcast/2019-12-27-aj-townsschnorr-taproot-tapscript-bips/</link><pubDate>Fri, 27 Dec 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2019-12-27-aj-townsschnorr-taproot-tapscript-bips/</guid><description>podcast: https://stephanlivera.com/episode/137/
+Stephan Livera: AJ, welcome to the show.
+AJ Towns: Howdy.
+Stephan Livera: Thanks for joining me AJ. I know you’re doing a lot of really cool work with the Schnorr and Taproot proposal and the review club. But let’s start with a bit of your background and I know you’re working at Xapo as well.
+AJ Towns: Yeah, so I, I’m working at Xapo on Bitcoin core dev, which basically just means that I get to do open source work full time and get paid for it and it’s pretty freaking awesome.</description></item><item><title>Lightning Multi Part Payments</title><link>https://btctranscripts.com/stephan-livera-podcast/2019-12-16-rusty-russelllightning-multi-part-payments/</link><pubDate>Mon, 16 Dec 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2019-12-16-rusty-russelllightning-multi-part-payments/</guid><description>podcast: https://stephanlivera.com/episode/134/
+Stephan Livera: Rusty, welcome back to the show.
+Rusty Russell: Great to be on again Stephan.
+Stephan Livera: So Rusty, I hear there’s been a lot of development around multi-part payment and you’ve got the new c-lightning coming out. Do you want to just give us an update there?
+Rusty Russell: Yeah, for sure. So on the, so there’s two sides to this. One is kind of the spec side and the development and interoperability of multi-part payment stuff.</description></item><item><title>Stratum v2 Bitcoin Mining Protocol</title><link>https://btctranscripts.com/stephan-livera-podcast/2019-11-27-jan-capekstratum-v2/</link><pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2019-11-27-jan-capekstratum-v2/</guid><description>podcast: https://stephanlivera.com/episode/128/
+Stephan Livera: Jan, welcome to the show.
+Jan Čapek: Hi, thanks for having me here.
+Stephan Livera: So Jan I had the pleasure of meeting you at Riga for Baltic Honeybadger and I know you’ve been doing a lot of work on Stratum, the second version of the protocol. First I wanted to get a bit of background from you, how did you get involved with all of this and working as one of the CEOs of Braiins and Slush Pool?</description></item><item><title>Electrum Wallet-Bitcoin seeds, PSBT, Multi sig, Lightning</title><link>https://btctranscripts.com/stephan-livera-podcast/2019-11-16-thomas-voegtlin-electrum-wallet/</link><pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2019-11-16-thomas-voegtlin-electrum-wallet/</guid><description>podcast: https://stephanlivera.com/episode/125/
+Stephan Livera: Thomas, welcome to the show.
+Thomas Voegtlin: Thank you for having me.
+Stephan Livera: So Tom I had the pleasure of meeting you at Berlin as part of the lightning conference. And I was really keen to discuss with you and talk about Electrum because obviously it’s one of the longstanding wallets in the space. Thomas, can you give us a little bit of your background and your story on how you came into Bitcoin and how you started Electrum?</description></item><item><title>Bitcoin Core contribution</title><link>https://btctranscripts.com/stephan-livera-podcast/2019-11-13-jon-atack/</link><pubDate>Wed, 13 Nov 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2019-11-13-jon-atack/</guid><description>Stephan Livera Podcast with Jon Atack - November 13th 2019
 Podcast: https://stephanlivera.com/episode/124/
 https://twitter.com/kanzure/status/1195848417186078720
 Stephan Livera: Jon, welcome to the show.
 Jon Atack: Hi, Stephan. Thanks for having me on. I’m pleased to be here.
-Stephan Livera: So, Jon, I had the pleasure of meeting you at The Lightning Conference recently and I know you are working on Bitcoin Core in a part time capacity to do some review and development work.</description></item><item><title>Bitcoin Vaults and Custody</title><link>https://btctranscripts.com/stephan-livera-podcast/2019-09-22-bryan-bishop/</link><pubDate>Sun, 22 Sep 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2019-09-22-bryan-bishop/</guid><description>Stephan Livera Podcast with Bryan Bishop - September 22nd 2019
+Stephan Livera: So, Jon, I had the pleasure of meeting you at The Lightning Conference recently and I know you are working on Bitcoin Core in a part time capacity to do some review and development work.</description></item><item><title>Sidechains &amp; Blockstream Liquid</title><link>https://btctranscripts.com/stephan-livera-podcast/2019-11-08-allen-piscitellosidechains/</link><pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2019-11-08-allen-piscitellosidechains/</guid><description>podcast: https://stephanlivera.com/episode/123/
+Stephan Livera: Allen, welcome to the show.
+Allen P: Thanks for having me on.
+Stephan Livera: So Allen, I know you’re doing a lot of work with Blockstream and Liquid and side chains, so I thought it’d be great to get you on and just break some of that down for the listeners, but can you just start with a little bit of a background on yourself and what you’re doing with Blockstream?</description></item><item><title>Lightning &amp; Identity, Olympus and Zap</title><link>https://btctranscripts.com/stephan-livera-podcast/2019-10-29-jack-mallers/</link><pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2019-10-29-jack-mallers/</guid><description>podcast: https://stephanlivera.com/episode/120/
+Stephan Livera: Jack, welcome to the show, man.
+Jack Mallers: Stephan, thank you for having me. I’m a big fan.
+Stephan Livera: I’m a big fan of you. I really like what your family’s doing, you know, Bitcoinmom and your dad @willbc20. I can’t remember his exact handle. And then obviously you guys are just killing it. I’m a big fan. Zap is my favorite wallet, so I really love using it and yeah, I’m really looking forward to just chatting with you about Zap and you know what you’re doing as well.</description></item><item><title>Submarine Swaps, Lightning Loop, Hyperloop</title><link>https://btctranscripts.com/stephan-livera-podcast/2019-10-24-alex-bosworth-submarine-swaps/</link><pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2019-10-24-alex-bosworth-submarine-swaps/</guid><description>podcast: https://stephanlivera.com/episode/119/
+Stephan Livera: Alex, welcome to the show.
+Alex Bosworth: Hi. It’s great to be on the show. Finally.
+Stephan Livera: Yeah, I’ve been meaning to get you on for a while and you know, now we’re finally making it happen. So just, context for the listeners, we are recording this one in person just before the lightning conference, the inaugural lightning conference. So just a couple of days before there was lightning meetup last night.</description></item><item><title>Bitcoin Vaults and Custody</title><link>https://btctranscripts.com/stephan-livera-podcast/2019-09-22-bryan-bishop/</link><pubDate>Sun, 22 Sep 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2019-09-22-bryan-bishop/</guid><description>Stephan Livera Podcast with Bryan Bishop - September 22nd 2019
 Podcast: https://stephanlivera.com/episode/108/
 Stephan Livera: Bryan, welcome to the show, man. I’m a big fan of your work.
 Bryan Bishop: Thank you. I’m a big fan of yours as well.
@@ -72,11 +452,16 @@ Date: August 8th 2019
 Transcript completed by: Stephan Livera Edited by: Michael Folkson
 Intro Stephan Livera (SL): Michael, welcome to the show.
 Michael Flaxman (MF): Hi. It’s good to be here. Thank you for having me.
-SL: Michael, I think you are one of these really underrated or under followed guys. I think a lot of the hardcore Bitcoiners know you but there’s a lot of people who don’t know you.</description></item><item><title>Roy Sheinfeld - Stephan Livera</title><link>https://btctranscripts.com/stephan-livera-podcast/2019-07-31-roy-sheinfeld-stephan-livera/</link><pubDate>Wed, 31 Jul 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2019-07-31-roy-sheinfeld-stephan-livera/</guid><description>Stephan Livera podcast with Roy Sheinfeld - July 31st 2019
+SL: Michael, I think you are one of these really underrated or under followed guys. I think a lot of the hardcore Bitcoiners know you but there’s a lot of people who don’t know you.</description></item><item><title>Lightning Network Services for the Masses</title><link>https://btctranscripts.com/stephan-livera-podcast/2019-07-31-roy-sheinfeld-lightning-network-services/</link><pubDate>Wed, 31 Jul 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2019-07-31-roy-sheinfeld-lightning-network-services/</guid><description>podcast: https://stephanlivera.com/episode/94/
+Stephan Livera: Roy, welcome to the show.
+Roy Sheinfeld: Hey Stephan, great to be here.
+Stephan Livera: So Roy, I’ve seen you’ve been writing some interesting posts on Medium, and obviously you’re the CEO and founder of Breez Technology, so can you just give us a little bit of a background on yourself, on you and also a little bit of your story on Bitcoin.
+Roy Sheinfeld: Sure, sure, I’d be happy to.</description></item><item><title>Roy Sheinfeld - Stephan Livera</title><link>https://btctranscripts.com/stephan-livera-podcast/2019-07-31-roy-sheinfeld-stephan-livera/</link><pubDate>Wed, 31 Jul 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2019-07-31-roy-sheinfeld-stephan-livera/</guid><description>Stephan Livera podcast with Roy Sheinfeld - July 31st 2019
 Podcast: https://stephanlivera.com/episode/94/
 Stephan Livera: Roy, welcome to the show.
 Roy Sheinfeld: Hey Stephan, great to be here.
-Stephan Livera: So Roy, I’ve seen you’ve been writing some interesting posts on Medium, and obviously you’re the CEO and founder of Breez Technology, so can you just give us a little bit of a background on yourself, on you and also a little bit of your story on Bitcoin.</description></item><item><title>Conner Fromknecht - Stephan Livera</title><link>https://btctranscripts.com/stephan-livera-podcast/2019-06-24-conner-fromknecht-stephan-livera/</link><pubDate>Mon, 24 Jun 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2019-06-24-conner-fromknecht-stephan-livera/</guid><description>Stephan Livera podcast with Conner Fromknecht - June 24th 2019
+Stephan Livera: So Roy, I’ve seen you’ve been writing some interesting posts on Medium, and obviously you’re the CEO and founder of Breez Technology, so can you just give us a little bit of a background on yourself, on you and also a little bit of your story on Bitcoin.</description></item><item><title>BTCPayServer documentation, translation &amp; Newbie tips</title><link>https://btctranscripts.com/stephan-livera-podcast/2019-07-25-britt-kelly-btcpayserver-documentation/</link><pubDate>Thu, 25 Jul 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2019-07-25-britt-kelly-btcpayserver-documentation/</guid><description>podcast: https://stephanlivera.com/episode/92/
+Stephan Livera: Hi and welcome to the Stephan Livera Podcast focused on bitcoin and Austrian economics. Today we are closing out the BTCPayServer series with Britt Kelly. But first let me introduce the sponsors of the podcast. So firstly, checkout Kraken. Over my years in bitcoin I’ve been really impressed with the way they operate. They have a really, really strong focus on security and they have consistently acted ethically in the space.</description></item><item><title>Conner Fromknecht - Stephan Livera</title><link>https://btctranscripts.com/stephan-livera-podcast/2019-06-24-conner-fromknecht-stephan-livera/</link><pubDate>Mon, 24 Jun 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2019-06-24-conner-fromknecht-stephan-livera/</guid><description>Stephan Livera podcast with Conner Fromknecht - June 24th 2019
 https://twitter.com/kanzure/status/1143553150152060928
 Podcast: https://stephanlivera.com/episode/83
 Stephan: Conner I am a big fan of what you guys are doing at Lightning Labs and I’ve been trying to get you on for a while. I’m glad that we were finally able to make it happen. Welcome to the show.
@@ -88,7 +473,15 @@ James O’Beirne: Thanks Stephan. It’s good to be here.</description></item><i
 Location: Stephan Livera Podcast
 Lightning topology limitation Stephan: Christian, welcome to the show. I’m a big fan of your work.
 Christian: Thank you so much for having me Stephan. I am a long time listener and I am happy to be joining you today.
-Stephan: There has been a lot of chatter in the Bitcoin community on what might happen in the future. One of the ideas you presented in one of your papers you wrote in 2016 called Scalable Funding of Bitcoin Micropayment Channel Networks That is the discussion where we are going to go.</description></item><item><title>Laolu Osuntokun - Stephan Livera</title><link>https://btctranscripts.com/stephan-livera-podcast/2018-12-11-laolu-osuntokun-stephan-livera/</link><pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2018-12-11-laolu-osuntokun-stephan-livera/</guid><description>Stephan Livera podcast with Laolu Osuntokun - December 11th 2018
+Stephan: There has been a lot of chatter in the Bitcoin community on what might happen in the future. One of the ideas you presented in one of your papers you wrote in 2016 called Scalable Funding of Bitcoin Micropayment Channel Networks That is the discussion where we are going to go.</description></item><item><title>Defending Bitcoin Privacy</title><link>https://btctranscripts.com/stephan-livera-podcast/2019-03-11-chris-belcher/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2019-03-11-chris-belcher/</guid><description>podcast: https://stephanlivera.com/episode/58/
+Stephan Livera: My guest today is Chris Belcher, Bitcoin privacy O.G. He’s been in the game a long time, and has made great contributions on privacy. He’s involved with JoinMarket, Electrum Personal Server, and most recently he wrote, or rather updated, a fantastic Bitcoin privacy Wiki which you simply must read. Here is my interview with Chris. Chris, welcome to the show.
+Chris Belcher: Hello, thanks for having me.</description></item><item><title>Bitcoin- Native Currency of the Internet</title><link>https://btctranscripts.com/stephan-livera-podcast/2019-02-11-jack-dorsey-elizabeth-stark/</link><pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2019-02-11-jack-dorsey-elizabeth-stark/</guid><description>podcast: https://stephanlivera.com/episode/52/
+Stephan Livera: Welcome to the Stephan Livera podcast, focused on Bitcoin and Austrian economics. Learn the technology and economics of Bitcoin by listening in to interviews with the best and brightest. It’s a very special episode today with Jack Dorsey, CEO of Twitter and Square, and also Elizabeth Stark, CEO of Lightning Labs.
+Stephan Livera: I’ve been very impressed with Jack’s commentary on Bitcoin as potentially the native currency of the internet, and the way he’s been managing Square and one of Square’s products in particular, the Cash App, which allows for Bitcoin purchases and sales.</description></item><item><title>BTCPayServer architecture and BTC transmuter</title><link>https://btctranscripts.com/stephan-livera-podcast/2019-07-21-kukks-btcpayserver-architecture/</link><pubDate>Sun, 20 Jan 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2019-07-21-kukks-btcpayserver-architecture/</guid><description>podcast: https://stephanlivera.com/episode/91/
+Stephan Livera: Hi, and welcome back to the Stephan Livera podcast, focused on Bitcoin and Austrian economics. Today, we are carrying on with he BTCPayServer series, with Kukks, a contributor of BTCPayServer. But first, let me introduce the sponsors of the podcast.
+Stephan Livera: So firstly, check out Kraken. They are the best Bitcoin exchange. I’ve been consistently impressed with the way they operate, over the years. They also have this incredible strong focus on security.</description></item><item><title>Nicolas Dorier and BTCPayServer – self hosted Bitcoin and Lightning payments</title><link>https://btctranscripts.com/stephan-livera-podcast/2019-01-20-nicolas-dorier-and-btcpayserver/</link><pubDate>Sun, 20 Jan 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2019-01-20-nicolas-dorier-and-btcpayserver/</guid><description>podcast: https://stephanlivera.com/episode/48/
+Stephan Livera: You’re listening to the Stephan Livera podcast focused on Bitcoin and Austrian economics. This is episode 48 with Nicolas Dorier, who started a great project. I wanted to discuss BTCPayServer. Nicolas is also the creator of NBitcoin, a Bitcoin library for the .Net platform in C#. Here’s my conversation with Nicolas. Nicolas, thanks for coming on the show.
+Nicolas Dorier: Yeah, thank you for inviting me.</description></item><item><title>Laolu Osuntokun - Stephan Livera</title><link>https://btctranscripts.com/stephan-livera-podcast/2018-12-11-laolu-osuntokun-stephan-livera/</link><pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2018-12-11-laolu-osuntokun-stephan-livera/</guid><description>Stephan Livera podcast with Laolu Osuntokun - December 11th 2018
 https://twitter.com/kanzure/status/1090640881873387525
 Podcast: https://stephanlivera.com/episode/39
 Stephan: Hi Laolu. Thank you very much for coming on the show.
