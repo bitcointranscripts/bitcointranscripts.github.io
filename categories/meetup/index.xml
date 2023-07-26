@@ -18,7 +18,7 @@ Ceremonies for Applied Secret Sharing paper: https://cypherpunks.ca/~iang/pubs/m
 Coinbase blog post: https://blog.coinbase.com/frost-flexible-round-optimized-schnorr-threshold-signatures-b2e950164ee1
 Andrew Poelstra presentation at SF Bitcoin Devs 2019: https://btctranscripts.com/sf-bitcoin-meetup/2019-02-04-threshold-signatures-and-accountability/
 Tim Ruffing presentation at CES Summit 2019: https://btctranscripts.com/cryptoeconomic-systems/2019/threshold-schnorr-signatures/
-Introduction Lloyd Fournier (LF): This is going to be a discussion meeting with our very special guest Jesse Posner is going to tell us about what he’s been up to, what he thinks about FROST and its applications to Bitcoin.</description></item><item><title>Lightning specification call</title><link>https://btctranscripts.com/lightning-specification/2022-03-14-specification-call/</link><pubDate>Mon, 14 Mar 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-specification/2022-03-14-specification-call/</guid><description>Name: Lightning specification call
+Introduction Lloyd Fournier (LF): This is going to be a discussion meeting with our very special guest Jesse Posner is going to tell us about what he’s been up to, what he thinks about FROST and its applications to Bitcoin.</description></item><item><title>Lightning specification call - Agenda</title><link>https://btctranscripts.com/lightning-specification/2022-03-14-specification-call/</link><pubDate>Mon, 14 Mar 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-specification/2022-03-14-specification-call/</guid><description>Name: Lightning specification call
 Topic: Agenda below
 Location: Jitsi
 Video: No video posted online
@@ -33,14 +33,14 @@ The conversation has been anonymized by default to protect the identities of the
 Minisketch and gossip spam I’ve been working on the multi channel connect stuff, trying to not get distracted by Tether talk and other stuff like that.</description></item><item><title>Lightning Network Panel</title><link>https://btctranscripts.com/london-bitcoin-devs/2022-03-01-lightning-panel/</link><pubDate>Tue, 01 Mar 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/london-bitcoin-devs/2022-03-01-lightning-panel/</guid><description>Topic: The Lightning Network in 2022
 Location: London Bitcoin Devs
 Introductions Ali Taylor-Cipolla (ATC): Ali coming in from Coinbase Recruiting. I’d like to introduce to my friend Tiago who is on the Europe side.
-Tiago Schmidt (TS): Hello everyone. Quick introduction, sitting in the recruiting team here in London and leading the expansion for engineering hiring across UK and Ireland. Coinbase is in hyper-growth at the moment and we will be looking to hire loads of the people.</description></item><item><title>Lightning specification call</title><link>https://btctranscripts.com/lightning-specification/2022-02-14-specification-call/</link><pubDate>Mon, 14 Feb 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-specification/2022-02-14-specification-call/</guid><description>Name: Lightning specification call
+Tiago Schmidt (TS): Hello everyone. Quick introduction, sitting in the recruiting team here in London and leading the expansion for engineering hiring across UK and Ireland. Coinbase is in hyper-growth at the moment and we will be looking to hire loads of the people.</description></item><item><title>Lightning specification call - Agenda</title><link>https://btctranscripts.com/lightning-specification/2022-02-14-specification-call/</link><pubDate>Mon, 14 Feb 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-specification/2022-02-14-specification-call/</guid><description>Name: Lightning specification call
 Topic: Agenda below
 Location: Jitsi
 Video: No video posted online
 Agenda: https://github.com/lightning/bolts/issues/957
 Organizing a Lightning Core Dev meetup I was talking about organizing a face to face Lightning Core Dev meetup. If I understand correctly there has only been one formal one and that was in 2019 in Australia. There has been two?
 Milan, the kickoff. There has only ever been two.
-That was probably before my time in Bitcoin.</description></item><item><title>Lightning specification call</title><link>https://btctranscripts.com/lightning-specification/2022-01-31-specification-call/</link><pubDate>Mon, 31 Jan 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-specification/2022-01-31-specification-call/</guid><description>Name: Lightning specification call
+That was probably before my time in Bitcoin.</description></item><item><title>Lightning specification call - Agenda</title><link>https://btctranscripts.com/lightning-specification/2022-01-31-specification-call/</link><pubDate>Mon, 31 Jan 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-specification/2022-01-31-specification-call/</guid><description>Name: Lightning specification call
 Topic: Agenda below
 Location: Jitsi
 Video: No video posted online
@@ -57,7 +57,7 @@ Location: Jitsi online
 Date: January 10th 2022
 Video: No video posted online
 The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
-Accounting plugin I have been working on the accounting plugin for the last few months.</description></item><item><title>Lightning specification call</title><link>https://btctranscripts.com/lightning-specification/2022-01-03-specification-call/</link><pubDate>Mon, 03 Jan 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-specification/2022-01-03-specification-call/</guid><description>Name: Lightning specification call
+Accounting plugin I have been working on the accounting plugin for the last few months.</description></item><item><title>Lightning specification call - Agenda</title><link>https://btctranscripts.com/lightning-specification/2022-01-03-specification-call/</link><pubDate>Mon, 03 Jan 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-specification/2022-01-03-specification-call/</guid><description>Name: Lightning specification call
 Topic: Agenda below
 Location: Jitsi
 Video: No video posted online
@@ -70,7 +70,7 @@ Video: No video posted online
 The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
 Enabling multi channel support https://github.com/ElementsProject/lightning/pull/4984
 https://github.com/ElementsProject/lightning/pull/4985
-I have actually been pulling Humpty Dumpty apart. I have a series of like 40 patches which rearchitect the entire way we do c-lightning.</description></item><item><title>Lightning specification call</title><link>https://btctranscripts.com/lightning-specification/2021-12-06-specification-call/</link><pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-specification/2021-12-06-specification-call/</guid><description>Name: Lightning specification call
+I have actually been pulling Humpty Dumpty apart. I have a series of like 40 patches which rearchitect the entire way we do c-lightning.</description></item><item><title>Lightning specification call - Agenda</title><link>https://btctranscripts.com/lightning-specification/2021-12-06-specification-call/</link><pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-specification/2021-12-06-specification-call/</guid><description>Name: Lightning specification call
 Topic: Agenda below
 Location: Google Meet
 Video: No video posted online
@@ -82,7 +82,7 @@ Location: Jitsi online
 Date: November 29th 2021
 Video: No video posted online
 The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
-CI problems I will note we have been having CI problems.</description></item><item><title>Lightning specification call</title><link>https://btctranscripts.com/lightning-specification/2021-11-22-specification-call/</link><pubDate>Mon, 22 Nov 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-specification/2021-11-22-specification-call/</guid><description>Name: Lightning specification call
+CI problems I will note we have been having CI problems.</description></item><item><title>Lightning specification call - Agenda</title><link>https://btctranscripts.com/lightning-specification/2021-11-22-specification-call/</link><pubDate>Mon, 22 Nov 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-specification/2021-11-22-specification-call/</guid><description>Name: Lightning specification call
 Topic: Agenda below
 Location: Google Meet
 Video: No video posted online
