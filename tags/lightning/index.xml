@@ -12,11 +12,14 @@ Speaker 1: Yeah, I haven&amp;rsquo;t dug as deep into the blinded path stuff, so
 Topic: Agenda below
 Location: Jitsi
 Video: No video posted online
-Agenda: https://github.com/lightning/bolts/issues/1060</description></item><item><title>Lightning specification call</title><link>https://btctranscripts.com/lightning-specification/2023-03-13-specification-call/</link><pubDate>Mon, 13 Mar 2023 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-specification/2023-03-13-specification-call/</guid><description>Name: Lightning specification call
+Agenda: https://github.com/lightning/bolts/issues/1060
+Speaker 0: First off on the list is dual funding. I thought that we were done with dual funding, but there are actually two changes that are pending. There&amp;rsquo;s one that LDK suggested which is to change the encoding of the script witness. I think that&amp;rsquo;s fair. It&amp;rsquo;s simpler with a change in the encoding and (Redacted) was okay with changing that.</description></item><item><title>Lightning specification call</title><link>https://btctranscripts.com/lightning-specification/2023-03-13-specification-call/</link><pubDate>Mon, 13 Mar 2023 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-specification/2023-03-13-specification-call/</guid><description>Name: Lightning specification call
 Topic: Agenda below
 Location: Jitsi
 Video: No video posted online
-Agenda: https://github.com/lightning/bolts/issues/1058</description></item><item><title>Lightning specification call</title><link>https://btctranscripts.com/lightning-specification/2023-02-13-specification-call/</link><pubDate>Mon, 13 Feb 2023 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-specification/2023-02-13-specification-call/</guid><description>Name: Lightning specification call
+Agenda: https://github.com/lightning/bolts/issues/1058
+Speaker 0: Well, then let&amp;rsquo;s mix these up a bit. Is there anything anyone really wants to discuss? That has the quorum of people here who should discuss it?
+Speaker 1: There was a brief mention on the Bolt 12 discord about whether we should build a Bolt 11 compatibility wrapper where the thinking basically is.</description></item><item><title>Lightning specification call</title><link>https://btctranscripts.com/lightning-specification/2023-02-13-specification-call/</link><pubDate>Mon, 13 Feb 2023 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/lightning-specification/2023-02-13-specification-call/</guid><description>Name: Lightning specification call
 Topic: Agenda below
 Location: Jitsi
 Video: No video posted online
