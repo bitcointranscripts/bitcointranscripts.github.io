@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>signature aggregation on ₿itcoin Transcripts</title><link>https://btctranscripts.com/tags/signature-aggregation/</link><description>Recent content in signature aggregation on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 21 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://btctranscripts.com/tags/signature-aggregation/index.xml" rel="self" type="application/rss+xml"/><item><title>Signature Aggregation Update</title><link>https://btctranscripts.com/bitcoin-core-dev-tech/2023-09/signature-aggregation/</link><pubDate>Thu, 21 Sep 2023 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-core-dev-tech/2023-09/signature-aggregation/</guid><description>The status of the Half-Agg BIP? TODOs but also no use cases upcoming so adding it to the BIP repo doesn&amp;rsquo;t seem useful
+BIP Half-agg TODOs for BIP
+Consider setting z_0 = 1
+Reconsider maximum number of signatures
+Add failing verification test vectors that exercise edge cases.
+Add signing test vectors (passing and failing, including edge cases)
+Test latest version of hacspec (run through checker)
+Half-agg BIP has a max number of signatures (2^16), making testing easy</description></item></channel></rss>
