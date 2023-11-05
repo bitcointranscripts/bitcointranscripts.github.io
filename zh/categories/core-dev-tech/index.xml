@@ -31,7 +31,16 @@ A：面额字段有 8 个字节长，所以我觉得它足以放下 2100 万 BTC
 如果我们已经有了一个服务端，并且知道他们可以让我们完全去匿名化并且觉得无所谓，为什么不依赖他们代表我们给出地址呢？
 这里我们依然不能解决间隔控制问题。无论你自己运行服务器，还是别人帮助你，都有间隔控制问题。我有一个办法，但我们后面再说。所以，现在，你不是自己运行服务端，是别人运行服务端。一个新的问题出现了：要是服务端代表你给出了一个公钥，想要给你支付的人怎么确保那个公钥属于你呢？这个服务端完全可以尝试从中作梗，让支付者把钱打到他们的地址里去。
 答案是，你可以为支付给你的人安排一个公钥，并使用这个公钥签名放在服务端的所有地址。我可以使用这个身份公钥签名我交给服务端的所有公钥（或者说地址）。现在，当某人想要从服务端获得地址时，他们得到的将不仅有地址，还有对地址的签名。这保证了服务端无法骗人，无法给出错误的地址。
-在我们已经讲到的方法中，这是一种中庸的解决方案。它跟 btcpay 服务器只有细微的差别。而且其取舍也有趣。具体来说，这种方案假设，一些轻客户端已经在使用一种不完美的 —— 会把你的隐私暴露出去 —— 的方案了，所以也许会接受这种方案。我认为，因为这种隐私暴露，它不会是我们比特币社区想要的情形，但它们已经存在了，所以这种方案的取舍似乎也是合理的。</description></item><item><title>ROAST - Robust asynchronous Schnorr threshold signatures</title><link>https://btctranscripts.com/zh/tabconf/2022/2022-10-14-roast/</link><pubDate>Fri, 14 Oct 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/zh/tabconf/2022/2022-10-14-roast/</guid><description>论文：https://ia.cr/2022/550
+在我们已经讲到的方法中，这是一种中庸的解决方案。它跟 btcpay 服务器只有细微的差别。而且其取舍也有趣。具体来说，这种方案假设，一些轻客户端已经在使用一种不完美的 —— 会把你的隐私暴露出去 —— 的方案了，所以也许会接受这种方案。我认为，因为这种隐私暴露，它不会是我们比特币社区想要的情形，但它们已经存在了，所以这种方案的取舍似乎也是合理的。</description></item><item><title>Provably bug-free BIPs and implementations using hac-spec</title><link>https://btctranscripts.com/zh/tabconf/2022/2022-10-14-hac-spec/</link><pubDate>Fri, 14 Oct 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/zh/tabconf/2022/2022-10-14-hac-spec/</guid><description>https://nickler.ninja/
+引言 我是 Jonas，我的演讲主题是 “可证明无硬伤（bug-free）的 BIP 及其实现”。我还没有写出这样的 BIP，更不用说这样的实现了，但如果你的时间偏好足够低，在未来的某一天，这样的 BIP 会出现的。我的演讲只有 15 分钟，有任何问题都请举手。
+先补充一个背景。规范（specifications）就应该没有 bug，我们希望它易于实现、不容易被误解。这使得规范的编写成了一件缓慢而且吃力不讨好的事。
+本演讲将介绍一个提升整个流程、使之更少出错的小步骤。
+比特币升级提议 2 号 可能这里的许多人都熟悉 BIP2。BIP 应该长什么样？BIP 的流程应该怎么走？这都是在 BIP2 里面规范的，比如 “BIP 应该用 mediawiki 格式编写”。我猜，它也有自己的优点和缺点吧？但也还好。
+结果，大部分的 BIP 都是用 mediawiki 格式编写的，但也有一些补充性的材料，比如图表，就不是 mediawiki 格式的。总体上使用 mediawiki 格式。MuSig BIP 是一套签名规范 —— 我们先不管它说了什么 —— 但可读性是可疑的，不太好。只能说也不太糟。 它包含一些伪代码，是我们编写的。我们只是编写了某种形式的伪代码，也许人们可以读懂。比如你看这里，sec_nonce 是斜体的，这意味着它是一个数字或者说变量，但这很难看出来。“出错应该尽可能明显（fail if that fails）” 是一个极为重要的原则，但在规范中很难做到。
+另一个问题是正确性。这些伪代码显然无法在机器上执行，这意味着你没法为它们编写测试。即使 4 双、 6 双眼睛帮你看过了，也很难保证绝无错误，总可能有什么东西是大家都没注意到的。即使是 taproot BIP，也有各种各样的错误，比如位（bits）到整数（integers）的转换，等等。
+难事一桩。我们必须花更多时间来改善这种情况，而这会让整个流程变得更慢。
+参考代码 在 MuSig2 BIP 中，我们不止有伪代码，还有参考代码，是用 python 写的。Python 代码至少比伪代码好读，对实现者来说。事实上，它也是可以执行、可以测试的，我们设计了随机测试，还有测试界面，我们甚至使用了奇怪的 python 类型检查器（type-checker），来帮助发现 bug。看起来还好。
+论文 同一种东西还有第三种表示，就是 MuSig2 论文。它好不好读我就不知道了，论文用的是数学符号，不是计算机可以立即处理的东西。</description></item><item><title>ROAST - Robust asynchronous Schnorr threshold signatures</title><link>https://btctranscripts.com/zh/tabconf/2022/2022-10-14-roast/</link><pubDate>Fri, 14 Oct 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/zh/tabconf/2022/2022-10-14-roast/</guid><description>论文：https://ia.cr/2022/550
 幻灯片：https://slides.com/real-or-random/roast-tabconf22/
 哈咯各位，我叫 Tim，在 Blockstream 工作。本次演讲的内容是我跟几位合作者联合工作的成果。
 比特币中的 Schnorr 签名 最近，我们已经在比特币中支持了 Schnorr 签名，由 taproot 软分叉激活的 BIP340 引入。我们希望引入 Schnorr 签名并倾向于使用它而不是 ECDSA，有三大理由：一，Schnorr 签名的安全性有明确的证明，可以给理论工作者更强的信心；二，Schnorr 签名效率更高；三，最主要是，在 Schnorr 上我们可以更容易构造更高级的签名协议。
