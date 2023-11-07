@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>utxo on ₿itcoin Transcripts</title><link>https://btctranscripts.com/tags/utxo/</link><description>Recent content in utxo on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 01 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://btctranscripts.com/tags/utxo/index.xml" rel="self" type="application/rss+xml"/><item><title>UTXOs (Chaincode Decoded) - Episode 5</title><link>https://btctranscripts.com/chaincode-labs/chaincode-podcast/utxos-chaincode-decoded-episode-5/</link><pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/chaincode-labs/chaincode-podcast/utxos-chaincode-decoded-episode-5/</guid><description>Introduction John Newbery: 00:00:00
 If we go back in time to version 0.1, all that was stored was the blockchain and I think a marker saying whether that coin was spent or not. I mean that&amp;rsquo;s okay for your first version but it doesn&amp;rsquo;t really scale and it&amp;rsquo;s bad performance because every time you want to access a coin you need to read it from disk.
 Adam Jonas: 00:00:28
-Welcome back to the Chaincode Podcast.</description></item></channel></rss>
+Welcome back to the Chaincode Podcast.</description></item><item><title>Enterprise Wallets/UTXO Management</title><link>https://btctranscripts.com/chaincode-labs/chaincode-podcast/2020-11-09-enterprise-walletsutxo-management/</link><pubDate>Mon, 09 Nov 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/chaincode-labs/chaincode-podcast/2020-11-09-enterprise-walletsutxo-management/</guid><description>Mark Erhardt: 00:00:00
+Just to throw out a few numbers there, non-SegWit inputs cost almost 300 bytes, and native SegWit inputs cost slightly more than 100 bytes. There&amp;rsquo;s almost a reduction by two-thirds in fees if you switch from non-SegWit to native SegWit.
+Introduction Caralie Chrisco: 00:00:29
+Hi, everyone, welcome to the Chaincode podcast. My name is Caralie.
+Adam Jonas: 00:00:32
+And it&amp;rsquo;s Jonas.
+Caralie Chrisco: 00:00:33
+And we&amp;rsquo;re back!</description></item></channel></rss>

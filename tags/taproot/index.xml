@@ -50,7 +50,14 @@ The conversation has been anonymized by default to protect the identities of the
 Location: Real World Crypto
 MuSig2 paper: https://eprint.iacr.org/2020/1261.pdf
 Introduction This is about MuSig2, simple two round Schnorr multisignatures. This is joint work with Jonas Nick and Yannick Seurin. Jonas will be available to answer questions as I will be of course.
-Multi-Signatures The idea that with multisignatures is that n signers can get together and produce a single signature on a single message. To be clear for this talk when I talk about multisignatures what I mean is n-of-n signatures and not the more general setting of threshold signatures where you can have a threshold t that is smaller than n and have something like a t-of-n signatures.</description></item><item><title>MuSig, MuSig-DN and MuSig2</title><link>https://btctranscripts.com/stephan-livera-podcast/2020-10-27-jonas-nick-tim-ruffing-musig2/</link><pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2020-10-27-jonas-nick-tim-ruffing-musig2/</guid><description>Topic: MuSig, MuSig-DN and MuSig2
+Multi-Signatures The idea that with multisignatures is that n signers can get together and produce a single signature on a single message. To be clear for this talk when I talk about multisignatures what I mean is n-of-n signatures and not the more general setting of threshold signatures where you can have a threshold t that is smaller than n and have something like a t-of-n signatures.</description></item><item><title>Enterprise Wallets/UTXO Management</title><link>https://btctranscripts.com/chaincode-labs/chaincode-podcast/2020-11-09-enterprise-walletsutxo-management/</link><pubDate>Mon, 09 Nov 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/chaincode-labs/chaincode-podcast/2020-11-09-enterprise-walletsutxo-management/</guid><description>Mark Erhardt: 00:00:00
+Just to throw out a few numbers there, non-SegWit inputs cost almost 300 bytes, and native SegWit inputs cost slightly more than 100 bytes. There&amp;rsquo;s almost a reduction by two-thirds in fees if you switch from non-SegWit to native SegWit.
+Introduction Caralie Chrisco: 00:00:29
+Hi, everyone, welcome to the Chaincode podcast. My name is Caralie.
+Adam Jonas: 00:00:32
+And it&amp;rsquo;s Jonas.
+Caralie Chrisco: 00:00:33
+And we&amp;rsquo;re back!</description></item><item><title>MuSig, MuSig-DN and MuSig2</title><link>https://btctranscripts.com/stephan-livera-podcast/2020-10-27-jonas-nick-tim-ruffing-musig2/</link><pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2020-10-27-jonas-nick-tim-ruffing-musig2/</guid><description>Topic: MuSig, MuSig-DN and MuSig2
 Location: Stephan Livera Podcast
 Tim Ruffing on Schnorr multisig at London Bitcoin Devs: https://diyhpl.us/wiki/transcripts/london-bitcoin-devs/2020-06-17-tim-ruffing-schnorr-multisig/
 MuSig paper: https://eprint.iacr.org/2018/068.pdf
