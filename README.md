@@ -23,6 +23,22 @@ The `preview_branch.sh` script allows you to preview how the changes in your bra
 ./preview_branch.sh <your-github-account> <your-branch-name>
 ```
 
+### Website's metadata
+
+Metadata about the content of the website are automatically generated and can be found at:
+
+- [btctranscripts.com/status.json](https://btctranscripts.com/status.json)
+  ```
+    // information about the existing taxonomies & media
+    existing: {categories: [...], media: [...], speakers: [...], tags: [...] }
+    // information about which transcripts are missing which metadata field
+    missing: {categories: [...], date: [...], media: [...], speakers: [...], tags: [...], transcript_by: [...] }
+    // total number of transcripts for each language
+    transcripts: { en: 'xxx', es: 'xxx', pt: 'xxx', zh: 'xxx'}
+  ```
+- [btctranscripts.com/directories.json](https://btctranscripts.com/directories.json): information about all the existing directories and their total number of transcript (supports nesting up to 2 levels, which is the maximum nesting that we currently have, e.g. `scalingbitcoin/tokyo-2018/edgedevplusplus`).
+  
+
 ## i18n
 
 All i18n snippets can be found in the `/i18n` folder. Pre-configured languages are currently Spanish and Portuguese. If you'd like to propose a new language, you can do so by modifying the [site config](https://github.com/bitcointranscripts/bitcointranscripts.github.io/blob/master/config.toml) and translating the appropraite [i18n file](https://github.com/bitcointranscripts/bitcointranscripts.github.io/blob/master/i18n).
