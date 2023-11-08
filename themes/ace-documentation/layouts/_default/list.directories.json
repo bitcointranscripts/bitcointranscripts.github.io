@@ -1,0 +1,29 @@
+{{ range .Site.Sections }}
+    {{ $sectionKey := .File.ContentBaseName }}
+    {{ if ne $sectionKey "" }}
+        {{ $section := newScratch }}
+        {{ $.Scratch.SetInMap "result" $sectionKey (len .Pages) }}
+
+        {{ range .Pages }}
+            {{ if eq .BundleType "branch" }}
+                {{ $subsectionKey := .File.ContentBaseName }}
+                {{ $subsection := newScratch }}
+                {{ $section.Set $subsectionKey (len .Pages) }}
+
+                {{ range .Pages }}
+                    {{ if eq .BundleType "branch" }}
+                        {{ $subsection.Set .File.ContentBaseName (len .Pages) }}
+                    {{ end }}
+                {{ end }}
+                {{ if gt ($subsection.Values | len) 0 }}
+                    {{ $section.Set $subsectionKey $subsection.Values }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
+        {{ if gt ($section.Values | len) 0  }}
+            {{ $.Scratch.SetInMap "result" $sectionKey $section.Values }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+
+{{ $.Scratch.Get "result" | jsonify }}

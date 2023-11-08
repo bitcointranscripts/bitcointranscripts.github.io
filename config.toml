@@ -29,8 +29,26 @@ DefaultContentLanguage = "en"
     languageName = "简体中文"
     weight = 3
 
+[mediaTypes."application/json"]
+  suffixes = ["json"]
+
+[outputFormats.Index]
+  mediaType = "application/json"
+  baseName = "index"
+  isPlainText = true
+
+[outputFormats.Status]
+  mediaType = "application/json"
+  baseName = "status"
+  isPlainText = true
+
+[outputFormats.Directories]
+  mediaType = "application/json"
+  baseName = "directories"
+  isPlainText = true
+
 [outputs]
-    home = [ "HTML", "JSON"]
+    home = [ "HTML", "Status", "Directories", "Index"]
     page = [ "HTML"]
 
 [params]

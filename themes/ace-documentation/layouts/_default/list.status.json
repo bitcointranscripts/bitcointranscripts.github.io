@@ -1,0 +1,56 @@
+{{- $.Scratch.Set "missing" (dict "speakers" (slice) "date" (slice) "transcript_by" (slice) "categories" (slice) "tags" (slice) "media" (slice)) -}}
+{{- $.Scratch.Set "es" 0 -}}
+{{- $.Scratch.Set "pt" 0 -}}
+{{- $.Scratch.Set "zh" 0 -}}
+
+{{- range .Site.RegularPages -}}
+    {{- $params := .Params -}}
+    {{- $path := .Permalink -}}
+    {{- range $key, $value := $.Scratch.Get "missing" -}}
+        {{- if not (isset $params $key) -}}
+                
+            {{- $.Scratch.SetInMap "missing" $key ($value | append $path) -}}   
+        {{- end -}}
+    {{- end -}}
+
+    {{- with .Translations -}}
+        {{- range . -}}
+            {{- $lang := .Lang -}}
+            {{- $.Scratch.Add $lang 1 -}}
+        {{- end -}}
+    {{- end -}}
+
+{{- end -}}
+
+{{- $.Scratch.Set "transcripts" (dict "en" (len .Site.RegularPages) "es" ($.Scratch.Get "es") "pt" ($.Scratch.Get "pt") "zh" ($.Scratch.Get "zh")) -}}
+
+{{ $speakerData := slice }}
+{{ $tagData := slice }}
+{{ $categoryData := slice }}
+
+{{ range $speaker, $not_used := .Site.Taxonomies.speakers }}
+  {{ $speakerData = $speakerData | append  $speaker }}
+{{ end }}
+
+{{ range $tag, $not_used := .Site.Taxonomies.tags }}
+  {{ $tagData = $tagData | append $tag }}
+{{ end }}
+
+{{ range $category, $not_used := .Site.Taxonomies.categories }}
+  {{ $categoryData = $tagData | append $category }}
+{{ end }}
+
+{{ $media := slice }}
+
+{{ range .Site.RegularPages }}
+  {{ $mediaValue := .Params.media }}
+  {{ if $mediaValue }}
+    {{ $media = $media | append $mediaValue }}
+  {{ end }}
+{{ end }}
+
+{{ $jsonData := dict "speakers" $speakerData "tags" $tagData "categories" $categoryData "media" $media }}
+{{- $.Scratch.SetInMap "status" "existing" $jsonData -}}
+{{- $.Scratch.SetInMap "status" "missing" ($.Scratch.Get "missing") -}}
+{{- $.Scratch.SetInMap "status" "transcripts" ($.Scratch.Get "transcripts") -}}
+{{- $.Scratch.Get "status" | jsonify -}}
