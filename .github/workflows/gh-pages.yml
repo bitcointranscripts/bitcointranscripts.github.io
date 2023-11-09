@@ -22,6 +22,9 @@ jobs:
 
       - name: Build
         run: hugo --minify
+        env:
+          HUGO_UMAMI_SOURCE: ${{ secrets.HUGO_UMAMI_SOURCE }}
+          HUGO_UMAMI_WEBSITE_ID: "${{ secrets.HUGO_UMAMI_WEBSITE_ID }}"
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
