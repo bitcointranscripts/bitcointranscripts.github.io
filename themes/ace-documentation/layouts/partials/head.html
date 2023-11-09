@@ -23,6 +23,9 @@
     <!-- Only include the tracking when using `hugo` or adding `--environment production` -->
     {{ if eq hugo.Environment "production" }}
         {{- partial "twitter_cards.html" . -}}
+        {{- $umami := getenv "HUGO_UMAMI_SOURCE" -}}
+        {{- $umamiID := getenv "HUGO_UMAMI_WEBSITE_ID" -}}
+        <script async src="{{ $umami }}" data-website-id="{{ $umamiID }}"></script>
     {{ end }}
 
 </head>
