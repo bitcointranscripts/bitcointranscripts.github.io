@@ -307,7 +307,18 @@ Intro Adam Jonas (AJ): Welcome to the Chaincode podcast Carl.
 Carl Dong (CD): Hello.
 AJ: You know we’ve been doing this podcast for a while now. How come you haven’t been on the show yet?
 CD: We’ve been at home.
-AJ: We did a few episodes before that though.</description></item><item><title>Enterprise Wallets/UTXO Management</title><link>https://btctranscripts.com/chaincode-labs/chaincode-podcast/2020-11-09-enterprise-walletsutxo-management/</link><pubDate>Mon, 09 Nov 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/chaincode-labs/chaincode-podcast/2020-11-09-enterprise-walletsutxo-management/</guid><description>Mark Erhardt: 00:00:00
+AJ: We did a few episodes before that though.</description></item><item><title>Erebus Attacks And How To Stop Them With ASMAP</title><link>https://btctranscripts.com/bitcoin-magazine/bitcoin-explained/erebus-attacks-and-how-to-stop-them-with-asmap/</link><pubDate>Thu, 19 Nov 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-magazine/bitcoin-explained/erebus-attacks-and-how-to-stop-them-with-asmap/</guid><description>Aaron van Wirdum: 00:00:07
+Live from Utrecht, this is The Van Wirdum Sjorsnado.
+Sjors Provoost: 00:00:10
+Hello!
+Aaron van Wirdum: 00:00:10
+Hey Sjors. What&amp;rsquo;s up? We got a market cap all time high, did you celebrate?
+Sjors Provoost: 00:00:14
+No, I did not because it&amp;rsquo;s just dilution.
+Aaron van Wirdum: 00:00:16
+What do you mean?
+Sjors Provoost: 00:00:17
+I mean somebody&amp;rsquo;s making more Bitcoin. So it&amp;rsquo;s fun that the market cap goes up, but it doesn&amp;rsquo;t matter unless you&amp;hellip;</description></item><item><title>Enterprise Wallets/UTXO Management</title><link>https://btctranscripts.com/chaincode-labs/chaincode-podcast/2020-11-09-enterprise-walletsutxo-management/</link><pubDate>Mon, 09 Nov 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/chaincode-labs/chaincode-podcast/2020-11-09-enterprise-walletsutxo-management/</guid><description>Mark Erhardt: 00:00:00
 Just to throw out a few numbers there, non-SegWit inputs cost almost 300 bytes, and native SegWit inputs cost slightly more than 100 bytes. There&amp;rsquo;s almost a reduction by two-thirds in fees if you switch from non-SegWit to native SegWit.
 Introduction Caralie Chrisco: 00:00:29
 Hi, everyone, welcome to the Chaincode podcast. My name is Caralie.

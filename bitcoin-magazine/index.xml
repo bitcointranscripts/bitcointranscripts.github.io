@@ -19,7 +19,18 @@ Additional argument for LOT=false (F7): https://lists.linuxfoundation.org/piperm
 Aaron van Wirdum article on LOT=true or LOT=false: https://bitcoinmagazine.com/articles/lottrue-or-lotfalse-this-is-the-last-hurdle-before-taproot-activation
 Intro Aaron van Wirdum (AvW): Live from Utrecht, this is the van Wirdum Sjorsnado. Sjors, make the pun.
 Sjors Provoost (SP): We have a “lot” to talk about.
-AvW: We have a “lot” to discuss. In this episode we are going to discuss the Taproot activation process and the debate surrounding it on the parameter lot, lockinontimeout which can be set to true and false.</description></item><item><title>Taproot Activation</title><link>https://btctranscripts.com/bitcoin-magazine/2020-08-03-eric-lombrozo-luke-dashjr-taproot-activation/</link><pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-magazine/2020-08-03-eric-lombrozo-luke-dashjr-taproot-activation/</guid><description>Topic: How to Activate a New Soft Fork
+AvW: We have a “lot” to discuss. In this episode we are going to discuss the Taproot activation process and the debate surrounding it on the parameter lot, lockinontimeout which can be set to true and false.</description></item><item><title>Erebus Attacks And How To Stop Them With ASMAP</title><link>https://btctranscripts.com/bitcoin-magazine/bitcoin-explained/erebus-attacks-and-how-to-stop-them-with-asmap/</link><pubDate>Thu, 19 Nov 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-magazine/bitcoin-explained/erebus-attacks-and-how-to-stop-them-with-asmap/</guid><description>Aaron van Wirdum: 00:00:07
+Live from Utrecht, this is The Van Wirdum Sjorsnado.
+Sjors Provoost: 00:00:10
+Hello!
+Aaron van Wirdum: 00:00:10
+Hey Sjors. What&amp;rsquo;s up? We got a market cap all time high, did you celebrate?
+Sjors Provoost: 00:00:14
+No, I did not because it&amp;rsquo;s just dilution.
+Aaron van Wirdum: 00:00:16
+What do you mean?
+Sjors Provoost: 00:00:17
+I mean somebody&amp;rsquo;s making more Bitcoin. So it&amp;rsquo;s fun that the market cap goes up, but it doesn&amp;rsquo;t matter unless you&amp;hellip;</description></item><item><title>Taproot Activation</title><link>https://btctranscripts.com/bitcoin-magazine/2020-08-03-eric-lombrozo-luke-dashjr-taproot-activation/</link><pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-magazine/2020-08-03-eric-lombrozo-luke-dashjr-taproot-activation/</guid><description>Topic: How to Activate a New Soft Fork
 Location: Bitcoin Magazine (online)
 Aaron van Wirdum in Bitcoin Magazine on BIP 8, BIP 9 or Modern Soft Fork Activation: https://bitcoinmagazine.com/articles/bip-8-bip-9-or-modern-soft-fork-activation-how-bitcoin-could-upgrade-next
 David Harding on Taproot activation proposals: https://gist.github.com/harding/dda66f5fd00611c0890bdfa70e28152d
