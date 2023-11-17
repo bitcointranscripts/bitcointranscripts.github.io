@@ -66,7 +66,13 @@ Intro Hi everyone. I’m Carl Dong from Chaincode Labs and I’m here to talk ab
 Name: Socratic Seminar
 Location: London BitDevs (online)
 Reading list: https://gist.github.com/michaelfolkson/f46a7085af59b2e7b9a79047155c3993
-Intros Michael Folkson (MF): This is a discussion on AssumeUTXO. We are lucky to have James O’Beirne on the call. There is a reading list that I will share in a second with a bunch of links going right from concept, some of the podcasts James has done, a couple of presentations James has done. And then towards the end hopefully we will get pretty technical and in the weeds of some of the current, past and future PRs.</description></item><item><title>Learning Bitcoin Core Contribution &amp; Hosting PR Review Club</title><link>https://btctranscripts.com/stephan-livera-podcast/2020-10-02-gloria-zhao-bitcoin-core/</link><pubDate>Fri, 02 Oct 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2020-10-02-gloria-zhao-bitcoin-core/</guid><description>podcast: https://stephanlivera.com/episode/216/
+Intros Michael Folkson (MF): This is a discussion on AssumeUTXO. We are lucky to have James O’Beirne on the call. There is a reading list that I will share in a second with a bunch of links going right from concept, some of the podcasts James has done, a couple of presentations James has done. And then towards the end hopefully we will get pretty technical and in the weeds of some of the current, past and future PRs.</description></item><item><title>Replace-by-Fee Bug (CVE-2021-31876)</title><link>https://btctranscripts.com/bitcoin-magazine/bitcoin-explained/replace-by-fee-bug-cve-2021-31876/</link><pubDate>Fri, 21 May 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-magazine/bitcoin-explained/replace-by-fee-bug-cve-2021-31876/</guid><description>Intro Aaron van Wirdum: 00:00:08
+Live from (?), Aruba and Utrecht, the Netherlands, this is The Van Wirdum Sjorsnado.
+Sjors Provoost: 00:00:15
+Hello, welcome, and listeners, sorry for the maybe not perfect sound quality, because we have to make do with the remote recording.
+Aaron van Wirdum: 00:00:24
+Yeah, for the second time since we&amp;rsquo;re making our show my laptop broke, so here I am on my phone.
+Sjors Provoost: 00:00:32</description></item><item><title>Learning Bitcoin Core Contribution &amp; Hosting PR Review Club</title><link>https://btctranscripts.com/stephan-livera-podcast/2020-10-02-gloria-zhao-bitcoin-core/</link><pubDate>Fri, 02 Oct 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2020-10-02-gloria-zhao-bitcoin-core/</guid><description>podcast: https://stephanlivera.com/episode/216/
 Stephan Livera:
 Gloria. Welcome to the show.
 Gloria Zhao:
