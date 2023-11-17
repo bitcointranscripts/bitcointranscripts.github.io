@@ -155,3 +155,11 @@ a {
 img {
     width: 100%;
 }
+
+.sticky-banner {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 56px; /* based on the height of the navbar */
+    z-index: 1020;
+    font-size: $font-size-sm;
+  }
