@@ -5,4 +5,5 @@ Reconsider maximum number of signatures
 Add failing verification test vectors that exercise edge cases.
 Add signing test vectors (passing and failing, including edge cases)
 Test latest version of hacspec (run through checker)
-Half-agg BIP has a max number of signatures (2^16), making testing easy</description></item></channel></rss>
+Half-agg BIP has a max number of signatures (2^16), making testing easy</description></item><item><title>Libsec Panel</title><link>https://btctranscripts.com/bitcoin-review-podcast/libsec-panel/</link><pubDate>Fri, 08 Sep 2023 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-review-podcast/libsec-panel/</guid><description>Intros NVK: I have an absolute rock star team here. So why don&amp;rsquo;t I start introducing the panel? Tim, hello! Do you want to tell a very brief what do you do?
+Tim: Yes, so my name is Tim Ruffing. I am a maintainer of the libsecp256k1 library. I do work for Blockstream, who pay me to do this and also who pay me to do research on cryptography and all kinds of aspects related to Bitcoin.</description></item></channel></rss>
