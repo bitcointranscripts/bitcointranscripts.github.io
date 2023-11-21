@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>cryptography on ₿itcoin 记录稿</title><link>https://btctranscripts.com/zh/tags/cryptography/</link><description>Recent content in cryptography on ₿itcoin 记录稿</description><generator>Hugo -- gohugo.io</generator><language>zh</language><lastBuildDate>Fri, 14 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://btctranscripts.com/zh/tags/cryptography/index.xml" rel="self" type="application/rss+xml"/><item><title>Provably bug-free BIPs and implementations using hac-spec</title><link>https://btctranscripts.com/zh/tabconf/2022/2022-10-14-hac-spec/</link><pubDate>Fri, 14 Oct 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/zh/tabconf/2022/2022-10-14-hac-spec/</guid><description>https://nickler.ninja/
+引言 我是 Jonas，我的演讲主题是 “可证明无硬伤（bug-free）的 BIP 及其实现”。我还没有写出这样的 BIP，更不用说这样的实现了，但如果你的时间偏好足够低，在未来的某一天，这样的 BIP 会出现的。我的演讲只有 15 分钟，有任何问题都请举手。
+先补充一个背景。规范（specifications）就应该没有 bug，我们希望它易于实现、不容易被误解。这使得规范的编写成了一件缓慢而且吃力不讨好的事。
+本演讲将介绍一个提升整个流程、使之更少出错的小步骤。
+比特币升级提议 2 号 可能这里的许多人都熟悉 BIP2。BIP 应该长什么样？BIP 的流程应该怎么走？这都是在 BIP2 里面规范的，比如 “BIP 应该用 mediawiki 格式编写”。我猜，它也有自己的优点和缺点吧？但也还好。
+结果，大部分的 BIP 都是用 mediawiki 格式编写的，但也有一些补充性的材料，比如图表，就不是 mediawiki 格式的。总体上使用 mediawiki 格式。MuSig BIP 是一套签名规范 —— 我们先不管它说了什么 —— 但可读性是可疑的，不太好。只能说也不太糟。 它包含一些伪代码，是我们编写的。我们只是编写了某种形式的伪代码，也许人们可以读懂。比如你看这里，sec_nonce 是斜体的，这意味着它是一个数字或者说变量，但这很难看出来。“出错应该尽可能明显（fail if that fails）” 是一个极为重要的原则，但在规范中很难做到。
+另一个问题是正确性。这些伪代码显然无法在机器上执行，这意味着你没法为它们编写测试。即使 4 双、 6 双眼睛帮你看过了，也很难保证绝无错误，总可能有什么东西是大家都没注意到的。即使是 taproot BIP，也有各种各样的错误，比如位（bits）到整数（integers）的转换，等等。
+难事一桩。我们必须花更多时间来改善这种情况，而这会让整个流程变得更慢。
+参考代码 在 MuSig2 BIP 中，我们不止有伪代码，还有参考代码，是用 python 写的。Python 代码至少比伪代码好读，对实现者来说。事实上，它也是可以执行、可以测试的，我们设计了随机测试，还有测试界面，我们甚至使用了奇怪的 python 类型检查器（type-checker），来帮助发现 bug。看起来还好。
+论文 同一种东西还有第三种表示，就是 MuSig2 论文。它好不好读我就不知道了，论文用的是数学符号，不是计算机可以立即处理的东西。</description></item></channel></rss>

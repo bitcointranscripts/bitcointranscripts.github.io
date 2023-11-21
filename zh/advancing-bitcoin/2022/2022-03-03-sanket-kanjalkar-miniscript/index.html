@@ -37,7 +37,7 @@ OP_IF # 用于惩罚交易 <revocationpubkey> OP_ELSE `to_self_delay` # 自主�
 </code></pre><p>使用比特币脚本的操作码，你可以写出一模一样的比特币脚本；但你可以用一种更加结构化的方法来编码它，而不是直接用比特币脚本的裸字节来分析它。因为你有了结构，语义分析就变得更加容易。只要看这段代码，你很容易就能看出，这是一个 OR（或条件），只要我拥有公钥 A 和 B 背后的私钥，我就可以花费它。因为它是结构化的，所以你可以编写运行在这种结构上的软件，还可以回答这样的问题：“如果我只有紧急密钥，这个输出才刚刚形成，我能花费它吗？” 程序就可以为你输出答案。代码中还有一些奇怪的标记 <code>d</code> 、 <code>v</code> 和 <code>vc</code> ，是组合的规则；这里面有一些技术细节，跟你使用 Miniscript 的方式有关，但用户可以直接忽略。这是为想要编写 Miniscript 代码的人准备的，但如果你只是想分析你的 Miniscript 钱包的行为，你可以忽略这些细节。这个 <code>phk</code> 你可以假设是独立的部分。在你分析比特币脚本时，你可以忘记这些东西。</p><p>技术上来说，Miniscript 也是比特币脚本。用高级语言来编码的想法并不新鲜。以前人们也想过这样的东西。有人写过编译器（compiler）。但 Miniscript 有一些独特之处。首先，它属于 Script 。它不会编译成另一种语言。如果你有一段脚本，你可以在 Script 和 Miniscript 之间作一对一的映射。只要你得到了相应的 Miniscript 代码，你也就得到了比特币脚本。虽然底层的东西是相同的、解释器也用相同的方式执行，但 Miniscript 代表了一种不同的思考方法。Miniscript 项目的一个很好的愿景是，开发者应该忘记堆栈的存在。在脚本中，你安排自己想要执行的指令，有一个 OP_CHECKSIGADD 操作码，它会读取 3 个参数，如果通过，就会给数值增加 <code>1</code> 。但有了 Miniscript，你应该直接认为这里有一个 <code>multi</code> 函数，你只需要提供一些东西来满足它。我想要思考的是，我需要什么东西来执行这些代码，而不是应该给脚本机器输入什么指令。所有的转换工作，把脚本转成 Miniscript 代码、把 Miniscript 代码转成脚本，都由 Miniscript 技术自身来完成。开发者只需要思考他们在乎的东西。作为一个开发者，你知道自己想处理什么样的威胁模型，那么你就该专注于此，让 Miniscript 来处理你怎么描述它们以及如何编写成脚本这样的问题。与堆栈方法不同，Miniscript 采用了一种函数式、组合式的方法，真正帮我们以结构化的方法完成了编码。</p><h1 id=miniscript-翻译成-script>Miniscript 翻译成 Script</h1><p>检查公钥签名（check(key)）</p><pre tabindex=0><code>pk(key) # 此为 Miniscript 代码
  &lt;key&gt;  # 此为转化成的脚本。下文相同，一行 Miniscript 一行脚本。译者注
 
-pk_h(key) 
+pk_h(key)
 OP_DUP OP_HASH160 &lt;HASH160(key)&gt; OP_EQUALVERIFY
 </code></pre><p>或条件（X or Z）</p><pre tabindex=0><code>or_b(X,Z)
 [X] [Z] OP_BOOLOR
