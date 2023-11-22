@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>soft fork on ₿itcoin Transcripts</title><link>https://btctranscripts.com/tags/soft-fork/</link><description>Recent content in soft fork on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 17 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://btctranscripts.com/tags/soft-fork/index.xml" rel="self" type="application/rss+xml"/><item><title>Taproot Activation</title><link>https://btctranscripts.com/stephan-livera-podcast/2021-03-17-luke-dashjr-taproot-activation/</link><pubDate>Wed, 17 Mar 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2021-03-17-luke-dashjr-taproot-activation/</guid><description>Topic: How Bitcoin UASF went down, Taproot LOT=true, Speedy Trial, Small Blocks
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>soft fork on ₿itcoin Transcripts</title><link>https://btctranscripts.com/tags/soft-fork/</link><description>Recent content in soft fork on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 18 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://btctranscripts.com/tags/soft-fork/index.xml" rel="self" type="application/rss+xml"/><item><title>Explaining Segregated Witness</title><link>https://btctranscripts.com/bitcoin-magazine/bitcoin-explained/explaining-segregated-witness/</link><pubDate>Thu, 18 Mar 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-magazine/bitcoin-explained/explaining-segregated-witness/</guid><description>Aaron: 00:01:46
+Live from Utrecht. This is The Van Wirdum Sjorsnado. Hello. Sjors, we&amp;rsquo;re going to talk about a classic today.
+Sjors: 00:01:52
+Yeah. We&amp;rsquo;re going to party like it&amp;rsquo;s 2015.
+Aaron: 00:01:55
+SegWit.
+Segregated Witness Sjors: 00:01:56
+That&amp;rsquo;s right.
+Aaron: 00:01:57
+Segregated Witness, which was the previous soft fork, well, was the last soft fork. We&amp;rsquo;re working towards a Taproot soft fork now.
+Sjors: 00:02:06
+It&amp;rsquo;s the last soft fork we know of.</description></item><item><title>Taproot Activation</title><link>https://btctranscripts.com/stephan-livera-podcast/2021-03-17-luke-dashjr-taproot-activation/</link><pubDate>Wed, 17 Mar 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2021-03-17-luke-dashjr-taproot-activation/</guid><description>Topic: How Bitcoin UASF went down, Taproot LOT=true, Speedy Trial, Small Blocks
 Location: Stephan Livera Podcast
 Luke Dashjr arguments against LOT=false: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-February/018498.html
 T1-T6 and F1-F6 arguments for LOT=true and LOT=false: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-February/018380.html
