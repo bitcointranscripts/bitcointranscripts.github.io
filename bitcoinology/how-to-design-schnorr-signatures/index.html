@@ -1,0 +1,407 @@
+<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=canonical href=https://btctranscripts.com/bitcoinology/how-to-design-schnorr-signatures/><title>How to Design Schnorr Signatures | ₿itcoin Transcripts
+</title><link href=https://btctranscripts.com/css/fontawesome.min.css rel=stylesheet><link rel=stylesheet href=https://btctranscripts.com/css/ace.min.css><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://btctranscripts.com/images/btctranscripts.png"><meta name=twitter:title content="Adam Gibson - How to Design Schnorr Signatures"><meta name=twitter:description content="Passwords So, I&rsquo;m going to talk to you today about passwords and about the problem with passwords and how we might be able to solve it, right? So we&rsquo;re all familiar with using passwords on the internet and we&rsquo;re all sort of sometimes annoyed about it. Maybe you use a password manager, maybe you don&rsquo;t, but you have this problem, I think we all understand this problem that it&rsquo;s not just about you losing the password, but it&rsquo;s also about keeping it secret, right?"><script async src=https://visits.bitcoindevs.xyz/script.js data-website-id=06384ada-7f1c-44c2-a6d9-d830fb23e122></script></head><body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id=navbarMain><div class=container><div><a class=navbar-brand href=/>₿itcoin Transcripts</a></div><div class="collapse navbar-collapse" id=navbarMainCollapse><ul class="navbar-nav ml-auto"><li class=nav-item><a class=nav-link href=/es>es</a></li><li class=nav-item><a class=nav-link href=/pt>pt</a></li><li class=nav-item><a class=nav-link href=/zh>zh</a></li><li class=nav-item><a class=nav-link href=https://github.com/bitcointranscripts/bitcointranscripts target=_blank><i class='fab fa-github'></i></a></li></ul></div></div></nav><div class="alert alert-warning fade show sticky-banner" role=alert><strong><a href=https://review.btctranscripts.com target=_blank data-umami-event=click-banner>Get paid to review technical Bitcoin transcripts
+</a></strong><button type=button class=close data-dismiss=alert aria-label=Close>
+<span aria-hidden=true>&#215;</span></button></div><div class=container-fluid><div class=row><div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0"><button class="navbar-toggler navbar-toggler-right collapsed" type=button data-toggle=collapse data-target=#sidenav-left-collapse aria-controls=sidenav-left-collapse aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse align-items-start flex-column" id=sidenav-left-collapse><form class="form-inline my-2 my-lg-0 searchbox"><input class="form-control mr-sm-2 w-100" data-search-input id=search-by type=text placeholder='Search (press "/")'></form><ul class="navbar-nav flex-column pt-3"><li data-nav-id=/adopting-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/adopting-bitcoin/><h6>Adopting Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/adopting-bitcoin/2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/adopting-bitcoin/2021/><h6>Adopting Bitcoin 2021</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/advancing-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/><h6>Advancing Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/advancing-bitcoin/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2019/><h6>Advancing Bitcoin 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/advancing-bitcoin/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2020/><h6>Advancing Bitcoin 2020</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/advancing-bitcoin/2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2022/><h6>Advancing Bitcoin 2022</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/advancing-bitcoin/2023/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2023/><h6>Advancing Bitcoin 2023</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/andreas-antonopoulos/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/andreas-antonopoulos/><h6>Andreas Antonopoulos</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/austin-bitcoin-developers/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/austin-bitcoin-developers/><h6>Austin Bitcoin Developers</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/baltic-honeybadger/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/><h6>Baltic Honeybadger</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/baltic-honeybadger/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/2018/><h6>Baltic Honeybadger 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/baltic-honeybadger/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/2019/><h6>Baltic Honeybadger 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bit-block-boom/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bit-block-boom/><h6>Bit Block Boom</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bit-block-boom/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bit-block-boom/2019/><h6>Bit Block Boom 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-core-dev-tech/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/><h6>Bitcoin Core Dev Tech</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bitcoin-core-dev-tech/2015-02/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2015-02/><h6>Bitcoin Core Dev Tech 2015</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2017-09/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2017-09/><h6>Bitcoin Core Dev Tech 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2018-03/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2018-03/><h6>Bitcoin Core Dev Tech 2018 (Mar)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2018-10/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2018-10/><h6>Bitcoin Core Dev Tech 2018 (Oct)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2019-06/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2019-06/><h6>Bitcoin Core Dev Tech 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2022-10/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2022-10/><h6>Bitcoin Core Dev Tech 2022</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2023-04/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2023-04/><h6>Bitcoin Core Dev Tech 2023 (Apr)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2023-09/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2023-09/><h6>Bitcoin Core Dev Tech 2023 (Sept)</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-design/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-design/><h6>Bitcoin Design</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/edgedevplusplus/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/edgedevplusplus/><h6>Bitcoin Edge Dev++</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/edgedevplusplus/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/edgedevplusplus/2017/><h6>Bitcoin Edge Dev++ 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/edgedevplusplus/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/edgedevplusplus/2018/><h6>Bitcoin Edge Dev++ 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/edgedevplusplus/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/edgedevplusplus/2019/><h6>Bitcoin Edge Dev++ 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-magazine/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-magazine/><h6>Bitcoin Magazine</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bitcoin-magazine/bitcoin-explained/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-magazine/bitcoin-explained/><h6>Bitcoin Explained</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-review-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-review-podcast/><h6>Bitcoin Review Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoinplusplus/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinplusplus/><h6>Bitcoin++</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bitcoinplusplus/2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinplusplus/2022/><h6>Bitcoin++ 2022</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoinology/ class="nav-item my-1 parent haschildren"><a class="nav-link p-0" href=/bitcoinology/><h6>Bitcoinology</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoinops/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinops/><h6>Bitcoinops</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcointranscripts/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcointranscripts/><h6>Bitcointranscripts</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/blockchain-protocol-analysis-security-engineering/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/><h6>Blockchain Protocol Analysis Security Eng</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/blockchain-protocol-analysis-security-engineering/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2017/><h6>Blockchain Protocol Analysis Security Engineering 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/blockchain-protocol-analysis-security-engineering/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2018/><h6>Blockchain Protocol Analysis Security Engineering 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/blockstream-webinars/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockstream-webinars/><h6>Blockstream Webinars</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/boltathon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/boltathon/><h6>Boltathon</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/breaking-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/><h6>Breaking Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/breaking-bitcoin/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/2017/><h6>Breaking Bitcoin 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/breaking-bitcoin/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/2019/><h6>Breaking Bitcoin 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/building-on-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/building-on-bitcoin/><h6>Building On Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/building-on-bitcoin/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/building-on-bitcoin/2018/><h6>Building On Bitcoin 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/c-lightning/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/c-lightning/><h6>c-lightning</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/chaincode-labs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-labs/><h6>Chaincode Labs</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/chaincode-labs/chaincode-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-labs/chaincode-podcast/><h6>Chaincode Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/chaincode-labs/chaincode-residency/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-labs/chaincode-residency/><h6>Chaincode Residency</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/chicago-bitdevs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chicago-bitdevs/><h6>Chicago Bitdevs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/coindesk-consensus-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coindesk-consensus-2016/><h6>Coindesk Consensus</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/coordination-of-decentralized-finance-workshop/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/><h6>Coordination of Decentralized Finance</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/coordination-of-decentralized-finance-workshop/2020-stanford/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/2020-stanford/><h6>2020 Stanford</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/cppcon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/><h6>CPPcon</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/cppcon/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/2017/><h6>CPPcon 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/cppcon/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/2020/><h6>CPPcon 2020</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/cryptoeconomic-systems/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cryptoeconomic-systems/><h6>Cryptoeconomic Systems</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/cryptoeconomic-systems/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cryptoeconomic-systems/2019/><h6>Cryptoeconomic Systems 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/dallas-bitcoin-symposium/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/dallas-bitcoin-symposium/><h6>Dallas Bitcoin Symposium</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/decentralized-financial-architecture-workshop/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/decentralized-financial-architecture-workshop/><h6>Decentralized Financial Architecture Workshop</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-developers-miners-meeting-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-developers-miners-meeting-2016/><h6>Developers-Miners Meeting</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/greg-maxwell/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/greg-maxwell/><h6>Greg Maxwell</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/grincon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/grincon/><h6>Grincon</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/grincon/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/grincon/2019/><h6>Grincon 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/honey-badger-diaries/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/honey-badger-diaries/><h6>Honey Badger Diaries</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/iacr/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/iacr/><h6>IACR Crypto</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/la-bitdevs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/la-bitdevs/><h6>LA Bitdevs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/layer2-summit/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/layer2-summit/><h6>Layer2 Summit</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/layer2-summit/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/layer2-summit/2018/><h6>Layer2 Summit 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/lets-talk-bitcoin-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lets-talk-bitcoin-podcast/><h6>Lets Talk Bitcoin Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/lightning-conference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-conference/><h6>Lightning Conference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/lightning-conference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-conference/2019/><h6>Lightning Conference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/lightning-hack-day/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-hack-day/><h6>Lightning Hack Day</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/lightning-specification/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-specification/><h6>Lightning Specification</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/london-bitcoin-devs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/london-bitcoin-devs/><h6>London Bitcoin Devs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/magicalcryptoconference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/magicalcryptoconference/><h6>Magicalcryptoconference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/magicalcryptoconference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/magicalcryptoconference/2019/><h6>Magicalcryptoconference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/misc/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/misc/><h6>Misc</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/><h6>MIT Bitcoin Expo</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2015/><h6>Mit Bitcoin Expo 2015</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2016/><h6>Mit Bitcoin Expo 2016</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2017/><h6>Mit Bitcoin Expo 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2018/><h6>Mit Bitcoin Expo 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2019/><h6>Mit Bitcoin Expo 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2020/><h6>Mit Bitcoin Expo 2020</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2021/><h6>Mit Bitcoin Expo 2021</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2022/><h6>MIT Bitcoin Expo 2022</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/munich-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/munich-meetup/><h6>Munich Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/noded-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/noded-podcast/><h6>Noded Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/realworldcrypto/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/><h6>Realworldcrypto</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/realworldcrypto/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/2018/><h6>Realworldcrypto 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/realworldcrypto/2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/2021/><h6>Realworldcrypto 2021</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/rebooting-web-of-trust/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/rebooting-web-of-trust/><h6>Rebooting Web Of Trust</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/rebooting-web-of-trust/2019-prague/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/rebooting-web-of-trust/2019-prague/><h6>2019 Prague</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/ruben-somsen/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/ruben-somsen/><h6>Ruben Somsen</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/satoshi-roundtable/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/satoshi-roundtable/><h6>Satoshi Roundtable</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/satoshi-roundtable/sr-004/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/satoshi-roundtable/sr-004/><h6>Sr 004</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/scalingbitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/><h6>Scaling Bitcoin Conference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/scalingbitcoin/hong-kong-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/hong-kong-2015/><h6>Hong Kong (2015)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/milan-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/milan-2016/><h6>Milan (2016)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/montreal-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/montreal-2015/><h6>Montreal (2015)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/stanford-2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/><h6>Stanford (2017)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/tel-aviv-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/><h6>Tel Aviv (2019)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/tokyo-2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/><h6>Tokyo (2018)</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/sf-bitcoin-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/sf-bitcoin-meetup/><h6>SF Bitcoin Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/simons-institute/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/simons-institute/><h6>Simons Institute</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/stanford-blockchain-conference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/><h6>Stanford Blockchain</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/stanford-blockchain-conference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/2019/><h6>Stanford Blockchain Conference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/stanford-blockchain-conference/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/2020/><h6>Stanford Blockchain Conference 2020</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/stephan-livera-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stephan-livera-podcast/><h6>Stephan Livera Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/sydney-bitcoin-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/sydney-bitcoin-meetup/><h6>Sydney Bitcoin Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/tabconf/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tabconf/><h6>TABConf</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/tabconf/2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tabconf/2021/><h6>TABConf 2021</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/tabconf/2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tabconf/2022/><h6>TABConf 2022</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/texas-bitcoin-conference-2014/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/texas-bitcoin-conference-2014/><h6>Texas Bitcoin Conference</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/tftc-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tftc-podcast/><h6>TFTC Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/verifiable-delay-functions/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/verifiable-delay-functions/><h6>Verifiable Delay Functions</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/verifiable-delay-functions/vdf-day-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/verifiable-delay-functions/vdf-day-2019/><h6>Vdf Day 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/vr-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/vr-bitcoin/><h6>VR Bitcoin</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/w3-blockchain-workshop-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/w3-blockchain-workshop-2016/><h6>W3 Blockchain Workshop</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/wasabi-research-club/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/wasabi-research-club/><h6>Wasabi Research Club</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/what-bitcoin-did-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/what-bitcoin-did-podcast/><h6>What Bitcoin Did Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></div></nav></div><div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky"><div class=docs-toc><nav id=TableOfContents><ul><li><ul><li><a href=#passwords>Passwords</a></li><li><a href=#public-key-cryptography>Public key Cryptography</a></li><li><a href=#commitments>Commitments</a></li><li><a href=#commitment-scheme--challenge-response>Commitment Scheme + Challenge Response</a></li><li><a href=#failure-in-hiding>Failure in hiding</a></li><li><a href=#failure-in-binding>Failure in binding</a></li><li><a href=#schnorr-identity-protocol-hiding--biding>Schnorr Identity Protocol hiding & biding</a></li><li><a href=#non-interactive-schnorr-signatures>Non-interactive Schnorr signatures</a></li><li><a href=#usage-irl>Usage IRL</a></li><li><a href=#history-of-schnorr-signatures>History of Schnorr Signatures</a></li></ul></li></ul></nav></div></div><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3"><a href=/>Home</a>
+&lt; <a href=/bitcoinology/>Bitcoinology
+</a>&lt; How to Design Schnorr Signatures<h1>How to Design Schnorr Signatures</h1><p>Speakers:
+<a href=/speakers/adam-gibson>Adam Gibson</a></p><p><i>Date: March 14, 2022</i></p><p><i>Transcript By: Shourya742 via review.btctranscripts.com</i></p><p>Tags:
+<a href=/tags/schnorr>Schnorr</a>, <a href=/tags/cryptography>Cryptography</a></p><p>Category:
+<a href=/categories/video>Video</a></p><p>Media:
+<a href='https://www.youtube.com/watch?v=wjACBRJDfxc'>https://www.youtube.com/watch?v=wjACBRJDfxc</a></p><h2 id=passwords>Passwords</h2><p>So, I&rsquo;m going to talk to you today about passwords and about the problem with passwords and how we might be able to solve it, right?
+So we&rsquo;re all familiar with using passwords on the internet and we&rsquo;re all sort of sometimes annoyed about it.
+Maybe you use a password manager, maybe you don&rsquo;t, but you have this problem, I think we all understand this problem that it&rsquo;s not just about you losing the password, but it&rsquo;s also about keeping it secret, right?
+So when you enter a password on a password form, the problem with that is, if you&rsquo;re technical, you&rsquo;ll understand that there&rsquo;s a problem with it that you&rsquo;re sending a secret across to the server.
+Now, okay, you may be sending it over an encrypted connection, So that&rsquo;s obviously better than just sending it in plain text because no other person out there can steal it.
+And you might trust the server to behave responsibly and put the secret in a hash form into a database and not reveal it to third parties and so on.
+But fundamentally, it&rsquo;s kind of a crappy model.</p><h2 id=public-key-cryptography>Public key Cryptography</h2><p>So a long time ago, people came up with ideas, at least, on how you could do this kind of thing better.
+And a lot of those ideas, although many of them haven&rsquo;t really been realized, some of them have, were about public key cryptography and it&rsquo;s the same kind of cryptography we use in Bitcoin.
+Specifically the idea that you have a public key, we can call it <code>P</code>, and you have a private key we&rsquo;re going to call <code>x</code>.
+So in the rest of this explanation, I&rsquo;m going to be focusing on the idea of a number <code>x</code> being a secret.
+Of course, you know, your password might be a phrase, but a phrase of letters can always be transferred into numbers.
+So just think about things in terms of numbers.</p><p>So we have a number <code>x</code>, maybe it&rsquo;s a very long number, and we have public key cryptography, which kind of converts that number into a public key.
+And in Bitcoin specifically and some other systems, what does that really mean?
+It means taking that number <code>x</code> and multiplying it by a point on the elliptic curve which in Bitcoin is called secp256k1.
+But even then I have to be a bit more careful to explain what I really mean.
+What does it mean, multiply a number by a point?
+Well as to what a point actually is you&rsquo;re just gonna have to accept the idea that you know elliptic curve consists of a bunch of points and they&rsquo;re in what&rsquo;s called in mathematics a group.
+And the group has a certain order, which means the size, it&rsquo;s just a technical term for the size of the group.
+So think of it as a list, this huge list of points, there&rsquo;s about <code>2^256</code> of them, so it&rsquo;s a huge list.
+And what we really mean when we say <code>x*G</code> is something like this.
+We take some starting point <code>G</code> that everyone&rsquo;s agreed on.
+So secp256k1, which is the bitcoin curve, has such a specific point <code>G</code> which you can write out as a big string.
+And what you do is you take that point and you add it to itself.
+And because it&rsquo;s a group with an additive operation, it means we can actually do that.
+We can take the two points and add them together.
+I won&rsquo;t get into how you add them, but there&rsquo;s a specific operation.
+It&rsquo;s not literally adding numbers, it&rsquo;s something else, but it has the same effect.
+Now if I add the point to itself, of course, intuitively I hope it&rsquo;s kind of obvious what that should be referred to as <code>2*G</code>.
+So <code>2*G</code>, meaning <code>G+G</code>, so it&rsquo;s going back to literally what you learn when you&rsquo;re six years old or five years old at school, how to add numbers together, or how to multiply numbers is to add them a certain number of times.
+So <code>x*G</code> literally does mean <code>G</code> added to itself <code>x</code> number of times, where <code>x</code> is this unfathomably huge number that we call a private key, right?
+So we all know about that idea of a private key being a huge number so nobody can guess it.
+And we&rsquo;re taking that huge number and we&rsquo;re adding <code>G</code> to itself that huge number of times.</p><p>And you might reasonably wonder, is that even remotely possible?
+Doesn&rsquo;t that take forever?
+Oh, there&rsquo;s some tricks.
+I won&rsquo;t get into it now, but there&rsquo;s some tricks to make it possible to do that.
+I&rsquo;m really sort of focusing on that now because everything we&rsquo;re gonna do after this depends on that.
+All right, so getting back to the point, the point about passwords.
+We wanna use like public key cryptography to make it so that we don&rsquo;t actually send that secret, which again could be a phrase or could just be a number.
+We don&rsquo;t want to send it to the server and have to trust the server not to screw up, lose it, give it to someone else, or whatever.
+We don&rsquo;t want to trust them.
+We just want them to only have that public key.
+And somehow we want them to accept that we know that private key that corresponds to the public key without ever giving it to them.
+It&rsquo;s one of the great achievements, arguably, of public key cryptography, is to find a really good algorithm that makes this happen.
+And now, in order to explain how it works, we&rsquo;re just going to take a few steps.</p><h2 id=commitments>Commitments</h2><p>What we&rsquo;re going to explain first is the idea of a commitment.
+I think the best way to explain a commitment is to use a really real world, if admittedly a bit silly example, which is flipping a coin.
+We&rsquo;re all familiar with the idea.
+Suppose I&rsquo;ve got Alex here and he and I we want to go out to dinner tonight and we&rsquo;re either gonna have Well, I want to have steak, but he wants to have fish.
+Let&rsquo;s say he doesn&rsquo;t like steak.
+Whatever.
+I&rsquo;m gonna flip a coin It&rsquo;s gonna enable us to decide right?
+I&rsquo;m gonna flip a coin bang, right?
+So what have I just done?
+I&rsquo;ve flipped the coin and I&rsquo;ve held it in- I want you to focus on something maybe you don&rsquo;t usually focus on when we do this, but what exactly is going on here?
+Probably in your head you already have the idea that by doing this I&rsquo;m sort of fixing the value of the coin, right?
+So we could call that a binding effect, like literally sticking it into one thing.
+Also, very critically, equally important, is that I can&rsquo;t see it, right?
+Notice that I can&rsquo;t see the result of the coin before we decide on the final step.
+So, call the coin Alex.
+Okay, so Alex says it&rsquo;s tails and he has some confidence that when it gets revealed it will be fair.
+So why is he confident it&rsquo;ll be fair?
+I would say he&rsquo;s confident because he knows I can&rsquo;t do this (flip the result) without him noticing.
+He already noticed what I just did, right?
+I also can&rsquo;t do this (look at the result) without him noticing, right?
+So what does that mean?
+It means that, as I just said, it&rsquo;s binding.
+I can&rsquo;t flip it under my hand, but it&rsquo;s also hiding.
+I can&rsquo;t see it.
+So these hiding and binding properties are critical.
+So you called heads, and indeed it is heads, so well done - you won this coin.</p><p>My point in illustrating that is it&rsquo;s really important that we have those two properties, hinding and binding.
+And I think really nicely illustrates why that&rsquo;s important and why it&rsquo;s more difficult on the internet is if we consider, well what happens if me and Alex did the same thing, but instead of being in the same room together and he watches me, let&rsquo;s say we&rsquo;re talking on a telephone line.
+So in that case, let&rsquo;s say we have the same problem, we&rsquo;ve got to decide where to go for dinner, and I&rsquo;m on the phone saying, &ldquo;hi Alex, we&rsquo;re going to decide where to go to dinner now, I&rsquo;m going to flip the coin now&rdquo;.
+Well, that wouldn&rsquo;t be very good at all, would it?
+Why not?
+Why not, Alex?
+[Alex&rsquo;s response]: &ldquo;Well, because you could lie to me.&rdquo; Exactly right.
+So I could lie.
+So I could say to him, because remember it&rsquo;s kind of a two or three step protocol, he&rsquo;s got to tell me what he decides, right?
+After I&rsquo;ve supposedly I flipped the coin, but he hasn&rsquo;t seen me, he&rsquo;s gonna decide and say, &ldquo;oh I call heads&rdquo;, and I&rsquo;m gonna say, &ldquo;well no, it was tails&rdquo;.
+And how&rsquo;s he gonna know any different?
+He doesn&rsquo;t know if I flipped the coin and looked at the result or if I just didn&rsquo;t flip the coin at all.
+Of course, more likely, I just made it up.
+So this kind of protocol completely fails if you&rsquo;re not there to ensure that hiding and biding property.</p><p>But the interesting thing is, it might be possible, in fact I think it is possible, for us to follow such a protocol using some basic cryptography.
+What basic cryptography?
+So if you&rsquo;re out there listening, you might think how would you solve that problem being on a telephone line but trying to follow that same protocol.
+And so you might think of this idea, which is a good idea, use what&rsquo;s called a hash function.
+So something that anybody who&rsquo;s been in Bitcoin knows about, is this idea of a hash function where you take some data and you put it into a hash function as input and you get output a certain value: <code>H("heads") -> y</code> .
+I don&rsquo;t know why it&rsquo;s called <code>y</code>, it just is.
+All right, so let&rsquo;s say in that case, what Alex would be doing is taking his decision, his call, his choice, heads, putting it into a hash function like sha256 or any other hash function that&rsquo;s cryptographically secure, and getting out an output value.
+He would tell me the output value.
+I would say, okay, you&rsquo;ve made your choice.
+You can&rsquo;t go back on it.
+It&rsquo;s binding, it&rsquo;s a binding decision.
+I&rsquo;m going to reveal the result of my coin flip.
+I could just choose a number of 0 or 1 on a computer or I could just make it up in my head, doesn&rsquo;t really matter.
+And then when I choose it, I can then ask Alex to reveal what was actually the input that was given to our hash function.
+And because the theory goes that a hash function is a one-way function, that&rsquo;s why we&rsquo;re using a hash function specifically, a one-way function.
+The theory goes that when he tells me why on the phone, I can&rsquo;t figure out that it was heads that went into the hash function because given the output of a hash function, you can&rsquo;t figure out what the input was.
+That&rsquo;s the general idea of a hash function.
+But this protocol is kind of crappy.
+Don&rsquo;t you think, Alex, maybe this protocol, what might be the problem with it?
+It should be clear to anyone that the reason this isn&rsquo;t any good is because I&rsquo;m sitting here being the guy who&rsquo;s flipping the coin, waiting for him to call and give me this hash output, but I can just check his hash output against two possibilities, the <code>H(heads)</code> or the <code>H(tails)</code>.
+Because I can easily compute those myself in advance and I can just check which one of those two values it is and then I know what his call was and I can cheat and tell him it&rsquo;s tails.
+So that&rsquo;s terrible but the nice thing about hash functions is they have special properties.
+And what he can do instead is this.
+He can make his choice heads, but then he can append, and I&rsquo;m just using those two lines to mean add more data, some more data, one, zero, three, four, six, five, two, whatever, in other words some very long random string, could be a string, could be a number, doesn&rsquo;t matter.
+He can get his output <code>y</code> from that instead.
+Now I can&rsquo;t have a little lookup table of all the possible random values with heads and all the possible random values with tails because it&rsquo;d be huge if this number is very big.
+So the solution here is to have him commit, but commit in a special way.
+He&rsquo;s committing and it is binding but it&rsquo;s also hiding.
+This has a hiding property.
+So this commitment is both binding and hiding.
+Now it might not be obvious why it&rsquo;s binding, because you might think to yourself, I make this hash output <code>y</code>, but I&rsquo;ve got all this area of free variables, I can just randomize this as many times as I want.
+So I might be able to find hash tails and then a different set of random numbers, three, nine, eight, six, two, da, da, da, giving the same output <code>y</code>.
+If I could do that, then I could cheat, yeah?
+I could commit to one value, but actually then reveal the other value instead.
+That&rsquo;s exactly why we need hash functions to have this property we call second pre-image resistance.
+Pre-image being the thing inside the brackets there, the parentheses, and pre-image resistance or second pre-image resistance meaning that once I&rsquo;ve found one output I can&rsquo;t then find a second input that gives the same output.
+So that&rsquo;s why certain kinds of hash functions which aren&rsquo;t cryptographically secure are not suitable for cryptographic protocols because they don&rsquo;t have this special property of first and second pre-image resistance and collision resistance.
+If you want to get into it you can look it up.
+Okay, so that&rsquo;s how we would solve this problem of wanting to have a fair game where we make a fair decision.
+But this is not quite the same problem that we were originally trying to solve.
+What we were originally trying to solve was to prove that we know a secret but without revealing it.
+The problem with this protocol in solving that is that Alex has to reveal at the end.
+He has to say to me, yeah, actually my input was <code>heads|1034652</code>.
+He has to actually tell me that at the end, otherwise I don&rsquo;t know whether he performed the protocol honestly.
+Okay, so we haven&rsquo;t solved the problem, but we&rsquo;ve kind of got a sort of movement in towards solving it by finding this commitment system.
+And we&rsquo;ve learned something very important that a commitment has to be both hiding and binding.</p><h2 id=commitment-scheme--challenge-response>Commitment Scheme + Challenge Response</h2><p>All right, so let&rsquo;s move on then taking this knowledge and see if it can help us to solve the problem of how do I prove I know the value <code>x</code> that gives the public key <code>P</code>, which is equal to <code>x*G</code>, which we just discussed, without on the other hand revealing <code>x</code>.
+And the solution is a blend of what we just said, a commitment scheme, which we&rsquo;re going to use very extensively in various ways, but also the idea of challenge-response.
+So I want to give you a kind of intuition as to why a kind of challenge response element is going to be important here.
+I suppose I was like a world-class chef and I had this special signature dish that everyone in the world thought was just the most amazing dish, and everyone was paying thousands of dollars to eat at my restaurant, because this special dish was so special.
+And you might say to yourself, you might meet me and not be sure that I&rsquo;m actually that chef, and you say, well, I need to prove that you&rsquo;re actually that guy.
+And I&rsquo;m saying to you well I&rsquo;m not going to tell you my secret ingredients or my secret special sauce that makes this amazing dish because then you&rsquo;ll just take it and you&rsquo;ll be making all the money.
+So we were in a bit of a standoff and it&rsquo;s kind of similar to this one but it&rsquo;s different as well because I don&rsquo;t want to reveal the secret.
+So one you could imagine it just completely taking cryptography out of the equation like how would you solve that problem?</p><p>Well one way of approaching it is a kind of a proof, an operational proof.
+Proof by doing.
+So what that would mean is you would take me and you would put me in a kitchen, and not just any kitchen, but you would completely isolate the kitchen.
+There&rsquo;s no windows, there&rsquo;s no internet, it&rsquo;s literally a Faraday cage, nothing can get in or out.
+And there&rsquo;s every possible ingredient under the sun.
+All the ingredients are in there.
+And that&rsquo;s to make sure that I can make my dish.
+Because you don&rsquo;t know what ingredients I need, but I might need certain ingredients.
+So you&rsquo;re going to just stuff it through every ingredient imaginable in this kitchen.
+And you&rsquo;re going to lock me in there for an hour or two hours, whatever it takes.
+And if I come out and give you the dish and you can taste it and say, yep, that&rsquo;s definitely the real McCoy, that&rsquo;s the real one, then you&rsquo;ll say, yep, I believe you.
+You&rsquo;re the guy who knows the secret.
+But I didn&rsquo;t learn the secret.
+And specifically, of course, that&rsquo;s because I had to give you all the ingredients.
+If I only gave you a specific 10 ingredients, I could probably just figure out the dish from the ingredients.
+So what&rsquo;s the intuition there?
+The intuition there is that somehow by giving this person a fresh challenge, a fresh instance of a challenge to solve, if they can solve it, then they must be the guy that owns the thing.
+So that&rsquo;s why challenge response comes in with commitment.</p><h2 id=failure-in-hiding>Failure in hiding</h2><p>All right, so let&rsquo;s think in particular about that idea of challenge to start with.
+We&rsquo;re now gonna move from something weird and like a chef down to literally just numbers.
+Remember a private key is just numbers, or a number.
+So let&rsquo;s configure it and say there&rsquo;s waxwing me who&rsquo;s claiming to know this <code>x</code>, and there&rsquo;s Alex who&rsquo;s wanting to challenge me and verify it.
+So I&rsquo;m gonna be using like <code>W</code> for me, waxwing and <code>A</code> for Alex.
+<code>P</code> is known in advance, <code>P</code> is the public key.
+We both know it, I&rsquo;m claiming it&rsquo;s mine, he knows what I&rsquo;m claiming.
+He sends me a challenge, and from now on, that challenge value is gonna be called <code>e</code>.
+And this, just like a private key, is just an integer.
+I&rsquo;m gonna take that challenge, and I&rsquo;m gonna multiply it by my private key.
+So the point here is to try and sort of embed the private key into the challenge.
+I&rsquo;ll call that value <code>s</code>.
+So I&rsquo;m going to send <code>s</code> to him.
+Now, The idea is that I couldn&rsquo;t have sent <code>s</code> if I didn&rsquo;t know <code>x</code>, but I don&rsquo;t want him to know <code>x</code>.
+So the theory is, that when he takes the <code>s</code> and he multiplies it by <code>G</code>, just like you would with a private key, what&rsquo;s he actually gonna get if he does that multiplication?
+Well, we know that <code>s = e*x</code>.
+He doesn&rsquo;t know <code>x</code>, let&rsquo;s say, but he knows, or we expect that it&rsquo;s <code>e*x</code>.
+So that&rsquo;s <code>(e*x)*G</code>.
+But if you look at that you can see that actually that&rsquo;s <code>(e*x)*G = e*(x*G)</code>, and <code>x*G</code> is the public key.
+So that&rsquo;s actually <code>e*(x*G) = e*P</code>.
+So what he can do is he can look at that <code>s</code>, multiply it by <code>G</code>, and compare it.
+He can compare it with <code>e</code>, which he knows because he generated it, that&rsquo;s the challenge, and multiply that by the public key <code>P</code>.
+If these two things are equal, the claim is that I did actually know the value <code>x</code>.
+Just in the same way as <code>P</code> corresponds there.
+All right, so first of all, do you agree Alex that that proves that I know <code>x</code> if I send you that <code>s</code>?
+[Alex&rsquo;s response]: &ldquo;Yeah, because that&rsquo;s the only one that could satisfy that, right?&rdquo; Right, yeah, because if I didn&rsquo;t have <code>x</code>, if I put in something else instead of <code>x</code>, this wouldn&rsquo;t balance.
+But nevertheless, this idea is completely broken.
+It doesn&rsquo;t work at all.
+Why doesn&rsquo;t it work?</p><p>So if we look at this quantity here (<code>e</code>), remember what we said, it&rsquo;s an integer.
+Now, dividing integers is a little bit more complicated here than in school, dividing 72 by 31 or whatever, it&rsquo;s a little bit more complicated because we&rsquo;re in what&rsquo;s called modular arithmetic, which means we&rsquo;re dealing with integers up to a certain maximum value, and then it&rsquo;s sometimes called clock arithmetic, you go around.
+Although it is more complicated, it&rsquo;s only a little bit more complicated and is actually pretty easy to find.
+In modular arithmetic we might say the modular inverse of <code>e</code>: <code>e^-1</code>.
+Modulo <code>n</code> where <code>n</code> is the order of the group.
+The point is that it&rsquo;s actually very easy for him, to take this number <code>s</code>, take the number <code>e</code>, and take its modular inverse, and you can see just by the division on this side, that&rsquo;s gonna give you <code>x</code>: <code>s = e*x => s*e^-1 = s*e^-1*x => s*e^-1 = x</code>.
+So the problem with this approach was that although it had that binding effect, it didn&rsquo;t have the hiding effect.
+It was very easy to extract the secret <code>x</code> from the &ldquo;signature&rdquo; or response value <code>s</code>.
+Okay, so this approach fails.
+But the challenge response idea is there.</p><h2 id=failure-in-binding>Failure in binding</h2><p>All right, so because we failed to hide the private key in this case, let&rsquo;s try and take a different approach.
+Let&rsquo;s try and actually hide the private key.
+It&rsquo;s pretty important.
+So we&rsquo;ll have the same setup, Waxwing and Alex.
+What we decide to do here is take the intuition that if I add a number to <code>x</code>, then it hides it.
+So for example, before I sort of write out the equations, if I gave you, Alex, the number 13, and I said which two numbers were added together to make that, what would be your answer?
+[Alex&rsquo;s response]: &ldquo;There could be 1 plus 12, and all the other combinations&rdquo;
+Exactly.
+So it doesn&rsquo;t tell you.
+Now if we extend that from 13 to a number that is 256 bits long then it&rsquo;s a huge number of different combinations of numbers that could give the result.
+I mean, technically any of the numbers could be the result and that&rsquo;s an important sort of theoretical point.
+But anyway, the point is, if you just add two huge numbers together then it&rsquo;s going to blind what the first one is.
+The first one is going to be hidden by that process, that&rsquo;s the key idea.
+All right, so that gives us the intuition that all we need to do is take another number which we&rsquo;re going to call <code>k</code> and add it to <code>x</code>.
+So this new protocol is going to say, right, I&rsquo;m going to choose a new secret number <code>k</code>, and I&rsquo;m going to calculate capital <code>K</code>, just as the previous examples, you&rsquo;re taking a private key and multiplying it by the generator point <code>k*G = K</code>, and you&rsquo;re getting the capital, so to speak, public point or public key of the corresponding secret there.
+Now, you might be wondering, what am I doing?
+Well, what I&rsquo;m doing here is actually committing.
+I&rsquo;m gonna send that capital <code>K</code> across to Alex, all right?
+In this particular example, I&rsquo;m going to send you <code>K</code> first and then I&rsquo;m just going to take <code>k+x</code>, the secret values, add them together and actually send you that as <code>s</code>.
+So, without knowing <code>x</code>, how are you going to verify that <code>s</code> proves I knew <code>x</code>?
+Well you&rsquo;re going to take <code>s*G</code> again, and according to the formula, again you don&rsquo;t know if it&rsquo;s true yet, but if it&rsquo;s true that will be <code>(k+x)*G</code>, and that will be equal to <code>k*G+x*G</code>.
+And we already know that that must be equal to capital <code>K</code>, and <code>x*G</code> as we&rsquo;ve been seeing in previous examples is the public key of <code>P</code>: <code>k*G+x*G = K + P</code>.
+So again, you could do a verification where you check whether <code>s*G</code> does actually equal to the original <code>K</code> you were given plus the original public key <code>P</code> you were given.
+And if it&rsquo;s true, then the theory is, therefore I knew the private key.
+But, what do you think Alex?
+Is there a problem with that?
+[Alex&rsquo;s response]: &ldquo;Well, yeah I think there is a problem with this one also&rdquo;.
+Yeah, unfortunately this was a little bit more difficult to understand.</p><p>I&rsquo;ll sort of give the spoiler alert and say that this is often called a key subtraction attack, or maybe a related key attack.
+It crops up in different forms, but this is the most basic form.
+Unfortunately, It looks a little bit confusing, but the core insight is that I&rsquo;m making these choices without you intervening.
+So basically what I&rsquo;m saying is, I can choose this (<code>K</code>) to be whatever I want, and specifically, I can choose this to be of such a form that the final <code>s</code> value does not depend on the private key at all.
+And if I can choose this <code>s</code> value in such a way that it does not depend on <code>x</code> at all, then I don&rsquo;t even need to know <code>x</code> in order to satisfy the protocol, which means that this would fail to bind.
+So let me show you how that works.
+If I make the <code>K</code> value, equal to a different <code>K</code> value, <code>K = K'-P</code>, which I definitely know, we always both know the public key <code>P</code>.
+But in this case I&rsquo;m cheating, I don&rsquo;t really know the private key.
+So what I do is I take a different one,I started with <code>k'*G = K'</code>.
+I took that and I subtracted the public key.
+You tell me, what is the private key of capital <code>K</code>?
+[Alex&rsquo;s response]: &ldquo;It&rsquo;s gonna be <code>G</code> times whatever it had there&rdquo;.
+No, so this, so if we do it in steps.
+What&rsquo;s the private key of <code>P</code>?
+[Alex&rsquo;s reponse]: &ldquo;That&rsquo;s going to be <code>k*G</code>&rdquo;.
+No, that&rsquo;s <code>x</code>, isn&rsquo;t it?
+That&rsquo;s the public key of the key that we&rsquo;re trying to prove knowledge of.
+So the private key of <code>P</code> is <code>x</code>.
+And I&rsquo;ve chosen the private key of <code>K'</code> is <code>k'</code> there.
+So what the private key of <code>K</code> will be, will be <code>k'- x</code>, right?
+<code>K = K' - P => K = k'*G - x*G => k*G = (k' - x)*G</code>
+So when I calculate <code>s</code>, <code>s</code> will be <code>k + x</code>.
+Now <code>k</code> is the private key of capital <code>K</code>, so that private key is in fact <code>k'-x+x</code>.
+<code>s = k + x => s = (k' - x) + x => s = k'</code>
+By doing this I&rsquo;ve created a cancellation of the private key in the formula.
+By creating that cancellation, all I&rsquo;m gonna do here is, as an attacker, as a person who doesn&rsquo;t know the private key but is pretending to, I&rsquo;m gonna be sending <code>k'</code> as <code>s</code>, because that&rsquo;s all it is in this case, and it will satisfy the protocol.
+Now, if that wasn&rsquo;t clear and obvious to people, I absolutely don&rsquo;t blame you.
+It is really, really not that obvious.
+But if you go through it, it should make sense.
+The core concept is that you can subtract out the private key if you&rsquo;re not sort of forced to bind to it.
+So this is a failure of binding in our commitment.
+There&rsquo;s no binding.
+Technically it&rsquo;s called, this is not a sound protocol.
+And remember, this was a failure of hiding (referring to previous example) because we revealed the private key.
+So in both of these cases we failed.</p><h2 id=schnorr-identity-protocol-hiding--biding>Schnorr Identity Protocol hiding & biding</h2><p>So clearly the correct idea is to combine these two failures together and make a new protocol which combines them both.
+So what&rsquo;s the idea there?
+We have the same setup as before.
+We still have the public key <code>P</code>, we still have Waxwing on one side as the person trying to prove, and we still have Alex on the other side as the person trying to verify and check if the proof is right, just like the guy who was going to taste the chef&rsquo;s food.
+Alex is going to taste the chef&rsquo;s food.
+But what Waxwing does this time is recognizes the failure of the two previous cases and corrects each of those failures by combining the two ideas together.
+So, as before, we&rsquo;re going to commit to <code>k</code>.
+By the way I might not have explained, but we talked at the beginning about hash functions being used as commitments.
+We can also use elliptic curve points as commitments.
+It&rsquo;s kind of a slippery concept.
+We calculate this capital <code>K</code>, <code>k*G = K</code> and we send it to Alex.
+Alex receives it, but this time, just like in the first case, but not in the second case, where we forgot to do it, Alex is gonna send a challenge value <code>e</code>.
+Remember, it&rsquo;s just an integer.
+And now Waxwing is going to both hide and bind.
+So he&rsquo;s going to hide by adding his <code>k</code> and he&rsquo;s going to bind using his <code>e</code> that&rsquo;s given to him by Alex.
+That forces him to bind to <code>x</code>.
+<code>s = k + e*x</code>
+So we would send this value <code>s</code> to Alex and by now you should probably be able to figure out what Alex is going to do with that <code>s</code>.
+What are you going to do with that <code>s</code>, Alex?
+[Alex&rsquo;s response]: &ldquo;I&rsquo;m going to multiply it by <code>G</code>&rdquo;.
+Great.
+<code>s*G</code>.
+But here&rsquo;s the tricky part, well it&rsquo;s not very tricky, but what is it equal to?
+Well, as before, we&rsquo;re going to assume that the guy was being honest and see what happens.
+So we&rsquo;re going to put <code>k+e*x</code>, which we don&rsquo;t know as Alex, but we&rsquo;re seeing what happens, and multiply that by <code>G</code> and we distribute that out.
+<code>sG = (k + e*x) * G = k*G + e(x*G)</code>
+I&rsquo;m putting brackets there because <code>x*G</code> of course is exactly what <code>P</code> is.
+And <code>k*G</code> is exactly what <code>K</code> is.
+So <code>k*G + e(x*G) = K + e*P</code>.
+As before, Alex is going to verify whether or not <code>s*G</code> does or does not equal to <code>K</code>, which was sent to him at the beginning, plus <code>e</code>, which was his challenge, times the public key <code>P</code>.
+And if it is, he&rsquo;s gonna accept this protocol.
+And this one we can prove does actually do the job that we want to do, which is that it gives Alex this certainty, the binding property, that I couldn&rsquo;t have done this without owning <code>x</code>.
+And there&rsquo;s a very ingenious proof of that, which I will let you figure out, research later yourself.
+There&rsquo;s a very ingenious proof of why it&rsquo;s not possible for me to have constructed this <code>s</code> without knowing <code>x</code>.
+But equally beautiful proof is that it&rsquo;s not possible for Alex, remember the taster of the chef&rsquo;s food, it&rsquo;s not possible for him to actually learn any information about what <code>x</code> was from this protocol.
+It&rsquo;s called the zero-knowledgness property.
+What I presented to you?
+You might think, oh, he&rsquo;s explained to me the Schnorr signature, right?
+But actually I didn&rsquo;t.
+I didn&rsquo;t actually explain the Schnorr signature.
+What I explained is something called SIDP.
+Sometimes it&rsquo;s written like this.
+So Schnorr Identity Protocol (SIDP), not Schnorr Signature Protocol.
+And what&rsquo;s the difference?
+The difference is specifically in this thing here (points to <code>e</code>).
+This thing here <code>e</code>, which we&rsquo;ve been calling it the challenge.
+We said earlier on, we need a commitment scheme, but we also need a challenge response scheme.
+By the way, if people want to look this stuff up, it&rsquo;s called a Sigma protocol generally, but that&rsquo;s not interesting here.
+So basically, this challenge, remember, was something that Alex generated, and it really would be a random number.
+Obviously you could choose it if you wanted to but generally it just needs to be random and unpredictable to me.
+The key thing is I shouldn&rsquo;t be able to predict it.
+So this is a really good way to prove that you, let&rsquo;s say, you can have a login system.
+An example is LNURL-auth in the Bitcoin world, which is used by sites like lnmarkets.com or stacker.news and a few others.
+And the idea there is specifically what we mentioned right at the start, which is that we really want to be able to just have a public key and then do some weird interaction and prove that we own the private key without ever actually sending it.
+Of course you don&rsquo;t want to send somebody the private key of your Lightning node, that&rsquo;s crazy.
+So this kind of SIDP protocol like this satisfies exactly that requirement.
+There are other schemes which I haven&rsquo;t really researched much, like <a href=https://www.grc.com/sqrl/sqrl.htm>SQRL</a> by Steve Gibson has a similar scheme using, again, QR codes.
+It&rsquo;s very often QR codes, and then you have this kind of challenge interaction.
+But the funny thing is that a lot of those schemes don&rsquo;t actually use this exactly.</p><h2 id=non-interactive-schnorr-signatures>Non-interactive Schnorr signatures</h2><p>They use the Schnorr signature.
+And so to come back to my point, what&rsquo;s different here with the signature compared to this identity protocol?
+Well, the difference is in <code>e</code>, because what you can do is embed, inside this whole process, another commitment.
+It&rsquo;s weird how this is like commitments inside of commitments inside of commitments.
+So this <code>e</code>, we don&rsquo;t want it to be predictable by Waxwing, but that doesn&rsquo;t technically mean that Alex has to generate it and give it to him.
+We can make it non-interactive.
+We can make <code>e</code> be the hash of earlier things.
+So specifically, this value <code>K</code>.
+If we include <code>K</code> in this hash, and of course if you&rsquo;re making a signature, you wanna sign a message, so you might put a message in there.
+And for reasons that are technical or perhaps obvious, we also want to include the public key <code>P</code>.
+If we make <code>e</code> literally be equal to that (<code>e = H(K,m,P)</code>), then the beautiful thing is we&rsquo;ve made a non-interactive protocol.
+Now why is it non-interactive?
+Because it&rsquo;s literally a case here that Waxwing would first generate his <code>K</code>, then he&rsquo;d calculate this hash, because he knows <code>P</code>, he knows his <code>K</code>, and he knows his message that he&rsquo;s trying to sign.
+So he can formulate this hash (<code>H(K,m,P)</code>).
+But the beautiful thing is, having formulated this hash, he can&rsquo;t then go back and change <code>K</code>.
+Because if you remember, this was a difficult one to understand, but the problem with this approach (showing the previous approach that failed to bind <code>K</code>) was that I could kind of go back and fiddle around with <code>K</code> and I could change <code>K</code> to be something that I wanted it to be.
+No, that doesn&rsquo;t work here.
+Once you choose <code>K</code> it gets fixed into this challenge value (<code>e</code>).
+By the way, if people want to look up what the hell I&rsquo;m talking about.
+This is called the Fiat-Shamir transform.
+Not the Fiat currency.
+The Fiat-Shamir transform is this mechanism whereby we take the start of the protocol and we sort of hash it.
+And by hashing it we kind of freeze it, because remember we can&rsquo;t find second pre-images of hashes, right?
+So once we&rsquo;ve found this <code>e</code> by doing that, we can&rsquo;t then go back and find another <code>K</code> that gives like <code>K'</code>, and maybe some other message that gives the same <code>e</code>.
+We can&rsquo;t do that.
+So it&rsquo;s all fixed up front.
+So non-interactively, I calculate that hash, and I put that hash inside this <code>s</code> value and that creates the Schnorr signature protocol, which is non-interactive.
+The Schnorr signature protocol is basically SIDP, but with a challenge being this hash value.</p><h2 id=usage-irl>Usage IRL</h2><p>Last point I suppose is to address this question of, do people use SIDP in the real world?
+Or do they use the Schnorr signature protocol, indeed, in the real world?
+Now, on the second point, it depends on how you define Schnorr signature, but if you include, for example, Dan Bernstein&rsquo;s curve implementation of basically the same thing, then it&rsquo;s used literally everywhere, all over the internet, on TLS.
+You&rsquo;ve got it in other crypto protocols like SSH, and you&rsquo;ve got all kinds of things.
+And if they want to prove identity, you have this interesting point that a signature protocol is better than SIDP because it&rsquo;s non-interactive, which means that I don&rsquo;t have to have Alex there when I prove that I own a private key.
+I can create a signature, give it to someone else, someone else can give it to Alex later.
+He doesn&rsquo;t have to be around, he can be asleep, whatever.
+So that&rsquo;s great, non-interactive.
+But the weird thing is, as well as it being a really good thing, it has a bad side.
+Because consider this.
+Suppose I want to prove I&rsquo;m super rich.
+I&rsquo;ve got 10 Bitcoin, 100 Bitcoin, whatever, and I&rsquo;m just going to say, look, there&rsquo;s this UTXO on the blockchain, it has 100 Bitcoin in it here.
+I&rsquo;m going to sign a message from that UTXO.
+I&rsquo;m going to say, Adam is the owner of this 100 Bitcoin, right?
+So I make a signature and I give it to you.
+Now I want to ask you Alex, if I gave you such a signature in real life, and for whatever reason I wanted to, people don&rsquo;t usually want to do this, I wanted to prove to you that I have 100 Bitcoin and I gave you a signature and you could check on the blockchain, the UTXO, would you believe that I have 100 Bitcoin from that?
+[Alex-response]: &ldquo;Well not necessarily, you could have asked someone to do that for you, right?&rdquo; Right.
+And it&rsquo;s something that people don&rsquo;t often consider, or they consider it and they think, well, that&rsquo;s not very likely.
+It&rsquo;s true it&rsquo;s not very likely, but you know, maybe there&rsquo;s an incentive.
+Maybe Bob owns 100 Bitcoin on a UTXO, and I just have to give him like a thousand dollars or some large amount of money, I guess, because he&rsquo;s rich.
+And I might just convince him to actually sign it and say, put my name on it.
+And so you say, well, that doesn&rsquo;t really fully prove it.
+It kind of does and it doesn&rsquo;t.
+And that&rsquo;s exactly the negative side of non-interactivity.
+Exactly because that signature is transferable means that you don&rsquo;t have the same kind of 100% proof.
+What&rsquo;s really funny is that what people end up doing is they end up embedding the challenge response element of the original SIDP on top of the Schnorr signature to reintroduce the interactivity.
+So they&rsquo;ll do things like, okay, you&rsquo;re gonna sign a message from that UTXO, but I&rsquo;m gonna tell you a particular message you have to sign.
+So they add in an extra interactivity.
+So it&rsquo;s like layers upon layers of commitments and layers upon layers of interactivity and like commitment on top of commitment.
+It gets really confusing.
+But of course in reality the real world is that because signature protocols are so useful in so many contexts, they&rsquo;re in every cryptographic library out there.
+Every single one of them has digital signatures.
+Very few of them actually implement ID protocols as such.
+I don&rsquo;t know if that&rsquo;s a fair statement.
+I think it is.
+And so very often people will build protocols, an example being LNURL-auth, which uses a signature, not an identity protocol, in order to prove identity.
+So I hope I haven&rsquo;t completely confused everyone in that extremely long spiel, but there you go.</p><h2 id=history-of-schnorr-signatures>History of Schnorr Signatures</h2><p>[Alex&rsquo;s question]: &ldquo;I have a question, which one of this was invented first, actually?&rdquo;
+Yeah, well, Schnoor&rsquo;s original paper, and I&rsquo;m going to be wrong on this because I&rsquo;ll be vague, was sometime in the 80s, maybe the mid-80s.
+He wrote a protocol, something about efficient protocol for smart cards.
+Specifically, he was trying to come up with something very short and compact, because in those early days of public key cryptography, all the initial strides forward were made in the area of RSA, which is all about, instead of using elliptic curves, it was using modular arithmetic.
+So you would have a public key which was literally just a number modulo some very large, well actually literally the public key would be the modulus plus the exponent and then the private key.
+But anyway it was all just numbers and integers and these numbers were very large and so a lot of the clever protocols they came up with including things like this, I can&rsquo;t remember exactly weren&rsquo;t very compact.
+So Schnorr&rsquo;s original goal, I think I&rsquo;m correct in saying this, when in creating this protocol that I&rsquo;ve described here was to prove identity for things like smart cards.
+And then later, I think, I might be butchering this, but I think he came up with the signature protocol itself somewhat later, around about 1990 kind of time.
+And he patented it, and then there was a whole saga about that.
+And the reason we have ECDSA at all is, as far as most people understand, it&rsquo;s kind of folklore now.
+It&rsquo;s mostly because Schnorr patented this design, which is the most elegant and simple design.
+And my whole purpose in showing all of this was to show that It almost just comes out naturally.
+It&rsquo;s not like some weird concoction.
+It&rsquo;s just like an almost logical inevitability.
+And ECDSA was a kind of a butchered version of the same thing that got standardized in around the early 90s because they couldn&rsquo;t use Schnorr because he patented it.
+So that&rsquo;s kind of some of the history.
+[Alex&rsquo;s response]: &ldquo;Yeah. Oh, this was really great, actually.
+So shill us JoinMarket.
+Shill us something.
+You have to shill something, anything&rdquo;.
+I&rsquo;ll shill you Schnorr signatures.
+They are very elegant.
+And we haven&rsquo;t even got into why they&rsquo;re better than ECDSA.
+It&rsquo;s because they have this linearity property.
+That&rsquo;s kind of complicated.
+[Alex&rsquo;s response]: &ldquo;Maybe in the next video.
+Anyway, This was it.&rdquo;
+Thank you.</p><div class=row></div></div></div></div><script src=https://btctranscripts.com/lib/jquery.min.js></script><script src=https://btctranscripts.com/lib/popper.min.js></script><script src=https://btctranscripts.com/js/bootstrap.min.js></script><script type=text/javascript src=/plugins/lunr.min.js></script><script type=text/javascript src=/plugins/auto-complete.js></script><link href=/plugins/auto-complete.css rel=stylesheet><script type=text/javascript>var baseurl="https://btctranscripts.com/"</script><script type=text/javascript src=/plugins/search.js></script><script type=text/javascript src=https://btctranscripts.com/js/custom.js></script><script type=text/javascript src=/plugins/clipboard.js></script><script>new ClipboardJS(".btn")</script></body></html>
