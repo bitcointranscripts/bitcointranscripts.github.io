@@ -1,0 +1,622 @@
+<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=canonical href=https://btctranscripts.com/bitcoinplusplus/onchain-privacy/coinjoin-done-right-the-onchain-offchain-mix-and-anti-sybil-with-riddles/><title>Coinjoin Done Right: the onchain offchain mix (and anti-Sybil with RIDDLE) | ₿itcoin Transcripts
+</title><link href=https://btctranscripts.com/css/fontawesome.min.css rel=stylesheet><link rel=stylesheet href=https://btctranscripts.com/css/ace.min.css><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://btctranscripts.com/images/btctranscripts.png"><meta name=twitter:title content="Adam Gibson - Coinjoin Done Right: the onchain offchain mix (and anti-Sybil with RIDDLE)"><meta name=twitter:description content="NOTE: Slides of the talk can be found here
+Introduction My name&rsquo;s Adam Gibson, also known as waxwing on the internet. Though the title might suggest that I have the solution to the problem of implementing CoinJoin, it&rsquo;s not exactly true. It&rsquo;s a clickbait. I haven&rsquo;t, but I suppose what I can say in a more serious way is that I&rsquo;m proposing what I consider to be a meaningfully different alternative way of looking at the concept of CoinJoin and therefore at the concept of on-chain privacy because the conversation nowadays about on-chain privacy tends to be dominated by CoinJoin."><script async src=https://visits.bitcoindevs.xyz/script.js data-website-id=06384ada-7f1c-44c2-a6d9-d830fb23e122></script></head><body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id=navbarMain><div class=container><div><a class=navbar-brand href=/>₿itcoin Transcripts</a></div><div class="collapse navbar-collapse" id=navbarMainCollapse><ul class="navbar-nav ml-auto"><li class=nav-item><a class=nav-link href=/es>es</a></li><li class=nav-item><a class=nav-link href=/pt>pt</a></li><li class=nav-item><a class=nav-link href=/zh>zh</a></li><li class=nav-item><a class=nav-link href=https://github.com/bitcointranscripts/bitcointranscripts target=_blank><i class='fab fa-github'></i></a></li></ul></div></div></nav><div class="alert alert-warning fade show sticky-banner" role=alert><strong><a href=https://review.btctranscripts.com target=_blank data-umami-event=click-banner>Get paid to review technical Bitcoin transcripts
+</a></strong><button type=button class=close data-dismiss=alert aria-label=Close>
+<span aria-hidden=true>&#215;</span></button></div><div class=container-fluid><div class=row><div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0"><button class="navbar-toggler navbar-toggler-right collapsed" type=button data-toggle=collapse data-target=#sidenav-left-collapse aria-controls=sidenav-left-collapse aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse align-items-start flex-column" id=sidenav-left-collapse><form class="form-inline my-2 my-lg-0 searchbox"><input class="form-control mr-sm-2 w-100" data-search-input id=search-by type=text placeholder='Search (press "/")'></form><ul class="navbar-nav flex-column pt-3"><li data-nav-id=/adopting-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/adopting-bitcoin/><h6>Adopting Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/adopting-bitcoin/2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/adopting-bitcoin/2021/><h6>Adopting Bitcoin 2021</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/advancing-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/><h6>Advancing Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/advancing-bitcoin/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2019/><h6>Advancing Bitcoin 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/advancing-bitcoin/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2020/><h6>Advancing Bitcoin 2020</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/advancing-bitcoin/2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2022/><h6>Advancing Bitcoin 2022</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/advancing-bitcoin/2023/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2023/><h6>Advancing Bitcoin 2023</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/andreas-antonopoulos/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/andreas-antonopoulos/><h6>Andreas Antonopoulos</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/austin-bitcoin-developers/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/austin-bitcoin-developers/><h6>Austin Bitcoin Developers</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/baltic-honeybadger/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/><h6>Baltic Honeybadger</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/baltic-honeybadger/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/2018/><h6>Baltic Honeybadger 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/baltic-honeybadger/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/2019/><h6>Baltic Honeybadger 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bit-block-boom/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bit-block-boom/><h6>Bit Block Boom</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bit-block-boom/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bit-block-boom/2019/><h6>Bit Block Boom 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-core-dev-tech/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/><h6>Bitcoin Core Dev Tech</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bitcoin-core-dev-tech/2015-02/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2015-02/><h6>Bitcoin Core Dev Tech 2015</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2017-09/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2017-09/><h6>Bitcoin Core Dev Tech 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2018-03/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2018-03/><h6>Bitcoin Core Dev Tech 2018 (Mar)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2018-10/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2018-10/><h6>Bitcoin Core Dev Tech 2018 (Oct)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2019-06/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2019-06/><h6>Bitcoin Core Dev Tech 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2022-10/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2022-10/><h6>Bitcoin Core Dev Tech 2022</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2023-04/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2023-04/><h6>Bitcoin Core Dev Tech 2023 (Apr)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2023-09/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2023-09/><h6>Bitcoin Core Dev Tech 2023 (Sept)</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-design/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-design/><h6>Bitcoin Design</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/edgedevplusplus/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/edgedevplusplus/><h6>Bitcoin Edge Dev++</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/edgedevplusplus/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/edgedevplusplus/2017/><h6>Bitcoin Edge Dev++ 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/edgedevplusplus/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/edgedevplusplus/2018/><h6>Bitcoin Edge Dev++ 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/edgedevplusplus/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/edgedevplusplus/2019/><h6>Bitcoin Edge Dev++ 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-magazine/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-magazine/><h6>Bitcoin Magazine</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bitcoin-magazine/bitcoin-explained/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-magazine/bitcoin-explained/><h6>Bitcoin Explained</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-review-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-review-podcast/><h6>Bitcoin Review Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoinplusplus/ class="nav-item my-1 parent haschildren"><a class="nav-link p-0" href=/bitcoinplusplus/><h6>Bitcoin++</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bitcoinplusplus/2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinplusplus/2022/><h6>Bitcoin++ 2022</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoinplusplus/onchain-privacy/ class="nav-item my-1 parent haschildren"><a class="nav-link p-0" href=/bitcoinplusplus/onchain-privacy/><h6>Onchain Privacy</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoinology/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinology/><h6>Bitcoinology</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoinops/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinops/><h6>Bitcoinops</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcointranscripts/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcointranscripts/><h6>Bitcointranscripts</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/blockchain-protocol-analysis-security-engineering/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/><h6>Blockchain Protocol Analysis Security Eng</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/blockchain-protocol-analysis-security-engineering/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2017/><h6>Blockchain Protocol Analysis Security Engineering 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/blockchain-protocol-analysis-security-engineering/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2018/><h6>Blockchain Protocol Analysis Security Engineering 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/blockstream-webinars/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockstream-webinars/><h6>Blockstream Webinars</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/boltathon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/boltathon/><h6>Boltathon</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/breaking-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/><h6>Breaking Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/breaking-bitcoin/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/2017/><h6>Breaking Bitcoin 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/breaking-bitcoin/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/2019/><h6>Breaking Bitcoin 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/building-on-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/building-on-bitcoin/><h6>Building On Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/building-on-bitcoin/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/building-on-bitcoin/2018/><h6>Building On Bitcoin 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/c-lightning/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/c-lightning/><h6>c-lightning</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/chaincode-labs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-labs/><h6>Chaincode Labs</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/chaincode-labs/chaincode-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-labs/chaincode-podcast/><h6>Chaincode Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/chaincode-labs/chaincode-residency/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-labs/chaincode-residency/><h6>Chaincode Residency</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/chicago-bitdevs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chicago-bitdevs/><h6>Chicago Bitdevs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/coindesk-consensus-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coindesk-consensus-2016/><h6>Coindesk Consensus</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/coordination-of-decentralized-finance-workshop/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/><h6>Coordination of Decentralized Finance</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/coordination-of-decentralized-finance-workshop/2020-stanford/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/2020-stanford/><h6>2020 Stanford</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/cppcon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/><h6>CPPcon</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/cppcon/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/2017/><h6>CPPcon 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/cppcon/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/2020/><h6>CPPcon 2020</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/cryptoeconomic-systems/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cryptoeconomic-systems/><h6>Cryptoeconomic Systems</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/cryptoeconomic-systems/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cryptoeconomic-systems/2019/><h6>Cryptoeconomic Systems 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/dallas-bitcoin-symposium/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/dallas-bitcoin-symposium/><h6>Dallas Bitcoin Symposium</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/decentralized-financial-architecture-workshop/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/decentralized-financial-architecture-workshop/><h6>Decentralized Financial Architecture Workshop</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-developers-miners-meeting-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-developers-miners-meeting-2016/><h6>Developers-Miners Meeting</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/greg-maxwell/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/greg-maxwell/><h6>Greg Maxwell</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/grincon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/grincon/><h6>Grincon</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/grincon/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/grincon/2019/><h6>Grincon 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/honey-badger-diaries/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/honey-badger-diaries/><h6>Honey Badger Diaries</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/iacr/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/iacr/><h6>IACR Crypto</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/la-bitdevs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/la-bitdevs/><h6>LA Bitdevs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/layer2-summit/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/layer2-summit/><h6>Layer2 Summit</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/layer2-summit/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/layer2-summit/2018/><h6>Layer2 Summit 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/lets-talk-bitcoin-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lets-talk-bitcoin-podcast/><h6>Lets Talk Bitcoin Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/lightning-conference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-conference/><h6>Lightning Conference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/lightning-conference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-conference/2019/><h6>Lightning Conference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/lightning-hack-day/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-hack-day/><h6>Lightning Hack Day</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/lightning-specification/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-specification/><h6>Lightning Specification</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/london-bitcoin-devs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/london-bitcoin-devs/><h6>London Bitcoin Devs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/magicalcryptoconference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/magicalcryptoconference/><h6>Magicalcryptoconference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/magicalcryptoconference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/magicalcryptoconference/2019/><h6>Magicalcryptoconference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/misc/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/misc/><h6>Misc</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/><h6>MIT Bitcoin Expo</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2015/><h6>Mit Bitcoin Expo 2015</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2016/><h6>Mit Bitcoin Expo 2016</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2017/><h6>Mit Bitcoin Expo 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2018/><h6>Mit Bitcoin Expo 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2019/><h6>Mit Bitcoin Expo 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2020/><h6>Mit Bitcoin Expo 2020</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2021/><h6>Mit Bitcoin Expo 2021</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2022/><h6>MIT Bitcoin Expo 2022</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/munich-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/munich-meetup/><h6>Munich Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/noded-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/noded-podcast/><h6>Noded Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/realworldcrypto/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/><h6>Realworldcrypto</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/realworldcrypto/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/2018/><h6>Realworldcrypto 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/realworldcrypto/2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/2021/><h6>Realworldcrypto 2021</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/rebooting-web-of-trust/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/rebooting-web-of-trust/><h6>Rebooting Web Of Trust</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/rebooting-web-of-trust/2019-prague/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/rebooting-web-of-trust/2019-prague/><h6>2019 Prague</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/ruben-somsen/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/ruben-somsen/><h6>Ruben Somsen</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/satoshi-roundtable/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/satoshi-roundtable/><h6>Satoshi Roundtable</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/satoshi-roundtable/sr-004/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/satoshi-roundtable/sr-004/><h6>Sr 004</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/scalingbitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/><h6>Scaling Bitcoin Conference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/scalingbitcoin/hong-kong-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/hong-kong-2015/><h6>Hong Kong (2015)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/milan-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/milan-2016/><h6>Milan (2016)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/montreal-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/montreal-2015/><h6>Montreal (2015)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/stanford-2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/><h6>Stanford (2017)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/tel-aviv-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/><h6>Tel Aviv (2019)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/tokyo-2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/><h6>Tokyo (2018)</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/sf-bitcoin-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/sf-bitcoin-meetup/><h6>SF Bitcoin Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/simons-institute/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/simons-institute/><h6>Simons Institute</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/stanford-blockchain-conference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/><h6>Stanford Blockchain</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/stanford-blockchain-conference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/2019/><h6>Stanford Blockchain Conference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/stanford-blockchain-conference/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/2020/><h6>Stanford Blockchain Conference 2020</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/stephan-livera-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stephan-livera-podcast/><h6>Stephan Livera Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/sydney-bitcoin-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/sydney-bitcoin-meetup/><h6>Sydney Bitcoin Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/tabconf/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tabconf/><h6>TABConf</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/tabconf/2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tabconf/2021/><h6>TABConf 2021</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/tabconf/2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tabconf/2022/><h6>TABConf 2022</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/texas-bitcoin-conference-2014/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/texas-bitcoin-conference-2014/><h6>Texas Bitcoin Conference</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/tftc-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tftc-podcast/><h6>TFTC Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/verifiable-delay-functions/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/verifiable-delay-functions/><h6>Verifiable Delay Functions</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/verifiable-delay-functions/vdf-day-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/verifiable-delay-functions/vdf-day-2019/><h6>Vdf Day 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/vr-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/vr-bitcoin/><h6>VR Bitcoin</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/w3-blockchain-workshop-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/w3-blockchain-workshop-2016/><h6>W3 Blockchain Workshop</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/wasabi-research-club/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/wasabi-research-club/><h6>Wasabi Research Club</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/what-bitcoin-did-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/what-bitcoin-did-podcast/><h6>What Bitcoin Did Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></div></nav></div><div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky"><div class=docs-toc><nav id=TableOfContents><ul><li><ul><li><a href=#introduction>Introduction</a></li><li><a href=#the-need-for-coinjoin>The need for CoinJoin</a><ul><li><a href=#hard-money>Hard Money</a></li><li><a href=#why-is-privacy-hard>Why is Privacy Hard</a></li></ul></li><li><a href=#problems-with-coinjoin>Problems with CoinJoin</a><ul><li><a href=#bigger-transactions>Bigger Transactions</a></li><li><a href=#centrally-coordinated-smooth-experience-cant-choose-amount>Centrally coordinated smooth experience. Can&rsquo;t choose amount</a></li><li><a href=#market-based-not-smooth-experience-on-chain-fee-watermark>Market based, not smooth experience on-chain fee watermark</a></li><li><a href=#economically-incentivised-vis-cisa-cross-input-signature-aggregation>Economically incentivised vis CISA (Cross input Signature Aggregation)</a></li></ul></li><li><a href=#steganographic-decentralized-market-based-coinjoin-sdmc>Steganographic Decentralized Market-based CoinJoin (SDMC)</a></li><li><a href=#steganographic>Steganographic</a></li><li><a href=#market-based>Market-Based</a></li><li><a href=#coinjoinxt-basic-idea>CoinJoinXT (basic idea)</a></li><li><a href=#the-kitchen-sink-extended-idea>The Kitchen Sink (extended idea)</a><ul><li><a href=#timelock-to-mitigate-double-spending>TimeLock to mitigate double spending</a></li><li><a href=#channel-splice>Channel Splice</a></li></ul></li><li><a href=#subset-sum-analysis>Subset Sum Analysis</a><ul><li><a href=#overview>Overview</a></li><li><a href=#how-to-subset-sum-analyse>How to subset sum analyse?</a></li></ul></li><li><a href=#advantages>Advantages</a></li><li><a href=#how-subset-sum-analysis-can-fail>How subset sum analysis can fail?</a></li><li><a href=#disadvantages>Disadvantages</a><ul><li><a href=#all-at-once-timelocks-but->All at once? Timelocks but &mldr;</a></li><li><a href=#offchain-onchain-privacy-bleed-is-cool-but->Offchain onchain privacy bleed is cool but &mldr;</a></li></ul></li><li><a href=#markets-and-fees>Markets and Fees</a><ul><li><a href=#onchain-fees>Onchain fees</a></li></ul></li><li><a href=#sdmc---the-sales-pitch>SDMC - the sales pitch</a></li><li><a href=#qa>Q&amp;A</a></li></ul></li></ul></nav></div></div><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3"><a href=/>Home</a>
+&lt; <a href=/bitcoinplusplus/>Bitcoin++
+</a>&lt; <a href=/bitcoinplusplus/onchain-privacy/>Onchain Privacy
+</a>&lt; Coinjoin Done Right: the onchain offchain mix (and anti-Sybil with RIDDLE)<h1>Coinjoin Done Right: the onchain offchain mix (and anti-Sybil with RIDDLE)</h1><p>Speakers:
+<a href=/speakers/adam-gibson>Adam Gibson</a></p><p><i>Date: December 10, 2022</i></p><p><i>Transcript By: delcin-raj via review.btctranscripts.com</i></p><p>Tags:
+<a href=/tags/privacy>Privacy</a>, <a href=/tags/coinjoin>Coinjoin</a>, <a href=/tags/adaptor-signatures>Adaptor signatures</a>, <a href=/tags/timelocks>Timelocks</a>, <a href=/tags/ptlcs>Ptlcs</a></p><p>Category:
+<a href=/categories/conference>Conference</a></p><p>Media:
+<a href='https://www.youtube.com/watch?v=khmLiM9xhwk'>https://www.youtube.com/watch?v=khmLiM9xhwk</a></p><p>NOTE: Slides of the talk can be found <a href=https://github.com/delcin-raj/btc_transcripts_materials/blob/main/cdmx2022.pdf>here</a></p><h2 id=introduction>Introduction</h2><p>My name&rsquo;s Adam Gibson, also known as waxwing on the internet.
+Though the title might suggest that I have the solution to the problem of implementing CoinJoin, it&rsquo;s not exactly true.
+It&rsquo;s a clickbait.
+I haven&rsquo;t, but I suppose what I can say in a more serious way is that I&rsquo;m proposing what I consider to be a meaningfully different alternative way of looking at the concept of CoinJoin and therefore at the concept of on-chain privacy because the conversation nowadays about on-chain privacy tends to be dominated by CoinJoin.</p><p>What is the right on-chain privacy model?
+Max (Hillebrand) this morning <a href="https://www.youtube.com/watch?v=dF8sNwp7XiY">has given you an excellent sort of whirlwind tour</a> of all the most basic and important concepts - the ground zero of on-chain privacy - thinking about change outputs, thinking about address reuse, etc.
+Of course, we saw at the end of that an example of one of the most developed ideas that exists today about how to do CoinJoin, which is Wasabi, or Wabi Sabi or Wasabi 2.0.</p><p>An outline of what I&rsquo;m gonna talk about, I&rsquo;m mostly gonna focus on those first three:</p><ul><li>Do we need CoinJoin, why do we need it</li><li>what are the problems with it</li><li>and then my proposed alternative solution, which is &ldquo;CoinJoin done right&rdquo;</li></ul><h2 id=the-need-for-coinjoin>The need for CoinJoin</h2><h3 id=hard-money>Hard Money</h3><h4 id=onchain-is-the-industrial-layer>Onchain is the industrial layer</h4><p>What I&rsquo;ve thought about this stuff for I guess 10 years now, is that I don&rsquo;t see on-chain Bitcoin as a consumer payments network, and I think anyone who thinks it is just misunderstood it, and that could even include Satoshi - shock horror - who talked about vending machines.</p><p>I think it&rsquo;s just not the right characterization of what the system actually is.
+It&rsquo;s more like a hard money system, which means I&rsquo;ve sometimes used the phrase, &ldquo;SWIFT not Starbucks points&rdquo;.</p><h4 id=bitcoin-is-financial-uranium>Bitcoin is financial Uranium</h4><p>I&rsquo;ve sometimes said to people, Bitcoin is financial plutonium or uranium, which is my way of saying, this is dangerous stuff.
+If you&rsquo;re an engineer and you know what you&rsquo;re doing, then you probably will be okay.
+If you&rsquo;re not, you need to be very, very careful.
+Because there are things about it that are not obvious.
+There are things about it that are very inconvenient.
+If you let your impatience get the better of you, you&rsquo;ve got a very good chance of losing your money or perhaps not losing your money and then just having very bad privacy as well which is obviously the topic of this conference.</p><h4 id=buying-and-selling-bitcoin-on-a-cex-centralized-exchange-is-like-financial-anthrax>Buying and Selling bitcoin on a CEX (Centralized Exchange) is like financial anthrax</h4><p>I jokingly point out that if Bitcoin is financial plutonium, then buying and selling on a CEX is financial anthrax.
+And my point there is that if you&rsquo;re a nuclear engineer, you can handle plutonium correctly, you know the procedures, but if you&rsquo;re handling anthrax on a daily basis, eventually you&rsquo;re gonna die, okay?
+So please avoid the centralized exchanges.
+This is not the right time to make that comment because everyone&rsquo;s, I should have been putting Sam Bankman-Fried there, of course, but I&rsquo;m old, so there we go.</p><h4 id=lightning-vs-onchain-payments>Lightning vs Onchain payments</h4><p>The purpose of the section is just to emphasize that point.
+We&rsquo;re dealing with something that&rsquo;s difficult to do.
+Handling On-chain Bitcoin is difficult.
+I know it certainly wasn&rsquo;t accepted to say that back in the day.
+It&rsquo;s more accepted nowadays.
+I think people get it.
+Partly because a second layer exists.</p><p>And to come back to my point, for consumer payments network prefer lightning over on-chain Bitcoin.
+You know, at least it makes an effort doing that, being usable as a consumer payments network.
+But on-chain activity, fundamentally, I would argue, and this is maybe a little bit of a hot take on this slide, you know, is a kind of a political act.
+Just even using on-chain Bitcoin at all, let alone using CoinJoin, which I think is definitely a political act.
+And I&rsquo;ve had many private conversations, including with people in this room and many other sort of Bitcoin users, who confide in me that they want to be virtuous and use CoinJoin like they&rsquo;re told to use CoinJoin, but actually they don&rsquo;t do it at all because they&rsquo;re really scared, and I don&rsquo;t blame them.
+Why wouldn&rsquo;t you be scared, you hear stories about the Coins getting blocked all the time.
+So, you got to be sensible about these things.
+If this is money that actually matters to you, and it&rsquo;s not just a toy, then you&rsquo;ve gotta be quite careful about what you&rsquo;re doing.
+So I know that&rsquo;s a whole can of worms I&rsquo;m deliberately gonna not unpack right now, but let&rsquo;s consider that framework that we&rsquo;re talking about a serious form of hard money which has a political component to using it.
+On the other hand if we&rsquo;re talking about something like lightning we could say it&rsquo;s not a political act.
+Maybe that&rsquo;s a weird thing to say, like if I make a payment with on-chain Bitcoin it&rsquo;s a political act, if I make a payment with lightning it&rsquo;s not.
+I can&rsquo;t 100% defend that position but maybe it gets your brain thinking about these issues.</p><h3 id=why-is-privacy-hard>Why is Privacy Hard</h3><p>Blockchains are inherently public.
+We, as the on-chain privacy community, are, in some sense, trying to do something ridiculous and impossible which is to make something which is inherently public be not public.
+And of course projects like Monero and Zcash extend this further, right?
+They say, you know what?
+The very design of Bitcoin is not good enough for that, we need a design that is properly intrinsically private but I think embedded in that they end up with sort of paradoxical situations and I remember in building on Bitcoin in 2018 I was on a panel and I said, you know, Zcash is great and all, but what if there&rsquo;s a bug which causes inflation?
+Nobody will know.
+And then six months later, it came out that there was a bug which caused inflation, which nobody knew about, and which they had hidden for an entire year, so for six months before I was on that panel.
+So that was a kind of amusing experience for me.
+But I think Peter Todd at the back of the room here is one of many people who pointed out before the event, and of course he was involved in the creation of Zcash, that this is a fundamental kind of failure mode you have in such a system which is unavoidable no matter how good your cryptography is claimed to be.
+Because the problem is not like is the cryptography sound.
+The problem is in the flow from the brain of an academic to a paper, to an engineer, to another engineer, mistakes get made in building these systems. They are intrinsically very difficult to build.
+So that&rsquo;s why I say the DNA of blockchains is to be public and trying to make them not public, you kind of tie yourself up in knots a little bit.
+I won&rsquo;t go through this text (referring to slide#5).
+You can read it later if you care.
+I end with a lightning payment as an apolitical act, as my sort of little punchline there.</p><h4 id=attack-on-zcash>Attack on Zcash</h4><p>This graph (referring to slide#6) shows an attack that recently happened on Zcash in which somebody spammed their blockchain with five transactions per block, created in a way that it filled up the entire block.
+Due to the privacy argument that oh, we should have a fixed transaction fee independent of the size of the transaction, which is just insane.
+And anyway, so at the end of the day, they were just spamming the block.</p><p>(Additional context:
+Zcash uses UTXO model and provides shielded transactions where inputs and outputs are obfuscated.
+So the attacker was able to create hundreds of outputs using a very small fixed amount of fee and it
+resulted in the blockchain size growing from 31GB to 100GB from mid June to October of 2022.)</p><p>And then I&rsquo;m saying that oh look, the history of Zcash, that is so to speak the nullifiers, which are a bit like key images, which I&rsquo;ll talk about later.
+They have to accumulate infinitely because you&rsquo;ve essentially got a state that can only increase in size because you can never delete state because you&rsquo;re deliberately obscuring the fact that a particular coin has been spent.
+So that&rsquo;s a kind of simplified summary of what&rsquo;s going on there.
+And I&rsquo;m kind of like obfuscating the fact that that&rsquo;s not really the same thing on the graph and in the text, but they are kind of related.
+Like the more state you create in Zcash, the more of an issue it is that there&rsquo;s this infinite history which you can never prune.
+Maybe this is unfair, maybe the cryptographers are gonna come up with clever ways to deal with that.
+I&rsquo;m not sure, I really don&rsquo;t know.
+But there&rsquo;s certainly big problems with taking this approach to privacy.
+But it is an obvious approach to privacy.
+Let&rsquo;s not be a Maxis who think that anything which isn&rsquo;t Bitcoin is the devil.
+We should at least look at these systems.
+And I have looked at some aspects of some of these systems.
+I find them very interesting.</p><h2 id=problems-with-coinjoin>Problems with CoinJoin</h2><p>CoinJoin, as I said earlier, is the way we&rsquo;re tending to do things.
+Let&rsquo;s even forget about JoinMarket for a minute.
+Let&rsquo;s just say Wasabi, or let&rsquo;s just say Samurai.
+People have this idea that make every spend a CoinJoin is somehow the ideal.
+If I said I don&rsquo;t think we should make every spender CoinJoin, would you agree with me?
+And if so, what&rsquo;s your thinking?
+Put it this way, does anyone agree, no, I have to put it this way around, does anyone disagree with this statement, and if so, why?</p><h3 id=bigger-transactions>Bigger Transactions</h3><p>[Peter Todd]: &ldquo;I&rsquo;ll give a huge disagreement.
+I would say it&rsquo;s okay that some users, like my OpenTimestamps transactions, have technical reasons where CoinJoin just are a nuisance.
+And we shouldn&rsquo;t hate on the people who have reasonable reasons like that.
+But they certainly are a niche.&rdquo;</p><p>I&rsquo;m just curious why, I mean, I can see a reason why you&rsquo;d say we don&rsquo;t need CoinJoin for OpenTimestamps, but why would it be a nuisance?</p><p>[Peter Todd]: &ldquo;Well, because it makes transactions bigger, which makes the proofs bigger.</p><p>That&rsquo;s a good reason, yeah.</p><p>[Peter Todd]: &ldquo;Also, because I update the tip of the Merkle tree for all the timestamps every single block, how exactly you&rsquo;d implement that with CoinJoin?
+It&rsquo;s not really clear how you do it.&rdquo;</p><p>So it&rsquo;s technically difficult, right?
+I think the most important point coming out of that is just the size question, right?
+Most ways of doing CoinJoin are going to increase the amount of space we use on the blockchain.</p><h3 id=centrally-coordinated-smooth-experience-cant-choose-amount>Centrally coordinated smooth experience. Can&rsquo;t choose amount</h3><p>Chris Belcher and I in JoinMarket in the early days and many other people of course realized that CoinJoin is cool and all, but you can&rsquo;t have everyone doing equal output sized CoinJoins all the time.</p><p>[Audience]: &ldquo;I would guess also that when you&rsquo;re CoinJoining, you sadly are beholden to the best practices of the other people involved in the round.
+And if everyone is just CoinJoining by default with no regard paid for the actual necessity of their own privacy, they might just recombine everything after.
+I mean if everything is a CoinJoin, I don&rsquo;t know what that really looks like, but if you&rsquo;re not going to act in a way that preserves privacy and you&rsquo;re CoinJoining with people that actually need it, you might hurt them inadvertently.&rdquo;</p><p>Yeah that&rsquo;s a very important point about the fragility or brittleness of these collaborative transactions, as people tend to call them nowadays, is that you can&rsquo;t assert the quality of privacy you get because it depends on not only behavior before, which you can read on the blockchain, but behavior after of your counterparties.
+So that&rsquo;s a very problematic aspect.
+There&rsquo;s obviously lots of answers to that, this is debatable, but I wanted to illustrate what I think is how it&rsquo;s working today, which is that people are using CoinJoin mostly in these systems.
+I mean, Wasabi 2.0 already sort of invalidates some of the things I&rsquo;m saying here, but in the centrally coordinated model, the idea is that you have to agree on an amount, and that&rsquo;s not very true with RB2, well it kind of is and isn&rsquo;t with RB2, but let&rsquo;s just say, because you&rsquo;re having a central coordinator, who gets to decide what the amount is, so therefore, generally speaking, you have what they call fixed denominations.
+If you have fixed denominations, you&rsquo;re gonna get a smoother experience because the central coordinator can handle a lot of the nonsense.
+But the inability to choose an amount causes problems like &ldquo;toxic change&rdquo;.</p><h3 id=market-based-not-smooth-experience-on-chain-fee-watermark>Market based, not smooth experience on-chain fee watermark</h3><p>On the other hand, if you go the other extreme like JoinMarket tried to do, you have a market based system.
+You have to handle a lot of problems yourself as a user that otherwise would have been handled by the coordinator, such as Sybil Attacks, or things similar to Sybil Attacks, I won&rsquo;t go into details.
+And it makes the experience a lot less smooth.
+It also has a much bigger problem, which is an on-chain fee watermark.
+So if the fees are being paid from certain participants in the collaborative transaction to another participant because that participant is offering liquidity as a service, it means there&rsquo;s gonna be a discrepancy in the, I&rsquo;m not going into details, I&rsquo;m just giving you like the high level idea that, for example, the inputs of one party might be, have more fee deducted from them than the inputs of other parties, which might make it easy for you to identify the inputs of the person who was paying for the service, as opposed to the people who were offering the service and getting paid.
+I mentioned this recently in a post on Mastodon, but it suddenly occurred to me, because I listened to a podcast by Sjors Provoost and Aaron van Wirdum about the recent case of Alexey Pertsev, who was imprisoned in the Netherlands, and not yet charged, I believe, but imprisoned for multiple months for being a coder for Tornado Cash, or being part of the Tornado Cash team.
+And while we don&rsquo;t know the full details, it apparently is the case that the basis of the prosecutions keeping him in prison is mostly around the existence of a token called TORN or something, which, well, is not directly inside the sort of tornado cash contract execution.
+It&rsquo;s inside like some relaying process, and why do you have to relay transactions into the tornado cash process?
+It turns out, it&rsquo;s precisely because of on-chain fees, because if you do this anonymity process in their contract naively, the fact that you&rsquo;re paying a fee in Ethereum for the execution of the contract kind of somehow gives away who you were to begin with.
+So it&rsquo;s exactly the same issue.
+We often find ourselves stumbling if we try to make properly decentralized, properly trustless versions of these cooperative or collaborative transactions for privacy.
+We stumble over the fact that there&rsquo;s a fee that has to be paid and if it&rsquo;s being paid directly on-chain, then we come back to that, the DNA of blockchains is to be public, right?
+Which means that you have a big problem.</p><h3 id=economically-incentivised-vis-cisa-cross-input-signature-aggregation>Economically incentivised vis CISA (Cross input Signature Aggregation)</h3><p>That&rsquo;s part of what I&rsquo;m gonna try and solve in the remainder of my talk.
+Okay, in the remainder of my talk, it&rsquo;s gonna get very technical from now on, so I apologize in advance for people about that.
+I&rsquo;m not gonna get into the question of economic incentive via cross-input signature aggregation.
+I defer you to Jonas Nick who actually worked out the numbers.
+I just want to say that economic incentive for CoinJoin via cross input signature aggregation is a bit of a red herring.
+A, because the actual amount of fee savings is quite minor as according to the tables <a href=https://github.com/BlockstreamResearch/cross-input-aggregation/blob/master/savings.org>here</a>,
+but also because cross input signature aggregation incentivizes transaction batching but a batched CoinJoin doesn&rsquo;t incentivize a specifically privacy-preserving CoinJoin.
+And I&rsquo;ll let you just figure out that on your own later.</p><h2 id=steganographic-decentralized-market-based-coinjoin-sdmc>Steganographic Decentralized Market-based CoinJoin (SDMC)</h2><h2 id=steganographic>Steganographic</h2><p>So I wanna introduce a new concept, which isn&rsquo;t actually new.
+I think I first talked about this in, I&rsquo;d already mentioned Lisbon in 2018, so it&rsquo;s four years ago now, more than four years ago.
+But I only introduced the basic concept here, and I think it&rsquo;s developed significantly, at least in my head, maybe not in actual code.
+So can we make CoinJoins or things like CoinJoins, let&rsquo;s say collaborative privacy enhancing transactions that are steganographic and if you&rsquo;re not familiar with that term it just means they&rsquo;re CoinJoin that don&rsquo;t look like CoinJoin so they&rsquo;re not obvious.
+Coinswap for example has a steganographic property a little bit because you don&rsquo;t see an obvious pattern.
+You can&rsquo;t immediately recognize it on the blockchain, so steganographic is decentralized.
+I think that the central points of failure is a big issue which we will continue to stumble against in this field.</p><h2 id=market-based>Market-Based</h2><p>Market based because markets solve a coordination problem.
+So as was already mentioned this morning, the only really big advantage of JoinMarket is that one person can choose the denomination themselves.
+Because they&rsquo;re still kind of CoinJoin, but they also kind of aren&rsquo;t.
+So what the heck am I talking about?</p><h2 id=coinjoinxt-basic-idea>CoinJoinXT (basic idea)</h2><p>(refer slide#9)</p><p>So start with the basic idea.
+CoinJoin XT, now the XT is just like a meme.
+It was funny four years ago, it&rsquo;s not funny anymore.
+But never mind.
+So you can just think of it as extended CoinJoin, okay, because that&rsquo;s the the non-meme aspect.
+Yeah, okay maybe it wasn&rsquo;t funny for years ago either.</p><p>Basically the idea comes from, how did SegWit change Bitcoin?
+I&rsquo;m not going to put this to the audience because you could answer that 10 ways, but the most important thing is lightning.
+Anyone here who knows lightning probably knows that why SegWit was important for lightning is it allowed you to pre-sign a transaction using an input that wasn&rsquo;t yet confirmed because you know the <code>txid</code>, the transaction id of the transaction before it&rsquo;s on the blockchain, and why did that change in segwit?
+Why did segwit allow us to pre sign transactions?</p><p>[Audience]: &ldquo;To go over the transaction malleability which meant you couldn&rsquo;t fool the other party.&rdquo;</p><p>And what caused transaction malleability?</p><p>[Audience]: &ldquo;The witness data being a part of the transaction rather than being separate.&rdquo;</p><p>And why would it malleate?
+Why would that witness data malleate?</p><p>[Audience]: &ldquo;Because you can change trivially.
+I can&rsquo;t remember exactly what you can change about it, but you can create a new valid transaction that does the same thing, but with a different signature.&rdquo;</p><p>The idea is that, I guess it&rsquo;s kind of important for something else that comes up later is that, we sometimes forget that when we sign something with ECDSA or with Schnorr, we can always make a new signature with a new nonce, same private key, we can make effectively an infinite number of signatures.
+So that fact meant that Lightning didn&rsquo;t work without SegWit, but now the witness is outside the transaction ID, you can&rsquo;t malleate it, so you can pre-sign transactions.
+The idea here is just to exploit the same thing, but instead in Lightning, you create multiple versions of the same transaction, and they kind of, one overwrites the other with a punishment mechanism.</p><p>Here (referring to slide#9), I originally called this on-chain contracting.
+Well, let&rsquo;s just have a bunch of transactions and they are all gonna go on-chain.
+So the idea here is, there&rsquo;s a funding UTXO (F) between Alice and Bob that gets negotiated in such a way that Bob should recevie a payout at the end.
+Then the two parties agree on a sequence of transactions (TX1, TX2, TX3, TX4) which are all linked by at least one connecting UTXO, which all has to be multi-sig.
+And they&rsquo;re both gonna have to sign, pre-sign every one of these transactions first before they co-sign the funding transaction.
+And that means that at the end of that process, they can both be assured, if at least one of them wants to broadcast all of these transactions, they will definitely all go through because the connectors, the inputs are multi-sigs which can&rsquo;t be reneged on by the counterparty.
+Why does this matter for CoinJoin?
+Well it means that after TX1, Bob can get a payout in TX1 without Alice also being paid something.
+So in a way, Alice is lost out at this point, but all of these (TX2, TX3, TX4) are pre-signed and they can&rsquo;t go anywhere else.
+So the idea is to break heuristics by the fact that if an analyst, a chain surveillance expert is looking at this transaction, they&rsquo;ll see a payment out there that might look like an ordinary payment.
+We will see below that it depends on the details.</p><p>Another thing that might help you understand it is, suppose instead of just a pure sequence, we had an extra UTXO contributed by one of the counterparties inside of TX3.
+Let m_{23} be a multi-sig from TX2 -> TX3, but there&rsquo;s another UTXO (A1) contributed by Alice to TX3.</p><p>Is that safe? Is it still the case that we can be sure that TX4 will get broadcast?
+If this UTXO (A1) is only controlled by Alice, now remember, none of these have been broadcast yet.
+We sign TX1, we sign TX2, we sign TX3, we sign TX4, and only finally do we sign this funding UTXO (F), or let&rsquo;s say create a transaction (say T) that pays into that funding UTXO, yeah?
+And then that transaction (T) is on-chain.
+So UTXO (F) exists, but all of this is just pre-signed by both parties, it&rsquo;s not on the blockchain yet.
+So is it safe to just contribute another UTXO?</p><p>[Audience]: &ldquo;No, because Alice could double spend the money.&rdquo;</p><p>Right, so Alice could have given you a signature signing TX3 on UTXO A1, but could 10 minutes later spend UTXO A1 somewhere else.
+So that&rsquo;s not safe.
+So whenever we have something like that, we call that a promise UTXO.
+It&rsquo;s a promise.
+It&rsquo;s not a guarantee.
+So we need to create time-locked back out refunds, paying out of the transaction before it to make sure that if she does that, we can still get our money back.
+Does that make sense?
+So notice here, we started with a 1 and 1 (initially deposited amount by A and B), so Alice contributed 1, so at this point (TX2), Alice should get paid back 1, but Bob should only get paid back 0.5 because he had an output in TX1.
+Any questions about this structure because this will be extended in a minute.</p><p>[Audience]: &ldquo;Can Alice add that output after the first transaction was signed already?
+Or in other words, can we update the chain after we started it?&rdquo;</p><p>I never thought about that.
+What do you think?
+So hang on a minute.
+So, no?
+because we&rsquo;re signing here(m_{34}).
+What does this arrow(m_{34}) represent?
+It represents a UTXO out of TX3 paying into TX4.
+What kind of UTXO is that?
+Promise UTXO.
+It&rsquo;s a multi-sig on a specific TX ID, right?
+So we couldn&rsquo;t like, unless you maybe SIGHASH Single or some dark arts that I don&rsquo;t understand, I don&rsquo;t think anyone ever used anyway.
+No, basically I&rsquo;d always envisioned this as frozen in time at the point where you finally, the distinguishing decision is to sign the transaction that pays into that (funding UTXO F).
+Yeah, it has to be that way around.
+Yeah, anyway that&rsquo;s the basic idea.</p><p>[Audience]: &ldquo;So this is a chain of pre-signed transactions but just like with Lightning we can update.&rdquo;</p><p>Right, this is what I was saying at the start, is that Lightning is about, I whimsically called it vertical contracting as opposed to horizontal contracting, because Lightning updates and of course intrinsically updating is kind of stupid, right, because that doesn&rsquo;t guarantee the previous one doesn&rsquo;t exist anymore but the idea is there&rsquo;s a punishment mechanism or an L2 mechanism.
+None of that here this is just flat; everything is signed up front and it&rsquo;s unlocked at the moment when you sign the funding UTXO.</p><p>[Audience]: &ldquo;But if both parties collaborate honestly then they could.&rdquo;</p><p>Oh yeah! Of course that just goes without saying right, I mean, I&rsquo;m just trying to design something that&rsquo;s safe from the other side cheating.
+Obviously I&rsquo;ve put two here, obviously it could be ten people as well, by the way.
+This is designed for an N of N multi-sig thing.
+So I don&rsquo;t mind spending time on this because after all I&rsquo;m sure most people either haven&rsquo;t heard of this or didn&rsquo;t really look into it.
+So if there are other questions about this structure, I don&rsquo;t mind.
+I wanna like make it way more complicated.</p><p>Yeah, so how can I summarize it? if you don&rsquo;t want to get lost in the details.
+I want to summarize it by saying everything&rsquo;s pre-signed and the reason it&rsquo;s all locked in is precisely because the transfer of funds is on a multi-sig controlled by all parties?
+Otherwise it wouldn&rsquo;t be safe, right?</p><p>This is a very bare bones illustration, but for example in TX1 there&rsquo;s an extra payout to one of the parties.
+So naively you look at it and think, well this isn&rsquo;t safe because Bob&rsquo;s getting a whole load of money before Alice got anything.
+But that&rsquo;s why everything has to be frozen and locked at the start.
+And by achieving that goal it means we can break the typical heuristics because it doesn&rsquo;t look right.
+That looks like there&rsquo;s an actual payment there.</p><h2 id=the-kitchen-sink-extended-idea>The Kitchen Sink (extended idea)</h2><p>(refer slide#10)</p><p>I call this the kitchen sink, so I&rsquo;m extending this idea a bit, all right?
+So green is multisig between the parties, here it&rsquo;s also only two, well it&rsquo;s only two in the multisig.
+So here (1st node) we have both Alice and Carol funding the multisig initially.
+But the idea is we could also embed two other types of event inside this network.
+I&rsquo;m showing it as a very bare bones straight line (almost linear structure of the whole graph), but imagine it could also branch off.
+It works.
+It&rsquo;s the same principle.
+The first thing we embed is a PayJoin.
+Okay, let me describe the scenario.
+The scenario is Alice wants to make a simple payment to Bob, who is not around.
+She wants to pay Bob 1 BTC.
+And Carol wants to pay David 2 BTC, but he is around, he&rsquo;s online, and they agree to PayJoin it.
+Because that&rsquo;s better for privacy, right?
+So where&rsquo;s the PayJoin represented in the diagram?
+It&rsquo;s represented by the 3rd node.
+It&rsquo;s clear because there&rsquo;s a D there (David).
+He&rsquo;s receiving 2.5, but he&rsquo;s also contributing 0.5 into that specific transaction.
+What kind of UTXO is the 0.5 from David?
+It&rsquo;s a promise UTXO (red arrow), that&rsquo;s right.
+But What&rsquo;s the negative about a promise UTXO?
+It&rsquo;s not part of a multi-sig, it&rsquo;s coming from outside of the tree, so to speak, or the line.
+What&rsquo;s the danger?
+Why is it red for danger?
+Somebody could double-spend it and break the rest of the chain.
+So what do we have to do to address that danger?</p><p>[Audience]: &ldquo;Lock it somewhere in the chain.&rdquo;</p><p>Well David&rsquo;s just like gonna&mldr;
+He&rsquo;s happy to accept a payment of 2 BTC from Carol, but he just wants to do a PayJoin with it, maybe he&rsquo;s got BTC pay server, he doesn&rsquo;t want to do all this rubbish, you know.
+He doesn&rsquo;t care about the rest of the tree, what do we do?</p><p>[Audience]: &ldquo;I mean with PayJoin you have a pre-signed single user transaction.&rdquo;</p><p>Yeah, but that wouldn&rsquo;t help stop the double spend problem we&rsquo;re talking about.
+Remember it&rsquo;s delayed, right?</p><p>[Audience]: &ldquo;But if it&rsquo;s a high fee?
+He could double spend it with a high fee.&rdquo;</p><p>No, don&rsquo;t do that.
+That&rsquo;s wrong, that&rsquo;s terrible.
+Well, it&rsquo;s on the diagram.</p><h3 id=timelock-to-mitigate-double-spending>TimeLock to mitigate double spending</h3><p>Timelock back out, right?
+Like in the previous diagram, if you have a promise UTXO, you have to put some kind of back out before it to make sure that if the guy double spends it, then at the very least we can assure that the people involved in this CoinJoinXT structure are going to get back the money that they had to start with, they don&rsquo;t lose any money.
+Now of course that&rsquo;s not quite good enough because would you go to all this trouble and then just have somebody just, that&rsquo;s annoying right?
+Well you can address that with several ways.
+For example here (2.5_D red line) it&rsquo;s kind of addressed by the fact he&rsquo;s receiving money.
+Like he probably doesn&rsquo;t want to double spend that because this gives him 2 BTC.
+So if he double spends it, he&rsquo;s not gonna get the 2 BTC.
+So I think that&rsquo;s a pretty good incentive.
+Other ways it could be incented is, if the promise UTXO is coming from one of the parties who funded, they could actually have a penalty in the timelock back out.
+But I mean, maybe that&rsquo;s a detail.
+What else is going on here apart from these two payments?</p><h3 id=channel-splice>Channel Splice</h3><p>What&rsquo;s going on at the bottom (last node)?
+I think this is the really important part.
+This is the main thing I wanted to tell you actually.
+So what&rsquo;s going on at the bottom is there&rsquo;s actually a channel splice.
+Now I&rsquo;m not sure if technically this is really possible, almost certainly not today.
+But I think theoretically it makes sense.
+If Alice and Carol agree to do this, they could splice in an amount at the end of this chain into a channel.
+They could also open a dual funded channel.
+It&rsquo;s the same thing, maybe one of them&rsquo;s more practical than the other.
+Now why would we want to do this?
+Imagine they&rsquo;ve got this channel input here(0.04_{AC}), the new channel (0.09_{AC}), the now spliced-in channel has a larger capacity, and they also get their change outputs from the whole process starting from their original.
+If you work out the numbers, that&rsquo;s how much they get back, yeah?
+What might be the advantage, and this is a bit of a difficult question, but I&rsquo;m sure somebody in the room could figure it out.
+Why might it be really cool to put a splice into a channel at the end of this construction?
+Why might that be valuable?
+I mean we could just have, because in fact Carol is owed 1.4 BTC at this stage and Alice is owed 1.1 BTC, So they could just simply be paid 1.1 and 1.4 and everything would be normal.
+They&rsquo;ve made their payments, they&rsquo;ve gone through this structure, but why might it be useful to add in a splice into a channel?</p><p>[Audience]: &ldquo;It&rsquo;s like similar to a PayJoin, where you&rsquo;re hiding the amount each user receives.&rdquo;</p><p>Yeah, it&rsquo;s hiding, it&rsquo;s making, I&rsquo;ll just go straight to the point, because you&rsquo;re basically 100% correct, is that it breaks subset sum analysis, I want to put it like that.</p><h2 id=subset-sum-analysis>Subset Sum Analysis</h2><h3 id=overview>Overview</h3><p>Now what&rsquo;s subset sum analysis?
+It&rsquo;s the basic idea that in a transaction, if it&rsquo;s collaborative, if Alice is basically paying herself in the transaction and Bob is basically paying himself in the transaction, then you can kind of, like the shared coin thing, you can break, figure out these inputs add up to these outputs, these inputs add up to these outputs, and the whole thing ended up being more or less pointless, yeah?
+At least from a privacy perspective.
+Now, doing this, I mean, arguably the payjoin might have already screwed up a little bit, but that&rsquo;s more complicated.
+But this is really clear.
+So let me go on to the advantages in a minute.</p><h3 id=how-to-subset-sum-analyse>How to subset sum analyse?</h3><p>Let&rsquo;s talk about the subset sum.
+So that structure had four inputs.
+What do I mean by inputs?
+Any arrow that goes into a node in the diagram is considered an input, any outward arrow is considered output.
+So there are six outputs.</p><p>If you wanted to do subset sum analysis, you&rsquo;re looking for subsets of the inputs and subsets of the outputs.
+Now in mathematics that&rsquo;s called a power set.
+It&rsquo;s basically the set of all subsets which ingeniously can be calculated by considering that each item is either in a subset or not in a subset, which means the number of subsets of <code>n</code> is <code>2^n - 1</code> if you don&rsquo;t include the empty set.
+So <code>2^4 * 2^6 = 2^10</code>.
+So you have about 1,000 possibilities, a little bit less, but about a thousand possibilities here.
+And basically none of them work.</p><p>In other words, you can&rsquo;t find groups of the inputs add up to the same number as groups of the outputs.
+By splicing a chunk of the money into a channel and dividing that money betweeen the two participants in a way that is hidden on chain, you no longer have a subset sum solution.</p><p>[Audience]: &ldquo;This means you have to have either a PayJoin or a splice or both?&rdquo;</p><p>I&rsquo;ll be more specific.
+You have to have a payment from one of the participants to another one of the participants, but I&rsquo;m not sure if that&rsquo;s enough, but that&rsquo;s definitely a necessary, I&rsquo;m not sure if it&rsquo;s a sufficient condition to break subset sum analysis.
+But it&rsquo;s funny because the Lightning Channel one is like a weird twist on that idea where it&rsquo;s not that there&rsquo;s a payment, it&rsquo;s just like that, there&rsquo;s a split in one of the UTXOs which isn&rsquo;t exposed.
+I guess that&rsquo;s a fundamentally different thing to a payment interparticipant.
+But if you have, PayJoin has interparticipant payment, which is why, as you said correctly and I incorrectly corrected you yesterday, a PayJoin does break subset sum.
+A PayJoin does break it because it&rsquo;s an inter-participant payment.
+The same principle will definitely apply, but also a lightning channel can do the same thing because it&rsquo;s splitting funds without it being exposed on-chain.</p><p>[Audience]: &ldquo;And so is there a qualitative difference between there&rsquo;s one inter-participatory payment versus two?&rdquo;</p><p>Yeah, I was thinking about this the last couple of days.
+I haven&rsquo;t really figured it out yet.
+I think that&rsquo;s a really interesting question, like could we get 10 people operating in this kind of structure, and just have two of them paying each other, and everyone else&rsquo;s stuff, subsets.
+I think trivially no, right, because let&rsquo;s say you&rsquo;ve got A, B, C, D, right, and A&rsquo;s paying himself, and B&rsquo;s paying himself, now C is paying D, so A and B, clearly their amounts will add up, right, so you won&rsquo;t have broken subsets on for A and B.
+It seems trivially that that&rsquo;s not.
+I think there&rsquo;s a lot of little twists on this.</p><p>[Audience]: &ldquo;So the knapsack paper gives the sub-transaction model, the sub-transaction mapping model.
+And in there, they assume the sub-transactions map to zero.
+They don&rsquo;t model fees.
+If you generalize this and parametrize it by some delta, they make a tolerance.
+Yeah, they make a useful distinction between derived sub-transaction mappings and non-derived sub-transaction mappings.
+So we can think of the non-derived ones as elementary.
+They&rsquo;re actually finer grained, whereas the coarser grained ones don&rsquo;t add additional information.&rdquo;</p><p>Oh you mean like building multiple into a bigger one.</p><p>[Audience]: &ldquo;The trivial partition of everything together is always a valid solution.
+And then the question is, so qualitatively, are you breaking the assumption that a single sub-transaction belongs to a single user?
+That&rsquo;s one aspect of it.
+And you can still divide into sub-transactions, it&rsquo;s just that the set of users that that sub-transaction is attributed to is more than one entity.
+And secondly, there&rsquo;s the question of the tolerance of the amount.
+So both the fees complicate this a little bit, but specifically the PayJoin aspect or any sort of internal transfer within the transaction means that the adversary must have additional information?&rdquo;</p><p>Exactly! That&rsquo;s my point of confusion with PayJoin is if you&rsquo;re looking at it thinking Oh that might be a PayJoin then you come up with two solutions.
+But if you have no idea you just look there&rsquo;s no solution.</p><p>[Audience]: &ldquo;Yeah and even if you have a solution the solution might attribute that part of the solution to two entities or more, right?
+So you have this, I think that&rsquo;s the important qualitative distinction.&rdquo;</p><p>Okay, thanks.
+So clearly this is quite a thorny and very interesting topic.
+I don&rsquo;t want to say it&rsquo;s like, oh, it&rsquo;s too complicated.
+It&rsquo;s actually really interesting to start thinking about this.</p><h2 id=advantages>Advantages</h2><p>But I do want to come back and talk about, why Am I even proposing such a weird design as that?
+Well, I guess I should ask you.
+I mean, maybe you just saw my slides, but what do you think might be the advantage?
+All this, it seems like a lot of hassle, right?
+Well, certainly in this way, it is a lot of hassle.
+There&rsquo;s multiple things going on.
+There&rsquo;s four people involved.
+One of them&rsquo;s not around, but two of them are having to negotiate a bunch of multi-sig addresses.
+Can anybody explain to me why this might be an interesting model?
+It&rsquo;s nice to have the diagram (Kitchen Sink) for this part, isn&rsquo;t it?
+Like if we look, for example, at transaction at node 3, well, what does it have?
+It has two inputs and two outputs.
+That&rsquo;s not very unusual, right?
+That is, in fact, almost the most common structure, yeah?
+Anything between one and three, maybe four inputs and two outputs.
+Vast majority of transactions are like that because that&rsquo;s what a payment looks like.
+So that&rsquo;s nice.
+Now obviously most of them have that kind of structure, but they&rsquo;re not all exactly the same.
+Like this one (node 5) has three outputs, which is a little unusual, but it&rsquo;s not very unusual.
+So it&rsquo;s a world of difference from what we&rsquo;re thinking about equal output CoinJoin, whether it be JoinMarket, Wasabi, or Samurai, or anything else.
+That&rsquo;s the first point.
+What are the other possible advantages to this structure?</p><p>[Audience]: &ldquo;You don&rsquo;t even know when the tree starts or stops.&rdquo;</p><p>Excellent, yeah.
+Excuse me for the low quality here, but this was Like the picture (Transaction graph) I used to illustrate the start of my blog post about this topic.
+This is a bit more advanced than the blog, but you know, it&rsquo;s the same thing.
+So you know, there&rsquo;s some things happening in a bunch of transactions that are connected, but they&rsquo;re just part of this huge transaction graph on the blockchain.
+How is the blockchain analyst gonna know where to start?
+It&rsquo;s a huge, it&rsquo;s a completely different world from equal output CoinJoin.
+So that&rsquo;s probably the biggest advantage.</p><p>So, every transaction could be possibly interpreted as an ordinary spend, with the caveat that since many of these inputs are multi-sig, We need them to be not traditional multi-sig, not <code>OP_CHECKSIGADD</code> in taproot, but specifically musig style multi-sig, or at least aggregated multi-sig.
+So that&rsquo;s kind of a big limitation, but it&rsquo;s possible today.
+The transaction negotiation can happen right at the start.
+Now that is not an advantage over equal output CoinJoin.
+A CoinJoin traditionally involves a bunch of negotiation, signing and broadcast, right?
+Coinswaps and other Steganographic solutions that are similar to CoinSwap often involve what I call cross-block interactivity.
+Because you have to fund, and only when you&rsquo;re sure the funding event has occurred correctly can you then complete the protocol to complete a private CoinSwap.
+That&rsquo;s not really true with like a general atomic swap construct, may be debatable.
+But you know, a proper private CoinSwap, it&rsquo;s kind of a cross-block interactivity you have to worry about, is that embedded deep enough in the chain, because if it&rsquo;s not and it gets re-org&rsquo;d, then theoretically I can lose some money in a CoinSwap.
+But this has the property, even though it&rsquo;s very complicated, there&rsquo;s a lot of signatures, a lot of keys, you can do all of it at one shot, and once you&rsquo;re finished, you never have to talk to your counterparty again.
+Because if they go offline, you&rsquo;ve got all the pre-signed transactions.
+Maybe that&rsquo;s not, I didn&rsquo;t really have enough time.
+Musig2 is required, or musig anyway, or theoretically ECDSA with two-party computation (ECDSA-2P).
+Anything that hides, to me it&rsquo;s important to hide the fact that they&rsquo;re the multi-sig connectors between each of these transactions, otherwise they don&rsquo;t look like ordinary spends.
+And the last point is the point that we just said, the subgraph is not distinguishable.</p><h2 id=how-subset-sum-analysis-can-fail>How subset sum analysis can fail?</h2><p>(refer slide#14)</p><p>Okay, we talked about subset sum analysis.
+I&rsquo;d also like to point out that subset sum analysis can fail in three ways, maybe.
+There are multiple subset sum solutions, we discussed this a little bit.
+Sometimes, especially with larger transactions, not so much here, but with larger transactions, there might be multiple different subsets that add up to the same value on the other side.
+That&rsquo;s a brittle thing, and I think nothing much explained in great detail yesterday why it&rsquo;s brittle, we shouldn&rsquo;t rely on that, but it exists.
+The analyst cannot find the subgraph, that&rsquo;s the fantastic thing about this construct.
+There is an inter-participant payment, such as in PayJoin, that can break subset sum as well.
+I guess I should have added the lightning as a separate one because it&rsquo;s not really the same thing as an inter-participant payment.
+In fact, it&rsquo;s just not.
+So there&rsquo;s a fourth one on that list, which is lightning or, I guess, any second layer commitment of funds.
+Arguably, the second is the most important (The analyst cannot find the subgraph).
+I think that&rsquo;s true.</p><h2 id=disadvantages>Disadvantages</h2><p>All right.
+Some practical disadvantages of doing that.</p><h3 id=all-at-once-timelocks-but->All at once? Timelocks but &mldr;</h3><p>First of all, you&rsquo;re gonna have to time lock.
+I&rsquo;m claiming that when we look at this sequence of transactions that we pre-sign, we&rsquo;re gonna have to put timelocks on them.
+Why do we have to put timelocks on them?
+In other words, delay them.</p><p>Why should we delay the transactions?
+Because if not, if it&rsquo;s like 10 of them, and they all go on-chain at once, then at least theoretically, somebody who&rsquo;s watching is gonna say, oh look, that&rsquo;s, well, in the future as well, not just at the time.
+So, you know, timing correlation, it would be a bit crappy if we just broadcast them all at once.
+You could do that in an initial phase, just testing the idea out, but I think if you want a properly mature system using that, you&rsquo;re gonna have to have delays.
+That&rsquo;s not very practical, is it?
+An associated problem is, that means you&rsquo;re gonna have to hold those pre-signed transactions and not lose them.
+Because if you lose them, you could lose money.
+So you&rsquo;re gonna have to treat those pre-signed transactions as like private keys.
+Well, not private keys, but you treat them as importantly as money that, it represents money for you.
+So I claim that because of that, it might mean we do kinda need to make a model, or at least some incentive model to get people to take part because I&rsquo;m not just going to arbitrarily help you out to do one of those things and it takes me like six hours and I&rsquo;ve got to hang on to and I&rsquo;ve got to sign all this.
+Pay me some money please, yeah.
+So I think we do probably do need a market model at least a little bit for that to work.</p><p>[Audience]: &ldquo;Sorry, aren&rsquo;t the timelocks a fingerprint as well?&rdquo;</p><p>Good question, but I think not because we&rsquo;re going to join the anonymity set of Electrum and Core and other wallets like JoinMarket who put the most recent block or the most recent block minus three or whatever it is, you know.</p><p>[Audience]: &ldquo;So we would just have to broadcast the transaction as soon as the time block expires.
+If we wait a long time&mldr;&rdquo;</p><p>Yeah, it would be a little bit bad, a little bit late, but I mean that&rsquo;s not gonna be a big deal.
+You&rsquo;re gonna have to stay online, right, to broadcast them at those times.
+Well yeah, that&rsquo;s a fair point, that they could end up being a little bit delayed and therefore theoretically they look weird.
+Fair point, Yeah, depending on if you&rsquo;re online or not.</p><h3 id=offchain-onchain-privacy-bleed-is-cool-but->Offchain onchain privacy bleed is cool but &mldr;</h3><p>Off-chain, on-chain privacy bleed is cool.
+Do people follow what I&rsquo;m talking about there?
+That was a bit of a weird phrase I used there.
+So I was saying, remember at the end of the process, we spliced in some money into a channel in order to break subset sum?
+That&rsquo;s cool, that&rsquo;s off-chain to on-chain privacy bleed is what I call it, right?
+Because the privacy embedded in committing money into the channel gets bled through into the on-chain because the subset sum gets broken.
+It&rsquo;s cool, But it doesn&rsquo;t really work if the amount of money you put off chain is .0001 BTC, and the amount of money you&rsquo;re putting on-chain is 10 BTC.
+Because that is just a tiny delta in the subset sum analysis.
+Nothing much, just mention tolerance.
+You can put a little delta value in your subset sum and get more solutions.
+And obviously it&rsquo;s gonna come out.
+So I&rsquo;m thinking like, I don&rsquo;t know, top of my head like 10%, maybe if the off-chain is like 10% of the on-chain, it&rsquo;s okay.
+Maybe if the off-chain is only like 1%, maybe it&rsquo;s not okay.</p><p>[Audience]: &ldquo;Do you have to include the eventual?&rdquo;</p><p>Ah, good question, good question.
+I remember thinking about this, yeah.
+Let&rsquo;s go back to the slide (Kitchen Sink) so we can explain it.
+So we had, remember, a splice in node 5.
+I mean, even better with splice, but let&rsquo;s say it was funding a channel, dual funding a channel, you know, and Alice put in .02 and Carol put in .03, and then a month later, they close the channel and it&rsquo;s 0.
+Well, but the nice thing is even if they do that, we don&rsquo;t know for sure that they didn&rsquo;t have payments going through the channel in the meantime.
+So I think the worst case would be, you put the money into a Lightning channel, then you immediately remove it, then it&rsquo;s kind of stupid because you can just assume that they didn&rsquo;t have any payments in the meantime routed through it or payments they made.
+Yeah, so but in the general case, you can reasonably say that as long as that channel is long living, we could plausibly assume some amount of TXs went through it.
+But very good question, I had the same question myself.</p><h2 id=markets-and-fees>Markets and Fees</h2><p>So now, I know we&rsquo;re all hungry, and probably tired as well.
+Yeah, and that&rsquo;s why I&rsquo;m now gonna give you a really dense piece of mathematics.
+[laughs]
+So in order to have this, I mentioned I think we need a market for this because there&rsquo;s delays and so we have a coordination issue because people don&rsquo;t really want to do it.
+Well today we have kind of liquidity markets.
+I can&rsquo;t remember when I found these years ago (referring to slide#16).
+The <a href=https://nixbitcoin.org/orderbook/>JoinMarket orderbook</a> is a market.
+You know, this is some lightning terminal thing, whatever.
+There are liquidity markets, there&rsquo;s liquidity ads, there&rsquo;s all these markets, right?
+So we&rsquo;re used to the idea that we can like advertise to request liquidity and offer a payment for that service of liquidity.</p><h3 id=onchain-fees>Onchain fees</h3><h4 id=the-problem>The problem</h4><p>(refer slide#17)</p><p>The problem here is, as I mentioned, on-chain fees and CoinJoin in JoinMarket are a real problem.
+So like you do a simple CoinJoin on JoinMarket, you&rsquo;re exposing almost certainly your input value because you&rsquo;re paying a fee to the makers and that fee is deducted.
+When you look at the subset sum analysis, you&rsquo;re trying, oh, that&rsquo;s the input size, that&rsquo;s the output size, the difference is the fee.
+Oh, he obviously paid a fee.
+So unfortunately, a single CoinJoin in JoinMarket doesn&rsquo;t give you what you would really want.
+What you would really want is that the receiver of the funds doesn&rsquo;t know where they came from, right?
+Or at least that&rsquo;s one thing you would want.
+You don&rsquo;t really get that, because this is on-chain fee thing.
+So we want this fee to be off-chain, but that&rsquo;s a bit tricky.
+And I&rsquo;m gonna propose a way to solve that problem, make the fee be off-chain so nobody sees it.
+I suppose you could either take that approach that some people take of making everyone contribute equally to the mining fee, or you could embed it in this as well.
+I think both make sense, don&rsquo;t they?
+Let&rsquo;s say it includes mining fee, just for simplicity, all right?
+Because it&rsquo;s just another number to add into the fee at the end of the day.
+I mean, I know there&rsquo;s different ways of doing it.</p><h4 id=the-solution---offchain-fees>The solution? - offchain fees</h4><p>(refer slide#18)</p><p>So crudely, my proposed solution is this.
+So if you don&rsquo;t understand all the mathematics, maybe you can understand the basic flow.
+There&rsquo;s a construct called a hodl invoice, maybe it&rsquo;s a stupid name, but the general idea is like the sender constructs the payment hash, and then the receiver constructs, or They construct the invoice such that when, like the example given is pizza delivery, right?
+So when you deliver the pizza, or the merchant delivers the pizza, they can request the pre-image from the payer to unlock the invoice.
+So there&rsquo;s more of like an atomicity between the sender receiving the goods for the payment and the payment actually being enacted.
+So you kind of set up the route.
+You set up the HTLCs and everything, but they don&rsquo;t get unlocked until that moment when the sender reveals the preimage.
+So the idea here is that the taker sends, let&rsquo;s say, an elliptic curve point.
+Now, this requires PTLC.
+So bad news.
+This particular part of my presentation requires something that doesn&rsquo;t exist yet, unlike musig2, which theoretically does.
+But this requires PTLC, because you have to pay to a point, right?
+And then you set up the HTLCs.
+When the maker does what is required of him, which is to say sends all the signatures and all the transactions and the multi-sigs that I&rsquo;ve just shown you, then the taker will broadcast the transactions, thus revealing his signature, and the trick of it is that his revealing signature will be able to be matched up with the adaptor signature or signature adaptor that the taker produced originally on his partial Schnorr signature in the multi-sig.
+And so what that results in is that the maker receives the pre-image for the invoice atomically with the broadcast of the funding transaction.
+I&rsquo;m gonna expand on that because when I first came up with this idea, I thought, well, that&rsquo;s cool, and then I realized there&rsquo;s actually a really big problem with it.</p><p>[Audience]: &ldquo;If you don&rsquo;t have, PTLCs on Lightning Network, couldn&rsquo;t you just do a PTLC on-chain?&rdquo;</p><p>I don&rsquo;t know what you mean.</p><p>[Audience]: &ldquo;Like if you just do a point time lock contract literally on a non-chain payment.&rdquo;</p><p>We were trying to create off-chain fees to avoid having a fingerprint on-chain.
+The fundamental goal here is an off-chain fee.
+Okay, but other than that, your idea is excellent.
+It just doesn&rsquo;t actually solve the problem I&rsquo;m trying to solve.
+It solves another problem.
+But a good point though.</p><h4 id=why-the-solution-doesnt-work>Why the solution doesn&rsquo;t work</h4><p>(refer slide#19)</p><p>So let me first explain why it doesn&rsquo;t work.
+What I&rsquo;ve just said doesn&rsquo;t actually work.
+And the reason it doesn&rsquo;t work is because we have more than one maker.
+If we had only one maker, it would work fine.
+This works fine in a two-party sense.
+You could imagine each maker setting up the invoice to an elliptic curve point Q plus some offset that they choose and then the taker will send the adaptor signature, and I don&rsquo;t really have time to explain adaptor signatures I&rsquo;m sure a lot of people have heard of it and a lot of people don&rsquo;t really understand it because it&rsquo;s not something that people talk about much.
+But the basic idea is you can swap a signature for a secret value.
+If I can boil it down to one thing, it&rsquo;s that.
+You can swap a signature for a secret value.
+So the taker sends this adaptor signature, which is verifiably corresponding to their funding transaction multisig.
+And once the maker sees that, he knows that when the signature is broadcast on-chain, he&rsquo;ll be able to subtract his partial signature in the multi-sig and subtract the adaptor signature he was sent and get the corresponding secret Q.
+So I&rsquo;m not gonna explain all the notation here, because I haven&rsquo;t got time.
+<code>Tilde(~)</code> means aggregated value.
+<code>sigma_t</code> means taker.
+<code>x</code> is the private key.
+So this is like a Schnorr signature, but with part of the nonce missing.</p><p>The part that&rsquo;s missing is the Q.
+So basically, he gets the secret value Q once the transaction is broadcast on-chain.
+So it&rsquo;s atomic, it&rsquo;s trustless.</p><p>Now why doesn&rsquo;t that work?
+Well, it does work if there&rsquo;s only one maker.
+Yeah, he uses Q to settle the Lightning invoice.
+If there&rsquo;s multiple makers, it doesn&rsquo;t work because what&rsquo;s broadcast on-chain is the total signature sigma.
+If you have three people making a musig, they&rsquo;re gonna have three partial signatures.
+So each maker&rsquo;s gonna see the total.
+Well, I did this the wrong way around.
+He&rsquo;s not gonna be able to subtract his partial signature and the other maker&rsquo;s partial signature to get the taker&rsquo;s partial signature unless the other maker cooperates with him, which is certainly possible, but it&rsquo;s not something you can depend on, because the other maker could be colluding with the taker.
+So fundamentally, it doesn&rsquo;t work, but it does because I figured it out.
+Because I actually wrote a blog post years ago, just completely off the top of my head, I thought, I had no idea, it didn&rsquo;t seem remotely practical, but I thought you can kind of do this adaptor signature trick with multiple people at the same time.</p><h4 id=a-working-solution>A working solution</h4><p>(refer slide#21)</p><p>Imagine two makers, we&rsquo;re gonna make a musig, three of three musig, we have an aggregated P, <code>P_{agg}</code>, we each have our own nonce, we use three round musig and not musig2, because it&rsquo;s a bit simpler to analyze in this case, but I think it would work the other way as well.
+Three-round musig, we&rsquo;re gonna send commitments to our nonce values in the first round.
+We&rsquo;re also gonna send commitments to our adaptor secret values.
+So the trick here is everyone has their own adaptor secret, not just one person.
+We&rsquo;re going to send commitments to the adaptor values: adaptor secret points <code>Q_i</code>, and the nonces <code>R_i</code>.
+Then they get revealed.
+Then we find the aggregated nonce.
+We&rsquo;ve got the aggregated nonce, the aggregated key, and the trick is that let&rsquo;s say if you&rsquo;re index two, you make your Lightning Invoice payment hash, which is actually a point, payment point, be the sum of the adaptor points of the other two parties.
+And if you&rsquo;re index three, if you&rsquo;re the other maker at index three, you&rsquo;ll make your payment point for your Lightning invoice be the sum of the adaptor points of the other two people.
+So what I realized is that you can&rsquo;t make this take and make a distinction in this construction, actually, because everyone could be colluding against you.
+You have to make it so that you use basically everyone else apart from you as your counterparty.
+And linearity makes that work.</p><p>(refer slide#22)</p><p>So each party makes their own adaptor.
+So everyone has to send an adaptor to everyone else, which is corresponding to their own adaptor secret <code>Q_i</code>.
+And they all share those around.
+And adaptors are verifiable.
+So each person can verify that the adaptor signatures from all the other parties are correct.
+When everyone&rsquo;s satisfied, any one person in the group can send their partial signature first.
+So if index three sends his partial signature first, it looks like that: <code>σ_3 = k_3 + q_3 + H(P_{agg} ||R + Q_1 + Q_2 + Q_3 ||m)x_{agg,3}</code>.
+Notice it refers to all of the adaptors, but he only includes his own secret there.
+And then, I guess you&rsquo;ll just have to trust me, because it would be way too complicated to explain.
+But basically, any person will be able to subtract their own full partial signature, which is to say their partial signature, which is not including an adaptor, and then subtract the adaptor signatures from the other parties.
+And the result will be the sum of the adaptor secrets, which are not theirs.
+And that&rsquo;s what they already decided was the pre-image for their Lightning invoice.
+Should I really have done a presentation about this?</p><p>[Audience]: &ldquo;It&rsquo;s kind of cool because you&rsquo;re sort of changing into two-party, I mean, it&rsquo;s still a multi-party, right?
+But it&rsquo;s sort of changing the math and stuff so there&rsquo;s a two-party thing, right?</p><p>Yeah, I remember when I had this idea, I ran it by Andrew Poelstra on IRC, and he was like, yeah, that&rsquo;s really cool.
+And I realized that this is unfairly linear signatures for the win, you know?
+It&rsquo;s the linearity that makes it work, because without that linearity you couldn&rsquo;t do that.
+But you&rsquo;re exactly right, it pretends that everyone else is one counterparty by adding them all up.</p><p>The only caveat I&rsquo;ll say is, when you do stuff like this in cryptography, you have to be really careful, because the thing is, what happens if somebody tries to adversarially create their adaptor point?
+I should try and write a paper about it or something because I believe if you, just like in three round musig, what they do is they commit to all the <code>R</code> points up front, and that allows them to then just simply use the linearity and add them without worrying that the other party has subtracted something weird and like, you know.
+But I think the same thing would apply with these adaptor secrets.
+If you just send hashes to them up front, there&rsquo;s no possible way somebody could manipulate their <code>Q</code> values to screw you over.
+I believe that&rsquo;s right.
+I hate that that&rsquo;s on a video, because if I&rsquo;m wrong I&rsquo;m going to look like an idiot.
+[Audience]: [Inaudible]
+This being three round, I think, is not problematic at all, because we&rsquo;re already gonna have multiple rounds of sharing keys and sharing signatures on transactions.
+Whereas, you know, why does musig2 exist?
+It was a huge feat of engineering, but it existed because they had specific use cases in mind where boiling it down to two or even only one round of interaction was actually very important, such as certain hardware wallet scenarios.
+But if you don&rsquo;t care about that, like I don&rsquo;t, I&rsquo;m just like right now, I&rsquo;m writing three-round musig in Python, and it&rsquo;s easy, right?
+Because it&rsquo;s not that complicated.
+I mean, you just have to make sure you aggregate the keys properly, because you have key subtraction attacks both on the keys and on the nonces, so you have to be careful about that.</p><p>[Audience]: &ldquo;What if two of the makers collaborate?&rdquo;</p><p>The fact that if you commit to the inputs to the adaptor up front, which is to say the adaptor point and the nonce, then it&rsquo;s impossible for you to manipulate those values based on the other person&rsquo;s values.
+So you&rsquo;re thinking, if the two makers&rsquo; <code>Q</code> values were somehow manipulated.
+Yeah, it&rsquo;s possible, that&rsquo;s why I really&mldr; I&rsquo;m not quite sure, I&rsquo;ll have to think about that.
+I&rsquo;ll think about that one, that&rsquo;s an interesting point.
+I don&rsquo;t know, I don&rsquo;t think there&rsquo;s an issue there, but I couldn&rsquo;t tell you for sure.
+I&rsquo;m not sure what you would, anyway, let&rsquo;s not get into that now, because I don&rsquo;t have an answer.</p><h2 id=sdmc---the-sales-pitch>SDMC - the sales pitch</h2><p>(refere slide#24)</p><p>So sales, let me just summarize what I&rsquo;m saying here.
+Sales pitch, because you know, I&rsquo;m a terrible salesman, and I admit it, but sometimes you want to sell something a little bit.
+A market solution to coordination; I think most people in this room at least sort of agree that that is like the right way to solve coordination, yeah?
+Obviously you can use central coordinators.
+Obviously there&rsquo;s advantages, but markets are cool.</p><p>No on-chain footprint; that refers to this PTLC construction, which unfortunately we can&rsquo;t do today, and anyway, how practical is it, you know, setting up this lighting invoice in advance?
+I mean, you know, lighting payments fail, So I don&rsquo;t exactly know what we do about that.
+Any ideas?
+I mean, we atomically set up this invoice and then you try and pay it and then&mldr;</p><p>[Audience]: &ldquo;The failure would be before the route reaches the receiver.
+And the HODL invoice only goes into effect when the receiver receives the route.&rdquo;</p><p>Oh yeah, you&rsquo;ve already set it up.
+That&rsquo;s true.
+If you weren&rsquo;t able to route it to start with, then it wouldn&rsquo;t.
+Yeah, I am completely clueless about this stuff, but I know that things like hodl invoices are a bit of a problem in Lightning, right?
+Because you&rsquo;re locking things up, and there&rsquo;s a question of how, but that closely ties into my other area of interest, which is how do we allow people to get paid appropriately for the actual resources being used, which includes time and not just money, right?
+So I think that&rsquo;s a whole other discussion, but a good point, I wasn&rsquo;t thinking clearly, there&rsquo;s not really an issue with the routing thing because you&rsquo;ve already done it.
+We could still fail though, right?
+We could still fail, I mean, after the event.
+There&rsquo;s a timeout, yeah, that&rsquo;s another thing.
+So, I mean, certainly this whole idea of the off-chain payment of fees is, I won&rsquo;t say, it&rsquo;s partly speculative, but I think it kind of makes sense, at least in broad outline.</p><p>The steganographic, I hope by now everyone understands what we&rsquo;re talking about, a lot of these things look like payments, and you can&rsquo;t distinguish the whole set on the blockchain.
+It&rsquo;s maybe a sci-fi, but if people actually start using stuff like this, chain analysis would be really, really hard.
+Another element, you&rsquo;ve got like 10 transactions in a list, but what if they&rsquo;re all like Electrum style transactions?
+You know, what if they&rsquo;re all using the same wallet fingerprints?
+So I think part of it should be randomized wallet fingerprints, because you don&rsquo;t want them all to have anything about them that look the same, otherwise, I mean It&rsquo;ll still be hard for them, but they might be able to figure out.</p><p>And last one is just a minor thing, is just the fact that you can do the whole negotiation right at the start, which I think is a very important property.
+That&rsquo;s my sales pitch for SDMC, which is a thing.</p><h2 id=qa>Q&amp;A</h2><p>Yeah, maybe questions now.
+I&rsquo;ll stop there.</p><p>[Audience]: I was just curious, sorry if we already covered this, but is there a way to lock the makers into a fee rate?
+Is that designed?</p><p>[Adam Gibson]: You mean the Bitcoin network fee rate?</p><p>[Audience]: Yeah, I was just imagining, like, if I&rsquo;m a maker, I could, like, publish the transaction that allows me to get the pre-image, but at a really low fee so it never gets mined.</p><p>[Adam Gibson]: The transaction that allows you to get the pre-image is the funding transaction which is a multi-sig so both parties are signing off on that.</p><p>[Audience]: And the taker publishes it, right?</p><p>[Adam Gibson]: Anyone can publish it, it&rsquo;s a multi-sig so whoever finishes first, I mean whoever wants it to go.
+Let&rsquo;s say all the transactions after the funding get signed in advance, and they&rsquo;re all based on a multi-sig, once all of those are signed in advance, that means everyone&rsquo;s agreed, and so they both co-sign the funding transaction which kicks it off.
+I&rsquo;ve forgotten the question now.</p><p>[Audience]: Oh, I was just talking about fee rates.
+It sounds like what you&rsquo;re saying is that they&rsquo;re only signing it once they see the fee rates.
+There&rsquo;s no concern like that.</p><p>[Adam Gibson]: Well, they&rsquo;d have to agree on the fee rates to sign it, I think is what I&rsquo;m saying.</p><p>[Audience]: What happens if the fee rate changes between when you&rsquo;ve signed, pre-signed all the transactions?</p><p>[Adam Gibson]: Yeah, now that&rsquo;s a good question.
+Somebody asked that back in the day about CoinJoinXT.
+They said, what about fee rates?
+There&rsquo;s pre-signing multiple versions, which is not unreasonable, although I&mldr;
+Ugh, that&rsquo;s a lot of data, but I don&rsquo;t think it will be that hard, maybe.
+Depends where you&rsquo;re talking, I suppose.
+Multiple fee rates is one reasonable solution if you can&rsquo;t come up with a better one.
+Can anyone come up with a better one?
+So we pre-sign all these transactions, and then suddenly the mempool just spikes.</p><p>[Audience]: Child pays for parent, presumably in another coin&mldr;</p><p>[Adam Gibson]: Yeah, we could do that, right.
+Especially if it was just like a one line thing.
+It would be particularly easy, just the last one.</p><p>Now I think that&rsquo;s an important practical point which I kind of glossed over, but I don&rsquo;t think it should stop it from working.
+But it does connect to another point, which is this whole thing about timing.
+Will people be comfortable with doing these kind of structures that take hours?
+Now, I showed a kind of a paradise version where everything&rsquo;s perfect and somebody gets to do a PayJoin, somebody gets to splice into a channel, somebody gets a payment.
+Bob might have to wait six hours for that payment, because I don&rsquo;t want to broadcast all those transactions right at once, so are we really gonna have external payments in those structures?
+Maybe not, maybe mostly it&rsquo;ll be more like what CoinJoin is today, where a lot of people are getting together and maybe there&rsquo;s a market, some people get paid a fee.
+That&rsquo;s why I was really keen on the idea of designing an off-chain fee element to it.
+In theory you could apply that same idea to JoinMarket, it&rsquo;s just unfortunate we don&rsquo;t have PTLCs yet.
+They&rsquo;re very powerful and this is a very good example to me of why they&rsquo;re powerful.
+People talk about breaking the correlation in the route which is great and everything.
+But this, you can swap signatures for secrets, it&rsquo;s really powerful.</p><p>[Audience]: And contrarily to single transaction CoinJoin there&rsquo;s a backup problem as well.</p><p>[Adam Gibson]: Well yeah One of the disadvantages we listed was you have to treat these pre-signed transactions as well as money.
+Not necessarily as secrets.
+But that&rsquo;s the other thing.
+They&rsquo;re not secret even though they are money.
+So you could have like a watchtower kind of design.
+Now, there wouldn&rsquo;t literally be a watchtower because it&rsquo;s not watching, it&rsquo;s just somebody could be doing that job on your behalf if you could trust them with your privacy.
+But other than that, I mean at the end of the day storing some transactions isn&rsquo;t that much harder than storing some private keys and it&rsquo;s only very temporary.
+So it&rsquo;s definitely a problem but it&rsquo;s not I think a great&mldr;</p><p>[Audience]: There&rsquo;s just no hierarchical deterministic way of backing it up contrarily with keys, right?</p><p>[Adam Gibson]: True, yeah, good point, yeah.
+That&rsquo;s worse than keys for sure, yeah
+It&rsquo;s more difficult, you do have to store that data, but only for a short period, to be fair.</p><p>[Audience]: Did you compare the block size, block space?</p><p>[Adam Gibson]: Oh, thank you for mentioning that because I forgot to mention it.
+I think one of the other advantages of this construction is that I think, now this is a really tricky point.
+We talked both yesterday and today about k-anonymity, the idea of measuring anonymity quantitatively, saying there&rsquo;s this number of people who have the same role or action in this event and therefore there&rsquo;s a K anonymity of 10 or 100 or something.
+It doesn&rsquo;t apply, in my opinion, at least not in any way that I understand, to a steganographic style of privacy preserving technology.
+I mean, you could argue with like a CoinSwap, at least the naive form of CoinSwap involves equal amounts.
+So even if the transactions are disconnected, they have a fingerprint that tells you that they&rsquo;re connected somehow, and therefore you can start saying there&rsquo;s N people doing these swaps.
+But here, you don&rsquo;t have any idea.
+If the blockchain analyst can&rsquo;t even find it, and then if somehow he finds certain parts of it, how does he decide how many people are involved?
+It&rsquo;s tricky, I&rsquo;m sure there are certain cases you could show of this kind of structure where actually the privacy isn&rsquo;t that good but I think generally speaking I could argue that in the limit it has the anonymity set of the entire blockchain.
+In the limit because it&rsquo;s trying to behave exactly like the rest of the blockchain.
+But that&rsquo;s only in the limit, that&rsquo;s not in reality.
+Why did I say that?
+You actually asked a slightly different question but I thought it was connected.
+You said&mldr;</p><p>[Audience]: My other question would have been how to quantify privacy which you answered but the other question is how does it compare block space wise?</p><p>[Adam Gibson]: Yeah, efficiency of block space.
+Do you see why I think it&rsquo;s connected right?
+Because if you need a quantitative measure like 100, you need to have a lot of people, well debatable.
+I know you&rsquo;ve got a lot of very sophisticated ideas about efficiency within your construction of block space usage.
+But in principle, this might apply to CoinSwap, but I think it certainly applies to this construction.
+But I would argue it&rsquo;s very efficient in block space, because you get a quality of anonymity which is difficult to measure, but which arguably is much higher for per unit of transaction.
+It&rsquo;s difficult to compare.</p><p>[Adam Gibson]: I&rsquo;m just gonna pretend the anonymity set is the whole blockchain and somebody&rsquo;s gonna have to tell me why it isn&rsquo;t.</p><p>[Audience]: Yeah, so like in this case the anonymity set would be potentially huge, like whatever time window of value-compatible transactions.
+But then there&rsquo;s three very difficult open questions.
+Okay, so this model assumes the adversary can assign a probability for guessing, and what probability it assigns is debatable.
+Tacitly, this perspective assumes that the adversary is truth-seeking and rational, which might not be the case.
+We have very good evidence to believe that chain analytics companies are in the profit of selling narratives. And finally, there&rsquo;s no answer for the entropic model, at least as in the paper that I was referencing, assumes a single point of origin.
+And even that is prohibitively expensive to actually calculate in most situations.
+We don&rsquo;t need to calculate it.
+We really want lower bounds on the entropy.
+That&rsquo;s good enough.
+But nonetheless, the entropy that you would have to calculate for this is like a joint entropy over the power set of all potential points of origin, and that&rsquo;s an exponentially sized object.
+It&rsquo;s very difficult questions.</p><p>[Adam Gibson]: Yeah, which is great, right?
+It&rsquo;s so difficult.
+That&rsquo;s great.
+Well, I agree.
+It would be nice if we could have a really clean model that said there&rsquo;s a specific lower bound of entropy or some even simpler model of k-anonymity set.
+All I&rsquo;m trying to do in this is trying to expand what I think is already trivially existent, which I think Max mentioned earlier this morning.
+Bitcoin is intrinsically fungible, it&rsquo;s just not very fungible at all in practice.
+It&rsquo;s really, really difficult to get any real practical fungibility, but intrinsically it&rsquo;s completely fungible.
+So this is trying to expand on the real intrinsic nature.</p><p>[Audience]: One thing that I think is kind of cool about this sort of thing, and this is like sort of maybe more of a social commentary than anything like necessarily technical.
+I think CoinJoin in general are like this idea where Bitcoiners have to come together, so like you have to work together as a team to like keep your privacy, which is kind of cool.
+This it seems like is a little more, your teams can be like a little smaller size, so to speak, than in larger CoinJoin.</p><p>[Adam Gibson]: That&rsquo;s a good point I didn&rsquo;t really mention.
+I showed these examples with two people just because it&rsquo;s easier to draw the diagram.
+You can do this with 10.
+I was talking, I think, to NoPara the other week about what happened if we try to do Wasabi with more people using a CoinJoinXT structure.
+And one of the things that I wrote in my response to him, and he agreed with me, was this is so fragile though.
+If you try to do 100 people with this kind of structure, well yeah, sure we&rsquo;ve got back out, so we&rsquo;re definitely gonna hit the back out path, right?
+Because one person out of 100 is gonna screw something up before you, well that&rsquo;s if you use promise.
+I suppose you could argue that, anyway it&rsquo;s a complicated question.
+The point is that with largest numbers of people, let&rsquo;s say 100 people, right?
+We&rsquo;re gonna pre-sign all these transactions, and then we&rsquo;re gonna have 100 of 100 multisig starting the whole thing off, right?
+Obviously, the most likely thing is that somebody&rsquo;s gonna fail to respond somewhere during this signing process and the whole thing doesn&rsquo;t even start.
+We&rsquo;ve just lost time.
+But the real question is this (pointing to the red promise arrow on the kitchen sink slide), right?
+If you use a structure with a realistic chance of something going wrong, like a promise you take, or like a malicious adversary is just like wants to jam the process.
+If they&rsquo;re there, they&rsquo;re gonna block everything that comes after that promise, and everyone else is gonna have to fall back to the timelock, so I feel like very large sets of people can do this fine, but it&rsquo;s more limited.
+Because without these alternative inputs, this structure is less kind of impressive, I feel like.
+Because if it only has one entry point, it&rsquo;s more plausible to me, intuitively, that there&rsquo;ll be ways to identify it as such.
+Maybe that&rsquo;s just a bit too vague.
+But I agree with your original point, which is we can do this with smaller groups of people and get a real effect, which is what I had in my mind, like three, four people.</p><p>[Audience]: What&rsquo;s the privacy punishment for the fallback timelocked?</p><p>[Adam Gibson]: Yeah, good question.
+That&rsquo;s a good question.
+How much do we lose in terms of the fallback?
+It seems to me debatable.
+Thinking about only small groups, it makes it a bit kind of easy, right?
+Because then this might have like two or three outputs and then it wouldn&rsquo;t look strange so we could just dump everything out in one transaction.
+We could theoretically make the timelocks themselves be trees if we need to make them less, but that&rsquo;s kind of annoying, so probably wouldn&rsquo;t do that.
+So I think that&rsquo;s a good example where if you had a lot of people it might be worse, because if you want the timelock to be one payout for everyone, it will look very, very distinct.
+That&rsquo;s a good point which I hadn&rsquo;t thought about, yeah.
+There&rsquo;s definitely trade-offs with using large numbers of people with this, which in practice you would probably avoid by using small groups, I think.</p><p>[Audience]: So If the adversary knows that a certain tree is a CoinJoinXT, then the anonymity set is just the fresh Bitcoin that entered the tree in that time period?</p><p>[Adam Gibson]: The anonymity set of what though?
+One specific output?
+It&rsquo;s really slippery isn&rsquo;t it?
+But it&rsquo;s a good point to consider, we should definitely consider that, but I think it&rsquo;s.</p><p>[Audience]: Like the point I&rsquo;m trying to make is that if the adversary doesn&rsquo;t know that this is CoinJoinXT, yes, the anonymity set is huge.
+But just like with PayJoin, right?
+But if he does know this is CoinJoinXT, then it seems it decreases the anonymity sets.</p><p>[Adam Gibson]: Well, it must, by definition.
+He knows more information, right?
+I&rsquo;m not sure how easy to quantify it but should therefore be a fairly tractable problem.
+At least it would reduce it more to existing blockchain analysis on more normal flows I guess which may or may not be easy depending on the structure.
+I mean, this is a very simple structure.
+I think we can make, well, we can make lots of structures.</p><p>[Audience]: Is there an optimal structure?</p><p>[Adam Gibson]: I think I&rsquo;m a bit too lazy to actually try and do this analysis.
+Because that kind of analysis is hard.
+I don&rsquo;t know, I prefer thinking about long equations with sigmas in them.
+I don&rsquo;t like that kind of, yeah, it&rsquo;s hard.</p><div class=row></div></div></div></div><script src=https://btctranscripts.com/lib/jquery.min.js></script><script src=https://btctranscripts.com/lib/popper.min.js></script><script src=https://btctranscripts.com/js/bootstrap.min.js></script><script type=text/javascript src=/plugins/lunr.min.js></script><script type=text/javascript src=/plugins/auto-complete.js></script><link href=/plugins/auto-complete.css rel=stylesheet><script type=text/javascript>var baseurl="https://btctranscripts.com/"</script><script type=text/javascript src=/plugins/search.js></script><script type=text/javascript src=https://btctranscripts.com/js/custom.js></script><script type=text/javascript src=/plugins/clipboard.js></script><script>new ClipboardJS(".btn")</script></body></html>
