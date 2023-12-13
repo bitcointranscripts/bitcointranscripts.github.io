@@ -1,0 +1,642 @@
+<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=canonical href=https://btctranscripts.com/bitcoinology/what-is-lightning-network/><title>What is Lightning Network? | ₿itcoin Transcripts
+</title><link href=https://btctranscripts.com/css/fontawesome.min.css rel=stylesheet><link rel=stylesheet href=https://btctranscripts.com/css/ace.min.css><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://btctranscripts.com/images/btctranscripts.png"><meta name=twitter:title content="Adam Gibson - What is Lightning Network?"><meta name=twitter:description content="Introduction Hello everyone. We&rsquo;re going to sort of soft start now, and this is a new meetup group we&rsquo;ve decided to call Bitcoinology. It&rsquo;s a whimsical name. It&rsquo;s really intended to convey the idea that we want to discuss Bitcoin not in a super developer technical code way, but we do want to discuss it—how it&rsquo;s used, even what the history and culture of it are, and what are the interesting things as a user and as a sort of Bitcoin person you can learn."><script async src=https://visits.bitcoindevs.xyz/script.js data-website-id=06384ada-7f1c-44c2-a6d9-d830fb23e122></script></head><body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id=navbarMain><div class=container><div><a class=navbar-brand href=/>₿itcoin Transcripts</a></div><div class="collapse navbar-collapse" id=navbarMainCollapse><ul class="navbar-nav ml-auto"><li class=nav-item><a class=nav-link href=/es>es</a></li><li class=nav-item><a class=nav-link href=/pt>pt</a></li><li class=nav-item><a class=nav-link href=/zh>zh</a></li><li class=nav-item><a class=nav-link href=https://github.com/bitcointranscripts/bitcointranscripts target=_blank><i class='fab fa-github'></i></a></li></ul></div></div></nav><div class="alert alert-warning fade show sticky-banner" role=alert><strong><a href=https://review.btctranscripts.com target=_blank data-umami-event=click-banner>Get paid to review technical Bitcoin transcripts
+</a></strong><button type=button class=close data-dismiss=alert aria-label=Close>
+<span aria-hidden=true>&#215;</span></button></div><div class=container-fluid><div class=row><div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0"><button class="navbar-toggler navbar-toggler-right collapsed" type=button data-toggle=collapse data-target=#sidenav-left-collapse aria-controls=sidenav-left-collapse aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse align-items-start flex-column" id=sidenav-left-collapse><form class="form-inline my-2 my-lg-0 searchbox"><input class="form-control mr-sm-2 w-100" data-search-input id=search-by type=text placeholder='Search (press "/")'></form><ul class="navbar-nav flex-column pt-3"><li data-nav-id=/adopting-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/adopting-bitcoin/><h6>Adopting Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/adopting-bitcoin/2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/adopting-bitcoin/2021/><h6>Adopting Bitcoin 2021</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/advancing-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/><h6>Advancing Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/advancing-bitcoin/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2019/><h6>Advancing Bitcoin 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/advancing-bitcoin/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2020/><h6>Advancing Bitcoin 2020</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/advancing-bitcoin/2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2022/><h6>Advancing Bitcoin 2022</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/advancing-bitcoin/2023/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2023/><h6>Advancing Bitcoin 2023</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/andreas-antonopoulos/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/andreas-antonopoulos/><h6>Andreas Antonopoulos</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/austin-bitcoin-developers/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/austin-bitcoin-developers/><h6>Austin Bitcoin Developers</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/baltic-honeybadger/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/><h6>Baltic Honeybadger</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/baltic-honeybadger/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/2018/><h6>Baltic Honeybadger 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/baltic-honeybadger/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/2019/><h6>Baltic Honeybadger 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bit-block-boom/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bit-block-boom/><h6>Bit Block Boom</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bit-block-boom/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bit-block-boom/2019/><h6>Bit Block Boom 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-core-dev-tech/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/><h6>Bitcoin Core Dev Tech</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bitcoin-core-dev-tech/2015-02/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2015-02/><h6>Bitcoin Core Dev Tech 2015</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2017-09/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2017-09/><h6>Bitcoin Core Dev Tech 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2018-03/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2018-03/><h6>Bitcoin Core Dev Tech 2018 (Mar)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2018-10/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2018-10/><h6>Bitcoin Core Dev Tech 2018 (Oct)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2019-06/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2019-06/><h6>Bitcoin Core Dev Tech 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2022-10/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2022-10/><h6>Bitcoin Core Dev Tech 2022</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2023-04/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2023-04/><h6>Bitcoin Core Dev Tech 2023 (Apr)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2023-09/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2023-09/><h6>Bitcoin Core Dev Tech 2023 (Sept)</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-design/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-design/><h6>Bitcoin Design</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/edgedevplusplus/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/edgedevplusplus/><h6>Bitcoin Edge Dev++</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/edgedevplusplus/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/edgedevplusplus/2017/><h6>Bitcoin Edge Dev++ 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/edgedevplusplus/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/edgedevplusplus/2018/><h6>Bitcoin Edge Dev++ 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/edgedevplusplus/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/edgedevplusplus/2019/><h6>Bitcoin Edge Dev++ 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-magazine/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-magazine/><h6>Bitcoin Magazine</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bitcoin-magazine/bitcoin-explained/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-magazine/bitcoin-explained/><h6>Bitcoin Explained</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-review-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-review-podcast/><h6>Bitcoin Review Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoinplusplus/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinplusplus/><h6>Bitcoin++</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bitcoinplusplus/2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinplusplus/2022/><h6>Bitcoin++ 2022</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoinplusplus/onchain-privacy/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinplusplus/onchain-privacy/><h6>Onchain Privacy</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoinology/ class="nav-item my-1 parent haschildren"><a class="nav-link p-0" href=/bitcoinology/><h6>Bitcoinology</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoinops/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinops/><h6>Bitcoinops</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcointranscripts/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcointranscripts/><h6>Bitcointranscripts</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/blockchain-protocol-analysis-security-engineering/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/><h6>Blockchain Protocol Analysis Security Eng</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/blockchain-protocol-analysis-security-engineering/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2017/><h6>Blockchain Protocol Analysis Security Engineering 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/blockchain-protocol-analysis-security-engineering/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2018/><h6>Blockchain Protocol Analysis Security Engineering 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/blockstream-webinars/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockstream-webinars/><h6>Blockstream Webinars</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/boltathon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/boltathon/><h6>Boltathon</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/breaking-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/><h6>Breaking Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/breaking-bitcoin/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/2017/><h6>Breaking Bitcoin 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/breaking-bitcoin/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/2019/><h6>Breaking Bitcoin 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/building-on-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/building-on-bitcoin/><h6>Building On Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/building-on-bitcoin/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/building-on-bitcoin/2018/><h6>Building On Bitcoin 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/c-lightning/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/c-lightning/><h6>c-lightning</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/chaincode-labs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-labs/><h6>Chaincode Labs</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/chaincode-labs/chaincode-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-labs/chaincode-podcast/><h6>Chaincode Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/chaincode-labs/chaincode-residency/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-labs/chaincode-residency/><h6>Chaincode Residency</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/chicago-bitdevs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chicago-bitdevs/><h6>Chicago Bitdevs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/coindesk-consensus-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coindesk-consensus-2016/><h6>Coindesk Consensus</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/coordination-of-decentralized-finance-workshop/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/><h6>Coordination of Decentralized Finance</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/coordination-of-decentralized-finance-workshop/2020-stanford/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/2020-stanford/><h6>2020 Stanford</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/cppcon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/><h6>CPPcon</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/cppcon/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/2017/><h6>CPPcon 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/cppcon/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/2020/><h6>CPPcon 2020</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/cryptoeconomic-systems/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cryptoeconomic-systems/><h6>Cryptoeconomic Systems</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/cryptoeconomic-systems/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cryptoeconomic-systems/2019/><h6>Cryptoeconomic Systems 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/dallas-bitcoin-symposium/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/dallas-bitcoin-symposium/><h6>Dallas Bitcoin Symposium</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/decentralized-financial-architecture-workshop/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/decentralized-financial-architecture-workshop/><h6>Decentralized Financial Architecture Workshop</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-developers-miners-meeting-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-developers-miners-meeting-2016/><h6>Developers-Miners Meeting</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/greg-maxwell/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/greg-maxwell/><h6>Greg Maxwell</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/grincon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/grincon/><h6>Grincon</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/grincon/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/grincon/2019/><h6>Grincon 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/honey-badger-diaries/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/honey-badger-diaries/><h6>Honey Badger Diaries</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/iacr/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/iacr/><h6>IACR Crypto</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/la-bitdevs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/la-bitdevs/><h6>LA Bitdevs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/layer2-summit/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/layer2-summit/><h6>Layer2 Summit</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/layer2-summit/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/layer2-summit/2018/><h6>Layer2 Summit 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/lets-talk-bitcoin-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lets-talk-bitcoin-podcast/><h6>Lets Talk Bitcoin Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/lightning-conference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-conference/><h6>Lightning Conference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/lightning-conference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-conference/2019/><h6>Lightning Conference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/lightning-hack-day/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-hack-day/><h6>Lightning Hack Day</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/lightning-specification/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-specification/><h6>Lightning Specification</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/london-bitcoin-devs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/london-bitcoin-devs/><h6>London Bitcoin Devs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/magicalcryptoconference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/magicalcryptoconference/><h6>Magicalcryptoconference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/magicalcryptoconference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/magicalcryptoconference/2019/><h6>Magicalcryptoconference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/misc/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/misc/><h6>Misc</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/><h6>MIT Bitcoin Expo</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2015/><h6>Mit Bitcoin Expo 2015</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2016/><h6>Mit Bitcoin Expo 2016</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2017/><h6>Mit Bitcoin Expo 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2018/><h6>Mit Bitcoin Expo 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2019/><h6>Mit Bitcoin Expo 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2020/><h6>Mit Bitcoin Expo 2020</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2021/><h6>Mit Bitcoin Expo 2021</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2022/><h6>MIT Bitcoin Expo 2022</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/munich-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/munich-meetup/><h6>Munich Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/noded-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/noded-podcast/><h6>Noded Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/realworldcrypto/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/><h6>Realworldcrypto</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/realworldcrypto/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/2018/><h6>Realworldcrypto 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/realworldcrypto/2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/2021/><h6>Realworldcrypto 2021</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/rebooting-web-of-trust/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/rebooting-web-of-trust/><h6>Rebooting Web Of Trust</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/rebooting-web-of-trust/2019-prague/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/rebooting-web-of-trust/2019-prague/><h6>2019 Prague</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/ruben-somsen/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/ruben-somsen/><h6>Ruben Somsen</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/satoshi-roundtable/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/satoshi-roundtable/><h6>Satoshi Roundtable</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/satoshi-roundtable/sr-004/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/satoshi-roundtable/sr-004/><h6>Sr 004</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/scalingbitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/><h6>Scaling Bitcoin Conference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/scalingbitcoin/hong-kong-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/hong-kong-2015/><h6>Hong Kong (2015)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/milan-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/milan-2016/><h6>Milan (2016)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/montreal-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/montreal-2015/><h6>Montreal (2015)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/stanford-2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/><h6>Stanford (2017)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/tel-aviv-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/><h6>Tel Aviv (2019)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/tokyo-2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/><h6>Tokyo (2018)</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/sf-bitcoin-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/sf-bitcoin-meetup/><h6>SF Bitcoin Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/simons-institute/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/simons-institute/><h6>Simons Institute</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/stanford-blockchain-conference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/><h6>Stanford Blockchain</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/stanford-blockchain-conference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/2019/><h6>Stanford Blockchain Conference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/stanford-blockchain-conference/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/2020/><h6>Stanford Blockchain Conference 2020</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/stephan-livera-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stephan-livera-podcast/><h6>Stephan Livera Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/sydney-bitcoin-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/sydney-bitcoin-meetup/><h6>Sydney Bitcoin Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/tabconf/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tabconf/><h6>TABConf</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/tabconf/2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tabconf/2021/><h6>TABConf 2021</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/tabconf/2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tabconf/2022/><h6>TABConf 2022</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/texas-bitcoin-conference-2014/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/texas-bitcoin-conference-2014/><h6>Texas Bitcoin Conference</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/tftc-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tftc-podcast/><h6>TFTC Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/verifiable-delay-functions/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/verifiable-delay-functions/><h6>Verifiable Delay Functions</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/verifiable-delay-functions/vdf-day-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/verifiable-delay-functions/vdf-day-2019/><h6>Vdf Day 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/vr-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/vr-bitcoin/><h6>VR Bitcoin</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/w3-blockchain-workshop-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/w3-blockchain-workshop-2016/><h6>W3 Blockchain Workshop</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/wasabi-research-club/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/wasabi-research-club/><h6>Wasabi Research Club</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/what-bitcoin-did-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/what-bitcoin-did-podcast/><h6>What Bitcoin Did Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></div></nav></div><div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky"><div class=docs-toc><nav id=TableOfContents><ul><li><ul><li><a href=#introduction>Introduction</a></li><li><a href=#the-next-few-years>The Next Few Years&mldr;</a></li><li><a href=#lightning-network-paper>Lightning Network Paper</a></li><li><a href=#the-block-size-war>The Block Size War</a></li><li><a href=#the-bolts>The Bolts</a></li><li><a href=#what-is-lightning>What is lightning?</a></li><li><a href=#examples>Examples</a></li><li><a href=#ln-markets>LN Markets</a></li><li><a href=#spending-lightning>Spending Lightning</a></li><li><a href=#growth>Growth</a></li><li><a href=#intermission>Intermission</a></li><li><a href=#intermission-continued>Intermission (Continued)</a></li><li><a href=#problems>Problems</a></li><li><a href=#payment-channels>Payment Channels</a></li><li><a href=#wallets>Wallets</a></li><li><a href=#lightning-wallets>Lightning Wallets</a></li><li><a href=#summary>Summary</a></li><li><a href=#other-things>Other Things</a></li><li><a href=#liquidity>Liquidity</a></li></ul></li></ul></nav></div></div><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3"><a href=/>Home</a>
+&lt; <a href=/bitcoinology/>Bitcoinology
+</a>&lt; What is Lightning Network?<h1>What is Lightning Network?</h1><p>Speakers:
+<a href=/speakers/adam-gibson>Adam Gibson</a></p><p><i>Date: December 15, 2021</i></p><p><i>Transcript By: masud-abdulkadir via review.btctranscripts.com</i></p><p>Tags:
+<a href=/tags/lightning>Lightning</a></p><p>Category:
+<a href=/categories/meetup>Meetup</a></p><p>Media:
+<a href='https://www.youtube.com/watch?v=ZxrXkprwxUM'>https://www.youtube.com/watch?v=ZxrXkprwxUM</a></p><h2 id=introduction>Introduction</h2><p>Hello everyone.
+We&rsquo;re going to sort of soft start now, and this is a new meetup group we&rsquo;ve decided to call Bitcoinology.
+It&rsquo;s a whimsical name.
+It&rsquo;s really intended to convey the idea that we want to discuss Bitcoin not in a super developer technical code way, but we do want to discuss it—how it&rsquo;s used, even what the history and culture of it are, and what are the interesting things as a user and as a sort of Bitcoin person you can learn.
+I don&rsquo;t know whether Bitcoinology conveys it properly.
+It&rsquo;s intended to be sort of halfway between serious academic stuff on the one hand and, on the other hand, just culture and just enjoyment stuff.
+This is the first—it&rsquo;s a test meetup.
+We&rsquo;re just seeing how it will go.
+We decided that a good topic would be the usage of Lightning, or Lightning Network, as a sort of second layer of Bitcoin.
+I&rsquo;m going to go through what I&rsquo;m going to do in this talk.
+It&rsquo;s basically going to have two halves to this session.
+The first half is me giving a talk, a traditional presentation.
+You can interrupt with questions if you like that&rsquo;s fine.
+If you do, I will have to repeat them—a reminder to myself.
+I&rsquo;m going to explain some of the history behind the Lightning Network and where it came from.
+Because if you only know a little bit about Bitcoin and we just established it with a hands-up, most people here know quite a bit about Bitcoin, but some people may be watching or some people in this room right now may don&rsquo;t know that much about it, and they may know even less about Lightning.
+I want to give the context, where it comes from, and why it&rsquo;s useful today, and hopefully that will lead into what it&rsquo;s really like to use the Lightning Network today as a payment system, and we&rsquo;re actually going to do that in practice in the second hour.</p><p>Let me kick off by, first of all, going to the start of this presentation.
+I&rsquo;ve called it Lightning Network Make Bitcoin Fun Again, and I hope you&rsquo;ll understand, apart from just the trivial sense, why I say that as we go through the first section.
+Part one is how we got here.
+This is about the history leading up to the Lightning Network.
+By the way, on this first slide, you&rsquo;re not going to be able to see everything perfectly, but I&rsquo;ll try and point out the things you do need to be able to see.
+This slide is, I think, interesting.
+On the left, you have an Archive.is snapshot of bitcoin.org, which was the place you used to go to always to get your Bitcoin software, and the front page of it was actually a video, which of course doesn&rsquo;t show up on Archive.is now, but it also had these little call-out sections you see on the right: &ldquo;instant peer-to-peer transactions,&rdquo; &ldquo;zero or low processing fees.&rdquo; And this was on the Bitcoin.org website as far back as 2012, I&rsquo;m sure, maybe even earlier, and as late as 2014, they were still saying that, and even later.
+And I&rsquo;ve written here, &ldquo;very unwise.&rdquo; Even at the time, myself and I&rsquo;m sure quite a few other people thought it was quite dubious to be advertising Bitcoin as specifically an instant transaction system and specifically as a zero processing fee transaction system.
+And why was it dubious?
+Because of its nature, without going into the technical details, Bitcoin is not instant.
+It cannot be instant to transfer bitcoin.
+In terms of zero processing fees or very low processing fees, that was very true in the very early days of Bitcoin, but even though it was true, everyone knew inevitably that to whatever extent Bitcoin was successful, it inevitably meant that fees would not be zero, and moreover, not only are they not zero nowadays, but they are quite unpredictable, which is maybe even more important than that they&rsquo;re not zero.
+This was unfortunate, but it reflected a very strong sort of cultural tendency, if you could call it a culture, in the early days of Bitcoin to think of it as a potential replacement for our normal consumer payment system.
+People often talk about cash and digital cash, but what I think a lot of people had in their minds around that time, 2012, 13, 14, is they had in their mind, &ldquo;Oh, I&rsquo;m going to go to my local bar, my local pub, and I&rsquo;m going to infuse them; they&rsquo;re going to accept Bitcoin; they&rsquo;ll be, you know, people made these videos of QR code, exactly what we&rsquo;re going to do today, but they did this eight years ago or whatever,&rdquo; and they were, &ldquo;Oh, look, the bar is; there was a pub somewhere in London or somewhere in England anyway, accepting Bitcoin this,&rdquo; and it was all, to use the language of the kids nowadays, it was all a bit cringe.
+It was a bit cringeworthy because, to me anyway, that&rsquo;s not how it&rsquo;s actually going to work, and why do I say that?
+Because I always called it, well, Bitcoin is SWIFT, not Starbucks points.
+What I meant by that, if you don&rsquo;t know SWIFT, is that SWIFT is international wire transfers.
+It&rsquo;s a very heavy, very serious way of transferring money, but it works all around the world.
+It was originally tended to be very apolitical, and you can think of Bitcoin like that or like hard currency in the old Soviet Union.
+You can&rsquo;t really think of it as a replacement for Visa because it just doesn&rsquo;t scale to that.
+It doesn&rsquo;t have the right privacy properties.
+It doesn&rsquo;t have the right consumer experience.
+That&rsquo;s why I and quite a few other people were quite negative about this viewpoint.
+On the other hand, there were people like this, the most obvious example being Roger Ver and several others; Charlie Shrem was another one, who were very public figures in 2013, very popular and famous, and a lot of the time they were going on the media and they were trying to push this narrative: &ldquo;Bitcoin is going to be the next Visa.&rdquo; We started talking about transactions per second metrics, and they were always trying to play down the idea that there would be fees and there would be delays.
+They all know we can accept unconfirmed transactions and we can just work around it, and even whole companies were built up around this concept that we could make these transactions sort of free and sort of instant, but actually they weren&rsquo;t really, and this whole, well, I suppose the guy at the bottom here perfectly illustrates the end of that period, or the transitionary period, because that was an amazing video, by the way, in 2013 with him sitting on this bouncy ball.
+I have no idea to this day why he was sitting on that when they were talking to him, but this is Mark Karpellis; he used to run Mt. Gox or Mt. Gox, and of course, he&rsquo;s another sort of aspect of the problems of those early eras because there was a lot of, you could call it, amateurishness or unprofessionalness in maintaining these very serious exchange websites, and famously, it completely collapsed with millions of dollars lost, or millions of&mldr;hundreds of millions, I suppose.
+Charlie Shrem was a businessman.
+This sign here is typical of that era.
+That was an early attempt to say, Look, we can exchange Bitcoin in shops, bars, and other places.
+It&rsquo;s perhaps strange for me to put Andreas Antonopoulos on the same slide, but he&rsquo;s just another aspect of those same early days where they were talking about a lot of enthusiasm about Bitcoin as a consumer payment system.
+He&rsquo;s more on the developer and engineer side, but to this day, he&rsquo;s still an important figure.
+in a different way.</p><h2 id=the-next-few-years>The Next Few Years&mldr;</h2><p>Let&rsquo;s try and go to the next few years very quickly.
+Basically, in 2014 and 2015, the price dropped a lot.
+People are losing interest.
+I&rsquo;ve put here &ldquo;lost interest.&rdquo; But I thought it was funny to observe that at the same time we were losing interest towards the end of 2014 and the beginning of 2015.
+Of course, because we were losing interest, there were a lot fewer transactions on the blockchain.
+Because there were a lot fewer transactions on the blockchain, the price of the transactions stayed very low; if anything, it was lower, right?
+It was almost a calm before the storm.
+Very shortly after that, although you don&rsquo;t really see it on the chart, in 2016 and then 2017, transaction fees really started to rise and eventually spiked hugely at the end of 2017 due to a lot of interest in using Bitcoin.
+It perfectly illustrated all the businesses that had built up that were trying to make this consumer payment system; they were all horribly failing in some way or another because the users simply couldn&rsquo;t use the system.
+They would try and enter a payment; in mid-2017, it was very typical.
+You&rsquo;d try to enter a payment with Bitcoin for, say, $20, and you&rsquo;d try to pay a $2 fee, and then it turned out, oops, you have to wait two weeks for that payment to clear because your transaction fee is nowhere near enough.
+It really was the crystallization of all the problems that were discussed earlier."</p><h2 id=lightning-network-paper>Lightning Network Paper</h2><p>What we&rsquo;ll see in the coming years is that something else was going on in the background.
+This is January 2016, roughly.
+We have these two guys, Taj Dreiger and Joseph Poon, writing a paper called the Lightning Network Paper.
+Initially, it was something just in the back quarters because it was just technical people, a few developers here and there, and so on, researchers who were even remotely interested in this.
+This paper was written in a strange way.
+I don&rsquo;t know how many people&mldr;
+hands up if you have actually read the Lightning Network Paper, more than a few lines.
+Well done! You&rsquo;re obviously very masochistic people, because that paper is not an easy read.
+This illustrates, I think, perfectly.
+This die is one of the final diagrams.
+It just shows you how complicated the structure of what they were describing was.
+It was very difficult to understand, and it was based around a couple of little hacks because, actually, Bitcoin&rsquo;s blockchain intrinsically didn&rsquo;t support it.
+Before I run on, what on Earth am I talking about, the Lightning Network Paper?
+What is the Lightning Network, just for the people who don&rsquo;t know what it is?
+It&rsquo;s basically the idea that, given everything I&rsquo;ve said in the last 10 minutes, we need a system where we can transfer bitcoin without actually putting it on the Bitcoin blockchain.
+Because the Bitcoin blockchain is intrinsically pretty expensive to use, once enough people start using it, Their idea was, let&rsquo;s make transactions of Bitcoin back and forth, not just back and forth between two people, but between anyone in the world and me, and have it not actually touch the blockchain until some later time.
+And we&rsquo;ll go into that later.
+That was their idea, but to actually make it work was this incredibly complicated byzantine structure.
+Part of what made it complicated was something called malleability.
+Malleability is just a fancy word for change.
+If something&rsquo;s changeable, then it&rsquo;s malleable.
+The problem is that intrinsically at that time, transactions on Bitcoin&rsquo;s blockchain were in some sense malleable in that when you created them, you could then create another version of them that was still valid before it got committed.
+I know I&rsquo;m getting a bit technical there, but basically, there was a problem with Bitcoin&rsquo;s blockchain that made it too changeable.
+A solution came out called SegWit, but SegWit got all mixed up with something called the block size war.
+In 2016, these guys were coming up with this clever new scheme, and some other people were getting excited about it.
+Even though it was pretty complicated, they were still excited because we could get these transactions off the blockchain.
+A lot of other people were still arguing about, No, no, no, let&rsquo;s make the block sizes bigger because that way we can get more and more transactions on the blockchain.
+The argument was about whether we should go off-chain or make the blockchain bigger to support more and more transactions.
+Jonathan Beer here wrote a book recently called The Block Size War.
+I think about last year sometime.
+If you don&rsquo;t know the history of the block size war, it is interesting, but that&rsquo;s not the topic of our talk."</p><h2 id=the-block-size-war>The Block Size War</h2><p>As we reach the end of 2016, it turns out a bunch of people are actually starting to develop this thing called the Lightning Network, at least as software.
+Nobody&rsquo;s using it yet because this SegWit thing hadn&rsquo;t yet activated, and it was not very realistic to actually build it.
+Because it was complicated, as I just explained, it is definitely a complicated system.
+I&rsquo;ll talk about these guys in a minute.
+Building that software took time.
+Even getting up to the first basic version took some time.
+You had these companies or projects spring up.
+There was Lightning Labs, started by Elizabeth Stark here, along with Loulou, and they built this LND software.
+And this software will be behind a lot of the wallets that we&rsquo;re using later today.
+Blockstream, which started in 2015 with a whole sort of sidechain business, Rusty Russell, who&rsquo;s originally a Linux developer, and Christian Decker, who did a PhD in Bitcoin, are famously the first Bitcoin PhDs. They were two of the people, and there were some other people who worked on another version of Lightning called C Lightning, and as I said before, Asank worked on Eclair.
+You had at least three, and arguably more, different versions of this Lightning software being developed in 2016.
+And it got to the point, so by the end of 2016, we had the whole block-size war raging.
+And in the background, at the same time, we had these guys putting together a set of protocols and agreements because they had to make all of this complicated software talk to each other, and it was not trivial.
+I remember this: I put here the Scaling Bitcoin sign because in Milan in 2016, there was one of a series of Scaling Bitcoin conferences, and one of the things that happened there was that was the first meetup.
+All these guys met up in a room.
+I remember there was a whole set of 13 or 14 people, developers, and they were there solidly for two days just hashing it out.
+What did they come up with?
+They came up with what&rsquo;s called nowadays the bolts.</p><h2 id=the-bolts>The Bolts</h2><p>The bolts are the standards.
+They&rsquo;re a bit like RFCs for those of you who are engineers or internet people.
+Basically, it describes what the protocol should do, what the protocol must do, and what every piece of software must agree to in order for all these Lightning off-chain payments to work.
+And the outcome of all that is that in 2017, the software moves forward; they have something that works, and by the summer of 2017, this historic moment—it&rsquo;s historic, silly in a way—is at room 77 in Berlin.
+You have Laulu, one of the engineers I just mentioned, paying for a beer with Lightning.
+This is Jorg Platzer, the guy who owns room 77, actually with Testnet Lightning.
+He didn&rsquo;t actually use real Bitcoin.
+He used TestNet.
+There&rsquo;s actually a story behind that, because why did they use it?
+Why did they use TestNet?
+I wonder if I can ask the audience why they used Testnet Lightning in the middle of 2017 and not main chain Bitcoin Lightning?
+Because SegWit hadn&rsquo;t been adopted at that point.
+Because SegWit hadn&rsquo;t been adopted at that point, thank you; that&rsquo;s the correct answer.
+The weird thing is that on Litecoin, they actually activated this SegWit thing, this thing that fixes malleability, some months earlier.
+They were even trying to do this stuff on Litecoin, as well as on, this is confusing, Litecoin Lightning.
+They were doing it on Litecoin and on Bitcoin Testnet, but they weren&rsquo;t doing it on Main Chain Bitcoin because 2017 was the end of the block size; it was this massive explosion.
+I can&rsquo;t even begin to describe 2017 to you; it was the most crazy year ever from a whole bunch of different angles.
+But from one angle, were we finally activating SegWit at the end of August, somebody correct me, or at the beginning of August 2017, in the middle of August, Michael, anyone?
+Roughly, whatever, August 2017.
+We activated SegWit in the midst of a hundred other things happening, which I&rsquo;m not going to describe.
+But it meant that from the end of 2017, we could finally use this off-chain protocol called Lightning on the Bitcoin Mainnet.</p><h2 id=what-is-lightning>What is lightning?</h2><p>Finally, we actually talk about Lightning really being a thing, a real thing.
+It was a real thing by, let&rsquo;s say, sometime in January 2018.
+I don&rsquo;t remember the exact date.
+In the sense that all the developers said to everyone, Look, this is now ready.
+We don&rsquo;t think it&rsquo;s really, really ready in the sense that it isn&rsquo;t perfectly safe and it isn&rsquo;t always going to work perfectly, but it is at least ready to try out and experiment.
+People started experimenting with lightning very early in 2018.
+This graph here, by the way, illustrates roughly the increase in capacity of the Lightning network between May 2018 and May 2019.
+At this point, I&rsquo;m going to start to get a little bit more concrete about what lightning even is.
+Because when I say the capacity of the Lightning network, if you didn&rsquo;t know what it was before this talk, you&rsquo;re probably quite confused.
+What do I mean by capacity?
+The first thing to understand about the Lightning network is that it consists of things called channels.
+between pairs of people.
+Any two people, such as Alice and Bob, might have a channel between them.
+The best analogy to have in your head about what a channel is is probably the abacus analogy.
+Most people probably know what an abacus is.
+You have a wire, and you have beads that can thread along the wire.
+And so there&rsquo;s two ends of the wire.
+And suppose we have ten beads; we could have five pushed over to one side and five pushed over to the other side.
+Perhaps it&rsquo;s Alice and Bob on the two sides.
+Alice can move one bead from her side to Bob&rsquo;s side, going from five to four to six.
+It&rsquo;s a way of moving actual Bitcoin from one end of a channel to the other end of the channel without actually making a transaction on the blockchain itself.
+Does that make sense of what a channel is?
+Then, if you think about the Lightning network as a whole, it&rsquo;s a network of such channels.
+There are lots and lots of them.
+Actually, nowadays, it&rsquo;s tens of thousands.
+And each one of them has a certain amount of bitcoin in it—those beads on that wire.
+We&rsquo;re just adding them up on that graph.
+And you can see obviously, like any new technology, there are ways of adoption; there&rsquo;s a sudden growth for this, that, and the other.
+For example, sometime in the middle of 2018, there was this thing called the Lightning Torch, and it was Oh, let&rsquo;s try this out.
+Let&rsquo;s try sending money to each other using this protocol off the blockchain right across the world, and I think they did it on Twitter.
+One person would send 100,000 sats, sats such as satoshis, right, a 100 millionth of a Bitcoin, and then the next person would send 110,000 sats to some other random person; it would go around in a group, and Bitcoin being Bitcoin, of course, eventually the topic arose: well, can I send this to a guy in Iran, and somebody was like, Maybe you shouldn&rsquo;t send it?
+This is—that&rsquo;s what it&rsquo;s for, right?
+Bitcoin is for the payments you&rsquo;re not allowed to make; they don&rsquo;t want you to make them, and that&rsquo;s what they say, and of course the other thing about it is that it&rsquo;s dangerous.
+So I show here an example: payment failed.
+In those days, so we&rsquo;re talking about 2018, it was very, very common for payments to fail because the software was trying to talk to each other and it had to agree on a whole bunch of fiddly little details, and it often didn&rsquo;t agree and things went wrong.
+It was still very early.
+It wasn&rsquo;t very reliable.
+You&rsquo;d get all kinds of errors and failures to route.
+But it did get better during that year.
+I can speak from experience.
+I started using it probably in February or March.
+I tried it a little bit, and I tried it a little bit more.
+It was getting better.
+So we&rsquo;re coming forward to today now.</p><h2 id=examples>Examples</h2><p>Being reckless with lightning, I want to show you just some obvious, simple examples of how we have been using it, especially in the first few years.
+Gambling is an artist&rsquo;s idea, because a lot of it was just having fun with games.
+Because, why not?
+Because it&rsquo;s things that you couldn&rsquo;t do otherwise.
+Here you have a roulette wheel.
+Sorry, the picture&rsquo;s terrible, but it&rsquo;s the best I could find because the site&rsquo;s down now.
+It was called Lightning Spin.
+You had a roulette wheel, and you would put 1,000 sats.
+You&rsquo;d just click a button, get a QR code, and send 1,000 sats, which is $0.50.
+And then you would be able to gamble with it.
+You say, &ldquo;I want a five-time multiplier,&rdquo; and if it comes up on the right color, I get the five-time multiplier; otherwise, I lose my money.
+Silly, right?
+But honestly, if you try it, it&rsquo;s huge fun.
+And there are lots of examples of that.
+The point is, by doing that otherwise, each time you wanted to make some sort of change in that game, it would have cost you a network fee, which would make sense in a way.</p><p>Let&rsquo;s think about how.
+Do you remember what he said?
+Alex was saying that if you would need to pay, if we didn&rsquo;t have lightning, and you wanted to pay 50 cents to gamble on that, you&rsquo;d have to pay a network fee every time.
+And, of course, that&rsquo;s true.
+Another way of saying it is that effectively, you&rsquo;d end up with a custodial model, right?
+Which is that you would, because you couldn&rsquo;t send 50 cents on the bitcoin blockchain for less than one cent as you can with lightning, you would have had to put $20 on with bitcoin and then just leave it and trust the guy owning the site with your money.
+It takes away some of the trust you have to put into a service operator because you can make very small payments.</p><p>I think this second example is obviously a lot more beautiful to look at, but it also illustrates the point maybe even better.
+Because this was called Satoshi&rsquo;s Place, and it actually still exists.
+I can still pull up this website.
+You can still use it.
+You might want to try this later.
+What you can do is click on it, and it says to you, &ldquo;Right, choose your color,&rdquo; and you can start drawing, but every pixel that you put on this picture is going to cost you one satoshi.
+Again, one satoshi is about 1,000th of a dollar.
+Just to give you a sense, You can start drawing, and you can draw the Mona Lisa, or you can draw a penis, as many people did back in the day.
+I can assure you that.
+And you can draw anything you like and it costs you one satoshi per pixel.
+It&rsquo;s very, very simple.
+I actually tried it again yesterday, just to check if it still works.
+It works fine.
+Am I still there?
+No, I don&rsquo;t know.
+Anyway, so the point is, this was really fun, and it was really popular for about one month, and I remember, perhaps people here remember, the Bitcoin Lightning Conference in Berlin in 2019, I think it was, where they had a panel, and there were all these very serious people sitting in a panel talking about lightning.
+And somebody&rsquo;s drawing a penis above them because, in real time, it&rsquo;s really funny.
+But I think that&rsquo;s lovely because that illustrates that point.
+Maybe it&rsquo;s not the most useful thing in the world, but it really does illustrate something you couldn&rsquo;t do otherwise.</p><h2 id=ln-markets>LN Markets</h2><p>Right?
+And I like this example; it is much more recent.
+This is a site called LN Markets, and all they&rsquo;re doing here is offering you the opportunity to trade futures with leverage, so the degenerate gamblers amongst us, and there are plenty of them, will love this site if they haven&rsquo;t seen it already.
+What I really like about it is something called this link here; you can&rsquo;t see it, but it says connect with lnurl.
+What it really means is that when you click it, it pulls up a QR code.
+And again, you can try this later if you&rsquo;ve got the right wallet.
+You can scan it, and it will log you in with the public key of your lightning node.
+And the beautiful thing about that is that it&rsquo;s pure public-key cryptography, okay?
+You&rsquo;re signing with a key, and you&rsquo;re not giving them any credentials—no emails, nothing else at all.
+And you can jump in there, and I did this a couple of months ago, and I put in 2,000 sats or 10,000 sats, and I totally degenerately bet 50 or 100 times leverage, and I made 40,000 sats.
+Hopefully HMRC is not listening, but if you are, that&rsquo;s only about 20 quid.
+Okay, HMRC.
+It&rsquo;s completely without any, and what I love about that is that it&rsquo;s so free.
+There&rsquo;s nobody collecting my data there.
+Okay, because it&rsquo;s just purely the public key.
+Now, of course, the public key of your node—well, that&rsquo;s some metadata that could be used, right?
+You could discuss that.
+But it&rsquo;s a really nice model.
+And the same model is used on this website.
+It&rsquo;s a relatively newer one again, called Stack and Use, after Hack and Use, of course, but it&rsquo;s the Reddit-style thing where you can upvote or downvote the post, and when you upvote it costs you satoshis.
+You know, does it prevent bot farms?
+I mean, who knows?
+But the idea is cool, and it still uses, I&rsquo;ve actually, you know, you can dox me a little bit, that&rsquo;s one of my mobile phones, node keys there.
+I can just use that key, and I can.
+That&rsquo;s an identity in quotes that I can use on that site.
+interesting, I think.</p><h2 id=spending-lightning>Spending Lightning</h2><p>Just a brain dump here of all the different ways I could remember spending lightning.
+Basically, buying souvenirs, buying mugs, buying t-shirts, and different kinds of gambling, that Lightning Spin one, Satoshi&rsquo;s Place, and Bitrefill (which I haven&rsquo;t mentioned yet, is really cool where you can actually buy gift cards), you can buy gift cards using Lightning or mainchain Bitcoin.
+And it&rsquo;s just really easy.
+And what I like about that site is that they&rsquo;ve really tried hard.
+They&rsquo;ve got really good lightning support, and they&rsquo;ve got a lot of other features as well, such as address, if anyone knows what that means.</p><p>You can do things like pay friends to settle a restaurant bill, and it might seem like a trivial example, but I can tell you I&rsquo;ve done that maybe seven, eight, nine, or 10 times at different meetups and conferences.
+And of course, what&rsquo;s cool about it is that it actually works, as opposed to in the past, when we could do it with just Bitcoin wallets, and it did work, but we didn&rsquo;t get confirmations.
+We were just trusting each other anyway.
+It&rsquo;s really cool that now, with lots of different white lightning wallets, we&rsquo;ll see there are several of them.
+You can pay each other this, and it settles immediately.
+And that&rsquo;s really nice; it works.</p><p>You can buy beer and coffee; I&rsquo;ve done that at different meetups.
+Of course, not in everyday life, but in El Salvador, you can.
+A lot of these things are things I would have paid with Bitcoin before, but I&rsquo;m now paying with Lightning.
+I can pay with my VPS through Lightning.
+Sometimes you&rsquo;ll find some of these services using BTCPay Server, which is a piece of software that gives a full suite of merchant-accepting payment services using Bitcoin and Lightning.
+It&rsquo;s really cool; I recommend it.</p><p>Donations—the nice one I think here on this list is podcasters.
+It&rsquo;s a new thing.
+If anyone&rsquo;s used Breeze, I think there are a couple of other apps that do it.
+You can listen to a podcast and pay per minute.
+I pay 10 sats per minute when I&rsquo;m listening to podcasts on the app.
+And if I want to, if I hear something I really I can boost it and give it more sats for that specific timestamp.
+Again, that&rsquo;s an example of the whole micro-payment idea in action.
+Of course, the final point is that we do tend to still use the Bitcoin main chain for a lot of payments, especially if they&rsquo;re larger than we tend to use them.</p><h2 id=growth>Growth</h2><p>Okay, we&rsquo;re getting through.
+Growth—that&rsquo;s what the network looked like in the end of January 2018 on the left.
+It&rsquo;s already pretty complicated, right?
+However, there aren&rsquo;t that many nodes; there are just a lot of connections.
+Nowadays, if we try to visualize the Lightning Network, it&rsquo;s nearly impossible because you can&rsquo;t.
+I mean, so this is some weird AI, machine learning thing that came up with some picture that I don&rsquo;t even really understand.</p><p>Why is it so difficult nowadays?
+Well, if you look at the actual statistics, you see the number of nodes is increasing pretty rapidly.
+And actually, 1ml.com has about, if you look at it right now, about 31k nodes recorded there.
+This was something I got from the recent &ldquo;Mastering the Lightning Network&rdquo; book that Andreas Antonopoulos and René Picard worked on.
+I don&rsquo;t really know exactly how they&rsquo;re getting their numbers compared to theirs, but there&rsquo;s a slight difference, but it doesn&rsquo;t really matter.
+Order of magnitude: we&rsquo;re talking about 50k nodes and 100k channels.
+and it is growing.
+Some things are growing faster than others, which may be interesting as well, but hopefully it&rsquo;s obvious to you because I&rsquo;ve talked to you about channels.
+Two people share a balance.
+Capacity is the sum of what&rsquo;s in Bitcoin in all those channels.
+And of course, part of this is, how do we really measure these stats?
+That&rsquo;s very hard.
+Because what you&rsquo;ve got is a decentralized network of people, perhaps Alex and Philippe here have a channel, and then you two have a channel, and you two have a channel, and we&rsquo;re all supposed to talk to each other on this decentralized network and tell each other, at least tell each other what the channels are and how much Bitcoin is in them.
+Of course, we could be lying, and then there&rsquo;s the question of, even if I know the total capacity on the channel, how much of it is on the left and how much of it is on the right?
+I don&rsquo;t necessarily know that.
+It&rsquo;s a very complicated business.
+And there&rsquo;s this thing called private channels as well, where you don&rsquo;t advertise them.
+It&rsquo;s a very complicated business to talk about analyzing the whole network and getting the full picture.
+This is at best an approximation, and I would guess that because of private channels, for example, that number is a significant underestimate.
+How much, I couldn&rsquo;t tell you.</p><h2 id=intermission>Intermission</h2><p>It gives you a sense of the network&rsquo;s growth, and it&rsquo;s actually pretty large right now.
+Now for an intermission.
+By intermission, unfortunately, I do not mean that I stop talking.
+That will happen shortly later.
+What time are we at right now?
+We have everyone.
+Okay, we only started, okay?
+That&rsquo;s about what I thought, okay?
+For this, I&rsquo;m going to need a table.
+I&rsquo;m sorry.
+Basically, what I&rsquo;m going to explain now is that without using technical jargon or any technical information at all, I really want to explain how a lightning network payment channel works.
+The lightning network is now two words.
+I&rsquo;m only going to explain Lightning with this.
+I&rsquo;m not going to explain the network part, which is just as crucially important: even if we can pay each other, how do I pay him when I&rsquo;m not connected to him?
+I&rsquo;m going to ignore that.
+I&rsquo;m just going to talk about two people trying to pay each other, but without using the bitcoin blockchain directly, to try and save on fees, so it costs less, to try and be instant instead of 10 minutes, and to try and be more private.
+There are three advantages to doing it off-chain, right?</p><p>What we do is develop some contracts.
+Imagine it as Alice and Bob, right?
+You won&rsquo;t all be able to see this perfectly, but let&rsquo;s say this is the first contract.
+Alice and Bob make a contract where Bob will be the black ink and Alice will be the blue ink.
+Keep that in mind: Bob black, Alice blue.
+In this particular situation, Bob has $90, Alice has $10, and they&rsquo;re pre-agreeing that because&mldr;
+he&rsquo;s worrying me.
+We&rsquo;re okay.
+We&rsquo;re pre-agreeing that because, let&rsquo;s say, Bob actually has $90; he puts it into the pot, and Alice has $10; she puts it into the pot.
+That&rsquo;s their actual balance, right?
+They make a contract that says, Okay, Bob has 90, Alice has 10, and we both sign it.</p><p>These two names at the bottom represent signatures.
+They&rsquo;re both signing this contract.
+Now, of course, there&rsquo;s one thing weird about what I&rsquo;ve written here, which is this one day.
+What am I talking about?
+What I&rsquo;m saying is that on this particular version of the contract, Alice&rsquo;s money, Alice&rsquo;s $10, is locked up for one day.
+If we go to the blockchain, and I&rsquo;m representing the blockchain by my robot judge, because after all, the whole point of the blockchain is that it&rsquo;s completely impartial and it&rsquo;s completely algorithmic.
+It just decides on the rules, right?
+If I show this contract to the blockchain, it&rsquo;ll say, &ldquo;Yes, okay, Bob gets his $90 because it&rsquo;s signed by both of you guys; that&rsquo;s fine.
+Bob gets his $90, Alice gets her $10, but just one thing: you can&rsquo;t settle this contract before the day is up, Alice.
+You&rsquo;re not going to get your money straight away.&rdquo; That seems a bit weird, but you&rsquo;ll understand it in a minute.</p><p>What we do is make two versions of the same contract.
+This second version is the one that Bob makes, or, let&rsquo;s say, is applied to Bob.
+This has the same amounts of money and the same signatures, but in this case, it&rsquo;s Bob&rsquo;s money that&rsquo;s locked up.
+Bob keeps the one where his money is locked up.
+If I sort of put them on two sides, so you&rsquo;re going to be Bob and you&rsquo;re going to be Alice, sorry.
+Bob&rsquo;s version of the contract has his money locked for one day.
+Alice&rsquo;s version of the contract has her money locked for one day.
+And so the whole point of making these contracts, at the moment, does nothing, right?
+Because who cares, right?
+We already have the money.
+The whole point of making those contracts is that we can replace them, or we can try to anyway.
+I&rsquo;ll take Alice&rsquo;s version.
+This is a new version.</p><h2 id=intermission-continued>Intermission (Continued)</h2><p>In this version of the contract, Alice has $70 and Bob only has $30 because Bob is paying Alice $60 for some expensive socks, right?
+Bob&rsquo;s paying Alice $60.
+That&rsquo;s why they&rsquo;ve changed.
+It&rsquo;s 30 on his side and 70 on her side.
+Just as before, we lock the money belonging to the person owning this version of the contract, and that&rsquo;s Alice.
+Alice&rsquo;s money is locked, Bob&rsquo;s money is locked, and we created a new version of the contract.</p><p>Now, have we finished?
+Is it the case now that, okay, I&rsquo;ve paid you, Alice?
+There you go; there&rsquo;s a new version of the contract; it&rsquo;s got $70.
+We&rsquo;re done, right?
+We can keep doing this; we can keep updating the contract, right?
+What&rsquo;s wrong with that?
+Right?
+What&rsquo;s wrong with that?
+There are two different versions of the contract.</p><p>Right, yes.
+Suppose you take Bob&rsquo;s point of view.
+He&rsquo;s looking at this saying, &ldquo;Okay, we&rsquo;ve done that.
+I&rsquo;ve got these two contracts.
+One of them says 90–10, and one says 30-70.
+Well, for this one, I&rsquo;ve got 90, and for this one, I&rsquo;ve only got 30.
+I don&rsquo;t care about that one, right?&rdquo; He&rsquo;s going over here and saying, &ldquo;Here, give me $90.
+Now, I&rsquo;ve got my $60 socks.
+I&rsquo;ve effectively stolen them from Alice, haven&rsquo;t I?
+I&rsquo;ve basically told him that this is the truth.&rdquo;</p><p>And of course, the real issue here, isn&rsquo;t it obvious, is that we didn&rsquo;t tell this guy about this change?
+We didn&rsquo;t tell this guy.
+That was the whole point of the system, right?
+We were trying to avoid the huge fees and delays associated with using this guy.
+We want to do it separately on our own, right?
+By doing it separately on our own, we&rsquo;ve avoided those fees.
+But unfortunately, we haven&rsquo;t actually solved the problem because we updated a contract, but we did not invalidate the earlier form.
+That&rsquo;s what we do next.</p><p>What we do is take out a new contract.
+After creating these two new versions of the contract, we also create a rider on the contract, or, what&rsquo;s the word, an extra clause in the contract.
+This one says if contract 1a says that 1a is Alice, if contract 1a is executed, I can&rsquo;t read, pay all $100 to Bob.
+Alice signs that.
+What Bob can do is keep this extra clause.
+That&rsquo;s Bob.
+Bob can keep the extra clause saying that if Alice ever spends the old version, he is going to be able to take her money.</p><p>Now, the opposite.
+Bob signs an extra clause on his contract, and it says if I ever execute contract 1b, well, all the money is going to go to Alice.
+And Alice can take that.
+I know it&rsquo;s a bit complicated, but what I&rsquo;m trying to illustrate to you is that essentially, it&rsquo;s almost just like a legal wrangling; it&rsquo;s just a legal construction.
+What it means is that here&rsquo;s Bob; he&rsquo;s paid his $60 to Alice.</p><p>If he decides to be a cheat and tries to use the old version of the contract and walks over here and says, &ldquo;Give me that,&rdquo; his money&rsquo;s locked for one day, remember?
+Maybe Alice went off on a day trip.
+He&rsquo;s trying to execute this, and he&rsquo;s hoping she won&rsquo;t get back because if she doesn&rsquo;t get back before one day, this guy&rsquo;s just going to give him the $90 because it says it right there; it says that&rsquo;s what he should do.
+And he&rsquo;s not going to argue; he&rsquo;s only going to follow the rules; he&rsquo;s a robot—more of a she, actually.
+Sorry, my mistake.</p><p>But, however, if Alice gets back before the end of that first day, what happens?
+What has Alice got?
+She has the extra clause, and she goes over here and says, &ldquo;Look, you&rsquo;ve got this contract here; it says that that&rsquo;s all very well, but I&rsquo;ve got this extra contract,&rdquo; and by the way, I&rsquo;m missing some important technical details here for those of you who know these things; please forgive me for that, but the basic logic is here: well, because that contract exists and this is an extra clause on the contract, it says, if he&rsquo;s trying to execute that, give it all to me.
+Well, he&rsquo;s just going to give it all to Alice.
+The entire $100 ends up with Alice, right, in that scenario.</p><p>Bob would be stupid; at least if he thinks Alice is alive within the next day, he would be stupid to try and execute that contract.
+He won, right?
+That&rsquo;s the theory, anyway.
+And we can keep repeating this process where we just keep updating the contract, a new version of the contract, but also here&rsquo;s a rider or an extra clause to the previous contract, and we just keep doing it over and over and over again.
+Every time we do that, we&rsquo;re creating a situation where the other side is incentivized to not cheat us because if they do, they&rsquo;re going to lose all their money in the channel.
+Right.
+Does that make sense to you as a broad outline of how it works?</p><h2 id=problems>Problems</h2><p>That&rsquo;s a bad question.
+What might be the problem?
+I think it&rsquo;s fair to say that there are two obvious problems with this construction, two ways it can go wrong.
+Let me put it like that.
+What are the two ways this construction can go wrong?</p><p>So the first problem is what we call liveness.
+Here I use the example of one day, but we would actually use longer periods than one day—two weeks, for example.
+If you&rsquo;re not around, somebody might cheat you, and if you just stay offline for a long time, then their cheating could be successful.
+In what I just described, this would be executed after one day, two weeks, or whatever it is.
+That&rsquo;s the first problem.
+This protocol is not like Bitcoin, where you just receive money and forget about it for four years.
+That&rsquo;s the first one.</p><p>The second one is a bit more subtle, so I&rsquo;m not sure if people will say what I&rsquo;m thinking in my head.
+What does it have to do with it?
+It&rsquo;s to do with that, for sure, 100%.
+That&rsquo;s also a liveness thing, right?</p><p>Audience: Because of the fact that people lose their money because of the old backups.</p><p>That&rsquo;s the same thing again, though.
+But that&rsquo;s the other way.
+Okay, that&rsquo;s more advanced and important; maybe you can explain that in the second half.
+It&rsquo;s a good point.</p><p>No, actually, what&rsquo;s in my head?
+It&rsquo;s very bad for teachers to say, &ldquo;What am I thinking, right?&rdquo; What&rsquo;s in my head is this.
+That mechanism relies on both sides, or at least on the particular cheating side having something to lose.
+In a situation where one side of the channel has nothing at all, it literally has no cost to them to try and cheat because you can&rsquo;t punish them.
+In Lightning, they have a thing called the channel reserve, and the channel reserve is at least an attempt to solve that issue.
+But really speaking, Lightning works only really well where you have these relatively balanced channels because of this game-theoretic assumption that we need to be able to punish someone.
+This whole process is called LN Penalty nowadays to contrast it with another way of doing Lightning, which I&rsquo;m not going to get into, which might in the future make this whole thing a bit more smooth, maybe.
+All right, so that was my attempt.</p><h2 id=payment-channels>Payment Channels</h2><p>I don&rsquo;t know if it was 10 minutes, but it was my attempt to explain payment channels in 10 minutes, and the other half of lightning, the network half, I&rsquo;m not going to explain now, but it&rsquo;s a similarly clever piece of reasoning.
+Using wallets.</p><p>Audience: I think we can talk a bit about what happens.
+Those contracts and stuff—are they actually being used for those channels all the time?</p><p>If both parties are being honest and are live and active, you can always replace a complicated contract with a simpler one that just says, Give Alice $10, give Bob $90.
+We can avoid some of the nastiness of having complicated contracts displayed on the blockchain.</p><p>Audience: The users are separate from the nodes themselves, right?</p><p>Well, all I&rsquo;ve described there is what&rsquo;s called the Poon Dryja payment channel, technically, because it was the two guys I showed earlier who came up with this idea.
+And it&rsquo;s a bidirectional payment channel.
+It&rsquo;s the basis of lightning in the sense that each of the two parties in lightning forms these channels, and then we have a network of them.
+One person could have lots and lots of channels, I think, which is your point.
+Absolutely right.</p><h2 id=wallets>Wallets</h2><p>Wallets.
+Let&rsquo;s talk about actually using it, because I think I&rsquo;ve done enough theory, haven&rsquo;t I?
+These are examples of wallet UIs. Actually, the one on the left is BlueWallet, but it&rsquo;s a bit of a comparison, the exact screen is different, but it doesn&rsquo;t matter.</p><p>Basically, what you&rsquo;ll see in most of these is that you&rsquo;ll see an amount.
+The amount can be in Satoshis, the amount can be in Bitcoin, the amount can be in dollars, pounds, or whatever.
+Okay, they&rsquo;ll vary that.
+They may or may not show you a list of your historical transactions.
+What they will tend to mostly focus on in what we&rsquo;re doing next is that they have buttons for sending and receiving money.
+And very often they&rsquo;ll have a separate button for scanning a QR code, because most of them will allow scanning a QR code to be sent.
+But the thing to remember is that this is an interactive process.</p><p>What makes this different from Bitcoin is that it&rsquo;s true, and it&rsquo;s almost entirely true that both parties have to be present.
+In Bitcoin, the receiver can just be asleep.
+But in Lightning, that&rsquo;s not really the case.
+Serve is the caveat there.
+We&rsquo;re going to send and receive.</p><p>And it looks similar to Bitcoin wallets, especially today; it doesn&rsquo;t show you stuff about channels by default.
+It used to be the case right at the beginning.
+They used to say, &ldquo;Oh, open your channels and manage your channels.&rdquo; Users don&rsquo;t want to talk about channels.
+They just want to talk about sending money and receiving money.
+And that&rsquo;s mostly what these wallets tend to do nowadays.</p><p>This is actually BlueWallet, Phoenix, and Breeze, but we&rsquo;ll see that later.
+This is Muun, which some of you just installed.
+This is actually a different one called Zebedee, which is more of an example of a custodial wallet.
+Actually, Blue is as well, but complicated.
+Custodial means, well, in that case, you&rsquo;re not even holding the private keys yourself.
+You&rsquo;re actually letting someone manage the money for you to some extent.
+And maybe they&rsquo;re using lightning in the background, but that&rsquo;s not quite the same thing.
+We&rsquo;ll talk about those trade-offs later.</p><h2 id=lightning-wallets>Lightning Wallets</h2><p>I&rsquo;ve shown this one as an example of what happens when you actually try to work with lightning at a sort of deeper level.
+If you run a full lightning node and maybe have it connected to your home Raspberry Pi and you have various other models, servers, and what have you, you can start getting involved in managing channels, and oh, let&rsquo;s try and find liquidity, let&rsquo;s try and provide liquidity, and get money for providing liquidity.
+There&rsquo;s a whole rabbit hole about how deep you can go with lightning.
+But for now, let&rsquo;s just think about using it for sending and receiving payments.
+Briefly, I could mention my experience in El Salvador recently.
+I&rsquo;m not sure if anyone—maybe one or two people—was in El Salvador with me, so they know about it.</p><h2 id=summary>Summary</h2><p>How can I summarize this quickly?
+Because I&rsquo;m running on a little bit too long.
+You&rsquo;ve got the Bitcoin; it&rsquo;s very much a tale of two cities, the El Salvador experience.
+You&rsquo;ve got the Bitcoin Beach, a famous project, in a place called El Zonte, literally on the beach, of course.
+very small place, very, we could say underdeveloped, few restaurants, few hotels, and basically everyone there has, as a project, started using Bitcoin and also Lightning for payments for various things.
+And they tend to use something called the Bitcoin Beach wallet, which is a really strange hybrid.
+It&rsquo;s not really like the things I just showed you, which you just installed on your phone.
+It&rsquo;s a centralized custodial service by a company called Galloy.
+And when you scan their QR codes, maybe later one of you might want to try that one, particularly, you&rsquo;ll see that you actually get sent to a webpage, not to a lightning wallet.
+You have to go to a webpage, and the webpage then hosts the lightning payment invoice for this person, even though again, it&rsquo;s custodial.
+They themselves are not holding the keys.
+It&rsquo;s a good example of how people make trade-offs in the real world.</p><p>Audience: Is that just for their business when it comes to tax, or does that help in accounting?</p><p>I think it&rsquo;s a complicated question as to why they&rsquo;ve gone down that road, but I think it&rsquo;s mostly about the technological difficulty of it, which makes it a lot simpler for a person who doesn&rsquo;t have a detailed technical background or the time to get involved in nodes and whatnot.
+I think it&rsquo;s interesting.
+I want to move on, but I think it&rsquo;s a good question.
+Maybe we can talk about it in the second hour.
+Chivo.
+I want to mention Chivo; it&rsquo;s very important.
+Chivo, this is an example of the better aspect of Chivo, where their ATMs actually successfully give you dollars in return for Bitcoin.
+But it&rsquo;s the main chain only at the ATMs. Their mobile wallet is, quite frankly, a complete disaster.
+I mean, by all accounts and by my own experience, a complete disaster.
+It does not work for lightning anyway.
+It has, by default, a US dollar interface.
+By the way, guys, you were there.
+Correct me if I&rsquo;m wrong; it has a US dollar interface by default.
+You can choose bitcoin, but that will default to main chain bitcoin.
+And then, if you look really carefully, it will go to lightning, yes.
+I was just going; you didn&rsquo;t finish; let me finish.
+In the third option, if you look carefully, there is a button to choose lightning, right?
+And perhaps you&rsquo;re going to correct me in saying this, but from what I heard from other people and from myself, it tended to be the case that even if you could get a lightning payment to work, it wouldn&rsquo;t show up on the app.
+Did you find it different?</p><p>Audience: Yeah.
+It works for me all the time.</p><p>It works for you every time.
+Okay.</p><p>Audience: I was thinking about the merchant version.
+Yes.
+Personal version.
+And maybe the merchant one didn&rsquo;t work.</p><p>The personal one worked.
+Right, that sounds right.
+Because I just remembered now, I did pay one person; it was a barista at a coffee place.
+I paid his personal Chivo wallet.
+Fine, you&rsquo;re exactly right.
+But for the merchant one, I tried it a couple of times, and I heard several other people saying that when you&rsquo;re in a restaurant and you try to pay them, your wallet will show that you&rsquo;ve paid $10, and their wallet will show nothing.
+It was a disaster.
+I had to pay twice.
+But there have been several other problems in the early days of Chivo, and from what I&rsquo;ve heard from people, it&rsquo;s really bad.
+And I&rsquo;m upset about it because I think it&rsquo;s damaged the ordinary Salvadorian&rsquo;s perspective on what bitcoin adoption might be.
+I&rsquo;m not going to mention some of these other things.</p><h2 id=other-things>Other Things</h2><p>This is the Starbucks point of sale, which, in my experience, worked flawlessly every time.
+I think it&rsquo;s IBEX; does anyone know?
+I don&rsquo;t really care; it&rsquo;s some company that did it.
+It&rsquo;s funny, though; they show three different denominations.
+They throw dollars, and then they show SATs, S-A-T, and capital, and then they show BTC as well, just in case you get confused.
+It&rsquo;s just supposed to help you understand what the price is, I guess.
+But anyway, it works absolutely fine with more than one Lightning wallet for me.
+Also, McDonald&rsquo;s, of which I&rsquo;ll give an example in a minute.
+Just to make pictures, that&rsquo;s Bitcoin, this is my slideshow now, my holiday.
+I mean, it&rsquo;s a bit, sorry.
+Bitcoin Beach looks really nice in the sunset; cool.
+This is Hope House in El Zonte, where you have some guys who drove from Argentina or something; I don&rsquo;t even know the story here.
+This is something I just donated to, and that was the new mural by Bit Refill.
+It&rsquo;s a very interesting place to have a look at.
+But San Salvador was different because they didn&rsquo;t have that Bitcoin Beach wallet thing.
+A lot of people were using Chivo, which didn&rsquo;t really work very well with merchants.
+But on the other hand, McDonald&rsquo;s, Starbucks, and a few chain restaurants were working fine.
+It was all very strange.
+And when you talk to the taxi drivers, half of them think it&rsquo;s great, and half of them think it&rsquo;s terrible.
+I don&rsquo;t know what that proves.</p><p>Video Time! I just thought it might be amusing to finish this off by showing you what it&rsquo;s like to use it.
+If my eyesight can actually find it, there it is.
+This was a completely serendipitous meeting on the street.
+It&rsquo;s already scanned the QR code.</p><p>VIDEO: <em>Difficult to Hear</em> All we need is a hotspot and 815.
+You got it?
+Woo! All right, all right, there we go.
+Every time I see it, everybody&rsquo;s like Woo! Strict deals, coffee.
+I keep on talking about coffee and tea.</p><p>This very short video is basically about how I met a guy called Tomer on the street.
+He&rsquo;s a local here, actually.
+He&rsquo;s a journalist, and he makes videos and stuff.
+He and his cameraman guy were talking to this guy who runs a coffee plantation—or owns a coffee plantation, I don&rsquo;t know.
+Anyway, he was getting interested in Bitcoin because he was showing them around, and they said they gave him; I think they gave him; I know, they gave him Muun Wallet; he installed it; and I just met them on the street, and I said, &ldquo;Oh, you&rsquo;re selling coffee; I&rsquo;ll buy coffee with Bitcoin from you.&rdquo; It&rsquo;s a meme, right?
+You have to buy coffee with Bitcoin.
+You&rsquo;ve got it, right?
+He goes into the building, comes back out with a bag of coffee, which you can&rsquo;t quite see, but I&rsquo;m holding it in my hand here, and he says, &ldquo;$10,&rdquo; and I paid him, and it worked immediately.
+Now, I think that&rsquo;s a really cool example of how it can work.
+This is how it could be.
+It could be the case that we reach a point where everyone can reliably pay each other.
+$10.01 I paid for a $10 bag of coffee.
+I didn&rsquo;t know him, and he didn&rsquo;t know me.
+It worked perfectly in, literally, two or three seconds.
+Of course, it&rsquo;s not always going to be great like that, but that was an example where it was really good.</p><p>Another example, which is a few seconds longer but also a short video, is this.
+I actually just nabbed this from Twitter.
+This is why a lot of people here will know him.</p><p>Video: *Difficult to Hear We&rsquo;re getting a bit of an order at the company.
+We&rsquo;re a couple of minutes late.
+It&rsquo;s what you&rsquo;d expect; it&rsquo;s the normal McDonald&rsquo;s&mldr;
+that&rsquo;s a bit&mldr;
+squeeze&mldr;
+that one&rsquo;s squeezed&mldr;
+okay, that&rsquo;s water.
+Right, paint.
+And then that seems to shut down.
+And here&mldr;
+that&rsquo;s a bit of a breakup; we know that&rsquo;s what&rsquo;s going on.
+And with Bitcoin, see that?
+I&rsquo;m going to get the seats jacked out.
+I&rsquo;m going to put it here.
+Because I&rsquo;m going to break up.
+We know that&rsquo;s not true.
+With Bitcoin, see that?
+We&rsquo;re going to see that.
+Nice one; I&rsquo;m there.
+And I&rsquo;m going to use my Allen Bits wallet.
+Guys, thanks for the tips, but this is not the Allen Bits tip jar.
+I think this is a good excuse to make a payment.
+I&rsquo;m not a tip jar; I mean, it&rsquo;s not bad to make a payment from a tip jar.
+There we are.
+third big coin.
+I wonder what a coffee from McDonald&rsquo;s would be There you go.
+Seven points.
+Scare it.
+Don&rsquo;t pay it.
+Just please.
+I want you to copy a copy of McDonald&rsquo;s using Lightning.
+I know.
+All right, here we go.
+Is that 10 points?
+Ha, ha, ha, ha, ha, ha, ha.
+Scan it.
+Double-click it.
+It&rsquo;s really slow.
+Come on, Lightning.
+You can do it.
+LN Bits will let.
+No, I mean, it&rsquo;s just a little bit slow, but it works fine.
+Oh wow, look! It does.
+Really?
+It works just fine, yeah.
+The paper works through.
+Yeah.
+Wow.
+Nice.
+Nice.
+Thanks to the company.
+And thanks for letting me pay for it.
+I&rsquo;ll get the LN bits, Chuck.</p><p>I mean, that was a bit slower, but in my experience, I used the same thing several times, and it was absolutely fine.
+Okay, well, I think I&rsquo;m more or less done in the first half, so we can.
+If anybody has any questions or thoughts, please ask; otherwise, oops, there we go; otherwise, we can move on to actually using it.
+Your turn.
+This is your turn.</p><h2 id=liquidity>Liquidity</h2><p>Audience: Questions.
+Between the nodes, you can add liquidity.
+What did you mean by that?</p><p>The concept of liquidity is really important here.
+Basically, when we talked about the payment channels, there was $100 between Alice and Bob, and the money was being moved back and forth.
+We can&rsquo;t move more than $100 back and forth because what we do is put that $100 into that channel.
+It&rsquo;s fixed there until we decide to close the channel.
+Channels are opened for a certain amount of money, and then we have that amount of money in that channel.</p><p>Think of it: there are lots of channels with different amounts—one with $50, one with $500, one with $100—all over the place, and we&rsquo;re trying to move money around through these channels.
+Sorry, I didn&rsquo;t explain all this, because I didn&rsquo;t want to get too much in the weeds.
+Liquidity is something we&rsquo;re talking about, how much money is available to be moved in certain directions through the network.
+Is that helping?</p><p>Audience: But you said it adds liquidity.
+How does it add?</p><p>Well, there&rsquo;s multiple answers to that question as well, unfortunately.
+One way you might want to add liquidity is by simply opening a new channel for a larger amount.
+It is possible to do something called splicing, but that&rsquo;s technical because you can actually take the same channel and increase its size.
+Generally speaking, you can&rsquo;t change the size of the channel once you&rsquo;ve created it.
+You would have to either add a new channel or close the old one and add a new one with more liquidity.</p><p>If you&rsquo;re thinking about that example that I showed, what&rsquo;s going on there is that when I talk about providing liquidity, I might have a Lightning node, and I might want to receive a lot of money because I&rsquo;m a merchant selling goods.
+I&rsquo;m expecting lots of payments, but I might not have a channel with an inbound capacity that is big enough for that.
+What I would do is go out onto the market and say to people who can open a channel with me for, let&rsquo;s say, $10,000; that&rsquo;s an extreme example, but open a channel with me for a large amount, and I will pay them a small fee, a small percentage fee, in order to do that, to help me.</p><p>Audience: Oh, in order to ensure that the contract thing can&rsquo;t be broken.</p><p>Well, just, yeah.
+The other person isn&rsquo;t zero on the end of the thing, is that it?</p><p>It&rsquo;s just that the problem is that it&rsquo;s limited, right?
+It&rsquo;s supposed; here&rsquo;s a classic example.
+You are a merchant; you want to sell 10 pairs of socks every day, and let&rsquo;s say it&rsquo;s $500 every day.
+You get a channel open, and your first problem is, oh, but I open the channel, I put the money in it, and I need the other guy to put money in it so he can pay me.
+I need someone to open a channel for me, so to speak.</p><p>There&rsquo;s a directionality here, which is tricky.</p><p>Audience: But that&rsquo;s someone&rsquo;s; it&rsquo;s actually, it&rsquo;s actually, it correlates to actual Bitcoin.</p><p>That&rsquo;s, but that&rsquo;s the weird thing, because if I ask you to open a channel for me, I&rsquo;m not asking you to pay me.
+There&rsquo;s a subtle difference there, right?
+If you open a channel for me for $1,000, it doesn&rsquo;t mean that you&rsquo;ve given me $1,000.
+What you&rsquo;ve done is locked up your $1,000 in that channel.
+Now, if I go away, you&rsquo;ll be able to take the money out again, but it&rsquo;s a hassle.
+I have to pay you for the time and the annoyance of dealing with that.</p><p>Audience: If you want to receive some of those beads, either you need to spend some of those beads to get them to the other side so that they can come back, or someone has to open the channel with beads on their side so they can push beads to you.</p><p>Audience: But all the beads correlate one to one with Bitcoin and the blockchain?</p><p>The total amount of beads, so to speak, is locked in what we call a multi-signature address.
+It&rsquo;s literally an address on the blockchain containing those funds, but it&rsquo;s just that it requires both parties&rsquo; signatures to move it.
+It&rsquo;s locked in the sense that until both of us agree to close the channel and move it out, it will stay there.</p><p>Audience: But it&rsquo;s not an inflation of the&mldr;</p><p>No, it&rsquo;s Bitcoin that already exists, and it&rsquo;s just locked.
+It&rsquo;s locked in this subtle sense that it won&rsquo;t go anywhere until both of us agree to move it.
+I know that technically, I haven&rsquo;t really covered how it works.
+I&rsquo;m sorry about that.</p><p>Audience: Say, for instance, that if the person could potentially win a certain amount, you still have to have liquidity there for what that person could win.
+In effect, you open the channel, play the game, and then you separate everything at the end, but you still have to cover what that person could have won, whether they win it or not.
+That makes sense.
+It&rsquo;s quite obvious.</p><p>But let&rsquo;s get on a bit.
+Our task now, because we&rsquo;ve only got 50 minutes, is to get on.
+The first step is that I want everyone to at least have one of these wallets on their phone.
+If you&rsquo;re on Android, it means Phoenix Wallet, Muun Wallet, Blue Wallet, or Breeze.
+People will help you; lots of people here have lots of experience with this.
+If you&rsquo;re on iOS, not Phoenix, because it&rsquo;s not available on iOS, but the other three, those are choices we&rsquo;ve made because they&rsquo;re probably the most convenient for these demonstration purposes.</p><p>And I want to be able to pay people money—10,000 Satoshis, which is, you know, a few, two or three, I don&rsquo;t know, four pounds—and not just me; maybe a couple of other people will help out as well.
+But I want everyone to at least have the experience.
+If you&rsquo;ve already had this experience, then just help other people.
+But I want everyone to have the experience of trying to receive money.
+And you can receive it immediately in one of these wallets.
+Any questions before we start, or should we just get on with it?
+I think we should just get on with it, right?</p><p>And then afterwards, you can try paying as well as receiving.
+I mean, go ahead.
+If whoever&rsquo;s ready to receive 10,000 sats, just say the word.
+myself, and certainly Alex as well.
+Maybe some other people might also help in making these payments.
+And once you&rsquo;ve got some money, you can always, of course, pay me some with this QR code.
+Oh no, not this QR code.
+But no, I&rsquo;m going to give you an LN address later.
+I&rsquo;ll do that later.
+Let&rsquo;s receive the money first.
+Are you ready?</p><div class=row></div></div></div></div><script src=https://btctranscripts.com/lib/jquery.min.js></script><script src=https://btctranscripts.com/lib/popper.min.js></script><script src=https://btctranscripts.com/js/bootstrap.min.js></script><script type=text/javascript src=/plugins/lunr.min.js></script><script type=text/javascript src=/plugins/auto-complete.js></script><link href=/plugins/auto-complete.css rel=stylesheet><script type=text/javascript>var baseurl="https://btctranscripts.com/"</script><script type=text/javascript src=/plugins/search.js></script><script type=text/javascript src=https://btctranscripts.com/js/custom.js></script><script type=text/javascript src=/plugins/clipboard.js></script><script>new ClipboardJS(".btn")</script></body></html>
