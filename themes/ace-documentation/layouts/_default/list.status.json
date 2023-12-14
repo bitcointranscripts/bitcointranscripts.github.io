@@ -28,8 +28,8 @@
 {{ $tagData := slice }}
 {{ $categoryData := slice }}
 
-{{ range $speaker, $not_used := .Site.Taxonomies.speakers }}
-  {{ $speakerData = $speakerData | append  $speaker }}
+{{ range .Site.Taxonomies.speakers }}
+  {{ $speakerData = $speakerData | append .Page.LinkTitle }}
 {{ end }}
 
 {{ range $tag, $not_used := .Site.Taxonomies.tags }}
@@ -37,7 +37,7 @@
 {{ end }}
 
 {{ range $category, $not_used := .Site.Taxonomies.categories }}
-  {{ $categoryData = $tagData | append $category }}
+  {{ $categoryData = $categoryData | append $category }}
 {{ end }}
 
 {{ $media := slice }}
