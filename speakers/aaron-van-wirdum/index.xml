@@ -71,7 +71,13 @@ Additional argument for LOT=false (F7): https://lists.linuxfoundation.org/piperm
 Aaron van Wirdum article on LOT=true or LOT=false: https://bitcoinmagazine.com/articles/lottrue-or-lotfalse-this-is-the-last-hurdle-before-taproot-activation
 Intro Aaron van Wirdum (AvW): Live from Utrecht, this is the van Wirdum Sjorsnado. Sjors, make the pun.
 Sjors Provoost (SP): We have a “lot” to talk about.
-AvW: We have a “lot” to discuss. In this episode we are going to discuss the Taproot activation process and the debate surrounding it on the parameter lot, lockinontimeout which can be set to true and false.</description></item><item><title>Erebus Attacks And How To Stop Them With ASMAP</title><link>https://btctranscripts.com/bitcoin-magazine/bitcoin-explained/erebus-attacks-and-how-to-stop-them-with-asmap/</link><pubDate>Thu, 19 Nov 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-magazine/bitcoin-explained/erebus-attacks-and-how-to-stop-them-with-asmap/</guid><description>Aaron van Wirdum: 00:00:07
+AvW: We have a “lot” to discuss. In this episode we are going to discuss the Taproot activation process and the debate surrounding it on the parameter lot, lockinontimeout which can be set to true and false.</description></item><item><title>Explaining Bitcoin Addresses</title><link>https://btctranscripts.com/bitcoin-magazine/bitcoin-explained/explaining-bitcoin-addresses/</link><pubDate>Fri, 19 Feb 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-magazine/bitcoin-explained/explaining-bitcoin-addresses/</guid><description>Aaron van Wirdum: 00:01:45
+Live from Utrecht this is the Van Wirdum Sjorsnado. So the other day I wanted to send Bitcoin to someone, but I didn&amp;rsquo;t.
+Sjors Provoost: 00:01:52
+Why? Shouldn&amp;rsquo;t you hodl?
+Aaron van Wirdum: 00:01:55
+I hodl all I can, but sometimes I need to eat, or I need to pay my rent, or I need to buy a new plant for my living room.
+Sjors Provoost: 00:02:05</description></item><item><title>Erebus Attacks And How To Stop Them With ASMAP</title><link>https://btctranscripts.com/bitcoin-magazine/bitcoin-explained/erebus-attacks-and-how-to-stop-them-with-asmap/</link><pubDate>Thu, 19 Nov 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-magazine/bitcoin-explained/erebus-attacks-and-how-to-stop-them-with-asmap/</guid><description>Aaron van Wirdum: 00:00:07
 Live from Utrecht, this is The Van Wirdum Sjorsnado.
 Sjors Provoost: 00:00:10
 Hello!
