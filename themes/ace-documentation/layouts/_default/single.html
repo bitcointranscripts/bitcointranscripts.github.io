@@ -7,7 +7,7 @@
     <p>{{ i18n "speakers" | title }}:
     {{ range $i, $e := .Params.speakers -}}
         {{- if $i -}}, {{ end -}}
-        <a href='{{ "/speakers/" | relLangURL }}{{ . | urlize }}'>{{ $e }}</a>
+        <a href='{{ "speakers/" | relLangURL }}{{ . | urlize }}'>{{ $e }}</a>
     {{- end -}}
     </p>
 {{ end }}
@@ -26,7 +26,7 @@
     <p>{{ i18n "tags" | title }}:
     {{ range $i, $e := .Params.tags -}}
         {{- if $i -}}, {{ end -}}
-        <a href='{{ "/tags/" | relLangURL }}{{ . | urlize }}'>{{ $e | humanize }}</a>
+        <a href='{{ "tags/" | relLangURL }}{{ . | urlize }}'>{{ $e | humanize }}</a>
     {{- end -}}
     </p>
 {{ end }}
@@ -35,7 +35,7 @@
     <p>{{ i18n "category" | title }}:
     {{ range $i, $e := .Params.categories -}}
         {{- if $i -}}, {{ end -}}
-        <a href='{{ "/categories/" | relLangURL }}{{ . | urlize }}'>{{ $e | humanize }}</a>
+        <a href='{{ "categories/" | relLangURL }}{{ . | urlize }}'>{{ $e | humanize }}</a>
     {{- end -}}
     </p>
 {{ end }}
