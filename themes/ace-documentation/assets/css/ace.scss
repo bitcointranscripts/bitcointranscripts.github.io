@@ -169,3 +169,16 @@ img {
 .ai-generated {
     margin-bottom: 5px;
 }
+.tags-container {
+    display: flex;
+    margin-top: 5px;
+}
+.tag {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    margin-right: 5px;
+    border-radius: 8px;
+    padding: 4px;
+    padding-inline: 10px;
+    background-color: #CCCCCC;
+}

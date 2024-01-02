@@ -14,6 +14,7 @@
 			    <p class="mb-1 text-muted">{{ delimit . ", " }}</p>
 			{{ end }}
             <div class="d-flex justify-content-between">
+                {{ template "tags" . }}
                 <small class="text-muted font-italic align-self-end" style="white-space: nowrap;">
                     {{ trim .File.Dir "/" }}
                 </small>

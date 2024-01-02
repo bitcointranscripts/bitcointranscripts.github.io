@@ -54,8 +54,10 @@
 					<p class="mb-1 text-muted">
 						{{ delimit . ", " }}
 					</p>
-				{{ end }} 
-				
+				{{ end }}
+				<div class="d-flex">
+					{{ template "tags" . }}
+				</div>
 			</a>
 		</div>
 		{{ end }}
