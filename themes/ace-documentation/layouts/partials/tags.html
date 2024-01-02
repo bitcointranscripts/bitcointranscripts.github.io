@@ -1,0 +1,9 @@
+{{ define "tags" }}
+    {{ if (.GetTerms "tags") }}
+        <div class="tags-container">
+            {{ range $i, $e := .Params.tags -}}
+                <span class="tag"> {{ $e | humanize }} </span>
+            {{- end -}}
+        </div>
+    {{ end }}
+{{ end }}
