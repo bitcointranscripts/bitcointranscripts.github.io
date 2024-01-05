@@ -420,7 +420,16 @@ MuSig2 blog post: https://medium.com/blockstream/musig2-simple-two-round-schnorr
 Transcript completed by: Stephan Livera Edited by: Michael Folkson
 Intro Stephan Livera (SL): Jonas and Tim, welcome to the show.
 Jonas Nick (JN): Hello.
-Tim Ruffing (TR): Hey.</description></item><item><title>What You Should Know About Bitcoin DLCs</title><link>https://btctranscripts.com/stephan-livera-podcast/2020-10-15-nadav-kohen-bitcoin-dlcs/</link><pubDate>Thu, 15 Oct 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2020-10-15-nadav-kohen-bitcoin-dlcs/</guid><description>podcast: https://stephanlivera.com/episode/219/
+Tim Ruffing (TR): Hey.</description></item><item><title>Bitcoin Core 0.21 Supports Tor V3</title><link>https://btctranscripts.com/bitcoin-magazine/bitcoin-explained/bitcoin-core-0.21-supports-tor-v3/</link><pubDate>Thu, 15 Oct 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-magazine/bitcoin-explained/bitcoin-core-0.21-supports-tor-v3/</guid><description>Introduction Aaron van Wirdum: 00:00:07
+Live from Utrecht, this is the Van Wirdum Sjorsnado. Sjors, you pointed out to me that Bitcoin Core has an amazing new feature merged into its repository.
+Sjors Provoost: 00:00:19
+Absolutely, we have bigger onions now.
+Aaron van Wirdum: 00:00:24
+Right, so I had basically no idea what it meant. You figured it out.
+Sjors Provoost: 00:00:29
+I did.
+Aaron van Wirdum: 00:00:34
+Yeah so let&amp;rsquo;s start at the beginning.</description></item><item><title>What You Should Know About Bitcoin DLCs</title><link>https://btctranscripts.com/stephan-livera-podcast/2020-10-15-nadav-kohen-bitcoin-dlcs/</link><pubDate>Thu, 15 Oct 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2020-10-15-nadav-kohen-bitcoin-dlcs/</guid><description>podcast: https://stephanlivera.com/episode/219/
 Stephan Livera:
 Nadav welcome to the show.
 Nadav Kohen:
