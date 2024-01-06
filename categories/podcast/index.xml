@@ -355,7 +355,14 @@ Transcript by: Michael Folkson
 Intro Aaron van Wirdum (AvW): Live from Utrecht this is the van Wirdum Sjorsnado. Sjors, what is your pun of the week?
 Sjors Provoost (SP): I actually asked you for a pun and then you said “Cut, re-edit. We are going to do it again.” I don’t have a pun this week.
 AvW: Puns are your thing.
-SP: We tried this LOT thing last time.</description></item><item><title>Bitcoin Soft Fork Activation, Taproot, and Playing Chicken</title><link>https://btctranscripts.com/stephan-livera-podcast/2021-03-04-matt-corallo/</link><pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2021-03-04-matt-corallo/</guid><description>podcast: https://stephanlivera.com/episode/257/
+SP: We tried this LOT thing last time.</description></item><item><title>Hardware Wallet Integration in Bitcoin Core and HWI</title><link>https://btctranscripts.com/bitcoin-magazine/bitcoin-explained/hardware-wallet-integration-in-bitcoin-core-and-hwi/</link><pubDate>Fri, 05 Mar 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-magazine/bitcoin-explained/hardware-wallet-integration-in-bitcoin-core-and-hwi/</guid><description>Aaron van Wirdum: 00:01:46
+Live from Utrecht this is The Van Wirdum Sjorsnado. Hello! Are you running the BIP8 True independent client yet?
+Sjors Provoost: 00:01:56
+Negative. I did not even know there was one.
+Aaron van Wirdum: 00:01:59
+One has been launched, started. I don&amp;rsquo;t think it&amp;rsquo;s actually a client yet, a project has started.
+Sjors Provoost: 00:02:05
+Okay, a project has started, it&amp;rsquo;s not a binary or a code that you can compile.</description></item><item><title>Bitcoin Soft Fork Activation, Taproot, and Playing Chicken</title><link>https://btctranscripts.com/stephan-livera-podcast/2021-03-04-matt-corallo/</link><pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2021-03-04-matt-corallo/</guid><description>podcast: https://stephanlivera.com/episode/257/
 Stephan Livera:
 Matt, welcome to the show.
 Matt Corallo:
