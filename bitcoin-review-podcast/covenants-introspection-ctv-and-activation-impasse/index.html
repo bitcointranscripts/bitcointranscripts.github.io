@@ -1,0 +1,1164 @@
+<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=canonical href=https://btctranscripts.com/bitcoin-review-podcast/covenants-introspection-ctv-and-activation-impasse/><title>Covenants, Introspection, CTV and Activation Impasse | ₿itcoin Transcripts
+</title><link href=https://btctranscripts.com/css/fontawesome.min.css rel=stylesheet><link rel=stylesheet href=https://btctranscripts.com/css/ace.min.css><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://btctranscripts.com/images/btctranscripts.png"><meta name=twitter:title content="James O'Beirne, Rijndael, NVK - Covenants, Introspection, CTV and Activation Impasse"><meta name=twitter:description content="Introduction NVK: 00:01:10
+As usual, nothing is happening in Bitcoin and we figured, what a great day to put people to sleep in a one to three hour podcast. We don&rsquo;t know yet how it&rsquo;s going to be. We actually don&rsquo;t know how this is going to play out at all. I have here with me Mr. Rijndael. Hello, sir. Welcome back.
+Rijndael: 00:01:30
+Hello. Good morning.
+NVK: 00:01:32
+Good morning."><script async src=https://visits.bitcoindevs.xyz/script.js data-website-id=06384ada-7f1c-44c2-a6d9-d830fb23e122></script></head><body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id=navbarMain><div class=container><div><a class=navbar-brand href=/>₿itcoin Transcripts</a></div><div class="collapse navbar-collapse" id=navbarMainCollapse><ul class="navbar-nav ml-auto"><li class=nav-item><a class=nav-link href=/es>es</a></li><li class=nav-item><a class=nav-link href=/pt>pt</a></li><li class=nav-item><a class=nav-link href=/zh>zh</a></li><li class=nav-item><a class=nav-link href=https://github.com/bitcointranscripts/bitcointranscripts target=_blank><i class='fab fa-github'></i></a></li></ul></div></div></nav><div class="alert alert-warning fade show sticky-banner" role=alert><strong><a href=https://review.btctranscripts.com target=_blank data-umami-event=click-banner>Get paid to review technical Bitcoin transcripts
+</a></strong><button type=button class=close data-dismiss=alert aria-label=Close>
+<span aria-hidden=true>&#215;</span></button></div><div class=container-fluid><div class=row><div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0"><button class="navbar-toggler navbar-toggler-right collapsed" type=button data-toggle=collapse data-target=#sidenav-left-collapse aria-controls=sidenav-left-collapse aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse align-items-start flex-column" id=sidenav-left-collapse><form class="form-inline my-2 my-lg-0 searchbox"><input class="form-control mr-sm-2 w-100" data-search-input id=search-by type=text placeholder='Search (press "/")'></form><ul class="navbar-nav flex-column pt-3"><li data-nav-id=/adopting-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/adopting-bitcoin/><h6>Adopting Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/adopting-bitcoin/2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/adopting-bitcoin/2021/><h6>Adopting Bitcoin 2021</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/advancing-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/><h6>Advancing Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/advancing-bitcoin/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2019/><h6>Advancing Bitcoin 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/advancing-bitcoin/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2020/><h6>Advancing Bitcoin 2020</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/advancing-bitcoin/2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2022/><h6>Advancing Bitcoin 2022</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/advancing-bitcoin/2023/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2023/><h6>Advancing Bitcoin 2023</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/andreas-antonopoulos/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/andreas-antonopoulos/><h6>Andreas Antonopoulos</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/austin-bitcoin-developers/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/austin-bitcoin-developers/><h6>Austin Bitcoin Developers</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/baltic-honeybadger/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/><h6>Baltic Honeybadger</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/baltic-honeybadger/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/2018/><h6>Baltic Honeybadger 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/baltic-honeybadger/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/2019/><h6>Baltic Honeybadger 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bit-block-boom/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bit-block-boom/><h6>Bit Block Boom</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bit-block-boom/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bit-block-boom/2019/><h6>Bit Block Boom 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-core-dev-tech/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/><h6>Bitcoin Core Dev Tech</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bitcoin-core-dev-tech/2015-02/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2015-02/><h6>Bitcoin Core Dev Tech 2015</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2017-09/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2017-09/><h6>Bitcoin Core Dev Tech 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2018-03/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2018-03/><h6>Bitcoin Core Dev Tech 2018 (Mar)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2018-10/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2018-10/><h6>Bitcoin Core Dev Tech 2018 (Oct)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2019-06/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2019-06/><h6>Bitcoin Core Dev Tech 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2022-10/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2022-10/><h6>Bitcoin Core Dev Tech 2022</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2023-04/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2023-04/><h6>Bitcoin Core Dev Tech 2023 (Apr)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2023-09/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2023-09/><h6>Bitcoin Core Dev Tech 2023 (Sept)</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-design/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-design/><h6>Bitcoin Design</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/edgedevplusplus/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/edgedevplusplus/><h6>Bitcoin Edge Dev++</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/edgedevplusplus/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/edgedevplusplus/2017/><h6>Bitcoin Edge Dev++ 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/edgedevplusplus/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/edgedevplusplus/2018/><h6>Bitcoin Edge Dev++ 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/edgedevplusplus/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/edgedevplusplus/2019/><h6>Bitcoin Edge Dev++ 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-magazine/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-magazine/><h6>Bitcoin Magazine</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bitcoin-magazine/bitcoin-explained/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-magazine/bitcoin-explained/><h6>Bitcoin Explained</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-review-podcast/ class="nav-item my-1 parent haschildren"><a class="nav-link p-0" href=/bitcoin-review-podcast/><h6>Bitcoin Review Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoinplusplus/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinplusplus/><h6>Bitcoin++</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bitcoinplusplus/2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinplusplus/2022/><h6>Bitcoin++ 2022</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoinplusplus/layer-2/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinplusplus/layer-2/><h6>Layer 2</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoinplusplus/onchain-privacy/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinplusplus/onchain-privacy/><h6>Onchain Privacy</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoinology/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinology/><h6>Bitcoinology</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoinops/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinops/><h6>Bitcoinops</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcointranscripts/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcointranscripts/><h6>Bitcointranscripts</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/blockchain-protocol-analysis-security-engineering/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/><h6>Blockchain Protocol Analysis Security Eng</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/blockchain-protocol-analysis-security-engineering/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2017/><h6>Blockchain Protocol Analysis Security Engineering 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/blockchain-protocol-analysis-security-engineering/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2018/><h6>Blockchain Protocol Analysis Security Engineering 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/blockstream-webinars/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockstream-webinars/><h6>Blockstream Webinars</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/boltathon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/boltathon/><h6>Boltathon</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/breaking-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/><h6>Breaking Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/breaking-bitcoin/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/2017/><h6>Breaking Bitcoin 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/breaking-bitcoin/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/2019/><h6>Breaking Bitcoin 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/building-on-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/building-on-bitcoin/><h6>Building On Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/building-on-bitcoin/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/building-on-bitcoin/2018/><h6>Building On Bitcoin 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/c-lightning/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/c-lightning/><h6>c-lightning</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/chaincode-labs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-labs/><h6>Chaincode Labs</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/chaincode-labs/chaincode-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-labs/chaincode-podcast/><h6>Chaincode Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/chaincode-labs/chaincode-residency/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-labs/chaincode-residency/><h6>Chaincode Residency</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/chicago-bitdevs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chicago-bitdevs/><h6>Chicago Bitdevs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/coindesk-consensus-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coindesk-consensus-2016/><h6>Coindesk Consensus</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/coordination-of-decentralized-finance-workshop/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/><h6>Coordination of Decentralized Finance</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/coordination-of-decentralized-finance-workshop/2020-stanford/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/2020-stanford/><h6>2020 Stanford</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/cppcon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/><h6>CPPcon</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/cppcon/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/2017/><h6>CPPcon 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/cppcon/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/2020/><h6>CPPcon 2020</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/cryptoeconomic-systems/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cryptoeconomic-systems/><h6>Cryptoeconomic Systems</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/cryptoeconomic-systems/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cryptoeconomic-systems/2019/><h6>Cryptoeconomic Systems 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/dallas-bitcoin-symposium/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/dallas-bitcoin-symposium/><h6>Dallas Bitcoin Symposium</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/decentralized-financial-architecture-workshop/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/decentralized-financial-architecture-workshop/><h6>Decentralized Financial Architecture Workshop</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-developers-miners-meeting-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-developers-miners-meeting-2016/><h6>Developers-Miners Meeting</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/greg-maxwell/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/greg-maxwell/><h6>Greg Maxwell</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/grincon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/grincon/><h6>Grincon</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/grincon/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/grincon/2019/><h6>Grincon 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/honey-badger-diaries/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/honey-badger-diaries/><h6>Honey Badger Diaries</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/iacr/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/iacr/><h6>IACR Crypto</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/la-bitdevs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/la-bitdevs/><h6>LA Bitdevs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/layer2-summit/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/layer2-summit/><h6>Layer2 Summit</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/layer2-summit/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/layer2-summit/2018/><h6>Layer2 Summit 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/lets-talk-bitcoin-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lets-talk-bitcoin-podcast/><h6>Lets Talk Bitcoin Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/lightning-conference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-conference/><h6>Lightning Conference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/lightning-conference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-conference/2019/><h6>Lightning Conference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/lightning-hack-day/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-hack-day/><h6>Lightning Hack Day</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/lightning-specification/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-specification/><h6>Lightning Specification</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/london-bitcoin-devs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/london-bitcoin-devs/><h6>London Bitcoin Devs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/magicalcryptoconference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/magicalcryptoconference/><h6>Magicalcryptoconference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/magicalcryptoconference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/magicalcryptoconference/2019/><h6>Magicalcryptoconference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/misc/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/misc/><h6>Misc</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/><h6>MIT Bitcoin Expo</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2015/><h6>Mit Bitcoin Expo 2015</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2016/><h6>Mit Bitcoin Expo 2016</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2017/><h6>Mit Bitcoin Expo 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2018/><h6>Mit Bitcoin Expo 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2019/><h6>Mit Bitcoin Expo 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2020/><h6>Mit Bitcoin Expo 2020</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2021/><h6>Mit Bitcoin Expo 2021</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2022/><h6>MIT Bitcoin Expo 2022</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/munich-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/munich-meetup/><h6>Munich Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/noded-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/noded-podcast/><h6>Noded Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/realworldcrypto/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/><h6>Realworldcrypto</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/realworldcrypto/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/2018/><h6>Realworldcrypto 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/realworldcrypto/2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/2021/><h6>Realworldcrypto 2021</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/rebooting-web-of-trust/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/rebooting-web-of-trust/><h6>Rebooting Web Of Trust</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/rebooting-web-of-trust/2019-prague/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/rebooting-web-of-trust/2019-prague/><h6>2019 Prague</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/ruben-somsen/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/ruben-somsen/><h6>Ruben Somsen</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/satoshi-roundtable/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/satoshi-roundtable/><h6>Satoshi Roundtable</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/satoshi-roundtable/sr-004/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/satoshi-roundtable/sr-004/><h6>Sr 004</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/scalingbitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/><h6>Scaling Bitcoin Conference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/scalingbitcoin/hong-kong-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/hong-kong-2015/><h6>Hong Kong (2015)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/milan-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/milan-2016/><h6>Milan (2016)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/montreal-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/montreal-2015/><h6>Montreal (2015)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/stanford-2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/><h6>Stanford (2017)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/tel-aviv-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/><h6>Tel Aviv (2019)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/tokyo-2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/><h6>Tokyo (2018)</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/sf-bitcoin-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/sf-bitcoin-meetup/><h6>SF Bitcoin Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/simons-institute/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/simons-institute/><h6>Simons Institute</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/stanford-blockchain-conference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/><h6>Stanford Blockchain</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/stanford-blockchain-conference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/2019/><h6>Stanford Blockchain Conference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/stanford-blockchain-conference/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/2020/><h6>Stanford Blockchain Conference 2020</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/stephan-livera-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stephan-livera-podcast/><h6>Stephan Livera Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/sydney-bitcoin-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/sydney-bitcoin-meetup/><h6>Sydney Bitcoin Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/tabconf/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tabconf/><h6>TABConf</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/tabconf/2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tabconf/2021/><h6>TABConf 2021</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/tabconf/2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tabconf/2022/><h6>TABConf 2022</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/texas-bitcoin-conference-2014/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/texas-bitcoin-conference-2014/><h6>Texas Bitcoin Conference</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/tftc-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tftc-podcast/><h6>TFTC Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/verifiable-delay-functions/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/verifiable-delay-functions/><h6>Verifiable Delay Functions</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/verifiable-delay-functions/vdf-day-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/verifiable-delay-functions/vdf-day-2019/><h6>Vdf Day 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/vr-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/vr-bitcoin/><h6>VR Bitcoin</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/w3-blockchain-workshop-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/w3-blockchain-workshop-2016/><h6>W3 Blockchain Workshop</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/wasabi-research-club/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/wasabi-research-club/><h6>Wasabi Research Club</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/what-bitcoin-did-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/what-bitcoin-did-podcast/><h6>What Bitcoin Did Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></div></nav></div><div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky"><div class=docs-toc><nav id=TableOfContents><ul><li><ul><li><a href=#introduction>Introduction</a></li><li><a href=#technical-overview-of-covenants>Technical overview of covenants</a></li><li><a href=#watchtowers>Watchtowers</a></li><li><a href=#use-cases-for-vaulting--scripts>Use cases for vaulting & scripts</a></li><li><a href=#covenants-as-a-solution-to-third-party-custody>Covenants as a solution to third party custody</a></li><li><a href=#covenants-and-censorship-risks>Covenants and censorship risks</a></li><li><a href=#risks-of-major-bitcoin-changes>Risks of major Bitcoin changes</a></li><li><a href=#quantifying-the-scale-of-change-in-code>Quantifying the scale of change in code</a></li><li><a href=#txhash>TXHASH</a></li><li><a href=#simplicity-of-ctv>Simplicity of CTV</a></li><li><a href=#the-consensus-deadlock>The consensus deadlock</a></li><li><a href=#social-coordination-and-activation>Social coordination and activation</a></li><li><a href=#speedy-trial---good-or-bad-for-bitcoin>Speedy Trial - good or bad for Bitcoin?</a></li><li><a href=#problems-with-bitcoin-core-defaults>Problems with Bitcoin Core defaults</a></li><li><a href=#the-politics-of-changing-bitcoin>The politics of changing Bitcoin</a></li><li><a href=#testing-for-consensus>Testing for consensus</a></li><li><a href=#state-sabotage>State sabotage</a></li><li><a href=#moving-forward-with-activation>Moving forward with activation</a></li><li><a href=#state-of-bitcoin-development>State of Bitcoin development</a></li><li><a href=#next-steps>Next steps</a></li><li><a href=#bitcoin-politics-closing-summary>Bitcoin politics closing summary</a></li><li><a href=#closing-thoughts>Closing thoughts</a></li></ul></li></ul></nav></div></div><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3"><a href=/>Home</a>
+&lt; <a href=/bitcoin-review-podcast/>Bitcoin Review Podcast
+</a>&lt; Covenants, Introspection, CTV and Activation Impasse<h1>Covenants, Introspection, CTV and Activation Impasse</h1><p>Speakers:
+<a href=/speakers/james-obeirne>James O'Beirne</a>, <a href=/speakers/rijndael>Rijndael</a>, <a href=/speakers/nvk>NVK</a></p><p><i>Date: September 29, 2023</i></p><p><i>Transcript By: jeffreyweier via review.btctranscripts.com</i></p><p>Tags:
+<a href=/tags/covenants>Covenants</a>, <a href=/tags/vaults>Vaults</a>, <a href=/tags/soft-fork-activation>Soft fork activation</a></p><p>Category:
+<a href=/categories/podcast>Podcast</a></p><p>Media:
+<a href='https://www.youtube.com/watch?v=o8tjsVdiPUI'>https://www.youtube.com/watch?v=o8tjsVdiPUI</a></p><h2 id=introduction>Introduction</h2><p>NVK: 00:01:10</p><p>As usual, nothing is happening in Bitcoin and we figured, what a great day to put people to sleep in a one to three hour podcast.
+We don&rsquo;t know yet how it&rsquo;s going to be.
+We actually don&rsquo;t know how this is going to play out at all.
+I have here with me Mr. Rijndael.
+Hello, sir.
+Welcome back.</p><p>Rijndael: 00:01:30</p><p>Hello.
+Good morning.</p><p>NVK: 00:01:32</p><p>Good morning.</p><p>James: 00:01:33</p><p>For his like 600th appearance on the show.</p><p>Rijndael: 00:01:37</p><p>I haven&rsquo;t been sleeping well enough.
+So I came back to record this so I can sleep to it.</p><p>NVK: 00:01:43</p><p>James, we can&rsquo;t acknowledge it.
+Otherwise, we have to add him to the splits.</p><p>James: 00:01:47</p><p>Oh, yeah, fair.
+Okay.</p><p>NVK: 00:01:49</p><p>And it goes to OpenSats.
+So priorities, but&mldr;</p><p>James: 00:01:53</p><p>Amen.
+Yeah, it&rsquo;s good to be back.
+Hi, everybody.</p><p>NVK: 00:01:58</p><p>As I was mentioning earlier, CTV has given place to other things in my mind as of late, been trying to ship products and stuff, the things that pay the bills.
+But I think we&rsquo;ve crossed a chasm on the conversation.
+I think most of the FUD is going away, especially in recursive covenants, the scary stuff.
+And Ethereum is dying.
+And I think a lot of people, especially bigger piles, are realizing that we don&rsquo;t have acceptable custody solutions yet for serious amounts of money that don&rsquo;t depend on third parties, especially corporate.
+And things are changing, evolving.
+And I think the space, the industry is maturing a little bit.
+And I think the covenants conversation is going to be the next big thing.
+And I think it&rsquo;s really going on that way.
+So with that small little premise, why don&rsquo;t we talk about what is covenants?
+What is covenants in Bitcoin?
+And then after that, maybe we start talking about what we can do today and what we can&rsquo;t do today.
+So who wants to give us a little premise on covenants in general?</p><p>James: 00:03:29</p><p>Rijndael, you warm us up, man.</p><h2 id=technical-overview-of-covenants>Technical overview of covenants</h2><p>Rijndael: 00:03:31</p><p>I&rsquo;ll take a swing at it.
+I think it might be helpful just to understand what Bitcoin script is and how it works.
+Anytime you send a Bitcoin transaction to an address, what you&rsquo;re really doing is you are locking those coins to some kind of script.
+Bitcoin has this really basic scripting language, and when you spend those coins you provide some input that satisfies the locking script.
+The really basic one is, if you&rsquo;re using a singlesig wallet and somebody sends you Bitcoin, you say, in order to spend this Bitcoin I have to produce a signature that corresponds to the public key that encumbers my Bitcoin, and then you can spend it.
+There&rsquo;s other conditions that you can use to lock your Bitcoin.
+You can use timelocks.
+You can say, this can&rsquo;t be spent until after some block height or after some time.
+You can use hashlocks where you say, in order to spend this Bitcoin, I have to provide the preimage to a hash that I commit to when I lock up my Bitcoin.
+You can add multiple keys together to do multisig.
+You can combine hashlocks, timelocks, and multisig to do Lightning.
+You can compose these things together.
+The thing that&rsquo;s important to understand is that all these conditions or locks or encumbrances, they govern the input side of the transaction.
+I send coins to James and there&rsquo;s a set of conditions that James has to satisfy in order to spend those coins.
+But once he satisfies them, there&rsquo;s no conditions on how he spends them or where he spends them.
+This ends up being really important if we want to have multi-party ownership of coins and you want to let people unilaterally withdraw their coins.
+Imagine if we had, the three of us, we have some shared UTXO and all three of us sign together in order to move the whole thing.
+But say that NVK wants to unilaterally exit without James and I co-signing, it would be really useful for him to be able to sign a transaction that takes out his portion of the coins and nobody else&rsquo;s.
+And in order to do that, you need to have a locking script that says, if NVK presents his signature, then he can take this many coins to a given address, but he can&rsquo;t take all of them.
+And that&rsquo;s not a thing that you can currently express in Bitcoin script.
+You have to solve that with other means.</p><p>NVK: 00:06:25</p><p>Essentially what we can do now is, we can sign in, but we can&rsquo;t sign out.
+Essentially, right now, you can do a multisig.
+Standard P2SH kind of multisig, and send to an address, to an UTXO.
+But the UTXO has no control on the way out, except for the script that you had before.
+So, wouldn&rsquo;t it be nice if the UTXO had two things?
+One is a capacity to essentially have conditions on itself on how it goes to the next hop.
+And the second thing is some introspection.
+So maybe it knows how much it&rsquo;s size is.
+Because right now a UTXO doesn&rsquo;t know if the UTXO is one Bitcoin, two Bitcoin, or a SAT.
+So it would be nice if he knew at least its size or maybe its place in time.</p><p>Rijndael: 00:07:25</p><p>Right.
+And the application for this that really made it real for me, that made me really interested in covenants and clicked is the idea of a vault.
+The classic problem in Bitcoin is, what do I do with my seed phrase?
+How do I secure my wallet?
+Because if somebody gets your seed phrase or whatever key backup you have, then they can just spend all your money.
+There&rsquo;s no way for you to say, my money can only be spent in a particular way.
+What I think you&rsquo;d actually like to do is say, I&rsquo;ve got my vault, I&rsquo;ve got my deep cold storage and it should only go from my cold storage to my hot wallet, or from my cold storage to my exchange account because I&rsquo;m selling or something.
+You want to be able to restrict how the funds come out of your cold storage so that if somebody compromises the metal seed phrase you have buried under the tree or something, then they can&rsquo;t just run away with your money.
+There&rsquo;s not a way to do that in Bitcoin at the script level right now.
+You have to do that with hacky pre-signed transactions that we can talk about.
+If you think about this idea of exactly what NVK just said, where you can have a transaction introspect its contents and set rules on where it&rsquo;s sending coins, how many coins it&rsquo;s sending, the shape of the output of the transaction.
+Then you can start building more interesting self-custody solutions.
+And then we can turn that into other stuff too.</p><p>NVK: 00:09:06</p><p>Even if you go back in time, pre Bitcoin, even pre fiat.
+There&rsquo;s essentially two main things that people try to do when they have an important asset, or an important item in volume inside something.
+They wanna be able to do what&rsquo;s called velocity.
+A velocity essentially dictates that you have a quantity per time that comes out.
+For example, in a silo, when you have all your grain there, you choose your velocity by adjusting the size of the door.
+Because you don&rsquo;t want all the grain to come out.
+Before, for example, old banks would have a tiny little door.
+So nobody can stick a gun in and shoot, but also there is a maximum amount of things that can come out from one side to the other.
+And what I think the scripts really do is it resolves the HSMs that banks have been using for ages.
+And everybody else in industry similar have to do this, which is, can I add some very world compatible policies to my spending.
+Please don&rsquo;t let any more than one Bitcoin per hour leave this vault.
+It really is not that complex when you actually come down to earth with very mundane kind of examples.
+Because if somebody gets hold of those keys, you don&rsquo;t want them to drain the vault.
+Maybe they just take a little bit out until you find out.
+And you really mitigate risk in that sense.</p><p>Rijndael: 00:10:53</p><p>And if you combine that with one of the two main things that Taproot gave us, the ability to more easily compose multiple policies together.
+You can imagine having a policy where you say, with this one key I have some velocity control.
+I can only spend money to a particular address, or I can only spend it some unit per some number of blocks.
+But then if I combine that with a second key, then I can override that velocity control.
+And so you can say, if I turn all of my nuclear keys at the same time, then I can spend all of the money.
+But otherwise I have this very constrained flow out of my vault.
+And this is probably one of the more broadly used uses for Bitcoin is savings.
+Store of value and custody is the killer feature for Bitcoin right now.
+And the ability for people to more easily protect their Bitcoin, is a set of features that I think we should be pursuing and investigating.</p><p>James: 00:11:55</p><p>But to just underline the general point of what covenants are, I think that word introspection is probably a better description of what we mean when we say covenants.
+There are a lot of Bitcoin developers behind the scenes who get mad at the branding of covenants because it has negative connotations.
+But what you guys said is right, which is that covenants really just increase the scope of what we&rsquo;re able to look at from within the script interpreter when we&rsquo;re spending a coin.
+And that winds up oftentimes being on the output side.
+But in a sense, we already have a timelock which is almost like a covenant because that&rsquo;s not necessarily on the input side.
+You&rsquo;re looking at the end lock time in the transaction.
+So we&rsquo;re already looking at some things that are outside of the witness.
+We just want to look at more things so that we can do these interesting and vital applications like vaults, like congestion control, which I think is going to be increasingly important when we start scaling to second layers and want to provide safe exit for everybody.
+A lot of the scaling solutions that have been proposed in the last few months.
+Pretty much every draft, for whether it&rsquo;s Ark or John Law&rsquo;s Timeout Trees, they all use this, these covenant primitives of being able to say, I want to be able to commit to spending to a certain set of outputs without needing a signature.</p><p>NVK: 00:13:38</p><p>Right now in Bitcoin we have this very raw way of handling transactions.
+You essentially throw your gold into a bucket and you hope that it lands in the bucket and stays in the bucket.
+And if you ever wanna take it out of the bucket, you just turn the bucket upside down and whatever is in that bucket comes out.</p><p>James: 00:14:01</p><p>It&rsquo;s all or nothing.</p><p>NVK: 00:14:02</p><p>That&rsquo;s it.
+That&rsquo;s a very cool, amazing primitive, that we finally figured out how to do with computers.
+But it really limits us in a way that is detrimental to the ultimate goal, which is replacing central banks.
+We&rsquo;re not even getting into the shitcoining idea, velocity, payments, fuck payments for this conversation.
+None of that.
+We&rsquo;re talking about just pure, unadulterated, store of value here.
+If you just think of that, what is the ultimate goal of a store of value?
+It&rsquo;s store the value safely.
+And make sure you don&rsquo;t lose the value by losing the money.</p><h2 id=watchtowers>Watchtowers</h2><p>James: 00:14:41</p><p>If you want to be a global reserve asset, you have to have an absolutely bombproof pattern for custody.
+A setup where if you follow the instructions the right way and they&rsquo;re not terribly complicated, that you know you&rsquo;re not going to lose your coins.
+If you have your coins vaulted and you have a certain number of watchtowers, you just know that there&rsquo;s no way that those coins are going to get stolen.
+I think we need that.</p><p>NVK: 00:15:05</p><p>You don&rsquo;t even need watchtowers.
+You don&rsquo;t even need to get that complicated.
+You can have a watch-only wallet.
+That might tell you from the mempool that there is a transaction being tried.
+I know that&rsquo;s what a watchtower does.</p><p>James: 00:15:22</p><p>Different kinds of watchtowers.</p><p>NVK: 00:15:24</p><p>But when we say these big words, we&rsquo;re now thinking, oh my God, watchtowers, it must be some other crazy, complicated galaxy brain thing.
+It&rsquo;s not.
+It&rsquo;s just a fucking wallet that watches for transaction.</p><p>Rijndael: 00:15:37</p><p>Somewhere there&rsquo;s a watch-only wallet.
+And if it sees a transaction happen, it broadcasts this clawback transaction and that&rsquo;s it.</p><p>NVK: 00:15:45</p><p>We have a dog that barks.
+If he sees the wolf, he barks.
+There is nothing more to it.
+It is not related to changing Bitcoin.
+It&rsquo;s not like some of the lightning crazy shit.
+No, no, no, no.
+This is very, very simple.
+You&rsquo;re just watching for transactions related to you on the mempool.
+Nothing else.</p><p>James: 00:16:05</p><p>Right.
+You got a 19 year old intern sitting there refreshing mempool.space and that&rsquo;s your watchtower.</p><p>NVK: 00:16:10</p><p>That&rsquo;s it.
+Yes, they are the watchtower now.
+Look at me.
+I&rsquo;m the watchtower now.</p><h2 id=use-cases-for-vaulting--scripts>Use cases for vaulting & scripts</h2><p>Rijndael: 00:16:16</p><p>Pretty incredible.
+Because without that kind of primitive, some kind of vaulting primitive, what we have right now is if you want to hold a lot of Bitcoin, you need to have the most paranoid lockdown security setup in the world to make sure that one bad event doesn&rsquo;t happen one time.
+Because if it happens one time, you&rsquo;re done.</p><p>James: 00:16:38</p><p>And that&rsquo;s a centralizing force.
+So every rich guy ever is going to say, oh, I got to take my coins to Coinbase.</p><p>Rijndael: 00:16:47</p><p>I gotta outsource this to the guy that has all the HSMs and has all the armed guards pointing guns at each other around the HSMs in order to protect this.
+But if we had some vault setup, you could have a $3 wall art with a wifi chip and it plugged into your wall.
+And if the bad thing happens, that thing broadcasts a single transaction and you get all your money back.</p><p>NVK: 00:17:11</p><p>There&rsquo;s two problems here that I think are important to separate.
+One is you still need things that create very safe key material.
+You still need to create keys that are very, very safe.
+And we still have to go through crazy hoops to do those things safely.
+You&rsquo;re throwing your dice on your Coldcard and you create your key material.
+But we wanna make the other parts of it become less problematic because of the rest of the stack.
+The business logic right now is completely merged with your main key.
+Which is a huge fucking problem because remember, if you just assume that the stack with the deterministic build and shit on your hardware wallet, is all kosher.
+You know your keys are good.
+But right now the problem is every time you want to sign for like 1% of the stack that&rsquo;s being protected by that, you have to put the whole thing at risk.</p><p>Rijndael: 00:18:17</p><p>Yep.
+You gotta dump the whole bucket out.</p><p>NVK: 00:18:18</p><p>Everything.
+Which is a huge fucking problem.
+If we can separate this business logic for lower amount transactions from your total bucket pile key material we win huge.
+It&rsquo;s a huge improvement.
+And like Rijndael was saying, and James you were saying, you have the centralizing force, BitGo exists because corporate, or extremely large holders, when you are telling your people who legally and logically maintain the policies on how you do stuff so you don&rsquo;t get robbed and you have insurance.
+Nobody with real amounts of things do things without insurance except us insane people in Bitcoin.
+You need to check some boxes.
+They know through actuaries, through time, through history.
+If you don&rsquo;t do certain things in a certain way, we have extra counterparties.
+You will lose the money.
+You can&rsquo;t have Michael Saylor have the coins in a single hardware wallet because he runs the company and he&rsquo;s the executive of the company.
+You can&rsquo;t do that.
+There&rsquo;s other shareholders.
+And the way you find accountability, and you find audits on logs and all this stuff.
+Anything that&rsquo;s happening is by having counterparties, having other parties that co-sign.
+They will have different incentives.
+Maybe they are co-signing solution like BitGo. And their incentive is make sure that everything is accounted for and doesn&rsquo;t get signed until you meet some threshold that you set with them to begin with.
+We can do all this with scripts.</p><p>James: 00:20:00</p><p>Right.
+And that makes it into a low overhead process that many, many, many people can do instead of a few specialized companies that are able to hire tons of operations people to do this stuff.
+But a necessary prerequisite to getting to that point is to enable some kind of a covenant in Bitcoin.</p><p>Rijndael: 00:20:20</p><p>Not only does it help make it more accessible, but I think it also helps with the censorship resistance and permissionless aspect.
+If the only way you can safely hold a large amount of your value in Bitcoin is if you&rsquo;re in a position where you can have a contractual relationship with a very well-operated service provider.
+Then over time, especially in certain regulatory regimes or in certain legal scenarios, that ends up shutting out a lot of people where they say either I have to hold this asset in an incredibly risky way or I have to not hold this asset.</p><p>NVK: 00:20:57</p><p>Or KYC.
+Most people in Bitcoin don&rsquo;t want to KYC because you know KYC is the crime.
+If this is assets you own under jurisdiction that allow you to own them so you&rsquo;re not breaking any laws you&rsquo;re not doing anything wrong even though we can argue about that stuff.
+But just following within the fiat universe that we live in.
+You&rsquo;re in a position that you can do this stuff by yourself.
+You don&rsquo;t have to report to anyone.
+Right now you can&rsquo;t use BitGo because they require KYC.
+Most of the solutions do.
+And then you have the privacy aspect too.
+Because even if you find a non-KYC co-signing service out there, they still have full visibility over your coins.
+It&rsquo;s the prerequisite of how the scripts work right now.
+All this stuff is a huge problem.
+And we can get into the current issue with lock time transactions.
+Because right now, if you want to do some stuff, you kind of can using a degrading multisig or something like that.
+But every time you spend, you have to reshuffle all the coins again, which makes it unusable.</p><p>Rijndael: 00:22:12</p><p>Let&rsquo;s unpack that a little bit because a lot of times when I&rsquo;ve talked to people about, hey, we need some kind of covenant to do something like a vault.
+What people will point to is, you should do a decaying multisig.
+The way that that works, if you&rsquo;re one of the three people who aren&rsquo;t asleep right now, and you haven&rsquo;t heard of this yet, is imagine you have a couple different spend paths in your tap tree and you say, right now, my coins are in a three of three multisig, but after three months, I can use a different path where I can sign with two of those keys.
+And then three months after that, I can sign with one of my keys.
+So the idea is that normally it takes three keys to spend my coins, but if I lose one of them, I just have to wait.
+And if I lose two of them, then I wait longer.
+And folks want to do this for inheritance or just for more flexible multisig or key recovery.
+And the problem there is that that timer of having to wait starts as soon as the UTXO is created.
+So if you&rsquo;re just hodling coins in your wallet, then after three months your security degrades to a two of three and after three more months it degrades to a one of three.
+And so if every month you&rsquo;re buying Bitcoin and throwing it into your wallet, then every time a UTXO gets to be two months and 28 days, you need to go and do an on-chain transaction to effectively reset the timer.
+And when you start talking about large amounts of money or operational complexity, I think that starts to be a non-starter.</p><p>NVK: 00:23:51</p><p>It&rsquo;s hopeless.
+I fucking hate it.</p><p>Rijndael: 00:23:52</p><p>Yeah, and when fees go up and shit gets expensive, it&rsquo;s going to suck.</p><p>NVK: 00:23:56</p><p>I love that people are trying, but it doesn&rsquo;t work.
+There&rsquo;s a reason why nobody&rsquo;s using it.</p><p>James: 00:24:00</p><p>Yeah, you&rsquo;ve got to dig up all your keys on a periodic basis and activate your spending capacity on a periodic basis.
+And that&rsquo;s always an opportunity for theft or a security leak.</p><p>NVK: 00:24:11</p><p>If you&rsquo;re a crazy person like me if you want to spend anything, it would take me probably a couple months, I have to travel to different countries, wait for things, it&rsquo;s crazy shit.
+Wouldn&rsquo;t it be cool if you can represent your trust as a script and you just essentially wash your fucking hands when you die.
+This is how it works.
+It&rsquo;s a little crazy, but totally within the realm of possibility.
+If you have some decent introspection on this.</p><p>James: 00:24:49</p><p>And in some ways, one of the things that OP_VAULT does is like Rijndael was saying when you spend the coins into that structure, you start the time lock.
+All the covenant does in OP_VAULT is basically say, we&rsquo;re gonna delay that until one spend out further so that when you spend the coin from there, then the time lock starts, then that clawback period starts.
+So you&rsquo;re just kind of delaying that decay process.</p><p>NVK: 00:25:20</p><p>I like to say that timelocks should be reactionary.
+They shouldn&rsquo;t be part of the initial transaction that you want to make.</p><p>Rijndael: 00:25:27</p><p>What you really want to do is you want to start the timer when you initiate the spend, not start the timer when you receive the money.
+And what we have right now is you start the timer when you receive the money, and what you could do with OP_VAULT is say, I want to do a withdrawal.
+There&rsquo;s two ways for me to do a withdrawal from my vault.
+One of them is I take the transatlantic flight, I go and get all of my keys and I can spend my money immediately.
+Or, I have a singlesig key and if I spend that, that starts a three week timer.
+And during that three week timer, I can push a button and cancel it and claw my money back.
+Or, if I don&rsquo;t cancel it, then my money goes where it&rsquo;s supposed to go.</p><h2 id=covenants-as-a-solution-to-third-party-custody>Covenants as a solution to third party custody</h2><p>NVK: 00:26:10</p><p>Think about how stupid it works right now.
+When you have a safe, a deposit safe.
+Normally when you put the money in the hole, it just drops inside.
+And then when you want to open, normally you have a timer.
+So you put in the pin and then you have to wait like three hours to open or something.
+Right now it&rsquo;s the opposite.
+When you drop the money, the money takes like three hours to drop, but when you want to open it, it just opens.
+It&rsquo;s just completely stupid.</p><p>Rijndael: 00:26:44</p><p>Or, another example.
+If you have a Coinbase account or a Gemini account, they both have this feature where you can say, I have a whitelist of addresses, and I can withdraw my coins only to those addresses.
+And if I want to add a new address, then I have to do MFA and I have to wait a seven day waiting period before that address is active and I can withdraw to it.
+And so that way if somebody compromises my Coinbase account, they can&rsquo;t just steal all my money.
+That&rsquo;s a great feature.
+If you want that feature, you have to go with a KYC custodial holder of your Bitcoin.
+What I think we would all want is for any Bitcoin wallet that anybody goes and builds permissionlessly in the world to be able to have that functionality and have it be enforced by Bitcoin consensus instead of having to rely on business logic of a centralized custodial server.</p><p>James: 00:27:43</p><p>Totally.</p><h2 id=covenants-and-censorship-risks>Covenants and censorship risks</h2><p>NVK: 00:27:46</p><p>It&rsquo;s an easy conversation here because the three of us agree.
+What is the steel man argument against covenants?
+So far I heard, you could have issues where, the government forces you to participate in some &mldr;
+well, they can do that with multisig now.</p><p>James: 00:28:01</p><p>And it&rsquo;s much more practical with multisig.</p><p>NVK: 00:28:10</p><p>Way more because you want the opposite.
+You want to participate when you sign and not after.</p><p>Rijndael: 00:28:18</p><p>Maybe we can unpack why multisig is actually a great solution for the state wallet for Fedcoin and why covenants would be bad for Fedcoin.
+The risk here that people are worried about is that there&rsquo;s some regulatory crackdown and the government says you must receive your Bitcoin into a wallet that enforces this covenant and this covenant restricts who you can send coins to.
+So if you eat too much meat, if you say wrongthink on Twitter, then you&rsquo;re going to be on the blacklist and James won&rsquo;t be able to send me coins.
+And if I have a good enough social credit score, then I&rsquo;ll be on the whitelist and James can send me coins.
+That&rsquo;s the threat that people are worried about and they&rsquo;re worried that introducing covenants will open this new vector for this kind of control on Bitcoin.
+The thing is that with all the covenant proposals that are being seriously talked about like CTV, you have to exhaustively enumerate all of the different destinations and all the different kind of shapes of transactions that coins can take at the time that you receive those coins.
+So one of the things that that means is, let&rsquo;s say that you&rsquo;re some government agency that&rsquo;s maintaining this whitelist based on social credit score or something.
+Every time that whitelist changes, you would have to get everybody to respend their coins to a new version of the covenant that includes the new whitelist.</p><p>NVK: 00:29:53</p><p>And they&rsquo;re going to fuck up.
+This is the stuff they fuck up.</p><p>Rijndael: 00:30:00</p><p>100%.
+Screwing up a list of things in a database is very on-brand for bureaucratic fuck-ups.
+What you would much rather do, that&rsquo;s one problem, and then there&rsquo;s other problems.
+Not only do you have to enumerate all the destinations, but you also have to enumerate all the change addresses.
+Managing this whitelist through on-chain rollover of UTXOs is just a non-starter.
+It&rsquo;s expensive, it&rsquo;s slow, it&rsquo;ll never work.
+If instead you did something where you said, for Fedcoin, James, if you want to be compliant, you have to receive coins into a wallet that does a two of two multisig.
+And you hold one key in your Fedcoin wallet, and then me, the government, I hold a second key.
+And then what I do is I just run a co-signing server.
+And the whitelist is just a database.
+It&rsquo;s just a plain old MySQL database.
+Whenever Rodolfo gets kicked off of the list, he&rsquo;s no longer allowed to receive Fedcoin, I remove him from the whitelist.
+And then if James wants to send him Bitcoin, it sends a cosigning request to the server and the server says, nope, you&rsquo;re not on the whitelist.
+He goes, send me coins and I&rsquo;m a good citizen.
+So it says, yep, he is on the whitelist and it just cosigns it.
+You could update that whitelist hundreds of times a second.
+It doesn&rsquo;t have an increased on-chain footprint.
+You don&rsquo;t have to roll these things over.
+Blockstream actually already has a product like this.
+It&rsquo;s called AMP and it&rsquo;s used for issuing regulated assets on Liquid.
+So if you want to buy a stock on the Liquid network, they only want you to be trading stock with other people who are accredited investors or whatever.
+So they have a co-signing server that restricts who the token can go to.
+So we already have the technology to do Fedcoin today in a more efficient way and a more operationally sound way than using covenants.
+So it doesn&rsquo;t matter.</p><p>NVK: 00:31:52</p><p>Personally, if I were to do Fedcoin, I would do it on Ethereum.
+Because it&rsquo;s actually quite perfect for it.
+It uses accounts, it doesn&rsquo;t have UTXOs. So you can keep an account on the whole person&rsquo;s pile of an asset.
+They have the whole shebang for it.
+No wonder they&rsquo;re probably right now knocking on the door of regulations.
+Can you please use our system for it?</p><p>Rijndael: 00:32:13</p><p>There&rsquo;s already regulated stable coins on it.
+The account thing is actually a big deal.
+If you want to be able to look back and see transaction history, that&rsquo;s very hand-wavy in a UTXO system.
+In an account-based system, you just look at the transaction history for an account and you say, yep, here&rsquo;s the NFTs that you bought.
+Those are hate speech.
+So you&rsquo;re no longer allowed to receive your stipend.</p><p>NVK: 00:32:37</p><p>That happened with Tornado Cash.
+Because people sent unwanted Tornado Cash to people in their accounts.
+Just so people understand the difference.
+Think of the UTXO system as essentially we have 21 million coins, literal physical coins.
+And we just send and receive these coins.
+They are not mine, really.
+They&rsquo;re just part of the network and I happen to own them right now.
+But it&rsquo;s really akin to gold in that sense.
+The account system, on the other hand, is essentially how fiat works.
+It&rsquo;s a ledger based system per owner.
+The owner has its own ledger.
+It&rsquo;s fucking terrible for privacy.
+This is all interesting.
+Is there any other steel man for&mldr;</p><p>Rijndael: 00:33:23</p><p>I think the best argument that I&rsquo;ve heard against specific proposals like CTV, which is I think the one that probably, I&rsquo;m going to go out on a limb and say CTV probably has the most consensus out of all the covenant proposals right now.</p><p>NVK: 00:33:38</p><p>Let&rsquo;s just have opinions, it&rsquo;s okay.</p><p>Rijndael: 00:33:40</p><p>Yeah, for sure.
+And I think the strongest argument that I&rsquo;ve heard is maybe it doesn&rsquo;t go far enough.
+Maybe we want a more general covenant.
+Maybe it&rsquo;s too restrictive.
+And if we&rsquo;re gonna go through the social activation energy of doing a soft fork, maybe we should make a better covenant.</p><p>NVK: 00:33:59</p><p>But that would never happen because now it&rsquo;s too big and everybody&rsquo;s going to have more reasons to bike shed and hate on things.
+It&rsquo;s hopeless.</p><h2 id=risks-of-major-bitcoin-changes>Risks of major Bitcoin changes</h2><p>James: 00:34:07</p><p>That was actually the impetus for OP_VAULT.
+But let&rsquo;s put a pin in that and go back, one concern that I can think of that&rsquo;s reasonable is anytime you&rsquo;re adding functionality to the Bitcoin script interpreter or changing it there&rsquo;s some level of risk there.
+And I think in any case, you do have to be very diligent about looking at the proposed change to the script interpreter and saying, well is this going to increase computational requirements for doing validation?
+Is there some new avenue we&rsquo;ve introduced for DOS?
+Does this require more caching or whatever to make sure that the validation time doesn&rsquo;t actually blow up when you use this new feature.
+And when Jeremy introduced CTV, I was like, I&rsquo;m going to go pore over this thing and see if I can actually break it or find some kind of critical issue.
+And what&rsquo;s funny is that for all the reputation and ire that CTV has accumulated over the years, in its early days anyway, the change is really, really simple.</p><p>NVK: 00:35:20</p><p>It&rsquo;s funny.
+I started as a CTV liker and then I became a CTV hater because of how it started to get pushed and everything else.
+And then I became a CTV lover again.
+I went through the whole roller coaster of sentiments around it, because I think Sapio and what you can do with CTV once you go galaxy brain really confused me.
+And I don&rsquo;t have the bandwidth to go fucking review it, and I think he muddies the water I think if we had just kept it to what it is and here&rsquo;s where it goes as opposed to look at all the insane shit you can do with it if you do it this certain way.</p><p>James: 00:36:10</p><p>I think Jeremy got tired of talking about raw CTV because again, it is so simple.
+And he develops Sapio, which is this very space age smart contracting platform that compiles down to Bitcoin script.
+And he started showing that off and people looked at that.
+And that&rsquo;s a very complicated system.
+And I think that scared a lot of people because they weren&rsquo;t made aware of the distinction between the underlying script primitive, which is CTV and Sapio.</p><p>NVK: 00:36:42</p><p>I transverse both the Luddite camp and the non-Luddite camp when it comes to Bitcoin changes, the ossification versus non-ossification.
+And what truly scares me with Bitcoin changes is we have a thing that works.
+And it&rsquo;s kind of a fucking big deal.
+It&rsquo;s the only thing we have.
+And my bags depend on it.
+I am really scared of unknown, unknowns.
+And it&rsquo;s very hard to know what happens.
+We saw the Taproot thing.
+I feel like a lot of people got taken for a ride on Taproot.
+They couldn&rsquo;t understand it.
+And they gotta accept it because the devs say it&rsquo;s okay.
+And then we had the dick butts show up onchain.
+And people are like, look you can have unknown, unknowns.
+It made absolutely no difference.
+Once people understood it&rsquo;s all dying down, the economics kills these things.
+But it could have been worse to be fair to people.
+It could have been worse.</p><p>James: 00:37:46</p><p>Oh, for sure.
+And Taproot was basically like lifting the engine out of Bitcoin and putting a new engine in.</p><p>Rijndael: 00:38:02</p><p>SegWit and Taproot were both huge upgrades that kind of fundamentally change how Bitcoin works.
+And CTV or APO aren&rsquo;t.</p><p>NVK: 00:38:14</p><p>CTV is akin to &mldr;</p><p>James: 00:38:17</p><p>Check-locktime verify or CheckSequenceVerify.</p><p>NVK: 00:38:18</p><p>No, not even.
+It&rsquo;s more like an opcode.
+You just have a little space there, it makes no fucking difference.</p><p>Rijndael: 00:38:27</p><p>And what CTV does is it takes a whole bunch of fields in the transaction.
+And we can rattle them off, but it takes a bunch of fields in the transaction and you hash them.
+And then you say, check template verify, and you provide that hash.
+And when you go to spend those coins, if those fields in the transaction hashed the same value as what you committed to, then the transaction is allowed.
+And if they don&rsquo;t, the transaction is denied.
+It&rsquo;s a very simple mechanism.</p><p>NVK: 00:38:52</p><p>Here&rsquo;s the worst case scenario for CTV.
+People YOLO their scripts and they can&rsquo;t move their coins anymore, which is going to happen.
+But that&rsquo;s great.
+That just makes Bitcoin be more deflationary.
+Seriously, I already believe that 20, 30% of all Bitcoin cannot be moved.
+Because people just don&rsquo;t know yet.
+They cannot move their coins.</p><p>Rijndael: 00:39:14</p><p>Yeah, for sure.</p><p>NVK: 00:39:15</p><p>But with CTV, it&rsquo;s just more of the same.
+You don&rsquo;t have to use it.
+It&rsquo;s backward compatible.
+And it doesn&rsquo;t change the incentives.
+It doesn&rsquo;t change incentives when it comes to mining.
+It doesn&rsquo;t change the incentives on any of this stuff.
+We don&rsquo;t have economic incentive change that you wouldn&rsquo;t happen already if you couldn&rsquo;t move your multisig because you forgot the script or whatever.</p><p>James: 00:39:39</p><p>Another interesting thing is that CTV is basically just a hash comparison.
+And that&rsquo;s like upwards of 20 times faster than elliptic curve operations.
+So the CTV opcode itself is way faster than a Schnorr verification.</p><p>NVK: 00:39:53</p><p>Do we need a new name for it?
+Hash check.</p><p>James: 00:39:56</p><p>I don&rsquo;t want to.
+It&rsquo;s fine.
+We&rsquo;ve done so much deck chair rearrangement, I feel like with this stuff that people just need to grow up, put on their big boy pants and come to grips with the existing branding and take it for what it is.</p><h2 id=quantifying-the-scale-of-change-in-code>Quantifying the scale of change in code</h2><p>NVK: 00:40:13</p><p>Do you think it would be more helpful if we can get the TXHASH people, the APO people and whatever fucking thing people wanting to be more on board with this and all this stuff you guys are proposing, is not going to fucking happen.
+I am certain that TXHASH is not going to happen.
+It&rsquo;s too out there.
+It&rsquo;s too much code.
+Maybe if we debate for another 10 years, it&rsquo;s not impossible.
+Let&rsquo;s put it this way.
+But realistically speaking, and imagine Bitcoin in 10 years, the amount of different people who own it and are not willing to change it.</p><p>James: 00:40:48</p><p>Yeah.
+Well, bit of news.
+I spent the last week putting together a branch on Core that has CTV, APO, and OP_VAULT.
+And it&rsquo;s 6,000 lines.
+That&rsquo;s not a big change.
+That&rsquo;s including all the test code.
+The test vectors and all that stuff.</p><p>NVK: 00:41:09</p><p>Outside of tests, how much are we talking about here?
+Like a third?</p><p>James: 00:41:15</p><p>I think probably two thousand lines.</p><p>Rijndael: 00:41:22</p><p>And a lot of that test code is like Python, which is more verbose because it&rsquo;s wallet setup.</p><p>James: 00:41:28</p><p>A lot of the CTV code is just these raw transactions and big JSON files that Jeremy generated to make sure everything is cool.
+A lot of the APO test codes, there&rsquo;s a fuzz test case in there.
+So it&rsquo;s really padded out with a lot of test code.
+So these changes are small.</p><p>NVK: 00:41:45</p><p>But here&rsquo;s the counter argument to that.
+Changing the block size was a single number change there.
+For people to understand is the smaller literal character change in terms of code makes it a lot easier to review.
+But it doesn&rsquo;t eliminate some other issues.
+Because you could change a tiny little thing and cause massive fucking problems.
+But that&rsquo;s what tests are for.</p><p>James: 00:42:19</p><p>Totally.
+And the size of the code makes it more readily comprehensible, but I just brought that up to compare it to, and this is the way opposite end of the spectrum, for Simplicity the proposed change set into elements is something on the order of 80,000 lines.
+And I know that allegedly comes with a lot of test code and proof verification and all that stuff.
+But scrutinizing something like that is a much, much, much bigger proposition.</p><p>NVK: 00:42:48</p><p>And it&rsquo;s also a single source.
+It comes from a single company.
+We like them, but it&rsquo;s much harder for you to review something in terms of face value when it comes from a single entity.
+If you had like 10 entities that hate each other writing that code, it&rsquo;d be much more believable, much more trustworthy on face value.</p><p>Rijndael: 00:43:08</p><p>I would argue that the actual amount of code that&rsquo;s gonna be needed to make that thing useful is probably gonna be another order of magnitude larger.
+Cause the thing with Simplicity is it&rsquo;s this very low-level scripting system built out of these algebraic combinators that you assemble together and then they create predicates for your scripts.
+In order to actually make software out of that, we&rsquo;re going to need higher level languages and libraries to actually build tooling for it.
+If we have, call it CTV and VAULT, you can hack four lines into Peter Todd&rsquo;s Bitcoin Python library and start using it.
+You can start building a wallet on top of that.
+If you have APO, you can hack a new SIGHASH flag into your favorite Bitcoin library and you can start doing APO things.
+So it&rsquo;s 7,000 lines and that&rsquo;s enough for people to start using it.
+I would say something like Simplicity, there&rsquo;s probably going to be other languages and libraries and tooling that we&rsquo;re going to need on top of it.</p><p>Rijndael: 00:44:32</p><p>I did read Luke wrote consensus logic for BIP300 for drivechains.
+And that&rsquo;s not a ton of code, but that comes with a whole bunch of new miner incentives and a whole bunch of new economic incentives for Bitcoin to behave differently.
+And it introduces a brand new security model.
+It&rsquo;s actually a pretty big change.
+Something like CTV, if you screw up you might not be able to spend your coins, but that&rsquo;s not going to affect my coins.
+I think one of the big differences between something like Bitcoin and something like Ethereum is that Bitcoin transactions don&rsquo;t go and mutate a whole bunch of global state.
+I can&rsquo;t write a locking script that messes with James&rsquo; coins.
+I think that&rsquo;s a core invariant in Bitcoin.
+And none of these proposals that we&rsquo;re talking about change that dynamic.
+I might lock myself out, but I&rsquo;m not going to lock James out.</p><p>NVK: 00:45:29</p><p>That&rsquo;s right.
+There is no socialization of your transaction here.
+There is no externality to them.
+You&rsquo;re not making everybody do anything else.
+It&rsquo;s more akin to you just happen to use addresses that you mined and they all have like five A&rsquo;s at the end.
+It&rsquo;s irrelevant to the rest of the network.</p><p>James: 00:45:53</p><p>The only way that it would affect other people is if the validation complexity went up somehow and you could kind of abuse these new op codes, but that&rsquo;s been proven not to be the case.
+With APO, I don&rsquo;t think that&rsquo;s the case.
+So, we talk about TXHASH, and for people who haven&rsquo;t heard of TXHASH, all TXHASH is, is a way of &mldr;
+So, CTV takes certain parts of the transaction, rolls it into the hash, and then does the comparison.
+With TXHASH you can kind of select different parts of the transaction to go into that hash.
+So you have something that&rsquo;s in theory more flexible, but the problem is because you can do all these different hash combinations, then you have to start worrying about what&rsquo;s called quadratic hashing attacks, which is where you select a bunch of different incantations of that hash in the same transaction.
+And then all of a sudden, the validation engine has to do a bunch of work to do some kind of a combinatorial selection of all the hashes that are possible with the transaction.</p><h2 id=txhash>TXHASH</h2><p>Rijndael: 00:46:53</p><p>So I thought with TXHASH, and maybe I&rsquo;m behind on this, the original TXHASH proposal was you&rsquo;d say OP_TXHASH and then you would pass a bitmask basically of which fields to select to go into the hash.
+And the idea was that at a consensus level, only certain values of that bitmap would be allowed.
+And so the idea is that on day one, when it got activated, the only permissible value is the exact same set of fields as CTV.
+So in my mind, it&rsquo;s kind of just rebranding CTV.
+CTV has too much baggage with a certain sect of people on Twitter.
+So we&rsquo;re going to rename it and add a bitmask.
+But the idea is that in the future we could soft fork new allowed values for that bitmask.
+And so I assume that in order to get people to do that soft fork, you&rsquo;d have to show them that this thing doesn&rsquo;t open you up to quadratic hashing.</p><p>James: 00:47:49</p><p>Three points there.
+Number one, the two main distinctions of TXHASH from that CTV use case that you&rsquo;re talking about is, number one, you&rsquo;ve got data loss because you&rsquo;ve got to provide an extra parameter just to do the CTV hash.
+Number two, TXHASH would be a Taproot only opcode.
+You have to use Taproot.
+And that means it&rsquo;s not as space efficient because it turns out that the most efficient version of CTV is doing a bare CTV so that you just have the 32 byte hash, the two byte opcode.
+So you&rsquo;re 34 bytes, not even a Pay-to-Script-Hash, it&rsquo;s just a raw script.
+So if you wanna do congestion control, that&rsquo;s the most efficient incarnation of that.
+But then the third point is that a lot of people don&rsquo;t realize that CTV actually was designed with upgradability in mind.
+So what happens in the CTV rules is if the hash that you pass as the argument is 32 bytes, it does the default CTV hash.
+But the way Jeremy designed it is, if that hash is more than 32 bytes, if there&rsquo;s an extra flag on there, it&rsquo;s OP_TRUE.
+So if you wanna soft fork in more template hashes, you can if you want to.
+So it&rsquo;s all the same stuff except TXHASH is less space efficient.</p><h2 id=simplicity-of-ctv>Simplicity of CTV</h2><p>NVK: 00:49:04</p><p>The way I like to think about this is more like CTV is essentially OP_RETURN.
+You&rsquo;re just storing 32 bytes there.
+And all we&rsquo;re saying is that for a transaction that says it&rsquo;s a CTV, check that that hash matches, that&rsquo;s it.
+There really is nothing else to it.
+And this is not to minimize tertiary effects kind of thing, but, it does make it a lot easier on the code side to review and make sure that we&rsquo;re not causing technical bugs.
+Economically speaking maybe there&rsquo;s more conversations to be had.
+I&rsquo;m satisfied.
+But maybe maybe people can still argue more about the soft stuff.
+But on the hard stuff, it&rsquo;s pretty simple.</p><p>James: 00:49:58</p><p>Yeah.
+And it&rsquo;s been picked over by everybody.
+Everybody wanted to find a problem with CTV and the code&rsquo;s been out there unchanged for so long.</p><p>Rijndael: 00:50:06</p><p>And if I remember right, there&rsquo;s like a five Bitcoin bounty out there if you find a bug in it.
+To this day.</p><p>James: 00:50:12</p><p>To this day, yeah.
+If you find a sizable bug with CTV, you get something like five Bitcoin from the Lincoln Labs people.</p><h2 id=the-consensus-deadlock>The consensus deadlock</h2><p>NVK: 00:50:19</p><p>As we all know, for as much as we like to say Bitcoin is decentralized, it kind of isn&rsquo;t when it comes to Bitcoin updates and things you have to get the approval of the main original gray beards.
+G.
+Max retired, essentially.
+I&rsquo;m sure he will have an opinion on Reddit.
+You have Wuille, Poelstra maybe a little bit less but, what&rsquo;s the state of consensus from the wizards?</p><p>James: 00:51:10</p><p>I call this the consensus deadlock because we&rsquo;re in a situation right now where the people who have led the last few consensus changes to Bitcoin really don&rsquo;t want to weigh in because they have felt like they&rsquo;re encouraging this muscle memory in the community that they&rsquo;re essentially the implicit benevolent dictators and that they have to bless every new change.
+And that&rsquo;s obviously antithetical to what Bitcoin is supposed to be.
+So that&rsquo;s their choice.
+I still wish that some of the people would involve themselves to an extent, but they don&rsquo;t have a willingness to.
+So we&rsquo;re in a position now where there&rsquo;s kind of a credibility vacuum.</p><p>NVK: 00:51:46</p><p>I think the other issue, too, is aside from people being burnt out, which, by the way, I believe people should be burnt out.
+I believe we should be excruciating.
+So horrible.
+Maybe you might disagree with me, James, but I want people to literally hate working on Core Bitcoin.
+It needs to be so awful that you&rsquo;re either a spook or you&rsquo;re masochist or both to want to be there.
+And it&rsquo;s so intense.
+And it needs to be that way.
+Because then you have less social attacks on it.</p><p>Rijndael: 00:52:23</p><p>Well, maybe another way of saying it, is the only time that you go and start changing things on Bitcoin is when you have no other option.
+You&rsquo;re like, there&rsquo;s no more pleasant way for me to do this.
+So I&rsquo;m going to have to go and change Bitcoin.</p><p>NVK: 00:52:38</p><p>That&rsquo;s right.
+You&rsquo;re in a spaceship.
+You really don&rsquo;t want to do a spacewalk because that&rsquo;s how everybody always dies.
+They have to go outside to fix something in their engine or something.
+And then they die.
+They fall into the vacuum of space.
+And I feel like every time Bitcoin has changed, the people who went to walk outside, they fix the thing and then they got swallowed by the vacuum of space and then they never come back.
+It&rsquo;s okay if people burned themselves out doing that one thing, and it&rsquo;s for the common good.
+So we don&rsquo;t have those guys.
+And in all honesty, I have a feeling that if we have those guys then the bike shedding would also start and unlikely to get anywhere.</p><p>James: 00:53:29</p><p>What I&rsquo;ll say is two things.
+Number one is that I think vaults is something that&rsquo;s widely recognized as being really, really desirable.
+The vaults have been talked about since 2013.
+And I think every major contributor to Bitcoin at some point is, this is probably functionality that we need.
+Otherwise, custodying coins is just too much of a crapshoot in the long run.
+And number two, as people keep coming up with these proposals to do things like scale the Lightning Network, scale UTXO ownership, do vaults, people keep reinventing the need for CTV.
+And I think it&rsquo;s just become obvious to a lot of the technical community, whether they&rsquo;re coming out and saying it explicitly or not, that we just need this primitive.
+So the reason I started preparing this soft fork branch is because I think if something like that were proposed, there would be pretty good broad consensus that, maybe it&rsquo;s time to look at activating CTV and APO.</p><p>NVK: 00:54:35</p><p>Did you buy your helmet to walk in space yet?
+This is gonna be your retirement project.</p><p>James: 00:54:40</p><p>Honestly, the social stuff doesn&rsquo;t really bother me that much.
+Maybe because I think I make fairly limited claims and I&rsquo;m not that pushy, I&rsquo;m ready to take the spacewalk, I guess.
+Mostly because I&rsquo;m hoping it&rsquo;ll be a pretty boring spacewalk and I won&rsquo;t be offended if I get totally rejected.
+And because I&rsquo;ve spent enough time prototyping this stuff and working with it to say that it&rsquo;ll probably happen eventually.
+And if it doesn&rsquo;t, that&rsquo;s fine.
+I think it&rsquo;ll be to Bitcoin&rsquo;s detriment.
+And at that point, I&rsquo;ll probably go and work on something else entirely.
+But that&rsquo;s OK.
+I&rsquo;m I guess a little Zen about it.</p><h2 id=social-coordination-and-activation>Social coordination and activation</h2><p>NVK: 00:55:34</p><p>I think honestly the main problem is gonna be activation and how to do it.
+Like I mentioned many times and I think most devs still cannot internalize it.
+Speedy Trial is not something that passes the mustard in terms of how users and the economic nodes feel.</p><p>James: 00:55:52</p><p>So, tell me what Speedy Trial is.
+Let&rsquo;s make sure we agree on definitions here.</p><p>NVK: 00:55:58</p><p>I think the problem really is you can&rsquo;t have something that does not have flag day.
+People want the game of chicken.
+You&rsquo;re trying to remove the game of chicken.
+What happens with that is you show your hand.
+All the devs wanna do is remove the game of chicken.
+That&rsquo;s what Speedy Trial does.</p><p>James: 00:56:28</p><p>With soft forks in general, when you provide a way to coordinate miners doing the upgrade, I think it&rsquo;s a big misconception that the process is somehow designed to solicit the feedback of the miners or to ask for permission from the miners.
+It&rsquo;s really not.
+It&rsquo;s literally to coordinate the upgrade that we&rsquo;re going to do one way or another to make sure there&rsquo;s no chain split.</p><p>NVK: 00:56:57</p><p>Oh, no, no.
+I understand.
+That&rsquo;s what technically the code does.
+The problem is once you get miners to coordinate before economic nodes, what it&rsquo;s really signaling is that the miners are choosing if they wanna do something or not without knowing how the economic nodes are going to go.</p><p>James: 00:57:21</p><p>But how do the economic nodes broadcast their willingness for a fork?</p><p>NVK: 00:57:26</p><p>Well, UASF, the way it should be.</p><p>James: 00:57:29</p><p>OK, so what, we&rsquo;re all going to go out and advertise via user agent that we want a certain fork.
+Well, that&rsquo;s Sybil.
+That&rsquo;s a Sybil attack.
+There&rsquo;s just no good way of economic nodes saying, yeah, we all want this thing.</p><p>NVK: 00:57:44</p><p>And they shouldn&rsquo;t be.
+I believe that part of the reason why Bitcoin was never successfully attacked is because there is not a clear game to activate anything, for somebody to game.
+This messy chaos that is UASF, even though it feels dangerous, it feels like it could be sybiled or whatever, it forces true economic actors to coordinate out of channel.
+Because trust me, everybody is calling each other meeting and trying to understand outside of Twitter and outside of the network.
+What are you supporting?
+Where are you going?
+So it is literally forcing people to do that coordination out of channel.
+And then you&rsquo;re not showing your hand to bad guys trying to push in a different direction.
+They simply don&rsquo;t know the state of things.
+So they risk their coins.
+It&rsquo;s actually quite beautiful.
+It is true chaos.
+And state actors cannot game something that&rsquo;s chaotic.</p><p>James: 00:58:55</p><p>I think if there&rsquo;s broad agreement that we should do something with consensus, there&rsquo;s no reason to induce that chaos, risk chain splits and coin loss, and Bitcoin looking like an absolute shit show.
+That doesn&rsquo;t make any sense to me.
+UASF is always in the back pocket.
+If miners drag their feet, like you can always UASF and the opposite is always true.
+Let&rsquo;s say the miners get together and they decide to activate some fork that doubles the supply.
+Well, guess what?
+The economic nodes can run a trivial Python script that examines each block.
+And if it violates their rule set, it runs invalidateblock.
+The activation method is literally window dressing to make sure that there isn&rsquo;t a big chain split.
+It&rsquo;s nothing more.
+Because there&rsquo;s always the avenue to reject a bad consensus change if people want to.</p><p>Rijndael: 00:59:57</p><p>It&rsquo;s been a while since I&rsquo;ve read BIP-8, but my understanding was the way that BIP-8 activations want to work.
+I don&rsquo;t think we&rsquo;ve actually done this yet.
+But the idea is that you would run a LOT=true client.
+So there&rsquo;s a drop dead date.
+At this date, nodes will start enforcing.
+And if the economic majority of the nodes are running that code, then this is now the will of the economic majority.
+But you still have a miner signaling period to do early activation.
+And that&rsquo;s not miner selecting.
+That&rsquo;s miner signaling, I&rsquo;m ready to not mine invalid blocks.
+So that if you say the LOT=true date is two years out to give everybody plenty of time to upgrade.</p><p>NVK: 01:00:51</p><p>Miners are last.
+They don&rsquo;t even know where their mines are.</p><p>Rijndael: 01:00:55</p><p>Right.
+But the idea is that if we think that there&rsquo;s broad consensus before then, and if the miners are ready to upgrade all their software, then we don&rsquo;t need to wait the whole two years, but there&rsquo;s a drop dead date in two years.
+That&rsquo;s my understanding of that mechanism.
+Something that I&rsquo;ve always thought would be interesting &mldr;
+if we think that a particular soft fork has broad consensus and we think that lots of people want to do it, we could go and solicit some donations from the community to put a wallet together to go and pay a miner to mine an invalid block once we think it&rsquo;s active.
+Because there&rsquo;s no way for user agent signaling.
+If you say, we&rsquo;re going to stick iLikeCTV into your user agent, it&rsquo;s trivial for somebody to go and spin up a million nodes on AWS and have this sock puppet consensus.
+But if a miner mined a block that includes a transaction that violates CTV and that block gets forked off of the network, then we know that CTV is active.</p><p>NVK: 01:02:04</p><p>This is the problem.
+We cannot use, until fiat is 99% of 99.99999% of the total world economic value.
+And Bitcoin is just a spec.
+We cannot use any system that allows for an economically stronger actor that has infinite money to fuck with it.
+This is the problem.
+They can do anything except make miners come out of the ground.
+Because that&rsquo;s a physical thing that you have to manufacture and deploy.
+And as we know, governments are not great at that.
+It&rsquo;ll take them a little while.
+And we cannot make anything that they could pay to go better &mldr;
+for example, with SegWit, we had the futures for the two tokens, which was Bitcoin and Bitcoin Cash on BitMEX at that time.
+That was very useful because state actors didn&rsquo;t have any time to game that out.
+Because it was a one-time thing.
+It popped up out of nowhere, total chaos, spontaneous order thing.
+If we make that part of the system now, we&rsquo;re essentially tipping the guys to prepare for that.
+They&rsquo;ll get the funds ready and they&rsquo;ll sort that out.
+And then you imagine they could totally kill that.
+They can short the fuck out of one and long the fuck out of the other.
+Because they have infinite money.
+And now that futures market is completely gamed.
+Because remember, these guys have disposable, burnable cash.
+It&rsquo;s not like us.
+They have real money.
+You can&rsquo;t play that game.
+This is one of the issues that I have.</p><p>Rijndael: 01:03:43</p><p>Well, it&rsquo;s actually even worse than that because the way that budgeting works in large organizations is if you want the same budget next year, you can&rsquo;t spend less money this year.
+So you are incentivized to spend all of your budget.</p><p>James: 01:03:53</p><p>But hang on now.
+I don&rsquo;t understand this, because how do you coordinate socially, which is a prerequisite to doing a fork, without publicizing your intent to do the fork.</p><p>NVK: 01:04:05</p><p>No, you publicize your intent.
+But remember, there is a very, very large amount of economic actors that are fully quiet on any form of social media or whatever.</p><p>Rijndael: 01:04:16</p><p>I think the thing that NVK is saying is that you can&rsquo;t measure willingness or support through something that is gameable by an adversary with a lot of money.
+So the example that I said of user agent signaling.
+If I&rsquo;m somebody and I want to tip the balance, I just go and spin up a giant fleet on AWS.</p><p>NVK: 01:04:39</p><p>Amazon.
+Credit card.
+Problem resolved.</p><p>James: 01:04:41</p><p>Have a huge AWS bill.</p><p>Rijndael: 01:04:44</p><p>And it&rsquo;s easy.
+The thing that I like about, let&rsquo;s pay a miner to go and mine an invalid block, is that that&rsquo;s something where you&rsquo;re measuring support by looking at what happens on the network, which is ultimately the thing that matters.</p><p>NVK: 01:04:59</p><p>What if we had non-fidelity bonds?
+That kind of really shows how much of the pile you have and how much you&rsquo;re willing to go.
+Because then you can just show, look like 10 million Bitcoin is willing to go this way.
+Five million Bitcoin did not vote.</p><p>Rijndael: 01:05:16</p><p>And so you&rsquo;re saying you lock up some Bitcoin in a timelocked CTV thing.
+And if CTV doesn&rsquo;t activate like that, Bitcoin&rsquo;s up for grabs?</p><p>NVK: 01:05:24</p><p>Maybe.
+Yeah.
+I don&rsquo;t know.</p><p>James: 01:05:26</p><p>Somebody tried this back in the SegWit days.
+They came up with this scheme where you could sign a message of support using keys that correspond to some out points.</p><p>NVK: 01:05:39</p><p>But it&rsquo;s still fully gameable too.
+Because you can&rsquo;t measure majority unless you truly have more than X million amount of Bitcoin in a meaningful way, but it has to be ultra super majority.</p><p>James: 01:05:51</p><p>Proof of stake?</p><h2 id=speedy-trial---good-or-bad-for-bitcoin>Speedy Trial - good or bad for Bitcoin?</h2><p>James: 01:05:59</p><p>I just want to be really, really clear for the audience and say that I think Speedy Trial again, has been victim to its branding.
+And all it is, is basically a way of saying, if the miners and the users all agree that we want this consensus change to happen, let&rsquo;s just do an abbreviated period where if somehow within a few months, all the miners say, yeah, I&rsquo;m ready to do this upgrade.
+We can lock it in and wait even a longer period than BIP-9 had us waiting.</p><p>NVK: 01:06:24</p><p>Well, but what if we tack on pre Speedy Trial, there is a USF period in which everybody runs the client.
+And maybe you make a transaction or something that, if the miners do go through a Speedy Trial, then those transactions are valid.
+Therefore everybody agrees now that this thing got activated.</p><p>James: 01:06:48</p><p>No, but see, you guys are proposing hard forks.</p><p>NVK: 01:06:51</p><p>Yes, absolutely.</p><p>James: 01:06:55</p><p>Making a transaction that was previously invalid valid is a hard fork.</p><p>NVK: 01:07:03</p><p>You got to put some skin in the game.</p><p>Rijndael: 01:07:05</p><p>Wait, sorry, what, where was the proposal to make a previously invalid transaction valid?</p><p>James: 01:07:12</p><p>I think NVK was just saying you should lock coins up in a way that you have to activate CTV for the spend to become valid.</p><p>NVK: 01:07:25</p><p>Exactly what Speedy Trial is trying not to do.
+I think this is the problem.
+It&rsquo;s one of those things that code wise, it&rsquo;s not too hard.
+It&rsquo;s not hard for us to program something that does this change very safely.
+We know that.
+The issue is, how do we satisfy the completely irrational chaotic part of what makes Bitcoin good?
+Which is essentially the social sentiment towards where things are going and having this chaos being the firewall against the opposite of it, which is state actors.
+State actors, again, cannot deal with chaos.
+It&rsquo;s poison to them.
+That&rsquo;s how the terrorists work.
+They just cannot handle shit that&rsquo;s disorganized.
+So being disorganized is good.</p><p>James: 01:08:28</p><p>I&rsquo;m a crazy anti-government person.
+I&rsquo;m all for hardliners.
+I&rsquo;m all for securing Bitcoin against the state.
+That&rsquo;s pretty much what I&rsquo;ve devoted my career to at this point.
+And I&rsquo;m just for doing it in a way that&rsquo;s actually effective, which is, okay, tomorrow the state gets control of all miners and Coinbase and whoever else.
+And they push out a client that doubles the supply.
+What&rsquo;s our actual deterrence?
+And that&rsquo;s literally the part of the economy that wants real Bitcoin runs a program that invalidates blocks that are not valid.
+That&rsquo;s the deterrence.
+Anything short of that is sort of meaningless.</p><p>NVK: 01:09:05</p><p>I think it&rsquo;s one of those things where, I agree with you intellectually.
+But there is this intuitive part that&rsquo;s not being satisfied.
+And I think that as most early Bitcoiners would probably agree is that there&rsquo;s a lot on this that we don&rsquo;t still fully understand, especially on the economic side of Bitcoin.
+And it&rsquo;s very hard to satisfy that with, oh, here&rsquo;s a simple solution in code that will do the trick.
+And maybe we just haven&rsquo;t explored this enough in terms of trying to find a more sane path for activation that satisfies both camps.
+Again, Speedy Trial feels more like it&rsquo;s making the devs feel more safe and cozy, but I don&rsquo;t think they have fully satisfied the economic nodes.
+And I think it shows.
+You go ask around, people don&rsquo;t like it.</p><p>James: 01:10:18</p><p>People don&rsquo;t know what it is.
+If you ask your average person on Twitter what Speedy Trial is they won&rsquo;t be able to tell you.
+They&rsquo;ll say, oh, it&rsquo;s a way of quickly activating a soft fork, which is a very incomplete view of what it actually is.
+I just think all of Bitcoin&rsquo;s development process is threading this needle where at one end of the spectrum, it&rsquo;s making changes too easy and enabling some usurper to come in and screw up Bitcoin.
+But the other end of the spectrum, which we&rsquo;re at a real risk of traveling, is burning all of your human resources out and making non-contentious things impossible so that Bitcoin can&rsquo;t actually improve.
+And we gotta be diligent of that.</p><p>NVK: 01:11:04</p><p>I think there&rsquo;s a little bit of nihilism there too, with the Core maintainers.
+There&rsquo;s a lot of people out there that are perfectly fine with the state of the software.
+And we could find people that just update the clients for a new Windows version.
+I&rsquo;m just saying I feel like as each year the balance of that tips to a different side a little bit.
+I think a lot of more sensitive people came on board too.
+A lot of the drug dealers went.
+And the true hardcore people trying to hide from jail, no longer is like out loud or they started IPOs now.
+But the thing is, I feel like there&rsquo;s more sensitive people who are now part of development.
+Brilliant minds, great.
+Love to have you.
+But I think when the rubber meets the road, a lot of this, fuck your sentiments stuff comes back.
+We&rsquo;re in a little kumbaya time now.
+I think if you actually start talking about forks and things the conversation reverts to the mean.
+Go ahead, Rijndael.</p><p>Rijndael: 01:12:12</p><p>I kind of think that the difference between the activation method that James is, I don&rsquo;t want to say advocating, I don&rsquo;t want to put words in your mouth, but trying to explain, and maybe the sentiment that NVK is explaining is just like LOT=true.
+I think that&rsquo;s literally it.
+I think the people that I heard, and I don&rsquo;t talk to everybody, but the people that I talked to who were the most annoyed by Speedy Trial, I think the thing that they were annoyed by was that there was this idea that if Speedy Trial failed, then we would go back to the drawing board.
+And they thought that meant that miners were needing to tap in.</p><p>NVK: 01:12:57</p><p>That&rsquo;s right.
+And it does give that impression to the network and to the business people who don&rsquo;t understand the code.</p><p>Rijndael: 01:13:02</p><p>Right.
+And whether that&rsquo;s true or not, that&rsquo;s the message.
+And what LOT=true says is there&rsquo;s a flag day.
+And if you&rsquo;re not on board by the flag day, you&rsquo;re going to get forked off the network if we&rsquo;re the economic majority.
+I wonder if maybe the thing here that kind of everybody once is like Speedy Trial with LOT=true.</p><p>NVK: 01:13:25</p><p>That&rsquo;s it.
+But that was the ask that everybody who wanted to compromise said I had a LOT=true my Twitter handle.
+So it must count.</p><p>James: 01:13:33</p><p>So I think there is not a person who is advocating Speedy Trial, who contradicted the idea that if the Speedy Trial fails, that we won&rsquo;t come back with the user activated soft fork.
+I think everybody who&rsquo;s serious knows that&rsquo;s in our back pocket.
+But it&rsquo;s a little bit like speak softly and carry a big stick.
+And equally, even if you&rsquo;re running LOT=true before that timeout, you can change your software.
+So it&rsquo;s kind of bullshit.
+LOT=true is kind of just a &mldr;
+it could be a bluff.</p><p>NVK: 01:14:08</p><p>But you know, bluffs go a long fucking way, man, between humans.
+It is fascinating.
+Everything, every aspect of your life is carried on by bluff.
+When you cross the street outside of a red light, you&rsquo;re essentially bluffing with your life that the car is gonna probably stop for you.
+It is fascinating how it sets the tone in every human interaction.</p><p>James: 01:14:35</p><p>But Rodolfo, what I&rsquo;m saying is that threat is always there.
+The threat of a UASF is always there.
+That&rsquo;s always an option to us.
+Nobody is saying that we wouldn&rsquo;t do that.
+It&rsquo;s just like-</p><p>NVK: 01:14:45</p><p>I&rsquo;m gonna drive James crazy.</p><p>James: 01:14:47</p><p>You&rsquo;re gonna drive me nuts.
+Yeah, because this whole thing is like &mldr;
+I don&rsquo;t care how activation happens.
+It really doesn&rsquo;t matter.
+It&rsquo;s solely just a way of kind of easing the deployment by not having chain splits.
+It can happen any number of ways.</p><p>NVK: 01:15:07</p><p>Then why don&rsquo;t we do LOT=true?</p><p>Rijndael: 01:15:11</p><p>I&rsquo;m going to float a thing.
+I think that there might be a subtle psychological difference between saying, we could always go and implement LOT=true, and actually implementing it and letting users turn it on.
+It&rsquo;s this thing where if you&rsquo;re a non-technical, or I don&rsquo;t want to say non-technical, if you&rsquo;re somebody who&rsquo;s not going to go and hack on Bitcoin Core, and you&rsquo;re just an economic actor, you care about Bitcoin, you care about this change.
+If you hear, we can always go and implement LOT=true.
+There&rsquo;s kind of an implicit, if we decide to do it.
+And that&rsquo;s different from you have the code.
+Hopefully we won&rsquo;t need to use it.
+But here it is.</p><h2 id=problems-with-bitcoin-core-defaults>Problems with Bitcoin Core defaults</h2><p>NVK: 01:15:58</p><p>Remember, Bitcoin Core defaults, even if they&rsquo;re soft defaults like that, they rule things for the lazy which is 80% probably of the network.
+So if you put LOT=true as default on Core, it&rsquo;s very likely that 80% of the people won&rsquo;t change that.
+It&rsquo;s the same conversation that we had about RBF.
+These things really matter.
+They set the tone.
+Most people will follow what comes out default from Core.
+And if you&rsquo;re serious about that change, making it LOT=true, it probably puts that weight in.
+It means that the majority of the people who work on that code believe that this fork, this update is likely to be the winner of that.</p><p>Rijndael: 01:16:49</p><p>But then by that argument, wouldn&rsquo;t you want to actually have LOT=false to be the default?
+And what you&rsquo;d actually want is to say, if the economic majority of the network actually cares about this change, then they need to go into their Bitcoin.com and flip the switch.</p><p>NVK: 01:17:04</p><p>But this is exactly one of the reasons why I don&rsquo;t like Speedy Trial.
+It&rsquo;s because you get into this game of it depends on which side you like more.
+You can make the argument both ways and now you&rsquo;re introducing order, which is gameable, versus the chaos.</p><p>Rijndael: 01:17:21</p><p>The thing that I think that you would want is you&rsquo;d want the configuration option to be there, but it would be default off.
+The default is what we have today, but the switch is there.
+And if enough people care to flip the switch, then they go flip the switch.</p><p>James: 01:17:35</p><p>So here&rsquo;s the problem with LOT=true by default.
+If you ship a binary that has LOT=true by default and people start to run that, and let&rsquo;s say during the signaling period, we discover that there&rsquo;s some problem, some bug.
+All of a sudden now, the software that isn&rsquo;t supposed to require upgrades, Bitcoin, that&rsquo;s the whole reason we do soft forks is not to force upgrades.
+Now you have a forced upgrade where it&rsquo;s like, you got to swap out the binary to make sure that your node doesn&rsquo;t fork itself off the network at this at this drop dead date.</p><h2 id=the-politics-of-changing-bitcoin>The politics of changing Bitcoin</h2><p>NVK: 01:18:16</p><p>This is the issue.
+Again, this is the problem.
+I understand and respect the effort that went into developing Speedy Trial.
+I really do.
+It&rsquo;s an impossible position to be in, to be a Core dev when there is a fork coming.
+It really is awful.
+And trying to come up with stuff like this is exactly what you should be trying to do.
+However, it just didn&rsquo;t suffice as a solution.
+Like it doesn&rsquo;t.
+If you want to measure if something works or doesn&rsquo;t, you can measure by how much hate you get when you put it out there.
+Speedy Trial was a disaster.
+Let&rsquo;s call it in public relations.
+People really hated it.</p><p>James: 01:19:03</p><p>I don&rsquo;t know if it was a disaster.
+I&rsquo;m all for arguing.
+I love arguing about Bitcoin.
+I think people should be engaged with the technical community.
+Let&rsquo;s argue about meaningful things, this is not a meaningful thing.</p><p>NVK: 01:19:13</p><p>I think it is the most meaningful thing, updating Bitcoin and how you update Bitcoin is&mldr;
+Because remember, a lot of bad actors want to change Bitcoin to have, say, 22 million or to have tail emissions or whatever.</p><p>James: 01:19:28</p><p>Yeah, those are risks.
+But the mitigation to those risks is is responding proactively with invalidateblock scripts.
+Or, just not running some shitty software that someone puts out.</p><p>NVK: 01:19:40</p><p>It&rsquo;s because it&rsquo;s still a game of convincing enough people.
+This is the thing that most Bitcoiners don&rsquo;t want to accept is that Bitcoin is fully political, 100% political.
+Everything is politics.
+How many people can you convince to go your way?</p><p>James: 01:19:52</p><p>Right.
+And that&rsquo;s still in the mix.
+It&rsquo;s just the question is whether or not you upgrade your version of Bitcoin Core.
+So let&rsquo;s say if the maintainers merge some controversial software tomorrow, the really interesting process is whether or not people upgrade Bitcoin Core.
+That&rsquo;s the vote.</p><p>Rijndael: 01:20:12</p><p>If the Bitcoin Core maintainers go evil and double the supply or implement tail emissions or whatever, what you would hope would happen is somebody would fork the repo and then go and tell everybody, don&rsquo;t run Bitcoin/Bitcoin, run Rijndael/Bitcoin instead.
+Because it doesn&rsquo;t have the evil patch in it.
+And you&rsquo;ve got to convince enough people that it&rsquo;s in their best interest to change back.</p><p>NVK: 01:20:38</p><p>The challenge is, Bitcoin is fully centralized.
+You have one client.
+Essentially, you have one URL where the client is deployed.
+It&rsquo;s fully centralized.</p><p>James: 01:20:48</p><p>And that&rsquo;s a real problem.
+It&rsquo;s a real problem.</p><p>NVK: 01:20:50</p><p>Super.
+Essentially, everybody expects it.
+They go to bitcoin.org, they press download, that&rsquo;s what they should be running, and they&rsquo;re saving the world.
+And this is why I always go back to, Bitcoin defaults are very complicated.
+Because essentially the people who deploy Bitcoin kind of run it, they kind of own it in a way.</p><p>James: 01:21:10</p><p>I agree.
+It&rsquo;s really bad that Bitcoin as an ecosystem implicitly looks to the maintainer merge button as the source of truth about what to do.</p><p>Rijndael: 01:21:23</p><p>Because I think the fact is the code, there is no spec.
+The implementation of Bitcoin Core is the spec.</p><p>NVK: 01:21:28</p><p>I mean, it&rsquo;s Netscape, guys.
+It&rsquo;s a hundred percent of the network runs the client, runs that specific call.
+And this is why again, when you make things like Speedy Trial, you&rsquo;re implicitly sending people in a certain direction.
+You really are.
+And you don&rsquo;t feel that way because you understand that the call doesn&rsquo;t do what I&rsquo;m saying.
+But you&rsquo;re endorsing something, you&rsquo;re pushing something.
+So this is kind of cool because at the same time, there is no solution possibly.
+There really is no good solution.
+And it&rsquo;s just one of those things that not having a good solution is the firewall.
+Again, state actors cannot handle that.</p><p>James: 01:22:15</p><p>Yeah, so maybe your argument is, there&rsquo;s not a well-defined process.
+So that makes the whole thing resilient because you can&rsquo;t follow a reliable method to achieve change, which, there&rsquo;s definitely a point there.</p><p>NVK: 01:22:30</p><p>Democracy was something kind of very useful and very good in the very beginning.
+For you to vote in Greece, you had to own land.</p><p>James: 01:22:38</p><p>Yeah, I wish we would go back to that in America.</p><p>NVK: 01:22:40</p><p>Because the vote was linked to skin in the game.
+If you ruined your shit, you lose your money because land is not portable.</p><p>James: 01:22:49</p><p>Totally.</p><p>NVK: 01:22:49</p><p>So you worked.
+And then what happened is through thousands of years, we gamed it.
+And then we gamed gold.
+Humans, all they want to do all day is game shit.</p><p>James: 01:23:03</p><p>Right.</p><p>NVK: 01:23:03</p><p>It is literally why we&rsquo;re better than other animals, is that we figure out a way of gaming shit.
+So the more chaos you introduce in that, the less likely you are to be gamed.</p><p>James: 01:23:15</p><p>So again, it all goes back to threading that needle between making the process resilient to being gamed, but also not doing these own goals where we all agree that we need something and it doesn&rsquo;t happen because the process literally, mechanically can&rsquo;t happen.
+So I don&rsquo;t think any of us are saying it can&rsquo;t happen.</p><h2 id=testing-for-consensus>Testing for consensus</h2><p>Rijndael: 01:23:37</p><p>You made a point earlier that I really agree with, which is if somebody ever forces through some bad change, maybe it&rsquo;s miners collude and turn on drivechains or whatever.
+I kind of hope so, because I want to test out this next part, which is you can write 30 lines of Python to inspect blocks and invalidate them.
+And Jeremy actually wrote a script to invalidate CTV blocks.
+He&rsquo;s like, if you hate CTV, here&rsquo;s your user-resisted soft fork code.
+It runs as a sidecar next to Bitcoin.</p><p>NVK: 01:24:17</p><p>You&rsquo;ve got to love Jeremy, man.</p><p>James: 01:24:17</p><p>He&rsquo;s one of the most honest, hardworking guys in Bitcoin.</p><p>Rijndael: 01:24:23</p><p>He&rsquo;s like, here&rsquo;s a for loop that kicked you off of the CTV chain if you don&rsquo;t like it.
+Maybe if there is no process, the way that you test if there&rsquo;s consensus is you activate a thing and you see if the majority of the network kicks you off.</p><p>NVK: 01:24:40</p><p>But is Core going to deploy that?</p><p>James: 01:24:43</p><p>Probably not, because Core is ultra-conservative.</p><p>NVK: 01:24:45</p><p>No, but see, this is the challenge too.
+We always go back to this thing that maybe is unsolvable.</p><p>Rijndael: 01:24:52</p><p>Well, but the thing that Core could do is Core could bundle an option or a tool with bitcoind to let you reject blocks.</p><p>NVK: 01:25:00</p><p>It should be, you can&rsquo;t run Core.</p><p>Rijndael: 01:25:04</p><p>It comes with a popup, when you open the software.
+And then you pick the button.
+And if you pick the &lsquo;No&rsquo; button, then it invalidates blocks.
+If you pick the &lsquo;Yes&rsquo; button, then it accepts blocks.</p><p>NVK: 01:25:15</p><p>That&rsquo;s right, but you can&rsquo;t have a go back.
+It really is like you have to run the previous version of core.</p><p>Rijndael: 01:25:21</p><p>You&rsquo;ve got to IBD again.
+You&rsquo;ve got to move away your directory and sync it again or something.</p><p>NVK: 01:25:27</p><p>That&rsquo;s right.
+I like that.
+Maybe that&rsquo;s the way it creates the, but see that creates the game of chicken.
+On UI.
+How many people check the thing.
+They&rsquo;ll just press Yes.</p><p>James: 01:25:42</p><p>Right, right.</p><p>NVK: 01:25:43</p><p>So now the discussion is gonna be, which one is the No, which one is the Yes?
+Which one is on the left?
+Which one is on the right?</p><p>Rijndael: 01:25:51</p><p>It&rsquo;s kind of funny because we kind of are, that&rsquo;s true.
+People are going to be advocating for the right hand button is the one that I want.</p><p>NVK: 01:25:57</p><p>That&rsquo;s right.
+Right hand is forward, is the future.</p><p>Rijndael: 01:25:59</p><p>That&rsquo;s right.
+Oh my God.
+Well, and then in the right to left languages, we&rsquo;ll have to flip the buttons.</p><p>James: 01:26:07</p><p>Is this like Tinder consensus where you&rsquo;re swiping right on CTV?</p><p>Rijndael: 01:26:10</p><p>Oh my God.
+Yeah, that&rsquo;s right.
+If you and G.
+Max both swipe right.</p><p>NVK: 01:26:16</p><p>And then all the woke people are going to want to make users go through a little questionnaire that matches their values of which fork they want to like.</p><p>James: 01:26:27</p><p>Do a personality quiz.</p><p>NVK: 01:26:28</p><p>That&rsquo;s right.
+They&rsquo;re going to do a gender assessment on the fork.
+It&rsquo;s kind of funny.
+It&rsquo;s a little reductionist.
+But every single time I have this conversation, we always end up with the same fucking problem, which is nowhere.</p><p>Rijndael: 01:26:48</p><p>In my opinion, I don&rsquo;t think anybody in Core wants to be setting policy.
+I don&rsquo;t think they want to be that guy.
+I think what we should be doing is it should be very, very easy.
+At the level of you launch Bitcoin-Qt and it gives you two buttons and the user gets to pick.
+Because I think a lot of Core developers feel this real pressure of, people want new features, they want new things, but they don&rsquo;t want to be the person who decides.
+And maybe the way to relieve that pressure is to just make the levers really, really easy and put them in front of users and then let people figure out their own politics and figure out how to convince users to click the right button.</p><p>NVK: 01:27:34</p><p>I don&rsquo;t know.</p><p>Rijndael: 01:27:36</p><p>Or we go back to flag days, I&rsquo;m a big flag day maximalist.</p><p>NVK: 01:27:40</p><p>Yeah, flag days are great.
+Just have a fucking flag day.
+It&rsquo;s the closest thing that we have.</p><p>James: 01:27:46</p><p>Yeah, flag day wouldn&rsquo;t be bad, I guess.</p><p>Rijndael: 01:27:48</p><p>Yeah, if we just say this is the date and CTV is turning on.</p><p>James: 01:27:51</p><p>Right.</p><p>NVK: 01:27:52</p><p>If you care enough, show up.</p><p>Rijndael: 01:27:54</p><p>Yeah.
+If you don&rsquo;t, here&rsquo;s 30 lines of Python.</p><p>NVK: 01:27:58</p><p>Yeah.
+It&rsquo;s very sybil-able too.
+That&rsquo;s the problem.
+As more state actors come into play and it&rsquo;s tricky.
+But I feel like we also exaggerate this concern at this specific moment in time in Bitcoin.
+I&rsquo;m pretty sure that in this specific time, we can find consensus like everybody within three calls of distance to them.
+If I call three people right now, and I know they called another three people, I can have very solid confidence, I have no issues or coins at risk.
+And again, the skin is in the game.</p><h2 id=state-sabotage>State sabotage</h2><p>James: 01:28:37</p><p>I think that&rsquo;s such a good point.
+And that&rsquo;s what we really should be aware of is that state sabotage is more likely to come in the form of gumming up the works, or overt state sabotage is gonna come later.
+But look at the CIA manual for subverting an organization.</p><p>Rijndael: 01:28:54</p><p>Bike shedding is thing number one.
+You want to break up bureaucracy, just go on bike shed.</p><p>NVK: 01:29:00</p><p>Yeah, you want to know who those spooks are?
+Go in the consortium policy or SPAC.
+The W3C.
+Look for the SPAC people, okay?
+And then go look at how many of them used to work in aviation.</p><p>James: 01:29:17</p><p>Yeah, totally.</p><p>NVK: 01:29:18</p><p>Sorry, aviation people.</p><p>James: 01:29:20</p><p>So that&rsquo;s why I get a little prickly when talking about some of the activation stuff.
+Because to me, it feels like I understand that the process of deployment, it&rsquo;s really, really important.
+The process of coming to consensus is super vital.
+And that is very important.
+But the literal code that does the activation to me is kind of, column A, column B.</p><p>Rijndael: 01:29:38</p><p>Yeah, the amount of bike shedding that&rsquo;s happened on activation is indistinguishable from a state funded attack on Bitcoin consensus.</p><p>NVK: 01:29:46</p><p>Yes, absolutely.</p><p>Rijndael: 01:29:47</p><p>They would look the exact same.</p><p>NVK: 01:29:48</p><p>Look at what they did to PGP for fuck&rsquo;s sake.
+PGP didn&rsquo;t happen because of that.
+They made sure that the clients didn&rsquo;t have UI.
+There is a great, great talk in 2014 or so about Operation Orchestra.
+That&rsquo;s what they call it because they&rsquo;re they&rsquo;re playing you like a fucking fiddle.</p><p>Rijndael: 01:30:13</p><p>James, have you seen this talk?</p><p>James: 01:30:15</p><p>Yeah.
+I think maybe on your recommendation, I gave it a watch and it&rsquo;s it&rsquo;s really good.
+We should post it to Twitter when we get done with this call.</p><p>NVK: 01:30:22</p><p>Every Bitcoiner should watch that presentation, and understand where that blacklist comment that destroys the whole conversation comes from, or GitHub changing.
+This is why the woke people so scary.
+Because they are essentially, this is a Marxist playbook.
+It&rsquo;s how you break things is by destroying language and destroying how things are run by rational, reasonable people.</p><p>James: 01:30:49</p><p>So internal suspicion among the community, make people fight within the community, make doing technical work really, really difficult and slow going.</p><p>NVK: 01:30:58</p><p>Secure elements are evil.
+So let&rsquo;s not have them.
+It&rsquo;s the most absurd shit I&rsquo;ve ever heard in my life.</p><p>Rijndael: 01:31:06</p><p>My favorite comment from that thing was he was like every website should have by default a self-signed certificate.
+But when you go, there&rsquo;s a scary browser warning that&rsquo;s like, careful, you might be talking to the NSA.</p><p>NVK: 01:31:19</p><p>That&rsquo;s right.
+It&rsquo;s genius.
+But we arrived at that point.
+Google changed Chrome.
+You can no longer have self-signed certificates.
+And somehow, Cloudflare is free.
+Just somehow.
+They&rsquo;re like, oh, everybody should encrypt except your encryption keys for your sessions are in the NSA servers now.
+So they just make it easier for everybody.</p><p>James: 01:31:45</p><p>It&rsquo;s a big black pill if you start to really think about this stuff.</p><p>NVK: 01:31:49</p><p>It&rsquo;s the incentives.
+You can make it as nefarious or you can make it incentive based.
+It doesn&rsquo;t matter.
+We arrive at the same place.</p><h2 id=moving-forward-with-activation>Moving forward with activation</h2><p>I feel like if we want this, we&rsquo;re going to have to just lift our hands and start pushing in terms of I&rsquo;m going to be running this I&rsquo;m going to be running the CTV USF client.
+Because that&rsquo;s the lingo that people understand as well.
+I&rsquo;m going to start running and that&rsquo;s it.
+Because until people are now willing to put their reputations on the line, nobody believes this has any chance that that&rsquo;s how it works really.
+It&rsquo;s just masturbation.</p><p>Rijndael: 01:32:31</p><p>There&rsquo;s still a lot of people who still don&rsquo;t understand what Taproot is.
+Taproot was a very heady, abstract change.
+It&rsquo;s going to let us do all these things in the future that are very sophisticated and advanced.
+SegWit was also, a lot of people didn&rsquo;t quite understand SegWit and probably still don&rsquo;t.
+What I&rsquo;m hoping is the three changes that James said, CTV, APO, and VAULT, I think those are things that more people can wrap their heads around.
+And I think that those are things that have more direct applicability to the things that people want to be doing with their Bitcoin today.
+CTV and VAULT helps you make your coins safer today.
+If all that you want to do is use Bitcoin as a store of value.
+Bitcoin is a better store of value if you can keep it safer.
+And then APO helps with Lightning, which we&rsquo;re going to need if you eventually ever want to spend your coins.
+So it&rsquo;s much more concrete about why people would want these things and maybe it&rsquo;ll be less contentious.</p><p>NVK: 01:33:34</p><p>I think the issue here is it feels like an omnibus bill kind of thing.</p><p>Rijndael: 01:33:40</p><p>Stick the pork in?</p><p>NVK: 01:33:42</p><p>Now we have three things we&rsquo;re trying to push and people cannot comprehend already each of them.
+And now you have to comprehend how they interact with each other and Bitcoin and stuff.
+I don&rsquo;t know.
+I feel like we got to just pick essentially probably CTV, which is the most comprehensive here.
+That does the most.
+And just fucking go with that.
+Maybe you attach a few things to the CTV change, but the point is, I want the three personally, but I think it&rsquo;s gonna be very hard to get that through.
+So I think if we just pick one thing and go with that and just deal with it.</p><p>James: 01:34:18</p><p>That&rsquo;s originally the route that I wanted to go.
+And I started to actually prototype what vault wallet code looks like with just CTV.
+And I came to the conclusion that if you&rsquo;re a big company, having CTV would operationally make vaults easier to do, but they were still impractical for your everyday user.
+And that was really the outgrowth of OP_VAULT.</p><p>NVK: 01:34:46</p><p>Let business solve the easiness of it.
+If the choices don&rsquo;t have anything.</p><p>James: 01:34:52</p><p>There&rsquo;s part of me that says yeah, sure.
+Let&rsquo;s just do a CTV fork and exercise the software process.
+But, the more that I talk to people, the more they&rsquo;re like, no, we should really just do it with VAULT.
+And I kind of feel similarly.
+And then APO has just been on the docket for so long.
+It&rsquo;s such a simple change.</p><p>NVK: 01:35:14</p><p>What if we do this differently?
+What if we game the chaos in the chaotic way?
+Maybe this is the way to deal with this.
+What if we essentially have enough people going, fuck it, we&rsquo;re gonna have a UASF flag day thing, okay?
+And in the midst of all that and the fight, somebody goes, you know what, fuck it, I&rsquo;m going to do Speedy Trial.
+And essentially you arrive at what happened last time.
+Because you can&rsquo;t prevent anybody from doing anything.
+That&rsquo;s the beautiful thing of Bitcoin too.
+If the miners want to do Speedy Trial, they can do Speedy Trial.
+As long as their dates line up with our UASF date.
+Let each balkanized camp go the way that they want to go.
+As long as everybody&rsquo;s timeframes all work out, it&rsquo;s fine.
+You arrive at the same place, but through chaos.</p><p>James: 01:36:10</p><p>The tricky part there is that then you have to write a bunch of different client code and, get the specifics right on the activation stuff.
+You don&rsquo;t remember when Garzik came up with his own Bitcoin Core fork and there was an off by one and it would have been catastrophic if they had deployed.</p><p>NVK: 01:36:26</p><p>Yeah, but Garzik caused a lot of catastrophic problems.
+We have better people.</p><p>James: 01:36:31</p><p>Yeah, yeah.
+Maybe not the sharpest knife in the drawer, but that&rsquo;s not to say that it&rsquo;s easy by any means.</p><h2 id=state-of-bitcoin-development>State of Bitcoin development</h2><p>NVK: 01:36:40</p><p>It&rsquo;s not going to be easy.
+I think the way you have to think about this is like battle.
+Like actual war.
+There is no saints in war.
+There is no people that go unscathed.
+Everybody gets fucked a little bit.
+There will be casualties, there will be collateral damage.
+But at the end of the day, you got to move forward into your campaign.
+You just got to accept that you can&rsquo;t please everybody.
+You&rsquo;re going to step on toes.
+People are going to get hurt.
+People are going to quit.
+If you can&rsquo;t handle the heat, get out of the kitchen.</p><p>James: 01:37:27</p><p>Yeah.
+At some point, you&rsquo;re going to have an empty kitchen and nobody&rsquo;s going to want to actually build this thing and secure it from state actors.</p><p>NVK: 01:37:34</p><p>Nah, you can always hire a new line cooks.</p><p>James: 01:37:37</p><p>I say good luck, good luck, have fun because that&rsquo;s just not how software works.
+I&rsquo;m sorry.</p><p>NVK: 01:37:46</p><p>No, it&rsquo;s fair.</p><p>James: 01:37:46</p><p>I get your point.
+I&rsquo;m approaching the point where it&rsquo;s like, yeah, I&rsquo;ll work on this stuff under these conditions for maybe another few years and then I&rsquo;m done.
+Look at the people we&rsquo;ve lost so far and look at how well we&rsquo;re backfilling the intellectual capital.
+It&rsquo;s not going great, guys.</p><p>NVK: 01:38:06</p><p>I don&rsquo;t know, James.
+I&rsquo;m a lot more optimist on that.
+I really am.
+I&rsquo;m a big believer in the economic incentive.
+For each type of very specialized activity, there&rsquo;s always gonna be only a handful of people.
+That is true for anything ever in humanity.
+There&rsquo;s only so many genius people at every single topic.
+And we often create a lot of exceptions and we make it cozy for the people who can do a thing that nobody else can.
+But, there&rsquo;s a lot of fucking great people out there.
+There is a lot of great people out there that will find income.
+I mean look what happened.
+There was no money for developing Bitcoin full-time.
+There&rsquo;s a lot of people also who are rich as fuck that claim to be poor so they don&rsquo;t get killed in Bitcoin.
+There is a lot of noise in how you get your heuristics of the state of Core too.
+But people are complaining that there is no money, but all of a sudden now there&rsquo;s three organizations that have enough money to support enough devs to work on Bitcoin.</p><p>James: 01:39:20</p><p>Totally, totally.
+And there&rsquo;s good money and I can tell you if there wasn&rsquo;t good money in Bitcoin, I probably would not be working on Bitcoin right now.
+I&rsquo;d probably be working on nuclear or &mldr;</p><p>Rijndael: 01:39:33</p><p>Bitcoin can&rsquo;t rely on altruism.
+Bitcoin is PVP.
+The only way that Bitcoin works is if it aligns incentives correctly.
+And if it doesn&rsquo;t, then Bitcoin deserves to die.</p><p>NVK: 01:39:49</p><p>But it does.
+For example look at some of the clients, look at Electrum.
+It goes way back in time.
+Somehow a &rsquo;not for profit&rsquo; project keeps on being maintained.
+Why?
+Because there is enough OG&rsquo;s still using that piece of software and it&rsquo;s in their interest to pay people to keep on maintaining it.
+The people who get paid to to keep on maintaining it don&rsquo;t talk about how much they make, if they work for free or not.
+But there is enough incentive to maintain everything going.
+You can say for example, a place like a Chaincode Labs.
+It&rsquo;s a little bit cozier, it&rsquo;s a little bit more left-leaning kind of organization.
+There is some people who have a lot of Bitcoin who maintain that place.
+And then the incentive is for you to maintain your bags safe.
+That means having devs working for it.</p><p>James: 01:40:42</p><p>I think that&rsquo;s the issue though, is that the people who were involved back in 2012, 2013, that era, you can accumulate a much bigger stack based upon the supply characteristics, the supply curve of Bitcoin.
+And sorry, that&rsquo;s just not the case now.
+I know a lot of people who are&mldr;</p><p>NVK: 01:41:02</p><p>Oh, you still can.
+It&rsquo;s just early.
+So early.
+People said that&mldr;</p><p>James: 01:41:08</p><p>Maybe, maybe not.</p><p>NVK: 01:41:09</p><p>In 2013, seriously, in 2013, 2014, everybody was saying, if you got in Bitcoin in 2010, in 2011 you could have been made a fortune.
+Look at me now, I can only have so many hundred coins.
+I could have thousands.
+That&rsquo;s going to be true on every single stage of the Bitcoin versus dollar price cycle.
+That&rsquo;s just the nature of it.
+Remember, there&rsquo;s only 22 million, 21 million units.</p><p>Rijndael: 01:41:38</p><p>That was a Freudian slip.</p><p>NVK: 01:41:41</p><p>I&rsquo;ve been joking with Pablo on Nostr and I&rsquo;ve been tipping him 22 million every single time, joking that like he got oversupply.
+But anyways, my point is Bitcoin really is binary.
+It either goes to zero or it goes to the moon.
+I mean, people if they don&rsquo;t want to believe that they&rsquo;re probably in the wrong project.</p><p>James: 01:42:02</p><p>I agree with you.
+And I don&rsquo;t think that the to the moon case is guaranteed by any means.</p><p>NVK: 01:42:08</p><p>And now we have full-time money.
+People used to have to sell drugs to be on Bitcoin.
+Now you actually can get a salary.
+That&rsquo;s a huge improvement.
+I&rsquo;m just saying, I feel like we can&rsquo;t fall into this nihilistic, oh it&rsquo;s too hard to work on Bitcoin.
+It sucks and stuff.</p><p>James: 01:42:29</p><p>And that&rsquo;s not what I&rsquo;m saying.
+And I know I bitch a lot.
+And I&rsquo;m in the midst of one of my bitch sessions here.</p><p>Rijndael: 01:42:36</p><p>Nobody&rsquo;s listening.
+There&rsquo;s only three of us here.</p><p>NVK: 01:42:39</p><p>This is the thing, James.
+This is the cool thing about this pod.
+We can be extra, unless they&rsquo;re trying to get us, none of us are going to run for office.
+So we don&rsquo;t have to be worried about people clipping the show.
+I&rsquo;m unelectable.</p><p>Rijndael: 01:42:51</p><p>And once you get past the 20-minute mark, everybody&rsquo;s tuned out anyway.
+So this is just therapy now.</p><p>NVK: 01:42:56</p><p>That&rsquo;s right.
+There&rsquo;s two dudes that keep on going.</p><p>James: 01:43:02</p><p>No, no, no, no.
+So I fully realize I get emotional about this stuff.
+I&rsquo;m not actually maybe as emotional as I sound, but what I&rsquo;m trying to do is raise the alarm that we don&rsquo;t want to burn our human capital, because I do really care about Bitcoin.
+I want Bitcoin to succeed.
+I want it to continue to improve.
+I don&rsquo;t want it to be compromised by the state.
+I also want it to be able to scale to its potential.
+And what I&rsquo;m seeing with my boots on the ground is this slightly worrying situation where the big parts of Bitcoin are not really progressing.
+And the people who are full time working on Core are in this narrower, more technocratic, oh, does the mempool work the right way?
+That&rsquo;s important.
+But maybe we also need to think about how to actually scale Bitcoin, how to secure coins.</p><p>NVK: 01:43:51</p><p>I think it&rsquo;s a little self-selecting too.
+The drug dealers no longer work on Bitcoin as far as I know.
+So it&rsquo;s like the crowd who run servers and things, they want to look at graphs and see how much better it is.
+Once you tweak something, they&rsquo;re not interested as much in can I cross a border, am I going to go to jail, kind of problems.</p><p>James: 01:44:18</p><p>Exactly.</p><p>NVK: 01:44:19</p><p>But then we can also change nothing.</p><p>James: 01:44:21</p><p>That&rsquo;s the problem, is the Core project right now has a very European bureaucratic approach, let&rsquo;s just not fuck up.
+That&rsquo;s the highest priority.
+Let&rsquo;s just absolutely not fuck up, which in a certain way, it should be the attitude, but it&rsquo;s also stifling over time, over a long enough time period if you&rsquo;re not innovating, and Bitcoin still requires innovation in my opinion, then you&rsquo;re going to kill the thing in the cradle.</p><p>Rijndael: 01:44:50</p><p>I would say that another thing that&rsquo;s underneath a lot of this is part of the core value proposition for Bitcoin is that it&rsquo;s money that works no matter what.
+If the government is against you, your money still works.
+If large companies are against you, it still works.
+You just need to get a transaction included and for most of the miners to not try to reorg your block and your money works.
+And I think that if you&rsquo;re doing a risk assessment or a threat analysis of Bitcoin and you&rsquo;re thinking of, what are my dependencies in order to have my money work?
+There is kind of this implicit thing of I&rsquo;m still depending on a relatively small group of developers for my money to work.
+And I think maybe part of the difficulty around activation is that with the activation methods that we&rsquo;ve had so far, there&rsquo;s still this implicit, I need to get a small group of devs to do the right thing.
+I need to get miners to do the right thing.
+That&rsquo;s an external dependency on my money working.
+Maybe the thing that people are trying to articulate is there&rsquo;s some aspirational mode of activation where there is no single party that I can point to and say, this group has to cooperate.
+It&rsquo;s more of this amorphous thing of, if the economics work out, then the soft fork activates.
+And I don&rsquo;t think anybody exactly knows what that is, but I think that&rsquo;s the thing that people are reaching for when they say that they&rsquo;re not happy with what we&rsquo;ve done so far.</p><p>NVK: 01:46:31</p><p>There is something that I think is an issue, too, is that there is a lot of fucking bitching.
+People are not going to like me saying this.
+And I get a lot of trouble for this, NVK is so insensitive and you know, this and that.
+And it&rsquo;s not compatible with a lot of the kids and stuff.
+But stop fucking bitching, Jesus fucking Christ.
+There is money for people that really want it.
+Even before these three organizations, they just got to make compromising work for somebody they maybe don&rsquo;t like.
+Rijndael you&rsquo;re an example.
+You have a source of income.
+James, you have a source of income.
+And I have a source of income.
+We all have our own biases, our own incentive set.
+And that&rsquo;s what Bitcoin is supposed to be.
+I kind of fall a little bit sometimes into, what I like to call them my favorite Bitcoin Luddites camp, which is nobody has a God-given right to have a fucking a donation salary to fucking work full time on Bitcoin Core.
+Bitcoin should just work in industry.
+It was designed that way for industry.
+The people who have most of the economic incentives to do things, to pay somebody to fucking do the things that they want, go pay for a feature.
+Remember when Pierre made the website?
+And you could pay for somebody to do a pull request or pay for somebody to review something.
+That&rsquo;s the way it should work.</p><p>James: 01:48:03</p><p>Sadly, that never actually worked because I had a bounty that I wanted to collect on, but it turned out that I guess it was just people kind of pledging that they might pay you.</p><p>Rijndael: 01:48:14</p><p>And going back to the whole you can run 40 lines of Python to invalidate blocks.
+Something that I think people forget is you can run whatever software you want.
+If you want to run Bitcoin Core, do it.
+If you don&rsquo;t like Bitcoin Core, you can either go to the library and borrow a C++ book and learn how to hack on Bitcoin Core, or you can pay somebody to go do it for you and then you can run that software.
+Or you can run different software altogether if you don&rsquo;t like Bitcoin.
+But you have agency to run whatever software on your computer you want.</p><p>NVK: 01:48:42</p><p>Yes.
+I think it&rsquo;s too easy to snap into this God-given, and I feel this from a lot of devs in this space.
+There is this sort of, oh my God, I&rsquo;m so smart.
+And oh my God, I have this God-given right to get paid full time to do this because nobody else is going to do it.
+Trust me, if there is enough fear of something, there is enough money in Bitcoin that that will find its way.
+Sometimes it needs to be pointed out to somebody that does have the resources to help with something, there&rsquo;s nothing wrong with that.
+We&rsquo;re super lucky that it really comes down to mostly Jack right now.
+Three or four organizations have their largest base from them.
+And he literally makes it so that he has zero strings attached to the to the financial incentives.
+And he does have this thing where he&rsquo;s actually funding the competing entities.
+And ideally these competing entities should actually fucking disagree.
+So OpenSats should fund shit that maybe Spiral doesn&rsquo;t want.
+Spiral is actually part of Block.
+And they don&rsquo;t fund shit that has licenses that don&rsquo;t match things that Block can use.
+And Jack is very aware of that.
+So I think that the beautiful thing of Bitcoin is that it really has spontaneous order vibes to it.
+It does tend to go on that trend and somehow things find their way.
+We have somehow survived with this thing for fucking 12, 13, 14 years.
+I kind of lost count.
+And it just fucking works.
+So people need to embrace the chaos a little bit more stop being fucking pussies.</p><p>James: 01:50:26</p><p>Yeah.
+But on the other hand, if you&rsquo;re coming at that from the non-technical outsider perspective of a user of Bitcoin, you can&rsquo;t just say, oh yeah, the magic pixie dust will make technical things happen and it&rsquo;ll all be fine.</p><p>NVK: 01:50:40</p><p>No, no, it&rsquo;s money.
+It&rsquo;s literal money.
+I&rsquo;m advocating for literal money and people hiring a dev to go fucking make them a feature or go reveal something they have a concern with.
+And listen, big industry does.
+There is enough entities out there with enough capital, with enough Bitcoin that they have paid people to go review or request to go review Bitcoin, to go do diligence things.</p><p>Rijndael: 01:51:06</p><p>Well, but also if you&rsquo;re an individual user and you don&rsquo;t have the time or the inclination or skills or desire to go work on that, you can also donate and pay developers.
+I have zero interest in going and working on Bitcoin Core.
+It&rsquo;s just not a thing I want to do.
+For all of the reasons.
+But it&rsquo;s important to me that smart people whose judgment I trust do go and do it.
+And so when those people say, hey, I&rsquo;m raising money to support my work on this.
+I go give them money because it&rsquo;s an important thing for me.</p><p>NVK: 01:51:42</p><p>People don&rsquo;t need a pat on the back.
+They need &mldr;</p><p>Rijndael: 01:51:45</p><p>I also give people pats on the back.</p><p>NVK: 01:51:48</p><p>You can give them money and then give them a hug.
+I&rsquo;m a hugger.
+I&rsquo;m a big hugger.</p><p>Rijndael: 01:51:53</p><p>Hey, we&rsquo;re two hours into talking about covenants.</p><p>James: 01:51:58</p><p>Yeah, this wound up being a little bit more meandering than I thought, but it&rsquo;s a great discussion because I think this stuff is worth talking about.
+Selfishly for me, I&rsquo;m cooped up in my house all day.
+So it is nice to vent about this a little bit.</p><p>NVK: 01:52:11</p><p>That&rsquo;s the conversation.
+We&rsquo;re having the conversation that three reasonable people talking about the next thing that&rsquo;s going to happen in Bitcoin.
+They&rsquo;re going to discuss the thing.
+Why the thing?
+How does the thing work?
+How do we activate it?
+And then they end up in all this discussion.
+There is no way to avoid this.</p><p>Rijndael: 01:52:30</p><p>It&rsquo;s funny.
+I feel like this pod has kind of turned into a microcosm of the whole discussion.
+Because I think what happened with CTV is most people who looked at CTV technically said, this is really simple, this seems really reasonable.
+And then where most of the controversy was, was activation.
+I think CTV itself is actually not that controversial of a change.
+I think it&rsquo;s all about how do we turn it on?</p><p>NVK: 01:52:54</p><p>Yeah, it&rsquo;s always going to be the conversation in Bitcoin.</p><p>Rijndael: 01:52:57</p><p>Yeah, never ask a man his salary, a woman her weight, or a Bitcoiner how to activate a soft fork.</p><p>NVK: 01:53:06</p><p>I guess since we&rsquo;re approaching two hours here, is there anything else we missed that we should address or do we kill at the usual?
+You want to kill a Bitcoin discussion, talk about activation or funding Core devs.</p><p>James: 01:53:21</p><p>I wish we could do that 90s late night talk show thing where we have people call in and field questions.
+But I guess that&rsquo;s what Twitter spaces is.</p><p>NVK: 01:53:30</p><p>We should do it.
+I always wanted to have a call in live show, ala Frazier.</p><p>James: 01:53:35</p><p>How cool would that be?</p><h2 id=next-steps>Next steps</h2><p>NVK: 01:54:04</p><p>I feel like maybe we&rsquo;ve murdered the conversation, which is great.
+We all like to talk to each other.
+We&rsquo;re eager to just keep on talking.
+But I think the topic itself, it&rsquo;s funny, because the arc of this topic is always the same and it ends the same way.
+So I guess in the spirit of being productive.
+What&rsquo;s next?
+What do we do next?
+Do I just go run James&rsquo; CTV client now?</p><p>James: 01:54:41</p><p>No, no, no, I wouldn&rsquo;t tell anybody to run the code that I&rsquo;ve come up with.
+I think I&rsquo;m gonna post it.
+Right now I&rsquo;m debating whether to preface it with some kind of a mailing list post explaining my rationale.
+Or just put up the code and say, this is one possible avenue that we could go.
+And I encourage everybody to look at the code and try and find problems or propose a different approach.
+But I do think it&rsquo;s important to start presenting tangible options for people and say, this is one way we could go.
+So let&rsquo;s start thinking about the particular direction, because we shouldn&rsquo;t just spin our wheels for another four years.</p><p>Rijndael: 01:55:17</p><p>So CTV and APO are both active on the Inquisition signet today.
+What&rsquo;s in your branch that&rsquo;s different from what&rsquo;s in Inquisition?
+Is it basically Inquisition but for mainnet, or is there more?</p><p>James: 01:55:37</p><p>It&rsquo;s Inquisition, but the problem with Inquisition is that AJ, and I understand why he did this, but when he forked Inquisition, he added a bunch of utilities for adding deployments.
+And that creates this really frustrating situation where you basically have to have separate patches for Inquisition versus just regular Core.
+They&rsquo;re not compatible really.
+They have to be rebased separately and all this stuff.</p><p>Rijndael: 01:56:03</p><p>Okay, so this is like porting all of those things into Core and doing all the rebases and all that.</p><p>James: 01:56:08</p><p>Yeah, exactly.
+The deployment method is a little bit different in Inquisition, so really this is just me re-bundling everything to have a Core compatible deployment.</p><p>NVK: 01:56:16</p><p>So then what&rsquo;s next?
+Do we need a volunteer to go and rebase for Inquisition?</p><p>James: 01:56:30</p><p>I don&rsquo;t know.
+I think the jury&rsquo;s out for me on the usefulness of signet versus just like regtest.
+I know that when I&rsquo;m trying stuff out, it came up in the last week with an OP_VAULT demo, I encourage people to check out as well because that&rsquo;s a really fully fleshed out usage of what a wallet would look like using OP_VAULT, what the workflow looks like, how to compose all the scripts what the different pieces of data are.
+And for something like that, the code that I wrote is signet compatible, but for my own sake, just testing, I find regtest a lot easier.
+I can control when the blocks are mined and all that.</p><p>NVK: 01:57:10</p><p>James, thinking like a politician for a second.
+What would be the next thing that will cause the next shit disturbance?
+So that is useful.
+Not, not bad thing.
+Destructive shit, disturbance, they&rsquo;ll get the next wave of opinions and participation and engagement.</p><p>James: 01:57:28</p><p>I guess if I throw up a PR on the Core repo because all this stuff has been on Inquisition for a while and it hasn&rsquo;t really spurred anything.</p><p>NVK: 01:57:36</p><p>For the people that can&rsquo;t see, Rijndael&rsquo;s eyes just went fucking full laser.
+He blinded us.
+That was your unconscious mind really gave your position away on that one.
+It was just absolutely on.
+You got a terrible poker face.
+Having a little bit of skin in the game, a PR or something, really unnerves a lot of people who just think this is just theoretical, because I think right now everybody is on this on this mental mold, I&rsquo;m just going to ignore it.</p><p>Rijndael: 01:58:10</p><p>It&rsquo;s not real yet.</p><p>NVK: 01:58:11</p><p>And people are not going to put their weight or their thinking or their opinion on something that is positive and negative.
+A lot of people are just going to stay out of it until maybe it&rsquo;s a PR.</p><p>James: 01:58:23</p><p>Yeah, yeah.
+So I&rsquo;ll put the PR up and then I actually should coincide pretty well with our baby coming because I can drop the PR.
+Basically walk out.</p><p>NVK: 01:58:33</p><p>Yeah, totally.</p><p>James: 01:58:34</p><p>And not sleep for a month while I&rsquo;m taking care of him.</p><p>NVK: 01:58:36</p><p>You&rsquo;re screaming fire in a movie theater.
+That&rsquo;s what PR on Core is.</p><p>Rijndael: 01:58:40</p><p>And then when you come back, you&rsquo;ll be sleep deprived.
+You&rsquo;ll have a complete shift in your&mldr;</p><p>NVK: 01:58:47</p><p>Zero patience with bullshits.
+Babies, dude newborns, all this polite veneer of James here is gonna just fucking go.
+Newborns, they really focus you.</p><p>James: 01:59:01</p><p>Well, little there was to begin with.</p><p>Rijndael: 01:59:02</p><p>A hundred percent.
+Somebody&rsquo;s going to go on that PR and say, won&rsquo;t this allow government whitelisting?
+And you&rsquo;ll just delete that shit and be like, I don&rsquo;t have time for you.
+My baby&rsquo;s screaming at me.</p><p>NVK: 01:59:12</p><p>That&rsquo;s right.</p><p>Rijndael: 01:59:12</p><p>Come back when you know how to.</p><p>NVK: 01:59:13</p><p>Post pictures of the baby&rsquo;s poo on the PR.</p><p>James: 01:59:16</p><p>Oh, yeah.
+If you thought my mood was good now, just wait for another two months.</p><p>Rijndael: 01:59:22</p><p>It&rsquo;s going to be great.</p><p>NVK: 01:59:23</p><p>That&rsquo;s going to be very useful because I think that the conversation will shift into, this is the thing that we want to actually activate.</p><p>James: 01:59:32</p><p>And if there are people out there who want just CTV, I think that&rsquo;ll bring them out of the woodwork and say, no, we should just do a soft fork with CTV, or there&rsquo;s a group of people I&rsquo;ve been talking to who just want VAULT, because you can do that.
+It won&rsquo;t be as good as with CTV, but you could just do that.</p><p>NVK: 01:59:48</p><p>But it creates alliances.</p><p>James: 01:59:50</p><p>Yeah.</p><p>NVK: 01:59:50</p><p>That&rsquo;s the other good thing, too.
+It&rsquo;s like, there&rsquo;s something for me.
+There is something for you.
+It&rsquo;s fucking politics, man.</p><p>James: 01:59:55</p><p>Right.</p><p>NVK: 01:59:56</p><p>You can&rsquo;t get humans out of it.</p><h2 id=bitcoin-politics-closing-summary>Bitcoin politics closing summary</h2><p>James: 01:59:57</p><p>It is.
+That&rsquo;s what&rsquo;s really ironic to me is Bitcoin is the most deeply political system that I&rsquo;ve ever worked on, compared to all the private companies.
+Now it&rsquo;s a much bigger system, but it&rsquo;s surprisingly political.</p><p>NVK: 02:00:11</p><p>But before politicians became parasites in this fully-gamed systems, politics is nothing more than trying to sell the thing that you want that may affect other people.</p><p>James: 02:00:21</p><p>You&rsquo;re right.</p><p>NVK: 02:00:22</p><p>But there&rsquo;s nothing wrong with it.
+It&rsquo;s just, you sell where you want to have dinner with your wife.
+You have the political discussion about it.</p><p>Rijndael: 02:00:31</p><p>Ultimately, Bitcoin is a completely voluntary tool for economic coordination.
+If you don&rsquo;t want to play the rules, there&rsquo;s 5,000 other clones that have slightly different rules that you can choose.
+And so it&rsquo;s going to be political because money is inherently a social network.
+It becomes more valuable the more people accept it and will pay you with it.
+And so you want more people to play by your rules and you want them to be the rules that you want and not the rules that you don&rsquo;t want.</p><p>NVK: 02:01:05</p><p>I love that, the people try to say Bitcoin is a political whatever, but Bitcoin is essentially enforced libertarianism and people can&rsquo;t accept that is hilarious.
+But in the absence of the central planning and central controlling, is political.
+You can&rsquo;t save the children with Bitcoin because nobody&rsquo;s going to print your money.
+You&rsquo;re going to have to use yours.
+It&rsquo;s literally enforcing a certain political view.</p><p>James: 02:01:35</p><p>Yeah, that men shouldn&rsquo;t have control over the supply of money.</p><h2 id=closing-thoughts>Closing thoughts</h2><p>NVK: 02:01:38</p><p>I think this was a fantastic discussion.
+I really did.
+We explored this like people who participate in the network would.
+I really think that people are going to get something out of this.
+I think it will help people go through the train of thought, agree/disagree with the stuff that we have to say.
+I feel like it was a good arc.
+We really covered all the things that need to be covered.
+And hopefully people come out with an opinion that&rsquo;s a little bit more informed.
+At the end of this, as opposed to just wishy-washy, which is, where the discussion about covenants was.
+Maybe we get some good feedback telling us hey, can you go on this, discuss that or something that we missed or whatever.
+But maybe we do a refresher on this discussion after the PR.
+Because the PR is going to be very interesting in the PR comments.
+And so with that, any final thoughts?
+Rijndael?</p><p>Rijndael: 02:02:50</p><p>I don&rsquo;t think so.
+I hope that whether people like these proposals or don&rsquo;t, that there&rsquo;s higher quality dissent and discussion coming out of it.
+I think that what James is going to go do will hopefully be a forcing function for people to get a lot more concrete in their either alternatives or arguments or whatever.
+A lot of this shit&rsquo;s been way too hand-wavy for way too long.
+And so hopefully we got some real discussion.
+I&rsquo;m stoked, can&rsquo;t fucking wait.</p><p>NVK: 02:03:29</p><p>Yeah, yeah.
+I think anybody who works on the ground and doesn&rsquo;t have the freedom to go fully galaxy brain on this either, feel the same way.
+I work with self custody.
+I understand the shit.
+I understand I need this shit.
+It&rsquo;s a very different vibe than even Taproot.
+And let&rsquo;s not even get into Schnorr, just no longer Bitcoin.
+It&rsquo;s a whole other conversation.
+James, any final thoughts?</p><p>James: 02:04:01</p><p>Rijndael nailed it.
+I just wanna say, I understand why we&rsquo;re here and not some place further down the path.
+Because this has been my full time job for the past four years.
+And even just staying on top of the conversation is a ton of time, requires a ton of technical context.
+So I get why we are where we are, but I do think that it&rsquo;s time to start talking more in terms of concretes.
+What are we planning on doing?
+Evaluating specific sets of codes.
+I&rsquo;m definitely looking forward to how this conversation progresses.
+And I have opinions, but I don&rsquo;t have a dog in the fight really.
+I just wanna see things move forward in a concrete way because ultimately, I want to see Bitcoin realize its potential.
+I think now more than ever, having a viable non-state money is absolutely critical.
+And we have to make sure that this thing works.
+I always love talking to you two guys and NVK, I love this venue for talking about stuff because we can shout at each other.
+It&rsquo;s always a great conversation, but we always know that the other guys have the best intent.</p><p>NVK: 02:05:24</p><p>This is a safe space for people that don&rsquo;t like safe spaces.
+I feel like there&rsquo;s just too much noise.
+People whose intent is to disagree as opposed to just have three dudes having a beer kind of conversation and sorting shit out.
+We don&rsquo;t actually have to agree.
+People seem to be missing the point.
+The idea is, where do we find a little bit of compromise to keep on moving.
+And I&rsquo;m extremely grateful that people like you guys come.
+And you guys are people who build incredible things and do incredible work and are wasting two hours of your time just talking to me and maybe two people left listening this long.
+But hopefully somebody gets some value out of this.
+And then when somebody actually bitches on Twitter about something and say you put a link, go listen to us talking about it in depth it&rsquo;s very helpful.
+It&rsquo;s the shut up link.
+I am reaching my point, I think probably because of Nostr, because Nostr is new, so the bitching is young.</p><p>Rijndael: 02:06:38</p><p>It&rsquo;s fresh bitching.</p><p>NVK: 02:06:39</p><p>And I&rsquo;m no longer young.
+So my patience with bitching and people who have opinions and don&rsquo;t build anything is starting to diminish exponentially.
+So I need a place, a safe place.</p><p>Rijndael: 02:06:57</p><p>One of the things that&rsquo;s a little bit contradictory about a lot of social media Bitcoin discussion is I think that this is a community that values sovereignty and self-determination more than most other communities.
+But then simultaneously, a lot of people in this community forget that they have agency.
+If you don&rsquo;t like the way that things are going, pick up a text editor and a C++ textbook and be the change.
+Or pay somebody else to be the change.</p><p>NVK: 02:07:29</p><p>Learn to code.</p><p>Rijndael: 02:07:32</p><p>100%.
+And there&rsquo;s nothing wrong with that.
+I work on a whole bunch of stuff right now that I thought was missing in the world, so I&rsquo;m going to go build it.
+And Bitcoin&rsquo;s open source, open participation, permissionless system.
+You choose your level of involvement.</p><p>NVK: 02:07:50</p><p>There is this trend I noticed a while back.
+I&rsquo;d say like three years ago or so.
+It&rsquo;s what I call Bitcoin Marxism.
+It&rsquo;s like there is a lot of people who don&rsquo;t understand what the fuck is going on.
+They have no reasonable skin in the game.
+They&rsquo;re not building anything.
+It&rsquo;s just literal fucking noise.
+And that&rsquo;s not useful.
+It&rsquo;s not useful of their time.
+It&rsquo;s not useful for us.
+You sound like a credit card on Amazon.
+You&rsquo;re just causing more noise.
+You&rsquo;re just stifling the conversation.
+But we&rsquo;re people we don&rsquo;t talk out loud, but we know everybody who builds stuff and talks, it&rsquo;s very obvious to everybody else that you are just noise.
+So don&rsquo;t be the noise.
+Anyways, with that, I think this one is cooked.
+It&rsquo;s done.
+This was awesome.</p><div class=row></div></div></div></div><script src=https://btctranscripts.com/lib/jquery.min.js></script><script src=https://btctranscripts.com/lib/popper.min.js></script><script src=https://btctranscripts.com/js/bootstrap.min.js></script><script type=text/javascript src=/plugins/lunr.min.js></script><script type=text/javascript src=/plugins/auto-complete.js></script><link href=/plugins/auto-complete.css rel=stylesheet><script type=text/javascript>var baseurl="https://btctranscripts.com/"</script><script type=text/javascript src=/plugins/search.js></script><script type=text/javascript src=https://btctranscripts.com/js/custom.js></script><script type=text/javascript src=/plugins/clipboard.js></script><script>new ClipboardJS(".btn")</script></body></html>
