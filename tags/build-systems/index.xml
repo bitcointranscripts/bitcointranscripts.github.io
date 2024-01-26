@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>build systems on ₿itcoin Transcripts</title><link>https://btctranscripts.com/tags/build-systems/</link><description>Recent content in build systems on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 21 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://btctranscripts.com/tags/build-systems/index.xml" rel="self" type="application/rss+xml"/><item><title>CMake Update</title><link>https://btctranscripts.com/bitcoin-core-dev-tech/2023-09/cmake/</link><pubDate>Thu, 21 Sep 2023 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-core-dev-tech/2023-09/cmake/</guid><description>Update Hebasto has a branch he has been PRing into his own repo. Opened a huge CMake PR for Bitcoin core.
-Introducing it chunk by chunk on his own repo
-QT and GUIX is after that
-Next steps How to get this into Core?
-We don’t have something clean. Still have something wonky and how and what to do with autotools.
-Ideally introduce CMake for a full cycle. It might still be a little too rough to ship on day 1 of the v27 cycle.</description></item></channel></rss>
