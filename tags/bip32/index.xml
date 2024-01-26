@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>bip32 on ₿itcoin Transcripts</title><link>https://btctranscripts.com/tags/bip32/</link><description>Recent content in bip32 on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 17 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://btctranscripts.com/tags/bip32/index.xml" rel="self" type="application/rss+xml"/><item><title>HD Wallets, Mnemonic codes and SeedQR</title><link>https://btctranscripts.com/bitcoin-magazine/bitcoin-explained/hd-wallets-mnemonic-codes-and-seedqr/</link><pubDate>Sat, 17 Sep 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-magazine/bitcoin-explained/hd-wallets-mnemonic-codes-and-seedqr/</guid><description>Aaron van Wirdum: 00:00:19
+Live from Utrecht, this is Bitcoin&amp;hellip;
+Sjors Provoost: 00:00:21
+Explained!
+(Ad removed)
+Aaron van Wirdum: 00:01:41
+All right, let&amp;rsquo;s move on. Sjors, today, you&amp;rsquo;ve got a new hobby.
+Sjors Provoost: 00:01:46
+I have a new hobby.
+Aaron van Wirdum: 00:01:47
+What am I looking at here?
+Sjors Provoost: 00:01:48
+You&amp;rsquo;re looking at an anvil.
+Aaron van Wirdum: 00:01:50
+You&amp;rsquo;ve got an actual miniature anvil on your desk right here.</description></item><item><title>Why is seed splitting a bad idea?</title><link>https://btctranscripts.com/andreas-antonopoulos/2020-04-08-andreas-antonopoulos-seed-splitting/</link><pubDate>Wed, 08 Apr 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/andreas-antonopoulos/2020-04-08-andreas-antonopoulos-seed-splitting/</guid><description>This is something that is being discussed all the time especially on newbie forums. It really needs to be careful very carefully. A friend had the idea to achieve 2 out of 3 protection from my wallet seed by storing the seed in the following way:
+Location 1: seed words 1-8 and 9-16 Location 2: seed words 1-8 and 17-24 Location 3: seed words 9-16 and 17-24
+It sounds a lot like Shamir’s Secret Sharing scheme but easier.</description></item><item><title>Hardware Wallets in Bitcoin Core</title><link>https://btctranscripts.com/london-bitcoin-devs/2020-02-05-andrew-chow-hardware-wallets/</link><pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/london-bitcoin-devs/2020-02-05-andrew-chow-hardware-wallets/</guid><description>Slides: https://www.dropbox.com/s/k02o32d0pagac4r/Andrew%20Chow%20slides.pdf
+BIP174 (PSBT): https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki
+PSBT Howto for Bitcoin Core: https://github.com/bitcoin/bitcoin/blob/master/doc/psbt.md
+Introduction Hey everyone. As you may have guessed I’m Andrew Chow. I’m Engineer at Blockstream and I also work on Bitcoin Core a lot, mostly in the wallet. I am going to be talking about hardware wallets and a bit history with them in Core and also how to integrate them in Core and how we are integrating them into Core.</description></item><item><title>Wallet Architecture in Bitcoin Core</title><link>https://btctranscripts.com/edgedevplusplus/2019/wallet-architecture/</link><pubDate>Mon, 09 Sep 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/edgedevplusplus/2019/wallet-architecture/</guid><description>https://twitter.com/kanzure/status/1171018684816605185
+Introduction Thanks Bryan for talking about HD wallets. I am going to be talking about wallet architecture in Bitcoin Core. Alright. Who am I? I work on Bitcoin Core. I&amp;rsquo;ve been writing code on Bitcoin Core for about 3 years. Lately I have been working on the wallet. I work for Chaincode Labs which is why I get to work on Bitcoin Core. We are a small research lab in New York.</description></item><item><title>Hierarchical Deterministic Wallets</title><link>https://btctranscripts.com/edgedevplusplus/2018/hierarchical-deterministic-wallets/</link><pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/edgedevplusplus/2018/hierarchical-deterministic-wallets/</guid><description>https://twitter.com/kanzure/status/1047714436889235456
+https://teachbitcoin.io/presentations/wallets.html
+Introduction My name is James Chiang. Quick introduction about myself. My contributions to bitcoin have been on the project libbitcoin where I do documentation. I&amp;rsquo;ve been working through the APIs and libraries. I think it&amp;rsquo;s a great toolkit. Eric Voskuil is speaking later today and he also works on libbitcoin. I also volunteered to talk about hierarchical deterministic wallets.
+When we talk about bitcoin wallets, you always have some kind of secret or entropy you want to keep safe.</description></item></channel></rss>

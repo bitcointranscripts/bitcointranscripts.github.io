@@ -2,4 +2,4 @@
 Q: Address labeling, why not create two silent payment addresses?
 A: It doubles scanning costs.
 Limited to taproot UTXOs (currently about 3% of transactions) but when it increases we should find ways to optimize scanning, even though it currently does not seem to be an issue.
-Q: Why no P2PK</description></item></channel></rss>
+Q: Why no P2PK</description></item><item><title>Silent Payments and Alternatives</title><link>https://btctranscripts.com/tabconf/2022/2022-10-15-silent-payments/</link><pubDate>Sat, 15 Oct 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/tabconf/2022/2022-10-15-silent-payments/</guid><description>Introduction I will talk about silent payments but also in general the design space around what kind of constructs you can have to pay people in a non-interactive way. In the bitcoin world, there are a couple common ways of paying someone. Making a payment is such a basic thing. &amp;hellip; The alternative we have is that you can generate a single address and put it in your twitter profile and everyone can pay you, but that&amp;rsquo;s not private.</description></item></channel></rss>

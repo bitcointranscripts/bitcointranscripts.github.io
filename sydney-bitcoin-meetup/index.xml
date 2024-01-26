@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sydney Bitcoin Meetup on ₿itcoin Transcripts</title><link>https://btctranscripts.com/sydney-bitcoin-meetup/</link><description>Recent content in Sydney Bitcoin Meetup on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 29 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://btctranscripts.com/sydney-bitcoin-meetup/index.xml" rel="self" type="application/rss+xml"/><item><title>Sydney Socratic Seminar</title><link>https://btctranscripts.com/sydney-bitcoin-meetup/2022-03-29-socratic-seminar/</link><pubDate>Tue, 29 Mar 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/sydney-bitcoin-meetup/2022-03-29-socratic-seminar/</guid><description>Name: Socratic Seminar w/ Jesse Posner
-Topic: FROST
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sydney Bitcoin Meetup on ₿itcoin Transcripts</title><link>https://btctranscripts.com/sydney-bitcoin-meetup/</link><description>Recent content in Sydney Bitcoin Meetup on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 29 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://btctranscripts.com/sydney-bitcoin-meetup/index.xml" rel="self" type="application/rss+xml"/><item><title>Sydney Socratic Seminar</title><link>https://btctranscripts.com/sydney-bitcoin-meetup/2022-03-29-socratic-seminar/</link><pubDate>Tue, 29 Mar 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/sydney-bitcoin-meetup/2022-03-29-socratic-seminar/</guid><description>Topic: FROST
 Location: Bitcoin Sydney (online)
 FROST paper: https://eprint.iacr.org/2020/852.pdf
 secp256k1-zkp PR: https://github.com/ElementsProject/secp256k1-zkp/pull/138
@@ -21,17 +20,17 @@ Location: Bitcoin Sydney (online)
 Video: No video posted online
 The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
 Agenda: https://github.com/bitcoin-sydney/socratic/blob/master/README.md#2021-07
-First IRC workshop on L2 onchain support: https://lists.</description></item><item><title>Sydney Socratic Seminar</title><link>https://btctranscripts.com/sydney-bitcoin-meetup/2021-06-01-socratic-seminar/</link><pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/sydney-bitcoin-meetup/2021-06-01-socratic-seminar/</guid><description>Name: Socratic Seminar
-Topic: Agenda in Google Doc below
-Location: Bitcoin Sydney (online)
+First IRC workshop on L2 onchain support: https://lists.</description></item><item><title>Sydney Socratic Seminar</title><link>https://btctranscripts.com/sydney-bitcoin-meetup/2021-06-01-socratic-seminar/</link><pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/sydney-bitcoin-meetup/2021-06-01-socratic-seminar/</guid><description>Topic: Agenda in Google Doc below
 Video: No video posted online
 Google Doc of the resources discussed: https://docs.google.com/document/d/1E9mzB7fmzPxZ74WZg0PsJfLwjpVZ7OClmRdGQQFlzoY/
-The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.</description></item><item><title>Sydney Socratic Seminar</title><link>https://btctranscripts.com/sydney-bitcoin-meetup/2021-02-23-socratic-seminar/</link><pubDate>Tue, 23 Feb 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/sydney-bitcoin-meetup/2021-02-23-socratic-seminar/</guid><description>Name: Socratic Seminar
-Topic: Agenda in Google Doc below
-Location: Bitcoin Sydney (online)
+The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
+Bitcoin Problems (Lloyd Fournier) https://bitcoin-problems.github.io/
+This is Bitcoin Problems, it is a Jekyll website I put on GitHub.</description></item><item><title>Sydney Socratic Seminar</title><link>https://btctranscripts.com/sydney-bitcoin-meetup/2021-02-23-socratic-seminar/</link><pubDate>Tue, 23 Feb 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/sydney-bitcoin-meetup/2021-02-23-socratic-seminar/</guid><description>Topic: Agenda in Google Doc below
 Video: No video posted online
 Google Doc of the resources discussed: https://docs.google.com/document/d/1VAP4LNjHHVLy9RJwpQ8LqXEUw79z5TTZxr9du_Z0-9A/
-The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.</description></item><item><title>Socratic Seminar</title><link>https://btctranscripts.com/sydney-bitcoin-meetup/2020-08-25-socratic-seminar/</link><pubDate>Tue, 25 Aug 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/sydney-bitcoin-meetup/2020-08-25-socratic-seminar/</guid><description>Name: Socratic Seminar
+The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
+PoDLEs revisited (Lloyd Fournier) https://lists.linuxfoundation.org/pipermail/lightning-dev/2021-January/002929.html
+We’ll start with me talking about my research into UTXO probing attacks on Lightning in the dual funding proposal.</description></item><item><title>Socratic Seminar</title><link>https://btctranscripts.com/sydney-bitcoin-meetup/2020-08-25-socratic-seminar/</link><pubDate>Tue, 25 Aug 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/sydney-bitcoin-meetup/2020-08-25-socratic-seminar/</guid><description>Name: Socratic Seminar
 Topic: Agenda in Google Doc below
 Location: Bitcoin Sydney (online)
 Video: No video posted online
@@ -49,9 +48,9 @@ Location: Bitcoin Sydney (online)
 Video: No video posted online
 Last month’s Sydney Socratic: https://diyhpl.us/wiki/transcripts/sydney-bitcoin-meetup/2020-05-19-socratic-seminar/
 Google Doc of the resources discussed: https://docs.google.com/document/d/1TKVOScS0Ms52Vwb33n4cwCzQIkY1kjBj9UioKkkR9Xo/
-The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.</description></item><item><title>Socratic Seminar</title><link>https://btctranscripts.com/sydney-bitcoin-meetup/2020-05-19-socratic-seminar/</link><pubDate>Tue, 19 May 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/sydney-bitcoin-meetup/2020-05-19-socratic-seminar/</guid><description>Name: Socratic Seminar
-Topic: Agenda in Google Doc below
+The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.</description></item><item><title>Socratic Seminar</title><link>https://btctranscripts.com/sydney-bitcoin-meetup/2020-05-19-socratic-seminar/</link><pubDate>Tue, 19 May 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/sydney-bitcoin-meetup/2020-05-19-socratic-seminar/</guid><description>Topic: Agenda in Google Doc below
 Location: Bitcoin Sydney (online)
 Video: No video posted online
 Google Doc of the resources discussed: https://docs.google.com/document/d/1hCTlQdt_dK6HerKNt0kl6X8HAeRh16VSAaEtrqcBvlw/
-The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.</description></item></channel></rss>
+The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
+0xB10C blog post on mempool observations https://b10c.</description></item></channel></rss>
