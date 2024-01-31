@@ -1,21 +1,46 @@
 {{ define "main" }}
 
-<h1>{{ .Title | humanize | title }}</h1>
-
-<ul>
+<div class="tag-header">
+{{ if .Params.optech_url }}
+    <h1>{{ .Title }}</h1>
+{{ else }}
+    <h1>{{ .Title | humanize | title }}</h1>
+{{ end }}
+{{ with .Params.aliases }}
+<p>
+    <em>
+        Also covering 
+        {{ range $i, $e := . -}}
+            {{- if $i -}}, {{ end -}}
+            {{ $e }}
+        {{- end -}}
+    </em>
+</p>
+{{ end }}
+{{ if .Params.excerpt }}
+    <div class="excerpt">
+        {{ .Params.excerpt | markdownify }}
+        {{ with .Params.optech_url }}
+            <span class="source-info"><a href="{{ . }}">Read More</a></span>
+        {{ end }}
+    </div>
+{{ end }}
+</div>
+{{ if gt (len .Data.Pages) 0 }}
+<ul class="taxonomy-list">
     {{ range .Data.Pages }}
     <div class="h6 child-links py-1">
         <a href="{{.RelPermalink}}" class="list-group-item list-group-item-action flex-column align-items-start">
-            <div class="d-flex justify-content-between">
+            <div class="d-flex flex-wrap-reverse justify-content-between">
                 <h5 class="mb-1">{{ .Title }} </h5>
-                <small class="pl-1 text-muted font-italic align-self-start" style="white-space: nowrap;">{{ .Params.date.Format "Jan 02, 2006" }}</small>
+                <small class="text-muted font-italic ml-auto" style="white-space: nowrap;">{{ .Params.date.Format "Jan 02, 2006" }}</small>
             </div>
             {{ with .Params.speakers }}
 			    <p class="mb-1 text-muted">{{ delimit . ", " }}</p>
 			{{ end }}
-            <div class="d-flex justify-content-between">
+            <div class="d-flex flex-wrap justify-content-between">
                 {{ template "tags" . }}
-                <small class="text-muted font-italic align-self-end" style="white-space: nowrap;">
+                <small class="text-muted font-italic align-self-end ml-auto" style="padding-top: 7px;">
                     {{ trim .File.Dir "/" }}
                 </small>
             </div>
@@ -23,6 +48,9 @@
     </div>
     {{ end }}
 </ul>
+{{ else }}
+  <p style="padding: 20px; text-align: center;">No transcripts available for this tag yet.</p>
+{{ end }}
 
     {{ if .IsTranslated }}
         <h4>{{ i18n "translations" }}</h4>
