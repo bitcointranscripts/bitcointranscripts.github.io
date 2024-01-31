@@ -1,0 +1,4 @@
+---
+title: "Mining"
+categories: ["Mining"]
+---

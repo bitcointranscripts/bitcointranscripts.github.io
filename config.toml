@@ -20,6 +20,10 @@ DefaultContentLanguage = "en"
     source = "prebuild/public/tags"
     target = "content/tags"
 
+  [[module.mounts]]
+    source = "tags"
+    target = "content/tags"
+
 [languages]
   [languages.en]
     title = "₿itcoin Transcripts"
