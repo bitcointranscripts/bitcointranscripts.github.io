@@ -21,7 +21,7 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo --minify
+        run: hugo -s prebuild && hugo --minify
         env:
           HUGO_UMAMI_SOURCE: ${{ secrets.HUGO_UMAMI_SOURCE }}
           HUGO_UMAMI_WEBSITE_ID: "${{ secrets.HUGO_UMAMI_WEBSITE_ID }}"

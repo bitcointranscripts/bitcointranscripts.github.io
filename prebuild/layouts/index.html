@@ -1,0 +1,9 @@
+{{ with resources.GetRemote "https://www.kouloumos.com/topics.json" }}
+  {{ $topics := unmarshal .Content }}
+  {{ range $topics }}
+    {{/* 1. */}} {{ $string := jsonify . }}
+    {{/* 2. */}} {{ $filename := printf "tags/%s/_index.md" (urlize .slug) }} 
+    {{/* 3. */}} {{ $resource := resources.FromString $filename $string }} 
+    {{/* 4. */}} {{ $file := $resource.RelPermalink }} 
+  {{ end }}
+{{ end }}

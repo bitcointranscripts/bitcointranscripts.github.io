@@ -11,6 +11,15 @@ DefaultContentLanguage = "en"
   tag = 'tags'
   speaker = 'speakers'
 
+[module]
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+
+  [[module.mounts]]
+    source = "prebuild/public/tags"
+    target = "content/tags"
+
 [languages]
   [languages.en]
     title = "₿itcoin Transcripts"
