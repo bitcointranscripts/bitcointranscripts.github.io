@@ -22,7 +22,7 @@
                     {{- partial "menu.html" . -}}
                 </div>
 
-                {{- if and (ne .Site.Params.toc false) (ne .Params.toc false) (ne .IsHome true) }}
+                {{- if and (ne .Site.Params.toc false) (ne .Params.toc false) (ne .IsHome true) (ne .Kind "taxonomy" true) (ne .Kind "term" true) }}
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky">
                     {{- partial "tableofcontents.html" . -}}
                 </div>
