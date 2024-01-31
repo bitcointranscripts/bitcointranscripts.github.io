@@ -1,0 +1,74 @@
+{{ define "main" }}
+{{ $uniqueCategories := slice }}
+{{ $tags := .Data.Pages }}
+{{ $termsWithoutCategories := slice }}
+
+{{ range $tags }}
+    {{ $categories := .Params.categories }}
+    {{ if $categories }}
+        {{ range $categories }}
+            {{ $uniqueCategories = $uniqueCategories | append . }}
+        {{ end }}
+    {{ else }}
+        {{ $termsWithoutCategories = $termsWithoutCategories | append . }}
+    {{ end }}
+{{ end }}
+
+{{ $uniqueCategories = $uniqueCategories | uniq | sort }}
+{{ $termsWithoutCategories = $termsWithoutCategories }}
+
+<div class="tag-header">
+    <h1>Tags</h1>
+    <p>
+        <em>{{ len $uniqueCategories }} categories for {{ len $tags }} unique
+            tags, with many appearing in multiple categories.</em>
+    </p>
+    <p class="categories">
+        {{ range $index, $category := $uniqueCategories -}}
+            <a href="#{{ urlize $category}}">{{ $category }}</a>
+            &nbsp;|&nbsp;
+        {{ end }}
+        <a href="#misc">Misc</a>
+    </p>
+</div>
+
+<div class="main categories-container">
+<!-- iterate over all the unique categories to display under them the
+tags that are assigned to those categories -->
+{{ range $uniqueCategories }}
+    <h3 id="{{ urlize . }}">{{ . }}</h3>
+    <ul>
+        {{ $currentCategory := . }}
+        {{ $categoryPermalink := "" }}
+        <!-- iterate over all the tags to check if
+        they are part of the current category -->
+        {{ range sort $tags "Title" "asc" }}
+            <!-- check if the current tag is part of the current category -->
+            {{ if in .Params.categories $currentCategory}}
+                <!-- check if the title of the tag matches the category's name -->
+                {{ if in .Params.title $currentCategory }}
+                    <!-- content can be assigned directly to the general category
+                    this check is how we detect if content has been assigned to the general category -->
+                    {{ $categoryPermalink = .Permalink }}
+                {{ else }}
+                    <!-- current tag belongs to the current category -->
+                    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                {{ end }}
+            {{ end }}
+        {{ end }}
+        <!-- Add a misc item for content assign to the general category -->
+        {{ if $categoryPermalink }}
+            <li><a href="{{ $categoryPermalink }}">Miscellaneous</a></li>
+        {{ end }}
+    </ul>
+{{ end }}
+
+<!-- General Category for Terms without Categories -->
+<h3 id="misc">Misc</h3>
+<ul>
+    {{ range sort $termsWithoutCategories "Title" "asc" }}
+        <li><a href="{{ .Permalink }}">{{ .Title | humanize | title }}</a></li>
+    {{ end }}
+</ul>
+</div>
+{{ end }}
