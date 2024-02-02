@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sjors Provoost on ₿itcoin Transcripts</title><link>https://btctranscripts.com/speakers/sjors-provoost/</link><description>Recent content in Sjors Provoost on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 08 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://btctranscripts.com/speakers/sjors-provoost/index.xml" rel="self" type="application/rss+xml"/><item><title>Inscriptions</title><link>https://btctranscripts.com/bitcoin-magazine/bitcoin-explained/inscriptions/</link><pubDate>Wed, 08 Feb 2023 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-magazine/bitcoin-explained/inscriptions/</guid><description>Introduction Aaron Van Wirdum: 00:00:20
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sjors Provoost on ₿itcoin Transcripts</title><link>https://btctranscripts.com/speakers/sjors-provoost/</link><description>Recent content in Sjors Provoost on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 26 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://btctranscripts.com/speakers/sjors-provoost/index.xml" rel="self" type="application/rss+xml"/><item><title>Bitcoin Core 25.0</title><link>https://btctranscripts.com/bitcoin-magazine/bitcoin-explained/bitcoin-core-v25/</link><pubDate>Mon, 26 Jun 2023 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-magazine/bitcoin-explained/bitcoin-core-v25/</guid><description>Aaron van Wirdum: 00:00:21
+Live from Utrecht, this is Bitcoin&amp;hellip;
+Sjors Provoost: 00:00:24
+Explained.
+Introduction Aaron van Wirdum: 00:00:24
+Hey, Sjors, we&amp;rsquo;re back. We&amp;rsquo;re back in beautiful, sunny Utrecht after I spent some time in Miami and Prague. You spent some time in Prague, and more Prague, is that right?
+Sjors Provoost: 00:00:38
+Mostly Prague.
+Aaron van Wirdum: 00:00:38
+You were in Prague for a while. That&amp;rsquo;s where we recorded the previous episode about Stratum V2.</description></item><item><title>Inscriptions</title><link>https://btctranscripts.com/bitcoin-magazine/bitcoin-explained/inscriptions/</link><pubDate>Wed, 08 Feb 2023 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-magazine/bitcoin-explained/inscriptions/</guid><description>Introduction Aaron Van Wirdum: 00:00:20
 Live from Utrecht, this is Bitcoin Explained. Sjors, we&amp;rsquo;re gonna lean into some Twitter controversy today.
 Sjors Provoost: 00:00:27
 Exactly, we have to jump on the bandwagon and make sure that we talk about what other people talk about.
