@@ -1,0 +1,693 @@
+<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=canonical href=https://btctranscripts.com/bitcoin-review-podcast/mpcbros-vs-teamscript-debate/><title>#MPCbros vs #TeamScript Debate | ₿itcoin Transcripts
+</title><link href=https://btctranscripts.com/css/fontawesome.min.css rel=stylesheet><link rel=stylesheet href=https://btctranscripts.com/css/ace.min.css><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://btctranscripts.com/images/btctranscripts.png"><meta name=twitter:title content="Rijndael, NVK, Rob Hamilton - #MPCbros vs #TeamScript Debate"><meta name=twitter:description content="Intros Speaker 0: 00:01:08
+Hello and welcome back to the Bitcoin.review. Today we have a very interesting show. It&rsquo;s going to be a knife fight. Two men go into a room with one knife. One comes out. On my left side, Rindell for team MPC, weighing 64 kilobytes. On my right side, Rob for team script with variable sizing, so we don&rsquo;t know. Is this already a loss? We don&rsquo;t know, let&rsquo;s find out."><script async src=https://visits.bitcoindevs.xyz/script.js data-website-id=06384ada-7f1c-44c2-a6d9-d830fb23e122></script></head><body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id=navbarMain><div class=container><div><a class=navbar-brand href=/>₿itcoin Transcripts</a></div><div class="collapse navbar-collapse" id=navbarMainCollapse><ul class="navbar-nav ml-auto"><li class=nav-item><a class=nav-link href=/es>es</a></li><li class=nav-item><a class=nav-link href=/pt>pt</a></li><li class=nav-item><a class=nav-link href=/zh>zh</a></li><li class=nav-item><a class=nav-link href=https://github.com/bitcointranscripts/bitcointranscripts target=_blank><i class='fab fa-github'></i></a></li></ul></div></div></nav><div class="alert alert-warning fade show sticky-banner" role=alert><strong><a href=https://review.btctranscripts.com target=_blank data-umami-event=click-banner>Get paid to review technical Bitcoin transcripts
+</a></strong><button type=button class=close data-dismiss=alert aria-label=Close>
+<span aria-hidden=true>&#215;</span></button></div><div class=container-fluid><div class=row><div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0"><button class="navbar-toggler navbar-toggler-right collapsed" type=button data-toggle=collapse data-target=#sidenav-left-collapse aria-controls=sidenav-left-collapse aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse align-items-start flex-column" id=sidenav-left-collapse><form class="form-inline my-2 my-lg-0 searchbox"><input class="form-control mr-sm-2 w-100" data-search-input id=search-by type=text placeholder='Search (press "/")'></form><ul class="navbar-nav flex-column pt-3"><li data-nav-id=/adopting-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/adopting-bitcoin/><h6>Adopting Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/adopting-bitcoin/2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/adopting-bitcoin/2021/><h6>Adopting Bitcoin 2021</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/advancing-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/><h6>Advancing Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/advancing-bitcoin/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2019/><h6>Advancing Bitcoin 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/advancing-bitcoin/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2020/><h6>Advancing Bitcoin 2020</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/advancing-bitcoin/2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2022/><h6>Advancing Bitcoin 2022</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/advancing-bitcoin/2023/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2023/><h6>Advancing Bitcoin 2023</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/andreas-antonopoulos/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/andreas-antonopoulos/><h6>Andreas Antonopoulos</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/austin-bitcoin-developers/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/austin-bitcoin-developers/><h6>Austin Bitcoin Developers</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/baltic-honeybadger/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/><h6>Baltic Honeybadger</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/baltic-honeybadger/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/2018/><h6>Baltic Honeybadger 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/baltic-honeybadger/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/2019/><h6>Baltic Honeybadger 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bit-block-boom/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bit-block-boom/><h6>Bit Block Boom</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bit-block-boom/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bit-block-boom/2019/><h6>Bit Block Boom 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-core-dev-tech/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/><h6>Bitcoin Core Dev Tech</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bitcoin-core-dev-tech/2015-02/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2015-02/><h6>Bitcoin Core Dev Tech 2015</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2017-09/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2017-09/><h6>Bitcoin Core Dev Tech 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2018-03/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2018-03/><h6>Bitcoin Core Dev Tech 2018 (Mar)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2018-10/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2018-10/><h6>Bitcoin Core Dev Tech 2018 (Oct)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2019-06/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2019-06/><h6>Bitcoin Core Dev Tech 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2022-10/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2022-10/><h6>Bitcoin Core Dev Tech 2022</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2023-04/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2023-04/><h6>Bitcoin Core Dev Tech 2023 (Apr)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2023-09/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2023-09/><h6>Bitcoin Core Dev Tech 2023 (Sept)</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-design/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-design/><h6>Bitcoin Design</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/edgedevplusplus/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/edgedevplusplus/><h6>Bitcoin Edge Dev++</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/edgedevplusplus/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/edgedevplusplus/2017/><h6>Bitcoin Edge Dev++ 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/edgedevplusplus/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/edgedevplusplus/2018/><h6>Bitcoin Edge Dev++ 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/edgedevplusplus/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/edgedevplusplus/2019/><h6>Bitcoin Edge Dev++ 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-magazine/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-magazine/><h6>Bitcoin Magazine</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bitcoin-magazine/bitcoin-explained/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-magazine/bitcoin-explained/><h6>Bitcoin Explained</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-review-podcast/ class="nav-item my-1 parent haschildren"><a class="nav-link p-0" href=/bitcoin-review-podcast/><h6>Bitcoin Review Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoinplusplus/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinplusplus/><h6>Bitcoin++</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bitcoinplusplus/2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinplusplus/2022/><h6>Bitcoin++ 2022</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoinplusplus/layer-2/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinplusplus/layer-2/><h6>Layer 2</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoinplusplus/onchain-privacy/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinplusplus/onchain-privacy/><h6>Onchain Privacy</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoinology/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinology/><h6>Bitcoinology</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoinops/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinops/><h6>Bitcoinops</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcointranscripts/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcointranscripts/><h6>Bitcointranscripts</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/blockchain-protocol-analysis-security-engineering/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/><h6>Blockchain Protocol Analysis Security Eng</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/blockchain-protocol-analysis-security-engineering/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2017/><h6>Blockchain Protocol Analysis Security Engineering 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/blockchain-protocol-analysis-security-engineering/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2018/><h6>Blockchain Protocol Analysis Security Engineering 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/blockstream-webinars/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockstream-webinars/><h6>Blockstream Webinars</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/boltathon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/boltathon/><h6>Boltathon</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/breaking-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/><h6>Breaking Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/breaking-bitcoin/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/2017/><h6>Breaking Bitcoin 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/breaking-bitcoin/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/2019/><h6>Breaking Bitcoin 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/building-on-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/building-on-bitcoin/><h6>Building On Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/building-on-bitcoin/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/building-on-bitcoin/2018/><h6>Building On Bitcoin 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/c-lightning/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/c-lightning/><h6>c-lightning</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/chaincode-labs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-labs/><h6>Chaincode Labs</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/chaincode-labs/chaincode-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-labs/chaincode-podcast/><h6>Chaincode Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/chaincode-labs/chaincode-residency/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-labs/chaincode-residency/><h6>Chaincode Residency</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/chicago-bitdevs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chicago-bitdevs/><h6>Chicago Bitdevs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/coindesk-consensus-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coindesk-consensus-2016/><h6>Coindesk Consensus</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/coordination-of-decentralized-finance-workshop/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/><h6>Coordination of Decentralized Finance</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/coordination-of-decentralized-finance-workshop/2020-stanford/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/2020-stanford/><h6>2020 Stanford</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/cppcon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/><h6>CPPcon</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/cppcon/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/2017/><h6>CPPcon 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/cppcon/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/2020/><h6>CPPcon 2020</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/cryptoeconomic-systems/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cryptoeconomic-systems/><h6>Cryptoeconomic Systems</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/cryptoeconomic-systems/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cryptoeconomic-systems/2019/><h6>Cryptoeconomic Systems 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/dallas-bitcoin-symposium/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/dallas-bitcoin-symposium/><h6>Dallas Bitcoin Symposium</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/decentralized-financial-architecture-workshop/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/decentralized-financial-architecture-workshop/><h6>Decentralized Financial Architecture Workshop</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-developers-miners-meeting-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-developers-miners-meeting-2016/><h6>Developers-Miners Meeting</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/greg-maxwell/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/greg-maxwell/><h6>Greg Maxwell</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/grincon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/grincon/><h6>Grincon</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/grincon/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/grincon/2019/><h6>Grincon 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/honey-badger-diaries/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/honey-badger-diaries/><h6>Honey Badger Diaries</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/iacr/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/iacr/><h6>IACR Crypto</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/la-bitdevs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/la-bitdevs/><h6>LA Bitdevs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/layer2-summit/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/layer2-summit/><h6>Layer2 Summit</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/layer2-summit/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/layer2-summit/2018/><h6>Layer2 Summit 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/lets-talk-bitcoin-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lets-talk-bitcoin-podcast/><h6>Lets Talk Bitcoin Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/lightning-conference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-conference/><h6>Lightning Conference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/lightning-conference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-conference/2019/><h6>Lightning Conference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/lightning-hack-day/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-hack-day/><h6>Lightning Hack Day</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/lightning-specification/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-specification/><h6>Lightning Specification</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/london-bitcoin-devs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/london-bitcoin-devs/><h6>London Bitcoin Devs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/magicalcryptoconference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/magicalcryptoconference/><h6>Magicalcryptoconference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/magicalcryptoconference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/magicalcryptoconference/2019/><h6>Magicalcryptoconference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/misc/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/misc/><h6>Misc</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/><h6>MIT Bitcoin Expo</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2015/><h6>Mit Bitcoin Expo 2015</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2016/><h6>Mit Bitcoin Expo 2016</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2017/><h6>MIT Bitcoin Expo 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2018/><h6>Mit Bitcoin Expo 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2019/><h6>Mit Bitcoin Expo 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2020/><h6>Mit Bitcoin Expo 2020</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2021/><h6>Mit Bitcoin Expo 2021</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2022/><h6>MIT Bitcoin Expo 2022</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/munich-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/munich-meetup/><h6>Munich Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/noded-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/noded-podcast/><h6>Noded Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/realworldcrypto/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/><h6>Realworldcrypto</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/realworldcrypto/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/2018/><h6>Realworldcrypto 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/realworldcrypto/2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/2021/><h6>Realworldcrypto 2021</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/rebooting-web-of-trust/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/rebooting-web-of-trust/><h6>Rebooting Web Of Trust</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/rebooting-web-of-trust/2019-prague/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/rebooting-web-of-trust/2019-prague/><h6>2019 Prague</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/ruben-somsen/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/ruben-somsen/><h6>Ruben Somsen</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/satoshi-roundtable/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/satoshi-roundtable/><h6>Satoshi Roundtable</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/satoshi-roundtable/sr-004/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/satoshi-roundtable/sr-004/><h6>Sr 004</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/scalingbitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/><h6>Scaling Bitcoin Conference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/scalingbitcoin/hong-kong-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/hong-kong-2015/><h6>Hong Kong (2015)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/milan-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/milan-2016/><h6>Milan (2016)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/montreal-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/montreal-2015/><h6>Montreal (2015)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/stanford-2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/><h6>Stanford (2017)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/tel-aviv-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/><h6>Tel Aviv (2019)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/tokyo-2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/><h6>Tokyo (2018)</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/sf-bitcoin-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/sf-bitcoin-meetup/><h6>SF Bitcoin Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/simons-institute/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/simons-institute/><h6>Simons Institute</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/stanford-blockchain-conference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/><h6>Stanford Blockchain</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/stanford-blockchain-conference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/2019/><h6>Stanford Blockchain Conference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/stanford-blockchain-conference/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/2020/><h6>Stanford Blockchain Conference 2020</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/stephan-livera-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stephan-livera-podcast/><h6>Stephan Livera Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/sydney-bitcoin-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/sydney-bitcoin-meetup/><h6>Sydney Bitcoin Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/tabconf/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tabconf/><h6>TABConf</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/tabconf/2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tabconf/2021/><h6>TABConf 2021</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/tabconf/2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tabconf/2022/><h6>TABConf 2022</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/texas-bitcoin-conference-2014/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/texas-bitcoin-conference-2014/><h6>Texas Bitcoin Conference</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/tftc-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tftc-podcast/><h6>TFTC Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/verifiable-delay-functions/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/verifiable-delay-functions/><h6>Verifiable Delay Functions</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/verifiable-delay-functions/vdf-day-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/verifiable-delay-functions/vdf-day-2019/><h6>Vdf Day 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/vr-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/vr-bitcoin/><h6>VR Bitcoin</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/w3-blockchain-workshop-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/w3-blockchain-workshop-2016/><h6>W3 Blockchain Workshop</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/wasabi/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/wasabi/><h6>Wasabi Wallet</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/wasabi/research-club/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/wasabi/research-club/><h6>Wasabi Research Club</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/wasabi/podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/wasabi/podcast/><h6>Wasabikas Bitcoin Privacy Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/what-bitcoin-did-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/what-bitcoin-did-podcast/><h6>What Bitcoin Did Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></div></nav></div><div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky"><div class=docs-toc><nav id=TableOfContents><ul><li><ul><li><a href=#intros>Intros</a></li><li><a href=#team-mpc-primer>Team MPC Primer</a></li><li><a href=#team-script-primer>Team Script Primer</a></li><li><a href=#simplicity>Simplicity</a></li><li><a href=#auditability>Auditability</a></li><li><a href=#interactivity-and-nonce-manangement>Interactivity and nonce manangement</a></li><li><a href=#musig>Musig</a></li><li><a href=#shitcoin-use>Shitcoin use</a></li><li><a href=#signing-schemes>Signing schemes</a></li><li><a href=#switching-sides>Switching sides</a></li><li><a href=#multisig-vs-single-sig>Multisig vs single sig</a></li><li><a href=#covenants-and-transaction-introspection-opcodes>Covenants and transaction introspection opcodes</a></li><li><a href=#taproot>Taproot</a></li><li><a href=#adoption-of-new-features>Adoption of new features</a></li><li><a href=#covenants>Covenants</a></li><li><a href=#roundup>Roundup</a></li><li><a href=#trident>Trident</a></li><li><a href=#scripts--hsms>Scripts & HSMs</a></li><li><a href=#miniscript>Miniscript</a></li><li><a href=#team-script-custody-tooling-rijndael-project>Team script custody tooling (Rijndael Project)</a></li></ul></li></ul></nav></div></div><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3"><a href=/>Home</a>
+&lt; <a href=/bitcoin-review-podcast/>Bitcoin Review Podcast
+</a>&lt; #MPCbros vs #TeamScript Debate<h1>#MPCbros vs #TeamScript Debate</h1><p>Speakers:
+<a href=/speakers/rijndael>Rijndael</a>, <a href=/speakers/nvk>NVK</a>, <a href=/speakers/rob-hamilton>Rob Hamilton</a></p><p><i>Date: August 1, 2023</i></p><p><i>Transcript By: kouloumos via tstbtc v1.0.0 --needs-review</i></p><p>Tags:
+<a href=/tags/musig>Musig</a>, <a href=/tags/covenants>Covenants</a>, <a href=/tags/taproot>Taproot</a>, <a href=/tags/miniscript>Miniscript</a></p><p>Category:
+<a href=/categories/podcast>Podcast</a></p><p>Media:
+<a href='https://www.youtube.com/watch?v=4oCwbRCuF7I'>https://www.youtube.com/watch?v=4oCwbRCuF7I</a></p><div class="alert alert-warning"><div class=ai-generated><i class='fas fa-robot'></i>
+<span>AI-Generated Transcript</span></div><span>Review this transcript and earn sats. </span><a href=https://review.btctranscripts.com target=_blank data-umami-event=click-transcript-banner>Learn More ></a></div><h2 id=intros>Intros</h2><p>Speaker 0: 00:01:08</p><p>Hello and welcome back to the Bitcoin.review.
+Today we have a very interesting show.
+It&rsquo;s going to be a knife fight.
+Two men go into a room with one knife.
+One comes out.
+On my left side, Rindell for team MPC, weighing 64 kilobytes.
+On my right side, Rob for team script with variable sizing, so we don&rsquo;t know.
+Is this already a loss?
+We don&rsquo;t know, let&rsquo;s find out.
+Hello, gentlemen, welcome to the show.</p><p>Speaker 4: 00:01:40</p><p>Hey, how&rsquo;s it going?</p><p>Speaker 1: 00:01:41</p><p>Thanks for having me.</p><p>Speaker 0: 00:01:45</p><p>Just so you guys know, there is a bit of a delay already, I can see.
+So we&rsquo;re going to work with that.</p><h2 id=team-mpc-primer>Team MPC Primer</h2><p>Speaker 0: 00:01:52</p><p>So guys, well, let&rsquo;s start here with Rindell.
+Can you please give us a little bit of a primer on Team MPC?</p><p>Speaker 5: 00:02:01</p><p>Yeah.
+So, you know, something that you&rsquo;ve been able to do in really complicated and convoluted ways for years with ECDSA is you&rsquo;ve been able to do what&rsquo;s called multi-party computation, where you have multiple actors or multiple devices work together in order to create a shared public-private key pair and then sign transactions.
+This is really useful if you want to have segregated signers or have other kind of multi-party protocols like Mercury Wallet uses state chains.
+But now that we have Schnorr signatures in Taproot, we have really easy and straightforward signature aggregation, which means that you can do things like have a multisig, a threshold signing scheme where you have T of N signers required to spend some Bitcoin, but it all squishes down to a single signature on-chain.
+And so it&rsquo;s more private, it&rsquo;s more space efficient, and we can support new protocols that would have been either too cumbersome or too expensive or too difficult to do with Bitcoin script.
+And so We all need to embrace signature aggregation and lean into multi-party computation protocols for all the cool stuff we&rsquo;re going to build on Bitcoin.</p><p>Speaker 0: 00:03:24</p><p>Hey, but is MPC even Bitcoin?</p><p>Speaker 5: 00:03:28</p><p>I mean, MPC is a general class of algorithms and protocols, multi-party computation.
+There&rsquo;s MPC outside of Bitcoin, but we can use MPC to do Bitcoin things.</p><p>Speaker 0: 00:03:43</p><p>Oh, so it&rsquo;s not Bitcoin?</p><p>Speaker 5: 00:03:45</p><p>It&rsquo;s still Bitcoin.</p><p>Speaker 0: 00:03:47</p><p>Oh, I see.
+Well, we&rsquo;re going to find out.</p><h2 id=team-script-primer>Team Script Primer</h2><p>Speaker 0: 00:03:49</p><p>Mr. Rob, do you want to give us a primer on TeamScript?</p><p>Speaker 1: 00:03:54</p><p>Yeah, TeamScript has a rich, deep history in Bitcoin starting in block 170 when Satoshi paid Hal Finney.
+It&rsquo;s very the grub brain equivalent of just you have a key, you present a public key and then you present a signature for it.
+And it&rsquo;s so beautifully simple.
+That&rsquo;s TeamScript, baby.
+Just one key, one element on the stack, and it works.
+And it&rsquo;s been around since the start of Bitcoin.</p><h2 id=simplicity>Simplicity</h2><p>Speaker 6: 00:04:24</p><p>Hold on.</p><p>Speaker 5: 00:04:25</p><p>No. So, hold on.
+No, that&rsquo;s not TeamScript.
+You just made the case for TeamMPC.
+If we wanted to do threshold signing in Bitcoin, right now you have two options.
+You can either do script based multi-sig with OP check multi-sig and we should explain what that means in a minute.
+Or now that we have Schnorr signatures, you can do signature aggregation And in signature aggregation, you have one public key, one signature, and you check it, and that&rsquo;s it.
+It&rsquo;s like the purest expression of Bitcoin.
+Rob is trying to get everybody to put multiple pub keys on chain and multiple signatures on chain, and then use a for loop and counting to figure out whether or not your spend is allowed.</p><p>Speaker 1: 00:05:07</p><p>It&rsquo;s insanity.
+This is just your typical NPC, NPC, you know, rhetoric.
+It is absurd.
+Yeah, okay, you can do even more things.
+And that&rsquo;s what makes Bitcoin programmable money, right?
+You could put many things on the stack and you can do different things.
+And that&rsquo;s what&rsquo;s so beautiful about it.
+OPCHEC multisig just works.
+And it&rsquo;s a beautiful thing because it&rsquo;s all sitting there on chain.</p><h2 id=auditability>Auditability</h2><p>Speaker 1: 00:05:31</p><p>Here&rsquo;s something that we really in Bitcoin, we really value the idea of auditability, right?
+With NPC, you have this weird concocted security scheme that exists off chain, and then you don&rsquo;t even know who actually signed at the end of the day.
+You have no verifiability, right?
+You want to actually have accountability of who actually signed that signature and you lose that all with MPC.</p><p>Speaker 6: 00:05:52</p><p>Yeah, but I mean on</p><p>Speaker 5: 00:05:53</p><p>the other hand, you know, if you have auditable, recognizable setups on chain, then one of two things happens.
+Either you have to use one of the really common script setups, so you&rsquo;re either doing single SIG or maybe you&rsquo;re doing two of three or a small number of people do three or five, or you end up standing out like a sore thumb because if you build some really interesting time decaying multi-sig or if you end up building some really exotic 13 of 15 multi-sig because that&rsquo;s what makes sense for you as an individual or an organization, then that ends up being very identifiable on-chain because there&rsquo;s nobody doing it.
+So another thing that&rsquo;s nice about Bitcoin is that it&rsquo;s pseudonymous and ideally just spending your bitcoins doesn&rsquo;t immediately identify you on-chain.
+And if you have all of these really exotic key hierarchies in your redeem script, then you&rsquo;re just calling out to the world.
+You know, here I am, I&rsquo;m making this transaction right now.</p><p>Speaker 0: 00:07:06</p><p>Yeah, but see, you guys are just blabbing now.
+You know, I want to I want to hear use cases here, real world use cases, none of this miniscript Pi dream.</p><p>Speaker 1: 00:07:16</p><p>What are you even talking about?
+Miniscript yet?
+Miniscript is it&rsquo;s all other things.
+So like I said, you know, you want to understand how TeamScript works.
+It&rsquo;s live today.
+It&rsquo;s in Bitcoin Core, you know, Block 170, you know, Satoshi sent money to Hal and that&rsquo;s how bitcoins work for a very long time.
+This is a really great point to and talking about pipe dreams here.
+Rhonda, what while it&rsquo;s out there right now, you mentioned Mercury wallet.
+But like if I wanted to do on chain and PC, like what does that even look like right now?
+It sounds like it&rsquo;s a whole pipe dream to me.</p><p>Speaker 5: 00:07:46</p><p>Well, I mean, you don&rsquo;t even know because, you know, you can&rsquo;t identify those spends on chain.
+So they could be happening right now and you would have no idea.</p><p>Speaker 1: 00:07:55</p><p>Oh, cool.
+So like the, but what wallet can I use to actually do this?</p><p>Speaker 5: 00:08:01</p><p>You know, maybe we should like take a step back and explain.</p><p>Speaker 0: 00:08:04</p><p>That was a good bunch.</p><p>Speaker 1: 00:08:11</p><p>Yeah, talking about pipe dreams, man, like every single wallet I can, Sparrow uses scripts, you know, Spectre uses scripts, all of the hardware wallets uses script.
+Like it&rsquo;s all live.
+Bitcoin Core uses script.</p><h2 id=interactivity-and-nonce-manangement>Interactivity and nonce manangement</h2><p>Speaker 0: 00:08:23</p><p>Let&rsquo;s talk about interactivity.</p><p>Speaker 5: 00:08:25</p><p>Yeah, let&rsquo;s let&rsquo;s talk about interactivity.
+So, you know, the way that Bitcoin script works, if you have to go and set up a multi-sig, right?
+So you need to pass around a bunch of XPUBs and use that to have everybody come up with script pub keys that you&rsquo;re going to lock your funds to.
+And then when you go to spend those funds, then you hopefully are making a PSBT and you pass that around and everybody signs it.
+In a MPC world, it&rsquo;s a little bit more involved.
+In order to create the script pub key that you&rsquo;re going to lock your funds to, you have to generate a shared public key.
+And this works a little bit differently in Frost versus Musig, but In general, everybody generates kind of public key shares and passes, pass those around.
+You add them together.
+And then when you want to spend funds, you pass around non-commitments, you partially sign your transaction, and then you pass around those partial signatures and you add them up.</p><p>Speaker 0: 00:09:36</p><p>This sounds complicated.</p><p>Speaker 5: 00:09:38</p><p>Yeah, but you know, like we have software.
+Software is really good at automating complicated things.
+So this isn&rsquo;t something that a human would have to do.
+This is something that your wallet would do.</p><p>Speaker 0: 00:09:48</p><p>Yeah, but how is bunker coin people in their bunkers in a cave gonna do this on the wall with chalk?</p><p>Speaker 5: 00:09:55</p><p>Well, they&rsquo;re not gonna be spending their Bitcoin, so it&rsquo;s fine.</p><p>Speaker 0: 00:09:59</p><p>That&rsquo;s then a good point.</p><p>Speaker 1: 00:10:01</p><p>Yeah, and then, so I feel like we kind of skipped over a huge piece here, right?
+Because with the output, like first off, output descriptors streamline the script redemption path, right?
+It&rsquo;s very well understood now that if you have an output descriptor, you have the necessary information to recover your money.
+Whereas there&rsquo;s a word, like the key word in this whole NPC architecture is the nonce, right?
+You mismanage that nonce and you could have an attacker on the inside and money gone, right?
+Interactivity, like that&rsquo;s multiple rounds of signing and interacting with each other.
+And those are just, you know, I like to call it foot gun as a service.
+As it&rsquo;s just finding a bunch of different ways that you can just make money gone.</p><p>Speaker 0: 00:10:39</p><p>You know, we can do this.
+You know, we had a whole episode on Frost where I think we can store nonce securely and not repeat them.
+I think it&rsquo;s possible.</p><p>Speaker 5: 00:10:51</p><p>Yeah, and the danger is something for protocol designers to figure out, right?
+Like we used to have nonce problems with just normal single-sig Bitcoin before, and then we standardized on using deterministic nonces.
+In multi-party signature aggregation protocols, you don&rsquo;t want to use deterministic nonces.
+Instead, you want to pre-commit to them ahead of time by sending around hashes of your nonces so that you can ensure that people haven&rsquo;t changed them after they&rsquo;ve seen your nonce.
+But this is a solvable problem.
+It&rsquo;s solved in the specs for both Music2 and for Frost.
+And you just need to follow the spec when you implement it.
+It&rsquo;s just like writing a Bitcoin wallet.
+If you implement ECDSA and you&rsquo;re just doing pay-to-witness pubkey hash and you decide to just use the same nonce over and over again, then money gone.
+Right.
+Like nonce mishandling.</p><p>Speaker 6: 00:11:49</p><p>Didn&rsquo;t blockchain.info had that problem?</p><p>Speaker 5: 00:11:52</p><p>Yeah, exactly.
+Like nonce mishandling is just a problem with digital signatures.
+Right.
+So no matter what you&rsquo;re doing, you have to be careful with your nonces.</p><p>Speaker 0: 00:11:59</p><p>For people that don&rsquo;t know, it&rsquo;s a number once.</p><p>Speaker 5: 00:12:02</p><p>But I mean, getting back to something that Rob said, right?
+So I mean, if you&rsquo;re using a complex script to manage your funds, then you need to handle the availability and durability of your Redeem script.
+And output descriptors are a handy way to encode that.
+But now you have this extra metadata that if you have your funds in a three or five multi-sig and you only have three of your keys, but you don&rsquo;t have that output descriptor, then money gone.
+So in either case, there&rsquo;s like some additional metadata that you have to keep track of or money gone.</p><p>Speaker 0: 00:12:41</p><p>One part that I don&rsquo;t like about the interactivity is that it has to happen.
+You have to share those analysis at some point.
+Normally, you&rsquo;d say when you do the setup and you have to store them securely unless we have deterministic nonces.</p><p>Speaker 1: 00:12:56</p><p>Well, you have to store them securely and then there&rsquo;s the metadata you then need to keep track of right as the nonce counter, right?
+So if you start a signing process and you decide to, you know, halfway through, like rotate out, like then you necessarily need to increment your nonce because, and the reason why specifically this is important is that if you have a malicious person in your NPC arrangement and nonces start getting reused, they can start unilaterally signing and taking over the money, removing the security because it&rsquo;s only one public key on chain.
+So because of that, if they get enough information leaked out from the other parties, they have enough information to construct a malicious transaction and broadcast it to the network.</p><p>Speaker 0: 00:13:34</p><p>Have anybody been working on resolving the nonce issue, the unique nonce issue, like maybe deterministically like we do with standard script or something else?</p><p>Speaker 5: 00:13:45</p><p>So you don&rsquo;t want to do deterministic nonces, but people are playing with different mechanisms to not make it be its own round.
+So if you read the Frost paper, for example, the way that it&rsquo;s written is you do nonce commitment as a discrete step.
+So if the three of us were doing a Frost key signing, we would trade nonces and then once that&rsquo;s done, then we&rsquo;d move on to the actual signing step.
+There&rsquo;s ideas that folks are working on.
+Things like, when you do a signing, as part of that message, you also exchange the nonce commitments for the next signing.
+So you always are ahead by one.</p><p>Speaker 0: 00:14:31</p><p>So you ratchet it.</p><p>Speaker 5: 00:14:32</p><p>There&rsquo;s also implementations where when you trade nonce commitments, you don&rsquo;t just trade one nonce commitment, you actually pass around a big bag of nonce commitments.
+You say, I have 100 nonces from Rob.
+And then when we do signing, we just indicate which index we&rsquo;re using.
+So there&rsquo;s engineering ways that we can reduce this so that it&rsquo;s not two steps every time you have to sign a transaction.</p><p>Speaker 0: 00:15:00</p><p>So what you&rsquo;re really saying is that this is really cool, We have some ideas, but we&rsquo;re not quite there yet.
+We&rsquo;re just waiting for some very smart Galaxy brain to email the mailing list saying, ha ha, I figured it out.</p><p>Speaker 5: 00:15:11</p><p>I don&rsquo;t even think it&rsquo;s there.
+Like, I think I think people are implementing it, you know, right now.
+And it just takes some time to get built and get tested.</p><h2 id=musig>Musig</h2><p>Speaker 0: 00:15:22</p><p>Okay.
+Didn&rsquo;t BitGo add MuSig too?</p><p>Speaker 5: 00:15:25</p><p>They did.
+So BitGo is responsible for a large portion of value transacted on the Bitcoin network every day and their enterprise customers can start moving over to MuSig2, which is pretty cool.
+We should probably say that frost and music too are different Maybe maybe just to take a step back for people who aren&rsquo;t familiar with the terminology Frost is a threshold signing scheme So when when you think of Bitcoin multi sig traditionally, that&rsquo;s called a threshold scheme where you say I have n total keys and I need to sign with 998, whatever that is.
+That&rsquo;s threshold signing.
+Frost is a scheme using Schnorr signatures where you can do threshold signing, but it all collapses down to a single public key and a single signature on chain.
+So even if you&rsquo;re doing a 998 out of 999 multi-sig, it&rsquo;s still just a 64-byte signature on-chain and a single public key.
+So it looks identical to a normal single-sig Bitcoin transaction and it takes the same amount of space.
+MuSig on the other hand is confusingly what in normal cryptography is called a multi-signature, which means that it&rsquo;s n of n.
+So it&rsquo;s 2 of 2, 3 of 3, 5 of 5, 100 of 100.
+People probably have heard of MuSig before because I think it&rsquo;s what we&rsquo;re going to end up using for Lightning.
+So Lightning channel is normally a 2 of 2 multi-sig, but it&rsquo;d be great if that channel open was actually indistinguishable from a normal single SIG Bitcoin transaction.
+So that&rsquo;s using MuSig.
+Another use case for MuSig is this BitGo thing.
+Right.
+So BitGo, if you&rsquo;re like an enterprise customer of theirs, you can be in this two of two wallet where one key is cold and one key is hot.
+And it takes signatures from both of them in order to move the money.
+And normally with script-based multi-sig, you just see these two of two Bitcoin transactions on chain and using mu-sig, it&rsquo;s indistinguishable from a normal single-sig transaction.
+So it just looks like a single key signed.</p><p>Speaker 0: 00:17:58</p><p>Do you think the biggest driver for them was the privacy or was on-chain fees?
+Because the fees were getting pretty high.
+And traditionally, like, you know, a lot of the Bitcoin brokerages and Big Enterprise, like they don&rsquo;t re-pass those fees to customers.
+So on, actually, no, for the BigGo case, it&rsquo;s coming from the customer&rsquo;s wallet, So they are paying the fee.
+So maybe they were complaining to BigGoat that BigGoat was overpaying fees and spending their money.
+Right.</p><p>Speaker 5: 00:18:29</p><p>Yeah.
+I mean, it could be, especially if you have a transaction with lots and lots of inputs.
+Miners.
+Yeah, miners or exchanges where they&rsquo;ve been taking lots of little deposits and then they need to do a consolidation.
+You have to provide a valid witness for every input in a transaction.
+So if you&rsquo;re doing a transaction that has 300 inputs and each one of them is a 2 of 3 multisig or a 2 of 2 multisig, then for 300 inputs, you&rsquo;re putting 600 signatures on chain and either 600 or 900 pub keys on chain.
+Versus if it&rsquo;s mu-sig, Then if you have 300 inputs, you&rsquo;re putting 300 pub keys and 300 signatures.
+Right.
+So it like literally cuts your cost in half.
+If you can do this key aggregation.</p><h2 id=shitcoin-use>Shitcoin use</h2><p>Speaker 1: 00:19:26</p><p>There&rsquo;s another context here, though, for the reason that like a BitGo and all these entities use MPC.
+There&rsquo;s a third option, Rodolfo.
+It&rsquo;s shitcoin tech debt is what it is, is all the other coins.
+They can have one solution that wraps up all of the different cryptocurrencies, whereas they can&rsquo;t use Bitcoin script because they&rsquo;re all unless they&rsquo;re a fork of Bitcoin, they don&rsquo;t use Bitcoin script.
+So they&rsquo;re actually incentivized to support all of this because it supports all the other coins.</p><p>Speaker 0: 00:19:53</p><p>Do you think that their Moosig implementation like support shitcoins?
+I&rsquo;m not sure because we know Firebase, which is the other essentially half of the market for enterprise Bitcoin and Shikcoin solution for the exchanges.
+They use a type of MPC that has nothing to do with the coins.
+It&rsquo;s just how they secure the keys, essentially.
+The big one, I didn&rsquo;t read the specifics.
+I don&rsquo;t even know if they released the specifics.
+I wonder if it&rsquo;s useful for the Shed Coins.</p><p>Speaker 5: 00:20:24</p><p>Well, like if you do, so there have been some MPC EDSA wallets, like I think Coinbase has one in their custody offering.
+And those are actually useful for other coins that do ECDSA.
+So like, Ethereum, right?
+You could do it that way.
+Not a lot of other coins do Schnorr signatures.
+The Ethereum ecosystem is leaning really hard into BLS signatures because they&rsquo;re more useful for ZK snarks.
+So, Musig doing Schnorr signatures is actually not quite as specific as Bitcoin script, but that is pretty peculiar to Bitcoin.
+That&rsquo;s not going to be portable to lots of other things.</p><p>Speaker 0: 00:21:08</p><p>That&rsquo;s what I thought.
+By the way, BLS signatures, aren&rsquo;t those new and shiny and shouldn&rsquo;t be used yet for something like that?</p><p>Speaker 5: 00:21:18</p><p>They rely on bilinear pairings, which is like much newer cryptography.
+I think one of the things that the Bitcoin ecosystem is very conservative about is relying on new cryptographic assumptions and pairings are a new cryptographic assumption.</p><h2 id=signing-schemes>Signing schemes</h2><p>Speaker 0: 00:21:37</p><p>Hey, we have Adam back chiming in here.
+He&rsquo;s like, I&rsquo;m not sure I&rsquo;d put Moosig Frost in the same category as MPC constructs, which in my opinion, complex for agile risk of crypto implementations mistake.
+The Demgard-Jurek-based ECDSA construct is a bit complex in itself, though, while not generic MPCs, so similar critique for that.</p><p>Speaker 5: 00:22:01</p><p>Yeah, I mean, like MPC is like a really general term.
+And I think Adam&rsquo;s right, which is that Music and Frost are much more, I&rsquo;d say, constrained and much more tightly defined than a general MPC signing scheme.
+In a really strict sense, they are a multi-party computation, but they are very strict and tightly defined.
+One of the things that was interesting about Frost is Frost actually came with a security proof, right?
+So like we have a proof that Frost kind of reduces down to the same cryptographic hardness assumptions that we normally rely on for Schnorr signatures.</p><p>Speaker 1: 00:22:45</p><p>Yeah, I mean, there&rsquo;s an interesting point here too, just to briefly talk about Schnorr signatures, is that they were originally around and available during the Bitcoin white paper, but it had a patent on it.
+So when the patent expired, they were able to do the part of that upgrade.
+So it was already tech that was ready to go and people wanted, because it has these better aggregation properties.
+But talking about the general, like you&rsquo;re right in that specifically Music and Frost don&rsquo;t really benefit other coins, but MPC as a concept in the industry has been put forward, TSS, Threshold signature scheme as a way to like have one security stack which secures everything, which on August 10th at the Black Hat USA conference is gonna be a whole breakdown of how the open source rust in Go language implementations of TSS are actually broken.
+And with one to two rounds of signing ceremonies, a malicious actor can break the threshold signing.
+And this is what I&rsquo;m getting at, is that it&rsquo;s not secure.
+Just be a grug brain, put the pub key on chain, and it&rsquo;s gonna be okay.</p><p>Speaker 0: 00:23:46</p><p>So guys, I mean, like, you know, it&rsquo;s kind of interesting that like we have like a wrench thrown in here, which is Taproot and the capacity of having all this in the same vehicle.
+So maybe there is a path in which we can address both?</p><p>Speaker 5: 00:24:08</p><p>Yeah, I mean, so the thing that&rsquo;s really cool about Bitcoin script, right, is there&rsquo;s a bunch of operations that we can do in Bitcoin.
+So we can check signatures.
+That&rsquo;s like the foundational one.
+That&rsquo;s the bottom of everything, right?
+We can also compare values.
+And like one of the value comparisons that&rsquo;s really useful is you put a hash into your script, and then you provide in the script witness a value, and you say, does this value I provided hash to the same thing that I committed to in my script?
+And that&rsquo;s called a hash lock.
+We can also do time locks where we say, is the current block later than the current block height or has so many blocks passed by?
+And those are time locks.
+And we can combine these things together and compose them together.
+And one of the things that&rsquo;s cool is that Bitcoin script, especially in a post-Taproot world, if you compose a script and you say, I want these coins to be spendable.
+If this signature is valid and it&rsquo;s been 15 blocks and you provide the pre-image to a hash, it doesn&rsquo;t really care if that signature is generated from a single key or from a bunch of key shares that then have been added together.
+And in fact, you can&rsquo;t you can&rsquo;t tell.
+Right.
+So you can actually use a frost or a music key as part of a larger script.
+So that&rsquo;s really helpful.
+Like, you know, MBK, you asked for use cases a few minutes ago, if you wanted to do a time decaying scheme where you say, pubkey A is good now, but pubkey B is going to be good in three months.
+And maybe that B pubkey is like a different person, or maybe if you&rsquo;re using Frost, pubkey B is a Frost key with a smaller threshold.
+And so now you can do sort of a time decaying multisig where you say, I&rsquo;ve got a three of three, but it, you know, decays to a two of three, and then it decays to a one of three.
+And you can express that progression of time through different script paths.
+And then either, and then your choice is, do I just want to put all the pub keys on chain and pay for the bytes and pay for the privacy?
+Or do I want to go through a little bit of complexity when I do signing and have it all be a single, single key?</p><h2 id=switching-sides>Switching sides</h2><p>Speaker 0: 00:26:48</p><p>So since, you know, everything can be done together now with Taproot, why don&rsquo;t we switch sides here and make each other&rsquo;s points?
+Rob, how do you save MPC from losing this battle?</p><p>Speaker 1: 00:27:02</p><p>Oh, MPC.
+This is a really incredible point here, is that every single time you want to rotate out these signers, it&rsquo;s an on-chain transaction, right?
+But with MPC, you can actually use Frost and you can rotate out who is your two of three without having to do an on-chain transaction.
+And this is how we get to scale Bitcoin, right?
+We get to scale Bitcoin because we get to compress data on chain.
+So we are not taking up as much block space so we can make room for the entire planet to get on boarded.
+And further, Let&rsquo;s say the two of us are in a two of three multi-sig and then NVK, you go off into the Canadian woods and you have a boating accident, we can rotate and kill your share of a key and recompute the polynomial such that we can have this without having to move funds on chain, it could be myself, it could be Ryandale and a third party, right?
+We&rsquo;ll have Johnny come in and be the signer.
+And that scales because it doesn&rsquo;t require an on-chain transaction, but we provably can kind of outright do this rotation and change who&rsquo;s holding the key material without ever having to interact with the chain.</p><p>Speaker 0: 00:28:02</p><p>Well, this is true.
+Roast, right?</p><p>Speaker 5: 00:28:05</p><p>Roast like makes Frost more asynchronous and more robust because like one of the things that Rob you know, left out when he was painting this rosy picture of a</p><p>Speaker 6: 00:28:16</p><p>post Frost</p><p>Speaker 5: 00:28:16</p><p>future for us.
+Right?
+It&rsquo;s so easy to leave out the details, but you know what, Rob?
+Details matter.
+You know, something that Rob left out is that in this key signing ceremony that he&rsquo;s constructed with Frost, If you have a malicious signer who just decides like, you know what, I&rsquo;m just going to hang up partway through the signing process, then you force everybody to have to just like start over again.
+And if you&rsquo;re doing two of three, that&rsquo;s not a big deal, but if you&rsquo;re doing a really high cardinality threshold, then it can actually be really disruptive because you have these interactivity requirements.
+And maybe if one of the signers is running bad software, you can actually force them to reuse a nonce because they think that they&rsquo;re still part of an old signing session.
+So what Roast does is Roast makes Frost robust against, you know, signers going away or refusing to cooperate by basically running a whole bunch of signing sessions in parallel.</p><p>Speaker 0: 00:29:17</p><p>Is somebody mowing their grass?</p><p>Speaker 5: 00:29:20</p><p>Yeah, that&rsquo;s me, sorry.</p><h2 id=multisig-vs-single-sig>Multisig vs single sig</h2><p>Speaker 0: 00:29:21</p><p>Nice.
+OK, guys, so I think we we get to a point here where I still defend the fact that I don&rsquo;t think, you know, Frost is ready, but I don&rsquo;t think anybody does.
+We did a whole Frost episode, which people should really listen to.</p><p>Speaker 6: 00:29:37</p><p>Yeah, I mean, one of</p><p>Speaker 5: 00:29:38</p><p>the things that&rsquo;s just great about Script, right, is you can do multi-sig constructions in Script today.
+They work.
+The auditability point is a good point.
+Like something with Frost is if you wanted to do, let&rsquo;s say it was like a three of five, and all of a sudden the money moves, you can&rsquo;t actually look on chain and see who signed for it.
+Whereas with like a script based multi-sig or having a script path, you could.
+So, you know, in that in that scenario that Rob just painted for you, like he and Johnny might might go and steal all the money and, you know, you won&rsquo;t actually be able to prove that they&rsquo;re the ones who signed for</p><p>Speaker 6: 00:30:19</p><p>it.</p><p>Speaker 0: 00:30:19</p><p>You know, thinking just sort of like pragmatically here in terms of enterprise, it does look like having multi-sig with some of those keys being frost is more interesting because now you can have sort of like groups, right?
+And the groups are provable in chain.
+So at least you have some auditability on the signing that happened.</p><p>Speaker 1: 00:30:46</p><p>You know, technology moves over time and progresses and there&rsquo;s evolutions, right?
+Just because today we don&rsquo;t have these things doesn&rsquo;t mean down the road we&rsquo;re not going to be able to do this.
+And I want to build for a bright orange future where everything is a single SIG on chain.
+Don&rsquo;t have to worry about it, right?
+Like it&rsquo;s just, like there&rsquo;s no need to do all the complication stuff.
+Like it&rsquo;s just adding extra pieces on chain.
+And if the chain doesn&rsquo;t lie, you have much more flexibility to kind of orchestrate all of your security procedures off chain because that&rsquo;s not dealing with the consensus mechanisms.
+And it&rsquo;s much easier to get to a scalable final answer if it&rsquo;s all just being done off chain and you put as minimal information as possible on chain to actually execute your transaction.</p><h2 id=covenants-and-transaction-introspection-opcodes>Covenants and transaction introspection opcodes</h2><p>Speaker 0: 00:31:30</p><p>Question for you guys.
+Do you guys know what the new wallet from Block uses on their, cause they have some kind of like threshold signing in terms of like spending capacity.
+So that means to me that they must have something or is that just like business logic?</p><p>Speaker 1: 00:31:46</p><p>To my understanding, it&rsquo;s a two of three, right?
+You have a key on the phone, you have a key on the hardware wallet and you have a key in the server.</p><p>Speaker 6: 00:31:53</p><p>And To my understanding, it&rsquo;s a two of three, right?
+You have a key on the phone,</p><p>Speaker 1: 00:31:53</p><p>you have a key on the hardware wallet, and you have a key in the server.
+And to my understanding, it&rsquo;s a two of three logic.
+And then the server is able to implement, you know, kind of business logic, right?
+And this is like a whole point about being able to govern some rules off-chain is you can have certain spending limits, right?
+You could have frequency of spending and amounts of spending and the server is able to enforce that to help protect users.</p><p>Speaker 0: 00:32:13</p><p>Okay, so it&rsquo;s just a standard multi-sig.</p><p>Speaker 5: 00:32:15</p><p>Yeah, we don&rsquo;t, There&rsquo;s been a bunch of conversations about covenants all over the place, including on this show.
+And something that would actually be really great is if we had some transaction introspection opcodes.
+Because like one of the things that you cannot do today in Bitcoin is you cannot say, I have a one Bitcoin UTXO, half of it needs to go left and half of it needs to go right.
+If we had enough of a covenant to be able to do output introspection, to be able to look at the amount and the script pub key of the outputs of a transaction, then you actually could send to a pay to script hash type output that said, only this amount or only up to this amount can go to these addresses or can go anywhere if I sign with particular keys.</p><p>Speaker 0: 00:33:10</p><p>You know, it gets even more interesting, right?
+You know, if we had a way for transactions to know the amounts, you could have a time locks on thresholds, which really, really makes stuff interesting, right?
+Because now you can have spending velocity, which is like one of the most useful things that HSMs offer.</p><p>Speaker 5: 00:33:35</p><p>Absolutely.
+And you could use this all over the place where you say, hey I&rsquo;ve got my mobile wallet, and this is exactly a spending velocity use case, But just to say it for the people who are still awake, you know, hey, I&rsquo;ve got my mobile wallet and I can spend</p><p>Speaker 6: 00:33:53</p><p>up to,</p><p>Speaker 5: 00:33:55</p><p>you know, $100.
+But then I need to co-sign with my hardware wallet if I&rsquo;m spending above that.
+You&rsquo;d be able to do that and have it actually be enforced at the consensus layer of Bitcoin if we have covenants.
+So like that, that&rsquo;s the kind of thing that we could do if we had something like CTV.</p><p>Speaker 0: 00:34:14</p><p>But you know that The current Covenant proposal, UpVault, does not&mldr;
+Well, I mean, they did expand UpVault to have CTV as part of the package, didn&rsquo;t they?
+And CTV does provide the capacity of this introspection.</p><p>Speaker 5: 00:34:31</p><p>Yeah, I think you might be able to do something similar with APO.
+There&rsquo;s a trick to be able to get the transaction hash on chain.
+And then I think if you have Opcat, you could construct the transaction in your script and then do a comparison.
+But it&rsquo;s a lot more moving parts.</p><p>Speaker 1: 00:34:52</p><p>Doesn&rsquo;t Opcat bring recursion back?</p><p>Speaker 5: 00:34:58</p><p>I don&rsquo;t know.
+And frankly, I don&rsquo;t think that that&rsquo;s actually a bad thing.
+People get freaked out about recursive covenants and they say, Oh my God, this is going to turn into Ethereum.
+I think the original sin of Ethereum is actually global state and reentry.
+It&rsquo;s not recursion.
+Because we can have boundary recursion.
+We have script op limits.
+So we could do a similar thing.
+I don&rsquo;t know.</p><p>Speaker 0: 00:35:21</p><p>Well, they don&rsquo;t have UTXO, so they can&rsquo;t really go to any grid in there.
+They have to check the whole script to know what the account balance is.
+Just the amount of computation you need for that.
+I feel so bad for the exchanges that support Ethereum and all its contracts.
+I don&rsquo;t think people appreciate how insane it is to keep balance.</p><p>Speaker 5: 00:35:44</p><p>Yeah, I mean it&rsquo;s pretty nuts because the way that all these token contracts work.
+So like if you have either an NFT or like a fungible token in Ethereum, the way that it works is like your account doesn&rsquo;t have a balance of that token.
+What happens is that tokens contract has a little hash table that lists account IDs and then the token balance.
+So if Rob wants to know his account balance, what he has to do is he has to look at every token on chain and then see what his balance is with that token and then add it up.
+So it&rsquo;s this big scatter gather.
+So what ends up happening is a small number of entities run giant indexes that just invert that index.
+And instead of saying, what&rsquo;s your token balance per contract, they say, what&rsquo;s the token balance per account.
+And like, that&rsquo;s why, you know, all these Ethereum wallets hit like the same API endpoint because they have to build this giant index and track the whole thing.
+It&rsquo;s absolutely insane.</p><p>Speaker 1: 00:36:42</p><p>I was looking at Bitcoin Optech, as I often do to go deep in the weeds on stuff.
+And this is where another option of TLOV, right, becomes an option, Tap Leaf Update Verify, where you actually can have amount introspection become part of the logic of the tap leaves for like, how you&rsquo;re spending things and looking here, it says it would require an additional op code.
+But then you would be able to do this too, which is basically a different approach of trying to have this covenant like feature.</p><h2 id=taproot>Taproot</h2><p>Speaker 5: 00:37:06</p><p>Yeah.
+And I mean, like just kind of pulling it a little bit back more towards what we were talking about earlier, right?
+Like the thing that&rsquo;s so cool about Tapproot and Hopefully if people are still awake, they understand this about Taproot.
+The thing that&rsquo;s magical about Taproot is snort signatures and then mast.
+If you have a really big, complex Bitcoin script, usually the way that most contracts or most protocols work is it&rsquo;s like, okay, if everybody agrees that this is what we should do with the money, then we should just do that.
+If not everybody agrees, then there&rsquo;s a bunch of conditions and there&rsquo;s a set of ors between them.
+If we don&rsquo;t all agree, then Rob gets the money if he can provide the pre-image dish hash.
+Or Rijndael gets the money if he can sign with a particular key.
+Or NVK gets the money if it&rsquo;s been six months and nothing else has happened.
+That&rsquo;s a common way to construct complex financial transactions.
+And so what you can do with Taproot is you can say, all right, we&rsquo;re going to take all of those script paths.
+So like Rob does the pre-image, Rheindahl does a signing, or NVK just waits until a timeout happens.
+You take those three scripts and you put them into a Merkle tree and then you take the root of that Merkle tree and you add it to a pub key, that would be like if the three of us took all of our pub keys and added them together and got a single pub key out of it.
+So if we aggregated our keys together, then that&rsquo;s the we all agree case.
+So if all of us agree and we just sign, then that&rsquo;s a key path.
+If we don&rsquo;t sign, then we descend into this Merkle tree.
+And so you can have the happy path of it&rsquo;s just a normal check sig as the key path, And then if you need to descend down into the tree, then you only reveal the script component that you&rsquo;re actually using.
+You only pay for that in terms of block space, and you only reveal that in terms of privacy.
+And that&rsquo;s Taproot, right?
+And it&rsquo;s a way that you can do all of these things.</p><p>Speaker 1: 00:39:23</p><p>Yeah, it&rsquo;s the best of both worlds.
+And additionally, something that&rsquo;s may not fully understood with Taproot, they actually got rid of OPCHECK multisig.
+Because OPCHECK multisig is a for loop and it&rsquo;s very computationally inefficient.
+Whereas in tap root to do a multisig, you do OPCHECKSIGAD.
+And then you just add up the signatures and either it&rsquo;s a zero or a one, right?
+Is it a valid signature or not?
+And then you get to the end and you compare it to what your threshold is.
+So it&rsquo;s computationally more efficient as well.
+And additionally, with the Schnorr signatures, you can, as we mentioned earlier, since you&rsquo;re using Schnorr signatures in taproot, you can have a single public key on chain and it&rsquo;s actually its own aggregated T of N behind the scenes using Frost or an N of N using music too.</p><p>Speaker 5: 00:40:09</p><p>So I mean, it sounds like the real like best case scenario is that we actually build, you know, a tree of script leaves for the different spending conditions that we want and then within those script trees, those individual leafs, we use aggregated signatures to save space and to make it more efficient to check.</p><p>Speaker 1: 00:40:34</p><p>That sounds like a reasonable compromise.</p><p>Speaker 5: 00:40:37</p><p>Yeah, so why don&rsquo;t we do that?</p><p>Speaker 0: 00:40:39</p><p>I don&rsquo;t want to hear compromises.
+Just kidding.
+For the folks listening, I&rsquo;m having a terrible fucking connection here.
+It&rsquo;s hard to keep track.
+So so anyways, guys, you know, it&rsquo;s fascinating that we went like everywhere and also like managed to cover a lot in only 45 minutes.
+Where do we go from here?</p><p>Speaker 6: 00:41:05</p><p>Well, I</p><p>Speaker 5: 00:41:05</p><p>mean, I go.
+Yeah, I was going to say, like, I think, you know, what&rsquo;s cool is that with Taproot, we can construct addresses and construct wallets where, you know, in kind of the happy path, like when you&rsquo;re just spending your money, it just looks like a single SIG on chain.
+And whether that&rsquo;s actually a single key behind it, or if it&rsquo;s like a frost or a mu-SIG aggregation, nobody really knows or cares, except for you, It&rsquo;s just your business.
+But then if you want to do something really complex, like you want to have a time decaying multi-sig or in a post-covenant world, if you want to have amount-based spend conditions, or</p><p>Speaker 6: 00:41:49</p><p>if you</p><p>Speaker 5: 00:41:49</p><p>want to have key hierarchies that have hash locks or time locks attached, then you get a script and you only reveal that script when you actually spend it.
+I think one of the problems, in addition to just this stuff is complicated to build, is that there&rsquo;s a handful of exchanges and wallets and Bitcoin ATMs that don&rsquo;t support pay-to-tap route yet.
+So If Rob goes off and builds a really kick-ass taproot wallet that has all these really advanced features in them, but people can&rsquo;t get their coins into it out of Coinbase, then a whole bunch of people aren&rsquo;t going to use that wallet.
+It&rsquo;s going to be a big question about whether or not Rob wants to lean on those features in the first place.
+I think something that we need to do is we need to get exchanges and other service providers to support pay-to-Taproot like today.
+Taproot came out more than a year ago and it&rsquo;s a few line changes for most people to be able to support pay to Taproot.
+They have to be able to correctly parse H32M addresses.
+There&rsquo;s a website called wintaproot.org and it lists which exchanges support Taproot and which ones don&rsquo;t.
+That doesn&rsquo;t even mean receiving Taproot, just pay to Taproot.
+It&rsquo;s literally a two or four line change.
+So I would encourage everybody to like go on that website, find your exchange, and if they don&rsquo;t support pay to taproot, you should open support tickets or blow them up on Twitter and say, when can I withdraw my taproot wallet?</p><p>Speaker 1: 00:43:31</p><p>Yeah, just to name and shame, the remaining ones are Binance, Binance US, Bitfinex, Coinbase, Crypto.com, Fireblocks, Gemini are really like the big ones left.
+Venmo and PayPal too.
+But to your exact point, there&rsquo;s a very different architecture requirement to like receive Taproot because you need to have all that code.
+But just to send to a Taproot adjust, it&rsquo;s just checking a checksum.
+It&rsquo;s not involved code and it doesn&rsquo;t incur tech debt or complications to being able to custody and manage funds.</p><p>Speaker 0: 00:44:00</p><p>I mean, but like, guys, we don&rsquo;t like, I mean, that&rsquo;s that&rsquo;s important to have.
+But like, you know, this is not like, you know, the thing holding us back because, you know, most people who are playing with these features and, you know, companies were playing these features, You know, these users will probably have a hop in between the exchange.
+They&rsquo;re not going to send from their exchanges to whatever they&rsquo;re going to do directly.
+By the way, we see sometimes people paying from an exchange to an invoice and can take a day or two for the exchange to process the payment out.</p><p>Speaker 5: 00:44:31</p><p>Yeah, it&rsquo;s nuts.</p><p>Speaker 0: 00:44:31</p><p>Yeah, So like, I don&rsquo;t think that that&rsquo;s the bottleneck.
+I think the bottleneck is just that like this shit is complicated.
+And I don&rsquo;t think people are seeing the like 10x, 100x sort of like immediate magical upgrade in UX or in price or in anything really.
+And that&rsquo;s sort of like what&rsquo;s really holding people back.</p><p>Speaker 1: 00:44:53</p><p>Well, I think it goes to just starting to build out these features, right?
+In that, I mean, I directly like was starting to mess around with a mini tap script.
+The reality though is to Randal&rsquo;s point, like to build a wallet that can&rsquo;t receive funds from Coinbase makes it like a hard wallet to interface with.
+It&rsquo;s not everything.
+And I think part of the path forward is leading by example and having these features available and being able to show a better way of doing things and then kind of setting a standard to have people want to try and catch up to try and improve user experience.
+And that&rsquo;s the thing is that end users, like just someone who&rsquo;s just holding their Bitcoin, they bought some Bitcoin.
+They don&rsquo;t care about all the fancy expressiveness, but it&rsquo;s our duty as people that are building in the space to try and show that they don&rsquo;t even realize like the possible upsides and being able to support these features and just being able to make it be the first mover, get it out there, get people playing with it.
+And then over time, kind of like shifting the mindset of what&rsquo;s possible in Bitcoin and leading by that feature set.</p><h2 id=adoption-of-new-features>Adoption of new features</h2><p>Speaker 0: 00:45:54</p><p>I mean, to me, what really is going to drive this home is, you know, somebody out there makes a very cool app, phone wallet that does something that is interesting and new and sort of like super efficient somehow or does something that was not possible before.
+And everybody wants that feature for whatever reason.
+And that&rsquo;s how you get it.
+Like that&rsquo;s how adoption gets it.
+It&rsquo;s like something goes in the market that&rsquo;s just like remarkably better than everything else.
+And then everybody starts switching to it and starts like, I wanna put my stuff in it, right?
+That&rsquo;s how you get the demand to happen.</p><p>Speaker 1: 00:46:33</p><p>Very fair.
+Yeah, that&rsquo;s hopefully some of the stuff I&rsquo;m working on right now kind of starts doing that, having Bitcoin have more flexibility in doing different things.
+You&rsquo;re not going to see these upsides if everyone&rsquo;s just doing NMM multisig, Because NMM multisig is good enough with pay to witness script hash, right?
+So you need to start kind of expanding the design space without doing a soft fork, right?
+Like there&rsquo;s 117 opcodes that are active right now in Bitcoin out of the original 256.
+Like the mini script stuff I&rsquo;m doing, like uses like 20 of those op codes to try and do some really interesting things.
+But I&rsquo;ve started rotating out of being a mini script influencer into now being a paid to Taproot, Beck 32M influencer, just to get, I went back and forth with Coinbase.
+I had to go through four levels of support just to have their specialist support team tell me that Taproot was enabled in November of 2021 and they still don&rsquo;t support it.
+So just getting like gently nudging them on that side while also putting out good products that make people want to use these advanced features.</p><p>Speaker 0: 00:47:29</p><p>So like on the custody side that like, you know, it&rsquo;s like sort of a companies.
+Why is it that Nunchuk, Kasa and Unchain don&rsquo;t have it?
+Because they would be to me the first, sort of like non, they assisted more company-like kind of entities that would be the first people to have more interesting taproot solutions.</p><p>Speaker 1: 00:47:56</p><p>So for Casa specifically, Nick Newman was on the Galaxy Brains podcast And he said specifically the mini script stuff is really interesting as an added feature set.
+So I think they&rsquo;re starting, they&rsquo;ve already like, I don&rsquo;t know if they&rsquo;re actually at the second building on it, but it&rsquo;s definitely caught their attention.
+And I think people are now just starting to realize this opportunity.
+So it&rsquo;s gonna, there&rsquo;s gonna be a little bit of a lag because companies have roadmaps and obligations and deadlines of existing things.
+So you have to go into some sort of like quarterly sync up of like, what&rsquo;s the next set of features you add for the next quarter, right?</p><p>Speaker 6: 00:48:26</p><p>So there&rsquo;s gonna be a little bit of a lag because companies have roadmaps and obligations and deadlines of existing things.
+So you have to go into some sort of like quarterly sync up of like, what&rsquo;s the next set of features you add for the next</p><p>Speaker 1: 00:48:26</p><p>quarter, right?
+So there&rsquo;s gonna be a little bit of a lag, but I see, you know, a year from now, there&rsquo;s gonna be multiple companies that are gonna be implementing this for more advanced custody use cases that better empower users to manage their money on their own terms.</p><p>Speaker 5: 00:48:40</p><p>Well, and like, you know, we have Liana Wallet, which is doing a bunch of stuff with Miniscript, mostly for either an inheritance use case or like a backup key use case, right?
+So after some time lock expires, you get to use a different key.
+And I&rsquo;m pretty sure right now that&rsquo;s all just like normal, you know, pay to Segwit, pay to like Witness Script Hash.
+I wouldn&rsquo;t be surprised if in the not too distant future, they end up like moving to Taproot, because I don&rsquo;t think, you know, those users are gonna want to reveal their whole spend policy every time they do just a normal happy path spend.
+I think we&rsquo;re going to see a lot of stuff like that, where people start with Segwit, ScriptHash encumbrances using Miniscript or using something else.
+And then they end up moving to Taproot because it gives them more compact and more private spends.
+And then as Musig gets more widely available And as Frost gets finalized, I think we&rsquo;re going to see people start incorporating those also.
+Like Nick Farrow has a project to actually do like a Frost hardware wallet on like commodity hardware.
+It&rsquo;s like super early.
+You know, we&rsquo;ll see how that goes.
+We talked about, you know, some music deployments that are like already seeing production right now.
+I think it&rsquo;s just very early for a lot of this stuff, but I&rsquo;m cautiously optimistic that it&rsquo;s going to start rolling out.</p><p>Speaker 0: 00:50:11</p><p>The challenge that I see with something like Liana is that essentially UTXO rotation is a no-go.
+So it&rsquo;s like dead on water.
+So until we can overcome those issues, it feels like just sort of like jerking off.</p><p>Speaker 6: 00:50:33</p><p>Yeah, I mean, The thing that</p><p>Speaker 5: 00:50:36</p><p>would be useful, because in order to solve that problem, you have to do one of two things.
+You either need to have a server that does key deletion and you do a vault setup with pre-signed transactions, or we need covenants that support vaults.
+Whether that&rsquo;s OpVault or something else, if we had an actual covenant opcode then you don&rsquo;t need to do UTXO refreshing every six months or something.</p><p>Speaker 0: 00:51:04</p><p>Hang on a second, you can&rsquo;t do server key deletion, right?
+That&rsquo;s pointless because it&rsquo;s not provable and it doesn&rsquo;t end well.
+I mean, realistically speaking, at least in my view, we can&rsquo;t move on from this impasse until we have covenants.
+On-chain.</p><p>Speaker 5: 00:51:22</p><p>I think that&rsquo;s right, but maybe this is just helping prove out demand.</p><p>Speaker 0: 00:51:28</p><p>Nobody&rsquo;s going to use it if they have to rotate their UTXOs.</p><p>Speaker 5: 00:51:32</p><p>Yeah, that&rsquo;s probably true.</p><p>Speaker 1: 00:51:33</p><p>So this is an interesting third way, just as opposed to key deletion or waiting for the protocols to get updated.
+I&rsquo;ve been debating usability of this, where you can use nlocktime to basically pocket a pre-signed transaction, and then you can auto broadcast like the refresh later.
+Right.
+So you, you, you just said as</p><p>Speaker 0: 00:51:52</p><p>a quick, just quickly explain.</p><p>Speaker 1: 00:51:55</p><p>No. So just to quickly explain the difference though, is that like at a script level, like you, you encumber the, like, like using op check sequence, verifier up, check, lock time, verify.
+Those are at the script level tied to the UTXO, whereas an N lock time time lock is locked to the transaction level.
+So just for the people at home, for the one or two people still awake, is that with an N lock time, it&rsquo;s almost using N lock time for a time lock.
+It&rsquo;s almost like having a check and post dating it.
+So if I wanted to like send Ryan a check, I can say like, oh, this is only available in December 31st of 2023.
+So it&rsquo;s sitting there, it&rsquo;s ready to go, but then it can&rsquo;t be broadcasted earlier.
+And then you sequence that so that it&rsquo;s before the time lock threshold expires.
+And then you can just auto broadcast the transaction hex then.
+And the network won&rsquo;t look at it until it&rsquo;s ready to actually be broadcasted.</p><p>Speaker 5: 00:52:47</p><p>You still have like a, You&rsquo;re delegating the interactivity requirements to somebody else, right?
+So instead of you having to come online and rotate all your UTXOs every six months, you say, like, all right, I&rsquo;m gonna have the server rotate all my UTXOs every six months.</p><p>Speaker 1: 00:53:02</p><p>Yeah.
+No, you do have an interactivity because you have to actually hit it to the network when it&rsquo;s ready to go.
+You can also have paid services though, that like provably, like when they broadcast it, you know, you could find some sort of ways of monetizing where I think Pablo built something like this where he would hold your UT your transaction hex for you and then it would broadcast at the set time and he&rsquo;d get paid over lightning or something to be able to like manage that service and Then you can give it to multiple services because you only need one person to actually successfully broadcast the transaction for it to work?</p><p>Speaker 5: 00:53:33</p><p>Sure.
+I mean, like the real answer is covenants, right?
+But I think we, I don&rsquo;t know, I hope we don&rsquo;t end up in a chicken egg scenario where people who are pro premature ossification say, oh, we don&rsquo;t need this because look, nobody&rsquo;s using wallets that would depend on these features.
+But then nobody wants to use those wallets because we don&rsquo;t have covenants.
+That&rsquo;s the</p><p>Speaker 1: 00:53:57</p><p>chicken</p><p>Speaker 5: 00:53:57</p><p>and egg scenario that we&rsquo;re probably going to end up with.</p><p>Speaker 0: 00:54:00</p><p>Yes and no.
+Because you&rsquo;re going to get a false negative, because nobody&rsquo;s going to use this wallets that required UTXO rotation.
+So I rather not have the false positive than to simply say, you know what?
+Like we believe there is demand and you know, we&rsquo;re gonna build it and we&rsquo;re gonna USF it.
+Wait, did I just say we&rsquo;re gonna USF?</p><p>Speaker 1: 00:54:25</p><p>It did.</p><p>Speaker 6: 00:54:26</p><p>Confidence?</p><p>Speaker 1: 00:54:28</p><p>It did.</p><p>Speaker 0: 00:54:30</p><p>Oh boy, did I just start something?</p><p>Speaker 1: 00:54:31</p><p>Yeah, that&rsquo;s gonna wake everyone up if they were asleep.</p><p>Speaker 0: 00:54:34</p><p>Yeah, no, I really think that it&rsquo;s ought to be done at some point.
+I just, I think we need to see something that essentially everyone feels overconfident about in terms of a proposal.
+And then I think the gears are going to start to move.</p><h2 id=covenants>Covenants</h2><p>Speaker 5: 00:54:55</p><p>Yeah.
+I mean, it&rsquo;s kind of funny that it&rsquo;s like an accident of history that we don&rsquo;t have covenants.
+Like, you know, We turned off a couple of opcodes, otherwise we would probably have the kind of functionality that we want.
+Or the one that I think is always funny is we have, for folks who are APO fans, like we have Sighash none, but we don&rsquo;t have Sighash, you know, any prep out.
+And so it&rsquo;s very like asymmetric.
+And I think if you were designing all the Sighash flags from a blank sheet, you would either have both of them or none of them.
+Like it&rsquo;s weird that you can commit to an input and not an output, but there&rsquo;s no way of committing to an output and not an input.
+Right.
+Like it&rsquo;s very asymmetric.
+And so I think It&rsquo;s strange that we don&rsquo;t have covenant mechanisms in Bitcoin.</p><p>Speaker 0: 00:55:49</p><p>And I don&rsquo;t I don&rsquo;t remember my memories already failing on this, but I don&rsquo;t remember any opcode that was deactivated that could have done something like that.
+But this is way, way back or any sort of like work on anything like it in the Satoshi days.
+There was OpEvol, but there was a disaster and there was Gavin.</p><p>Speaker 5: 00:56:15</p><p>Yeah, right.
+So there&rsquo;s a trick to get the signature of the current or the hash of the current transaction onto the stack.
+And then if you have opcat, you can construct, like, here&rsquo;s what all the outputs should be, here&rsquo;s what all the inputs should be, and then you hash it and you should get the SIG hash.
+Right, so like you can use that to do like a really basic covenant.</p><p>Speaker 1: 00:56:43</p><p>Yeah, and for all of these different opcodes, I usually look to like, and we talked about this on the Bitcoin script project, like episode that we did with Alex, like there&rsquo;s almost like a, like a two dimensional, like the kind of the feature richness of a given opcode and also like how production ready it is.
+Like, is something like a white paper or is it actually like implemented code, right?
+So CTV, like Jeremy has all that code sitting there, right?
+Another one that&rsquo;s related to all this is like ChexSig from stack is already in the elements.
+It&rsquo;s like the block stream chain, right?
+So like it already has working reference code that could be audited, right?
+And then you go out further on the end, like simplicity where things just get so many diffs and so complicated, right?
+It&rsquo;s a much wider swathing thing.
+And I think the idea I think should be, it&rsquo;s incumbent on people that are looking to try and like push the edge here to champion their solution and put it forward.
+And I think like what James is doing, like with OpVault, it&rsquo;s a great concise way of like a very straightforward functionality that I think no one would disagree that they wouldn&rsquo;t want to ideally have some sort of warm staging area before your funds just go out wildly, into the ether to someone else, right?
+Like there&rsquo;s a lot of opportunity.</p><p>Speaker 0: 00:57:51</p><p>I think stuff like elements kind of does a disservice, right?
+Because it&rsquo;s amazing stuff, amazing tech, no doubt.
+But the problem is it&rsquo;s like, almost 100,000 diff, right?
+Like it&rsquo;s not gonna get merged period ever.</p><p>Speaker 1: 00:58:05</p><p>No, no, you would never have to merge everything.
+Like there&rsquo;s a difference between like simplicity and everything versus like just op check sig from stack.
+Right, Like you can take a small chunk of that whole thing.</p><p>Speaker 0: 00:58:18</p><p>I don&rsquo;t think you can.</p><p>Speaker 1: 00:58:21</p><p>Okay.</p><p>Speaker 0: 00:58:23</p><p>Like if I remember right, like with elements, I think was what we&rsquo;re an offhand kind of thing.
+And if they wanted to split a little part off, it would be like a whole other sort of like project to try to get that in.
+It&rsquo;s not, if I remember, it was not that simple, but it&rsquo;s been a while since I looked.
+But anyways, like my point is like, you know, I think, I mean, it&rsquo;s very hard to get everybody behind a single standard, right?
+I mean, XKCD has the best cartoon on them.
+So I don&rsquo;t know, but I have a feeling that the trend is changing and even folks who are pro-osification like me are sort of like, you know, we need something.
+Yeah, I&rsquo;m hopeful.
+Guys, is there anything else that we sort of like forgot to explore in the knife fight between NPC and TeamScript?</p><h2 id=roundup>Roundup</h2><p>Speaker 1: 00:59:20</p><p>I think we hit everything.
+I&rsquo;m not sure if there&rsquo;s anything that you had, Rindell, on your side.
+This has been a very fun shit post war to have something fun to actually talk about in the bear market as opposed to price models.
+I&rsquo;ll say that it&rsquo;s been, it&rsquo;s been a real, it&rsquo;s been a pleasure being in the knife fight with you.</p><p>Speaker 5: 00:59:38</p><p>Yeah, thanks.
+You too.
+Yeah, I mean like maybe, maybe just the thing to hit is that, you know, if you can actually have both, right.
+So if the thing that you&rsquo;re trying to do with your script is express optionality or time or possession of some other secret value, Then you&rsquo;re going to use a script construction for that.
+And then for the actual threshold or multiple key part of it, today, Bitcoin script is kind of what we have.
+It&rsquo;s what&rsquo;s widely deployed.
+It&rsquo;s what we have code for.
+It works.
+But there&rsquo;s constructions for doing key aggregation that work.
+We have software for it, they just haven&rsquo;t found their way into many wallets yet.
+And so as that happens, we&rsquo;ll be able to get cheaper, more private transactions that we can also build new, better protocols on top of.
+So being able to compose things together because they think it&rsquo;s just a single signature.
+So it&rsquo;s probably not actually an or.
+The future is probably Bitcoin script and key aggregation, not Bitcoin script or key aggregation.
+But yeah, Rob and I were just really, really, really, really, really tired of the Bitcoin Twitter drama.
+And So we wanted to start a new drama.</p><p>Speaker 0: 01:01:01</p><p>Yeah, I mean, I really that was that was very refreshing.
+Very high signal posts with proper memes, too.
+It was it was very expertly executed and I hope it continues.</p><p>Speaker 1: 01:01:15</p><p>It will continue.
+This isn&rsquo;t over.</p><p>Speaker 0: 01:01:17</p><p>Please don&rsquo;t stop.
+We need We need competitive green checkbox tables, comparison tables.
+Those are always winners.</p><p>Speaker 6: 01:01:28</p><p>And</p><p>Speaker 0: 01:01:30</p><p>Yeah, like, I think necessity is going to drive covenants and the stuff home.
+Because when we get to the next ultra high fee environment, I don&rsquo;t think it drops to the levels that are in now.
+I think it&rsquo;s going to be something that&rsquo;s going to be a wake up call to people.
+Especially if we have like a third world country, high populated people sort of starting to actually adopt Bitcoin either via Lightning or on chain.
+I think shit&rsquo;s going to get weird.
+And the Lightning companies, they need to close those channels, right?
+So they are going to be pushing a lot of the stack too, because it&rsquo;s in their interest to make the block size, the block space be used more efficiently, even by the people not doing Lightning, or they&rsquo;re out of business.</p><p>Speaker 1: 01:02:23</p><p>Absolutely, yeah.
+And then the covenants to unlock things like coin pools and sharing UTXOs, it just makes it more feasible because like the scaling conversation is, you know, you have a set throughput that we made in the block size war of how many transactions can be in a block.
+We weren&rsquo;t going to increase the block side and ruin the decentralization of the network.
+And so because of that, now you need to find other creative ways to allow people to have a way to claim on-chain ownership of funds.
+And your options are, have it all sit in custodians, or do we build better cryptographic primitives that give some level of security assurances on chain?
+And it gets really interesting.
+And just before I forget, just like a huge shout out.
+We mentioned the Frost episodes every time.
+So huge shout out to Jesse Posner and all the work he&rsquo;s doing with Frost.
+Specifically, fingers crossed that getting merged into the SEC 256k, like ZKP library later this year is like one of those bedrock things that allow the application layer devs like myself to actually be able to start going in and playing with these primitives and starting to push through these user experiences and wallet experiences that can push forward better ways of using Bitcoin.</p><p>Speaker 0: 01:03:25</p><p>Well, I mean, if it&rsquo;s not on LibSec, it&rsquo;s not going to get used.
+Like that&rsquo;s to me the threshold these days on how I look at some of this stuff.
+And not even the ZKP, right?
+We&rsquo;re talking about like actual mother LibSec.
+Mother LibSec is essentially, I think, the best sort of heuristic of like, should be used, should not be used.
+And it&rsquo;s like sort of like nice to have things like that because it prevents people from losing money.</p><p>Speaker 1: 01:03:53</p><p>And everyone uses that same library.</p><p>Speaker 0: 01:03:55</p><p>Yeah.
+That&rsquo;s right.</p><h2 id=trident>Trident</h2><p>Speaker 0: 01:03:57</p><p>Yeah, it&rsquo;s very cool.
+Rob, do you wanna like tell us a little bit about Trident and what you&rsquo;re working on?</p><p>Speaker 1: 01:04:06</p><p>Yeah.
+So Trident is the name of the wallet I&rsquo;m building at AnchorWatch.
+Trident, a great name by my co-founder, Becca, was like the idea of multi-pronged security, right?
+And we&rsquo;re leveraging many scripts specifically.
+Right now we&rsquo;re using pay to witness script hash to be able to embed more interesting custody array dimensions on chain.
+And the whole crux and first of all, we&rsquo;re trying to build is actually having a product that we can actually underwrite risk for to provide insurance.
+Because today in the custodial landscape, you have custodians that charge management fees and maybe they have one insurance policy that&rsquo;s covering all of the customers.
+But if there&rsquo;s a catastrophic loss, you&rsquo;re not really on the hook for anything, right?
+So if you&rsquo;re gonna have to give up your key somewhere, like having better like legal financial protections to actually identify you in the case of a loss, which has its own kind of backend complexities, but The tech part that&rsquo;s really interesting is using these more advanced scripting arrangements with TimeLocks, right?
+And we can use, for the length of your insurance contract, let&rsquo;s say, we at AnchorWatch are a required signer.
+And then when the insurance contract expires, you can just go and take your money.
+So you don&rsquo;t have to worry about calling a custodian and saying like, hey, can I get my money back?
+And then, you know, the other person on the other side of the phone is like a Prime Trust or an FTX or a Celsius.
+Right, you don&rsquo;t have to like, this is a way of like, giving the on-chain auditability to show for a fact that your funds aren&rsquo;t being moved around maliciously and that you&rsquo;re ultimately able to get access to it.
+So like it&rsquo;s a different way of kind of expanding the design space of how Bitcoin gets used today as programmable money to ultimately better serve customers.
+Our primary focus are gonna be commercial entities at first, but you have the wizard sardine guys, which are using Liana wallet, which is kind of similar idea for more robust backup situations.
+And the ideal state is moving this also all over to taproot.
+Our whole tech stack is built on Bitcoin dev kit, which is really a superpower in so far as having a really strong set of primitives built on, I&rsquo;ll use the right term, crust Bitcoin and crust mini script.
+Thank you.
+Right, and having these like baseline level tools which are really robust, And when it becomes a conversation around like, hey, we wanna add coin controller.
+Hey, we wanna add, you know, tap scripts.
+Like we&rsquo;re not re-architecting the entire tech stack from the beginning.
+And most of it is very modular.
+It&rsquo;s a very powerful programming primitive.
+So just another huge shout out to just the Bitcoin DevKit team, all of the maintainers, Steve Myers, you know, Alicos, Daniel, like Thunderbiscuit, like there&rsquo;s a whole crew over there that are just grinding along and it gets really exciting too.
+And also just like shout out, like another example of like just the power of BDK very quickly is just like the Mutiny wallet guys are, you know, working on BDK and they were able to take their progressive web app and just push it into an Android app because the BDK library has bindings for all of the apps.
+Like, so You can build something in Rust and then you can push it over to Swift for iOS or Kotlin for like Android.
+And you don&rsquo;t have to re-architect an entire different code base.
+So it&rsquo;s an incredibly powerful, robust programming tool.
+And I see a future where like everyone uses the 256 library, like everyone&rsquo;s just going to start using PDK as like a default Swiss Army knife.
+So you&rsquo;re not building a wallet in step one, doing elliptic curve cartography and finite field theory.
+Right.
+You just have everything just works.</p><p>Speaker 0: 01:07:26</p><p>Oh, I mean, like, you know, like Bitcoin is becoming complex enough now that like back in the day, I&rsquo;d say it was already a bad idea for most people to write a wallet.
+Nowadays, it&rsquo;s definitely a bad idea for people to write a wallet from scratch.
+Unless they have some serious, serious people in the dev team that are very specialized on this, which is very few people.
+So leveraging something like this is very similar to leveraging something like LibSec.
+It gives you the correct primitives, the correct way of building the scripts so that people don&rsquo;t lose money because Bitcoin kills you on the edge cases.</p><p>Speaker 5: 01:08:05</p><p>Yeah.
+And the thing that we want to cut out here is undifferentiated heavy lifting.
+Right.
+So like in Rob&rsquo;s application, the thing that&rsquo;s special and unique about Trident Wallet is the spending policy.
+Like He&rsquo;s not trying to innovate or push the envelope on coin selection.
+So being able to just say, all right, I&rsquo;m just going to use the coin selection algorithms that come with BDK, he doesn&rsquo;t need to go and become an expert in branch and bound or whatever the new thing is.
+They just use what&rsquo;s in BDK.
+So Rob, in your system, the thing that you were describing of you guys are a co-signer, but then after a time lock it decays, I imagine that you could also do, kind of like a key hierarchy, right?
+Where maybe it&rsquo;s like, Oh yeah, like the, like maybe you guys are always a required signer, but then for one of the other, you know, signatories, like there&rsquo;s some optionality of it&rsquo;s like, it&rsquo;s always you guys, and then it&rsquo;s either like party A or party B, and then it&rsquo;s always two of parties C, D, and E, something like that.</p><p>Speaker 1: 01:09:16</p><p>Yeah, and this is where it gets really interesting is like in a traditional, just like an event, like multi-sig world, one key represents one vote.
+Whereas with Miniscript, you can break it out and have multiple, let&rsquo;s say two of threes, right?
+So me at AnchorWatch can have a two of three, the customer can have a two or three, you can have third party two of threes.
+And this then means, and that&rsquo;s not a six of nine to be clear, you get to have not only across multiple institutions distributing risk, but individuals within a company or organization, like, you know, in theory, like you could have a coin kite quorum where like Rodolfo&rsquo;s key must sign.
+And then it&rsquo;s like, if you if you feel spicy enough, you want to let Vic hold a key, Vic can hold a key, but he can&rsquo;t rug you, right?
+Like, that gets like a much more interesting arrangement where you can encode these governance processes of a key hierarchy where in a company setting, you don&rsquo;t want all of the keys to be equal.
+That&rsquo;s insane to have all the keys be equal, but at the same time, you don&rsquo;t want the CEO to be a single SIG.
+So you can distribute your risk out this way and it gets really interesting in redesigning and rethinking how does security work in Bitcoin and with organizations, we can have more interesting ways of encoding this.</p><h2 id=scripts--hsms>Scripts & HSMs</h2><p>Speaker 0: 01:10:24</p><p>Well, I mean, ideally your script mimics your organization&rsquo;s business logic, right?</p><p>Speaker 1: 01:10:33</p><p>Exactly.
+The process.</p><p>Speaker 0: 01:10:34</p><p>The process, right?
+Ideally, that&rsquo;s what you have, right?</p><p>Speaker 1: 01:10:37</p><p>Yep.</p><p>Speaker 0: 01:10:38</p><p>But Bitcoin, you know, is Bitcoin.
+And, you know, it can&rsquo;t do that yet or it can&rsquo;t do that specifically like that ever, but we can definitely get closer to that.
+Maybe, especially with CTV.</p><p>Speaker 1: 01:10:53</p><p>Yeah, no, definitely with CTV, you can encode all of those spending policies and limits, but it gets it closer rather than having it.
+And I got this like mental model actually talking with Will Cole, like application versus protocol level security.
+Like you could do this on an application layer but then like you can still end run it at the protocol level of Keysleak.
+But if you&rsquo;re able to mirror it.</p><p>Speaker 0: 01:11:14</p><p>Yeah.
+You can&rsquo;t, right?
+Servers get hacked.
+Exactly.
+Like the way, a lot of times, the way these things get done is by breaking the HSMs that have the spending policies, right?
+Like that&rsquo;s how you get hacked a lot of times, right?
+Dev keys get leaked and then they go and they change the policies because if somebody can change the policy on the HSM, it means that the bad guys will find a way to do the same, right?
+But you can&rsquo;t change a script.
+That&rsquo;s the beauty of using a script as the HSM.</p><p>Speaker 1: 01:11:49</p><p>Exactly.
+No, that&rsquo;s exactly it, right?
+So when you encode it on chain, you don&rsquo;t have to worry about a server doing the logic at the application layer.
+It&rsquo;s on the blockchain.
+So there is no end running around like, you know, these different processes.
+So you can actually insert the human element, go slow to go fast, so to speak.
+You want to be very deliberate.
+And you can put human governance in between these signing processes so you&rsquo;re not just indiscriminately using the HSM with a policy blind signing things as it comes in, and if it gets compromised, you lose your application security.
+Brian.</p><p>Speaker 0: 01:12:24</p><p>Let&rsquo;s make every problem be a key security problem, not a computer security problem.</p><p>Speaker 1: 01:12:31</p><p>Robb.
+Exactly.</p><p>Speaker 5: 01:12:33</p><p>The stuff that we can enforce in script is limited by what we can express in script, which is why we need more complex opcodes.
+But I mean, Rob, that example was probably a really good one because what you guys are saying is, all right, if you have multiple organizations that all have shared custody of some basket of funds, then for your signing, you&rsquo;re gonna rely on whatever internal controls you have.
+Whether those are technical controls, policy controls, a combination of the two of them.
+But then you still have some consensus level enforcement of, two out of these three organizations have to sign.
+It might be that within one organization, somebody&rsquo;s able to get escalated privileges and sign a thing that they aren&rsquo;t supposed to, but that doesn&rsquo;t necessarily mean money gone because you still have to have somebody else in another organization sign for it.
+And so you&rsquo;re kind of using multi-sig to control the spend across organizational boundaries, but then you&rsquo;re relying on whatever internal controls people have within XBoundary.</p><p>Speaker 1: 01:13:47</p><p>That&rsquo;s exactly right.
+And what&rsquo;s really interesting, I mean, at the moment, since we&rsquo;re not using NPC for anything, we can specifically, someone can hand us a transaction, and we&rsquo;re like, hey, your VP of sales signed this transaction, was this supposed to happen?
+And you then know for a fact which key got compromised, which helps just like with audits and governance checks, right, and like having multiple bands of communication to kind of verify these things in a way where you&rsquo;re not ultimately, you know, like this human element is so critical for making sure that you&rsquo;re doing things the right way and you have this audit log, which is the PSBT of what signatures are currently present.</p><p>Speaker 5: 01:14:24</p><p>In a post-Frost world, if you guys did this naively and you just said, we&rsquo;re going to do everything with the key path on tap root and it just always looks like single sig on chain, then you&rsquo;d lose that auditability.
+And so if you wanted to keep that auditability, you&rsquo;d have to do something like have a tap script for each combination of signers, and you&rsquo;d get kind of the auditability by looking at the control block and like which tap leaf got revealed.
+Or there&rsquo;s a Greg Maxwell idea floating around out there that like You do a bunch of tap leafs and then on each one, you have one of the signers just have their own signature and they act as a coordinator and then you have everybody else aggregate their signatures together.
+So each tap leaf ends up looking like two of two using ChexSigAd, like you were talking about earlier.
+And one of the signatures is an identifiable party.
+And then the other signature is a mu-sig or a frost.
+And so you&rsquo;re literally doing script-based multi-sig, but one of the signatures is actually an aggregated signature.
+And so you kind of get the best of both worlds where it&rsquo;s like two of two on chain, but that second key might be, you know, 15 of 20 or something.</p><p>Speaker 1: 01:15:48</p><p>Yeah, it gets really interesting too.
+So just as a quick note, when you&rsquo;re doing pay to witness script hash, you&rsquo;re committing to the entire script path, right?
+But with the tap leaf, you&rsquo;re just committing to that tap leaf.
+So you could have, you know, a hundred, a thousand tap leaves each with the right common metrics of each different party in theory.
+And then you have this auditability to your exact point.
+And then you don&rsquo;t have to worry about someone taking the signature and repurposing it later for something else like you would with pay to witness script hash.
+Cause you&rsquo;re only committing to that specific tap leave.</p><p>Speaker 0: 01:16:14</p><p>Would it be a challenge to pre-compute this?</p><p>Speaker 1: 01:16:17</p><p>That, yeah, that definitely would get more challenging.
+But I&rsquo;m talking in a future state where the tooling has already kind of been largely figured out.</p><p>Speaker 5: 01:16:23</p><p>Yeah, because like you do you do commit to all of it.
+You have to precompute all of them and then you use the root of the Merkle tree to tweak your internal public key.</p><h2 id=miniscript>Miniscript</h2><p>Speaker 0: 01:16:34</p><p>Is there anybody working on some more advanced stuff like this already?
+Like that&rsquo;s like out there as like, you know, prototypes, scripts.</p><p>Speaker 1: 01:16:44</p><p>So you mentioned earlier, right?
+Nick Farah was working on this new Frostbite wallet right now, like starting to get this tooling out there</p><p>Speaker 5: 01:16:54</p><p>Yeah, or you know if people want to see really weird Taproot script construction Programmatically believe it or not the ordinals project or&rsquo;d like that wallet has like a very unusual tap script embedded in it.
+So if you just want to understand like, what does it look like programmatically to build up a tree of tap scripts and then use that to generate an address.
+That&rsquo;s actually a really good source to go and check out.</p><p>Speaker 1: 01:17:26</p><p>Yeah, it&rsquo;s a wide open space of opportunity.
+And one last thing that also gets really nice with TAP scripts versus Pay-to-Witness script hash, specifically with MiniScript, you can&rsquo;t have a duplicate public key in the stack.
+That means you have to generate many child derivations.
+If you&rsquo;re using a signer, let&rsquo;s say it&rsquo;s a two of three and then it becomes a one of three.
+If you have different branches, you can&rsquo;t use identical public keys.
+So the way this works right now is that you can generate a different account for each one.
+But if it&rsquo;s all on tap root, you don&rsquo;t have to worry about a duplicate public key ever happening and you&rsquo;re able to just have it in the tap leaf.
+So you only have one account that you need to manage ever for a given signing device, which is definitely a better UX perspective and it makes it much more straightforward.
+It&rsquo;s all, yeah.</p><p>Speaker 5: 01:18:12</p><p>I got bit by that.
+Why can&rsquo;t you have duplicate pub keys in Miniscript?</p><p>Speaker 1: 01:18:17</p><p>Oh yeah, so you can&rsquo;t have duplicate pub keys because within the same script stack, because when you sign it, you can&rsquo;t prove that someone isn&rsquo;t gonna like malleate the transaction and have that signature for that pub key appear in a different branch.
+And it also breaks the composability.
+It breaks the, it&rsquo;s a common sub-expression, sub-expression issue.
+That&rsquo;s me just repeating a word that Andrew Pulsar said without me fully understanding the technical ramifications of it.
+Yeah, yeah, right, right.
+Like, that&rsquo;s a good Oracle to use.</p><p>Speaker 5: 01:18:48</p><p>It&rsquo;s usually a good strategy.
+Yeah, for sure.</p><p>Speaker 1: 01:18:50</p><p>But many script policies are also composable, right?
+So that&rsquo;s the idea too.
+I think it breaks down the composability.
+If you have, if I&rsquo;m say using this pub key in a different branch, like then you start having collisions, especially if it&rsquo;s pay to witness script hash, then like if you&rsquo;re signing, like if the key appears multiple times, that signature is valid for the whole stack.
+So it violates the malleability aspect of things.</p><p>Speaker 5: 01:19:13</p><p>That makes sense.
+Yeah, cause like With taproot, that wouldn&rsquo;t be an issue because you only reveal just the leaf that you&rsquo;re actually using and then the control block.
+So For the one person who&rsquo;s still listening at this point, the way that you spend a taproot script is, we mentioned earlier that you take all the scripts that you want to put into your taptree and you make a Merkle tree out of them.
+So when you go to spend it, you provide a little data structure called a control block that includes a Merkle proof.
+It provides the sibling hashes all the way up the tree, back up to the root, to prove that the script that you&rsquo;re spending was actually included in that address.
+Because you have this Merkle inclusion proof that commits to a specific location in the tree, somebody couldn&rsquo;t take that signature and like play it in a different branch of the script because you haven&rsquo;t revealed the</p><p>Speaker 1: 01:20:16</p><p>script.
+Exactly.</p><p>Speaker 5: 01:20:17</p><p>Yeah, it makes a lot of sense.</p><p>Speaker 0: 01:20:18</p><p>Yeah, guys, I kind of got dropped, but I think I&rsquo;m back now.</p><p>Speaker 1: 01:20:22</p><p>Everyone&rsquo;s falling asleep, including Rodolfo, who fell asleep.
+Now he&rsquo;s back.</p><p>Speaker 0: 01:20:30</p><p>Man, it&rsquo;s hard to do a podcast as a host with bad internet.
+So, okay guys, I guess the last thing here is, Rendell, what are you working on that you can talk about?</p><h2 id=team-script-custody-tooling-rijndael-project>Team script custody tooling (Rijndael Project)</h2><p>Speaker 5: 01:20:43</p><p>I&rsquo;m working on using interesting Bitcoin script constructions to help people with more interesting custody setups.
+So I&rsquo;m pivoting hard into TeamScript and working on custody tooling.</p><p>Speaker 0: 01:21:01</p><p>Okay, no specifics we can hear about the tooling?</p><p>Speaker 5: 01:21:05</p><p>Not today.</p><p>Speaker 0: 01:21:05</p><p>Okay, fair enough.
+Rindell is a mysterious man.</p><p>Speaker 5: 01:21:09</p><p>That&rsquo;s right.</p><p>Speaker 0: 01:21:10</p><p>So, so guys, I mean, listen, thank you so much.
+I mean, we have Almost two hours.
+You know, we went from like, you know, having the topic almost finished in 30 minutes, but then, but then not, but then yes, but then not.
+I think it was fantastic.
+I think that if people are not sleep to the end, They&rsquo;re going to get a lot of a lot of signal here.
+I think you guys did a fantastic job.
+I need to declare a winner.
+And the winner is Elon Musk for rugging my connection again.</p><p>Speaker 1: 01:21:43</p><p>Yeah, this is a Congrats, Elon.
+You deserve it.
+This was kind of like the emergent shit posting, just like Twitter banter was, you know, dammit, we&rsquo;re going to make everyone learn about Bitcoin.
+And that&rsquo;s what was great.
+We started seeing meta memes of people watching the debate and seeing that there&rsquo;s a lot about Bitcoin people don&rsquo;t know about.
+And that&rsquo;s what we wanted to have fun and a nice little drama wrapper, have people start learning more about, you know, how Bitcoin actually works under the hood and getting people to think about like the opportunities of solutions and products that can be built on top of more advanced scripting and MPCs.</p><p>Speaker 5: 01:22:18</p><p>Yeah, you know, I&rsquo;d love to see more fake drama around really obscure Bitcoin topics.
+Like maybe the next wave is maybe we can get some like package relay like meme warfare started.
+That&rsquo;d be pretty cool.</p><p>Speaker 1: 01:22:31</p><p>I love it.
+We didn&rsquo;t even talk about the taproot annex.
+Like, you know, that&rsquo;s just like.</p><p>Speaker 0: 01:22:35</p><p>Or we should dig the version, the original client.
+Satoshi original, original client and start showing all the poker code blocks.
+That would be awesome.
+And say that Bitcoin was designed to be poker or something, start some like weird conspiracies too.
+That always helps.
+Listen, guys, thank you so much.
+Any final thoughts, Rindell?</p><p>Speaker 5: 01:22:57</p><p>No, just, you know, be the memes that you want to see in the world.
+There&rsquo;s lots to do in Bitcoin.</p><p>Speaker 0: 01:23:04</p><p>So go go play with new stuff.
+Rob.</p><p>Speaker 1: 01:23:10</p><p>Yeah, it&rsquo;s a bear market.
+You should be building and learning about Bitcoin.
+You should post about price in the upswings and in the downswings.
+You should post about the tech and then you&rsquo;re always going to be happy in your lane, moisturized, happy, content.
+That&rsquo;s what you want to</p><p>Speaker 0: 01:23:23</p><p>be.
+Flourishing, flourishing.
+Yeah, I know my favorite meme of your fight was the one where It&rsquo;s like the frog sort of extended a hand to the guy on the floor.
+And like one guy is like super sad.
+The other guy is like winning.
+I can&rsquo;t remember.
+It was it was</p><p>Speaker 5: 01:23:41</p><p>like the guy that was sad.
+It was like drive chain arguments, price things, SEC, all these things.
+And then the guy that was happy was like music, Frost, Miniscript, Tappert.</p><p>Speaker 1: 01:23:57</p><p>That&rsquo;s right.
+Why in 2023 Are we talking about stock to flow and price model guys?
+Like, let&rsquo;s just</p><p>Speaker 6: 01:24:03</p><p>move on.
+No, I mean, the best part is that everybody is</p><p>Speaker 0: 01:24:06</p><p>an expert on clawbacks, right?</p><p>Speaker 5: 01:24:08</p><p>That&rsquo;s right.</p><p>Speaker 0: 01:24:09</p><p>And now everybody is an expert on superconductors.</p><p>Speaker 1: 01:24:12</p><p>That&rsquo;s right.</p><p>Speaker 0: 01:24:14</p><p>By the way, I am starting a pod, the superconductor.
+Superconductors.review.
+I have the domain and I&rsquo;m going to have some Bitcoin experts weigh in on the superconductors because Bitcoiners know everything and Bitcoiners are always right about everything.
+So.</p><p>Speaker 5: 01:24:32</p><p>And VK, so here&rsquo;s the format for the podcast.
+Every week you come on, you do your intro and then you say, has anybody reproduced the paper?
+No. And then you turn off the podcast.</p><p>Speaker 0: 01:24:44</p><p>That&rsquo;s that will be very successful.
+I mean, I should add some ads on the beginning.
+Yes.</p><p>Speaker 6: 01:24:49</p><p>Yeah.</p><p>Speaker 0: 01:24:49</p><p>By the way, that material, the LK99 medium stuff, it&rsquo;s very easy to make.
+You just need a small kiln that sells on Alibaba.
+And I&rsquo;m certain that people are gonna do it.</p><p>Speaker 1: 01:25:01</p><p>Yeah, there was like this random guy that had like a like an anime avatar in Russia, and he was like doing side by side separate productions and like it&rsquo;s accessible enough.
+People are just going to start running off and trying to</p><p>Speaker 0: 01:25:11</p><p>do it.
+I support I support home labs.</p><p>Speaker 1: 01:25:14</p><p>Absolutely.
+The favorite detail, though, I thought you would have picked up on that meme with comparing the two, I posted in the chat here is the Barbenheimer meme.
+You know, you have the pink cold card and you have the black cold card and you have to choose a side, which one are you?</p><p>Speaker 0: 01:25:29</p><p>I saw that.
+I actually did see that.
+That was that was something.</p><p>Speaker 1: 01:25:34</p><p>That was American Hodel&rsquo;s idea.
+American Hodel said you need to do the Barbenheimer meme with the black and pink gold card.</p><p>Speaker 0: 01:25:40</p><p>Where does the glow fit in?</p><p>Speaker 6: 01:25:45</p><p>We&rsquo;ll have</p><p>Speaker 1: 01:25:45</p><p>to figure that out.
+Glow in the dark.
+I have to get a glow in the dark one before I can properly assess the vibe</p><p>Speaker 0: 01:25:50</p><p>it has.
+Listen guys, we&rsquo;re going to do this again, either with the next drama or with the expansion of this drama, Because I don&rsquo;t think the Bitcoin script versus NPC drama is ever going to go away.</p><p>Speaker 1: 01:26:05</p><p>It&rsquo;s never going to go away.</p><p>Speaker 0: 01:26:06</p><p>No. Oh, I just can&rsquo;t wait for the CTV.
+We need some CTV drama.
+Oh, yeah.
+That&rsquo;ll be fun.
+I miss the CTV drama.
+OK, guys, Thank you so much.
+Thanks for putting up with this atrocious connection and my incapacity of participating too much.
+Maybe that&rsquo;s why I made it better.
+So you guys have a wonderful day.
+For more resources, check the show notes.
+We put a lot of effort into them.
+And remember, we don&rsquo;t have a crystal ball, so let us know about your project.
+Visit bitcoin.review to find out how to get in touch.</p><p>Speaker 6: 01:26:45</p><p>You</p><div class=row></div></div></div></div><script src=https://btctranscripts.com/lib/jquery.min.js></script><script src=https://btctranscripts.com/lib/popper.min.js></script><script src=https://btctranscripts.com/js/bootstrap.min.js></script><script type=text/javascript src=/plugins/lunr.min.js></script><script type=text/javascript src=/plugins/auto-complete.js></script><link href=/plugins/auto-complete.css rel=stylesheet><script type=text/javascript>var baseurl="https://btctranscripts.com/"</script><script type=text/javascript src=/plugins/search.js></script><script type=text/javascript src=https://btctranscripts.com/js/custom.js></script><script type=text/javascript src=/plugins/clipboard.js></script><script>new ClipboardJS(".btn")</script></body></html>
