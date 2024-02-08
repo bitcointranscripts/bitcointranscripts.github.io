@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Bitcoin Magazine on ₿itcoin Transcripts</title><link>https://btctranscripts.com/bitcoin-magazine/</link><description>Recent content in Bitcoin Magazine on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 03 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://btctranscripts.com/bitcoin-magazine/index.xml" rel="self" type="application/rss+xml"/><item><title>How to Activate a New Soft Fork</title><link>https://btctranscripts.com/bitcoin-magazine/2020-08-03-eric-lombrozo-luke-dashjr-taproot-activation/</link><pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-magazine/2020-08-03-eric-lombrozo-luke-dashjr-taproot-activation/</guid><description>Location: Bitcoin Magazine (online)
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Bitcoin Magazine on ₿itcoin Transcripts</title><link>https://btctranscripts.com/bitcoin-magazine/</link><description>Recent content in Bitcoin Magazine on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 26 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://btctranscripts.com/bitcoin-magazine/index.xml" rel="self" type="application/rss+xml"/><item><title>Explaining RGB Tokens</title><link>https://btctranscripts.com/bitcoin-magazine/bitcoin-explained/explaining-rgb-tokens/</link><pubDate>Fri, 26 Mar 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-magazine/bitcoin-explained/explaining-rgb-tokens/</guid><description>Intro Aaron van Wirdum: 00:01:45
+Live, from Utrecht, this is The Van Wirdum Sjorsnado. Hello.
+Ruben Somsen: 00:01:48
+Hello.
+Sjors Provoost: 00:01:49
+Hey, who&amp;rsquo;s there?
+Ruben Somsen: 00:01:51
+It&amp;rsquo;s another Dutch guy.
+Sjors Provoost: 00:01:53
+Welcome to the show, Ruben.
+Ruben Somsen: 00:01:54
+Thank you.
+Aaron van Wirdum: 00:01:56
+Welcome back Ruben. Ruben, did you start selling your tweets yet?
+Ruben Somsen: 00:01:59
+I tried to sell one of my tweets to my sister but she said, &amp;ldquo;What the hell are you doing?</description></item><item><title>How to Activate a New Soft Fork</title><link>https://btctranscripts.com/bitcoin-magazine/2020-08-03-eric-lombrozo-luke-dashjr-taproot-activation/</link><pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-magazine/2020-08-03-eric-lombrozo-luke-dashjr-taproot-activation/</guid><description>Location: Bitcoin Magazine (online)
 Aaron van Wirdum in Bitcoin Magazine on BIP 8, BIP 9 or Modern Soft Fork Activation: https://bitcoinmagazine.com/articles/bip-8-bip-9-or-modern-soft-fork-activation-how-bitcoin-could-upgrade-next
 David Harding on Taproot activation proposals: https://gist.github.com/harding/dda66f5fd00611c0890bdfa70e28152d
 Intro Aaron van Wirdum (AvW): Eric, Luke welcome. Happy Bitcoin Independence Day. How are you doing?
