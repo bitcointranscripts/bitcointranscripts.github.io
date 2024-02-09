@@ -55,7 +55,14 @@ Time commitment of large review may not be possible (extended period of singular
 Q: Address labeling, why not create two silent payment addresses?
 A: It doubles scanning costs.
 Limited to taproot UTXOs (currently about 3% of transactions) but when it increases we should find ways to optimize scanning, even though it currently does not seem to be an issue.
-Q: Why no P2PK</description></item><item><title>Bitcoin Core v24 Bug</title><link>https://btctranscripts.com/bitcoin-explained/bitcoin-core-v24-bug/</link><pubDate>Thu, 29 Dec 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-explained/bitcoin-core-v24-bug/</guid><description>Introduction Aaron van Wirdum: 00:00:20
+Q: Why no P2PK</description></item><item><title>Demystifying and Understanding Bitcoin Core Development</title><link>https://btctranscripts.com/bitcoin-review-podcast/demystifying-and-understanding-bitcoin-core-development/</link><pubDate>Wed, 22 Feb 2023 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-review-podcast/demystifying-and-understanding-bitcoin-core-development/</guid><description>Intro NVK: 00:00:40
+Today, we&amp;rsquo;re going to be talking about Bitcoin Core development and trying to demystify it, maybe sort of like shed some light. So, some of the FUD goes away and new FUD comes in maybe, who knows?
+Guest introductions NVK: 00:00:51
+I have this awesome panel with me. I have a James O&amp;rsquo;Beirne. Hi James.
+James O&amp;rsquo;Beirne: 00:00:56
+Hi, good to be here.
+NVK: 00:00:58
+Thanks for coming.</description></item><item><title>Bitcoin Core v24 Bug</title><link>https://btctranscripts.com/bitcoin-explained/bitcoin-core-v24-bug/</link><pubDate>Thu, 29 Dec 2022 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-explained/bitcoin-core-v24-bug/</guid><description>Introduction Aaron van Wirdum: 00:00:20
 Live from Utrecht, this is Bitcoin Explained. Sjors, welcome back. I saw you were promoting your book everywhere in the world over the past couple of weeks. Where did you go?
 Sjors Provoost: 00:00:31
 Absolutely. I went to a place called New York, a place called Nashville and a place called Austin and those are all in the United States.
