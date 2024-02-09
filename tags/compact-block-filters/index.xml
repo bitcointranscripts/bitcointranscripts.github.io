@@ -16,7 +16,16 @@ Van Wirdum Sjorsnado. Did I say it right this time?
 Sjors Provoost: 00:01:42
 I don&amp;rsquo;t know. We&amp;rsquo;re not going to check again. This is take number three. Now you&amp;rsquo;re going to ask me whether I rioted and I&amp;rsquo;m gonna say no.
 Aaron van Wirdum: 00:01:51
-You&amp;rsquo;re like psychic.</description></item><item><title>Neutrino: The Privacy Preserving Bitcoin Light Client</title><link>https://btctranscripts.com/sf-bitcoin-meetup/2017-06-06-laolu-osuntokun-neutrino/</link><pubDate>Tue, 06 Jun 2017 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/sf-bitcoin-meetup/2017-06-06-laolu-osuntokun-neutrino/</guid><description>Slides: https://docs.google.com/presentation/d/1vjJUWOZIaPshjx1svfE6rFZ2lC07n47ifOdzpKWqpb4/
+You&amp;rsquo;re like psychic.</description></item><item><title>Bitcoin Core 0.21.0</title><link>https://btctranscripts.com/bitcoin-magazine/bitcoin-explained/bitcoin-core-v0-21/</link><pubDate>Thu, 21 Jan 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-magazine/bitcoin-explained/bitcoin-core-v0-21/</guid><description>Intro Aaron van Wirdum: 00:01:35
+Live from Utrecht, this is The Van Wirdum Sjorsnado. Episode 24, we&amp;rsquo;re going to discuss Bitcoin Core 21.
+Sjors Provost: 00:01:46
+Hooray. Well, 0.21. We&amp;rsquo;re still in the age of the zero point releases.
+Aaron van Wirdum: 00:01:51
+Yes, which is ending now.
+Sjors Provost: 00:01:53
+Probably yes.
+Aaron van Wirdum: 00:01:54
+That&amp;rsquo;s what I understand. The next one, the 22 will actually be Bitcoin Core 22.</description></item><item><title>Neutrino: The Privacy Preserving Bitcoin Light Client</title><link>https://btctranscripts.com/sf-bitcoin-meetup/2017-06-06-laolu-osuntokun-neutrino/</link><pubDate>Tue, 06 Jun 2017 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/sf-bitcoin-meetup/2017-06-06-laolu-osuntokun-neutrino/</guid><description>Slides: https://docs.google.com/presentation/d/1vjJUWOZIaPshjx1svfE6rFZ2lC07n47ifOdzpKWqpb4/
 https://twitter.com/kanzure/status/1054031024085258240
 Introduction My name is Laolu or Roasbeef on the internet. I’m going to talk about light clients in general and then also what we’re working on in terms of light clients and then also how that factors into the lightning network itself. The talk is called Neutrino because that is the name of our new light client that has been released. There has been a BIP proposal and I’ll go through all of that in the talk itself.</description></item><item><title>Neutrino, Good and Bad</title><link>https://btctranscripts.com/breaking-bitcoin/2019/neutrino/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/breaking-bitcoin/2019/neutrino/</guid><description>&amp;hellip; 228C D70C FAA6 17E3 2679 E455
 Introduction I want to start this talk with a question for the audience. How many of you have a mobile wallet on your phone right now? How many know the security model that the wallets are using? Okay, how many of you trust those security assumptions? Okay, less of you. I am going to talk about Neutrino. In order to talk about it, let&amp;rsquo;s talk about before Neutrino.</description></item></channel></rss>

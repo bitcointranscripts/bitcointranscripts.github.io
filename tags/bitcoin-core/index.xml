@@ -92,7 +92,16 @@ Negative. I did not even know there was one.
 Aaron van Wirdum: 00:01:59
 One has been launched, started. I don&amp;rsquo;t think it&amp;rsquo;s actually a client yet, a project has started.
 Sjors Provoost: 00:02:05
-Okay, a project has started, it&amp;rsquo;s not a binary or a code that you can compile.</description></item><item><title>Chaincode Decoded: UTXOs</title><link>https://btctranscripts.com/chaincode-labs/chaincode-podcast/utxos-chaincode-decoded-episode-5/</link><pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/chaincode-labs/chaincode-podcast/utxos-chaincode-decoded-episode-5/</guid><description>Introduction John Newbery: 00:00:00
+Okay, a project has started, it&amp;rsquo;s not a binary or a code that you can compile.</description></item><item><title>Bitcoin Core 0.21.0</title><link>https://btctranscripts.com/bitcoin-magazine/bitcoin-explained/bitcoin-core-v0-21/</link><pubDate>Thu, 21 Jan 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-magazine/bitcoin-explained/bitcoin-core-v0-21/</guid><description>Intro Aaron van Wirdum: 00:01:35
+Live from Utrecht, this is The Van Wirdum Sjorsnado. Episode 24, we&amp;rsquo;re going to discuss Bitcoin Core 21.
+Sjors Provost: 00:01:46
+Hooray. Well, 0.21. We&amp;rsquo;re still in the age of the zero point releases.
+Aaron van Wirdum: 00:01:51
+Yes, which is ending now.
+Sjors Provost: 00:01:53
+Probably yes.
+Aaron van Wirdum: 00:01:54
+That&amp;rsquo;s what I understand. The next one, the 22 will actually be Bitcoin Core 22.</description></item><item><title>Chaincode Decoded: UTXOs</title><link>https://btctranscripts.com/chaincode-labs/chaincode-podcast/utxos-chaincode-decoded-episode-5/</link><pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/chaincode-labs/chaincode-podcast/utxos-chaincode-decoded-episode-5/</guid><description>Introduction John Newbery: 00:00:00
 If we go back in time to version 0.1, all that was stored was the blockchain and I think a marker saying whether that coin was spent or not. I mean that&amp;rsquo;s okay for your first version but it doesn&amp;rsquo;t really scale and it&amp;rsquo;s bad performance because every time you want to access a coin you need to read it from disk.
 Adam Jonas: 00:00:28
 Welcome back to the Chaincode Podcast.</description></item><item><title>Bitcoin Core 0.21 Supports Tor V3</title><link>https://btctranscripts.com/bitcoin-explained/bitcoin-core-v21-supports-tor-v3/</link><pubDate>Thu, 15 Oct 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-explained/bitcoin-core-v21-supports-tor-v3/</guid><description>Introduction Aaron van Wirdum: 00:00:07
