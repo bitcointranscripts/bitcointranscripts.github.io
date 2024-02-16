@@ -30,9 +30,15 @@
 <ul class="taxonomy-list">
     {{ range .Data.Pages }}
     <div class="h6 child-links py-1">
-        <a href="{{.RelPermalink}}" class="list-group-item list-group-item-action flex-column align-items-start">
+        <a href="{{.RelPermalink}}" data-toggle="tooltip" title="AI-Generated Transcript (needs review)"
+            class='list-group-item list-group-item-action flex-column align-items-start{{ if in .Params.transcript_by "--needs-review" }} needs-review{{ end }}'>
             <div class="d-flex flex-wrap-reverse justify-content-between">
-                <h5 class="mb-1">{{ .Title }} </h5>
+                <h5 class="mb-1">
+                    {{ .Title }}
+                    {{ if in .Params.transcript_by "--needs-review" }}
+                        <i class='fas fa-robot fa-sm'></i>
+                    {{ end }}
+                </h5>
                 <small class="text-muted font-italic ml-auto" style="white-space: nowrap;">{{ .Params.date.Format "Jan 02, 2006" }}</small>
             </div>
             {{ with .Params.speakers }}
