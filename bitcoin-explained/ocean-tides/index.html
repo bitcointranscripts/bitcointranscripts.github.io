@@ -1,0 +1,366 @@
+<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=canonical href=https://btctranscripts.com/bitcoin-explained/ocean-tides/><title>Ocean Tides | ₿itcoin Transcripts
+</title><link href=https://btctranscripts.com/css/fontawesome.min.css rel=stylesheet><link rel=stylesheet href=https://btctranscripts.com/css/ace.min.css><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://btctranscripts.com/images/btctranscripts.png"><meta name=twitter:title content="Sjors Provoost, Aaron van Wirdum - Ocean Tides"><meta name=twitter:description content="In this episode of Bitcoin, Explained, Aaron and Sjors explain what features are offered by Ocean, the relaunched and rebranded Eligius mining pool. They discuss how payouts from this pool are (partially) non-custodial, how the block template creation is fully transparent, and how payout distribution is determined. Aaron and Sjors also briefly touch on the “spam” filtering employed by Ocean, and how that potentially affects profitability of the pool."><script async src=https://visits.bitcoindevs.xyz/script.js data-website-id=06384ada-7f1c-44c2-a6d9-d830fb23e122></script></head><body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id=navbarMain><div class=container><div><a class=navbar-brand href=/>₿itcoin Transcripts</a></div><div class="collapse navbar-collapse" id=navbarMainCollapse><ul class="navbar-nav ml-auto"><li class=nav-item><a class=nav-link href=/es>es</a></li><li class=nav-item><a class=nav-link href=/pt>pt</a></li><li class=nav-item><a class=nav-link href=/zh>zh</a></li><li class=nav-item><a class=nav-link href=https://github.com/bitcointranscripts/bitcointranscripts target=_blank><i class='fab fa-github'></i></a></li></ul></div></div></nav><div class="alert alert-warning fade show sticky-banner" role=alert><strong><a href=https://review.btctranscripts.com target=_blank data-umami-event=click-banner>Get paid to review technical Bitcoin transcripts
+</a></strong><button type=button class=close data-dismiss=alert aria-label=Close>
+<span aria-hidden=true>&#215;</span></button></div><div class=container-fluid><div class=row><div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0"><button class="navbar-toggler navbar-toggler-right collapsed" type=button data-toggle=collapse data-target=#sidenav-left-collapse aria-controls=sidenav-left-collapse aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse align-items-start flex-column" id=sidenav-left-collapse><form class="form-inline my-2 my-lg-0 searchbox"><input class="form-control mr-sm-2 w-100" data-search-input id=search-by type=text placeholder='Search (press "/")'></form><ul class="navbar-nav flex-column pt-3"><li data-nav-id=/adopting-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/adopting-bitcoin/><h6>Adopting Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/adopting-bitcoin/2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/adopting-bitcoin/2021/><h6>Adopting Bitcoin 2021</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/advancing-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/><h6>Advancing Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/advancing-bitcoin/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2019/><h6>Advancing Bitcoin 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/advancing-bitcoin/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2020/><h6>Advancing Bitcoin 2020</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/advancing-bitcoin/2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2022/><h6>Advancing Bitcoin 2022</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/advancing-bitcoin/2023/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2023/><h6>Advancing Bitcoin 2023</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/andreas-antonopoulos/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/andreas-antonopoulos/><h6>Andreas Antonopoulos</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/austin-bitcoin-developers/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/austin-bitcoin-developers/><h6>Austin Bitcoin Developers</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/baltic-honeybadger/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/><h6>Baltic Honeybadger</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/baltic-honeybadger/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/2018/><h6>Baltic Honeybadger 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/baltic-honeybadger/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/2019/><h6>Baltic Honeybadger 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bit-block-boom/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bit-block-boom/><h6>Bit Block Boom</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bit-block-boom/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bit-block-boom/2019/><h6>Bit Block Boom 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-core-dev-tech/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/><h6>Bitcoin Core Dev Tech</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bitcoin-core-dev-tech/2015-02/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2015-02/><h6>Bitcoin Core Dev Tech 2015</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2017-09/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2017-09/><h6>Bitcoin Core Dev Tech 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2018-03/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2018-03/><h6>Bitcoin Core Dev Tech 2018 (Mar)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2018-10/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2018-10/><h6>Bitcoin Core Dev Tech 2018 (Oct)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2019-06/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2019-06/><h6>Bitcoin Core Dev Tech 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2022-10/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2022-10/><h6>Bitcoin Core Dev Tech 2022</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2023-04/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2023-04/><h6>Bitcoin Core Dev Tech 2023 (Apr)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2023-09/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2023-09/><h6>Bitcoin Core Dev Tech 2023 (Sept)</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/edgedevplusplus/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/edgedevplusplus/><h6>Bitcoin Edge Dev++</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/edgedevplusplus/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/edgedevplusplus/2017/><h6>Bitcoin Edge Dev++ 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/edgedevplusplus/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/edgedevplusplus/2018/><h6>Bitcoin Edge Dev++ 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/edgedevplusplus/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/edgedevplusplus/2019/><h6>Bitcoin Edge Dev++ 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-explained/ class="nav-item my-1 parent haschildren"><a class="nav-link p-0" href=/bitcoin-explained/><h6>Bitcoin Explained</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-magazine/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-magazine/><h6>Bitcoin Magazine</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-review-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-review-podcast/><h6>Bitcoin Review Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoinplusplus/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinplusplus/><h6>Bitcoin++</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bitcoinplusplus/2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinplusplus/2022/><h6>Bitcoin++ 2022</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoinplusplus/layer-2/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinplusplus/layer-2/><h6>Layer 2</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoinplusplus/onchain-privacy/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinplusplus/onchain-privacy/><h6>Onchain Privacy</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoinology/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinology/><h6>Bitcoinology</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoinops/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinops/><h6>Bitcoinops</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcointranscripts/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcointranscripts/><h6>Bitcointranscripts</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/blockchain-protocol-analysis-security-engineering/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/><h6>Blockchain Protocol Analysis Security Eng</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/blockchain-protocol-analysis-security-engineering/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2017/><h6>Blockchain Protocol Analysis Security Engineering 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/blockchain-protocol-analysis-security-engineering/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2018/><h6>Blockchain Protocol Analysis Security Engineering 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/blockstream-webinars/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockstream-webinars/><h6>Blockstream Webinars</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/boltathon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/boltathon/><h6>Boltathon</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/breaking-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/><h6>Breaking Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/breaking-bitcoin/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/2017/><h6>Breaking Bitcoin 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/breaking-bitcoin/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/2019/><h6>Breaking Bitcoin 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/building-on-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/building-on-bitcoin/><h6>Building On Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/building-on-bitcoin/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/building-on-bitcoin/2018/><h6>Building On Bitcoin 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/c-lightning/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/c-lightning/><h6>c-lightning</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/chaincode-labs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-labs/><h6>Chaincode Labs</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/chaincode-labs/chaincode-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-labs/chaincode-podcast/><h6>Chaincode Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/chaincode-labs/chaincode-residency/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-labs/chaincode-residency/><h6>Chaincode Residency</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/chicago-bitdevs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chicago-bitdevs/><h6>Chicago Bitdevs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/coindesk-consensus-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coindesk-consensus-2016/><h6>Coindesk Consensus</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/coordination-of-decentralized-finance-workshop/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/><h6>Coordination of Decentralized Finance</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/coordination-of-decentralized-finance-workshop/2020-stanford/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/2020-stanford/><h6>2020 Stanford</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/cppcon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/><h6>CPPcon</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/cppcon/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/2017/><h6>CPPcon 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/cppcon/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/2020/><h6>CPPcon 2020</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/cryptoeconomic-systems/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cryptoeconomic-systems/><h6>Cryptoeconomic Systems</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/cryptoeconomic-systems/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cryptoeconomic-systems/2019/><h6>Cryptoeconomic Systems 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/dallas-bitcoin-symposium/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/dallas-bitcoin-symposium/><h6>Dallas Bitcoin Symposium</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/decentralized-financial-architecture-workshop/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/decentralized-financial-architecture-workshop/><h6>Decentralized Financial Architecture Workshop</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-developers-miners-meeting-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-developers-miners-meeting-2016/><h6>Developers-Miners Meeting</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/greg-maxwell/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/greg-maxwell/><h6>Greg Maxwell</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/grincon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/grincon/><h6>Grincon</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/grincon/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/grincon/2019/><h6>Grincon 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/honey-badger-diaries/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/honey-badger-diaries/><h6>Honey Badger Diaries</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/iacr/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/iacr/><h6>IACR Crypto</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/la-bitdevs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/la-bitdevs/><h6>LA Bitdevs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/layer2-summit/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/layer2-summit/><h6>Layer2 Summit</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/layer2-summit/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/layer2-summit/2018/><h6>Layer2 Summit 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/lets-talk-bitcoin-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lets-talk-bitcoin-podcast/><h6>Lets Talk Bitcoin Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/lightning-conference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-conference/><h6>Lightning Conference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/lightning-conference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-conference/2019/><h6>Lightning Conference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/lightning-hack-day/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-hack-day/><h6>Lightning Hack Day</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/lightning-specification/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-specification/><h6>Lightning Specification</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/london-bitcoin-devs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/london-bitcoin-devs/><h6>London Bitcoin Devs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/magicalcryptoconference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/magicalcryptoconference/><h6>Magicalcryptoconference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/magicalcryptoconference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/magicalcryptoconference/2019/><h6>Magicalcryptoconference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/misc/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/misc/><h6>Misc</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/><h6>MIT Bitcoin Expo</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2015/><h6>Mit Bitcoin Expo 2015</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2016/><h6>Mit Bitcoin Expo 2016</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2017/><h6>MIT Bitcoin Expo 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2018/><h6>Mit Bitcoin Expo 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2019/><h6>Mit Bitcoin Expo 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2020/><h6>Mit Bitcoin Expo 2020</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2021/><h6>Mit Bitcoin Expo 2021</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2022/><h6>MIT Bitcoin Expo 2022</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/munich-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/munich-meetup/><h6>Munich Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/noded-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/noded-podcast/><h6>Noded Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/realworldcrypto/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/><h6>Realworldcrypto</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/realworldcrypto/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/2018/><h6>Realworldcrypto 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/realworldcrypto/2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/2021/><h6>Realworldcrypto 2021</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/rebooting-web-of-trust/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/rebooting-web-of-trust/><h6>Rebooting Web Of Trust</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/rebooting-web-of-trust/2019-prague/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/rebooting-web-of-trust/2019-prague/><h6>2019 Prague</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/ruben-somsen/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/ruben-somsen/><h6>Ruben Somsen</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/satoshi-roundtable/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/satoshi-roundtable/><h6>Satoshi Roundtable</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/satoshi-roundtable/sr-004/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/satoshi-roundtable/sr-004/><h6>Sr 004</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/scalingbitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/><h6>Scaling Bitcoin Conference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/scalingbitcoin/hong-kong-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/hong-kong-2015/><h6>Hong Kong (2015)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/milan-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/milan-2016/><h6>Milan (2016)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/montreal-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/montreal-2015/><h6>Montreal (2015)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/stanford-2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/><h6>Stanford (2017)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/tel-aviv-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/><h6>Tel Aviv (2019)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/tokyo-2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/><h6>Tokyo (2018)</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/sf-bitcoin-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/sf-bitcoin-meetup/><h6>SF Bitcoin Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/simons-institute/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/simons-institute/><h6>Simons Institute</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/stanford-blockchain-conference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/><h6>Stanford Blockchain</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/stanford-blockchain-conference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/2019/><h6>Stanford Blockchain Conference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/stanford-blockchain-conference/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/2020/><h6>Stanford Blockchain Conference 2020</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/stephan-livera-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stephan-livera-podcast/><h6>Stephan Livera Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/sydney-bitcoin-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/sydney-bitcoin-meetup/><h6>Sydney Bitcoin Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/tabconf/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tabconf/><h6>TABConf</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/tabconf/2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tabconf/2021/><h6>TABConf 2021</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/tabconf/2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tabconf/2022/><h6>TABConf 2022</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/texas-bitcoin-conference-2014/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/texas-bitcoin-conference-2014/><h6>Texas Bitcoin Conference</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/tftc-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tftc-podcast/><h6>TFTC Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/verifiable-delay-functions/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/verifiable-delay-functions/><h6>Verifiable Delay Functions</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/verifiable-delay-functions/vdf-day-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/verifiable-delay-functions/vdf-day-2019/><h6>Vdf Day 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/vr-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/vr-bitcoin/><h6>VR Bitcoin</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/w3-blockchain-workshop-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/w3-blockchain-workshop-2016/><h6>W3 Blockchain Workshop</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/wasabi/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/wasabi/><h6>Wasabi Wallet</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/wasabi/research-club/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/wasabi/research-club/><h6>Wasabi Research Club</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/wasabi/podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/wasabi/podcast/><h6>Wasabikas Bitcoin Privacy Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/what-bitcoin-did-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/what-bitcoin-did-podcast/><h6>What Bitcoin Did Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></div></nav></div><div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky"><div class=docs-toc><nav id=TableOfContents></nav></div></div><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3"><a href=/>Home</a>
+&lt; <a href=/bitcoin-explained/>Bitcoin Explained
+</a>&lt; Ocean Tides<h1>Ocean Tides</h1><p>Speakers:
+<a href=/speakers/sjors-provoost>Sjors Provoost</a>, <a href=/speakers/aaron-van-wirdum>Aaron van Wirdum</a></p><p><i>Date: December 6, 2023</i></p><p><i>Transcript By: kouloumos via tstbtc v1.0.0 --needs-review</i></p><p>Tags:
+<a href=/tags/mining>Mining</a></p><p>Category:
+<a href=/categories/podcast>Podcast</a></p><p>Media:
+<a href=https://bitcoinexplainedpodcast.com/@nado/episodes/episode-86-ocean-tides-hktbg>https://bitcoinexplainedpodcast.com/@nado/episodes/episode-86-ocean-tides-hktbg</a></p><div class="alert alert-warning"><div class=ai-generated><i class='fas fa-robot'></i>
+<span>AI-Generated Transcript</span></div><span>Review this transcript and earn sats. </span><a href=https://review.btctranscripts.com target=_blank data-umami-event=click-transcript-banner>Learn More ></a></div><p>Speaker 0: 00:00:21</p><p>Live from Utrecht, this is Bitcoin Explained.
+Hey Sjoerds.
+Hello.
+Sjoerds, we have a sponsor.</p><p>Speaker 1: 00:00:28</p><p>That is correct.
+We have a new sponsor.</p><p>Speaker 0: 00:00:30</p><p>Isn&rsquo;t that great?</p><p>Speaker 1: 00:00:31</p><p>That&rsquo;s right.
+Our new sponsor is Coinkind, the company behind the cold card.
+And dear listener, if you have no idea what a cold card is, please let us know because then we&rsquo;ll explain it because otherwise it&rsquo;s a bit ridiculous if we explain it because we I think we we think you all know.</p><p>Speaker 0: 00:00:48</p><p>Oh my God, this is the worst ad read in history, Sjoerds.
+Excellent.
+Can we at least mention it&rsquo;s a hardware wallet?</p><p>Speaker 1: 00:00:56</p><p>Yes, it&rsquo;s a hardware wallet.</p><p>Speaker 0: 00:00:57</p><p>It&rsquo;s a hardware wallet you can use to store Bitcoin.
+All right.
+Sjoerds, today we&rsquo;re going to discuss a new mining pool launched.
+Well, kind of.
+Ocean Pool.
+I was invited to the launch event.
+It was sort of a mini conference.</p><p>Speaker 1: 00:01:15</p><p>I felt a very strong FOMO for that one.
+I saw the video, you guys were in the middle of nowhere and some like, like video, like some horror movie video shoot game basically scene.</p><p>Speaker 0: 00:01:26</p><p>Right.
+Yeah.
+Well, it was quite nice actually.
+There was like this hydro plant, a very, what&rsquo;s a good English word for this?
+Rustic?
+I don&rsquo;t know if that&rsquo;s the right word.
+Maybe, but it was nice.
+Let&rsquo;s just say it was nice, nice environment.
+And yeah, they launched this pool.
+So it&rsquo;s really the relaunch or re-brand or re something of Elytius.
+If that&rsquo;s how I pronounce that pool, the Luke Dasher pool.
+This time it&rsquo;s backed by Jack Dorsey, my other investors.
+And their goal, their intention is to re-decentralize mining essentially, or decentralized mining.</p><p>Speaker 1: 00:02:04</p><p>Right.
+And they&rsquo;re calling it Ocean.</p><p>Speaker 0: 00:02:07</p><p>Yeah.
+Didn&rsquo;t I mention that?
+No. Okay.
+Yes.
+Ocean, ocean pool.
+Yeah, so decentralizing mining pools or at least this one or mining in general, ultimately is the goal.
+The sort of most notable innovation that they started with, that they launched with, is they have this non-custodial setup.
+Kinda.
+Or I mean, that&rsquo;s the goal, that&rsquo;s the intention.</p><p>Speaker 1: 00:02:34</p><p>I guess one diplomatic way to call it would be custody minimized.
+I mean, you can have long legal discussion about what custody means, but I think we care most about the technical sides of it.
+And then you can ask practical questions like could the mining pool steal your money?
+Could the big forces steal your money?
+Etc.
+And we can try to get into some of the nuance there of what they&rsquo;re actually doing.</p><p>Speaker 0: 00:02:57</p><p>So to clarify this, what mining pools usually do is, well I don&rsquo;t want to get into the whole thing, but basically when a mining pool finds new coins, the mining pool gets these coins.
+And in fact, these coins can&rsquo;t be spent for a hundred blocks, right?
+Yeah.
+And then after these a hundred blocks, well, that&rsquo;s actually not what happens with most pools.
+I was, I w I was going to say after a hundred blocks, these coins are distributed to the miners, but that&rsquo;s not actually how money pools work.</p><p>Speaker 1: 00:03:28</p><p>I would say there&rsquo;s a bigger separation there, right?
+The mining pool as a whole has a wallet and the coins they earn go into that wallet and the miners are paid from that wallet but it is a bit of an omnibus and not necessarily trivial to understand which mindset belongs to which specific individual miner.</p><p>Speaker 0: 00:03:46</p><p>Yeah a way that they will explain it or Bitcoin Mechanic, for example, is essentially most Bitcoin miners or hashers, as we&rsquo;ve also called it, aren&rsquo;t actually mining Bitcoin.
+They&rsquo;re just selling their hash power to a mining pool, basically.
+And the pool operator is the one that&rsquo;s actually&mldr;</p><p>Speaker 1: 00:04:03</p><p>Well, that sounds a little bit like a separate issue, though it&rsquo;s a bit related to whether you know you&rsquo;re really&mldr;
+What it is that you&rsquo;re doing as a miner.
+Are you producing blocks or are you just delivering hash rate to a buyer?
+And that depends on the incentive model, the exact business model.
+I think we&rsquo;ll get into that a bit later, but the idea of holding coins custody, you know, you could, you could do that with this model too, I think you just don&rsquo;t have to.</p><p>Speaker 0: 00:04:30</p><p>Right.
+Yeah.
+It is a slightly separate issue.
+I just wanted to point it out real quick, but yes.
+Yeah.
+So the main innovation here is essentially that hashers as well.
+They&rsquo;ll call them.
+So to clarify that there&rsquo;s the mining pool or the mining pool operator, that&rsquo;s, you know, doing most of the Bitcoin stuff, you know, downloading blockchain and constructing the blockchain template, which is a big part of it, which might not happen in the future with Stratum V2, but we&rsquo;ve made another episode about that, at least right now, most mining pools still create block templates or which transactions go into a block.
+And I lost my train of thought, but I think I was going to say with Ocean, the new coins are directly paid to the hashers.
+Oh, I was still explaining.</p><p>Speaker 1: 00:05:16</p><p>So the coin-based transaction, which is what every new block contains, has a number of outputs and typically these just go to the general wallet of the pool.
+But with this new Ocean Pool, as much as possible, the coin-based transactions go directly to the miners.
+Right.
+With the caveat that you cannot do that for all mine transactions.
+Not for all miners.
+And there are two reasons for that.</p><p>Speaker 0: 00:05:41</p><p>Okay, so let&rsquo;s get into that.
+First let&rsquo;s point out some advantages of this.
+And the biggest one is probably, so right now, if you&rsquo;re a hasher and you want to join a pool, most pools have sort of KYC stuff going on, like you need to actually tell the pool who you are, at least some of the big ones have this.
+And Ocean does not have this.</p><p>Speaker 1: 00:06:00</p><p>Yeah, but I don&rsquo;t think that&rsquo;s inherent to this model at all.
+Like you could still have KYC in this model or not.</p><p>Speaker 0: 00:06:07</p><p>Yeah, so well, I mean, I guess in their view or what they will argue or what they think or what they believe is that they, that it&rsquo;s sort of a, this way it&rsquo;s legally possible to not do KYC.</p><p>Speaker 1: 00:06:18</p><p>Well, we&rsquo;re not lawyers.
+We&rsquo;re, I&rsquo;m a developer, you&rsquo;re a journalist, but let&rsquo;s,</p><p>Speaker 0: 00:06:23</p><p>but in any case, they aren&rsquo;t doing KYC stuff.
+That&rsquo;s for sure.</p><p>Speaker 1: 00:06:26</p><p>Right now, you can just plug in and start mining.
+One thing that they&rsquo;re doing very practically is that you as a miner don&rsquo;t create an account or you don&rsquo;t have to.
+You just provide a Bitcoin address straight as you&rsquo;re directly from the miner.</p><p>Speaker 0: 00:06:40</p><p>Right.
+Okay.
+So you mentioned, so you, So you get paid directly from the Coinbase as a hasher to the extent that it is possible.</p><p>Speaker 1: 00:06:52</p><p>Yeah, and that extent is quite limited because of two reasons.
+One is a Coinbase transaction can only have this many outputs.
+Or even if you could have as many as you want, at some point it&rsquo;s just not worth paying the fees.
+Or not so much paying the fees because the Coinbase transaction doesn&rsquo;t pay fees, but you are forgoing, you know, you&rsquo;re using up space that others could pay, that other people are paying you fees as a pool.
+So if you make a one megabyte Coinbase transaction, then you can do that and you pay zero fees for it, but you are now no longer mining anything.</p><p>Speaker 0: 00:07:25</p><p>Right, well, you could create a four megabyte Coinbase transaction.</p><p>Speaker 1: 00:07:28</p><p>I don&rsquo;t think so because there&rsquo;s no witness.</p><p>Speaker 0: 00:07:30</p><p>Maybe two.
+Oh, Oh, right.
+Okay, let&rsquo;s separate these issues.
+So first of all, you said you can&rsquo;t necessarily pay every hasher because the number of outputs in the Coinbase transaction is limited?</p><p>Speaker 1: 00:07:42</p><p>Or at least, I don&rsquo;t know if there&rsquo;s an actual limit there that matters, but basically it&rsquo;s just not worth the opportunity cost of making very small payments in the Coinbase.
+But there is a second&mldr;</p><p>Speaker 0: 00:07:52</p><p>So it&rsquo;s the same issue.
+There is no actual limit to the number of outputs in the Coinbase transaction.</p><p>Speaker 1: 00:07:56</p><p>I think it&rsquo;s just a regular transaction, whatever that limit is.
+It might not be one.
+Okay.
+I should know that, I guess.
+So the second limit, the second limit is a little bit more mundane.
+Apparently some of the mining hardware out there starts to panic if you put more than 20 outputs in a coin based transaction.
+So that has nothing to do with the Bitcoin limits.
+It&rsquo;s just that some mining equipment just panics when there&rsquo;s too many outputs.
+So in practice, the limit is about 20.
+So the 20, and in this case, the top 20 miners get paid directly from the Coinbase.
+Then there&rsquo;s some amount left and that essentially goes to a wallet you could say, but they make sure that from that wallet after a hundred blocks, because then you can spend it, it immediately goes to the correct miners as if they were part of the Coinbase essentially.</p><p>Speaker 0: 00:08:49</p><p>Right.
+Okay.
+So we just, so I thought wrongly probably that there was a limit on the number of transactions on the Coinbase output.
+And you just said, That&rsquo;s probably not the case, but there some hardware has this issue.
+That&rsquo;s, that&rsquo;s where the limit comes from.
+Yeah.
+Okay.
+And you say that limit is 20.
+I apparently roughly 20.
+20 ish.
+Okay.
+There can only be 20 transaction outputs from a Coinbase transaction.</p><p>Speaker 1: 00:09:16</p><p>So, So that secondary transaction, which can only happen after a hundred blocks, because the Coinbase maturity rule, that&rsquo;s a consensus rule.
+That transaction is kind of just like it was part of the Coinbase itself, right?
+It also has the same fee trade-offs here where yes, you can put whatever giant transaction you want in there as a pool, but then you&rsquo;re foregoing fee revenue from other transactions.
+This transaction just spends from the Coinbase.</p><p>Speaker 0: 00:09:40</p><p>Okay.
+So if there&rsquo;s just too many hashers that need to be paid from the Coinbase, if it&rsquo;s more than 20 essentially, then some of them will be paid later, still as soon as possible, but later.
+And then the other thing was, if you mine, if you&rsquo;re a hasher and you don&rsquo;t earn enough from a block, then you&rsquo;ll only, also won&rsquo;t get paid immediately.</p><p>Speaker 1: 00:10:03</p><p>Right, So then the idea is to basically wait until you, until you&rsquo;ve accumulated enough credit as it were, and then you get paid.
+So there, it really starts looking like just a wallet that&rsquo;s custodial, but only for small amounts.</p><p>Speaker 0: 00:10:18</p><p>Sjoerd Right.
+Okay.
+So that&rsquo;s how it works today.
+And then there are some ideas in the future, for the future to improve that a little bit more.
+So one of them is using Lightning for payouts.</p><p>Speaker 1: 00:10:32</p><p>Arno Yeah, that kind of makes intuitive sense.
+When you have very small miners that want to collect small rewards, maybe they get like 20 Satoshis every block.
+Lightning is a way to do that.
+Then the question is, can you, you know, how non-custodial can you make lightning?
+I believe if you listen to the Stefan Levera podcast, Bitcoin Mechanic explains some ideas of how to do that roughly, using, I believe, some sort of market where, like, if you have, if you have lightning liquidity, you essentially buy the rights to the payouts from the pool.
+So the pool is not doing the lightning payouts.
+They&rsquo;re just, they&rsquo;re just giving payouts to addresses, but then you, somebody else does some swapping of who gets which points.</p><p>Speaker 0: 00:11:15</p><p>Right.
+And then there&rsquo;s another potentially cool idea, which is not possible yet on the Bitcoin network, but with check template verify, it could actually be implemented that if this 20 limit threshold in the Coinbase is reached, then the other hashers are still guaranteed their payment through a CTV transaction because of that.</p><p>Speaker 1: 00:11:39</p><p>Yeah, and even better than that, regardless of this 20 limit, right now, if you&rsquo;re putting something, you have to put the addresses in the Coinbase right now.
+And so you kind of don&rsquo;t want to do that when fees are really high because that&rsquo;s an opportunity cost.
+But maybe you want to pay people when fees are low.
+So CTV is quite interesting for that.
+We have not really discussed that in any podcast, but it&rsquo;s basically a software proposal that commits to certain transactions happening in the future.
+And one of the intended use cases is congestion control.
+And this would be a very nice use case for it, where the Coinbase only has one output, or maybe a couple, which is the CTV transaction.
+And then all the miners know for sure that they will get those coins, but they&rsquo;ll wait until fees are low and then they&rsquo;ll get them.</p><p>Speaker 0: 00:12:26</p><p>Right.
+All right.
+That was the non-custodial part of the pool, which is probably kind of the main innovation, but it&rsquo;s not the only thing going on.</p><p>Speaker 1: 00:12:36</p><p>Yeah.
+Or the custody minimized part of the pool.
+Right.</p><p>Speaker 0: 00:12:38</p><p>Right.
+I&rsquo;m sorry, Sjoerd.
+You&rsquo;re very right.
+The other thing is, so the block template is transparent.
+So usually at most pools right now, because they have this FPPS model, which I briefly mentioned earlier, where hashers are basically just selling their hash power to a mining pool and the mining pool just makes a block with it.
+Now on Ocean it&rsquo;s completely transparent what the block will actually look like that everyone is working on, right?</p><p>Speaker 1: 00:13:09</p><p>Yeah, so I don&rsquo;t know how inherent this limitation is in normal pools.
+I do know that Stratum V2 doesn&rsquo;t have this problem.
+In Stratum V2 you know exactly what you&rsquo;re mining, but in this case OceanPool will show you what you&rsquo;re mining without even using Stratum V2.
+And typically you don&rsquo;t know what you&rsquo;re mining, you just get a hash and you&rsquo;re grinding away on that hash.
+Now you can go to, at least you can go to an API and check.
+And this could be interesting, especially for bigger miners because bigger miners they&rsquo;re paid directly from the Coinbase.
+So they can see that they&rsquo;re mining a block that pays them.
+Like they know for sure.
+Smaller miners Again, with the CTV technique, they might also be able to check this.
+Probably not in real time, right?
+Because you don&rsquo;t want to spend 10 seconds calculating if you&rsquo;re mining the correct block.
+You just want to start mining.
+But you can at least, within a few seconds, say, hey, I&rsquo;m being scammed.
+I&rsquo;m going to stop mining now.
+So that&rsquo;s quite nice.
+For tiny miners that have to be paid through Lightning.
+I don&rsquo;t think this offers any benefit in terms of knowing that you&rsquo;re going to be paid, but you still know what you&rsquo;re mining.
+You might realize that you&rsquo;re censoring certain stuff that you&rsquo;re not happy with, et cetera.
+So that&rsquo;s good.</p><p>Speaker 0: 00:14:18</p><p>Yeah.
+The counter or one of the examples that, you know, Bitcoin mechanic, for example, bring up is that, there&rsquo;ve been pools that have minds blocks that are basically one big inscription or have big inscriptions in them.
+And hashers had no idea that that&rsquo;s what they were doing.
+Now, maybe they also don&rsquo;t care that that&rsquo;s what they&rsquo;re doing, but maybe they do care.
+In any case, with Ocean, hashrers will actually know what they&rsquo;re doing.</p><p>Speaker 1: 00:14:41</p><p>Yeah, but also with Stratum V2, I believe they&rsquo;ll know.</p><p>Speaker 0: 00:14:45</p><p>So, yeah, about Stratum V2, we already made an episode about that and I also already mentioned that, but, it does seem like that sort of on the roadmap for ocean, but they don&rsquo;t,</p><p>Speaker 1: 00:14:56</p><p>I&rsquo;m sure it is, but I&rsquo;m always skeptical of roadmaps, right?</p><p>Speaker 0: 00:14:59</p><p>Right.</p><p>Speaker 1: 00:14:59</p><p>Show it to me.</p><p>Speaker 0: 00:15:00</p><p>Yeah.
+They don&rsquo;t have it now yet in any case.</p><p>Speaker 1: 00:15:03</p><p>I&rsquo;m sure they will, but they don&rsquo;t have it yet.</p><p>Speaker 0: 00:15:07</p><p>All right.
+And then we get to possibly the most complex topic of, of all of them.
+Yesterday we had a sort of preparation call with also with Bethke mechanic and with the CTO of the pool, Jason Hughes.
+And it was one of these calls where I was on it and Shorts was just sort of Going on adventure with the CTO and I couldn&rsquo;t really keep up with everything you were discussing.
+So let&rsquo;s see what you&rsquo;ve figured out.</p><p>Speaker 1: 00:15:38</p><p>Yeah.
+So in case people think that I confidently understand stuff spontaneously, no, that takes a lot of effort.
+Right.</p><p>Speaker 0: 00:15:45</p><p>Okay.
+So I&rsquo;m barely even sure how to introduce this.</p><p>Speaker 1: 00:15:50</p><p>Well, I think we should generally talk about shares a little bit without any of the crazy mechanics that are being used generally.
+But the idea is if you are mining, you need to prove to the pool that you are actually doing some work.</p><p>Speaker 0: 00:16:03</p><p>Yeah, how does the pool decide which hashers get how much Bitcoin?</p><p>Speaker 1: 00:16:07</p><p>And I think we discussed this also in the Stratum V2 episode, by the way, so you could re-listen to that.
+But the general idea is that you will mine a block with a much, much, much lower difficulty.
+And for example, the block that you&rsquo;re trying to mine, the pool wants to see it if it is like a thousand times easier than the real block.</p><p>Speaker 0: 00:16:25</p><p>Yeah, you&rsquo;re basically mining invalid blocks.</p><p>Speaker 1: 00:16:28</p><p>Yeah, but they&rsquo;re not randomly invalid.
+They are like as if the proof of work difficulty was still at the level it was when Satoshi started, basically.
+And the nice thing is that when you do that, you cannot lie about it.
+You are providing proof of work, just a little bit less proof of work because you&rsquo;re only sharing it with the pool operator and not the whole internet.
+Yeah.
+So it&rsquo;s fine to have a little bit more spam.
+And generally they&rsquo;ll aim to have like eight blocks a second, sorry, eight blocks per minute.
+That&rsquo;s, I believe often an interval.</p><p>Speaker 0: 00:16:58</p><p>You&rsquo;re basically proving to the pool that you&rsquo;re at least trying to find the block.</p><p>Speaker 1: 00:17:02</p><p>Exactly.
+Right.
+And then occasionally you will find a block.</p><p>Speaker 0: 00:17:05</p><p>Right.
+Exactly.
+And yes.
+Okay.
+So Ocean has this way, it&rsquo;s called tides.
+So how do you decide which hasher gets how much Bitcoin?</p><p>Speaker 1: 00:17:16</p><p>Yeah, that is the hard question.
+And I think we&rsquo;ll also get a little bit into how other pools do that, but I actually don&rsquo;t really understand how other pools do it.
+And I think I do understand how this pool does it.
+Cause it&rsquo;s, I think it&rsquo;s a fairly elegant and simple system.</p><p>Speaker 0: 00:17:29</p><p>Well, I think how other pools do it is that&rsquo;s the FPPS system, right?
+So basically a pool just says, we&rsquo;ll pay you X amount of Bitcoin for X amount of hashes, and that&rsquo;s just it.</p><p>Speaker 1: 00:17:42</p><p>Yeah, but there&rsquo;s a little nuance of how much X is.</p><p>Speaker 0: 00:17:46</p><p>How X is calculated, you mean?</p><p>Speaker 1: 00:17:48</p><p>Yeah.
+So let&rsquo;s try and explain this.</p><p>Speaker 0: 00:17:50</p><p>I&rsquo;ve never really looked into that and let&rsquo;s skip that.
+That&rsquo;s the easiest thing to do here.
+And let&rsquo;s get into how Ocean actually does it.</p><p>Speaker 1: 00:17:57</p><p>Right.
+That was, that was sort of the idea.
+Okay.
+So basically the idea is that there is a bucket, or it&rsquo;s not really a bucket, it&rsquo;s a queue.
+And you are adding work, little loads of work, little shares of work into a queue.
+Let&rsquo;s say the two of us are mining, I&rsquo;ve got my little vintage S9 that I&rsquo;ve clocked down to 1 terahertz so that a tera hash so that it uses less power and makes less noise and it can sit here in my living room basically without driving me nuts.
+And you have the same so we&rsquo;re each hashing away.</p><p>Speaker 0: 00:18:32</p><p>It just not clocked down and it&rsquo;s driving me crazy because I don&rsquo;t know how to do that.
+Oh. Go on.</p><p>Speaker 1: 00:18:38</p><p>Anyway, so both of us are mining and what we do is to the pool we&rsquo;re proving that we&rsquo;re doing this amount of work.
+And so the pool is keeping track of that.
+You&rsquo;re submitting a share, I&rsquo;m submitting a share, you&rsquo;re submitting a share, I&rsquo;m submitting a share, and over time this builds up.
+And eventually a block is found, and then in the simplest case, we&rsquo;ve both submitted the same number of shares, and the shares are adjusted for how strong our miners are so but in this case we assume the miners are equally strong.
+The block arrives then half the coinbase transaction output goes to me, half the coinbase output transaction goes to you.
+This is very simple.
+Now, let&rsquo;s, so this bucket of shares does not fill up to infinity.
+So if we do this for a few years, then we&rsquo;re not gonna, the division who gets how much is not, does not depend on the total amount of shares we submitted throughout history, but it only depends on the recent past.
+It&rsquo;s kind of like a rolling window.</p><p>Speaker 0: 00:19:42</p><p>How recent?</p><p>Speaker 1: 00:19:43</p><p>The equivalent, so this is where it gets a little more complicated is the equivalent of eight blocks of work for the whole network.
+So the number of hashes, or sorry, the number of shares it would take statistically to produce eight blocks.
+You know, with my miner that would be, I don&rsquo;t know, two million years worth of blocks or something.
+Or two million years worth of mining, let&rsquo;s say, and for you the same thing.
+But as soon as the mining pool has more shares than that, it starts discarding all shares,
+or at least it starts ignoring them.
+So in practice, let&rsquo;s take another example where we actually have two really fast miners.
+In fact, our miners are as fast as the whole Bitcoin network.
+Somehow we&rsquo;ve turned off all the other miners in the network, and so this this Elysium pool, sorry, the Ocean pool is now the only pool and we are continuing with the Bitcoin network at the same hash power.
+So just to keep the analogy a bit simple here.</p><p>Speaker 0: 00:20:45</p><p>Yes, please.</p><p>Speaker 1: 00:20:47</p><p>Yes, Now in this case, actually, sorry, our miners are a little bit different.
+That is my miner is as strong as the entire Bitcoin network is, and your miner is as strong as the entire Bitcoin network is.
+I&rsquo;m going to turn it on, you&rsquo;re not, and then at the end you&rsquo;re going to turn it on and I&rsquo;m going to turn it off.
+Because then the question is, how much do we get?
+So let&rsquo;s take the simplest possible example, or about 40 minutes, I turn it on and then for 40 minutes you turn it on and By just complete coincidence Blocks are found exactly every 10 minutes.
+Mm-hmm.
+So then the question is what happens?
+Initially I Turn it on first, right?
+So initially I get everything for the first block, second block, third block, fourth block,
+because I was the only one mining and I&rsquo;m the only one in the history, ignoring that there&rsquo;s a further past.
+Now You turn on your miner and I&rsquo;ve turned off mine.
+So what happens in the next block?
+Well, it&rsquo;s looking back at the equivalent of eight blocks, which is more than so far what we&rsquo;ve collected.
+And so you are going to get one fifth and I&rsquo;m going to get four fifth of the next block.
+And then&mldr;</p><p>Speaker 0: 00:22:02</p><p>That sounds very unfair.</p><p>Speaker 1: 00:22:04</p><p>It doesn&rsquo;t because if we look at that history for the last eight blocks, you have done one fifth of the work and I&rsquo;ve done four fifth of the work.</p><p>Speaker 0: 00:22:12</p><p>I&rsquo;m not getting one fifth of the Bitcoin.</p><p>Speaker 1: 00:22:15</p><p>You are getting one fifth of Bitcoin.</p><p>Speaker 0: 00:22:17</p><p>Not of all Bitcoins that have been issued so far.</p><p>Speaker 1: 00:22:19</p><p>No, you&rsquo;re getting one fifth of the next block.
+Yeah, it&rsquo;s always what you get in the next block.</p><p>Speaker 0: 00:22:23</p><p>Uh-huh.</p><p>Speaker 1: 00:22:24</p><p>Now the block after that,</p><p>Speaker 0: 00:22:25</p><p>you&rsquo;re getting&mldr;
+It feels like I&rsquo;m being scammed here, Sjoerd.</p><p>Speaker 1: 00:22:27</p><p>I don&rsquo;t think so.</p><p>Speaker 0: 00:22:28</p><p>Go on.</p><p>Speaker 1: 00:22:28</p><p>I think the next block, you&rsquo;re getting two sixth of it.
+Then the next block, you&rsquo;re getting three sixth of it.
+And then the next, sorry, three seventh of it.
+And then the next block you&rsquo;re getting half of it, four out of eight, because now you have done half the work in the past eight blocks.</p><p>Speaker 0: 00:22:42</p><p>I&rsquo;m still being scammed.
+Like you got all the Bitcoins of the first four and you still get part of the Bitcoins of the last four.
+Even though we both,</p><p>Speaker 1: 00:22:50</p><p>it sounds pretty evil, doesn&rsquo;t it?
+But, but now, we continue in time and you keep hashing and I don&rsquo;t.
+And it goes up, you get five, eight, six, eight, seven, eight, eight, eight.
+You get all of it.</p><p>Speaker 0: 00:23:02</p><p>Yeah, but now I still did two thirds of the workshops and I didn&rsquo;t get two thirds of the Bitcoin, I think.
+Anyways, I, I do think probably if you keep the logic going long enough, then it will probably work out, but so far I&rsquo;m still being scammed here.</p><p>Speaker 1: 00:23:16</p><p>I don&rsquo;t think you&rsquo;re getting scammed, but it is true that it&rsquo;s a bit hard to reason about it because one of the problems is if you stop and there&rsquo;s no other miner, then, then you get nothing.
+Right.
+But if I then take over, you will continue to get rewards for the next eight blocks or so.
+It&rsquo;ll decrease as your, your work goes back into the past.
+So I think it works out.</p><p>Speaker 0: 00:23:40</p><p>But wasn&rsquo;t there a thing, wasn&rsquo;t there a thing that with the first, like the actual first eight blocks, so including the actual first eight blocks that I think Ocean is mining, the logic is a bit different.
+So aren&rsquo;t you now explaining the logic that will work fine later on, but not for the first eight?</p><p>Speaker 1: 00:24:01</p><p>No, I think it was fine for the first 8 too, because we are simply splitting the work between us in that case.</p><p>Speaker 0: 00:24:10</p><p>No, but we just established that I got scammed.</p><p>Speaker 1: 00:24:15</p><p>I don&rsquo;t think you got scammed, I think you&rsquo;re just bad at math, but I don&rsquo;t know for sure either.</p><p>Speaker 0: 00:24:21</p><p>Surely I&rsquo;m not bad at math.
+Like in your example, you mined the first four and I mined the last eight and we&rsquo;re still splitting the coins, the total coins 50-50.</p><p>Speaker 1: 00:24:31</p><p>So you&rsquo;ve mined the last eight, but you still will get rewards in the future, right?
+So you haven&rsquo;t had it yet, but you will get it right, right, right, right.
+But somebody has to do the mining.
+So the question then is when, when is that game done?
+Well, if I then take over, you will get the part that you still owed.</p><p>Speaker 0: 00:24:47</p><p>Right, yes.
+Okay, now that actually makes sense.
+For direct, I am bad at math.
+But in this case, I was still kind of right, I think.
+But yes, you&rsquo;re right that if you keep it going, then yes.</p><p>Speaker 1: 00:24:57</p><p>Slightly different experiment, because in reality, blocks do not arrive every 10 minutes.
+And so the question then is, well, what if blocks arrive really quickly and then it takes a really long time?
+How does that division work?
+Right?
+It&rsquo;s not that the blocks, that the rewards are equally divided between the actual blocks.
+It&rsquo;s based on the effort you&rsquo;re putting into the system.
+So an example that I just wrote down this morning or afternoon would be this.
+I am mining, I mine seven blocks, again we are the entire pool, I mine seven blocks, one every minute.
+And then I stop and you start mining.
+And, and only after two hours you find block number eight.</p><p>Speaker 0: 00:25:44</p><p>Is it, But that&rsquo;s just because of bad luck in your example, right?
+Yes.
+It&rsquo;s not lower hash power on my end, it&rsquo;s bad luck.</p><p>Speaker 1: 00:25:51</p><p>It&rsquo;s just bad luck.</p><p>Speaker 0: 00:25:52</p><p>Yeah, okay.</p><p>Speaker 1: 00:25:53</p><p>And so in this scenario, I got lucky.
+Well, again, this is kind of the bootstrapping problem, but if we kind of ignore that, I get lucky.
+The first seven times I get a hundred percent of the work of the coins even though I only mine for seven minutes that&rsquo;s just because of the luck mm-hmm and then but you have been mining now for eight hours or sorry two hours or one hour and 53 minutes whatever you want to say mm-hmm the question then is and you find a block how much do you get and how much do I get?</p><p>Speaker 0: 00:26:26</p><p>I mean, judging by your logic so far, I&rsquo;m going to be scammed somehow, so tell me.</p><p>Speaker 1: 00:26:31</p><p>No, you get a hundred percent.</p><p>Speaker 0: 00:26:33</p><p>Because of what?</p><p>Speaker 1: 00:26:34</p><p>Of the reward in that eighth block.
+Oh, right.</p><p>Speaker 0: 00:26:38</p><p>And so this is the, because statistically there&rsquo;s been eight blocks on the network, even though there haven&rsquo;t, right?</p><p>Speaker 1: 00:26:44</p><p>Yeah.
+Or in, You know, the accounting system is checking how much work you submitted and you have submitted more than eight blocks worth of work now because it&rsquo;s two hours.
+So that&rsquo;s about, you know, normally you&rsquo;d expect 12 blocks in that time period.
+So you have submitted eight blocks, roughly worth of equivalent worth of work.
+And therefore all the old stuff that I submitted no longer counts for the accounting, you get all of it.
+You still got unlucky, but in a way it&rsquo;s fair.
+Well, that depends on your definition of fair, but yeah.
+Yeah.
+But this is to make the distinction between, it&rsquo;s not actually eight blocks.
+It&rsquo;s not the last eight blocks.
+It&rsquo;s about the equivalent amount of work that went into the pool.</p><p>Speaker 0: 00:27:23</p><p>Yes.
+And that&rsquo;s calculated just based on the difficulty.</p><p>Speaker 1: 00:27:27</p><p>Yes, that is exactly.
+That&rsquo;s based on the current difficulty.
+So it gets a bit more complicated, I guess, if the difficulty goes up or down.
+But every two weeks, you know, the difficulty is constant and then it changes once.
+So as long as you don&rsquo;t go over that boundary, the math is pretty simple.
+But this is, I believe, also one reason why alt shares are not thrown away.
+Because you could be in a situation where the difficulty goes up and now the equivalent of 8 days is more than it was before and so you need to go back in time and look into the log of the people that were doing something a little bit before the window.
+Let&rsquo;s say the difficulty doubles, right, overnight.
+Now you&rsquo;re looking at the equivalent of eight days, which is in reality would have been 16 days of actual work if you&rsquo;re looking at the past.
+So you cannot throw away the past, or at least, you know, not unreasonably.</p><p>Speaker 0: 00:28:22</p><p>All right.
+Well, I&rsquo;m glad you sort of understand this part of the ocean pool.
+Did we cover this part sufficiently, you think?</p><p>Speaker 1: 00:28:30</p><p>I think so.</p><p>Speaker 0: 00:28:31</p><p>Okay, good.</p><p>Speaker 1: 00:28:33</p><p>Yeah, so the funny thing is we did not cover a number of topics that are quite popular when talking about mining pools.
+We did not talk about pool hopping.
+We did not talk about PPS and FPPS and all these different rewards systems, but not in much detail.
+Partially is because I don&rsquo;t fully understand those systems.
+But partially is because, you know, we already explained this system and you guys are getting tired and our editors getting tired.
+So we might, we might actually come back to it some other time.</p><p>Speaker 0: 00:29:04</p><p>Right.
+Yeah.
+Maybe that&rsquo;s an episode on its own, I guess.
+Let&rsquo;s stick to Ocean for now.
+There&rsquo;s one other aspect about it that&rsquo;s kind of controversial, which is that they&rsquo;re filtering for quote unquote spam.
+They&rsquo;re filtering transactions that they consider to be spam.
+So the most often&mldr;</p><p>Speaker 1: 00:29:26</p><p>Yeah, so I believe to be precise, they are using Bitcoin Nod&rsquo;s default settings.
+So that&rsquo;s an alternative version of Bitcoin Core by Luke Dasher.
+And it does not relay transactions with an operator of more than 20 bytes, I believe.
+So that&rsquo;s less than the default in Bitcoin Core.
+And because it doesn&rsquo;t relay them, it doesn&rsquo;t have it in its mempool and so when it generates a block template these things are not in there.
+It also does not have a transaction accelerator right so so in general these big ordinal transactions are not in there.
+The big ones that so I guess there&rsquo;s three things right normal pools don&rsquo;t just they don&rsquo;t filter out stuff mostly with one exception that we talked about last episode.
+But they also don&rsquo;t include very large things.
+They don&rsquo;t include transactions over, I think it&rsquo;s 400 kilobyte.</p><p>Speaker 0: 00:30:20</p><p>Right.</p><p>Speaker 1: 00:30:20</p><p>So this pool doesn&rsquo;t put anything in there with opportunities more than 20 bytes.</p><p>Speaker 0: 00:30:25</p><p>Right.
+Yeah.
+I guess I&rsquo;m not really sure.
+Do you have an opinion on this?
+Let&rsquo;s just start there or what would you, I guess the problem or the critique or the controversy or whatever you want to call it, is that this would potentially make the pool less profitable because if there&rsquo;s a transaction that pays a high fee, but has a too big up return, then this pool isn&rsquo;t going to, Ocean pool is not going to include it while another pool might.</p><p>Speaker 1: 00:30:51</p><p>Yeah, but the most fair comparison would be another equivalent of Ocean pool, Ocean two pool, which would include those transactions.
+And then I think it&rsquo;s fairly straightforward that the other pool would just make more money.</p><p>Speaker 0: 00:31:03</p><p>Yeah, well, let&rsquo;s break it down a little bit.
+So because I did discuss this with Bitcoin Mechanic and also Jason, the CTO.
+So what they will argue, I just want to mention what they will argue.
+So they will argue that this is not necessarily true because there are, yeah.
+So like you said, it&rsquo;s kind of an unfair comparison if you compare it to other mining pools.
+So it&rsquo;s not necessarily true.</p><p>Speaker 1: 00:31:25</p><p>I think if you compare it to an ocean two pool, it&rsquo;s very clear.
+It&rsquo;s better to include more, But if you compare it to actual other pools, it&rsquo;s a different story.</p><p>Speaker 0: 00:31:33</p><p>Right, exactly.
+And the reason for that is that Ocean does have other benefits that other pools don&rsquo;t have, including profitability benefits.
+So, one obvious example is some of the pools have, once in a while there&rsquo;s this thing in the news that someone accidentally paid a hundred Bitcoin fee or something like that.</p><p>Speaker 1: 00:31:53</p><p>That seems to be a trend.</p><p>Speaker 0: 00:31:54</p><p>And then the mining pool will pay it back just because they&rsquo;re being nice to whoever accidentally included that high fee.</p><p>Speaker 1: 00:32:02</p><p>They may be nice, so they may not want to get sued.
+Some combination of both.</p><p>Speaker 0: 00:32:06</p><p>Yeah, in either case, Ocean will not do that because they essentially cannot or well,</p><p>Speaker 1: 00:32:12</p><p>they can, but they will.</p><p>Speaker 0: 00:32:13</p><p>They cannot because the hashers are directly paid from the Coinbase, but now the hashers themselves have to decide if they want to give it back or not.</p><p>Speaker 1: 00:32:20</p><p>Yeah, that&rsquo;s true for the first.
+But it depends.
+So it depends on how quickly they figure out it&rsquo;s an accident.
+If they figure it out while it&rsquo;s in the mempool, they could theoretically not mine it, I guess that would be the easiest thing, Or they could mine it and then not include it in the rewards for those people.
+But that would obviously require some serious intervention and some very quick intervention.
+Now the miners&mldr;</p><p>Speaker 0: 00:32:44</p><p>Right now they&rsquo;re not doing it.</p><p>Speaker 1: 00:32:45</p><p>No, and the miners that they pay out after 100 blocks, they have 100 blocks to think about it.
+So they could again, you know, but then you would be treating the first 20 miners different from the rest.
+So it&rsquo;s certainly a lot less easy for them to decide that on behalf of the individual miners.</p><p>Speaker 0: 00:33:03</p><p>Yeah.
+Another argument would be that FPPS, which I mentioned, which most pool use, which is that the mining pool basically just pays you for a hash power, is essentially undervalued.
+And one of the reasons for that is that, miners will collect out of band payments.
+Wait, I don&rsquo;t know if it makes sense what I just said.</p><p>Speaker 1: 00:33:23</p><p>Well, so the problem is more about transparency.
+So if we very briefly explain FPP as it is basically saying that you get paid for the hash power that you&rsquo;re putting into it, which is then how much SATs should you be paid for your hash power and that calculation is based on the block reward plus the sort of the expected fees or the average fees over time or some whatever complicated algorithm.
+It&rsquo;s not that trivial to compare.
+So when a miner receives, when such a pool processes payments out of bound, like an accelerator, they may or may not pay their miners for that.
+It&rsquo;s non-trivial to figure out if that&rsquo;s happening or not.
+Whereas in this pool example, it&rsquo;s very clear when it&rsquo;s not happening.</p><p>Speaker 0: 00:34:05</p><p>Right.
+In either case, I think we both sort of agree that if there was an Ocean 2 pool that just does everything exactly the same as Ocean and somehow they also have the same size and same hash power, the same variance, the same lock.
+And Ocean does not include these transactions while Ocean 2Pool would, then Ocean 2Pool would at least be as profitable and usually more profitable.</p><p>Speaker 1: 00:34:31</p><p>Yes, and Ocean 2Pool could also have an out-of-band transaction accelerator and not pay the individual miners.
+However, it would be kind of obvious that their transaction is being included at a implausibly low fee.
+And so as a miner, you would definitely notice that and you&rsquo;d say, Hey, I am definitely not getting sats for that because I can see exactly how many sats I am getting from these transactions.
+So, you know, somebody is getting the sats and it&rsquo;s not me.
+Therefore, you know, maybe I&rsquo;ll switch to another pool or yeah.</p><p>Speaker 0: 00:35:01</p><p>Right.
+Yeah, just to point this out, Jason and, Mechanic also disagree with it or this, or at least they weren&rsquo;t necessarily agreeing, they seem to be disagreeing.
+They seem to Their argument was that there could be more complex things going on, like child pays for parents type of stuff that Ocean 2 pool would not see an Ocean pool like their pool would actually include.
+And therefore they would still be more profitable.</p><p>Speaker 1: 00:35:30</p><p>The way you&rsquo;re describing that to me makes no sense, but that is because it&rsquo;s like a Chinese whispers game.
+So.</p><p>Speaker 0: 00:35:35</p><p>Yeah, right.
+I&rsquo;m just sort of trying to convey someone else&rsquo;s argument here, which I&rsquo;m not very convinced by, but you know, I&rsquo;m, I am trying my best to, in the case anyone is wondering, the reason we don&rsquo;t have them on the podcast is because we just want to do our podcast in person, not over calls or internet or Zoom or whatever else is available.</p><p>Speaker 1: 00:35:59</p><p>Exactly, Which is also the reason why we didn&rsquo;t do a lot of episodes in the last couple of months.
+But we are back in this very cold country.
+And I guess that&rsquo;s all?</p><p>Speaker 0: 00:36:07</p><p>I think so, Sjoerd.</p><p>Speaker 1: 00:36:08</p><p>All right then, thank you for listening to Bitcoin.
+Explain.</p><div class=row></div></div></div></div><script src=https://btctranscripts.com/lib/jquery.min.js></script><script src=https://btctranscripts.com/lib/popper.min.js></script><script src=https://btctranscripts.com/js/bootstrap.min.js></script><script type=text/javascript src=/plugins/lunr.min.js></script><script type=text/javascript src=/plugins/auto-complete.js></script><link href=/plugins/auto-complete.css rel=stylesheet><script type=text/javascript>var baseurl="https://btctranscripts.com/"</script><script type=text/javascript src=/plugins/search.js></script><script type=text/javascript src=https://btctranscripts.com/js/custom.js></script><script type=text/javascript src=/plugins/clipboard.js></script><script>new ClipboardJS(".btn")</script></body></html>
