@@ -51,7 +51,7 @@ So you&rsquo;re like, okay maybe I don&rsquo;t want to do this anymore, and you 
 There aren&rsquo;t that many critics of RBF anymore I think.
 But yeah, the detriment, the downside is that it allows for double spending if the recipient isn&rsquo;t going to wait for confirmations.
 So it&rsquo;s easier to double spend unconfirmed transactions with RBF.</p><p>Sjors Provoost: 00:08:20</p><p>Yeah, and this was of course a big discussion, say in 2015, 2016, when this, what we&rsquo;re going to talk about was introduced.
-You know, a lot of merchant applications would like to be able to just have an instant confirmation essentially, but it wouldn&rsquo;t be confirmed.
+A lot of merchant applications would like to be able to just have an instant confirmation essentially, but it wouldn&rsquo;t be confirmed.
 So that&rsquo;s inherently risky, but as I guess we&rsquo;ll explain, by default, if everybody played reasonably nice, it wasn&rsquo;t very risky.
 But of course, in Bitcoin, we think long term and we don&rsquo;t want to rely on something that just requires too much kumbaya.</p><p>Aaron van Wirdum: 00:08:50</p><p>That was indeed a big discussion on whether or not we should allow RBF in the protocol; I&rsquo;m saying protocol, but to be clear either way it&rsquo;s not actually a consensus rule.</p><p>Sjors Provoost: 00:09:02</p><p>There&rsquo;s a difference between consensus as in what is allowed inside of a block.
 So if you see a block with something in it that&rsquo;s not consensus compatible, you will not accept the block, and so the miners won&rsquo;t get their reward, and it&rsquo;s really bad.</p><p>Aaron van Wirdum: 00:09:15</p><p>It&rsquo;s just an invalid transaction, invalid block.</p><p>Sjors Provoost: 00:09:17</p><p>Yeah, but there&rsquo;s all sorts of rules that pertain to how the network works, rules about which transactions a node will relay or which ones it will reject.
@@ -189,12 +189,11 @@ Yeah.
 Got it.</p><p>Sjors Provoost: 00:28:29</p><p>You can&rsquo;t even add your own RBF anymore because one of the descendants is now opting out.
 And there&rsquo;s various shenanigans like that.
 You could add a chain of 99 transactions to it, so you violate the 100 maximum rule.
-You add 99 transactions with a super low fee.
-Now the other side cannot add number 100 or 101.
+You add 99 transactions with a super low fee, now the other side cannot add number 100 or 101.
 And all sorts of annoying shenanigans that if you go to a Lightning Developer mailing list, it is full of this sort of pure headache.
 I don&rsquo;t think that just going for a full RBF would really solve that, because the other problem we talked about in another episode is just package relay in general.
 Like, what do you do with these if somebody wants to replace a chain of 100 transactions?
-Yeah, that kind of worm, I&rsquo;m just going to leave it open, just saying that every now and then on the mailing list you&rsquo;ll see threads and people proposing different solutions and then people explaining why that doesn&rsquo;t work.</p><h2 id=the-double-spend-that-wasnt>The double spend that wasn&rsquo;t.</h2><p>Aaron van Wirdum: 00:29:24</p><p>Yeah.
+That can of worms, I&rsquo;m just going to leave it open, just saying that every now and then on the mailing list you&rsquo;ll see threads and people proposing different solutions and then people explaining why that doesn&rsquo;t work.</p><h2 id=the-double-spend-that-wasnt>The double spend that wasn&rsquo;t.</h2><p>Aaron van Wirdum: 00:29:24</p><p>Yeah.
 Okay, well, that was getting very into the weeds.
 Let&rsquo;s get back to the beginning.
 What actually happened with this double spend concretely?</p><p>Sjors Provoost: 00:29:32</p><p>Back to our amazing adventure that made it all the way to Bloomberg and crashed the market by 7%.</p><p>Aaron van Wirdum: 00:29:36</p><p>Allegedly, maybe.</p><p>Sjors Provoost: 00:29:38</p><p>No, I don&rsquo;t actually believe in astrology.
