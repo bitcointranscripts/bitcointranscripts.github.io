@@ -1,0 +1,443 @@
+<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=canonical href=https://btctranscripts.com/bitcoin-explained/breaking-down-taproot-activation-options/><title>Breaking Down Taproot Activation Options | ₿itcoin Transcripts
+</title><link href=https://btctranscripts.com/css/fontawesome.min.css rel=stylesheet><link rel=stylesheet href=https://btctranscripts.com/css/ace.min.css><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://btctranscripts.com/images/btctranscripts.png"><meta name=twitter:title content="Sjors Provoost, Aaron van Wirdum - Breaking Down Taproot Activation Options"><meta name=twitter:description content="This podcast episode delves into the nuances of Bitcoin soft fork activation, with a particular focus on the upcoming Taproot activation. Hosts Aaron van Wirdum and Sjors Provoost discuss the history and mechanisms of soft fork activation, including the challenges faced during previous activations such as SegWit. They explore different proposals for activating Taproot, weighing the merits and drawbacks of methods like BIP 9, BIP 91, BIP 148 (UASF), and the newer BIP 8. The discussion highlights the importance of achieving consensus within the community and the complexities involved in coordinating upgrades across the decentralized Bitcoin network. The episode concludes with considerations for future soft fork activations, emphasizing patience, thorough review, and the potential for innovative solutions like &ldquo;sporks&rdquo; to address these challenges"><script async src=https://visits.bitcoindevs.xyz/script.js data-website-id=06384ada-7f1c-44c2-a6d9-d830fb23e122></script></head><body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id=navbarMain><div class=container><div><a class=navbar-brand href=/>₿itcoin Transcripts</a></div><div class="collapse navbar-collapse" id=navbarMainCollapse><ul class="navbar-nav ml-auto"><li class=nav-item><a class=nav-link href=/es>es</a></li><li class=nav-item><a class=nav-link href=/pt>pt</a></li><li class=nav-item><a class=nav-link href=/zh>zh</a></li><li class=nav-item><a class=nav-link href=https://github.com/bitcointranscripts/bitcointranscripts target=_blank><i class='fab fa-github'></i></a></li></ul></div></div></nav><div class="alert alert-warning fade show sticky-banner" role=alert><strong><a href=https://review.btctranscripts.com target=_blank data-umami-event=click-banner>Get paid to review technical Bitcoin transcripts
+</a></strong><button type=button class=close data-dismiss=alert aria-label=Close>
+<span aria-hidden=true>&#215;</span></button></div><div class=container-fluid><div class=row><div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0"><button class="navbar-toggler navbar-toggler-right collapsed" type=button data-toggle=collapse data-target=#sidenav-left-collapse aria-controls=sidenav-left-collapse aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse align-items-start flex-column" id=sidenav-left-collapse><form class="form-inline my-2 my-lg-0 searchbox"><input class="form-control mr-sm-2 w-100" data-search-input id=search-by type=text placeholder='Search (press "/")'></form><ul class="navbar-nav flex-column pt-3"><li data-nav-id=/adopting-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/adopting-bitcoin/><h6>Adopting Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/adopting-bitcoin/2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/adopting-bitcoin/2021/><h6>Adopting Bitcoin 2021</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/advancing-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/><h6>Advancing Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/advancing-bitcoin/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2019/><h6>Advancing Bitcoin 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/advancing-bitcoin/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2020/><h6>Advancing Bitcoin 2020</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/advancing-bitcoin/2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2022/><h6>Advancing Bitcoin 2022</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/advancing-bitcoin/2023/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2023/><h6>Advancing Bitcoin 2023</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/andreas-antonopoulos/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/andreas-antonopoulos/><h6>Andreas Antonopoulos</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/austin-bitcoin-developers/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/austin-bitcoin-developers/><h6>Austin Bitcoin Developers</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/baltic-honeybadger/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/><h6>Baltic Honeybadger</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/baltic-honeybadger/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/2018/><h6>Baltic Honeybadger 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/baltic-honeybadger/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/2019/><h6>Baltic Honeybadger 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bit-block-boom/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bit-block-boom/><h6>Bit Block Boom</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bit-block-boom/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bit-block-boom/2019/><h6>Bit Block Boom 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-core-dev-tech/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/><h6>Bitcoin Core Dev Tech</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bitcoin-core-dev-tech/2015-02/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2015-02/><h6>Bitcoin Core Dev Tech 2015</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2017-09/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2017-09/><h6>Bitcoin Core Dev Tech 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2018-03/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2018-03/><h6>Bitcoin Core Dev Tech 2018 (Mar)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2018-10/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2018-10/><h6>Bitcoin Core Dev Tech 2018 (Oct)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2019-06/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2019-06/><h6>Bitcoin Core Dev Tech 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2022-10/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2022-10/><h6>Bitcoin Core Dev Tech 2022</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2023-04/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2023-04/><h6>Bitcoin Core Dev Tech 2023 (Apr)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2023-09/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2023-09/><h6>Bitcoin Core Dev Tech 2023 (Sept)</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-design/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-design/><h6>Bitcoin Design</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bitcoin-design/learning-bitcoin-and-design/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-design/learning-bitcoin-and-design/><h6>Learning Bitcoin and Design</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-design/misc/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-design/misc/><h6>Miscellaneous</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-design/ux-research/ class="nav-item my-1"><a class="nav-link p-0" href=/bitcoin-design/ux-research/><h6>UX Research</h6></a></li></ul></li><li data-nav-id=/edgedevplusplus/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/edgedevplusplus/><h6>Bitcoin Edge Dev++</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/edgedevplusplus/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/edgedevplusplus/2017/><h6>Bitcoin Edge Dev++ 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/edgedevplusplus/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/edgedevplusplus/2018/><h6>Bitcoin Edge Dev++ 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/edgedevplusplus/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/edgedevplusplus/2019/><h6>Bitcoin Edge Dev++ 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-explained/ class="nav-item my-1 parent haschildren"><a class="nav-link p-0" href=/bitcoin-explained/><h6>Bitcoin Explained</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-magazine/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-magazine/><h6>Bitcoin Magazine</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-review-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-review-podcast/><h6>Bitcoin Review Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoinplusplus/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinplusplus/><h6>Bitcoin++</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bitcoinplusplus/2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinplusplus/2022/><h6>Bitcoin++ 2022</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoinplusplus/layer-2/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinplusplus/layer-2/><h6>Layer 2</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoinplusplus/onchain-privacy/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinplusplus/onchain-privacy/><h6>Onchain Privacy</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoinology/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinology/><h6>Bitcoinology</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoinops/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinops/><h6>Bitcoinops</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcointranscripts/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcointranscripts/><h6>Bitcointranscripts</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/blockchain-protocol-analysis-security-engineering/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/><h6>Blockchain Protocol Analysis Security Eng</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/blockchain-protocol-analysis-security-engineering/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2017/><h6>Blockchain Protocol Analysis Security Engineering 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/blockchain-protocol-analysis-security-engineering/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2018/><h6>Blockchain Protocol Analysis Security Engineering 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/blockstream-webinars/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockstream-webinars/><h6>Blockstream Webinars</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/boltathon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/boltathon/><h6>Boltathon</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/breaking-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/><h6>Breaking Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/breaking-bitcoin/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/2017/><h6>Breaking Bitcoin 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/breaking-bitcoin/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/2019/><h6>Breaking Bitcoin 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/building-on-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/building-on-bitcoin/><h6>Building On Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/building-on-bitcoin/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/building-on-bitcoin/2018/><h6>Building On Bitcoin 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/c-lightning/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/c-lightning/><h6>c-lightning</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/chaincode-labs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-labs/><h6>Chaincode Labs</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/chaincode-labs/chaincode-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-labs/chaincode-podcast/><h6>Chaincode Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/chaincode-labs/chaincode-residency/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-labs/chaincode-residency/><h6>Chaincode Residency</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/chicago-bitdevs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chicago-bitdevs/><h6>Chicago Bitdevs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/coindesk-consensus-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coindesk-consensus-2016/><h6>Coindesk Consensus</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/coordination-of-decentralized-finance-workshop/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/><h6>Coordination of Decentralized Finance</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/coordination-of-decentralized-finance-workshop/2020-stanford/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/2020-stanford/><h6>2020 Stanford</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/cppcon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/><h6>CPPcon</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/cppcon/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/2017/><h6>CPPcon 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/cppcon/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/2020/><h6>CPPcon 2020</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/cryptoeconomic-systems/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cryptoeconomic-systems/><h6>Cryptoeconomic Systems</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/cryptoeconomic-systems/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cryptoeconomic-systems/2019/><h6>Cryptoeconomic Systems 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/dallas-bitcoin-symposium/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/dallas-bitcoin-symposium/><h6>Dallas Bitcoin Symposium</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/decentralized-financial-architecture-workshop/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/decentralized-financial-architecture-workshop/><h6>Decentralized Financial Architecture Workshop</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-developers-miners-meeting-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-developers-miners-meeting-2016/><h6>Developers-Miners Meeting</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/greg-maxwell/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/greg-maxwell/><h6>Greg Maxwell</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/grincon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/grincon/><h6>Grincon</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/grincon/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/grincon/2019/><h6>Grincon 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/honey-badger-diaries/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/honey-badger-diaries/><h6>Honey Badger Diaries</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/iacr/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/iacr/><h6>IACR Crypto</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/la-bitdevs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/la-bitdevs/><h6>LA Bitdevs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/layer2-summit/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/layer2-summit/><h6>Layer2 Summit</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/layer2-summit/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/layer2-summit/2018/><h6>Layer2 Summit 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/lets-talk-bitcoin-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lets-talk-bitcoin-podcast/><h6>Lets Talk Bitcoin Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/lightning-conference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-conference/><h6>Lightning Conference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/lightning-conference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-conference/2019/><h6>Lightning Conference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/lightning-hack-day/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-hack-day/><h6>Lightning Hack Day</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/lightning-specification/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-specification/><h6>Lightning Specification</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/london-bitcoin-devs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/london-bitcoin-devs/><h6>London Bitcoin Devs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/magicalcryptoconference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/magicalcryptoconference/><h6>Magicalcryptoconference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/magicalcryptoconference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/magicalcryptoconference/2019/><h6>Magicalcryptoconference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/misc/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/misc/><h6>Misc</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/><h6>MIT Bitcoin Expo</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2015/><h6>Mit Bitcoin Expo 2015</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2016/><h6>Mit Bitcoin Expo 2016</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2017/><h6>MIT Bitcoin Expo 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2018/><h6>Mit Bitcoin Expo 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2019/><h6>Mit Bitcoin Expo 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2020/><h6>Mit Bitcoin Expo 2020</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2021/><h6>Mit Bitcoin Expo 2021</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2022/><h6>MIT Bitcoin Expo 2022</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/munich-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/munich-meetup/><h6>Munich Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/noded-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/noded-podcast/><h6>Noded Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/realworldcrypto/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/><h6>Realworldcrypto</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/realworldcrypto/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/2018/><h6>Realworldcrypto 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/realworldcrypto/2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/2021/><h6>Realworldcrypto 2021</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/rebooting-web-of-trust/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/rebooting-web-of-trust/><h6>Rebooting Web Of Trust</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/rebooting-web-of-trust/2019-prague/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/rebooting-web-of-trust/2019-prague/><h6>2019 Prague</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/ruben-somsen/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/ruben-somsen/><h6>Ruben Somsen</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/satoshi-roundtable/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/satoshi-roundtable/><h6>Satoshi Roundtable</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/satoshi-roundtable/sr-004/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/satoshi-roundtable/sr-004/><h6>Sr 004</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/scalingbitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/><h6>Scaling Bitcoin Conference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/scalingbitcoin/hong-kong-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/hong-kong-2015/><h6>Hong Kong (2015)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/milan-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/milan-2016/><h6>Milan (2016)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/montreal-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/montreal-2015/><h6>Montreal (2015)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/stanford-2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/><h6>Stanford (2017)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/tel-aviv-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/><h6>Tel Aviv (2019)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/tokyo-2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/><h6>Tokyo (2018)</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/sf-bitcoin-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/sf-bitcoin-meetup/><h6>SF Bitcoin Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/simons-institute/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/simons-institute/><h6>Simons Institute</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/stanford-blockchain-conference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/><h6>Stanford Blockchain</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/stanford-blockchain-conference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/2019/><h6>Stanford Blockchain Conference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/stanford-blockchain-conference/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/2020/><h6>Stanford Blockchain Conference 2020</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/stephan-livera-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stephan-livera-podcast/><h6>Stephan Livera Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/sydney-bitcoin-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/sydney-bitcoin-meetup/><h6>Sydney Bitcoin Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/tabconf/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tabconf/><h6>TABConf</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/tabconf/2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tabconf/2021/><h6>TABConf 2021</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/tabconf/2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tabconf/2022/><h6>TABConf 2022</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/texas-bitcoin-conference-2014/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/texas-bitcoin-conference-2014/><h6>Texas Bitcoin Conference</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/tftc-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tftc-podcast/><h6>TFTC Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/verifiable-delay-functions/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/verifiable-delay-functions/><h6>Verifiable Delay Functions</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/verifiable-delay-functions/vdf-day-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/verifiable-delay-functions/vdf-day-2019/><h6>Vdf Day 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/vr-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/vr-bitcoin/><h6>VR Bitcoin</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/w3-blockchain-workshop-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/w3-blockchain-workshop-2016/><h6>W3 Blockchain Workshop</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/wasabi/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/wasabi/><h6>Wasabi Wallet</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/wasabi/research-club/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/wasabi/research-club/><h6>Wasabi Research Club</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/wasabi/podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/wasabi/podcast/><h6>Wasabikas Bitcoin Privacy Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/what-bitcoin-did-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/what-bitcoin-did-podcast/><h6>What Bitcoin Did Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></div></nav></div><div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky"><div class=docs-toc><nav id=TableOfContents><ul><li><ul><li><a href=#soft-forks-explained>Soft forks explained</a></li><li><a href=#bip-9-bip-91-and-bip-143-soft-fork-activation-mechanisms>BIP 9, BIP 91 and BIP 143 soft fork activation mechanisms</a></li><li><a href=#bip-8-for-soft-fork-activation>BIP 8 for soft fork activation</a></li><li><a href=#different-proposals-for-taproot-activation>Different proposals for taproot activation</a></li></ul></li></ul></nav></div></div><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3"><a href=/>Home</a>
+&lt; <a href=/bitcoin-explained/>Bitcoin Explained
+</a>&lt; Breaking Down Taproot Activation Options<h1>Breaking Down Taproot Activation Options</h1><p>Speakers:
+<a href=/speakers/sjors-provoost>Sjors Provoost</a>, <a href=/speakers/aaron-van-wirdum>Aaron van Wirdum</a></p><p><i>Date: July 25, 2020</i></p><p><i>Transcript By: Sjors, edilmedeiros</i></p><p>Tags:
+<a href=/tags/bitcoin-core>Bitcoin core</a>, <a href=/tags/taproot>Taproot</a>, <a href=/tags/soft-fork-activation>Soft fork activation</a></p><p>Category:
+<a href=/categories/podcast>Podcast</a></p><p>Media:
+<a href='https://www.youtube.com/watch?v=mT0t8Jm0m5E'>https://www.youtube.com/watch?v=mT0t8Jm0m5E</a></p><p>Aaron van Wirdum:</p><p>We&rsquo;re going to discuss Taproot activation, or more generally soft fork activation.</p><p>Sjors Provoost:</p><p>Yeah.</p><p>Aaron van Wirdum:</p><p>This has become a topic again in the sort of Bitcoin debate community public discourse.
+How do we activate soft forks?
+Because Taproot is getting to the point where it sort of ready to be deployed almost I think, so now the next question is, &ldquo;Okay, how are we actually going to activate this?&rdquo; This has been an issue in the past with several soft forks.
+And it came up in the mailing list, I think a couple of months ago.
+And now it&rsquo;s sort of reemerged, there&rsquo;s now a IRC channel where it&rsquo;s being debated, there&rsquo;s a Telegram&rsquo;s channel.
+I wrote an article on it.
+It&rsquo;s back on the death list.</p><p>Sjors Provoost:</p><p>Yeah, I read the whole IRC channel.
+No, actually I started reading the IRC channel.
+I got stuck at the meta discussion about whether or not there should be a Telegram channel and whether or not you need to ask permission.
+And whether or not asking permission was off topic in the IRC channel.
+And after an hour I gave up, but you spent your entire Saturday I believe?</p><p>Aaron van Wirdum:</p><p>I spent most of my Saturday reading through all of the logs and sort of trying to summarize it into an article.
+I didn&rsquo;t read past Saturday, so if there was any sort of big discussion or development since Saturday, I might be out of the loop a little bit, but that wasn&rsquo;t really my impression.
+I think I covered most of it.
+So I think we can cover most of it in the podcast as well.</p><h2 id=soft-forks-explained>Soft forks explained</h2><p>Sjors Provoost:</p><p>So maybe we should say what a soft fork is.</p><p>Aaron van Wirdum:</p><p>Let&rsquo;s start there.
+What is a soft fork Sjors?</p><p>Sjors Provoost:</p><p>So it&rsquo;s basically a tightening of the rules.
+An analogy I like to make is with kosher food.
+I&rsquo;ve made this analogy three times today.</p><p>Aaron van Wirdum:</p><p>Yes, this is the first time you&rsquo;re making an analogy because we&rsquo;re recording this start of the podcast for the third time which is a pain, but let&rsquo;s just go on.</p><p>Sjors Provoost:</p><p>But basically kosher food is a subset of regular food.
+So there&rsquo;s a few things you don&rsquo;t eat.
+So often you might not notice it.
+There&rsquo;s a lot of soft drinks that are kosher and you wouldn&rsquo;t know the difference.
+But sometimes you would know the difference and that could be a problem.
+But with Bitcoin, there is no such problem.
+Because the things that are no longer allowed after soft fork are very stupid things.</p><p>Aaron van Wirdum:</p><p>Yeah, so hang on.
+The thing you&rsquo;re saying is that soft fork is backwards compatible in the context of Bitcoin.
+And the reason for that is like let&rsquo;s say I go to a restaurant every day because I love the food there, and then one day they introduce kosher foods and the food is still great.
+I can still go there, because I don&rsquo;t care if it&rsquo;s kosher or not.
+Right?
+So there&rsquo;re tiny rules.
+I didn&rsquo;t care about whether or not it&rsquo;s kosher, so it&rsquo;s fine for me.</p><p>Sjors Provoost:</p><p>Yeah, but you would if your favorite recipe was now kicked out of the restaurant, but it turns out&mldr;</p><p>Aaron van Wirdum:</p><p>I would care if they get bacon out of the fridge.</p><p>Sjors Provoost:</p><p>Exactly.
+But this is not the case in the way Bitcoin soft fork works.
+So they wouldn&rsquo;t remove your bacon, basically.
+They would remove your ability to stab yourself basically.
+And so it&rsquo;s a nice and elegant way to make the rules more strict without suddenly freezing anybody&rsquo;s coins.
+So normal people can keep using it.
+They don&rsquo;t have to upgrade.
+They can keep using the old rules if they want to.
+An exchange can basically ignore SegWit for years and it&rsquo;s perfectly fine, as far as the blockchain is concerned.
+I guess we can talk about some examples.
+So Satoshi introduced soft fork in the very beginning, in a way that we wouldn&rsquo;t do anymore.
+Basically, one of the things he did was introduce a one megabyte limit.
+There was no limit, he realized that was bad or dangerous.
+So he put in a limit and then later on when it was already active, he said, &ldquo;Oh, by the way, there&rsquo;s a limit.&rdquo;</p><p>Aaron van Wirdum:</p><p>So that&rsquo;s an interesting example that I didn&rsquo;t mention in my article for Bitcoin magazine, which is&mldr;
+I mean, we&rsquo;re going to discuss how to implement soft forks, how to upgrade the protocol.
+And one of the examples that&rsquo;s Satoshi used was to basically just snuck it in there.
+And only once people are running the code, they&rsquo;ll figure out that there&rsquo;s now one megabyte limit.</p><p>Sjors Provoost:</p><p>Right.</p><p>Aaron van Wirdum:</p><p>Which worked at a time, I guess.
+And maybe it was even a good way to do it because in his mind he was probably fixing like an attack factor.</p><p>Sjors Provoost:</p><p>Yeah.</p><p>Aaron van Wirdum:</p><p>And in that case, it makes sense because you tell people about it and that increases the chance of the attack factor being exploited.</p><p>Sjors Provoost:</p><p>Right.
+But it could also happen by accident.
+You accidentally add a rule to the system that you didn&rsquo;t know was there.
+So that sort of stuff could happen, but that&rsquo;s not what we&rsquo;re going to talk about.
+We&rsquo;re going to talk about a deliberate change in the rules.
+So the other way that was done when there was a new rule, was a flag day.
+To say, &ldquo;Basically from this day forward, this new rule shall apply.&rdquo; And you announced that plenty of time in advance, and then people upgrade and it&rsquo;s all good.</p><p>Aaron van Wirdum:</p><p>Yeah.
+So you&rsquo;re going to say like, &ldquo;One year from now,&rdquo; so that&rsquo;s like July 24th when this is being published I think.
+&ldquo;July 24th, 2021, that&rsquo;s when the new rules are enacted.&rdquo;</p><p>Sjors Provoost:</p><p>Right.</p><p>Aaron van Wirdum:</p><p>Or you say at block height annual.</p><p>Sjors Provoost:</p><p>Yeah, exactly.</p><p>Aaron van Wirdum:</p><p>Some block height in the future, at this point the new rule is enacted.</p><p>Sjors Provoost:</p><p>But there was still a problem there, which is that you want to make sure that everybody&rsquo;s actually running the new software.
+And especially that miners are running the new software, because they kind of have to enforce those new rules.
+I mean, it&rsquo;s really nice if they enforce the new rules.</p><p>Aaron van Wirdum:</p><p>Well, everyone&rsquo;s enforcing the new rules.
+Or at least everyone who&rsquo;s upgraded is enforcing the new rules.
+But if a majority of hash power does it, that means they always reclaim the launch chain even for the non-upgraded nodes, like they still consider that the [Fallout 00:05:49] chain.
+So then everyone, old and new nodes will converge on this chain.
+So that&rsquo;s why it&rsquo;s very nice if a majority hash power enforces the rules as well.</p><p>Sjors Provoost:</p><p>Exactly.
+And for miners there&rsquo;s a risk.
+If a majority of miners enforces the new rules, but a minority doesn&rsquo;t, they could accidentally mine the wrong block.</p><p>Aaron van Wirdum:</p><p>The minority could mine an invalid block and then have their block orphaned.</p><p>Sjors Provoost:</p><p>Exactly.</p><p>Aaron van Wirdum:</p><p>They might not even know why, if they&rsquo;re not upgraded.</p><p>Sjors Provoost:</p><p>Exactly.
+So it&rsquo;s nice if miners signal that they&rsquo;re ready to do this upgrade, so that you can get an idea, &ldquo;Okay, most miners are clearly ready, and the few miners that are not, well hopefully they&rsquo;ll be fine.&rdquo;</p><p>Aaron van Wirdum:</p><p>So that&rsquo;s sort of the other upgrade strategy, apart from just stuffing it in there without telling anyone.</p><p>Sjors Provoost:</p><p>Yeah.</p><h2 id=bip-9-bip-91-and-bip-143-soft-fork-activation-mechanisms>BIP 9, BIP 91 and BIP 143 soft fork activation mechanisms</h2><p>Aaron van Wirdum:</p><p>You have flag days and you have miner activation.
+So signaling.
+So the signaling works as a coordination mechanism for the network to figure out, &ldquo;Okay, enough miners have upgraded now.&rdquo; This signals to everyone the network is ready.
+And through this signaling mechanism, a date or a time, or a block height is communicated essentially.
+That&rsquo;s embedded in the code, that if enough signals are included in the blockchain, then we all know at block height X, the new rules will go into effect.</p><p>Sjors Provoost:</p><p>Exactly.
+So usually it&rsquo;s every two weeks you count the number of blocks that have the signal.
+And if it&rsquo;s above a certain threshold, for example, 95%, then you know that two weeks later the new rule is active.</p><p>Aaron van Wirdum:</p><p>That was BIP 9.
+Is what you&rsquo;re explaining now.
+The Bitcoin Improvements Proposal 9 uses this difficulty period, 95%.</p><p>Sjors Provoost:</p><p>So these are the three main mechanisms, right?
+You can just randomly do this.
+You can announce a date and you can have miner signal up to a certain threshold.
+And now the question is, what are you going to do for Taproot?
+And what have we done in the past?
+And maybe you want to combine some of these methods.</p><p>Aaron van Wirdum:</p><p>So mention why BIP 9 is a problem?</p><p>Sjors Provoost:</p><p>So BIP 9 was used a couple of times to deploy some features, I believe.
+But when it was time to deploy SegWit, it took a long time.
+Like we don&rsquo;t know if it would&rsquo;ve happened eventually, but I think for at least half a year or so that the code was ready, it just didn&rsquo;t activate.
+Only a small percentage of miners were signaling for it, or at least not the 95%.</p><p>Aaron van Wirdum:</p><p>Yes.
+But we have a pretty good idea why that was.
+I mean, at least the miners that were blocking it were telling us why they were blocking it.</p><p>Sjors Provoost:</p><p>Yes, exactly.
+I mean it&rsquo;s possible that some miners were just completely not interested.
+But there was definitely miners that were actively not signaling in.</p><p>Aaron van Wirdum:</p><p>Yeah.
+Miner apathy.
+That was probably a factor for at least some miners.
+Sure.</p><p>Sjors Provoost:</p><p>So what happened then, is a number of different things happened outside the blockchain.
+There was basically a group of people that said, &ldquo;Hey, you know what?
+We&rsquo;re just going to, instead of the signaling, we&rsquo;re just going to go back to the old flag day approach.&rdquo; And that was called BIP 148.
+So they picked April 1st, 2017 and basically said, &ldquo;Well, our nodes are now going to enforce these rules.&rdquo;</p><p>Aaron van Wirdum:</p><p>But hang on.
+So to explain this real quick, like the downside of BIP 9 was that miners were blocking the upgrade, because they wanted either political leverage, or they were secretly benefiting from something that the upgrade would&rsquo;ve fixed without telling anyone that that was the case.</p><p>Sjors Provoost:</p><p>Yes.</p><p>Aaron van Wirdum:</p><p>Or both.
+But there were bad reasons basically for the miners to block this upgrade and this made Bitcoin core developers and other Bitcoiners realize that, &ldquo;Okay, that&rsquo;s actually kind of a downside to BIP 9.&rdquo;
+Because it gives miners this leverage, which they shouldn&rsquo;t have at all.
+Like they&rsquo;re treating it like a vote and they&rsquo;re sort of abusing their vote in ways that&rsquo;s bad.
+Why it&rsquo;s not even meant to be a vote, it&rsquo;s just meant to be a coordination mechanism.</p><p>Sjors Provoost:</p><p>Exactly.
+And also the reasons why you might want to oppose a proposal, generally should be technical in nature and not political.</p><p>Aaron van Wirdum:</p><p>Yes.</p><p>Sjors Provoost:</p><p>So I guess that.</p><p>Aaron van Wirdum:</p><p>So ultimately this is what you were getting at.
+This was resolved in some way or another, and there&rsquo;s still debate to this day how it was resolved exactly.</p><p>Sjors Provoost:</p><p>Right.
+Because two things happened at the same time, right?
+You had the BIP 148 (UASF) rules, the guys with the guns and the nodes.
+And-</p><p>Aaron van Wirdum:</p><p>With the hats.
+I don&rsquo;t think they had guns, but they had hats.</p><p>Sjors Provoost:</p><p>Some of them had guns.</p><p>Aaron van Wirdum:</p><p>[crosstalk 00:10:29].
+That&rsquo;s true.
+I think they were like&mldr;</p><p>Sjors Provoost:</p><p>In the forest, defending the Bitcoin.</p><p>Aaron van Wirdum:</p><p>Yes.
+That&rsquo;s true.
+And I think [inaudible 00:10:35] had like a knife.
+Whatever.</p><p>Sjors Provoost:</p><p>And so&mldr;
+Then the question is, you can tell if you read all the social media and the mailing lists, that obviously played a role.
+But if you just look at the blockchain, you can&rsquo;t really tell.
+Because what you see in the blockchain is, all of a sudden 95% started signaling and the thing activated.</p><p>Aaron van Wirdum:</p><p>Sure.</p><p>Sjors Provoost:</p><p>Now it&rsquo;s of course very remarkable that this activated exactly before August 1st and not some random other date that it could have happened.
+But there were no blocks rejected that we could still point at saying, &ldquo;Hey look, there was actually a fight between miners and et cetera.&rdquo; At the same time, there was an initiative from the New York Agreement Group.
+And they had a whole bunch of things that they were planning to do.
+But one thing they were doing is called BIP 91 and they were basically, &ldquo;Lower the threshold.&rdquo; So they said, &ldquo;Instead of having 95%, we&rsquo;re just going to accept 75%.&rdquo;</p><p>Aaron van Wirdum:</p><p>Well, to be a little bit more precise, what they did in the end was use 75% forced signaling.
+So it was like BIP 148, but it was like a soft fork to activate a soft fork.</p><p>Sjors Provoost:</p><p>So basically you had to signal that you were going to activate the soft fork.</p><p>Aaron van Wirdum:</p><p>Yes.</p><p>Sjors Provoost:</p><p>And then because there was more signaling, it would activate.
+But then again, you cannot tell from the chain, because immediately people started signaling at 95%.
+And so that&rsquo;s the nice thing about these kind of situations.
+You can&rsquo;t really tell what happened.
+It didn&rsquo;t go wrong.
+Like nobody called each other&rsquo;s bluff.</p><p>Aaron van Wirdum:</p><p>Yes.
+And I think everyone agrees that it was at least sort of a tense period and it showed everyone that maybe we&rsquo;ve got to rethink how we&rsquo;re actually going to do soft fork&rsquo;s, because this was very close to becoming a huge mess.</p><p>Sjors Provoost:</p><p>If you think through the worst case scenarios, so I guess we&rsquo;ll just avoid now because it&rsquo;ll get too confusing.</p><p>Aaron van Wirdum:</p><p>Yes.</p><p>Sjors Provoost:</p><p>But if you have chain splits and especially if you have multiple chain splits with people having different opinions about what the blockchain should be, that kind of defeats the purpose of a well-functioning blockchain.
+So it&rsquo;s something you want to avoid.</p><p>Aaron van Wirdum:</p><p>Yes.
+And let&rsquo;s skip the details.
+But there was a risk of it becoming a pretty big mess.
+I think that we both agree on that.</p><p>Sjors Provoost:</p><p>I was worried for quite a while it would be an absolute clusterfuck.</p><h2 id=bip-8-for-soft-fork-activation>BIP 8 for soft fork activation</h2><p>Aaron van Wirdum:</p><p>So, new ideas.
+How are we going to think about soft forks and soft fork activating from now on?</p><p>Sjors Provoost:</p><p>Well, one thing that was done is a revamped proposal called BIP 8.
+And yes, that&rsquo;s a lower number because the proposal was older.
+But now it&rsquo;s actually newer, so that is confusing.
+But generally there were just a couple of improvements to the original mechanism.
+Maybe not super interesting, for example, using blocks instead of dates.</p><p>Aaron van Wirdum:</p><p>Well, explain what BIP 8 is in the first place.</p><p>Sjors Provoost:</p><p>Well, BIP 8 was I think just a flag date proposal.</p><p>Aaron van Wirdum:</p><p>Was it originally just a flag date?</p><p>Sjors Provoost:</p><p>Yeah, I think so.</p><p>Aaron van Wirdum:</p><p>Okay.
+But later it was definitely&mldr;
+Like the idea was that it was a combination of BIP 9 and a flag date basically.</p><p>Sjors Provoost:</p><p>Right.
+So what it is now at least, that&rsquo;s probably the most useful thing to describe.
+Is the signaling is still there with some tweaks, but there is also a built in option to have a flag date.
+And now BIP is just a sort of a proposal of how you could do things.
+And so you could use a flag date or you could not use the flag date.
+But the proposal now explains, okay, if you have a flag date, this is how you do it.
+And it&rsquo;s a one way mechanism.
+So you could propose a new soft fork and not set a flag date, and then later on set a flag date.
+But you cannot propose a flag date and then unset it, basically.
+So if you decide on a flag date, you better go through with it.
+So it kind of [crosstalk 00:14:30].</p><p>Aaron van Wirdum:</p><p>Well, you can release a new client that doesn&rsquo;t have the flag date of course.</p><p>Sjors Provoost:</p><p>But now you have a mess, because you have&mldr;</p><p>Aaron van Wirdum:</p><p>Well, one of the nice things about BIP 8 is actually that it doesn&rsquo;t have a flag date purely.
+It has a forced signaling deadline.
+So it&rsquo;s kind of like BIP 148 before, where if you have the flag date on, so let&rsquo;s just call it the flag date for now.
+Then it doesn&rsquo;t mean that it activates the soft fork itself.
+It means that if near the end any block that&rsquo;s not mining activation, not mining support for the soft fork, that block will be orphaned.</p><p>Sjors Provoost:</p><p>Yeah.</p><p>Aaron van Wirdum:</p><p>Right.
+So it forces signaling towards the end.</p><p>Sjors Provoost:</p><p>Yeah.</p><p>Aaron van Wirdum:</p><p>So this means that if you have two groups of BIP 8 nodes, one of them has the forced signaling on and one of them has the forced signaling off.
+But miners go along with the forced signaling on, then the nodes that have forced signaling off, will still accept the soft fork because they&rsquo;re still seeing all-</p><p>Sjors Provoost:</p><p>They&rsquo;re still seeing the signaling.</p><p>Aaron van Wirdum:</p><p>Exactly, so that&rsquo;s a slight change from previous BIP 8.</p><p>Sjors Provoost:</p><p>Yeah.
+And I forgot whether&mldr;
+I think if you have a flag date in mind, you may still need to put it in there because you don&rsquo;t want different people to have different flag dates.
+So I guess it doesn&rsquo;t matter if you force signaling, but it just becomes a mess.
+Because if you force people to signal and then they don&rsquo;t signal, and you just decide to not accept all their blocks.
+If only a small number of people do that, then you still get a mess.
+So I don&rsquo;t think it&rsquo;s completely thought out, but you probably still want to have some consensus.
+If you decide on the flag date, you want to have a very large consensus on what that flag date is and that really everybody goes along with it.</p><p>Aaron van Wirdum:</p><p>Maybe.
+I mean, it depends, right?
+Like even if you don&rsquo;t have consensus, but at least miners don&rsquo;t want to see splits.
+Or they could play it safe.
+That&rsquo;s sort of how BIP 148 happens.
+Right?</p><p>Sjors Provoost:</p><p>Yeah.
+But now imagine if you had two different, like you had the August 1 group and you had the August 15 group.
+And maybe it didn&rsquo;t activate at August 1, but some like major exchanges decided to join the August 1 group and some other major exchanges decided to join the August 15 group.
+And so it would still be a mess.</p><p>Aaron van Wirdum:</p><p>Yes.
+The assumption is that in that case, or the hope is that in that case, miners just go for the August 1 one.
+So they don&rsquo;t split the network.</p><p>Sjors Provoost:</p><p>That&rsquo;s one option.
+But I think at least an improvement here is that let&rsquo;s say you just have miner apathy.
+You thought you can get 95% signaling, but there&rsquo;s apathy.
+You can have another discussion on mailing lists and everybody says, &ldquo;Yeah, yeah.
+We&rsquo;re fine with this upgrade.&rdquo; And no miner is objecting to it, they just not bothering to upgrade their software to signal.
+Then you can calmly agree on a date, as a flag gate, and just calmly add it and there&rsquo;s not going to be too much chaos.
+But you still have the problem of the miners not enforcing the rules.</p><p>Aaron van Wirdum:</p><p>Okay.
+So I think these are sort of the basics of BIP 8.
+And the next thing is that you can sort of play around with the parameters in all sorts of way.
+So we&rsquo;ve already mentioned with or without flag day.
+And the flag day in turn can be an actual flag day or forced signaling.
+Then you can play around with like a parameter of how long, how far into the future should this flag day be.</p><p>Sjors Provoost:</p><p>Yep.</p><p>Aaron van Wirdum:</p><p>You can play with a parameter of how much hash power it is.
+So far we&rsquo;ve mentioned 95%, but you could lower this.
+You could say 75% is enough.
+50% is enough.
+Even 1% is enough.
+You could potentially do that.
+Right?</p><p>Sjors Provoost:</p><p>Yeah.
+That&rsquo;s pretty useless, but you could.</p><p>Aaron van Wirdum:</p><p>I agree.
+But like the point is you can play around with these permutations in all sorts of ways.
+So now you sort of have pieces of the puzzle and then you can think of ways to put these pieces together, to come up with like a concrete activation strategy that we&rsquo;re going to use for Taproot.</p><p>Sjors Provoost:</p><p>But you can also imagine that there&rsquo;s going to be a lot of permutations.
+And so this could be a byte shedding nightmare.</p><h2 id=different-proposals-for-taproot-activation>Different proposals for taproot activation</h2><p>Aaron van Wirdum:</p><p>Yes it could.
+But should we cover some of the sort of general ideas that are floating around?</p><p>Sjors Provoost:</p><p>Yeah, sure.</p><p>Aaron van Wirdum:</p><p>Okay.
+So one idea that has been proposed by Matt Corallo, a well known core contributor, is he calls it modern soft fork activation.
+So what he proposes is, let&rsquo;s use BIP 8 without forced signaling on the end, or without forced activation on the end for a year.
+So that&rsquo;s more like BIP 9, that&rsquo;s what we used to do.
+See if miners activate it, just requiring a 95% hash power support threshold, let&rsquo;s see if they do it or not.
+If they do it, great.
+Soft fork has been activated.
+If they don&rsquo;t, then phase two of this proposal comes into play which is six months of developer reconsideration.</p><p>Aaron van Wirdum:</p><p>So developers see if there was a good reason for miners to block it.
+Maybe there was a problem with the proposal, in this case Taproot, that they hadn&rsquo;t considered before.
+So developers are just going to sort of reconsider.
+If after six months they haven&rsquo;t found anything wrong with the proposal and they conclude that, okay, it&rsquo;s actually just miner apathy or miners trying something or whatever, like no good reason, then we&rsquo;re going to deploy it again.
+This time BIP 8 with either forced signaling or&mldr;</p><p>Sjors Provoost:</p><p>With a flag day.</p><p>Aaron van Wirdum:</p><p>Flag day on the end.</p><p>Sjors Provoost:</p><p>Yeah.</p><p>Aaron van Wirdum:</p><p>I think Matt&rsquo;s original idea was flag day on the end, but he&rsquo;s probably open to forced signaling I would imagine.</p><p>Sjors Provoost:</p><p>I mean, the question is if you have a flag day, what do you do on the flag day?
+And one thing you can do with the flag day is enforce the soft fork and the other is you can force the signaling, which then triggers the soft fork.</p><p>Aaron van Wirdum:</p><p>Well, exactly.</p><p>Sjors Provoost:</p><p>So I don&rsquo;t think that&rsquo;s&mldr;
+That&rsquo;s more of a detail and it&rsquo;s probably not controversial to force the signaling instead of forcing the soft fork.</p><p>Aaron van Wirdum:</p><p>I think that wouldn&rsquo;t be very controversial.</p><p>Sjors Provoost:</p><p>Just makes it more compatible with what other people are doing.</p><p>Aaron van Wirdum:</p><p>Yes, exactly.
+So that would probably be, yeah.
+Okay.
+So that&rsquo;s one idea, it has the benefits of sort of taking it easy and reconsidering if there&rsquo;s maybe something wrong with the proposal.
+And if there is something wrong with the proposal that people don&rsquo;t have to actually need to upgrade their soft fork, they can just keep running whatever they were running.
+Because there was a time out anyway in the soft fork, it just didn&rsquo;t happen.
+And it&rsquo;s sort of fine, there&rsquo;s no sort of emergency upgrades needed at all or anything like that.
+The downside is that if miners don&rsquo;t cooperate, it&rsquo;s going to take a long time before the soft fork actually is live on the network, like three and a half years.
+So that means App developers have to wait three and a half years.
+Everyone&rsquo;s just sort of stuck waiting for three and a half years for basically no good reason.
+So that&rsquo;s why some people really don&rsquo;t like this proposal.
+What do you think?</p><p>Sjors Provoost:</p><p>Well, you&rsquo;re going to think in the long run, right?
+So it&rsquo;s nice if you can have these improvements ship very quickly.
+But if there is a tradition that developers decide on a soft fork and it gets activated quickly, well then maybe a government starts calling developers and saying, &ldquo;Hey, we have this KYC soft fork.
+And since nobody really pays attention and miners are run anything you want, why don&rsquo;t you just make that soft fork and don&rsquo;t worry about the review process?&rdquo; So you don&rsquo;t want to put too much power in the hands of the developers.
+They don&rsquo;t want that kind of power because it means they&rsquo;re going to get very unpleasant phone calls at some point.
+So.
+It&rsquo;s a difficult trade off, because on the time scale of 200 years, it really doesn&rsquo;t matter if the soft fork takes three years longer.
+But we have no idea what the right time is, maybe it makes no difference for this political problem.</p><p>Aaron van Wirdum:</p><p>Yeah.</p><p>Sjors Provoost:</p><p>It might really just be wasting three years or it&rsquo;s really important to make sure there&rsquo;s no problem.
+[crosstalk 00:23:00].
+I&rsquo;d like to see it deployed soon and hopefully miners are excited.
+But it&rsquo;s going to get more and more difficult to deploy these things in general because if you get, and we want that, lots and lots of very small individual mining pools while trying to get 95%, even just to communicate to them is going to be harder.
+And that&rsquo;s a good thing, but it could slow things down.
+Very&mldr;</p><p>Aaron van Wirdum:</p><p>Sure.
+So another idea is BIP 8, let&rsquo;s say with like a year deadline at which time forced signaling happens.
+Almost kind of like a basic proposal.
+Would this be&mldr;
+So to first ask you about that, do you think that&rsquo;s too fast?
+One year, forced signaling?</p><p>Sjors Provoost:</p><p>So my problem with the forced signal is, if you ship this thing and you say, &ldquo;Okay, miners can signal for it.
+But if they don&rsquo;t, it&rsquo;s going to activate.&rdquo; You kind of lock yourself into that outcome.
+There&rsquo;s no real way to object anymore.
+Because even if miners come up and say, &ldquo;Hey, wait a minute, there is a problem.&rdquo; Then you can&rsquo;t cancel it anymore, because people are this new soft fork and they have the forced signaling in.
+So lots of people would see their nodes just stop.
+And so you&rsquo;re essentially having a hard fork if you decide to not do it.
+So what I think you should do at minimum is say, &ldquo;We ship this version without the hard coded date in it, but we&rsquo;re probably going to enforce that hard coded date in a new upgrade.&rdquo; But I think that should be [crosstalk 00:24:27].</p><p>Aaron van Wirdum:</p><p>Yeah well, that&rsquo;s another proposal I want to get there next.</p><p>Sjors Provoost:</p><p>Okay.</p><p>Aaron van Wirdum:</p><p>But I want to&mldr;</p><p>Sjors Provoost:</p><p>So this one I don&rsquo;t like, because if you remove any ability to object, then why even bother with the miner signaling.
+Because once you put a flag date in the code and you ship that code, that&rsquo;s it.
+It&rsquo;s just going to activate.</p><p>Aaron van Wirdum:</p><p>Well the idea behind any soft fork-</p><p>Sjors Provoost:</p><p>Unless you force people to upgrade and that&rsquo;s a hard fork.</p><p>Aaron van Wirdum:</p><p>Yeah.
+Although the idea behind any soft fork including Taproot presumably, is that there shouldn&rsquo;t be a problem with it if it&rsquo;s going to be shipped at all.
+Like at the point of it being shipped, there shouldn&rsquo;t be any problems with it.
+And after that, it&rsquo;s just a matter of coordinating the upgrade.</p><p>Sjors Provoost:</p><p>But the question is when are people going to bother to review it?
+And I could imagine that if I&rsquo;m a miner and like, &ldquo;Oh, I have to run this new version, let&rsquo;s see what it&rsquo;s doing.&rdquo;</p><p>Aaron van Wirdum:</p><p>Right.</p><p>Sjors Provoost:</p><p>&ldquo;Holy shit.
+I don&rsquo;t like these new rules.
+Why are they reducing the block reward?&rdquo;</p><p>Aaron van Wirdum:</p><p>Right.
+That&rsquo;s one of Matt&rsquo;s arguments as well.
+That people and miners will only really consider it when the code is out there and the software is out there.</p><p>Sjors Provoost:</p><p>And it&rsquo;s an expensive signal too, right?
+As a developer, you&rsquo;re really shipping this software.
+That&rsquo;s a bigger commitment than saying, &ldquo;Okay, looks good and get up.&rdquo;
+So I think that is a critical moment and you can&rsquo;t expect review to happen after that.
+Or review to happen after that.
+So that&rsquo;s why I don&rsquo;t think you should put the date in stone, at least not the first try.
+Maybe a half a year later.
+Maybe you don&rsquo;t have to wait for the whole year.</p><p>Aaron van Wirdum:</p><p>So a related idea and it&rsquo;s almost kind of the same idea I guess, but it&rsquo;s Luke-Jr.</p><p>Sjors Provoost:</p><p>Luke Dashjr.</p><p>Aaron van Wirdum:</p><p>Yeah.
+Luke Dashjr, Luke-Jr.</p><p>Sjors Provoost:</p><p>People call him Luke-Jr.
+But he once said in a podcast, &ldquo;It&rsquo;s Luke Dashjr.&rdquo; So.</p><p>Aaron van Wirdum:</p><p>Oh, he did?</p><p>Sjors Provoost:</p><p>Yeah.
+The Peter McCormack show.
+That&rsquo;s the first time I learned.</p><p>Aaron van Wirdum:</p><p>All right.</p><p>Sjors Provoost:</p><p>Maybe he&rsquo;s lying.</p><p>Aaron van Wirdum:</p><p>Oh no.
+He&rsquo;s not allowed to lie according to his religion.</p><p>Sjors Provoost:</p><p>Okay.</p><p>Aaron van Wirdum:</p><p>He likes BIP 8 with forced signaling towards the end, but he prefers it to be deployed in forks for clients.
+So not in Bitcoin core.
+So kind of like BIP 148.
+Like he thinks soft fork activation should happen through different clients.
+That sort of takes away this pressure on Bitcoin core developers.
+Like potential government forced soft forks, that sort of stuff.
+So only do it through forks of Bitcoin core, or forks clients.
+What do you think of that idea?</p><p>Sjors Provoost:</p><p>Well, how do you coordinate the date?
+Is that-</p><p>Aaron van Wirdum:</p><p>Someone just picks one or it&rsquo;s sort of coordinated in some slack channel, like what happened with BIP 148, or&mldr;</p><p>Sjors Provoost:</p><p>The problem is, like we discussed before.
+If you have multiple dates, you&rsquo;re going to get the cowboy bias.
+Because whoever picks the most aggressive date, that&rsquo;s the party you kind of have to listen to.
+But that might be a recklessly early date, because some people might be [crosstalk 00:27:18].</p><p>Aaron van Wirdum:</p><p>I think if&mldr;
+So, like we mentioned before with the kosher food, a soft forks shouldn&rsquo;t have any downsides really, or at least that&rsquo;s when it&rsquo;s becoming-</p><p>Sjors Provoost:</p><p>But a fast activation could still cause problems.</p><p>Aaron van Wirdum:</p><p>Yes.
+But then that&rsquo;s the downside in itself.
+So if people in general think, &ldquo;Okay, this is too aggressive.
+Like this isn&rsquo;t good for Bitcoin to do this aggressively.&rdquo; Then that&rsquo;s the reason itself, I think, it might fail.
+So there&rsquo;s-</p><p>Sjors Provoost:</p><p>But the problem with this is the minority rule.
+The intransigent minority rule that Taleb likes to talk about.
+The most fanatic group.
+So probably the most fanatic group is going to say the earliest date, and the rest will have to just go along with that earliest date.</p><p>Aaron van Wirdum:</p><p>No they don&rsquo;t.
+Not if the rest really dislikes the solution.
+The only reason it works with sodas is because most people don&rsquo;t care either way.</p><p>Sjors Provoost:</p><p>Right.</p><p>Aaron van Wirdum:</p><p>But if most people really cared about what was in their soda, then the minority wouldn&rsquo;t get their way necessary.</p><p>Sjors Provoost:</p><p>I would prefer if you went this route and there&rsquo;s some merit to it.
+I would still like at least the development community, like people on the mailing list to agree on a date.
+And then once that date is agreed on, we say, &ldquo;Okay, we&rsquo;re not going to endorse this thing, but if you do this thing, here&rsquo;s the download and we all have the same date in mind.
+So there&rsquo;s no chaos around the date.&rdquo;</p><p>Aaron van Wirdum:</p><p>Yes.</p><p>Sjors Provoost:</p><p>And then&mldr;
+Yeah, there is something to be said for like not having-</p><p>Aaron van Wirdum:</p><p>But they don&rsquo;t seem to agree, so that&rsquo;s going to be tricky as well.
+Right?</p><p>Sjors Provoost:</p><p>Who doesn&rsquo;t agree?</p><p>Aaron van Wirdum:</p><p>Well, I think for example, Luke.
+I think also Jeremy Rubin to name a few names.
+They&rsquo;d like a much faster activation date than for example Matt Corallo, or I think AJ Towns is also someone who prefers a slower activation date.
+So there&rsquo;s dispute in there it seems.
+So that makes it kind of tricky, right?</p><p>Sjors Provoost:</p><p>Yeah.
+It may be that that ends up in something that will forever be known as the Bike Shed Wars.</p><p>Aaron van Wirdum:</p><p>Well, but then, the cowboy might actually come around and&mldr;</p><p>Sjors Provoost:</p><p>Yeah.
+And activate-</p><p>Aaron van Wirdum:</p><p>And almost sort of save the day.
+I&rsquo;m not necessarily endorsing that, but-</p><p>Sjors Provoost:</p><p>But let me give you a bad scenario-</p><p>Aaron van Wirdum:</p><p>Let me put it this way Sjors.</p><p>Sjors Provoost:</p><p>Okay.</p><p>Aaron van Wirdum:</p><p>I find it almost inevitable, like someone out there is going to Leroy Jenkins.
+Like it&rsquo;s got to happen.
+I don&rsquo;t know if it&rsquo;s going to succeed, but it&rsquo;s almost inevitable.</p><p>Sjors Provoost:</p><p>So here&rsquo;s a bad scenario.
+Let&rsquo;s say we ship the completely ready Taproot code ready for main net in two months.</p><p>Aaron van Wirdum:</p><p>Yes.</p><p>Sjors Provoost:</p><p>Not going to happen, but let&rsquo;s say we do that.
+And the code has this one year miner signaling thing and then it expires.
+And now the most aggressive group comes out and says, &ldquo;No, no, no, we&rsquo;re going to activate this like one month later.&rdquo; That&rsquo;s going to be the consensus of the loudest people.</p><p>Aaron van Wirdum:</p><p>Yes.
+That&rsquo;s going to be the Leroy Jenkins.</p><p>Sjors Provoost:</p><p>So two weeks into that scheme, the miners actually start reviewing.
+Because like we just talked about, people might only review code when it&rsquo;s ready.
+Now they find a critical bug.
+And most of the core developers would agree, &ldquo;Okay, this is actually a bug.
+We should abort.
+Soft fork miners, please don&rsquo;t signal for it.&rdquo;
+But at the same time you have this super loud group, who&rsquo;s already canceled everybody who doesn&rsquo;t agree with them to activate this thing.
+So that&rsquo;s why I like the idea of having at least some decent amount of time and some community agreement on, &ldquo;When are we going to flag date this thing?&rdquo; And it shouldn&rsquo;t be within a few months.
+You should give people a decent amount of time.
+But you know, I can&rsquo;t decide what people are going to do.</p><p>Aaron van Wirdum:</p><p>Well, I said, that&rsquo;s kind of my point.</p><p>Sjors Provoost:</p><p>But you might get a&mldr;
+Either that might be successful and it just deploys early and we get lucky.</p><p>Sjors Provoost:</p><p>Maybe it&rsquo;s a botched UASF sort of situation where they try.
+They make a really loud noise.
+But the main players in the industry, because of this bug for example, say, &ldquo;No, no, no.
+We&rsquo;re not doing this.&rdquo;</p><p>Aaron van Wirdum:</p><p>Yes.</p><p>Sjors Provoost:</p><p>And they just collide head on and nothing happens, where you get a bunch of orphan blocks.
+It&rsquo;s hard to predict.
+But that could be a mess and that could be on CNN.
+And then there&rsquo;s like, &ldquo;Oh, Bitcoin is broken,&rdquo; on CNN.
+And Bitcoin was already broken two podcasts ago.
+Remember?
+I don&rsquo;t know what the topic was.
+I think at was about [crosstalk 00:31:20].</p><p>Aaron van Wirdum:</p><p>No, that was a security something&mldr;.</p><p>Sjors Provoost:</p><p>Oh, it was unconfirmed transactions.</p><p>Aaron van Wirdum:</p><p>Oh yeah.
+That was the thing.</p><p>Sjors Provoost:</p><p>But now imagine all these very mediagenic people with their machine guns in the forest advocating a soft fork that all of the core developers are saying, &ldquo;Let&rsquo;s not activate this, because there&rsquo;s like a really, really bad bug in it.&rdquo;</p><p>Aaron van Wirdum:</p><p>Yes.
+But I do think the dynamics then would be very different.
+Like if there&rsquo;s an actual bug in the actual soft fork itself, compared to an actual&mldr;
+Or just an objection to that situation itself.</p><p>Sjors Provoost:</p><p>Right.</p><p>Aaron van Wirdum:</p><p>Like these are two different-</p><p>Sjors Provoost:</p><p>This was a very extreme example.
+But less extreme would be, I think miners should have some time to review this code after it&rsquo;s shipped.
+And some people might say, &ldquo;No, they should have reviewed it earlier, because like we don&rsquo;t want to set the incentive.&rdquo;
+I think it could be messy.
+So that&rsquo;s why waiting longer, I think is just better.</p><p>Aaron van Wirdum:</p><p>So here&rsquo;s another right idea.
+Another idea is BIP 8 plus BIP 91.</p><p>Sjors Provoost:</p><p>Okay.</p><p>Aaron van Wirdum:</p><p>So this basically means you&rsquo;re going to deploy BIP 8, I think with a long signaling period.
+Like could even be three years or whatever, like something that&rsquo;s similar to Matt&rsquo;s proposal.
+After these three years, three and a half, whatever it is, the activation is triggered.
+So there&rsquo;s a long lead up.
+In the meantime though, you&rsquo;re going to see what happens.
+So for example, if after a year it&rsquo;s still not activated, then developers can sort of try to find out why it hasn&rsquo;t activated again, sort of similar to Matt&rsquo;s idea.
+Developers take their time.
+They figure out, &ldquo;Okay, there&rsquo;s actually no good reason that it&rsquo;s not being X failed.&rdquo; At that point, they can deploy a new client that has sort of BIP 91 in it, which forces miners to signal support for it before the three and a half year are over.</p><p>Sjors Provoost:</p><p>You mean a lower threshold?</p><p>Aaron van Wirdum:</p><p>Yes.
+A lower threshold.</p><p>Sjors Provoost:</p><p>Okay.
+So you basically ship an update, which has a lower threshold in it.</p><p>Aaron van Wirdum:</p><p>Yes, which in turn triggers the higher threshold.</p><p>Sjors Provoost:</p><p>So I like the idea of lowering the threshold over time.
+What I am worried about, and maybe that was discussed, is what if there&rsquo;s a bug?
+Because if this thing has a three year window, that means there is three years in which this thing could activate, even though everybody agrees, it shouldn&rsquo;t activate.</p><p>Aaron van Wirdum:</p><p>Right.
+Well then, so that&rsquo;s-</p><p>Sjors Provoost:</p><p>That&rsquo;s kind of scary.</p><p>Aaron van Wirdum:</p><p>Right.
+So then the answer is deploy a new client that includes a soft fork that undoes the Taproot soft fork in that case.</p><p>Sjors Provoost:</p><p>Well, if you undo a soft fork, it&rsquo;s a hard fork.</p><p>Aaron van Wirdum:</p><p>Not if it&rsquo;s not activated yet.</p><p>Sjors Provoost:</p><p>But you don&rsquo;t know that.</p><p>Aaron van Wirdum:</p><p>What do you mean?</p><p>Sjors Provoost:</p><p>The problem is people who are running the first version, they&rsquo;re just waiting for that 95%.
+They&rsquo;re waiting for three years until this thing activates.
+But then if there&rsquo;s a bug fix, then you need to have a new signal flag to indicate the new version of Taproot that you&rsquo;re going to activate.
+And you have to make sure the old version never activates, because [crosstalk 00:34:27].</p><p>Aaron van Wirdum:</p><p>Soft fork is a tightening of the rules.
+So now you say any soft fork, any Taproot, anything is just not allowed.
+You&rsquo;re not going to include it in blocks.</p><p>Sjors Provoost:</p><p>Yeah.
+You could completely ban version one basically.
+Right.</p><p>Aaron van Wirdum:</p><p>That would be soft fork.</p><p>Sjors Provoost:</p><p>But that&rsquo;s pretty horrific.
+It would be nice if you didn&rsquo;t have to do that.</p><p>Aaron van Wirdum:</p><p>It would be kind of ugly.
+Yes.
+Plus it would be important that people upgrade.
+[crosstalk 00:34:50].</p><p>Sjors Provoost:</p><p>So a one year signaling thing is nice, because that means that you can say, &ldquo;Okay, if this thing doesn&rsquo;t activate in a year because there&rsquo;s a bug.
+We wait a year and we try again and then we know for sure we&rsquo;re not going to accidentally activate the old version after that year.&rdquo;</p><p>Aaron van Wirdum:</p><p>Yes.</p><p>Sjors Provoost:</p><p>And yeah, it&rsquo;s kind of annoying to have to wait for a year.
+But then if there really is a bug in a thing that was ready to be deployed, that really warrants a year of thinking really, really well about how the hell that could happen.</p><p>Aaron van Wirdum:</p><p>Okay.
+So then there was another idea.
+I added this, as an-</p><p>Sjors Provoost:</p><p>But the idea of saying that signaling thresholds could go down, that makes sense to me.
+So you could say, &ldquo;Well, when the year starts, it&rsquo;s 95%.
+But you know, after six months it should just be 80%.
+And after 11 months it should be a little bit less.
+And then if it still doesn&rsquo;t happen, we give up and we decide again for next year, what we&rsquo;re going to do.&rdquo;</p><p>Aaron van Wirdum:</p><p>Yes.
+All right.
+So then there was another idea which is, I guess, is it the opposite as a previous one?
+Maybe not.
+You take BIP 8 with a long period, but without forced signaling at the end.
+Then you still keep an eye on what&rsquo;s happening.
+If after a while you find that there is no problem with it, but miners aren&rsquo;t signaling for it because they&rsquo;re just apathetic or they have another bad reason.
+Then you can deploy another client with BIP 8, this time with forced signaling that starts forced signaling before the end of the current signaling period.</p><p>Sjors Provoost:</p><p>Okay.</p><p>Aaron van Wirdum:</p><p>Or at least not later than that.
+Like if it starts before that, then you have two groups of nodes online on the network, the BIP 8 nodes you deployed first that don&rsquo;t have forced signaling on the end.
+And now the new group of BIP 8 nodes that do have forced signaling.
+So if they do so the forced signaling stuff, then the older BIP 8 nodes will also accept that as an upgrade.</p><p>Sjors Provoost:</p><p>Oh, well that sounds like a regular idea of BIP 8.
+Right.
+So BIP 8 has the option to allow soft fork signaling.
+So initially you do not ship that option, and then later on you do ship the option.
+And yeah, the old nodes won&rsquo;t be confused, because they see the signaling.</p><p>Aaron van Wirdum:</p><p>Yep.
+Pretty much.
+So what&rsquo;s your preference here?
+It sounds like you&rsquo;re kind of conservative.</p><p>Sjors Provoost:</p><p>Well, like I said, I don&rsquo;t like the idea of hard coding a flag date initially.
+So I can see the benefit of, you ship something, you wait.
+Say it has a year of a window.
+You wait for six months and then you still don&rsquo;t see any signaling, but you also don&rsquo;t see the miners that reviewed your code and found problems.
+Then maybe you say, &ldquo;Okay, let&rsquo;s do a flag date.&rdquo; So it&rsquo;s like, &ldquo;That&rsquo;s not super patient.&rdquo; And then you ship, you have that flag date within six months.</p><p>Sjors Provoost:</p><p>But I&rsquo;m not sure.
+In the short run it&rsquo;s nice to have all this stuff fast.
+In the long run it&rsquo;s kind of scary if something can happen fast.
+Because it gives you less time to stop it if it&rsquo;s bad.
+But again, just being slow for the sake of being slow, doesn&rsquo;t make any sense either.
+So I can see why these IRC threads are going to be really long.
+But what I&rsquo;m hoping will happen is, we just do BIP 8 without a flag date with a year of a window, and we get lucky and miners just activate the thing within a month.
+And it&rsquo;s done.</p><p>Aaron van Wirdum:</p><p>That would be nice, right.
+If miners just cooperate and maybe we&rsquo;re all making too big of a problem out of this.
+Well, that&rsquo;s one of the&mldr;
+Just for example like Greg-</p><p>Sjors Provoost:</p><p>Well, I don&rsquo;t want to say it would be nice if miners just cooperated, because Ethereum has that too and miners are very cooperative.
+I would, [crosstalk 00:38:26], if miners were very excited about this proposal for good reasons and did so quickly.
+But I&rsquo;m not saying that it&rsquo;s not technically not cooperation, it&rsquo;s just agreeing, right.
+Not obeying.
+I guess it is cooperating, but I mean it in an agreement sense, not in an obeying sense.</p><p>Aaron van Wirdum:</p><p>Sure.
+Well I think Greg Maxwell&rsquo;s position, for example, there are few like him.
+Is I don&rsquo;t think he really cares strongly, like he feels like whatever is likely to work.
+Like just go for it.
+Don&rsquo;t overthink this, because-</p><p>Sjors Provoost:</p><p>It&rsquo;s probably a good&mldr;
+Yeah.</p><p>Aaron van Wirdum:</p><p>&ldquo;If it doesn&rsquo;t work out, we&rsquo;ll deal with it then.&rdquo; I think that&rsquo;s sort of his position, for example.
+And like all of the options I&rsquo;ve named so far, I think he&rsquo;s sort of okay with.
+As long as, like something needs to be picked.
+Because the longer it&rsquo;s going to take, the harder it&rsquo;s going to get probably, and the more controversial the whole topic might become.
+And like just try something.</p><p>Sjors Provoost:</p><p>Yeah, it&rsquo;s quite possible.
+You get a whole holy war over the exact details of how you activate a soft fork and that might be bad.</p><p>Aaron van Wirdum:</p><p>Do you think it&rsquo;s&mldr;
+I mean, that&rsquo;s one of the reasons it could be like a holy war, is some people think that it&rsquo;s a very important precedent to like the way you&rsquo;re enforcing a soft fork.
+The way you&rsquo;re activating a soft fork that really matters going forward for the next soft fork.
+And it really sort of defines Bitcoin almost in a way.</p><p>Sjors Provoost:</p><p>Well, I don&rsquo;t know about the latter because things change.
+So even if we do things in an amazing way, five years from now, there might be a whole new generation of people that just do not care about the ways of five years ago.
+All these old people.
+So.</p><p>Aaron van Wirdum:</p><p>Especially in Bitcoin, five years is an eternity.</p><p>Sjors Provoost:</p><p>I mean, I think that I mentioned today my main concerns, don&rsquo;t set something in stone that you have a serious chance of regretting.
+So keep in mind that people don&rsquo;t review code before it&rsquo;s actually shipped.
+And so that&rsquo;s why I kind of like the idea of having say a one year activation window.
+Maybe with a minimum of three months, there was another proposal for that.
+And then give miners and others some time to actually review this thing, because haven&rsquo;t done it.
+And then if they find a problem, you could still abort.
+And then if you don&rsquo;t see this objection, then you can choose to put in a flag day and then you can debate whether you want the flag day to be very quickly at the end of the year.
+Or whether you say let&rsquo;s give it another year.
+That just depends.
+But I don&rsquo;t have a strong opinion there.
+But I&rsquo;m not the most patient person, so you should ask a more patient person.</p><p>Aaron van Wirdum:</p><p>Well, you sound pretty patient to me.
+I think I&rsquo;m pretty patient.</p><p>Sjors Provoost:</p><p>Not by like Greg Maxwell standards, I think.</p><p>Aaron van Wirdum:</p><p>Right.
+I guess I&rsquo;m pretty patient when it comes to soft forks and I&rsquo;m not really in a rush.
+Like Bitcoin works for me the way it&rsquo;s working.</p><p>Sjors Provoost:</p><p>A downside of having-</p><p>Aaron van Wirdum:</p><p>At the same time, it&rsquo;s like users are, &ldquo;It&rsquo;s not up to me.&rdquo; Like people are going to get impatient and I think that&rsquo;s going to be an interesting dynamic to see play out.
+Like too conservative is a risk in itself.</p><p>Sjors Provoost:</p><p>Yes.
+Because if this soft fork is hanging in the air for years, it will get political.</p><p>Aaron van Wirdum:</p><p>Yes.</p><p>Sjors Provoost:</p><p>And then it might not go through because of politics.
+That would not have happened if it went through a bit quicker.</p><p>Aaron van Wirdum:</p><p>Yes.
+Or it just increases the chance that someone&rsquo;s going to Leroy Jenkins in a bad way.
+If developers want to be too conservative, then you&rsquo;re going to see that kind of movement.
+And that might not always be the best way to do it either.
+I think this is a fascinating topic and I&rsquo;m going to&mldr;</p><p>Sjors Provoost:</p><p>Should we end on the cliffhanger?</p><p>Aaron van Wirdum:</p><p>Do you have a cliff hanger?</p><p>Sjors Provoost:</p><p>What are sporks?</p><p>Aaron van Wirdum:</p><p>What&rsquo;s that?</p><p>Sjors Provoost:</p><p>What a sporks?</p><p>Aaron van Wirdum:</p><p>Oh, sporks.
+You want to get into that one as well?</p><p>Sjors Provoost:</p><p>No, no.
+I want to leave it as a cliff hanger.</p><p>Aaron van Wirdum:</p><p>Oh yeah.
+That&rsquo;s even better.
+So we discussed it in another episode?</p><p>Sjors Provoost:</p><p>In another episode or maybe never.</p><p>Aaron van Wirdum:</p><p>I like that.
+Yeah.
+Maybe never.
+Maybe we&rsquo;re doing a lost cliffhanger.
+You&rsquo;ll just never get the answer.</p><p>Sjors Provoost:</p><p>So.</p><p>Aaron van Wirdum:</p><p>But there is another idea for soft fork, which is called sporks.</p><p>Sjors Provoost:</p><p>Sporks.</p><p>Aaron van Wirdum:</p><p>Right Sjors.
+That was it for this episode I think.</p><p>Sjors Provoost:</p><p>Thank you For listening to the Van Wirdum Sjorsnado.</p><p>Aaron van Wirdum:</p><p>There we go.</p><div class=row></div></div></div></div><script src=https://btctranscripts.com/lib/jquery.min.js></script><script src=https://btctranscripts.com/lib/popper.min.js></script><script src=https://btctranscripts.com/js/bootstrap.min.js></script><script type=text/javascript src=/plugins/lunr.min.js></script><script type=text/javascript src=/plugins/auto-complete.js></script><link href=/plugins/auto-complete.css rel=stylesheet><script type=text/javascript>var baseurl="https://btctranscripts.com/"</script><script type=text/javascript src=/plugins/search.js></script><script type=text/javascript src=https://btctranscripts.com/js/custom.js></script><script type=text/javascript src=/plugins/clipboard.js></script><script>new ClipboardJS(".btn")</script></body></html>
