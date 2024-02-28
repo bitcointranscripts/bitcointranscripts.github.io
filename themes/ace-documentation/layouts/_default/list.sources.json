@@ -1,0 +1,43 @@
+{{ $sources := slice }}
+
+{{ range .Site.Sections }}
+    {{ if .Params.source }}
+        {{ $sectionLoc := .File.ContentBaseName }}
+        {{ $transcripts := slice }}
+        {{ $latestDate := "" }}
+        
+        {{ range .Pages }}
+            {{ $formattedDate := .Params.date | dateFormat "2006-01-02" }}
+            {{ $transcript := dict "title" .Title "media" .Params.media "episode" .Params.episode }}
+            {{ if gt $formattedDate $latestDate }}
+                {{ $latestDate = $formattedDate }}
+            {{ end }}
+            {{ $transcripts = $transcripts | append $transcript }}
+        {{ end }}
+
+        {{ $sectionData := dict "title" .Title "source_file" .Params.source "transcripts" $transcripts "loc" $sectionLoc "transcription_coverage" .Params.transcription_coverage "cutoff_date" $latestDate }}
+        {{ $sources = $sources | append $sectionData }}
+    {{ else }}
+        {{ range .Pages }}
+            {{ if and (eq .BundleType "branch") .Params.source }}
+                {{ $sourceLoc := .File.ContentBaseName }}
+                {{ $transcripts := slice }}
+                {{ $latestDate := "" }}
+                
+                {{ range .Pages }}
+                    {{ $formattedDate := .Params.date | dateFormat "2006-01-02" }}
+                    {{ $transcript := dict "title" .Title "media" .Params.media "episode" .Params.episode }}
+                    {{ if gt $formattedDate $latestDate }}
+                        {{ $latestDate = $formattedDate }}
+                    {{ end }}
+                    {{ $transcripts = $transcripts | append $transcript }}
+                {{ end }}
+
+                {{ $sourceData := dict "title" .Title "source_file" .Params.source "transcripts" $transcripts "loc" $sourceLoc "transcription_coverage" .Params.transcription_coverage "cutoff_date" $latestDate }}
+                {{ $sources = $sources | append $sourceData }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+
+{{ jsonify $sources }}

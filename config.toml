@@ -60,8 +60,13 @@ DefaultContentLanguage = "en"
   baseName = "directories"
   isPlainText = true
 
+[outputFormats.Sources]
+  mediaType = "application/json"
+  baseName = "sources"
+  isPlainText = true
+
 [outputs]
-    home = [ "HTML", "Status", "Directories", "Index"]
+    home = [ "HTML", "Status", "Directories", "Sources", "Index"]
     page = [ "HTML"]
 
 [params]
