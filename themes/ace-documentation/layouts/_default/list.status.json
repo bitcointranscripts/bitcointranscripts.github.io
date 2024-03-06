@@ -8,7 +8,6 @@
     {{- $path := .Permalink -}}
     {{- range $key, $value := $.Scratch.Get "missing" -}}
         {{- if not (isset $params $key) -}}
-                
             {{- $.Scratch.SetInMap "missing" $key ($value | append $path) -}}   
         {{- end -}}
     {{- end -}}
@@ -19,7 +18,6 @@
             {{- $.Scratch.Add $lang 1 -}}
         {{- end -}}
     {{- end -}}
-
 {{- end -}}
 
 {{- $.Scratch.Set "transcripts" (dict "en" (len .Site.RegularPages) "es" ($.Scratch.Get "es") "pt" ($.Scratch.Get "pt") "zh" ($.Scratch.Get "zh")) -}}
@@ -32,8 +30,17 @@
   {{ $speakerData = $speakerData | append .Page.LinkTitle }}
 {{ end }}
 
+{{/* First, add all taxonomy tags to tagData */}}
 {{ range $tag, $not_used := .Site.Taxonomies.tags }}
   {{ $tagData = $tagData | append $tag }}
+{{ end }}
+
+{{/* Then, add tags from the allTags.json file if they are not already included */}}
+{{ $allTagsFromFile := (index .Site.Data.all_tags) | uniq }} {{/* Read and ensure unique tags from file */}}
+{{ range $tagFromFile := $allTagsFromFile }}
+  {{ if not (in $tagData $tagFromFile) }}
+    {{ $tagData = $tagData | append $tagFromFile }}
+  {{ end }}
 {{ end }}
 
 {{ range $category, $not_used := .Site.Taxonomies.categories }}

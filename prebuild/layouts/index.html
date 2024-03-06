@@ -1,9 +1,16 @@
-{{ with resources.GetRemote "https://www.kouloumos.com/topics.json" }}
+{{ with resources.GetRemote "https://bitcoinops.org/topics.json" }}
   {{ $topics := unmarshal .Content }}
+  {{ $allTags := slice }} {{/* Initialize an empty slice to store all tags */}}
   {{ range $topics }}
+    {{ $allTags = $allTags | append .slug }} {{/* Add the tag slug to the slice */}}
     {{/* 1. */}} {{ $string := jsonify . }}
     {{/* 2. */}} {{ $filename := printf "tags/%s/_index.md" (urlize .slug) }} 
     {{/* 3. */}} {{ $resource := resources.FromString $filename $string }} 
     {{/* 4. */}} {{ $file := $resource.RelPermalink }} 
   {{ end }}
+  {{/* Save the list of all tags to a data file */}}
+  {{ $dataFilename := "data/all_tags.json" }}
+  {{ $tagsString := jsonify $allTags }}
+  {{ $dataResource := resources.FromString $dataFilename $tagsString }}
+  {{ $dataFile := $dataResource.RelPermalink }}
 {{ end }}
