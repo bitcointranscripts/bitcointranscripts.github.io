@@ -25,6 +25,7 @@
 {{ $speakerData := slice }}
 {{ $tagData := slice }}
 {{ $categoryData := slice }}
+{{ $needsData := dict }}
 
 {{ range .Site.Taxonomies.speakers }}
   {{ $speakerData = $speakerData | append .Page.LinkTitle }}
@@ -47,12 +48,35 @@
   {{ $categoryData = $categoryData | append $category }}
 {{ end }}
 
+{{ range $need, $pages := .Site.Taxonomies.needs }}
+    {{ $transcriptsForNeed := slice }}
+    {{ range $pages }}
+        {{ $formattedDate := "" }}
+        {{ if isset .Params "date" }}
+            {{ $formattedDate = dateFormat "2006-01-02" .Params.date }}
+        {{ end }}
+        {{ $transcriptData := dict 
+            "url" .Permalink
+            "title" .Title
+            "tags" .Params.tags
+            "speakers" .Params.speakers
+            "source_file" .Params.media
+            "categories" .Params.categories
+            "date" $formattedDate
+            "loc" (path.Dir .File.Path)
+        }}
+        {{ $transcriptsForNeed = $transcriptsForNeed | append $transcriptData }}
+    {{ end }}
+    {{ $needsData = merge $needsData (dict $need $transcriptsForNeed) }}
+{{ end }}
+
 {{ $media := slice }}
 
 {{ range .Site.RegularPages }}
   {{ $mediaValue := .Params.media }}
-  {{ if $mediaValue }}
-    {{ $media = $media | append $mediaValue }}
+  {{ $needsTranscription := in .Params.needs "transcription" }}
+  {{ if and $mediaValue (not $needsTranscription) }}
+        {{ $media = $media | append $mediaValue }}
   {{ end }}
 {{ end }}
 
@@ -60,4 +84,5 @@
 {{- $.Scratch.SetInMap "status" "existing" $jsonData -}}
 {{- $.Scratch.SetInMap "status" "missing" ($.Scratch.Get "missing") -}}
 {{- $.Scratch.SetInMap "status" "transcripts" ($.Scratch.Get "transcripts") -}}
+{{- $.Scratch.SetInMap "status" "needs" $needsData -}}
 {{- $.Scratch.Get "status" | jsonify -}}

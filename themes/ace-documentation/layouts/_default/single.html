@@ -16,7 +16,9 @@
     <p><i>{{ i18n "date" | title }}: {{ .Params.date.Format "January 2, 2006" }}</i></p>
 {{ end }}
 
-<p><i>{{ i18n "transcript_by" | title }}: {{ .Params.transcript_by }}</i></p>
+{{ if .Params.transcript_by }}
+    <p><i>{{ i18n "transcript_by" | title }}: {{ .Params.transcript_by }}</i></p>
+{{ end }}
 
 {{ if .Params.translation_by }}
     <p><i>{{ i18n "translation_by" | title }}: {{ .Params.translation_by }}</i></p>
@@ -53,6 +55,19 @@
             <span> AI-Generated Transcript</span> 
         </div>
         <span>Review this transcript and earn sats. </span>
+        <a href="https://review.btctranscripts.com" target="_blank" data-umami-event="click-transcript-banner">
+            Learn More >
+        </a>
+    </div>
+{{ end }}
+
+{{ if in .Params.needs "transcript" }}
+    <div class="alert alert-warning">
+        <div class="ai-generated">
+            <i class='fas fa-robot'></i>
+            <span>This source has been suggested for transcription</span> 
+        </div>
+        <span>The AI-generated transcript will be available for review shortly.</span>
         <a href="https://review.btctranscripts.com" target="_blank" data-umami-event="click-transcript-banner">
             Learn More >
         </a>

@@ -10,6 +10,7 @@ DefaultContentLanguage = "en"
   category = 'categories'
   tag = 'tags'
   speaker = 'speakers'
+  needs = 'needs'
 
 [module]
   [[module.mounts]]
