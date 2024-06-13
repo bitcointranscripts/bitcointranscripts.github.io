@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>transcript on ₿itcoin Transcripts</title><link>https://btctranscripts.com/needs/transcript/</link><description>Recent content in transcript on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 09 Sep 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://btctranscripts.com/needs/transcript/index.xml" rel="self" type="application/rss+xml"/><item><title>Acumulator Based Cryptography &amp; UTreexo</title><link>https://btctranscripts.com/edgedevplusplus/2019/accumulators/</link><pubDate>Mon, 09 Sep 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/edgedevplusplus/2019/accumulators/</guid><description>https://diyhpl.us/wiki/transcripts/bitcoin-core-dev-tech/2018-10-08-utxo-accumulators-and-utreexo/
+https://diyhpl.us/wiki/transcripts/mit-bitcoin-expo-2019/utreexo/
+https://diyhpl.us/wiki/transcripts/stanford-blockchain-conference/2019/accumulators/
+https://diyhpl.us/wiki/transcripts/scalingbitcoin/tokyo-2018/accumulators/
+https://diyhpl.us/wiki/transcripts/bitcoin-core-dev-tech/2019-06-06-utreexo/
+Note: the present presentation had more in depth information about RSA which might be interesting to the audience.
+slides:
+https://docs.google.com/presentation/d/1OWhdB5P680FMHkoutd_YLP4hGFWI_aVaXRkkYdfoix8/edit?usp=sharing
+https://docs.google.com/presentation/d/1z_vAwA6hN-C1WEg89EFfZCwqfMRWDcYuW61aA7P84zM/edit?usp=sharing</description></item><item><title>Build a Taproot</title><link>https://btctranscripts.com/edgedevplusplus/2019/taproot/</link><pubDate>Mon, 09 Sep 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/edgedevplusplus/2019/taproot/</guid><description>https://docs.google.com/presentation/d/1YVOYJGmQ_mY-5_Rs0Cu84AYSI6wCvpfIgoapfgsYP2U/edit
+https://github.com/bitcoinops/taproot-workshop/tree/BitcoinEdge
+https://github.com/bitcoinops/bitcoin/releases/tag/v0.1</description></item><item><title>The Politics of Bitcoin Development</title><link>https://btctranscripts.com/bitcoin-magazine/the-politics-of-bitcoin-development/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-magazine/the-politics-of-bitcoin-development/</guid><description/></item></channel></rss>
