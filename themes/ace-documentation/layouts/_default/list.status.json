@@ -60,7 +60,8 @@
             "title" .Title
             "tags" .Params.tags
             "speakers" .Params.speakers
-            "source_file" .Params.media
+            "source_file" (or .Params.source_file .Params.media)
+            "media" .Params.media
             "categories" .Params.categories
             "date" $formattedDate
             "loc" (path.Dir .File.Path)

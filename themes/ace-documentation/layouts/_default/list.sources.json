@@ -2,7 +2,7 @@
 
 {{ range .Site.Sections }}
     {{ if .Params.source }}
-        {{ $sectionLoc := .File.ContentBaseName }}
+        {{ $sectionLoc := printf "%s%s" .File.Dir .File.ContentBaseName | strings.TrimPrefix "/" }}
         {{ $transcripts := slice }}
         {{ $latestDate := "" }}
         
@@ -20,7 +20,7 @@
     {{ else }}
         {{ range .Pages }}
             {{ if and (eq .BundleType "branch") .Params.source }}
-                {{ $sourceLoc := .File.ContentBaseName }}
+                {{ $sourceLoc := printf "%s%s" .File.Dir .File.ContentBaseName | strings.TrimPrefix "/" }}
                 {{ $transcripts := slice }}
                 {{ $latestDate := "" }}
                 
