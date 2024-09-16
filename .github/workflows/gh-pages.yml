@@ -31,3 +31,11 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+
+      - name: Trigger dependent repo update submodule
+        run: |
+          curl -X POST \
+          -H "Authorization: token ${{ secrets.DISPATCH_UPDATE_REGISTRY_GH_PAGES }}" \
+          -H "Accept: application/vnd.github+json" \
+          https://api.github.com/repos/bitcointranscripts/registry/dispatches \
+          -d '{"event_type": "update_submodules"}'
