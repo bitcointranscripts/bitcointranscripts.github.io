@@ -30,9 +30,9 @@ That&amp;rsquo;s right.
 Aaron: 00:01:57
 Segregated Witness, which was the previous soft fork, well, was the last soft fork. We&amp;rsquo;re working towards a Taproot soft fork now.
 Sjors: 00:02:06
-It&amp;rsquo;s the last soft fork we know of.</description></item><item><title>How Bitcoin UASF went down, Taproot LOT=true, Speedy Trial, Small Blocks</title><link>https://btctranscripts.com/stephan-livera-podcast/2021-03-17-luke-dashjr-taproot-activation/</link><pubDate>Wed, 17 Mar 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2021-03-17-luke-dashjr-taproot-activation/</guid><description>Luke Dashjr arguments against LOT=false: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-February/018498.html
-T1-T6 and F1-F6 arguments for LOT=true and LOT=false: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-February/018380.html
-F7 argument for LOT=false: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-February/018415.html
+It&amp;rsquo;s the last soft fork we know of.</description></item><item><title>How Bitcoin UASF went down, Taproot LOT=true, Speedy Trial, Small Blocks</title><link>https://btctranscripts.com/stephan-livera-podcast/2021-03-17-luke-dashjr-taproot-activation/</link><pubDate>Wed, 17 Mar 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2021-03-17-luke-dashjr-taproot-activation/</guid><description>Luke Dashjr arguments against LOT=false: https://gnusha.org/url/https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-February/018498.html
+T1-T6 and F1-F6 arguments for LOT=true and LOT=false: https://gnusha.org/url/https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-February/018380.html
+F7 argument for LOT=false: https://gnusha.org/url/https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-February/018415.html
 Transcript by: Stephan Livera Edited by: Michael Folkson
 Intro Stephan Livera (SL): Luke, welcome to the show.
 Luke Dashjr (LD): Thanks.
@@ -44,7 +44,7 @@ SL: So, Luke for listeners who are unfamiliar, maybe you could take a minute and
 Video: No video posted online
 Google Doc of the resources discussed: https://docs.google.com/document/d/1VAP4LNjHHVLy9RJwpQ8LqXEUw79z5TTZxr9du_Z0-9A/
 The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
-PoDLEs revisited (Lloyd Fournier) https://lists.linuxfoundation.org/pipermail/lightning-dev/2021-January/002929.html
+PoDLEs revisited (Lloyd Fournier) https://gnusha.org/url/https://lists.linuxfoundation.org/pipermail/lightning-dev/2021-January/002929.html
 We’ll start with me talking about my research into UTXO probing attacks on Lightning in the dual funding proposal.</description></item><item><title>Socratic Seminar - Signet</title><link>https://btctranscripts.com/london-bitcoin-devs/2020-08-19-socratic-seminar-signet/</link><pubDate>Wed, 19 Aug 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/london-bitcoin-devs/2020-08-19-socratic-seminar-signet/</guid><description>Pastebin of the resources discussed: https://pastebin.com/rAcXX9Tn
 The conversation has been anonymized by default to protect the identities of the participants. Those who have given permission for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
 Intro Michael Folkson (MF): This is a Socratic Seminar organized by London BitDevs. We have a few in the past. We had a couple on BIP-Schnorr and BIP-Taproot that were really good with Pieter Wuille, Russell O’Connor and various other people joined those.</description></item><item><title>How to Activate a New Soft Fork</title><link>https://btctranscripts.com/bitcoin-magazine/2020-08-03-eric-lombrozo-luke-dashjr-taproot-activation/</link><pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-magazine/2020-08-03-eric-lombrozo-luke-dashjr-taproot-activation/</guid><description>Location: Bitcoin Magazine (online)

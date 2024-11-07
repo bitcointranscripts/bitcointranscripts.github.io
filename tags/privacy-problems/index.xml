@@ -5,7 +5,7 @@ I&amp;rsquo;m here to talk to you about privacy. This is a big topic. It&amp;rsq
 Video: No video posted online
 Google Doc of the resources discussed: https://docs.google.com/document/d/1VAP4LNjHHVLy9RJwpQ8LqXEUw79z5TTZxr9du_Z0-9A/
 The conversation has been anonymized by default to protect the identities of the participants. Those who have expressed a preference for their comments to be attributed are attributed. If you were a participant and would like your comments to be attributed please get in touch.
-PoDLEs revisited (Lloyd Fournier) https://lists.linuxfoundation.org/pipermail/lightning-dev/2021-January/002929.html
+PoDLEs revisited (Lloyd Fournier) https://gnusha.org/url/https://lists.linuxfoundation.org/pipermail/lightning-dev/2021-January/002929.html
 We’ll start with me talking about my research into UTXO probing attacks on Lightning in the dual funding proposal.</description></item><item><title>ANYPREVOUT, MPP, Mitigating Lightning Attacks</title><link>https://btctranscripts.com/stephan-livera-podcast/2020-08-13-christian-decker-lightning-topics/</link><pubDate>Thu, 13 Aug 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/stephan-livera-podcast/2020-08-13-christian-decker-lightning-topics/</guid><description>Transcript completed by: Stephan Livera Edited by: Michael Folkson
 Latest ANYPREVOUT update ANYPREVOUT BIP (BIP 118): https://github.com/ajtowns/bips/blob/bip-anyprevout/bip-0118.mediawiki
 Stephan Livera (SL): Christian welcome back to the show.

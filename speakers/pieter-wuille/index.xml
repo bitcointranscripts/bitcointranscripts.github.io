@@ -46,7 +46,7 @@ Draft of BIP-Schnorr: https://github.com/sipa/bips/blob/bip-schnorr/bip-schnorr.
 Draft of BIP-Taproot: https://github.com/sipa/bips/blob/bip-schnorr/bip-taproot.mediawiki
 Draft of BIP-Tapscript: https://github.com/sipa/bips/blob/bip-schnorr/bip-tapscript.mediawiki
 Part 1 Adam: On this episode we&amp;rsquo;ll be digging deeply into some of the most important changes coming soon to the Bitcoin protocol in the form of BIPs or Bitcoin Improvement Proposals focused on Taproot, Tapscript and Schnorr signatures.</description></item><item><title>Taproot</title><link>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06/2019-06-06-taproot/</link><pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06/2019-06-06-taproot/</guid><description>https://github.com/bitcoin/bips/blob/master/bip-0340.mediawiki
-https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2019-May/016914.html
+https://gnusha.org/url/https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2019-May/016914.html
 https://bitcoinmagazine.com/articles/taproot-coming-what-it-and-how-it-will-benefit-bitcoin/
 previously: http://diyhpl.us/wiki/transcripts/bitcoin-core-dev-tech/2018-03-06-taproot-graftroot-etc/
 https://twitter.com/kanzure/status/1136616356827283456

@@ -21,7 +21,7 @@ Intro Hi everyone. Some of you were at my Bitcoin dev presentation about Miniscr
 Descriptors It is very nice having this scheduled immediately after Andrew Chow’s talk about output descriptors because there is a good transition here.</description></item><item><title>Signet Integration</title><link>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-kalle-alm-signet-integration/</link><pubDate>Thu, 06 Feb 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/advancing-bitcoin/2020/2020-02-06-kalle-alm-signet-integration/</guid><description>Slides: https://www.dropbox.com/s/6fqwhx7ugr3ppsg/Signet%20Integration%20V2.pdf
 BIP 325: https://github.com/bitcoin/bips/blob/master/bip-0325.mediawiki
 Signet on Bitcoin Wiki: https://en.bitcoin.it/wiki/Signet
-Bitcoin dev mailing list: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2019-March/016734.html
+Bitcoin dev mailing list: https://gnusha.org/url/https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2019-March/016734.html
 Bitcoin Core PR 16411 (closed): https://github.com/bitcoin/bitcoin/pull/16411
 Bitcoin Core PR 18267 (open): https://github.com/bitcoin/bitcoin/pull/18267
 Intro I am going to talk about Signet. Do you guys know what Signet is? A few people know. I will explain it briefly. I have an elevator pitch, I have three actually depending on the height of the elevator. Basically Signet is testnet except all the broken parts are removed.</description></item></channel></rss>

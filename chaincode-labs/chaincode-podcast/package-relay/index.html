@@ -16,7 +16,7 @@ Looking forward to getting something that we can release.
 Enjoy.</p><p>Adam Jonas: 00:00:35</p><p>Hey, Gloria.</p><p>Gloria Zhao: 00:00:36</p><p>Hello.</p><p>Adam Jonas: 00:00:37</p><p>Welcome back to Chaincode.
 This is our second time recording, but this one&rsquo;s going to be comprehensible, I think (Gloria&rsquo;s laughter).
 I think we&rsquo;re going to make it work.</p><p>Mark Erhardt: 00:00:44</p><p>Yeah, I promise not to break all the discussions.</p><p>Adam Jonas: 00:00:48</p><p>It&rsquo;ll be fine, we don&rsquo;t have to&mldr; let&rsquo;s not get too in over our head.</p><p>Gloria Zhao: 00:00:51</p><p>It&rsquo;s a deep topic.</p><p>Adam Jonas: 00:00:52</p><p>It&rsquo;s a deep topic.
-What I like about this conversation is you have something very specific to talk about.</p><p>Gloria Zhao: 00:00:58</p><p>Right.</p><p>Adam Jonas: 00:00:58</p><p>So you wrote to the mailing list.</p><p>Gloria Zhao: 00:01:00</p><p>Yes.</p><h2 id=whats-package-relay>What&rsquo;s package relay?</h2><p>Adam Jonas: 00:01:01</p><p>And you <a href=https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2022-May/020493.html>proposed package relay</a>.
+What I like about this conversation is you have something very specific to talk about.</p><p>Gloria Zhao: 00:00:58</p><p>Right.</p><p>Adam Jonas: 00:00:58</p><p>So you wrote to the mailing list.</p><p>Gloria Zhao: 00:01:00</p><p>Yes.</p><h2 id=whats-package-relay>What&rsquo;s package relay?</h2><p>Adam Jonas: 00:01:01</p><p>And you <a href=https://gnusha.org/url/https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2022-May/020493.html>proposed package relay</a>.
 What&rsquo;s package relay?</p><p>Gloria Zhao: 00:01:05</p><p>I proposed some implementation of package relay, which is a concept that&rsquo;s been talked about for at least seven, maybe nine years.
 It&rsquo;s the concept of requesting, announcing, and downloading groups of transactions together, namely related transactions.
 A package is a widely used term for some set of transactions that have a dependency relationship.
@@ -65,7 +65,7 @@ The big hairy mess that is transaction relay.
 How do we then make it even more complicated and add package relay?
 So it requires a lot of exploring.</p><p>Adam Jonas: 00:09:30</p><p>As you&rsquo;re thinking about the complexity, have you been able to clean up things as you&rsquo;re complicating things?</p><p>Gloria Zhao: 00:09:36</p><p>Yeah, I think that that&rsquo;s my approach.
 Not to make it more spaghetti, and also I think refactoring helps clarify the interface for everyone.
-So for example, part of <a href=https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-September/019464.html>Package RBF</a> was modularizing and documenting our current Replace-by-Fee policy and pushing that into its own module.
+So for example, part of <a href=https://gnusha.org/url/https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-September/019464.html>Package RBF</a> was modularizing and documenting our current Replace-by-Fee policy and pushing that into its own module.
 Now it&rsquo;s just five helper functions and Package RBF, as I&rsquo;ve implemented it now, is just calling those same functions with a few different arguments.
 So that&rsquo;s nice, and now we hopefully understand RBF better.
 But that kind of also opened a can of worms, and now people want all of the RBF pinning attacks to be solved.

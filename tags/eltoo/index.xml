@@ -8,7 +8,7 @@ Slides: https://residency.chaincode.com/presentations/lightning/Eltoo.pdf
 Eltoo white paper: https://blockstream.com/eltoo.pdf
 Bitcoin Magazine article: https://bitcoinmagazine.com/articles/noinput-class-bitcoin-soft-fork-simplify-lightning
 Intro Who has never heard about eltoo? It is my pet project and I am pretty proud of it. I will try to keep this short. I was told that you all have seen my presentation about the evolution of update protocols. I will probably go pretty quickly. I still want to give everybody the opportunity to ask questions if they have any.</description></item><item><title>Blind statechains: UTXO transfer with a blind signing server</title><link>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06/2019-06-07-statechains/</link><pubDate>Fri, 07 Jun 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-core-dev-tech/2019-06/2019-06-07-statechains/</guid><description>https://twitter.com/kanzure/status/1136992734953299970
-&amp;ldquo;Formalizing Blind Statechains as a minimalistic blind signing server&amp;rdquo; https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2019-June/017005.html
+&amp;ldquo;Formalizing Blind Statechains as a minimalistic blind signing server&amp;rdquo; https://gnusha.org/url/https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2019-June/017005.html
 overview: https://medium.com/@RubenSomsen/statechains-non-custodial-off-chain-bitcoin-transfer-1ae4845a4a39
 statechains paper: https://github.com/RubenSomsen/rubensomsen.github.io/blob/master/img/statechains.pdf
 previous transcript: http://diyhpl.us/wiki/transcripts/scalingbitcoin/tokyo-2018/statechains/

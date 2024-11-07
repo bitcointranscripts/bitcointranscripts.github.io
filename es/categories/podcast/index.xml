@@ -5,13 +5,13 @@ Episodio anterior en lockinontimeout (LOT): https://btctranscripts.com/bitcoin-m
 Episodio anterior sobre Speedy Trial: https://btctranscripts.com/bitcoin-magazine/2021-03-12-taproot-activation-speedy-trial/
 Aaron van Wirdum en &amp;ldquo;Ahora hay dos clientes de activación de Taproot, aquí está el porqué&amp;rdquo;: https://bitcoinmagazine.com/technical/there-are-now-two-taproot-activation-clients-heres-why
 Transcripción por: Michael Folkson
-Introducción Aaron van Wirdum (AvW): En directo desde Utrecht este es el van Wirdum Sjorsnado.</description></item><item><title>Taproot Activación con Speedy Trial</title><link>https://btctranscripts.com/es/bitcoin-explained/taproot-activation-speedy-trial/</link><pubDate>Fri, 12 Mar 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/es/bitcoin-explained/taproot-activation-speedy-trial/</guid><description>Propuesta Speedy Trial: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-March/018583.html
+Introducción Aaron van Wirdum (AvW): En directo desde Utrecht este es el van Wirdum Sjorsnado.</description></item><item><title>Taproot Activación con Speedy Trial</title><link>https://btctranscripts.com/es/bitcoin-explained/taproot-activation-speedy-trial/</link><pubDate>Fri, 12 Mar 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/es/bitcoin-explained/taproot-activation-speedy-trial/</guid><description>Propuesta Speedy Trial: https://gnusha.org/url/https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-March/018583.html
 Introducción Aaron van Wirdum (AvW): En directo desde Utrecht este es el van Wirdum Sjorsnado. Sjors, ¿cuál es tu juego de palabras de la semana?
 Sjors Provoost (SP): En realidad te pedí un juego de palabras y me dijiste &amp;ldquo;Corta, reedita. Vamos a hacerlo de nuevo&amp;rdquo;. No tengo un juego de palabras esta semana.
 AvW: Los juegos de palabras son lo tuyo.
 SP: La última vez intentamos esto de LOT.</description></item><item><title>Activación de Taproot y LOT=true vs LOT=false</title><link>https://btctranscripts.com/es/bitcoin-explained/taproot-activation-lockinontimeout/</link><pubDate>Fri, 26 Feb 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/es/bitcoin-explained/taproot-activation-lockinontimeout/</guid><description>BIP 8: https://github.com/bitcoin/bips/blob/master/bip-0008.mediawiki
-Argumentos para LOT=true and LOT=false (T1-T6 and F1-F6): https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-February/018380.html
-Argumento adicional para LOT=false (F7): https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-February/018415.html
+Argumentos para LOT=true and LOT=false (T1-T6 and F1-F6): https://gnusha.org/url/https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-February/018380.html
+Argumento adicional para LOT=false (F7): https://gnusha.org/url/https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-February/018415.html
 Artículo de Aaron van Wirdum en LOT=true or LOT=false: https://bitcoinmagazine.com/articles/lottrue-or-lotfalse-this-is-the-last-hurdle-before-taproot-activation
 Introducción Aaron van Wirdum (AvW): En directo desde Utrecht, este es el van Wirdum Sjorsnado. Sjors, haz el juego de palabras.
 Sjors Provoost (SP): Tenemos &amp;ldquo;mucho&amp;rdquo; que hablar.
