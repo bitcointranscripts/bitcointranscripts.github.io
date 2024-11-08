@@ -1,0 +1,560 @@
+<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=canonical href=https://btctranscripts.com/chaincode-podcast/lightning-history-and-everything-else/><title>Lightning History and everything else | ₿itcoin Transcripts
+</title><link href=https://btctranscripts.com/css/fontawesome.min.css rel=stylesheet><link rel=stylesheet href=https://btctranscripts.com/css/ace.min.css><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://btctranscripts.com/images/btctranscripts.png"><meta name=twitter:title content="Tadge Dryja - Lightning History and everything else"><meta name=twitter:description content="Tadge Dryja chats with us about writing the Lightning Network paper and working in the Bitcoin space."><script async src=https://visits.bitcoindevs.xyz/script.js data-website-id=06384ada-7f1c-44c2-a6d9-d830fb23e122></script></head><body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id=navbarMain><div class=container><div><a class=navbar-brand href=/>₿itcoin Transcripts</a></div><div class="collapse navbar-collapse" id=navbarMainCollapse><ul class="navbar-nav ml-auto"><li class=nav-item><a class=nav-link href=/es>es</a></li><li class=nav-item><a class=nav-link href=/pt>pt</a></li><li class=nav-item><a class=nav-link href=/zh>zh</a></li><li class=nav-item><a class=nav-link href=https://github.com/bitcointranscripts/bitcointranscripts target=_blank><i class='fab fa-github'></i></a></li></ul></div></div></nav><div class="alert alert-warning fade show sticky-banner" role=alert><strong><a href=https://review.btctranscripts.com target=_blank data-umami-event=click-banner>Get paid to review technical Bitcoin transcripts
+</a></strong><button type=button class=close data-dismiss=alert aria-label=Close>
+<span aria-hidden=true>&#215;</span></button></div><div class=container-fluid><div class=row><div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0"><button class="navbar-toggler navbar-toggler-right collapsed" type=button data-toggle=collapse data-target=#sidenav-left-collapse aria-controls=sidenav-left-collapse aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse align-items-start flex-column" id=sidenav-left-collapse><form class="form-inline my-2 my-lg-0 searchbox"><input class="form-control mr-sm-2 w-100" data-search-input id=search-by type=text placeholder='Search (press "/")'></form><ul class="navbar-nav flex-column pt-3"><li data-nav-id=/adopting-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/adopting-bitcoin/><h6>Adopting Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/adopting-bitcoin/2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/adopting-bitcoin/2021/><h6>Adopting Bitcoin 2021</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/adopting-bitcoin/2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/adopting-bitcoin/2022/><h6>Adopting Bitcoin 2022</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/advancing-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/><h6>Advancing Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/advancing-bitcoin/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2019/><h6>Advancing Bitcoin 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/advancing-bitcoin/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2020/><h6>Advancing Bitcoin 2020</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/advancing-bitcoin/2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2022/><h6>Advancing Bitcoin 2022</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/advancing-bitcoin/2023/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2023/><h6>Advancing Bitcoin 2023</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/andreas-antonopoulos/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/andreas-antonopoulos/><h6>Andreas Antonopoulos</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/austin-bitcoin-developers/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/austin-bitcoin-developers/><h6>Austin Bitcoin Developers</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/baltic-honeybadger/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/><h6>Baltic Honeybadger</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/baltic-honeybadger/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/2018/><h6>Baltic Honeybadger 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/baltic-honeybadger/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/2019/><h6>Baltic Honeybadger 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bit-block-boom/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bit-block-boom/><h6>Bit Block Boom</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bit-block-boom/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bit-block-boom/2019/><h6>Bit Block Boom 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-2024/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-2024/><h6>Bitcoin 2024 Nashville</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/><h6>Bitcoin Core Dev Tech</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bitcoin-core-dev-tech/2015-02/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2015-02/><h6>Bitcoin Core Dev Tech 2015</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2017-09/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2017-09/><h6>Bitcoin Core Dev Tech 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2018-03/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2018-03/><h6>Bitcoin Core Dev Tech 2018 (Mar)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2018-10/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2018-10/><h6>Bitcoin Core Dev Tech 2018 (Oct)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2019-06/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2019-06/><h6>Bitcoin Core Dev Tech 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2022-10/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2022-10/><h6>Bitcoin Core Dev Tech 2022</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2023-04/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2023-04/><h6>Bitcoin Core Dev Tech 2023 (Apr)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2023-09/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2023-09/><h6>Bitcoin Core Dev Tech 2023 (Sept)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2024-04/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2024-04/><h6>Bitcoin Core Dev Tech 2024 (Apr)</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/edgedevplusplus/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/edgedevplusplus/><h6>Bitcoin Edge Dev++</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/edgedevplusplus/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/edgedevplusplus/2017/><h6>Bitcoin Edge Dev++ 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/edgedevplusplus/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/edgedevplusplus/2018/><h6>Bitcoin Edge Dev++ 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/edgedevplusplus/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/edgedevplusplus/2019/><h6>Bitcoin Edge Dev++ 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-explained/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-explained/><h6>Bitcoin Explained</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-magazine/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-magazine/><h6>Bitcoin Magazine</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-review-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-review-podcast/><h6>Bitcoin Review Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoinplusplus/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinplusplus/><h6>Bitcoin++</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bitcoinplusplus/2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinplusplus/2022/><h6>Bitcoin++ 2022</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoinplusplus/layer-2/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinplusplus/layer-2/><h6>Layer 2</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoinplusplus/onchain-privacy/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinplusplus/onchain-privacy/><h6>Onchain Privacy</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoinology/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinology/><h6>Bitcoinology</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/blockchain-protocol-analysis-security-engineering/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/><h6>Blockchain Protocol Analysis Security Eng</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/blockchain-protocol-analysis-security-engineering/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2017/><h6>Blockchain Protocol Analysis Security Engineering 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/blockchain-protocol-analysis-security-engineering/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2018/><h6>Blockchain Protocol Analysis Security Engineering 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/blockstream-webinars/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockstream-webinars/><h6>Blockstream Webinars</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/boltathon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/boltathon/><h6>Boltathon</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/breaking-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/><h6>Breaking Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/breaking-bitcoin/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/2017/><h6>Breaking Bitcoin 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/breaking-bitcoin/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/2019/><h6>Breaking Bitcoin 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/building-on-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/building-on-bitcoin/><h6>Building On Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/building-on-bitcoin/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/building-on-bitcoin/2018/><h6>Building On Bitcoin 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/chaincode-residency/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-residency/><h6>Chaincode Residency</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/chicago-bitdevs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chicago-bitdevs/><h6>Chicago Bitdevs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/coindesk-consensus-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coindesk-consensus-2016/><h6>Coindesk Consensus</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/coordination-of-decentralized-finance-workshop/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/><h6>Coordination of Decentralized Finance</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/coordination-of-decentralized-finance-workshop/2020-stanford/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/2020-stanford/><h6>2020 Stanford</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/c-lightning/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/c-lightning/><h6>Core Lightning Developer Call</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/cppcon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/><h6>CPPcon</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/cppcon/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/2017/><h6>CPPcon 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/cppcon/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/2020/><h6>CPPcon 2020</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/cryptoeconomic-systems/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cryptoeconomic-systems/><h6>Cryptoeconomic Systems</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/cryptoeconomic-systems/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cryptoeconomic-systems/2019/><h6>Cryptoeconomic Systems 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/dallas-bitcoin-symposium/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/dallas-bitcoin-symposium/><h6>Dallas Bitcoin Symposium</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/decentralized-financial-architecture-workshop/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/decentralized-financial-architecture-workshop/><h6>Decentralized Financial Architecture Workshop</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-developers-miners-meeting-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-developers-miners-meeting-2016/><h6>Developers-Miners Meeting</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/greg-maxwell/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/greg-maxwell/><h6>Greg Maxwell</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/grincon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/grincon/><h6>Grincon</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/grincon/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/grincon/2019/><h6>Grincon 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/honey-badger-diaries/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/honey-badger-diaries/><h6>Honey Badger Diaries</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/iacr/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/iacr/><h6>IACR Crypto</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/la-bitdevs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/la-bitdevs/><h6>LA Bitdevs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/layer2-summit/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/layer2-summit/><h6>Layer2 Summit</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/layer2-summit/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/layer2-summit/2018/><h6>Layer2 Summit 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/learning-bitcoin-and-design/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/learning-bitcoin-and-design/><h6>Learning Bitcoin and Design</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/lets-talk-bitcoin-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lets-talk-bitcoin-podcast/><h6>Lets Talk Bitcoin Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/lightning-conference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-conference/><h6>Lightning Conference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/lightning-conference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-conference/2019/><h6>Lightning Conference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/lightning-hack-day/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-hack-day/><h6>Lightning Hack Day</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/lightning-specification/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-specification/><h6>Lightning Specification</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/london-bitcoin-devs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/london-bitcoin-devs/><h6>London Bitcoin Devs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/magicalcryptoconference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/magicalcryptoconference/><h6>Magicalcryptoconference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/magicalcryptoconference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/magicalcryptoconference/2019/><h6>Magicalcryptoconference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/misc/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/misc/><h6>Misc</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/><h6>MIT Bitcoin Expo</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2015/><h6>MIT Bitcoin Expo 2015</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2016/><h6>MIT Bitcoin Expo 2016</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2017/><h6>MIT Bitcoin Expo 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2018/><h6>MIT Bitcoin Expo 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2019/><h6>MIT Bitcoin Expo 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2020/><h6>MIT Bitcoin Expo 2020</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2021/><h6>MIT Bitcoin Expo 2021</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2022/><h6>MIT Bitcoin Expo 2022</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2024/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2024/><h6>MIT Bitcoin Expo 2024</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/munich-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/munich-meetup/><h6>Munich Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/noded-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/noded-podcast/><h6>Noded Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/potzblitz/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/potzblitz/><h6>Potzblitz! - The weekly Lightning talk</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/realworldcrypto/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/><h6>Realworldcrypto</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/realworldcrypto/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/2018/><h6>Realworldcrypto 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/realworldcrypto/2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/2021/><h6>Realworldcrypto 2021</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/rebooting-web-of-trust/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/rebooting-web-of-trust/><h6>Rebooting Web Of Trust</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/rebooting-web-of-trust/2019-prague/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/rebooting-web-of-trust/2019-prague/><h6>2019 Prague</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/ruben-somsen/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/ruben-somsen/><h6>Ruben Somsen</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/satoshi-roundtable/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/satoshi-roundtable/><h6>Satoshi Roundtable</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/satoshi-roundtable/sr-004/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/satoshi-roundtable/sr-004/><h6>Sr 004</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/scalingbitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/><h6>Scaling Bitcoin Conference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/scalingbitcoin/hong-kong-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/hong-kong-2015/><h6>Hong Kong (2015)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/milan-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/milan-2016/><h6>Milan (2016)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/montreal-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/montreal-2015/><h6>Montreal (2015)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/stanford-2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/><h6>Stanford (2017)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/tel-aviv-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/><h6>Tel Aviv (2019)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/tokyo-2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/><h6>Tokyo (2018)</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/sf-bitcoin-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/sf-bitcoin-meetup/><h6>SF Bitcoin Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/simons-institute/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/simons-institute/><h6>Simons Institute</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/stanford-blockchain-conference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/><h6>Stanford Blockchain</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/stanford-blockchain-conference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/2019/><h6>Stanford Blockchain Conference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/stanford-blockchain-conference/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/2020/><h6>Stanford Blockchain Conference 2020</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/stephan-livera-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stephan-livera-podcast/><h6>Stephan Livera Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/sydney-bitcoin-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/sydney-bitcoin-meetup/><h6>Sydney Bitcoin Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/tabconf/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tabconf/><h6>TABConf</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/tabconf/2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tabconf/2021/><h6>TABConf 2021</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/tabconf/2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tabconf/2022/><h6>TABConf 2022</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/texas-bitcoin-conference-2014/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/texas-bitcoin-conference-2014/><h6>Texas Bitcoin Conference</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/tftc-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tftc-podcast/><h6>TFTC: A Bitcoin Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/the-bitcoin-development-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/the-bitcoin-development-podcast/><h6>The Bitcoin Development Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/chaincode-podcast/ class="nav-item my-1 parent haschildren"><a class="nav-link p-0" href=/chaincode-podcast/><h6>The Chaincode Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/ux-research/ class="nav-item my-1"><a class="nav-link p-0" href=/ux-research/><h6>UX Research Calls</h6></a></li><li data-nav-id=/verifiable-delay-functions/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/verifiable-delay-functions/><h6>Verifiable Delay Functions</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/verifiable-delay-functions/vdf-day-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/verifiable-delay-functions/vdf-day-2019/><h6>Vdf Day 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/vr-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/vr-bitcoin/><h6>VR Bitcoin</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/w3-blockchain-workshop-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/w3-blockchain-workshop-2016/><h6>W3 Blockchain Workshop</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/wasabi-research-club/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/wasabi-research-club/><h6>Wasabi Research Club</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/wasabi-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/wasabi-podcast/><h6>Wasabikas Bitcoin Privacy Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/what-bitcoin-did-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/what-bitcoin-did-podcast/><h6>What Bitcoin Did Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></div></nav></div><div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky"><div class=docs-toc><nav id=TableOfContents><ul><li><ul><li><a href=#could-blocks-be-bigger>Could blocks be bigger?</a></li><li><a href=#paperon-the-instability-of-bitcoin-without-the-block-reward>Paper: On the instability of Bitcoin without the block reward</a></li><li><a href=#serving-billions-with-lightning>Serving billions with Lightning</a></li><li><a href=#the-state-of-the-debate-when-writing-thelightning-network-white-paper>The state of the debate when writing the Lightning Network White Paper</a></li><li><a href=#would-lightning-be-possible-without-segwit>Would Lightning be possible without Segwit?</a></li><li><a href=#looking-in-from-outside-on-a-project-you-started>Looking in from outside on a project you started</a></li><li><a href=#trimmed-htlcs-sending-1-sat-vs-100000-sats>Trimmed HTLCs: Sending 1 sat vs 100,000 sats</a></li><li><a href=#limitations-of-the-lightning-network>Limitations of the Lightning network</a></li><li><a href=#do-high-fees-break-lightning>Do high fees break lightning?</a></li><li><a href=#ln-symmetry-eltoo>LN-Symmetry (Eltoo)</a></li><li><a href=#sighash_anyprevout>SIGHASH_ANYPREVOUT</a></li><li><a href=#why-are-soft-forks-so-hard>Why are soft forks so hard?</a></li><li><a href=#whats-your-wish-list-hardfork-wishlist-wikisoftfork-wishilist-wiki-for-protocol-changes>What’s your wish list (hardfork wishlist wiki, softfork wishilist wiki) for protocol changes?</a></li><li><a href=#bitcoin-needs-to-become-more-usable>Bitcoin needs to become more usable</a></li><li><a href=#tadges-thoughts-on-education>Tadge&rsquo;s thoughts on Education</a></li><li><a href=#dynamics-of-working-on-bitcoin>Dynamics of working on Bitcoin</a></li></ul></li></ul></nav></div></div><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3"><a href=/>Home</a>
+&lt; <a href=/chaincode-podcast/>The Chaincode Podcast
+</a>&lt; Lightning History and everything else<h1>Lightning History and everything else</h1><p>Speakers:
+<a href=/speakers/tadge-dryja>Tadge Dryja</a></p><p><i>Date: March 22, 2023</i></p><p><i>Transcript By: kouloumos via tstbtc v1.0.0 --needs-review</i></p><p>Tags:
+<a href=/tags/eltoo>Eltoo</a>, <a href=/tags/lightning>Lightning</a>, <a href=/tags/segwit>Segwit</a>, <a href=/tags/sighash-anyprevout>Sighash anyprevout</a>, <a href=/tags/trimmed-htlc>Trimmed htlc</a></p><p>Media:
+<a href=https://podcasters.spotify.com/pod/show/chaincode/episodes/Tadge-Dryja-and-Lightning-History-and-everything-else---Episode-31-e20udtf>https://podcasters.spotify.com/pod/show/chaincode/episodes/Tadge-Dryja-and-Lightning-History-and-everything-else---Episode-31-e20udtf</a></p><div class="alert alert-warning"><div class=ai-generated><i class='fas fa-robot'></i>
+<span>AI-Generated Transcript</span></div><span>Review this transcript and earn sats. </span><a href=https://review.btctranscripts.com target=_blank data-umami-event=click-transcript-banner>Learn More ></a></div><p>Speaker 0: 00:00:00</p><p>You know, it works, but it also worries me because it&rsquo;s like, oh, people are like, oh, I&rsquo;m sending one sat.
+And you&rsquo;re like, yeah, but it works very differently whether you&rsquo;re sending 100,000 Satoshis or one.</p><p>Speaker 1: 00:00:18</p><p>Jonas.</p><p>Speaker 2: 00:00:19</p><p>We are back and we&rsquo;re going to have Taj joining us in the studio today.
+What should we chat about with him?</p><p>Speaker 1: 00:00:26</p><p>I think maybe lightning stuff.</p><p>Speaker 2: 00:00:28</p><p>Yeah, lightning stuff.
+It&rsquo;s lightning history.
+I know he&rsquo;s spending a little bit more time working on lightning stuff at Lightspark now.</p><p>Speaker 1: 00:00:34</p><p>Oh, oh, you know what?
+Maybe we should ask him whether blocks should still be 130 megabytes.</p><p>Speaker 2: 00:00:39</p><p>All right.
+We&rsquo;ll, we&rsquo;ll start with that.
+In the last, the conclusion of the lightning paper, he talks about 130 megabyte blocks.
+So that&rsquo;s where we&rsquo;ll start.</p><h2 id=could-blocks-be-bigger>Could blocks be bigger?</h2><p>Speaker 2: 00:00:55</p><p>So we didn&rsquo;t have the mic on, but you started diving in directly into ancient, it&rsquo;s not even that much ancient history.
+It&rsquo;s just history at this point.
+So bigger blocks, smaller blocks?
+What do you think?</p><p>Speaker 0: 00:01:08</p><p>I think we shouldn&rsquo;t be dogmatic in that, like, if it&rsquo;s a sort of religious, like Bitcoin only has 21 million bitcoins and Bitcoin has one well really four megabyte blocks like this is dogmatic It&rsquo;s like well, what are we trying to achieve is this the best way to achieve it and and I think programmable money, right?
+You can program it.
+Yeah and the the thing I the distinction I make that sort of got lost, you know, five, six, seven years ago when everyone was arguing, I think there&rsquo;s sort of a economic reason for the block size and also a technical reason.
+And I feel that the technical one is much more variable in that, like, you never know.
+What if computers get way better, right?
+What if tomorrow AMD is like, hey, we just made some amazing new thing and computers are 10 times faster or 100 times faster or the Internet&rsquo;s 100 times like from physical laws, we know that that&rsquo;s totally possible.
+And we are seeing, like I was impressed, last two or three years, like computer chips got better at a rate that they hadn&rsquo;t for a long time.
+So you never know.
+And that&rsquo;s work I&rsquo;ve been doing, like on Utrecht.
+So a big part of the goal was to try to get rid of these technical limitations, right?
+To say like, okay, well, even if you did have 100 megabyte blocks, could you run it with level DB?
+We never really tried that.
+That&rsquo;s the problem, because it started with Bitcoin Cash and BSV and stuff.
+And those aren&rsquo;t, I don&rsquo;t want to say, but they&rsquo;re not really serious.</p><p>Speaker 2: 00:02:33</p><p>It&rsquo;s not just that, it&rsquo;s other variables have been played with over time with derivations, or even Ethereum, where faster blocks, bigger blocks, better blocks.</p><p>Speaker 1: 00:02:45</p><p>It&rsquo;s interesting to watch what BSV and Bcache are doing, but the question is how indicative it is of whether we could do it.
+Because if you actually then look at the content of the BSV blocks with multiple gigabytes, and it&rsquo;s just millions of times the same dog picture in the block, that&rsquo;s not going to be what sort of block we would see on a network that actually gets used like Bitcoin.</p><p>Speaker 0: 00:03:08</p><p>You would see a large UTXO set of billions of UTXOs, and that&rsquo;s to me a bigger bottleneck.
+That&rsquo;s scary, yes.
+But also, we&rsquo;re currently at one to four-ish blocks, but the UTXO set size really doesn&rsquo;t increase nearly as much as it could.
+It could easily go up 50 gigabytes a year, and it&rsquo;s still five gigabytes after 14 years.
+And so it&rsquo;s like, oh, okay, well that&rsquo;s not.</p><p>Speaker 1: 00:03:32</p><p>I would be very shocked and surprised if it wound up 50 gigabytes per year.</p><p>Speaker 0: 00:03:35</p><p>Worst case scenario, right?
+If you&rsquo;re just, you know, an attack, like that&rsquo;s the worst case.</p><p>Speaker 1: 00:03:38</p><p>Yeah, if we just create outputs all year long, yes.</p><p>Speaker 0: 00:03:41</p><p>But you could reasonably see 20 extra gigs a year, right?
+Like That could happen.
+It&rsquo;s hard to see, like, well, that sort of feels like an attack as you get towards that.
+But it could happen.
+And it&rsquo;s sort of like, yeah, we don&rsquo;t know how it works.
+I haven&rsquo;t even really tested this kind of thing.
+How does it happen?
+But so anyway, that&rsquo;s a technical limitation.
+We want people to be able to take their old laptop, whatever computer, run a node, verify everything, like have that, you know, security that Bitcoin and Bitcoin Core and whatever gives you, and that&rsquo;s awesome.
+And we need that.
+It&rsquo;s not worth anything to destroy that.
+And then there&rsquo;s the economic aspect where like, well, OK, what if we have really good computers?
+Everything works great.
+We&rsquo;ve got amazing software.
+We can handle these things.
+But the economic part is, okay, we do want scarcity because that&rsquo;s where the fees come from.</p><p>Speaker 1: 00:04:26</p><p>Right.
+In the long term, our block subsidy will be leveling off.
+We will need some other mechanism to&mldr;</p><p>Speaker 2: 00:04:34</p><p>And quickly, I mean&mldr;
+Exponential! That&rsquo;s how exponential works.
+Yeah, pretty soon.</p><p>Speaker 1: 00:04:41</p><p>Yeah, and what is it?
+We just went past the halfway point of this block subsidy era, And so&mldr;</p><p>Speaker 0: 00:04:50</p><p>No, wait, next year, 2024 is when it halves, I think.
+So we&rsquo;re well into&mldr;</p><p>Speaker 1: 00:04:56</p><p>Yeah, end of 2022 was the point where we went over 105,000 blocks into the era.
+So yeah, end of 2024, I think, is the next halving.</p><p>Speaker 0: 00:05:08</p><p>To me, those are very different concerns, right?
+Where it&rsquo;s like, OK, we need small blocks so that we incentivize, you know, have fees and keep the security of the system.
+And then we need the small blocks because of, oh, I&rsquo;m currently running an Intel i5 whatever chip.
+And that seems very ephemeral.
+Computer chips, we&rsquo;re talking about a system we want to run for 100 years.</p><p>Speaker 2: 00:05:29</p><p>Yes and no.
+We are talking about people running Bitcoin on Raspberry Pis and whatever else.</p><p>Speaker 1: 00:05:36</p><p>We&rsquo;re also talking about people running Bitcoin in areas where bandwidth is more expensive and trying to just keep up with all the blocks is an expense that they have to calculate with.
+I mean, clearly there&rsquo;s other ways to deliver the blockchain there, like get a satellite dish pointed at some specific point in the sky and it streams you the whole blockchain in a month.
+But yeah,</p><p>Speaker 0: 00:06:01</p><p>but so it also is ephemeral in both directions.
+Like maybe, you know, because a lot of people on the Internet are like, hey, Bitcoin&rsquo;s great for like when the apocalypse comes or, you know, when the system falls apart or something.
+Maybe it gets worse, right?
+Maybe we&rsquo;re scavenging through the dump to find 386 chips or I don&rsquo;t know, it&rsquo;s kind of a silly scenario.
+I think it&rsquo;s much more likely that computers continue to get better, but it could go the other way.
+But I think the technical side is very variable and we don&rsquo;t really know what will happen.
+And it&rsquo;s quite possible that you could have a extremely cheap, small, power efficient device that can be used anywhere in the world that can verify Bitcoin like instantly.</p><p>Speaker 1: 00:06:39</p><p>Sure.</p><p>Speaker 0: 00:06:39</p><p>That could happen.</p><p>Speaker 1: 00:06:40</p><p>But then look also at recent events where people came up with new uses on how to use the blockchain as a publication medium.
+Now you go to 20 megabyte blocks and suddenly the minimum fee rate matters a lot because that&rsquo;s the point at which people enter the data that they want to publish into the blockchain.
+And sure, we already have a pull request in Bitcoin Core that might skip over witness data until assume valid point if you&rsquo;re pruning and assume valid.
+But anyone that runs a full archive node wants to have all that data.
+Anybody that wants to calculate the witness Tx IDs themselves, they need the data in order to, to calculate the witness Tx ID.
+So at that point, it, yeah, It&rsquo;s an economic design parameter, but also just like a question on how quick we can do IBD and how much bandwidth it&rsquo;ll take and how much disk space it&rsquo;ll take to the cost of node operation parameters, basically.</p><p>Speaker 0: 00:07:46</p><p>But the cost of node operation you can think of as, okay, numerator and denominator.
+The numerator is, okay, how big is it?
+How many signatures?
+How much data?
+And then the denominator is, okay, how good are computers?
+And that can change.
+It can get worse, but it probably gets better.
+But that&rsquo;s where the variables go.</p><p>Speaker 2: 00:08:01</p><p>It&rsquo;s changed a lot since this debate certainly began, but also ended.
+And so.</p><p>Speaker 0: 00:08:08</p><p>I don&rsquo;t want to reignite it.</p><p>Speaker 1: 00:08:10</p><p>And so.
+One terabyte SSD is now $80.</p><p>Speaker 0: 00:08:14</p><p>I&rsquo;ve seen them for $50 on Amazon.
+It&rsquo;s great.
+I mean, you know, I, because it sort of died, right?
+Like, like mid from 2010 to like 2020 ish.
+It was sort of dead, like Intel chips didn&rsquo;t get much better AMD, like nothing really progressed.
+And everyone was sort of thinking, okay, well, Moore&rsquo;s law is sort of over.</p><p>Speaker 1: 00:08:31</p><p>And then I mean, that&rsquo;s kind of nice.
+GPUs are cheap again since Ethereum stopped using all of them.</p><p>Speaker 0: 00:08:36</p><p>Yeah, well, I&rsquo;d hope to be cheaper.
+But yeah, so it is kind of cool.
+During 2020, 2021, I was like, oh, there&rsquo;s Significant progress in this whole microchips and technology and like that&rsquo;s great.
+I Benefit from that and yeah,</p><p>Speaker 2: 00:08:51</p><p>and so what do you do with that?
+So the denominators change yeah,</p><p>Speaker 0: 00:08:54</p><p>what does that mean it?
+So I think it doesn&rsquo;t it doesn&rsquo;t touch the economics of Bitcoin if it&rsquo;s hey We want fees and stuff It has nothing to do with that.
+But it does mean that if you have the same computer, it&rsquo;s easier to verify the current blocks.
+Or you could verify blocks that were 50% larger or something with the same spend of equipment.</p><p>Speaker 2: 00:09:12</p><p>Yeah, that&rsquo;s not my question.
+My question is, The denominator has clearly changed in the last five years and the last 10 years.
+What do you do with that?
+What&rsquo;s the next step?</p><p>Speaker 0: 00:09:23</p><p>Yeah.
+It gives you flexibility to change things without compromising the ability of people to verify.</p><p>Speaker 2: 00:09:30</p><p>I understand, but this is a consensus system.</p><p>Speaker 0: 00:09:32</p><p>Oh, I don&rsquo;t know.
+I&rsquo;m not saying&mldr;</p><p>Speaker 1: 00:09:34</p><p>Oh, you&rsquo;re not advocating for a block size control?</p><p>Speaker 0: 00:09:36</p><p>No, I&rsquo;m not going to.
+But I do think it&rsquo;s like people should talk about, like AJ talks, you know, like talks about, okay, mining rewards and like how this should incentivize, you know, late.</p><h2 id=paperon-the-instability-of-bitcoin-without-the-block-reward>Paper: On the instability of Bitcoin without the block reward</h2><p>Speaker 0: 00:09:48</p><p>And then there&rsquo;s a paper, Bitcoin is unstable without the block reward It&rsquo;s an interesting paper as interesting attacks It kind of doesn&rsquo;t get to the heart of it because they assume unlimited block size and like the beginning of the paper They&rsquo;re like, okay assuming there&rsquo;s no limit.
+Here&rsquo;s all these problems.
+It&rsquo;s like well we have a limit So this isn&rsquo;t gonna happen, but you know, it is still something I think is really interesting, because as people are now using it more, there&rsquo;s like lightning stuff, and people are like, all right.
+I will say it at the place I&rsquo;m working now.
+People are saying,
+OK, we&rsquo;re going to have billions of customers.
+And I slowly raised my hand, like, hundreds of millions?
+I think we can get hundreds of millions and that&rsquo;ll be okay.
+But I don&rsquo;t think we can quite get billions, which is really interesting because it&rsquo;s so close.
+It&rsquo;s like, wait, there&rsquo;s 8 billion people.</p><p>Speaker 1: 00:10:32</p><p>But even hundreds of millions would be an interesting challenge.</p><p>Speaker 2: 00:10:36</p><p>Let&rsquo;s go specifically.
+Why not the B number?</p><h2 id=serving-billions-with-lightning>Serving billions with Lightning</h2><p>Speaker 0: 00:10:39</p><p>Why are we in the millions?
+If you just look at the current limits, you&rsquo;ve got about 50 gigabytes of new output space a year.
+And ish, 15 is something, on the order of, maybe.</p><p>Speaker 1: 00:10:52</p><p>Okay, until recently, the blockchain was roughly growing by some 54 gigabytes per year.</p><p>Speaker 0: 00:11:00</p><p>Yeah, but I&rsquo;m talking about UTXO space, right?
+So if you don&rsquo;t do any signatures and you just wanna, the non-discounted space, right, is around 50, like a little less,</p><p>Speaker 1: 00:11:09</p><p>but yeah.</p><p>Speaker 0: 00:11:09</p><p>Yes, yeah.
+So if you want lots.</p><p>Speaker 1: 00:11:11</p><p>But I mean, you can&rsquo;t create outputs without it.</p><p>Speaker 0: 00:11:14</p><p>Sure, sure, so 40, you know, like you can, but if everyone wants to have their own UTXO, that&rsquo;s the space you&rsquo;re talking about.
+And so you could, in theory, expand that by something, let&rsquo;s, okay, 40, you know, something on the order of 50.</p><p>Speaker 1: 00:11:31</p><p>Let&rsquo;s say we can create, so gigabyte is a billion, we could create roughly one billion outputs per year.</p><p>Speaker 0: 00:11:37</p><p>Yeah, that&rsquo;s roughly, right, on the order of, and in practice it&rsquo;s probably more like half that because you gotta have inputs, you know, all these other things, but you know, in that range.
+And so it&rsquo;s like, could we have everyone in the world use this?
+It&rsquo;s like, not quite, but you&rsquo;re pretty close.
+You&rsquo;re not a factor of a million off.
+You&rsquo;re not a factor of even 100 off, but it&rsquo;s maybe more like a factor of 20 or something.
+I don&rsquo;t know.
+It depends.</p><p>Speaker 1: 00:12:04</p><p>I mean, yes, if you assume that every output is one new user that you add to the system.
+But that&rsquo;s just also glossing over the fact that the people that are in the system already will want to use the system that people that already run businesses have a higher per capita demand of box.</p><p>Speaker 0: 00:12:25</p><p>Yeah, I mean I have a bunch of UTXOs and I don&rsquo;t want to give them up.</p><p>Speaker 1: 00:12:32</p><p>You hog you.</p><p>Speaker 0: 00:12:33</p><p>Yeah, so it is, but it is, you know, just this is very like sort of theoretical, you know, how could it work?
+And so it is an interesting, like, you can have a lot, and you know, writing the Lightning Network paper, this was sort of what we, you know, And if you look at the end of the Lightning Network paper, we&rsquo;re like, oh yeah, 130 megabyte blocks and we&rsquo;re good.
+And that&rsquo;s what we sort of said.
+Because at the time, it was like someone saying, no, we should go down to 300k.
+Someone saying, no, we need to go to gigabytes.
+And it was like, ah, what&rsquo;s going on?
+It&rsquo;s like, OK, well, we at least have a bound.
+It seems that we definitely don&rsquo;t need more than this.</p><p>Speaker 1: 00:13:04</p><p>So how come the big blockers hated the Lightning Network?</p><p>Speaker 0: 00:13:09</p><p>So that&rsquo;s actually really funny because they did, and then I worked on Utrex-O, like I&rsquo;m still working on it, like Utrex-O for a couple of years, and I&rsquo;m like, well, this seems like perfect for big blocker.
+You know, like This is great.
+Now you throw away the UTXO set, you can have these efficient proofs.
+But no interest.
+I don&rsquo;t know.
+But it does seem like, yeah, I should fit in with the Big Block crowd, because all the things I&rsquo;m working on help this.</p><h2 id=the-state-of-the-debate-when-writing-thelightning-network-white-paper>The state of the debate when writing the Lightning Network White Paper</h2><p>Speaker 2: 00:13:34</p><p>Bring us back to the genesis of the lightning paper and how you had been thinking about the problem.
+And there was somewhat parallel discoveries.
+I think Christian Decker was a few months behind you, but generally how were you thinking about it and take us back to that time?</p><p>Speaker 0: 00:13:49</p><p>So this was, I worked with Joseph, Joseph Boone in San Francisco, we met up at like SF Bitcoin devs and that&rsquo;s where everyone met everyone, and we talked, it was a lot of the, the HTLC part channels was his idea and we sort of talked about it and came up with all this stuff.
+I think right around that time was when, I think Gavin first was saying, okay, I&rsquo;m going to increase the block size.
+It&rsquo;s not that people hadn&rsquo;t talked about that before.
+They certainly did.
+I talked about it at my first post on Bitcoin talk in I think 2012 I was like wait cuz the Bitcoin wiki I think was written by Mike Hearn and it said like oh We&rsquo;re just gonna increase the block size and all this stuff and I was looking at him like, okay cool And then looking at the code.
+I&rsquo;m like, Where and then I you know, I asked on and then I said on Bitcoin Talk, I think the first post I ever posted, I was like, hey guys, we should really fix this soon.
+Because like, you know, like IPv4 and IPv6, these things get big and they get real hard to change.
+So if we&rsquo;re going to do it like it says on the wiki, we should, I would say just, you know, next version, just do it.
+And then like, Greg Maxwell is the first to respond.
+He&rsquo;s like, no, no, no, the wiki is written by this guy, totally different.
+I&rsquo;m like, oh, I&rsquo;m now learning about decentralization.
+You can ask about Bitcoin, you go to Bitcoin.it and totally different.
+But Greg said like, no, I don&rsquo;t think this is going to happen.
+And so, but it was still very much open.
+Like nobody really knows.
+And then I remember going to lunch with Gavin Anderson And he said, I&rsquo;m going to increase the block size to 20 megabytes.
+And we&rsquo;re sort of like looking at each other like, no, I don&rsquo;t think he is like, wait, you know, cause it, it got the feeling that can you date, give us a better idea of the day classic before a bitcon classic.
+Oh, this is 2014 I believe.
+So this is, this is a while ago.
+And I think Gavin was in a position that&rsquo;s pretty different than now.
+It was a bit more centralized in that he was the lead maintainer, and he sort of said stuff.
+I mean,
+he said on video, Oh, I&rsquo;ll throw around my weight and make it happen Yeah, that&rsquo;s not something that Vladimir has ever said or fan quake has ever said right like that&rsquo;s not how the current people who maintain Bitcoin core think about it But I think Gavin you know he said hey, I was Satoshi made it I&rsquo;ve been maintaining it like he wanted to you know made it could do what he wanted And I don&rsquo;t think he realized the mess that it was going to become.
+Because I remember him saying this as sort of, this is what we&rsquo;re going to do.
+And he&rsquo;s like, I think this is the best way to do it.
+And you probably did, but we were, you know, I just remember talking to Joseph after and he&rsquo;s like, oh man, like, this is going to be, like, no, he&rsquo;s not in control of Bitcoin, right?
+Like, and even to this day, I mean, just a few weeks ago, there was like a Wall Street journal article about Gloria and Fanquake and all the people we&rsquo;re friends with.
+But the headline said they&rsquo;re like mysterious or whatever.</p><p>Speaker 1: 00:16:36</p><p>I&rsquo;m like- And in control of them.</p><p>Speaker 0: 00:16:38</p><p>Yeah, I&rsquo;m like, come on, they&rsquo;re not mysterious.
+They&rsquo;ve hung out at my house a bunch of times.
+You know, like everyone&rsquo;s friends.
+They&rsquo;re not that weird.
+Maybe they just didn&rsquo;t want to talk to the reporter because, you know.
+But I think it was different then.
+It was a bit more hierarchical.
+And so that sort of set off this whole mess that ended, I guess, with BCH forking off and SegWit and stuff.
+But during that time, it was still a big question.
+And so we were sort of open-minded.
+It&rsquo;s like, okay, well, we do want to be able to run it on small machines.
+Like, okay, if we want it, Lightning seems like a decent multiplier.
+And I think my talk at Scaling Bitcoin in Hong Kong was, well, what if we don&rsquo;t have SegWit?
+Can you still do Lightning?</p><h2 id=would-lightning-be-possible-without-segwit>Would Lightning be possible without Segwit?</h2><p>Speaker 0: 00:17:18</p><p>It&rsquo;s like, well, you need set time duration channels.
+What if we don&rsquo;t have op CSV, things like that.</p><p>Speaker 1: 00:17:25</p><p>But also the transaction malleability was an issue, right?</p><p>Speaker 0: 00:17:28</p><p>Yeah, yeah, so if you didn&rsquo;t fix malleability, you could still do some lightning things.</p><p>Speaker 1: 00:17:33</p><p>You&rsquo;d have to have like a- You&rsquo;d basically have to have multiple possible return transactions that the counterparty signs.
+So if your transaction gets malleated-</p><p>Speaker 0: 00:17:45</p><p>You could put like a OpsyLTV script, right?
+So it&rsquo;s two of two multi-sig, or after a week, it all goes back to the person who funded it.
+So now your channel can only last a week.
+And that was similar to, I think, I think with, it&rsquo;s not the same.
+The Christian Decker stuff had these decrementing time locks, which is not the same thing, but similar, had like, you could only change a certain amount of times and stuff like that.
+That was sort of like during the process and coming up with Lightning Hour.
+But it was also, like Joseph didn&rsquo;t necessarily want to publish this.
+I remember part of it was thinking that, okay, other people are going to come up with this or they&rsquo;re going to do it the wrong way, so hey, let&rsquo;s publish this or let&rsquo;s put it out.
+So it was four SFBitcoin devs, we gave a talk, and that was I think the day or two before, it was like, okay, we need a name, like Try to come up with a cool name.
+And I thought Lightning Network, OK, because it&rsquo;s got little bifurcations.
+I don&rsquo;t know.
+So the name stuck, so that&rsquo;s cool.
+But yeah, and there was interest, but it wasn&rsquo;t like, and it still is like, okay, who works on it?
+How does it that whole ecosystem?</p><p>Speaker 2: 00:18:50</p><p>Lots of people work on it.</p><p>Speaker 0: 00:18:51</p><p>Yeah, yeah.</p><h2 id=looking-in-from-outside-on-a-project-you-started>Looking in from outside on a project you started</h2><p>Speaker 0: 00:18:52</p><p>But it wasn&rsquo;t like, well, actually most people, a lot of times think I have nothing to do with it.
+And sometimes I&rsquo;ve had to like tell people like, no, no, I wrote the paper.
+And like, they&rsquo;re like, no.
+And I&rsquo;m like, okay, look, here&rsquo;s my driver&rsquo;s license.
+See, that&rsquo;s my name.
+Because a lot of people think I don&rsquo;t have anything to do with it.
+It&rsquo;s like, well, I didn&rsquo;t.
+Because I didn&rsquo;t really work on it at all for a couple of years.
+Now I&rsquo;m sort of working on it a bit more.
+But it is very decentralized, and I think that&rsquo;s a good thing.
+And it&rsquo;s also sometimes frustrating because no one will listen to me.</p><p>Speaker 2: 00:19:19</p><p>Give us a little bit more background as to when you&rsquo;ve been participating.
+Again, it&rsquo;s a little bit like the genesis of the system is with you and Joseph.
+Neither of you are seen as, I would say, lightning leaders at the moment.
+And so you take it from sort of this was the idea, it&rsquo;s off and running, companies are spun up, implementations are made, and you went off and did Lit for a little bit, and then put that aside for UtrexO.
+But I&rsquo;m sure you still have opinions.
+How does that all fit together?</p><p>Speaker 0: 00:19:58</p><p>A lot of it is, we can be all rational and Spock, Vulkan, whatever, But a lot of it is just like emotions, right?
+Like people work on what they want to work on.
+And like there&rsquo;s a ton of stuff that happens at Chaincode that I mean if you want to look objectively, you&rsquo;re like, does this really matter?
+But it&rsquo;s cool, so like people work on it.
+And similar with me too, like you can&rsquo;t, there&rsquo;s things that bug me about the bold specs and you just have to like, okay, whatever, I&rsquo;m going to like not think about that.
+But you know, there&rsquo;s things like, so I think Millisats, that was Joseph&rsquo;s idea.
+And I don&rsquo;t think anyone who really works on it now really likes it.
+It&rsquo;s kind of annoying It&rsquo;s not actually that useful but part of I remember at the the Australia meetup I think 2018.
+I was like guys guys.
+We really needed to get rid of millisats.
+Let&rsquo;s just use Satoshi&rsquo;s This is gonna start being a big deal.
+It&rsquo;s gonna be hard to change So let&rsquo;s just change it now and you know rusty and everyone&rsquo;s like nah, it&rsquo;s too late.
+We already have code.
+We&rsquo;re using Milosatz.
+I&rsquo;m like, oh, man.
+And it&rsquo;s not the end of the world.
+It&rsquo;s like a little thing.
+But even where I work now, there have been so many bugs where they&rsquo;re like, wait, oh, it&rsquo;s 1,000 different, you know, factor of 1,000 different and all these weird, you know, annoying things.</p><p>Speaker 1: 00:21:07</p><p>And then you can&rsquo;t even pay them out properly.</p><p>Speaker 0: 00:21:10</p><p>Yeah, they don&rsquo;t really exist, right?
+Like, so that, and then I think the bigger one that I also was like, ah, don&rsquo;t do this, is trimmed HTLCs, which I worry about because it feels a lot like Bitcoin circa 2013, 14, where there&rsquo;s all these people saying, it can do all these amazing things, Bitcoin, free transactions for everyone, and then once there&rsquo;s fees, people get mad and think that you changed it on them.
+With trimmed HTLCs, what if the dust&mldr;</p><p>Speaker 1: 00:21:38</p><p>Yeah.
+Could you just repeat what trimmed HTLCs are?</p><p>Speaker 0: 00:21:40</p><p>So when you&rsquo;re sending Lightning payments through multiple hops on the network, You make what&rsquo;s called an HTLC, and it&rsquo;s a way to ensure that, you know, Alice will pay Bob if and only if Bob pays Carol.
+And that HTLC is another output in the transaction.
+And there&rsquo;s a limit on how small they can be.</p><h2 id=trimmed-htlcs-sending-1-sat-vs-100000-sats>Trimmed HTLCs: Sending 1 sat vs 100,000 sats</h2><p>Speaker 0: 00:22:02</p><p>Because the whole idea of Lightning is like, yes, it&rsquo;s layer two, it&rsquo;s all happening sort of off-chain.
+But at any moment, all of this could fall back onto chain and it is all valid Bitcoin transactions.
+And so the HTLC, if it&rsquo;s too small, it&rsquo;s not a real output, right?
+You can&rsquo;t&mldr;
+I don&rsquo;t actually remember the rules.
+Is it standardness where if you try to make a dust output it will deny the transaction or is it just if you try to spend it?</p><p>Speaker 1: 00:22:26</p><p>We will not relay transactions with dust outputs.
+Also, the other problem is if the amount is too small, the additional cost of creating the output is bigger in fees than the amount that it&rsquo;s worth.
+So it would strictly make the recipient have less money.</p><p>Speaker 0: 00:22:41</p><p>Yeah, yeah.
+So there&rsquo;s several reasons why you can&rsquo;t do this.
+And so the solution in the current full specs that you know LND LDK all these people use is and I&rsquo;m working on two Now is you sort of pretend?
+It&rsquo;s there right you you send the hashes you get the pre images, but you don&rsquo;t actually touch the commitment transaction you don&rsquo;t add this HTLC output because you can&rsquo;t And you know it works, but it also worries me because it&rsquo;s like, oh, people are like, oh, I&rsquo;m sending one sat.
+And you&rsquo;re like, yeah, but it works very differently whether you&rsquo;re sending 100,000 Satoshis or one.
+And there&rsquo;s like a completely qualitative difference in what&rsquo;s happening under the hood that people are not aware of.
+And I worry about that because I don&rsquo;t have an actual thought out fear.
+Okay, what if the dust limit becomes much larger and then people are, you know, normal payments?</p><p>Speaker 1: 00:23:31</p><p>What if the people that do inscriptions are getting really really popular and fee rates go to 20 cents perabyte in general and suddenly the dust size is effectively 20 times larger.</p><p>Speaker 0: 00:23:44</p><p>Yeah, and you know And then there could be problems.
+I don&rsquo;t worry about it too much, but it is sort of like on a purity kind of thing.
+It&rsquo;s like, wait, if you&rsquo;re gonna change it, you should at least show it in the UI or something.
+Like, hey, this is below a certain threshold.
+It&rsquo;s going to work differently.
+Or there&rsquo;s a different flag, some way to know.</p><p>Speaker 1: 00:24:02</p><p>Although that&rsquo;s the source of all evil in UX.</p><p>Speaker 0: 00:24:06</p><p>Yeah.</p><p>Speaker 1: 00:24:06</p><p>Showing complexity that we can get.</p><p>Speaker 2: 00:24:07</p><p>Yeah,</p><p>Speaker 0: 00:24:07</p><p>I know.</p><p>Speaker 1: 00:24:09</p><p>So you&rsquo;re saying the channel shouldn&rsquo;t facilitate any payments below a certain amount?</p><p>Speaker 0: 00:24:15</p><p>I don&rsquo;t, I think that&rsquo;s an okay solution.
+That&rsquo;s the quote I wrote.
+It just wouldn&rsquo;t let you.
+It would just say, yeah, that&rsquo;s not supported.
+And they&rsquo;re right now very small, right?
+It&rsquo;s like cents.
+So it&rsquo;s just like, oh, I have to send at least 10 cents.
+I can&rsquo;t send five.
+Probably okay.
+I don&rsquo;t know.</p><p>Speaker 1: 00:24:31</p><p>It depends on where you try to use it.</p><p>Speaker 2: 00:24:33</p><p>Yeah, and I also think the lightning for micropayments use case, it starts rubbing up against, why are we doing this at all?
+So if you&rsquo;re talking about a narrow range of, we support this, we don&rsquo;t support that.
+And then for larger payments, you should go on chain.
+It starts to get a little murky in terms of how you handle it.</p><p>Speaker 0: 00:24:52</p><p>I mean, yeah, but it&rsquo;s murky.
+Maybe the reason I&rsquo;m not a lightning leader or whatever, laser eyes, I don&rsquo;t sell it.
+I&rsquo;m like, here&rsquo;s what it can do.
+And even when we were starting Lightning Labs, and we were talking to VCs, I would just talk about all the limitations.
+Like, here&rsquo;s what we don&rsquo;t have working.
+Here&rsquo;s what we don&rsquo;t know how to do.
+But we know within these parameters it can work and stuff.
+And it&rsquo;s sort of like, no, don&rsquo;t say that to the VCs. And I&rsquo;m like, sure,</p><p>Speaker 2: 00:25:21</p><p>we&rsquo;ve got to sell the dream.</p><p>Speaker 0: 00:25:22</p><p>But to me it&rsquo;s like, well, the reason we&rsquo;re asking them for money is to fix these things.
+If we already had it all working, we don&rsquo;t need them.</p><h2 id=limitations-of-the-lightning-network>Limitations of the Lightning network</h2><p>Speaker 2: 00:25:27</p><p>And so You&rsquo;ve talked about some very concrete limitations that are, I don&rsquo;t know, certainly the latter one that we just talked about seems like a real limitation.
+But there&rsquo;s also things that sort of seem fundamental in terms of Griefing attacks, pinning attacks, and sort of like the assumptions that are made of the base chain.
+And I&rsquo;d be interested in your take as to, without reworking the base layer, do these assumptions hold?</p><p>Speaker 0: 00:25:58</p><p>So, okay, so there&rsquo;s those types of attacks.
+There&rsquo;s also the general limitations of like, channels are a pain, right?
+Like, you would much rather have a system where anyone can pay anyone without these sort of restrictions on routing and stuff like that.
+But yeah, so the attacks, on the one hand, you can sort of hand wave and say there&rsquo;s reputation.
+And what that really means is it&rsquo;s probably going to be fairly centralized.
+And there&rsquo;s so many pressures in the system to centralize these things.
+And my hope, I don&rsquo;t think you can eliminate them.
+I don&rsquo;t think you can solve it.
+But I think you can make it such that, well, yes, there may be some centralization, but hey, it&rsquo;s a layer too.
+You can always drop out.
+You can always say, OK, if I&rsquo;ve got routing through this one large node and it doesn&rsquo;t want to cooperate, I can close the channel on chain and move somewhere else.
+So it&rsquo;s sort of the competition can help that.
+But yeah, but, but attacks on, you know, on nodes like that, it may may make it so that certain nodes require identity or something.
+I don&rsquo;t, I don&rsquo;t, no one&rsquo;s doing that yet, I think, hopefully, But worst case that kind of thing happens or you get something like TOR where like it kind of works But you know, there&rsquo;s this sort of constant din of like attacks on it That hurts it.</p><p>Speaker 2: 00:27:10</p><p>I guess the main let me be more explicit the main issue that I&rsquo;m thinking about is reliance on the mempool when the mempool isn&rsquo;t a place where you can rely on it.
+If you are trying to come up with justice transactions when someone has wronged you and you&rsquo;re relying on getting something actually confirmed or in a block, that&rsquo;s a guarantee that doesn&rsquo;t exist.
+And so how do you sort of reconcile the idea of this reliance on the robo-judge on the base layer when that justice doesn&rsquo;t actually, that&rsquo;s not real unless it&rsquo;s a best case scenario.</p><p>Speaker 0: 00:27:52</p><p>Yeah, I mean it&rsquo;s a best case scenario that so far has worked but we can&rsquo;t necessarily assume.</p><p>Speaker 1: 00:27:58</p><p>Yeah, do high fees break lightning, right?</p><p>Speaker 0: 00:28:00</p><p>So I would say that high doesn&rsquo;t but highly variable many right and so this is something After we wrote the lightning network paper.</p><h2 id=do-high-fees-break-lightning>Do high fees break lightning?</h2><p>Speaker 0: 00:28:08</p><p>I think Joseph was like super into this like okay How do we make maybe there can be some other soft work where there&rsquo;s like block signaling and certain You know once the blocks are certain amount full these transactions can get priority and these others can&rsquo;t or something I don&rsquo;t but it&rsquo;s not even that it&rsquo;s just the the foresight that you would need to know what to pay in the future for Fees well that seems like an RBF the Justice transactions because those those are immediately spendable you have the immediate unencumbered key for and you and you in theory You know depending on your reserves in this channel You may have quite a bit to spend on fees before it actually eats into the money that like should be yours right so if it&rsquo;s you know you&rsquo;re supposed to have five five and they close at six four and they shouldn&rsquo;t and You know you&rsquo;re supposed to get five coins, but they made it so that you get Four coins, and you&rsquo;re taking the whole six output You really only need one of those coins to be made like whole And so you can spend like a bunch on fee, and you do have the ability to RBF it.
+So it&rsquo;s, you know, it&rsquo;s stacked in your favor in that sense, in that you can RBF and you can pay a lot of fee.
+But so it&rsquo;s still a concern, and you know, what if you flood the entire mempool?
+You know, as a single attack it&rsquo;s probably not as much, but if it&rsquo;s like a coordinated large-scale attack.</p><p>Speaker 1: 00:29:20</p><p>And then if channels are very small in general, you have less budget in order to close them.
+And if they cheat while they had very little left.</p><p>Speaker 0: 00:29:29</p><p>Yeah, so the reserves and that&rsquo;s, and so you know having started at a company recently who&rsquo;s using Lightning and not familiar with Bitcoin or Lightning, a lot of what I do on a day-to-day is people are on Slack, and they&rsquo;re like, why does it do this?
+I&rsquo;m like, oh yeah, that&rsquo;s because of this.
+How come I can&rsquo;t send all the money?
+It&rsquo;s like, oh, there&rsquo;s like how many reserves?
+There&rsquo;s so many reserves now.
+Like in LND, there&rsquo;s the on-chain UTXO reserve for the anchor outputs.
+There&rsquo;s the in-band, like in the channel, channel reserves.
+You know, there&rsquo;s a couple different things.
+And so, you know, one of the things we started with too is like in Bitcoin core, it&rsquo;s like, okay, here&rsquo;s your balance.
+In Lightning, it&rsquo;s like a lot more complicated.
+How much money do I have?
+It&rsquo;s like, well, depends.
+And that&rsquo;s like not good UI, right?
+Like You want it to be very clear like I have this many bitcoins and you sort of get you can come up with different answers Like oh, yeah this much on you know on your regular UTXO wallet this much in channels if you closed immediately Uncooperatively you&rsquo;d have this much, but then you&rsquo;d get this much back later You know so it&rsquo;s kind of annoying, But those are all to mitigate these attacks.
+And then of course it&rsquo;s the frustrating thing where if you have really good attack mitigation, the attacks never happen.
+And so everyone just says, well why do we need these reserves?
+No one&rsquo;s ever doing this.
+You know, Why do we need all these different things?
+Because reorgs never happen.
+Why do we need all this code for reorgs, all these things?
+So it&rsquo;s&mldr;</p><p>Speaker 1: 00:30:54</p><p>Until they do.</p><p>Speaker 0: 00:30:56</p><p>But if you did, and so&mldr;</p><p>Speaker 2: 00:30:58</p><p>Well, the deterrent is why they&rsquo;re not happening.
+Exactly.</p><p>Speaker 0: 00:31:00</p><p>So why do you have all this proof of work mining if Reorg&rsquo;s never had it?
+It&rsquo;s like, well, Bitcoin is secure because of all this and no one bothers to attack because of that.</p><p>Speaker 2: 00:31:09</p><p>I&rsquo;d be interested in your take, given your explanation and the importance of the punishment.
+I&rsquo;d be interested in your take on L2.</p><p>Speaker 0: 00:31:17</p><p>Okay, so.</p><p>Speaker 1: 00:31:18</p><p>L and symmetry.</p><p>Speaker 0: 00:31:20</p><p>So, to me the interesting part of something like L2, the different ideas in L2, is for more than two parties in a channel.
+To me the downside, like I came up with the punishment mechanism.
+I think it&rsquo;s cool.
+I think it&rsquo;s an effective, you know, game theory-ish, what a thing.
+But I think to me the biggest limitation in it is that it kind of restricts you to two parties.
+Right?
+You&rsquo;ve got Alice and Bob.
+If Bob does something bad, Alice gets all the money.
+If Alice does something bad, Bob gets all the money.</p><h2 id=ln-symmetry-eltoo>LN-Symmetry (Eltoo)</h2><p>Speaker 0: 00:31:49</p><p>Once Carol shows up, it&rsquo;s like, OK, what do we do here?</p><p>Speaker 1: 00:31:54</p><p>I literally just wrote this answer on StackExchange three weeks ago.</p><p>Speaker 0: 00:31:57</p><p>OK, so yeah, So L2, I think, constructions like that, if L2 is still, you&rsquo;ve got Alice and Bob in an L2 channel, and the only advantage is, hey, now we can not have this punishment transaction and sort of update.
+To me, that&rsquo;s like, that&rsquo;s not that interesting.
+Like, That&rsquo;s not the powerful part of something like this.
+To me, the powerful part is, now you can maybe get multiple parties in a channel.
+And then maybe you can have more people using it, and they&rsquo;re all sharing a UTXO.
+So if we&rsquo;re limiting the UTXO set, and block size, and all that, well, at least people can have, there&rsquo;s 10 people sharing a UTXO and sort of making payments.
+That I think is a good way to go.</p><p>Speaker 1: 00:32:38</p><p>And you&rsquo;re basically short-circuiting payments between these people.
+Let&rsquo;s say this is a group of friends that often need to settle for drinks and dinners and whatever, what they use Venmo for in the olden times.
+And now they are all in a shared channel with five participants and they have virtual channels between each of each other.
+And suddenly you get, yeah, what do you need?
+Usually to have a completely interconnected set of five people with channels, that&rsquo;s five times four, times three, times two, times one.</p><p>Speaker 0: 00:33:15</p><p>Bunch of channels.
+Yeah.
+Yeah, So having those kind of speed up.</p><h2 id=sighash_anyprevout>SIGHASH_ANYPREVOUT</h2><p>Speaker 0: 00:33:19</p><p>So L2 basically needs SIGHASH any pre-vout, which came from SIGHASH no input, which I think I introduced like a million years ago on IRC.
+And actually, that was my idea for instead of SegWit as a malleability fix.
+Like, hey, if you&rsquo;re not signing the input DX80, you don&rsquo;t care if it&rsquo;s modified.
+You know, the signature still works.
+And I gave a talk about that a couple months before the Lightning Network talk.
+Because that was sort of my idea.
+And I think we started programming like, hey, assume we have a SIG hash that doesn&rsquo;t cover the input.
+Let&rsquo;s start building Lightning that way.
+And SegWit&rsquo;s better because there&rsquo;s a lot of foot guns with any pre-vouter, no input.
+But I still think it&rsquo;s a useful thing to have.
+I think it&rsquo;d be really cool.
+There are risks that people screw stuff up and blah, but like,</p><p>Speaker 1: 00:34:05</p><p>Just don&rsquo;t use it for the things that you&rsquo;re not supposed to.</p><p>Speaker 0: 00:34:08</p><p>Right, I don&rsquo;t worry about it.</p><p>Speaker 1: 00:34:10</p><p>Who would ever do that?
+Use something for a different purpose.</p><h2 id=why-are-soft-forks-so-hard>Why are soft forks so hard?</h2><p>Speaker 0: 00:34:13</p><p>But I think I have a pretty different take on like, you know, even OpCTV, check template verify.
+I thought that was really cool.
+I was like, yeah, I&rsquo;ll support that.
+Like, I&rsquo;ll run that.
+Like, I think this is a cool improvement.
+And so, and I, after Taproot merged in, I was like, ooh, maybe we can have like a bunch of changes to Bitcoin in the next couple of years because, you know, before SegWit like OpsC, TV and CSV, it was just like no big deal.
+You know, it was like people sort of write it like, okay, cool, merge it in like a couple of weeks later.
+Yeah, it&rsquo;s running, you can use it.
+And like, things like that weren&rsquo;t a big deal.
+And then after SegWit, you know, no one wanted to touch anything.
+But now we have, you know, with Taproot getting in, it&rsquo;s like, hey, maybe, maybe all the people who are arguing about SegWit being counter to Satoshi&rsquo;s vision or whatever they&rsquo;re saying, maybe they&rsquo;ve all left and we have a bunch of people who are sort of okay with changing things or okay with making improvements.</p><p>Speaker 1: 00:35:08</p><p>There does seem to still be a large group of people that think that developers are an attack on Bitcoin and we should ossify yesterday.
+I see a little difference with how UpVault is received now versus how CTV was received last year.
+Just sort of more focused on the exact use case and how do I make that work instead of look what I can build.
+Although, Daryl, exactly, he made, James mentioned randomly, yeah, maybe we could use&mldr;</p><p>Speaker 0: 00:35:40</p><p>What fault is a covenant?</p><p>Speaker 1: 00:35:42</p><p>No, no, we could activate it with a, what is it, a speedy trial?
+And that exploded immediately because speedy trial is terrible apparently.</p><p>Speaker 0: 00:35:52</p><p>It did work.
+It did work.</p><p>Speaker 1: 00:35:55</p><p>It did work, yes.</p><p>Speaker 0: 00:35:56</p><p>With Taproot, yes.
+I&rsquo;ve been talking to people, even just this morning was talking to people who are not familiar with Bitcoin.
+And I told them, I was like, look, I think long term it&rsquo;s probably going to ossify and we really can&rsquo;t make any changes.
+But to me it&rsquo;s like, well, while we can, we want to make improvements.
+But Of course it&rsquo;s really risky.
+What if you screw it up?</p><p>Speaker 2: 00:36:17</p><p>What is your wish list?</p><h2 id=whats-your-wish-list-hardfork-wishlist-wikisoftfork-wishilist-wiki-for-protocol-changes>What’s your wish list (hardfork wishlist wiki, softfork wishilist wiki) for protocol changes?</h2><p>Speaker 2: 00:36:18</p><p>If you could wave.
+There&rsquo;s a hard fork wish list and a soft fork wish list wiki page.
+But what&rsquo;s yours?</p><p>Speaker 0: 00:36:25</p><p>I know, okay, Gleb has the like op, not op code, it&rsquo;s like pools, the coin pools.
+I think that was Gleb.</p><p>Speaker 1: 00:36:33</p><p>Yep, I found it on Gleb, yeah.</p><p>Speaker 0: 00:36:35</p><p>And something like that, but I need to post to the mailing list.
+I have a slight tweak to that that I think, it doesn&rsquo;t really make it much better, but it&rsquo;s like, oh, you could do it this way.
+So something like that where, because I think if we&rsquo;re not going to have a increase in like, you know, block size, UTXO set size, whatever, what do they call them?
+The little blocks inside the big like extension blocks or something, I don&rsquo;t know.
+If there&rsquo;s not something like that and you are sort of fixed at like, okay, we got a megabyte of output size and 4 megs, then if you really want lots of people to use it, okay, you need to start sharing UTXOs in a secure, usable way.
+And so I think that SIGHASH AnyPrevout can help with something like that, but also something like coin pools or something, you know, tap leaf update, tap leaf update verify, things like that where you&rsquo;re saying, okay, the outputs are sort of trees.
+We started to have that with taproot, where now you have like this sort of tree, but something like that is definitely something, you know, I&rsquo;m looking at and interested in, it&rsquo;s like, okay, We might only have a couple more years where we can feasibly get something in and so try to get something That will let people sort of share Yeah, I think I can improve out is also yeah, but I&rsquo;m I think Channel that can serve anyone would be and the other the main other like not even fork wish list I just want it to be more usable because so many people, you know, quote unquote have Bitcoin and it&rsquo;s just on an exchange.</p><h2 id=bitcoin-needs-to-become-more-usable>Bitcoin needs to become more usable</h2><p>Speaker 0: 00:38:00</p><p>And, you know, or if they&rsquo;re using Electrum, great.
+Electrum&rsquo;s a huge improvement over being on an exchange.
+And so many people, like so FTX fell apart a couple months ago, and a bunch of people I knew were like, hey, I should get my coins off in exchange.
+I&rsquo;m like, yes Yes, you should like I&rsquo;ve said that a bunch you should just run Bitcoin core And then I worked, you know, like my parents, you know people I know who are not who are you know, no computers They&rsquo;re smart.
+They download Bitcoin core from Bitcoin core org because I&rsquo;m like, yes, that&rsquo;s all the people I know.
+I&rsquo;m friends with them.
+I know where this is.
+And then they download it.
+You get, I think, eight executables.
+You&rsquo;ve got to run Bitcoin QT.
+There&rsquo;s a readme, but it just says how to compile it.
+And it doesn&rsquo;t really say how to run it at all.
+And So when I&rsquo;m helping people run it, they&rsquo;re just like, how am I supposed to know this?
+And I can run Bitcoin Core, everyone here can.
+But I do think there is a bit of a lack of feedback loop where it&rsquo;s sort of built for the developers.</p><p>Speaker 1: 00:39:03</p><p>Ed Kern Core as a wallet, I think is generally a scratching your own itches.
+Maybe showcasing some of the new things you can do, showcasing some of the privacy ideas we have, but I think there is a lot of wallets that have much better UX.
+And especially, I&rsquo;m pretty excited about a lot of wallets coming in doing output descriptor-based multi-sig solutions out of the box.
+With PSBTs and output descriptors, it&rsquo;s gotten much easier.</p><p>Speaker 0: 00:39:34</p><p>So that part, but then, you know, if people are running an SPV wallet or it connects to an Electrum server, it&rsquo;s like, I don&rsquo;t want to recommend it because I know the limitations there.
+It&rsquo;s much, most people don&rsquo;t mind at all, right?
+Because it&rsquo;s like, oh, you&rsquo;re losing some privacy or you&rsquo;re not verifying everything.</p><p>Speaker 1: 00:39:50</p><p>It&rsquo;s hard to quantify privacy.</p><p>Speaker 0: 00:39:51</p><p>Yeah, and so far everything works fine, right?
+There&rsquo;s no, we don&rsquo;t know any attacks on SPV where you, we&rsquo;ve never seen like someone mine a bunch of invalid blocks with valid proof of work so they can fool an STV node or something.
+Like, but you could.</p><p>Speaker 1: 00:40:07</p><p>Also, compact client-side block filters are much better in that regard.</p><p>Speaker 0: 00:40:11</p><p>Yeah, yeah.
+But so, I want to, I want my friends, I want the people I know who have Bitcoin to run Bitcoin Core, because that&rsquo;s the whole package, right?
+It&rsquo;s verifying everything, it&rsquo;s got the whole, you know, either pruned or has the whole history, you know, does everything, it&rsquo;s like the real thing.
+But it&rsquo;s hard because it&rsquo;s not as usable.
+And it feels like low-hanging fruit to me in that like yeah We could make this easier to run without too much work touch.</p><p>Speaker 1: 00:40:39</p><p>Where&rsquo;s your pull request?</p><p>Speaker 0: 00:40:41</p><p>So I have I&rsquo;ve did issues to like and might because you know I&rsquo;ve talked to Andrew Chow a bunch about different things, but yeah, so I want to work on it.
+But also the other direction of it is, you know, working at a company that&rsquo;s not near, like, you know, they&rsquo;re not Bitcoiners and sort of saying, hey, you really need to have everyone have their own keys.
+Like, that&rsquo;s sort of the part.
+And also verification on client side, like all these things need to happen just to sort of nudge the rest of the ecosystem towards that hopefully.</p><p>Speaker 1: 00:41:08</p><p>I&rsquo;m very excited.
+I&rsquo;ve talked to a big company that&rsquo;s working on a wallet solution and they&rsquo;re really trying hard to build it right with like, you own your own keys, it&rsquo;s still good UX, you can, there&rsquo;s a recovery mechanism.
+So I do hope they come out with that soon.
+I hope that they do stick to taproot only because it would be so much better as a product.</p><p>Speaker 0: 00:41:35</p><p>Yeah, yeah.
+So I think part of it is gonna be people learning about this stuff as well.
+So I don&rsquo;t think it&rsquo;s just, oh, we need to make it like a super easy slick UI.
+Like, yes, to some extent, but there are some complexities I don&rsquo;t think you can abstract away.
+So talking about what is a UTXO versus an account, almost every block explorer shows addresses as inputs, And everyone I&rsquo;ve talked to at these new companies starting to work on Bitcoin, they&rsquo;re saying, I&rsquo;m spending from this address.
+And I&rsquo;m like, ah, I think that&rsquo;s it.
+And this is on Slack.
+How come this isn&rsquo;t working?
+I&rsquo;m spending from this address, but it doesn&rsquo;t do this.
+And I&rsquo;m like, just that first line, you&rsquo;re not spending from an address, you&rsquo;re spending a UTXO.
+And they&rsquo;re like, well no, like here, and they send the link to mempool.space and it shows the input address.
+And I&rsquo;m like, yeah, no, that&rsquo;s not how it works.
+It&rsquo;s really confusing because every website, so many things show it working a certain way and that&rsquo;s not how it works.</p><p>Speaker 1: 00:42:32</p><p>That is one of the things that I really hold blockstream.info in high regard for.
+They actually show that you&rsquo;re spending a UTXO and only at the bottom, previous address, only in the detailed version.
+I talk to the mempool.space people often, I should really bring that up.</p><p>Speaker 0: 00:42:49</p><p>I mean I can understand the convenience where you say, oh it&rsquo;s from this address, but it&rsquo;s like, well&mldr;</p><p>Speaker 1: 00:42:54</p><p>There&rsquo;s no from addresses in Bitcoin.</p><p>Speaker 0: 00:42:57</p><p>And I think part of Bitcoin taking over the world as it&rsquo;s doing that is people are going to learn how these things, you know, it&rsquo;s not much harder.</p><p>Speaker 1: 00:43:06</p><p>At least it&rsquo;s in the first place.
+It&rsquo;s called, it should be called an invoice.
+It&rsquo;s only used once, right?
+So, yeah, so the whole term is just so misleading.</p><p>Speaker 0: 00:43:16</p><p>Yeah, so I think, but I think that&rsquo;s part of, you know, part of it is writing code, getting these things working, and then part of it is also educating and Getting people to understand it and use it and it is a sort of weird You know use it quote-unquote the right way because there&rsquo;s a definite like developers of Bitcoin Core and Bitcoin things are sort of like, hey guys, everyone do it this way.
+And then you see users in general, like, not necessarily agreeing 100%, right?
+Like, if you try to make all this privacy and only use an address once, And then some of the first things they do is like Vanity Gen.
+They&rsquo;re like, no, I want my name on it.
+And general Bitcoin Core developers certainly were not pushing for ordinals.
+But they&rsquo;re very popular.
+There&rsquo;s 300,000 of them already.
+Something like that.
+And so to some extent, you&rsquo;ve got to sort of say, look, people are going to do what they want.
+We want to build the tools.
+We want to build the software.
+And hopefully, everyone uses it and has fun.</p><h2 id=tadges-thoughts-on-education>Tadge&rsquo;s thoughts on Education</h2><p>Speaker 2: 00:44:17</p><p>You mentioned education.
+And your open course, your MIT open course that you taught.</p><p>Speaker 0: 00:44:23</p><p>Yeah, open courseware.</p><p>Speaker 2: 00:44:25</p><p>Was it 2018 is when that came out?</p><p>Speaker 0: 00:44:27</p><p>Yeah.</p><p>Speaker 2: 00:44:28</p><p>So that&rsquo;s five years ago now?</p><p>Speaker 0: 00:44:29</p><p>Wow.
+Whoa.
+Whoa.
+Yeah, it started almost five years ago.
+Well, the videos.</p><p>Speaker 2: 00:44:34</p><p>People still talk about it though.</p><p>Speaker 0: 00:44:35</p><p>The videos didn&rsquo;t come out till, I think, end of 2019.
+So, yeah, early 2020 or something was when the videos were posted.</p><p>Speaker 2: 00:44:42</p><p>Okay, so be that as it may, it&rsquo;s still.</p><p>Speaker 0: 00:44:45</p><p>It&rsquo;s old, yeah.</p><p>Speaker 2: 00:44:46</p><p>People talk about it and it is now out of date.
+But like, how do you think about education?
+I mean, you were at an educational institution, you were speaking with students often, you&rsquo;ve moved away from that, but like, what is the, What do we need still?</p><p>Speaker 0: 00:45:01</p><p>I still kind of want to do that kind of thing.
+It was a class for students at MIT that, but if you look at it now, it&rsquo;s like, well, way more people, it was a class at MIT, but if you look at it, way more people not at MIT viewed this than the students at MIT.
+And so it&rsquo;s like, yeah, maybe it should be.
+Like, redo it as a primarily online course or something.
+That would be a fun thing to update.
+Because it&rsquo;s good to get new, it&rsquo;s really encouraging to see new people.
+Because a lot of times, there&rsquo;s this sort of idea, like, oh, Bitcoin&rsquo;s boring, or I want to work on whatever, some other crazy coin.
+But there&rsquo;s a lot of cool new things happening in Bitcoin.
+Like you can definitely get involved.</p><p>Speaker 1: 00:45:38</p><p>I must admit that was one of the things that I thought was charming about the whole Ordinal hype, inscription hype.
+Suddenly a lot of people that had outright dismissed Bitcoin as being old tech, uninteresting and so forth, started banding together on Discord to run full nodes and look at it.
+And so far I haven&rsquo;t seen a ton of new ideas or output out of that, but these people will have a different view on how everything works.
+We&rsquo;ll maybe have input on UX issues or we occasionally need an influx of new opinions.</p><p>Speaker 0: 00:46:11</p><p>That and also just the forces of Web3 or Altcoin world.
+So I was at MIT and there&rsquo;s the MIT Bitcoin Club.
+And it&rsquo;s still called that, but every year it&rsquo;s a fight.
+There&rsquo;s so many new students who come and are like, why don&rsquo;t we call it the Blockchain Club?
+And it&rsquo;s like, no, no, no, Bitcoin.
+But yeah, And certainly, and a good example is like some of the students I worked with at MIT came into the space through altcoins.
+I don&rsquo;t even remember the name of the coin, but they had a hackathon at some university in Boston and, you know, there&rsquo;s free pizza.
+And so people go and work and it&rsquo;s like, yeah, there&rsquo;s free pizza and like learn these stuff.
+And then when I was interviewing him, he&rsquo;s like, you know, I worked on, I don&rsquo;t remember the coin.
+It&rsquo;s like, okay, well, we&rsquo;re working on lightning or Bitcoin.
+And then after a few weeks of working together, he&rsquo;s like, oh, this one makes a lot more sense.</p><p>Speaker 2: 00:47:00</p><p>You often see the marketing the other way of, you know, come work on the better Bitcoin and You know people are picked off But there&rsquo;s not a ton of thing.</p><p>Speaker 0: 00:47:11</p><p>I don&rsquo;t know many people who have Really worked on Bitcoin and then said, OK, I&rsquo;m going to go work on altcoins.</p><h2 id=dynamics-of-working-on-bitcoin>Dynamics of working on Bitcoin</h2><p>Speaker 0: 00:47:17</p><p>That&rsquo;s not like, there&rsquo;s not a ton of that, right?
+Like, there&rsquo;s definitely people who drop out of Bitcoin and say, like, OK.
+And I totally understand that.
+Like, it&rsquo;s sometimes very stressful and annoying.
+You know, it&rsquo;s like, OK, well, I worked on Bitcoin.
+And now I&rsquo;m going to go do something else and work on a normal company or you know the regular world.
+That&rsquo;s not as crazy But there&rsquo;s not a ton of like okay.
+How many chain code alumni are now working on you know just Carl But yeah like it&rsquo;s it&rsquo;s but but it is sort of interesting that like there is a but like these other coins and whatever they Have a budget right there&rsquo;s there&rsquo;s no well there was a Bitcoin foundation I think some don&rsquo;t really exist, and they&rsquo;re not like there&rsquo;s not a university outreach from Bitcoin core or anything.
+I mean, Chaincode is probably the best example where they have the residency and, you know, newer developers who aren&rsquo;t as familiar can come and learn it.</p><p>Speaker 1: 00:48:17</p><p>Summer of Bitcoin I think is sort of the only example that comes to mind that does something like that.</p><p>Speaker 0: 00:48:23</p><p>But yeah, it&rsquo;s not as&mldr;
+Summer of Bitcoin is more around the world, kind of.
+But Chaincode had, I don&rsquo;t know if they&mldr;
+I assume it died in COVID, where you don&rsquo;t have like people all show up in the summer, but you&rsquo;re&mldr;</p><p>Speaker 1: 00:48:35</p><p>For residents.</p><p>Speaker 0: 00:48:36</p><p>Yeah.</p><p>Speaker 2: 00:48:36</p><p>Yeah, we do an online seminar.
+Yeah.</p><p>Speaker 0: 00:48:39</p><p>So those kind of things, I think are great to get people in.
+And also just being in person, like at MIT, having students involved, it&rsquo;s great.
+And I don&rsquo;t know the best way to do it.
+Like, I think we&rsquo;re in a much better situation than we were a bunch of years ago.
+But even little things like IRC, like try getting a current university student to use it.</p><p>Speaker 1: 00:49:00</p><p>Use internet relay chat?</p><p>Speaker 0: 00:49:01</p><p>Yeah.
+They&rsquo;re like, what&rsquo;s IRC?
+And I&rsquo;m like, it&rsquo;s sort of like Slack, but it&rsquo;s from the 80s.</p><p>Speaker 1: 00:49:10</p><p>Totally selling that, Todd.</p><p>Speaker 0: 00:49:13</p><p>So yeah, it&rsquo;s cool to see all the new people working on this stuff, because we have to.
+People come, people leave.
+You want to get a lot of new people.</p><p>Speaker 2: 00:49:24</p><p>Yeah, I was going to ask a question about people coming and leaving.
+So we mentioned a lot of names here.
+There&rsquo;s Joseph Poon, we talked about client-side block filters.
+That was Jim Poe.
+Gmax came up, Gavin of course.
+You&rsquo;ve hung in there, but you moved around a little bit.
+I think when you go back to the beginning and think about how much context we&rsquo;ve lost by people moving on, and some of the names, I just want to be clear, not all of the names that I mentioned are equal.
+But I do think that by people churning out, we do lose context no matter who they are.
+And I don&rsquo;t know, do you have a, do you have a take on why?
+Do you have a take on how we can better hold on to that context or how we can learn from some of those things or like?</p><p>Speaker 0: 00:50:10</p><p>Yeah.
+I mean, I can totally understand people sort of burning out and being like, I don&rsquo;t want to work.
+Like in some examples, it&rsquo;s like you&rsquo;re getting sued by some crazy guy in London and Right or or I don&rsquo;t really know what Greg Maxwell like he&rsquo;s been sort of off I mean, he&rsquo;s sort of still around he&rsquo;s like on reddit and stuff, you know, but he&rsquo;s sort of okay I&rsquo;m not working on this technically but yeah a lot of I think a lot of it is stories, a lot of it is like knowing people.
+And if it&rsquo;s going to be like this thing that takes over the world and you know, everyone&rsquo;s using his money, we probably want to get away from that because it is sort of this like somewhat insular, like, you know, we know people and talk.
+We do, you know, have to sort of, but it&rsquo;s hard because like that&rsquo;s the default, right?
+It&rsquo;s so much easier to like hang out with the people you know and talk to the people you know and If Peter Wu is putting a PR, you look at it and you read his post because like, oh, like I&rsquo;m going to click on his post and read it because he&rsquo;s got so many good ideas.
+But I think we do have a pretty good system where like if something&rsquo;s anonymous, we&rsquo;re still okay, we still read it.
+You know, like a good example from a few years ago was like MimbleWimble, it&rsquo;s anonymous, still we look at it, you know, use it.
+People still post anonymously to mailing lists and stuff.
+Zman, kind of anonymous, even though people have met him.
+You know, like there are anonymous developers and stuff.
+And that&rsquo;s, hopefully we don&rsquo;t need to go further in that direction But we might you know what if legal restrictions on development and stuff happen But then the question of like how to get people to not leave it&rsquo;s hard because it&rsquo;s not like you know just look on Twitter There&rsquo;s so many reasons where you&rsquo;re just like and and I know I&rsquo;ve argued with people too about like, okay, do we want, you know, mercenaries or only people who have like this sort of, I really want to work on Bitcoin.
+I have this like, you know, desire and motivation to work on Bitcoin specifically, versus people are like, Oh, it&rsquo;s just a job.
+I&rsquo;m in it for, you know, I&rsquo;m getting paid, I&rsquo;m getting a good salary.
+I want to work on this.
+I think you do sort of need a mix right now.
+It&rsquo;s mostly people who are still still sort of people who are into it.
+It&rsquo;s not seen as something you get into just out of sort of like, oh, this is a good career to get into.
+But that is still changing, I think.</p><p>Speaker 2: 00:52:22</p><p>Well, it&rsquo;s a principle-driven project.
+So it&rsquo;s by having people that don&rsquo;t identify with those principles.</p><p>Speaker 0: 00:52:30</p><p>Well, so that&rsquo;s where I&rsquo;m working now to some extent, right?
+And I think that&rsquo;s what I&rsquo;m interested in and curious.
+Like, OK, here&rsquo;s a company that, you know, most of the people don&rsquo;t have Bitcoin experience, but they&rsquo;re like, yeah, let&rsquo;s use this.
+This is a good technology to use.
+It&rsquo;s OK.
+And they&rsquo;re all sort of getting on board.
+And that&rsquo;s cool.
+They&rsquo;re not tied to Bitcoin, but they&rsquo;re using it anyway.</p><p>Speaker 1: 00:52:49</p><p>Yeah, I think that the principle-driven, or also the ideological-driven people that work on Bitcoin space, I think they tend to go towards protocol development.
+In the Bitcoin companies, There is quite a few people that aren&rsquo;t there.
+There&rsquo;s a software job.
+This is kind of interesting.
+I learned something new.
+But they are not there because they&rsquo;ve been following Bitcoin for 10 years.
+I had a similar experience at BitGo.
+Where people, sure there was, especially on my team, on the Bitcoin team, we had a bunch of people that were really into Bitcoin.
+But over time as we grew from 20 to 120, more and more people were just software developers for front end or for back end or for DevOps.
+And it was a day job.</p><p>Speaker 0: 00:53:37</p><p>And I think you know if so that&rsquo;s this fun thing where like there&rsquo;s these Bitcoin or you know laser-eye people like Bitcoin is going to take over the world.
+If it takes over the world most people will not be laser-eyed you know they&rsquo;ll just be regular people who are like, oh, I use it because it&rsquo;s useful, it&rsquo;s convenient, whatever, I use this.
+They&rsquo;re not going to be like, oh, this is the most amazing thing ever.
+And so you&rsquo;re necessarily going to sort of lose that, like, hardcore, like, oh, Bitcoin kind of focus if it&rsquo;s going to billions of people.
+And I think that&rsquo;s okay.
+And I mean, like the idea of a lot of people using it, just, yeah, I use Bitcoin.
+Cool.
+Like that&rsquo;s a useful thing.</p><p>Speaker 1: 00:54:12</p><p>In the end, presumably it will be forgotten.
+It&rsquo;s just the rails on which the new monetary system, transactions payments, global payment systems maybe, could work on.
+And just like nobody knows how a credit card works, people won&rsquo;t know that Bitcoin is powering this underneath.</p><p>Speaker 2: 00:54:29</p><p>Yeah.
+We&rsquo;ve come full circle.
+We started with the idea of the big blocks and we went through lightning and then we got to where have all the people gone and now we&rsquo;re, doesn&rsquo;t matter.</p><p>Speaker 0: 00:54:42</p><p>No, I mean you still, you need people to work on this.
+But the thing is, it&rsquo;s better than it&rsquo;s ever been.
+We have Chaincode, we have Brink, we have DCI.
+We have a bunch of places for development and you know it&rsquo;s still not that big but it&rsquo;s but it&rsquo;s also a good way you can say that bitcoins very efficient If you look at all the money from all the ICOs, the billions and billions of dollars, and then you look at like how much does Bitcoin core like protocol develop, you know, like how much does chain code pay people a year, and how much does break pay people, you know, like add it all up.
+It&rsquo;s not that much for the total, you know, development of Bitcoin over the entire life of it, it&rsquo;s much less than a single EOS or Tron or something, right?
+Like way smaller.
+And so it&rsquo;s like, hey, this is a very cost efficient system we&rsquo;ve been working on.</p><p>Speaker 1: 00:55:31</p><p>It is so baffling when you look at Bitcoin week by week, nothing ever happens.
+And then you look at what happened in the last two years and you&rsquo;re like, oh, that&rsquo;s pretty cool.
+And oh, yeah, we did make quite a few steps forward here and there.</p><p>Speaker 0: 00:55:45</p><p>But yeah, it&rsquo;s easy to lose perspective if you&rsquo;re that close to oh, yeah I mean you it&rsquo;s definitely great to talk to people who Aren&rsquo;t familiar with it and and see you know what they&rsquo;re seeing about it, and I try to do that a lot So yeah.</p><p>Speaker 2: 00:56:00</p><p>Thanks for joining us, Taj.</p><p>Speaker 0: 00:56:01</p><p>Great, thanks.</p><p>Speaker 2: 00:56:02</p><p>Great conversation.
+All right, Merch, another one in the books.
+Any reflections?</p><p>Speaker 1: 00:56:17</p><p>I liked how many directions this conversation went.
+Lots of things to touch on, lots of little anecdotes and context.</p><p>Speaker 2: 00:56:26</p><p>Taj has done a lot of things.
+So he&rsquo;s a, he&rsquo;s a Renaissance man in, in the Bitcoin community.</p><p>Speaker 1: 00:56:32</p><p>It&rsquo;s kind of funny that people don&rsquo;t think he has anything to say about Lightning.</p><p>Speaker 2: 00:56:36</p><p>It happens and he, you know, I guess it&rsquo;d be like Satoshi.
+What if Satoshi was like, hey, I did this all.
+Like no one would believe him.</p><p>Speaker 1: 00:56:47</p><p>No, in a way it&rsquo;s a sign of the success of the project, right?
+There&rsquo;s so many new people working on this that the names of the original idea giver is no longer that important.</p><p>Speaker 2: 00:56:58</p><p>Cool.
+Well, I hope you enjoyed listening and we&rsquo;ll see you</p><div class=row></div></div></div></div><script src=https://btctranscripts.com/lib/jquery.min.js></script><script src=https://btctranscripts.com/lib/popper.min.js></script><script src=https://btctranscripts.com/js/bootstrap.min.js></script><script type=text/javascript src=/plugins/lunr.min.js></script><script type=text/javascript src=/plugins/auto-complete.js></script><link href=/plugins/auto-complete.css rel=stylesheet><script type=text/javascript>var baseurl="https://btctranscripts.com/"</script><script type=text/javascript src=/plugins/search.js></script><script type=text/javascript src=https://btctranscripts.com/js/custom.js></script><script type=text/javascript src=/plugins/clipboard.js></script><script>new ClipboardJS(".btn")</script></body></html>

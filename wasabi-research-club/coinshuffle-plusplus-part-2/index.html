@@ -1,0 +1,534 @@
+<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=canonical href=https://btctranscripts.com/wasabi-research-club/coinshuffle-plusplus-part-2/><title>Coinshuffle++ (Part 2) | ₿itcoin Transcripts
+</title><link href=https://btctranscripts.com/css/fontawesome.min.css rel=stylesheet><link rel=stylesheet href=https://btctranscripts.com/css/ace.min.css><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://btctranscripts.com/images/btctranscripts.png"><meta name=twitter:title content="Tim Ruffing - Coinshuffle++ (Part 2)"><meta name=twitter:description content="In today&rsquo;s episode Tim Ruffing explores the concept of disruption in the Coinshuffle++ protocol and how it can be detected. He explains that the protocol passively observes messages and their outcomes, without knowing which message belongs to each participant. The speaker also discusses the practicality of blocking someone from the protocol, mentioning the role of network setting and the potential power of an attacker. Additionally, Ruffing highlights the importance of multiple communication rounds, protocols for key exchange, and the need for peers to verify if the protocol has been disrupted. Further Tim explains the concept of introducing another broadcast round in Coinshuffle++ to avoid disruption. By replacing one broadcast with another, the protocol ensures that if one message is disrupted, all messages are disrupted. This eliminates the need for a broadcast round to check for disruption, as participants can simply look at the list of messages and determine if their own message is there or not. This approach provides a guarantee of message integrity without additional broadcasts. Ruffing also addresses the limitations of Coinshuffle++, such as the lack of privacy in transactions with unequal inputs and the inability to pay while mixing. He discusses potential solutions for the anonymity of payments and emphasizes the benefits of Coinshuffle++ for coin shuffling. The timing and trust aspects of the protocol are also discussed, with a mention of potential delays and the need to trust other peers. Overall, Coinshuffle++ offers improvements in message integrity and coin mixing, but there is room for further development in addressing certain limitations and ensuring robust anonymity."><script async src=https://visits.bitcoindevs.xyz/script.js data-website-id=06384ada-7f1c-44c2-a6d9-d830fb23e122></script></head><body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id=navbarMain><div class=container><div><a class=navbar-brand href=/>₿itcoin Transcripts</a></div><div class="collapse navbar-collapse" id=navbarMainCollapse><ul class="navbar-nav ml-auto"><li class=nav-item><a class=nav-link href=/es>es</a></li><li class=nav-item><a class=nav-link href=/pt>pt</a></li><li class=nav-item><a class=nav-link href=/zh>zh</a></li><li class=nav-item><a class=nav-link href=https://github.com/bitcointranscripts/bitcointranscripts target=_blank><i class='fab fa-github'></i></a></li></ul></div></div></nav><div class="alert alert-warning fade show sticky-banner" role=alert><strong><a href=https://review.btctranscripts.com target=_blank data-umami-event=click-banner>Get paid to review technical Bitcoin transcripts
+</a></strong><button type=button class=close data-dismiss=alert aria-label=Close>
+<span aria-hidden=true>&#215;</span></button></div><div class=container-fluid><div class=row><div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0"><button class="navbar-toggler navbar-toggler-right collapsed" type=button data-toggle=collapse data-target=#sidenav-left-collapse aria-controls=sidenav-left-collapse aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse align-items-start flex-column" id=sidenav-left-collapse><form class="form-inline my-2 my-lg-0 searchbox"><input class="form-control mr-sm-2 w-100" data-search-input id=search-by type=text placeholder='Search (press "/")'></form><ul class="navbar-nav flex-column pt-3"><li data-nav-id=/adopting-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/adopting-bitcoin/><h6>Adopting Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/adopting-bitcoin/2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/adopting-bitcoin/2021/><h6>Adopting Bitcoin 2021</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/adopting-bitcoin/2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/adopting-bitcoin/2022/><h6>Adopting Bitcoin 2022</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/advancing-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/><h6>Advancing Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/advancing-bitcoin/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2019/><h6>Advancing Bitcoin 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/advancing-bitcoin/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2020/><h6>Advancing Bitcoin 2020</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/advancing-bitcoin/2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2022/><h6>Advancing Bitcoin 2022</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/advancing-bitcoin/2023/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2023/><h6>Advancing Bitcoin 2023</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/andreas-antonopoulos/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/andreas-antonopoulos/><h6>Andreas Antonopoulos</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/austin-bitcoin-developers/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/austin-bitcoin-developers/><h6>Austin Bitcoin Developers</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/baltic-honeybadger/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/><h6>Baltic Honeybadger</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/baltic-honeybadger/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/2018/><h6>Baltic Honeybadger 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/baltic-honeybadger/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/2019/><h6>Baltic Honeybadger 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bit-block-boom/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bit-block-boom/><h6>Bit Block Boom</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bit-block-boom/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bit-block-boom/2019/><h6>Bit Block Boom 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-2024/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-2024/><h6>Bitcoin 2024 Nashville</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/><h6>Bitcoin Core Dev Tech</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bitcoin-core-dev-tech/2015-02/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2015-02/><h6>Bitcoin Core Dev Tech 2015</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2017-09/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2017-09/><h6>Bitcoin Core Dev Tech 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2018-03/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2018-03/><h6>Bitcoin Core Dev Tech 2018 (Mar)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2018-10/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2018-10/><h6>Bitcoin Core Dev Tech 2018 (Oct)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2019-06/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2019-06/><h6>Bitcoin Core Dev Tech 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2022-10/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2022-10/><h6>Bitcoin Core Dev Tech 2022</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2023-04/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2023-04/><h6>Bitcoin Core Dev Tech 2023 (Apr)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2023-09/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2023-09/><h6>Bitcoin Core Dev Tech 2023 (Sept)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2024-04/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2024-04/><h6>Bitcoin Core Dev Tech 2024 (Apr)</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/edgedevplusplus/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/edgedevplusplus/><h6>Bitcoin Edge Dev++</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/edgedevplusplus/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/edgedevplusplus/2017/><h6>Bitcoin Edge Dev++ 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/edgedevplusplus/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/edgedevplusplus/2018/><h6>Bitcoin Edge Dev++ 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/edgedevplusplus/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/edgedevplusplus/2019/><h6>Bitcoin Edge Dev++ 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-explained/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-explained/><h6>Bitcoin Explained</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-magazine/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-magazine/><h6>Bitcoin Magazine</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-review-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-review-podcast/><h6>Bitcoin Review Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoinplusplus/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinplusplus/><h6>Bitcoin++</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bitcoinplusplus/2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinplusplus/2022/><h6>Bitcoin++ 2022</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoinplusplus/layer-2/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinplusplus/layer-2/><h6>Layer 2</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoinplusplus/onchain-privacy/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinplusplus/onchain-privacy/><h6>Onchain Privacy</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoinology/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinology/><h6>Bitcoinology</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/blockchain-protocol-analysis-security-engineering/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/><h6>Blockchain Protocol Analysis Security Eng</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/blockchain-protocol-analysis-security-engineering/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2017/><h6>Blockchain Protocol Analysis Security Engineering 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/blockchain-protocol-analysis-security-engineering/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2018/><h6>Blockchain Protocol Analysis Security Engineering 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/blockstream-webinars/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockstream-webinars/><h6>Blockstream Webinars</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/boltathon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/boltathon/><h6>Boltathon</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/breaking-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/><h6>Breaking Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/breaking-bitcoin/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/2017/><h6>Breaking Bitcoin 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/breaking-bitcoin/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/2019/><h6>Breaking Bitcoin 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/building-on-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/building-on-bitcoin/><h6>Building On Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/building-on-bitcoin/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/building-on-bitcoin/2018/><h6>Building On Bitcoin 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/chaincode-residency/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-residency/><h6>Chaincode Residency</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/chicago-bitdevs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chicago-bitdevs/><h6>Chicago Bitdevs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/coindesk-consensus-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coindesk-consensus-2016/><h6>Coindesk Consensus</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/coordination-of-decentralized-finance-workshop/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/><h6>Coordination of Decentralized Finance</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/coordination-of-decentralized-finance-workshop/2020-stanford/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/2020-stanford/><h6>2020 Stanford</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/c-lightning/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/c-lightning/><h6>Core Lightning Developer Call</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/cppcon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/><h6>CPPcon</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/cppcon/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/2017/><h6>CPPcon 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/cppcon/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/2020/><h6>CPPcon 2020</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/cryptoeconomic-systems/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cryptoeconomic-systems/><h6>Cryptoeconomic Systems</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/cryptoeconomic-systems/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cryptoeconomic-systems/2019/><h6>Cryptoeconomic Systems 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/dallas-bitcoin-symposium/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/dallas-bitcoin-symposium/><h6>Dallas Bitcoin Symposium</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/decentralized-financial-architecture-workshop/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/decentralized-financial-architecture-workshop/><h6>Decentralized Financial Architecture Workshop</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-developers-miners-meeting-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-developers-miners-meeting-2016/><h6>Developers-Miners Meeting</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/greg-maxwell/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/greg-maxwell/><h6>Greg Maxwell</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/grincon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/grincon/><h6>Grincon</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/grincon/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/grincon/2019/><h6>Grincon 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/honey-badger-diaries/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/honey-badger-diaries/><h6>Honey Badger Diaries</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/iacr/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/iacr/><h6>IACR Crypto</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/la-bitdevs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/la-bitdevs/><h6>LA Bitdevs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/layer2-summit/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/layer2-summit/><h6>Layer2 Summit</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/layer2-summit/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/layer2-summit/2018/><h6>Layer2 Summit 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/learning-bitcoin-and-design/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/learning-bitcoin-and-design/><h6>Learning Bitcoin and Design</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/lets-talk-bitcoin-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lets-talk-bitcoin-podcast/><h6>Lets Talk Bitcoin Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/lightning-conference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-conference/><h6>Lightning Conference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/lightning-conference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-conference/2019/><h6>Lightning Conference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/lightning-hack-day/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-hack-day/><h6>Lightning Hack Day</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/lightning-specification/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-specification/><h6>Lightning Specification</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/london-bitcoin-devs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/london-bitcoin-devs/><h6>London Bitcoin Devs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/magicalcryptoconference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/magicalcryptoconference/><h6>Magicalcryptoconference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/magicalcryptoconference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/magicalcryptoconference/2019/><h6>Magicalcryptoconference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/misc/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/misc/><h6>Misc</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/><h6>MIT Bitcoin Expo</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2015/><h6>MIT Bitcoin Expo 2015</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2016/><h6>MIT Bitcoin Expo 2016</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2017/><h6>MIT Bitcoin Expo 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2018/><h6>MIT Bitcoin Expo 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2019/><h6>MIT Bitcoin Expo 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2020/><h6>MIT Bitcoin Expo 2020</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2021/><h6>MIT Bitcoin Expo 2021</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2022/><h6>MIT Bitcoin Expo 2022</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2024/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2024/><h6>MIT Bitcoin Expo 2024</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/munich-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/munich-meetup/><h6>Munich Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/noded-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/noded-podcast/><h6>Noded Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/potzblitz/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/potzblitz/><h6>Potzblitz! - The weekly Lightning talk</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/realworldcrypto/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/><h6>Realworldcrypto</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/realworldcrypto/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/2018/><h6>Realworldcrypto 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/realworldcrypto/2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/2021/><h6>Realworldcrypto 2021</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/rebooting-web-of-trust/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/rebooting-web-of-trust/><h6>Rebooting Web Of Trust</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/rebooting-web-of-trust/2019-prague/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/rebooting-web-of-trust/2019-prague/><h6>2019 Prague</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/ruben-somsen/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/ruben-somsen/><h6>Ruben Somsen</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/satoshi-roundtable/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/satoshi-roundtable/><h6>Satoshi Roundtable</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/satoshi-roundtable/sr-004/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/satoshi-roundtable/sr-004/><h6>Sr 004</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/scalingbitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/><h6>Scaling Bitcoin Conference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/scalingbitcoin/hong-kong-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/hong-kong-2015/><h6>Hong Kong (2015)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/milan-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/milan-2016/><h6>Milan (2016)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/montreal-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/montreal-2015/><h6>Montreal (2015)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/stanford-2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/><h6>Stanford (2017)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/tel-aviv-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/><h6>Tel Aviv (2019)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/tokyo-2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/><h6>Tokyo (2018)</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/sf-bitcoin-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/sf-bitcoin-meetup/><h6>SF Bitcoin Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/simons-institute/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/simons-institute/><h6>Simons Institute</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/stanford-blockchain-conference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/><h6>Stanford Blockchain</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/stanford-blockchain-conference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/2019/><h6>Stanford Blockchain Conference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/stanford-blockchain-conference/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/2020/><h6>Stanford Blockchain Conference 2020</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/stephan-livera-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stephan-livera-podcast/><h6>Stephan Livera Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/sydney-bitcoin-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/sydney-bitcoin-meetup/><h6>Sydney Bitcoin Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/tabconf/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tabconf/><h6>TABConf</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/tabconf/2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tabconf/2021/><h6>TABConf 2021</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/tabconf/2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tabconf/2022/><h6>TABConf 2022</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/texas-bitcoin-conference-2014/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/texas-bitcoin-conference-2014/><h6>Texas Bitcoin Conference</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/tftc-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tftc-podcast/><h6>TFTC: A Bitcoin Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/the-bitcoin-development-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/the-bitcoin-development-podcast/><h6>The Bitcoin Development Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/chaincode-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-podcast/><h6>The Chaincode Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/ux-research/ class="nav-item my-1"><a class="nav-link p-0" href=/ux-research/><h6>UX Research Calls</h6></a></li><li data-nav-id=/verifiable-delay-functions/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/verifiable-delay-functions/><h6>Verifiable Delay Functions</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/verifiable-delay-functions/vdf-day-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/verifiable-delay-functions/vdf-day-2019/><h6>Vdf Day 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/vr-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/vr-bitcoin/><h6>VR Bitcoin</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/w3-blockchain-workshop-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/w3-blockchain-workshop-2016/><h6>W3 Blockchain Workshop</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/wasabi-research-club/ class="nav-item my-1 parent haschildren"><a class="nav-link p-0" href=/wasabi-research-club/><h6>Wasabi Research Club</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/wasabi-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/wasabi-podcast/><h6>Wasabikas Bitcoin Privacy Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/what-bitcoin-did-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/what-bitcoin-did-podcast/><h6>What Bitcoin Did Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></div></nav></div><div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky"><div class=docs-toc><nav id=TableOfContents><ul><li><ul><li><a href=#how-bitcoin-transactions-work>How Bitcoin transactions work.</a></li><li><a href=#main-privacy-issues>Main privacy issues.</a></li><li><a href=#transaction-graph-analysis>Transaction graph analysis.</a></li><li><a href=#big-picture-of-privacy-technologies>Big picture of privacy technologies.</a></li><li><a href=#coin-mixing>Coin mixing.</a></li><li><a href=#peer-to-peer-mixing>Peer-to-peer mixing.</a></li><li><a href=#p2p-trust-model--anonymity-set-in-the-presence-of-adversaries>P2P trust model. / Anonymity Set in the presence of adversaries.</a></li><li><a href=#termination-in-the-presence-of-malicious-users>Termination in the presence of malicious users.</a></li><li><a href=#how-does-coinshuffle-work--dc-net-chaum-crypto-88>How does CoinShuffle++ work? / DC-net (Chaum, CRYPTO &lsquo;88).</a></li><li><a href=#dc-nets-in-practice>DC-nets in practice.</a></li><li><a href=#slot-assignment>Slot assignment.</a></li><li><a href=#alphabetic-ordering-of-public-keys-for-slot-assignment>Alphabetic ordering of public keys for slot assignment.</a></li><li><a href=#why-are-finite-fields-needed>Why are finite fields needed?</a></li><li><a href=#slot-reservation--multiple-messages-bb-ec89>Slot reservation. / Multiple messages (BB, EC'89).</a></li><li><a href=#why-doesnt-alice-lose-anonymity-on-broadcast-of-m_1-in-slot-1>Why doesn&rsquo;t Alice lose anonymity on broadcast of m_1 in slot 1?</a></li><li><a href=#sum-of-messages-over-finite-fields--power-sums>Sum of messages over finite-fields. / Power sums.</a></li><li><a href=#disruption>Disruption.</a></li><li><a href=#why-coinshuffle-works--flowchart-of-coinshuffle>Why Coinshuffle++ works. / Flowchart of CoinShuffle</a></li><li><a href=#validating-bitcoin-addresses-instead-of-messages>Validating Bitcoin addresses instead of messages.</a></li><li><a href=#fresh-vs-fixed-input-messages>&ldquo;Fresh&rdquo; vs. &ldquo;Fixed&rdquo; input messages.</a></li><li><a href=#features-of-p2p-mixing-protocols>Features of P2P mixing protocols.</a></li><li><a href=#define-termination>Define termination.</a></li><li><a href=#wasabi-does-not-guarantee-termination>Wasabi does not guarantee termination.</a></li><li><a href=#is-identifying-the-malicious-peer-a-requirement-for-termination--dissent-ccs10>Is identifying the malicious peer a requirement for termination. / Dissent (CCS'10).</a></li><li><a href=#coinshuffle-is-a-circular-protocol>CoinShuffle++ is a circular protocol.</a></li><li><a href=#anonymity-attack-on-dissent-protocol>Anonymity attack on Dissent Protocol.</a></li><li><a href=#how-practical-is-it-to-block-an-adversary-from-the-protocol>How practical is it to block an adversary from the protocol.</a></li><li><a href=#broadcast-rounds>Broadcast rounds.</a></li><li><a href=#example-execution>Example execution.</a></li><li><a href=#practical-evaluation-of-coinshuffle>Practical evaluation of CoinShuffle++.</a></li><li><a href=#handling-unequal-inputs>Handling unequal inputs.</a></li><li><a href=#mixing-and-paying-simultaneously>Mixing and paying simultaneously.</a></li><li><a href=#double-spend-attack>Double-spend attack.</a></li><li><a href=#coinshuffle-with-arbitrary-numbers-of-malicious-users>CoinShuffle++ with arbitrary numbers of malicious users.</a></li></ul></li></ul></nav></div></div><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3"><a href=/>Home</a>
+&lt; <a href=/wasabi-research-club/>Wasabi Research Club
+</a>&lt; Coinshuffle++ (Part 2)<h1>Coinshuffle++ (Part 2)</h1><p>Speakers:
+<a href=/speakers/tim-ruffing>Tim Ruffing</a></p><p><i>Date: February 11, 2020</i></p><p><i>Transcript By: kouloumos via tstbtc v1.0.0 --needs-review</i></p><p>Tags:
+<a href=/tags/research>Research</a>, <a href=/tags/coinjoin>Coinjoin</a>, <a href=/tags/privacy-enhancements>Privacy enhancements</a>, <a href=/tags/cryptography>Cryptography</a></p><p>Media:
+<a href='https://www.youtube.com/watch?v=bCZFAqB3bnU'>https://www.youtube.com/watch?v=bCZFAqB3bnU</a></p><div class="alert alert-warning"><div class=ai-generated><i class='fas fa-robot'></i>
+<span>AI-Generated Transcript</span></div><span>Review this transcript and earn sats. </span><a href=https://review.btctranscripts.com target=_blank data-umami-event=click-transcript-banner>Learn More ></a></div><p>Speaker 0: 00:00:00</p><p>Yeah.
+All</p><p>Speaker 1: 00:00:02</p><p>right, guys, we&rsquo;re here with Tim Ruffing, one of the authors of the Coinshuffle++ paper to talk about privacy.
+So this PowerPoint and the presentation, Tim will do that himself and I&rsquo;ll just sit back.</p><p>Speaker 0: 00:00:22</p><p>Yeah, hey.
+I&rsquo;m sorry if this will look weird now, but I had to send my slides to Arif to share the screen, so I can&rsquo;t click through the slides he needs to do it, so It could be a little bit weird.
+Maybe just pop up a few things on the slide, please.
+Maybe maybe like actually the entire slide until we are the next thing.</p><h2 id=how-bitcoin-transactions-work>How Bitcoin transactions work.</h2><p>Speaker 0: 00:01:00</p><p>Yeah, so this is, you all know how Bitcoin works, but this is just to show you a little bit how I throw things here.
+So we have a transaction right and Alice on the left and she has a key and you have maybe some pizza dealer on the right and and again Alice&rsquo;s change address which is address C here and then this transaction is valid if A signs it and this checkmark thing is basically the signature very well and then we send it to the Bitcoin network and the transaction is validated and so on.
+So I think this is all the things that we need here.</p><h2 id=main-privacy-issues>Main privacy issues.</h2><p>Speaker 0: 00:01:39</p><p>And also here, I mean I included those slides because I had them anyway, but I don&rsquo;t need to tell you that privacy is important, right?
+And that we have a lot of privacy issues, for example, the amounts are public just by looking at the blockchain.
+And yeah, even worse, you can link addresses to each other just by looking at the links on the blockchain.
+So maybe go to the next thing.
+Yeah, there are a lot of links here and you can link addresses here.
+You know that stuff.</p><h2 id=transaction-graph-analysis>Transaction graph analysis.</h2><p>Speaker 0: 00:02:23</p><p>Then you can continue with larger tools and you&rsquo;ll know that stuff.
+And it&rsquo;s huge.
+And now we have even companies that do that stuff.
+That de-anonymize you for profit actually.</p><h2 id=big-picture-of-privacy-technologies>Big picture of privacy technologies.</h2><p>Speaker 0: 00:02:45</p><p>So, improving privacy.
+And here I have some picture with some privacy technologies.
+This is just to show you where where CoinShuffle stands in this big picture.
+In this big picture.
+So, yeah, so actually I could basically put CoinJoin instead here probably and it would still be a valid picture.
+The basic idea here is that with CoinJoin or CoinShuffle or CoinMixing in general, also TumbleBit is in the same category, we can&rsquo;t do so much in terms of privacy, but we are pretty compatible with Bitcoin because it works currently in Bitcoin.
+Of course, if you want more privacy, you can have fancy zero-knowledge proofs and other technologies like zero-cash or whatever.
+But this will never be integrated in Bitcoin, I guess.
+And then there&rsquo;s something in the middle, maybe, that I can briefly mention in the end here, which is value shuffle.
+If you can have amount of privacy in Bitcoin by adding something like confidential transactions, then mixing suddenly gets better and you can have better privacy even with mixing.
+This will be very useful.</p><h2 id=coin-mixing>Coin mixing.</h2><p>Speaker 0: 00:04:19</p><p>Okay, this is a coin join seminar.
+So again, we can quickly go over the slide because I don&rsquo;t need to explain you how mixing works.
+We do it via a multi-input, multi-output transaction that you all know as a coin join.
+Now the interesting thing here is, if you want to do this transaction, here Alice, Bob and Carol need to come up with a new list of, with a fresh list of output addresses, C prime, A prime, B prime, in a way that should, nobody can tell which of these new addresses belongs to which user.
+And the way we&rsquo;re going to do this is a peer-to-peer mixing protocol.
+And in this talk, our peer-to-peer mixing protocol is CoinShop++.</p><h2 id=peer-to-peer-mixing>Peer-to-peer mixing.</h2><p>Speaker 0: 00:05:15</p><p>So, what&rsquo;s peer-to-peer mixing?
+If you look at it as a primitive, it&rsquo;s a protocol where you have a number of participants.
+In this example, we have four participants.
+They all have an input message.
+Here the input messages are A&rsquo; B&rsquo; C&rsquo; D&rsquo; and like in our coin mixing example, this would be the output addresses that appear on the right-hand side of the coinjoin transaction.
+And now what peer-to-peer mixing gives you is output is the thing on the right side.
+It&rsquo;s basically a shuffled list of those input messages, such that no one can tell which message belongs to which user.
+But the messages will all be public.
+Next.</p><h2 id=p2p-trust-model--anonymity-set-in-the-presence-of-adversaries>P2P trust model. / Anonymity Set in the presence of adversaries.</h2><p>Speaker 0: 00:06:16</p><p>Right, and the trust model we want to have here is really a peer-to-peer trust model, which means that there are no, there&rsquo;s no mutual trust, so the peers don&rsquo;t trust each other, it is a random strangers on the internet, or it should be the case for CoinJoin and there are no third-party routers.
+What I mean by that is we don&rsquo;t rely on anything like Tor to provide anonymity.
+So in this example here now, look at the left-hand side.
+Alice and Dave could be malicious and this means for anonymity that the anonymity set remains the set of honest users.
+So Bob and Carol still have an anonymity among each other.
+Of course now they only have an anonymity set of two because they can&rsquo;t have anonymity together with the attacker, right?
+Just not possible.
+Next.
+Because exactly, we have those links here.
+So if the attacker controls Alice, then the attacker knows that a prime is Alice&rsquo;s address and the attacker controls Dave, then he knows that d prime is Dave&rsquo;s address.
+So yeah, we can&rsquo;t provide anonymity with those two addresses.
+But as I said, like Bob and Carol still get an anonymity set of two in this example.</p><h2 id=termination-in-the-presence-of-malicious-users>Termination in the presence of malicious users.</h2><p>Speaker 0: 00:07:44</p><p>Another property that we want to have next to anonymity is termination.
+This simply means the protocol terminates in the presence of malicious users, which means that there shouldn&rsquo;t be users that can stop honest users from finishing the protocol.
+The only thing we assume here is what I mentioned last week in the informal discussion about Crunchyroll++ already.
+For termination, we assume that there is a bonded board.
+What do we mean by that?
+It&rsquo;s basically a server in the middle where we all connect to, and the server handles the broadcast for us.
+And because we are in this peer-to-peer trust model, we don&rsquo;t really trust the server for anonymity, but we trust it for termination.
+In practice, this means that if the server is malicious or just broken, then the peers won&rsquo;t be able to finish the protocol, but nothing bad happens.
+They could just switch to a different server.
+However, no matter how malicious the server is, the server can&rsquo;t break anonymity.</p><h2 id=how-does-coinshuffle-work--dc-net-chaum-crypto-88>How does CoinShuffle++ work? / DC-net (Chaum, CRYPTO &lsquo;88).</h2><p>Speaker 0: 00:09:00</p><p>So how does CoinShark V++ actually work?
+It&rsquo;s based on a DC-net, which basically stands for Dining Cryptographers Network.
+And Dining Cryptographers network is a weird name for the following actually rather simple concept.
+Say we have again three users now and Assume these three users have pairwise shared keys and the keys are the numbers on the triangle here.
+So, for example, Alice has a shared key with Carol.
+That&rsquo;s the number one, the red one key here.
+And yeah, and every pair has a shared key of one bit.
+And now Alice on the top, she also has a message.
+The message is the bold thing.
+She has a one bit message which is also one.
+Now what Alice does is, Alice takes her message, the one, and adds up, this is the thing in the parentheses, the two keys shared with the other parties, the blue key and the red key.
+And we get one plus one plus one, And if we work in the bit field or basically you can think of XOR instead of plus, then the result here is just a one.
+And then Alice will broadcast this one.
+And Now Bob and Carol do the same.
+Also Bob has a message which is a zero here.
+Bob adds the two other keys and broadcasts the result and Carol does the same.
+And now, the cool thing now is if we add those three messages up that have been broadcast, which is 1 plus 1 plus 0, then this basically means that we have&mldr;
+Yeah, so if I expand it, we have just this result and now we see that every key has been added twice, which is kind of clear because it has been added by both sides of the of every of those connections basically.
+So that means that all the keys here cancel out And we are left with the sum of the messages here, which is one plus one plus zero.
+Yes, and the last zero should be bold.
+So If we add those together, we get zero.
+And zero is indeed the sum of the messages that the users had in mind.</p><h2 id=dc-nets-in-practice>DC-nets in practice.</h2><p>Speaker 0: 00:12:08</p><p>So the interesting thing here is now that this gives the users some form of anonymity in this very simple setting.
+So, now we know what the sum of the input messages is, but we don&rsquo;t know who contributed what part to this sum.
+This is a form of anonymity, basically.
+This was kind of a very simple and awkward example because in practice, we don&rsquo;t want to, Okay, I should follow the slides.
+In practice, first of all, if you want to do this in practice, we need to obtain shared symmetric keys.
+This is not hard because we can just do a cryptographic key exchange.
+This is kind of standard.
+We can do the Fahami key exchange, for example.
+But functionality-wise, What we want to do in practice is we don&rsquo;t want to send just one bit message, we want to send longer messages, for example, with common choices.
+This is also not too hard to do.
+Now I&rsquo;ve shown you an example with the bit field, which is the field which is 0 and 1 basically as a mathematical field.
+What we can also do if you want to send larger messages is encode them as larger integers and use larger finite fields to transmute them.
+But most importantly, I think what we&rsquo;ve seen in the example is that people compute the sum of their messages, but if you want to do peer-to-peer mixing, we don&rsquo;t want the sum of the messages of the people, but we want the entire set, right?
+So We want a list of the messages, not a sum.
+Now what a lot of these proposals and practice do, and I think you&rsquo;ve looked into that two weeks ago in the seminar here, is try to use some slots reservation.
+For example, in this picture here we would have three slots because we have three users and assume there is a magic way such that every user gets a slot in an anonymous way.
+So Alice here, the first user, she has the middle slot, the second slot.
+Bob has the first slot and Cavill has the third slot.
+And now, for example, Bob will transmit his message in the first slot and two.
+And now basically what we could do here is we could run a dcnet in every of those three slots and next.
+Three slots and next.
+And then Alice, yeah, so forgot to say that Alice in the slots where people don&rsquo;t have assignments, they just send zeros, right?
+So if you look at the first slot, we add the zeros which are basically just some form of padding, I could say, and Bob&rsquo;s message.
+Then we would have the messages.</p><h2 id=slot-assignment>Slot assignment.</h2><p>Speaker 0: 00:15:49</p><p>But the problem here is, we could have the messages back, but the problem here is that this needs this, what I call magic now, this needs an anonymous slot assignment.
+So in order to make this work, we already need some protocol that provides anonymity in some sense.
+And this is where most of these proposals to use slot reservation actually fail in practice, because it&rsquo;s a chicken and egg problem.
+You need, in order to get an anonymity here, you need another anonymous sub-protocol that gives you a slot assignment.
+And because this is hard, those protocols in the literature do the various tricks that mostly are not great because they can fail in practice.
+So for example, what they often do is that you guess a slot randomly.
+Say we have a thousand slots available and there are three users, and then every user guesses a random slot.
+And this kind of works in practice, but it&rsquo;s pretty annoying because now instead of running 3 ADC nets, we need to run a thousand 3C nets.
+So we need a lot more communication.
+And Moreover, even like with a thousand, it could be that Alice and Bob both select the same slot and then, let&rsquo;s say they both select slot N, then in slot N we would have not m1 or m2, but we actually would have m1 plus m2.
+And this is just not the result that we want.
+So this is not great.</p><h2 id=alphabetic-ordering-of-public-keys-for-slot-assignment>Alphabetic ordering of public keys for slot assignment.</h2><p>Speaker 0: 00:17:46</p><p>What we do instead is based on an idea that&rsquo;s pretty old already.
+It appeared shortly after the CEMENTS and the idea is&mldr;</p><p>Speaker 2: 00:18:05</p><p>Before you go into, can I have a question?</p><p>Speaker 0: 00:18:07</p><p>Sure, yeah,</p><p>Speaker 2: 00:18:08</p><p>go ahead.
+So why wouldn&rsquo;t a slot assignment work in, since everyone knows about everyone, why wouldn&rsquo;t the slot assignment just be decided based on alphabetical ordering of each other of everyone&rsquo;s public keys right</p><p>Speaker 1: 00:18:31</p><p>you because Because the whole point is we don&rsquo;t want to know who is who is</p><p>Speaker 0: 00:18:35</p><p>right So I mean functionally yes but like The problem is we we also like the peers here want anonymity even against each other, right?
+So like if everybody in the shuffling knows that like if Alice knows that Bob has the first slot, then Bob can&rsquo;t get the anonymity because whatever message appears in the first slot it will be Bob&rsquo;s.</p><p>Speaker 2: 00:19:05</p><p>Yes, makes sense.
+Thank you.</p><h2 id=why-are-finite-fields-needed>Why are finite fields needed?</h2><p>Speaker 1: 00:19:07</p><p>Can I ask one question?
+Why are finite fields needed?
+If you can do a DC net for one bit, can&rsquo;t you do it for 10 bits or any arbitrary number of bits?
+Just have shared keys that are M bits long and-</p><p>Speaker 0: 00:19:25</p><p>Just by, you mean just by using XOR instead of finite fields?</p><p>Speaker 1: 00:19:30</p><p>That&rsquo;s right.</p><p>Speaker 0: 00:19:36</p><p>In general, you can do this with these DNETs and this is what people usually do.
+The reason why you need finite fields is exactly on the slide I&rsquo;m talking about now.
+So this will be clear in a minute, I hope.</p><h2 id=slot-reservation--multiple-messages-bb-ec89>Slot reservation. / Multiple messages (BB, EC'89).</h2><p>Speaker 0: 00:19:57</p><p>So what we do instead of this slot reservation thing is actually it&rsquo;s abusing a method that has been proposed to the slot reservation but we have been using it to send the messages directly So what we do is we have something we could call slots.
+It&rsquo;s not really slots, something like slots.
+But yeah, maybe it&rsquo;s easiest to think of n slots here.
+We have n users and we have n slots.
+But instead of sending the message in only in one slot and sending zeros and all the other things Does here instead is she takes her message and one Sends it in the first slot And now she she will send m1 squared in the second slot.
+She will send m1 to the three in the third slot and so on up to M1 to the end.</p><h2 id=why-doesnt-alice-lose-anonymity-on-broadcast-of-m_1-in-slot-1>Why doesn&rsquo;t Alice lose anonymity on broadcast of m_1 in slot 1?</h2><p>Speaker 1: 00:21:03</p><p>Tim, could you explain why she doesn&rsquo;t lose anonymity when she, in the first slot, when she broadcasts M1?</p><p>Speaker 0: 00:21:14</p><p>Because, maybe click next?
+Because everybody will do the same.
+So also Bob will send M2 in the first slot and M2 square in the second slot and so on.
+So everybody sends the same in the same slot.
+Does this make sense?</p><p>Speaker 1: 00:21:37</p><p>So if Bob hears M1 and M3, can&rsquo;t he know that M1 comes from user 1 and M3 comes from user 3?</p><p>Speaker 0: 00:21:51</p><p>Ah, yeah I think the thing that you&rsquo;re missing here is that we are still doing a DC net in all of those slots.
+So we still have the shared keys in here.
+They&rsquo;re not in this picture, because here on the slide, I wrote just what the, basically what the input messages to the DCnet will be in every slot.
+But just as the example we&rsquo;ve seen in the beginning with just single bits, in every of those slots we run a DCnet with the shared keys added.
+So Alice will not, in the first slot, not simply broadcast M1, but she will send M1 plus shared key with Bob, plus shared key with Carol, and so on, plus shed key with user N.
+So only after we have obtained all the rows in the first slot in the first column here, these keys will cancel out.
+So just by looking at Alice&rsquo;s broadcast on the network, you can&rsquo;t tell that M1 is in there.
+Does this make sense?</p><p>Speaker 1: 00:23:21</p><p>Yes, so sorry follow-up question.
+So doesn&rsquo;t M1 interfere with M2 when they&rsquo;re canceling out?</p><p>Speaker 0: 00:23:28</p><p>Yes, yes and I will come to that now.
+Maybe click next.</p><h2 id=sum-of-messages-over-finite-fields--power-sums>Sum of messages over finite-fields. / Power sums.</h2><p>Speaker 0: 00:23:41</p><p>Yes, so you said m1 will interfere with m2 here and that&rsquo;s kind of true.
+What we will have if we have all those messages in the&mldr;
+Maybe let&rsquo;s look at the first slot.
+If you have all the broadcasts in the first slot, all the keys will cancel out.
+This is still true, but still like everybody basically send this first slot.
+So we won&rsquo;t get a single message there, but what we will get is the sum of all those messages.
+And in the second slot, in the second column, we will get the sum of the squares and so on up to the last slot.
+Does this make sense so far?</p><p>Speaker 1: 00:24:31</p><p>When we&rsquo;re doing sums, are we doing sums over a finite field or XOR sums?</p><p>Speaker 0: 00:24:37</p><p>Yes, we&rsquo;re doing sums over finite fields.
+I think this is&mldr;
+Thanks for reminding me.
+I think this is now the&mldr;
+Not yet, but like&mldr;
+Yeah, we maybe click next.
+Sorry.
+Now, not yet, but like, yeah, maybe click next.
+Sorry.</p><p>Speaker 2: 00:25:03</p><p>I&rsquo;m very curious what you do with those sums.</p><p>Speaker 0: 00:25:08</p><p>Yes, and sorry, I don&rsquo;t have slides for exactly the thing.
+But, well, now I don&rsquo;t see the slides anymore.
+I have to click.
+So, okay, now we have those power sums.
+And now I think we could go into that in detail, maybe later, if you&rsquo;re really interested.
+And I don&rsquo;t have slides for this, but I really think it&rsquo;s not super important.
+The thing is here is that if you have this list of the sums here, of those power sums, Then you can compute the messages again.
+And just in information, theoretically, this, I mean, this is not a proper explanation, but at least if you look at the number of bits here, that makes sense, right?
+We have n messages altogether because we have n users.
+And let&rsquo;s say every message has b bits.
+So, if you have the list of the power sums here, we have n times p bits and n times p bits is is the same amount of information and because we used to use a proper encoding like this or some thing is just one encoding of a list of messages you can decode it back and get the messages back but for this to work we need finite field arithmetic and that&rsquo;s why we do sums and finite fields instead of just XOR.
+This wouldn&rsquo;t work if you used XOR.</p><h2 id=disruption>Disruption.</h2><p>Speaker 0: 00:27:15</p><p>And okay, now the problem in the big problem in DCNets is that they can be disrupted, which basically means if there&rsquo;s one malicious user, let&rsquo;s say your Bob is malicious, what Bob could do is instead of sending m2 and m2 squared and so on and following this nice algebraic structure that you&rsquo;re supposed to follow, Bob could just send bullshit in every slot, for example, like random values or anything else that he wants, right?
+And now the problem is if we now want to sum up in the slots, of course we can sum up, we get some sums, but like those sums will be again bullshit.
+And yeah, even worse, because we are doing like n DCNets here, or a DCNet in every of the n slots.
+Bob here says fully anonymous, right?
+Because this was the core property of the DCnet that we can compute the sum of the messages and we can do this here in every slot, but we don&rsquo;t know who contributed what part to that sum.
+So we can&rsquo;t tell who contributed bullshit.
+We just see in the end that, okay, we don&rsquo;t get any messages back, like our decoding procedure doesn&rsquo;t work.
+But then we don&rsquo;t know what to do.
+So What do we do then?
+Well, in case of disruption, break anonymity.</p><h2 id=why-coinshuffle-works--flowchart-of-coinshuffle>Why Coinshuffle++ works. / Flowchart of CoinShuffle</h2><p>Speaker 0: 00:29:07</p><p>And, well, this may sound like a bad idea, but let me explain why this actually works.
+And to understand why this makes sense, we need to have a look at the flowchart of the coin shuffle run.
+So the first thing we do, like everybody generates the fresh Bitcoin interest, this is gonna be the output in the coin transaction on the right side and it will be our message in the peer-to-peer mixing protocol.
+Then, peers do key exchanges.
+They run the VHelm and key exchanger.
+I don&rsquo;t need to explain you how it works.
+Just it makes sure that every pair of users will have a shared key that they need for the DCnet.
+Okay, then we run the actual DC net and then we would run it in slots as I&rsquo;ve just shown you.
+And then now If we would proceed like I&rsquo;ve shown you on the previous slide, and actually this is not the real, this will not be the final flowchart of CronShuffle++, We will come to that later, but bear with me for the moment.
+If we would do what we&rsquo;ve seen on the last slide, we need to somehow, we need to check if our run has been disrupted.
+The problem is, namely, that it could be that the run is disrupted for, Well, how should I say this in the best way?
+And so, if you get the output, the only thing you can do now is to see if your own message is there, right?
+Like If you&rsquo;re Alice, you get those power sums in the end, or if you hope that they are power sums, you try to decode the list of messages, and then you have a candidate result for the protocol.
+The only thing you can do now is you can look at if your own message is there, which basically means that no one disrupted your message.</p><h2 id=validating-bitcoin-addresses-instead-of-messages>Validating Bitcoin addresses instead of messages.</h2><p>Speaker 2: 00:31:54</p><p>Can you, instead of looking at your message, although it doesn&rsquo;t matter, that&rsquo;s good, But instead of looking at your message, can you just check if these are Bitcoin addresses or bullshit?</p><p>Speaker 0: 00:32:13</p><p>You mean You could have some redundancy in there.</p><p>Speaker 2: 00:32:20</p><p>Yeah, but it doesn&rsquo;t matter because checking if your message is there is just as easy as anything else.
+Yeah.</p><p>Speaker 0: 00:32:29</p><p>Let me think about this for a moment.</p><p>Speaker 2: 00:32:37</p><p>The question if bullshit can be constructed in a way that still valid Bitcoin addresses.</p><p>Speaker 0: 00:32:47</p><p>Yes, yeah this is the problem so I can&rsquo;t, I don&rsquo;t have this on the slides, but what could happen is that, like in the example Bob was the malicious guy, right?
+So let&rsquo;s say Bob sends his messages last.
+Then basically Bob sees all the other messages.
+Bob sees all the other rows in a sense.
+And he sees all the other messages.
+He sees the list of all the other messages that the others want to send.
+And then he could, it&rsquo;s not clear from the slide here but then you could construct a special form of bullshit message in a sense that only disrupts for example Alice&rsquo;s message and not the other messages.
+Okay.</p><p>Speaker 2: 00:33:56</p><p>No, not okay, because then everyone would be able to check if Alice&rsquo;s message is a Bitcoin address, valid Bitcoin address or not.</p><p>Speaker 0: 00:34:08</p><p>No, no, okay.
+So, what Bob sees is, Bob sees just a list of the other messages.
+He doesn&rsquo;t know which message belongs to which user.
+So he sees somehow that M1 is there, which is Alice&rsquo;s message, but he doesn&rsquo;t know that it belongs to Alice.
+But now, because he knows M1, he could send bullshit such that m1 is disrupted, is basically replaced by a random message or a message of his choice even and the other messages are not.</p><p>Speaker 2: 00:34:40</p><p>Yes,</p><p>Speaker 0: 00:34:41</p><p>okay.
+So, he could selectively disrupt messages even though he doesn&rsquo;t know to which users those messages belong.</p><p>Speaker 2: 00:34:53</p><p>Makes sense.
+Thank you.
+So he could swap Alice&rsquo;s address.
+Right.
+Swap a random address to his own address and</p><p>Speaker 0: 00:35:02</p><p>for example, yeah, yeah, and That&rsquo;s why We we would need so Love Okay What I was saying before is that the only thing Alice now at the end of the DZNet round, what she can do is she can look at the set of messages of the results of the protocol and see if her old message is there, right?
+But she doesn&rsquo;t know if the other messages are all there.
+She will see some messages there, but she doesn&rsquo;t know if, for example, if Kevil&rsquo;s message has been replaced or not.
+And the important thing at this step here is that, however, we all, like all the peers in the protocol need to agree whether disruption has happened or not because if it has not if there was no disruption then like this is the case we see now on the slides and then they will go ahead and create a contract transaction and hopefully sign it.
+However, if one of them, like if one was disrupted, then what they want to do is They want to reveal the key exchange sequence, which is basically a standard de-anonymization step.
+Basically, it means that we all agree, like all the peers in the protocol agree that we give up this round, we give up anonymity in this round.
+And we discard the addresses that we generated at the beginning.
+We need to give me a moment to convince you that this is not a bad idea.
+Why can we discard those?
+Well, I mean, these are just, so far these are just random Bitcoin addresses, right?
+We have never told anybody to send us money there and we will never do it again in the future.
+So it&rsquo;s not a problem at all to throw those away.
+But now because given the key exchange secrets, everybody can compute the shared keys for everybody.
+Which means that Alice now knows the shared keys that Bob has, not only with her, she knew that one before because it&rsquo;s a shared key.
+But now she knows also the shared key that Bob had with Carol, that Bob had with Dave and so on.
+So now basically everything is public in this run.
+So everybody can just look at everybody&rsquo;s messages and then all the honest guys will now figure out that what Bob sent didn&rsquo;t make sense, it didn&rsquo;t fit this algebraic structure.
+Basically, they look at Bob&rsquo;s broadcasts in his second row, in a sense, and subtract all the shared keys that he had with the other peers, which are public now.
+And then they look at the result and see, the result should be in the first slot M2, in the second slot M2 square and so on.
+And they just can check now if Bob&rsquo;s messages follow this algebraic structure.
+And yeah, they figure out that Bob&rsquo;s messages don&rsquo;t follow the structure so they know Bob was actually malicious they can kick him out and start from scratch this is make sense so far?
+Yes, it&rsquo;s clear for me.</p><p>Speaker 1: 00:38:56</p><p>And then if no one signs a particular transaction, that&rsquo;s pretty trivial to find who is the missing signature.</p><p>Speaker 0: 00:39:03</p><p>Right, right.
+Exactly, that&rsquo;s the case now.
+Next, maybe.
+Then, okay, yeah, if everybody decides, okay, great, success.
+But if not, we can again, or maybe actually that arrow could be wrong here.
+And in that case, we don&rsquo;t need to discard the addresses.
+Now we better do okay, we better do.
+But the important thing is here like yeah if if somebody refuses to sign here Then we know that this guy is malicious or at least offline and we can exclude him.
+However, this is not okay, this is trivial to implement them, but we actually need to be careful for this case as well, because the protocol somehow needs to make sure that if we reach that point where we think that there was no disruption, then there was really no disruption.
+To make sure that we are excluding the right guy here.
+But the protocol actually has this property.
+So it can&rsquo;t be the case that everybody thinks that there was no disruption, but actually Alice&rsquo;s message was disrupted.
+So she will naturally refuse to sign because she would lose money by sending it to a wrong address on the coin drive.
+But everybody else will think that she actually needs to sign the transaction.
+The protocol also makes sure that this contact.
+Yeah.
+Okay, and this is the basic idea how we provide anonymity and termination at the same time by basically cleverly giving up anonymity in case that the protocol is disrupted.
+Then we can, because then we gave up anonymity for the single run, we can figure out who was malicious and then we can kick him out.</p><h2 id=fresh-vs-fixed-input-messages>&ldquo;Fresh&rdquo; vs. &ldquo;Fixed&rdquo; input messages.</h2><p>Speaker 0: 00:41:30</p><p>Side topic, are fresh messages needed?
+So what I told you now is basically the entire idea of the protocol is this.
+Why this works with giving up anonymity is because we have those kind of fresh Bitcoin keys, right?
+We can throw them away and nothing bad happens, not for our money and not for our anonymity.
+Well, then everybody knows that I wanted to use this address, but I never used it in fact.
+So I can give up anonymity for this one and this works because we can generate addresses and we can discard them generate new ones and so on but what if we want to send messages that are kind of fixed that are not random Bitcoin addresses and maybe use this protocol beyond Bitcoin, for example, to leak confidential documents.
+Like such a confidential document as on the slide here, I would call this a fixed message.
+And it turns out that this is not possible.</p><h2 id=features-of-p2p-mixing-protocols>Features of P2P mixing protocols.</h2><p>Speaker 0: 00:42:41</p><p>So if we look at features of peer-to-peer mixing protocols, I&rsquo;ve already told you they should provide anonymity, they should provide termination.
+And now if we add support for fixed messages as a third property, and CurrentJava++ provides anonymity and termination, great.
+So if we add support for fixed messages, support for fixed messages.
+Next.
+Then we can ask is there a protocol in the intersection of all these circuits in the middle and</p><h2 id=define-termination>Define termination.</h2><p>Speaker 2: 00:43:20</p><p>what the termination mean</p><p>Speaker 0: 00:43:26</p><p>termination means that the protocol terminates, even if there are malicious peers inside.</p><p>Speaker 2: 00:43:34</p><p>So not termination would mean if there are malicious peers then the protocol just doesn&rsquo;t.</p><p>Speaker 0: 00:43:46</p><p>It doesn&rsquo;t finish.
+So, or it aborts.</p><p>Speaker 1: 00:43:53</p><p>Yeah, in the</p><p>Speaker 2: 00:43:53</p><p>example of Wasabi.
+Termination is.
+It doesn&rsquo;t finish.</p><p>Speaker 0: 00:43:55</p><p>Or it aborts.</p><p>Speaker 2: 00:43:55</p><p>So it&rsquo;s like termination is&mldr;</p><p>Speaker 0: 00:43:59</p><p>Maybe it should have been called successful termination, right?
+So you can imagine that a protocol that doesn&rsquo;t provide termination basically, for example, it tries to start mixing with the DCnet and then it notices, oh, there was disruption and then, well, it fails, just aborts.</p><p>Speaker 2: 00:44:21</p><p>Okay, so if it aborts, if it notices that there was disruption, then that would mean termination is not ensured.</p><p>Speaker 0: 00:44:31</p><p>Right, okay.</p><h2 id=wasabi-does-not-guarantee-termination>Wasabi does not guarantee termination.</h2><p>Speaker 1: 00:44:35</p><p>Yeah, so I think Adam, like currently Wasabi does not guarantee termination, right?
+Because if a coin join doesn&rsquo;t happen, wasabi bans a coin and then reopens the round and more malicious people could enter the round.
+But one way to make it guaranteed to terminate is to only allow the same participants and then exclude them so that it converges to a smaller and smaller number.</p><p>Speaker 0: 00:45:08</p><p>I see.</p><p>Speaker 2: 00:45:10</p><p>Isn&rsquo;t determination is to basically being able to identify the malicious party?</p><p>Speaker 1: 00:45:17</p><p>No, no.
+In this case I&rsquo;m saying specifically given F malicious peers, can you tell me when Wasabi will do a coin join?
+And in the case of CoinShuffle++ the answer is 4 plus 2 F rounds.
+And in the case of Wasabi, it&rsquo;s just when we&rsquo;ve banned enough people and there are no more malicious peers and we don&rsquo;t know when that will be.</p><p>Speaker 0: 00:45:44</p><p>So There&rsquo;s half a pound of the number of UTXOs in the chain.
+But it&rsquo;s pretty large.</p><p>Speaker 2: 00:45:55</p><p>So but wait, let&rsquo;s go back to termination.
+You just said that if the round aborts, then that means that it aborts in a way that you cannot figure out who was the malicious one.</p><p>Speaker 1: 00:46:17</p><p>I think termination in this case means that it&rsquo;s successful, that eventually there&rsquo;s a coin join.</p><p>Speaker 0: 00:46:24</p><p>Yeah, I think, Adam, what you&rsquo;re mixing up here is when I say anonymity and termination here, in particular termination, I look at the entire protocol.
+So like the entire protocol provides termination and it does so by like the inner working is that it tries to run once and if it sees that this run doesn&rsquo;t work then it restarts.</p><p>Speaker 2: 00:46:59</p><p>Okay, so that&rsquo;s&mldr;</p><p>Speaker 0: 00:47:01</p><p>But like when I say termination I look at the like the entire protocol in the black box as a black box.
+It doesn&rsquo;t matter what it does internally.</p><h2 id=is-identifying-the-malicious-peer-a-requirement-for-termination--dissent-ccs10>Is identifying the malicious peer a requirement for termination. / Dissent (CCS'10).</h2><p>Speaker 2: 00:47:11</p><p>Yeah, sorry for hanging on it, but I think it&rsquo;s important.
+So does that mean it could still be possible to provide anonymity with fixed messages if successful termination of the entire protocol is not a requirement?
+But what is the requirement is actually to being able to identify the malicious peer.</p><p>Speaker 0: 00:47:43</p><p>So Maybe let&rsquo;s finish the slide and come back to this question.
+Maybe it&rsquo;s answered, then maybe not.
+So what could be interesting is to have a protocol in the middle that has all those three properties, But it turns out that this is not possible.
+Interestingly, there was a protocol called descent at CCS10 That was supposed to be in the middle and has all the properties, but it turns out it doesn&rsquo;t provide an anonymity.
+If you would code it exactly like it&rsquo;s written in the paper, it would provide termination and fixed messages and lose anonymity.
+Does this answer your question or not?</p><p>Speaker 2: 00:48:45</p><p>No, no, my point was that if you can identify the malicious peer, then it doesn&rsquo;t really matter if termination happens or not of this protocol rounds because you could&mldr;
+Yeah, but&mldr;</p><p>Speaker 0: 00:49:04</p><p>Okay, sorry, go ahead.</p><p>Speaker 2: 00:49:09</p><p>That was pretty much it.</p><p>Speaker 0: 00:49:11</p><p>Okay, again, when I say termination, I don&rsquo;t talk about&mldr;
+I don&rsquo;t mean termination of a protocol run, of a run that can be aborted.
+I mean termination of the entire thing, like the entire thing with a big loop.</p><p>Speaker 2: 00:49:33</p><p>So, okay.
+So, if you can identify the malicious peer, but you don&rsquo;t exclude it, but create, but you have to create a completely new protocol and from that you exclude it that would mean that it is a terminating protocol.
+Okay fine, let&rsquo;s</p><p>Speaker 0: 00:50:00</p><p>go.
+Okay.</p><h2 id=coinshuffle-is-a-circular-protocol>CoinShuffle++ is a circular protocol.</h2><p>Speaker 1: 00:50:04</p><p>Just to clarify, Coinshuffle++ is a circular protocol.
+It has four, it has six rounds, six steps, and then four of them are repeated every time someone disrupts, right?</p><p>Speaker 0: 00:50:19</p><p>Yes.
+Yes.
+And that&rsquo;s why I look at the entire thing, like with the circular thing in It provides termination.
+I think this is all I wanted to say here.</p><h2 id=anonymity-attack-on-dissent-protocol>Anonymity attack on Dissent Protocol.</h2><p>Speaker 0: 00:50:39</p><p>I can actually show you how this anonymity attack on this end works.
+I don&rsquo;t need to tell you a lot about this end but I think it can still be instructive.
+The only thing I think you need to know is that like the three points on top here, this end proceeds in broadcast rounds and The outcome of the protocol is revealed to all the users in the last broadcast and also a network attacker sees the outcome of the protocol in the last broadcast.
+An outcome is to remind you what is the output over, what is the outcome over P2P mixing protocols, just a list of shuffled messages.
+Now let&rsquo;s say we have Alice, Bob and Carol, and they all have their fixed messages, their documents, and Bob is the honest guy here, and we are the network attacker.
+Now, what we do is, We just let the users run the protocol.
+We listen to the messages as a network attacker and we only interfere with it in the last broadcast of the first run, basically.
+So what we do is we block Bob&rsquo;s message.
+Because we&rsquo;re a network attacker, we can do this.
+But we still see his message.
+If we see it, we just don&rsquo;t forward it to the others.
+Which means that we as a network attacker, we learn the list of messages that people wanted to send.
+These are the three documents here on the right hand side.
+This is the right hand side here and on the slide is the view of the attacker.
+So here we see what&rsquo;s going on.
+We see the list of messages, but we don&rsquo;t know yet which message belongs to which user.
+But okay, now we brought Bob.
+So now what happens is, because we blocked Bob&rsquo;s last messages and the protocol is supposed to provide termination.
+The other remaining parties like Alice and Carol, they need to somehow start from scratch, right?
+And they do a second run of the protocol.
+And now because Bob is not in the protocol anymore, they kicked him out because he appeared to be malicious to the other two parties.
+Bob&rsquo;s message won&rsquo;t be there in the second run.
+So now what the attacker can do is he just looks at the outcome of the first run and the second run and compares them and he will just notice that the missing protocol, the missing message is the one, the gray one with a confidential mark on it.
+Because he knows that he blocked Bob, he knows that this is the message from Bob.
+Does this make sense?</p><p>Speaker 2: 00:54:03</p><p>Probably.
+Okay, feel free to ask.
+Sorry I was just blanking out.
+It wasn&rsquo;t really a good explanation.</p><p>Speaker 1: 00:54:14</p><p>Okay.
+So, I guess I just don&rsquo;t understand how descent works well enough, like why there would be multiple rounds.
+But isn&rsquo;t it the case that Bob&rsquo;s message is XORed with the two adjacent Diffie-Hellman shared secrets?
+So How is it that you can figure out Bob&rsquo;s message?</p><p>Speaker 0: 00:54:43</p><p>Okay, I think there are multiple things here.
+So, yes, I didn&rsquo;t explain to you how this works.
+It works differently from a DCnet.
+So basically, it&rsquo;s a little bit like or it&rsquo;s pretty similar to the contra of the one that you also discussed.
+But my point here is that it doesn&rsquo;t really matter, right?
+So the attack that I show here would equally be true if we would try to run, if we would try to use fixed messages in CoinShuffle itself.
+And this would be exactly the same issue.
+So it doesn&rsquo;t depend on really how the protocol looks like.
+But in the end of the protocol, at some point you need to reveal the messages, right?
+So what the attacker here does is in the first run, like he just looks at the protocol passively until the last round.
+So basically he observes all the messages of all the people and then she just he just sees the outcome of the protocol which is the list of messages and so far there&rsquo;s nothing wrong with it because he doesn&rsquo;t learn which message belongs to the chooser</p><h2 id=how-practical-is-it-to-block-an-adversary-from-the-protocol>How practical is it to block an adversary from the protocol.</h2><p>Speaker 1: 00:56:14</p><p>this might be a dumb question but how practical is it to block someone from the protocol, mid protocol?</p><p>Speaker 0: 00:56:23</p><p>I think this really depends on the network setting.
+Like usually if you write protocols, you want them to be secure against network attackers and we actually assume that network attackers can do much more.
+They can not only block messages, they can also replace them, duplicate them and all the stuff.
+Of course you can ask how realistic that in practice is.
+Usually we abstract away from this question, just say like look the attacker is super powerful because we don&rsquo;t know how powerful he actually is.
+Now, if you look at coin shuffle or descent specifically, I told you in the beginning that we assume that we have this bulletin board in the middle that handles all broadcasts.
+And the reason why we do this actually is to have better efficiency.
+And Now it&rsquo;s getting interesting.
+So because we didn&rsquo;t want to trust this bulletin board in the middle of the server in the middle for anonymity.
+But if you think of the server in the middle being the malicious network attacker, Then suddenly it&rsquo;s very, very easy to block messages, right?
+You just don&rsquo;t forward them.
+Like think of, I think last week I mentioned the simple example of my RST server, just as an example of a server that broadcasts your messages to everybody else.
+So basically in this setting, if you have the server, you can always claim more.
+Look, I didn&rsquo;t.
+Bob didn&rsquo;t send the message.
+He&rsquo;s offline.
+So in this setting it&rsquo;s super realistic to do this attack.
+If you&rsquo;re the server in the middle.
+Yeah, okay.
+Efficiency and&mldr;
+There we go, next.</p><h2 id=broadcast-rounds>Broadcast rounds.</h2><p>Speaker 0: 00:58:38</p><p>Okay, now this is the flowchart again that we&rsquo;ve seen And now the title of the slide says naïve.
+Why naïve?
+Because this is actually not the truth.
+Here I need to re-explain something that I think I started this explanation on one of the previous slides.
+And actually, because I was confused on the slides, which slide we are.
+Okay, let&rsquo;s count communication rounds.
+And communication rounds are here, broadcasts.
+So we need one broadcast for the key exchange.
+This is the symbol here.
+Then we need one broadcast to run the actual DCNets.</p><p>Speaker 1: 00:59:32</p><p>And now,</p><p>Speaker 0: 00:59:36</p><p>because now is the crucial part, because we all need to, like all the peers now need to agree on whether the protocol has been disrupted or not.
+I told you this example where you can selectively disrupt messages from peers.
+So to avoid this, in a naive way, we would need another broadcast here just to check that we all agree on whether there was disruption or not because as I explained to you earlier the only thing you can do is you can look at this on the output of the protocol and see if his own message is there but he doesn&rsquo;t know if the messages of the others are there.
+So to make sure that we all agree whether there was disruption or not, we would need another broadcast from here.
+And this is the broadcast that basically belongs to the disruption box.
+And then once we all know whether there has been disruption or not, we need one more broadcast either to broadcast the signatures on the contract transaction or to reveal the key exchange secrets depending on which way we go now.
+Okay now in Coinshovel++, so sorry can you go back one step?
+Yes.
+So, if you look at this now, if you count the broadcasts, these are basically four broadcasts in every run, right?
+No matter which way we go.
+Now what we do instead in CoinShop++ is we want to avoid this broadcast at the disrupted box here.
+And how do we do that?
+Next, by introducing another broadcast here.
+So, So far, this doesn&rsquo;t make a lot of sense, right?
+Because we still have four broadcasts per run.
+We replace one broadcast by another broadcast.
+But let me explain to you why this makes sense.
+Next.
+Ah, okay.
+Let me first tell you what we actually do.
+So what we do here is like this first broadcast that we introduced now is basically a commitment, cryptographic commitment to the DCnet vector.
+By vector I mean just the rows that the peers send in the DCnet.
+So we first send the commitment, next.
+And then we send the actual DCnet contents, the actual rows.
+So Why do we do this?
+The idea is, basic idea is that now we get this following relationship.
+Now by doing this, we get the guarantee that if there is one honest user whose message is disrupted, then all of the messages are disrupted.
+And the other way around.
+This basically means that now, instead of needing a broadcast round, to check with the others if there has been disruption, what we now can do instead is really just looking at our own output.
+So you look at the list of messages and see if your own message is there.
+You know if your own message is there, then all the other messages are there.
+And equally, you know if your own message is not there, then also the other messages are not there.
+And the rest on the slide was just formal stuff, not interesting here.
+So now let&rsquo;s look at an example.
+Go back please.</p><h2 id=example-execution>Example execution.</h2><p>Speaker 0: 01:04:17</p><p>So if we would now have a protocol with runs, let&rsquo;s say we have a first run of the protocol and now every box is a broadcast.
+So we have four broadcasts.
+And remember that the DCnet round is now in the third position.
+Because we first send the key exchange, then the second thing is we commit to the DCnet vectors, to the DCnet messages, Then we send the actual DCNET message, the third round.
+This is what I mean when I write DC.
+And then in the end, we either send the signatures around or we reveal the key exchange messages.
+And now let&rsquo;s assume like okay this first run is disrupted.
+Next.
+And remember disruption happens in the DCNet round.
+So somebody sent bullshit in the DCnet round, this round is disrupted, the run is disrupted, then we would start the second run and would need another four rounds if you go back again.
+Sorry.
+So, this is the naive thing.
+And now, next, what we do in Conjava++ is we actually want to pipeline these runs and to reduce the number of overall rounds.
+So now the idea is basically, we run two rounds of the first one, and then we already start a second run.
+It&rsquo;s not clear yet if you will need it or not.
+But in case the first run is disrupted, then we can just switch to the second run.
+Which is the example here, right?
+And then maybe the second run actually is not disrupted.
+And okay, we have started already a third run just in case and then okay, but the second one works, it runs through so we can just support the third one.
+This is how we pipeline this and Now look at this red line here.
+This is how the information flow is basically from the first one to the second one.
+Because the first one, remember the first one was disrupted, right?
+So after the fourth message, after the last message in the first run, only then we learn who is the malicious party, because this is where we reveal the secrets.
+And note now this, you can see this from the red line now, this is exactly the point in time that is still, so it&rsquo;s still okay to exclude the malicious guy now for the second run, because now the malicious guy that excluded the first run can&rsquo;t disrupt the second run, because we managed to exclude him from the second run before we reached the DC thing, before we reached the DC message phase.
+Does this make sense?
+Please ask if this is unclear.</p><p>Speaker 1: 01:07:42</p><p>Makes sense to me.</p><p>Speaker 0: 01:07:45</p><p>Great.
+And this is the reason why we wanted to push the DCNET round to the third broadcast instead of the second.
+So This was the thing I&rsquo;ve shown you on the previous slides, right?
+In the naive version, we run key exchange, then already the CNET, and then we need to check with the others if disruption happened.
+Then the DCnet round would be in the, the DCnet message would be in the second round.
+But here what we act, what we here do is to this commitments to the DCnet And then sending the DCnet only in the third round, we move the DCnet to the third round and we make this interleaving of two here possible.
+Yeah, and now if you count the number of rounds, if you have F malicious users, then we need 4 plus 2 F broadcast rounds.
+And this is better than previous work, which was the original cold travel, which was just all of NF rounds.
+So much slower.</p><h2 id=practical-evaluation-of-coinshuffle>Practical evaluation of CoinShuffle++.</h2><p>Speaker 0: 01:09:04</p><p>Yeah, and now we can evaluate this and practice with the with the basically the setup that I mentioned here on the slide and compare this to the to the previous protocol coin shuffle And at least in this setting, Coinshuffle++ is much, much better than Coinshuffle, as you can see on the graph.
+So Yeah, for example, for usually a number of you point out on the paper is 50 notes there.
+We are still below 10 seconds in this setting.
+And then coin shuffle, the original coin shuffle was like almost three minutes in the setting.
+Next.
+Yep, next.
+Next.
+Next.
+Okay.</p><h2 id=handling-unequal-inputs>Handling unequal inputs.</h2><p>Speaker 0: 01:10:00</p><p>And then just, I think this is maybe should have been called limitations of coin zone actually for this audience here.
+But you&rsquo;re probably aware that handling unequal inputs is a very naive form, is a very bad idea, right?
+Because if you do a transaction like it&rsquo;s on the slide here, then everybody could just, every external observer even could just tell that Bob, like the one point, can you go back?
+Sorry.
+Yeah, so if everybody who looks at this transaction can just tell that B and B prime belong together, there&rsquo;s no privacy if you do a naive coin join with unequal inputs.
+And we all know Adam has much better suggestions to do this.
+But this is still an obvious limitation of coin drawings.
+Okay and also this is more subtle what we what we also can&rsquo;t do in coin shuffle++ is the following.
+So actually you don&rsquo;t want to mix your money, right?
+You want to also to pay with your money.
+So, I hope you could have the idea to do a payment.</p><p>Speaker 2: 01:11:36</p><p>You can or cannot do this?</p><p>Speaker 0: 01:11:39</p><p>You cannot.
+And I will tell you why.
+So Bob could have the nice idea to have a payment in the coin join here, like there&rsquo;s a pizza restaurant with address R and he sends 0.1 Bitcoin to the pizza restaurant and then he sends the remaining 0.9 Bitcoin back to E-Prime, which is his change address.
+And now like if you&rsquo;re just an external server you you look at this transaction I mean of course you can you can see that 0.1 and 0.9 belong together But you couldn&rsquo;t tell whether they both belong to A, B or C.
+However, the reason why it doesn&rsquo;t work is more subtle.
+Now look at what would be the messages that we have to send to the peer-to-peer mixing protocol.
+Like in the normal coin shuffle plus plus run, we would just send the output address, which is r and b prime here.
+Now Bob would basically have two messages in the peer-to-peer mixing protocol, one for R and one for B&rsquo;.
+And now these messages are not just the symbol, the addresses, because he also needs to send the amounts there, right?
+Because the amounts are not implicit anymore.
+In the previous example where everybody has one Bitcoin, the amounts are not messages that need to be mixed.
+But here they would need to be mixed.
+So Bob basically sends two messages and one of the messages is the pair r, 0.1. And the reason why this doesn&rsquo;t work is now that the 0.1 is a fixed message.
+It&rsquo;s nothing that you can discard and throw a new random one, right?
+It just doesn&rsquo;t work.</p><p>Speaker 2: 01:14:02</p><p>Because does that matter?
+What really matters is that the output address is changed.
+So it&rsquo;s like the message is not not the zero point one.
+The message is or zero point one.
+If you next you message or to 0.1 because Robert gave you many addresses.</p><p>Speaker 0: 01:14:27</p><p>Yeah, but I think like I had this we had this side topic, right?
+Is a fresh message is actually necessary?
+Can we do mixed, sorry, can we do fixed messages?
+And the reason why the answer was no, the reason was that anonymity is broken.
+So functionally you&rsquo;re right, you can just like if the first run is disrupted you could abort it and then restart with R2 and 0.1. But then it could be that there is an attacker and anonymity.</p><p>Speaker 2: 01:15:13</p><p>I&rsquo;m sorry, can you repeat that?
+Repeat that?</p><h2 id=mixing-and-paying-simultaneously>Mixing and paying simultaneously.</h2><p>Speaker 0: 01:15:22</p><p>I had a few slides under the title, side topic are fresh messages necessary, right?
+Where I showed the attack on this end, for example.</p><p>Speaker 2: 01:15:38</p><p>But the message is fresh.
+It&rsquo;s just one component of the message is fixed.</p><p>Speaker 0: 01:15:44</p><p>Okay.
+But the attack basically applies to also messages where one component is fixed.
+You really lose anonymity in this setting.</p><p>Speaker 1: 01:16:00</p><p>Also how would you pay someone, like typically you only have one address?</p><p>Speaker 0: 01:16:08</p><p>Yeah, typically only can you repeat?</p><p>Speaker 1: 01:16:12</p><p>Typically you only get one address when you have to pay someone So you have to also&mldr;</p><p>Speaker 0: 01:16:17</p><p>Yeah, okay.
+Yeah, this is what I like.
+If I write a paper, I would call this an engineering challenge and put it aside.
+Yes, of course, then you need to&mldr;
+But you&rsquo;re right.
+And so what I&rsquo;m saying is you&rsquo;re right.
+In practice, you need to solve the problem.
+It&rsquo;s just that it&rsquo;s kind of doable, but you need recipient support and this would be another drawback, even if it would be possible.
+Either, like if you do a coinjoin with 50 parties, then either you ask the pizza restaurant to give you 49 addresses, which is ugly but works.
+And what you have something like PIP 32 and public derivation and so on, where like the restaurant would give you one master public key and you can just derive an arbitrary number of actual addresses from it.</p><p>Speaker 2: 01:17:21</p><p>So just to reiterate on the problem here is that when you expose your messages, then of course you don&rsquo;t expose the Bitcoin addresses, but what you expose is that you want to send 0.1 and 0.9 and then what you could do with that is that, well I guess this send failed because the peers were very malicious so I&rsquo;m just going to send one Bitcoin in in the failing round but you know you could you could assume honesty and and if honesty yes then I mean it&rsquo;s not very robust but you can&mldr;</p><p>Speaker 0: 01:18:13</p><p>Yeah, no but I see what you&rsquo;re saying.
+Let me repeat to make sure I get the right thing.
+So what you&rsquo;re saying is basically you be optimistic, try to like the first run, try to do the payment.
+And then, but if this first run fails, then go back to simple mixing without paying.</p><p>Speaker 2: 01:18:38</p><p>Yes.</p><p>Speaker 0: 01:18:40</p><p>Yeah, this, you&rsquo;re right, this principle would work.
+It&rsquo;s a good question how robust this is in practice, but in principle you could do this.</p><p>Speaker 2: 01:18:54</p><p>All right, thank you.</p><p>Speaker 0: 01:18:56</p><p>Okay, and now this is the final word here on the slides, I think.
+So, I hinted that this already, Like if we are in a system where we have confidential transactions, which is a cryptographic technique to hide the amounts on the transactions, like the amounts are not in plain, stored in plain, but are in homomorphic commitments and cryptographic commitments.
+Then suddenly those amounts, because they are in commitments, These are not fixed messages anymore.
+This can be re-randomized basically.
+So you can take a commitment and like you can commit to the same amount twice and those commitments look totally independent of each other.
+Then this problem with the fixed message goes away and then you suddenly can mix and pay simultaneously.
+And also like an addendum protocol you need for this is value shuffle, which is full op fork.
+And also you, of course, get rid of the previous problem that you can&rsquo;t mix unequal amounts, then you can also mix equal amounts and suddenly mixing is so much nicer and better.
+If you could hide the amounts, but I think this is also not used in this seminar here.</p><p>Speaker 2: 01:20:32</p><p>I have one more theoretical and less practical talk that you know what does really termination mean here?
+Termination means that everyone signs, but that&rsquo;s not really what termination is.
+Termination is that successful broadcast happens.
+So now there is the issue with double spends.</p><p>Speaker 0: 01:21:01</p><p>Yeah, right.</p><p>Speaker 2: 01:21:02</p><p>Yeah, so we detect the double spends and then we have to run the whole protocol again.
+What if you are a miner then everyone has to be online until confirmation.</p><p>Speaker 1: 01:21:18</p><p>Sorry but isn&rsquo;t a double spend the same as not signing the CoinJoin at the end round?</p><p>Speaker 0: 01:21:25</p><p>The problem is just that you don&rsquo;t figure it out so quickly, right?
+So and you don&rsquo;t know, right?
+As I&rsquo;ve shown you on the slides, basically, the protocol is finished as soon as you get the signatures on the coinjoin message, the content of the action from everybody else, then you have a signed coinjoin.
+Then if naively then you think like the protocol is finished, I just need to broadcast the transaction to the network now and then it runs through.
+But yeah, like in reality, people could double spend maybe a minute later or so.
+Not sure how realistic a minute is.
+If you&rsquo;re a miner, yes.</p><h2 id=double-spend-attack>Double-spend attack.</h2><p>Speaker 2: 01:22:13</p><p>The smartest way to be double spend here would be that you divide the network, like one half of it knows about the correct transaction, the other half of it doesn&rsquo;t know about the correct transaction.
+So The peers cannot really agree if the protocol was disrupted or not.</p><p>Speaker 0: 01:22:38</p><p>Have you seen this in Wasabi?
+Has this happened?
+I mean, I think it&rsquo;s a problem with every CoinJoin thing, right?</p><p>Speaker 2: 01:22:48</p><p>So, I mean, if I broadcast two transactions, like to six and six peers at the exact same time, then they are propagating on the network in a way that the manpool splits and then a miner has to come to decide which one was actually the real transaction.</p><p>Speaker 0: 01:23:16</p><p>Right, no, I mean my question was if you have seen this attack in Wasabi or somewhere else.</p><p>Speaker 2: 01:23:24</p><p>I did see double-spent Wasabi coin joins like maybe a year ago.
+I could not figure out what was that.</p><p>Speaker 0: 01:23:36</p><p>Okay.
+I always wondered how relevant that is in practice.
+I mean, like if you, Of course you can do this attack, but it&rsquo;s really pointless for the attacker.
+I don&rsquo;t know.
+It&rsquo;s just super annoying.</p><p>Speaker 2: 01:23:59</p><p>Yeah, it&rsquo;s like, you know, other schemes those are working in practice don&rsquo;t even ensure denial of service protection right and this is like a new level of theoretical attacks.
+So it&rsquo;s an engineering challenge, as you would put it.</p><p>Speaker 0: 01:24:23</p><p>Yeah, I mean, I would at least say it&rsquo;s not the end of the world.
+But like, Even if people do this attack actively, what you can do is wait for another minute or so.
+If you haven&rsquo;t seen a conflicting transaction for a minute, well, okay.
+And actually, the peers can also then relay the transactions, right?
+Like if one of the peers on the protocol sees a conflicting transaction, you could relay it to the others and basically have proof that there&rsquo;s a double-span.
+Ah, okay, okay, yes.</p><p>Speaker 2: 01:25:05</p><p>My point would be, but you wouldn&rsquo;t see because the nodes don&rsquo;t broadcast to you, but yeah, you can relay to the others.</p><p>Speaker 0: 01:25:13</p><p>But it&rsquo;s kind of, from a running time perspective, kind of annoying.
+Right now I told you, okay, like in a nice network setting, this protocol takes below 10 seconds, and then I tell you, no, you need to wait another 20 seconds just to make sure there&rsquo;s no double spam.</p><p>Speaker 2: 01:25:33</p><p>I mean if others relay a transaction like that, a conflicting transaction, then would that, I mean you would have to trust the other peers that they are not lying about the conflict in terms oh no because they can only the transaction those are theirs so they would be the the the the guys who are disrupting around so yeah never mind</p><p>Speaker 0: 01:26:01</p><p>I think like I think you could just assume that like if this transaction exists and it&rsquo;s signed that&rsquo;s already bad enough right</p><p>Speaker 1: 01:26:16</p><p>okay guys no one you stop the video in about five minutes.
+Just a heads up.</p><p>Speaker 2: 01:26:22</p><p>Okay.
+All right.</p><p>Speaker 0: 01:26:26</p><p>Yeah, it took long.</p><h2 id=coinshuffle-with-arbitrary-numbers-of-malicious-users>CoinShuffle++ with arbitrary numbers of malicious users.</h2><p>Speaker 1: 01:26:31</p><p>So maybe I&rsquo;ll ask a question if that&rsquo;s okay.
+Tim, in the slide&mldr;</p><p>Speaker 0: 01:26:44</p><p>Yep.
+Well, you can&mldr;
+Usually you ask the speaker to go back to the slide, but you can go back to the slide.</p><p>Speaker 1: 01:26:55</p><p>So can you talk a bit more about how this would look like depending on how many malicious peers there are?</p><p>Speaker 0: 01:27:05</p><p>That&rsquo;s a good question.
+So this basically assumes no malicious users, which basically means four rounds, right?
+And you know, you know the protocol, protocol needs four plus two F rounds if you have F malicious users.
+So you can already, like, you&rsquo;re just using this number, you could just scale the graph a little bit.
+The problem is that this is not entirely the right answer because here when I say there are no malicious users, that also here means that they are all pretty responsive, right?
+So this is a synchronous protocol, so At some point, I need to decide when somebody is offline.
+I need some kind of timeout.
+And now, in this setting here, basically, we don&rsquo;t need a timeout because we assume everybody is offline.</p><div class=row></div></div></div></div><script src=https://btctranscripts.com/lib/jquery.min.js></script><script src=https://btctranscripts.com/lib/popper.min.js></script><script src=https://btctranscripts.com/js/bootstrap.min.js></script><script type=text/javascript src=/plugins/lunr.min.js></script><script type=text/javascript src=/plugins/auto-complete.js></script><link href=/plugins/auto-complete.css rel=stylesheet><script type=text/javascript>var baseurl="https://btctranscripts.com/"</script><script type=text/javascript src=/plugins/search.js></script><script type=text/javascript src=https://btctranscripts.com/js/custom.js></script><script type=text/javascript src=/plugins/clipboard.js></script><script>new ClipboardJS(".btn")</script></body></html>

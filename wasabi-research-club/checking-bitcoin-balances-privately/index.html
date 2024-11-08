@@ -1,0 +1,949 @@
+<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=canonical href=https://btctranscripts.com/wasabi-research-club/checking-bitcoin-balances-privately/><title>Checking Bitcoin balances privately | ₿itcoin Transcripts
+</title><link href=https://btctranscripts.com/css/fontawesome.min.css rel=stylesheet><link rel=stylesheet href=https://btctranscripts.com/css/ace.min.css><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://btctranscripts.com/images/btctranscripts.png"><meta name=twitter:title content="Samir Menon - Checking Bitcoin balances privately"><meta name=twitter:description content="In this video, the Wasabi Research Club delves into the topic of checking Bitcoin balances privately. They discuss the use of homomorphic encryption and private information retrieval to protect users&rsquo; privacy when querying data from a server. They explore different solutions and strategies to address challenges such as address linkability, block retrieval, and the scalability and cost of checking balances. The team also emphasizes the need for an open standard for private information retrieval to ensure decentralization. They discuss the use of Tor and homomorphic encryption together, as well as the possibility of batching requests to improve efficiency. The video concludes by highlighting the ongoing research and exploration of potential solutions to ensure private querying of Bitcoin balances and more&mldr;"><script async src=https://visits.bitcoindevs.xyz/script.js data-website-id=06384ada-7f1c-44c2-a6d9-d830fb23e122></script></head><body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id=navbarMain><div class=container><div><a class=navbar-brand href=/>₿itcoin Transcripts</a></div><div class="collapse navbar-collapse" id=navbarMainCollapse><ul class="navbar-nav ml-auto"><li class=nav-item><a class=nav-link href=/es>es</a></li><li class=nav-item><a class=nav-link href=/pt>pt</a></li><li class=nav-item><a class=nav-link href=/zh>zh</a></li><li class=nav-item><a class=nav-link href=https://github.com/bitcointranscripts/bitcointranscripts target=_blank><i class='fab fa-github'></i></a></li></ul></div></div></nav><div class="alert alert-warning fade show sticky-banner" role=alert><strong><a href=https://review.btctranscripts.com target=_blank data-umami-event=click-banner>Get paid to review technical Bitcoin transcripts
+</a></strong><button type=button class=close data-dismiss=alert aria-label=Close>
+<span aria-hidden=true>&#215;</span></button></div><div class=container-fluid><div class=row><div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0"><button class="navbar-toggler navbar-toggler-right collapsed" type=button data-toggle=collapse data-target=#sidenav-left-collapse aria-controls=sidenav-left-collapse aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse align-items-start flex-column" id=sidenav-left-collapse><form class="form-inline my-2 my-lg-0 searchbox"><input class="form-control mr-sm-2 w-100" data-search-input id=search-by type=text placeholder='Search (press "/")'></form><ul class="navbar-nav flex-column pt-3"><li data-nav-id=/adopting-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/adopting-bitcoin/><h6>Adopting Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/adopting-bitcoin/2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/adopting-bitcoin/2021/><h6>Adopting Bitcoin 2021</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/adopting-bitcoin/2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/adopting-bitcoin/2022/><h6>Adopting Bitcoin 2022</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/advancing-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/><h6>Advancing Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/advancing-bitcoin/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2019/><h6>Advancing Bitcoin 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/advancing-bitcoin/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2020/><h6>Advancing Bitcoin 2020</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/advancing-bitcoin/2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2022/><h6>Advancing Bitcoin 2022</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/advancing-bitcoin/2023/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2023/><h6>Advancing Bitcoin 2023</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/andreas-antonopoulos/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/andreas-antonopoulos/><h6>Andreas Antonopoulos</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/austin-bitcoin-developers/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/austin-bitcoin-developers/><h6>Austin Bitcoin Developers</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/baltic-honeybadger/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/><h6>Baltic Honeybadger</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/baltic-honeybadger/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/2018/><h6>Baltic Honeybadger 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/baltic-honeybadger/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/2019/><h6>Baltic Honeybadger 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bit-block-boom/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bit-block-boom/><h6>Bit Block Boom</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bit-block-boom/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bit-block-boom/2019/><h6>Bit Block Boom 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-2024/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-2024/><h6>Bitcoin 2024 Nashville</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/><h6>Bitcoin Core Dev Tech</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bitcoin-core-dev-tech/2015-02/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2015-02/><h6>Bitcoin Core Dev Tech 2015</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2017-09/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2017-09/><h6>Bitcoin Core Dev Tech 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2018-03/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2018-03/><h6>Bitcoin Core Dev Tech 2018 (Mar)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2018-10/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2018-10/><h6>Bitcoin Core Dev Tech 2018 (Oct)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2019-06/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2019-06/><h6>Bitcoin Core Dev Tech 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2022-10/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2022-10/><h6>Bitcoin Core Dev Tech 2022</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2023-04/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2023-04/><h6>Bitcoin Core Dev Tech 2023 (Apr)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2023-09/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2023-09/><h6>Bitcoin Core Dev Tech 2023 (Sept)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2024-04/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2024-04/><h6>Bitcoin Core Dev Tech 2024 (Apr)</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/edgedevplusplus/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/edgedevplusplus/><h6>Bitcoin Edge Dev++</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/edgedevplusplus/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/edgedevplusplus/2017/><h6>Bitcoin Edge Dev++ 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/edgedevplusplus/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/edgedevplusplus/2018/><h6>Bitcoin Edge Dev++ 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/edgedevplusplus/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/edgedevplusplus/2019/><h6>Bitcoin Edge Dev++ 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-explained/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-explained/><h6>Bitcoin Explained</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-magazine/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-magazine/><h6>Bitcoin Magazine</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-review-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-review-podcast/><h6>Bitcoin Review Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoinplusplus/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinplusplus/><h6>Bitcoin++</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bitcoinplusplus/2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinplusplus/2022/><h6>Bitcoin++ 2022</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoinplusplus/layer-2/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinplusplus/layer-2/><h6>Layer 2</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoinplusplus/onchain-privacy/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinplusplus/onchain-privacy/><h6>Onchain Privacy</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoinology/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinology/><h6>Bitcoinology</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/blockchain-protocol-analysis-security-engineering/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/><h6>Blockchain Protocol Analysis Security Eng</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/blockchain-protocol-analysis-security-engineering/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2017/><h6>Blockchain Protocol Analysis Security Engineering 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/blockchain-protocol-analysis-security-engineering/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2018/><h6>Blockchain Protocol Analysis Security Engineering 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/blockstream-webinars/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockstream-webinars/><h6>Blockstream Webinars</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/boltathon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/boltathon/><h6>Boltathon</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/breaking-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/><h6>Breaking Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/breaking-bitcoin/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/2017/><h6>Breaking Bitcoin 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/breaking-bitcoin/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/2019/><h6>Breaking Bitcoin 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/building-on-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/building-on-bitcoin/><h6>Building On Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/building-on-bitcoin/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/building-on-bitcoin/2018/><h6>Building On Bitcoin 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/chaincode-residency/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-residency/><h6>Chaincode Residency</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/chicago-bitdevs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chicago-bitdevs/><h6>Chicago Bitdevs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/coindesk-consensus-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coindesk-consensus-2016/><h6>Coindesk Consensus</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/coordination-of-decentralized-finance-workshop/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/><h6>Coordination of Decentralized Finance</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/coordination-of-decentralized-finance-workshop/2020-stanford/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/2020-stanford/><h6>2020 Stanford</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/c-lightning/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/c-lightning/><h6>Core Lightning Developer Call</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/cppcon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/><h6>CPPcon</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/cppcon/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/2017/><h6>CPPcon 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/cppcon/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/2020/><h6>CPPcon 2020</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/cryptoeconomic-systems/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cryptoeconomic-systems/><h6>Cryptoeconomic Systems</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/cryptoeconomic-systems/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cryptoeconomic-systems/2019/><h6>Cryptoeconomic Systems 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/dallas-bitcoin-symposium/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/dallas-bitcoin-symposium/><h6>Dallas Bitcoin Symposium</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/decentralized-financial-architecture-workshop/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/decentralized-financial-architecture-workshop/><h6>Decentralized Financial Architecture Workshop</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-developers-miners-meeting-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-developers-miners-meeting-2016/><h6>Developers-Miners Meeting</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/greg-maxwell/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/greg-maxwell/><h6>Greg Maxwell</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/grincon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/grincon/><h6>Grincon</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/grincon/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/grincon/2019/><h6>Grincon 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/honey-badger-diaries/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/honey-badger-diaries/><h6>Honey Badger Diaries</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/iacr/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/iacr/><h6>IACR Crypto</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/la-bitdevs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/la-bitdevs/><h6>LA Bitdevs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/layer2-summit/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/layer2-summit/><h6>Layer2 Summit</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/layer2-summit/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/layer2-summit/2018/><h6>Layer2 Summit 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/learning-bitcoin-and-design/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/learning-bitcoin-and-design/><h6>Learning Bitcoin and Design</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/lets-talk-bitcoin-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lets-talk-bitcoin-podcast/><h6>Lets Talk Bitcoin Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/lightning-conference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-conference/><h6>Lightning Conference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/lightning-conference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-conference/2019/><h6>Lightning Conference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/lightning-hack-day/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-hack-day/><h6>Lightning Hack Day</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/lightning-specification/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-specification/><h6>Lightning Specification</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/london-bitcoin-devs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/london-bitcoin-devs/><h6>London Bitcoin Devs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/magicalcryptoconference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/magicalcryptoconference/><h6>Magicalcryptoconference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/magicalcryptoconference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/magicalcryptoconference/2019/><h6>Magicalcryptoconference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/misc/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/misc/><h6>Misc</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/><h6>MIT Bitcoin Expo</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2015/><h6>MIT Bitcoin Expo 2015</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2016/><h6>MIT Bitcoin Expo 2016</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2017/><h6>MIT Bitcoin Expo 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2018/><h6>MIT Bitcoin Expo 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2019/><h6>MIT Bitcoin Expo 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2020/><h6>MIT Bitcoin Expo 2020</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2021/><h6>MIT Bitcoin Expo 2021</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2022/><h6>MIT Bitcoin Expo 2022</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2024/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2024/><h6>MIT Bitcoin Expo 2024</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/munich-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/munich-meetup/><h6>Munich Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/noded-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/noded-podcast/><h6>Noded Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/potzblitz/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/potzblitz/><h6>Potzblitz! - The weekly Lightning talk</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/realworldcrypto/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/><h6>Realworldcrypto</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/realworldcrypto/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/2018/><h6>Realworldcrypto 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/realworldcrypto/2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/2021/><h6>Realworldcrypto 2021</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/rebooting-web-of-trust/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/rebooting-web-of-trust/><h6>Rebooting Web Of Trust</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/rebooting-web-of-trust/2019-prague/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/rebooting-web-of-trust/2019-prague/><h6>2019 Prague</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/ruben-somsen/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/ruben-somsen/><h6>Ruben Somsen</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/satoshi-roundtable/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/satoshi-roundtable/><h6>Satoshi Roundtable</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/satoshi-roundtable/sr-004/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/satoshi-roundtable/sr-004/><h6>Sr 004</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/scalingbitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/><h6>Scaling Bitcoin Conference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/scalingbitcoin/hong-kong-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/hong-kong-2015/><h6>Hong Kong (2015)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/milan-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/milan-2016/><h6>Milan (2016)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/montreal-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/montreal-2015/><h6>Montreal (2015)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/stanford-2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/><h6>Stanford (2017)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/tel-aviv-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/><h6>Tel Aviv (2019)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/tokyo-2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/><h6>Tokyo (2018)</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/sf-bitcoin-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/sf-bitcoin-meetup/><h6>SF Bitcoin Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/simons-institute/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/simons-institute/><h6>Simons Institute</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/stanford-blockchain-conference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/><h6>Stanford Blockchain</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/stanford-blockchain-conference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/2019/><h6>Stanford Blockchain Conference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/stanford-blockchain-conference/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/2020/><h6>Stanford Blockchain Conference 2020</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/stephan-livera-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stephan-livera-podcast/><h6>Stephan Livera Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/sydney-bitcoin-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/sydney-bitcoin-meetup/><h6>Sydney Bitcoin Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/tabconf/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tabconf/><h6>TABConf</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/tabconf/2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tabconf/2021/><h6>TABConf 2021</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/tabconf/2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tabconf/2022/><h6>TABConf 2022</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/texas-bitcoin-conference-2014/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/texas-bitcoin-conference-2014/><h6>Texas Bitcoin Conference</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/tftc-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tftc-podcast/><h6>TFTC: A Bitcoin Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/the-bitcoin-development-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/the-bitcoin-development-podcast/><h6>The Bitcoin Development Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/chaincode-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-podcast/><h6>The Chaincode Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/ux-research/ class="nav-item my-1"><a class="nav-link p-0" href=/ux-research/><h6>UX Research Calls</h6></a></li><li data-nav-id=/verifiable-delay-functions/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/verifiable-delay-functions/><h6>Verifiable Delay Functions</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/verifiable-delay-functions/vdf-day-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/verifiable-delay-functions/vdf-day-2019/><h6>Vdf Day 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/vr-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/vr-bitcoin/><h6>VR Bitcoin</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/w3-blockchain-workshop-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/w3-blockchain-workshop-2016/><h6>W3 Blockchain Workshop</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/wasabi-research-club/ class="nav-item my-1 parent haschildren"><a class="nav-link p-0" href=/wasabi-research-club/><h6>Wasabi Research Club</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/wasabi-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/wasabi-podcast/><h6>Wasabikas Bitcoin Privacy Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/what-bitcoin-did-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/what-bitcoin-did-podcast/><h6>What Bitcoin Did Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></div></nav></div><div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky"><div class=docs-toc><nav id=TableOfContents><ul><li><ul><li><a href=#block-filter-solution>Block Filter Solution</a></li><li><a href=#open-questions>Open Questions</a></li><li><a href=#miracle-inclusion-proof>Miracle Inclusion Proof</a></li><li><a href=#private-information-retrieval-from-a-database>Private Information Retrieval from a Database</a></li><li><a href=#password-checker>Password Checker</a></li><li><a href=#homomorphic-encryption>Homomorphic Encryption</a></li></ul></li></ul></nav></div></div><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3"><a href=/>Home</a>
+&lt; <a href=/wasabi-research-club/>Wasabi Research Club
+</a>&lt; Checking Bitcoin balances privately<h1>Checking Bitcoin balances privately</h1><p>Speakers:
+<a href=/speakers/samir-menon>Samir Menon</a></p><p><i>Date: September 27, 2022</i></p><p><i>Transcript By: kouloumos via tstbtc v1.0.0 --needs-review</i></p><p>Tags:
+<a href=/tags/research>Research</a>, <a href=/tags/privacy-enhancements>Privacy enhancements</a>, <a href=/tags/cryptography>Cryptography</a></p><p>Media:
+<a href='https://www.youtube.com/watch?v=8L725ufc-58'>https://www.youtube.com/watch?v=8L725ufc-58</a></p><div class="alert alert-warning"><div class=ai-generated><i class='fas fa-robot'></i>
+<span>AI-Generated Transcript</span></div><span>Review this transcript and earn sats. </span><a href=https://review.btctranscripts.com target=_blank data-umami-event=click-transcript-banner>Learn More ></a></div><p>Speaker 0: 00:00:00</p><p>So hello and welcome to the Wasabi Wallet Research Club.
+Today we are speaking from with Samir from Spiral, which is the title of a fancy cryptography paper of homomorphic value encryption or homomorphic encryption and private information retrieval.
+The gist of this cryptomagic is that a client can request data from a server, but the server does not know which data was requested.
+And there are different variants of the CryptoMagick for different use cases.
+And there are currently two proof of concept apps.
+One is a Wikipedia, so where I think six gigabytes of text entries, no pictures, can be queried so that the server doesn&rsquo;t know which article you&rsquo;re interested in.
+And the second, more pressing and important for us, is an anonymous block explorer so that you can query the UTXO set and request an address and the server will give you the balance of that address.
+And well, the server doesn&rsquo;t know which address you&rsquo;re actually requesting.
+So that sounds like impossible magic.
+And Samir, please tell us how all the magic works.</p><p>Speaker 1: 00:01:26</p><p>Yeah, that was a great introduction.
+Honestly, a little better than the one I had.
+Thank you.
+Yeah, that&rsquo;s exactly what it is.
+That&rsquo;s kind of what got me into this field is that it does sound like magic and it does sound like you probably shouldn&rsquo;t be able to do something like that, but you can.
+So yeah.
+I&rsquo;m actually going to just mostly, I&rsquo;ll talk a little bit about the internals of how Spiral works at the end, but I&rsquo;ll kind of first just like, let&rsquo;s just try to situate, you know, the security model of a server that doesn&rsquo;t learn what you query is kind of complicated.
+And so let&rsquo;s just first try to compare it to all the other ways you can check a Bitcoin balance.
+And let&rsquo;s just like situate it amongst the many, many alternative ways, you know, one could look up the balance of a Bitcoin address.
+A little background on me, I was a graduate student at Stanford and this PAR project was kind of my senior project for my master&rsquo;s and it was advised by Dan Bonet but it kind of I went and got a real job, and so I stopped working on it for a little bit.
+Then the itch came back and I worked on this again and published this paper, I believe, I guess I presented it in May of this year.
+So we&rsquo;re starting a company, I&rsquo;m quitting my job soon.
+So yeah, yeah.
+And we&rsquo;re trying to start a company around this technology.
+All right, so today, I think you guys and me probably have a very similar goal, which is what we want our private-like clients.
+We want clients that don&rsquo;t have to run a full node, but also do not leak information to third parties or as little information as possible.
+Today, third parties learn a lot of information when you use them directly.
+So if you&rsquo;re a like client and you just over the regular internet connect to a full node, you are going to tell them a lot of information.
+In particular, they&rsquo;re going to get both your IP address and your actual Bitcoin wallet addresses as you query them.
+So that&rsquo;s pretty bad.
+You&rsquo;re kind of linking this very identity correlated feature, an IP address with your money.
+You can use a public block explorer to do this instead of connecting to a full node directly, but it&rsquo;s kind of the same picture.
+You&rsquo;re still sending your IP address and your wallet address to a third party who can link them.
+A really good frontline solution is to use Tor.
+So a very simple thing to do is to remove this network level identifier, the IP address, from the information that the public block explorer gets.
+There is still some leakage.
+And in particular, the leakage is gonna come from the fact that you typically query many more than one address.
+And even using something like Tor, even if you actually build a new circuit every time, even if you appear to the public block explorer, like someone coming from many different clients, you&rsquo;re going to still leak actually the metadata, if you will, that you&rsquo;re querying all these addresses at the same time and over Tor.
+It depends on the actual practical circumstances, but there&rsquo;s still even just timing will lead actually that these addresses are related.
+And of course, like figuring out that addresses are related is actually a pretty big deal because some of the point of like things like CoinJoin is to actually hide that exact information that two addresses are controlled by the same person.
+So this linkability problem is important, we think.
+There&rsquo;s another solution in BIP 157 and 158.
+I think it was implemented by the Neutrino wallet also, which is this block filter solution.</p><h2 id=block-filter-solution>Block Filter Solution</h2><p>Speaker 1: 00:05:42</p><p>So basically what happens here, I&rsquo;m sure you guys know, but it&rsquo;s basically compact data about the transactions in each block is kind of streamed to the client continuously.
+And then when the client sees that a block contains a relevant transaction, it just fetches the full block.
+So there&rsquo;s like a couple complications with this way of doing things.
+One, I guess, practical thing is that the blocks are kind of big.
+The blocks are one megabyte up to one megabyte each.
+And for kind of privacy reasons, you can&rsquo;t just get a subset of the block.
+If you have a wallet that&rsquo;s kind of busy, like if you use your wallet, say, every hour, you have to download a megabyte an hour.
+So as frequently as your addresses are making transactions, that&rsquo;s how much data you need to kind of stream.
+The filters themselves are also, you know, a kind of continuous ongoing cost, because you&rsquo;ve got to monitor.
+So if you&rsquo;re offline for some time, you need to kind of scan through all the filters and see if you&rsquo;re offline.
+And maybe in a different way, there&rsquo;s kind of this leakage problem.
+So one problem is the act of fetching the block is not protected.
+I mean, we announce which block we&rsquo;re trying to fetch.
+But what we do is, I mean, as a mitigation, you know, if we did this all with the same node, that would be bad because the node could kind of pretty easily tell from the blocks that you fetch which address you&rsquo;re interested in.
+You could just kind of do an intersection attack, can work quite well.
+The mitigation is generally that you connect to different peers for each block.
+So you connect to a different peer to download each block.
+But you know again here the timing really trips us up right again just knowing that just watching it even if I&rsquo;m not like even if I&rsquo;m not a Tor adversary, I&rsquo;m not able to like, you know, de-anonymize you on Tor.
+If I&rsquo;m just like your university network administrator, and I just watch your bandwidth consumption, I will just notice a one megabyte download on some cadence, right?
+And if I just like kind of correlate that with blocks on the chain, then I just kind of see, it seems like you might have downloaded block 379 and 24.
+It doesn&rsquo;t become terribly difficult to figure out an address.
+So there&rsquo;s some leakage.
+I think in all of these examples, the attack I outlined is kind of theoretical, but it&rsquo;s mostly just to illustrate that there is leakage that&rsquo;s still kind of there.
+There are some other options which people kind of suggest.
+I don&rsquo;t know if you guys are the audience who would exactly suggest this.
+I guess industry kind of more, I don&rsquo;t know, the A16Z folks or whatever would say, oh, why don&rsquo;t you just run it on AWS?
+But of course, kind of just replacing a box with a different box, right?
+Here, now you&rsquo;re just trusting the cloud provider kind of to do everything.
+And I guess another suggestion folks have is running a full node.
+And I think that, you know, to be honest, that is a great suggestion.
+If you want really sovereign kind of control over the data, I think running a full node yourself is a good idea.
+It is just kind of hard.
+I mean, you have to make it remotely accessible.
+It&rsquo;s kind of annoying to set up and maintain.
+If we could find a way without having to run a full node, allow clients to kind of privately query the blockchain, that would still be a good thing because we want to reduce the barrier to entry, we want more people to use this.
+Yeah, I mean, there aren&rsquo;t that many full nodes, so not that many people do something like this.
+So the way Spiral works is it uses homomorphic encryption to remove the wallet addresses piece of the query.
+So the server is still learning your IP address, but now there&rsquo;s no useful data to correlate with that IP address.
+The basic idea is a spiral uses homomorphic encryption to encrypt your query when it leaves your device, and then it&rsquo;s able to process your query and return an encrypted answer without learning anything about your query.
+The guarantee is it&rsquo;s not statistical, this is not like a mixing or any kind of thing like that.
+This is, it&rsquo;s not like hashing, it&rsquo;s not buckets, it&rsquo;s a full cryptographic guarantee that the server cannot learn anything about the query, even if they&rsquo;re actively malicious.
+It does incur higher computational costs for the server.
+In particular, the server has to do work that&rsquo;s linear in the size of the database.
+So if the database gets bigger, so today the database is a bunch of Bitcoin balances, if we wanted to include, you know, when we added transaction data or if we want to include more data say about individual transactions, that will make the server&rsquo;s runtime longer.
+But On the other hand, the communication is better, and there&rsquo;s kind of no ongoing syncing really needed.
+The server can kind of keep its database up to date, and whenever the client wants to get the most up-to-date information, they can make another query.
+Today, we only support balances and the five most recent UTXOs. That&rsquo;s because of this thing I talked about earlier where the computational cost for the server is linear in the size of the database.
+So if we wanted to make it 10 most recent, it would cost more.
+So we need to think carefully about how we can make that kind of scale to at least a use case that&rsquo;s useful.
+And yeah, of course, the code is open source, and there&rsquo;s a paper and everything.
+And I&rsquo;m happy to answer any questions about how it works.
+I have a slide that kind of explains more of the technical underpinnings of Spiral.
+So if you want, I can just go through that slide if you want to hear more about homomorphic encryption stuff.</p><h2 id=open-questions>Open Questions</h2><p>Speaker 1: 00:12:00</p><p>But before I do that, I&rsquo;ll just kind of say, yeah, I think the open questions for us are, you know, what minimum set of data is enough?
+I think balance is on its own, it&rsquo;s not quite enough.
+I think if I was, When I run a wallet software, I kind of expect more than just the balance in all my addresses.
+We obviously need to think about fetching more than one address.
+Because today there&rsquo;s like a website and you can fetch one address, but you know, wallets have more than one address.
+And yeah, I think there&rsquo;s a couple options on how we do that.
+We need to think a little bit about the pay or incentivization structure for servers.
+This is a kind of class in computation.
+So how can we make it feasible or practical for them?
+And long term, I think I would like to see an open standard for PIR for this data.
+So what we want is something that&rsquo;s not tied to a company or a person or an organization, but just kind of ideally, like maybe a BIP or something that allows us to not tie ourselves to any particular scheme and do this PAR thing as an extension of our current way of, you know, say doing a get block RPC or whatever.
+So yeah.
+Would you like me to just go through the homomorphic encryption step?
+Because I got the idea.
+Would that be interesting?
+Yeah.</p><p>Speaker 2: 00:13:32</p><p>Go. Max, actually, maybe we can take an intermission just to ask a few questions and then we&rsquo;ll continue with</p><p>Speaker 1: 00:13:39</p><p>the- That sounds great.
+Yeah.</p><p>Speaker 2: 00:13:42</p><p>Sure.
+Because I think a lot of people are going to have questions here and I&rsquo;ll just start myself.
+Can you kind of give us a ballpark of the cost of the server per UTXO?</p><p>Speaker 1: 00:13:57</p><p>Sure.
+So I guess today what we do is we take the UTXO set and we kind of summarize it.
+So today we take the UTXO set and for every address we take the top five UTXOs if there are up to five.
+And we also compute its balance.
+And that&rsquo;s the data we do today.
+If you wanted to, say, query the entire UTXO set, that would be slightly bigger than what I outlined, but not that much bigger.
+If you want a sense of the size of the computational cost, maybe the simplest summary would be, you know, for every, yeah, I guess, if you think of the database size, the computational cost is about 300 megabytes per second.
+So what that means is like, if the database is one gig, it takes three CPUs to do this task.
+So the task is fully parallelizable.
+So you can think of computation as just a cost.
+You know, like if you did it with three cores, you know, you would take one second.
+But yeah, it&rsquo;s around 300 megabytes per second.</p><p>Speaker 2: 00:15:15</p><p>I see.
+So the big situation here is that for WasabiWallet, we would want, as like an MVP for us to work, the amounts simply wouldn&rsquo;t be enough.
+Our users, they want proof.
+They want to know that it&rsquo;s connected to block headers that are in the chain with the most proof of work.
+But on top of that, we also need to know that the server isn&rsquo;t in some ways deceiving us.
+For example, just lowering the balances of all the users or just omitting certain UTXOs. Block filters do a nice job of this because you&rsquo;re, you know, you&rsquo;re just hoping the server does an accurate job of creating the filters and you&rsquo;re clearing the blocks and you get these entire blocks.
+So the only way that you&rsquo;re going to have an incorrect balance is if the server somehow malleates a filter but there&rsquo;s not really a good, you know, it&rsquo;s kind of a weird, unclear attack vector.
+So how practical would it be to actually get some kind of proofs on top of the balance that you&rsquo;re already producing?</p><p>Speaker 1: 00:16:35</p><p>Yeah, yeah, that&rsquo;s a great question.
+So, so, so, I&rsquo;m sure the exact name of this is so, so what we want is a Merkle inclusion proof, right?</p><h2 id=miracle-inclusion-proof>Miracle Inclusion Proof</h2><p>Speaker 1: 00:16:45</p><p>We, we, We just want to say that this transaction is part of this block and to do that we need the log, if n is the number of transactions, we need log n kind of hashes to show inclusion.
+I think we use this kind of vertical proof of inclusion somewhere else, but I&rsquo;m forgetting.
+I think there&rsquo;s a wallet that that uses these.
+But yeah, so to include those that would be more costly.
+And yeah, to be clear, today we definitely do not have any kind of, you know, there&rsquo;s no proof that the server is really serving you the right data.
+So that is a big problem.
+Obviously, we need to kind of have some proof.
+The good news is, yeah, we could always add Merkle proofs of inclusion.
+If you do the math on the size of those, it&rsquo;s like roughly, I think I looked at this before, it was something like on the order of hundreds of bytes, maybe 200 bytes or something.
+So, it would be a significant increase, but possible.
+I&rsquo;ll highlight one alternative way of doing this, which is actually suggested in the bit, in bit 157.
+There, what we could instead do is actually continue to use block filters, but use PIR for the block retrieval part.
+So you would retrieve blocks using PIR, but you would use client block filters as normal.
+I think the problem there is it doesn&rsquo;t save on your bandwidth.
+I could be wrong, but I think most of the bandwidth is coming from the filters and coming from the streaming to the client of the filter data.
+So you wouldn&rsquo;t say that.</p><p>Speaker 0: 00:18:28</p><p>Just as a heads up for you, we&rsquo;re downloading the filters from our server, like the Wasabi backend server, but then the blocks are downloaded from the Bitcoin peer-to-peer network.
+So the server doesn&rsquo;t incur the block download cost.</p><p>Speaker 1: 00:18:41</p><p>Oh, okay.
+So is the main cost for you guys right now actually the filters because you incur that cost as I see.
+Yeah, it&rsquo;s a large outgoing cost.
+I&rsquo;m sure your hosting provider is charging you.
+Yeah, okay.
+Yeah, So, yeah, actually doing proofs of inclusion is possible, but yeah, it&rsquo;s good to know, yeah, you need that kind of to deploy this for real.
+If I can ask a follow-up question, do you guys, do you guys, to do this, do you, Are you mostly querying the UTXO set, the full set of transactions, just balances?
+Like what kind of data is crucial?</p><p>Speaker 0: 00:19:30</p><p>We do want the full transaction history list.
+Yeah.
+And so that&rsquo;s what we get in the filters right now.
+Wasabi is SecWit only, so we don&rsquo;t have to create filters pre-SecWit, August 2018 or something, or 17.
+Okay.
+Yeah.</p><p>Speaker 2: 00:19:48</p><p>And the filters are as large as the number of BEC 32 addresses in the blocks?</p><p>Speaker 1: 00:19:55</p><p>Sorry, say that one more time.</p><p>Speaker 2: 00:19:57</p><p>The filters are all essentially a compact representation of all BEC 32 addresses in a block.
+Single public key.
+Okay, yeah.
+Single public key BEC 32 addresses.
+So they&rsquo;re very compact, you know, three years ago, because it was a minority of people use those addresses more and more they become larger and larger but they&rsquo;re they&rsquo;re they&rsquo;re very space efficient I would I don&rsquo;t know the exact details maybe Max can answer but the exact</p><p>Speaker 0: 00:20:31</p><p>number of megabytes or something I think it&rsquo;s below a gigabyte I might be off here but it&rsquo;s not that much.</p><p>Speaker 2: 00:20:39</p><p>Oh below a gigabyte for the entire four years.</p><p>Speaker 0: 00:20:43</p><p>That might be complete bullshit But I think yes.</p><p>Speaker 1: 00:20:47</p><p>That sounds right.
+I mean, it&rsquo;s not that much data, right?
+Because it&rsquo;s also statistical, right?
+It&rsquo;s a Bloom filter-esque thing, right?</p><p>Speaker 2: 00:20:56</p><p>That&rsquo;s right.
+When it&rsquo;s not exact, then there are some false positives, but there are no false negatives.
+That&rsquo;s the goal.
+You&rsquo;ll never miss.</p><p>Speaker 0: 00:21:08</p><p>But you will get more.
+Yeah, that false negative, that false positive rate can be configured.
+And the lower you want that first positive rate, the larger the filter size is.
+I&rsquo;m not exactly sure where we fall in the line of tradeoff here.
+Yeah, I don&rsquo;t know details like that.
+Lucas is in the call, so maybe he knows.</p><p>Speaker 1: 00:21:34</p><p>Happy to take any other questions, Elsa.</p><p>Speaker 3: 00:21:38</p><p>Hello, guys.
+It&rsquo;s quite nice to be here.
+I don&rsquo;t have any strong background in crypto and higher order math, but as a layman, you know, is there a way to simplify the explanation of how homomorphic encryption works?
+I have tried to see the, you know, the information on the internet, but it&rsquo;s just not possible for a basic layman like me.
+Would that be possible on this call, or is it not?</p><p>Speaker 1: 00:22:17</p><p>Yeah, I have a slide.
+Let&rsquo;s talk a little bit more about Wasabi Wallet and privacy, but then I can give that explanation.
+Does that sound good?</p><p>Speaker 3: 00:22:28</p><p>Yes, thank you very much.
+Thank you.</p><p>Speaker 0: 00:22:34</p><p>What I do wonder is, you do need to know the input, like the value of the UTXO that you&rsquo;re trying to spend.
+Does your database include amounts?</p><p>Speaker 1: 00:22:49</p><p>Yes.
+Yeah.
+Yes.
+So the total size of our database is roughly one gig right now.
+We translate every, all UTXOs kind of reduced down to about a gig of data.
+If we instead made the set all UTXOs and we didn&rsquo;t just take the five most recent ones for every address, the database would not be much larger.
+It would be like a small multiple, like maybe three or four times larger, that would be kind of feasible.
+I guess when I&rsquo;m thinking about it, I suppose it helps that you guys only support the BEC 32 addresses, because That means there&rsquo;s kind of a limited set of addresses that are on chain that have transactions for that.
+But yeah, we need to think about how big would it be to include all transaction history?
+Because UTXOs are very different than every transaction.
+So, yeah.
+OK, It&rsquo;s good to know what the&mldr;
+Yeah.
+And just to ask one more time.
+So, the problem that you guys face with block filters is Mostly that you have to download this gigabyte of things to get started.
+Is that the issue?
+Mostly?</p><p>Speaker 0: 00:24:08</p><p>So you have to download, first of all, the server has to generate filters, which can take weeks.
+Then the clients have to download all the filters, which we do over Tor, which also can take an hour maybe.
+I see, right.
+I forgot it&rsquo;s all over Tor.</p><p>Speaker 1: 00:24:23</p><p>So that also… Exactly.
+Yes.</p><p>Speaker 0: 00:24:29</p><p>And Then for block downloads, we spin up a new Tor identity for every Bitcoin peer that we download a block from.
+So all of this together is, if you have a really big wallet and you&rsquo;re making a full rescan, I mean, it can take a couple of weeks, if not a month.</p><p>Speaker 1: 00:24:47</p><p>I see the issue.
+Yeah, so there, yeah, weeks if not a month.
+Yeah, okay.
+So,</p><p>Speaker 2: 00:24:57</p><p>Let me just add one more thing.
+So when you use Wasabi Wallet, you&rsquo;re making many addresses because you&rsquo;re you&rsquo;re quenching so you have to make a new address every time and if you use the wallet regularly you might go through something like 300 addresses or 400 or thousand over time that means that what you&rsquo;re looking for in the filters is actually quite broad.
+And so you get more and more false positives.
+And so if you just think it through, you&rsquo;re going to have a thousand blocks or more.
+And each block is actually more than a megabyte typically.
+And so you might end up with a gigabyte of blocks that you have to query, and each one is queried from a different node over a different Tor circuit.
+Not necessarily a different node, just a different Tor circuit.</p><p>Speaker 1: 00:26:00</p><p>So I guess there are two things to ask here.
+One is, so one thing to notice, it&rsquo;s perfectly fine to use this homomorphic stuff with Tor.
+They&rsquo;re orthogonal.
+One hides your IP and one hides the content of your queries.
+Doing both is probably a good thing.
+But I wonder if what homomorphic encryption could allow you to do is not construct a new circuit like every time.
+So if the query is encrypted, in some sense you don&rsquo;t need to use Tor, but if you&rsquo;d like to also kind of hide your network level identifier, you could do both and use Tor, but not build a new circuit every time and instead just make many private queries to the same node.
+This would be presumably faster because Tor circuits can reach decent bandwidth, right, but not if they&rsquo;re, I think, freshly constructed every time, right?
+Then you&rsquo;re going to pay the latency.</p><p>Speaker 0: 00:27:02</p><p>Can we actually make batch requests with Spiral, like requesting multiple addresses simultaneously?</p><p>Speaker 1: 00:27:10</p><p>Yeah, yeah.
+So if you notice today, no, right?
+I mean, we just have like a text field with an address.
+We want to support that.
+There&rsquo;s actually a lot of theory and research about doing batch requests kind of more efficiently.
+So Yeah, I think it&rsquo;s really useful to hear that a very typical use case is like hundreds of addresses, because that says a lot about how we need to build this to make it usable.
+So yeah, OK.
+Yes, so batching is possible, but it&rsquo;s in the works.</p><p>Speaker 0: 00:27:56</p><p>Yeah, by the way, it&rsquo;s way more than just a thousand.
+I&rsquo;m checking a not even that old wallet and it has well 8,000 addresses here 13,000 addresses so since we do you know we do we attempt many coin joins and a lot of them fail and we generate new addresses for each attempted coin join and you can register up to 8 outputs in a round so let&rsquo;s say a round fails, I don&rsquo;t know, 5 times before it succeeds so that&rsquo;s 5 times 8 addresses that we have to add to your gap limit.</p><p>Speaker 1: 00:28:35</p><p>I see.
+So are the addresses that you create there, are they unspent?
+Do they contain any&mldr;
+I mean, If you create an address and no one hears about it, did it really get created?</p><p>Speaker 0: 00:28:50</p><p>Well, in this case, yes, because the CoinJoin coordinator hears about it.
+And probably also the other CoinJoin signers.
+So it&rsquo;s semi-public.</p><p>Speaker 1: 00:29:00</p><p>Yes, but it never&mldr;
+Will it store value?
+It will, right?
+I guess to start the Coinjoin it has some value in it.</p><p>Speaker 0: 00:29:09</p><p>No, sorry.
+So we spend inputs that are addresses with money on them, but then on the output side we create new addresses that are not yet used without money on it.</p><p>Speaker 1: 00:29:18</p><p>Oh, I see.
+So they can be empty output addresses.</p><p>Speaker 0: 00:29:22</p><p>Exactly.
+Those are addresses that never were on the blockchain in an output with any amount of stats.
+It&rsquo;s just unused addresses, so to speak.</p><p>Speaker 1: 00:29:32</p><p>So then those would not need to actually hit any kind of&mldr;
+We don&rsquo;t need to query the blockchain for them at all, right?</p><p>Speaker 0: 00:29:41</p><p>Well, but the client doesn&rsquo;t know if an address is empty or not.
+So we need to query all of them.
+Just a lot of them, the server will say there&rsquo;s nothing on here.</p><p>Speaker 1: 00:29:50</p><p>I see.
+I see.
+Yeah.
+So an easy way to actually resolve that will be to actually just make a set of addresses that have any money.
+So this is a technique we actually use for the current service.
+What you can do is instead create another database that just says, like, does this address have any money at all?
+And that database can be very small, right?
+Because again, we can use like the classic Bloom filter thing where we, it&rsquo;s not quite a Bloom filter because the addresses are already random.
+So just take the X top X bits of every address that has money in it and send these to the client or allow them to fetch them using PIR, right?
+So, yeah.
+And WasabiWallet already handles the mempool, right?
+You guys already kind of privately listen to everything on a mempool and then cross-reference it with the addresses you have and all that.</p><p>Speaker 0: 00:30:52</p><p>Yeah, we build a local mempool.
+The issue is when we&rsquo;re offline, we of course don&rsquo;t know it.
+So maybe actually some private information retrieval over someone else&rsquo;s mempool might be another interesting use case.</p><p>Speaker 1: 00:31:07</p><p>Yeah, so.</p><p>Speaker 0: 00:31:12</p><p>So, sorry, a bit more about the batch requests.
+So, like, would it be possible to just send 10,000 addresses to the server and he responds in a single package?</p><p>Speaker 1: 00:31:26</p><p>So it&rsquo;s definitely possible.
+I mean, the simple way is, yeah, You can send 10,000 queries, you can upload them all, and then just kind of the server can just do all the computation and send you all the responses.
+The problem is going to be, well, the problem is going to be twofold.
+One, there&rsquo;s a significant cost to running a query.
+So a query costs today like six CPU seconds, right?
+So six CPU seconds is not nothing, but it&rsquo;s also, it&rsquo;s something, you know?
+Like It&rsquo;s a significant cost.
+So 10,000 addresses times six CPU seconds is 60,000, it&rsquo;s a thousand hours of computation.
+So it&rsquo;ll be tough.
+So in order to make that work, to make 10,000 addresses work, What we need is to do batching or reduce the number of addresses that we&rsquo;re effectively querying by, like I said, figuring out whether the addresses are empty or kind of reducing the set that way.
+But yeah, 10,000 is hard.
+The other thing is, the other problem is going to be communication.
+So like every query is 14 kilobytes.
+So 10,000 times 14 kilobytes is, you know, a lot.
+And then that&rsquo;s a lot of 140 megabytes to upload.
+So it&rsquo;s not going to be that feasible.</p><p>Speaker 0: 00:33:00</p><p>Actually, to this I have a question, because I saw on the website that the first request, the client needs to send more data, and for every following it&rsquo;s less.</p><p>Speaker 1: 00:33:09</p><p>Yes, yeah.
+Why is that?
+Yeah, it&rsquo;s because the first request contains what&rsquo;s called the setup data or the public parameters.
+Basically, the server sends essentially like an extended, like a large public key to the server.
+So the server uses this public key to kind of let it do the query processing.
+So it&rsquo;s state that the server needs to store on a per client basis, but it has no privacy implication.
+It&rsquo;s just used for the homomorphic processing.
+So that&rsquo;s why it&rsquo;s big.
+And you might have noticed it&rsquo;s pretty big.
+It&rsquo;s like eight megabytes or something.</p><p>Speaker 0: 00:33:59</p><p>And Does that size depend on the database size?</p><p>Speaker 1: 00:34:02</p><p>It does not.
+Or it only logarithmically does.
+So it&rsquo;s like very, I mean, like if the database was 100 times bigger, it would be like 12 megabytes or something.</p><p>Speaker 0: 00:34:17</p><p>Yeah, like, I mean, just general, like, it&rsquo;s a very broad question, but is it, so if we want to have the full TX outset of all, like, of, but actually, we probably also want transaction IDs and stuff like this so basically we want the full transaction metadata blockchain thing for all sacred and taproot outputs yep and let&rsquo;s say we have I don&rsquo;t know 10,000 users or so and each of them has let&rsquo;s say, a thousand addresses or so.
+And this is still rather small scale, but is this completely crazy?</p><p>Speaker 1: 00:35:03</p><p>Yeah, no, no, no, you&rsquo;re asking a very, very good question.
+So, so I think that the way that it&rsquo;s not so so that&rsquo;s, that&rsquo;s very true.
+So, so I think like, It is difficult, especially from a cost perspective, I think, for the server.
+It&rsquo;s difficult to see this scaling to, I check 10,000 addresses kind of regularly.
+Like Every day I check 10,000 addresses and there&rsquo;s like 10,000 users.
+That will quickly become difficult for the server.
+But I think there&rsquo;s two things.
+One is the set of active addresses is not 10,000.
+So what can we do to kind of like reduce the number?
+Two, it is just a cost for the server.
+You know, computation is just money, as we know from proof of work, right?
+So A question is, you know, if clients were willing to pay for it, if I was willing to pay for six CPU seconds for my query, maybe that would be okay.
+I might not be willing to pay 10,000 times six CPU seconds.
+So we&rsquo;d have to see what clients are kind of, you know, quote unquote willing to pay.
+And then also, I guess the last thing I would say is it would be very feasible to use PAR just for blocks.
+So if you think that the privacy leakage is an issue or you&rsquo;re interested in that kind of angle on it, I think just doing PIR, just in that block retrieval phase of the standard client block header thing, if you want to do PIR, I think that is very feasible.
+Is very, very feasible.
+One other thing, I think that there&rsquo;s kind of like a, there&rsquo;s also like a kind of narrow use case for just like onboarding or just like set up.
+I think if you&rsquo;re like a client is setting up and it&rsquo;s taking weeks to sink your wallet, I think it&rsquo;s really powerful that in the meantime you can, you can make queries, for, for addresses.
+You can see if you&rsquo;ve been paid</p><p>Speaker 0: 00:37:21</p><p>privately.
+Yeah, exactly.
+Right, to just get the active wallet balance really quickly.</p><p>Speaker 1: 00:37:26</p><p>And yeah, so no syncing, no.
+Right.
+So actually it might even make sense just as a kind of, yeah, as a fallback or even kind of as a like setup thing.
+I mean, the fact that you don&rsquo;t incrementally have to do anything, like each query costs the same and, or I guess the first one costs a little more, but basically there&rsquo;s no sinking, right?
+There&rsquo;s no like client state that I&rsquo;m trying to get into sync with the chain.
+I&rsquo;m just kind of, I can make a query kind of one-off.
+Something I noticed is, can you query the balance of an address that&rsquo;s not in your wallet today?
+I think you can add a public watch address but you can&rsquo;t you can&rsquo;t actually use it like a block explorer, right?</p><p>Speaker 0: 00:38:08</p><p>Yeah, you cannot and the problem is you would have to run this address through all the filters, download all the past false positive blocks And so it would take a</p><p>Speaker 1: 00:38:18</p><p>long time.
+I don&rsquo;t know if that&rsquo;s a feature.
+Yeah, I don&rsquo;t know if it&rsquo;s a feature you guys are interested in, but I think it would be useful to be able to just say, hey, what, you know, like, yeah, how much is at this address?
+Because today, you know, the option is to go to a Chrome tab and type it in and send it to, you know, who knows, send it to blockchain.com or whoever.</p><p>Speaker 0: 00:38:40</p><p>Yeah, and by the way, if you receive a transaction and you want to, Then you don&rsquo;t know the inputs of that transaction.
+So you, sorry, the input amount of that transaction, because that&rsquo;s on the blockchain, not in the transaction itself, right?
+It&rsquo;s on the previous transaction output.
+And then you cannot do effective fee bumping in a child pays for parent transaction.
+Because you&rsquo;d&mldr;
+So this is an issue that we have of kind of quote-unquote stuck payments that you received.
+And maybe something like that might be helpful.
+And so you can query the amount of that input and then do better fee bumping.</p><p>Speaker 1: 00:39:24</p><p>I see.
+I see.
+So to summarize, You know you received a payment, but you just don&rsquo;t know how much it is, essentially, because that information is just kind of not local.</p><p>Speaker 0: 00:39:38</p><p>No, so you receive a transaction where on the output side your address is.
+That&rsquo;s why the transaction was hit in the filter.
+But you don&rsquo;t know the value of the inputs exactly, because that&rsquo;s in the previous transaction output.
+So you don&rsquo;t know the fee rate that this current transaction has.</p><p>Speaker 1: 00:40:00</p><p>You know that it&rsquo;s less than or equal to, but you don&rsquo;t know what gap was left for the minor in the form of the fee.
+I see.</p><p>Speaker 0: 00:40:08</p><p>Exactly.
+And then you can&rsquo;t do child pays for parent fee calculations.</p><p>Speaker 1: 00:40:14</p><p>So that is a, yeah, that is&mldr;</p><p>Speaker 0: 00:40:17</p><p>It&rsquo;s just one of those edge cases where we thought it would be nice to be able to just well search for an address.
+Yeah.
+But then we realized, yeah, it&rsquo;ll take minutes, you know, hours.</p><p>Speaker 1: 00:40:30</p><p>Right.
+I think, yeah, so long term, I guess I have a slide on this, but, oh, no.
+I think long term, we would like to build a, like an SDK, so that we&rsquo;re not kind of like individually hand engineering the homomorphic encryption, but so that it&rsquo;s kind of a totally generic thing.
+So the dream is that there&rsquo;s like a piece of code that you point a bunch of, like basically an array app, and then there&rsquo;s an endpoint that you can privately query that data using.
+So certainly for all these kinds of smaller things that you want to do, that really kind of makes sense.</p><p>Speaker 0: 00:41:12</p><p>Definitely.
+Oh yeah, by the way, to jump back.
+So you say the client needs to upload his Quantico public key to the server.
+So then all the queries are connected to the same public key?</p><p>Speaker 1: 00:41:26</p><p>So all of the queries are made using the same, yes, each query is connected to the same, let&rsquo;s say, key pair.
+The crucial part is that every query is encrypted.
+So it&rsquo;s encrypted under this key.
+So it&rsquo;s not, the queries, I guess, are identifiably from the same party.
+But what the queries are for is not.
+So I guess there&rsquo;s some there, you&rsquo;re right, there&rsquo;s some meta metadata almost that&rsquo;s that&rsquo;s still visible, right?
+Because you can see, I guess, the main leakage is timing.
+So you can see that some party made five queries over this period of time.</p><p>Speaker 0: 00:42:12</p><p>I see.
+So you want to go extreme and even hide this type of metadata, then we&rsquo;ll use a different public key or key pair each time.
+So then that means upload more data for every query.
+And then do some randomization of the timing as well, plus new for circuits.
+And then it gets a lot more inefficient as well.</p><p>Speaker 1: 00:42:32</p><p>Yeah, some mitigations for timing are just pacing.
+So a simple thing you can do is just kind of like just paste requests and send dummy requests.
+But yes, obviously these incur costs.
+So yeah.
+Yeah, I mean, today, if you want to do the same thing for block filters, you are kind of stuck in that.
+I mean, the timing alone of your request is going to kind of correlate them.
+So yeah, it is kind of a tough problem.</p><p>Speaker 0: 00:43:08</p><p>That&rsquo;s why batch requests are also very important, I would say.</p><p>Speaker 1: 00:43:13</p><p>Yeah, yeah, certainly a batch request where we round up the size.
+So like, it would be important to kind of like, not reveal the exact number of addresses you have in your wallet, just because that is probably kind of identifiable.
+So yeah, if we just round up the number of addresses and let you query, you know, up to X thousand addresses at a time.
+I will do some more research and thinking on batching.
+It&rsquo;s very useful.
+Thank you so much for like talking to us and letting us hear your problems and stuff.
+I think it would be useful to go back and look at batching and see if it can be practical.</p><p>Speaker 0: 00:43:57</p><p>Super cool.
+So then, how long does the request take?
+So let&rsquo;s say we want to look up a thousand addresses or so, how long does the client have to wait?</p><p>Speaker 1: 00:44:12</p><p>The client has to wait for as long as it wants to, almost directly in proportion to how much it&rsquo;s willing to pay.
+So I mean, if you want to make a thousand queries, right, let&rsquo;s say it&rsquo;s, you know, 5000 seconds of computation, right?
+If you pay the server, as you know, computation is like, kind of cheap and parallelizable.
+So you can imagine a server, especially like in a search look, basically like a cloud provider or something that just goes, okay, if you pay me 5000 times one cent, or, you know, point one cents or whatever.
+I&rsquo;ll, I&rsquo;ll process your query in one second, cause I&rsquo;ll just throw 5,000 cores at it.
+So, so it is kind of, it is infinitely divisible.
+It&rsquo;s, it&rsquo;s naively parallel as an algorithm.
+So.</p><p>Speaker 0: 00:45:01</p><p>That&rsquo;s really interesting to hear.</p><p>Speaker 1: 00:45:06</p><p>So yeah, there&rsquo;s a nice, Yeah.
+There&rsquo;s an interesting intersection with the fact that this is all for a payment system, right?
+So It would be interesting to think about.
+Yeah.</p><p>Speaker 0: 00:45:19</p><p>Okay, I think I&rsquo;m pretty much out of questions for now.
+Does anyone else have any?
+No, then would be nice to get a bit more into the crypto magic.
+If you could.
+Sure.
+Sure.</p><p>Speaker 1: 00:45:30</p><p>I I&rsquo;m If this altitude is kind of too much or too little, let me know.
+The slide is kind of gross looking.
+But I&rsquo;ll just walk through the basics of how this works.
+So, here&rsquo;s how this kind of works on the inside.
+So, basically, remember we have a client and a server.
+And we&rsquo;d like the client would like to retrieve an item from this database of items without letting the server learn which one in queries.
+So basically, if we imagine our index is three, like we want the third item of the database, what we&rsquo;re going to do is we&rsquo;re going to have the client create a kind of bit vector.
+So a vector of bits.
+If you remember linear algebra, I&rsquo;m using the word vector kind of on purpose.
+So it&rsquo;s a column vector of bits where it&rsquo;s a one-hot encoding.
+If you&rsquo;ve been around machine learning, you might have heard the term one-hot before.
+But basically that means there&rsquo;s a one in the location that I want to retrieve and zeros everywhere else.
+So there&rsquo;s a zero in these entries and there&rsquo;s a one at the desired index.
+So I&rsquo;m going to form this vector.
+It&rsquo;s just a plain text bits on my client.
+And then I&rsquo;m going to encrypt each of them.
+So I&rsquo;ll explain, you know, the encryption we use has a special property, which we&rsquo;ll get to, but basically it is also, it behaves mostly like a normal encryption scheme.
+So you encrypt each bit, and now these, you know, these encrypted bits get sent to the server.
+And just like if you AES encrypted them, the server can&rsquo;t tell what any of these bits encrypt.
+It&rsquo;s kind of crucial to remember that the encryption of zero and the encryption of zero, they don&rsquo;t look the same.
+Every time you encrypt zero, you get a different looking random thing.
+And the server cannot distinguish whether you encrypted the same thing or a different thing.
+So that property applies.
+It&rsquo;s called chosen plaintext security or semantic security.
+But basically, yeah, this vector of encrypted bits, it&rsquo;s not visible to the server which ones are 0 or which ones are 1.
+So that gets sent to the server.
+And then how does the server actually figure out the answer to your query?
+Well, if you look at the plaintext database elements in green, it does this kind of special.
+This is the special property of the encryption.
+The encrypted zero gets multiplied by the plain text eight here.
+And what we get is the encrypted product of them.
+So if we multiply encrypted zero by six, we&rsquo;ll get zero.
+If we multiply encrypted one by seven, we&rsquo;ll get encrypted seven.
+So the point is this ability to do this multiplication, that&rsquo;s not normal.
+Normal encryption doesn&rsquo;t let you do that.
+So if you AES encrypt zero and then like multiply by eight, you will just get garbage.
+There&rsquo;s no, it does not become like encrypted zero.
+This is&mldr;</p><p>Speaker 0: 00:48:38</p><p>Sorry, on the left and right hand side, the number four, E zero times eight equals E zero.
+Is the two times E zero, is that this exact same thing or just a different encrypted blob with the same zeros clean text?</p><p>Speaker 1: 00:48:55</p><p>It is not the exact same thing.
+So do you mean on the left and right, like this encrypted zero and this encrypted zero?</p><p>Speaker 0: 00:49:02</p><p>Yes.</p><p>Speaker 1: 00:49:04</p><p>Yeah, so they are not the same thing.
+They actually, again, to the attacker, look completely indistinguishable and random.
+So they both look, what they encrypt looks completely hidden to the server.</p><p>Speaker 0: 00:49:27</p><p>Nice.
+Thanks.
+Continue,</p><p>Speaker 1: 00:49:29</p><p>please.
+So then you can do the same thing just like we multiplied, you can also, you&rsquo;re allowed to add.
+So if you add encrypted zero and encrypted seven, you get encrypted seven and so on.
+So you kind of add all of the results and now you have a single encrypted result that you can send back to the client.
+The client can decrypt and get the item that it wanted.
+So this is how it&rsquo;s kind of, let&rsquo;s say, possible to do this.
+You should, there&rsquo;s probably one glaring problem with this toy example, which is that we uploaded in our query the same number of elements as are in the database.
+So, our query is very, very big.
+You know?
+So, that&rsquo;s a problem.
+So, in the real scheme, there&rsquo;s kind of a whole bunch of complicated stuff you can do to mitigate that.
+Basically, you can kind of structure the database as a cube and kind of send bits that correlate to each kind of dimension or axis on the cube, and then you can multiply and reduce that way.
+And that makes the query smaller, you know.
+So, but this is the gist of it.
+This is how it works.
+So, the point is, now you can maybe conceptualize how if there was an encryption scheme that did these things, then you could do PIR.
+You know, If there was an encryption scheme that had this multiplication and this addition operation, then it would all work.
+So then the question becomes, okay, well, how do you get an encryption scheme like that?
+It&rsquo;s not something that AES does.
+It&rsquo;s not something that even ECC really does.
+So, yeah.
+The process of getting that is more involved.
+But that&rsquo;s the gist of this is the gist of how this scheme works.
+Any questions?
+I know it&rsquo;s like a super, it&rsquo;s complicated, so I&rsquo;m happy to answer anything.
+I haven&rsquo;t given this talk that many times, so it&rsquo;s a little, I&rsquo;m happy to answer anything.</p><p>Speaker 0: 00:51:31</p><p>Yeah, that&rsquo;s, it&rsquo;s pretty nice.
+The data size in number 4 for the orange boxes on the right, so E0, E0, E7, E0, and then underneath the sum of E7 again, So is the data size of these orange blobs different, especially the sum?</p><p>Speaker 1: 00:51:52</p><p>Yeah, it&rsquo;s a great question.
+So no.
+So all the orange blocks have the exact same size.
+So that&rsquo;s a very good point.
+Like this vector of encrypted 0&rsquo;s and 1&rsquo;s, it&rsquo;s not small, Because every one of them is big enough to hold a plain text element, so it&rsquo;s pretty big.
+There are a bunch of things you can do to kind of not actually send encrypted zeros and encrypted&mldr;
+So I guess I can just explain it this way.
+So the operations we have are homomorphic multiplication by a plaintext item.
+And like here, and addition.
+I don&rsquo;t know your familiarity with linear algebra or something, but that&rsquo;s a not quite complete set.
+If you were also able to multiply two encrypted numbers, you can kind of do the&mldr;
+You can think about it and see that actually you can compute any function on encrypted data if you have addition and multiplication.
+You know, addition and multiplication kind of&mldr;
+Every computation is like a composition of adding and multiplying.
+All our computers do are add and multiply.
+So there are ways to compute an arbitrary function on encrypted data.
+So what that means is the query is now much smaller and you perform this arbitrary computation to make all of these encrypted zeros and ones in a big way while keeping the query small.
+So yeah.</p><p>Speaker 0: 00:53:39</p><p>Let&rsquo;s go to more.</p><p>Speaker 3: 00:53:42</p><p>OK, this is where I saw this illustration, because I sent maybe the link to it before.
+My question is what is the mathematical principle that enables this?
+I&rsquo;m a bit familiar with linear algebra.
+So that&rsquo;s, yeah.
+Yeah.
+So, yeah.
+Yeah.</p><p>Speaker 1: 00:54:09</p><p>So the main principle is that it&rsquo;s difficult to kind of invert matrices when they have noise.
+So I can say more about that, but basically what that means is like if you have a matrix, a large random matrix, and you multiply it by a vector, The outputs are easy to determine.
+The output and the input vector are kind of correlated.
+It&rsquo;s easy to invert the matrix and figure out what the input was from the output.
+So if you have A, S, you know, if I give you A, S and I give you A, it&rsquo;s easy to find S, because finding the inverse of a matrix is not hard.
+But the key insight, the algebraic insight that enables this is that, Well, if I give you AS plus E, where E is just some very small noise, suddenly the problem is very hard.
+It&rsquo;s very hard to figure out S from AS plus E.
+The post has, I think, like further down kind of a discussion of like learning with errors and stuff.</p><p>Speaker 3: 00:55:23</p><p>In programming we have this concept of you know in IEEE floating numbers there&rsquo;s epsilon.
+Was that related to that E?</p><p>Speaker 1: 00:55:34</p><p>No, no.
+So it&rsquo;s not like super small.
+I mean, when I say small, I don&rsquo;t mean like infinitesimally small like epsilon.
+I just mean that it&rsquo;s small relative to the size of the of the of the data.
+Yeah, so it&rsquo;s small enough that when the client decrypts, it can kind of round away the error.
+So you can think of it, it&rsquo;s less like epsilon, more like error.
+Like that floating point error where you add 1.00001 and 1.00001 and you get 2, because of that floating pointer, it&rsquo;s analogous to that.
+It&rsquo;s more like there&rsquo;s the small error that you can ignore at the end.
+Also to Max&rsquo;s point, I remember I forgot to mention something which is interesting, which is you asked whether this left and right thing are different.
+And they are, to the attacker, they&rsquo;re indistinguishable.
+But something that is happening that is kind of interesting is that each ciphertext contains noise.
+So what&rsquo;s happening every time we do one of these operations is the noise inside the ciphertext is growing.
+And when I say noise, it&rsquo;s kind of sounds fuzzy, but basically there&rsquo;s noise inside every ciphertext.
+And as you do operations to it, noise grows.
+And when the noise is too big, when you decrypt, you&rsquo;ll get the wrong answer.
+You&rsquo;ll get an incorrect decryption and you won&rsquo;t know it.
+So part of it is that there is something happening when you do these multiplications and these additions.
+The noise is growing.
+You can&rsquo;t do it an unlimited number of times.
+Otherwise, the ciphertext will kind of become garbage.</p><p>Speaker 3: 00:57:19</p><p>Okay, that&rsquo;s the way you explained it in the terms of matrices.
+Yeah, I think it clicks something on me.
+You know?</p><p>Speaker 1: 00:57:28</p><p>Yeah, sure.
+Yeah, feel free to reach out if you have other questions.</p><p>Speaker 3: 00:57:33</p><p>Yeah, sure.
+Another thing is that how do you get this kind of noise?
+Does it, when you deal with the floating numbers, just a little bit of noise can throw off calculations like in physics and stuff.
+How is that dealt with this encryption scheme?</p><p>Speaker 1: 00:57:55</p><p>Yeah, it&rsquo;s a good question.
+So we, yeah, I mean, for the noise we use is sampled from the Gaussian distribution, so like a normal distribution.
+And what we do is like we kind of, before we run a computation, we kind of almost like predict or check ourselves.
+We check, okay, if we do this computation, what&rsquo;s going to happen to the noise distribution?
+And we kind of calculate like a bound.
+We calculate the standard deviation of the noise distribution at the end, in advance.
+And we make sure that the noise distribution is not so wide as to make the ciphertext unreadable, as to cause an error in the decryption.
+So basically what we do is we bound the standard deviation of the output noise.
+And by doing that, we can say the noise will always be within six standard deviations of the mean and we know the standard deviation is going to be x and so we know that we will decrypt correctly.</p><p>Speaker 3: 00:59:11</p><p>Yeah.
+Okay, cool.
+That&rsquo;s all for me.
+Thank you so much.
+Yeah.</p><p>Speaker 4: 00:59:19</p><p>Hello, guys.</p><p>Speaker 0: 00:59:23</p><p>Hello.
+Hey, Adam.
+Glad that you&rsquo;re here.
+Catch the recording.
+It was very good.
+I do have another question, and that is about the&mldr;
+So I saw the client on GitHub and mentioned that this is free open source.
+What about the server?</p><p>Speaker 1: 00:59:42</p><p>So the server does not need to be open source because of homomorphic encryption guarantees.
+But I think we still are open sourcing it.
+So the server is at my GitHub.
+It&rsquo;s at this one.
+I think this is our old repo.
+So I can message it in the chat.
+So there is a server here.
+So we also have the server open source in public.
+I do think that the really crucial part is to get kind of reproducible builds and stuff on the client.
+Because the client, as long as you trust the client, everything else is fine.
+So yeah.
+But obviously for an open standard, we&rsquo;re going to need open source clients and servers.</p><p>Speaker 0: 01:00:35</p><p>Cool, thank you.</p><p>Speaker 4: 01:00:36</p><p>So I just arrived.
+Is there a way to summarize whole Spiral work in a, like, like on five?</p><p>Speaker 1: 01:00:54</p><p>That&rsquo;s magic.
+Sure, sure, sure.
+Yeah, I think the summary, the best summary is honestly Max&rsquo;s at the beginning, which was just like, basically Spiral is a way to retrieve an item from a database without letting it ever learn what item you retrieved.
+And the way it works is kind of complicated but</p><p>Speaker 4: 01:01:14</p><p>yeah.
+What does that mean?</p><p>Speaker 1: 01:01:18</p><p>Okay, okay, I can do a little, I can explain a little more.
+So, so yeah, the way it works intuitively is basically the client sends this kind of encrypted vector of bits.
+Encrypted vector of bits and the server does like an encrypted dot product between the bits that the client sends and the items in the database.
+And the point is, you know, The one bit will kind of be the item that we want, and the zero bits will kind of cancel out all the items we don&rsquo;t want.
+And the server will add these all up and send it back to the client.
+And the point is the server never learned, you know, what the encrypted bits were.
+It never learns what the sum of everything was.
+It just kind of does the computation and sends the encrypted result back to the client.</p><p>Speaker 4: 01:02:12</p><p>Oh, okay.
+Okay, it&rsquo;s like a cryptographic challenge</p><p>Speaker 0: 01:02:16</p><p>protocol</p><p>Speaker 4: 01:02:20</p><p>that&rsquo;s like the server is sending bytes, but those bytes are not the address, but somehow be the client server challenge, you can establish the address or the information that the</p><p>Speaker 1: 01:02:40</p><p>server is sending</p><p>Speaker 4: 01:02:41</p><p>on the client.
+Holy shit,</p><p>Speaker 1: 01:02:44</p><p>that&rsquo;s something.
+Yeah, so the client is sending an encrypted version of its query and it gets an encrypted response.
+And the point is the server never decrypts anything.
+Yeah, that&rsquo;s the point.
+Everything stays encrypted.
+So it&rsquo;s kind of like, it&rsquo;s almost like end to end encryption.
+Like, like end-to-end encryption.
+The catch is that it&rsquo;s expensive for the server to do the computation.
+So you know the server has to invest a lot of effort to kind of answer your query.
+So you might need to eventually pay them or like in some way incentivize their their behavior</p><p>Speaker 4: 01:03:23</p><p>How expensive is it so expensive as?
+For the entire Bitcoin transaction history Blockchain wouldn&rsquo;t be able to run on a single server no matter how big you are trying to buy?</p><p>Speaker 1: 01:03:40</p><p>That&rsquo;s a good question.
+I mean, it used to be impossibly big.
+It used to be like, you know, I would say years, you know, to do a single Bitcoin address lookup.
+But today it&rsquo;s not so bad.
+So today there&rsquo;s been a lot of innovation.
+Today you can look up a balance of an address today at our site, like, very easily, and our server costs, I think, like, 50 bucks a month to run or something.
+It&rsquo;s not an expensive server that we run.
+So, today, it&rsquo;s not too bad.
+I think doing all of the transaction history is definitely more costly, but it&rsquo;s not infeasibly costly.
+I think it gets maybe really bad if you are trying to query tens of thousands of addresses.
+Then we&rsquo;ll have to think of a better way to kind of batch your queries.</p><p>Speaker 0: 01:04:38</p><p>Yeah, so Adam, there&rsquo;s multiple layers of why this might be very difficult for us to use.
+One is we might want the transaction history, so this is the whole TX outset instead of the</p><p>Speaker 4: 01:04:49</p><p>UTXO set.
+We definitely want that, so we cannot get that?</p><p>Speaker 0: 01:04:55</p><p>We could, but then the size of the database gets larger because you need to store all outputs, not just the unspent ones.
+And so that&rsquo;s the first issue.
+The second</p><p>Speaker 4: 01:05:05</p><p>issue is because- But how large?
+Like so large that we cannot run on a server or we can buy that big server for it?
+I mean, come on, like seriously, if this is the issue and we could buy a server for it, like I think it would be worth it because, you know, this is the single most problematic thing that we have performance-wise in Wasabi Wallet.
+But this is why we are not like Blue Wallet.
+This is the reason and if it would be feasible, then I think it would be worth it.</p><p>Speaker 0: 01:05:53</p><p>But let me try to summarize the complexity of why it might still not be feasible.
+Yeah, there are other&mldr;
+Exactly, there are others.
+So one is the size of the database.
+The other is the number of addresses that a single client is looking for.
+And my client often has over 10,000 used addresses.
+And so we would need to query all of them.
+And not just once, but every time you load the wallet.
+And so we have I don&rsquo;t know 10 000 users with each 10 000 addresses making queries over the entire blockchain database so to say that&rsquo;s that turns very expensive very quick And however a solution around this is&mldr;
+You would have to only do it once.
+Well, next time you open the wallet, you might have received a coin to one of those many addresses.</p><p>Speaker 4: 01:06:49</p><p>Oh, yeah, you&rsquo;re right.
+Yes.</p><p>Speaker 1: 01:06:53</p><p>So I think there&rsquo;s a couple of layers.
+So yeah, Max and I went through this.
+There&rsquo;s a couple of layers of mitigation you can do.
+So one layer is you can also just look at which addresses were because of kind of this homomorphic encryption thing, because you can query kind of arbitrary data as long as the server kind of forms it for you.
+You could have a database that says, when were these wallets last interacted with?
+You could just query that database and you could find out, okay, 9,000 of these addresses, nothing happened on them since I last opened this app.
+Right.
+And then for the thousand that are remaining, you could look and see, you know, which, which ones of them have a balance still or are still active.
+And then you could retrieve each of their transaction histories kind of individually.
+It&rsquo;s not perfect, but something I&rsquo;ll do is I think I will, I will try to build up a number of addresses in my wallet that&rsquo;s large enough to kind of test with.
+And I would love to play around and see how this could work or at least, yeah.
+Yeah, I think it&rsquo;s a kind of urgent challenge.
+So, yeah, and it&rsquo;s cool tech.</p><h2 id=private-information-retrieval-from-a-database>Private Information Retrieval from a Database</h2><p>Speaker 0: 01:08:20</p><p>Another interesting, like, the cool thing is like private information retrieval from a database.
+It seems massively big as a concept.
+And we can use it in many different areas.
+One, for example, might be to query the mempool of someone else, which you boot up your client and you have unconfirmed transactions and this way you could be able to get them.</p><p>Speaker 4: 01:08:45</p><p>So I did that in hidden wallet.
+I was querying the entire mempool of all the nodes I&rsquo;m connected to, but it got expensive pretty fast.</p><p>Speaker 1: 01:09:02</p><p>If you&rsquo;re interested in the checking addresses you don&rsquo;t own, I think that&rsquo;s also very feasible.
+I don&rsquo;t know if that&rsquo;s interesting.
+But I think that today your options are pretty bad.
+So I think at least on that front, yeah, we&rsquo;re kind of clearly better than the best way you have today to kind of look up the address of a balance that you don&rsquo;t already have in your wallet, of an address.</p><p>Speaker 4: 01:09:35</p><p>So that is a super important point and that might&mldr;
+So what are people looking in block explorers?
+They are looking at quite a few things there.
+But building a private block explorer based on this protocol might actually be possible.
+Yes, that&rsquo;s a huge thing, really huge.
+Right now, people are putting in, and people, I mean, I do that as well.
+We are putting in our addresses in block exporters to check if everything is going well or how well was constructing wasabi this transaction, stuff like that.
+And well, that&rsquo;s a huge database that block explorers have.
+So that&rsquo;s pretty problematic, I hope.
+It&rsquo;s not gonna be like that well-known fact that they are going for block explorers to disclose data.
+You know?</p><p>Speaker 1: 01:11:00</p><p>Yeah, I mean, if I was, I would definitely subpoena Block Explorer.
+I think Ledger keeps their logs on Ledger Live for like five years or something.
+So yeah, I think, I think, Yeah, I don&rsquo;t know if you guys are interested.
+I think that&rsquo;s another angle we&rsquo;re interested in is this hardware wallet kind of integration.
+I think it&rsquo;s kind of funny how you go to kind of you&rsquo;re currently able to go to Greatlands and kind of keep all your private keys on hardware.
+But then when you want to just like know how much money you have, you kind of have to, you have to just, you end up kind of just going to a block explorer or ledger or whoever, and kind of just telling them your address and your IP address and stuff.
+So yeah.</p><p>Speaker 5: 01:11:46</p><p>You could connect it to your own node, right?
+Yes, yes.
+I guess, to it and stuff, so yeah.</p><p>Speaker 1: 01:11:53</p><p>Yeah, yeah.
+Especially from mobile clients and stuff.
+Yeah, no, go ahead.</p><p>Speaker 0: 01:11:58</p><p>You know, even when you connect to your own node, which is the scenario you brought up earlier.
+But the problem with this is you still put your sensitive information on another computer.
+And sure, you&rsquo;re the one mainly in control of that computer, but maybe you get hacked, or maybe you are already hacked.
+And So the less information you store on someone or on another computer, the better.
+Like an existing example is ElectrumX versus ElectrumPersonalServer.
+ElectrumPersonalServer stores your extended public key on the server versus ElectrumX only receives an address and then forgets it later.
+Right, so if someone walks into your house and takes your Electrum personal server, he knows your XPAL, versus if he takes your ElectrumX, he knows nothing.
+So this is better in the sense like I would want to run a Spiral block explorer on top of my own node, just so that if someone gets hold of my computer, he still doesn&rsquo;t know anything.</p><p>Speaker 1: 01:13:00</p><p>Yeah, I think another way to think about it would be, you know, if you want to just kind of like not do the management, but get all the privacy, I think this is the way to do it.
+If you run Spiral in AWS, you know, like you can be very confident that they don&rsquo;t learn anything about what you query.
+But you also don&rsquo;t have to take it with you when you move and figure out your ISPs, like static IP situations so you can use it on your phone when you&rsquo;re going somewhere or something like that.</p><p>Speaker 4: 01:13:35</p><p>So if I understand it correctly, the reason why we cannot use it is because There are two problems here.
+First, if we want to have the entire transaction history of an address, then we would have to run a server that might be too big for us.
+There is no such a server existing in this world to run that.
+And this question could be investigated, right?
+And the other issue is that when you have tens of thousands of addresses, like it is taking long to make those tens of thousands of cryptography key challenge exchanges to figure out the entire transaction history.
+So this might be taking like half an hour or how long?</p><p>Speaker 5: 01:14:43</p><p>If I may add something, you can have multiple servers, let&rsquo;s say in Amazon, and running them in parallel with Spiral on.
+So it should be costly, but still more fast.</p><p>Speaker 0: 01:15:01</p><p>Yeah, for your info, this is a CPU heavier, but it&rsquo;s parallelizable.
+So if we get a server with 50,000 CPU cores, then it would be super quick.</p><p>Speaker 5: 01:15:12</p><p>And you can have multiple of them.</p><p>Speaker 0: 01:15:15</p><p>But I don&rsquo;t think that&rsquo;s needed, right?
+If you can just multiply CPU cores?
+Is there a speed difference between having two servers with each five CPU cores versus one server with ten CPU cores?</p><p>Speaker 1: 01:15:30</p><p>No, not really.
+I think you&rsquo;ll run into memory at some point.
+I mean, you&rsquo;ll want to, you know, you&rsquo;ll start thinking, okay, well, if you put 5000 cores on a system with 8 gigs, you might get bottlenecked by other things.
+So there is kind of a thing.
+I will say, I don&rsquo;t think it&rsquo;s super feasible.
+CPUs are cheap, but they&rsquo;re not that cheap.
+So I don&rsquo;t want to&mldr;
+I think I agree with Max&rsquo;s assessment that for this to be feasible, we need to find a way to do this for large numbers of addresses and not have it be like, you know, dollars per lookup, you know, like significant amount of money per lookup, because I think that&rsquo;s, that&rsquo;s if the goal is to lower the barrier to entry and to like, make it better, right, that&rsquo;s, that&rsquo;s going to be a roadblock.
+It&rsquo;s going to be tough to, to want to pay a dollar every time you want to know how much money you have, you know.
+So, I believe we can work on this.
+I&rsquo;m not, I haven&rsquo;t lost all hope.
+I think it&rsquo;s really useful to hear that people have so many addresses and I want to know more about like what those addresses look like.
+You kind of explained that they&rsquo;re kind of the outputs of a, of a, their output addresses as a result of a coin join, sometimes a failed coin join.
+But yeah, the more I can kind of understand that, the more I think it could be feasible kind of to make progress.</p><p>Speaker 0: 01:17:12</p><p>Yeah, but I would guess the vast majority of these addresses are unused.
+So they never made it on the blockchain.
+And then only a rather smaller number made it on the blockchain and is already spent.
+And so not in the UTXO set anymore.
+And then the smallest percentage is going to be the unspent UTXO addresses.</p><p>Speaker 1: 01:17:38</p><p>Okay.
+Certainly, I mean, spent.
+So something cool about spent coins is that like, you know, once they&rsquo;re spent, they can&rsquo;t come back.
+So yeah, we can exploit that.</p><p>Speaker 4: 01:17:56</p><p>Lucas, what&rsquo;s your take about all this?
+Can we use Spiral somehow, if not even if it&rsquo;s a, can we use it to make Wasabi like really light?
+Or even should we, even if we could work it out?
+Mike, you are the one who wrote the Columbus Rites Theater stuff, so you put a lot of thoughts into around here.</p><p>Speaker 6: 01:18:37</p><p>Honestly, I don&rsquo;t know.
+I would like to know more about the technology, but when I entered into the meeting, they were already discussing things that I mean, how to use the technology, but know what the technology really is.
+So, I tried to do my best to understand.
+Basically, what I think is the technology is clearly good.
+Right?
+So, I&rsquo;m sure there are many scenarios that we can, many problems that we used to have can be solved by this.
+But I don&rsquo;t know exactly how can we use it for our, let&rsquo;s say, for reconstructing our local UTXO set.
+I mean, the UTXO set that is relevant for the wallet, right?
+And all the transactions and all the information.
+I cannot see it.
+Basically because the problem that we have is mainly for new users, right?
+Or users that have to, for some reason, to resynchronize the wallet.
+But I use the wallet more or less frequently, right?
+And it takes nothing for me to open, to synchronize.
+It&rsquo;s just, to me, it&rsquo;s exactly the same as blue wallet, right?
+It&rsquo;s very good.
+So I think it, no, I think it doesn&rsquo;t worth the effort to even if the technology, no, no, the technology, even if the requirement of the technology in terms of bandwidth, storage, CPU, even if we can afford that, I don&rsquo;t know if we can afford to change the architecture of the wallet to use this technology, right?
+And even if we can afford all of that, I don&rsquo;t know if the result will be so good because we have to do a lot of requests, lots.
+And the process of discovering the wallet is the same, right?
+I don&rsquo;t know what&rsquo;s the keys.
+So I have to query one key, one key, one key, one key, one key, and we will discover that, oh, well, now I have to try with the next 21 keys or the next, I don&rsquo;t know, some of our users have minimum gap limits of, I don&rsquo;t know, 600.
+I don&rsquo;t know.
+So I have to query the next 600 keys.
+No, I don&rsquo;t think it is possible.
+However, I&rsquo;m sure this is something, because the PIR technologies have been improving a lot and now it seems this is like something great, a great achievement, right?
+Before, first time I read something about this, three servers were required for this because one server keep one table, the other server keep a different kind of information.
+It was a feeling mess, but now it&rsquo;s getting, it seems it&rsquo;s getting better and better.
+And so we have to have an eye on this technology, but no for synchronizing the wallet.
+I&rsquo;m pretty sure about it.</p><p>Speaker 1: 01:22:36</p><p>I think that</p><p>Speaker 2: 01:22:37</p><p>makes a</p><p>Speaker 0: 01:22:37</p><p>lot of sense.
+Yeah, absolutely.</p><p>Speaker 1: 01:22:38</p><p>Yeah, yeah, yeah.
+I, I, I, that your, your point about the multiple servers is, is funny.
+Yeah.
+I mean, it used to be that you had to trust that the servers don&rsquo;t collude, which is kind of a silly assumption.
+Yeah, we&rsquo;ve come a long way.
+Yeah, yeah.
+I think I&rsquo;m really interested in this in this private block explorer thing.
+And I think it might not be part of Wasabi wallet, but I think it&rsquo;s obviously part of like an ecosystem of private Bitcoin.
+I mean, if you use Wasabi wallet, but then use a public block explorer, you&rsquo;re kind of fucking it up, you know, you&rsquo;re kind of not, you&rsquo;re kind of defeating some of the purpose of the wallet.
+So I hope at least those two things sound kind of complimentary.</p><p>Speaker 6: 01:23:28</p><p>Sorry, yes, I completely agree.
+In fact, many times we say, okay, how can we, for example, provide more information to the users, right?
+Because basically a server has a global view of the blockchain while a client has only a local view of the blockchain, right?
+So basically, the client many times can take advantage of information that only the server knows, but you cannot ask the server, hey, can you, could you please tell me this?
+Because, well, in that case, you are revealing information to the server.
+So, sometimes you want to say, okay, how can I ask for this to a central server without revealing my identity or my intentions, right?
+So that kind of things is something that, that&rsquo;s why I say that we have to keep an eye on this technology.</p><p>Speaker 1: 01:24:33</p><p>Yeah, so that&rsquo;s a great point.
+So I know I&rsquo;m kind of more familiar, I have been in cryptography, but not crypto.
+So I&rsquo;m kind of like, I was really into Bitcoin in like 2015, I TA&rsquo;d our class and then I like totally checked out.
+Yeah, so I&rsquo;m a little unfamiliar, but what kind of metadata, what kind of like data do block explorers provide about an address that is kind of that global state.
+So I can think of like in the kind of Ethereum version, I can think of like, you know, I don&rsquo;t know, they like, I don&rsquo;t know, some NFT thing, they like, pull up some image or, you know, there&rsquo;s like that kind of data.
+But what are you thinking of that is global that these explorers would show?
+Well,</p><p>Speaker 6: 01:25:28</p><p>of course we don&rsquo;t know, right?</p><p>Speaker 4: 01:25:31</p><p>It&rsquo;s- IP address, Bitcoin address.</p><p>Speaker 1: 01:25:35</p><p>Ah, I see.
+So what IP submitted this address?
+Yep.
+Are there, there&rsquo;s also, is there like a kind of naming, is there like a DNS equivalent, like people who use like op return to kind of store data in some kind of structured way to register a name or whatever.
+That kind of data is also, while it&rsquo;s in the transaction, the metadata about it is not, right?</p><p>Speaker 0: 01:26:12</p><p>Maybe to combine the block explorer with a lightning explorer, so you would for example see which on-chain transactions are associated to a certain Lightning node publicly.</p><p>Speaker 1: 01:26:24</p><p>I see.
+Yes, so that&rsquo;s information that&rsquo;s not local normally.
+So today, I guess there&rsquo;s almost no private way to look that up.
+I guess you just, your best bet is to use Tor and to use a public block explorer and be careful.</p><p>Speaker 0: 01:26:45</p><p>Different question, but since Lukas brought up that private information retrieval isn&rsquo;t a new thing, like why is Spiral new or how does it improve upon what came before?</p><p>Speaker 1: 01:26:56</p><p>Sure, that&rsquo;s a great question.
+So yeah, I mean, there&rsquo;s so private information retrieval as a problem was posed.
+Yeah, like in the 80s.
+And there&rsquo;s been like a bunch of kind of talk about it.
+But it never was practical.
+My best my my biggest thing I always make fun of is like, I think IBM had like a big demo where you could look up like the 50 US states privately.
+And it was like a big demo in 20, you know, I think 2019 or something, that you could look up 50 states.
+It wasn&rsquo;t like a very large database.
+It was like the capitals of the 50 US states.
+The reason we&rsquo;ve come a long way and what Spiral does, what advancement kind of Spiral made was basically just, it wasn&rsquo;t something super special.
+It was a lot of, it was the accumulation of a lot of research tricks that like we kind of knew about but hadn&rsquo;t implemented or just hadn&rsquo;t tried in the particular way that we did.
+I think we are definitely like the accumulation of years of research rather than like some kind of fundamental like we noticed something that no one else did.
+We just brought to bear like a lot of techniques all at once, kind of very analogously to how ZK stuff has grown in cryptography.
+Like years of research from smart people eventually makes some problems feasible.
+So yeah, in particular, what we really did, what we really focused on was making queries smaller.
+So a big problem with most previous schemes that were efficient on the server side was that then the queries were like hundreds of megabytes.
+So we found ways to exploit the fact that, you know, with fully homomorphic encryption, you can compute any function on encrypted data.
+So we kind of, we encrypt a function that expands the query.
+So we can send a very small query and then the server can do work to expand it into a vector.</p><p>Speaker 4: 01:29:00</p><p>That&rsquo;s pretty cool.
+Yeah, okay,</p><p>Speaker 0: 01:29:03</p><p>And then somewhat related, but like, how does peer review work for such a paper?
+Because it seems to me it&rsquo;s not a new cryptography, just as you say, applying old concepts, but how was the peer review</p><p>Speaker 1: 01:29:14</p><p>process?
+So it&rsquo;s a good question.
+I remember my advisor was like, yeah, are we are we is this going to be kind of like publishable?
+And we we actually after we had that conversation, we did come up with some new cryptography.
+So we did end up kind of creating some some new techniques, kind of constructing a kind of variation or change to old schemes.
+So we did end up publishing it and I presented it at Oakland, which is like the kind of top security conference for academics.
+So I think we were in less of a, we were not in like a theoretical cryptography venue.
+We were in like a privacy enhancing technologies kind of venue, but it was still, yeah.
+I mean, it was a big deal for the reason you pointed out, which is it hasn&rsquo;t been practical.
+And I think our work was kind of one of several works that took it from being impractical to practical.
+There are now a couple, but at the time we were kind of one of the early ones that, yeah, I mean, when we told people, you know, you go to this site, and we could read Wikipedia, that was like a big deal, because I think everything else had been kind of speculative.
+It was like, if you were looking up a sensitive medical condition in theory and if you wanted to you know there&rsquo;s a lot of like hypotheticals so yeah</p><p>Speaker 0: 01:30:39</p><p>yeah the MVP demos are pretty great</p><p>Speaker 1: 01:30:44</p><p>yeah if you have ideas for other ones let me know I I want to do Ethereum and I want to do, sorry, a password checker.</p><h2 id=password-checker>Password Checker</h2><p>Speaker 1: 01:30:54</p><p>So I know, I don&rsquo;t know if you guys have seen, have I been pwned, but they have like a site where you put in a password to see if it&rsquo;s been leaked but you know of course you&rsquo;re just giving them your password.
+They do some hashing and stuff they say it&rsquo;s okay but you know you could do much better with PAR.
+So I think DNS is also something we&rsquo;re interested in, although there are complications there, but yeah, DNS is also exciting.</p><p>Speaker 6: 01:31:24</p><p>Sorry, this is not about this topic, right?
+But just curiosity, how do you see the, how, I don&rsquo;t know how to ask, homomorphic encryption?
+How far do you think we are from fully, I mean, something that I, for example, can operate in a remote on data, on encrypted data in a remote, I don&rsquo;t know, for example, I save something in Google, in Google Drive,</p><p>Speaker 1: 01:32:06</p><p>for</p><p>Speaker 6: 01:32:06</p><p>example, right?
+And I can, for example, I don&rsquo;t know, add information to that file, to that encrypted file.
+Do you think we will see something like that?</p><p>Speaker 1: 01:32:21</p><p>It&rsquo;s a great question, honestly.
+Yeah, it&rsquo;s a great question.
+I think there&rsquo;s a lot of companies, there&rsquo;s a surprising number of companies trying to do this who will tell you like, yes.
+I take a fairly pessimistic stance on this.
+I think something companies are really excited about is encrypted machine learning.
+What they really want to do is do machine learning on encrypted data, Which of course is kind of just like a way of using cryptography to violate your privacy instead of using it to, what they want to do is do like machine learning on your encrypted, on your end to end encrypted photos or your end to end encrypted, you know, messages.
+So it&rsquo;s kind of like, almost like the evil version.
+I think the good news is those are really impractical.
+I think it&rsquo;s just like, people in the field know this, but encrypted machine learning is just like, you could do it if you want, but it&rsquo;s really expensive.
+And it&rsquo;ll never be, it&rsquo;ll always be like 100 times more expensive than doing it the regular way.
+So as the regular way gets more expensive, and people now want to do like DALI, and they want to do GPT-3, now paying a hundred times that cost is too hard.
+We&rsquo;re just barely able to do private machine learning from like 2010.
+So I&rsquo;m not super optimistic on that front.
+I think something that is really quite realistic that I&rsquo;m really personally excited about, part of why I&rsquo;m founding this company, is I would like to find a way to kind of raise money and fund the building of metadata private messaging services.
+So, the thing I want to build is basically like WhatsApp or Signal, but they don&rsquo;t learn who you talk to.
+So, that is something you can use homomorphic encryption for.
+And then that is amazing, because obviously, who you talk to is really sensitive.
+And if we could hide that data, even more than what you say, but also who you who you talk to, that would be really cool.
+So so that&rsquo;s, that&rsquo;s, that&rsquo;s something I see as as really realistic.
+And we have to do this foundational work of making PIR practical first.
+But once we do that, I think building a messenger, I hope I can in five years tell you, yeah, you can go and message people and the service will never learn who you talk to.</p><p>Speaker 0: 01:34:52</p><p>It&rsquo;s pretty sweet.
+Just a fun fact.
+But the Signal groups use the key to verified anonymous credential cryptography scheme that we use for our Wabi Sabi coin joins.
+So it would be nice if we throw your homomorphic encryption on top and&mldr;</p><p>Speaker 1: 01:35:10</p><p>So what is that called?
+It&rsquo;s a key, what is key?</p><p>Speaker 0: 01:35:14</p><p>Key verified anonymous credentials.</p><p>Speaker 1: 01:35:19</p><p>Okay.</p><p>Speaker 0: 01:35:20</p><p>This is for</p><p>Speaker 1: 01:35:21</p><p>context or for a setup</p><p>Speaker 0: 01:35:23</p><p>of the conversation?
+We use it as basically eCash token for access rights.</p><p>Speaker 1: 01:35:29</p><p>Okay.</p><p>Speaker 0: 01:35:30</p><p>The token gets created during input registration and you can only register an output if you present such a token and it&rsquo;s anonymous e-cash so to say.
+Very rough explanation.</p><p>Speaker 4: 01:35:43</p><p>Cool.
+Are you familiar with the Chowmian blind signatures?</p><p>Speaker 1: 01:35:49</p><p>Chowmian blind signatures?
+Yes.
+I&rsquo;m familiar with the name Chowmian, but no, I haven&rsquo;t heard of Chowmian blind signatures.
+Blind signatures probably did a piece set about that, but I could not off the top of my head say what exactly it is.
+It&rsquo;s for voting, right?
+I think.</p><p>Speaker 4: 01:36:09</p><p>Yeah.
+So key verified anonymous credentials are a generalization of the blind signatures.
+In Wasabi, at 1.0, we used blind signatures.
+In 2.0, we used key verified anonymous credentials.</p><p>Speaker 1: 01:36:27</p><p>Oh, so this is actually a homomorphism too.
+It&rsquo;s actually, yeah, so if you want to think of it, if you want to think of it this way, I mean, you&rsquo;re exploiting, these signatures also exploit a homomorphism in RSA.
+They&rsquo;re just, it&rsquo;s just a different homomorphism.
+Yeah, so homomorphic encryption is a little bit of, if you want to think of it this way, you could think of it as a generalization of, it&rsquo;s also a generalization of pairings-based cryptography, if you&rsquo;ve seen that before.
+There&rsquo;s kind of like, that&rsquo;s a very specific homomorphism for ECC, but yeah.
+Yeah, they&rsquo;re connected.</p><p>Speaker 0: 01:37:06</p><p>As far as I remember we do use peterson commitments or generally speaking homomorphic encryption for the amount of the value of these credentials.</p><p>Speaker 1: 01:37:15</p><p>Ah okay</p><p>Speaker 5: 01:37:17</p><p>yes</p><p>Speaker 1: 01:37:18</p><p>yeah so those are again yeah homomorphic right sorry go ahead.</p><p>Speaker 6: 01:37:22</p><p>Yes because we have to the server needs to verify that the operation that we realized with the amount are correct without knowing the amount itself.
+So, yes.
+But it&rsquo;s something I mean, I don&rsquo;t know what I don&rsquo;t know exactly how to define homomorphic encryption, right?</p><h2 id=homomorphic-encryption>Homomorphic Encryption</h2><p>Speaker 6: 01:37:51</p><p>Because homomorphic encryption, like, in the concept, It&rsquo;s okay, but it sounds like something that is not still possible, right?
+So homomorphic encryption, and the scope is this for most of the time.
+It&rsquo;s something like what we do is basically we operate in a committed value and that value is basically a point in an elliptic curve and that&rsquo;s it.</p><p>Speaker 1: 01:38:36</p><p>It&rsquo;s funny, I think elliptic curves are way more complicated.
+I&rsquo;m always like, I think lattice-based cryptography and homomorphic stuff, which is lattice-based and, you know, was initially pioneered for post-quantum resistance and stuff.
+I think it&rsquo;s way easier to understand than elliptic curves.
+Because what is an elliptic curve, really?
+I&rsquo;m always very confused.
+Not confused, but it&rsquo;s always very abstract for me.
+Whereas lattices are just, you know, it&rsquo;s matrices and it&rsquo;s noise.
+And I understand that a lot better.
+It&rsquo;s like a lot easier for me.
+So it&rsquo;s funny, you should you guys are, guys are real crypto people.
+If you guys are just sitting around thinking about Henderson commitments and</p><p>Speaker 0: 01:39:21</p><p>homo.</p><p>Speaker 1: 01:39:24</p><p>I promise homomorphic encryption is is it&rsquo;s also is in some ways much easier to understand.
+So yeah.</p><p>Speaker 6: 01:39:32</p><p>We are not cryptographers here.
+I mean, we are.</p><p>Speaker 1: 01:39:36</p><p>We are.
+Yes.
+It looks like a duck and talks like a duck.
+I don&rsquo;t know.
+You guys are as much cryptographers as anyone, I think.</p><p>Speaker 0: 01:39:48</p><p>Self-taught cryptographers.
+The most dangerous kind.</p><p>Speaker 6: 01:39:55</p><p>Oh, yes, yes.</p><p>Speaker 1: 01:39:56</p><p>It&rsquo;s true.
+I suppose academic cryptographers are less dangerous.
+You know, I think we mostly write papers and that&rsquo;s it.</p><p>Speaker 4: 01:40:05</p><p>So to be fair, we hired a cryptographer for this, so that&rsquo;s okay.
+But he&rsquo;s not here.</p><p>Speaker 0: 01:40:18</p><p>Plus, we didn&rsquo;t roll over on crypto, but we&rsquo;re script kiddies and just copied it from an existing paper.
+So should be</p><p>Speaker 1: 01:40:25</p><p>all right.
+That&rsquo;s what a cryptographer would do, right?
+That&rsquo;s that&rsquo;s exactly they would say, we&rsquo;re not going to roll around, we&rsquo;re going to get a library, right?
+So you did the right thing.</p><p>Speaker 4: 01:40:34</p><p>We kind of did it all, right?
+Like we wrote a lot of cryptography code.
+Yep, did not use a library.
+But Lucas, we didn&rsquo;t roll.
+Lucas, would you say we rolled our own crypto or not?
+Good question.</p><p>Speaker 6: 01:40:58</p><p>No, I mean, the crypto that we are using is just a very specific case of one more general case that is the one that describes the signal white paper for anonymous groups.
+So they have a general case and we use only one specific case of that.
+So we are not doing that.
+Now the problem is in the implementation.
+I mean, the code, someone has to write the code, right?
+And that is where developers always make mistakes, huge mistakes.
+But so, yes, we implemented that because there are no libraries for that.
+There is no, it&rsquo;s not, I mean, it&rsquo;s so basically, let&rsquo;s say we implemented our own crypto library, right?
+However, the good part is that in my case at least I made so many mistakes before that I think I learned by doing and by making mistakes and and also the code is extremely reviewed.
+So I think we did it really, really well this time.</p><p>Speaker 0: 01:42:30</p><p>Samir, do you still have time?
+Are we just boring you</p><p>Speaker 3: 01:42:33</p><p>at this</p><p>Speaker 1: 01:42:33</p><p>point?
+I have about 10 or 15 more minutes if you guys want to keep chatting.</p><p>Speaker 0: 01:42:39</p><p>Cool.
+Well, most important questions first.
+Guys, what do you have for Samir for the next 15?</p><p>Speaker 4: 01:42:46</p><p>How about a big one?
+All right, go ahead, Jumar.</p><p>Speaker 0: 01:42:55</p><p>You have to bring a big not now.</p><p>Speaker 3: 01:42:59</p><p>Sorry about that.
+This is one question that I&rsquo;ve been meaning to ask, is that given that the homomorphic encryption has addition and multiplication, as far as I know about abstract algebra, does that enable Turing-complete machines or computations?</p><p>Speaker 1: 01:43:22</p><p>Yep, yep, yeah.
+That&rsquo;s what the, sometimes you see this abbreviated as fully homomorphic encryption, that&rsquo;s what the fully means.
+So yeah, you can do arbitrary computation, encrypted.
+Anything you can compute on regular data, it&rsquo;s possible to compute on encrypted data,</p><p>Speaker 3: 01:43:39</p><p>yeah.
+I see.
+So you can, In a hypothetical scenario, how does one implement, for example, say, in Boolean logic, they say the NAND gate is&mldr;
+Yeah, yeah, absolutely.
+How does that translate into homomorphic operations?</p><p>Speaker 1: 01:44:03</p><p>Yeah, so there are some homomorphic schemes that actually operate directly on the bit level.
+So they actually implement a NAND gate in the scheme, basically.
+In fact, the scheme basically just is a way to compute a homomorphic NAND gate and then everything else just goes from there.
+Something to note, I guess, about the fully part of fully homomorphic encryption, something we kind of mentioned, but the homomorphic encryption that Spiral uses is bounded depth.
+What that means is there&rsquo;s a certain depth of the computation of the circuit that you can compute, and then after that it doesn&rsquo;t work.
+So that kind of bounded depth-ness is not fully homomorphic, right?
+You can&rsquo;t do anything Turing complete in bounded depth.
+So there is a kind of encryption, a homomorphic encryption that can do arbitrarily large and arbitrary computation.
+So that is fully homomorphic.
+And it exists.
+We don&rsquo;t use that part of it because it&rsquo;s quite slow.
+But it does exist.
+It is possible.</p><p>Speaker 3: 01:45:15</p><p>I don&rsquo;t suppose you can make a mini computer out of a fully homomorphic interface.</p><p>Speaker 1: 01:45:22</p><p>No, you absolutely can.
+In fact, people are working on it for roll-ups and stuff.
+Yeah, it&rsquo;s possible.</p><p>Speaker 3: 01:45:30</p><p>If I may ask Fabricio, is that implementable in lookup tables and FPGAs and stuff?
+Yeah, it&rsquo;s</p><p>Speaker 1: 01:45:40</p><p>not that amenable to hardware acceleration.</p><p>Speaker 7: 01:45:44</p><p>You preceded me with the question I was going to ask.
+If the implementation on FBAs or ASICs could constitute a significant improvement.</p><p>Speaker 0: 01:45:58</p><p>It&rsquo;s a</p><p>Speaker 1: 01:45:58</p><p>great question.
+So we&rsquo;ve actually tried GPUs and GPUs are really well suited for this.
+NVIDIA actually has like an instruction set extension and a library that they put out that helps you do this.
+So It&rsquo;s not, I think they might have, yeah, I don&rsquo;t know what the status of it is, but they are thinking about this.
+ASICs and FPGAs are kind of not very useful because you need, what you need is, you need a fairly significant amount of memory because the database needs to fit in memory.
+And GPUs have a lot of effort invested in really, really good memory access, right?
+So, actually, GPUs are kind of optimal.
+We tried it.
+At the time, GPUs were really expensive.
+So, we actually, it didn&rsquo;t become cost effective.
+It was it was cool.
+And it was it was fast, but it wasn&rsquo;t very cost effective.
+Now, now that GPUs are way cheaper, it might be.
+I have to have to like revisit it.
+But yeah.
+Yeah.</p><p>Speaker 0: 01:47:05</p><p>I show you a question because you just said the database has to be kept in memory.
+Like, is that the case in Spiral?</p><p>Speaker 1: 01:47:11</p><p>Yes.</p><p>Speaker 0: 01:47:12</p><p>Oh, okay.
+But then, I mean, if we have a large data data set, for example, the full blockchain, you know, many hundreds of gigabytes.
+Right.
+All of that needs to be in memory?</p><p>Speaker 1: 01:47:23</p><p>Yeah, yeah, it does.
+I will say the memory cost usually kind of pales in terms of in comparison to the compute cost.
+So I mean, making everything fit in memory is, I mean, hundreds of gigs of memory is, like, on a cloud provider, not that expensive, actually.
+And once you have everything fitting in memory, you can throw as many compute cores as you want at it.
+So it&rsquo;s a limit, but it&rsquo;s not crazy.</p><p>Speaker 3: 01:47:55</p><p>Out of topic question for Fabricio.
+I&rsquo;ve been quite interested in FPGA development.
+What&rsquo;s this?
+Have you looked into the open source hardware&rsquo;s beta log synthesis stuff like Ice Storm or something?
+Ah, sorry, project starts with that.
+I forgot.</p><p>Speaker 7: 01:48:23</p><p>But actually, these are crypto project guarding FPGA, because actually I&rsquo;m dealing with FPGA for actually for genomic recognition.
+But actually regarding crypto, I actually I didn&rsquo;t look yet, let&rsquo;s say.
+But actually if you, let&rsquo;s say regarding, for example, the primitive function</p><p>Speaker 3: 01:48:58</p><p>to, for example,</p><p>Speaker 7: 01:49:01</p><p>do hashing stuff or cryptographic primitives, I think you can improve probably one order of magnitude if you implement some cryptographic computation and hashing on FPGAs. This is something that I think is worth looking at, definitely.</p><p>Speaker 3: 01:49:28</p><p>Cool.
+Last question for you.
+Has it been feasible, given that is it been in FPGAs, you are bound with a manufacturer&rsquo;s tooling?
+And lately, there has been some developments regarding open source tooling for like uses and stuff.
+Have you used those tools before or is it still vendor locked?</p><p>Speaker 7: 01:50:03</p><p>Well at the moment we we are using proper proprietary tools, for example Vivado, which is very famous, but actually, no, actually didn&rsquo;t yet look at the say open source opportune source development regarding that I will have a look</p><p>Speaker 3: 01:50:33</p><p>so much thank you so much</p><p>Speaker 0: 01:50:37</p><p>well Samir, thank you very much for coming here.
+That was really kind of you.</p><p>Speaker 1: 01:50:43</p><p>Yeah, thanks so much for&mldr;
+I learned so much.
+I&rsquo;m learning so much about what Bitcoin people want, the need and stuff.
+You guys are super helpful.
+So thank you so much.
+I want to, the only thing I want to say is, you know, let&rsquo;s keep in touch, especially as we get closer to building something that looks less like just a balance checker and more like a private block explorer, I would love to see if there&rsquo;s kind of a synergy between what we offer.
+I would love to see if people who use Wasabi Wallet also wanna use a private block Explorer.
+So yeah, if that sounds good, I would love to keep in touch.</p><p>Speaker 0: 01:51:21</p><p>Yeah, definitely.
+I mean, especially if you run the server and we don&rsquo;t have to, and we can use it for small niche things, like finding out the amount of the input of a payment transaction so that we can pre-bump it.
+These types of small things where it doesn&rsquo;t really make sense for us to make huge infrastructure changes for those very, very niche case things.</p><p>Speaker 1: 01:51:46</p><p>No, we&rsquo;d love to.
+We&rsquo;d love to mostly, we&rsquo;d love to see people use the server.
+We&rsquo;d love to see like what your pain points are.
+We&rsquo;re absolutely happy to host and run those kinds of things.
+So yeah, absolutely.</p><p>Speaker 0: 01:51:59</p><p>Pretty sweet.
+And I&rsquo;m really curious what we can come up with to use this other than just blockchain sync and wallet balance sync.</p><p>Speaker 1: 01:52:08</p><p>Yeah.</p><p>Speaker 0: 01:52:10</p><p>Pretty cool.</p><p>Speaker 6: 01:52:12</p><p>Yeah, sorry, just one comment.
+You know, it&rsquo;s not obvious what we can do with this technology.
+I don&rsquo;t know if everybody understands.
+In fact, I think the white paper is not a good starting point for, in fact, it is the, you know, So, sometimes you need to know the tools that you have available.
+So, when you say, okay, we can fix the, oh, there is this technology that we can use, and this is exactly for this.
+So if you have documentation or presentations or examples or snippets or whatever or use cases, right?
+That&rsquo;s also cool.
+I&rsquo;m pretty interested in this stuff.</p><p>Speaker 1: 01:53:05</p><p>I will definitely send you guys that stuff.
+You&rsquo;re totally right.
+You have to kind of know what the tool is before you can really see where it makes sense to use.
+Absolutely.</p><p>Speaker 6: 01:53:17</p><p>Okay.
+Thank you guys.</p><p>Speaker 0: 01:53:20</p><p>Yeah, then I guess that&rsquo;s it for the recorded part of this week&rsquo;s Wasabi Research Club.
+Thanks for all the guests joining us here and all the viewers online.
+Hopefully this was as exciting and useful for you guys as it was for me.
+Again, thanks Samir for coming here.
+Real pleasure, real honor.
+Let&rsquo;s stay in touch.</p><p>Speaker 1: 01:53:40</p><p>Yeah, absolutely.
+Thank you so much.</p><p>Speaker 0: 01:53:43</p><p>See you on the next show.
+Bye-bye.</p><p>Speaker 1: 01:53:44</p><p>Yeah, See you.
+Bye.</p><div class=row></div></div></div></div><script src=https://btctranscripts.com/lib/jquery.min.js></script><script src=https://btctranscripts.com/lib/popper.min.js></script><script src=https://btctranscripts.com/js/bootstrap.min.js></script><script type=text/javascript src=/plugins/lunr.min.js></script><script type=text/javascript src=/plugins/auto-complete.js></script><link href=/plugins/auto-complete.css rel=stylesheet><script type=text/javascript>var baseurl="https://btctranscripts.com/"</script><script type=text/javascript src=/plugins/search.js></script><script type=text/javascript src=https://btctranscripts.com/js/custom.js></script><script type=text/javascript src=/plugins/clipboard.js></script><script>new ClipboardJS(".btn")</script></body></html>
