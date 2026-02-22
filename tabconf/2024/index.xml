@@ -24,4 +24,48 @@
 &lt;p>&lt;a href="https://github.com/murchandamus/">https://github.com/murchandamus/&lt;/a>&lt;/p>
 &lt;p>🐦 &lt;a href="https://twitter.com/murchandamus">https://twitter.com/murchandamus&lt;/a>&lt;/p>
 &lt;p>TABConf 6 GitHub link
-&lt;a href="https://github.com/TABConf/6.tabconf.com/issues/45">https://github.com/TABConf/6.tabconf.com/issues/45&lt;/a>&lt;/p></description></item><item><title> FROST, The Production Impact and Why It Matters</title><link>https://btctranscripts.com/tabconf/2024/frost-the-production-impact-and-why-it-matters/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/tabconf/2024/frost-the-production-impact-and-why-it-matters/</guid><description/></item><item><title>Shielded CSV Private &amp; Efficient Client Side Validation</title><link>https://btctranscripts.com/tabconf/2024/shielded-csv-private-and-efficient-client-side-validation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/tabconf/2024/shielded-csv-private-and-efficient-client-side-validation/</guid><description/></item></channel></rss>
+&lt;a href="https://github.com/TABConf/6.tabconf.com/issues/45">https://github.com/TABConf/6.tabconf.com/issues/45&lt;/a>&lt;/p></description></item><item><title>Shielded CSV Private &amp; Efficient Client Side Validation</title><link>https://btctranscripts.com/tabconf/2024/shielded-csv-private-and-efficient-client-side-validation/</link><pubDate>Wed, 27 Nov 2024 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/tabconf/2024/shielded-csv-private-and-efficient-client-side-validation/</guid><description>&lt;p>The client-side validation approach removes transaction verification from the consensus rules. Instead, transaction data posted to the blockchain is only interpreted on each individual node (&amp;ldquo;client-side&amp;rdquo;). This approach allows building protocols with very low on-chain size and verification cost, while providing strong privacy.&lt;/p>
+&lt;p>This talk proposes the client-side validation protocol &amp;ldquo;zkCSV&amp;rdquo; (working title) that, in contrast to existing client-side validation protocols, only requires 64 bytes of on-chain space regardless of the size of the transaction and is fully private. The protocol&amp;rsquo;s communication cost between transaction sender and receiver is independent of the transaction history. Furthermore, zkCSV can be instantiated with existing cryptographic zk-SNARK primitives.&lt;/p>
+&lt;p>With a trust-minimized mechanism like BitVM2 to bridge between the blockchain and the client-side validation protocol, zkCSV adds strong privacy to Bitcoin and scales Bitcoin to 100 transactions per second. It has been described as &amp;ldquo;the most useful thing you can do with BitVM2&amp;rdquo;.&lt;/p>
+&lt;p>Even without a bridge, zkCSV can be used to create a private cryptocurrency pegged to bitcoin (for example via the one-way peg) that offers substantial advantage over existing private cryptocurrencies. These currencies require users to validate all transactions, which contain relatively large and computationally expensive Zero-Knowledge proofs. zkCSV, however, only requires the recipient of a transaction to download the full transaction data, which results in significant reductions in computational and bandwidth costs. Furthermore, zkCSV derives its resistance to double-spending from Bitcoin, eliminating the need for its own consensus mechanism. Moreover, private cryptocurrencies are not able to hide the transaction graph better than zkCSV.&lt;/p>
+&lt;p>What would an attendee learn from this talk?&lt;/p>
+&lt;ul>
+&lt;li>What client-side validation is and what its advantages and limitations are.&lt;/li>
+&lt;li>How it is possible to achieve only 64 bytes on-chain cost using sign-to-contract and signature half-aggregation.&lt;/li>
+&lt;li>How zk-SNARKs and in particular proof-carrying data schemes are applied to provide strong privacy.&lt;/li>
+&lt;li>That private &amp;amp; efficient client-side validation is a largely unexplored framework that has a vast design space and potential for innovation, in particular for designs that allow efficient layer 2&amp;rsquo;s.&lt;/li>
+&lt;/ul>
+&lt;p>Is there anything folks should read up on before they attend this talk?&lt;/p>
+&lt;p>no&lt;/p>
+&lt;p>About the Speaker&lt;/p>
+&lt;p>Social Links&lt;/p>
+&lt;ul>
+&lt;li>Github: https://github.com/jonasnick&lt;/li>
+&lt;li>Twitter: https://x.com/n1ckler&lt;/li>
+&lt;li>Website: &lt;a href="https://nickler.ninja/">https://nickler.ninja&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>TABCONF 6, GitHub link
+&lt;a href="https://github.com/TABConf/6.tabconf.com/issues/90">https://github.com/TABConf/6.tabconf.com/issues/90&lt;/a>&lt;/p></description></item><item><title> FROST, The Production Impact and Why It Matters</title><link>https://btctranscripts.com/tabconf/2024/frost-the-production-impact-and-why-it-matters/</link><pubDate>Tue, 26 Nov 2024 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/tabconf/2024/frost-the-production-impact-and-why-it-matters/</guid><description>&lt;p>Requirements for Bitcoin key management are ever more demanding, and many off-chain tools require user dependence on hot keys instead of (safer) cold keys. Breakthroughs in cryptography like Flexible Round-Optimized Schnorr Threshold Signatures (FROST) and the Taproot upgrade are helping developers and users re-think their approaches to private key security. FROST is a protocol that minimizes the number of rounds of communication between participants in Schnorr signature schemes to reduce network bandwidth, time, and probability of errors. Cryptographers, protocol developers, and other Bitcoin builders will discuss the state of FROST, its use by Bitcoin companies, and its potential for reshaping Bitcoin security.&lt;/p>
+&lt;p>What would an attendee learn from this talk?&lt;/p>
+&lt;p>The Basics: “What is F.R.O.S.T.?”&lt;/p>
+&lt;p>Comparing offchain and onchain multisig tools&lt;/p>
+&lt;p>Comparing different multisig key aggregation schemes&lt;/p>
+&lt;p>Overview of FROST, Frostsnap, and other private collaborative custody tools&lt;/p>
+&lt;p>Is there anything folks should read up on before they attend this talk?&lt;/p>
+&lt;p>&lt;a href="https://en.bitcoin.it/wiki/BIP_0340">https://en.bitcoin.it/wiki/BIP_0340&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://gist.github.com/nickfarrow/4be776782bce0c12cca523cbc203fb9d/?ref=tftc.io">https://gist.github.com/nickfarrow/4be776782bce0c12cca523cbc203fb9d/?ref=tftc.io&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://frostsnap.com/introducing-frostsnap.html">https://frostsnap.com/introducing-frostsnap.html&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://www.tftc.io/issue-1379-using-frost-to-increase-privacy-in-collaborative-bitcoin-custody-models/">https://www.tftc.io/issue-1379-using-frost-to-increase-privacy-in-collaborative-bitcoin-custody-models/&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://brink.dev/blog/2021/04/15/frost/">https://brink.dev/blog/2021/04/15/frost/&lt;/a>&lt;/p>
+&lt;p>Relevant Links&lt;/p>
+&lt;p>About the panelist&lt;/p>
+&lt;p>Social Links&lt;/p>
+&lt;p>&lt;a href="https://github.com/jonasnick">https://github.com/jonasnick&lt;/a>
+&lt;a href="https://github.com/jesseposner">https://github.com/jesseposner&lt;/a>
+&lt;a href="https://github.com/satsie">https://github.com/satsie&lt;/a>
+&lt;a href="https://github.com/0xBEEFCAF3">https://github.com/0xBEEFCAF3&lt;/a>
+&lt;a href="https://github.com/jurvis">https://github.com/jurvis&lt;/a>&lt;/p>
+&lt;p>Twitter: @Arminsdev&lt;/p>
+&lt;p>Website: &lt;a href="http://www.botanixlabs.xyz/">www.botanixlabs.xyz&lt;/a>&lt;/p>
+&lt;p>TABCONF 6, GitHub link
+&lt;a href="https://github.com/TABConf/6.tabconf.com/issues/50">https://github.com/TABConf/6.tabconf.com/issues/50&lt;/a>&lt;/p></description></item></channel></rss>

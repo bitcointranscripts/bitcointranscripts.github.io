@@ -1,4 +1,42 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Utreexo on ₿itcoin Transcripts</title><link>https://btctranscripts.com/tags/utreexo/</link><description>Recent content in Utreexo on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 02 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://btctranscripts.com/tags/utreexo/index.xml" rel="self" type="application/rss+xml"/><item><title>Socratic Seminar - AssumeUTXO</title><link>https://btctranscripts.com/london-bitcoin-devs/2021-11-02-socratic-seminar-assumeutxo/</link><pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/london-bitcoin-devs/2021-11-02-socratic-seminar-assumeutxo/</guid><description>Reading list: https://gist.github.com/michaelfolkson/f46a7085af59b2e7b9a79047155c3993
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Utreexo on ₿itcoin Transcripts</title><link>https://btctranscripts.com/tags/utreexo/</link><description>Recent content in Utreexo on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 31 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://btctranscripts.com/tags/utreexo/index.xml" rel="self" type="application/rss+xml"/><item><title> Merkle Trees is the Perfect Place for UTXOs: Floresta as a Chain Source for BDK</title><link>https://btctranscripts.com/tabconf/2025/merkle-trees-is-the-perfect-place-for-utxos-floresta-as-a-chain-source-for-bdk/</link><pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/tabconf/2025/merkle-trees-is-the-perfect-place-for-utxos-floresta-as-a-chain-source-for-bdk/</guid><description>&lt;p>📌 Learn more about this talk on GitHub: ⭐️🐙
+&lt;a href="https://github.com/TABConf/7.tabconf.com/issues/33">https://github.com/TABConf/7.tabconf.com/issues/33&lt;/a>&lt;/p>
+&lt;p>🌱🧰 Explore bdk-floresta
+A work in progress BDK chain source crate that uses floresta-chain + floresta-wire to run a local, trustless node and wallet directly on your device 📲🧱
+Perfect for mobile and low spec setups ⚡️&lt;/p>
+&lt;p>🧠 What this talk covers
+🌳 Utreexo 101
+Merkle proofs, validation, and bridge nodes
+🔍 How Floresta leverages Utreexo and how it differs from utreexod
+🏗️ A clear BDK architecture overview
+🎬 Live demo
+Creating and syncing a wallet using the crate ✅&lt;/p>
+&lt;p>🎯 If you’re a dev or a Bitcoin enthusiast who wants lightweight, self contained wallets that can run anywhere, this one’s for you 🛠️🟠&lt;/p>
+&lt;p>⚡️🛠️⚡️🛠️⚡️🛠️⚡️🛠️⚡️🛠️⚡️🛠️⚡️🛠️⚡️🛠️⚡️🛠️⚡️🛠️⚡️🛠️⚡️🛠️⚡️🛠️⚡️🛠️&lt;/p>
+&lt;p>🟠 TABConf is a technical Bitcoin conference built for builders. We bring protocol + application devs together to collaborate, debate, and push Bitcoin forward. 🧠🔧&lt;/p>
+&lt;p>🎥 On this channel you’ll find:
+🗣️ Full talks • 🧑‍🏫 workshops • 🧩 panels
+🛠️ Builder Days sessions • 🔍 deep dives on:
+🧱 Bitcoin Core • ⚡️ Lightning • 🕵️ privacy • 🔐 security • 🧰 the tooling teams ship with&lt;/p>
+&lt;p>🎟️ TABConf 8 tickets are on sale now!
+🗓️ Oct 12–15, 2026 • 📍 Atlanta, GA
+🏛️ Georgia Tech Exhibition Hall&lt;/p>
+&lt;p>🎫 TABConf 8 Tickets
+🟠 Pay with Bitcoin: &lt;a href="https://checkout.opennode.com/p/7d51f71f-f3e6-4159-bbfa-3a231d14e5b8">https://checkout.opennode.com/p/7d51f71f-f3e6-4159-bbfa-3a231d14e5b8&lt;/a>&lt;/p>
+&lt;p>💳 Pay with Stripe: &lt;a href="https://buy.stripe.com/00w4gzapSf0o4ubg2mdQQ0b">https://buy.stripe.com/00w4gzapSf0o4ubg2mdQQ0b&lt;/a>&lt;/p>
+&lt;p>🌐 TABConf Website
+&lt;a href="https://tabconf.com">https://tabconf.com&lt;/a>&lt;/p>
+&lt;p>🔗 All links hub
+&lt;a href="https://linktr.ee/tabconf">https://linktr.ee/tabconf&lt;/a>&lt;/p>
+&lt;p>🫂 TABConf Community
+💬 Discord: &lt;a href="https://discord.gg/TRaX8M7amU">https://discord.gg/TRaX8M7amU&lt;/a>&lt;/p>
+&lt;p>🐦 Follow us on X
+&lt;a href="https://x.com/tabconf">https://x.com/tabconf&lt;/a>&lt;/p>
+&lt;p>🎧 Subscribe to the TABConf Podcast
+🍎 Apple Podcasts: &lt;a href="https://podcasts.apple.com/us/podcast/tabconf-sessions/id1867836916">https://podcasts.apple.com/us/podcast/tabconf-sessions/id1867836916&lt;/a>&lt;/p>
+&lt;p>🟢 Spotify: &lt;a href="https://open.spotify.com/show/11Ram7ccTjBeiwhYoDVtF4?si=ec8bab9fdc2945cd">https://open.spotify.com/show/11Ram7ccTjBeiwhYoDVtF4?si=ec8bab9fdc2945cd&lt;/a>&lt;/p>
+&lt;p>⛲️ Fountain: &lt;a href="https://fountain.fm/show/fqYiANm1II8INYOodXaj">https://fountain.fm/show/fqYiANm1II8INYOodXaj&lt;/a>&lt;/p>
+&lt;p>⭐️ Star us on GitHub
+🐙 &lt;a href="https://github.com/TABConf">https://github.com/TABConf&lt;/a>&lt;/p></description></item><item><title>Socratic Seminar - AssumeUTXO</title><link>https://btctranscripts.com/london-bitcoin-devs/2021-11-02-socratic-seminar-assumeutxo/</link><pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/london-bitcoin-devs/2021-11-02-socratic-seminar-assumeutxo/</guid><description>Reading list: https://gist.github.com/michaelfolkson/f46a7085af59b2e7b9a79047155c3993
 Intros Michael Folkson (MF): This is a discussion on AssumeUTXO. We are lucky to have James O’Beirne on the call. There is a reading list that I will share in a second with a bunch of links going right from concept, some of the podcasts James has done, a couple of presentations James has done. And then towards the end hopefully we will get pretty technical and in the weeds of some of the current, past and future PRs.</description></item><item><title>How much Security is too much Security? Defending against a 99.999% Attack</title><link>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2021/2021-04-03-defending-against-99-attack/</link><pubDate>Sat, 03 Apr 2021 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2021/2021-04-03-defending-against-99-attack/</guid><description>Introduction Hi everyone, it&amp;rsquo;s too bad that we can&amp;rsquo;t be in person but I think by next year we&amp;rsquo;ll be able to do this in person. It&amp;rsquo;s been a long year without conferences. And I guess for maybe many people watching the MIT Bitcoin Expo last March, was the last time I saw a bunch of people in person before this whole thing. Thanks to Neha, that was a really good start off for the day.</description></item><item><title>What Is Utreexo?</title><link>https://btctranscripts.com/bitcoin-explained/what-is-utreexo/</link><pubDate>Fri, 30 Oct 2020 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoin-explained/what-is-utreexo/</guid><description>The discussion revolves around Utreexo, a novel proposal aimed at enhancing Bitcoin&amp;rsquo;s scalability by optimizing the UTXO set storage through a compact, Merkle tree-based structure. Utreexo seeks to address the challenges of node synchronization speeds and RAM usage by allowing nodes to store a much smaller representation of the UTXO set, thus potentially accelerating the syncing process and making the network more efficient. The conversation delves into the technical mechanisms of Utreexo, its implementation challenges, and the practical benefits it offers, including reduced memory requirements and the facilitation of faster node operations. While acknowledging Utreexo&amp;rsquo;s promising advantages for Bitcoin&amp;rsquo;s scalability, the participants also weigh its potential downsides, such as increased bandwidth for block transmission and the necessity for significant network adoption to realize its full benefits.</description></item><item><title>ZkVM: zero-knowledge virtual machine for fast confidential smart contracts</title><link>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/zkvm/</link><pubDate>Wed, 11 Sep 2019 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/scalingbitcoin/tel-aviv-2019/zkvm/</guid><description>https://medium.com/stellar-developers-blog/zkvm-a-new-design-for-fast-confidential-smart-contracts-d1122890d9ae and https://twitter.com/oleganza/status/1126612382728372224
 https://twitter.com/kanzure/status/1171711553512583169
 Introduction Okay, welcome. What is zkvm? It&amp;rsquo;s a multi-asset blockchain architecture that combines smart contracts and confidentiality features. It&amp;rsquo;s written in pure rust from top to bottom.
