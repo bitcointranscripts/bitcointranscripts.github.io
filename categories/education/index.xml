@@ -50,7 +50,7 @@
 &lt;li>Website: &lt;a href="https://nickler.ninja/">https://nickler.ninja&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;p>TABCONF 6, GitHub link
-&lt;a href="https://github.com/TABConf/6.tabconf.com/issues/90">https://github.com/TABConf/6.tabconf.com/issues/90&lt;/a>&lt;/p></description></item><item><title> FROST, The Production Impact and Why It Matters</title><link>https://btctranscripts.com/tabconf/2024/frost-the-production-impact-and-why-it-matters/</link><pubDate>Tue, 26 Nov 2024 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/tabconf/2024/frost-the-production-impact-and-why-it-matters/</guid><description>&lt;p>Requirements for Bitcoin key management are ever more demanding, and many off-chain tools require user dependence on hot keys instead of (safer) cold keys. Breakthroughs in cryptography like Flexible Round-Optimized Schnorr Threshold Signatures (FROST) and the Taproot upgrade are helping developers and users re-think their approaches to private key security. FROST is a protocol that minimizes the number of rounds of communication between participants in Schnorr signature schemes to reduce network bandwidth, time, and probability of errors. Cryptographers, protocol developers, and other Bitcoin builders will discuss the state of FROST, its use by Bitcoin companies, and its potential for reshaping Bitcoin security.&lt;/p>
+&lt;a href="https://github.com/TABConf/6.tabconf.com/issues/90">https://github.com/TABConf/6.tabconf.com/issues/90&lt;/a>&lt;/p></description></item><item><title>FROST, The Production Impact and Why It Matters</title><link>https://btctranscripts.com/tabconf/2024/frost-the-production-impact-and-why-it-matters/</link><pubDate>Tue, 26 Nov 2024 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/tabconf/2024/frost-the-production-impact-and-why-it-matters/</guid><description>&lt;p>Requirements for Bitcoin key management are ever more demanding, and many off-chain tools require user dependence on hot keys instead of (safer) cold keys. Breakthroughs in cryptography like Flexible Round-Optimized Schnorr Threshold Signatures (FROST) and the Taproot upgrade are helping developers and users re-think their approaches to private key security. FROST is a protocol that minimizes the number of rounds of communication between participants in Schnorr signature schemes to reduce network bandwidth, time, and probability of errors. Cryptographers, protocol developers, and other Bitcoin builders will discuss the state of FROST, its use by Bitcoin companies, and its potential for reshaping Bitcoin security.&lt;/p>
 &lt;p>What would an attendee learn from this talk?&lt;/p>
 &lt;p>The Basics: “What is F.R.O.S.T.?”&lt;/p>
 &lt;p>Comparing offchain and onchain multisig tools&lt;/p>
@@ -68,9 +68,7 @@
 &lt;p>&lt;a href="https://github.com/jonasnick">https://github.com/jonasnick&lt;/a>
 &lt;a href="https://github.com/jesseposner">https://github.com/jesseposner&lt;/a>
 &lt;a href="https://github.com/satsie">https://github.com/satsie&lt;/a>
-&lt;a href="https://github.com/0xBEEFCAF3">https://github.com/0xBEEFCAF3&lt;/a>
+&lt;a href="https://github.com/arminsabouri">https://github.com/arminsabouri&lt;/a>
 &lt;a href="https://github.com/jurvis">https://github.com/jurvis&lt;/a>&lt;/p>
-&lt;p>Twitter: @Arminsdev&lt;/p>
-&lt;p>Website: &lt;a href="http://www.botanixlabs.xyz/">www.botanixlabs.xyz&lt;/a>&lt;/p>
 &lt;p>TABCONF 6, GitHub link
 &lt;a href="https://github.com/TABConf/6.tabconf.com/issues/50">https://github.com/TABConf/6.tabconf.com/issues/50&lt;/a>&lt;/p></description></item></channel></rss>

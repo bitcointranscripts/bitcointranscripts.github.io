@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Armin Sabouri on ₿itcoin Transcripts</title><link>https://btctranscripts.com/speakers/armin-sabouri/</link><description>Recent content in Armin Sabouri on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 26 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://btctranscripts.com/speakers/armin-sabouri/index.xml" rel="self" type="application/rss+xml"/><item><title>FROST, The Production Impact and Why It Matters</title><link>https://btctranscripts.com/tabconf/2024/frost-the-production-impact-and-why-it-matters/</link><pubDate>Tue, 26 Nov 2024 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/tabconf/2024/frost-the-production-impact-and-why-it-matters/</guid><description>&lt;p>Requirements for Bitcoin key management are ever more demanding, and many off-chain tools require user dependence on hot keys instead of (safer) cold keys. Breakthroughs in cryptography like Flexible Round-Optimized Schnorr Threshold Signatures (FROST) and the Taproot upgrade are helping developers and users re-think their approaches to private key security. FROST is a protocol that minimizes the number of rounds of communication between participants in Schnorr signature schemes to reduce network bandwidth, time, and probability of errors. Cryptographers, protocol developers, and other Bitcoin builders will discuss the state of FROST, its use by Bitcoin companies, and its potential for reshaping Bitcoin security.&lt;/p>
+&lt;p>What would an attendee learn from this talk?&lt;/p>
+&lt;p>The Basics: “What is F.R.O.S.T.?”&lt;/p>
+&lt;p>Comparing offchain and onchain multisig tools&lt;/p>
+&lt;p>Comparing different multisig key aggregation schemes&lt;/p>
+&lt;p>Overview of FROST, Frostsnap, and other private collaborative custody tools&lt;/p>
+&lt;p>Is there anything folks should read up on before they attend this talk?&lt;/p>
+&lt;p>&lt;a href="https://en.bitcoin.it/wiki/BIP_0340">https://en.bitcoin.it/wiki/BIP_0340&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://gist.github.com/nickfarrow/4be776782bce0c12cca523cbc203fb9d/?ref=tftc.io">https://gist.github.com/nickfarrow/4be776782bce0c12cca523cbc203fb9d/?ref=tftc.io&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://frostsnap.com/introducing-frostsnap.html">https://frostsnap.com/introducing-frostsnap.html&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://www.tftc.io/issue-1379-using-frost-to-increase-privacy-in-collaborative-bitcoin-custody-models/">https://www.tftc.io/issue-1379-using-frost-to-increase-privacy-in-collaborative-bitcoin-custody-models/&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://brink.dev/blog/2021/04/15/frost/">https://brink.dev/blog/2021/04/15/frost/&lt;/a>&lt;/p>
+&lt;p>Relevant Links&lt;/p>
+&lt;p>About the panelist&lt;/p>
+&lt;p>Social Links&lt;/p>
+&lt;p>&lt;a href="https://github.com/jonasnick">https://github.com/jonasnick&lt;/a>
+&lt;a href="https://github.com/jesseposner">https://github.com/jesseposner&lt;/a>
+&lt;a href="https://github.com/satsie">https://github.com/satsie&lt;/a>
+&lt;a href="https://github.com/arminsabouri">https://github.com/arminsabouri&lt;/a>
+&lt;a href="https://github.com/jurvis">https://github.com/jurvis&lt;/a>&lt;/p>
+&lt;p>TABCONF 6, GitHub link
+&lt;a href="https://github.com/TABConf/6.tabconf.com/issues/50">https://github.com/TABConf/6.tabconf.com/issues/50&lt;/a>&lt;/p></description></item></channel></rss>
