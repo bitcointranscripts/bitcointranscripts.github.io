@@ -1,29 +1,34 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Education on ₿itcoin Transcripts</title><link>https://btctranscripts.com/categories/education/</link><description>Recent content in Education on ₿itcoin Transcripts</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 20 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://btctranscripts.com/categories/education/index.xml" rel="self" type="application/rss+xml"/><item><title>Cluster Mempool by Murch</title><link>https://btctranscripts.com/tabconf/2024/cluster-mempool-by-murch/</link><pubDate>Fri, 20 Dec 2024 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/tabconf/2024/cluster-mempool-by-murch/</guid><description>&lt;p>Cluster Mempool is an effort to rearchitect how Bitcoin Core stores unconfirmed transactions, builds blocks, and evaluates replacement candidates. It is expected to drastically simplify package relay with bigger packages than two transactions, speed up block building, and generalize CPFP to descendants-pay-for-ancestors.&lt;/p>
+&lt;ul>
+&lt;li>
 &lt;p>What would an attendee learn from this talk?&lt;/p>
-&lt;ul>
-&lt;li>What issues exist in the current mempool design?&lt;/li>
-&lt;li>How does the Cluster Mempool approach address those issues?&lt;/li>
-&lt;li>How does Cluster Mempool work?&lt;/li>
-&lt;li>How does this change affect users and other network participants?&lt;/li>
-&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>What issues exist in the current mempool design?&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>How does the Cluster Mempool approach address those issues?&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>How does the Cluster Mempool work?&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>How does this change affect users and other network participants?&lt;/p>
+&lt;/li>
+&lt;li>
 &lt;p>Is there anything folks should read up on before they attend this talk?&lt;/p>
-&lt;ul>
-&lt;li>Basic knowledge about unconfirmed transactions and mempool is useful&lt;/li>
-&lt;/ul>
-&lt;p>Relevant Links&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/bitcoin/bitcoin/issues/27677">Proposal for a new mempool design bitcoin/bitcoin#27677&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://delvingbitcoin.org/t/cluster-mempool-definitions-theory/202">https://delvingbitcoin.org/t/cluster-mempool-definitions-theory/202&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://delvingbitcoin.org/t/cluster-mempool-rbf-thoughts/156">https://delvingbitcoin.org/t/cluster-mempool-rbf-thoughts/156&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://delvingbitcoin.org/t/how-to-linearize-your-cluster/303">https://delvingbitcoin.org/t/how-to-linearize-your-cluster/303&lt;/a>&lt;/li>
+&lt;/li>
+&lt;li>
+&lt;p>Basic knowledge about unconfirmed transactions and mempool is useful&lt;/p>
+&lt;/li>
 &lt;/ul>
 &lt;p>About the Speaker&lt;/p>
 &lt;p>Murch is an engineer at Chaincode Labs. He contributes to Bitcoin Core, Bitcoin Optech, and Bitcoin Stack Exchange. He is a co-host of NYC BitDevs and the Bitcoin Optech Recap.&lt;/p>
 &lt;p>Social Links&lt;/p>
-&lt;p>!https://github.githubassets.com/images/icons/emoji/octocat.png&lt;/p>
+&lt;p>&lt;a href="https://github.githubassets.com/images/icons/emoji/octocat.png">https://github.githubassets.com/images/icons/emoji/octocat.png&lt;/a>&lt;/p>
 &lt;p>&lt;a href="https://github.com/murchandamus/">https://github.com/murchandamus/&lt;/a>&lt;/p>
 &lt;p>🐦 &lt;a href="https://twitter.com/murchandamus">https://twitter.com/murchandamus&lt;/a>&lt;/p>
-&lt;p>TABConf 6 GitHub link
+&lt;p>TABConf-6-GitHub
 &lt;a href="https://github.com/TABConf/6.tabconf.com/issues/45">https://github.com/TABConf/6.tabconf.com/issues/45&lt;/a>&lt;/p></description></item><item><title>Shielded CSV Private &amp; Efficient Client Side Validation</title><link>https://btctranscripts.com/tabconf/2024/shielded-csv-private-and-efficient-client-side-validation/</link><pubDate>Wed, 27 Nov 2024 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/tabconf/2024/shielded-csv-private-and-efficient-client-side-validation/</guid><description>&lt;p>The client-side validation approach removes transaction verification from the consensus rules. Instead, transaction data posted to the blockchain is only interpreted on each individual node (&amp;ldquo;client-side&amp;rdquo;). This approach allows building protocols with very low on-chain size and verification cost, while providing strong privacy.&lt;/p>
 &lt;p>This talk proposes the client-side validation protocol &amp;ldquo;zkCSV&amp;rdquo; (working title) that, in contrast to existing client-side validation protocols, only requires 64 bytes of on-chain space regardless of the size of the transaction and is fully private. The protocol&amp;rsquo;s communication cost between transaction sender and receiver is independent of the transaction history. Furthermore, zkCSV can be instantiated with existing cryptographic zk-SNARK primitives.&lt;/p>
 &lt;p>With a trust-minimized mechanism like BitVM2 to bridge between the blockchain and the client-side validation protocol, zkCSV adds strong privacy to Bitcoin and scales Bitcoin to 100 transactions per second. It has been described as &amp;ldquo;the most useful thing you can do with BitVM2&amp;rdquo;.&lt;/p>
