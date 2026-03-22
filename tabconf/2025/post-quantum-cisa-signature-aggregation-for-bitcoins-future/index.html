@@ -1,11 +1,368 @@
 <!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=canonical href=https://btctranscripts.com/tabconf/2025/post-quantum-cisa-signature-aggregation-for-bitcoins-future/><title>Post Quantum CISA: Signature Aggregation for Bitcoin’s Future | ₿itcoin Transcripts
-</title><link href=https://btctranscripts.com/css/fontawesome.min.css rel=stylesheet><link rel=stylesheet href=https://btctranscripts.com/css/ace.min.css><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://btctranscripts.com/images/btctranscripts.png"><meta name=twitter:title content="Post Quantum CISA: Signature Aggregation for Bitcoin’s Future"><meta name=twitter:description content><script async src=https://visits.bitcoindevs.xyz/script.js data-website-id=06384ada-7f1c-44c2-a6d9-d830fb23e122></script></head><body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id=navbarMain><div class=container><div><a class=navbar-brand href=/>₿itcoin Transcripts</a></div><div class="collapse navbar-collapse" id=navbarMainCollapse><ul class="navbar-nav ml-auto"><li class=nav-item><a class=nav-link href=/es>es</a></li><li class=nav-item><a class=nav-link href=/pt>pt</a></li><li class=nav-item><a class=nav-link href=/zh>zh</a></li><li class=nav-item><a class=nav-link href=https://github.com/bitcointranscripts/bitcointranscripts target=_blank><i class='fab fa-github'></i></a></li></ul></div></div></nav><div class="alert alert-warning fade show sticky-banner" role=alert><strong><a href=https://review.btctranscripts.com target=_blank data-umami-event=click-banner>Get paid to review technical Bitcoin transcripts
+</title><link href=https://btctranscripts.com/css/fontawesome.min.css rel=stylesheet><link rel=stylesheet href=https://btctranscripts.com/css/ace.min.css><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://btctranscripts.com/images/btctranscripts.png"><meta name=twitter:title content="Post Quantum CISA: Signature Aggregation for Bitcoin’s Future"><meta name=twitter:description content="This talk introduces a novel approach to cross-input signature aggregation (CISA) designed to work with post-quantum (hash-based) signature schemes, addressing one of Bitcoin&rsquo;s most pressing scalability concerns in a post-quantum world.
+The speaker begins by explaining elliptic curve CISA: in a Bitcoin transaction with multiple inputs from the same wallet, each input currently requires its own signature. CISA allows these to be combined into a single aggregate signature, saving block space. However, with EC signatures at ~64 bytes and the 75% witness discount, the savings are only ~8% in vbytes - modest enough that CISA hasn&rsquo;t been prioritized for a soft fork.
+Post-quantum signatures change the calculus dramatically. Schemes like SPhInXs Plus produce signatures of ~4 kilobytes - roughly 50x larger than EC signatures. If Bitcoin ever needs to migrate to post-quantum cryptography, transaction throughput could drop to around 2% of current capacity. In this context, aggregation becomes critical: two inputs aggregated would yield ~50% space savings, three inputs ~60% or more.
+The fundamental challenge is that all existing EC aggregation techniques (MuSig2, FROST, half-aggregation, etc.) rely on elliptic curve math that simply does not apply to hash-based or lattice-based signatures.
+The speaker proposes a new opcode (informally called OpCSIV) that sidesteps this problem entirely. Instead of cryptographically combining signatures, inputs can point to other inputs. One input provides a full signature (covering the entire transaction via SIGHASH_ALL), while other inputs include a hash-based pointer - the outpoint (TXID + index) of the signing input - baked into their taproot tree at address creation time. The opcode verifies that the referenced outpoint is being spent in the same transaction, effectively delegating signing authority without any new cryptographic primitives.
+Key design details include: an input index field for O(n) rather than O(n²) lookup complexity; a random nonce for privacy blinding to prevent chain analysis of uncommitted taproot branches; and the constraint that the &ldquo;lead&rdquo; UTXO must exist before the &ldquo;follower&rdquo; address is generated. No cycles are possible since outpoints are unique, and there are no replay attack vectors.
+Wallet integration requires careful design: wallets should embed pointers to currently owned UTXOs in new address taproot trees (limited to ~10 for recovery feasibility), while always retaining a primary signing path so no UTXO becomes unspendable. The approach works best with sequential address generation rather than bulk address pre-generation, and is particularly beneficial for exchanges performing frequent UTXO consolidations.
+The speaker notes that this opcode would be pointless today given small EC signatures, but would be highly valuable if Bitcoin ever transitions to post-quantum signatures.
+"><script async src=https://visits.bitcoindevs.xyz/script.js data-website-id=06384ada-7f1c-44c2-a6d9-d830fb23e122></script></head><body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id=navbarMain><div class=container><div><a class=navbar-brand href=/>₿itcoin Transcripts</a></div><div class="collapse navbar-collapse" id=navbarMainCollapse><ul class="navbar-nav ml-auto"><li class=nav-item><a class=nav-link href=/es>es</a></li><li class=nav-item><a class=nav-link href=/pt>pt</a></li><li class=nav-item><a class=nav-link href=/zh>zh</a></li><li class=nav-item><a class=nav-link href=https://github.com/bitcointranscripts/bitcointranscripts target=_blank><i class='fab fa-github'></i></a></li></ul></div></div></nav><div class="alert alert-warning fade show sticky-banner" role=alert><strong><a href=https://review.btctranscripts.com target=_blank data-umami-event=click-banner>Get paid to review technical Bitcoin transcripts
 </a></strong><button type=button class=close data-dismiss=alert aria-label=Close>
 <span aria-hidden=true>&#215;</span></button></div><div class=container-fluid><div class=row><div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0"><button class="navbar-toggler navbar-toggler-right collapsed" type=button data-toggle=collapse data-target=#sidenav-left-collapse aria-controls=sidenav-left-collapse aria-expanded=false aria-label="Toggle navigation">
 <span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse align-items-start flex-column" id=sidenav-left-collapse><form class="form-inline my-2 my-lg-0 searchbox"><input class="form-control mr-sm-2 w-100" data-search-input id=search-by type=text placeholder='Search (press "/")'></form><ul class="navbar-nav flex-column pt-3"><li data-nav-id=/adopting-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/adopting-bitcoin/><h6>Adopting Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/adopting-bitcoin/2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/adopting-bitcoin/2021/><h6>Adopting Bitcoin 2021</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/adopting-bitcoin/2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/adopting-bitcoin/2022/><h6>Adopting Bitcoin 2022</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/advancing-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/><h6>Advancing Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/advancing-bitcoin/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2019/><h6>Advancing Bitcoin 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/advancing-bitcoin/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2020/><h6>Advancing Bitcoin 2020</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/advancing-bitcoin/2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2022/><h6>Advancing Bitcoin 2022</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/advancing-bitcoin/2023/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/advancing-bitcoin/2023/><h6>Advancing Bitcoin 2023</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/andreas-antonopoulos/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/andreas-antonopoulos/><h6>Andreas Antonopoulos</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/austin-bitcoin-developers/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/austin-bitcoin-developers/><h6>Austin Bitcoin Developers</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/baltic-honeybadger/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/><h6>Baltic Honeybadger</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/baltic-honeybadger/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/2018/><h6>Baltic Honeybadger 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/baltic-honeybadger/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/baltic-honeybadger/2019/><h6>Baltic Honeybadger 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bit-block-boom/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bit-block-boom/><h6>Bit Block Boom</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bit-block-boom/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bit-block-boom/2019/><h6>Bit Block Boom 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-2024/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-2024/><h6>Bitcoin 2024 Nashville</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/><h6>Bitcoin Core Dev Tech</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bitcoin-core-dev-tech/2015-02/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2015-02/><h6>Bitcoin Core Dev Tech 2015</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2017-09/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2017-09/><h6>Bitcoin Core Dev Tech 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2018-03/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2018-03/><h6>Bitcoin Core Dev Tech 2018 (Mar)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2018-10/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2018-10/><h6>Bitcoin Core Dev Tech 2018 (Oct)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2019-06/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2019-06/><h6>Bitcoin Core Dev Tech 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2022-10/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2022-10/><h6>Bitcoin Core Dev Tech 2022</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2023-04/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2023-04/><h6>Bitcoin Core Dev Tech 2023 (Apr)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2023-09/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2023-09/><h6>Bitcoin Core Dev Tech 2023 (Sept)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2024-04/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2024-04/><h6>Bitcoin Core Dev Tech 2024 (Apr)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2024-10/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2024-10/><h6>Bitcoin Core Dev Tech 2024 (Oct)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2025-02/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2025-02/><h6>Bitcoin Core Dev Tech 2025 (Feb)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-core-dev-tech/2025-10/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-core-dev-tech/2025-10/><h6>Bitcoin Core Dev Tech 2025 (Oct)</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/edgedevplusplus/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/edgedevplusplus/><h6>Bitcoin Edge Dev++</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/edgedevplusplus/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/edgedevplusplus/2017/><h6>Bitcoin Edge Dev++ 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/edgedevplusplus/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/edgedevplusplus/2018/><h6>Bitcoin Edge Dev++ 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/edgedevplusplus/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/edgedevplusplus/2019/><h6>Bitcoin Edge Dev++ 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoin-explained/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-explained/><h6>Bitcoin Explained</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-magazine/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-magazine/><h6>Bitcoin Magazine</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-research-week-2024/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-research-week-2024/><h6>Bitcoin Research Week 2024</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-review-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-review-podcast/><h6>Bitcoin Review Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoinplusplus/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinplusplus/><h6>Bitcoin++</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/bitcoinplusplus/2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinplusplus/2022/><h6>Bitcoin++ 2022</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoinplusplus/2025-berlin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinplusplus/2025-berlin/><h6>Bitcoin++ 2025 Berlin</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoinplusplus/layer-2/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinplusplus/layer-2/><h6>Layer 2</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoinplusplus/onchain-privacy/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinplusplus/onchain-privacy/><h6>Onchain Privacy</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/bitcoinology/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoinology/><h6>Bitcoinology</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/blockchain-protocol-analysis-security-engineering/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/><h6>Blockchain Protocol Analysis Security Eng</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/blockchain-protocol-analysis-security-engineering/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2017/><h6>Blockchain Protocol Analysis Security Engineering 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/blockchain-protocol-analysis-security-engineering/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockchain-protocol-analysis-security-engineering/2018/><h6>Blockchain Protocol Analysis Security Engineering 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/blockstream-webinars/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/blockstream-webinars/><h6>Blockstream Webinars</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/boltathon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/boltathon/><h6>Boltathon</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/breaking-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/><h6>Breaking Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/breaking-bitcoin/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/2017/><h6>Breaking Bitcoin 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/breaking-bitcoin/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/breaking-bitcoin/2019/><h6>Breaking Bitcoin 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/building-on-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/building-on-bitcoin/><h6>Building On Bitcoin</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/building-on-bitcoin/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/building-on-bitcoin/2018/><h6>Building On Bitcoin 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/chaincode-residency/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-residency/><h6>Chaincode Residency</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/chicago-bitdevs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chicago-bitdevs/><h6>Chicago Bitdevs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/coindesk-consensus-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coindesk-consensus-2016/><h6>Coindesk Consensus</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/coordination-of-decentralized-finance-workshop/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/><h6>Coordination of Decentralized Finance</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/coordination-of-decentralized-finance-workshop/2020-stanford/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/coordination-of-decentralized-finance-workshop/2020-stanford/><h6>2020 Stanford</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/c-lightning/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/c-lightning/><h6>Core Lightning Developer Call</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/cppcon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/><h6>CPPcon</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/cppcon/2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/2017/><h6>CPPcon 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/cppcon/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cppcon/2020/><h6>CPPcon 2020</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/cryptoeconomic-systems/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cryptoeconomic-systems/><h6>Cryptoeconomic Systems</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/cryptoeconomic-systems/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/cryptoeconomic-systems/2019/><h6>Cryptoeconomic Systems 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/dallas-bitcoin-symposium/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/dallas-bitcoin-symposium/><h6>Dallas Bitcoin Symposium</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/decentralized-financial-architecture-workshop/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/decentralized-financial-architecture-workshop/><h6>Decentralized Financial Architecture Workshop</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/bitcoin-developers-miners-meeting-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/bitcoin-developers-miners-meeting-2016/><h6>Developers-Miners Meeting</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/greg-maxwell/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/greg-maxwell/><h6>Greg Maxwell</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/grincon/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/grincon/><h6>Grincon</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/grincon/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/grincon/2019/><h6>Grincon 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/honey-badger-diaries/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/honey-badger-diaries/><h6>Honey Badger Diaries</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/iacr/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/iacr/><h6>IACR Crypto</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/la-bitdevs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/la-bitdevs/><h6>LA Bitdevs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/layer2-summit/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/layer2-summit/><h6>Layer2 Summit</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/layer2-summit/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/layer2-summit/2018/><h6>Layer2 Summit 2018</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/learning-bitcoin-and-design/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/learning-bitcoin-and-design/><h6>Learning Bitcoin and Design</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/lets-talk-bitcoin-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lets-talk-bitcoin-podcast/><h6>Lets Talk Bitcoin Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/lightning-conference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-conference/><h6>Lightning Conference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/lightning-conference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-conference/2019/><h6>Lightning Conference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/lightning-hack-day/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-hack-day/><h6>Lightning Hack Day</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/lightning-specification/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/lightning-specification/><h6>Lightning Specification</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/london-bitcoin-devs/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/london-bitcoin-devs/><h6>London Bitcoin Devs</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/magicalcryptoconference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/magicalcryptoconference/><h6>Magicalcryptoconference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/magicalcryptoconference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/magicalcryptoconference/2019/><h6>Magicalcryptoconference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/misc/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/misc/><h6>Misc</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/><h6>MIT Bitcoin Expo</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2015/><h6>MIT Bitcoin Expo 2015</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2016/><h6>MIT Bitcoin Expo 2016</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2017/><h6>MIT Bitcoin Expo 2017</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2018/><h6>MIT Bitcoin Expo 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2019/><h6>MIT Bitcoin Expo 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2020/><h6>MIT Bitcoin Expo 2020</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2021/><h6>MIT Bitcoin Expo 2021</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2022/><h6>MIT Bitcoin Expo 2022</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2024/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2024/><h6>MIT Bitcoin Expo 2024</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/mit-bitcoin-expo/mit-bitcoin-expo-2025/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/mit-bitcoin-expo/mit-bitcoin-expo-2025/><h6>MIT Bitcoin Expo 2025</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/munich-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/munich-meetup/><h6>Munich Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/noded-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/noded-podcast/><h6>Noded Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/potzblitz/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/potzblitz/><h6>Potzblitz! - The weekly Lightning talk</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/realworldcrypto/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/><h6>Realworldcrypto</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/realworldcrypto/2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/2018/><h6>Realworldcrypto 2018</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/realworldcrypto/2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/realworldcrypto/2021/><h6>Realworldcrypto 2021</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/rebooting-web-of-trust/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/rebooting-web-of-trust/><h6>Rebooting Web Of Trust</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/rebooting-web-of-trust/2019-prague/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/rebooting-web-of-trust/2019-prague/><h6>2019 Prague</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/ruben-somsen/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/ruben-somsen/><h6>Ruben Somsen</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/satoshi-roundtable/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/satoshi-roundtable/><h6>Satoshi Roundtable</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/satoshi-roundtable/sr-004/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/satoshi-roundtable/sr-004/><h6>Sr 004</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/scalingbitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/><h6>Scaling Bitcoin Conference</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/scalingbitcoin/hong-kong-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/hong-kong-2015/><h6>Hong Kong (2015)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/milan-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/milan-2016/><h6>Milan (2016)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/montreal-2015/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/montreal-2015/><h6>Montreal (2015)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/stanford-2017/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/stanford-2017/><h6>Stanford (2017)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/tel-aviv-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tel-aviv-2019/><h6>Tel Aviv (2019)</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/scalingbitcoin/tokyo-2018/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/scalingbitcoin/tokyo-2018/><h6>Tokyo (2018)</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/sf-bitcoin-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/sf-bitcoin-meetup/><h6>SF Bitcoin Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/simons-institute/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/simons-institute/><h6>Simons Institute</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/stanford-blockchain-conference/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/><h6>Stanford Blockchain</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/stanford-blockchain-conference/2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/2019/><h6>Stanford Blockchain Conference 2019</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/stanford-blockchain-conference/2020/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stanford-blockchain-conference/2020/><h6>Stanford Blockchain Conference 2020</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/stephan-livera-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/stephan-livera-podcast/><h6>Stephan Livera Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/sydney-bitcoin-meetup/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/sydney-bitcoin-meetup/><h6>Sydney Bitcoin Meetup</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/tabconf/ class="nav-item my-1 parent haschildren"><a class="nav-link p-0" href=/tabconf/><h6>TABConf</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/tabconf/2021/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tabconf/2021/><h6>TABConf 2021</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/tabconf/2022/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tabconf/2022/><h6>TABConf 2022</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/tabconf/2024/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tabconf/2024/><h6>TABConf 2024</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/tabconf/2025/ class="nav-item my-1 parent haschildren"><a class="nav-link p-0" href=/tabconf/2025/><h6>TABConf 2025</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/texas-bitcoin-conference-2014/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/texas-bitcoin-conference-2014/><h6>Texas Bitcoin Conference</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/tftc-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/tftc-podcast/><h6>TFTC: A Bitcoin Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/the-bitcoin-development-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/the-bitcoin-development-podcast/><h6>The Bitcoin Development Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/chaincode-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/chaincode-podcast/><h6>The Chaincode Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/ux-research/ class="nav-item my-1"><a class="nav-link p-0" href=/ux-research/><h6>UX Research Calls</h6></a></li><li data-nav-id=/verifiable-delay-functions/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/verifiable-delay-functions/><h6>Verifiable Delay Functions</h6></a><ul class="list-unstyled ml-2"><li data-nav-id=/verifiable-delay-functions/vdf-day-2019/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/verifiable-delay-functions/vdf-day-2019/><h6>Vdf Day 2019</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></li><li data-nav-id=/vr-bitcoin/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/vr-bitcoin/><h6>VR Bitcoin</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/w3-blockchain-workshop-2016/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/w3-blockchain-workshop-2016/><h6>W3 Blockchain Workshop</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/wasabi-research-club/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/wasabi-research-club/><h6>Wasabi Research Club</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/wasabi-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/wasabi-podcast/><h6>Wasabikas Bitcoin Privacy Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li><li data-nav-id=/what-bitcoin-did-podcast/ class="nav-item my-1 haschildren"><a class="nav-link p-0" href=/what-bitcoin-did-podcast/><h6>What Bitcoin Did Podcast</h6></a><ul class="list-unstyled ml-2"></ul></li></ul></div></nav></div><div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky"><div class=docs-toc><nav id=TableOfContents></nav></div></div><div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3"><a href=/>Home</a>
 &lt; <a href=/tabconf/>TABConf
 </a>&lt; <a href=/tabconf/2025/>TABConf 2025
-</a>&lt; Post Quantum CISA: Signature Aggregation for Bitcoin’s Future<h1>Post Quantum CISA: Signature Aggregation for Bitcoin’s Future</h1><p>Media:
+</a>&lt; Post Quantum CISA: Signature Aggregation for Bitcoin’s Future<h1>Post Quantum CISA: Signature Aggregation for Bitcoin’s Future</h1><p><i>Date: October 30, 2025</i></p><p><i>Transcript By: 0tuedon via tstbtc v1.0.0 --needs-review</i></p><p>Tags:
+<a href=/tags/cisa>Cisa</a>, <a href=/tags/quantum-resistance>Quantum resistance</a>, <a href=/tags/taproot>Taproot</a>, <a href=/tags/musig>Musig</a>, <a href=/tags/op-checktemplateverify>Op checktemplateverify</a>, <a href=/tags/schnorr-signatures>Schnorr signatures</a></p><p>Category:
+<a href=/categories/scripts-and-addresses>Scripts and addresses</a>, <a href=/categories/soft-forks>Soft forks</a>, <a href=/categories/security-enhancements>Security enhancements</a></p><p>Media:
 <a href='https://www.youtube.com/watch?v=cqjo3rmd6hY'>https://www.youtube.com/watch?v=cqjo3rmd6hY</a></p><div class="alert alert-warning"><div class=ai-generated><i class='fas fa-robot'></i>
-<span>This source has been suggested for transcription</span></div><span>The AI-generated transcript will be available for review shortly.</span>
-<a href=https://review.btctranscripts.com target=_blank data-umami-event=click-transcript-banner>Learn More ></a></div><div class=row></div></div></div></div><script src=https://btctranscripts.com/lib/jquery.min.js></script><script src=https://btctranscripts.com/lib/popper.min.js></script><script src=https://btctranscripts.com/js/bootstrap.min.js></script><script type=text/javascript src=/plugins/lunr.min.js></script><script type=text/javascript src=/plugins/auto-complete.js></script><link href=/plugins/auto-complete.css rel=stylesheet><script type=text/javascript>var baseurl="https://btctranscripts.com/"</script><script type=text/javascript src=/plugins/search.js></script><script type=text/javascript src=https://btctranscripts.com/js/custom.js></script><script type=text/javascript src=/plugins/clipboard.js></script><script>new ClipboardJS(".btn")</script></body></html>
+<span>AI-Generated Transcript</span></div><span>Review this transcript and earn sats. </span><a href=https://review.btctranscripts.com target=_blank data-umami-event=click-transcript-banner>Learn More ></a></div><p>Speaker 0: 00:00:00</p><p>So I&rsquo;m going to talk about post-quantum signature aggregation.
+And I think the talk will probably not take all 30 minutes, and so we&rsquo;ll have time for questions and stuff, discussion at the end.
+So the sort of layout intro, I&rsquo;m going to talk about elliptic curve, cross input signature aggregation.
+I&rsquo;m going to talk about post quantum or I guess better post elliptic curve signatures and aggregation there.
+Talk about a new potential opcode and wallet usage.
+Any questions?
+Okay, so intro is hi, TabConf is awesome.
+Thanks for being here so early.
+Please ask questions.
+Okay, so people have probably heard about Eli Kerkro and SIGAG.
+I think people call it SIGAG or EC, I don&rsquo;t know.
+Cross-input signature aggregation.
+It&rsquo;s something that is a it&rsquo;s an idea that has existed, I don&rsquo;t know, 2018, 17.
+People were talking about it a little bit after SegWit.
+It was like, oh once we do SegWit then we should also do signature aggregation.
+We can do Schnorr signatures.
+And I think when people were talking about changing to taproot, this was one of the ideas of maybe the taproot software would also have signature aggregation built into it or something like that.
+The basic idea is, if you have a Bitcoin transaction, you&rsquo;ve got a typical transaction, we&rsquo;ll have a couple inputs, a couple outputs, right?
+Alice is paying Bob And Alice has, let&rsquo;s say, a bunch of UTXOs in her wallet.
+And she needs to add up to these three UTXOs to send some money to Bob.
+And then she has a change output.
+So let&rsquo;s say she has input 3, 7, and 8.
+All three of those UTXOs sign.
+They create a digital signature.
+And you put the signature in that input.
+It&rsquo;s kind of inefficient if you think about it, right?
+Because they&rsquo;re all the same person.
+It&rsquo;s all the same wallet.
+You&rsquo;re signing three times.
+You&rsquo;re attaching these three signatures.
+Every node out there verifies this three independent signatures.
+Kind of silly.
+Why don&rsquo;t we just sign once?
+Right?
+So instead of having three signatures you just have two signatures.
+And this one signature, right, signature three, it covers everything.
+Right?
+So it&rsquo;s not like this signature only covers input 3 and you can malleate or change input 7 and 8.
+When you do sig hash all, you sign the entire thing.
+You basically hash all the inputs, all the outputs, you sign the whole thing.
+So if signature 3 is signing, input 7 and input 8 are stuck there, right?
+If you try to change input 7 or input 8, the signature is no longer valid.
+So it seems like, yeah, maybe you can just sign once, right?
+Problem there.
+It&rsquo;s actually not risky for Alice.
+The problem is, Alice can just point to Carol&rsquo;s input and say, yeah, that&rsquo;s my input.
+Those are my bitcoins.
+I&rsquo;m signing with input three for inputs three, seven, and four.
+But four is not even Alice&rsquo;s.
+Right?
+It&rsquo;s a totally different key.
+It&rsquo;s someone else&rsquo;s money.
+It&rsquo;s not just that this, you know, you have no proof that all three inputs are from the same wallet, right?
+So you do need all three of these inputs to sort of sign off on being in the transaction and sign off individually on the outputs.
+So the way Elliptic Curve crosses input signature aggregation or Ely-Kirkcrow input SIGAG, with two inputs you have two, you know, A and B.
+Both inputs need to point to the outputs.
+How do you do that with one signature, though?
+Right.
+Input B needs to sort of sign off on signature A without signing.
+So the way it works, and this is a huge simplification, is you add the signatures.
+And with elliptic curve properties, you can do this.
+It&rsquo;s basically sig A plus sig B.
+And that plus symbol is doing a lot of work.
+There&rsquo;s many papers and many equations and a lot of&mldr;
+But you can do this.
+You can sort of combine these signatures in a way where they both need to be signing the same things and if they&rsquo;re not the addition doesn&rsquo;t work.
+So what are the benefits here?
+A lot of the benefit is space.
+And verification time as well to some extent.
+It&rsquo;s a little&mldr;
+It&rsquo;s not like I have 10 inputs, I aggregate into one signature, okay now the verifier only needs to verify one thing.
+There&rsquo;s some scaling that does add additional work to the verifier per input.
+But you do save a lot of space, right?
+And this is interactive aggregation, right?
+It&rsquo;s not, there&rsquo;s another idea of non-interactive aggregation, which is like a miner or someone in the mempool.
+Like let&rsquo;s say you see two transactions in your mempool and you say, well, I&rsquo;m going to aggregate these two signatures.
+Right.
+There&rsquo;s like Alice signed her transaction.
+Bob signed his transaction.
+I&rsquo;m going to smush these signatures together and then relay it to my peer and say, well, here&rsquo;s two transactions and I smushed the signature together for you.
+That, as far as we know, is not really possible with secp256k1.
+It is possible with some other fancy stuff like BLS curves And that would be really cool because then you could aggregate the whole block But this is what I&rsquo;m talking about is just interactive signature aggregation.
+It saves space I think the problem and I think one of the this is purely my opinion is one of the reasons it hasn&rsquo;t had as much, you know, work behind it and as much like, oh we really need to get this into Bitcoin, is it doesn&rsquo;t save that much space, right?
+The elliptic curve signature is around 64 bytes, slightly higher with pre-traproot, but you know around.
+And so you already have this 75% witness discount, right?
+So if it&rsquo;s in a witness field it counts as 75% less.
+So the 64 real bytes turns into 16 V bytes.
+For the average transaction, it&rsquo;s around 8% savings in terms of V bytes.
+And there&rsquo;s nice statistics from this Blockstream research.
+There were people working on cross-input aggregation.
+I don&rsquo;t want to dismiss it, right?
+Because if you&rsquo;re long term and Bitcoin&rsquo;s worth already trillions of dollars and people are using this, an 8% savings on fees could be billions of dollars over the course of years.
+So I think it&rsquo;s super important and really cool research.
+But at the same time, it&rsquo;s like, well, 8% isn&rsquo;t huge, right?
+Like, it doesn&rsquo;t seem to be the first thing we have to work on here for scalability and space saving.
+So in my opinion, that&rsquo;s maybe why it hasn&rsquo;t had as much drive to get into Bitcoin.
+So now there&rsquo;s a little quantum leap.
+This people, yeah, there&rsquo;s been talks about quantum signatures a bit.
+Okay, so there&rsquo;s post quantum signatures.
+And I don&rsquo;t, I don&rsquo;t even really like the term quantum.
+So like, my personal opinion is like, I&rsquo;m not very worried about quantum computers.
+I actually think both of these things are unlikely, but I think it&rsquo;s probably more likely that there will be some kind of regular old computer algorithmic deficiency in the elliptic curves we&rsquo;re using than a quantum computer comes and runs Shor&rsquo;s algorithms.
+Both I think aren&rsquo;t gonna happen, I&rsquo;m not worried about either, but it&rsquo;s like yeah who knows like someday someone would be like yeah Pollard&rsquo;s Row, we got a better way to do Pollard&rsquo;s Row and you know find private keys from public keys on these elliptic curves.
+And there&rsquo;s a paper and people like oh shoot and you know maybe it starts as like a small speed up but it&rsquo;s like hey this is getting you know getting sketchy we should move to a different you know totally possible that we have to move to different signature algorithms, regardless of whether there&rsquo;s a quantum computer or not.
+I don&rsquo;t think it&rsquo;ll happen, But just in case, it&rsquo;s good to be prepared.
+And so there&rsquo;s different signature algorithms that do not rely on elliptic curves.
+And elliptic curves are broken by Shor&rsquo;s algorithm if you have a quantum computer.
+The main downside is they&rsquo;re a lot larger.
+They&rsquo;re like 50 times larger.
+Like 4 kilobytes ish is the size for the Sphinx Plus.
+You can get it lower, so there&rsquo;s like, I think that&rsquo;s another interesting part of research is like, hey, it doesn&rsquo;t really need to be 4k.
+Could we, you know, maybe 3k?
+Maybe we can whittle it down to 2k, but that&rsquo;s what we&rsquo;re starting with.
+And I don&rsquo;t see any way you get it down to anywhere close to 64 bytes.
+So how bad would that be if we had to switch?
+Well that&rsquo;s like a&mldr;
+You&rsquo;re down to 2% of the throughput rate that you had.
+So if people thought 1 megabyte blocks were small, now you&rsquo;ve got like 50k or something, or less.
+Yeah, so 20k.
+You&rsquo;re really restricted in how many transactions you can do.
+And that&rsquo;s really bad.
+So signature aggregation would be amazing if you can do it with post-quantum or hash-based signatures.
+Because even with the witness discount, these things are going to be 1 kilovbyte and you&rsquo;d have instead of 8% savings, even a transaction with just 2 inputs would have something like 50% savings.
+Three inputs you&rsquo;re getting a 60 something.
+So, you know, very large savings in terms of how many vbytes you&rsquo;re saving here.
+And, you know, these post quantum signatures, if you did switch, maybe you&rsquo;d also need to crank up the witness discount.
+That&rsquo;s a whole other argument I don&rsquo;t want to get into.
+But a way to aggregate these would be really powerful.
+OK, so let&rsquo;s do it.
+Let&rsquo;s aggregate SphinxPlus signatures.
+So let&rsquo;s look at how they aggregate the elliptic curve signatures.
+And this, like none of this, like, OK, so yeah, it&rsquo;s a kind of curve.
+But even if you know what all these things and I don&rsquo;t endorse exponential notation I like the multiple anyway but what can you multiply hashes right that&rsquo;s what this big pie thing means you multiply stuff can you I guess you can multiply them?
+Modulo what?
+Modulo 2 of the 256?
+What&rsquo;s the generator point for SHA-256?
+Is there one?
+I don&rsquo;t, like, none of this fits, right?
+None of the techniques that people have been working on for years of all these cool things like frost and roast and music too and signature aggregation, half aggregation.
+None of this applies at all to hash based signatures.
+Lattice signatures as well, although Some people are like, hey, maybe there&rsquo;s a way to do aggregation with lattices.
+I&rsquo;m pretty skeptical because I do want to say that with elliptic curve signature aggregation, I remember this in like 2018, everyone thought it was going to be easy.
+It was like, yeah, you just add the signatures.
+You add the pub keys, you know, You add the points, you add the r points, you add the s, it all works.
+And then it was like many years.
+There&rsquo;s a reason it&rsquo;s called Music 2.
+Music 1 didn&rsquo;t work well.
+Anyway, it was a lot harder than we thought.
+And so I think with a lattice thing where, oh, there&rsquo;s hints that it may be possible.
+If it&rsquo;s easy, just add, translates into five plus years of hard work, then it may be possible.
+It&rsquo;s like, yeah, that&rsquo;s gonna be decades.
+Anyway, so none of these things fit with hash-based signatures or lattice.
+Is there another way?
+So, and this is what I came up, I don&rsquo;t know, there&rsquo;s maybe better ways.
+This is just a way I came up with like a month or two ago thinking about this.
+We don&rsquo;t actually need to add the signatures or combine signatures, right?
+What we need is you want the inputs to point to the outputs.
+And so if you think about like OpsCTV, if you&rsquo;re OpsCTV is object template verify, where you basically take the whole shape of a transaction and put that in an output.
+That counts, right?
+That&rsquo;s quantum secure because it&rsquo;s just hash based and you&rsquo;re sort of committing to a whole other set of outputs in a quantum secure way.
+It&rsquo;s just hash based.
+It is sort of like a signature in that sense.
+It works but it&rsquo;s very inflexible, right?
+You need to know what you&rsquo;re going to do in order to put that into your output.
+So it&rsquo;s not really usable for normal transactions because you don&rsquo;t know when you like when you generate an address you don&rsquo;t know where you&rsquo;re going to send money received at that address.
+Right?
+You&rsquo;re like okay here&rsquo;s a new address give me a Bitcoin.
+Okay now I need to spend it.
+Well, if I have to decide where I&rsquo;m going to spend it, even if I possibly, if I can enumerate, it&rsquo;s like, well, I know I&rsquo;m going to send it to these three different places.
+And then I could put it into three different little opctv outputs in the taproot tree.
+So you could do that, but that&rsquo;s very restrictive, right?
+You generally are like, I want to have the Bitcoin and I want to be able to send it anywhere after the fact.
+Okay.
+So the basic idea is that inputs point to other inputs.
+The idea is if one input signs, all the other inputs can sort of point to that input and say, that guy&rsquo;s signature.
+So now we just need to know about inputs instead of outputs at address creation time, which is doable.
+So when you&rsquo;re creating an address, you may know other inputs that are going to be spent at the same time in the same transaction.
+So here&rsquo;s the basic idea.
+This is a fully signed Bitcoin transaction, three signatures, three inputs.
+You take two of the signatures away, and then you put these little pointers.
+You say well instead of a signature here in this input I&rsquo;m going to put a pointer to the first input, input 0, input 3.
+And same here.
+These other two inputs I&rsquo;m spending in this transaction point to the input that has an actual full signature.
+So how do these pointers work?
+How does input 2 point to input 0 without signing?
+Input, what we do is input 0&rsquo;s out point, so it&rsquo;s, these words are hard, the out point is the term for like the UTXO label, It&rsquo;s just TXID index.
+So when you create a transaction, it&rsquo;s got a TXID.
+And then let&rsquo;s say this transaction has two outputs.
+And so you&rsquo;d say, this TXID 0 is this UTXO.
+This txid 1 is this utxo.
+So that&rsquo;s called an outpoint.
+And so the idea is you bake the outpoint of input 0 into input 2&rsquo;s taproot tree.
+And so That means that input 0&rsquo;s UTXO needs to exist before input 2&rsquo;s address is generated.
+And the way you enforce this is a simplified version, I&rsquo;ll go to the actual version in one more slide, but basically you just have an opcode that takes in an outpoint and says, okay, is this outpoint also being spent in this transaction?
+If so, great.
+You know, success.
+If not, fail.
+Transaction, you know, is invalid.
+That&rsquo;s basically it.
+It&rsquo;s a real simple opcode, right?
+You do need to do a couple things.
+You don&rsquo;t need to, but the actual thing I&rsquo;m going to propose, and I wanted to like write up this for the mailing list before this talk, but it didn&rsquo;t quite happen, but I will post these slides and make a mailing list post probably maybe on the airplane back.
+You want to put two extra things, this input index and this nonce.
+So the idea is the input index is where in the current transaction that&rsquo;s being validated to look for this output index txid.
+And the nonce is discarded but it&rsquo;s just a random number you can put there and it gets discarded has no consensus meaning for blinding.
+I&rsquo;ll talk about these two.
+The input index is where to look in the transaction.
+So for example, if we&rsquo;re here, this, you know, Alice input 7, so input 1 in the transaction, would say 0, whatever this out point is, and then some random number.
+Because it&rsquo;s like, look in position 0 for Alice input 3.
+If you don&rsquo;t have this, technically it&rsquo;s of n squared.
+Because if you have 1, 000 inputs and they&rsquo;re all saying, hey, look for these other inputs, then it&rsquo;s technically like each time you add an input, it adds how hard it is to search.
+So technically n squared, so you put this, you know, it&rsquo;s like two bytes, whatever, you put that in there.
+And then the nonce, this is, there is a potential privacy leak here, right?
+If your addresses are sort of pointing to the other UTXOs that you own, if you use a new key each time, just from looking at the address, you can&rsquo;t tell.
+That&rsquo;s blinding enough.
+But once you spend it, people are like, okay, I know that key.
+Let me try to grind through and see what other things he was committing to in this tap tree.
+And so if potentially, you know, that could be used for chain analysis, you know, try to try to de-anonymize addresses.
+In this case, you&rsquo;re already de-anonymized.
+You&rsquo;re sort of already saying, yes, these inputs are linked, right?
+These are the same software or entity or coordinating entity.
+But you might have other things that you didn&rsquo;t link that are committed to, and so you want to blind those.
+So you put this, you know, 16 random bytes or whatever.
+It shouldn&rsquo;t probably be random, it should probably be something like the hash of your private key and that out point that you&rsquo;re committing to, because then it&rsquo;s easier to regenerate after the fact.
+Yeah, so when you&rsquo;re using it, you&rsquo;d put these elements in the actual taproot tree.
+So you&rsquo;d have your main key, let&rsquo;s say it&rsquo;s a post quantum pubkey at the top of, I guess if you&rsquo;re using BIP 360, there&rsquo;s not really a top, but somewhere high in the tree, here&rsquo;s your normal signature thing, And then you have some branches down here that have commitments to other UTXOs that you already have.
+And then the input index, you leave empty.
+And so you push that onto the stack when you&rsquo;re spending.
+So you decide, Once you build your transaction, you start signing it by putting these little indices.
+Yeah, so this seems to work.
+It would save a lot of space.
+It&rsquo;s pretty simple.
+Implementation&rsquo;s pretty straightforward.
+It&rsquo;s probably like 20, 30 lines.
+The part that&rsquo;s a little complicated is wallets.
+So the idea is when you&rsquo;re a wallet you have a bunch of UTXOs or you start out with none.
+So the first time you&rsquo;re making a new address in a new wallet you can&rsquo;t use any of this, right?
+You just here&rsquo;s a new address I&rsquo;m gonna use a full signature, full pub key.
+But once you&rsquo;re using this, once you&rsquo;ve made a second address and you already have a UTXO, you can point to that.
+You can say, okay, this wallet takes that UTXO information, puts it in the tap tree.
+Yeah, wallets should take all asterisks currently owned UTXOs and put them in the tree along with a post-quantum pubkey.
+You want to make this deterministic.
+You want to have a forwarder to do this.
+It does kind of complicate wallet recovery.
+So if you&rsquo;ve just got a seed phrase and you&rsquo;re using this, you can generate all your addresses.
+But a lot of your addresses will commit to UTXOs. And so now you&rsquo;re like, as soon as you, you know, let me generate the first hundred addresses.
+And then, oh, on address 0, I see a UTXO.
+Well, maybe address 1 committed to that.
+Maybe it didn&rsquo;t.
+Now I have two different potential addresses there.
+Technically O of 2 to the N, which is very bad.
+So you would definitely for larger wallets, you know if you have hundreds of UTXOs, you can&rsquo;t do all of them, right?
+You should limit it to 10 or something.
+Then you&rsquo;ve got like a thousand X slowdown for wallet recovery, which is probably fine.
+But yeah, I don&rsquo;t know, do exchanges and people with thousands of UTXOs really care about wallet recovery from a seed phrase?
+Maybe, I don&rsquo;t know.
+But yeah, so it&rsquo;s doable, but you would need a bit of thought into how you design the wallets for this.
+Yeah, so the thing is, this would work fine today.
+You could make this opcode and put it into taproot.
+It&rsquo;s probably pointless, because signatures are so small right now.
+They&rsquo;re 64 bytes.
+And the minimum space to use this would be a bit more.
+It would be more like 70-ish.
+So it doesn&rsquo;t get you anything.
+I guess it&rsquo;s a little faster to verify, because the verification nodes just look for another input and don&rsquo;t have to do an easy operation.
+It doesn&rsquo;t save any space.
+But it is much smaller than any known post-quantum signatures.
+There&rsquo;s some that are in the hundreds of bytes, but the ones that I think people are talking about and looking at as the most likely thing that we would have to use in Bitcoin would be like hash-based, because we&rsquo;re already depending on hash, like the security of hashes for Bitcoin.
+So yeah, going from three or four kilobytes of this is great.
+One of the things you sort of worry about is, well, what about replays?
+You&rsquo;re not signing.
+Once you reveal this kind of commitment, could it be replayed?
+And it&rsquo;s not using keys or addresses.
+So one of the things, an alternative you could think of is like, what if your address commits to another address?
+In this pub key, you say, well, if this other pubkey is signing, that&rsquo;s okay.
+That counts as my signature.
+That would also potentially work, but that would open yourself up to replay attacks.
+So this doesn&rsquo;t have any replay problems because you&rsquo;re pointing to individual UTXOs. There&rsquo;s no way to make cycles.
+You couldn&rsquo;t have a transaction with five inputs and they&rsquo;re all using opciv because that would imply a hash cycle.
+That would mean like, I&rsquo;ve got your hash in me.
+I&rsquo;ve got your hash in me.
+I&rsquo;ve got your hash in me.
+It&rsquo;s like, wait, that&rsquo;s not supposed to happen with hash functions.
+It doesn&rsquo;t work well with address reuse.
+If you just keep reusing the same address forever, well, you can&rsquo;t use this, which is kind of a plus, I think.
+It is a little tricky in that if you generate many addresses at once, right?
+If you&rsquo;re like, I want to generate 100 addresses right now, and then I want to give those all to different people, then yeah, this doesn&rsquo;t really help.
+Right.
+Because your UTXOs are all going to be independent.
+So it works better if you&rsquo;re like making an address, receiving, sending, making address, that kind of thing.
+And you can&rsquo;t really use XPUBs and give it to people.
+I&rsquo;m not sure you can do that anyway with post quantum pubkeys.
+So I&rsquo;m not sure that&rsquo;s a deal breaker either.
+But the idea of giving someone a smaller thing and they can just derive a lot of pubkeys from that.
+Maybe there&rsquo;s ways, but yeah, it&rsquo;s a little tricky.
+So those are some of the downsides.
+Oh yeah, no cycles because they&rsquo;re all unique.
+But yeah, that&rsquo;s pretty much it.
+It would work with any signature algorithm.
+It could do with elliptic curve but kind of pointless, but Sphinx once, lattice, whatever.
+Yeah, so I think that&rsquo;s probably it.
+I&rsquo;m not like advocating like, oh we need to soft-work this in or any quantum stuff, but it&rsquo;s just sort of like looking at all these quantum signatures and you&rsquo;re like oh there are a lot of problems here and it&rsquo;s like well if you&rsquo;re going you know if you do end up in a situation where you need to use this I think an opcode like this or maybe someone has a better idea, but something like this would help a lot, right?
+Because then it becomes very signature heavy.
+The witnesses are like 90% of the whole block.
+And it&rsquo;s like, oh, getting down the size with this would be great.
+So yeah, thanks for listening.
+I guess we have a couple of minutes for questions, if people have any.
+But yeah, if you tell me why it won&rsquo;t work or if you have a better way, then great.
+Thanks.</p><p>Speaker 1: 00:22:25</p><p>Cool.</p><p>Speaker 2: 00:22:33</p><p>Amazing work.
+Good stuff.
+Looks pretty cool.
+This only really works if you, like so this is on the transaction level and it would only really work if you for the one wallet right like for integrating aggregating signatures for multiple UTXOs in the same wallet, correct?
+Yeah, yeah.
+So this doesn&rsquo;t really scale Bitcoin in a way that, say, BLS block-wide signature aggregation would.</p><p>Speaker 0: 00:23:00</p><p>No, no, I mean, there&rsquo;s no reason to use it now.
+It only helps, it sort of like makes transition to post-quantum less horrible.</p><p>Speaker 2: 00:23:09</p><p>This could maybe like be good for maybe exchanges?</p><p>Speaker 0: 00:23:12</p><p>Yeah, they could save a lot of space, you know, because presumably they have a lot of UTXOs and they&rsquo;re doing a lot of consolidation transactions a lot, so that they would be, when they&rsquo;re the primary, they would save a lot.</p><p>Speaker 2: 00:23:23</p><p>Okay, the other thing I just want to make sure maybe you can draw your attention to someday is isogeny-based PQC, because it&rsquo;s basically like an elliptic curve is in higher dimensions, you can do things like SIDH and other things, and it might be possible to, it might be more powerful than this, but pretty good work so far.</p><p>Speaker 0: 00:23:46</p><p>Cool, thanks.
+Thank you.
+Oh, and on that, yeah, like CoinJoin is another thing where it&rsquo;s like, you can commit to an input if it&rsquo;s multi-sig, as long as you have one of the keys in there, or, you know, so there&rsquo;s ways to do it, but it&rsquo;s not like, oh, this is awesome, we should use it now anyway.
+It&rsquo;s more of a, well, if you&rsquo;re stuck going to hash-based signatures, this helps.
+But today, you don&rsquo;t need it.</p><p>Speaker 1: 00:24:10</p><p>How does the rest of the blockchain understand that Alice input 3 and the signature there is good for Alice input 7?</p><p>Speaker 0: 00:24:23</p><p>So signature 3 still covers, you know, you&rsquo;re using SIGHASHALL, that doesn&rsquo;t change.
+So it still covers input 7 and 8.
+So this signature does sign off on this whole thing happening.</p><p>Speaker 1: 00:24:35</p><p>I understand that, but the input 7, you&rsquo;re saying input 7 is using a redirection that is not a signature.
+So how does the rest of the blockchain understand that the read let&rsquo;s let&rsquo;s say I Pull in An input that isn&rsquo;t mine What what fails?</p><p>Speaker 0: 00:24:58</p><p>Okay, so if you if Alice input 7 doesn&rsquo;t have basically Alice input 7 that address has Alice input 3s UTXO label baked into it if AliceInput7 doesn&rsquo;t have, basically AliceInput7, that address, has AliceInput3&rsquo;s UTXO label baked into it.
+And so it takes, yeah, it&rsquo;s in the taproot tree, right?
+So the idea is like, down on the left somewhere, there is a this, like opciv with the txid and index of alicin put3.
+And so even if that exists, people aren&rsquo;t gonna know where it is, you know, only the wallet can sort of prove that and show it to the world.
+And if it&rsquo;s someone else&rsquo;s address, that hash-based pointer doesn&rsquo;t exist at all, and so you can&rsquo;t show it.</p><p>Speaker 1: 00:25:38</p><p>And so that&rsquo;s one branch of the tree, but that&rsquo;s not&mldr;
+Okay, so I understand.
+So AliceInput7 is created, so it&rsquo;s revealing that part of the tree, which is what Alice input 3 in quotes means Yeah, it&rsquo;s a it&rsquo;s it&rsquo;s got the hash of Alice input 3 in it.</p><p>Speaker 0: 00:25:59</p><p>Got it Yeah, I should make I should have made a little tree where it&rsquo;s like, here&rsquo;s your regular pubkey, and then down here you put your opciv clauses.</p><p>Speaker 4: 00:26:09</p><p>Yeah, thanks for this great nerd snipe.
+And one thing I was thinking about while you were still talking, for the really, really large wallets, do we run into maximum depth limits of tap trees and also for maybe for efficiency reasons we want to limit the number of UTXOs we commit to and then it becomes a very very interesting problem in which order you have to spend your UTXOs otherwise you make some of them unspendable.</p><p>Speaker 0: 00:26:40</p><p>So you would never make it unspendable?
+So like yes, that&rsquo;s why I sort of put this asterisk, where it&rsquo;s like oh man, that seems kind of&mldr;
+What is the optimal way to do this?
+I don&rsquo;t know.
+They&rsquo;re like, but you you do want to I think like yeah restrict it to like pointing to ten because you don&rsquo;t need to point to that many.
+You only need to reveal one.
+So you you don&rsquo;t need to like commit to hundreds because you know, you just as long as you&rsquo;re, it does complicate also transaction construction where you&rsquo;re like oh I want to minimize my my transaction size to minimize fees and like now what you do it&rsquo;s already hard right it&rsquo;s a subset sum problem so it&rsquo;s already like oh I need to pick all these things to get to the right amount but now you add this constraint of like some of them point to others and so they get free signatures and some of them don&rsquo;t so yeah it&rsquo;s kind of a mess but but I think I would not you could but I would not encourage anyone to say I&rsquo;m gonna only put off CTV spent as CIV spends I&rsquo;m gonna you know always have my like main signing pub key at the top and then these are options.
+So I never get stuck where like, oh shoot, I spent all these other inputs, I can&rsquo;t spend this one because the only way I spend this one is alongside these others.
+So I mean, you could, but don&rsquo;t.
+But yeah, but the wallet design and transaction design, that&rsquo;s the complex part.
+It&rsquo;s not, I don&rsquo;t worry too much because it&rsquo;s like it&rsquo;s complex to optimize right?
+If you do it in like a pretty you know oh we&rsquo;ll just brute force we&rsquo;ll just do it like the simple way.
+It&rsquo;ll work, and worst case, you don&rsquo;t get the space savings you could with the optimal way.
+But yeah, it is like, how should you do this?
+And that would be a fun thing to work.
+Cool.
+Any other?
+Good.
+Well, next is Floresta stuff, right?</p><p>Speaker 3: 00:28:19</p><p>Cool.
+Thanks, everyone.
+Good, well next is a little rest of stuff, right?</p><p>Speaker 0: 00:28:19</p><p>Cool, thanks everyone.</p><div class=row></div></div></div></div><script src=https://btctranscripts.com/lib/jquery.min.js></script><script src=https://btctranscripts.com/lib/popper.min.js></script><script src=https://btctranscripts.com/js/bootstrap.min.js></script><script type=text/javascript src=/plugins/lunr.min.js></script><script type=text/javascript src=/plugins/auto-complete.js></script><link href=/plugins/auto-complete.css rel=stylesheet><script type=text/javascript>var baseurl="https://btctranscripts.com/"</script><script type=text/javascript src=/plugins/search.js></script><script type=text/javascript src=https://btctranscripts.com/js/custom.js></script><script type=text/javascript src=/plugins/clipboard.js></script><script>new ClipboardJS(".btn")</script></body></html>
