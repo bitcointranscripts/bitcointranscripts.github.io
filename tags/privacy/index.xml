@@ -4,7 +4,11 @@ Key Challenges Identified Fingerprinting Vectors Multiple fingerprinting vectors
 The proposal: Just send the tx for one connection (Tor or I2P) and leave it to broadcast it.
 Vasild started to split this PR into small PRs - some have been merged. The goal is to facilitate the review.
 It’s going to have 1p1c on this - in a follow-up - there is no current support for it.
-INV, GETDATA, then send the transaction - close the connection after sending the tx.</description></item><item><title>Watchtowers, Lightning Privacy</title><link>https://btctranscripts.com/chaincode-podcast/watchtowers-lightning-privacy/</link><pubDate>Thu, 02 Feb 2023 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/chaincode-podcast/watchtowers-lightning-privacy/</guid><description>Speaker 0: 00:00:00
+INV, GETDATA, then send the transaction - close the connection after sending the tx.</description></item><item><title>Scaling Lightning Panel - Lightning++ Berlin 2025</title><link>https://btctranscripts.com/bitcoinplusplus/2025-berlin/scaling-lightning-panel-lightning++-berlin-2025/</link><pubDate>Thu, 02 Oct 2025 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/bitcoinplusplus/2025-berlin/scaling-lightning-panel-lightning++-berlin-2025/</guid><description>&lt;p>Sign up for one of our upcoming dev conf at &lt;a href="https://btcpp.dev">https://btcpp.dev&lt;/a>&lt;/p>
+&lt;p>Website: &lt;a href="https://btcpp.dev/">https://btcpp.dev/&lt;/a>
+X: &lt;a href="https://x.com/btcplusplus">https://x.com/btcplusplus&lt;/a>
+NOSTR: &lt;a href="https://iris.to/npub1dwah6u025f2yy9dgwlsndntlfy85vf0t2eze5rdg2mxg99k4mucqxz7c52">https://iris.to/npub1dwah6u025f2yy9dgwlsndntlfy85vf0t2eze5rdg2mxg99k4mucqxz7c52&lt;/a>&lt;/p>
+&lt;p>#btcplusplus #devconf #bitcoineducation #bitcoinconf #bitcoindev #bitcoinconference #bitcoin #cypherpunks&lt;/p></description></item><item><title>Watchtowers, Lightning Privacy</title><link>https://btctranscripts.com/chaincode-podcast/watchtowers-lightning-privacy/</link><pubDate>Thu, 02 Feb 2023 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/chaincode-podcast/watchtowers-lightning-privacy/</guid><description>Speaker 0: 00:00:00
 I came into Bitcoin because I like peer-to-peer. I discover more things that I love by doing so. And again, these are not feelings, but they are feelings related to research. Sorry, failing time.
 Speaker 1: 00:00:12
 We&amp;rsquo;re going to make sure our editor takes out The love word. We are back in the studio. We are.
