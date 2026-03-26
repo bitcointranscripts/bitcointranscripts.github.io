@@ -2,42 +2,4 @@
 &lt;p>Website: &lt;a href="https://btcpp.dev/">https://btcpp.dev/&lt;/a>
 X: &lt;a href="https://x.com/btcplusplus">https://x.com/btcplusplus&lt;/a>
 NOSTR: &lt;a href="https://iris.to/npub1dwah6u025f2yy9dgwlsndntlfy85vf0t2eze5rdg2mxg99k4mucqxz7c52">https://iris.to/npub1dwah6u025f2yy9dgwlsndntlfy85vf0t2eze5rdg2mxg99k4mucqxz7c52&lt;/a>&lt;/p>
-&lt;p>#btcplusplus #devconf #bitcoineducation #bitcoinconf #bitcoindev #bitcoinconference #bitcoin #cypherpunks&lt;/p></description></item><item><title> Merkle Trees is the Perfect Place for UTXOs: Floresta as a Chain Source for BDK</title><link>https://btctranscripts.com/tabconf/2025/merkle-trees-is-the-perfect-place-for-utxos-floresta-as-a-chain-source-for-bdk/</link><pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate><guid>https://btctranscripts.com/tabconf/2025/merkle-trees-is-the-perfect-place-for-utxos-floresta-as-a-chain-source-for-bdk/</guid><description>&lt;p>📌 Learn more about this talk on GitHub: ⭐️🐙
-&lt;a href="https://github.com/TABConf/7.tabconf.com/issues/33">https://github.com/TABConf/7.tabconf.com/issues/33&lt;/a>&lt;/p>
-&lt;p>🌱🧰 Explore bdk-floresta
-A work in progress BDK chain source crate that uses floresta-chain + floresta-wire to run a local, trustless node and wallet directly on your device 📲🧱
-Perfect for mobile and low spec setups ⚡️&lt;/p>
-&lt;p>🧠 What this talk covers
-🌳 Utreexo 101
-Merkle proofs, validation, and bridge nodes
-🔍 How Floresta leverages Utreexo and how it differs from utreexod
-🏗️ A clear BDK architecture overview
-🎬 Live demo
-Creating and syncing a wallet using the crate ✅&lt;/p>
-&lt;p>🎯 If you’re a dev or a Bitcoin enthusiast who wants lightweight, self contained wallets that can run anywhere, this one’s for you 🛠️🟠&lt;/p>
-&lt;p>⚡️🛠️⚡️🛠️⚡️🛠️⚡️🛠️⚡️🛠️⚡️🛠️⚡️🛠️⚡️🛠️⚡️🛠️⚡️🛠️⚡️🛠️⚡️🛠️⚡️🛠️⚡️🛠️&lt;/p>
-&lt;p>🟠 TABConf is a technical Bitcoin conference built for builders. We bring protocol + application devs together to collaborate, debate, and push Bitcoin forward. 🧠🔧&lt;/p>
-&lt;p>🎥 On this channel you’ll find:
-🗣️ Full talks • 🧑‍🏫 workshops • 🧩 panels
-🛠️ Builder Days sessions • 🔍 deep dives on:
-🧱 Bitcoin Core • ⚡️ Lightning • 🕵️ privacy • 🔐 security • 🧰 the tooling teams ship with&lt;/p>
-&lt;p>🎟️ TABConf 8 tickets are on sale now!
-🗓️ Oct 12–15, 2026 • 📍 Atlanta, GA
-🏛️ Georgia Tech Exhibition Hall&lt;/p>
-&lt;p>🎫 TABConf 8 Tickets
-🟠 Pay with Bitcoin: &lt;a href="https://checkout.opennode.com/p/7d51f71f-f3e6-4159-bbfa-3a231d14e5b8">https://checkout.opennode.com/p/7d51f71f-f3e6-4159-bbfa-3a231d14e5b8&lt;/a>&lt;/p>
-&lt;p>💳 Pay with Stripe: &lt;a href="https://buy.stripe.com/00w4gzapSf0o4ubg2mdQQ0b">https://buy.stripe.com/00w4gzapSf0o4ubg2mdQQ0b&lt;/a>&lt;/p>
-&lt;p>🌐 TABConf Website
-&lt;a href="https://tabconf.com">https://tabconf.com&lt;/a>&lt;/p>
-&lt;p>🔗 All links hub
-&lt;a href="https://linktr.ee/tabconf">https://linktr.ee/tabconf&lt;/a>&lt;/p>
-&lt;p>🫂 TABConf Community
-💬 Discord: &lt;a href="https://discord.gg/TRaX8M7amU">https://discord.gg/TRaX8M7amU&lt;/a>&lt;/p>
-&lt;p>🐦 Follow us on X
-&lt;a href="https://x.com/tabconf">https://x.com/tabconf&lt;/a>&lt;/p>
-&lt;p>🎧 Subscribe to the TABConf Podcast
-🍎 Apple Podcasts: &lt;a href="https://podcasts.apple.com/us/podcast/tabconf-sessions/id1867836916">https://podcasts.apple.com/us/podcast/tabconf-sessions/id1867836916&lt;/a>&lt;/p>
-&lt;p>🟢 Spotify: &lt;a href="https://open.spotify.com/show/11Ram7ccTjBeiwhYoDVtF4?si=ec8bab9fdc2945cd">https://open.spotify.com/show/11Ram7ccTjBeiwhYoDVtF4?si=ec8bab9fdc2945cd&lt;/a>&lt;/p>
-&lt;p>⛲️ Fountain: &lt;a href="https://fountain.fm/show/fqYiANm1II8INYOodXaj">https://fountain.fm/show/fqYiANm1II8INYOodXaj&lt;/a>&lt;/p>
-&lt;p>⭐️ Star us on GitHub
-🐙 &lt;a href="https://github.com/TABConf">https://github.com/TABConf&lt;/a>&lt;/p></description></item></channel></rss>
+&lt;p>#btcplusplus #devconf #bitcoineducation #bitcoinconf #bitcoindev #bitcoinconference #bitcoin #cypherpunks&lt;/p></description></item></channel></rss>
